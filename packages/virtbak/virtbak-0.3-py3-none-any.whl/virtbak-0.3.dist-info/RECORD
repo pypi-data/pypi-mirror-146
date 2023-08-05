@@ -1,0 +1,10 @@
+virtbak/__init__.py,sha256=hTECs-2JDz3PCUTGl4GaQ0l_iNyStXvEmDHiyjcnwIQ,163
+virtbak/__main__.py,sha256=nqFWAbrnAGJRemo4mXiS43GHkDn5KUMez__sFRUU9gQ,38
+virtbak/virtbak.py,sha256=ID73PjHt6Gz748e9mUV2m_PHkBWe8v2EzkE87J9OO44,688
+virtbak/virt/config.py,sha256=8I5VJSyNgXAwXILhBAAvzGhWGS6UuXY_1D7LQsYjt-8,565
+virtbak/virt/virt.py,sha256=8s9WMejetVZai3D53ZdLKSmA018ln8Yl_ZgLBsI6IlQ,6208
+virtbak-0.3.dist-info/METADATA,sha256=-2iWHjdelppk8DalIqK9hqw08U68U5UP1gK_ezZOPPo,836
+virtbak-0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+virtbak-0.3.dist-info/entry_points.txt,sha256=gSLx9RdRSzCbISwGM1CN4prBz6XaP0eQdDfh5CrICsI,53
+virtbak-0.3.dist-info/top_level.txt,sha256=Fs5_ZZJOf37LYGa4YPHLwa5aGXNaX93RDaQW7WCCmH4,8
+virtbak-0.3.dist-info/RECORD,,
