@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+./geometor/__init__.py
+./geometor/model.py
+./geometor/pappus.py
+./geometor/render.py
+./geometor/spirals.py
+./geometor/utils.py
+geometor.egg-info/PKG-INFO
+geometor.egg-info/SOURCES.txt
+geometor.egg-info/dependency_links.txt
+geometor.egg-info/requires.txt
+geometor.egg-info/top_level.txt
