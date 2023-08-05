@@ -1,0 +1,7 @@
+setuptools
+click
+conan
+wheel
+pyyaml
+mkdocs
+mkdocs-material

@@ -1,0 +1,2 @@
+exclude img/*
+include dat/conan/conanfile_template
