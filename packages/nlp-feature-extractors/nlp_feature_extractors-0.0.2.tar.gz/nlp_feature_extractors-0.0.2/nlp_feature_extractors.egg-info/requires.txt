@@ -1,0 +1,16 @@
+azure-storage-blob==12.9.0
+datasets==1.2.1
+gender-guesser==0.4.0
+jupyter==1.0.0
+negspacy==1.0.0
+numpy==1.19.3
+protobuf==3.17.3
+sentencepiece==0.1.96
+spacy==3.0.3
+tqdm==4.49.0
+transformers==4.2.2
+
+[dev]
+recommonmark==0.6.0
+sphinx-rtd-theme==0.5.0
+sphinx==3.2.1
