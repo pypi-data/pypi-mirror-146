@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+boshpdf/__init__.py
+boshpdf/pdf2image.py
+boshpdf/pdf2text.py
+boshpdf.egg-info/PKG-INFO
+boshpdf.egg-info/SOURCES.txt
+boshpdf.egg-info/dependency_links.txt
+boshpdf.egg-info/top_level.txt
