@@ -1,0 +1,8 @@
+setup.py
+terminarty/__init__.py
+terminarty/main.py
+terminarty.egg-info/PKG-INFO
+terminarty.egg-info/SOURCES.txt
+terminarty.egg-info/dependency_links.txt
+terminarty.egg-info/requires.txt
+terminarty.egg-info/top_level.txt
