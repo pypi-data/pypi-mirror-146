@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include requirements.txt
+include dev-requirements.txt
+include img/*
+include docs/*
+include myjwt/__init__.py
