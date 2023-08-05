@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/Wind_is_not_decorator.egg-info/PKG-INFO
+src/Wind_is_not_decorator.egg-info/SOURCES.txt
+src/Wind_is_not_decorator.egg-info/dependency_links.txt
+src/Wind_is_not_decorator.egg-info/top_level.txt
