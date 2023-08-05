@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+defichain/__init__.py
+defichain.egg-info/PKG-INFO
+defichain.egg-info/SOURCES.txt
+defichain.egg-info/dependency_links.txt
+defichain.egg-info/requires.txt
+defichain.egg-info/top_level.txt
+tests/__init__.py
