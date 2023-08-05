@@ -1,0 +1,266 @@
+/* Output port */
+// Author Andrew Laffely
+// Last modified: 12 Feb 03
+// !!!!!!!!!!!!!!! DO NOT CHANGE THIS FILE !!!!!!!!!!!!!!!!!!!!!!!!!
+module out_port (gclock, reset, i_addr, c_data, c_addr, c_write, valid_next, data_out, ready);
+
+input gclock, reset;
+input [1:0] i_addr;     // buffer address requested by ccm
+input [1:0] c_addr;     // buffer address requested by core
+input [31:0] c_data;    // the data sent from the core
+input valid_next;       // flow control bit sent from upstream block
+input c_write;	        // write singal from core
+
+output [32:0] data_out; // the data to be sent to interface
+output [2:0] ready;     // flow control, port "ready" signal, sent to core
+reg [32:0] data_out;
+reg [2:0] ready;        // Port ready signal
+
+reg [6:0] valid;        // contains the valid bits of the data in the port
+reg [31:0] data [6:0];  // the data in the cdm
+reg [2:0] i_addr_hold;  // hold the buf addr while evaluating  
+reg [2:0] c_addr_hold;  // hold the buf addr while evaluating
+reg [2:0] i_buf_state, c_buf_state; // first or second buf in each port
+
+reg faketiming;         // Makes level sensitive transitions work properly
+initial
+begin
+	faketiming = 1'b0;
+	forever #1 faketiming = ~faketiming;
+end
+
+// *********************** INTERCONNECT *********************** //
+always @ (posedge gclock)  //interconnect side
+  begin
+    if(!reset)
+      begin
+	//update valid from last transfer
+	if(!(i_addr_hold[2:1] == 2'b11))  
+	  begin
+	    if(!(valid_next)&&data_out[32])
+	      begin
+		i_buf_state[i_addr_hold[2:1]]=~i_buf_state[i_addr_hold[2:1]];
+		valid[i_addr_hold]=0;
+	      end
+	  end
+
+	#1 i_addr_hold = {i_addr,i_buf_state[i_addr]};
+
+	//send data
+	if(!(i_addr == 2'b11))  //default no data
+		#1 data_out={valid[i_addr_hold], data[i_addr_hold]};
+	else
+		#1 data_out[32]=0;
+	end
+end
+// ******************** END INTERCONNECT *********************** //
+
+// *************************** CORE **************************** //
+always @ (posedge c_write)
+  begin
+	c_addr_hold = {c_addr, c_buf_state[c_addr]};
+  end
+
+always @ (negedge c_write) //Core
+  begin
+	if(!reset)
+	  begin
+		c_buf_state[c_addr_hold[2:1]]=~c_buf_state[c_addr_hold[2:1]];
+		valid[c_addr_hold]=1;  //glitch reset
+	  end
+  end
+// ************************** END CORE ************************* //
+
+always @ (faketiming)
+  begin
+    if (reset)
+      begin
+	valid = 4'b0000;
+	i_addr_hold = 3'b111;
+	i_buf_state=3'b000;
+	c_buf_state=3'b000;
+      end
+   else
+      begin
+	ready[0]=~valid[c_buf_state[0]];
+	ready[1]=~valid[c_buf_state[1]];
+	ready[2]=~valid[c_buf_state[2]];
+
+	// *************************** CORE ************************ //
+	if (c_write)
+	  begin
+		data[c_addr_hold]=c_data[31:0];
+	  end
+	// ************************ END CORE ********************** //
+  end
+end
+endmodule
+
+
+
+[ [ [ 'module',
+      'out_port',
+      '(',
+      [ ['gclock'],
+        ['reset'],
+        ['i_addr'],
+        ['c_data'],
+        ['c_addr'],
+        ['c_write'],
+        ['valid_next'],
+        ['data_out'],
+        ['ready']],
+      ')',
+      ';'],
+    [ ['input', 'gclock', 'reset', ';'],
+      ['input', '[', '1', ':', '0', ']', 'i_addr', ';'],
+      ['input', '[', '1', ':', '0', ']', 'c_addr', ';'],
+      ['input', '[', '31', ':', '0', ']', 'c_data', ';'],
+      ['input', 'valid_next', ';'],
+      ['input', 'c_write', ';'],
+      ['output', '[', '32', ':', '0', ']', 'data_out', ';'],
+      ['output', '[', '2', ':', '0', ']', 'ready', ';'],
+      ['reg', '[', '32', ':', '0', ']', ['data_out'], ';'],
+      ['reg', '[', '2', ':', '0', ']', ['ready'], ';'],
+      ['reg', '[', '6', ':', '0', ']', ['valid'], ';'],
+      ['reg', '[', '31', ':', '0', ']', ['data', '[', '6', ':', '0', ']'], ';'],
+      ['reg', '[', '2', ':', '0', ']', ['i_addr_hold'], ';'],
+      ['reg', '[', '2', ':', '0', ']', ['c_addr_hold'], ';'],
+      ['reg', '[', '2', ':', '0', ']', ['i_buf_state'], ['c_buf_state'], ';'],
+      ['reg', ['faketiming'], ';'],
+      [ 'initial',
+        [ 'begin',
+          [ [[['faketiming'], '=', "1 'b 0"], ';'],
+            [ 'forever',
+              [['#', '1'], [[['faketiming'], '=', '~', ['faketiming']], ';']]]],
+          'end']],
+      [ 'always',
+        ['@', '(', ['posedge', ['gclock']], ')'],
+        [ 'begin',
+          [ [ 'if',
+              ['(', '!', ['reset'], ')'],
+              [ 'begin',
+                [ [ 'if',
+                    [ '(',
+                      '!',
+                      '(',
+                      [['i_addr_hold', ['[', '2', '1', ']']], '==', "2 'b 11"],
+                      ')',
+                      ')'],
+                    [ 'begin',
+                      [ [ 'if',
+                          [ '(',
+                            '!',
+                            '(',
+                            [['valid_next']],
+                            ')',
+                            '&&',
+                            ['data_out', ['[', '32', ']']],
+                            ')'],
+                          [ 'begin',
+                            [ [ [ [ 'i_buf_state',
+                                    [ '[',
+                                      ['i_addr_hold', ['[', '2', '1', ']']],
+                                      ']']],
+                                  '=',
+                                  '~',
+                                  [ 'i_buf_state',
+                                    [ '[',
+                                      ['i_addr_hold', ['[', '2', '1', ']']],
+                                      ']']]],
+                                ';'],
+                              [ [ ['valid', ['[', ['i_addr_hold'], ']']],
+                                  '=',
+                                  '0'],
+                                ';']],
+                            'end']]],
+                      'end']],
+                  [ ['#', '1'],
+                    [ [ ['i_addr_hold'],
+                        '=',
+                        [ '{',
+                          ['i_addr'],
+                          ['i_buf_state', ['[', ['i_addr'], ']']],
+                          '}']],
+                      ';']],
+                  [ 'if',
+                    ['(', '!', '(', [['i_addr'], '==', "2 'b 11"], ')', ')'],
+                    [ ['#', '1'],
+                      [ [ ['data_out'],
+                          '=',
+                          [ '{',
+                            ['valid', ['[', ['i_addr_hold'], ']']],
+                            ['data', ['[', ['i_addr_hold'], ']']],
+                            '}']],
+                        ';']],
+                    'else',
+                    [ ['#', '1'],
+                      [[['data_out', ['[', '32', ']']], '=', '0'], ';']]]],
+                'end']]],
+          'end']],
+      [ 'always',
+        ['@', '(', ['posedge', ['c_write']], ')'],
+        [ 'begin',
+          [ [ [ ['c_addr_hold'],
+                '=',
+                [ '{',
+                  ['c_addr'],
+                  ['c_buf_state', ['[', ['c_addr'], ']']],
+                  '}']],
+              ';']],
+          'end']],
+      [ 'always',
+        ['@', '(', ['negedge', ['c_write']], ')'],
+        [ 'begin',
+          [ [ 'if',
+              ['(', '!', ['reset'], ')'],
+              [ 'begin',
+                [ [ [ [ 'c_buf_state',
+                        ['[', ['c_addr_hold', ['[', '2', '1', ']']], ']']],
+                      '=',
+                      '~',
+                      [ 'c_buf_state',
+                        ['[', ['c_addr_hold', ['[', '2', '1', ']']], ']']]],
+                    ';'],
+                  [[['valid', ['[', ['c_addr_hold'], ']']], '=', '1'], ';']],
+                'end']]],
+          'end']],
+      [ 'always',
+        ['@', '(', [['faketiming']], ')'],
+        [ 'begin',
+          [ [ 'if',
+              ['(', ['reset'], ')'],
+              [ 'begin',
+                [ [[['valid'], '=', "4 'b 0000"], ';'],
+                  [[['i_addr_hold'], '=', "3 'b 111"], ';'],
+                  [[['i_buf_state'], '=', "3 'b 000"], ';'],
+                  [[['c_buf_state'], '=', "3 'b 000"], ';']],
+                'end'],
+              'else',
+              [ 'begin',
+                [ [ [ ['ready', ['[', '0', ']']],
+                      '=',
+                      '~',
+                      ['valid', ['[', ['c_buf_state', ['[', '0', ']']], ']']]],
+                    ';'],
+                  [ [ ['ready', ['[', '1', ']']],
+                      '=',
+                      '~',
+                      ['valid', ['[', ['c_buf_state', ['[', '1', ']']], ']']]],
+                    ';'],
+                  [ [ ['ready', ['[', '2', ']']],
+                      '=',
+                      '~',
+                      ['valid', ['[', ['c_buf_state', ['[', '2', ']']], ']']]],
+                    ';'],
+                  [ 'if',
+                    ['(', ['c_write'], ')'],
+                    [ 'begin',
+                      [ [ [ ['data', ['[', ['c_addr_hold'], ']']],
+                            '=',
+                            ['c_data', ['[', '31', '0', ']']]],
+                          ';']],
+                      'end']]],
+                'end']]],
+          'end']]],
+    'endmodule']]

@@ -1,0 +1,358 @@
+// pipe1.v      Verilog version using modules in this file
+//              basic five stage pipeline of just Instruction Register
+//              The 411 course pipeline has the same five stages
+//              IF Instruction Fetch includes PC and instruction memory
+//              ID Instruction Decode and registers
+//              EX Execution including the ALU Arithmetic Logic Unit
+//              MEM data Memory
+//              WB Write Back into registers
+//
+// This self contained Verilog file defines:
+//
+//     a 32 bit adder module using behavioral code
+//     a 32 bit register module with clock and clear inputs
+//     an instruction memory module using behavioral code
+//
+//     a top level module, pipe1, test bench
+//     the wires for interconnecting the entities
+//     the modules instantiated to connect the wires
+//     printout that shows the registers in the pipeline each clock
+//
+
+`timescale 1ps/1ps // times in pico seconds
+
+module add32(a, b, cin, sum, cout);
+  parameter n=31;
+  input  [n:0] a;     // a input
+  input  [n:0] b;     // b input
+  input        cin;   // carry-in
+  output [n:0] sum;   // sum output
+  output       cout;  // carry-out
+  assign #250 {cout, sum} = a + b + cin;
+endmodule // add32
+
+module register_32(clk, clear, inp, out);
+  input         clk;    // accept  inp  on posedge
+  input         clear;  // clear when high
+  input  [31:0] inp;    // input data
+  output [31:0] out;    // output of register
+  wire   [31:0] inp;
+  wire   [31:0] out;
+  reg    [31:0] stored;        // temporary variable
+
+  initial stored = 32'h00000000;
+
+  assign out = stored;  // set output wire
+
+  always @(posedge clk)
+    begin  // behavior
+      #200 stored <= inp;
+    end
+endmodule // register_32
+
+module instruction_memory(addr, inst);
+  input [31:0] addr;
+  output [31:0] inst;
+  integer word_addr;
+  reg [31:0] memory [0:6];
+  reg [31:0] inst_word;
+
+  assign inst = inst_word;
+
+  function [31:0] to_integer;
+    input [31:0] argument;
+    to_integer = argument;
+  endfunction // to_integer
+
+  initial
+    begin
+      memory[0] = 32'h00000001;
+      memory[1] = 32'h00000002;
+      memory[2] = 32'h00000003;
+      memory[3] = 32'h00000004;
+      memory[4] = 32'h00000005;
+      memory[5] = 32'h00000006;
+      memory[6] = 32'h00000007;
+    end
+
+  always @(addr)
+    begin  // behavior
+      word_addr = to_integer(addr)/4;
+      #250 inst_word = memory[word_addr];
+    end
+endmodule // instruction_memory
+
+
+module pipe1;  // test bench
+  // signals used in test bench (the interconnections)
+  
+  reg [31:0] zero_32; // = 32'h00000000;   // 32 bit zero
+  reg        zero;    // = 0;              // one bit zero
+  reg [31:0] four_32; // = 32'h00000004;   // four
+
+  reg        clear;   // = 1;    // one shot clear
+  reg        clk;     // = 0;    // master clock
+  integer    counter; // = 0;    // master clock counter, raising edge
+  wire       nc1;                // a No-Connection for unused output
+
+  wire [31:0] IF_PC_next;        // next value of PC 
+  wire [31:0] IF_PC;             // Program Counter
+  wire [31:0] inst;              // instruction fetched
+  wire [31:0] ID_IR;             // ID Instruction Register
+  wire [31:0] EX_IR;             // EX Instruction Register
+  wire [31:0] MEM_IR;            // MEM Instruction Register
+  wire [31:0] WB_IR;             // WB Instruction Register
+
+  function [31:0] to_integer;
+    input [31:0] argument;
+    to_integer = argument;
+  endfunction // to_integer
+  
+  initial
+    begin
+      zero_32 = 32'h00000000;   // 32 bit zero
+      zero    = 0;              // one bit zero
+      four_32 = 32'h00000004;   // four
+      clear   = 1;              // one shot clear
+      clk     = 0;              // master clock
+      counter = 0;              // master clock counter, raising edge
+      #200 clear = 0;           // clear time finished
+      forever #5000 clk = ~clk; // run clock 10ns period
+    end
+
+  initial #60000 $finish; // stop after 60 ns
+
+  // schematic of pipe1, behavior and test bench
+
+  // IF, Instruction Fetch pipeline stage
+  register_32 PC_reg(clk, clear, IF_PC_next, IF_PC);
+  add32 PC_incr(IF_PC, four_32, zero, IF_PC_next, nc1);
+  instruction_memory inst_mem(IF_PC, inst);
+
+  // ID, Instruction Decode and register stack pipeline stage
+  register_32 ID_IR_reg(clk, clear, inst, ID_IR);
+
+  // EX, Execute pipeline stage
+  register_32 EX_IR_reg(clk, clear, ID_IR, EX_IR);
+
+  // MEM Data Memory pipeline stage
+  register_32 MEM_IR_reg(clk, clear, EX_IR, MEM_IR);
+
+  // WB, Write Back pipeline stage
+  register_32 WB_IR_reg(clk, clear, MEM_IR, WB_IR);
+
+  always @(posedge clk) // to show state of registers in pipeline
+    begin
+      $write("at clock ");
+      $write("%0d", counter);
+      $write("  PC=");
+      $write("%h", IF_PC);
+      $write("\n");
+      $write("IF  stage inst=");
+      $write("%h", inst);
+      $write("\n");
+      $write("IF_PC_next    =");
+      $write("%h", IF_PC_next);
+      $write("\n");
+      $write("ID  stage   IR=");
+      $write("%h", ID_IR);
+      $write("\n");
+      $write("EX  stage   IR=");
+      $write("%h", EX_IR);
+      $write("\n");
+      $write("MEM stage   IR=");
+      $write("%h", MEM_IR);
+      $write("\n");
+      $write("WB  stage   IR=");
+      $write("%h", WB_IR);
+      $write("\n");
+      $write("\n");         // blank line
+      counter = counter+1;
+    end
+
+endmodule // pipe1
+
+
+[ [ [ 'module',
+      'add32',
+      '(',
+      [['a'], ['b'], ['cin'], ['sum'], ['cout']],
+      ')',
+      ';'],
+    [ ['parameter', ['n', '=', '31'], ';'],
+      ['input', '[', ['n'], ':', '0', ']', 'a', ';'],
+      ['input', '[', ['n'], ':', '0', ']', 'b', ';'],
+      ['input', 'cin', ';'],
+      ['output', '[', ['n'], ':', '0', ']', 'sum', ';'],
+      ['output', 'cout', ';'],
+      [ 'assign',
+        ['#', '250'],
+        [['{', ['cout'], ['sum'], '}'], '=', ['a'], '+', ['b'], '+', ['cin']],
+        ';']],
+    'endmodule'],
+  [ [ 'module',
+      'register_32',
+      '(',
+      [['clk'], ['clear'], ['inp'], ['out']],
+      ')',
+      ';'],
+    [ ['input', 'clk', ';'],
+      ['input', 'clear', ';'],
+      ['input', '[', '31', ':', '0', ']', 'inp', ';'],
+      ['output', '[', '31', ':', '0', ']', 'out', ';'],
+      ['wire', '[', '31', ':', '0', ']', ['inp'], ';'],
+      ['wire', '[', '31', ':', '0', ']', ['out'], ';'],
+      ['reg', '[', '31', ':', '0', ']', ['stored'], ';'],
+      ['initial', [[['stored'], '=', "32 'h 00000000"], ';']],
+      ['assign', [['out'], '=', ['stored']], ';'],
+      [ 'always',
+        ['@', '(', ['posedge', ['clk']], ')'],
+        [ 'begin',
+          [[['#', '200'], [[['stored'], '<=', ['inp']], ';']]],
+          'end']]],
+    'endmodule'],
+  [ ['module', 'instruction_memory', '(', [['addr'], ['inst']], ')', ';'],
+    [ ['input', '[', '31', ':', '0', ']', 'addr', ';'],
+      ['output', '[', '31', ':', '0', ']', 'inst', ';'],
+      ['integer', ['word_addr'], ';'],
+      [ 'reg',
+        '[',
+        '31',
+        ':',
+        '0',
+        ']',
+        ['memory', '[', '0', ':', '6', ']'],
+        ';'],
+      ['reg', '[', '31', ':', '0', ']', ['inst_word'], ';'],
+      ['assign', [['inst'], '=', ['inst_word']], ';'],
+      [ 'function',
+        '[',
+        '31',
+        ':',
+        '0',
+        ']',
+        'to_integer',
+        ';',
+        [['input', '[', '31', ':', '0', ']', 'argument', ';']],
+        [[[['to_integer'], '=', ['argument']], ';']],
+        'endfunction'],
+      [ 'initial',
+        [ 'begin',
+          [ [[['memory', ['[', '0', ']']], '=', "32 'h 00000001"], ';'],
+            [[['memory', ['[', '1', ']']], '=', "32 'h 00000002"], ';'],
+            [[['memory', ['[', '2', ']']], '=', "32 'h 00000003"], ';'],
+            [[['memory', ['[', '3', ']']], '=', "32 'h 00000004"], ';'],
+            [[['memory', ['[', '4', ']']], '=', "32 'h 00000005"], ';'],
+            [[['memory', ['[', '5', ']']], '=', "32 'h 00000006"], ';'],
+            [[['memory', ['[', '6', ']']], '=', "32 'h 00000007"], ';']],
+          'end']],
+      [ 'always',
+        ['@', '(', [['addr']], ')'],
+        [ 'begin',
+          [ [ [ ['word_addr'],
+                '=',
+                ['to_integer', '(', ['addr'], ')'],
+                '/',
+                '4'],
+              ';'],
+            [ ['#', '250'],
+              [ [['inst_word'], '=', ['memory', ['[', ['word_addr'], ']']]],
+                ';']]],
+          'end']]],
+    'endmodule'],
+  [ ['module', 'pipe1', ';'],
+    [ ['reg', '[', '31', ':', '0', ']', ['zero_32'], ';'],
+      ['reg', ['zero'], ';'],
+      ['reg', '[', '31', ':', '0', ']', ['four_32'], ';'],
+      ['reg', ['clear'], ';'],
+      ['reg', ['clk'], ';'],
+      ['integer', ['counter'], ';'],
+      ['wire', ['nc1'], ';'],
+      ['wire', '[', '31', ':', '0', ']', ['IF_PC_next'], ';'],
+      ['wire', '[', '31', ':', '0', ']', ['IF_PC'], ';'],
+      ['wire', '[', '31', ':', '0', ']', ['inst'], ';'],
+      ['wire', '[', '31', ':', '0', ']', ['ID_IR'], ';'],
+      ['wire', '[', '31', ':', '0', ']', ['EX_IR'], ';'],
+      ['wire', '[', '31', ':', '0', ']', ['MEM_IR'], ';'],
+      ['wire', '[', '31', ':', '0', ']', ['WB_IR'], ';'],
+      [ 'function',
+        '[',
+        '31',
+        ':',
+        '0',
+        ']',
+        'to_integer',
+        ';',
+        [['input', '[', '31', ':', '0', ']', 'argument', ';']],
+        [[[['to_integer'], '=', ['argument']], ';']],
+        'endfunction'],
+      [ 'initial',
+        [ 'begin',
+          [ [[['zero_32'], '=', "32 'h 00000000"], ';'],
+            [[['zero'], '=', '0'], ';'],
+            [[['four_32'], '=', "32 'h 00000004"], ';'],
+            [[['clear'], '=', '1'], ';'],
+            [[['clk'], '=', '0'], ';'],
+            [[['counter'], '=', '0'], ';'],
+            [['#', '200'], [[['clear'], '=', '0'], ';']],
+            ['forever', [['#', '5000'], [[['clk'], '=', '~', ['clk']], ';']]]],
+          'end']],
+      ['initial', [['#', '60000'], ['$finish', ';']]],
+      [ 'register_32',
+        [['PC_reg'], ['(', ['clk'], ['clear'], ['IF_PC_next'], ['IF_PC'], ')']],
+        ';'],
+      [ 'add32',
+        [ ['PC_incr'],
+          [ '(',
+            ['IF_PC'],
+            ['four_32'],
+            ['zero'],
+            ['IF_PC_next'],
+            ['nc1'],
+            ')']],
+        ';'],
+      [ 'instruction_memory',
+        [['inst_mem'], ['(', ['IF_PC'], ['inst'], ')']],
+        ';'],
+      [ 'register_32',
+        [['ID_IR_reg'], ['(', ['clk'], ['clear'], ['inst'], ['ID_IR'], ')']],
+        ';'],
+      [ 'register_32',
+        [['EX_IR_reg'], ['(', ['clk'], ['clear'], ['ID_IR'], ['EX_IR'], ')']],
+        ';'],
+      [ 'register_32',
+        [['MEM_IR_reg'], ['(', ['clk'], ['clear'], ['EX_IR'], ['MEM_IR'], ')']],
+        ';'],
+      [ 'register_32',
+        [['WB_IR_reg'], ['(', ['clk'], ['clear'], ['MEM_IR'], ['WB_IR'], ')']],
+        ';'],
+      [ 'always',
+        ['@', '(', ['posedge', ['clk']], ')'],
+        [ 'begin',
+          [ ['$write', '(', '"at clock "', ')', ';'],
+            ['$write', '(', '"%0d"', ['counter'], ')', ';'],
+            ['$write', '(', '"  PC="', ')', ';'],
+            ['$write', '(', '"%h"', ['IF_PC'], ')', ';'],
+            ['$write', '(', '"\\n"', ')', ';'],
+            ['$write', '(', '"IF  stage inst="', ')', ';'],
+            ['$write', '(', '"%h"', ['inst'], ')', ';'],
+            ['$write', '(', '"\\n"', ')', ';'],
+            ['$write', '(', '"IF_PC_next    ="', ')', ';'],
+            ['$write', '(', '"%h"', ['IF_PC_next'], ')', ';'],
+            ['$write', '(', '"\\n"', ')', ';'],
+            ['$write', '(', '"ID  stage   IR="', ')', ';'],
+            ['$write', '(', '"%h"', ['ID_IR'], ')', ';'],
+            ['$write', '(', '"\\n"', ')', ';'],
+            ['$write', '(', '"EX  stage   IR="', ')', ';'],
+            ['$write', '(', '"%h"', ['EX_IR'], ')', ';'],
+            ['$write', '(', '"\\n"', ')', ';'],
+            ['$write', '(', '"MEM stage   IR="', ')', ';'],
+            ['$write', '(', '"%h"', ['MEM_IR'], ')', ';'],
+            ['$write', '(', '"\\n"', ')', ';'],
+            ['$write', '(', '"WB  stage   IR="', ')', ';'],
+            ['$write', '(', '"%h"', ['WB_IR'], ')', ';'],
+            ['$write', '(', '"\\n"', ')', ';'],
+            ['$write', '(', '"\\n"', ')', ';'],
+            [[['counter'], '=', ['counter'], '+', '1'], ';']],
+          'end']]],
+    'endmodule']]

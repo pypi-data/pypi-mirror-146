@@ -1,0 +1,125 @@
+/* simple_core */
+// Author Andrew Laffely
+// Last modified: 12 Feb 03
+
+module adder_core (reset, hold, in_ready, out_ready, data_in, data_out, read, write, in_addr, out_addr);
+input reset, hold;                // External control signals
+input [2:0] in_ready, out_ready;  // Input and Output port ready registers
+input [31:0] data_in;             // Input data
+
+output read, write;               // Read and Write signals
+output [31:0] data_out;
+output [1:0] in_addr, out_addr;   // Port addresses.
+reg read, write; 
+reg [31:0] data_out;
+reg [1:0] in_addr, out_addr;   
+
+reg [31:0] opA, opB;
+reg [31:0] res;
+reg ops_ready, res_ready; //Internal flow conrol
+reg stall, go;
+  
+reg lclock;
+initial
+begin
+	#3 lclock = 1'b0;
+	forever #47 lclock = ~lclock;  // Use 10 or 20 or 40 or 80 etc.
+end
+
+/*********************** READ DATA *****************************/
+always @ (posedge lclock)
+  begin
+	#1 if(((!ops_ready)||(!stall))&&(!hold)&&(!reset))  
+	// Do not read anymore if full and stalled
+		if(in_ready[in_addr])  // check port
+			read = 1;
+  end
+
+always @ (negedge lclock)
+  begin
+	read = 0;
+  end
+
+always @ (negedge read)
+  begin
+    if (!reset)
+      begin
+	if ((in_addr[0])&&(!hold))
+	  begin
+		opB=data_in;
+		ops_ready=1;
+	  end
+	else
+	  begin
+		opA=data_in;
+	  end
+	$display("In Core=%h addr=%b ops_ready=%b",data_in, in_addr, ops_ready);
+	#1 in_addr[0]=~in_addr[0];   // next data	
+      end
+  end
+/********************* End READ DATA ***************************/
+
+/*********************** Write DATA ****************************/
+always @ (posedge lclock)
+  begin
+	if((res_ready)&&(!hold)&&(!reset)) // wait until the pipe is full
+		if(out_ready[out_addr])  // check port
+			write = 1;
+  end
+
+always @ (negedge lclock)
+  begin
+	write = 0;
+  end
+
+always @ (negedge write)
+  begin
+	if(!reset)
+	  begin
+		data_out=res;
+		$display("Out Core=%h out_addr=%b ops_ready=%b",data_out, out_addr, ops_ready);
+	res_ready=0;
+	  end
+  end
+/******************** End Write DATA ***************************/
+
+/************************ Reset ********************************/
+always @ (reset)
+  begin
+	read=0;
+	write=0;
+	in_addr=0;
+	out_addr=0;
+	ops_ready=0;
+	res_ready=0;
+	stall = 0;
+  end
+/*********************** End Reset *****************************/
+
+/******************* Core flow Control *************************/
+// stall tells the pipeline to stop adding and stop taking in data
+always @ (posedge lclock)
+  begin
+	if(!out_ready[out_addr])
+		stall = 1;
+  end
+
+always @ (posedge out_ready[out_addr])
+  begin
+	stall=0;
+  end
+/******************* End flow Control *************************/
+
+/************************ Proccessing *************************/
+always @ (posedge lclock)
+  begin
+	if((ops_ready)&&(!stall)&&(!hold))
+	  begin
+		res=opA+opB;  //Wow this 32 bit adder is fast
+		res_ready=1;
+		ops_ready=0;
+		
+	  end
+  end
+/********************* End Proccessing *************************/
+endmodule

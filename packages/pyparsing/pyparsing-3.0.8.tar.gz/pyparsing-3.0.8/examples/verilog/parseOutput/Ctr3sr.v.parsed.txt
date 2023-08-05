@@ -1,0 +1,34 @@
+module Ctr3sr(Clk, Reset, Out);
+//
+// Counts to 3 with synchronous reset
+// At every rising edge the if-statment looks at reset and out, if the 
+// term is fulfilled out will set to 0. Otherwise out will be increased by one.
+//
+//
+input Clk;		// Clock: rising edge
+input Reset;		// synchronous reset
+output [1:0] Out;	// counteroutput
+
+reg [1:0] Out;		// register
+
+	always @ (posedge Clk)
+		if (Reset || (Out == 2 ))
+			Out = 0;
+		else
+			Out = Out + 1;
+endmodule
+
+
+[ [ ['module', 'Ctr3sr', '(', [['Clk'], ['Reset'], ['Out']], ')', ';'],
+    [ ['input', 'Clk', ';'],
+      ['input', 'Reset', ';'],
+      ['output', '[', '1', ':', '0', ']', 'Out', ';'],
+      ['reg', '[', '1', ':', '0', ']', ['Out'], ';'],
+      [ 'always',
+        ['@', '(', ['posedge', ['Clk']], ')'],
+        [ 'if',
+          ['(', ['Reset'], '||', '(', [['Out'], '==', '2'], ')', ')'],
+          [[['Out'], '=', '0'], ';'],
+          'else',
+          [[['Out'], '=', ['Out'], '+', '1'], ';']]]],
+    'endmodule']]

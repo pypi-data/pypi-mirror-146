@@ -1,0 +1,115 @@
+# find_driver.tcl
+#
+# Tcl script to run within Synopsys Design Compiler(TM)
+# in Tcl-shell mode.
+#
+# Tcl procedure to find the driver on a specified object.
+# The argument "thing" should be an object name.  
+# The procedure will descend arbitrarily deep into the
+# design hierarchy to find the ultimate driving cell of 
+# the specified object.
+#
+# The procedure works correctly when "thing" is the name of a net,
+# port, or pin.
+#
+# Jonathan Bromley, 13 June 2002
+#
+#####################################################################
+#
+# DISCLAIMER:
+#
+# This software is provided "as-is" by Doulos Ltd as a service to
+# members of the electronics design community, and comes WITHOUT
+# WARRANTY OF ANY KIND.  Doulos has made all reasonable efforts
+# to ensure that this software performs as described, but accepts
+# no liability for any consequences of its use either in its 
+# present form or in any modified form that you may create.
+#
+# You are welcome to use this software, or any modification of
+# it, in your own application.  If you modify it, you must
+# add comments clearly indicating that it is not the original
+# version as provided by Doulos Ltd.
+#
+# You are very welcome to contribute improvements or corrections
+# to this software, and your authorship of any such changes that
+# we incorporate will be acknowledged in the source code.  Send
+# your contributions by email to info@doulos.com mentioning
+# "Tcl for DC" in the subject line.
+#
+#####################################################################
+
+proc find_driver {thing} {
+
+  # Get the driving pins of thing within the instance.
+  # First we need to know the name of thing's net(s).
+
+  # First, assume it's a net and find the related object.
+  # Use "redirect" to avoid unwanted console output from the
+  # get_net command.
+  redirect /dev/null {set net [get_net $thing]}
+
+  # Did we fail to locate the net that way?
+  if {![sizeof_collection $net]} {
+    # Try to locate its net...  this works if it's a port.
+    redirect /dev/null {set net [get_net -of_object $thing]}
+  } 
+
+  # Did we fail to locate the net that way?
+  if {![sizeof_collection $net]} {
+    # try to find what it's connected to!
+    set its_nets [find net [all_connected $thing]]
+    # But we want only those nets at the top of the current hierarchy.
+    set net {}
+    foreach_in_collection n $its_nets {
+      if {![string match */* [get_object_name $n]]} {
+        # No need to redirect this, since it's inside a loop and hence
+        # doesn't return its result.
+        set net [add_to_collection $net $n -unique]
+      }
+    }
+  }
+
+  # Now we know its net name, we can scan for pins on that net.
+  set pin [get_pin -of_object $net -filter @pin_direction!=in]
+    
+  # Bail out if there's not exactly one pin driving the net!
+  set nDrivers [sizeof_collection $pin]
+  if {$nDrivers == 0} {
+    error "There appears to be no driver on this port or net!"
+  } elseif {$nDrivers != 1} {
+    foreach_in_collection n $pin {
+      puts "[get_object_name $n]\n"
+    }
+    error "Bailing out, I can only cope with one driver per net!"
+  }
+  
+  # Extract the pin's name.  It will have the form "instance/port".
+  set driver [get_object_name $pin]
+  
+  # Parse the pin name "instance/port" to get both
+  foreach {inst port} [split $driver {/}] {}
+  
+  # Find if we've reached a leaf of the hierarchy.
+  if {[get_attribute $inst is_hierarchical]} {
+  
+    # It's hierarchical so we must descend into it.
+
+    # Stack the current context
+    redirect /dev/null {set home [get_object [current_design]]}
+    # Find the design name of the instance and descend into it
+    redirect /dev/null {current_design [get_attrib $inst ref_name]}
+    
+    # Dig down to find the driver within this instance
+    set driver [find_driver $port]
+    # puts "reached driver $driver"
+    
+    # Make up the hierarchical name
+    set driver [join [list $inst $driver] {/}]
+    
+    # Unstack context
+    redirect /dev/null {current_design $home}
+  }
+  
+  return $driver
+  
+}

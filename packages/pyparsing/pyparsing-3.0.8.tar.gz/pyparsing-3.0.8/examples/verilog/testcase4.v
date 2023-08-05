@@ -1,0 +1,94 @@
+`timescale 1 ns/100 ps
+// Behavioral description of FIFO with:
+// active high write enable
+// active high read  enable
+// active low asynchronous clear
+// rising edge clock
+// active high full  flag
+// active low  empty flag
+
+module reg_fifo (Data, Q, Aclr, Clock, WE, RE, FF, EF);
+
+parameter width = 8;
+parameter depth = 8;
+parameter addr  = 3;
+
+input Clock, WE, RE, Aclr;
+input [width-1:0] Data;
+output FF, EF; //Full & Empty Flags
+output [width-1:0] Q;
+reg    [width-1:0] Q;
+reg    [width-1:0] mem_data [depth-1:0];
+reg    [addr -1:0] WAddress, RAddress;
+reg    FF, EF;
+
+// Write functional section
+always @ (posedge Clock or negedge Aclr)
+begin
+  if(!Aclr)
+    WAddress = #2 0;
+  else if(WE)
+    WAddress = #2 WAddress + 1;
+end
+
+// Write reg
+always @ (posedge Clock)
+begin
+  if(WE)
+    mem_data[WAddress] = Data;
+end
+
+// Read functional section
+always @ (posedge Clock or negedge Aclr)
+begin
+  if(!Aclr)
+    RAddress = #1 0;
+  else if (RE)
+    RAddress = #1 RAddress + 1;
+end
+
+// Read reg
+always @ (posedge Clock)
+begin
+  if(RE)
+    Q = mem_data[RAddress];
+end
+
+// Full Flag
+always @ (posedge Clock or negedge Aclr)
+begin
+  if(!Aclr)
+    FF = #1 1'b0;
+  else if
+  (
+    (WE & !RE) && //Write operation
+      ( //Next cycle is full 
+        (WAddress == RAddress-1) || 
+        ( (WAddress == depth-1) && (RAddress == 1'b0) )
+      )
+  )
+    FF = #1 1'b1;
+  else
+    FF = #1 1'b0;
+end
+
+// Empty Flag
+always @ (posedge Clock or negedge Aclr)
+begin
+  if(!Aclr)
+    EF = #1 1'b0;
+  else if
+  (
+    (!WE & RE) && //Read operation
+      ( //Next cycle is empty 
+        (WAddress == RAddress+1) || 
+        ( (RAddress == depth-1) && (WAddress == 1'b0) )
+      )
+  )
+    EF = #1 1'b0;
+  else
+    EF = #1 1'b1;
+end
+
+endmodule
+

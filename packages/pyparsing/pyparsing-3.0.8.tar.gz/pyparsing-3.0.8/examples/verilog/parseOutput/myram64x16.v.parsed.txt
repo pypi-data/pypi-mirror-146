@@ -1,0 +1,63 @@
+// Define the black box
+module myram64x16 (data,address,inclock,outclock,we,q)
+/* syn_black_box 
+
+   LPM_WIDTH=16 
+   LPM_WIDTHAD=6 
+   LPM_TYPE="LPM_RAM_DQ"  */ ; 
+
+input [15:0] data;
+input [5:0] address;
+input inclock, outclock;
+input we;
+output [15:0] q;
+
+endmodule
+
+// Instantiate the LPM parameterized module in the 
+//    higher-level module myram
+module myram(clock, we, data, address, q);
+input clock, we;
+input [15:0] data;
+input [5:0] address;
+output [15:0] q;
+
+
+       myram_64x16 inst1 (data, address, clock, clock, we, q);
+
+endmodule
+
+[ [ [ 'module',
+      'myram64x16',
+      '(',
+      [['data'], ['address'], ['inclock'], ['outclock'], ['we'], ['q']],
+      ')',
+      ';'],
+    [ ['input', '[', '15', ':', '0', ']', 'data', ';'],
+      ['input', '[', '5', ':', '0', ']', 'address', ';'],
+      ['input', 'inclock', 'outclock', ';'],
+      ['input', 'we', ';'],
+      ['output', '[', '15', ':', '0', ']', 'q', ';']],
+    'endmodule'],
+  [ [ 'module',
+      'myram',
+      '(',
+      [['clock'], ['we'], ['data'], ['address'], ['q']],
+      ')',
+      ';'],
+    [ ['input', 'clock', 'we', ';'],
+      ['input', '[', '15', ':', '0', ']', 'data', ';'],
+      ['input', '[', '5', ':', '0', ']', 'address', ';'],
+      ['output', '[', '15', ':', '0', ']', 'q', ';'],
+      [ 'myram_64x16',
+        [ ['inst1'],
+          [ '(',
+            ['data'],
+            ['address'],
+            ['clock'],
+            ['clock'],
+            ['we'],
+            ['q'],
+            ')']],
+        ';']],
+    'endmodule']]

@@ -1,0 +1,95 @@
+// basic demo which generates a clock 
+// and uses 3 ScriptSim programs to 
+// control the bus, act as memory, and monitor the bus 
+module Demo; 
+   wire clock; 
+   wire [1:0]  #1 op; 
+   wire [15:0] #1 adr; 
+   wire [31:0] #1 data; 
+
+   reg clock_reg; 
+   reg [1:0]  op_reg; 
+   reg [15:0] adr_reg; 
+   reg [31:0] data_read; 
+   reg [31:0] data_write; 
+
+   assign clock = clock_reg; 
+   assign op = op_reg; 
+   assign adr = adr_reg; 
+   assign data = data_write; 
+   assign data = data_read; 
+
+   initial begin: main_block 
+      clock_reg = 1; 
+      $scriptsim("monitor.pl", clock, op, adr, data); 
+      $scriptsim("master.pl",  clock, op_reg, adr_reg, data_write); 
+      $scriptsim("slave.pl",   clock, op, adr, data, data_read); 
+   end // block: main_block 
+
+   // generate a clock with 10ns period 
+   always begin: clock_gen 
+      #5 clock_reg = 1; 
+      #5 clock_reg = 0; 
+   end // block: clock_gen 
+
+endmodule // Demo 
+  
+
+
+[ [ ['module', 'Demo', ';'],
+    [ ['wire', ['clock'], ';'],
+      ['wire', '[', '1', ':', '0', ']', ['#', '1'], ['op'], ';'],
+      ['wire', '[', '15', ':', '0', ']', ['#', '1'], ['adr'], ';'],
+      ['wire', '[', '31', ':', '0', ']', ['#', '1'], ['data'], ';'],
+      ['reg', ['clock_reg'], ';'],
+      ['reg', '[', '1', ':', '0', ']', ['op_reg'], ';'],
+      ['reg', '[', '15', ':', '0', ']', ['adr_reg'], ';'],
+      ['reg', '[', '31', ':', '0', ']', ['data_read'], ';'],
+      ['reg', '[', '31', ':', '0', ']', ['data_write'], ';'],
+      ['assign', [['clock'], '=', ['clock_reg']], ';'],
+      ['assign', [['op'], '=', ['op_reg']], ';'],
+      ['assign', [['adr'], '=', ['adr_reg']], ';'],
+      ['assign', [['data'], '=', ['data_write']], ';'],
+      ['assign', [['data'], '=', ['data_read']], ';'],
+      [ 'initial',
+        [ 'begin',
+          ':',
+          'main_block',
+          [[['clock_reg'], '=', '1'], ';'],
+          [ '$scriptsim',
+            '(',
+            '"monitor.pl"',
+            ['clock'],
+            ['op'],
+            ['adr'],
+            ['data'],
+            ')',
+            ';'],
+          [ '$scriptsim',
+            '(',
+            '"master.pl"',
+            ['clock'],
+            ['op_reg'],
+            ['adr_reg'],
+            ['data_write'],
+            ')',
+            ';'],
+          [ '$scriptsim',
+            '(',
+            '"slave.pl"',
+            ['clock'],
+            ['op'],
+            ['adr'],
+            ['data'],
+            ['data_read'],
+            ')',
+            ';'],
+          'end']],
+      [ 'always',
+        [ 'begin',
+          ':',
+          'clock_gen',
+          [['#', '5'], [[['clock_reg'], '=', '1'], ';']],
+          [['#', '5'], [[['clock_reg'], '=', '0'], ';']],
+          'end']]],
+    'endmodule']]

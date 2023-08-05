@@ -1,0 +1,106 @@
+integer
+  delay_dev,
+
+  seed,
+  and_gate_seed,
+  addacc_conf_seed,
+  addacc_dro_seed,
+  addacc_t1ff_seed,
+  addacc1_dro_seed,
+  addacc1_t1ff_seed,
+  psr1_conf_seed,
+  psr1_dro_seed,
+  psr1_split_seed,
+  psr2_and_seed,
+  psr2_split_seed,
+  inv_cell_seed,
+  xor_gate_seed,
+  dro_cell_seed,
+  dro1_cell_seed,
+  tff_seed,
+
+  and_hs_dev,
+  addacc_dro_hs_dev,
+  addacc_t1ff_hs_dev,
+  addacc1_dro_hs_dev,
+  addacc1_t1ff_hs_dev,
+  psr1_dro_hs_dev,
+  psr2_and_hs_dev,
+  inv_hs_dev,
+  xor_hs_dev,
+  dro_hs_dev,
+  dro1_hs_dev;
+
+real
+  and_gate_variation,
+  addacc_conf_variation,
+  addacc_dro_variation,
+  addacc_t1ff_variation,
+  addacc1_dro_variation,
+  addacc1_t1ff_variation,
+  psr1_conf_variation,
+  psr1_dro_variation,
+  psr1_split_variation,
+  psr2_and_variation,
+  psr2_split_variation,
+  inv_cell_variation,
+  xor_gate_variation,
+  dro_cell_variation,
+  dro1_cell_variation,
+  tff_variation;
+
+initial
+
+  begin
+
+   	`include "SEED"
+
+  	and_gate_variation = 0.15;
+  	addacc_conf_variation = 0.2;
+  	addacc_dro_variation = 0.16;
+  	addacc_t1ff_variation = 0.2;
+  	addacc1_dro_variation = 0.16;
+  	addacc1_t1ff_variation = 0.2;
+  	psr1_conf_variation = 0.2;
+  	psr1_dro_variation = 0.16;
+  	psr1_split_variation = 0.2;
+  	psr2_and_variation = 0.15;
+  	psr2_split_variation = 0.2;
+  	inv_cell_variation = 0.14;
+  	xor_gate_variation = 0.17;
+  	dro_cell_variation = 0.16;
+  	dro1_cell_variation = 0.16;
+  	tff_variation = 0.2;
+
+	and_hs_dev = 3;
+  	addacc_dro_hs_dev = 2;
+ 	addacc_t1ff_hs_dev = 3;
+  	addacc1_dro_hs_dev = 2;
+ 	addacc1_t1ff_hs_dev = 3;
+	psr1_dro_hs_dev = 2;
+        psr2_and_hs_dev = 3;
+	inv_hs_dev = 2;
+	xor_hs_dev = 3;
+	dro_hs_dev = 2;
+	dro1_hs_dev = 2;
+
+
+	and_gate_seed = $random(seed);
+	addacc_conf_seed = $random(seed);
+	addacc_dro_seed = $random(seed);
+        addacc_t1ff_seed = $random(seed);
+	addacc1_dro_seed = $random(seed);
+        addacc1_t1ff_seed = $random(seed);
+        psr1_conf_seed = $random(seed);
+	psr1_dro_seed = $random(seed);
+        psr1_split_seed = $random(seed);
+	psr2_and_seed = $random(seed);
+        psr2_split_seed = $random(seed);
+        inv_cell_seed = $random(seed);
+        xor_gate_seed = $random(seed);        
+	dro_cell_seed = $random(seed);
+	dro1_cell_seed = $random(seed);
+	tff_seed = $random(seed);        
+
+  end
+

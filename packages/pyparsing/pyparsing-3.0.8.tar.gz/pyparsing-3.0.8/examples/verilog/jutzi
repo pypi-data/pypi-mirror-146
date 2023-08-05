@@ -1,0 +1,116 @@
+Vic, Darren, Quentin,
+
+Prof. Jutzi from Germany has asked us for support
+in adapting their Cadence DF II to design of RSFQ circuits.
+Below are my answers to his questions.
+Could you please review my letter, and let me know
+if I omitted anything or put something wrong.
+
+Thanks a lot,
+
+Kris
+
+
+Dear Prof. Jutzi,
+
+I am very sorry for the delay in my response.
+Below are my answers to your questions.
+
+> Having in mind your recommendations during my visit in Rochester 
+> on Sept. 6, 1996 I tried to apply Cadence for superconducting 
+> circuits after my co-workers got limited access to one of the
+> Sun Sparc workstations inside the university.
+> Tentative Cadence simulations with semiconductor devices work, 
+> also in connection with Berkeley SPICE. 
+> Josephson junction models for SPICE are in operation, for
+> Cadence not yet.
+> There are still difficulties to define a Cadence symbol for Josephson
+> junctions that is understood
+> by SPICE.
+
+We do not use Cadence for simulation of digital circuits
+at the junction (circuit) level in our group.
+Simulation at this level is performed
+outside of the Cadence environment using JSPICE.
+JSPICE is a version of SPICE extended with a model 
+of Josephson junction by Steve Whiteley. 
+The version of JSPICE we use cost $1500,
+but there exists an older version which is available
+in public domain and has almost the same functionality.
+If you are interested in acquiring any of these versions
+I would be happy to provide you with the address of the
+appropriate ftp site or the contact to Steve Whiteley.
+
+Even though we perform circuit level simulations outside of 
+the Cadence environment, we still use Cadence Schematic Editor 
+to draw the schematic of the circuit.
+Creating a symbol of a Josephson junction within this editor is
+straightforward. 
+When the schematic of the circuit is ready, its netlist is generated
+using commands of the schematic editor.
+By default, the generated netlist is in the format different from the
+format accepted by JSPICE.
+We wrote a special Pearl script to translate a netlist 
+in this default Cadence notation to the JSPICE netlist.
+
+> Perhaps there is a chance to get your support to adapt Cadence DF II to
+> RSFQ-circuits.
+
+The true value of Cadence becomes appearant at other levels
+of the design process:
+
+1. Cadence is used to create the layout of the circuit.
+   Cadence Layout Editor seems to be the most convenient
+   and robust out of all layout editors we are aware off.
+
+2. Cadence is used to check the layout for violations of the 
+   design rules in the circuit.
+   To make it possible, we wrote a special technology file
+   that describes the design rules required by Hypres, Inc.
+   fabrication process. 
+   We would be happy to provide you with this file.
+
+3. Cadence is used for extracting circuit components and their values
+   from the layout and for comparing the 
+   extracted circuit schematic with the original circuit 
+   schematic (LVS - layout vs. schematic verification).
+   This process has required a special technology file to be written.
+   This file is technology-dependent (similarly as the DRC technology file).
+   We can provide you with its version corresponding to the 
+   Hypres, Inc. fabrication process.
+
+4. We use Cadence for simulation of RSFQ circuits at the gate level.
+   This is performed using Verilog-XL simulator which is a part
+   of the Cadence environment.
+   To make this simulation possible, functional models of elementary 
+   RSFQ gates (DRO, AND, XOR, adder-accumulator, etc.) were first written 
+   in Verilog HDL.
+   This models are then associated within Cadence
+   with symbols of basic gates (a symbol view and a functional view
+   are just different views of the same gate).
+   After models of basic gates are ready, simulation of large digital 
+   circuits is possible without the need for any further calibration.
+   The speed of gate level simulation is approximately
+   two orders of magnitude greater than the speed of the junction 
+   level simulation. The accuracy of modeling is sufficient
+   to verify timing violations in the circuit.
+
+In summary:
+We would be happy to help you to adapt Cadence to the design of RSFQ circuits
+by providing you with:
+1. Pearl scripts for converting regular Cadence netlist to JSPICE notation.
+2. Technology files for Design Rule Checking, Component Extraction &
+   Layout vs. Schematic Verification.
+3. Verilog models of basic RSFQ gates.
+
+How much changes you would need to introduce to technology files (2.)
+to make your Cadence environment operational depends mainly on how 
+different the process you use is from the Hypres, Inc. fabrication 
+process.
+   
+I hope this information will be helpful in determining your
+further calibration steps.
+
+With best regards,
+
+Kris Gaj

@@ -1,0 +1,137 @@
+/////////////////////////////////////////////////////////////////////
+////                                                             ////
+////  USB function core primitives                               ////
+////  This file contains all technology dependent primitives     ////
+////  such as SSRAMs.                                            ////
+////                                                             ////
+////  Author: Rudolf Usselmann                                   ////
+////          rudi@asics.ws                                      ////
+////                                                             ////
+////                                                             ////
+////  Downloaded from: http://www.opencores.org/cores/usb/       ////
+////                                                             ////
+/////////////////////////////////////////////////////////////////////
+////                                                             ////
+//// Copyright (C) 2000 Rudolf Usselmann                         ////
+////                    rudi@asics.ws                            ////
+////                                                             ////
+//// This source file may be used and distributed without        ////
+//// restriction provided that this copyright statement is not   ////
+//// removed from the file and that any derivative work contains ////
+//// the original copyright notice and the associated disclaimer.////
+////                                                             ////
+////     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY     ////
+//// EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED   ////
+//// TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS   ////
+//// FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE AUTHOR      ////
+//// OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,         ////
+//// INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES    ////
+//// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE   ////
+//// GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR        ////
+//// BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  ////
+//// LIABILITY, WHETHER IN  CONTRACT, STRICT LIABILITY, OR TORT  ////
+//// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT  ////
+//// OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE         ////
+//// POSSIBILITY OF SUCH DAMAGE.                                 ////
+////                                                             ////
+/////////////////////////////////////////////////////////////////////
+
+//  CVS Log
+//
+//  $Id: primitives.v,v 1.0 2001/03/07 09:17:12 rudi Exp $
+//
+//  $Date: 2001/03/07 09:17:12 $
+//  $Revision: 1.0 $
+//  $Author: rudi $
+//  $Locker:  $
+//  $State: Exp $
+//
+// Change History:
+//               $Log: primitives.v,v $
+//               Revision 1.0  2001/03/07 09:17:12  rudi
+//
+//
+//               Changed all revisions to revision 1.0. This is because OpenCores CVS
+//               interface could not handle the original '0.1' revision ....
+//
+//               Revision 0.1.0.1  2001/02/28 08:11:11  rudi
+//               Initial Release
+//
+//
+
+`include "usb_defines.v"
+
+///////////////////////////////////////////////////////////////////
+//
+// SSRAM Model
+//
+///////////////////////////////////////////////////////////////////
+module ssram(	clk, rst,
+		radr, rdin, rdout, rre, rwe
+		);
+
+input		clk, rst;
+input	[14:0]	radr;
+input	[31:0]	rdin;
+output	[31:0]	rdout;
+input		rre, rwe;
+
+///////////////////////////////////////////////////////////////////
+//
+// Local Wires and Registers
+//
+
+reg	[31:0]	mem[0:8192];
+reg	[31:0]	rdout;
+wire	[11:0]	adr_i = radr[11:0];
+
+///////////////////////////////////////////////////////////////////
+//
+// Memory Logic
+//
+
+//always @(posedge clk)
+//	if(rst & rwe)	mem[adr_i] <= #1 rdin;
+
+always @(posedge clk)
+	if(rst & rre)	rdout <= #1 mem[adr_i];
+
+endmodule
+
+
+
+[ [ [ 'module',
+      'ssram',
+      '(',
+      [['clk'], ['rst'], ['radr'], ['rdin'], ['rdout'], ['rre'], ['rwe']],
+      ')',
+      ';'],
+    [ ['input', 'clk', 'rst', ';'],
+      ['input', '[', '14', ':', '0', ']', 'radr', ';'],
+      ['input', '[', '31', ':', '0', ']', 'rdin', ';'],
+      ['output', '[', '31', ':', '0', ']', 'rdout', ';'],
+      ['input', 'rre', 'rwe', ';'],
+      [ 'reg',
+        '[',
+        '31',
+        ':',
+        '0',
+        ']',
+        ['mem', '[', '0', ':', '8192', ']'],
+        ';'],
+      ['reg', '[', '31', ':', '0', ']', ['rdout'], ';'],
+      [ 'wire',
+        '[',
+        '11',
+        ':',
+        '0',
+        ']',
+        [[['adr_i'], '=', ['radr', ['[', '11', '0', ']']]]],
+        ';'],
+      [ 'always',
+        ['@', '(', ['posedge', ['clk']], ')'],
+        [ 'if',
+          ['(', ['rst'], '&', ['rre'], ')'],
+          [ [['rdout'], '<=', ['#', '1'], ['mem', ['[', ['adr_i'], ']']]],
+            ';']]]],
+    'endmodule']]

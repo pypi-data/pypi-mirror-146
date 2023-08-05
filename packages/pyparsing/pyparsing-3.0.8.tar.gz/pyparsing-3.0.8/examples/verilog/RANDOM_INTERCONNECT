@@ -1,0 +1,29 @@
+
+parameter
+
+  interconnect_variation = 0.2;
+
+real
+  interconnect_ratio;
+
+integer
+  seed,
+  interconnect_seed,
+
+  interconnect_mean,
+  interconnect_stddev;
+
+initial
+
+  begin
+	`include "SEED"
+
+  	interconnect_seed = $random(seed);
+	interconnect_mean = 1000;
+	interconnect_stddev = interconnect_mean*interconnect_variation;
+	interconnect_ratio = $dist_normal(interconnect_seed, 
+	   interconnect_mean, interconnect_stddev)/1000.0;
+	if(interconnect_ratio<0)
+	  interconnect_ratio = 0;
+  end
+

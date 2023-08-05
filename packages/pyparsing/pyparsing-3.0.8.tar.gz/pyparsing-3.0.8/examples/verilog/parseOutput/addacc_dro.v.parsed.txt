@@ -1,0 +1,340 @@
+// Verilog HDL for "RSFQ.lib", "dro_cell" "_functional"
+
+// Module DRO cell
+module addacc_dro (d, clk, out);
+
+input
+	d, clk;
+
+output
+	out;
+reg 
+	out;
+
+parameter
+	t_hold	= -3,
+	t_setup	= 8,
+	delay	= 13,
+
+// multichannel description of a warning file
+	warning_file=2,  
+// multichannel description of a delay file
+	delay_file = warning_file<<1;
+
+reg
+	d_internal, clk_internal,
+	d_state,          	   // internal state at the input d
+	d_set;		   	   // signal determining the moment when
+				   // the state of the d input changes to "1"
+
+integer
+	data_delay,  // delay between d and d_internal
+	clk_delay,   // delay between clk and clk_internal
+	out_delay,   // delay between clk_internal and out
+	out_value,   // output value in a given clock cycle
+	last_clk_time,	// time when the last clock pulse appeared
+	vt_hold,	// variable hold
+	vt_setup,	// variable setup
+	vdelay;		// variable delay
+
+`include "INIT"
+
+`ifdef RANDOM_DELAYS
+ `include "RANDOM_GATE"
+`endif
+
+
+initial 
+	begin
+		vt_hold = t_hold;
+		vt_setup = t_setup;
+		vdelay = delay;
+
+`ifdef RANDOM_DELAYS
+		delay_dev = addacc_dro_variation*delay;
+		vdelay = $dist_normal(addacc_dro_seed, delay, delay_dev);
+		vt_hold = $dist_normal(addacc_dro_seed, t_hold,
+                                       addacc_dro_hs_dev);
+		vt_setup = t_setup + (t_hold - vt_hold);
+`endif
+
+		#1 $fdisplay(delay_file, "module=%m, nom_delay=%0d, delay=%0d", delay, vdelay);
+		#1 $fdisplay(delay_file, "module=%m, nom_hold=%0d, hold=%0d", t_hold, vt_hold);
+		#1 $fdisplay(delay_file, "module=%m, nom_setup=%0d, setup=%0d", t_setup, vt_setup);
+
+
+// define delays between inputs & outputs and the corresponding
+//  internal auxiliary registers
+	  	if(vt_hold<0)
+		  begin
+	    	  	data_delay = -vt_hold;
+	    		clk_delay  = 0;
+			out_delay  = vdelay;
+		  end
+	  	else
+		  begin
+	   	  	data_delay = 0;
+	    		clk_delay  = vt_hold;
+		  	out_delay  = vdelay-vt_hold;
+		  end
+
+// clear internal registers and the output signal
+		d_internal = 0;
+		clk_internal = 0;
+		last_clk_time = 0;
+		d_state = 0;
+		d_set = 0;
+		out = 0;
+	end
+
+
+
+always @(posedge d) 	// Execute at positive edge of d
+	  d_internal <= #(data_delay) d;
+
+always @(posedge clk)  // Execute at positive edge of clk
+	  clk_internal <= #(clk_delay) clk;
+
+
+always @(posedge d_internal)
+	begin
+// setting the state of the d input
+                d_state <= d_state | 1'bx;
+		if (d_internal === 1)
+		  d_set <= #(vt_hold+vt_setup) 1;
+
+		d_internal <= 0;
+	end
+
+always @(posedge d_set)
+	begin
+		if ($stime - last_clk_time >= vt_hold+vt_setup)
+			d_state = 1;
+		else
+		  begin
+			d_state = 1'bx;
+
+		  // generating a warning
+		  	$fwrite(warning_file, 
+			 "Violation of hold/setup time in module %m.\n");
+			$fwrite(warning_file,
+			"Input D pulse at %0d,",
+			 $stime-data_delay-vt_hold-vt_setup);
+			$fwrite(warning_file,
+			"\tClock pulse at %0d.\n", last_clk_time-clk_delay);
+		  end
+
+		d_set <= 0;
+	end
+
+
+always @(posedge clk_internal)	
+	begin
+// computing the output
+		if (clk_internal === 1'bx)
+		  out_value = 1'bx;
+		else
+		  out_value = d_state;
+
+// transfering the result to the output
+		out <= #(out_delay) out_value;
+		out <= #(out_delay+2) 0;
+
+// clearing the internal state of the DRO
+		d_state  <= 0;
+
+		clk_internal <= 0;
+		last_clk_time = $stime;
+	end
+
+endmodule
+
+
+[ [ ['module', 'addacc_dro', '(', [['d'], ['clk'], ['out']], ')', ';'],
+    [ ['input', 'd', 'clk', ';'],
+      ['output', 'out', ';'],
+      ['reg', ['out'], ';'],
+      [ 'parameter',
+        ['t_hold', '=', '-', '3'],
+        ['t_setup', '=', '8'],
+        ['delay', '=', '13'],
+        ['warning_file', '=', '2'],
+        ['delay_file', '=', ['warning_file'], '<<', '1'],
+        ';'],
+      ['reg', ['d_internal'], ['clk_internal'], ['d_state'], ['d_set'], ';'],
+      [ 'integer',
+        ['data_delay'],
+        ['clk_delay'],
+        ['out_delay'],
+        ['out_value'],
+        ['last_clk_time'],
+        ['vt_hold'],
+        ['vt_setup'],
+        ['vdelay'],
+        ';'],
+      [ 'initial',
+        [ 'begin',
+          [ [[['vt_hold'], '=', ['t_hold']], ';'],
+            [[['vt_setup'], '=', ['t_setup']], ';'],
+            [[['vdelay'], '=', ['delay']], ';'],
+            [ [['delay_dev'], '=', ['addacc_dro_variation'], '*', ['delay']],
+              ';'],
+            [ [ ['vdelay'],
+                '=',
+                [ '$dist_normal',
+                  '(',
+                  ['addacc_dro_seed'],
+                  ['delay'],
+                  ['delay_dev'],
+                  ')']],
+              ';'],
+            [ [ ['vt_hold'],
+                '=',
+                [ '$dist_normal',
+                  '(',
+                  ['addacc_dro_seed'],
+                  ['t_hold'],
+                  ['addacc_dro_hs_dev'],
+                  ')']],
+              ';'],
+            [ [ ['vt_setup'],
+                '=',
+                ['t_setup'],
+                '+',
+                '(',
+                [['t_hold'], '-', ['vt_hold']],
+                ')'],
+              ';'],
+            [ ['#', '1'],
+              [ '$fdisplay',
+                '(',
+                ['delay_file'],
+                '"module=%m, nom_delay=%0d, delay=%0d"',
+                ['delay'],
+                ['vdelay'],
+                ')',
+                ';']],
+            [ ['#', '1'],
+              [ '$fdisplay',
+                '(',
+                ['delay_file'],
+                '"module=%m, nom_hold=%0d, hold=%0d"',
+                ['t_hold'],
+                ['vt_hold'],
+                ')',
+                ';']],
+            [ ['#', '1'],
+              [ '$fdisplay',
+                '(',
+                ['delay_file'],
+                '"module=%m, nom_setup=%0d, setup=%0d"',
+                ['t_setup'],
+                ['vt_setup'],
+                ')',
+                ';']],
+            [ 'if',
+              ['(', ['vt_hold'], '<', '0', ')'],
+              [ 'begin',
+                [ [[['data_delay'], '=', '-', ['vt_hold']], ';'],
+                  [[['clk_delay'], '=', '0'], ';'],
+                  [[['out_delay'], '=', ['vdelay']], ';']],
+                'end'],
+              'else',
+              [ 'begin',
+                [ [[['data_delay'], '=', '0'], ';'],
+                  [[['clk_delay'], '=', ['vt_hold']], ';'],
+                  [[['out_delay'], '=', ['vdelay'], '-', ['vt_hold']], ';']],
+                'end']],
+            [[['d_internal'], '=', '0'], ';'],
+            [[['clk_internal'], '=', '0'], ';'],
+            [[['last_clk_time'], '=', '0'], ';'],
+            [[['d_state'], '=', '0'], ';'],
+            [[['d_set'], '=', '0'], ';'],
+            [[['out'], '=', '0'], ';']],
+          'end']],
+      [ 'always',
+        ['@', '(', ['posedge', ['d']], ')'],
+        [ [['d_internal'], '<=', ['#', '(', [['data_delay']], ')'], ['d']],
+          ';']],
+      [ 'always',
+        ['@', '(', ['posedge', ['clk']], ')'],
+        [ [['clk_internal'], '<=', ['#', '(', [['clk_delay']], ')'], ['clk']],
+          ';']],
+      [ 'always',
+        ['@', '(', ['posedge', ['d_internal']], ')'],
+        [ 'begin',
+          [ [[['d_state'], '<=', ['d_state'], '|', "1 'b x"], ';'],
+            [ 'if',
+              ['(', ['d_internal'], '===', '1', ')'],
+              [ [ ['d_set'],
+                  '<=',
+                  ['#', '(', [['vt_hold'], '+', ['vt_setup']], ')'],
+                  '1'],
+                ';']],
+            [[['d_internal'], '<=', '0'], ';']],
+          'end']],
+      [ 'always',
+        ['@', '(', ['posedge', ['d_set']], ')'],
+        [ 'begin',
+          [ [ 'if',
+              [ '(',
+                ['$stime'],
+                '-',
+                ['last_clk_time'],
+                '>=',
+                ['vt_hold'],
+                '+',
+                ['vt_setup'],
+                ')'],
+              [[['d_state'], '=', '1'], ';'],
+              'else',
+              [ 'begin',
+                [ [[['d_state'], '=', "1 'b x"], ';'],
+                  [ '$fwrite',
+                    '(',
+                    ['warning_file'],
+                    '"Violation of hold/setup time in module %m.\\n"',
+                    ')',
+                    ';'],
+                  [ '$fwrite',
+                    '(',
+                    ['warning_file'],
+                    '"Input D pulse at %0d,"',
+                    ['$stime'],
+                    '-',
+                    ['data_delay'],
+                    '-',
+                    ['vt_hold'],
+                    '-',
+                    ['vt_setup'],
+                    ')',
+                    ';'],
+                  [ '$fwrite',
+                    '(',
+                    ['warning_file'],
+                    '"\\tClock pulse at %0d.\\n"',
+                    ['last_clk_time'],
+                    '-',
+                    ['clk_delay'],
+                    ')',
+                    ';']],
+                'end']],
+            [[['d_set'], '<=', '0'], ';']],
+          'end']],
+      [ 'always',
+        ['@', '(', ['posedge', ['clk_internal']], ')'],
+        [ 'begin',
+          [ [ 'if',
+              ['(', ['clk_internal'], '===', "1 'b x", ')'],
+              [[['out_value'], '=', "1 'b x"], ';'],
+              'else',
+              [[['out_value'], '=', ['d_state']], ';']],
+            [ [['out'], '<=', ['#', '(', [['out_delay']], ')'], ['out_value']],
+              ';'],
+            [ [['out'], '<=', ['#', '(', [['out_delay'], '+', '2'], ')'], '0'],
+              ';'],
+            [[['d_state'], '<=', '0'], ';'],
+            [[['clk_internal'], '<=', '0'], ';'],
+            [[['last_clk_time'], '=', ['$stime']], ';']],
+          'end']]],
+    'endmodule']]

@@ -1,0 +1,410 @@
+// sqrt8m.v     unsigned integer sqrt 8-bits computing unsigned integer 4-bits
+//             sqrt(00000100) = 0010   sqrt(4)=2
+//             sqrt(01000000) = 1000   sqrt(64)=8
+
+`timescale 1ns/1ns
+
+module Sm(x, y, b, u, d, bo);  // subtractor multiplexor 
+  input  x;
+  input  y;
+  input  b;
+  input  u;
+  output d;
+  output bo;
+
+  wire t011, t111, t010, t001, t100, td;
+  wire x_, y_, b_, u_, if_td, if_x;
+
+  // circuits of Sm
+  not notx(x_, x);
+  not noty(y_, y);
+  not notb(b_, b);
+  and a011(t011, x_, y,  b );
+  and a111(t111, x,  y,  b );
+  and a010(t010, x_, y,  b_);
+  and a001(t001, x_, y_, b );
+  and a100(t100, x,  y_, b_);
+  or  #1 or1(bo, t011, t111, t010, t001);
+  or  or2(td, t100, t001, t010, t111);
+  not notu(u_, u);  // four gate mux
+  and atd(if_td, td, u); 
+  and ax (if_x,   x, u_);
+  or  #1 or3(d, if_td, if_x);
+endmodule  // Sm
+
+
+module Sb(x, y, b, bo);  // subtractor multiplexor stage b 
+  input  x;
+  input  y;
+  input  b;
+  output bo;
+
+  wire t011, t111, t010, t001;
+  wire x_, y_, b_;
+
+  // circuits of Sb
+  not n01(x_, x);
+  not n02(y_, y);
+  not n03(b_, b);
+  and a011(t011, x_, y,  b);
+  and a111(t111, x,  y,  b);
+  and a010(t010, x_, y,  b_);
+  and a001(t001, x_, y_,  b);
+  or #1 bor(bo, t011, t111, t010, t001);
+endmodule  // Sb
+
+module S1(x, b, u, d, bo);  // subtractor multiplexor stage 1
+  input  x;
+  input  b;
+  input  u;
+  output d;
+  output bo;
+
+  wire t100, t001, td;
+  wire x_, b_, u_, if_td, if_x;
+
+  // circuits of S1
+  not not1(x_, x);
+  not not2(b_, b);
+  and a011(t001, x_,  b);
+  and a100(t100, x,   b_);
+  buf #1 buf1(bo, t001);
+  or or1(td, t100, t001);
+  not notu(u_, u);  // four gate mux
+  and atd(if_td, td, u); 
+  and ax (if_x,   x, u_);
+  or  #1 or3(d, if_td, if_x);
+endmodule  //  S1
+
+module S0(x, u, d, bo);    // subtractor multiplexor stage 0
+  input  x;
+  input  u;
+  output d;
+  output bo;
+
+  wire u_, if_bo, if_x;
+
+  // circuits of S0
+  not #1 n1(bo, x);
+  not notu(u_, u);  // four gate mux
+  and atd(if_bo, bo, u); 
+  and ax (if_x,   x, u_);
+  or  #1 or3(d, if_bo, if_x);
+endmodule  //  S0
+
+module Sn(x, b, bo); // subtractor multiplexor stage n 
+  input  x;
+  input  b;
+  output bo;
+
+  wire x_;
+
+  // circuits of Sn, complemented
+  not  n00(x_, x);
+  nand #1 n01(bo, x_, b);
+endmodule  //  Sn
+
+module S0b(x, bo);   // subtractor multiplexor stage 0b
+  input  x;
+  output bo;
+
+  // circuits of S0b
+  not #1 n0(bo, x);
+endmodule  //  S0b
+
+module S1b(x, b, bo);     // subtractor multiplexor stage 1b
+  input  x;
+  input  b;
+  output bo;
+
+  wire x_;
+
+  // circuits of S1b
+  not n00(x_, x);
+  and #1 n01(bo, x_, b);
+endmodule  //  S1b
+
+
+module psqrt(P, U);
+  input [7:0] P;
+  output [3:0] U;
+
+  wire b00, b01, b02, b03, b04, b05;  
+  wire x12, x13, x14, x15;  
+  wire b12, b13, b14, b15, b16;  
+  wire x24, x25, x26;  
+  wire b24, b25, b26, b27;  
+  wire x36, x37, bxx;  
+  wire b36, b37;  
+
+  // circuits of psqrt
+  //       x     y    b    u    d    bo
+  S0  s36(P[6],           b37, x36, b36);
+  S1  s37(P[7],      b36, b37, x37, bxx);
+  not t37(b37,  bxx);
+
+  S0  s24(P[4],           b27, x24, b24);
+  S1  s25(P[5],      b24, b27, x25, b25);
+  Sm  s26(x36 , b37, b25, b27, x26, b26);
+  Sn  s27(x37 ,      b26,           b27);
+
+  S0  s12(P[2],           b16, x12, b12);
+  S1  s13(P[3],      b12, b16, x13, b13);
+  Sm  s14(x24 , b27, b13, b16, x14, b14);
+  Sm  s15(x25 , b37, b14, b16, x15, b15);
+  Sn  s16(x26 ,      b15,           b16);
+
+  S0b s00(P[0],                     b00);
+  S1b s01(P[1],      b00,           b01);
+  Sb  s02(x12 , b16, b01,           b02);
+  Sb  s03(x13 , b27, b02,           b03);
+  Sb  s04(x14 , b37, b03,           b04);
+  Sn  s05(x15 ,      b04,           b05);
+  buf buf1(U[0], b05);
+  buf buf2(U[1], b16);
+  buf buf3(U[2], b27);
+  buf buf4(U[3], b37);
+
+endmodule  // psqrt
+
+module sqrt8m;  // test driver
+  reg [7:0] P;
+  wire [3:0] U;
+  integer i;
+  
+  // test of sqrt8m
+  psqrt s1(P, U);    // instantiate module
+  initial
+    begin  // test cases
+      for(i=0; i<256; i=i+1)
+        begin
+          P = i;
+          #40 $display("sqrt( %b )= %b", P, U);
+        end
+    end
+endmodule  //  sqrt8m
+
+
+
+[ [ [ 'module',
+      'Sm',
+      '(',
+      [['x'], ['y'], ['b'], ['u'], ['d'], ['bo']],
+      ')',
+      ';'],
+    [ ['input', 'x', ';'],
+      ['input', 'y', ';'],
+      ['input', 'b', ';'],
+      ['input', 'u', ';'],
+      ['output', 'd', ';'],
+      ['output', 'bo', ';'],
+      ['wire', ['t011', 't111', 't010', 't001', 't100', 'td'], ';'],
+      ['wire', ['x_', 'y_', 'b_', 'u_', 'if_td', 'if_x'], ';'],
+      ['not', ['notx'], '(', [['x_'], ['x']], ')', ';'],
+      ['not', ['noty'], '(', [['y_'], ['y']], ')', ';'],
+      ['not', ['notb'], '(', [['b_'], ['b']], ')', ';'],
+      ['and', ['a011'], '(', [['t011'], ['x_'], ['y'], ['b']], ')', ';'],
+      ['and', ['a111'], '(', [['t111'], ['x'], ['y'], ['b']], ')', ';'],
+      ['and', ['a010'], '(', [['t010'], ['x_'], ['y'], ['b_']], ')', ';'],
+      ['and', ['a001'], '(', [['t001'], ['x_'], ['y_'], ['b']], ')', ';'],
+      ['and', ['a100'], '(', [['t100'], ['x'], ['y_'], ['b_']], ')', ';'],
+      [ 'or',
+        ['#', '1'],
+        ['or1'],
+        '(',
+        [['bo'], ['t011'], ['t111'], ['t010'], ['t001']],
+        ')',
+        ';'],
+      [ 'or',
+        ['or2'],
+        '(',
+        [['td'], ['t100'], ['t001'], ['t010'], ['t111']],
+        ')',
+        ';'],
+      ['not', ['notu'], '(', [['u_'], ['u']], ')', ';'],
+      ['and', ['atd'], '(', [['if_td'], ['td'], ['u']], ')', ';'],
+      ['and', ['ax'], '(', [['if_x'], ['x'], ['u_']], ')', ';'],
+      ['or', ['#', '1'], ['or3'], '(', [['d'], ['if_td'], ['if_x']], ')', ';']],
+    'endmodule'],
+  [ ['module', 'Sb', '(', [['x'], ['y'], ['b'], ['bo']], ')', ';'],
+    [ ['input', 'x', ';'],
+      ['input', 'y', ';'],
+      ['input', 'b', ';'],
+      ['output', 'bo', ';'],
+      ['wire', ['t011', 't111', 't010', 't001'], ';'],
+      ['wire', ['x_', 'y_', 'b_'], ';'],
+      ['not', ['n01'], '(', [['x_'], ['x']], ')', ';'],
+      ['not', ['n02'], '(', [['y_'], ['y']], ')', ';'],
+      ['not', ['n03'], '(', [['b_'], ['b']], ')', ';'],
+      ['and', ['a011'], '(', [['t011'], ['x_'], ['y'], ['b']], ')', ';'],
+      ['and', ['a111'], '(', [['t111'], ['x'], ['y'], ['b']], ')', ';'],
+      ['and', ['a010'], '(', [['t010'], ['x_'], ['y'], ['b_']], ')', ';'],
+      ['and', ['a001'], '(', [['t001'], ['x_'], ['y_'], ['b']], ')', ';'],
+      [ 'or',
+        ['#', '1'],
+        ['bor'],
+        '(',
+        [['bo'], ['t011'], ['t111'], ['t010'], ['t001']],
+        ')',
+        ';']],
+    'endmodule'],
+  [ ['module', 'S1', '(', [['x'], ['b'], ['u'], ['d'], ['bo']], ')', ';'],
+    [ ['input', 'x', ';'],
+      ['input', 'b', ';'],
+      ['input', 'u', ';'],
+      ['output', 'd', ';'],
+      ['output', 'bo', ';'],
+      ['wire', ['t100', 't001', 'td'], ';'],
+      ['wire', ['x_', 'b_', 'u_', 'if_td', 'if_x'], ';'],
+      ['not', ['not1'], '(', [['x_'], ['x']], ')', ';'],
+      ['not', ['not2'], '(', [['b_'], ['b']], ')', ';'],
+      ['and', ['a011'], '(', [['t001'], ['x_'], ['b']], ')', ';'],
+      ['and', ['a100'], '(', [['t100'], ['x'], ['b_']], ')', ';'],
+      ['buf', ['#', '1'], ['buf1'], '(', [['bo'], ['t001']], ')', ';'],
+      ['or', ['or1'], '(', [['td'], ['t100'], ['t001']], ')', ';'],
+      ['not', ['notu'], '(', [['u_'], ['u']], ')', ';'],
+      ['and', ['atd'], '(', [['if_td'], ['td'], ['u']], ')', ';'],
+      ['and', ['ax'], '(', [['if_x'], ['x'], ['u_']], ')', ';'],
+      ['or', ['#', '1'], ['or3'], '(', [['d'], ['if_td'], ['if_x']], ')', ';']],
+    'endmodule'],
+  [ ['module', 'S0', '(', [['x'], ['u'], ['d'], ['bo']], ')', ';'],
+    [ ['input', 'x', ';'],
+      ['input', 'u', ';'],
+      ['output', 'd', ';'],
+      ['output', 'bo', ';'],
+      ['wire', ['u_', 'if_bo', 'if_x'], ';'],
+      ['not', ['#', '1'], ['n1'], '(', [['bo'], ['x']], ')', ';'],
+      ['not', ['notu'], '(', [['u_'], ['u']], ')', ';'],
+      ['and', ['atd'], '(', [['if_bo'], ['bo'], ['u']], ')', ';'],
+      ['and', ['ax'], '(', [['if_x'], ['x'], ['u_']], ')', ';'],
+      ['or', ['#', '1'], ['or3'], '(', [['d'], ['if_bo'], ['if_x']], ')', ';']],
+    'endmodule'],
+  [ ['module', 'Sn', '(', [['x'], ['b'], ['bo']], ')', ';'],
+    [ ['input', 'x', ';'],
+      ['input', 'b', ';'],
+      ['output', 'bo', ';'],
+      ['wire', ['x_'], ';'],
+      ['not', ['n00'], '(', [['x_'], ['x']], ')', ';'],
+      ['nand', ['#', '1'], ['n01'], '(', [['bo'], ['x_'], ['b']], ')', ';']],
+    'endmodule'],
+  [ ['module', 'S0b', '(', [['x'], ['bo']], ')', ';'],
+    [ ['input', 'x', ';'],
+      ['output', 'bo', ';'],
+      ['not', ['#', '1'], ['n0'], '(', [['bo'], ['x']], ')', ';']],
+    'endmodule'],
+  [ ['module', 'S1b', '(', [['x'], ['b'], ['bo']], ')', ';'],
+    [ ['input', 'x', ';'],
+      ['input', 'b', ';'],
+      ['output', 'bo', ';'],
+      ['wire', ['x_'], ';'],
+      ['not', ['n00'], '(', [['x_'], ['x']], ')', ';'],
+      ['and', ['#', '1'], ['n01'], '(', [['bo'], ['x_'], ['b']], ')', ';']],
+    'endmodule'],
+  [ ['module', 'psqrt', '(', [['P'], ['U']], ')', ';'],
+    [ ['input', '[', '7', ':', '0', ']', 'P', ';'],
+      ['output', '[', '3', ':', '0', ']', 'U', ';'],
+      ['wire', ['b00', 'b01', 'b02', 'b03', 'b04', 'b05'], ';'],
+      ['wire', ['x12', 'x13', 'x14', 'x15'], ';'],
+      ['wire', ['b12', 'b13', 'b14', 'b15', 'b16'], ';'],
+      ['wire', ['x24', 'x25', 'x26'], ';'],
+      ['wire', ['b24', 'b25', 'b26', 'b27'], ';'],
+      ['wire', ['x36', 'x37', 'bxx'], ';'],
+      ['wire', ['b36', 'b37'], ';'],
+      [ 'S0',
+        [ ['s36'],
+          ['(', ['P', ['[', '6', ']']], ['b37'], ['x36'], ['b36'], ')']],
+        ';'],
+      [ 'S1',
+        [ ['s37'],
+          [ '(',
+            ['P', ['[', '7', ']']],
+            ['b36'],
+            ['b37'],
+            ['x37'],
+            ['bxx'],
+            ')']],
+        ';'],
+      ['not', ['t37'], '(', [['b37'], ['bxx']], ')', ';'],
+      [ 'S0',
+        [ ['s24'],
+          ['(', ['P', ['[', '4', ']']], ['b27'], ['x24'], ['b24'], ')']],
+        ';'],
+      [ 'S1',
+        [ ['s25'],
+          [ '(',
+            ['P', ['[', '5', ']']],
+            ['b24'],
+            ['b27'],
+            ['x25'],
+            ['b25'],
+            ')']],
+        ';'],
+      [ 'Sm',
+        [ ['s26'],
+          ['(', ['x36'], ['b37'], ['b25'], ['b27'], ['x26'], ['b26'], ')']],
+        ';'],
+      ['Sn', [['s27'], ['(', ['x37'], ['b26'], ['b27'], ')']], ';'],
+      [ 'S0',
+        [ ['s12'],
+          ['(', ['P', ['[', '2', ']']], ['b16'], ['x12'], ['b12'], ')']],
+        ';'],
+      [ 'S1',
+        [ ['s13'],
+          [ '(',
+            ['P', ['[', '3', ']']],
+            ['b12'],
+            ['b16'],
+            ['x13'],
+            ['b13'],
+            ')']],
+        ';'],
+      [ 'Sm',
+        [ ['s14'],
+          ['(', ['x24'], ['b27'], ['b13'], ['b16'], ['x14'], ['b14'], ')']],
+        ';'],
+      [ 'Sm',
+        [ ['s15'],
+          ['(', ['x25'], ['b37'], ['b14'], ['b16'], ['x15'], ['b15'], ')']],
+        ';'],
+      ['Sn', [['s16'], ['(', ['x26'], ['b15'], ['b16'], ')']], ';'],
+      ['S0b', [['s00'], ['(', ['P', ['[', '0', ']']], ['b00'], ')']], ';'],
+      [ 'S1b',
+        [['s01'], ['(', ['P', ['[', '1', ']']], ['b00'], ['b01'], ')']],
+        ';'],
+      ['Sb', [['s02'], ['(', ['x12'], ['b16'], ['b01'], ['b02'], ')']], ';'],
+      ['Sb', [['s03'], ['(', ['x13'], ['b27'], ['b02'], ['b03'], ')']], ';'],
+      ['Sb', [['s04'], ['(', ['x14'], ['b37'], ['b03'], ['b04'], ')']], ';'],
+      ['Sn', [['s05'], ['(', ['x15'], ['b04'], ['b05'], ')']], ';'],
+      ['buf', ['buf1'], '(', [['U', ['[', '0', ']']], ['b05']], ')', ';'],
+      ['buf', ['buf2'], '(', [['U', ['[', '1', ']']], ['b16']], ')', ';'],
+      ['buf', ['buf3'], '(', [['U', ['[', '2', ']']], ['b27']], ')', ';'],
+      ['buf', ['buf4'], '(', [['U', ['[', '3', ']']], ['b37']], ')', ';']],
+    'endmodule'],
+  [ ['module', 'sqrt8m', ';'],
+    [ ['reg', '[', '7', ':', '0', ']', ['P'], ';'],
+      ['wire', '[', '3', ':', '0', ']', ['U'], ';'],
+      ['integer', ['i'], ';'],
+      ['psqrt', [['s1'], ['(', ['P'], ['U'], ')']], ';'],
+      [ 'initial',
+        [ 'begin',
+          [ [ 'for',
+              '(',
+              [['i'], '=', '0'],
+              ';',
+              [['i'], '<', '256'],
+              ';',
+              [['i'], '=', ['i'], '+', '1'],
+              ')',
+              [ 'begin',
+                [ [[['P'], '=', ['i']], ';'],
+                  [ ['#', '40'],
+                    [ '$display',
+                      '(',
+                      '"sqrt( %b )= %b"',
+                      ['P'],
+                      ['U'],
+                      ')',
+                      ';']]],
+                'end']]],
+          'end']]],
+    'endmodule']]

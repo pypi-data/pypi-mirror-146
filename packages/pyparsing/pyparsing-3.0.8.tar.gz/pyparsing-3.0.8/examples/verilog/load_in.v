@@ -1,0 +1,12 @@
+// Verilog HDL for "RSFQ.lib", "load_in" "_functional"
+
+module load_in (out);
+
+output out;
+
+reg out;
+
+initial
+  out = 0;
+
+endmodule

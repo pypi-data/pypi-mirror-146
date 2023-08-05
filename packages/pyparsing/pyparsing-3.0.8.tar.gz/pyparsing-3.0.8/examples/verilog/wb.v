@@ -1,0 +1,160 @@
+/////////////////////////////////////////////////////////////////////
+////                                                             ////
+////  WISHBONE Interface                                         ////
+////  This is the external bus interface, that is WISHBONE       ////
+////  SoC compliant.                                             ////
+////                                                             ////
+////                                                             ////
+////  Author: Rudolf Usselmann                                   ////
+////          rudi@asics.ws                                      ////
+////                                                             ////
+////                                                             ////
+////  Downloaded from: http://www.opencores.org/cores/usb/       ////
+////                                                             ////
+/////////////////////////////////////////////////////////////////////
+////                                                             ////
+//// Copyright (C) 2000 Rudolf Usselmann                         ////
+////                    rudi@asics.ws                            ////
+////                                                             ////
+//// This source file may be used and distributed without        ////
+//// restriction provided that this copyright statement is not   ////
+//// removed from the file and that any derivative work contains ////
+//// the original copyright notice and the associated disclaimer.////
+////                                                             ////
+////     THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY     ////
+//// EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED   ////
+//// TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS   ////
+//// FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE AUTHOR      ////
+//// OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,         ////
+//// INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES    ////
+//// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE   ////
+//// GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR        ////
+//// BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  ////
+//// LIABILITY, WHETHER IN  CONTRACT, STRICT LIABILITY, OR TORT  ////
+//// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT  ////
+//// OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE         ////
+//// POSSIBILITY OF SUCH DAMAGE.                                 ////
+////                                                             ////
+/////////////////////////////////////////////////////////////////////
+
+//  CVS Log
+//
+//  $Id: wb.v,v 1.0 2001/03/07 09:17:12 rudi Exp $
+//
+//  $Date: 2001/03/07 09:17:12 $
+//  $Revision: 1.0 $
+//  $Author: rudi $
+//  $Locker:  $
+//  $State: Exp $
+//
+// Change History:
+//               $Log: wb.v,v $
+//               Revision 1.0  2001/03/07 09:17:12  rudi
+//
+//
+//               Changed all revisions to revision 1.0. This is because OpenCores CVS
+//               interface could not handle the original '0.1' revision ....
+//
+//               Revision 0.1.0.1  2001/02/28 08:11:47  rudi
+//               Initial Release
+//
+//
+
+`include "usb_defines.v"
+
+module wb(  // WISHBONE Interface
+        clk, rst, addr_i, data_i, data_o, 
+        ack_o, we_i, stb_i, cyc_i,
+
+        // UTMI Interface
+        phy_clk,
+
+        // Memory Arbiter Interface
+        wadr, wdout, wdin, wwe, wreq, wack,
+
+        // Register File interface
+        re, we, din, dout);
+
+input       clk;
+input       rst;
+input   [17:0]  addr_i;
+input   [31:0]  data_i;
+output  [31:0]  data_o;
+output      ack_o;
+input       we_i;
+input       stb_i;
+input       cyc_i;
+
+input       phy_clk;
+
+// Memory Arbiter Interface
+output  [14:0]  wadr;
+output  [31:0]  wdout;
+input   [31:0]  wdin;
+output      wwe;
+output      wreq;
+input       wack;
+
+// Register File interface
+output      re;
+output      we;
+input   [31:0]  din;
+output  [31:0]  dout;
+
+
+///////////////////////////////////////////////////////////////////
+//
+// Local Wires and Registers
+//
+
+reg     wack_r, wack_r2;
+wire        csm, csr;
+
+reg     ack_o;
+reg [31:0]  data_o;
+wire        reg_ack_d;
+
+///////////////////////////////////////////////////////////////////
+//
+// Interface Logic
+//
+
+assign csm = stb_i & cyc_i &  addr_i[17];   // Memory Chip Select
+assign csr = stb_i & cyc_i & !addr_i[17];   // Register File Chip Select
+
+// Memory Buffer Interface
+assign wadr = addr_i[16:2];
+assign wreq = csm;
+assign wwe  =  csm & we_i;
+assign wdout = data_i;
+
+assign  reg_ack_d = csr & !ack_o;
+
+always @(posedge phy_clk or posedge ack_o)
+    if(ack_o)   wack_r <= #1 0;
+    else        wack_r <= #1 wack | reg_ack_d;
+
+always @(posedge phy_clk or posedge ack_o)
+    if(ack_o)   wack_r2 <= #1 0;
+    else        wack_r2 <= #1 wack_r & (wack | reg_ack_d);
+
+// Register File Interface
+assign re = csr & !we_i;
+assign we = csr &  we_i;
+assign dout = data_i;
+
+// Shared Signals
+
+always @(posedge clk)
+    if(!rst | ack_o)                ack_o <= #1 0;
+    else
+    if(wack_r & wack_r2 & (wreq | reg_ack_d))   ack_o <= #1 1;
+
+always @(posedge clk)
+    if(!csm)                    data_o <= #1 din;
+    else
+    if(wack_r & wack_r2 & (reg_ack_d | wreq))   data_o <= #1 wdin;
+
+endmodule
+
+
