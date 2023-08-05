@@ -1,0 +1,5 @@
+print_python_hello/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+print_python_hello/hello.py,sha256=RmCrH_MQiHuPRyeTP2jut0ASpfvHEH1QCxRnlvDZW2s,21
+print_python_hello-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+print_python_hello-0.1.0.dist-info/METADATA,sha256=DmniW6oaFVkFbfYaL78hhrrlpWekwBGAuOtYvxXQYdg,388
+print_python_hello-0.1.0.dist-info/RECORD,,
