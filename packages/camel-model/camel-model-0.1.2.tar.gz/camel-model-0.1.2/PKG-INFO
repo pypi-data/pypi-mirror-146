@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: camel-model
+Version: 0.1.2
+Summary: 
+Author: todotom
+Author-email: tomasdarioam@protonmail.com
+Requires-Python: ==3.10.4
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pydantic (==1.9.0)
