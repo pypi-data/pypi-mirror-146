@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+calculator/__init__.py
+calculator/calculator.py
+woohoocalc.egg-info/PKG-INFO
+woohoocalc.egg-info/SOURCES.txt
+woohoocalc.egg-info/dependency_links.txt
+woohoocalc.egg-info/top_level.txt
