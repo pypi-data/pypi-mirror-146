@@ -1,0 +1,6 @@
+
+[extensions]
+global-chem-extensions
+
+[protonation]
+global-chem-extensions[protonation]
