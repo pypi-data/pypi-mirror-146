@@ -1,0 +1,12 @@
+bgetlib/__init__.py,sha256=rCAro9dIm4hp4_W7sDWpTG9GZJ9vnzyG2OOtbvMC01Q,394
+bgetlib/__metainfo__.py,sha256=CYQEnM0tzlHucS-OxQn3G2ooIePetzUP3dr1inyuyI4,254
+bgetlib/api.py,sha256=VmfMEGsq2QlwGMm65bJ24d8PWVyJ2HttSYBSoNCKQ_E,6225
+bgetlib/codec.py,sha256=7wqV0HNPZyH9pR2BsyVHKYDsTWhoSIgZK7gnihHGQVU,1915
+bgetlib/models.py,sha256=V4zt374BVpxGtN5Y0CJlpnogLcGajk9KaRp8W1j2YQw,3568
+bgetlib/streamer.py,sha256=IUET3UKe_vMClp6cGauyf8org6w_LyZNu0b2yzBOj9c,4501
+bgetlib/utils.py,sha256=0rV0rXKgK4OMpbNfuMNtspvY1nkUPOWk3oOexrTNdIs,2755
+bgetlib-3.2.2.dist-info/LICENSE,sha256=0Ogoi2mrE3d45lpXQIXFrpumbf02hGIJkwUVRXQjfLo,1057
+bgetlib-3.2.2.dist-info/METADATA,sha256=NNipA1N2eXjmDWYeYtcHYWWe9_uHBU6yZpKKo10pfDc,1911
+bgetlib-3.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bgetlib-3.2.2.dist-info/top_level.txt,sha256=nERLAIDyOTMaPdiyzp_WLsfknRCz4ghaNXJmRujUKRs,8
+bgetlib-3.2.2.dist-info/RECORD,,
