@@ -1,0 +1,9 @@
+LICENSE
+README.md
+macpywm
+setup.py
+macpywm.egg-info/PKG-INFO
+macpywm.egg-info/SOURCES.txt
+macpywm.egg-info/dependency_links.txt
+macpywm.egg-info/requires.txt
+macpywm.egg-info/top_level.txt
