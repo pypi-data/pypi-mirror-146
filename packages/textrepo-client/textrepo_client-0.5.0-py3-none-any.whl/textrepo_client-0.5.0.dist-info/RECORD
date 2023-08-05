@@ -1,0 +1,7 @@
+textrepo/__init__.py,sha256=QygJB00sB_rNMN7ivhyWQkSx-woRyE1V4zwMZH6MskM,20
+textrepo/client.py,sha256=1eBphJypRqka9B0QTMD0MFlCPdV0JPZQqONCqZGzauo,20174
+textrepo_client-0.5.0.dist-info/entry_points.txt,sha256=5Q_hKc6KVT9-6B5gPcuJWKJUDGmlg2vZGQUTAc41V4o,50
+textrepo_client-0.5.0.dist-info/LICENSE,sha256=Cems6LImdFuqGdU4ypB4NHnp9DvpIKHHgqCEXap801s,1078
+textrepo_client-0.5.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+textrepo_client-0.5.0.dist-info/METADATA,sha256=d1hGjOddrJ43LWZ7ynd6dXQiTEQFILGrB7-Sm5zK2zI,1666
+textrepo_client-0.5.0.dist-info/RECORD,,
