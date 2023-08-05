@@ -1,0 +1,7 @@
+django-ckeditor
+django-filer
+django-mptt
+django-taggit
+django<4.0,>=3.2.8
+easy-thumbnails
+simpel-themes
