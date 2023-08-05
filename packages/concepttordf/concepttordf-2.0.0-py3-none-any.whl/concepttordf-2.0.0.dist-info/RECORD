@@ -1,0 +1,15 @@
+concepttordf/__init__.py,sha256=iaqz1c7miJO2zyjJjdzpAHjBwCS0EBzogOd_0b8cVQ8,2176
+concepttordf/alternativformulering.py,sha256=p54aSrqWcavI4iR9BrWIP56ajz5ERSjnxCGhpYjJdd0,414
+concepttordf/associativerelation.py,sha256=KpSVbiUGsCLX8ceYt9YKmhYgUJ8b9N9FZuOpVVmUZPk,2489
+concepttordf/betydningsbeskrivelse.py,sha256=9dvwXrTLxWoaa_6ayY1Rt852r4IvnxC1_F5DTTzvobM,2779
+concepttordf/collection.py,sha256=6Ae22zSUVGWoNzmETbnStoFJKPiXyI9NAEHztwImHxk,6750
+concepttordf/concept.py,sha256=EdMtSItIKiHv-VVy_XegKP4p_WGbSWp25jbC0vs4jpg,27079
+concepttordf/conceptrelation.py,sha256=qWnsk8UoxI9QnUWyhGnguTd4KpWlQvkWheHWlVCmxwc,1412
+concepttordf/contact.py,sha256=-I9jkU0_AKZvhLQqJ9GfTog8tetYznaB448pZWSPdy8,3725
+concepttordf/definition.py,sha256=7Xcv6TKQ39QFoy-YqW6GxAtooQ18CFvYt8nFMd8Pn9c,392
+concepttordf/genericrelation.py,sha256=QgUD-QNtUxE7YNXnALJ5qQPJPmdO48gd53s1sz8AsWk,2969
+concepttordf/partitiverelation.py,sha256=xwmtQkJzjC02nJfMWeBYM_CUFpODBVQFsm51FSxZ_8M,2875
+concepttordf-2.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+concepttordf-2.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+concepttordf-2.0.0.dist-info/METADATA,sha256=qDpjtev0519bjshiSycbOyufD8qPlwJdZonoMISSnyI,4343
+concepttordf-2.0.0.dist-info/RECORD,,
