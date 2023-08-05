@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bgRemoverApp
+Version: 1.22
+Summary: Background Remover App
+Home-page: https://github.com/kos94ok/bgRemoverApp
+Author: kos94ok
+Author-email: mirmen999@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+
+UNKNOWN
+
