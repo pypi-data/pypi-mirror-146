@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyperfmon/__init__.py
+pyperfmon/pyperfmon.py
+pyperfmon.egg-info/PKG-INFO
+pyperfmon.egg-info/SOURCES.txt
+pyperfmon.egg-info/dependency_links.txt
+pyperfmon.egg-info/requires.txt
+pyperfmon.egg-info/top_level.txt
