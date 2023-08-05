@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tcp-client-server-raidix
+Version: 0.0.1
+Summary: Working TCP server and client with logging
+Author: Elnur Guliev
+Author-email: gulievelnur@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: bcrypt (==3.2.0)
+Requires-Dist: cffi (==1.15.0)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: shortuuid (==1.0.8)
+Requires-Dist: six (==1.16.0)
+
+UNKNOWN
+
