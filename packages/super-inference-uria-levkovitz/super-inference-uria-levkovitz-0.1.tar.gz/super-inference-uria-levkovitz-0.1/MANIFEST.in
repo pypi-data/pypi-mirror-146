@@ -1,0 +1,3 @@
+include super_inference/models/*.pt
+include super_inference/images/*.PNG
+include super_inference/images/*.jpeg
