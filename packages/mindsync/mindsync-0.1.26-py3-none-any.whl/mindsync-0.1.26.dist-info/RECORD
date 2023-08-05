@@ -1,0 +1,15 @@
+mindsync/__init__.py,sha256=yYxLcEa4jEHS8ayRsoFbUZ83MyJDb8OtvOuljpiIVM0,54
+mindsync/__main__.py,sha256=MxL5XTCU52QPLCri5ElZZ0ivx_iiI-t9H7k8Fn0ScmI,124
+mindsync/api.py,sha256=-TkijGKy0Hb38hPXO6EQGGuUvIHNHAw4JwqB9uAxXqA,16849
+mindsync/api_test.py,sha256=PodBRM44_qAFdegM_1r2DXZLF6VTYv-Iik1RquBixAk,15124
+mindsync/cli.py,sha256=tv93jsgmX4mFLIzS_B7IjfwwHqh_LAC6sarOD8p-msk,9956
+mindsync/cli_handler.py,sha256=jbZzgS8bo9n0yAJsiZ0fMHHPBEusbyJPcwowRvERv30,864
+mindsync/cli_handler_test.py,sha256=ueAkBRseMkegH78xoW-qw6Yhnh1sNpcpG7oOHyGomeU,3334
+mindsync/cli_test.py,sha256=aXC8hXIsI3653f2_x0s159ZBA7Bal04wSpfEjOopUfE,10378
+mindsync/exc.py,sha256=OHXy-YtISagPou8nu-qS14aYAEkST6zZr1b7XMmKPlk,100
+mindsync-0.1.26.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mindsync-0.1.26.dist-info/METADATA,sha256=noYCNUwGpZSKvg5tN2nxQi1d_Cpt20aPFILYNRpqqJk,2922
+mindsync-0.1.26.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mindsync-0.1.26.dist-info/entry_points.txt,sha256=6E6Rh5drv_cmLatKO6edf1Qm_u17UJB6c7_F4hfMVNE,47
+mindsync-0.1.26.dist-info/top_level.txt,sha256=gdrWr6wfwdirB3emVJbtq_uFYRmfQ3bYZeEYgROXWlk,9
+mindsync-0.1.26.dist-info/RECORD,,
