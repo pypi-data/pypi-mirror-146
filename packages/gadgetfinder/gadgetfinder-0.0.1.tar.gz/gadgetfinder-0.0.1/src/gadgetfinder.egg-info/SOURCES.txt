@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gadgetfinder/__init__.py
+src/gadgetfinder/gadget.py
+src/gadgetfinder/gadget_finder.py
+src/gadgetfinder/shell.py
+src/gadgetfinder/trie.py
+src/gadgetfinder/utils.py
+src/gadgetfinder.egg-info/PKG-INFO
+src/gadgetfinder.egg-info/SOURCES.txt
+src/gadgetfinder.egg-info/dependency_links.txt
+src/gadgetfinder.egg-info/requires.txt
+src/gadgetfinder.egg-info/top_level.txt
