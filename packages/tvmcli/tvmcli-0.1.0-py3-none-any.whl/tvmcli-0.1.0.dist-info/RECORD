@@ -1,0 +1,17 @@
+tvmcli/__init__.py,sha256=OBMrUXlDU9dd8WlpsgtYHzSbCWU18c05KxKizLGitNM,504
+tvmcli/__main__.py,sha256=orGGwfBmHpA0pdKjRHtjIn2RHuzgc1P-EFoDG-ISoa0,119
+tvmcli/compiler.py,sha256=agefcKxFADqdm2DR4T2M9AHAvrPVid7mZcTpRMJtQ_0,6086
+tvmcli/frontends.py,sha256=RA-_cLMenanlbo3gNOfd5Cwiyl0jkDr-O7-lJfDo-F4,5185
+tvmcli/main.py,sha256=gVKuPyOOPVyntIJuiTsOVmJgjCn3PbE2XaxHLAVRSoA,1543
+tvmcli/model.py,sha256=K8InpzXkuth5ENxlfMwYPc-Ijdzjj-sCFp6Wygysf8s,7591
+tvmcli/pass_config.py,sha256=T8Z2auxy_QKt2htEi0TpjvaoLKgsiSyIS-CQ09BXmYs,2483
+tvmcli/pass_list.py,sha256=dNjKwEN1rGOxMRNeJr9m5ayrhUd23HlmrC-vd7mad1M,1024
+tvmcli/runner.py,sha256=1TmOc3A8Awxt8Jc2Mk5lyp8sLYVB0Ope0ZggOQx3-CE,8725
+tvmcli/shape_parser.py,sha256=YUgm7fj5S-AAtJZHkxjtt3z0K5Xibh3zXcOOH6NJzmY,1811
+tvmcli/target.py,sha256=N-9IJLEg8s2JwLPbWlXiiotld4sQ3DbwelDTcpFbcUI,7369
+tvmcli/test.py,sha256=KTp0EOXTDYKyyr7ImWcIpasqUS_ron8A-YolFMFWmmk,588
+tvmcli/tunner.py,sha256=JkmvxZmgaU512IKPlmj_bIGzE4pMiqzg4ApOXRGDQYo,7237
+tvmcli-0.1.0.dist-info/METADATA,sha256=Dvb9Y_ZKvT9TRJwNTGc9R2dfqsbeMJw34mw7qrunbHQ,450
+tvmcli-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tvmcli-0.1.0.dist-info/top_level.txt,sha256=eKUtQJkJbixoY1J9aC1WaHCNYDQV5MDnP51WeGZPEBg,7
+tvmcli-0.1.0.dist-info/RECORD,,
