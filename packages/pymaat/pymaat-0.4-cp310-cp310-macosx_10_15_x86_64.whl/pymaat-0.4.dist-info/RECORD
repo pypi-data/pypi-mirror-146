@@ -1,0 +1,10 @@
+maat.cpython-310-darwin.so,sha256=5AAvr5AqCfWKT0hz69ZHVsuQaw7eto61-VbG7RHVqrE,29904752
+pymaat.dylibs/libgmp.10.dylib,sha256=053BI_E_3zV8_YnhPs5tt-uyCeMY9te9FHqlQ4SEeKE,928480
+maat/share/processors/x86.pspec,sha256=wE_FVOEisl9sAg2MNbOPCwg7MGt32DMcJescqp5ZRZU,5297
+maat/share/processors/x86-64.pspec,sha256=98ahyaOYmvdlUd_uysgJgldlCuayX7o7kdiOE-3DZvo,7120
+maat/share/processors/x86-64.sla,sha256=rcNgN4QLnUw3RHeopWRKRbcZGTzOYxRsj2k7DCpk7gw,11597111
+maat/share/processors/x86.sla,sha256=ylMwqmOmxpQk6DTtgqnS44S7azQPqFDYbN2-SiQZPsw,9302260
+pymaat-0.4.dist-info/RECORD,,
+pymaat-0.4.dist-info/WHEEL,sha256=Mp26lirrtUNzLUWsPKBAjl3RVvrCg7YEjI0nue_kNcE,112
+pymaat-0.4.dist-info/top_level.txt,sha256=RdNkWkF2ZutPZO1z1eTFemSuOhyBcAKEh-MBQ76QzBA,5
+pymaat-0.4.dist-info/METADATA,sha256=2DNP2Myc6tCG-jb_oDovTS0HPQG2r-JS5KuUg2vUB_w,905
