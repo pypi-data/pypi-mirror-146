@@ -1,0 +1,84 @@
+{% extends 'admin/base_site.html' %}
+{% load i18n admin_urls static admin_modify simpelcore_tags simpelsettings_tags %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block extrahead %}{{ block.super }}
+<script src="{% url 'admin:jsi18n' %}"></script>
+{{ media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}">{% endblock %}
+
+
+{% block content %}
+  <div id="content-main">
+    <div class="row">
+      <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% if form.non_field_errors %}<div class="errornote">{{ form.non_field_errors }}</div>{% endif %}
+        <fieldset class="module aligned">
+          {% for field in form %}
+              {% if field.name == 'bundles' %}
+                {% if product.recommended_items.count %}
+                  <div class="form-row">
+                    <div class="mb-2">
+                      <strong>{% trans "Recommended Bundled Items" %}</strong>
+                      <div class="small mb-3">{% trans "Anda bisa menambah/menghapus nanti." %}</div>
+                    </div>
+                    <table class="bg-white border mb-6 table w-100">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Nama</th>
+                          <th>Satuan</th>
+                          <th class="text-end">Harga</th>
+                          <th class="text-center">{% trans "Quantity" %}</th>
+                          <th class="text-end">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for item in product.recommended_items.all %}
+                          <tr class="thin">
+                            <td><input type="checkbox" checked {% if item.required %}disabled{% endif %} name="bundles" value="{{ item.id }}"></td>
+                            <td>{% if item.required %}<strong>{{ item.product }} <span class="text-danger">*<span></strong>{% else %}{{ item.product }}{% endif %}</td>
+                            <td>{{ item.bundle.unit }}</td>
+                            <td class="text-end">{{ item.product.specific.price|currency }}</td>
+                            <td class="text-center">{{ item.quantity }}</td>
+                            <td class="text-end">{{ item.total|currency }}</td>
+                          </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                {% endif %}
+              {% else %}
+                <div class="form-row">
+                  <div{% if not line.fields|length_is:'1' %} class="fieldBox{% if field.name %} field-{{ field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.is_hidden %} hidden{% endif %}"{% elif field.is_checkbox %} class="checkbox-row"{% endif %}>
+                    {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
+                    {% if field.is_checkbox %}
+                        {{ field }}{{ field.label_tag }}
+                    {% else %}
+                        {{ field.label_tag }}
+                        {% if field.is_readonly %}
+                            <div class="readonly">{{ field.contents }}</div>
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                    {% endif %}
+                    {% if field.help_text %}
+                        <div class="help">{{ field.help_text|safe }}</div>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
+          {% endfor %}
+        </fieldset>
+        <div class="submit-row mb-0">
+          <a href="{{ cancel_url }}" class="button cancel-link">{% trans "Cancel, take me back" %}</a>
+          <input type="submit" value="{% trans "Add to Cart" %}" class="default" name="_save">
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

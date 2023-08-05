@@ -1,0 +1,108 @@
+{% load i18n static admin_urls simpelcore_tags %}
+
+{% with object.product.specific as product %}
+  <div class="card card-body shadow-sm p-5 mb-4">
+    <div class="row">
+      <div class="col-10">
+        <div class="mb-1 border-bottom d-inline-block">
+          <strong>{{ product.inner_id }}</strong>
+          <span>{{ product.name|truncatechars:40 }}</span>
+        </div>
+        <div class="py-3">
+          <h5 class="fs-5 fw-bold">{% firstof object.name product.name %}</h5>
+        </div>
+        {% if product.is_deliverable %}
+          <div class="p-3 mt-3 border">
+            <div class="d-flex justify-content-center">
+              <strong class="text-muted border-bottom d-inline-block mb-3 pb-2 me-auto">
+                {% trans "Deliverable Informations" %}
+              </strong>
+            </div>
+            <div class="mb-0">
+              {% if object.deliverable_information %}
+                <div>
+                  <div>{{ object.deliverable_information.name|title }}{% if object.deliverable_information.phone %}, {{ object.billing_address.phone }}{% endif %}</div>
+                  <div>{{ object.deliverable_information.text_line_1 }}</div>
+                  <div>{{ object.deliverable_information.text_line_2 }}</div>
+                </div>
+              {% else %}
+                <div>{% trans "Deliverable information not set, using customer profile." %}</div>
+              {% endif %}
+              </div>
+          </div>
+        {% endif %}
+        {% if product.bundle_items.count or  object.bundles.count %}
+          <div class="table-responsive pt-3">
+            <table class="table m-0 border small">
+              <thead>
+                <tr>
+                  <th class="align-middle" width="110">{% trans "#" %}</th>
+                  <th class="align-middle">{% trans "Item" %}</th>
+                  <th class="align-middle text-end">{% trans "Price" %}</th>
+                  <th class="align-middle text-center">{% trans "Quantity" %}</th>
+                  <th class="align-middle text-end">{% trans "Total" %}</th>
+                  <th width="60"></th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for bundle in product.bundle_items.all %}
+                <tr>
+                  <td>{{ bundle.product.inner_id }}</td>
+                  <td>{{ bundle.product.name }}</td>
+                  <td class="text-end">{{ bundle.price|currency }}</td>
+                  <td class="text-center">{{ bundle.quantity }} {{ bundle.product.unit }}</td>
+                  <td class="text-end">{{ bundle.total|currency }}</td>
+                  <td class="py-0">
+                    <img src="{% static 'admin/img/icon-yes.svg' %}" alt="True">
+                  </td>
+                </tr>
+                {% endfor %}
+                {% for cartitem_bundle in object.bundles.all %}
+                <tr>
+                  <td>{{ cartitem_bundle.product.inner_id }}</td>
+                  <td>{{ cartitem_bundle.product.name }}</td>
+                  <td class="text-end">{{ cartitem_bundle.product.total_price|currency }}</td>
+                  <td class="text-center">{{ cartitem_bundle.quantity }} {{ cartitem_bundle.product.unit }}</td>
+                  <td class="text-end">{{ cartitem_bundle.total|currency }}</td>
+                  <td class="py-0">
+                    {% if not cartitem_bundle.required %}
+                      <div class="pt-2 d-flex justify-content-end">
+                        <a href="{% url 'admin:simpel_shop_cartitem_remove_bundle' object_id=cartitem_bundle.id %}" class="deletelink"></a>
+                      </div>
+                    {% else %}
+                      <div class="pt-2 d-flex justify-content-end">
+                        <img src="{% static 'admin/img/icon-yes.svg' %}" alt="True">
+                      </div>
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-2">
+        <div class="text-end">
+          <div class="d-inline-block pb-1">{{ product.opts.verbose_name }}</div>
+          <div class="mb-2">{{ object.subtotal|currency }} x {{ object.quantity }}</div>
+          <h5 class="display-9 mb-3">{{ object.total|currency }}</h5>
+        </div>
+        <form action="" method="post">
+          <div class="text-end">
+            {% comment %} <input type="number" name="quantity" class="form-control mb-2 w-50 float-end" value="{{ object.quantity }}" required>
+            <button class="btn btn-sm btn-primary w-100 mb-1" name="action" value="update_item" type="submit">{% trans "Update Quantity" %}</button> {% endcomment %}
+            {% url opts|admin_urlname:'change' object.pk|admin_urlquote as change_url %}
+            <a href="{% add_preserved_filters change_url %}" class="btn btn-sm btn-primary w-100 mb-1">
+              {% trans "Update Item" %}
+            </a>
+            {% url opts|admin_urlname:'delete' object.pk|admin_urlquote as delete_url %}
+            <a href="{% add_preserved_filters delete_url %}" class="btn btn-sm btn-danger w-100 mb-1">
+              {% trans "Remove Item" %}
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endwith %}

@@ -1,0 +1,87 @@
+{% load i18n simpelcore_tags widget_tweaks %}
+<form action="" method="post">
+  {% csrf_token %}
+  {% if form.non_field_errors %}
+    <div class="errornote">{{ form.non_field_errors }}</div>
+  {% endif %}
+  
+  {% for field in form.hidden_fields %}
+    {{ field }}
+  {% endfor %}
+
+  <div class="row mb-3">
+    <div class="col-lg-3">
+      <label class="d-block fw-bold mb-2" for="{{ form.group.name }}">{{ form.group.label }}</label>
+    </div>
+    <div class="col-lg-9">
+      {% url 'admin:simpel_shop_cartitem_hx_cartitem_table' as hx_cartitem_table %}
+      {% render_field form.group class="form-control" required=True hx-get=hx_cartitem_table hx-trigger="change changed" hx-target="#cart-item-tables" %}
+      {% if form.group.help_text %}<div class="help">{{ form.group.help_text }}</div>{% endif %}
+      {% if form.group.errors %}<div class="errors">{{ form.group.errors }}</div>{% endif %}
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col-lg-3">
+      <label class="d-block fw-bold mb-2" for="{{ form.reference.name }}">{% trans "PO Number" %}</label>
+    </div>
+    <div class="col-lg-9">
+      {% render_field form.reference class="form-control" placeholder="eg: PO.123123" %}
+      {% if form.reference.help_text %}<div class="help">{{ form.reference.help_text }}</div>{% endif %}
+      {% if form.reference.errors %}<div class="errors">{{ form.reference.errors }}</div>{% endif %}
+    </div>
+  </div>
+  
+  <div class="row mb-3">
+    <div class="col-lg-3">
+      <label class="d-block fw-bold mb-2" for="{{ form.customer.name }}">{{ form.customer.label }}</label>
+    </div>
+    <div class="col-lg-9">
+      {% url 'admin:simpel_shop_cartitem_hx_customer_address' as hx_customer_address_form %}
+      {% render_field form.customer class="form-control" hx-get=hx_customer_address_form hx-trigger="change changed" hx-target="#customer_address" %}
+      {% if form.customer.help_text %}<div class="help">{{ form.customer.help_text }}</div>{% endif %}
+      {% if form.customer.errors %}<div class="errors">{{ form.customer.errors }}</div>{% endif %}
+    </div>
+  </div>
+
+
+  {% block extra_fields %}{% endblock extra_fields %}
+  
+  <div class="row mb-4">
+    <div class="col-lg-3">
+      <label class="d-block fw-bold mb-2" for="{{ form.note.name }}">{{ form.note.label }}</label>
+    </div>
+    <div class="col-lg-9">
+      {% render_field form.note class="form-control" %}
+      {% if form.note.help_text %}<div class="help">{{ form.note.help_text }}</div>{% endif %}
+      {% if form.note.errors %}<div class="errors">{{ form.note.errors }}</div>{% endif %}
+    </div>
+  </div>
+
+  {% if include_cart_items %}
+    <div id="cart-item-tables" >
+      <div class="w-100 border rounded p-6 text-center mb-4">
+        {% trans "Please select service group !" %}
+      </div>
+    </div>
+  {% endif %}
+  
+  <div class="submit-row d-flex">
+    <a href="{% url 'admin:simpel_shop_cartitem_changelist' %}" class="btn btn-secondary me-auto">
+      <i class="mdi mdi-arrow-left"></i>
+      {% trans "Cancel, Take me back !" %}
+    </a>
+
+    {% if perms.simpel_sales.add_salesquotation %}
+      <button name="_checkout_action" value="create_salesquotation" type="submit" class="btn btn-primary me-2">
+        {% trans "Create Quotation" %}
+      </button>
+    {% endif %}
+
+    {% if perms.simpel_sales.add_salesorder %}
+      <button name="_checkout_action" value="create_salesorder" type="submit" class="btn btn-primary">
+        {% trans "Create Order Now !" %}
+      </button>
+    {% endif %}
+  </div>
+
+</form>
