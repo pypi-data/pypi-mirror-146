@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+voo/__init__.py
+voo/__version__.py
+voo/core.py
+voo.egg-info/PKG-INFO
+voo.egg-info/SOURCES.txt
+voo.egg-info/dependency_links.txt
+voo.egg-info/top_level.txt
