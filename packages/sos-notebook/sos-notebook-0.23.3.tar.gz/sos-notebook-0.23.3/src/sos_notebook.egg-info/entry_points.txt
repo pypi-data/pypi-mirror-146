@@ -1,0 +1,7 @@
+[sos_converters]
+ipynb-html = sos_notebook.converter:NotebookToHTMLConverter
+ipynb-ipynb = sos_notebook.converter:NotebookToNotebookConverter
+ipynb-md = sos_notebook.converter:NotebookToMarkdownConverter
+ipynb-pdf = sos_notebook.converter:NotebookToPDFConverter
+ipynb-sos = sos_notebook.converter:NotebookToScriptConverter
+sos-ipynb = sos_notebook.converter:ScriptToNotebookConverter
