@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/neuralsens/__init__.py
+src/neuralsens/act_func.py
+src/neuralsens/hessian_mlp.py
+src/neuralsens/jacobian_mlp.py
+src/neuralsens.egg-info/PKG-INFO
+src/neuralsens.egg-info/SOURCES.txt
+src/neuralsens.egg-info/dependency_links.txt
+src/neuralsens.egg-info/top_level.txt
