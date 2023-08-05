@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pymegle/__init__.py
+src/pymegle/chat.py
+src/pymegle/core.py
+src/pymegle/exceptions.py
+src/pymegle/log.py
+src/pymegle/userclient.py
+src/pymegle.egg-info/PKG-INFO
+src/pymegle.egg-info/SOURCES.txt
+src/pymegle.egg-info/dependency_links.txt
+src/pymegle.egg-info/requires.txt
+src/pymegle.egg-info/top_level.txt
