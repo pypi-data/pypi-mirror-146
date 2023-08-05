@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+cupcake/__init__.py
+cupcake/cli.py
+cupcake/templates.py
+cupcakes.egg-info/PKG-INFO
+cupcakes.egg-info/SOURCES.txt
+cupcakes.egg-info/dependency_links.txt
+cupcakes.egg-info/entry_points.txt
+cupcakes.egg-info/requires.txt
+cupcakes.egg-info/top_level.txt
