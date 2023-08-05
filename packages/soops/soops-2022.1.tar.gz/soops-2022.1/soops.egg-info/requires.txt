@@ -1,0 +1,6 @@
+dask
+distributed
+matplotlib
+pandas
+pyparsing
+tables
