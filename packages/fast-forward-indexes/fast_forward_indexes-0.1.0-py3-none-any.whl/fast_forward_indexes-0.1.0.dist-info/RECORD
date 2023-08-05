@@ -1,0 +1,13 @@
+fast_forward/__init__.py,sha256=bbbpxRizBW5SJgoq5v0LYv7T8bo61WqkNub6-Xvuu1c,8292
+fast_forward/encoder.py,sha256=liSzQs2vnFCerSgm--FowYFGwC2fOtVNfd_GJdhtrGk,3111
+fast_forward/index.py,sha256=CPQRiRq-dTNxKUU-4kWBOFeuevn4qQD9l9zV1EJoI8w,19019
+fast_forward/ranking.py,sha256=YnOWzk7U8YYyllqS19SzKeJQPqVZPPhLGv3wbwbd7b4,4488
+fast_forward/util.py,sha256=U5NBxPIKlIt4WB_AL9pVgkvcgp8GdTzo7wEO0JCeVLQ,1139
+fast_forward/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_forward/examples/create_index_from_pyserini.py,sha256=CMRb3lJiMirhkgm5ImNsUtkLjzcB3yzM0XjJPtlO27Y,1212
+fast_forward/examples/interpolate.py,sha256=8un1kqtv20ZV2iimpZadrNwWID-6uKyMQebvjD8ztno,2825
+fast_forward_indexes-0.1.0.dist-info/LICENSE,sha256=fLsYclt1BWUJq0porVIVNO2kTsNOoyVeyCEMcrWXo8U,1072
+fast_forward_indexes-0.1.0.dist-info/METADATA,sha256=3S2g8BXRzU5pHw9QFuGiIC9frH2AaMgkpxldNzpJRuQ,2290
+fast_forward_indexes-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fast_forward_indexes-0.1.0.dist-info/top_level.txt,sha256=QQEkCz19QadQDpSLOzCpZcZHowMtfGTnzJnS-FVqk2c,13
+fast_forward_indexes-0.1.0.dist-info/RECORD,,
