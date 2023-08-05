@@ -1,0 +1,15 @@
+bgRemoverApp/__init__.py,sha256=gDMbogM4KJzUvPnJVZgWtR0S2JZSt55swUfi_r7Qwek,74
+bgRemoverApp/removeBG.py,sha256=Z1FJBeGINcWEuPM3FQEa6uDWsAnnarXeerIgN7F4Rm8,2640
+bgRemoverApp/tracer/EfficientNet.py,sha256=LMCuhSGwR5w_-E6WWKPrvQh9WG8CCWlEwDt09rXj_Co,14854
+bgRemoverApp/tracer/att_modules.py,sha256=9sR47hm7FdQObRTvp8zD_tM_07Mol1T6hxVuQPxIdBs,11839
+bgRemoverApp/tracer/config.py,sha256=gyhvoQZKn-46ONF9OddB5fD9sPpHMPrCdolCxY4RhAM,2469
+bgRemoverApp/tracer/conv_modules.py,sha256=NxMxEhGkcbxtyhcUgmy6wIBHrUyHkJu-55o8CEjE2cQ,2008
+bgRemoverApp/tracer/effi_utils.py,sha256=KaIj0DTWr9f4sitedEeK2saNbiG4W3WerneRivaxplY,26127
+bgRemoverApp/tracer/tracer.py,sha256=U9wam9X22bGcHY9fWEHxnro7b7Hzp7sJKGVUueHhtGk,2169
+bgRemoverApp/tracer/utils.py,sha256=td7WPLfOJHwNWIoRWnCPF6SiC89JDeynhtDqos7Pve0,11789
+bgRemoverApp/u2net/model.py,sha256=OIy6bGjFfcD4QH1vktpV8Uv0iIOKD4jt7NfP67Ndmso,16606
+bgRemoverApp/u2net/utils.py,sha256=OIy6bGjFfcD4QH1vktpV8Uv0iIOKD4jt7NfP67Ndmso,16606
+bgRemoverApp-1.18.dist-info/METADATA,sha256=wDQz1vlJLD96ZCEaSICEpJhHYMwCf_hCjbbkTzwAWdk,402
+bgRemoverApp-1.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bgRemoverApp-1.18.dist-info/top_level.txt,sha256=TNU8-r0D7NstQyfhScrULn85Fs2UNMGwDYyLVnReHw4,13
+bgRemoverApp-1.18.dist-info/RECORD,,
