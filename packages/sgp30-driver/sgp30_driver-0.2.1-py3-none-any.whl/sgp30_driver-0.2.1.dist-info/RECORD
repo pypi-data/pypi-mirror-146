@@ -1,0 +1,10 @@
+sgp30/__init__.py,sha256=rvCLHURDks1n9uMcNqn4Pr_3KizIEnPZWTJKgstPOeg,48
+sgp30/humidity.py,sha256=5AiKQvovyfLGpc_aFRxWThIR0uw-37TvyesSFK7lvu4,358
+sgp30/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sgp30/sgp30.py,sha256=_-XU78qRG6IkzfP8tg91tEoPULSDYx7V_6PZXK1SCak,6888
+sgp30_driver-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sgp30_driver-0.2.1.dist-info/METADATA,sha256=GVAIpdqefo0gYz-MZeixNOjmpRyuG5GvBp_N80wCr1w,3250
+sgp30_driver-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sgp30_driver-0.2.1.dist-info/top_level.txt,sha256=y7hGHATNA0a4ski_1Svz70EnwV6H0C-Hyba1fjBKfNE,6
+sgp30_driver-0.2.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sgp30_driver-0.2.1.dist-info/RECORD,,
