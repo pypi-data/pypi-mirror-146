@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: dgx
+Version: 0.0.24
+Summary: Dealergeek API
+Home-page: https://github.com/jaguilar08/dgx
+Author: Jeff Aguilar
+Author-email: jeff.aguilar.06@gmail.com
+License: MIT
+Download-URL: https://github.com/jaguilar08/dgx/archive/refs/tags/0.1.tar.gz
+Description: # dgx
+        
+        Generate Dealergeek API
+        
+        ## Installation
+        
+        Use pip to install the package:
+        
+        ```bash
+        pip install dgx
+        ```
+        
+        ## Usage
+        
+        This package allows to generate an API structure, with some basic libraries.
+        
+        ### New project
+        
+        Create a new project
+        
+        ```bash
+        dgx -i my-app
+        ```
+        
+        ### Add module
+        
+        This package has some default modules that you can add.
+        
+        - brand
+        - personnel
+        
+        ```bash
+        dgx -a brand
+        ```
+        
+        
+        ### New module
+        
+        If you want create a module, can you write this command.
+        
+        ```bash
+        dgx -c my-module
+        ```
+        
+        ### Delete project
+        
+        You must be in the root folder of the project, my-app-project
+        
+        
+        ```bash
+        dgx -d my-app
+        ```
+        
+Keywords: DEALERGEEK,API
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
