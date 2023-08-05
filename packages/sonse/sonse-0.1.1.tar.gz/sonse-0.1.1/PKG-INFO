@@ -1,0 +1,163 @@
+Metadata-Version: 2.1
+Name: sonse
+Version: 0.1.1
+Summary: Stephen's Obsessive Note-Storage Engine.
+Author: Stephen Malone
+Author-email: mail@sonse.org
+License: UNKNOWN
+Project-URL: Changelog, https://hg.sr.ht/~rattlerake/sonse/browse/changes.md?rev=tip
+Project-URL: License, https://hg.sr.ht/~rattlerake/sonse/browse/license.md?rev=tip
+Project-URL: Repository, https://hg.sr.ht/~rattlerake/sonse
+Project-URL: Issues, https://todo.sr.ht/~rattlerake/sonse
+Keywords: notes note-taking cli
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Office/Business :: News/Diary
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+Sonse
+=====
+
+**Sonse** (*Stephen's Obsessive Note-Storage Engine*, pronounced *son·see*) is a command-line note management application. It allows you to create, edit and maintain your plaintext notes while keeping them archived in a single human-readable zip file.
+
+If you've got a bunch of loose text files lying around and you'd like to keep them organised, Sonse is for you. It'll keep them safe, sorted and sensible, forever.
+
+> **Note:** Sonse is designed primarily for Linux and Linux-based operating systems; in particular it uses several Linux defaults and environment variables for its basic functions. Mac OS should work (please tell me if it doesn't), but Windows is unsupported at this time.
+
+Installation
+------------
+
+Sonse requires [Python 3.10][p310] and only depends on [Click][clck] (and [py.test][pyte] for testing). You can install Sonse one of two ways:
+
+### PyPi Package
+
+You can get the official [PyPi package][pypi] with pip:
+
+```text
+$ pip install sonse
+$ sonse --help
+```
+
+This will install Sonse and its dependencies, then add a `sonse` executable you can run directly.
+
+### Source Code
+
+You can also clone the [Mercurial repository][repo] and run the source code yourself:
+
+```text
+$ hg clone https://hg.sr.ht/~rattlerake/sonse
+$ cd sonse
+$ python -m sonse --help
+```
+
+You'll need to install [Click][clck] and run Sonse from the Python module, or create an alias for it.
+
+Setup
+-----
+
+### Archives
+
+Sonse stores notes at `$HOME/.config/sonse/sonse.zip`. If it can't find a valid archive, it will create one at that location.
+
+The archive is a single standard zip file containing notes ending in `.txt`. Each file is formatted in UTF-8 and has a lowercase name, like this:
+
+```sh
+sonse.zip/
+- alpha.txt    # Name: "alpha"
+- bravo.txt    # Name: "bravo"
+- test-123.txt # Name: "test-123"
+```
+
+These names are used in commands and are always rendered as lowercase without punctuation, excluding hyphens and underscores. If you try to create a note called `FOO_BAR`, Sonse will interpret it as `foo_bar`.
+
+### Shell Completion
+
+Sonse uses [Click][clck] for its interface, which has optional support for shell auto-completions. I highly recommend [enabling this functionality][comp] if you have a shell that supports it. (Sonse will work fine without it, but it's nice to have.)
+
+Commands
+--------
+
+### `create NAME`
+
+Create a new note in your archive.
+
+```sh
+$ sonse create alpha
+# Creates "alpha.txt" as an empty file in your archive.
+```
+
+### `edit NAME`
+
+Open an existing note in your default text editor.
+
+```sh
+$ sonse edit alpha
+# Opens "alpha.txt" in your default text editor.
+```
+
+### `export NAME FILE`
+
+Copy an existing note to a file on-disk.
+
+```text
+$ sonse export alpha ~/some-file.txt
+$ cat ~/some-file.txt
+This is an example note.
+```
+
+### `import NAME FILE`
+
+Copy a file on-disk to a new or existing note.
+
+```text
+$ sonse import alpha ~/some-file.txt
+$ sonse read alpha
+This is an example note.
+```
+
+### `list GLOB`
+
+Print a list of existing notes matching a [glob pattern][glob]. By default this is the wildcard `*`, which matches all notes.
+
+```text
+$ sonse list
+alpha
+bravo
+charlie
+
+$ sonse list a*
+alpha
+```
+
+### `read NAME`
+
+Print the contents of an existing note.
+
+```text
+$ sonse read alpha
+This is an example note.
+```
+
+Contribution
+------------
+
+If you find any bugs or have any suggestions, please add them to the [issue tracker][bugs] with as much detail as possible. Thank you!
+
+[bugs]: https://todo.sr.ht/~rattlerake/sonse
+[clck]: https://click.palletsprojects.com/
+[comp]: https://click.palletsprojects.com/en/8.1.x/shell-completion/
+[glob]: https://en.wikipedia.org/wiki/Glob_(programming)
+[p310]: https://www.python.org/downloads/release/python-3100/
+[pypi]: https://pypi.org/project/sonse/
+[pyte]: https://docs.pytest.org
+[repo]: https://hg.sr.ht/~rattlerake/sonse
+
+
