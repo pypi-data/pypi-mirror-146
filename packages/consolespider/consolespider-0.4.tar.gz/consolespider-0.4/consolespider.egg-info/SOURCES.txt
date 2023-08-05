@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+consolespider/__init__.py
+consolespider/main.py
+consolespider.egg-info/PKG-INFO
+consolespider.egg-info/SOURCES.txt
+consolespider.egg-info/dependency_links.txt
+consolespider.egg-info/not-zip-safe
+consolespider.egg-info/top_level.txt
