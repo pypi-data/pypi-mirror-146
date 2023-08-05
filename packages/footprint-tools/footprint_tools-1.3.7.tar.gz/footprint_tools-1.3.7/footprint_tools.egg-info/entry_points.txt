@@ -1,0 +1,3 @@
+[console_scripts]
+ftd = footprint_tools.__main__:main
+

@@ -1,0 +1,15 @@
+cython
+numpy>=1.10
+scipy>=0.17
+pandas
+pysam>=0.15
+statsmodels
+genome-tools>=1.0.3
+pwlf
+simplejson
+tqdm
+click
+click-option-group
+matplotlib
+yaspin
+colorlog
