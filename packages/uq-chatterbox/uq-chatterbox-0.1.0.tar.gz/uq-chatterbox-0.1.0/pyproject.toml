@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "uq-chatterbox"
+packages = [
+    {include = "chatterbox"}
+]
+version = "0.1.0"
+description = "A command-line text-to-speech utility for UQ's Software Architecture students to deploy as a scalable service."
+authors = ["Evan Hughes <ehugh1@gmail.com>", "Brae Webb <email@braewebb.com>"]
+
+[tool.poetry.scripts]
+chatterbox = "chatterbox.__main__:cli"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+click = "^8.1.2"
+TTS = "^0.6.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: uq-chatterbox
+Version: 0.1.0
+Summary: A command-line text-to-speech utility for UQ's Software Architecture students to deploy as a scalable service.
+Author: Evan Hughes
+Author-email: ehugh1@gmail.com
+Requires-Python: >=3.9,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: TTS (>=0.6.1,<0.7.0)
+Requires-Dist: click (>=8.1.2,<9.0.0)
