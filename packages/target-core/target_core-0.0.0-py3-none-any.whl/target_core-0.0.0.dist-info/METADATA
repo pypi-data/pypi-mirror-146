@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: target-core
+Version: 0.0.0
+Summary: Singer.io target core features
+Home-page: https://github.com/ome9ax/target-core
+Author: Eddy ∆
+Author-email: edrdelta@gmail.com
+License: Apache License 2.0
+Keywords: target-core,target-s3-jsonl,target-s3-json,singer,singer.io,tap,target,etl
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jsonschema (==4.4.0)
+Requires-Dist: boto3 (==1.21.33)
+Requires-Dist: backoff (==1.11.1)
+Provides-Extra: dist
+Requires-Dist: wheel ; extra == 'dist'
+Requires-Dist: build ; extra == 'dist'
+Requires-Dist: twine ; extra == 'dist'
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: moto[s3] ; extra == 'test'
+
+UNKNOWN
+
