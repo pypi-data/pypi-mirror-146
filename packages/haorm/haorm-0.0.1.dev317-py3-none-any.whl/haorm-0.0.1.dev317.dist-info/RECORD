@@ -1,0 +1,13 @@
+haorm/__init__.py,sha256=KvEp8SwsADaEJShe7nZRzOmBx-8XvwcWyzOQBivW9Pk,86
+haorm/core.py,sha256=Ge2W0p0xUQo3LDhn2C7vGMjZkXDpD-BEZbLDrsLGXWQ,1568
+haorm/meta_reflex.py,sha256=q6TSy70aiG3vuhm-nc8YnsKXoQJDyhSpXQBzQ4XZWeo,14245
+haorm/router.py,sha256=EVSCRXXwoh0aNN-neXfxNld7plGPd5A7zrMaVjVi1Bo,618
+haorm/settings.py,sha256=jKWBZvBZVPb2naDgWVudMQdnoHL-5Rjjz6MXaOtB-xM,824
+haorm-0.0.1.dev317.dist-info/AUTHORS,sha256=tLg42SO8x5Bp-LOy2zjoZ11qtJePD7HuE9nWVnMdZhY,60
+haorm-0.0.1.dev317.dist-info/LICENSE,sha256=1DID37G32lXAwx3721dhFQhzaEz3JTShl9P5nmICvPY,1064
+haorm-0.0.1.dev317.dist-info/METADATA,sha256=NNZEWuT5sVYcyIPCcmcV02igRQbifbLuqfmuJNJbWdk,357
+haorm-0.0.1.dev317.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+haorm-0.0.1.dev317.dist-info/entry_points.txt,sha256=fY84W-tsGapTnXGP3SJf9CtvFHV2zVruOjikgZAAcc4,57
+haorm-0.0.1.dev317.dist-info/pbr.json,sha256=rUt0_KmDUOd2K6oGjcw5xJIoB8X8QWEa0FwSWA-qUbY,47
+haorm-0.0.1.dev317.dist-info/top_level.txt,sha256=OfwCPg-28mC6C3efVtySEVF33QOduE02CnUeotJoy4E,6
+haorm-0.0.1.dev317.dist-info/RECORD,,
