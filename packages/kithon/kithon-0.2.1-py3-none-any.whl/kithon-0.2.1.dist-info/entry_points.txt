@@ -1,0 +1,5 @@
+[console_scripts]
+kithon=kithon.cli:tpy
+kithon-gen=kithon.cli:tpy_gen
+kithon-new=kithon.cli:tpy_new
+

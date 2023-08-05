@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: kithon
+Version: 0.2.1
+Summary: transpiler python into other language
+Home-page: https://github.com/alploskov/kithon
+License: MIT
+Author: Aleksey Ploskov
+Requires-Python: >=3.9.0,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=2.11.2,<4.0.0)
+Requires-Dist: PyYaml (>=5.4.0)
+Requires-Dist: pyxl4 (>=1.0.0-alpha.1,<2.0.0)
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Project-URL: Repository, https://github.com/alploskov/kithon
+Description-Content-Type: text/markdown
+
+**Kithon** is a project that provides the ability to translate python and python-family language such as
+[hy-lang](https://github.com/hylang/hy) and [coconut](https://github.com/evhub/coconut)
+into human-readable code in any other programming languages.
+
+[Try out the web demo](https://alploskov.github.io/kithon/demo/)
+
+or 
+
+```bash
+pip install kithon
+
+echo "print('Hello World')" > test.py
+
+kithon gen --js test.py
+```
+
+Output:
+
+```js
+console.log("Hello World");
+```
+
+For what?
+---------
+
+For use python where we can't. For example in browser(js), embedded scripting(mostly lua).
+Or make python program faster by translating to go, c++, rust, nim or julia.
+Also for supporting program written on in unpopular programming languages (very new or vice versa)
+
+How it works?
+-------------
+
+Kithon uses a dsl based on yaml and jinja to apply the rules described on it to the nodes of the ast tree. 
+Using this dsl you can add new languages or extensions to those already added.
+
+Status
+------
+
+The project is under active development.
+Now the ability to add translation of basic python constructs into any other language(in this repo js and go only) is supported.
+
+There are plans to develop a number of supported languages and expand support for python syntax
+
+Similar projects
+----------------
+
+* [py2many](https://github.com/adsharma/py2many)
+* [pseudo](https://github.com/pseudo-lang/pseudo)
