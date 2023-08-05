@@ -1,0 +1,14 @@
+click
+flatten-dict
+python-xlib
+pyyaml
+
+[dev]
+black
+coveralls
+pylint
+pytest
+pytest-cov
+python-xlib
+twine
+wheel
