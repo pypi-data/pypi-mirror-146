@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+rderp/__init__.py
+rderp/main.py
+rderp/model.py
+rderp.egg-info/PKG-INFO
+rderp.egg-info/SOURCES.txt
+rderp.egg-info/dependency_links.txt
+rderp.egg-info/requires.txt
+rderp.egg-info/top_level.txt
+rderp/bill/__init__.py
+rderp/md/__init__.py
+rderp/md/material.py
