@@ -1,0 +1,12 @@
+setup.py
+leg2/Control.py
+leg2/Display.py
+leg2/Gyro.py
+leg2/Robot.py
+leg2/Simulation.py
+leg2/__init__.py
+leg2/main_test.py
+leg2.egg-info/PKG-INFO
+leg2.egg-info/SOURCES.txt
+leg2.egg-info/dependency_links.txt
+leg2.egg-info/top_level.txt
