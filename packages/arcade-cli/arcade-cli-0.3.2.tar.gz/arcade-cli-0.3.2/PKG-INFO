@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: arcade-cli
+Version: 0.3.2
+Summary: A tool for interacting with the matise arcade
+License: MIT
+Keywords: arcade,cli,api,drawing
+Author-email: vivax <vivax3794@protonmail.com>
+Requires-Python: >=3.8,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+Description: # Arcade - Cli
+        
+        If you dont know what this is project is about, you have taken a wrong turn :P
