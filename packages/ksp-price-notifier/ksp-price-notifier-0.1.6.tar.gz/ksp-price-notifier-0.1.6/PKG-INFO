@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: ksp-price-notifier
+Version: 0.1.6
+Summary: 
+Home-page: https://github.com/jochman/KSP-Price-Notifier
+License: MIT
+Author: Jochman
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Project-URL: Repository, https://github.com/jochman/KSP-Price-Notifier
+Description-Content-Type: text/markdown
+
+# KSP-Price-Notifier
+
+Use to get notified for change of price in KSP.
+
+## Installation
+
+```shell
+pip install ksp-price-notifier
+```
+
+## Usage
+
+just give it the uin (can be found the link, as <https://ksp.co.il/web/item/109332>).
+target price the the path to chromedriver:
+
+```shell
+ksp-price-notifier 109332 5990
+```
+
+result:
+
+```text
+The price is lower than the target price, it is now 5549
+Go and buy! https://ksp.co.il/web/item/109332
+```
+
+## In-Code usage
+
+```python
+from ksp_price_notifier import GetPriceFromKSP
+
+getter = GetPriceFromKSP()
+getter.get_price(109332)
+
+> 4690
+```
+
