@@ -1,0 +1,7 @@
+MANIFEST.in
+README.txt
+setup.py
+Playroom.egg-info/PKG-INFO
+Playroom.egg-info/SOURCES.txt
+Playroom.egg-info/dependency_links.txt
+Playroom.egg-info/top_level.txt
