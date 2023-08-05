@@ -1,0 +1,3 @@
+[console_scripts]
+CREATURE_WORLD_BUILDER_LITE = CREATURE_WORLD_BUILDER_LITE.creature_world_builder_lite:main
+
