@@ -1,0 +1,9 @@
+README.md
+setup.py
+texto_no_espelho/__init__.py
+texto_no_espelho.egg-info/PKG-INFO
+texto_no_espelho.egg-info/SOURCES.txt
+texto_no_espelho.egg-info/dependency_links.txt
+texto_no_espelho.egg-info/top_level.txt
+texto_no_espelho/texto_no_espelho/__init__.py
+texto_no_espelho/texto_no_espelho/espelho.py
