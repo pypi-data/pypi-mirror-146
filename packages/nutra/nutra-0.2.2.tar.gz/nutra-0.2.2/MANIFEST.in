@@ -1,0 +1,7 @@
+include requirements.txt
+include config/*.txt
+include ntclient/ntsqlite/LICENSE
+include ntclient/ntsqlite/README.rst
+graft ntclient/ntsqlite/sql/
+global-exclude *.sqlite
+global-exclude __pycache__/*
