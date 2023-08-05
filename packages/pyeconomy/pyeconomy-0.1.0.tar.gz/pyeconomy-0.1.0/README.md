@@ -1,0 +1,27 @@
+# py-economy
+A simple to use economy module.
+WARNING: This project is in alpha release and may be unstable and buggy.
+Developers: Konrad (@konradsic)
+## Install
+```pip install pyeconomy==0.1.0```
+## Version
+Currently running on version 0.1.0
+## Links
+* [PyPi - Python Package Index](https://pypi.org)
+## How it works
+It is very simple:
+* Everything is stored in `.json` files
+* Discord async functions works same as normal, but it returns an embed object that you can send.
+## Code example:
+```py
+import pyeconomy as economy
+instance = economy.Economy(discord_mode=False)
+
+user = instance.get_user_by_id(id="1234567890") # enter user id here
+if user is None:
+    print("User not found!")
+else:
+    print(f"{user.name}'s balance: {user.balance}")
+```
+This easy example will create an economy instance (`economy.Economy`) set discord mode to `False`.
+Then it searches for a user with id `1234567890`, checks if it exists and prints it's balance.
