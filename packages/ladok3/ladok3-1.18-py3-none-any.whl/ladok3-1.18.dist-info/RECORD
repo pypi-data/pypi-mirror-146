@@ -1,0 +1,11 @@
+etc/bash_completion.d/ladok.bash,sha256=zGfTFdtos2zLjV13pzfK-1uCy2b_lF2qUKMoL2ExW7c,1441
+ladok3/__init__.py,sha256=g3C6xgL4N5_bHCpL4cThtpprT9kP32xwFjiff9ynDX4,226728
+ladok3/cli.py,sha256=82dMfAr8lKIcxOE8H2RxvZTN8FT2vPjoR7WLvyDJAnY,5201
+ladok3/data.py,sha256=4BL5BYGeDBgKUlfuHuT3WboUKCX1we0Ur-EWmAi0NbA,5764
+ladok3/report.py,sha256=rNCIiPTd9egw8iXSSKsmyrcF3NebqinpuRxfphcyIjo,4082
+ladok3-1.18.dist-info/LICENSE,sha256=RMXWqzjw9U2EhHnr1HkkC1Mgv8VZaVq_8WDmRa_1CQk,1149
+ladok3-1.18.dist-info/METADATA,sha256=PPadTLaFLobvgT4nQCTUxko3XY7aEAYHVLW6NNFFKvc,7730
+ladok3-1.18.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ladok3-1.18.dist-info/entry_points.txt,sha256=aLbP6aX-tsGzI7NPuFUypFE1znMuiaWEafpbwJt2BhQ,43
+ladok3-1.18.dist-info/top_level.txt,sha256=39c0E5tp-Z5rcLLiA_IC7UiyB5EwRowcCUTtRGmqqfY,7
+ladok3-1.18.dist-info/RECORD,,
