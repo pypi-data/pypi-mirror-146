@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+creditscoringpy/__init__.py
+creditscoringpy/creditscoringpy.py
+creditscoringpy.egg-info/PKG-INFO
+creditscoringpy.egg-info/SOURCES.txt
+creditscoringpy.egg-info/dependency_links.txt
+creditscoringpy.egg-info/requires.txt
+creditscoringpy.egg-info/top_level.txt

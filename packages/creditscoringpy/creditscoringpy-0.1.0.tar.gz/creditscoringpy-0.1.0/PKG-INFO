@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: creditscoringpy
+Version: 0.1.0
+Summary: A package for building scorecards in python
+Home-page: https://github.com/creditscoringpy/creditscoringpy
+Author: Alexey Myshlyanov
+Author-email: avmysh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Credit Scoring Python library
+
