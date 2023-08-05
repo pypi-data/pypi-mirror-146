@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: simhunter
+Version: 0.1
+Summary: Simcard Information Gathering Tool
+Home-page: https://github.com/Bhai4You/
+Author: Parixit Sutariya
+Author-email: parixit1337@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<!--
+https://pypi.org/project/simhunter/
+-->
+
+[![](https://img.shields.io/pypi/pyversions/readme-generator.svg?longCache=True)](https://pypi.org/project/readme-generator/)
+
+#### Installation
+```bash
+$ pip install simhunter
+```
+
+#### Features
++   **`simhunt`**, **Get Simcard Information**
+
+
+#### How it works
+```
+$ pip install simhunter
+$ simhunt
+$ Enter your victim number
+
+Created by Parixit Sutariya
+Date : 06-04-2022
+Github : github.com/Bhai4You
+Blogspot : https://bhai4you.blogspot.com
+
+```
+
+<p align="center">
+    <a href="https://github.com/Bhai4You">Github</a>
+</p>
+
+
