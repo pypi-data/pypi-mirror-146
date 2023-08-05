@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: virtbak
+Version: 0.1
+Summary: Backup virtual machines from LibVirt
+Home-page: https://gitlab.com/oytunistrator/virt-backup
+Author: Oytun OZDEMIR
+Author-email: oytunozdemir@yandex.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: attrs
+Requires-Dist: libvirt-python
+Requires-Dist: lxml
+
+virt-backup
+---
+
+```
+usage: virt-backup [-h] [--config CONFIG] --server SERVER
+
+Backup virtual machines from LibVirt
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG, -c CONFIG
+                        Config file to use
+  --server SERVER, -s SERVER
+                        Server to backup
+```
+
+
+
