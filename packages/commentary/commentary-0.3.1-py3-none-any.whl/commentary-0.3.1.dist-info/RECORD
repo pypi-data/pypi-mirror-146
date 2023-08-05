@@ -1,0 +1,12 @@
+commentary/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commentary/commentary.py,sha256=MFgXNpDJAOoF68Ml71VTEO-xmKuSiH_a7ASibhPWEoU,3039
+commentary/commentary_filter.py,sha256=-QloQxs09vCZBgSpxxi6dY1NkpaN3ZcF5_iSXOvFNmA,4301
+commentary/version.py,sha256=TZkGuMIRSRmUY3XCIs5owt2o60vXyqYMHWIkhx65uYE,22
+commentary/data/commentary_conf.json,sha256=NmlYZCiYtkWFJxUtCi9L1JrbFVEONQ09guwkWYykPVI,59
+commentary-0.3.1.data/scripts/commentary,sha256=5zZ1NaVz6L7-C54GUc0P8i3eRlYl4uBv7Wys3Wynrgg,61
+commentary-0.3.1.data/scripts/commentary-filter,sha256=Xjk7lbNsGwL6dKlFaY7iNKt4WZCZBdGhWMEgkiw40Eg,75
+commentary-0.3.1.dist-info/LICENSE,sha256=5irdc-Ptxc4InuDPjd_Eaj14tKkI3hvfXYGKj0GWTyc,1070
+commentary-0.3.1.dist-info/METADATA,sha256=oatcrwFkBXtls6qnXZ7oz67UV8u5-wsJr7pZRknTxmU,1143
+commentary-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+commentary-0.3.1.dist-info/top_level.txt,sha256=QWeHHTLSKcIu2RIUJTgc2EPPMP6TkN81QPSB8dOcZ3I,11
+commentary-0.3.1.dist-info/RECORD,,
