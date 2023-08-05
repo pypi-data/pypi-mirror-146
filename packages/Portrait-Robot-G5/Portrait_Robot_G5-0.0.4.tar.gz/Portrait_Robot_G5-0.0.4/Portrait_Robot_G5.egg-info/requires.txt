@@ -1,0 +1,5 @@
+keras
+tensorflow
+scikit-image
+sklearn
+PyQt5
