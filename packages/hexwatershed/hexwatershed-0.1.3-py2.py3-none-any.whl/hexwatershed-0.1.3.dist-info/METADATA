@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: hexwatershed
+Version: 0.1.3
+Summary: A mesh independent flow direction model for hydrologic models
+Home-page: https://github.com/changliao1025/pyhexwatershed
+Author: Chang Liao
+Author-email: chang.liao@pnnl.gov
+License: custom
+Keywords: hexwatershed hexagon
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+License-File: AUTHORS.rst
+Requires-Dist: numpy
+Requires-Dist: gdal
+Requires-Dist: netcdfpyflowline
+
+A mesh independent flow direction model for hydrologic models
+
