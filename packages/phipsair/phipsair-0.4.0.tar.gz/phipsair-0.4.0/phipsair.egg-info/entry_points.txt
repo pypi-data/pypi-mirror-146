@@ -1,0 +1,2 @@
+[console_scripts]
+phipsair = phipsair.__main__:main

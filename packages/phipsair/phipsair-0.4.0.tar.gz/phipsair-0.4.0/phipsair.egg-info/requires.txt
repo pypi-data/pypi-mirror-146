@@ -1,0 +1,2 @@
+aiocoap<0.5,>=0.4.1
+pycryptodomex<4.0,>=3.13
