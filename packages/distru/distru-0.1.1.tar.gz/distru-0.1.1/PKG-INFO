@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: distru
+Version: 0.1.1
+Summary: Package to generate or read different distributions.                  Visualize and make some operations on the distributions
+Home-page: https://github.com/OsamaAyman/publish-pypi
+Author: Osama Ayman
+Author-email: osama.ayman252@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Distru package
+===============
+This is a simple project that is used to grasp how to publish
+Python packages on PyPI. This package is used to generate or read data
+from a specific distribution and make some functionality or visualize it.
+
+Installing
+============
+    pip install distru
+
+Project description
+===================
+- This package works so far with two distributions, normal and binomial distribution.
+- Package by default will generate random data from parameters you pass it or default parameters.
+- Can read data from a file and the package will calculate its attributes automatically.
+- Add two distributions of the same type together.
+- Calculate some functions like PDF or PMF.
+- Visualize distributions.
+
+
+
