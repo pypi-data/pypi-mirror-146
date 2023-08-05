@@ -1,0 +1,17 @@
+genTest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genTest/__main__.py,sha256=rD91b-A4JbUAbBHy7ZZu7mVHTYIyP1MTSbiUflqKTd0,3832
+unipa/__init__.py,sha256=f5NUWbBZWlu9LmvMI6STooJl6jK5EAdDGzwAJWslNDw,11294
+unipa/errors.py,sha256=WzP7nyZEGukd-WwafrFwCIBSOUcptftJI5Lqgu6hLHc,287
+unipa/test_login.py,sha256=JFyeedXVvkLLul5j-gF3XZY6uXYWLw9C6pR33_s_aX0,5936
+unipa/unipa_utils.py,sha256=beFzFLtUyhS15jZcd0FUR5GlyyZAuHuCtE8YmWer87M,6719
+unipa/BulletinBoard/BulletinBoard.py,sha256=h7HiM2L05BIQdFwgjCaxcWha1eUkSodNfr_0Bp_Q1vg,6392
+unipa/BulletinBoard/BulletinBoardItemDetails.py,sha256=ceAY5GhbLSkSC78n9QLSeUBv0F6uKiZg1lDAXhkXU8A,2873
+unipa/BulletinBoard/PublicationPeriod.py,sha256=xPVkKNcuw6UginRApiUHqrRDxOl2g76OBEgmbFr-WVU,1029
+unipa/BulletinBoard/__init__.py,sha256=is_Xm45_dPBkvA_H7uOZBvHQhil_6TqNOmQeKJRhPuU,3581
+unipa/models/__init__.py,sha256=e8VYYfEtqXP5M_jnkIIeOCyBGFSiUivS-neQBfOcEss,31
+unipa/models/tests.py,sha256=AP5Xvy4OUupYp6t5wKFJ0tr1uoDsasqYC2nNyTLiXVY,1349
+get_unipa-0.6.0.dist-info/LICENSE,sha256=zAhqrI_8_KWb0ksA0BGNR3hN0H72cIKvoEDjaC46N5k,1064
+get_unipa-0.6.0.dist-info/METADATA,sha256=zoaOM3SjHqgc6lP-mATFnUH-vSx5EhZI0uV_rMdQ10g,580
+get_unipa-0.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+get_unipa-0.6.0.dist-info/top_level.txt,sha256=z7CS4lArb-V-eyQFaZLWUXAzDgfP6MaYkARIYv4pEtU,14
+get_unipa-0.6.0.dist-info/RECORD,,
