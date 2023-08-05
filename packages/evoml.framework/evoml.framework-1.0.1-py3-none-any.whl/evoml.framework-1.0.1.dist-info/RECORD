@@ -1,0 +1,16 @@
+evoml/framework/__init__.py,sha256=m9TFN8Q6gEfAzLYJSseT28xYfsRTlEb-Yl0Mahx4Bac,42
+evoml/framework/constant.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evoml/framework/evocc.py,sha256=Nr0H8LUTGSSX_GdljpoxMCNnYX-RoCqpOr7t4mWQ77E,12855
+evoml/framework/classification/__init__.py,sha256=9DaoZYGRaxYBsaylUxU6PWePhVoF7IQJQV-YjdZzrDw,62
+evoml/framework/classification/_base.py,sha256=xWnFSQc68pYR0afChTQFfaQi-bNq5WuSmRF1r1c89ew,1744
+evoml/framework/datasets/__init__.py,sha256=5Mu-CMFjhY-FN_IJMyw8A0GoKUIvAhrE7OJ6BehTD7g,326
+evoml/framework/datasets/_base.py,sha256=HDExlKhe_lCFRfhb2O20Q2ULXiOzYEH1yEhWIb0pOj8,6196
+evoml/framework/metrics/__init__.py,sha256=xGfx6M6QnAPf43_FoV34mcWTAVLzoiwlAxmXCdhGP64,165
+evoml/framework/metrics/_base.py,sha256=WvOYZygNiW0qnFgMtlPLiwnhb3YC95GZkqMqlHzONh8,1130
+evoml/framework/utils/__init__.py,sha256=Y3XUdBe3riciaRxOgkBtWIlmUEdlIoCjLKeWZSRj5Gk,551
+evoml/framework/utils/_base.py,sha256=GmA9h57mxX_MY0m0VnwgSXqY7UTws9baLxEWOVW0gqM,10634
+evoml.framework-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+evoml.framework-1.0.1.dist-info/METADATA,sha256=DyMm07fhnzLl_3ufozVj2rufo2dDeLqpFHJZSP68eZs,1261
+evoml.framework-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+evoml.framework-1.0.1.dist-info/top_level.txt,sha256=F5wo9GRF-UXZYJgB7vHAhICQmM_boiQmU1sTPfeFhiw,6
+evoml.framework-1.0.1.dist-info/RECORD,,
