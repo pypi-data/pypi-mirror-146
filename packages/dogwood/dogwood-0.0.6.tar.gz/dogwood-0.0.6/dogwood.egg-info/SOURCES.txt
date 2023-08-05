@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+dogwood/__init__.py
+dogwood/errors.py
+dogwood/model_expansion.py
+dogwood.egg-info/PKG-INFO
+dogwood.egg-info/SOURCES.txt
+dogwood.egg-info/dependency_links.txt
+dogwood.egg-info/top_level.txt
+dogwood/experiments/__init__.py
+dogwood/experiments/model_based_transfer.py
+dogwood/pretraining/__init__.py
+dogwood/pretraining/imagenet_data_processor.py
+dogwood/pretraining/mini_imagenet_loader.py
+dogwood/pretraining/pretraining_pool.py
