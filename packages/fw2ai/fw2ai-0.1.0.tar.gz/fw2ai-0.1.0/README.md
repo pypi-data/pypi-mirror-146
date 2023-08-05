@@ -1,0 +1,78 @@
+# `fw2ai`
+
+This is a tool for analysing binaries from extracted firmware images. It has the capabilities to convert relevant artefacts from binary files that can used with AI to simplify firmware analysis.
+
+## Getting started
+
+### Configuration
+
+Configuration file defines following parameters that can be customized.
+
+> default config file name (resides in current directory): `./config.ini`
+
+| Section | Parameter     | Default        | Description                              |
+| ------- | ------------- | -------------- | ---------------------------------------- |
+| general | config_path   | `./config.ini` | Path to configuration file               |
+| general | firmwares_dir | `./firmwares`  | Directory containing firmwares           |
+| general | output_dir    | `./output`     | Directory where output will be generated |
+| log     | log_path      | `./log.txt`    | Path to log file                         |
+| log     | log_level     | `INFO`         | Log level                                |
+
+### Default configuration
+
+```ini
+[general]
+config_path=./config.ini
+firmwares_dir=./firmwares
+output_dir=./output
+
+[log]
+log_level=INFO
+log_path=./log.txt
+```
+
+### Logging
+
+Logging levels supported are:
+
+1. CRITICAL
+2. ERROR
+3. WARNING
+4. INFO
+5. DEBUG
+
+### Usage
+
+```bash
+fw2ai --help
+
+fw2ai [-f | --fw-dir] /path/to/dir/with/all/firmware
+
+fw2ai [-o | --output-dir ] /path/to/output/dir
+
+fw2ai [-c | --config ] /path/to/config/file
+```
+
+## Developer Notes
+
+### CLI architecture
+
+There are three parameter types:
+
+1. Arguments: Mandatory
+
+   ```bash
+    pip install requests
+   ```
+
+2. Options: Optional eg.
+
+   ```bash
+    pip install requests --proxy http://10.11.22.33
+   ```
+
+3. Flags: Optional (for enabling or disabling features)
+   ```bash
+   ls -al
+   ls --help
+   ```

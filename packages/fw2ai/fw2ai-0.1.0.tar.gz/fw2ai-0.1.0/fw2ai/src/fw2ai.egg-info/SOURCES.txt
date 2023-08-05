@@ -1,0 +1,7 @@
+README.md
+setup.py
+fw2ai/src/fw2ai.py
+fw2ai/src/fw2ai.egg-info/PKG-INFO
+fw2ai/src/fw2ai.egg-info/SOURCES.txt
+fw2ai/src/fw2ai.egg-info/dependency_links.txt
+fw2ai/src/fw2ai.egg-info/top_level.txt
