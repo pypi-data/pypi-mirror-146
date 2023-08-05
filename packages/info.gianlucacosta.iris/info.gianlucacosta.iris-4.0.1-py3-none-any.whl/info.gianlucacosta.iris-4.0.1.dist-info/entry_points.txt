@@ -1,0 +1,5 @@
+[console_scripts]
+rmheader=info.gianlucacosta.iris.scripts.rmheader:main
+rmlicense=info.gianlucacosta.iris.scripts.rmlicense:main
+rmspaces=info.gianlucacosta.iris.scripts.rmspaces:main
+
