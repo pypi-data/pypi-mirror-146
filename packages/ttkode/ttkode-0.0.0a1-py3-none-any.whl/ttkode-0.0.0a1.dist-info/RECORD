@@ -1,0 +1,12 @@
+ttkode/__init__.py,sha256=18XH6CWQhO-SpAwyA-VVkUevTQ2VJX674GQ9YQD1dOE,1239
+ttkode/__main__.py,sha256=sExdGgl_Pay5lPYjaUm5dClgqPRAl_eD6HEaQVYE5mM,1242
+ttkode/app/__init__.py,sha256=knOwcUB945_tyFbMGTQb9SChNyeufyrvqUC_Haqbpgw,1243
+ttkode/app/about.py,sha256=Kd0hUZjni4-ZDEBpH8dfSUWB7kOv1pQ44h5Ig9gaRWg,2696
+ttkode/app/cfg.py,sha256=iv5JtTlsPeHKY4PTJMCj7-JOS1nwkIPNZUDtJc8TdbQ,2134
+ttkode/app/main.py,sha256=C5_5eR0iIFI0hKyVHIJ4pQooEg20apBahfw8O8FezU4,7058
+ttkode/app/options.py,sha256=6pbXYOFS5jYLCSq6KqHZg2lZpVY_rqd_IpGJVjdHg3I,3182
+ttkode-0.0.0a1.dist-info/METADATA,sha256=4pIEF6_XytzR6LVi340uAigkMBvJGpYmBPYiJypKlaU,2404
+ttkode-0.0.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ttkode-0.0.0a1.dist-info/entry_points.txt,sha256=PZUvi8Hik70MdV0tO3_W8kEdxLVqzIwKOKgpfiMb-JQ,39
+ttkode-0.0.0a1.dist-info/top_level.txt,sha256=3roaMxCJxq71pW2MdaZCzuclyaWN0lfQMCShdCOiOPc,7
+ttkode-0.0.0a1.dist-info/RECORD,,
