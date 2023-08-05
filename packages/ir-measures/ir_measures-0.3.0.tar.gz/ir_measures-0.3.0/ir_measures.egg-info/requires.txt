@@ -1,0 +1,9 @@
+pytrec-eval-terrier==0.5.2
+cwl-eval>=1.0.10
+pyndeval>=0.0.2
+
+[ranx]
+ranx>=0.1.11
+
+[trectools]
+trectools>=0.0.44
