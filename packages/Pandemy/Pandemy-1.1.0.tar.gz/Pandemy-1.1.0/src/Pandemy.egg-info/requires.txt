@@ -1,0 +1,14 @@
+pandas>=1.2.0
+sqlalchemy>=1.4.0
+
+[docs]
+docutils==0.16.0
+sphinx>=4.2.0
+sphinx_rtd_theme>=0.4.3
+
+[oracle]
+cx_oracle>=7
+
+[tests]
+pytest>=6.0.0
+pytest-cov>=2.7.0
