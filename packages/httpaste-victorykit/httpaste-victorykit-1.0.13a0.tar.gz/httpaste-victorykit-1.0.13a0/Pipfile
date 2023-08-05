@@ -1,0 +1,13 @@
+[[source]]
+url = 'https://pypi.python.org/simple'
+verify_ssl = true
+name = 'pypi'
+
+[requires]
+python_version = '3'
+
+[packages]
+httpaste = {editable = true, path = "."}
+
+[dev-packages]
+tox = '==3.23.0'
