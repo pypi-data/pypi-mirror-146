@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: filterweb
+Version: 0.0.1
+Summary: web + filter
+Home-page: https://github.com/wtnb75/filterweb
+Author: Watanabe Takashi
+Author-email: wtnb75@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: click
+Requires-Dist: PyYAML
+Requires-Dist: requests
+Requires-Dist: jinja2
+Requires-Dist: xmltodict
+Requires-Dist: grpc-requests
+Requires-Dist: paramiko
+Requires-Dist: jsonpointer
+Requires-Dist: pydantic
+
+UNKNOWN
+
