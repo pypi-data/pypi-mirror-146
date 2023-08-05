@@ -1,0 +1,15 @@
+README.md
+setup.py
+classeviva/__init__.py
+classeviva/client.py
+classeviva/credentials.py
+classeviva/model.py
+classeviva_client.egg-info/PKG-INFO
+classeviva_client.egg-info/SOURCES.txt
+classeviva_client.egg-info/dependency_links.txt
+classeviva_client.egg-info/requires.txt
+classeviva_client.egg-info/top_level.txt
+cli/classeviva
+tests/cli/__init__.py
+tests/cli/test_agenda.py
+tests/cli/test_grades.py
