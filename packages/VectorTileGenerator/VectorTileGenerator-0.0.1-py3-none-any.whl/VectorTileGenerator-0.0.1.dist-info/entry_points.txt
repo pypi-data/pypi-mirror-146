@@ -1,0 +1,3 @@
+[console_scripts]
+VectorTileGenerator = tileGenerator.__main__:main
+
