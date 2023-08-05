@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyrrr
+Version: 0.1.0a0
+Summary: Reduced-Rank Regression
+License: MIT
+Author: chrisaddy
+Author-email: chris.william.addy@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
