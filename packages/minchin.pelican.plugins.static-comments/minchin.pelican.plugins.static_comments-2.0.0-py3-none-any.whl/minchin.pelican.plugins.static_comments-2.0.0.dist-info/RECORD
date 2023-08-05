@@ -1,0 +1,15 @@
+minchin/pelican/plugins/static_comments/__init__.py,sha256=DIMhAzkRG-5JbMsy6HL9SK5EqkLfws4_heUG5KtlJd8,8225
+minchin/pelican/plugins/static_comments/avatars.py,sha256=E5b7NWKIFHO2oooSA4taUVetC1KD78k7j_nglalebuk,2832
+minchin/pelican/plugins/static_comments/blogger_comment_export.py,sha256=sFuFBVv3aQryg3O8m18LaQEju6rFFkcMxxUmcTJ5pgs,5372
+minchin/pelican/plugins/static_comments/comment.py,sha256=7Oj35_Pr21C8oSoDNBohmN2Lgywmf2KC31CSUzIMoHk,2066
+minchin/pelican/plugins/static_comments/identicon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minchin/pelican/plugins/static_comments/identicon/identicon.py,sha256=IJHGTB02HkY4lbW3c5jW74feEr4dbSFWGZd5uvYYYGM,7639
+minchin/pelican/plugins/static_comments/import/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minchin/pelican/plugins/static_comments/import/blogger_comment_export.py,sha256=sFuFBVv3aQryg3O8m18LaQEju6rFFkcMxxUmcTJ5pgs,5372
+minchin.pelican.plugins.static_comments-2.0.0.dist-info/COPYING,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+minchin.pelican.plugins.static_comments-2.0.0.dist-info/LICENSE.txt,sha256=PYXXaDE-zeoDKl-EFEbJJHmcbLmoWC5YO57Y6ckNuQQ,2326
+minchin.pelican.plugins.static_comments-2.0.0.dist-info/METADATA,sha256=mWhIAjHEodGl0cduUMHtO3a5wvCttkva3RqYrAA0NRE,9282
+minchin.pelican.plugins.static_comments-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+minchin.pelican.plugins.static_comments-2.0.0.dist-info/entry_points.txt,sha256=yYecOJu6YAFUSTVMxSrHlsGb58nBSrs_i0gflPST04E,119
+minchin.pelican.plugins.static_comments-2.0.0.dist-info/top_level.txt,sha256=UfZcij00rJG77eOQBb7_ze25M4GNX6IZ7pbW2toN94c,8
+minchin.pelican.plugins.static_comments-2.0.0.dist-info/RECORD,,
