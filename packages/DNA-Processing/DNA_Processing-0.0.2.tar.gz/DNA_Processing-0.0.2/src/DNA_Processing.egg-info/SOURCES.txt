@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+.git/config
+src/DNA_Processing.egg-info/PKG-INFO
+src/DNA_Processing.egg-info/SOURCES.txt
+src/DNA_Processing.egg-info/dependency_links.txt
+src/DNA_Processing.egg-info/top_level.txt
+src/dna_processing/__init__.py
