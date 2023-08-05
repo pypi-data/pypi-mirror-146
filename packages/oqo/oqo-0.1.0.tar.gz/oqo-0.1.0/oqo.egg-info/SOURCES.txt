@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+oqo/__init__.py
+oqo/__version__.py
+oqo/core.py
+oqo.egg-info/PKG-INFO
+oqo.egg-info/SOURCES.txt
+oqo.egg-info/dependency_links.txt
+oqo.egg-info/top_level.txt
