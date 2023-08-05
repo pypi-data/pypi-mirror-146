@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/exlog/__init__.py
+src/exlog/exceptlog.py
+src/exlog.egg-info/PKG-INFO
+src/exlog.egg-info/SOURCES.txt
+src/exlog.egg-info/dependency_links.txt
+src/exlog.egg-info/requires.txt
+src/exlog.egg-info/top_level.txt
