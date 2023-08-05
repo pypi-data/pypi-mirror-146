@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+exploration.egg-info/PKG-INFO
+exploration.egg-info/SOURCES.txt
+exploration.egg-info/dependency_links.txt
+exploration.egg-info/requires.txt
+exploration.egg-info/top_level.txt
+scripts/egtool
