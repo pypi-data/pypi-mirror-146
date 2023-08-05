@@ -1,0 +1,4 @@
+django>=3.0
+djangorestframework>=3.7
+channels>=2
+django_mux_demux_ws
