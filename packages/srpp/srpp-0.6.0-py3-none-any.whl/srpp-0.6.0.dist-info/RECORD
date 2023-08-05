@@ -1,0 +1,16 @@
+srpp/__init__.py,sha256=3O6zRr4YNxCHlhxTAc5EWdRPiYF5JXgAv33j8CVUpCk,20
+srpp/srpp.py,sha256=sJLp0ONKzMy6HH2ZfuPi0jNkuAGo8LfVJ-Y2BLjgCww,47150
+srpp/params/corr2010_curr.csv,sha256=MGFDrlU3UXr_y-kI-lR9GrJR3iQ0wWFuuWWy7IMzG5Y,1016
+srpp/params/cpi.csv,sha256=bPwOc7v9k67mdesPvXPCNOIzwkxWGKz07sAX03S06jM,1282
+srpp/params/cpp_history.xlsx,sha256=QvfMESxtpHNJ_IUPfBK4wf2W0E0j8BS4pPd_zCFe9BA,23132
+srpp/params/cpp_history_full.xlsx,sha256=LDTTrkfw12_7z0J_eS7lOsDI3svvDHMjuRxCIEikwEU,60637
+srpp/params/cppyear.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srpp/params/qpp_history.xlsx,sha256=-Vwoea2YQgFezALQCJ62DvwLD9hyg232JyqfR184RwY,24180
+srpp-0.6.0.dist-info/LICENSE,sha256=TGC82qmqvS-_Nzsm4k5nAbh8-D-yZIVychyrW1oJCSM,1094
+srpp-0.6.0.dist-info/METADATA,sha256=IHmfndRulY-iC-cWkYd9OJt_T1ZNhYsMuQf7Cs7gCR4,778
+srpp-0.6.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+srpp-0.6.0.dist-info/top_level.txt,sha256=tT3anyOqO6Q2W6-2pTM34ebtKPAAEVNOilRE3AeDQ_A,5
+srpp-0.6.1.dist-info/LICENSE,sha256=TGC82qmqvS-_Nzsm4k5nAbh8-D-yZIVychyrW1oJCSM,1094
+srpp-0.6.1.dist-info/METADATA,sha256=8R_-pOg9EMl78AcJSQhdp9Ow_keinWT8y1dhkZrLLhc,778
+srpp-0.6.1.dist-info/top_level.txt,sha256=tT3anyOqO6Q2W6-2pTM34ebtKPAAEVNOilRE3AeDQ_A,5
+srpp-0.6.0.dist-info/RECORD,,
