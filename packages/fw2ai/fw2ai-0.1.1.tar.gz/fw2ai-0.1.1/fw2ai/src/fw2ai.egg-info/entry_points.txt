@@ -1,0 +1,2 @@
+[console_scripts]
+fw2ai = fw2ai:cli
