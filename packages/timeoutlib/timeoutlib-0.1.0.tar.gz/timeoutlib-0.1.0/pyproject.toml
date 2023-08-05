@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "timeoutlib"
+version = "0.1.0"
+description = "Timeout wrapper utilities"
+authors = ["Imtiaz Mangerah <Imtiaz_Mangerah@a2d24.com>"]
+license = "MIT"
+readme = 'README.md'
+keywords = ['timeout', 'signal', 'SIGALRM']
+homepage = "https://github.com/a2d24/timeoutlib"
+repository = "https://github.com/a2d24/timeoutlib"
+documentation = "https://github.com/a2d24/timeoutlib"
+
+
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+source = ["timeoutlib"]
