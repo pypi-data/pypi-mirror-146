@@ -1,0 +1,45 @@
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="Portrait_Robot_G5",
+    version = "0.0.6",
+    author = "Canjura, Loisel, Ouaret, Gaun, Valente",
+    author_email = "maceovalente@gmail.com",
+    description = "4BIM project by group 5",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/Lina-ouaret/Project_4bim",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: OS Independent",
+    ],
+    package_dir={'Portrait-Robot-G5': './projet'},
+    package_data={'Portrait-Robot-G5':['clusters/*.npy'], 'Portrait_Robot_G5':['clusters/*.csv'],'Portrait_Robot_G5':['decoders/*.h5'],
+                'Portrait-Robot-G5':['build/doctrees/*'],
+                'Portrait_Robot_G5':['build/html/*.html'],
+                'Portrait_Robot_G5':['build/html/*.js'],
+                'Portrait_Robot_G5':['build/html/*.inv'],
+                'Portrait_Robot_G5':['choice/*'],
+                'Portrait_Robot_G5':['father/*'],
+                'Portrait_Robot_G5':['final_choice/*'],
+                'Portrait_Robot_G5':['selectionImage/*.png'],
+                'Portrait_Robot_G5':['son/*'],
+                'Portrait_Robot_G5':['source/*.rst'],
+                'Portrait_Robot_G5':['source/*.py'],
+                'Portrait_Robot_G5':['Tutoriel/*.ipynb'],
+                'Portrait_Robot_G5':['encoded_ag.npy'],
+                'Portrait_Robot_G5':['encoded_choix.npy'],
+                'Portrait_Robot_G5':['Makefile'],
+                'Portrait_Robot_G5':['../select.txt'],
+                'Portrait_Robot_G5':['../images_tutorial/*'],
+                'Portrait_Robot_G5':['../README.md'],
+                'Portrait_Robot_G5':['../Dockerfile'],
+                'Portrait_Robot_G5':['../LICENSE'], 
+                  },
+    include_package_data=True,
+)
