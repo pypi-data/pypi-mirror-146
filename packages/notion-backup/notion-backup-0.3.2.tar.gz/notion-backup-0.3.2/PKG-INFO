@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: notion-backup
+Version: 0.3.2
+Summary: Notion workspace export automation tool
+Home-page: https://github.com/HugoLime/notion-backup
+Author: Ligohu
+Author-email: ligohu@outlook.fr
+Requires-Python: >=3.8.5
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: backoff (>=1.10.0)
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: prompt_toolkit (>=3.0.5)
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: tqdm (>=4.46.0)
+Project-URL: Repository, https://github.com/HugoLime/notion-backup
+Description-Content-Type: text/markdown
+
+# notion-backup
+Automate export of Notion workspace
+
+
+## Installation
+
+```
+pip install --upgrade notion-backup
+```
+
+
+## Usage
+
+```
+backup_notion --output-dir='.'
+```
+
+## How it works
+
+The script obtains an API token by requesting a temporary password to be sent to your email address.
+
+Login information are stored in `~/.notion_backup.conf`
+
+The export zip is generated and downloaded to the specified directory.
+
