@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: trecover
+Version: 1.0.0
+Summary: A Python library to train Transformer neural network for keyless reading task.
+Home-page: https://github.com/alex-snd/TRecover
+Author: Alexander Shulga
+Author-email: alexandershulga.sh@gmail.com
+License: Apache License 2.0
+Keywords: Deep Learning,Machine Learning,Transformers,NLP,Cryptography,Keyless Reading,TRecover,Text Recovery,PyTorch
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Celery
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: docker (==5.0.3)
+Requires-Dist: psutil (==5.8.0)
+Requires-Dist: python-dotenv (==0.19.2)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: rich (==10.15.1)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: click (==8.0.4)
+Requires-Dist: typer[all] (==0.4.0)
+Provides-Extra: api
+Requires-Dist: celery[redis] (==5.2.2) ; extra == 'api'
+Requires-Dist: pydantic (==1.8.2) ; extra == 'api'
+Requires-Dist: fastapi (==0.68.1) ; extra == 'api'
+Requires-Dist: uvicorn (==0.15.0) ; extra == 'api'
+Provides-Extra: dashboard
+Requires-Dist: streamlit (==1.7.0) ; extra == 'dashboard'
+Requires-Dist: numpy (==1.21) ; extra == 'dashboard'
+Provides-Extra: dev
+Requires-Dist: alembic (==1.4.1) ; extra == 'dev'
+Requires-Dist: celery[redis] (==5.2.2) ; extra == 'dev'
+Requires-Dist: docker (==5.0.3) ; extra == 'dev'
+Requires-Dist: fastapi (==0.68.1) ; extra == 'dev'
+Requires-Dist: mlflow (==1.23.1) ; extra == 'dev'
+Requires-Dist: numpy (==1.21) ; extra == 'dev'
+Requires-Dist: psutil (==5.8.0) ; extra == 'dev'
+Requires-Dist: pydantic (==1.8.2) ; extra == 'dev'
+Requires-Dist: python-dotenv (==0.19.2) ; extra == 'dev'
+Requires-Dist: requests (==2.25.1) ; extra == 'dev'
+Requires-Dist: rich (==10.15.1) ; extra == 'dev'
+Requires-Dist: streamlit (==1.7.0) ; extra == 'dev'
+Requires-Dist: toml (==0.10.2) ; extra == 'dev'
+Requires-Dist: torch (==1.9.0) ; extra == 'dev'
+Requires-Dist: pytorch-lightning (==1.6.0) ; extra == 'dev'
+Requires-Dist: typer[all] (==0.4.0) ; extra == 'dev'
+Requires-Dist: uvicorn (==0.15.0) ; extra == 'dev'
+Requires-Dist: wandb (==0.12.7) ; extra == 'dev'
+Provides-Extra: standalone
+Requires-Dist: torch (==1.9.0) ; extra == 'standalone'
+Requires-Dist: celery[redis] (==5.2.2) ; extra == 'standalone'
+Requires-Dist: pydantic (==1.8.2) ; extra == 'standalone'
+Requires-Dist: streamlit (==1.7.0) ; extra == 'standalone'
+Requires-Dist: numpy (==1.21) ; extra == 'standalone'
+Requires-Dist: fastapi (==0.68.1) ; extra == 'standalone'
+Requires-Dist: uvicorn (==0.15.0) ; extra == 'standalone'
+Provides-Extra: test
+Requires-Dist: celery[redis] (==5.2.2) ; extra == 'test'
+Requires-Dist: fastapi (==0.68.1) ; extra == 'test'
+Requires-Dist: numpy (==1.21) ; extra == 'test'
+Requires-Dist: pydantic (==1.8.2) ; extra == 'test'
+Requires-Dist: streamlit (==1.7.0) ; extra == 'test'
+Requires-Dist: torch (==1.9.0) ; extra == 'test'
+Requires-Dist: uvicorn (==0.15.0) ; extra == 'test'
+Provides-Extra: train
+Requires-Dist: alembic (==1.4.1) ; extra == 'train'
+Requires-Dist: mlflow (==1.23.1) ; extra == 'train'
+Requires-Dist: numpy (==1.21) ; extra == 'train'
+Requires-Dist: torch (==1.9.0) ; extra == 'train'
+Requires-Dist: pytorch-lightning (==1.6.0) ; extra == 'train'
+Requires-Dist: wandb (==0.12.7) ; extra == 'train'
+Provides-Extra: worker
+Requires-Dist: celery[redis] (==5.2.2) ; extra == 'worker'
+Requires-Dist: torch (==1.9.0) ; extra == 'worker'
+
+UNKNOWN
+

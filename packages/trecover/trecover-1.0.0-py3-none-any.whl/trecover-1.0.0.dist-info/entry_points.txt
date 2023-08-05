@@ -1,0 +1,2 @@
+[console_scripts]
+trecover = trecover.app.cli.trecovercli:cli
