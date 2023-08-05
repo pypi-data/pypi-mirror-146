@@ -1,0 +1,7 @@
+setup.py
+UltimateSwitchCase/UltimateSwitchCase.py
+UltimateSwitchCase/__init__.py
+UltimateSwitchCase.egg-info/PKG-INFO
+UltimateSwitchCase.egg-info/SOURCES.txt
+UltimateSwitchCase.egg-info/dependency_links.txt
+UltimateSwitchCase.egg-info/top_level.txt
