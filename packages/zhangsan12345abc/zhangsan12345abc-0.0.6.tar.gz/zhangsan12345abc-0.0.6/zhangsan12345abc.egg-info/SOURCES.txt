@@ -1,0 +1,5 @@
+setup.py
+zhangsan12345abc.egg-info/PKG-INFO
+zhangsan12345abc.egg-info/SOURCES.txt
+zhangsan12345abc.egg-info/dependency_links.txt
+zhangsan12345abc.egg-info/top_level.txt
