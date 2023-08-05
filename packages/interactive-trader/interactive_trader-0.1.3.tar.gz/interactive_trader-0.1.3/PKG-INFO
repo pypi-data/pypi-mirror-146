@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: interactive_trader
+Version: 0.1.3
+Summary: Trade on Interactive Brokers with Plotly Dash in Python
+Home-page: https://interactive-trader.readthedocs.io/
+Author: Jake Vestal
+Author-email: jmv13@duke.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# interactive_trader
+Create a custom trading system using Dash and Interactive Brokers
+
+
