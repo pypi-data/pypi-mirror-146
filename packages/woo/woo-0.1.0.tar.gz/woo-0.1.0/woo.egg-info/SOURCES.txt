@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+woo/__init__.py
+woo/__version__.py
+woo/core.py
+woo.egg-info/PKG-INFO
+woo.egg-info/SOURCES.txt
+woo.egg-info/dependency_links.txt
+woo.egg-info/top_level.txt
