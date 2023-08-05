@@ -1,0 +1,14 @@
+zuul_registry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zuul_registry/filesystem.py,sha256=UNZWW-2afDpk9hiutBil0ftgtCQkR-zn8c4_PvfA0Eg,5070
+zuul_registry/main.py,sha256=bhsSZiF3U4iJmTJY4BJrBoR7HLT1NtnGQyWie-SVr4E,24833
+zuul_registry/storage.py,sha256=cQWwGFMqZwPf9mI8LC2gmzBl9Ro1PZW-lGKmggt0gPs,11711
+zuul_registry/storageutils.py,sha256=FC9X28wj32KISTw_fiw5YHAtIk8kwmYP19UK6Qu3zpo,3790
+zuul_registry/swift.py,sha256=i50584BbN9ZDfk5XgCKrw970Z0oVvCK7SatY29QdD1s,9910
+zuul_registry-1.2.0.dist-info/AUTHORS,sha256=Zex83b8p55BLGyjWDeQThNcWGfTgbp6E30Zu5mHrcFQ,327
+zuul_registry-1.2.0.dist-info/COPYING,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+zuul_registry-1.2.0.dist-info/METADATA,sha256=gGLVV4Z5-F1t3ZiEPFHrv9CNgvjDzH9uaIT3ibp-nPk,2901
+zuul_registry-1.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+zuul_registry-1.2.0.dist-info/entry_points.txt,sha256=CE5OXK9mnKCNPo8RB8esen1F9cedtMrPRf0uNJDSDXA,59
+zuul_registry-1.2.0.dist-info/pbr.json,sha256=3PWZgIygV0GaTY2SSAbt7x2Gsran0k9uBeHt-q__FvE,46
+zuul_registry-1.2.0.dist-info/top_level.txt,sha256=f41VY7tszj9NnHjMkHjGW26tNO4Krpv1TFJXK7kefPA,14
+zuul_registry-1.2.0.dist-info/RECORD,,

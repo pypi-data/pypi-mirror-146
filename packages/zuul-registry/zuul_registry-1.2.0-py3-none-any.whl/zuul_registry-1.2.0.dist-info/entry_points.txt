@@ -1,0 +1,3 @@
+[console_scripts]
+zuul-registry = zuul_registry.main:main
+
