@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sigmasms
+Version: 1.2.0
+Summary: Tool for easy working with SigmaSMS API
+Home-page: https://github.com/mrslow/sigmasms
+Author: Anton Shchetikhin
+Author-email: animal2k@gmail.com
+License: UNKNOWN
+Keywords: api sigmasms client
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# sigmasms
+
+Module provides an interface for https://sigmasms.ru/api/http/.
+
+## Usage
+
+```python
+from sigmasms import AsyncClient
+
+# instantiate client
+client = AsyncClient(username='login', password='password', sender='MessageSender')
+
+# authorize
+await client.auth()
+print(client.token)
+
+# send message
+resp = await client.send_message('TestSender', '+79999999999', 'text', 'sms')
+print(resp)
+
+# check message status
+msg_id = resp['id']
+status = await client.check_status(msg_id)
+print(status)
+
+# check balance
+balance = await client.get_balance()
+print(balance)
+
+# close client 
+await client.close()
+
+```
+
+
