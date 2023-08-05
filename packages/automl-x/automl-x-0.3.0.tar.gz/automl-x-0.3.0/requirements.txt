@@ -1,0 +1,12 @@
+lightgbm
+xgboost
+torch
+numpy
+pandas
+sklearn
+tqdm
+optuna
+img2vec_pytorch
+pypinyin
+keras
+tensorflow
