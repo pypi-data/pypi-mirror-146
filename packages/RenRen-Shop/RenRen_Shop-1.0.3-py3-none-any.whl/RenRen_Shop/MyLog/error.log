@@ -1,0 +1,16 @@
+[2022-04-07  16:32:20.049] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:52" [ERROR] : {"error":460106,"message":"参数错误"}
+[2022-04-07  16:35:18.893] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:52" [ERROR] : {"error":460106,"message":"参数错误"}
+[2022-04-07  16:37:12.856] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:52" [ERROR] : id=426&is_preheat=1&end_time=2022-04-07+18%3A00%3A00&preheat_time=2022-04-07+12%3A00%3A00&start_time=2022-04-07+16%3A00%3A00
+[2022-04-07  16:37:12.856] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:53" [ERROR] : {"error":460106,"message":"参数错误"}
+[2022-04-07  16:38:59.456] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:52" [ERROR] : id=426&is_preheat=1&end_time=2022-04-07+18%3A00%3A00&preheat_time=2022-04-07+12%3A00%3A00
+[2022-04-07  16:38:59.457] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:53" [ERROR] : {"error":460106,"message":"参数错误"}
+[2022-04-07  16:41:51.270] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:52" [ERROR] : id=426&is_preheat=1&end_time=2022-04-07+18%3A00%3A00&preheat_time=2022-04-07+12%3A00%3A00&start_time=2022-04-07+16%3A00%3A00
+[2022-04-07  16:41:51.270] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:53" [ERROR] : {"error":460106,"message":"参数错误"}
+[2022-04-07  16:42:26.863] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:52" [ERROR] : {"error":460106,"message":"参数错误"}
+[2022-04-07  16:42:36.661] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:52" [ERROR] : {"error":460106,"message":"参数错误"}
+[2022-04-07  16:43:24.379] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:52" [ERROR] : {"error":460106,"message":"参数错误"}
+[2022-04-07  16:44:13.236] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\edit.py:52" [ERROR] : {"error":460106,"message":"参数错误"}
+[2022-04-07  17:16:21.977] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\add.py:53" [ERROR] : {"error":460100,"message":"活动库存不能为空"}
+[2022-04-07  17:16:26.008] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\add.py:53" [ERROR] : {"error":460100,"message":"商品[扫把套装簸箕组合家用笤帚刮水器头发扫地神器扫帚垃圾铲单个扫帚]减库存方式不是下单减库存"}
+[2022-04-07  17:16:27.883] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\add.py:53" [ERROR] : {"error":460100,"message":"商品[辣味客重庆自热小火锅麻辣牛肚火腿肠蔬菜自助方便懒人网红火锅]减库存方式不是下单减库存"}
+[2022-04-07  17:16:29.969] "D:\python\RenRenMall\RenRen_Shop\api\application\seckill\add.py:53" [ERROR] : {"error":460100,"message":"商品[老干妈油辣椒275g贵州风味特产油辣子花生辣椒酱调料拌面酱]减库存方式不是下单减库存"}

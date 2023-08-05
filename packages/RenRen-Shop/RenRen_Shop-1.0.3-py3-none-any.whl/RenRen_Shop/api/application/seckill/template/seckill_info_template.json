@@ -1,0 +1,257 @@
+{
+     "error": 0,
+     "data": {
+          "id": "440",
+          "shop_id": "480",
+          "type": "seckill",
+          "title": "20点整点秒杀",
+          "status": "0",
+          "start_time": "2022-04-08 20:00:00",
+          "end_time": "2022-04-08 22:00:00",
+          "goods_ids": "9665,9612,9622,9626,9621",
+          "option_ids": "24536,24537,24538,24539,24540,24541,24542,24543,24255,24256,24268,24277,24280,24281,24282,24267",
+          "client_type": "21",
+          "rules": {
+               "is_commission": "1",
+               "limit_type": "1",
+               "limit_num": "1"
+          },
+          "is_deleted": "0",
+          "stop_time": "0000-00-00 00:00:00",
+          "create_time": "2022-04-08 09:09:34",
+          "update_time": "2022-04-08 09:09:34",
+          "is_preheat": "1",
+          "preheat_time": "2022-04-07 20:00:00",
+          "inner_type": "0",
+          "sub_shop_id": "0",
+          "goods_join_type": "0",
+          "description": null,
+          "goods_info": [
+               {
+                    "id": "9665",
+                    "stock": "79",
+                    "title": "渝美滋40包手撕素肉豆干素牛排牛肉香辣条散装好吃的零食小吃休闲食品排行榜",
+                    "min_price": "3.80",
+                    "max_price": "8.80",
+                    "has_option": 1,
+                    "thumb": "image/480/2022/04/99a1c18cd2e28611718cbc1101ecd472.jpeg",
+                    "type": "0",
+                    "sales": "50",
+                    "rules": [
+                         {
+                              "id": "24536",
+                              "activity_stock": "10",
+                              "activity_price": "3.40",
+                              "is_join": "1",
+                              "stock": "10",
+                              "price": "3.80",
+                              "title": "【混合口味】10包",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24537",
+                              "activity_stock": "10",
+                              "activity_price": "7.00",
+                              "is_join": "1",
+                              "stock": "10",
+                              "price": "7.80",
+                              "title": "【牛肉味】【不辣】30包",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24538",
+                              "activity_stock": "10",
+                              "activity_price": "7.90",
+                              "is_join": "1",
+                              "stock": "10",
+                              "price": "8.80",
+                              "title": "【烧烤味】40包",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24539",
+                              "activity_stock": "10",
+                              "activity_price": "7.00",
+                              "is_join": "1",
+                              "stock": "10",
+                              "price": "7.80",
+                              "title": "混合3种口味30包",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24540",
+                              "activity_stock": "10",
+                              "activity_price": "7.90",
+                              "is_join": "1",
+                              "stock": "10",
+                              "price": "8.80",
+                              "title": "【牛肉味】【不辣】40包",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24541",
+                              "activity_stock": "9",
+                              "activity_price": "7.90",
+                              "is_join": "1",
+                              "stock": "9",
+                              "price": "8.80",
+                              "title": "【香辣味】40包",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24542",
+                              "activity_stock": "10",
+                              "activity_price": "5.20",
+                              "is_join": "1",
+                              "stock": "10",
+                              "price": "5.80",
+                              "title": "【2种辣味混合装】20包",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24543",
+                              "activity_stock": "10",
+                              "activity_price": "5.20",
+                              "is_join": "1",
+                              "stock": "10",
+                              "price": "5.80",
+                              "title": "【混合全部】40包",
+                              "weight": "0.00"
+                         }
+                    ]
+               },
+               {
+                    "id": "9612",
+                    "stock": "69",
+                    "title": "【临期食品】达利园青梅绿茶整箱330ml*12",
+                    "min_price": "1.50",
+                    "max_price": "16.00",
+                    "has_option": 1,
+                    "thumb": "image/480/2022/04/9a02c6399ebe34d9ef25ecfafb2b6aff.jpeg",
+                    "type": "0",
+                    "sales": "50",
+                    "rules": [
+                         {
+                              "id": "24255",
+                              "activity_stock": "9",
+                              "activity_price": "14.40",
+                              "is_join": "1",
+                              "stock": "9",
+                              "price": "16.00",
+                              "title": "临期产品注意购买（保质期12个月）+2021-07+整箱",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24256",
+                              "activity_stock": "60",
+                              "activity_price": "1.40",
+                              "is_join": "1",
+                              "stock": "60",
+                              "price": "1.50",
+                              "title": "临期产品注意购买（保质期12个月）+2021-07+单瓶",
+                              "weight": "0.00"
+                         }
+                    ]
+               },
+               {
+                    "id": "9622",
+                    "stock": "10",
+                    "title": "【蒙牛饮品】蒙牛真果粒整箱装250g*12盒",
+                    "min_price": "15.50",
+                    "max_price": "15.50",
+                    "has_option": 1,
+                    "thumb": "image/480/2022/04/f3e100ea0819a18827d8a1d41507914c.jpeg",
+                    "type": "0",
+                    "sales": "50",
+                    "rules": [
+                         {
+                              "id": "24268",
+                              "activity_stock": "10",
+                              "activity_price": "14.00",
+                              "is_join": "1",
+                              "stock": "10",
+                              "price": "15.50",
+                              "title": "口味随机250g*12盒",
+                              "weight": "0.00"
+                         }
+                    ]
+               },
+               {
+                    "id": "9626",
+                    "stock": "486",
+                    "title": "旺旺O泡果奶旺仔牛奶o泡果奶原味草莓味饮料125ml*24盒儿童早餐酸奶饮品整箱",
+                    "min_price": "15.50",
+                    "max_price": "23.25",
+                    "has_option": 1,
+                    "thumb": "image/480/2022/04/48714bb51476ebe646385540d6261c69.jpeg",
+                    "type": "0",
+                    "sales": "50",
+                    "rules": [
+                         {
+                              "id": "24277",
+                              "activity_stock": "51",
+                              "activity_price": "20.90",
+                              "is_join": "1",
+                              "stock": "51",
+                              "price": "23.25",
+                              "title": "旺旺原味奶+2021-04-23",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24280",
+                              "activity_stock": "12",
+                              "activity_price": "14.00",
+                              "is_join": "1",
+                              "stock": "12",
+                              "price": "15.50",
+                              "title": "旺旺草莓味+2021-04-23",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24281",
+                              "activity_stock": "25",
+                              "activity_price": "15.30",
+                              "is_join": "1",
+                              "stock": "25",
+                              "price": "17.05",
+                              "title": "旺旺草莓味+2021-05-03",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24282",
+                              "activity_stock": "398",
+                              "activity_price": "16.70",
+                              "is_join": "1",
+                              "stock": "398",
+                              "price": "18.60",
+                              "title": "旺旺草莓味+2021-05-23~2021-07-12",
+                              "weight": "0.00"
+                         }
+                    ]
+               },
+               {
+                    "id": "9621",
+                    "stock": "10",
+                    "title": "张艺兴同款Nestle/雀巢茶萃果汁茶饮料500ml*15瓶整箱.夏日特饮",
+                    "min_price": "23.25",
+                    "max_price": "23.25",
+                    "has_option": 1,
+                    "thumb": "image/480/2022/04/b8d3913bcb7869fc11a595cb228f7bb8.jpeg",
+                    "type": "0",
+                    "sales": "50",
+                    "rules": [
+                         {
+                              "id": "24267",
+                              "activity_stock": "10",
+                              "activity_price": "20.90",
+                              "is_join": "1",
+                              "stock": "10",
+                              "price": "23.25",
+                              "title": "口味随机发货*15瓶",
+                              "weight": "0.00"
+                         }
+                    ]
+               }
+          ]
+     }
+}
