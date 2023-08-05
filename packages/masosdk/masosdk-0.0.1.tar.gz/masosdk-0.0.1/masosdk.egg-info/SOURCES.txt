@@ -1,0 +1,10 @@
+README.md
+setup.py
+masosdk/Dataset.py
+masosdk/__init__.py
+masosdk.egg-info/PKG-INFO
+masosdk.egg-info/SOURCES.txt
+masosdk.egg-info/dependency_links.txt
+masosdk.egg-info/not-zip-safe
+masosdk.egg-info/requires.txt
+masosdk.egg-info/top_level.txt
