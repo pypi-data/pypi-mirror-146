@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bosch/control_panel/cc880p/__init__.py
+src/bosch/control_panel/cc880p/cp.py
+src/bosch/control_panel/cc880p/models.py
+src/bosch/utils/__init__.py
+src/bosch/utils/bytes_to_str.py
+src/bosch_control_panel_cc880p.egg-info/PKG-INFO
+src/bosch_control_panel_cc880p.egg-info/SOURCES.txt
+src/bosch_control_panel_cc880p.egg-info/dependency_links.txt
+src/bosch_control_panel_cc880p.egg-info/requires.txt
+src/bosch_control_panel_cc880p.egg-info/top_level.txt
