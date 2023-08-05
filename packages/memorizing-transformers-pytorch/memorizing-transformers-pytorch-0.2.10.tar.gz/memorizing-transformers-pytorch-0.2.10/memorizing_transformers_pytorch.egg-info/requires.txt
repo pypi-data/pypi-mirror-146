@@ -1,0 +1,5 @@
+einops>=0.4
+einops-exts
+faiss-gpu
+numpy
+torch>=1.6
