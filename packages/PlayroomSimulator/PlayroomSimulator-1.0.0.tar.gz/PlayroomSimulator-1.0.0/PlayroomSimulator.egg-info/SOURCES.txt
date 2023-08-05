@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+PlayroomSimulator.egg-info/PKG-INFO
+PlayroomSimulator.egg-info/SOURCES.txt
+PlayroomSimulator.egg-info/dependency_links.txt
+PlayroomSimulator.egg-info/top_level.txt
+room/__init__.py
