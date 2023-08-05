@@ -1,0 +1,11 @@
+todoist_helper/__init__.py,sha256=funXCNiOlhS9xWiEfIYBuxGiTyE0YVZ9kpJexXXLiiM,109
+todoist_helper/add_obsidian_task.py,sha256=aOuWXhJqXIVyk9kqr2j9W1xx4xYPDA0JyWvDDnbUlWE,780
+todoist_helper/add_todoist_task.py,sha256=1e7MN8bn7k_azW6JvpNiefufle5VQv5QRMhI9wcgWrE,1500
+todoist_helper/base.py,sha256=ZinRayEQnzFpXgLczpq_RUOCPcNyt92tkIvVVW5H8tU,774
+todoist_helper/main.py,sha256=wvMvnyWS1wIy9YqvxlhkAAS_-s46qxhVtkxDa9Eg6xM,647
+todoist_helper/utils.py,sha256=gvr7Olmt-OnuH3cpWk9BRRfFqCIDz3FCpU_FRR-DRTA,139
+todoist_helper-0.0.3.dist-info/entry_points.txt,sha256=5gho_9n6jjbkV7boWsOr24H9tlPS0FUecrRudbUGihg,58
+todoist_helper-0.0.3.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+todoist_helper-0.0.3.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+todoist_helper-0.0.3.dist-info/METADATA,sha256=_NBH-DobJIHRmCDQvblhPcaFze5Tvk6qLvIH8veHqs4,1652
+todoist_helper-0.0.3.dist-info/RECORD,,
