@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rst-tools
+Version: 0.1.3
+Summary: Rough sets implementation for Python
+Author: Rofilde Hasudungan
+Author-email: rofilde@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas
