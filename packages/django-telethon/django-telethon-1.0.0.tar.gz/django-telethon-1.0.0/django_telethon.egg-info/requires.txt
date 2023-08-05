@@ -1,0 +1,9 @@
+Django>=2.2
+Telethon>=1.24.0
+
+[dev]
+flake8
+black
+isort
+pre-commit
+whitenoise
