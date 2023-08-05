@@ -1,0 +1,5 @@
+tensorflow
+tensorflow_addons
+numpy
+gensim
+requests
