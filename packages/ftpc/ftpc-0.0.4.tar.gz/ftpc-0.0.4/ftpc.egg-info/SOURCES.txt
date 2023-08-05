@@ -1,0 +1,6 @@
+setup.py
+ftpc/__init__.py
+ftpc.egg-info/PKG-INFO
+ftpc.egg-info/SOURCES.txt
+ftpc.egg-info/dependency_links.txt
+ftpc.egg-info/top_level.txt
