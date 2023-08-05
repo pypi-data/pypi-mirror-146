@@ -1,0 +1,6 @@
+setup.py
+pekutko_serializer/__init__.py
+pekutko_serializer.egg-info/PKG-INFO
+pekutko_serializer.egg-info/SOURCES.txt
+pekutko_serializer.egg-info/dependency_links.txt
+pekutko_serializer.egg-info/top_level.txt
