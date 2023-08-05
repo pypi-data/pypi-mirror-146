@@ -1,0 +1,10 @@
+fw2ai.py,sha256=_SzdA_SDow5iwLLzmld5eJw4ESPmlr4KZfqhdyTtiJ0,334
+list/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+list/commands.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+main/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+main/commands.py,sha256=3vAaUYlBL1vceYZsmSkRkCE_xM8GexmlMqxzrOZcUSQ,585
+fw2ai-0.1.1.dist-info/METADATA,sha256=bv4SdA8QevZeka2Vf6XL6rDY9-3KxxZOixP7ZznPQ5k,4033
+fw2ai-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fw2ai-0.1.1.dist-info/entry_points.txt,sha256=NTFT0mOLQeIGrt9S-oJdO0ACOcoU5hKkvRFVqzuULzI,36
+fw2ai-0.1.1.dist-info/top_level.txt,sha256=6D2sMN35JrfKLpgJz6GPyDZW2vIKCJQ5KmkRzMLqKMQ,16
+fw2ai-0.1.1.dist-info/RECORD,,
