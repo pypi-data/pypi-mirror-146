@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+celebrity_births_test_sda.egg-info/PKG-INFO
+celebrity_births_test_sda.egg-info/SOURCES.txt
+celebrity_births_test_sda.egg-info/dependency_links.txt
+celebrity_births_test_sda.egg-info/requires.txt
+celebrity_births_test_sda.egg-info/top_level.txt
+project/__init__.py
+project/celebrities_births.py
+project/run_celebs.py
+test/test_date.py
