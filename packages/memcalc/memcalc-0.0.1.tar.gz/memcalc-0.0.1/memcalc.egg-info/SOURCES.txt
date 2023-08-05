@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+calculator/__init__.py
+calculator/calculator.py
+memcalc.egg-info/PKG-INFO
+memcalc.egg-info/SOURCES.txt
+memcalc.egg-info/dependency_links.txt
+memcalc.egg-info/top_level.txt
