@@ -1,0 +1,11 @@
+clidb/__init__.py,sha256=9jjWRvbgimImvnSDNx1m7-10MBhcmFNHlbWlhjR_aNM,532
+clidb/cli.py,sha256=7aBvmu50Q6qC9g27lJ4ng6T6UyZyvNPjTHOxRPEdpOI,4312
+clidb/database.py,sha256=Y1wBgNWhSpMWZdWxGuAMgKctuBqGC8tjkI4sCB0eoGQ,7620
+clidb/events.py,sha256=MotKHVkldhx-xMOEqufuasR9IJQ-54_lThb37GgfnSs,1685
+clidb/views.py,sha256=YB2Ne6nR471HaLsjHJf284cdeRoXC3_PVBpQtZF_5Bg,5282
+clidb/workspace.code-workspace,sha256=U3bUL8wt6NjVRtPeLgOikXDHUdERd1Qj7qrVOpzdk9w,47
+clidb-0.2.1.dist-info/entry_points.txt,sha256=GLhdYf1XuSZMKpMwRxxpwFJWowdNiAh3Z3oWvXme0-8,45
+clidb-0.2.1.dist-info/LICENSE,sha256=3sGS6m42SBwTLznhi2zvWhueKkjenrcqBKnUpTZqOyI,1069
+clidb-0.2.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+clidb-0.2.1.dist-info/METADATA,sha256=EouEmK9_vyVBbUIdTpeyudefTl_sxeKc7WaO5VHzKlI,3042
+clidb-0.2.1.dist-info/RECORD,,
