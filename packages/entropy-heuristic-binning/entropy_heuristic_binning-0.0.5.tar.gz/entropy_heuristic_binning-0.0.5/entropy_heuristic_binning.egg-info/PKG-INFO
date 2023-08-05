@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: entropy-heuristic-binning
+Version: 0.0.5
+Summary: entropy heuristic binning
+Home-page: https://github.com/shazri/entropyheuristicbinning
+Author: shazri_shahrir
+Author-email: mdshazrishahrir@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# entropy-heuristic-binning
+
