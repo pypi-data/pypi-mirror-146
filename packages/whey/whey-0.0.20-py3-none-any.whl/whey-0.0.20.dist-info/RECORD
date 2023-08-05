@@ -1,0 +1,16 @@
+whey/__init__.py,sha256=pe_ggb9_KEFhHW0g5jG5KPpZ4Vzv67RWk17Kj0vddzo,3636
+whey/__main__.py,sha256=2OktDxY4A-pNwzH62NX3dR_DviYx6W5eceBhBj-N68M,4495
+whey/_editable.py,sha256=iiQ_wNJFWlemT-YwA9szDqfk0RauQXMQ-QV6bsXaPmo,2584
+whey/builder.py,sha256=yWME_KsCgdE0d9qkKEG9LP7c20hHXSHTOUbopkDXXFM,26952
+whey/foreman.py,sha256=BqJWPLSKiJ5fc9EIgVYyv5DSsD8HwrcXNOSrFp0YIM0,3991
+whey/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whey/utils.py,sha256=LZx_-kNIh0Iyyk8244npHUm4SwyRbmAJxpsCT1HCULo,3667
+whey/config/__init__.py,sha256=ZWXvUEoQjNqttz3NTrLgaBWEsG-oVzCQ7V_C94CIyr8,4038
+whey/config/pep621.py,sha256=aax4LZBvP1tbZAcZFevY-g1FszB-HOojtcNSUkSh1AY,4166
+whey/config/whey.py,sha256=Fw7mAJfdrxfFXWBX-0FiequWRUrv_ReqbPM-3GYsv-A,12555
+whey-0.0.20.dist-info/LICENSE,sha256=TXanB-tJYmHhByFsynyh-UGwh2VdTVVjbZeFz1utSWc,1064
+whey-0.0.20.dist-info/METADATA,sha256=mv_GYWvlK0eyGXq96X7568TEbI02F7is1tTImLvAYL8,9824
+whey-0.0.20.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+whey-0.0.20.dist-info/entry_points.txt,sha256=czME7e93fOqAovTVFQg4RduLSF2SFi6WaKcMkoNFM0k,138
+whey-0.0.20.dist-info/top_level.txt,sha256=zP1v-BbQVaZP9EITcNcbxc2yoeCor6YrabtS3QeB8Aw,5
+whey-0.0.20.dist-info/RECORD,,
