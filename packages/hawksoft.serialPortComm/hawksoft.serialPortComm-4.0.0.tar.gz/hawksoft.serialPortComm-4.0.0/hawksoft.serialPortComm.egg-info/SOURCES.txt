@@ -1,0 +1,10 @@
+README.md
+setup.py
+hawksoft/__init__.py
+hawksoft/comm.py
+hawksoft/test.py
+hawksoft.serialPortComm.egg-info/PKG-INFO
+hawksoft.serialPortComm.egg-info/SOURCES.txt
+hawksoft.serialPortComm.egg-info/dependency_links.txt
+hawksoft.serialPortComm.egg-info/requires.txt
+hawksoft.serialPortComm.egg-info/top_level.txt
