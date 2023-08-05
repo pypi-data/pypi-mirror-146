@@ -1,0 +1,6 @@
+global-chem
+rdkit-pypi
+pandas
+
+[protonation]
+dimorphite_dl
