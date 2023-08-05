@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+polisan_plugin/__init__.py
+polisan_plugin/main.py
+polisan_plugin.egg-info/PKG-INFO
+polisan_plugin.egg-info/SOURCES.txt
+polisan_plugin.egg-info/dependency_links.txt
+polisan_plugin.egg-info/not-zip-safe
+polisan_plugin.egg-info/top_level.txt
