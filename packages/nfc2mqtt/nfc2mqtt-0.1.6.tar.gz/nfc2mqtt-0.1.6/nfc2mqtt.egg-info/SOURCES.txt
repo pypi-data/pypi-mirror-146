@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+nfc2mqtt/__init__.py
+nfc2mqtt/mqtt.py
+nfc2mqtt/utils.py
+nfc2mqtt.egg-info/PKG-INFO
+nfc2mqtt.egg-info/SOURCES.txt
+nfc2mqtt.egg-info/dependency_links.txt
+nfc2mqtt.egg-info/entry_points.txt
+nfc2mqtt.egg-info/top_level.txt
+nfc2mqtt/service/__init__.py

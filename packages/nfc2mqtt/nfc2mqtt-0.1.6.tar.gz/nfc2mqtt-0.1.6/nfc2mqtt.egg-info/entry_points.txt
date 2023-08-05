@@ -1,0 +1,3 @@
+[console_scripts]
+nfc2mqtt = nfc2mqtt.service:main
+
