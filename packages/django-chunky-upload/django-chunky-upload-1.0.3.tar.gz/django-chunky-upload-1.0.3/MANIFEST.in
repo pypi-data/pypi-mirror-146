@@ -1,0 +1,5 @@
+recursive-include chunky_upload *
+recursive-exclude chunky_upload/tests *
+global-exclude __pycache__/*
+include *.md
+include *.txt
