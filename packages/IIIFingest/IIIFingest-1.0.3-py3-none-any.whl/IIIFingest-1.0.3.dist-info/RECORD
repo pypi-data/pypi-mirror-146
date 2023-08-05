@@ -1,0 +1,14 @@
+IIIFingest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+IIIFingest/asset.py,sha256=rYhKYK8NKLSKHKvMSoz76KrAbdNkoM3g7G1Fo5kgamY,3626
+IIIFingest/auth.py,sha256=JmDwN66_kExqFLvOZZgfc-0tq8MibtdPnvOVktAGjJs,5450
+IIIFingest/bucket.py,sha256=FGWS_DbhjSGzTE_DnssksYsPj5M8fc6F-XYuUAv_g8s,2179
+IIIFingest/client.py,sha256=xQox6a7bqiTcHFbq4F1HjKna9pW7Y5SO6lgJyqcQ1E8,8549
+IIIFingest/generate_manifest.py,sha256=hfYoyiF49hAklqvOY_0yAPX9vEYrEN99OtaqCNHtoM4,10385
+IIIFingest/iiif_jwt.py,sha256=nnOad36OFNG244ENX7jt8xClioekW29VL2utLNcEGFg,5439
+IIIFingest/ingest.py,sha256=rGlRqEVBqOnC0uBRbplg3_Qii9MSGw-kLy2NryW_3XI,4290
+IIIFingest/settings.py,sha256=MgPHs7jZYtD75pfBQyWBafQMCh3emImLn_Sl0-kwrWk,791
+IIIFingest-1.0.3.dist-info/LICENSE.md,sha256=33f_GsbmplJ90LAHnPf03VSGjKpDUxe2gtmJtYHCJa0,611
+IIIFingest-1.0.3.dist-info/METADATA,sha256=Me0-KL86dZoAW6TJbkqRVQXSWEg7Qd_eumH3sijViyI,8034
+IIIFingest-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+IIIFingest-1.0.3.dist-info/top_level.txt,sha256=ksz6Jp_Nu4-82lC6TCgUnwkNYZP-RDFqTErDmVHoAEA,11
+IIIFingest-1.0.3.dist-info/RECORD,,
