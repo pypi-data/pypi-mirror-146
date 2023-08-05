@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: statstube
+Version: 1.0.0
+Summary: This project aims to provide a proper and simpler way to crawl YouTube content.
+Home-page: UNKNOWN
+Author: William Kana
+Author-email: UNKNOWN
+License: Apache-2.0 License
+Description: # statstube
+        This project aims to provide a proper and simpler way to crawl YouTube content.
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (02/04/2020)
+        -------------------
+        - First Release
+Platform: UNKNOWN

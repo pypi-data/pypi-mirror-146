@@ -1,0 +1,10 @@
+README.md
+setup.py
+statstube/__init__.py
+statstube/main.py
+statstube/setting_file.py
+statstube/video.py
+statstube.egg-info/PKG-INFO
+statstube.egg-info/SOURCES.txt
+statstube.egg-info/dependency_links.txt
+statstube.egg-info/top_level.txt
