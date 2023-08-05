@@ -1,0 +1,10 @@
+neurogenome/__init__.py,sha256=Y7KBI-0abfAO3DHxVV2ubmRWsnEPCfVfE6Xfui8rTKo,473
+neurogenome/builders.py,sha256=endq063KBU014Ee2z002dA81mvlldspAQ1Re2bysOl8,2060
+neurogenome/evolution.py,sha256=kFcyYrQiKiJRIqIAUTIL4R2NCLUJkO_aZQXEe2F6PVI,4342
+neurogenome/file_handler.py,sha256=Q0zKxxFI1RxiWKdQVOSZD48h99zb2cfrzWk5FUlFeP0,1817
+neurogenome/genome.py,sha256=faX4kTy_v5uif6PzrNBIQCOwGuonLJLbw_rbyIewrgo,1145
+neurogenome/macromutations.py,sha256=UBlSqm9P2yO8ofkWquRBHSmRXh74wM2PsCITn6bmYJk,4448
+neurogenome-0.1.4.dist-info/LICENSE,sha256=CPHx2lNxrPFaCgdt7MOS986tuaxOYTuWTb22M4IH5AY,1096
+neurogenome-0.1.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+neurogenome-0.1.4.dist-info/METADATA,sha256=UueqhTHlAtiQkWU-wGrYNVqfaM6oD1E0Bi8KYOl7JOM,1951
+neurogenome-0.1.4.dist-info/RECORD,,
