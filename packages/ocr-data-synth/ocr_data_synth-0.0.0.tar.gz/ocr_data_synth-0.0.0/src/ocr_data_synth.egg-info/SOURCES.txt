@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ocr_data_synth/__init__.py
+src/ocr_data_synth/utils_font.py
+src/ocr_data_synth.egg-info/PKG-INFO
+src/ocr_data_synth.egg-info/SOURCES.txt
+src/ocr_data_synth.egg-info/dependency_links.txt
+src/ocr_data_synth.egg-info/top_level.txt
