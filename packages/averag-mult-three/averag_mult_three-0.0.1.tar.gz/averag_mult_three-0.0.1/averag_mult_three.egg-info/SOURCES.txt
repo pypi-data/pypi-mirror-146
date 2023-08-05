@@ -1,0 +1,11 @@
+README.md
+setup.py
+averag_mult_three/__init__.py
+averag_mult_three.egg-info/PKG-INFO
+averag_mult_three.egg-info/SOURCES.txt
+averag_mult_three.egg-info/dependency_links.txt
+averag_mult_three.egg-info/top_level.txt
+averag_mult_three/average_three_numb/__init__.py
+averag_mult_three/average_three_numb/average_calculation.py
+averag_mult_three/multiplication_three_numb/__init__.py
+averag_mult_three/multiplication_three_numb/multiplication_calculation.py
