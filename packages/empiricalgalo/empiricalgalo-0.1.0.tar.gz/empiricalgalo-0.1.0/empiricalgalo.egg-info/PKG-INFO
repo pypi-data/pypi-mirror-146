@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: empiricalgalo
+Version: 0.1.0
+Summary: Empirical models of the galaxy-halo connection
+Home-page: https://github.com/Richard-Sti/empiricalgalo
+Author: Richard Stiskalek
+Author-email: richard.stiskalek@protonmail.com
+License: GPL-3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
