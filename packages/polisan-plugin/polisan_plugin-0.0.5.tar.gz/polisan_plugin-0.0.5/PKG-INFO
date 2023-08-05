@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: polisan_plugin
+Version: 0.0.5
+Summary: Use this lib to build your plugins to polisan servers
+Home-page: UNKNOWN
+Author: LandaM
+Author-email: qwer.009771@gmail.com
+License: MIT
+Description: # Polisan by Adlemas
+        
+        ## What is Polisan by the way?
+        
+        Polisan is an online game in the terminal with support for plugins, communication between players, command input. This game is just the beginning of the path of Adlemas games and its transition to 2D or 3D space.
+        
+        ***
+        
+        ## Terminal gaming is boring?
+        
+        But why should I play the game in the terminal if I can just as well play with friends in any messenger? Game in the terminal differs from correspondence in that you can store the state of the player in the game, change his state, keep track of certain commands that the player has entered. For all this, a python library called **Polisan Plugin** was created. Thanks to this library, you can easily describe any rules of your server, events on your server, simulation of hunger and thirst, and much more.
+        
+        ## How can I create own plugin?
+        
+        To create your own plugin, you just need to install this library using the pip tool and create a class that will inherit from the main plugin constructor - CommandPlugin.
+        
+        ### Installation
+        
+        #### Windows
+        > pip install polisan_plugin
+        
+        #### Linux, Mac
+        > pip3 install polisan_plugin
+        
+        ### Example
+        
+        ```python
+        from sys import argv
+        from polisan_plugin import CommandPlugin
+        
+        class ChatPlugin(CommandPlugin):
+            def __init__(self) -> None:
+                super().__init__(argv)
+                
+            def on_command(self, sender: Sender, command: str, args: list) -> None:
+                if command == "commit":
+                    for client in self.clients:
+                        client.send_message(" ".join(args))
+                    sender.send_message("Your message was sent.")
+        
+        
+        
+        if __name__ == "__main__":
+            plugin = ChatPlugin()
+        
+        ```
+        
+        ___
+        
+        ## Build own plugin.
+        
+        ### Prepare plugin information.
+        
+        To build your plugin, you need to create a **config.yaml** file in the folder with your plugin code and write inside:
+        
+        ```yaml
+        name: "PLUGIN_NAME"
+        version: PLUGIN_VERSION
+        author: "PLUGIN_AUTHOR"
+        
+        platforms: # SUPPORTED PLATFORMS
+          - linux
+          - windows
+          - macos
+        
+        executable: "NAME_OF_PLUGIN_ENTRY"
+        
+        commands:
+          # COMMANDS
+        
+          # For example:
+          commit: # COMMAND NAME
+            description: Send message to whole world! # DESCRIPTION
+            usage: /send <message> # USAGE INSTRUCTION
+        ```
+        
+        ### Converting python file into executable.
+        
+        Then you need to convert your python code into an executable file according to each platform specified in the config file above. For example, if you want your plugin to work on Windows and Linux machines, you need to build the project twice: in an .exe file for Windows and an executable file for Linux.
+        
+        #### Using PyInstaller:
+        ```bash
+        pyinstaller -D -F -n <OUT_NAME_OF_EXECUTABLE> -c "path/to/python/file"
+        ```
+        
+        ### That's it. Deploy.
+        
+        At this point you can publish your plugin or send it to friends so they can use your creation on their server.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
