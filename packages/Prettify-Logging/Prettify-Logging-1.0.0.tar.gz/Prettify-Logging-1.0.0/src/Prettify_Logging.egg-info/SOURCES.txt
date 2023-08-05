@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PrettifyLogging/__init__.py
+src/PrettifyLogging/prettify_logging.py
+src/Prettify_Logging.egg-info/PKG-INFO
+src/Prettify_Logging.egg-info/SOURCES.txt
+src/Prettify_Logging.egg-info/dependency_links.txt
+src/Prettify_Logging.egg-info/top_level.txt
