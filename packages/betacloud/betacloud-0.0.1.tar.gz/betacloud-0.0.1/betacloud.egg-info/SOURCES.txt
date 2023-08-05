@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+betacloud/__init__.py
+betacloud/__main__.py
+betacloud/main.py
+betacloud/version.py
+betacloud.egg-info/PKG-INFO
+betacloud.egg-info/SOURCES.txt
+betacloud.egg-info/dependency_links.txt
+betacloud.egg-info/entry_points.txt
+betacloud.egg-info/namespace_packages.txt
+betacloud.egg-info/not-zip-safe
+betacloud.egg-info/requires.txt
+betacloud.egg-info/top_level.txt
