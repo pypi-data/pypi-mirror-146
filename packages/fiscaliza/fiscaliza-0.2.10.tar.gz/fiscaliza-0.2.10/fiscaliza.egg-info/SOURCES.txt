@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+fiscaliza/__init__.py
+fiscaliza/_nbdev.py
+fiscaliza/constants.py
+fiscaliza/redmine.py
+fiscaliza.egg-info/PKG-INFO
+fiscaliza.egg-info/SOURCES.txt
+fiscaliza.egg-info/dependency_links.txt
+fiscaliza.egg-info/entry_points.txt
+fiscaliza.egg-info/not-zip-safe
+fiscaliza.egg-info/requires.txt
+fiscaliza.egg-info/top_level.txt
