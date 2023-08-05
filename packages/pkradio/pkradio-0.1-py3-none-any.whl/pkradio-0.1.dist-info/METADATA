@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pkradio
+Version: 0.1
+Summary: Pakistani radio listener for a list stations, that'll hopefully keep growing.
+Author: siphr
+Author-email: pypi@techtum.dev
+License: UNKNOWN
+Project-URL: Homepage, https://www.techtum.dev/work-pkradio-220409.html
+Project-URL: Source, https://github.com/siphr/pkradio
+Project-URL: Tracker, https://github.com/siphr/pkradio/issues
+Keywords: pakistani,urdu,sindhi,radio,internet,live
+Platform: any
+
+RWP
+===
+
+A Pakistani language random word generator.
+
+
+Details
+-------
+
+Uses a predefined set of words for enumeration.
+
+
+Package Usage
+-------------
+
+from rwpk import rwpk
+
+\# show a phrase made of n=2 random words
+
+rwpk.show_random_words('urdu', 2)
+
+
