@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: distru
+Version: 0.1
+Summary: Package to generate or read different distributions.                  Visualize and make some operations on the distributions
+Home-page: https://github.com/OsamaAyman/publish-pypi
+Author: Osama Ayman
+Author-email: osama.ayman252@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+UNKNOWN
+

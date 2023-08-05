@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+src/distru/BinomialDistribution.py
+src/distru/GaussionDistribution.py
+src/distru/GeneralDistribution.py
+src/distru/__init__.py
+src/distru.egg-info/PKG-INFO
+src/distru.egg-info/SOURCES.txt
+src/distru.egg-info/dependency_links.txt
+src/distru.egg-info/requires.txt
+src/distru.egg-info/top_level.txt
