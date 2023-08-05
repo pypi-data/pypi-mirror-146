@@ -1,0 +1,3 @@
+[console_scripts]
+yaml-combine = randomnoun.yaml_combine.__main__:main
+

@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: yaml-combine
+Version: 0.2.0
+Summary: A YAML pre-processor to combine one or more YAML files with $xref references.
+Home-page: https://github.com/randomnoun/yaml-combine-py
+Author: Greg Knox
+Author-email: knoxg+pypi@randomnoun.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/randomnoun/yaml-combine-py/issues
+Project-URL: Source, https://github.com/randomnoun/yaml-combine-py/
+Keywords: yaml,combine
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Markup
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# yaml-combine-py
+
+![Python Logo](https://www.python.org/static/community_logos/python-logo.png "Sample inline image")
+
+A YAML pre-processor to combine one or more YAML files with `$xref` references.
+
+This project is compatible with the merging algorithm used in [swagger-combine-maven-plugin][swagger-combine-maven-plugin-github].
+
+See [the maven plugin site documentation][swagger-combine-maven-plugin]. for a description of `$xref` references and examples.
+
+[swagger-combine-maven-plugin-github]: https://github.com/randomnoun/swagger-combine-maven-plugin
+[swagger-combine-maven-plugin]: https://randomnoun.github.io/swagger-combine-maven-plugin/
+
+
