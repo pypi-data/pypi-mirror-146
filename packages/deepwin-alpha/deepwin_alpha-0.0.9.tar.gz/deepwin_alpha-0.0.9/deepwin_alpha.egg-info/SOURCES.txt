@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+add.pyd
+setup.py
+./add.pyd
+./build/lib.win-amd64-3.7/add.pyd
+deepwin_alpha/__init__.py
+deepwin_alpha/deepwin_alpha.py
+deepwin_alpha.egg-info/PKG-INFO
+deepwin_alpha.egg-info/SOURCES.txt
+deepwin_alpha.egg-info/dependency_links.txt
+deepwin_alpha.egg-info/top_level.txt
