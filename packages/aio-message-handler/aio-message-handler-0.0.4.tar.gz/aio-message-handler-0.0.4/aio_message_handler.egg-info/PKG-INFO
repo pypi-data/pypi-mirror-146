@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: aio-message-handler
+Version: 0.0.4
+Summary: asyncio compatible wraper around the aio-pika for consumining messages.
+Home-page: UNKNOWN
+Author: Mehdi Kamani <itsmehdi97@gmail.com>
+Author-email: itsmehdi97@gmail.com
+License: MIT License
+Project-URL: Documentation, https://aio-message-handler.readthedocs.org/
+Project-URL: Source, https://github.com/itsmehdi97/aio-message-handler
+Description: UNKNOWN
+Platform: all
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.5, <4
+Provides-Extra: develop
