@@ -1,0 +1,17 @@
+libvcs/__about__.py,sha256=jJJCXZaysoSsEncAfGSB1s4vqaePwCQmzbKjtWpSmGM,443
+libvcs/__init__.py,sha256=UeWAzMtSfPLkApb7WAjatCodTUlLXY-gp__u4RlBLtU,377
+libvcs/conftest.py,sha256=JnJuRS9eWYU9vorm912s1fe6muAvxZ1Ux0oAy5XNajs,3315
+libvcs/exc.py,sha256=ijoUiPmDX5gzlzU8gtcF3LNyyH2GHWggDoAtCfiaupc,1347
+libvcs/shortcuts.py,sha256=f6MZLiLkbjzmNSPW3ZnTLWEWLBpe2V2_oX1ec7Rtdik,1778
+libvcs/states/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libvcs/states/base.py,sha256=DGGTmemC0rCkvq7dXZC6G8hbwHsliO4ruQKS9xtCex8,5713
+libvcs/states/constants.py,sha256=IiilpxvdPhPe2Tk830XgEFFg1Wjs-U-GD2E-vzF42cs,567
+libvcs/states/git.py,sha256=vszdJ_AK06d4gIY5yKcQtGViu8DGla7EpJgePwSaVbs,20299
+libvcs/states/hg.py,sha256=18xktT-iCs4Xt85Ezew87Vk3UWPblnXWVMVYI1ciRWM,1286
+libvcs/states/svn.py,sha256=48Mb2sdJVkLEPYCzSob4n0Tfh2Dk1DNBmXo2zo8ZO1s,5086
+libvcs/types.py,sha256=LBxxmVgPq2uFcoEaytqvRSiueehX3aSt_R2ecT9uCAc,429
+libvcs/util.py,sha256=m_fNtdM35rKZE6C5Dvl_gaHeRnt5wrlCD_hy8Z5xIvA,6279
+libvcs-0.12.0b20.dist-info/LICENSE,sha256=O7UfKI2nOG3wIeDwOIVEQH9aoOFRXbZiEPTGi2PIqZI,1081
+libvcs-0.12.0b20.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+libvcs-0.12.0b20.dist-info/METADATA,sha256=XkdKZc-AAiHdMwwlIplvszC4ydvUgHssyS-CubGrdSk,4006
+libvcs-0.12.0b20.dist-info/RECORD,,
