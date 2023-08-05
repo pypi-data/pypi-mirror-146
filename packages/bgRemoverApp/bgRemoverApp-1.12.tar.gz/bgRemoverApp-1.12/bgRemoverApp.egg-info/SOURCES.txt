@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+bgRemoverApp/__init__.py
+bgRemoverApp/removeBG.py
+bgRemoverApp.egg-info/PKG-INFO
+bgRemoverApp.egg-info/SOURCES.txt
+bgRemoverApp.egg-info/dependency_links.txt
+bgRemoverApp.egg-info/top_level.txt
+bgRemoverApp/tracer/att_modules.py
+bgRemoverApp/tracer/config.py
+bgRemoverApp/tracer/conv_modules.py
+bgRemoverApp/tracer/effi_utils.py
+bgRemoverApp/tracer/tracer.py
+bgRemoverApp/tracer/utils.py
+bgRemoverApp/u2net/model.py
+bgRemoverApp/u2net/utils.py
