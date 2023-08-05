@@ -1,0 +1,6 @@
+magus
+magus_align
+magus_configuration
+magus_helpers
+magus_tasks
+magus_tools
