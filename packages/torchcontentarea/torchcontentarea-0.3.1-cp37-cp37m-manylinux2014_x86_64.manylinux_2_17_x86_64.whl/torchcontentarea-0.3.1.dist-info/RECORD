@@ -1,0 +1,16 @@
+__torchcontentareaext.cpython-37m-x86_64-linux-gnu.so.pt110cu102,sha256=6SUjVPd5TwEh5hI4bvwhyO5zMTJR0Q3y7IlmrO8aqug,741608
+__torchcontentareaext.cpython-37m-x86_64-linux-gnu.so.pt110cu113,sha256=fty3Noro9uQdYsZXsNH31DUkcTmWIjmejaxXi9ygsVc,872768
+__torchcontentareaext.cpython-37m-x86_64-linux-gnu.so.pt111cu102,sha256=kzVjoQ4DlAXA5w9oiWcd-fMIZH74jx0h2E-7xq6OIYc,754048
+__torchcontentareaext.cpython-37m-x86_64-linux-gnu.so.pt111cu113,sha256=ZAIHQLi-HijbYK3NVfI2KfwnCWpDxYbzzWw8U9tRs5Q,881112
+__torchcontentareaext.cpython-37m-x86_64-linux-gnu.so.pt19cu102,sha256=uR4krKu7HoENNuePyKSDbXKQ58DxCpiVgaOR-zWwzmk,704328
+__torchcontentareaext.py,sha256=r2pWEIgm-se_WBU0Em5IRjxj8h8vleFF0gX3x3XePmY,559
+torchcontentarea/__init__.py,sha256=zXhur8uj0NSLqLnKdUeHSpNgpuhsLczY2UKH59W3tGk,240
+torchcontentarea/_version.py,sha256=u71IfWzY_4jJC9EEXV0C0_Ic5XdyJe9eutwVuTPGApw,498
+torchcontentarea/contentareainference.py,sha256=i7uRyw0UgX2YIJpRdF8zxubk6oeBMdcLk5yekWjAle8,1578
+torchcontentarea.libs/libcudart-80664282.so.10.2.89,sha256=liopZ6HV_dCVfroXspSo7-nmFV3JYNAdD1gnHy3evq0,523312
+torchcontentarea.libs/libcudart-a7b20f20.so.11.3.109,sha256=EcqU4FHUbg_k7d0op-ob6yJCcyqQWw44b5_QIFQlIjA,636928
+torchcontentarea-0.3.1.dist-info/LICENSE,sha256=jsKiihRn2Vrl_LNaBWD4RsWc9rNPBD7HJ-PoRY98geI,1069
+torchcontentarea-0.3.1.dist-info/METADATA,sha256=IdIwEx23gQeHdKmyw3o4yTv7VJk6WNkHYVRxGu5wQuE,337
+torchcontentarea-0.3.1.dist-info/WHEEL,sha256=FGGRUrvefXOiAJfyJCZAiu4TpTMkXB_CzdEp3x2T96E,150
+torchcontentarea-0.3.1.dist-info/top_level.txt,sha256=DY3lbZgeEtwcx7O1stBO0TWXIrrlvmlrl7UMLqoqkQ8,39
+torchcontentarea-0.3.1.dist-info/RECORD,,
