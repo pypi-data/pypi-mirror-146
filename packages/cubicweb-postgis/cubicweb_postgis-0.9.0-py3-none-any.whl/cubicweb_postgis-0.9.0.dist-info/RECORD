@@ -1,0 +1,15 @@
+cubicweb_postgis/__init__.py,sha256=lV0yGUFGxA948qO3_i3RDFE5c0g70LkaCrp3QzvdnWg,231
+cubicweb_postgis/__pkginfo__.py,sha256=I2OHayEzZk94Yl4Xsyl1TJJAk1A5JV8GbeixL3VlFG4,812
+cubicweb_postgis/site_cubicweb.py,sha256=JrdoYU_E3G9XfU6Pg9u09H7UmYx6FMoIW_JH6Y9eoUw,8576
+cubicweb_postgis/views.py,sha256=wFneDgZgpEa9OPWYTQa__-LVnCuZfFH3OU4r7YdIvj4,3272
+cubicweb_postgis/i18n/en.po,sha256=Z2SgZFt2xY1f13AmsPweJm6TPMkXeRG5bpjbxxYcZ14,259
+cubicweb_postgis/i18n/es.po,sha256=Z2SgZFt2xY1f13AmsPweJm6TPMkXeRG5bpjbxxYcZ14,259
+cubicweb_postgis/i18n/fr.po,sha256=YUzXwBLTnlQxIlHg7I9IqfQthJXqOFr4RyGxbc-cR0c,281
+cubicweb_postgis/migration/precreate.py,sha256=kfIM9yIW40CJ08UhjUE1NNb2FjpudIZiz0JLeCoZGw4,1003
+cubicweb_postgis/schema/__init__.py,sha256=bUEcfFIg-UXUOLgY_NOsC2uCGG09DQtj10u-ttBem74,1107
+cubicweb_postgis/schema/_ext.postgres.sql,sha256=pvkwRHrDesh3lc-gZSrW1E9s9oNCLLAibwCxgeM_sb0,40
+cubicweb_postgis-0.9.0.dist-info/METADATA,sha256=fcpuDOi2mRUS3Lyw788y6HgspferB-zLMQeB41-WLAc,2836
+cubicweb_postgis-0.9.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cubicweb_postgis-0.9.0.dist-info/entry_points.txt,sha256=7CPp_azGg0YUrc_ChOT6Sjv0XuwarikXS_B8MmZ7LPI,44
+cubicweb_postgis-0.9.0.dist-info/top_level.txt,sha256=F8mHnctEX7pILte-cuV8H5IvKo7Hv9-wVieiNmlWGCs,17
+cubicweb_postgis-0.9.0.dist-info/RECORD,,
