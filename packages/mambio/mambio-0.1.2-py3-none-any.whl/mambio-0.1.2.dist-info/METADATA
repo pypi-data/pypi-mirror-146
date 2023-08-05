@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mambio
+Version: 0.1.2
+Summary: Machine learning multi analysis batch IO
+Author: Charles N. Christensen
+Author-email: charles.n.chr@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytorch (>=1.0.2,<2.0.0)
+Requires-Dist: scikit-image (>=0.19.2,<0.20.0)
