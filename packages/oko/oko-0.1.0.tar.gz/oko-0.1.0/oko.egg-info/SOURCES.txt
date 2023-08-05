@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+oko/__init__.py
+oko/__version__.py
+oko/core.py
+oko.egg-info/PKG-INFO
+oko.egg-info/SOURCES.txt
+oko.egg-info/dependency_links.txt
+oko.egg-info/top_level.txt
