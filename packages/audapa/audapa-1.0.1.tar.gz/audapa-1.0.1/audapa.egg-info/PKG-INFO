@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: audapa
+Version: 1.0.1
+Summary: Audio wave file manipulator
+Home-page: https://github.com/colin-i/audapa
+Author: colin-i
+Author-email: costin.botescu@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Write "example.wav" and click the build button from top-right in the root folder from source.\
+PortAudio can ask for portaudio.h (the file is in portaudio19-dev).\
+PortAudio and python 3.10 can report playback errors (install from [here](https://git.skeh.site/skeh/pyaudio) and add libportaudio2 package).\
+[Git Page](https://github.com/colin-i/audapa)
+
+
