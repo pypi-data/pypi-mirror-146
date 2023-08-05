@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+bgRemoverApp/__init__.py
+bgRemoverApp/removeBG.py
+bgRemoverApp.egg-info/PKG-INFO
+bgRemoverApp.egg-info/SOURCES.txt
+bgRemoverApp.egg-info/dependency_links.txt
+bgRemoverApp.egg-info/top_level.txt
