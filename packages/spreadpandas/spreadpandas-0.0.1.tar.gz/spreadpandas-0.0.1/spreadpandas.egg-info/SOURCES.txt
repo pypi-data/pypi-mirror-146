@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+spreadpandas/__init__.py
+spreadpandas/custom_types.py
+spreadpandas/operations.py
+spreadpandas/spreadsheet.py
+spreadpandas/spreadsheet_element.py
+spreadpandas.egg-info/PKG-INFO
+spreadpandas.egg-info/SOURCES.txt
+spreadpandas.egg-info/dependency_links.txt
+spreadpandas.egg-info/requires.txt
+spreadpandas.egg-info/top_level.txt
