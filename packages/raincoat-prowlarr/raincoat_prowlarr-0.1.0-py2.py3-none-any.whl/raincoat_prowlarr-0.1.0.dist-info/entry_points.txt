@@ -1,0 +1,3 @@
+[console_scripts]
+raincoat_prowlarr = raincoat_prowlarr.raincoat_prowlarr:main
+
