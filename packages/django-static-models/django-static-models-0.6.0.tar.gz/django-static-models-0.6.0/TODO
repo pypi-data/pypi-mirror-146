@@ -1,0 +1,12 @@
+= Detect
+Run onload (static?) checks
+
+URL fragments probably has urllib injection someplace, so investigate more comptrhensive Request build.
+
+Deprecate settings
+
+? Full rename
+
+New README
+
+Version bump and publish
