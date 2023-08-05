@@ -1,0 +1,10 @@
+letterboxd_convert/__init__.py,sha256=n4RAt0__LIJir9eVoGrqObhsSqy-BuSmgMjSk6vT_3c,43
+letterboxd_convert/__main__.py,sha256=1Lt5fdExHOYOzAZCmMLA8hxk3j2Pe2-uSH3Vo5izqzE,226
+letterboxd_convert/download.py,sha256=Bd6XPM11wmTr6jcmvCJypMaMyrcEBPhpvtyM6kpM-nM,2333
+letterboxd_convert/parse.py,sha256=a429uu-Pj6idFpblbQRELZyoL2rdt0A6mr6KWXKAqS8,708
+letterboxd_convert-1.1.1.dist-info/LICENSE,sha256=MILVdFgiGkWiXKFOeVqCsK3aXLetAsdqu7poP9RiK30,1069
+letterboxd_convert-1.1.1.dist-info/METADATA,sha256=w8d4eWWHhSUoheE4YhGTKk_b364-sOAGPf3slMmQr9U,1178
+letterboxd_convert-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+letterboxd_convert-1.1.1.dist-info/entry_points.txt,sha256=pSbeKOLgWOnubhhCDyJ5spPuYvfDUnrWwABoUMhaBu8,72
+letterboxd_convert-1.1.1.dist-info/top_level.txt,sha256=kFpW8jMPAAbs81457tVAQ5bwQBRM0_BKOlU8VzTLm3s,19
+letterboxd_convert-1.1.1.dist-info/RECORD,,
