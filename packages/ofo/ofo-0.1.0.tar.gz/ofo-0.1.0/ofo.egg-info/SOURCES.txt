@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ofo/__init__.py
+ofo/__version__.py
+ofo/core.py
+ofo.egg-info/PKG-INFO
+ofo.egg-info/SOURCES.txt
+ofo.egg-info/dependency_links.txt
+ofo.egg-info/top_level.txt
