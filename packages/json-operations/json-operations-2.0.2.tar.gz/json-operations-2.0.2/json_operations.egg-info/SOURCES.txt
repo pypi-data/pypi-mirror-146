@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+json_operations/__init__.py
+json_operations.egg-info/PKG-INFO
+json_operations.egg-info/SOURCES.txt
+json_operations.egg-info/dependency_links.txt
+json_operations.egg-info/requires.txt
+json_operations.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+
+[test]
+parameterized==0.8.1
+black==22.1.0
+isort==5.10.1
