@@ -1,0 +1,14 @@
+phipsair/__init__.py,sha256=Ye5612QoCTZndxdIdBX2OEJ10vX_H5Ipkof3a-Ej8aE,54
+phipsair/__main__.py,sha256=PgUA_dzjkHeHgSf-1TLzXktD7nMgwyo9PYrSG1vYrnA,69
+phipsair/cli.py,sha256=QFOhvUGRWZoMjjmLmDpLqttSJ6_Z4ROIxvD8jcz0hIE,3639
+phipsair/purifier.py,sha256=FpjDKZI3wpauWTVm-vje5bgNmBn7nPmfAdFneOO3cYE,12231
+phipsair/coap/__init__.py,sha256=zoKGCl19fyLN3WTyAdG9uM-isUMdIILVS0OPTJdVN70,40
+phipsair/coap/aiocoap_monkeypatch.py,sha256=VEf7zg79jfRFOjdyqMhpz_yHPUzc3DPdxK0aUWJOp3I,662
+phipsair/coap/client.py,sha256=6NZDbCs9a3yjVE8OEGCvQy3yIZI83jD99JkdWDnhGtw,4505
+phipsair/coap/encryption.py,sha256=xh4KKEC1lYa90zScN1vjxIa340UIhTW03u5FeHJva9Q,1927
+phipsair-0.4.0.dist-info/LICENSE,sha256=iS-NuG5IugGevziln8iNHfRMU3ZrGzPCgFYC5tVSkfI,1117
+phipsair-0.4.0.dist-info/METADATA,sha256=BbzfgHwryzhVkEGYjtq13kKjvik5-BTB2fz5kgA-nQs,1011
+phipsair-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+phipsair-0.4.0.dist-info/entry_points.txt,sha256=rTMr5bzOdBXVBSOnaYcRM8Oyn_JzSvhURFipJ_2_gQY,52
+phipsair-0.4.0.dist-info/top_level.txt,sha256=LV2Ixxi8t490b5DzWIsWlM-lkUEtwNRLqWJ1Uvmzm7w,9
+phipsair-0.4.0.dist-info/RECORD,,

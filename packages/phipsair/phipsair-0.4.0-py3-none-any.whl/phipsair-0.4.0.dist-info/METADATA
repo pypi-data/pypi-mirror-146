@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: phipsair
+Version: 0.4.0
+Summary: phipsair allows controlling Philips air purifiers via encrypted CoAP.
+Home-page: https://github.com/mfrister/phipsair
+Author: betaboon, Michael Frister
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mfrister/phipsair/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiocoap (<0.5,>=0.4.1)
+Requires-Dist: pycryptodomex (<4.0,>=3.13)
+
+# phipsair
+
+A library and CLI for controlling Philips air purifiers via encrypted CoAP.
+
+Forked from [betaboon's aioairctl](https://github.com/betaboon/aioairctrl) and [published on PyPI](https://pypi.org/project/phipsair/) for use from Home Assistant.
+
+## Device Support
+
+Currently tested with Philips AC2889/10 with firmware `1.0.7` and WiFi firmware `AWS_Philips_AIR@64.3`.
+
+## License
+
+[MIT](LICENSE)
+
+
