@@ -1,0 +1,15 @@
+syntext/__init__.py,sha256=BgueC4dr9gaW1WUdvwyYTT3dflg2U-fJ7XAHmCzG7Ws,395
+syntext/__main__.py,sha256=KvCu6JSncw_w3tqHIZuWjR7oj_KaI5khy5njdjWJ1es,625
+syntext/inline.py,sha256=iblHvcLq1asFgjxt5PHLArmtvLnXtQ_aijaOISrfLTU,6887
+syntext/interface.py,sha256=59d-6dZNfSzlvi9ffJcYj8Fus9ke8xKhyi3tfZENrnw,3304
+syntext/nodes.py,sha256=EbaSEXeP2N2Z_ZriPrPltg8QyawtsAnIBYt8O0F0MVw,3503
+syntext/parsers.py,sha256=4q0OSd7tR9XzOe1cOxdBadqSm8TGjecTKHB7uOCRfhA,19760
+syntext/shorthand.py,sha256=jGJvn_PkVlFdIUPvhpeu7vqfvLPh1G_Yg2F3yhTh2bY,1865
+syntext/tags.py,sha256=7lNijrzQ1vAPX5rAtjXYeYNOAvOAdsxeTiM63GfEA8k,9220
+syntext/toc.py,sha256=LAV99mvvpJIyR56aun09MQMPIaRmxOA2yrkzIXzlRnI,2911
+syntext/utils.py,sha256=_QBWFhqaqKUydDIRwRznNXDFuDbmkxO6Dd-k76t7n4s,5700
+syntext-3.1.1.dist-info/METADATA,sha256=5T4nGO8gMOJc0ATwlugi_IMZG1WIxgzKMlMOf3_LecA,917
+syntext-3.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+syntext-3.1.1.dist-info/entry_points.txt,sha256=j9TeMq46EuuJmMmrdnEBnm3oeRKrmy4Y5zYBxzA5Xxo,42
+syntext-3.1.1.dist-info/top_level.txt,sha256=TAolTh1r45_H3-94oMhrew_J1wP1UTpRGnQwXJEkty4,8
+syntext-3.1.1.dist-info/RECORD,,
