@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+mzflaskfive.egg-info/PKG-INFO
+mzflaskfive.egg-info/SOURCES.txt
+mzflaskfive.egg-info/dependency_links.txt
+mzflaskfive.egg-info/top_level.txt
