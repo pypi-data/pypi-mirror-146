@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+CREATURE_WORLD_BUILDER_LITE/creature_world_builder_lite.py
+CREATURE_WORLD_BUILDER_LITE/creature_world_builder_lite_tests.py
+CREATURE_WORLD_BUILDER_LITE.egg-info/PKG-INFO
+CREATURE_WORLD_BUILDER_LITE.egg-info/SOURCES.txt
+CREATURE_WORLD_BUILDER_LITE.egg-info/dependency_links.txt
+CREATURE_WORLD_BUILDER_LITE.egg-info/entry_points.txt
+CREATURE_WORLD_BUILDER_LITE.egg-info/top_level.txt
