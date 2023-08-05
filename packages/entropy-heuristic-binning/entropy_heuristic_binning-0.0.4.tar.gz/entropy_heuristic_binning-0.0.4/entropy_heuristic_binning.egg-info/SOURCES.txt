@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+entropy_heuristic_binning/__init__.py
+entropy_heuristic_binning/entHeuristicBinning.py
+entropy_heuristic_binning/heuristicbinning.py
+entropy_heuristic_binning.egg-info/PKG-INFO
+entropy_heuristic_binning.egg-info/SOURCES.txt
+entropy_heuristic_binning.egg-info/dependency_links.txt
+entropy_heuristic_binning.egg-info/top_level.txt
