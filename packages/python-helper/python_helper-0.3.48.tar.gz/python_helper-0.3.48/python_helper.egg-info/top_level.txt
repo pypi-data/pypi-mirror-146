@@ -1,0 +1,7 @@
+python-helper
+python-helper\api
+python-helper\api\src
+python-helper\api\src\annotation
+python-helper\api\src\domain
+python-helper\api\src\helper
+python-helper\api\src\service
