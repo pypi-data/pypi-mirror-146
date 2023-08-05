@@ -1,0 +1,7 @@
+setup.py
+helloardakan.egg-info/PKG-INFO
+helloardakan.egg-info/SOURCES.txt
+helloardakan.egg-info/dependency_links.txt
+helloardakan.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
