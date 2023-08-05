@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/__init__.py
+src/String_Signer.egg-info/PKG-INFO
+src/String_Signer.egg-info/SOURCES.txt
+src/String_Signer.egg-info/dependency_links.txt
+src/String_Signer.egg-info/top_level.txt
+src/string_signer/__init__.py
+src/string_signer/exceptions.py
+src/string_signer/main.py
