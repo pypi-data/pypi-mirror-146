@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: feret
+Version: 0.1.1
+Summary: Calculate Feret diameter.
+License: MIT
+Author: matthiasnwt
+Author-email: 62239991+matthiasnwt@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
