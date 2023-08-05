@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/sys_detection/__init__.py
+src/sys_detection/__main__.py
+src/sys_detection/py.typed
+src/sys_detection.egg-info/PKG-INFO
+src/sys_detection.egg-info/SOURCES.txt
+src/sys_detection.egg-info/dependency_links.txt
+src/sys_detection.egg-info/requires.txt
+src/sys_detection.egg-info/top_level.txt
