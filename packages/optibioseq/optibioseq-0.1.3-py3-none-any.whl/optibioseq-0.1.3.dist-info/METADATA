@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: optibioseq
+Version: 0.1.3
+Summary: 
+Author: Iván Corona Guerrero
+Author-email: ivan.corona@uaq.mx> y Dr. Francisco Solis Munoz <siscomagma@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: numpy (>=1.22.2,<2.0.0)
+Requires-Dist: openpyxl (>=3.0.9,<4.0.0)
+Requires-Dist: pandas (>=1.4.0,<2.0.0)
