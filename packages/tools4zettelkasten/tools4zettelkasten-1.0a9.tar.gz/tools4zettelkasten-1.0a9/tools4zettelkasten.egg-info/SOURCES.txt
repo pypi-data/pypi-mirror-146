@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+tools4zettelkasten/VERSION
+tools4zettelkasten.egg-info/PKG-INFO
+tools4zettelkasten.egg-info/SOURCES.txt
+tools4zettelkasten.egg-info/dependency_links.txt
+tools4zettelkasten.egg-info/entry_points.txt
+tools4zettelkasten.egg-info/requires.txt
+tools4zettelkasten.egg-info/top_level.txt

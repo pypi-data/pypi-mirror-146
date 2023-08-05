@@ -1,0 +1,2 @@
+[console_scripts]
+tools4zettelkasten = tools4zettelkasten.cli:messages
