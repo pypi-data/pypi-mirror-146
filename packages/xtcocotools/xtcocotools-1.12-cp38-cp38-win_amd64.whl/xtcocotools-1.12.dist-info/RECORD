@@ -1,0 +1,11 @@
+xtcocotools/__init__.py,sha256=SS5A792GOS_MAQn5esSKCV_NWaYq-7p8FkLcKzcAxOg,22
+xtcocotools/_mask.cp38-win_amd64.pyd,sha256=R4Noh-lkBcN0euSmrf4tGCXlcYtIcBl5N-cLlqeKq34,131072
+xtcocotools/coco.py,sha256=fuTO9F6M7AtETuBraVUKWh8MmZFSzn3imdwxqe6NvYw,21410
+xtcocotools/cocoeval.py,sha256=bT7FeWnNKeN5PdX8UCOr9BcltXRTU8hydGhA9r4lFuA,35461
+xtcocotools/mask.py,sha256=D4vspDzfHwvRiUGsS6gmFUoHOKRD01cr2VFBlY36Mh4,4693
+xtcocotools/version.py,sha256=TWXaBcgaLwoMZpctf0e2PQcPrqWzJxnSxeTM1HBFDXE,51
+xtcocotools-1.12.dist-info/LICENSE,sha256=Dyr0fRDGY9lOaVtjciMcWqPAEFoSmYk9EERyUIKGn00,2829
+xtcocotools-1.12.dist-info/METADATA,sha256=UA5Ud1LZ9Mkr0KEBGMZk4COdjauAuLTq0SLF2ThuAaQ,416
+xtcocotools-1.12.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+xtcocotools-1.12.dist-info/top_level.txt,sha256=nFQh2tILFK9xZCR1V81yAVUD0gyop7Xay3NKASc0Nhs,12
+xtcocotools-1.12.dist-info/RECORD,,
