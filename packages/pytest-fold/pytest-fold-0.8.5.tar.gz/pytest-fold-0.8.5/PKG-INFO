@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pytest-fold
+Version: 0.8.5
+Summary: pytest-fold is now pytest-tui
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# pytest-fold is now pytest-tui
+
+This package has been renamed. Use `pip install pytest-tui` instead.
+
+New package: https://pypi.org/project/pytest-tui/
+
+
