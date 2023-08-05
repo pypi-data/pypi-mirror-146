@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+utranslate/__init__.py
+utranslate/setup.py
+utranslate.egg-info/PKG-INFO
+utranslate.egg-info/SOURCES.txt
+utranslate.egg-info/dependency_links.txt
+utranslate.egg-info/requires.txt
+utranslate.egg-info/top_level.txt
