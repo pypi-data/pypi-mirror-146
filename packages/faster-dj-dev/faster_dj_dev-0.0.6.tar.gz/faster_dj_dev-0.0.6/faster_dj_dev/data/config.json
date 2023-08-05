@@ -1,0 +1,11 @@
+{
+  "project_folder": "",
+  "app_names": [],
+  "working_directory": "",
+  "packages": [
+    "click==8.1.0",
+    "colorama==0.4.4",
+    "termcolor==1.1.0",
+    "black==22.3.0"
+  ]
+}
