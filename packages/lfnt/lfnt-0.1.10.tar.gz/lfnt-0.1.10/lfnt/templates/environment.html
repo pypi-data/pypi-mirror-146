@@ -1,0 +1,17 @@
+{% include "head.html" %}
+
+<h2>Development Environment</h2>
+
+<b>Shell:</b> {{ data.environment.shell }}
+<br/>
+<br/>
+{% for pkgmgr in data.environment.packages %}
+<b>{{ pkgmgr | capitalize}} Packages:</b>
+<ul>
+  {% for pkg in data.environment.packages[pkgmgr] %}
+  <li><a href="package/{{ pkgmgr }}/{{ pkg }}">{{ pkg }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+{% include "tail.html" %}
