@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "deepwordle"
+version = "0.1.0"
+description = "deepwordle is a wordle clone game powered by deepgram, textual, tweepy, and friends."
+authors = ["Harmouch101 <eng.mahmoudharmouch@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/Harmouch101/deepwordle"
+homepage = ""
+documentation = ""
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+keywords = ["python", "frozendict", "deepwordle"]
+packages = [
+    { include = "deepwordle", from = "." },
+]
+include = [
+    "LICENSE",
+    "README.rst",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyfiglet = "^0.8.post1"
+PyAudio = "^0.2.11"
+rich = "^12.2.0"
+textual = "^0.1.17"
+deepgram-sdk = "^0.2.5"
+tweepy = "^4.8.0"
+nest-asyncio = "^1.5.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.942"
+flake8 = "^4.0.1"
+pytest-cov = "^3.0.0"
+rstcheck = "^3.3.1"
+isort = "^5.10.1"
+black = "^22.3.0"
+pre-commit = "^2.18.1"
+tox = "^3.24.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+deepwordle = "deepwordle.app:main"
