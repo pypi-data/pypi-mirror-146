@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tweego.py
+tweego.egg-info/PKG-INFO
+tweego.egg-info/SOURCES.txt
+tweego.egg-info/dependency_links.txt
+tweego.egg-info/entry_points.txt
+tweego.egg-info/requires.txt
+tweego.egg-info/top_level.txt
