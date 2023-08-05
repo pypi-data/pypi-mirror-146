@@ -1,0 +1,2 @@
+[console_scripts]
+stt_sample_inspector = stt_sample_inspector.cli:run
