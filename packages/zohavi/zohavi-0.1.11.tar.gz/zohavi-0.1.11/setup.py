@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['zohavi',
+ 'zohavi.zbase',
+ 'zohavi.zcelery',
+ 'zohavi.zcommon',
+ 'zohavi.zemailer',
+ 'zohavi.zwebui']
+
+package_data = \
+{'': ['*'],
+ 'zohavi.zbase': ['templates/zbase/*'],
+ 'zohavi.zcelery': ['templates/_def/*'],
+ 'zohavi.zemailer': ['templates/zemail/*'],
+ 'zohavi.zwebui': ['static/zcss/*', 'static/zjs/*', 'static/zwc/*']}
+
+setup_kwargs = {
+    'name': 'zohavi',
+    'version': '0.1.11',
+    'description': '',
+    'long_description': None,
+    'author': 'pub12',
+    'author_email': 'pubudu79@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'python_requires': '>=3.8,<4.0',
+}
+
+
+setup(**setup_kwargs)
