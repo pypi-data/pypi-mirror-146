@@ -1,0 +1,15 @@
+unitypython/CLI.py,sha256=SJXJx7_T-Ktn22ZvI-LOQvTmTkFEzPDXht-WZJ6wa4o,1858
+unitypython/Collections.py,sha256=lBWdtOL0u8NNjfZeale6Gycs6nyh1sLDlGi8PiK1pJw,1063
+unitypython/IntEncode.py,sha256=squsDk8ry2EE_-XZzcP7b40NKxa7Yk2BPyGc23sA5_s,3787
+unitypython/JSON.py,sha256=l-WCCTecXnRagGw4RIVDX8sVwCprtfGfw6IIwOeghZM,234
+unitypython/Scoper.py,sha256=0g7tE8QnwpqA5k7F-RfwQxr4722-yVbGOAQdS4xfJZs,11829
+unitypython/Symtable.py,sha256=UNCCRnzWOKD_hzraFZDDPar3Hh58U6Dtt8nkhTgs4ac,2841
+unitypython/TraffyAsm.py,sha256=9P30R-AEIeEE1l51UftcK8GadZvfDX2OMBPAkKR99UM,12537
+unitypython/Transpile.py,sha256=X9m0-ztLSZ4M65pG_x8aVs0l5O1bX6AVmyIFAqoeekE,50732
+unitypython/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unitypython/__main__.py,sha256=CsYljKn0XRcDfvRLmHyNQkX7QwiVC_JfRuZjLSkF03E,33
+unitypython-0.2.1.dist-info/METADATA,sha256=wopv7hda6BlqzflRWsV93e1sGgwRB1FKnVrAxIfP_Fg,6061
+unitypython-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+unitypython-0.2.1.dist-info/entry_points.txt,sha256=DqzbQWt2q7fGPpd_ilYlBdtfuppCB1W_St-jJY_HPA4,54
+unitypython-0.2.1.dist-info/top_level.txt,sha256=Id2-6WdA7eXHTRtmFMVrQoX2OvAmvc6PygViDOsBCPg,12
+unitypython-0.2.1.dist-info/RECORD,,
