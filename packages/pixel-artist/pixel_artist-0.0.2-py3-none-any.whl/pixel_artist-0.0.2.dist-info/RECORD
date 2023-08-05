@@ -1,0 +1,15 @@
+pixel_artist/__about__.py,sha256=CM-NUsH0rX2FN2dNg6xGIoQSnwo_BExQcAj95z8DLgs,515
+pixel_artist/__init__.py,sha256=3vX3FBXk4Wlucy49HEv0tT41HNrLkaQYad-Cy-nZpEM,80
+pixel_artist/__main__.py,sha256=4otyeROdGeHUVM1Gy7O5cre2U2Htt4dFlzSEgrwFoH0,762
+pixel_artist/constants.py,sha256=edmdkvBnivMWcfrFFLoKHMc5ZpZHYWK6Kr4XQE1h_iI,11
+pixel_artist/core.py,sha256=huuu84if0Q4xWpxOis3S6LrAysiS8thSWMGUJG0P0wY,4455
+pixel_artist/parser.py,sha256=T6oC-iKm2LnG6YCGue61m8a3LYEQ1oFpqjd8clzLGfc,2074
+pixel_artist/palette/3bit.palette,sha256=FF7ZXPkNJ0EGykq6Dwc0QQHPZPJdfmFPpHE_a_hJWsk,150
+pixel_artist/palette/8bit.palette,sha256=VfmrfZznx4DEdztr7EI2uPntPnTlCuvfXHzC8v1bdj0,5338
+pixel_artist/palette/9bit.palette,sha256=sfq154jua-QxFwdaGE3Lw47id0E7WoPNCoEkagzJE_U,10906
+pixel_artist-0.0.2.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+pixel_artist-0.0.2.dist-info/METADATA,sha256=UWU09gxpXUztC6PdvNfDYVUNgcFqECV0XPVL7z5VBiM,3574
+pixel_artist-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pixel_artist-0.0.2.dist-info/entry_points.txt,sha256=Th4tOU_J4bhdnbvX3pTaPLj5IH-5_kw36ZLw43gCaCM,60
+pixel_artist-0.0.2.dist-info/top_level.txt,sha256=yZZZHrXxUO-uCw6lcx6dKpQc3P8TQwa6lSVlBtPnzrk,13
+pixel_artist-0.0.2.dist-info/RECORD,,
