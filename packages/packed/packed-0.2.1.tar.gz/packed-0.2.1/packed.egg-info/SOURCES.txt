@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+packed/__init__.py
+packed/_packable.py
+packed/_packer.py
+packed/_resolver.py
+packed/_version.py
+packed/py.typed
+packed.egg-info/PKG-INFO
+packed.egg-info/SOURCES.txt
+packed.egg-info/dependency_links.txt
+packed.egg-info/requires.txt
+packed.egg-info/top_level.txt
