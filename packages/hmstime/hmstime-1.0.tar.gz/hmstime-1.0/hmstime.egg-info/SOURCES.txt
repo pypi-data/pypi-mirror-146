@@ -1,0 +1,10 @@
+LICENSE
+README.md
+hmstime.py
+pyproject.toml
+setup.cfg
+hmstime.egg-info/PKG-INFO
+hmstime.egg-info/SOURCES.txt
+hmstime.egg-info/dependency_links.txt
+hmstime.egg-info/top_level.txt
+hmstime.egg-info/zip-safe

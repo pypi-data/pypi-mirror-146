@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: hmstime
+Version: 1.0
+Summary: time format converter
+Home-page: https://github.com/koodaamo/hmstime
+Author: Petri Savolainen
+Author-email: petri@koodaamo.fi
+License: GPLv2
+Keywords: timedelta,time,human readable
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hours Minutes Seconds time
+
+Parse and onvert a human-readable amount of time such as "23h 59m 59s",
+into a timedelta or amount of seconds. Any of the parts can be omitted.
+
+
+CHANGES
+========
+
+1.0 (2022-04-09)
+-----------------
+
+- Initial release
+
+
