@@ -1,0 +1,2 @@
+[console_scripts]
+create-flask = basic_flask.create_flask:create
