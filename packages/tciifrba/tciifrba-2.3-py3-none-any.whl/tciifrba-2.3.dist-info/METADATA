@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tciifrba
+Version: 2.3
+Summary: Biblioteca de la cátedra de TCII UTN FRBA
+Author: Andres Di Donato, Mariano Llamedo Soria
+Author-email: foomail@foo.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: schemdraw
+
+UNKNOWN
+
