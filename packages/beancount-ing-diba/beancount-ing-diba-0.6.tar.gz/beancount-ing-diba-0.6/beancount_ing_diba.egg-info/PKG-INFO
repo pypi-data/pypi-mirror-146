@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: beancount-ing-diba
+Version: 0.6
+Summary: beancount-ing-diba is now beancount-ing
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # beancount-ing-diba is now beancount-ing
+        
+        This package has been renamed. Use `pip install beancount-ing` instead.
+        
+        New package: https://pypi.org/project/beancount-ing/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
