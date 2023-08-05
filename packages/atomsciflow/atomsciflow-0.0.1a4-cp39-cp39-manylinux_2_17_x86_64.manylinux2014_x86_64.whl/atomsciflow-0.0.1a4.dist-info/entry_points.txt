@@ -1,0 +1,3 @@
+[console_scripts]
+atomsciflow = atomsciflow.cmd.atomsciflow:main
+atomsciflow-calc = atomsciflow.cmd.atomsciflow_calc:main
