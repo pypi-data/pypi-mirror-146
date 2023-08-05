@@ -1,0 +1,14 @@
+datacycle/__init__.py,sha256=RBi424v2JlBuJXvR2VpUZ0dm-TjVnKpu7vzAo9LXlHw,192
+datacycle/config.py,sha256=YE5N5WhUaeNgbvRzY1xUtw2rdiVLzQczmdOWblUOrLc,480
+datacycle/main.py,sha256=30fNV8hlFN-FWHMy3PN023L9A_a_htp1TD4_a-82ju4,6121
+datacycle/providers/gcs.py,sha256=SRtSANCG6GJE6KWzhl1XitZ9_GrBE8teh95qsMv-B6c,1735
+datacycle/providers/mongo.py,sha256=sW7tBWoYEDws4E-a6gvomjCiix4e3Ix9ZdViqeMarwE,8579
+datacycle/providers/postgres.py,sha256=D2snRXF7Re1j3OZtiqX_JuDO_7YV7FRaJZawkits5eE,1591
+datacycle/utils.py,sha256=uEu70qq0B8TFhBT7wRS5y8vhIPy9HUnjwVcHnwb3OO0,1971
+datacycle/version.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+pyproject.toml,sha256=9UV7GHrvsCna7dyMRHGX8QuE-pX5zFaD_N2KTu73q5k,1476
+datacycle-0.0.2.dist-info/entry_points.txt,sha256=sXWiW2GMoQ3U1EQnpfqcbFgCDlPb0s2QzC-2q7C5Hz0,48
+datacycle-0.0.2.dist-info/LICENSE,sha256=IjK8Rna84nz6ElyS_aktXPQyjjiCNtdlXSaIGohzUMc,1064
+datacycle-0.0.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+datacycle-0.0.2.dist-info/METADATA,sha256=I_ttPuuzM_YFOHcdAdgHpj2AyOP09N1a8ouG-5vgfBk,3946
+datacycle-0.0.2.dist-info/RECORD,,
