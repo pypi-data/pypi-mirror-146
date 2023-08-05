@@ -1,0 +1,7 @@
+ordered-set<4.2.0,>=4.1.0
+
+[cli]
+click==8.0.3
+pyyaml==5.4.1
+toml==0.10.2
+clevercsv==0.7.1
