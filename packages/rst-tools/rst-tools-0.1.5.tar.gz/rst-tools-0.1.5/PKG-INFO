@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: rst-tools
+Version: 0.1.5
+Summary: Rough sets implementation for Python
+Author: Rofilde Hasudungan
+Author-email: rofilde@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas
+Description-Content-Type: text/markdown
+
+# Guidelines 
+
+## Instalation
+To install this package use pip as following 
+
+`pip install rst-tools`
+
+## Usage 
+
+```python
+import pandas as pd
+from rst_tools.roughsets import RoughSets as RST
+from rst_tools.roughsets import QuickReduct as QR
+
+df = pd.read_csv("YOUR/FILE.csv")
+conditional_attributes = list(df.column.values)
+decision_attribute = conditional_attributes[-1]
+del conditional_attributes[-1]
+
+roughsets = RST(df)
+
+'''....'''
+```
