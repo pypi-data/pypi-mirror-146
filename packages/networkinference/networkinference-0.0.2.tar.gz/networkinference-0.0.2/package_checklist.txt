@@ -1,0 +1,8 @@
+1. Update version number in src/networkinference/__init__.py
+2. Run tests.
+3. Run python3 -m build to generate distribution packages.
+4. Run twine check dist/* to check readme for markup errors.
+5. Upload to PyPI using twine via twine upload dist/*
+Also see these instructions: https://packaging.python.org/tutorials/packaging-projects/
+6. Upload to github.
+
