@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: letsdns
+Version: 1.0.dev982024
+Summary: Manage DANE TLSA records in DNS servers
+Home-page: https://github.com/LetsDNS/letsdns
+Author: Ralph Seichter
+Author-email: author@letsdns.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LetsDNS
+
+Manage DANE TLSA records in DNS servers. Supports multiple domains with multiple TLS certificates each.
+Documentation is available on the [LetsDNS homepage](https://letsdns.org/).
+
+Copyright © 2022 Ralph Seichter.
+
+
