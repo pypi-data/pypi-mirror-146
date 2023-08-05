@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dn_bpl
+Version: 0.0.4
+Summary: sql banking pipeline
+Home-page: https://github.com/dn757657/dn_bpl.git
+Download-URL: https://github.com/dn757657/dn_bpl/archive/refs/tags/0.0.4.tar.gz
+Author: Dan
+Author-email: daniel.js.campbell@gmail.com
+License: MIT
+Keywords: sql,banking
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
