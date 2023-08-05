@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: passwordInput
+Version: 1.0
+Summary: Password input for python.
+Home-page: https://github.com/MAMOSKO/python-password-input
+Author: Brad
+Author-email: admin@mamoskomail.ml
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MAMOSKO/python-password-input/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PYTHON PASSWORD INPUT
+This program offers password entry to your applications.
+
+The difference of the program from "input()" and "getpass.getpass()" is that it puts * for each character instead of showing or not showing the characters when the user presses the keys.
+
+![GIF](https://i.hizliresim.com/crll8ua.gif)
+
