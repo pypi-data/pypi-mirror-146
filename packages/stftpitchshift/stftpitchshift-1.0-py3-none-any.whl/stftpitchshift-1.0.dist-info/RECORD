@@ -1,0 +1,15 @@
+StftPitchShift/Cepstrum.py,sha256=2xLZcSWmBdIJZEI1GF2UFEK4icwzXjeT2zi459ZSK6U,604
+StftPitchShift/IO.py,sha256=lPyQA3CAkxg7MrOfJifa22rMGZODjk6bs6aq1sX7aAc,3435
+StftPitchShift/Pitcher.py,sha256=oeR48fpPlLGOHvAD61rbWTbXDIaZO_L_8U7V_z9ECOc,676
+StftPitchShift/Resampler.py,sha256=-yVw4z-OGe3pYaf-Hk-G2UqmvqZ_Jg-fMglhwAYH8sU,360
+StftPitchShift/STFT.py,sha256=ygRGd3ywk3bLIEvG8Yi6i4k6-eU3XcJ9vhV_r7T4r6w,3342
+StftPitchShift/StftPitchShift.py,sha256=p1WeVxmVn0QJlGfRnZXMFGD5gKi4DIPN5aZazt2K4aw,1904
+StftPitchShift/Vocoder.py,sha256=eu7P1o9rOeKVIDdN_VncXC4zqZSjF-ZUg_DKLT-11qA,1156
+StftPitchShift/__init__.py,sha256=EI_tAVFseBVw4hM4-YwgWED7IAmNdnW9u6NFEDSRULU,43
+StftPitchShift/main.py,sha256=Qb_c5DkF6NtnjN-_qBYK8bXWGAI4XmhCI6VV-12Em6I,2034
+stftpitchshift-1.0.dist-info/LICENSE,sha256=LTbP2jcQAIwAiq7SRGP683xxxJvJLP6mqX8pa4oLBVg,1069
+stftpitchshift-1.0.dist-info/METADATA,sha256=bGtuR6ijI49oXLYUwL7SjuvNGquGZ6uve4f5zPazcJA,8206
+stftpitchshift-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stftpitchshift-1.0.dist-info/entry_points.txt,sha256=0y9Q6-ehOAC8tyA6vnYmKXa7J9KpdfO8sIhbSaq7O-4,60
+stftpitchshift-1.0.dist-info/top_level.txt,sha256=90uhd164Vx0zJa7ZXwlID2DrOKGsktJpXh2gZbZZlw0,15
+stftpitchshift-1.0.dist-info/RECORD,,
