@@ -1,0 +1,116 @@
+#!python
+
+from datetime import date, timedelta
+from itertools import groupby
+
+import click
+
+from classeviva.cli import exceptions
+from classeviva.client import Client
+from classeviva.credentials import EnvCredentialsProvider
+
+
+@click.group()
+def cli():
+    # click.echo("doing things at the root command level")
+    pass
+
+
+@cli.command("list-grades")
+@exceptions
+def list_grades():
+    with Client(EnvCredentialsProvider()) as client:
+        grades = client.grades()
+
+        def by_date(grade):
+            return grade.date
+
+        # I want the grade list sorted by date, descending
+        sorted_grades = sorted(grades, key=by_date, reverse=True)
+
+        # A little space makes me feel better
+        click.echo("")
+
+        # echo the list, grouped by grade date
+        for day, grades in groupby(sorted_grades, key=by_date):
+            click.echo(day)
+            for grade in grades:
+                _grade = f"- {grade.subject}, {grade.display_value}"
+                if grade.color != "green":
+                    _grade += f" ({grade.color})"
+                click.echo(_grade)
+
+
+@cli.command("list-agenda")
+@click.option(
+    "--since",
+    type=click.DateTime(formats=["%Y-%m-%d"]),
+    default=str(date.today()),
+)
+@click.option(
+    "--until",
+    type=click.DateTime(formats=["%Y-%m-%d"]),
+    default=str(date.today() + timedelta(days=5)),
+)
+@exceptions
+def list_agenda(since: str, until: str):
+    with Client(EnvCredentialsProvider()) as client:
+        entries = client.list_agenda(since=since.date(), until=until.date())
+
+        def by_start_date(entry):
+            return entry.starts_at[:10]
+
+        # I want the grade list sorted by date, ascending
+        sorted_entries = sorted(entries, key=by_start_date, reverse=False)
+
+        # A little space makes me feel better
+        click.echo("")
+
+        for day, entries in groupby(sorted_entries, key=by_start_date):
+            click.echo(day)
+            for entry in entries:
+                click.echo(f"- {entry.author}, {entry.notes}")
+
+
+@cli.command("list-noticeboard")
+@exceptions
+def list_noticeboard():
+    with Client(EnvCredentialsProvider()) as client:
+        noticeboard = client.list_noticeboard()
+
+        for entry in noticeboard:
+            click.echo(entry)
+
+
+@cli.command("list-notes")
+@exceptions
+def list_notes():
+    with Client(EnvCredentialsProvider()) as client:
+        notes = client.list_notes()
+
+        for entry in notes:
+            click.echo(entry)
+
+
+@cli.command("list-calendar")
+@exceptions
+def list_calendar():
+    with Client(EnvCredentialsProvider()) as client:
+        calendar = client.list_calendar()
+
+        for entry in calendar:
+            click.echo(entry)
+
+
+@cli.command("list-cards")
+@exceptions
+def list_cards():
+    with Client(EnvCredentialsProvider()) as client:
+        cards = client.list_cards()
+
+        for entry in cards:
+            click.echo(entry)
+
+
+if __name__ == "__main__":
+    cli()
