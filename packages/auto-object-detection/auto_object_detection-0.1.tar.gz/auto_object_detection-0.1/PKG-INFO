@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: auto_object_detection
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/elina-chertova/tensorflow-2-object-detection.git
+Author: Elina Chertova
+Author-email: elas.2015@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==3.7
+
+Object Detection with Tensorflow.
+

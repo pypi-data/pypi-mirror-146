@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+auto_object_detection.egg-info/PKG-INFO
+auto_object_detection.egg-info/SOURCES.txt
+auto_object_detection.egg-info/dependency_links.txt
+auto_object_detection.egg-info/requires.txt
+auto_object_detection.egg-info/top_level.txt
