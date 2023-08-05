@@ -1,0 +1,3 @@
+dateparser>=1.1.1
+webdavclient3==3.14.5
+requests>=2.27.1
