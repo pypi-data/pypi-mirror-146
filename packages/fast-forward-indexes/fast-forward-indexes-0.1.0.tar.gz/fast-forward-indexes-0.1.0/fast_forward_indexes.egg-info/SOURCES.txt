@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./fast_forward/__init__.py
+./fast_forward/encoder.py
+./fast_forward/index.py
+./fast_forward/ranking.py
+./fast_forward/util.py
+./fast_forward/examples/__init__.py
+./fast_forward/examples/create_index_from_pyserini.py
+./fast_forward/examples/interpolate.py
+fast_forward_indexes.egg-info/PKG-INFO
+fast_forward_indexes.egg-info/SOURCES.txt
+fast_forward_indexes.egg-info/dependency_links.txt
+fast_forward_indexes.egg-info/requires.txt
+fast_forward_indexes.egg-info/top_level.txt
