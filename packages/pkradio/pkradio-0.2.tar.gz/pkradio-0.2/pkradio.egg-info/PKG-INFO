@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pkradio
+Version: 0.2
+Summary: Pakistani radio listener for a list stations, that'll hopefully keep growing.
+Author: siphr
+Author-email: pypi@techtum.dev
+License: UNKNOWN
+Project-URL: Homepage, https://www.techtum.dev/work-pkradio-220409.html
+Project-URL: Source, https://github.com/siphr/pkradio
+Project-URL: Tracker, https://github.com/siphr/pkradio/issues
+Keywords: pakistani,urdu,sindhi,radio,internet,live
+Platform: any
+
+PKRADIO
+=======
+
+An easy to use Pakstani radio player.
+
+
+Details
+-------
+
+There is a built-in list of popular radio stations in different languages and more will be added.
+
+
+Package Usage
+-------------
+
+from pkradio import pkradio as pkr
+
+\# Get version
+
+pkr.get_version()
+
+\# Load list of stations
+
+_st = pkr.load_stations()
+
+\# Get the support player
+
+_pl = pkr.get_player()
+
+\# Stream a station
+
+pkd.play_radio_url(_pl, _st['vos'])
+
+
