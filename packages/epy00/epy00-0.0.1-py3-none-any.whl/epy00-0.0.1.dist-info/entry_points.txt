@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        demo=epy00.app:main
+    
