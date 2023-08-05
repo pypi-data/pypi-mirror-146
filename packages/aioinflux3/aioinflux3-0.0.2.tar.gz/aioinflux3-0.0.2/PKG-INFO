@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: aioinflux3
+Version: 0.0.2
+Summary: influxdb python client working with asyncio
+Home-page: https://github.com/ipconfiger/aio-influx
+Author: Alexander.Li
+Author-email: superpowerlee@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
