@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+tests/get_music_lizhanqi.egg-info/PKG-INFO
+tests/get_music_lizhanqi.egg-info/SOURCES.txt
+tests/get_music_lizhanqi.egg-info/dependency_links.txt
+tests/get_music_lizhanqi.egg-info/entry_points.txt
+tests/get_music_lizhanqi.egg-info/top_level.txt
