@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+azure_lmdc/azure_wrapper_class.py
+azure_lmdc/demo.py
+azure_lmdc.egg-info/PKG-INFO
+azure_lmdc.egg-info/SOURCES.txt
+azure_lmdc.egg-info/dependency_links.txt
+azure_lmdc.egg-info/entry_points.txt
+azure_lmdc.egg-info/requires.txt
+azure_lmdc.egg-info/top_level.txt
