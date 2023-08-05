@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: infra-enver
+Version: 1.0.8
+Summary: Infra Enver
+Home-page: UNKNOWN
+Author: Daniil Vladimirov
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: redis
+
+<h1>INFRA_ENVER</h1>
+
+example
+```py
+from infra_enver import infra_enver
+import random
+
+
+if __name__ == '__main__':
+    env = infra_enver.Enver("galaxy", "pass", "localhost", 2, "pass")
+
+    # get setting
+    print(env.MY_SETT)
+
+    # experiment
+    for i in range(10):
+        print(env.get_experiment("TEST_EXP_2", random.randint(3, 1000000)))
+```
+
+
