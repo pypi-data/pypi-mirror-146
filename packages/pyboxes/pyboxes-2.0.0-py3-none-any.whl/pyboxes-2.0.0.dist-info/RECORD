@@ -1,0 +1,12 @@
+pyboxes/__init__.py,sha256=Vh_biBffJYYqRUR-g0CK574BFOVufLpNKiiSLWRevLU,386
+pyboxes/__main__.py,sha256=ANYp9KUfMs2No6ugQxqEP1zjNhN9HfRKpYfyuwuCzXo,1888
+pyboxes/commands/__init__.py,sha256=HBSAvdA5awsThq818wIvwh4iNeVTGZIzyKm3lvT2fB4,148
+pyboxes/commands/gfile.py,sha256=wG26EYRd5-965yVGxqMeOpEjCQW-l0lrEDdBFkQuNM8,3131
+pyboxes/commands/gfolder.py,sha256=FzNip07HhuQ-eHfpVvefx2k6k31dQ7nHi2a5pH-byt8,6307
+pyboxes/commands/slack.py,sha256=YDBULUnpFfg49NhulAktErZoLjj0NiYIQatotiivDas,2521
+pyboxes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyboxes-2.0.0.dist-info/entry_points.txt,sha256=tvUmxoVhdYzXwR62qoIVnqYc4xANktkTbYH99P1_Ve8,47
+pyboxes-2.0.0.dist-info/LICENSE,sha256=1CfD76Xooenq_J-d0TL5SqWHDc5fvZRZaYJD5VEQZUo,1110
+pyboxes-2.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pyboxes-2.0.0.dist-info/METADATA,sha256=SndBtDfUpTP0bYXmttE3mK6XnF8n7lUQoXKunGmexts,4907
+pyboxes-2.0.0.dist-info/RECORD,,
