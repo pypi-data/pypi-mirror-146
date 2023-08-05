@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: single-line-diff
+Version: 0.1.1
+Summary: A package that can diff single lines
+Home-page: https://gitlab.com/azuredown/single_line_diff
+Author: Andrew Zuo
+Author-email: andrew@andrewzuo.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
