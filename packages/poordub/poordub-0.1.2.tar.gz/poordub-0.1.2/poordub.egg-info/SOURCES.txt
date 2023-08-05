@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+poordub/__init__.py
+poordub.egg-info/PKG-INFO
+poordub.egg-info/SOURCES.txt
+poordub.egg-info/dependency_links.txt
+poordub.egg-info/requires.txt
+poordub.egg-info/top_level.txt
