@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.black]
+target_version = [
+  'py38',
+  'py39',
+  'py310',
+]
+line-length = 88
+
+[tool.pytest.ini_options]
+# pytest looks for configuration from pyproject.toml
+# only from version 6.0
+minversion = "6.0"
+addopts = "--doctest-modules"
+filterwarnings = [
+    "error",
+]
+
+[tool.coverage.run]
+omit = [
+  "setup.py",
+]
+
+[tool.mypy]
+python_version = "3.8"
+show_error_codes = true
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_unreachable = true
+show_error_context = true
+disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+ignore_errors = true
