@@ -1,0 +1,5 @@
+setup.py
+macos_say.egg-info/PKG-INFO
+macos_say.egg-info/SOURCES.txt
+macos_say.egg-info/dependency_links.txt
+macos_say.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: macos-say
+Version: 0.1.0
+Summary: The easiest way to make your mac speak within python scripts.
+Home-page: https://github.com/chrischma/mac_say
+Author: Christoph Schmalfuß
+Author-email: post@christoph-schmalfuss.de
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+
+UNKNOWN
+
