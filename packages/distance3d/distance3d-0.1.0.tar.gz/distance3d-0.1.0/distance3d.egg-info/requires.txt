@@ -1,0 +1,15 @@
+numpy
+scipy
+matplotlib
+pytransform3d
+open3d
+aabbtree
+
+[doc]
+sphinx
+sphinx-gallery
+numpydoc
+
+[test]
+pytest
+pytest-cov
