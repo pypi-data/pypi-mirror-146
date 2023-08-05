@@ -1,0 +1,15 @@
+mscales/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+mscales/_version.py,sha256=Do5Ssnk44YE_y7HwONLuWtZviMb4DHFDsirY26saS4Y,497
+mscales/plots.py,sha256=n1scNgpdvmeDqvNDSSKQ8sIUZUG0ch8nFRHU_sAAuXA,387
+mscales/scales.py,sha256=d0BDgtXOvQQNeCnWksNAXKinT9d95L_4K0VziKLJD7k,418
+mscales/sound.py,sha256=-jtKeI0xJbksWH6nkvJkDUf88LrOpaeak9rD9GMcbXo,3262
+mscales/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mscales/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mscales/tests/test_examples.py,sha256=xa4QiNAtL39-tjT_um3Y2F4WDDOy6gyKKPIs2oAMULw,144
+mscales-0.0.2.dist-info/AUTHORS.rst,sha256=uI-17icff9WQwA3Wwv2M7dAkp3OeSydGyTx7qch0jfc,170
+mscales-0.0.2.dist-info/LICENSE,sha256=1l1BuVyGaA4PKMVxM0aCL2g6XJ_EIRR39odMd8NPnvA,1522
+mscales-0.0.2.dist-info/METADATA,sha256=pCzX22jRYqm1ht6SOjdKafr8pFf01neo3qbqH_cC3pc,1324
+mscales-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mscales-0.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mscales-0.0.2.dist-info/top_level.txt,sha256=ev8NcZBnZ9YuMPgqSP9CjuEakO0BEJTmbHW8_TPSHlo,8
+mscales-0.0.2.dist-info/RECORD,,
