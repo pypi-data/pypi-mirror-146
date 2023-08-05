@@ -1,0 +1,10 @@
+fkfish/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fkfish/__main__.py,sha256=Ef7MJwS32uzKedX2KVy8vZba7g5meKWtvm5Y549Xndw,1078
+fkfish/linux_boot.log,sha256=3iz18AYTcifzuEVssCeDEoL_ERVeFX8gtpqtVYwDcsI,590733
+fkfish/linux_reboot.py,sha256=WprZpgLN5_IBQ2igXvi6A7mhkkLBeKPwOAKXb8zkUEo,1372
+fkfish-0.1.dist-info/LICENSE,sha256=sqMxddSf3pYR8jx3feIt_Eeem8ZA8nbM0ACXNZ4Tqbc,1062
+fkfish-0.1.dist-info/METADATA,sha256=W8OsG5We-ONO1BblT2dQAE7QMFspuju_VNpXnhyCCqM,165
+fkfish-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fkfish-0.1.dist-info/entry_points.txt,sha256=CX-RFXauYQhaA6AMpGjmCDyRVpgOuPBDrv5HPed9NMs,49
+fkfish-0.1.dist-info/top_level.txt,sha256=8PHcsZGKpO2H3s1VcEDodSwSz2KVzfawm2SntFuqawQ,7
+fkfish-0.1.dist-info/RECORD,,
