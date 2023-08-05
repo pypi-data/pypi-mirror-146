@@ -1,0 +1,8 @@
+boshpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boshpdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boshpdf/pdf2text.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boshpdf-1.0.dist-info/LICENCE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+boshpdf-1.0.dist-info/METADATA,sha256=w-ZK2VqcC8qyWs3wKc5vXPacyLzi725sCwVSv-N2pEQ,152
+boshpdf-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+boshpdf-1.0.dist-info/top_level.txt,sha256=IPnkIe446z-Upd9othZPweQJHXb3seyEekzvPsA4ycM,8
+boshpdf-1.0.dist-info/RECORD,,
