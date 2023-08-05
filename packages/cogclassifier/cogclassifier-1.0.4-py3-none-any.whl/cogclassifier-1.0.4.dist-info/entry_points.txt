@@ -1,0 +1,5 @@
+[console_scripts]
+COGclassifier=cogclassifier.cogclassifier:main
+plot_cog_classifier_barchart=cogclassifier.script.plot_cog_classifier_barchart:main
+plot_cog_classifier_piechart=cogclassifier.script.plot_cog_classifier_piechart:main
+
