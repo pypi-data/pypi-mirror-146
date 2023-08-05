@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/__init__.py
+src/Web_Encoder.egg-info/PKG-INFO
+src/Web_Encoder.egg-info/SOURCES.txt
+src/Web_Encoder.egg-info/dependency_links.txt
+src/Web_Encoder.egg-info/top_level.txt
+src/web_encoder/__init__.py
+src/web_encoder/exceptions.py
+src/web_encoder/main.py
