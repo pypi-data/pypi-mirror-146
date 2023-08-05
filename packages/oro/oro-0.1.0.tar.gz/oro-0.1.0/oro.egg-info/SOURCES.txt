@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+oro/__init__.py
+oro/__version__.py
+oro/core.py
+oro.egg-info/PKG-INFO
+oro.egg-info/SOURCES.txt
+oro.egg-info/dependency_links.txt
+oro.egg-info/top_level.txt
