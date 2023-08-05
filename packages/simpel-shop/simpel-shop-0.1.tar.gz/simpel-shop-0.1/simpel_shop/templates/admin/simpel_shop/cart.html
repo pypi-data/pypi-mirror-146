@@ -1,0 +1,86 @@
+
+
+{% extends 'admin/change_list.html' %}
+{% load i18n static admin_urls simpelcore_tags %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% translate 'Home' %}</a>
+    &rsaquo; {% trans "Shopping Cart" %}
+  </div>
+{% endblock %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script src="{% url 'admin:jsi18n' %}"></script>
+  <script src="{% static 'admin/js/core.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'admin/css/widgets.css' %}">
+  {{ checkout_form.media }}
+{% endblock %}
+
+{% block content %}
+  
+  <div class="card shadow-sm p-5 mb-4">
+    <div class="bg-holder z-index-1"
+      style="background-image:url({% static 'simpelmin/img/ecommerce-bg.png' %});background-size:230px;background-position:right bottom;">
+    </div>
+    <div class="position-relative z-index-5">
+      <div class="row g-0">
+        <div class="col-3 border-end">
+          <div class="ps-0 px-4">
+            <div class="fw-bold d-flex align-items-center">
+              <span>{% trans "Cart Total" %}</span>
+              <i class="ms-2 mdi mdi-help-circle-outline mdi-18px"></i>
+            </div>
+            <div class="display-8">{{ items_total|currency }}</div>
+          </div>
+        </div>
+        <div class="col-2 border-end">
+          <div class="px-4">
+            <div class="fw-bold d-flex align-items-center">
+              <span>{% trans "Cart Items" %}</span>
+              <i class="ms-2 mdi mdi-help-circle-outline mdi-18px"></i>
+            </div>
+            <div class="display-8">{{ items_count }}</div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="px-4 d-flex align-items-center">
+            <div class="avatar ">
+              <img src="" alt="">
+            </div>
+            <div>
+              <div class="fw-bold">{% trans "Current User" %}: {{ request.user }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-10">
+          <div class="pt-5 d-flex">
+            <div class="">
+              {% if perms.simpel_products.view_product %}
+              <a href="{% url 'admin:simpel_products_product_changelist' %}" class="btn btn-secondary rounded-pill me-2">
+                <i class="mdi mdi-plus me-1"></i>{% trans "Add Product" %}
+              </a>
+              {% endif %}
+              {% block cart_extra_buttons %}{% endblock cart_extra_buttons %}
+            </div>
+            <a href="{% url 'admin:simpel_shop_cartitem_checkout' %}" class="btn btn-primary rounded-pill me-2">
+              <i class="mdi mdi-sale me-1"></i>{% trans "Checkout Now" %}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% for object in cl.queryset.all %}
+    {% include 'admin/simpel_shop/cart_item.html' with object=object %}
+  {% empty %}
+    <div class="card shadow-sm px-4 py-8 mb-4 text-center">
+      <div class="card-body">
+        <div>{% trans "No Results!" %}</div>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock content %}

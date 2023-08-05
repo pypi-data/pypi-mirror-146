@@ -1,0 +1,38 @@
+{% extends 'admin/base_site.html' %}
+{% load i18n static simpelcore_tags %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% translate 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:simpel_shop_cartitem_changelist' %}">{% trans "Shopping Cart" %}</a>
+    &rsaquo; {% translate 'Checkout Form' %}
+  </div>
+{% endblock %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script src="{% url 'admin:jsi18n' %}"></script>
+  <script src="{% static 'admin/js/core.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'admin/css/widgets.css' %}">
+  {{ form.media }}
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="card card-body p-6">
+        {% block block_form %}
+          {% include 'admin/simpel_shop/cart_checkout_form.html' with include_cart_items=True %}
+        {% endblock block_form %}
+      </div>
+    </div>
+    <div class="col-lg-4"></div>
+  </div>
+  <script>
+    window.addEventListener("DOMContentLoaded", (e) => {
+      $('select').on('select2:select', function (e) {
+          $(this).closest('select').get(0).dispatchEvent(new Event('change'));
+      });
+    });
+  </script>
+{% endblock %}

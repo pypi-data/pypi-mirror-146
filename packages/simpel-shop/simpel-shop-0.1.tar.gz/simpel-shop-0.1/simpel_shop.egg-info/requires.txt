@@ -1,0 +1,6 @@
+django<4.0,>=3.2.8
+django-formtools
+django-select2
+simpel-products
+simpel-contacts
+simpel-sales
