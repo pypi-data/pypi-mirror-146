@@ -1,0 +1,2 @@
+[console_scripts]
+tbnu = tbnu:main
