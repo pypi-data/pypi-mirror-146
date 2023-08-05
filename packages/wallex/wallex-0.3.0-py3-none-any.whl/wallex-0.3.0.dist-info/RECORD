@@ -1,0 +1,10 @@
+wallex/__init__.py,sha256=kE-8TjU1xdSpF0t46E_2KxqKTBuCzdpnPn-9ShAKxOA,254
+wallex/_deprecated.py,sha256=TwUnaFqxPokfLSlTExJckOAoMKVGJ0S469O99UT_5DA,17789
+wallex/_package_data.py,sha256=ZK7oszPMePzMi-pKMyJG-IA5o6F5TSQgSyoDBRMROy8,258
+wallex/exceptions.py,sha256=wZ4LofSz1Jn0aUwivRVrGqNrKhPWgJxl-BEpMixhO5U,2557
+wallex/main.py,sha256=-VUPUCHyRs1lFMz-oEAU_rhFRh184eeJMfvaeLeHduA,15101
+wallex/websocket.py,sha256=H-acgbXE308qzIIbyG6FMgaLUOHM5zm4mIap8EPHRaA,6336
+wallex-0.3.0.dist-info/METADATA,sha256=dfd-r-cT7DWTa_m-5s0I3KHZU6XRGTkZ8uRE1EGdK28,1172
+wallex-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wallex-0.3.0.dist-info/top_level.txt,sha256=aqNWVxtOy9M219lxdMC271ydzxWrOf_0U0OqxBCTGGI,7
+wallex-0.3.0.dist-info/RECORD,,
