@@ -1,0 +1,1 @@
+fontawesome_markdown==0.2.6
