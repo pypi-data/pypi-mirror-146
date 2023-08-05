@@ -1,0 +1,7 @@
+django<4.0,>=3.2.8
+django-polymorphic
+simpel-actions
+simpel-numerators
+simpel-qrcodes
+simpel-utils
+simpel-admin
