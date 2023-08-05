@@ -1,0 +1,4 @@
+[console_scripts]
+arxml_timestamp = cli.timestamp_cli:main
+arxml_uuid = cli.uuid_cli:main
+
