@@ -1,0 +1,8 @@
+README.md
+setup.py
+mypythonlib2022forBC/__init__.py
+mypythonlib2022forBC/myfunctions.py
+mypythonlib2022forBC.egg-info/PKG-INFO
+mypythonlib2022forBC.egg-info/SOURCES.txt
+mypythonlib2022forBC.egg-info/dependency_links.txt
+mypythonlib2022forBC.egg-info/top_level.txt
