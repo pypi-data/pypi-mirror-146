@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+slientruss3d/__inti__.py
+slientruss3d/data.py
+slientruss3d/ga.py
+slientruss3d/generate.py
+slientruss3d/plot.py
+slientruss3d/truss.py
+slientruss3d/type.py
+slientruss3d/utils.py
+slientruss3d.egg-info/PKG-INFO
+slientruss3d.egg-info/SOURCES.txt
+slientruss3d.egg-info/dependency_links.txt
+slientruss3d.egg-info/requires.txt
+slientruss3d.egg-info/top_level.txt
