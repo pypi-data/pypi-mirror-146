@@ -1,0 +1,3 @@
+[console_scripts]
+xenoponics = control:main
+

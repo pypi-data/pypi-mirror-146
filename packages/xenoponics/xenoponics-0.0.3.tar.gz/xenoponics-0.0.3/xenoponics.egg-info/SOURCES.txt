@@ -1,0 +1,8 @@
+README.md
+setup.py
+xenoponics.egg-info/PKG-INFO
+xenoponics.egg-info/SOURCES.txt
+xenoponics.egg-info/dependency_links.txt
+xenoponics.egg-info/entry_points.txt
+xenoponics.egg-info/requires.txt
+xenoponics.egg-info/top_level.txt
