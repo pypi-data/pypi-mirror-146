@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pyb3/__init__.py
+pyb3.egg-info/PKG-INFO
+pyb3.egg-info/SOURCES.txt
+pyb3.egg-info/dependency_links.txt
+pyb3.egg-info/top_level.txt
