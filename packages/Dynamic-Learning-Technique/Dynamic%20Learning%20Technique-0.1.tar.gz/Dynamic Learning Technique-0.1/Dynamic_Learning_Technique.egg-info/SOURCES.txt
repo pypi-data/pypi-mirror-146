@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+DLT/Exceptions.py
+DLT/__init__.py
+DLT/dlt.py
+DLT/splitter.py
+DLT/utils.py
+Dynamic_Learning_Technique.egg-info/PKG-INFO
+Dynamic_Learning_Technique.egg-info/SOURCES.txt
+Dynamic_Learning_Technique.egg-info/dependency_links.txt
+Dynamic_Learning_Technique.egg-info/requires.txt
+Dynamic_Learning_Technique.egg-info/top_level.txt
