@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: postmanager
+Version: 0.1.2
+Summary: Post manager to manage all post types with various storage backends
+Author: Pierre du Toit
+Author-email: subaquatic.pierre@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/subaquatic-pierre/postmanager/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4,>=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: python-version (>=3.6)
+
+# S3 PostManager
+
+A simple post manager for managing posts hosted on AWS S3 bucket.
+
+The project can be imported into a REST API to manage all CRUD operations associated with the Request
+
+## Requirements
+
+- AWS CLI installed and configured
+
+## Example Flask Project
+
+An example flask project can be found at this repo:
+
+<https://github.com/subaquatic-pierre/postmanager-flask-example>
+
+
