@@ -1,0 +1,11 @@
+tbselenium
+lxml
+selenium
+random_user_agent
+pyrfc6266
+requests
+geckodriver-autoinstaller
+
+[tests]
+shellescape
+json5
