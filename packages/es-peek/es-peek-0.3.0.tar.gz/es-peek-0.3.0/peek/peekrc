@@ -1,0 +1,67 @@
+# vi: ft=dosini
+# Log file name under the configuration folder
+log_file = log
+log_level = info
+
+# Use system keyring to store credentials
+use_keyring = True
+
+# Test server connection by issuing an authenticate request after invoking the connect function
+test_connection = False
+
+# Command or script to execute when a new connection is added
+on_connection_add =
+
+# Pretty print the response JSON
+pretty_print = True
+
+# Output response warning headers
+show_warnings = True
+
+# Maximum number of history entries to keep
+history_max = 10000
+
+# Parse the external payload file the same way as inline payload
+parse_payload_file = True
+
+# Automatically save all connections when exiting an interactive session
+auto_save_session = True
+
+# Automatically load last auto saved session
+auto_load_session = False
+
+# Command or script to execute after a session is started or reset
+on_startup =
+
+# Deprecated
+# Kibana project directory to look for API spec files
+kibana_dir =
+
+# Deprecated
+# Load API spec from JSON files
+load_api_specs = True
+# Deprecated
+# Load extended API specs from TypeScript files
+build_extended_api_specs = True
+# Deprecated
+# Cache the transformed extended API specs because Kibana upgrade may break the hacky parsing
+cache_extended_api_specs = True
+
+# Load extension scripts
+load_extension = True
+
+# Colon separate file or folder path for extension scripts
+extension_path =
+
+# Swap dark and light colours
+swap_colour = False
+
+# Support mouse (default to False since it does not work well with scroll)
+mouse_support = False
+
+# Accept response in JSON format for cat APIs
+accept_json_for_cat = False
+
+# Prefer schema.json file from the elasticsearch-specification project for autocompletion
+# Default is True. If false, it means use Kibana API spec files instead.
+prefer_elasticsearch_specification = True
