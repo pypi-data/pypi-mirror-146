@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mos/__init__.py
+mos/__version__.py
+mos/core.py
+mos.egg-info/PKG-INFO
+mos.egg-info/SOURCES.txt
+mos.egg-info/dependency_links.txt
+mos.egg-info/top_level.txt
