@@ -1,0 +1,112 @@
+Bool: "{{val|lower}}"
+
+operators:
+  "or": "||"
+  "and": "&&"
+  "not": "!"
+  "is": "==="
+
+Tuple: "[{{ls|join(', ')}}]"
+unpack: "[{{vars|join(', ')}}] = {{value}}"
+unpack_to_new: "let [{{vars|join(', ')}}] = {{value}}"
+attr: |-
+  {%- if attr_inf.static and obj.type != 'type' -%}
+    {{obj}}.constructor
+  {%- else -%}
+    {{obj}}
+  {%- endif -%}.{{attr}}
+
+index: >-
+  {{obj}}
+  {%- if isinstance(obj.type, types.list) -%}[
+     {%- if key < 0 -%}
+        {{obj}}.length+{{key}}
+     {%- elif key >= 0 -%}
+        {{key}}
+     {%- else -%}
+      ({{key}}<0)?({{obj}}.length+{{key}}):({{key}})
+    {%-endif-%}]
+  {%- elif isinstance(obj.type, types.dict) -%}
+    {%- if ctx == 'load' -%}
+    [{{key}}] == undefined?(()=>{throw "key error"})():{{obj}}[{{key}}]
+    {%-else-%}
+    [{{key}}]
+    {%-endif-%}
+  {%- else -%}
+    [{{key}}]
+  {%- endif -%}
+
+slice: |-
+  {%- if step == 1 -%}
+    {{obj}}.slice({{low}}, {{up}})
+  {%- elif step != 0 -%}
+    {%- if step < 0 -%}
+        [...{{obj}}].reverse()
+    {%- elif step > 0 -%}
+        {{obj}}
+    {%- else -%}
+      ({{step}}<0?[...{{obj}}].reverse():{{obj}})
+    {%- endif -%}
+    {%-if low() != '' or up() != ''-%}
+      .slice(...({{step}}<0?[{{up}}, {{low}}]:[{{low}}, {{up}}]))
+    {%-endif-%}
+    {%-if step != -1-%}
+      .filter((_,i)=>(i%{{step}})==0)
+    {%-endif-%}
+  {%-endif-%}
+
+expr: "{{value}};"
+
+assign: &assign "{{var}} = {{value}};"
+set_attr: *assign
+new_attr: *assign
+assignment_by_key: *assign
+new_key: *assign
+new_var: "{%if env.mod_name != '__main__'%}export {%endif%}let {{var}} = {{value}};"
+
+if: "if ({{condition}}) {{body}} {{els}}"
+elif: "else if ({{condition}}) {{body}} {{els}}"
+else: "else {{body}}"
+
+func: "{%if env.mod_name != '__main__'%}export {%endif%}function {{name}}({{args|join(', ')}}) {{body}}"
+
+return: "return {{value}};"
+
+while: "while ({{condition}}) {{body}}"
+
+for: >-
+  for (let {{var}}
+  {{'in' if isinstance(obj.type, types.dict) else 'of'}}
+  {{obj}})
+  {{body}}
+
+c_like_for: >-
+  for (let {{var}} = {{start}}; 
+  {%- if step < 0-%}
+    {{var}} > {{finish}}
+  {%- elif step > 0 -%}
+    {{var}} < {{finish}}
+  {%- else -%}
+    ({{step}}<0?{{var}}>{{finish}}:{{var}}<{{finish}})
+  {%- endif -%};
+  {{var}} += {{step}})
+  {{body}}
+
+break: "break;"
+continue: "continue;"
+
+class: "class {{name}} {{body}}"
+init: "constructor({{(args[1:])|join(', ')}}) {{body}}"
+method: "{{name}}({{(args[1:])|join(', ')}}) {{body}}"
+self:
+  alt_name: "this"
+static_attr: "static {{var}} = {{value}};"
+new: "new {{func}}({{args|join(', ')}})"
+
+body: |-
+  {{'{'}}{% for st in body %}
+  {{'    '*nl}}{{st}}{% endfor %}
+  {{'    '*(nl-1)}}}
+import: 'import * as {{alias}} from "./{{name}}.mjs";'
+global: no
+nonlocal: no

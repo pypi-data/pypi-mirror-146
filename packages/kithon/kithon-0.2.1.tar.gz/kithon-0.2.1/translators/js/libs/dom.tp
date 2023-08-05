@@ -1,0 +1,31 @@
+event:
+  args: [el, event_name, fun]
+  code: "{{el}}.addEventListener({{event_name}}, {{fun}})"
+  ret_type: 'None'
+
+url_param:
+  alt_name: "new URL(window.location.href).searchParams.get"
+  type: str
+
+get_by_id:
+  alt_name: "document.getElementById"
+  ret_type: dom
+
+get_by_class:
+  alt_name: "document.getElementsByClassName"
+  ret_type: {list: [dom]}
+
+get_by_tagname:
+  alt_name: "document.getElementsByTagName"
+  ret_type: {list: [dom]}
+
+dom.<=.any:
+  code: "{{left}}.innerHTML = {{right}}"
+  type: "None"
+
+dom.<<.any:
+  code: "{{left}}.innerHTML += {{right}}"
+  type: "None"
+
+document:
+  type: dom
