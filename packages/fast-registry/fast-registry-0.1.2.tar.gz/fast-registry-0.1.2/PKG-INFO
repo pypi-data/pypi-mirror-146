@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fast-registry
+Version: 0.1.2
+Summary: A generic class that can be used to register classes or functions.
+Home-page: https://github.com/danialkeimasi/fast-registry
+License: MIT
+Author: Danial Keimasi
+Author-email: danialkeimasi@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Bug Tracker, https://github.com/danialkeimasi/fast-registry/issues
+Project-URL: Repository, https://github.com/danialkeimasi/fast-registry
+Description-Content-Type: text/markdown
+
+# Fast Registry
+A generic class that can be used to register classes or functions, with type hints support.
+
+![Fast Registry Demo](https://raw.githubusercontent.com/danialkeimasi/fast-registry/main/demo.png)
+
+# Installation
+
+```bash
+pip install fast-registry
+```
+
