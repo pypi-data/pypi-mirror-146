@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: multi-event-bus
+Version: 0.2.0
+Summary: event bus implementation in python with sync and async support
+Home-page: https://github.com/hvuhsg/event-bus
+Keywords: event,bus,event-bus,event_bus,async,blocking
+Author: yehoyada
+Author-email: hvuhsg5@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aioredis[hiredis] (>=2.0.1,<3.0.0)
+Requires-Dist: jsonschema
+Requires-Dist: redis (>=4.2.2,<5.0.0)
+Requires-Dist: types-redis (>=4.1.19,<5.0.0)
+Project-URL: Repository, https://github.com/hvuhsg/event-bus
+Description-Content-Type: text/markdown
+
+# event-bus
+[![Run Tests](https://github.com/hvuhsg/event-bus/actions/workflows/test.yml/badge.svg)](https://github.com/hvuhsg/event-bus/actions/workflows/test.yml)  
+EventBus implementation in python
+
+
+### Examples
+#### sync
+
+```python
+from multi_event_bus import EventBus
+
+eb = EventBus(redis_host="127.0.0.1", redis_port=6379)
+
+eb.dispatch("event-name", payload={"num": 1})
+
+eb.subscribe_to("event-name", consumer_id="consumer-1", offset=0)
+
+event, topic = eb.get(consumer_id="consumer-1")  # Blocking
+
+print(event.payload)  # -> {"num": 1}
+```
+#### async
+
+```python
+from multi_event_bus import AsyncEventBus
+
+eb = AsyncEventBus(redis_host="127.0.0.1", redis_port=6379)
+
+eb.dispatch("event-name", payload={"num": 1})
+
+eb.subscribe_to("event-name", consumer_id="consumer-2", offset=0)
+
+event, topic = await eb.get(consumer_id="consumer-2")
+
+print(event.payload)  # -> {"num": 1}
+```
+#### register event schema
+
+```python
+from multi_event_bus import EventBus
+
+eb = EventBus(redis_host="127.0.0.1", redis_port=6379)
+
+# Enforce json schema of event
+json_schema = {
+    "type": "object",
+    "properties": {"num": {"type": "string"}}
+}
+eb.register_event_schema("event-name", schema=json_schema)
+
+eb.dispatch("event-name", payload={"num": "7854"})
+
+eb.subscribe_to("event-name", consumer_id="consumer-3", offset=0)
+
+event, topic = eb.get(consumer_id="consumer-3")  # Blocking
+
+print(event.payload)  # -> {"num": "7854"}
+```
+
+### Development
+#### scripts
+```commandline
+poetry run run_pytest
+poetry run run_flake8
+poetry run run_mypy
+poetry run run_black
+```
+#### run tests
+```commandline
+poetry run test
+```
+
+#### run all (test and black)
+```commandline
+poetry run all
+```
+
