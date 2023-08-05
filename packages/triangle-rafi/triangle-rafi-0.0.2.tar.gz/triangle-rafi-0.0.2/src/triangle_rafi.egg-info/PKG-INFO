@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: triangle-rafi
+Version: 0.0.2
+Summary: A small triangle package
+Home-page: https://gitlab.com/rafihatu/ee11
+Author: Rafihatu Bello
+Author-email: rafibella101@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/rafihatu/ee11
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EE11 Class Notes
+This is a simple readme file just to show the students.
+
+The main package in this project that we are currently looking at is our
+Triangle package.
+
+Thank you for stopping by!
+
+
