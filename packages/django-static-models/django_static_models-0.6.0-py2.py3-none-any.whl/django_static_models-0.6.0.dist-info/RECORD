@@ -1,0 +1,14 @@
+static_models/__init__.py,sha256=wYFxMEi0XQgp485iyyxKoyiYihZ05a6yywAdlyGOq0g,60
+static_models/apps.py,sha256=37P54eF6fCFvSFSxgLrlmur6WAKZfrtFiRxCuz-1Gv4,213
+static_models/response.py,sha256=-WBIBrOdZVw-gpgaVM-PDmV6K-ZNeMxwc_P_qZc2v5E,2631
+static_models/settings.py,sha256=WozmAMQKwWFCkZiAeWzr1qFVjq1p0EYeVLtZdY0sonE,2753
+static_models/test.repl,sha256=c9eEEP9vaCFEI8g2Mv9XkFti0aYfKTiTEzJpcvX6xx8,369
+static_models/utils.py,sha256=0S4igclswezwa3hpw8Ajo44jp_vIsJ6n5yht4vcvCwE,667
+static_models/view_generator.py,sha256=b0o-UtBE99GJGhXAcXPeKMV81HS-ayGBTYk-FMtfG8A,14845
+static_models/views.py,sha256=y5NRLGWLKIxS0vdvAFIlFgdWn_qaUu_NA-7K6Ii_qOU,3548
+static_models/management/commands/viewstaticmerge.py,sha256=-VdYYUDLDzxjVm9xWuezOQIH6y9McIFHonpAWOOzk_M,2333
+static_models/tests/test_generate.py,sha256=hTOrW3MjRNoQKgz5OlFu_v2JBLmdMcNaN45yHrZsOig,545
+django_static_models-0.6.0.dist-info/LICENSE,sha256=jFmdi4AJNelPD8sKulii5Fo2ryHSnyT77G1nzKxjMxI,1487
+django_static_models-0.6.0.dist-info/WHEEL,sha256=2adPsdwavOXlr3i4h108dwQdqKgJbVa5zTEEuD11F08,99
+django_static_models-0.6.0.dist-info/METADATA,sha256=HyBglJViDWJnWfqkLENjkjotDvstRYGpeYoeRawJZOs,14562
+django_static_models-0.6.0.dist-info/RECORD,,
