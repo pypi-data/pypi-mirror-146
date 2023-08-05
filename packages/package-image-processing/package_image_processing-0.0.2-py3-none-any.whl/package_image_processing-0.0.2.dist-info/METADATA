@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: package-image-processing
+Version: 0.0.2
+Summary: Criação de pacotes de processamento de imagens
+Home-page: https://github.com/IreneSantos872/pacoteprocessamentoimagens
+Author: Irene Santos
+Author-email: ireneptc87@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Processamento de Imagens
+
+Description. 
+The package image_processing is used to:
+	Processing:
+        - Histogram matching
+		- Structural similary
+		- Resize image
+	Utils
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install image_processing_package
+```
+
+
+## Author
+Irene Santos
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
