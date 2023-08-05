@@ -1,0 +1,11 @@
+packed/__init__.py,sha256=8Uy5pe8ILcHgie5zK5HOC4_u0giQzWEASy0PckMJDMY,514
+packed/_packable.py,sha256=tiZF0FFPsk-h8r0izGJFDgMRSbPCUJLqgoaPUkNR8Yw,574
+packed/_packer.py,sha256=uWHpP9dq1YZxVwhpS6_6zDsgGHTsSvk_1Q6paUav9lk,1236
+packed/_resolver.py,sha256=SGT8HMvNqdrcBKRBSqv4QOFM34qPD3mAkoSqlI4vmOU,824
+packed/_version.py,sha256=Ui79YHRxRfg2Yk8f7S1RGQcYuTAo3-YJSMGCUb8i3gI,18
+packed/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packed-0.2.1.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+packed-0.2.1.dist-info/METADATA,sha256=QDNBdTE_lD_HWeul1Kd3vL2DvgfM2konLogtw0Cv5LI,1848
+packed-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+packed-0.2.1.dist-info/top_level.txt,sha256=1TWjKuTM0X-0GJfEulB32eGqqa6C5q2ZDiyTsN0Qgh0,7
+packed-0.2.1.dist-info/RECORD,,
