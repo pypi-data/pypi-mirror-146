@@ -1,0 +1,11 @@
+betacloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betacloud/__main__.py,sha256=vqfHPQ_juUKz-GBFiIfePQtnZfvrwBkkW7aHC6FPkS0,106
+betacloud/main.py,sha256=G8FOZUBhQD9Po38euilHCA0Jmw4t-5gCM7XNjcx3gkw,883
+betacloud/version.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+betacloud-0.0.2.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+betacloud-0.0.2.dist-info/METADATA,sha256=R1J2SZGdw7hoZRn_S2Yflu8Hmm4QL24Ac-w66ESrVYM,912
+betacloud-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+betacloud-0.0.2.dist-info/entry_points.txt,sha256=0K_pdGTZW7yxStagXl5GN1cChUhlUdEV0ULHFajYsrg,50
+betacloud-0.0.2.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+betacloud-0.0.2.dist-info/top_level.txt,sha256=uInvjA5ObYAzMwBR4nGXtI9Lx9qBNVpvJbzXAP9x0R0,10
+betacloud-0.0.2.dist-info/RECORD,,
