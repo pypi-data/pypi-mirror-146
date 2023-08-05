@@ -1,0 +1,2 @@
+[console_scripts]
+cqh_file = cqh_file.run:cli
