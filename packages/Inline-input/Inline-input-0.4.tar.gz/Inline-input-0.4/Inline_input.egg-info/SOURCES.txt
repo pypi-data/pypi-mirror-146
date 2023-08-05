@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Inline_input.egg-info/PKG-INFO
+Inline_input.egg-info/SOURCES.txt
+Inline_input.egg-info/dependency_links.txt
+Inline_input.egg-info/not-zip-safe
+Inline_input.egg-info/requires.txt
+Inline_input.egg-info/top_level.txt
+inline/__init__.py
