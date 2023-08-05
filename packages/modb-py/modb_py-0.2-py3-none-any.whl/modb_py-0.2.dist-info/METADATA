@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: modb-py
+Version: 0.2
+Summary: modb, on-disk-database, the replacement for open. no third party dependency, using btree internally.
+Home-page: https://github.com/Darcy-C/modb
+Author: Darcy-C
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![modbgithub](./docs/images/modb.png)
+
+# Welcome to modb
+
+`modb` is a lightweight and fast Database library written in pure python.
+
+## Why modb
+* `educational` comprehensive documentation
+* `pure` no third party dependencies needed
+* `light` only ~a thousand lines of code
+* `fast` using btree internally to boost the performance
+
+## To start
+[Quickstart](https://modb.readthedocs.io/en/latest/Quickstart/)
+
+## The name
+`modb` stands for My Own DataBase. It's built for my own purposes originally.
+
+
