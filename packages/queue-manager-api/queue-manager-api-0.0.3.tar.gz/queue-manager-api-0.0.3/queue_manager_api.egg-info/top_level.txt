@@ -1,0 +1,10 @@
+queue-manager-api
+queue-manager-api\api
+queue-manager-api\api\resource
+queue-manager-api\api\src
+queue-manager-api\api\src\library
+queue-manager-api\api\src\library\annotation
+queue-manager-api\api\src\library\constant
+queue-manager-api\api\src\library\dto
+queue-manager-api\api\src\library\enumeration
+queue-manager-api\api\src\library\util
