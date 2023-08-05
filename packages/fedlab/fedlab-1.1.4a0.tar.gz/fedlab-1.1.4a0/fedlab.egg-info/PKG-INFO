@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: fedlab
+Version: 1.1.4a0
+Summary: A flexible Federated Learning Framework based on PyTorch, simplifying your Federated Learning research.
+Home-page: https://github.com/SMILELab-FL/FedLab
+Author: Dun Zeng, Siqi Liang, Xiangjing Hu
+Author-email: zengdun.cs@gmail.com, zszxlsq@gmail.com, starryhu@foxmail.com
+Maintainer: Dun Zeng, Siqi Liang, Xiangjing Hu
+Maintainer-email: zengdun.cs@gmail.com, zszxlsq@gmail.com, starryhu@foxmail.com
+License: Apache-2.0 License
+Keywords: federated learning,deep learning,pytorch
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
