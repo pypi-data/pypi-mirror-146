@@ -1,0 +1,14 @@
+mzflaskfive/MzChess.py,sha256=E3csTPHH4zXxevfTTmsdEwKw9Q3aMZeZGiKIRWyPXPk,26971
+mzflaskfive/MzView.py,sha256=jNdL3oJArlMP3MRbHbT-FIHqnpKad0T1LJRVKD8AYuQ,418
+mzflaskfive/__init__.py,sha256=_NknmC0E_0N0Db4w7xt-7OF-C89W9URoxDGrakGWLls,241
+mzflaskfive/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mzflaskfive/static/black.png,sha256=VC6APNfmQbgNgYwozm6HMM9GtU5GpizpKphoGPXNhSw,403
+mzflaskfive/static/chessboard.jpg,sha256=dSgzflW6-u9W8vRCc-jJ1DqY2S7WcqLLIB6WhrpdjeU,72827
+mzflaskfive/static/white.png,sha256=Vo0VyyR1Mty2g7JawIWRE24Mnf4vw6LP9lntGCLUnWc,457
+mzflaskfive/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mzflaskfive/templates/index.html,sha256=kNoIS8fZp2LlHz-fDc-qwKx05LcHR369ZWcl9Pr0q40,11199
+mzflaskfive-0.1.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+mzflaskfive-0.1.2.dist-info/METADATA,sha256=WjrQ_Uc1puXIPHdw5-i3F55IVHCZT0nzTGi3C8ssss4,946
+mzflaskfive-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mzflaskfive-0.1.2.dist-info/top_level.txt,sha256=38jGWe4F0dccr1rI7yDEfNofxbiPPdlHP4luw5iYjoQ,12
+mzflaskfive-0.1.2.dist-info/RECORD,,
