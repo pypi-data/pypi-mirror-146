@@ -1,0 +1,2 @@
+cubicweb<3.37.0,>=3.28
+cubicweb-card>=0.5
