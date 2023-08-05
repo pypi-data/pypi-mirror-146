@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: lazerpay-sdk
+Version: 1.0.0
+Summary: Lazerpay Python SDK
+Home-page: https://github.com/keosariel/lazerpay-py-sdk
+Author: Kenneth Gabriel
+Author-email: kennethgabriel78@gmail.com
+License: MIT
+Keywords: python,lazerpay,request,aiohttp,client
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Provides-Extra: dotenv
+
+
+    **Github Repo**:  [https://github.com/keosariel/lazerpay-py-sdk](https://github.com/keosariel/lazerpay-py-sdk)
+    **Documentation**: [https://github.com/keosariel/lazerpay-py-sdk/blob/master/README.md](https://github.com/keosariel/lazerpay-py-sdk/blob/master/README.md)
+    
+
