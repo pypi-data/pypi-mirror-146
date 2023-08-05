@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bosch-control-panel-cc880p
+Version: 1.1.2
+Summary: Library to interface with the old CC880p Bosch COntrol Panels
+Home-page: https://github.com/hgomes88/bosch-control-panel-cc880p
+Author: Hugo Gomes
+Author-email: hgomes88@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/hgomes88/bosch-control-panel-cc880p/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aioretry (==5.0.2)
+
+# bosch-control-panel-cc880p
+Library to interface with old Bosch Control Panels using Wifi to Serial bridge
+
+
