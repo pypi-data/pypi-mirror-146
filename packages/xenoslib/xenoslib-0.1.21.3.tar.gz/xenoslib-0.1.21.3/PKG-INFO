@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xenoslib
+Version: 0.1.21.3
+Summary: Xenos' common lib
+Home-page: https://github.com/XenosLu/xenoslib.git
+Author: Xenocider
+Author-email: xenos.lu@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: colorful
+License-File: LICENSE
+
+UNKNOWN
+
