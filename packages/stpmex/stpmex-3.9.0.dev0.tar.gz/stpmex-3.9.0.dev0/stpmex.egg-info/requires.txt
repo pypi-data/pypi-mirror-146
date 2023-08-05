@@ -1,0 +1,4 @@
+cryptography<3.5,>=3.0
+cuenca-validations<0.10,>=0.4
+requests>=2.25
+workalendar<17.0.0,>=16.1.0
