@@ -1,0 +1,7 @@
+keyboard
+nidaqmx
+loguru
+matplotlib
+pyserial
+pyqt5
+pyqtgraph

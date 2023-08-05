@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PyNIExp
+Version: 0.27.2
+Summary: Python interface for neuroimaging experiments
+Home-page: https://github.com/tiborauer/pyniexp
+Author: Tibor Auer
+Author-email: tibor.auer@gmail.com
+License: GPL-3.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# PyNIExp
+Python interfaces for neuroimaging experiments
+ - Interface to National Instruments cards (with digital and analogue I/O) for 
+   - scanner pulse and button presses (with simulation mode)
+   - stimulation devices
+ - UDP transfer
+ - Interface to acquire 3D volumes from MATLAB engine
+
+
+ ## Install
+`pip install git+https://github.com/tiborauer/pyniexp.git`
+
+
