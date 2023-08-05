@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        croudtech-ecs-tools=croudtech_ecs_tools.cli:cli
+    
