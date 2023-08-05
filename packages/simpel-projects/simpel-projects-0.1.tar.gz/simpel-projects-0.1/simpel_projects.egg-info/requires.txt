@@ -1,0 +1,8 @@
+django<4.0,>=3.2.8
+simpel-numerators
+simpel-products
+simpel-actions
+simpel-admin
+simpel-contacts
+simpel-settings
+simpel-themes
