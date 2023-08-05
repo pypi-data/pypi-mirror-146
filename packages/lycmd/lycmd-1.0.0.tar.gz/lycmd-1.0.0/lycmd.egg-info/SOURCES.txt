@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+lycmd/__init__.py
+lycmd/login.py
+lycmd.egg-info/PKG-INFO
+lycmd.egg-info/SOURCES.txt
+lycmd.egg-info/dependency_links.txt
+lycmd.egg-info/requires.txt
+lycmd.egg-info/top_level.txt
