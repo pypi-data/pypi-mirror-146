@@ -1,0 +1,7 @@
+requests
+sgp4~=2.21
+spacetrack~=0.16.0
+
+[dev]
+flake8~=3.9.0
+tox
