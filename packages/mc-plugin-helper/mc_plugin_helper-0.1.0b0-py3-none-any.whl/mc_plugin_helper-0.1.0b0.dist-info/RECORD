@@ -1,0 +1,15 @@
+mc_plugin_helper/__init__.py,sha256=6N0COrXWCkVvZ-914pkZaf1rfYKRn-Bp4-ZlatrANyk,33
+mc_plugin_helper/__main__.py,sha256=nMlfi-z7IUadGSlgunwRDM4T_kRqig6T2vAmrNcanQM,320
+mc_plugin_helper/cli.py,sha256=DEcwkEglk-TNOfR4_cgZb1_2hRA3WmwzUxeH6sc-tLY,2492
+mc_plugin_helper/config.py,sha256=H-xjfE1IN9wkQy4T0Ib1xeno3KrJicuYxEp3dLzWTOA,1577
+mc_plugin_helper/file_manager/__init__.py,sha256=ZvfogkcM4D3e3_eQ47VMgcFF6fP5guKBhdSYcggUbCI,54
+mc_plugin_helper/file_manager/abstract.py,sha256=FhcQIiG0tlDluf_U0odToMjUCg-7ga7H95qRrRGKQ1s,690
+mc_plugin_helper/file_manager/factory.py,sha256=PoEofhslymWioKIz8xGUDNq189yARxQ8UpVXFXmp1uA,803
+mc_plugin_helper/file_manager/local.py,sha256=O_m8ZvrJvK5spBlWqOzwS1fy3NIDbDLjJZpV88WCG5s,918
+mc_plugin_helper/plugin_manager.py,sha256=CuiVsx-XrHMOm4LUNqHLwHUU1RRRrcMesptBCjz5Fgk,1967
+mc_plugin_helper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mc_plugin_helper-0.1.0b0.dist-info/entry_points.txt,sha256=J7ZHDfgEpWhqHRtgpdHvKw25RDXtcXtxUgFyNBPAAAA,66
+mc_plugin_helper-0.1.0b0.dist-info/LICENSE,sha256=RSj9zjP_UCJiMBibuk9bGdfvS9F35wQLLek6GlknYHM,1120
+mc_plugin_helper-0.1.0b0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+mc_plugin_helper-0.1.0b0.dist-info/METADATA,sha256=iTV4sloVPURl9STJXeGwtOROr7Kn6d5cn6pvgV5NpeE,3524
+mc_plugin_helper-0.1.0b0.dist-info/RECORD,,
