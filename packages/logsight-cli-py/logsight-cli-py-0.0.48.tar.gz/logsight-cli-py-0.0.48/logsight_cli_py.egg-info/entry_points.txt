@@ -1,0 +1,3 @@
+[console_scripts]
+logsight = logsight_cli.logsight_cli:main
+
