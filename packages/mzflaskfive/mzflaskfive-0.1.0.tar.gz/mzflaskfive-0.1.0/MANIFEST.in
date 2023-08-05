@@ -1,0 +1,2 @@
+include mzflaskfive/static/*
+include mzflaskfive/templates/*
