@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: dsci310-g7-zoo
+Version: 1.0.1
+Summary: Package created for dsci_310 zoo analysis
+License: MIT
+Author: Group_7
+Requires-Python: >=3.9.7,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: numpy (>=1.22.2,<2.0.0)
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Requires-Dist: pytest (>=7.0.1,<8.0.0)
+Requires-Dist: scikit-learn (>=1.0.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# zoo
+
+Package created for dsci_310 zoo analysis
+
+## Installation
+
+```bash
+$ pip install zoo
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`zoo` was created by Group_7. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`zoo` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
