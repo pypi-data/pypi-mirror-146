@@ -1,0 +1,14 @@
+sqla_wrapper/__init__.py,sha256=8wX9ZFCi2ivVhtj9KUtC33BCAdOK2JqC0chSUOsnhoA,179
+sqla_wrapper/alembic_wrapper.py,sha256=TQkokn69iJC9mE_ZzM5xNBhvhgDaDQcCSovy5aPJ7NU,12796
+sqla_wrapper/base_model.py,sha256=kIs5ZXFHtvSdm6lg6mLN_IrTLYh_dFvoRGGRLUoOHXY,922
+sqla_wrapper/paginator.py,sha256=KjQX2UYFZtmB4i6yJ1bn7ivwjUFahKZGdolZGcjm63U,10705
+sqla_wrapper/session.py,sha256=Qu0WF8rCBpvNs8-OjtjI_O4KGsYgNGNH1_R9XwGbo3M,7873
+sqla_wrapper/sqlalchemy_wrapper.py,sha256=joOFGJdd9z5gVO5h08TuZC1k27PKxFKpVnciXhgxfE0,6571
+sqla_wrapper/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqla_wrapper/cli/click_cli.py,sha256=t_pDco8_pBbDBFjz5blGAbjk1jryP_Quf-Kq3gwm63A,3774
+sqla_wrapper/cli/proper_cli_cli.py,sha256=vcV1v0uENK_o-XmjLprodhwB0jG-GB4R1XBpUZknvjs,577
+sqla_wrapper-5.6.dist-info/METADATA,sha256=G5HtLfHFkW4K6Cvl8BsBIiQJQEdY25hY5vfDkZRct5s,2661
+sqla_wrapper-5.6.dist-info/MIT-LICENSE,sha256=cSUFWiA4qhy966THh-vP7VQdNhyZbuxtg5jG0h6W4h8,1063
+sqla_wrapper-5.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqla_wrapper-5.6.dist-info/top_level.txt,sha256=9Txu75Wb1k0pYn8B1AhQUb5YOOwaMFb1dPPJAAgCTro,13
+sqla_wrapper-5.6.dist-info/RECORD,,
