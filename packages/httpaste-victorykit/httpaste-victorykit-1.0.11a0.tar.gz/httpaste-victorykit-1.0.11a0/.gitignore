@@ -1,0 +1,14 @@
+/.pytest_cache/
+/.tox/
+/build/
+/dist/
+/docs/_stubs/
+/docs/_tree/
+/test-reports/
+/src/*.egg-info/
+**/__pycache__/
+.DS_Store
+.coverage
+/*.md
+/.eggs/
+/devel/
