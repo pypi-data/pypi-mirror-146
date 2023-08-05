@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+omo/__init__.py
+omo/__version__.py
+omo/core.py
+omo.egg-info/PKG-INFO
+omo.egg-info/SOURCES.txt
+omo.egg-info/dependency_links.txt
+omo.egg-info/top_level.txt
