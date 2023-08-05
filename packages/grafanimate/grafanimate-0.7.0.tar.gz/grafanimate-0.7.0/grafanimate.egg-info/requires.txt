@@ -1,0 +1,17 @@
+munch<3,>=2.3
+docopt<1,>=0.6
+tqdm<5,>=4
+unidecode<2,>=1
+furl<3,>=2
+where<2,>=1
+marionette_driver<4,>=3
+python-dateutil<3,>=2.7
+datetime-interval==0.2
+pytimeparse2<2,>=1.4
+
+[:python_version == "3.6"]
+dataclasses<1,>=0.8
+
+[test]
+pytest<7,>=6
+freezegun<2,>=1
