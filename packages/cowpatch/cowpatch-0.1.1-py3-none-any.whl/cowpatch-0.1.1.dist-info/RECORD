@@ -1,0 +1,13 @@
+cowpatch/__init__.py,sha256=iGkKL57Wjt0GwyZfhFK_yiAdhf2bhPLUcmIJPq6lhps,324
+cowpatch/base_elements.py,sha256=ObPchrUkV1sPht26R_wDB0EToMPVGCuxjGMfPv2KgdU,26482
+cowpatch/config.py,sha256=qiza9nAN6kh9GXm52zCcVgFvGrEK8Hxad5CjDAaJtV4,1855
+cowpatch/exceptions.py,sha256=JSt4SjfHHQpnvaB_JljUScshqokd2ozXgNSSDKHX1Gw,273
+cowpatch/layout_elements.py,sha256=9D5S3vqrvoj77khdfiHEpg7952LVi0TOwUV4XbHjLu8,32428
+cowpatch/svg_utils.py,sha256=fbc6SNLYX5_lFuNu05qAILw-PGawR2qz2xlfcqLtAi4,17516
+cowpatch/text_elements.py,sha256=2NL9qNCdwxO2lN_9zpLHUZeGK65KAZmjgRwck4dcueE,11386
+cowpatch/utils.py,sha256=jYKTIhtYv8_7t0wqNjTnjjagV5CsrByXim9RZ2PzcqY,5579
+cowpatch/wrappers.py,sha256=XI4e4fR6WZ0kShlwW1n7uNNJdEvkHjpzOFG9JqK_KI8,2970
+cowpatch-0.1.1.dist-info/LICENSE,sha256=7T2A8tbIcu1cR2TVKgysT-PAKvpvFUL3qzNRnHVUKjE,1073
+cowpatch-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+cowpatch-0.1.1.dist-info/METADATA,sha256=QjiyNGG2fGgUihHtIRgWYKIJuyDmJzpYzaM1I2N6OGE,6400
+cowpatch-0.1.1.dist-info/RECORD,,
