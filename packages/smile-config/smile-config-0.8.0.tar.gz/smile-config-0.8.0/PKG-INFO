@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: smile-config
+Version: 0.8.0
+Summary: UNKNOWN
+License: MIT
+Author-email: Nasy <nasyxx+git@gmail.com>
+Requires-Python: >=3.9
+Project-URL: homepage, https://github.com/nasyxx/smile_config
