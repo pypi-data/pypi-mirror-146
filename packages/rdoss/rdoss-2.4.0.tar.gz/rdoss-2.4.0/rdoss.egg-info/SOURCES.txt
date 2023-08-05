@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+rdoss/__init__.py
+rdoss/_config_.py
+rdoss/main.py
+rdoss/rds.py
+rdoss.egg-info/PKG-INFO
+rdoss.egg-info/SOURCES.txt
+rdoss.egg-info/dependency_links.txt
+rdoss.egg-info/requires.txt
+rdoss.egg-info/top_level.txt
