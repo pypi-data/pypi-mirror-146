@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: trecover
+Version: 1.0.0
+Summary: A Python library to train Transformer neural network for keyless reading task.
+Home-page: https://github.com/alex-snd/TRecover
+Author: Alexander Shulga
+Author-email: alexandershulga.sh@gmail.com
+License: Apache License 2.0
+Keywords: Deep Learning,Machine Learning,Transformers,NLP,Cryptography,Keyless Reading,TRecover,Text Recovery,PyTorch
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Celery
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Provides-Extra: api
+Provides-Extra: dashboard
+Provides-Extra: standalone
+Provides-Extra: worker
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: train
+License-File: LICENSE
+
+UNKNOWN
+
