@@ -1,0 +1,412 @@
+#!python
+#
+# A simple but extensible window manager for macOS.
+# Copyright (c) 2021, Hiroyuki Ohsaki.
+# All rights reserved.
+#
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+from collections import namedtuple
+import json
+import re
+import subprocess
+import sys
+
+from perlcompat import die, warn, getopts
+
+def usage():
+    die(f"""\
+usage: {sys.argv[0]} command [args...]
+""")
+
+FRAME_WIDTH = 0
+Y_OFFSET = 0
+
+TERMINAL_REGEXP = r'(Terminal|ターミナル|Alacritty)'
+
+LAYOUT_OFFSET = 0
+# Regexp: [x, y, width, height]
+LAYOUT_RULES = {
+    TERMINAL_REGEXP: [.5, .3, .5, .7],
+    r'emacs': [0, 0, .5 - LAYOUT_OFFSET, 1],
+    r'Safari': [.5 - LAYOUT_OFFSET, 0, .5 + LAYOUT_OFFSET, 1],
+    r'pdf|libre': [.5 - LAYOUT_OFFSET, 0, .5 + LAYOUT_OFFSET, 1],
+}
+
+# [x, y, width, height] of south-east, north-east, south-west, north-west windows
+QUARTER_GEOMETRIES = [[.5, .5, .5, .5], [.5, 0, .5, .5], [0, .5, .5, .5],
+                      [0, 0, .5, .5]]
+
+TILE_COUNTS = {
+    1: [1, 1],
+    2: [2, 1],
+    3: [2, 2],
+    4: [2, 2],
+    5: [3, 2],
+    6: [3, 2],
+    7: [3, 3],
+    8: [3, 3],
+    9: [3, 3],
+    10: [4, 3],
+    11: [4, 3],
+    12: [4, 3],
+    13: [4, 4],
+    14: [4, 4],
+    15: [4, 4],
+    16: [4, 4],
+    17: [5, 4],
+    18: [5, 4],
+    19: [5, 4],
+    20: [5, 4],
+    21: [5, 5],
+    22: [5, 5],
+    23: [5, 5],
+    24: [5, 5],
+    25: [5, 5],
+    26: [6, 5],
+    27: [6, 5],
+    28: [6, 5],
+    29: [6, 5],
+    30: [6, 5],
+}
+
+def debug(fmt, *args):
+    if args:
+        msg = '** debug: ' + fmt % args
+    else:
+        msg = '** debug: ' + fmt
+    i = msg.find(' ->')
+    if i >= 0:
+        msg = msg[0:i] + (' ' * (50 - i)) + msg[i:]
+    print(msg, file=sys.stderr)
+
+def error(fmt, *args):
+    if args:
+        print('** error:', fmt % args, file=sys.stderr)
+    else:
+        print('** error:', fmt, file=sys.stderr)
+
+# Named-tuple for simulating Xlib.protocol.rq.Struct object.
+Geometry = namedtuple('Geometry', ['x', 'y', 'width', 'height'])
+
+class WindowManager():
+    def __init__(self):
+        # Fetch information on all available windows.
+        output = subprocess.getoutput('yabai -m query --windows')
+        self.properties = {elem['id']: elem for elem in json.loads(output)}
+        self.managed_windows = self.properties.keys()
+        self.exposed_windows = [
+            w for w, elem in self.properties.items() if elem['is-visible']
+        ]
+
+    # ---------------- Yabai wrapper functions.
+    def get_window_class(self, window):
+        """Fetch the property of the window WINDOW and return the application
+        part of the property.  Return empty string if the property does not
+        exist."""
+        try:
+            return self.properties[window]['app']
+        except KeyError:
+            return ''
+
+    def get_window_geometry(self, window):
+        """Obtain the geometry of the window WINDOW.  Return as a dictionary.
+        Valid attributes are x, y, width, and height, root, depth,
+        border_width, and sequence_number.  Return None
+        if the geometry is not retrieved."""
+        try:
+            frame = self.properties[window]['frame']
+            return Geometry(frame['x'], frame['y'], frame['w'], frame['h'])
+        except KeyError:
+            pass
+        return None
+
+    def window_shortname(self, window=-1):
+        cls = self.get_window_class(window)
+        return f'0x{window:x} [{cls}]'
+
+    def get_screen_size(self):
+        """Return the dimension (WIDTH, HEIGHT) of the current screen as a
+        tuple in pixels."""
+        output = subprocess.getoutput('yabai -m query --displays')
+        info = json.loads(output)
+        try:
+            w, h = info[0]['frame']['w'], info[0]['frame']['h']
+            return w, h
+        except KeyError:
+            return 1678, 1056
+
+    def get_usable_screen_size(self):
+        """Return the dimensionn (WIDTH, HEIGHT) of the usable screen area
+        (i.e., the area of the current screen excluding the are for displaying
+        status monitor using, for example, xpymon."""
+        width, height = self.get_screen_size()
+        width -= FRAME_WIDTH * 2
+        height -= FRAME_WIDTH * 2 + Y_OFFSET
+        debug('get_usable_screen_size -> w:%d h:%d', width, height)
+        return width, height
+
+    def configure(self, window, x, y, width, height):
+        """Change the geometry of the window WINDOW.  Valid attributes are X,
+        Y, WIDTH, and HEIGHT."""
+        debug('configure: %s %s %s %s %s', self.window_shortname(window), x, y,
+              width, height)
+        if x is not None and y is not None:
+            subprocess.run(f'yabai -m window {window} --move abs:{x}:{y}',
+                           shell=True)
+        if width is not None and height is not None:
+            subprocess.run(
+                f'yabai -m window {window} --resize abs:{width}:{height}',
+                shell=True)
+
+    # ---------------- Window manager functions.
+    def active_window(self):
+        for id_, elem in self.properties.items():
+            if elem['has-focus']:
+                return id_
+        return None
+
+    def is_managed_window(self, window):
+        """Check if the window WINDOW is under the control of the window
+        manager."""
+        return window in self.managed_windows
+
+    def convert_geomtry(self, x, y, width, height, as_dict=True):
+        """Convert a geometry X, Y, WIDTH and HEIGHT from the unit coordinate
+        to the pixel coordinate.  For instance, the point (0.5, 1.0) in the
+        unit coordinate is mapped to the mid-bottom (i.e., south) of the
+        screen.  Return as a tuple by default.  If AS_DICT is True, return as
+        a dictionary with keys `x', `y', `width' and `height'."""
+        screen_width, screen_height = self.get_usable_screen_size()
+        px = FRAME_WIDTH + int(screen_width * x)
+        py = Y_OFFSET + FRAME_WIDTH + int(screen_height * y)
+        pwidth = int(screen_width * width)
+        pheight = int(screen_height * height)
+        debug('convert_geomtry: x=%s y=%s w=%s h=%s -> x:%s y:%s w:%s h:%s', x,
+              y, width, height, px, py, pwidth, pheight)
+        if as_dict:
+            return {'x': px, 'y': py, 'width': pwidth, 'height': pheight}
+        else:
+            return px, py, pwidth, pheight
+
+    def focus_window(self, window):
+        """Activate the input to the window WINDOW."""
+        if not self.is_managed_window(window):
+            return
+
+        # FIXME: called two times? might be redundant
+        debug('focus_window: %s', self.window_shortname(window))
+        subprocess.run(f'yabai -m window --focus {window}', shell=True)
+
+    def focus_next_window(self, window=None):
+        """Change the active window from the window WINDOW to the next one.
+        The active window is raised and focused.  The pointer is moved to the
+        center of the window."""
+        def _sort_key(window):
+            geom = self.get_window_geometry(window)
+            if geom is None:
+                return 100000000
+            else:
+                return geom.x * 1000000 + geom.y * 1000 + window
+
+        # Sort active windows with their geometries.
+        windows = sorted(self.exposed_windows, key=_sort_key)
+        try:
+            i = windows.index(window)
+            next_window = windows[(i + 1) % len(windows)]
+        except ValueError:
+            if windows:
+                next_window = windows[0]
+            else:
+                return
+        self.focus_window(next_window)
+
+    def is_maximized(self, window, horizontally=True):
+        """Check if the window WINDOW seems to have been maximized."""
+        def _is_close(x, y):
+            return abs(x - y) < 20
+
+        geom = self.get_window_geometry(window)
+        if geom is None:
+            return False
+        width, height = self.get_usable_screen_size()
+        if not (geom.y == Y_OFFSET and _is_close(geom.height, height)):
+            return False
+        if horizontally:
+            if not (geom.x == 0 and _is_close(geom.width, width)):
+                return False
+        return True
+
+    def maximize_window(self, window, horizontally=True, vertically=True):
+        """Resize the geometry of the window WINDOW to cover the screen
+        horizontally and/or vertically."""
+        screen_width, screen_height = self.get_usable_screen_size()
+        geom = self.get_window_geometry(window)
+        if geom is None:
+            return
+        x, y = geom.x, geom.y
+        width, height = geom.width, geom.height
+        if horizontally:
+            x, width = 0, screen_width
+        if vertically:
+            y, height = Y_OFFSET, screen_height
+        self.configure(window, x=x, y=y, width=width, height=height)
+
+    def is_terminal_window(self, window):
+        """Check if the window WINDOW seems to be a terminal emulator."""
+        cls = self.get_window_class(window)
+        return re.search(TERMINAL_REGEXP, cls, flags=re.I)
+
+    def find_geometry_by_rules(self, window):
+        """Look through the configuration variable LAYOUT_RULES and identify
+        the desired geometry (x, y, width, and height) of WINDOW.  The geometry is returned as
+        a dictionary.  Return None if no rule is found."""
+        debug('find_geometry_by_rules: %s', self.window_shortname(window))
+        cls = self.get_window_class(window)
+        cur_geom = self.get_window_geometry(window)
+        if cur_geom is None:
+            return None
+        screen_width, screen_height = self.get_usable_screen_size()
+        for regexp, geom in LAYOUT_RULES.items():
+            if re.search(regexp, cls, flags=re.IGNORECASE):
+                debug("  rule found -> '%s': %s", regexp, geom)
+                # Toggle the location of office applications.
+                if 'office' in regexp and cur_geom.x > screen_width / 4:
+                    geom = [0, 0, .5 + LAYOUT_OFFSET, 1]
+                return self.convert_geomtry(*geom)
+        return None
+
+    def layout_window(self, window, quarter=None):
+        """Resize and move the window WINDOW based on predefined rules.  If
+        QUARTER is specified, the window is placed so that the exact quarter
+        of the screen is occupied.  Otherwise, the geometry is determined
+        based on rules specifed by the variable
+        `LAYOUT_RULES'."""
+        debug('layout_window: %s q=%s', self.window_shortname(window), quarter)
+        if quarter is not None:
+            geom = QUARTER_GEOMETRIES[quarter % 4]
+            self.configure(window, **self.convert_geomtry(*geom))
+            return True
+        else:
+            geom_dict = self.find_geometry_by_rules(window)
+            if geom_dict is not None:
+                self.configure(window, **geom_dict)
+                return True
+        return False
+
+    # FIXME: Should make sure focus is not lost.
+    def layout_all_windows(self, *args):
+        """Resize and move all windows on the current virtual screen according
+        to the rules specified in the variable `LAYOUT_RULES'.  However,
+        terminal windows are treated differently.  If there exists a single
+        terminal window, its geometry is determined by LAYOUT_RULES.  If there
+        are multiple terminal windows, every terminal window spans the quarter
+        of the screen, and terminal windows are placed from the bottom-right
+        corner in the counter-clockwise order."""
+        debug('layout_all_windows')
+        # count the number of terminal windows
+        nterms = sum( [1 for window in self.exposed_windows \
+                if self.is_terminal_window(window)])
+        term_count = 0
+        for window in self.exposed_windows:
+            if self.is_terminal_window(window) and nterms >= 2:
+                # Layout every terminal to span the quarter of the screen.
+                self.layout_window(window, quarter=term_count)
+                term_count += 1
+            else:
+                # Layout according to the predefined rules.
+                self.layout_window(window)
+
+    def tile_all_windows(self, *args):
+        """Resize and move all windows on the current virtual screen so that
+        all windows have the equal size."""
+        debug('tile_all_windows')
+
+        def _sort_key(window):
+            cls = self.get_window_class(window)
+            if 'emacs' in cls.lower():
+                # Force Emacs be the last in the window list.
+                return 0x7fffffff
+            elif re.search(TERMINAL_REGEXP, cls, flags=re.I):
+                # Place terminal windows at the bottom-right.
+                return window - 0x10000000
+            else:
+                # NOTE: New windows have larger IDs?
+                return window
+
+        windows = sorted(self.exposed_windows, key=_sort_key)
+        ncols, nrows = TILE_COUNTS[len(windows)]
+        for col in reversed(range(ncols)):
+            for row in reversed(range(nrows)):
+                if not windows:
+                    break
+
+                window = windows.pop(0)
+                x = 1 / ncols * col
+                y = 1 / nrows * row
+                width = 1 / ncols
+                height = 1 / nrows
+
+                if not windows:
+                    # The last window is stretched to fill the remaining area.
+                    rest_height = 1 / nrows * row
+                    y -= rest_height
+                    height += rest_height
+
+                debug('  %s @ (%d, %d) -> x:%s y:%s w:%s h:%s',
+                      self.window_shortname(window), col, row, x, y, width,
+                      height)
+                self.configure(window,
+                               **self.convert_geomtry(x, y, width, height))
+
+    # ---------------- Callback functions.
+    def cb_maximize_window(self, window, horizontally=True):
+        if self.is_maximized(window, horizontally=horizontally):
+            # FIXME: Should Revert to the previous geometry.
+            self.layout_window(window)
+        else:
+            self.maximize_window(window, horizontally=horizontally)
+
+    def cb_maximize_window_vertically(self, window):
+        self.cb_maximize_window(window, horizontally=False)
+
+CMDTBL = [
+    (r'^f', 'focus_next_window'),
+    (r'^l', 'layout_all_windows'),
+    (r'^t', 'tile_all_windows'),
+    (r'^m', 'cb_maximize_window'),
+    (r'^v', 'cb_maximize_window_vertically'),
+]
+
+def main():
+    if len(sys.argv) <= 1:
+        usage()
+    cmd = sys.argv[1]
+    args = sys.argv[2:]
+
+    wm = WindowManager()
+    window = wm.active_window()
+
+    for regexp, name in CMDTBL:
+        if re.search(regexp, cmd):
+            subr = eval(f'wm.{name}')
+            debug(f'{name}({window})')
+            subr(window, *args)
+            break
+    else:
+        die(f"Undefined command: '{cmd}'")
+
+if __name__ == "__main__":
+    main()
