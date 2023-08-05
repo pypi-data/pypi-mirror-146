@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: csregex
+Version: 1.0.0
+Summary: C# Regex implemented in Python
+Home-page: https://github.com/LUA9/csregex
+Author: LUA9
+Maintainer: LUA9
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Example
+```python
+import csregex
+
+csa = regex.find_all('[^a]', 'asdf')
+list(a)
+>>>['s', '\d', 'f']
+

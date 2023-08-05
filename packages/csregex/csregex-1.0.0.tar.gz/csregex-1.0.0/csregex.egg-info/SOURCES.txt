@@ -1,0 +1,8 @@
+setup.py
+csregex/__init__.py
+csregex/compiler.py
+csregex/package.py
+csregex.egg-info/PKG-INFO
+csregex.egg-info/SOURCES.txt
+csregex.egg-info/dependency_links.txt
+csregex.egg-info/top_level.txt
