@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: donutLol
+Version: 0.0.6
+Summary: Prints a 3d donut
+Home-page: https://github.com/lazylion22/donutLol
+Author: lazylion2
+Author-email: <lazylion2@gmail.com>
+License: UNKNOWN
+Keywords: python,donut,donut3d
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# donut3d
+
+to run in code 
+
+```
+from donutLol import donut 
+donut()
+```
+
+to run in windows cmd:
+
+```
+donut
+```
+
+
