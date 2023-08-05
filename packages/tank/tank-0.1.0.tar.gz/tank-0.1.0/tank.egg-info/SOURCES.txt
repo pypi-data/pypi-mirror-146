@@ -1,0 +1,7 @@
+README.md
+setup.py
+tank/__init__.py
+tank.egg-info/PKG-INFO
+tank.egg-info/SOURCES.txt
+tank.egg-info/dependency_links.txt
+tank.egg-info/top_level.txt
