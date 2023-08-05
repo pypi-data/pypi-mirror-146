@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: i_xero2
+Version: 2.4.0
+Summary: A set of functions to retrieve and save data into Xero.
+Home-page: https://github.com/aracnid/i-xero2
+Keywords: i-xero,xero,i-xero2
+Author: Jason Romano
+Author-email: aracnid@gmail.com
+Requires-Python: ~=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: Other/Proprietary License
+Requires-Dist: aracnid-logger
+Requires-Dist: flask
+Requires-Dist: flask-oauthlib
+Requires-Dist: flask-session
+Requires-Dist: i-mongodb
+Requires-Dist: pytz
+Requires-Dist: xero-python
+
+# i-Xero2
+
+This is a standardized and customized connector to Xero.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+This package supports the following version of Python:
+
+- Python 3.9 or later
+
+### Installing
+
+Install the latest package using pip. (We prefer pipenv.)
+
+```
+$ pip install i-xero2
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+```
+$ python -m pytest
+```
+
+## Usage
+
+TODO
+
+## Authors
+
+- **Jason Romano** - [Aracnid](https://github.com/aracnid)
+
+See also the list of [contributors](https://github.com/aracnid/i-xero/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
