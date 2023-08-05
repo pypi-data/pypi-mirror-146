@@ -1,0 +1,227 @@
+Metadata-Version: 2.1
+Name: fileactivityhandler
+Version: 0.0.1.R1
+Summary: A module to Handle all file / directory activities for automation
+Home-page: UNKNOWN
+Author: Vikas Bhaskar Vooradi
+Author-email: vikasvooradi.devs@gmail.com
+License: MIT
+Keywords: fileHandling,Automation,fileActivityHandler,setuptools,development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# FileActivityHandler
+
+This module is designed to handle file / directory related checks. 
+If you are doing some automation no need to write code from scratch all are taken care within this module.
+
+<br>
+
+## Advantage
+1. Easy to use  
+2. Concise code
+3. Reduces developer effort from re-writing code from scratch
+
+<br>
+
+
+## Functions available within module
+* checkPathExistorNot( PATH )
+* checkFileExistorNot( PATH with filename )
+* checkFileExtensionExistorNot( PATH with filename )
+* checkFileSize(PATH with filename)
+* monitorFilearrival(PATH with filename)
+* getFileExtension(PATH with filename)
+* getFileName(PATH with filename)
+* copyFileA2BPath(SourcePath="", DestinationPath="", fileName="")
+
+<br>
+
+## How to import fileactivityhandler module 
+
+```
+import fileactivityhandler
+```
+
+<br>
+
+## How to use function : checkPathExistorNot( PATH ) within the program 
+
+<br>
+
+This fucntion will return TRUE or None.
+If it returns TRUE then the PATH is present and it's valid PATH. If it returns None means the given PATH does not exist or it's a invalid PATH.
+
+<br>
+
+```
+import fileactivityhandler
+
+status=fileactivityhandler.checkPathExistorNot(r"C:\Users\vvoor\Desktop\Python")
+
+print('Your status : ',status)
+```
+
+<br>
+
+## To perform status check on checkPathExistorNot
+
+<br>
+
+```
+import fileactivityhandler 
+
+status=fileactivityhandler.checkPathExistorNot(r"C:\Users\vvoor\Desktop\fileActivityHandlers")
+
+if status is True:
+    print('Success')
+else:
+    print('Fail')
+```
+
+<br>
+
+
+## How to use function : checkFileExistorNot( PATH with filename ) within the program 
+
+
+```
+import fileactivityhandler 
+
+status=fileactivityhandler.checkFileExistorNot(r"C:\Users\vvoor\Desktop\fileActivityHandlers\demo.txt")
+
+if status is True:
+    print('Success')
+else:
+    print('Fail')
+``` 
+
+<br>
+
+
+
+## How to use function : checkFileExtensionExistorNot( PATH with filename ) within the program 
+
+
+```
+import fileactivityhandler 
+
+status=fileactivityhandler.checkFileExtensionExistorNot(r"C:\Users\vvoor\Desktop\Temp\data.json")
+
+if status is True:
+  print('Succes')
+else:
+  print('Fail')
+``` 
+
+<br>
+
+
+## How to use function : checkFileSize( PATH with filename ) within the program 
+
+```
+import fileactivityhandler
+
+status=fileactivityhandler.checkFileSize(r"C:\Users\vvoor\Desktop\Temp\data.json")
+
+if status is True:
+  print('Succes')
+else:
+  print('Fail')
+```
+
+<br>
+
+## How to use function : monitorFilearrival( PATH with filename ) within the program 
+
+```
+import fileactivityhandler
+
+status=fileactivityhandler.monitorFilearrival(r"C:\Users\vvoor\Desktop\Temp\data.json")
+
+if status is True:
+  print('Succes')
+else:
+  print('Fail')
+```
+
+<br>
+
+## How to use function : getFileExtension( PATH with filename ) within the program 
+
+```
+import fileactivityhandler
+
+varname=fileactivityhandler.getFileExtension(r"C:\Users\vvoor\Desktop\Temp\data.json")
+
+if varname is None:
+  print('No extesnion')
+else:
+  print('File extesnion : ',varname)
+```
+
+<br>
+
+## How to use function : getFileName( PATH with filename ) within the program 
+
+```
+import fileactivityhandler
+
+varname=fileactivityhandler.getFileName(r"C:\Users\vvoor\Desktop\Temp\data.json")
+
+if varname is None:
+  print('Fail')
+else:
+  print('File name : ',varname)
+
+```
+
+<br>
+
+## How to use function : copyFileA2BPath(SourcePath="",DestinationPath="",fileName="") within the program 
+
+```
+import fileactivityhandler
+
+status=fileactivityhandler.copyFileA2BPath(r"C:\Users\vvoor\Desktop\Temp\folder_A",r"C:\Users\vvoor\Desktop\Temp\folder_B","data.json")
+
+if status is True:
+  print('File copied')
+else:
+  print('Fail to copy file')
+
+```
+
+<br>
+
+<b>Note</b> : Depending upon status you can decide either to continue or terminate the code from executing further Logic by using ```sys.exit() ```  by importing sys module as ```import sys```
+
+<br>
+
+## Change Log 
+<br>
+
+Version : 0.0.1 R1 (09-APRIL-2022)
+- First Release 
+
+
+<br>
+
+## LICENSE
+
+Copyright 2022 Vikas Bhaskar Vooradi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
