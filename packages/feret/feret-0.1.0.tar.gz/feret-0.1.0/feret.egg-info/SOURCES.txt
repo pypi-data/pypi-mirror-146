@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+feret/FeretDiameter.py
+feret/__init__.py
+feret.egg-info/PKG-INFO
+feret.egg-info/SOURCES.txt
+feret.egg-info/dependency_links.txt
+feret.egg-info/requires.txt
+feret.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: feret
+Version: 0.1.0
+Summary: Calculates the maximum and minimum feret diameter
+Home-page: https://github.com/matthiasnwt/feret
+Author: Matthias Nwt
+License: MIT
+Project-URL: Bug Reports, https://github.com/matthiasnwt/feret/issues
+Project-URL: Source, https://github.com/matthiasnwt/feret/
+Keywords: feret,feretdiameter,maxferet,minferet
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Feret
+
+Python module to calculate Feret maximum and minimum diameter.
+
