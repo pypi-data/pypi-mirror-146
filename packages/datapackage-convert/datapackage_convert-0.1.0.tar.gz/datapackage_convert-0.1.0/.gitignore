@@ -1,0 +1,6 @@
+/target
+Cargo.lock
+__pycache__
+datapackage_convert/*.so
+/dist
+
