@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: django-create-fake-model-object
+Version: 0.1
+Summary: Create Fake Model Object
+Home-page: https://github.com/cwadven/django-create-fake-model-object
+Author: cwadven
+Author-email: cwadven4@gmail.com
+Maintainer: cwadven
+License: MIT
+Keywords: django random
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Faker
+Requires-Dist: django-seed
+Requires-Dist: psycopg2
+Requires-Dist: psycopg2-binary
+
+================================
+Django Create Fake Model Object
+================================
+
+Django Create Fake Model Object is a Django app to make random fake data
+It also creates Foreign objects and M2M objects!
+
+
+Quick Start
+============
+
+1. Add "create_fake_model_object" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...,
+        'create_fake_model_object',
+    ]
+
+
+2. If you want to create a new model object use the following command to create.::
+
+    python manage.py createrandom (appname) (Modelname) (option -n createnumber)
+
+    # Example
+    python manage.py createrandom book Book -n 7
+
+
+

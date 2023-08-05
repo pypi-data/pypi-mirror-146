@@ -1,0 +1,7 @@
+create_fake_model_object/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+create_fake_model_object/management/commands/createrandom.py,sha256=jaIvC2uzzjvJt3quaM6so-oJnZ6v76ymFK9n3FNq8PQ,2591
+django_create_fake_model_object-0.1.dist-info/LICENSE,sha256=vGrx-ycQCYh0kmSDy4EL5weWgQmbcK9OgK2XlSxH9d4,1052
+django_create_fake_model_object-0.1.dist-info/METADATA,sha256=61OSaupOaH39IzsEUO0vRES16fktooozeZKWi3Nhdj4,1532
+django_create_fake_model_object-0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+django_create_fake_model_object-0.1.dist-info/top_level.txt,sha256=esNB9FRPgttaJhvq1pJshIx6zO9CkO1_-ePgskJYJO8,25
+django_create_fake_model_object-0.1.dist-info/RECORD,,
