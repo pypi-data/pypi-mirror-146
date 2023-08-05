@@ -1,0 +1,13 @@
+xls_tools/__init__.py,sha256=rtfWkGKI2NruuBL8rCl7y8F3dypEjRR16IvUC5TyPsM,1324
+xls_tools/google_sheet_reader.py,sha256=_NLATMSI2HI6HECFBqvJo_MIdD0LNlC2CDtUnS8FIyM,10285
+xls_tools/open_xl.py,sha256=0cC87xH6H-IguHi1FINc1qs-AlbzJIIrIxCa2EyWXb4,379
+xls_tools/openpyxlrd.py,sha256=45QKKK5ztTKb69sMRJEaX_h-Mk8oynh-vcyBhfjUjjE,3317
+xls_tools/util.py,sha256=4dnF5bZ_rN7xCd1WVTeW6ZuOntAFzl2RpScsuSL81Ts,826
+xls_tools/xl_reader.py,sha256=xDzb6xLB67R0iBGrrmYj6fEYciXjNMXnCCVyp7IYcMY,3072
+xls_tools/xl_sheet.py,sha256=Oep8UMMFQuEqSnB39ywLNDIzN8yOYDfE2Ie8ZcSAHUw,14453
+xls_tools/xlrd_like.py,sha256=7Ik23_32fy3Tk_N1WrL2hktwUZReOkmPM_G0lZDFeOA,3631
+xlstools-0.1.0.dist-info/LICENSE,sha256=3FBVAJb7K7dWbXYYaTaNCdgtSxd4kk07zNbMZKmD9Lw,1553
+xlstools-0.1.0.dist-info/METADATA,sha256=ZxGfKeITW7CPE7JU1mdDS9bBwolZvBbRYRCMWjbVn4Y,2327
+xlstools-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xlstools-0.1.0.dist-info/top_level.txt,sha256=ibSEYGdhAMfdySYqcsT00Q6bqRBZT0TKtPaRzfSuXrU,10
+xlstools-0.1.0.dist-info/RECORD,,
