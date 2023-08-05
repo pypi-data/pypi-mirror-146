@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pymorx
+Version: 0.1.1
+Summary: 通用图像配准库--python 接口
+
+License: MIT OR Apache-2.0
