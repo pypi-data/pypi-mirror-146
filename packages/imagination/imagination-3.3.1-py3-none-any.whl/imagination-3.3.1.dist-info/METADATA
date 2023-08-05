@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: imagination
+Version: 3.3.1
+Summary: "Library for Automatic Dependency Injection"
+Author: Juti Noppornpitak
+Author-email: juti@shiroyuki.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: kotoba
+
+"GA4GH API client and command line tool. Please check out [the documentation](https://docs.viral.ai/analysis) for more details."
+
