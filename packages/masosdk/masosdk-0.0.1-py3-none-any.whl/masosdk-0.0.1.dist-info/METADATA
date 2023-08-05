@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: masosdk
+Version: 0.0.1
+Summary: Software Development Kit for Maso
+Home-page: https://www.isibrno.cz
+Author: Tomas Psorn
+Author-email: tomaspsorn@isibrno.cz
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: requests
+
+UNKNOWN
+
+
