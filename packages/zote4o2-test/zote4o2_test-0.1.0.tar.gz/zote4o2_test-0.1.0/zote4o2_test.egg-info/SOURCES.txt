@@ -1,0 +1,9 @@
+README.md
+setup.py
+zote4o2_test/__init__.py
+zote4o2_test/calc.py
+zote4o2_test.egg-info/PKG-INFO
+zote4o2_test.egg-info/SOURCES.txt
+zote4o2_test.egg-info/dependency_links.txt
+zote4o2_test.egg-info/requires.txt
+zote4o2_test.egg-info/top_level.txt
