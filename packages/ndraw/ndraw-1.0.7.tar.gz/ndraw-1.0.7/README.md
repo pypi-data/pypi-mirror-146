@@ -1,0 +1,126 @@
+# ndraw
+
+---
+
+<div >
+    <img src='https://shields.io/badge/version-1.0.5-green.svg'>
+    <img src='https://shields.io/badge/dependencies-tensorflow/metricflow.js-blue.svg'>
+    <img src='https://shields.io/badge/author-Chang Zhang-dbab09.svg'>
+    <h4>ndraw是一个简单的神经网络可视化工具,目前支持Tensorflow2.0+模型可视化</h4>
+</div>
+
+
+## 安装
+
+### 1、pip安装
+```
+pip install ndraw
+```
+
+### 2、源码安装
+
+下载源码，打开命令行
+
+```
+python setup.py bdist_egg
+
+python setup.py install
+```
+
+
+## 使用
+
+> 可以参考test.py
+
+### 1、pb模型可视化
+```
+--pbpath
+  |--variables
+  |--saved_model.pb
+
+```
+
+```python
+import ndraw
+ndraw.server("pbpath")
+# 打开浏览器访问9999端口即可
+```
+
+### 2、h5模型可视化
+
+```python
+import ndraw
+ndraw.server("model.h5")
+# 打开浏览器访问9999端口即可
+```
+
+### 3、模型对象可视化
+
+```python
+import ndraw
+import tensorflow as tf
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(512, activation='relu'),
+    tf.keras.layers.Dense(256, activation='relu'),
+    tf.keras.layers.Dense(2, activation='softmax')
+])
+model.build(input_shape=(None, 100))
+ndraw.server(model)
+# 打开浏览器访问9999端口即可
+```
+
+### 4、生成html文件
+
+```python
+import ndraw
+html = ndraw.render("pb/h5/mode均可",out_file="model.html")
+# 生成一个model.html文件
+```
+
+### 5、可视化主题
+
+1、DEFAULT
+
+```python
+import ndraw
+ndraw.server("model.h5",theme=ndraw.DEFAULT)
+```
+![default](image/default.png)
+
+2、BLACK_WHITE
+
+```python
+import ndraw
+ndraw.server("model.h5",theme=ndraw.BLACK_WHITE)
+```
+![black_white](image/black_white.png)
+
+3、LIGHTBLACK_WHITE
+
+```python
+import ndraw
+ndraw.server("model.h5",theme=ndraw.LIGHTBLACK_WHITE)
+```
+![lightblack_white](image/lightblack_white.png)
+
+4、GREEN_WHITE
+
+```python
+import ndraw
+ndraw.server("model.h5",theme=ndraw.GREEN_WHITE)
+```
+![green_white](image/green_white.png)
+
+### 6、其他参数
+
+```
+:param host: 服务地址 可自定义
+:param port: 服务端口可自定义
+:param flow: 布局方式：vertical and horizontal
+```
+
+## 参考图
+
+![输入图片说明](image.png)
+
+![输入图片说明](1image.png)
