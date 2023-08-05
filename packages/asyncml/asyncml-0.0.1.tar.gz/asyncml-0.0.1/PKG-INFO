@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: asyncml
+Version: 0.0.1
+Summary: A python module for asynchronous machine learning.
+Home-page: https://github.com/AkibMashrur/asyncml
+Author: Akib Mashrur
+Author-email: akibmashrur@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/AkibMashrur/asyncml/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# asyncml
+A set of asynchronous machine learning models and handlers. 
+
+
