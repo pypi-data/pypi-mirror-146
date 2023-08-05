@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+aoo/__init__.py
+aoo/__version__.py
+aoo/core.py
+aoo.egg-info/PKG-INFO
+aoo.egg-info/SOURCES.txt
+aoo.egg-info/dependency_links.txt
+aoo.egg-info/top_level.txt
