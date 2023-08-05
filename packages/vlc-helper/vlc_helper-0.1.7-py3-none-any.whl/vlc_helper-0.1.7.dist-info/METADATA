@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: vlc-helper
+Version: 0.1.7
+Summary: CLI helpers for VLC media player
+Home-page: https://github.com/kenjyco/vlc-helper
+Author: Ken
+Author-email: kenjyco@gmail.com
+License: MIT
+Download-URL: https://github.com/kenjyco/vlc-helper/tarball/v0.1.7
+Keywords: vlc,video,video player,cli,command-line,repl,dbus,screenshots,annotations,helper,kenjyco
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Dist: bg-helper
+Requires-Dist: chloop
+Requires-Dist: click (>=6.0)
+Requires-Dist: dbus-python
+
+Warning
+-------
+
+This is **Linux only** as D-BUS does not work on Mac.
+
+You must have the following system packages installed
+
+-  ``vlc`` (to play videos)
+-  ``imagemagick`` (to take screenshots)
+-  ``wmctrl`` (to determine window name)
+
+Install
+-------
+
+Install system requirements for ``dbus-python`` package
+
+::
+
+   % sudo apt-get install -y pkg-config libdbus-1-dev libdbus-glib-1-dev
+
+Install with ``pip``
+
+::
+
+   % pip3 install vlc-helper
+
+Usage
+-----
+
+The ``vlc-repl`` and ``myvlc`` scripts are provided
+
+::
+
+   % venv/bin/vlc-repl --help
+   Usage: vlc-repl [OPTIONS]
+
+     Start a REPL to control VLC media player
+
+   Options:
+     --help  Show this message and exit.
+
+   % venv/bin/myvlc --help
+   Usage: myvlc [OPTIONS] [FILENAME] [STARTTIME] [STOPTIME]
+
+     Start filename at specific start time (and/or end at specific end time)
+
+   Options:
+     --help  Show this message and exit.
+
+
