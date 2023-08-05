@@ -1,0 +1,16 @@
+lung-annotator/__init__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+lung-annotator/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lung-annotator/core/dataset.py,sha256=0ffx9cStPFJLl0f03muqPwUSuHpnWKDHc7oEKRYxrQg,1557
+lung-annotator/core/model.py,sha256=TcchLh7h-3-7x1oOoy3NIqYg-2ghSFVmZ6dymkLRjiw,5303
+lung-annotator/predict.py,sha256=o1dyY96mvE6BR3ZOMAu7lo820vWa3oVM_xMrT4gmwUw,2179
+lung-annotator/scripts/build.sh,sha256=P9Fv2mxR1qcECTSO-iPAZOy08S_8JUsq9i8zieRchuo,194
+lung-annotator/show.py,sha256=ZTFY2cSNDFz1ElW77q5mbbAeXsWbG7oVvJzYqHdnLj0,2597
+lung-annotator/train.py,sha256=NaLyZ11Hj0-TvhCwxKKhMHYfkDFynFfnIOy-DGVMcjw,6905
+lung-annotator/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lung-annotator/utils/render.cpp,sha256=FOvqIb1JLvJjrO7NpkSC2Gs0OykZBylm1akZM1ospb8,1996
+lung-annotator/utils/show3d.py,sha256=qPJr1-_hO2KHwlqIajUD15GZtwd6dRR7cBM4Q-IrnIE,5763
+lung-annotator/utils/transform.py,sha256=y9NpaWSvJrlyanHnCmTtXxNx44wuuiSOSrAVa-RYPXg,344
+lung_annotator-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lung_annotator-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+lung_annotator-0.1.0.dist-info/METADATA,sha256=2lc1P3JeWJJYmRmufuwRo60jyo3jL1ET28F2ej0ooXE,823
+lung_annotator-0.1.0.dist-info/RECORD,,
