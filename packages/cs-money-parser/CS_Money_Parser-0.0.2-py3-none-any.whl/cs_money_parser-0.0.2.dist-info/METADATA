@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cs-money-parser
+Version: 0.0.2
+Summary: Quick programmatic search for objects from the site cs.money
+Author: Dark Laybel
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
