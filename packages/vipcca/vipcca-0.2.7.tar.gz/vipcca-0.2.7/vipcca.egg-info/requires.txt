@@ -1,0 +1,11 @@
+scanpy
+tensorflow==2.4.0
+anndata
+scipy
+pandas
+seaborn
+keras
+python-igraph
+louvain
+h5py
+future
