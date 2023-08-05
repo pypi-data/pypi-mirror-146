@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: TextEdit
+Version: 1.2.1
+Summary: A small module for to display the letters at the sequence.
+Home-page: https://github.com/C0rent1Perdry/TextEdit-1.0
+Author: Corentin Perdry
+Author-email: corentin.perdry@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/C0rent1Perdry/TextEdit-1.0/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TextEdit-1.2 #
+A small module for to display the letters at the sequence.  
+The Github Repo with the source code is:[link] (https://github.com/C0rent1Perdry/TextEdit-1.1)  
+For windows, you must install the folder TextEdit in C:\Users\you_account\AppData\Local\python\python-version\Lib\  
+For Linux, you must install the folder TextEdit in /usr/local/lib/python/dist-packages/  
+So, you import TextEdit for Linux with pip3 TextEdit  
+And, for Windows you import with python py -m pip install TextEdit  
+
