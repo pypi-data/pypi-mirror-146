@@ -1,0 +1,4 @@
+setuptools>=57
+wheel
+loguru~=0.5.3
+kafka-python~=2.0.2
