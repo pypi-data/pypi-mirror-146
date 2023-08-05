@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: basic-flask
+Version: 0.1.1
+Summary: A packge to create a simple flask app in a single commend
+Home-page: https://github.com/omercotkd/basic-flask
+Author: omer cohen
+Author-email: omerco.python@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/omercotkd/basic-flask
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Basic Flask
+This packge will allow you to create a basic flask app with a singel commend line.
+Simply pip install it and then you can type in the commend line: "create-flask" and 
+in the corrent directory a venv will be created with flask and python-dotenv
+alredy installed.
+On top of that a few files will be created, main.py .gitignore .env .flaskenv requirements.txt 
+with some data.
+Now you can simply type "flask run" and the flask app will start!
+
+

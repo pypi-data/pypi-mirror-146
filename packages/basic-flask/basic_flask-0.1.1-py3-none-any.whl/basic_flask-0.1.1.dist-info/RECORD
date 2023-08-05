@@ -1,0 +1,11 @@
+basic_flask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basic_flask/create_flask.py,sha256=RmlxDYJVjCLDjxJdzDDlWzS47L91Y6nLTqATCafHnr4,1530
+basic_flask/creation_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basic_flask/creation_files/activate_this.py,sha256=mohq8JO90MmnBR6AKsoPnIQkmkJWS7NrHEi28Lfb6ms,1357
+basic_flask/creation_files/main.py,sha256=_5Mr-3od8Ni8gSq4UG1UeccAnn0SKPv4rSAQ9A5edFU,160
+basic_flask-0.1.1.dist-info/LICENSE,sha256=1Oxa62ApFNL3zP25xj9VGTKLWogYuOuXKR18N4jjwRE,1071
+basic_flask-0.1.1.dist-info/METADATA,sha256=R384w3kZTy-4qHeVisOIk6OaVq1pPKJtAno8EI9FEg0,1022
+basic_flask-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+basic_flask-0.1.1.dist-info/entry_points.txt,sha256=VQW726SK4mJtPSzQ3okditNdZhE8VomBPJvRV_g2xRc,65
+basic_flask-0.1.1.dist-info/top_level.txt,sha256=xz6Os0Z1MYiMEgBU9u2CaJhFXkAalW9R_6IU_UpT-xA,12
+basic_flask-0.1.1.dist-info/RECORD,,
