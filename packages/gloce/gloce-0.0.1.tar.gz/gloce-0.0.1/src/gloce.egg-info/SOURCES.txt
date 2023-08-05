@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gloce/__init__.py
+src/gloce/gc.py
+src/gloce.egg-info/PKG-INFO
+src/gloce.egg-info/SOURCES.txt
+src/gloce.egg-info/dependency_links.txt
+src/gloce.egg-info/top_level.txt
