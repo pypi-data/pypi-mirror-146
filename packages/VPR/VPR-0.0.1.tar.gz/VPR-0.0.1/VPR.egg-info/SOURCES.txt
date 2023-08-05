@@ -1,0 +1,7 @@
+MANIFEST.in
+README.txt
+setup.py
+VPR.egg-info/PKG-INFO
+VPR.egg-info/SOURCES.txt
+VPR.egg-info/dependency_links.txt
+VPR.egg-info/top_level.txt
