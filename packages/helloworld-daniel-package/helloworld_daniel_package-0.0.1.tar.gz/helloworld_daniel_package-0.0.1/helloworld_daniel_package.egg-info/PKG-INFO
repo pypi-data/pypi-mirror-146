@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: helloworld-daniel-package
+Version: 0.0.1
+Summary: modelo de pacote python
+Home-page: https://github.com/DanielNery/modelo_pacote-python
+Author: daniel_nery
+Author-email: danielpontesnery@gmail.com
+License: UNKNOWN
+Description: # Modelo de pacote Python
+        
+            - Modelo Básico de pacote Python
+            - Serve para criação de pacotes e bibliotecas Python
+            - Faz um hello world no terminal
+            - pip install helloworld_daniel_package
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
