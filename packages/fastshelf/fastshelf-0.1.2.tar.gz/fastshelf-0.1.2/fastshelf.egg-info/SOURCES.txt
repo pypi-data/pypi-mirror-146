@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+fastshelf.egg-info/PKG-INFO
+fastshelf.egg-info/SOURCES.txt
+fastshelf.egg-info/dependency_links.txt
+fastshelf.egg-info/requires.txt
+fastshelf.egg-info/top_level.txt
+src/PlyvelDB.py
+src/RocksDB.py
+src/__init__.py
+src/fastshelf.py
