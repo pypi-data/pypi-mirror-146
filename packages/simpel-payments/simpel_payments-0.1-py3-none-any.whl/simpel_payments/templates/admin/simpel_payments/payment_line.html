@@ -1,0 +1,18 @@
+{% load i18n admin_urls simpelcore_tags %}
+<div>
+  <div class="d-flex">
+    <div class="me-auto">
+      {% if object.reference %}
+      {% url object.reference.opts|admin_urlname:'inspect' object.reference.id|admin_urlquote as inspect_url %}
+        <strong>{{ object.reference.opts.verbose_name }}</strong> <a href="{{ inspect_url }}">{{ object.reference_id }}</a>
+      {% else %}
+        <span>#{{ object.reference_id }}</span>
+      {% endif %}
+    </div>
+    <div class="fw-bold">
+      {{ object.amount|currency }}
+    </div>
+  </div>
+  <div class="small">{% trans "From" %} <strong>{{ object.reference.customer }}</strong> {% trans "to" %} <strong>{{ object.gateway }}</strong></div>
+  <div class="mb-2">{{ object.note }}</div>
+</div>

@@ -1,0 +1,65 @@
+{% extends 'admin/inspect.html' %}
+
+
+{% load i18n static simpelcore_tags %}
+
+
+{% block content_main %}
+<div class="row">
+  <div class="col-lg-9">
+    <div class="card">
+      <div class="px-4 py-4">
+        <div class="mb-4">
+          <div class="flex-row">
+            <div class="fw-bold w-150px">{% trans "Inner ID" %}</div>
+            <div class="flex-fill">: {{ object.inner_id|upper }}</div>
+          </div>
+          <div class="flex-row">
+            <div class="fw-bold w-150px">{% trans "Group" %}</div>
+            <div class="flex-fill">: {{ object.reference.group|title }}</div>
+          </div>
+          <div class="flex-row">
+            <div class="fw-bold w-150px">{% trans "Status" %}</div>
+            <div class="flex-fill">: {{ object.get_status_display }}</div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-shrink-0 fw-bold w-150px">{% trans "Date" %}</div>
+            <div class="flex-fill">: {{ object.created_at }}</div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-shrink-0 fw-bold w-150px">{% trans "Reference" %}</div>
+            <div class="flex-fill">: {% if object.reference %}{{ object.reference.opts.verbose_name }}{% endif %} #{{ object.reference_id }}</div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-shrink-0 fw-bold w-150px">{% trans "Source" %}</div>
+            <div class="flex-fill">: {{ object.reference.customer }}</div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-shrink-0 fw-bold w-150px">{% trans "Destination" %}</div>
+            <div class="flex-fill">: {{ object.gateway }}</div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-shrink-0 fw-bold w-150px">{% trans "Memo" %}</div>
+            <div class="flex-fill">: {% firstof object.note '-' %}</div>
+          </div>
+          <div class="flex-row mb-3">
+            <div class="flex-shrink-0 fw-bold w-150px">{% trans "Amount" %}</div>
+            <div class="flex-fill">: {{ object.amount|currency }} </div>
+          </div>
+          <div class="flex-row mb-3">
+            <div class="flex-shrink-0 fw-bold w-150px">{% trans "Amount Text" %}</div>
+            <div class="flex-fill">: {{ object.amount|number_to_text|title }} </div>
+          </div>
+          <div class="flex-row mb-3">
+            <div class="flex-shrink-0 fw-bold w-150px">{% trans "Created By" %}</div>
+            <div class="flex-fill">: {{ object.user.get_full_name }} (@{{ object.user }})</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    {% include 'simpel_actions/object_actions.html' %}
+  </div>
+</div>
+{% endblock %}
