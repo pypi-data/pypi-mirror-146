@@ -1,0 +1,4 @@
+pyyaml
+six
+uproot>=4.0.7
+uproot3
