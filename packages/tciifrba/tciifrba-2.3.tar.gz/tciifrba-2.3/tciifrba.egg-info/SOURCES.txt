@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tciifrba/SOS_pasabajo_simple.py
+tciifrba/__init__.py
+tciifrba/demo_seg_orden1.py
+tciifrba/demo_seg_orden2.py
+tciifrba/tciifrba.py
+tciifrba.egg-info/PKG-INFO
+tciifrba.egg-info/SOURCES.txt
+tciifrba.egg-info/dependency_links.txt
+tciifrba.egg-info/requires.txt
+tciifrba.egg-info/top_level.txt
