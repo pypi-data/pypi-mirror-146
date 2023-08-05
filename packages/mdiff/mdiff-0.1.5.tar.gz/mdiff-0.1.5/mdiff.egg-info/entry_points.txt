@@ -1,0 +1,4 @@
+[console_scripts]
+mdiff = mdiff.cli:main
+mdiff-gui = mdiff.visualisation.gui_tkinter.main:start_app
+
