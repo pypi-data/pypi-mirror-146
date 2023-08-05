@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/triangle_package/__init__.py
+src/triangle_package/triangle.py
+src/triangle_rafi.egg-info/PKG-INFO
+src/triangle_rafi.egg-info/SOURCES.txt
+src/triangle_rafi.egg-info/dependency_links.txt
+src/triangle_rafi.egg-info/top_level.txt
