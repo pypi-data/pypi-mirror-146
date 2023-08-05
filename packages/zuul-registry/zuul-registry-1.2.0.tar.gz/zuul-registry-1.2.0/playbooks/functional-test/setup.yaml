@@ -1,0 +1,78 @@
+- name: Create workspace directory
+  file:
+    state: directory
+    path: "{{ workspace }}"
+
+- name: Create storage directory
+  file:
+    state: directory
+    path: "{{ workspace }}/storage"
+
+- name: Create TLS directory
+  file:
+    state: directory
+    path: "{{ workspace }}/tls"
+
+- name: Generate a TLS key for the registry
+  command: "openssl req -x509 -newkey rsa:2048 -keyout {{ workspace }}/tls/cert.key -out {{ workspace }}/tls/cert.pem -days 365 -nodes -subj '/C=US/ST=California/L=Oakland/O=Company Name/OU=Org/CN=localhost' -addext 'subjectAltName = DNS:localhost,IP:127.0.0.1'"
+
+- name: Install the CA cert
+  command: "cp {{ workspace }}/tls/cert.pem /usr/local/share/ca-certificates/test.crt"
+  become: true
+
+- name: Update CA certs
+  command: update-ca-certificates
+  become: true
+
+- name: Check if docker daemon configuration exists
+  stat:
+    path: /etc/docker/daemon.json
+  register: daemon_config_stat
+
+- name: Save docker daemon configuration
+  when: daemon_config_stat.stat.exists
+  command: "cp /etc/docker/daemon.json {{ workspace }}/docker-daemon.json"
+
+- name: Check if docker user configuration exists
+  stat:
+    path: ~/.docker/config.json
+  register: user_config_stat
+
+- name: Save docker user configuration
+  when: user_config_stat.stat.exists
+  command: "cp ~/.docker/config.json {{ workspace }}/docker-user.json"
+
+- name: Check if registries.conf exists
+  stat:
+    path: /etc/containers/registries.conf
+  register: registries_conf_stat
+
+- name: Save registries.conf
+  when: registries_conf_stat.stat.exists
+  command: "cp /etc/containers/registries.conf {{ workspace }}/registries.conf"
+
+- name: Check if containers user auth exists
+  stat:
+    path: "/run/user/{{ ansible_user_uid }}/auth.json"
+  register: containers_auth_stat
+
+- name: Save containers user auth
+  when: containers_auth_stat.stat.exists
+  command: "cp /run/user/{{ ansible_user_uid }}/auth.json {{ workspace }}/containers-auth.json"
+
+- name: Create a local containers image
+  shell: buildah commit --rm $(buildah from docker.io/zuul/zuul-registry) testimage
+
+- name: Ensure image file is not present
+  file:
+    path: "{{ workspace }}/test.img"
+    state: absent
+
+- name: Copy the local image to a file
+  command: >
+    skopeo copy
+      containers-storage:localhost/testimage:latest
+      docker-archive:{{ workspace }}/test.img
+
+- name: Remove test image from containers storage
+  command: podman rmi localhost/testimage:latest

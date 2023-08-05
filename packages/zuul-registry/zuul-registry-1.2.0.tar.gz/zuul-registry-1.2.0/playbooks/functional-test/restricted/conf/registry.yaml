@@ -1,0 +1,17 @@
+registry:
+  address: '0.0.0.0'
+  port: 9000
+  public-url: https://localhost:9000
+  tls-cert: /tls/cert.pem
+  tls-key: /tls/cert.key
+  secret: test_token_secret
+  users:
+    - name: writeuser
+      pass: writepass
+      access: write
+    - name: readuser
+      pass: readpass
+      access: read
+  storage:
+    driver: filesystem
+    root: /storage

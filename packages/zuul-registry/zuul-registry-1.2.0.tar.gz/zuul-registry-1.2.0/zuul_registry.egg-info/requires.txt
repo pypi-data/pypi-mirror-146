@@ -1,0 +1,9 @@
+PyYAML
+cherrypy
+openstacksdk
+pbr>=1.1.0
+pyjwt<3.0.0,>=2.0.0
+python-dateutil
+rehash
+requests
+routes

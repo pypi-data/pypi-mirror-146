@@ -1,0 +1,12 @@
+# Version 2 is the latest that is supported by docker-compose in
+# Ubuntu Xenial.
+version: '2'
+
+services:
+  registry:
+    image: zuul/zuul-registry
+    volumes:
+      - "./conf/:/conf/:z"
+      - "/tmp/registry-test/tls/:/tls:z"
+    ports:
+      - "9000:9000"

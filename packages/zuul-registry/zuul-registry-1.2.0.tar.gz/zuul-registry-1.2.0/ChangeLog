@@ -1,0 +1,80 @@
+CHANGES
+=======
+
+1.2.0
+-----
+
+* testing: add DEBUG flag to testing container
+* tox-py38 : don't run on Fedora
+* Update testing to Ubuntu Focal
+* Fix and/or matching for image pre-conditions
+* podman: make sure we remove the pulled image
+* podman buildset testing: dump image list
+* Add more robust testing of the registry
+* Perform atomic upload updates v2
+* Fix podman install source
+* Revert "Atomically concatenate blob objects"
+* Atomically concatenate blob objects
+* Update the registry docker image to bullseye
+
+1.1.0
+-----
+
+* Fix manifest HEAD response when looking up by label
+* Fix manifest HEAD requests
+* Do not accept missing sizes
+* Fix head\_blob Content-Length return
+* Do not allow incorrect sized layers
+* Fix range response
+* filesystem: add file syncs
+* swift: return size as int
+* Reject mismatched layer sizes, with some exceptions
+* Return "scope" in auth challenge
+* Also include missing size attributes in layers
+* Add missing size to image configs
+* Add content-length headers and debug messages
+* Make TLS optional
+* Add a restricted mode (read authentication required)
+* Build images on bionic
+* Handle ns parameter in get\_blob
+* Handle ns parameter on manifest GET/HEAD
+* Update pyjwt version to >=2.0.0,<3.0.0
+
+1.0.0
+-----
+
+* Add upload-docker-image release job
+* Begin publishing to pypi
+* Prioritize returning manifest lists
+* Handle blob upload races
+* Run unittests on python 3.8
+* Bump to python 3.8 base images
+* Don't return Docker-Content-Digest header on HEAD
+* Support HEAD on manifests
+* Support listing tags
+* config: add environment variable substitution
+* Use explicit provides/requires for container jobs
+* Add debug/verification for uploads
+* Switch to collect-container-logs
+* Handle ":" in passwords
+* Collect docker logs in functional test
+* Disable namespacing
+* Add podman buildset test
+* Add docker buildset test
+* Run docker and podman push/pull tests
+* Raise a 404 when we don't find a blob from swift
+* Implement namespacing
+* Fix authorization URL
+* Use JWT for authorization
+* Rework the stream\_blob/stream\_object API
+* Add debug env variable
+* Increate max request body size to accept large entity
+* Add support for skopeo copy
+* Fix merge error in streaming support
+* Update test script to match playbook
+* Add streaming download support
+* Add tox configuration and fixe flake8 errors
+* Fix container image build
+* Initial implementation
+* Add README, license, and Zuul config
+* Added .gitreview

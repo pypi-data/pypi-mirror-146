@@ -1,0 +1,17 @@
+- hosts: localhost
+  vars:
+    workspace: /tmp/registry-test
+    local: true
+  tasks:
+    - name: Run setup tasks
+      include_tasks: setup.yaml
+    - name: Run docker test tasks
+      include_tasks: docker.yaml
+    - name: Run docker buildset test tasks
+      include_tasks: docker-buildset.yaml
+    - name: Run docker buildset test tasks
+      include_tasks: podman-buildset.yaml
+    - name: Run podman test tasks
+      include_tasks: podman.yaml
+    - name: Run cleanup tasks
+      include_tasks: cleanup.yaml

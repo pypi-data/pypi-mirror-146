@@ -1,0 +1,73 @@
+# Test push and pull from the registry in restricted mode (read access
+# restricted)
+
+- name: Start the registry
+  shell:
+    cmd: docker-compose up -d
+    chdir: "{{ ansible_user_dir }}/src/opendev.org/zuul/zuul-registry/playbooks/functional-test/restricted"
+
+- name: Print list of images
+  command: docker image ls --all --digests --no-trunc
+  register: image_list
+  failed_when: "'test/image' in image_list.stdout"
+
+- name: Copy the test image into local docker image storage
+  command: >
+    skopeo copy
+      docker-archive:{{ workspace }}/test.img
+      docker-daemon:localhost:9000/test/image:latest
+
+- name: Log in to registry
+  command: docker login localhost:9000 -u writeuser -p writepass
+
+- name: Push the test image to the registry
+  # Use a lot of concurrency to check registry with concurrent pushes
+  shell: printf "1\n2\n3\n4\n" | xargs -P 4 -I DNE docker push localhost:9000/test/image
+  args:
+    executable: /bin/bash
+
+- name: Remove the test image from the local cache
+  command: docker rmi localhost:9000/test/image
+
+- name: Log out of registry
+  command: docker logout localhost:9000
+
+- name: Try to pull the image from the registry unauthenticated
+  command: docker pull localhost:9000/test/image
+  register: result
+  failed_when: result.rc != 1
+
+- name: Log in to registry
+  command: docker login localhost:9000 -u readuser -p readpass
+
+- name: Print list of images
+  command: docker image ls --all --digests --no-trunc
+  register: image_list
+  failed_when: "'test/image' in image_list.stdout"
+
+- name: Pull the image from the registry
+  command: docker pull localhost:9000/test/image
+
+- name: Print list of images
+  command: docker image ls --all --digests --no-trunc
+  register: image_list
+  failed_when: "'test/image' not in image_list.stdout"
+
+- name: Try to pull an image that does not exist
+  command: docker pull localhost:9000/test/dne
+  register: result
+  failed_when: result.rc != 1
+
+- name: Remove the test image from the local cache
+  command: docker rmi localhost:9000/test/image
+
+- name: Stop the registry
+  shell:
+    cmd: docker-compose down
+    chdir: "{{ ansible_user_dir }}/src/opendev.org/zuul/zuul-registry/playbooks/functional-test/restricted"
+
+- name: Clean up docker volumes
+  command: docker volume prune -f
+
+- name: Log out of registry
+  command: docker logout localhost:9000
