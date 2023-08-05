@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyrediscore
+Version: 0.3.0
+Summary: Low-level decorators for redis instance I/O operations
+Home-page: https://github.com/MMSB-MOBI/pyrediscore
+License: GPL
+Author: glaunay
+Author-email: pitooon@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: decorator (>=5.0.9,<6.0.0)
+Requires-Dist: marshmallow (>=3.15.0,<4.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: redis (>=3.5.3,<4.0.0)
+Project-URL: Repository, https://github.com/MMSB-MOBI/pyrediscore
