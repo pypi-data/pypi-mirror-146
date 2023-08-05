@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: group10pack
+Version: 0.1.0
+Summary: This package contains the functions for the Statistics Canada investment income analysis,by group 10
+License: MIT
+Author: Harry Zhang Ahmed Rizk Mahdi Heydar Nikko Dumrique
+Requires-Python: >=3.9,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Sphinx (>=4.5.0,<5.0.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: jupyterlab (>=3.3.3,<4.0.0)
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: pytest (>=7.1.1,<8.0.0)
+Requires-Dist: scikit-learn (>=1.0.2,<2.0.0)
+Requires-Dist: seaborn (>=0.11.2,<0.12.0)
+Description-Content-Type: text/markdown
+
+# group10pack
+
+This package contains the functions for the Statistics Canada investment income analysis,by group 10
+
+## Installation
+
+```bash
+$ pip install group10pack
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`group10pack` was created by Harry Zhang Ahmed Rizk Mahdi Heydar Nikko Dumrique. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`group10pack` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
