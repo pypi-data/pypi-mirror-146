@@ -1,0 +1,3 @@
+[console_scripts]
+AdobeConnect2Video = AdobeConnect2Video.__main__:main
+
