@@ -1,0 +1,3 @@
+[console_scripts]
+famCircle = famCircle.run:main
+
