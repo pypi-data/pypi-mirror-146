@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: myzero
+Version: 0.0.0
+Summary: Automatic record your paper reading list
+Home-page: https://github.com/chingswy/myzero
+Author: Qing Shuai
+Author-email: s_q@zju.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: termcolor
+
+# Zero
+
+Automatic record your paper reading list.
+

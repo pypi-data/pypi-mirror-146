@@ -1,0 +1,8 @@
+zero/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zero/cli.py,sha256=iZqJJw39xfk5BI5XcbRYoY-nBBmXihVwpHrNnHvwxhg,1640
+zero/logger.py,sha256=7iBBNPoB6RzrFH0z44SzWOMqznJ7JcOjjStfVGM9_RQ,839
+myzero-0.0.0.dist-info/METADATA,sha256=iqprTYbNmNKtJfk_IEp6SNiwqeuoKd4NxIKi3S6ZWb0,441
+myzero-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+myzero-0.0.0.dist-info/entry_points.txt,sha256=EHtahkvAmOyz3fc3TiDx0KtnYrWhk9GCxJed-TZQyhY,38
+myzero-0.0.0.dist-info/top_level.txt,sha256=_5-1EDahXFySyLgNPawDJiv7nQgbFJD3GatBJ-YGn84,5
+myzero-0.0.0.dist-info/RECORD,,
