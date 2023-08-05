@@ -1,0 +1,17 @@
+bcrypt
+certifi
+docker
+docker-compose
+lovely-pytest-docker
+pyopenssl
+pytest
+
+[dev]
+black
+coveralls
+pylint
+pytest
+pytest-cov
+twine
+wheel
+www_authenticate
