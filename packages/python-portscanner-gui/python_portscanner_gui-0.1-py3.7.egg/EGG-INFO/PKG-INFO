@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: python-portscanner-gui
+Version: 0.1
+Summary: A simple graphical portscanner built in Python.
+Home-page: https://github.com/jason-allen-oneal/python-portscanner-gui
+Author: Jason O'Neal
+Author-email: jason.allen.oneal@gmail.com
+License: MIT
+Description: # python-portscanner-gui
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Security
+Classifier: Topic :: Internet
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
