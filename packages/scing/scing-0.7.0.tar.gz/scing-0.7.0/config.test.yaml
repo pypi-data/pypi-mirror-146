@@ -1,0 +1,19 @@
+versoin: 1.0
+containers:
+  registry: quay.io/devtest
+  images:
+    - name: archr
+      version: 0.9.x-snapshot-20200922b
+      project_url: https://github.com/hisplan/docker-archr
+      download_url: https://github.com/hisplan/docker-archr/archive/refs/tags/v0.9.x-snapshot-20200922b.tar.gz
+    - name: archr2adata
+      version: 0.0.3
+      project_url: https://github.com/hisplan/archr2adata
+      download_url: https://github.com/hisplan/archr2adata/archive/refs/tags/v0.0.3.tar.gz
+
+pipelines:
+  packages:
+    - name: archr
+      version: 0.0.2
+      project_url: https://github.com/hisplan/wdl-ArchR
+      download_url: https://github.com/hisplan/wdl-ArchR/archive/refs/tags/v0.0.2.tar.gz
