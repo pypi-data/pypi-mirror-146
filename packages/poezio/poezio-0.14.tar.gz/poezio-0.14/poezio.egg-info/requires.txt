@@ -1,0 +1,15 @@
+slixmpp>=1.6.0
+aiodns
+pyasn1_modules
+pyasn1
+typing_extensions
+setuptools
+
+[Avoiding cython]
+cffi
+
+[OTR plugin]
+python-potr>=1.0
+
+[Screen autoaway plugin]
+pyinotify==0.9.4
