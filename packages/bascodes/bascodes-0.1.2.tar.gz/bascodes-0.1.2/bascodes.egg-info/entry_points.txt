@@ -1,0 +1,2 @@
+[console_scripts]
+bascodes = bascodes.__main__:main
