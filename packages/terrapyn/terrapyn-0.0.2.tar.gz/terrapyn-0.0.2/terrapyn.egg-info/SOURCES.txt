@@ -1,0 +1,11 @@
+AUTHORS.md
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+terrapyn.egg-info/PKG-INFO
+terrapyn.egg-info/SOURCES.txt
+terrapyn.egg-info/dependency_links.txt
+terrapyn.egg-info/requires.txt
+terrapyn.egg-info/top_level.txt
