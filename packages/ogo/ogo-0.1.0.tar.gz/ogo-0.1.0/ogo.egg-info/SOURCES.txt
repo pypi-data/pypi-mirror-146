@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ogo/__init__.py
+ogo/__version__.py
+ogo/core.py
+ogo.egg-info/PKG-INFO
+ogo.egg-info/SOURCES.txt
+ogo.egg-info/dependency_links.txt
+ogo.egg-info/top_level.txt
