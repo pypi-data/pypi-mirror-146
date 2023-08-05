@@ -1,0 +1,3 @@
+[console_scripts]
+pcolrm = pcolrm.pcolrm:main
+qaws = qaws.qaws:cli
