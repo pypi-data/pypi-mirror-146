@@ -1,0 +1,15 @@
+jsonschema==4.4.0
+boto3==1.21.33
+backoff==1.11.1
+
+[dist]
+wheel
+build
+twine
+
+[lint]
+flake8
+
+[test]
+pytest-cov
+moto[s3]
