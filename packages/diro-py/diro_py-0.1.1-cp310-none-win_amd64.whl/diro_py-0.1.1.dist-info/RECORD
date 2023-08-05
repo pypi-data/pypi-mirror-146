@@ -1,0 +1,6 @@
+diro_py-0.1.1.dist-info/METADATA,sha256=1txU_U99fiwc49FYYfMJdDNKYa7f3NrV-XYneLkLjb4,765
+diro_py-0.1.1.dist-info/WHEEL,sha256=4ho9EB3qWO9nHSOwE3rDsvQvYE8VeKNeDeSh1RWsSbA,96
+diro/__init__.py,sha256=eNwxvTJmnrgy67VCUtSlNLirYhDdwfdhWFzETyd03T8,21
+diro/__init__.pyi,sha256=Q6AsgQpsnX7fspUJf4oBCCprZ83B9KCMivUqOtj5DS4,1502
+diro/diro.cp310-win_amd64.pyd,sha256=KXZllJTMmVb7cEfvWl7HodFBvRygnF_93bH05D-a_0g,431616
+diro_py-0.1.1.dist-info/RECORD,,
