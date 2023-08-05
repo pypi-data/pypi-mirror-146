@@ -1,0 +1,6 @@
+adafruit-circuitpython-datetime
+beautifulsoup4
+click
+platformdirs
+requests
+python-dateutil

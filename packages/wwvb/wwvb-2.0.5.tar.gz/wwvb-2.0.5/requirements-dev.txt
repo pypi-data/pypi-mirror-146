@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2021 Jeff Epler
+#
+# SPDX-License-Identifier: GPL-3.0-only
+adafruit-circuitpython-datetime
+beautifulsoup4
+build
+click
+coverage
+mypy; implementation_name=="cpython"
+pre-commit
+python-dateutil
+requests; implementation_name=="cpython"
+setuptools>=45; implementation_name=="cpython"
+twine; implementation_name=="cpython"
+types-python-dateutil
+types-requests
+backports.zoneinfo; python_version<"3.9"
+tzdata
+wheel
