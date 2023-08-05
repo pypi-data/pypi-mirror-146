@@ -1,0 +1,15 @@
+judge_pics/__init__.py,sha256=dySz_vG9FHSKByfHV2NoCmrRu75C1sFBlocQLPPOO4w,204
+judge_pics/convert_images.py,sha256=OpI182A_OKrngk3JdJZB10XvGoI89aZEtpebM7ftTpU,3158
+judge_pics/search.py,sha256=rIJKBEE0gGk5rSyBWYmg1CsdPhjnnQ10qlYu1Wmclu4,1214
+judge_pics/update.py,sha256=4r-VLyaCQTmykmxYggPMx3NoyshcgQH1665pI-JqtsM,3593
+judge_pics/upload.py,sha256=Ob_lwBneFGrmpC-I14D1rPuuLMRjC1D2xyG6PYjowY4,4422
+judge_pics/data/judges.json,sha256=oI_CJfx92tFIYH0coLQNDu_zBpqFAyMMAwGp4lKUwdk,349972
+judge_pics/data/people.json,sha256=QDDPrDiCbcnVDMFHItQzfq-PykPR6uIFupUi-lBkJI0,389678
+judge_pics/scrapers/__init__.py,sha256=v6KlC8R-HErb2TPBdJXUhzKrZCm13xGwcwB-54lag4U,47
+judge_pics/scrapers/cand_judges.py,sha256=NXqir39av_4t0q5kGdygEUY54xCXgzwvKXMmOGQhgcA,4243
+judge_pics/scrapers/dc_circuit_judges.py,sha256=yn522Ia56vBzTDdBGMOUk4KiCyMOR_VTFR8hdwQCoss,2729
+judge_pics-2.0.1.dist-info/LICENSE,sha256=LbaW0G8N2C1P4YEILXi9rxGoPiQ1_Yb-43zklzEhx6M,1794
+judge_pics-2.0.1.dist-info/METADATA,sha256=1ber8w_xsV5KZa0GFDvyEGbCqTeEqEI0MeMl15uKsNA,1025
+judge_pics-2.0.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+judge_pics-2.0.1.dist-info/top_level.txt,sha256=2-yz30ymMoT6G-OVP1nNsRQoUf0YWnG02izChY19dGw,11
+judge_pics-2.0.1.dist-info/RECORD,,
