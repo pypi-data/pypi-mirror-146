@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/collatz/__init__.py
+src/collatz/__version__.py
+src/collatz/parameterised.py
+src/collatz.egg-info/PKG-INFO
+src/collatz.egg-info/SOURCES.txt
+src/collatz.egg-info/dependency_links.txt
+src/collatz.egg-info/top_level.txt
+tests/__init__.py
+tests/test_parameterised.py
