@@ -1,0 +1,10 @@
+spreadpandas/__init__.py,sha256=XySkh2bbWCIriRqeL2sAeSXN24KXSDFyaA6iOD--5XA,50
+spreadpandas/custom_types.py,sha256=gQKyBXB2gncG1O9EuxVI0LGlsZgdQsnUHpjWqvJLHWg,249
+spreadpandas/operations.py,sha256=1gwlpNqAU7yYMTvcClZ3E0TNaRnuv4Gck6iX-YPqcPA,5911
+spreadpandas/spreadsheet.py,sha256=XWjqNZTylnuWyQLAzeLavuIo9aKsHOKEnTcAKkwxYYY,4756
+spreadpandas/spreadsheet_element.py,sha256=bSgjEIcDBFzDoxAapNalg19aGUeaSfjMUjTySte6LSg,1518
+spreadpandas-0.0.1.dist-info/LICENSE,sha256=vlg4C3Lugt3idICfPACfT9PEzo0xuiF6KBDP1UEi5io,1093
+spreadpandas-0.0.1.dist-info/METADATA,sha256=FYkZtfZqEXRz5t_GVHStc36YhkG2nYoR-DxIU0bEu9E,1575
+spreadpandas-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spreadpandas-0.0.1.dist-info/top_level.txt,sha256=f7oIiaGrNp7jcQhN_jlTI7fbseYcEQs8PI7CEMw74Wg,13
+spreadpandas-0.0.1.dist-info/RECORD,,
