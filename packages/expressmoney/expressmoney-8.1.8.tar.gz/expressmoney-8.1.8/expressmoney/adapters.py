@@ -1,0 +1,39 @@
+from abc import ABC
+
+
+class AdapterError(Exception):
+    pass
+
+
+class BaseAdapter(ABC):
+    _client_error_codes: dict = dict()
+    _client_exception_class = None
+    _server_exception_class = None
+
+    def __init__(self):
+        if None in (self._client_exception_class, self._server_exception_class):
+            raise AdapterError('Exception classes not set.')
+        super().__init__()
+
+    def _raise_exception(self, error_message: str = None, is_client_error=True):
+        if is_client_error and error_message is None:
+            raise AdapterError('Set error message for client error.')
+        if is_client_error:
+            raise self._client_exception_class(self._get_error_code(error_message=error_message))
+        else:
+            raise self._server_exception_class('server_error')
+
+    def _get_error_code(self, error_message: str):
+        for key, value in self._client_error_codes.items():
+            if error_message in value:
+                return key
+        return 'unknown_client_error'
+
+
+class BaseFactory:
+    __instance = None
+
+    def __new__(cls):
+        if cls.__instance is None:
+            cls.__instance = super().__new__(cls)
+        return cls.__instance
