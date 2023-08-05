@@ -1,0 +1,10 @@
+README.md
+setup.py
+wadePyPITest/Print_str.py
+wadePyPITest/__init__.py
+wadePyPITest/main.py
+wadePyPITest.egg-info/PKG-INFO
+wadePyPITest.egg-info/SOURCES.txt
+wadePyPITest.egg-info/dependency_links.txt
+wadePyPITest.egg-info/requires.txt
+wadePyPITest.egg-info/top_level.txt
