@@ -1,0 +1,10 @@
+dataclasses-json
+jsonschema
+pg-sql>=0.0.1
+
+[dev]
+black
+isort
+jsonschema2md
+pytest
+pytest-env
