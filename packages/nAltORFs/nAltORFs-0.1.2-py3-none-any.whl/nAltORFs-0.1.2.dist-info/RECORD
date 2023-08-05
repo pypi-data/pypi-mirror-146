@@ -1,0 +1,11 @@
+nAltORFs-0.1.2.data/scripts/bicodon_counts_from_fasta.py,sha256=NgUdBQ9Y5Mfaj0PUmqsBVvBNEz73HhfII9ffm0jZynQ,3114
+nAltORFs-0.1.2.data/scripts/codon_freq_from_bicodons.py,sha256=BaRpetd-4SBfNHH5-uTEGhZYUKnry2iyRGKesmDwxnE,6148
+nAltORFs-0.1.2.data/scripts/find_nested_alt_orfs.py,sha256=zFepnpz5mhOFkZhX6EofLOAMWcw9nyTBdn9Zi2Zgkk4,16165
+naltorfs/bicodon_counts_from_fasta.py,sha256=4LWjsoaf4Kk4gdqmz_l6MkPmdBFGKVkPbnmdl5LBL6Y,3128
+naltorfs/codon_freq_from_bicodons.py,sha256=0NcR2kSrkQM54m7u5Eik5xLfgrXUZp01Elf_DMHpF-0,6162
+naltorfs/find_nested_alt_orfs.py,sha256=w4cspTLaQX_zNggHz1vHo6Tf0413M4AAwvL43TMlf3Q,16179
+nAltORFs-0.1.2.dist-info/LICENSE,sha256=40NYUMDdS9oGbsT2vN4IudY-u4zN54Z-ZZi8dJJvYVY,1080
+nAltORFs-0.1.2.dist-info/METADATA,sha256=2K7YHENrPYJE30JIzdPbRvF5hujdn6mKsBC5C7oTycY,751
+nAltORFs-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nAltORFs-0.1.2.dist-info/top_level.txt,sha256=iqXH9j5jgue7vrNCZnHmyEIZC3XxJmQ66rahANZjAoQ,9
+nAltORFs-0.1.2.dist-info/RECORD,,
