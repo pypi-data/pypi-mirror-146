@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cubicweb-card
+Version: 1.3.0
+Summary: card/wiki component for the CubicWeb framework
+Home-page: https://forge.extranet.logilab.fr/cubicweb/cubes/cubicweb-card
+Author: LOGILAB S.A. (Paris, FRANCE)
+Author-email: contact@logilab.fr
+License: LGPL
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: CubicWeb
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: JavaScript
+
+This cube models cards that are like wiki pages.
+
+`Card` entities have a title, an abstract and some textual content as text, rest
+or html.
+
+To create a new card, just create a link like '/card/YOUR_WIKI_ID' and follow it
+in your browser. Such a link can be written using the native HTML editor
+(fckeditor) or the dedicated restructured text "card" directive, as follows ::
+
+  :card:`free_software/logilab:free software at Logilab`
+
+
