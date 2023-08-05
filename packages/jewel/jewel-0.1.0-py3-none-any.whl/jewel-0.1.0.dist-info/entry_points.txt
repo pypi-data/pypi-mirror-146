@@ -1,0 +1,3 @@
+[console_scripts]
+jewel=jewel.__main__:main
+
