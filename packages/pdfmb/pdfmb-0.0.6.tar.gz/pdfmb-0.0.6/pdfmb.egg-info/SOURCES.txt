@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pdfmb/__init__.py
+pdfmb/merge.py
+pdfmb/utils.py
+pdfmb.egg-info/PKG-INFO
+pdfmb.egg-info/SOURCES.txt
+pdfmb.egg-info/dependency_links.txt
+pdfmb.egg-info/requires.txt
+pdfmb.egg-info/top_level.txt
