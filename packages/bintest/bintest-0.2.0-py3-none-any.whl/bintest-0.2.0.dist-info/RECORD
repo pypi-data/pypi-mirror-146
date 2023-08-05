@@ -1,0 +1,5 @@
+bintest/__init__.py,sha256=9RtsQ0hgC4gW5xKbroka686RmNkp2rgAy7bEFP1pTfA,51
+bintest/bintest.py,sha256=tIwv5lixxitNB7cJSbnM84CyDmR1LTPlsaXA7nfN3Mc,1121
+bintest-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bintest-0.2.0.dist-info/METADATA,sha256=mwHeH91Lv2Xc-CI4ovy2LTKFOWPHXCNZVj-4I1EFvds,936
+bintest-0.2.0.dist-info/RECORD,,

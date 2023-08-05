@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bintest
+Version: 0.2.0
+Summary: python library for test binarys
+Home-page: https://github.com/arturgoms/python-bintest
+License: MIT
+Keywords: unittest,binary
+Author: Artur Gomes
+Author-email: contato@arturgomes.com.br
+Requires-Python: >=3.9,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: scripttest (>=1.3,<2.0)
+Project-URL: Repository, https://github.com/arturgoms/python-bintest
+Description-Content-Type: text/markdown
+
+
