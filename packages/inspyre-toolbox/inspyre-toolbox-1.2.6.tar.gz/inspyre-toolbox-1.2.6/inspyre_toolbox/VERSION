@@ -1,0 +1,7 @@
+[VERSION]
+number: 1.2.6
+pre-release: true
+
+[PRE-RELEASE]
+type:
+build-no:
