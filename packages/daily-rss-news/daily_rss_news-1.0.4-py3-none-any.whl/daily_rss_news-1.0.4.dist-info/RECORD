@@ -1,0 +1,16 @@
+rss_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rss_reader/__main__.py,sha256=gCIBtPFSpjJOaPTWAC5DRB6nPMaYPooA4p6EG7HiSlE,66
+rss_reader/arg_parser.py,sha256=IfLQiMibmLzuj4Ywo8ql3NdBx4zo3RBk4OXzOyXENZQ,1142
+rss_reader/displayer.py,sha256=pkxGGzHz3sQKsqSXBy2jUGvik-pXG-K0lLOSOr7wl6w,986
+rss_reader/log.py,sha256=EF-HSRgxUe7GryB74-PQtETYTvVjEWvRKXcykJ8O2Ss,724
+rss_reader/rss_reader.py,sha256=ucTcJGECbWlL-PelZxaptLRblzZtZyFZhzXx1qBQ-FA,3073
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_argparse.py,sha256=Ux1Ay-FU_w3Ia3FAcZ91xKgkAM_KRRfZWAerSlPazWA,770
+tests/test_log.py,sha256=1T2O-iDjnm2wYAw7oZi6W_xj6VuML6BSOFGDC42_EiA,396
+tests/test_rss_reader.py,sha256=zqxOl3Weo0OwGuypGrdMZVPhGOfkpvZPTn9PjkAAAcA,1996
+daily_rss_news-1.0.4.dist-info/LICENSE,sha256=8Odh-0OjBgMzJhv-8vTR5muHMXywkzvEcK4W0_BqKQ8,1077
+daily_rss_news-1.0.4.dist-info/METADATA,sha256=0Ak-aN9Tub5GdZGP2dIv58N08FkeBekdHztBvEHklY0,4507
+daily_rss_news-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+daily_rss_news-1.0.4.dist-info/entry_points.txt,sha256=u3pve_wvHDlVdbthnqudMhy0Gs4VCq7xj1DAFBqW_bE,58
+daily_rss_news-1.0.4.dist-info/top_level.txt,sha256=x_QOQi48kURuJkeD_4D0l-C_VoeW60SIsweicNflZu0,17
+daily_rss_news-1.0.4.dist-info/RECORD,,
