@@ -1,0 +1,11 @@
+validobj/__init__.py,sha256=8pkGJGvmQfIqaWX7enX7dWFakHO3Y9nKor2gJCaSOIA,135
+validobj/custom.py,sha256=_ZdoqdFLlb-zT3ProxMveDqU_WNVZetJcXuSKCIIh8U,3360
+validobj/errors.py,sha256=KLO5sIObwwIBuyJzOT4IX1GR33cSIJU6ViOJLOmD9Cg,6041
+validobj/validation.py,sha256=pi7lD0Qv4ee1ZaCVvAnORbbW40jwgDxglY2ErfR_px4,12954
+validobj/tests/test_custom.py,sha256=TzWo49e9TwOv82Vp-kaDk-Gki0BPE8HsZn0UhQNp4HU,1323
+validobj/tests/test_errors.py,sha256=AdjvQIHMB8ZMOpdWBS9b1WOM6W1lQsLN6WBA4p3TaXA,2955
+validobj/tests/test_validation.py,sha256=buXrxDZSHoRwsLmkYZ3LFcZ2etrEpsknUGlzZmw1H6Y,5399
+validobj-0.5.0.dist-info/LICENSE,sha256=xhV0RZUv3gzMfEJRwWxgWUyjpSlH96EYYExYdiURrGA,1082
+validobj-0.5.0.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+validobj-0.5.0.dist-info/METADATA,sha256=uVIVKJMgIBL4G7Zx932eURoBMtwnIXUE_sK_XR9m-hg,4573
+validobj-0.5.0.dist-info/RECORD,,
