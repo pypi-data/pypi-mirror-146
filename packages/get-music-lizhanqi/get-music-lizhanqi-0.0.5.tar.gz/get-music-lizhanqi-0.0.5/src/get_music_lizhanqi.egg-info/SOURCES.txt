@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/get_music/__init__.py
+src/get_music/get_music.py
+src/get_music_lizhanqi.egg-info/PKG-INFO
+src/get_music_lizhanqi.egg-info/SOURCES.txt
+src/get_music_lizhanqi.egg-info/dependency_links.txt
+src/get_music_lizhanqi.egg-info/entry_points.txt
+src/get_music_lizhanqi.egg-info/top_level.txt
