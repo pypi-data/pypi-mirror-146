@@ -1,0 +1,15 @@
+
+[matplotlib]
+matplotlib>=1.1.1
+
+[pip]
+pip>=18
+
+[py-moneyed]
+py-moneyed>=2.0
+
+[pyenchant]
+pyenchant>=1.1
+
+[python-dateutil]
+python-dateutil>=2.7.0
