@@ -1,0 +1,7 @@
+lame_ctypes/__init__.py,sha256=yr13nO8j3tp_OnGbTURDM2WtOo2af6TJxsAkd9mEavw,1134
+lame_ctypes/_dll.py,sha256=Xc8gx6PoZqL4pep4C6VK8LeMEyVHB-dKxvie87d_tCQ,1669
+lame_ctypes/_stdarg_ctypes.py,sha256=nK6Q5IlCU9VOv7dHYmzntL7eYa0aq722WhP3RXCZtdw,41
+lame_ctypes/lame_ctypes.py,sha256=P8Zod25P_VY7K2iIujtsMYBGTwqws9Q5TQh2pEUOJcY,10698
+lame_ctypes-0.1.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+lame_ctypes-0.1.3.dist-info/METADATA,sha256=qhYHEG3lq7hN4EE2MVHN8pHEG_fYhezsgYdi10D_UWo,779
+lame_ctypes-0.1.3.dist-info/RECORD,,
