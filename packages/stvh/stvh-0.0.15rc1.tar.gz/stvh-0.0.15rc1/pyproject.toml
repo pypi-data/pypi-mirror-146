@@ -1,0 +1,30 @@
+[project]
+name = "stvh"
+version = "0.0.15rc1"
+description = "a collection useful tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Steven Yan-Jia Huang", email = "s@stvhuang.me" }
+]
+maintainers = [
+  {name = "Steven Yan-Jia Huang", email = "s@stvhuang.me" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3.10"
+]
+dependencies = [
+  "numpy",
+  "requests",
+  "scikit-learn",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
