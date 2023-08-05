@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/thematicnifty/__init__.py
+src/thematicnifty/tn.py
+src/thematicnifty.egg-info/PKG-INFO
+src/thematicnifty.egg-info/SOURCES.txt
+src/thematicnifty.egg-info/dependency_links.txt
+src/thematicnifty.egg-info/top_level.txt
