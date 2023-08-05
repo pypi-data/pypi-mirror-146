@@ -1,0 +1,4 @@
+jupyter_server<2,>=1.6
+numpy>=1.0.0
+pandas>=1.0.0
+fastdata>=0.0.20

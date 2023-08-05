@@ -1,0 +1,75 @@
+{
+  "version" : "0.0.44",
+  "transformations" : {
+    "read_csv" : {
+      "form" : {
+        "properties" : {
+          "filepath_or_buffer" : {
+            "type" : "string",
+            "title" : "file path",
+            "description" : "Location of the file relative to the notebook. E.g. /Documents/Data/testdata.csv."
+          },
+          "sep" : {
+            "type" : "string",
+            "default" : ",",
+            "title" : "separator",
+            "description" : "Character used to separate columns (e.g. commas, semicolons, etc.)."
+          },
+          "decimal" : {
+            "type" : "string",
+            "default" : ".",
+            "description" : "Character used to indicate decimals."
+          },
+          "header" : {
+            "type" : "number",
+            "description" : "Row to use for the column labels (first row is 0)."
+          },
+          "new table name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [
+          "filepath_or_buffer"
+        ],
+        "title" : "Read CSV file",
+        "type" : "object",
+        "callerObject" : "pd",
+        "function" : "read_csv",
+        "transformationType" : "dataLoading",
+        "description" : "Load the csv in a table."
+      },
+      "uischema" : {
+        "new table name" : {
+          "ui:placeholder" : "Leave blank to modify selected table"
+        }
+      },
+      "library" : {
+        "name" : "pandas",
+        "importStatement" : "import pandas as pd",
+        "namespace" : "pd"
+      },
+      "keywords" : [
+        "csv",
+        "load",
+        "read"
+      ]
+    },
+    "notfound" : {
+      "form" : {
+        "properties" : {
+          "description" : {
+            "type" : "string",
+            "description" : "Tell us which functionality you are missing."
+          }
+        },
+        "title" : "Can't find what you want?",
+        "type" : "object"
+      },
+      "uischema" : {
+        "description" : {
+          "ui:widget" : "textarea"
+        }
+      }
+    }
+  }
+}
