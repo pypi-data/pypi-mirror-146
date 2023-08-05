@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: yascheduler
+Version: 0.9.0
+Summary: Yet another computing scheduler and cloud orchestration engine
+Home-page: UNKNOWN
+Author: Evgeny Blokhin
+Author-email: eb@tilde.pro
+License: MIT
+Description: *Yascheduler* is a simple job scheduler designed for submitting scientific simulations and copying back their results from the computing clouds.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
