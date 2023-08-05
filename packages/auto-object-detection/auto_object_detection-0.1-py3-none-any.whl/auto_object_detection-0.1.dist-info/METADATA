@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: auto-object-detection
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/elina-chertova/tensorflow-2-object-detection.git
+Author: Elina Chertova
+Author-email: elas.2015@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==3.7
+Requires-Dist: six
+Requires-Dist: google-api-python-client (>=1.6.7)
+Requires-Dist: kaggle (>=1.3.9)
+Requires-Dist: numpy (>=1.21.5)
+Requires-Dist: oauth2client
+Requires-Dist: pandas (==0.24.0)
+Requires-Dist: psutil (>=5.4.3)
+Requires-Dist: py-cpuinfo (>=3.3.0)
+Requires-Dist: split-folders
+Requires-Dist: scikit-image
+Requires-Dist: keras (==2.7.0)
+Requires-Dist: folium (==0.2.1)
+Requires-Dist: pillow
+Requires-Dist: lxml
+Requires-Dist: jupyter
+Requires-Dist: opencv-python
+Requires-Dist: imageio
+Requires-Dist: ipython (==5.5.0)
+Requires-Dist: ipython-genutils (==0.2.0)
+Requires-Dist: ipython-sql (==0.3.9)
+Requires-Dist: scipy (<=1.7.3,>=0.19.1)
+Requires-Dist: tensorflow-text (==2.7.3)
+Requires-Dist: tf-models-official (==2.7.0)
+Requires-Dist: tensorflow (==2.7.0)
+Requires-Dist: tensorflow-hub (>=0.6.0)
+Requires-Dist: tensorflow-model-optimization (>=0.4.1)
+Requires-Dist: tensorflow-datasets
+Requires-Dist: tensorflow-addons
+Requires-Dist: tensorboard (~=2.8.0)
+Requires-Dist: gin-config
+Requires-Dist: tf-slim (>=1.1.0)
+Requires-Dist: Cython
+Requires-Dist: matplotlib
+Requires-Dist: pyyaml (<6.0,>=5.1)
+Requires-Dist: opencv-python-headless
+Requires-Dist: Pillow
+Requires-Dist: pycocotools
+Requires-Dist: seqeval
+Requires-Dist: sentencepiece
+Requires-Dist: sacrebleu
+Requires-Dist: dataclasses ; python_version <= "3.7"
+
+Object Detection with Tensorflow.
+
