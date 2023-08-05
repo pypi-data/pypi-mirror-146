@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ejemplopackupp7.egg-info/PKG-INFO
+src/ejemplopackupp7.egg-info/SOURCES.txt
+src/ejemplopackupp7.egg-info/dependency_links.txt
+src/ejemplopackupp7.egg-info/top_level.txt
+src/paquete_ejemplo7/__init__.py
+src/paquete_ejemplo7/ejemplo7.py
