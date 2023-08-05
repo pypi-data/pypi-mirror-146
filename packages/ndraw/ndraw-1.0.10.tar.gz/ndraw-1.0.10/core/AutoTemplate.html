@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ndraw</title>
+    <style>
+    </style>
+    <script>
+        templateJs
+    </script>
+    <script>
+        window.onload = function () {
+            let options = {
+                "flow": "flowValue",
+                'link-width-offset': -1,
+                'link-start-offsetx': 0,
+                'link-start-offsety': -3,
+                'link-end-offsety': -3,
+                'link-color': '#666666',
+            };
+            let metricFlow = MetricFlow("graph", options);
+            nodesText
+            ;
+            let nodes = nodesList;
+            if (options['flow'] == 'vertical') {
+                nodes[0]['x'] = window.screen.width / 2 - 300;
+                nodes[0]['y'] = 10;
+            } else {
+                nodes[0]['x'] = 10;
+                nodes[0]['y'] = window.screen.height / 2 - 300;
+            }
+            nodeXysMap = new Map();
+            nodesMap = new Map();
+            nodes[0]['to'] = []
+            nodesMap[nodes[0]['id']] = nodes[0]
+            nodeXysMap[nodes[0]['id']] = [nodes[0]['x'], nodes[0]['y']]
+            for (let i = 1; i < nodes.length; i++) {
+                let id = nodes[i]['id'];
+                if (nodes[i].hasOwnProperty("from") == true && nodes[i]['from'] != null) {
+                    let form = nodes[i]['from'];
+                    if (form instanceof Array) {
+                       for (let fi = 0; fi < form.length; fi++) {
+                           if (nodesMap[form[fi]]['to'].indexOf(nodes[i].id)==-1) {
+                              nodesMap[form[fi]]['to'].push(nodes[i].id);
+                           }
+                       }
+                        let middleXy = getMiddleXy(form, nodeXysMap);
+                        let mx = middleXy[0];
+                        let my = middleXy[1];
+                        if (options['flow'] == 'vertical') {
+                            nodes[i]['x'] = mx;
+                            nodes[i]['y'] = nodes[i - 1]['y'] + 150;
+                        } else {
+                            let xOfferset = (nodes[i - 1].hasOwnProperty('data') == true ? nodes[i - 1]['data'][0]['name'].length : nodes[i - 1]['title']['name'].length) * 10.5;
+                            if (xOfferset !== xOfferset || xOfferset < 100) {
+                                xOfferset = 150
+                            }
+                            nodes[i]['x'] = nodes[i - 1]['x'] + xOfferset;
+                            nodes[i]['y'] = my
+                        }
+                    } else {
+                        if (nodesMap[form]['to'].indexOf(nodes[i].id)==-1) {
+                            nodesMap[form]['to'].push(nodes[i].id);
+                        }
+                        let parentXy = nodeXysMap[form];
+                        if (options['flow'] == 'vertical') {
+                            if (parentXy == undefined || parentXy == null) {
+                                nodes[i]['x'] = nodes[i - 1]['x'];
+                                nodes[i]['y'] = nodes[i - 1]['y'] + 150;
+                            } else {
+                                nodes[i]['x'] = parentXy[0];
+                                nodes[i]['y'] = parentXy[1] + 150;
+                            }
+
+                        } else {
+                            let xOfferset = (nodes[i - 1].hasOwnProperty('data') == true ? nodes[i - 1]['data'][0]['name'].length : nodes[i - 1]['title']['name'].length) * 10.5;
+                            if (xOfferset !== xOfferset || xOfferset < 100) {
+                                xOfferset = 150
+                            }
+                            if (parentXy == undefined || parentXy == null) {
+                                nodes[i]['x'] = nodes[i - 1]['x'] + xOfferset
+                                nodes[i]['y'] = nodes[i - 1]['y'];
+                            } else {
+                                nodes[i]['x'] = parentXy[0] + xOfferset
+                                nodes[i]['y'] = parentXy[1];
+                            }
+                            if (nodes[i]['from']!=nodes[i-1]['id']) {
+                                nodes[i-1]['y'] = nodes[i-1]['y']-100
+                                nodes[i]['y'] = nodes[i-1]['y']+120
+                            }
+                        }
+                    }
+                } else {
+                    if (options['flow'] == 'vertical') {
+                        nodes[i]['x'] = nodes[i - 1]['x'] + 260;
+                        nodes[i]['y'] = nodes[i - 1]['y'];
+                    } else {
+                        nodes[i]['x'] = nodes[i - 1]['x'];
+                        nodes[i]['y'] = nodes[i - 1]['y'] + 150;
+                    }
+                }
+                nodeXysMap[id] = [nodes[i]['x'], nodes[i]['y']];
+                nodes[i]['to'] = []
+                nodesMap[id] = nodes[i];
+
+            }
+            let bodyWidth = nodes.length % 10;
+            if (options['flow'] == 'vertical') {
+                document.getElementById("graph").setAttribute("height", 700 * bodyWidth + 500 + "px")
+                document.getElementById("svgBack").setAttribute("height", 700 * bodyWidth + 500)
+            } else {
+                document.getElementById("graph").setAttribute("width", 1000 * bodyWidth + 500 + "px")
+                document.getElementById("svgBack").setAttribute("width", 1000 * bodyWidth + 500)
+            }
+            metricFlow.createNodes(nodes);
+        }
+
+        function getMiddleXy(form, nodesMap) {
+            let mx = 0;
+            let my = 0;
+            if (form.length % 2 == 0) {
+                let m1Index = form.length / 2 - 1;
+                let m2Index = (form.length / 2);
+                let m1Xy = nodesMap[form[m1Index]];
+                let m2Xy = nodesMap[form[m2Index]];
+                mx = (m1Xy[0] + m2Xy[0]) / 2;
+                my = (m1Xy[1] + m2Xy[1]) / 2;
+            } else {
+                let m1Index = Math.ceil(form.length / 2) - 1;
+                let m1Xy = nodesMap[form[m1Index]];
+                mx = m1Xy[0];
+                my = m1Xy[1];
+            }
+            return [mx, my]
+        }
+    </script>
+</head>
+<body>
+<div id="graph" height="700px" width="1100px">
+</div>
+</body>
+</html>
