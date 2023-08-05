@@ -1,0 +1,1010 @@
+CHANGES
+=======
+
+0.5.5
+-----
+
+* Fixed #346
+* Test failures (#342)
+* fix deprecated syntax in setup.cfg (#344)
+
+0.5.4
+-----
+
+* Remove py35 & Travis-CI (#334)
+* Added no coveralls pytest action (#336)
+* Gaussian example (#333)
+* Fix failing test under windows by allowing slightly bigger numerical errors
+* Add Ipython/jupyter latex printing (#332)
+* CI with GitHub Actions (#329)
+* Changed setup\_method to setup\_modulej (#331)
+* Removed 'six' dependency
+* Fixed interactive fit tests, added ODE test
+* Python 3.9 support
+* decode message if bitstring
+* Relax ODE test
+* Relax required precision of parameter, and provide a better initial guess to avoid an alternative local minimum
+* Adapt test to allow None iterations, as per FitResult code
+* Remove leastsqbound.py, adapt MINPACK minimizer to use scipy.optimize.least\_squares
+* Change license to MIT, add spdx headers
+* Change \_\_getnewargs\_ex\_\_ to \_\_getnewargs\_\_
+* Add required methods to make ModelOutput unpicklable
+* Increase test\_initial\_parameters absolute tolerance threshold to 5e-7 from 1e-8
+* Use connectivity\_mappings, add pytest\_warns context managers where appropriate
+* Replace independent\_vars and params with connectivity\_mapping
+* Replace independent\_vars and params with connectivity\_mapping
+* Ammend context managers to use pytest.warns for DepricationWarnings
+* Refactor test\_minimize in to separate texts with a test class with fixture
+* Add names to Parameters/Variables to surpress DepricationWarnings
+* Mark test\_model\_callable\_from\_model\_init for skipping as result is nondeterministic
+* Refactor test\_model\_callable in to three separate tests
+* Add names to Parameters/Variables to surpress DepricationWarnings
+* Add names to Parameters/Variables to surpress DepricationWarnings
+* Add names to Parameters/Variables to surpress DepricationWarnings
+* Add names to Parameters/Variables to surpress DepricationWarnings
+* Add auto-generated names to BaseModel model dict comp to surpress DepricationWarnings
+* Add context managers to handle automatic parameter naming DepricationWarnings
+* Update requirements.txt (#316)
+
+0.5.3
+-----
+
+* Small typo only considered only considered (#313)
+* documentation improvements (#306)
+* Fix DepricationWarnings causes by importing ABCs directly from collections (#310)
+* Move import of Mapping to collections.abc to remove DepricationWarning
+* Move import of Sequence to collections.abc to remove DepricationWarning
+* Added HadamardPower printing (#300)
+* Convert test\_straight\_line\_analytical
+* Clean up
+* Update .travis.yml to add python 3.8 (#283)
+
+0.5.2
+-----
+
+* .\_asdict returns a copy of ModelOutput.output\_dict
+* Allow Parameters as initial values for ODEModel (#279)
+* Added docstring, removed unused imports
+* Undo accidental commit of experimental line
+* Add a simple test for ModelOutput to prevent #267 from recurring
+* Processed some suggestions by @pckroon
+* ModelOutput is now a tuple subclass
+* Replace variabletuple by an object ModelOutput
+* Improve test\_fit\_result
+* Convert test\_support
+* Convert test\_ode
+* Convert test\_objectives
+* Convert test\_model
+* Convert test\_minimizers
+* Convert test\_minimize
+* Convert test\_global\_opt
+* Convert test\_general
+* Convert test\_fit\_result.py
+* Convert test\_finite\_difference
+* Convert test\_distributions
+* Convert constrained
+* Convert auto\_fit
+* Convert test\_argument
+* Reinstate proper properties
+* Small change to Fit to stop triggering the Hessian model into being build
+* Newer numpy changed some of the exception types
+* Fixed #271 by lazily creating Hessian and Jacobian models only when they are needed
+* added try/except to version finding
+
+0.5.1
+-----
+
+* always copy connectivity mapping for callable numerical model
+* Updated code to comply with comment
+* Fixed minor issue with empty dicts
+* Always read the analytical components no matter what
+* Improve example description
+* Updated example to this new compacter notation
+* Infer connectivity\_mapping for symbolical components of BaseNumericalModel automatically
+* Processed pckroons review
+* Added module level docs for objectives
+* Add description of connectivity\_mapping
+* Added sphinx links to text
+* Edit code with the new syntax
+* Longer underline at first example Concretize content at second example
+* Convert RST and PY to Jupyter Notebook
+* Add to index.rst Correct typo
+* Add main structure of the new Example "ODE with CallableNumericalModel"
+* Rename "Example: CallableNumericalModel"
+* Use spaces instead of tabs Some stylistic changes to the text
+* Included mention of ODEModel and CallableNumericalModel
+* Expanded the comments on the internal API somewhat
+* Made some stylistic changes to the text
+* Use spaces instead of tabs
+* MatMul printing was never broken to begin with, read the docs
+* Edit linspace (again)
+* Corrected np.linspace
+* Added numpy meshgrid to the example
+* Improve the structure
+* Replaced "moredimensional" with "multidimensional datasets"
+* Add mathematical form of the polynomial function
+* Replaced :mod: reference in line 395
+* Formatted x and y Added the printed version of the model
+* Code formatted
+* Add paragraph "Fitting moredimensional datasets" with an example Solving Issue #143
+* Improved Grammar (especially commas) and typo
+* A jupyter kernel is now also a requirement
+* Updated docstrings for distributions somewhat to make them clearer
+* Add some short notes about the printer to the module docs
+* Removed a couple of useless for/else
+* Changed titld
+* Always reexecute notebooks when building docs. It might take some time, but this way at least the output will always be up to data with the latest changes to the core
+* Include from requirements.txt instead of copy-paste
+* Handle apt-get in the recommended way rather than by using before\_install
+* parse fix
+* Install from setup.py before building docs
+* Added requirements\_docs file and a seperate .yml for readthedocs
+* Install IPython for syntax highlighting
+* apt-get install pandoc
+* Added nbsphinx to the build requirements for the docs stage of travis-ci
+* included notebooks into documentation for code examples
+* Switch to using \_numpycode, and stop printing DiracDelta
+* Updated setup.cfg to reflect travis versions
+* Updated docstrings
+* Corrected typo
+* Updated all references in docs and docstrings
+* Moved Models to a seperate file, models.py
+* Updated the install section of docs
+
+0.5.0
+-----
+
+* Extended some of the fitresult tests, and not without succes since we immidiately found an inconsistency with basinhopping
+* Reduce if/for/else complexity some more
+* Fix the failing ODE warnings. Due to the fact that we are now more strict about users always having to provide values to variables, an error is already raised for non-ODE models containing derivatives
+* Made pickling more complicated again, for py27 reasons
+* Addressed @pckroons comments regarding if/for/else structures
+* Improved pickling of ChainedMinimizer
+* Fixed SqrtLeastSquares
+* Cleaned up some conditionals
+* Updated docstrings
+* Improved ordering of code in \_determine\_objective
+* Package constraints into FitResults for BasinHopping
+* Fixed #234 and Fixed #236
+* Improved pickle tests for FitResults, especially for chained minimizers
+* Corrected an example
+* Give number of iterations a consistent keyword name accross our minimizers
+* Give number of iterations a consistent keyword name accross our minimizers
+* FitResults seem to pickle fine out of the box, so remove unnecessary complications
+* Greatly improved multiprocessing test by making sure the result is correct and checking that the right minimizer was used
+* Add str representation to ChainedMinimizers
+* Chained Minimizers are now properly given to FitResults
+* A status\_message has to be provided when initiating a FitResults
+* Added space at the end of line
+* PEP 8 complient long conditionals
+* Fixed ordering of string formatting args, slightly cleanup long if condition
+* Start tracking keywordonly.py
+* Improved comments
+* BaseFit was a rogue program whose return to the source was inevitable
+* dependent vars are None for MinimizeModel
+* Improver automatic selection of the objective by partially binding the data first instead of fully binding as before
+* Changed to pytest.warns, removed unittest2 as a dependence
+* Fixed parameter sorting in TakesData so interactiveguess works again
+* Removed outdated skipped tests, still related to NumericalLeastSquares
+* A whole sway of small test improvements
+* Updated objective tests
+* Updated objectives to the new standard and added sanity checking which will raise an error if required data is missing
+* Minimizers no longer provide None by default for dependent variables
+* Removed the default setting of variables to 'None' if no data is provided
+* Fixed docstring so docs will build
+* FIx docstring, fix checking for numerical models
+* Our polite warning does not extend to BaseNumericalModel subclasses
+* Use assertWarns in tests. Requires the package unittest2 for py27
+* Added a warning if users provide a model with derivative operators in it which is not an ODEModel
+* Fixed hashability issues for Parameter
+* SymPy added better printing for MatPow, but this broke our sqrt of a (1, 1) matrix scalar. Fixed by checking the shape before taking the power, and take a standard power if we're dealing with a scalar
+* Because equility of FitResults is ill-defined, I decided to remove that for now but leave a working definition intact which can be used for testing only
+* Set up build stages
+* Fix insidious typo
+* Revert "Make interactive guess tests use Agg backend"
+* Make interactive guess tests use Agg backend
+* Change xvfb invocation
+* Use newer Ubuntu version
+* Update Python versions for Travis. Remove Sphinx version pinning
+* Parameter hasing is now handled seperatelly so that parameters extra values are not viewed as assumptions by sympy
+* Changed the test into a complentary one which does not require the fitting to be performed, to improve performance
+* Added checking of value to value checking
+* Cleanup of equality checking for constraints
+* Chained minimizer kwargs error solved
+* Equality of Parameters defined
+* Fixed pickle error due to Parameter objects accedently having our extra arguments as assumptions
+* Our parameter arguments should not be passed to sympy as assumptions
+* Constraints are now always a list, albeit an empty one
+* MINPACK now also supports fixed parameters
+* Improved pickling test by adding equality checking to Objectives, and fixed issues related to constraints on FItResults
+* Added constraints to FitResults
+* Minimizer output will now be put in \*\*kwargs
+* Processed @pckroon's last suggestions
+* Fixed py27 pickle problems
+* Processed @pckroon's comments
+* MINPACK now also returns a OptimizeResult
+* Updated broken link in docstring
+* Cosmetical update
+* Fixed #72 and Fixed #85
+* Removed unused imports
+* Updated docstrings
+* Added tests, and cleaned-up the FitResults tests in General
+* Added minimizer and objective to the FitResults
+* Changed check to almost equal instead of equal
+* Matrix compatibility and interdependent components (#201)
+* Updated docstring for LeastSquares
+* Math in docstring needs escape character
+* Changed the normalization of LeastSquares, such that the inverse Hessian is immidiately the covariance matrix. Fixed #197
+* Final merge with master
+* Fixed typo
+* Slightly improved some names of variables
+* Updated docstring indentation
+* add install [all]
+* Install from requirements.txt directly
+* Remove only-binary flag in the hope that this was a thing of the past, update
+* Remove only-binary flag in the hope that this was a thing of the past
+* Updated test such that a NoneType constraint should raise a ModelError
+* Updated comments and docstrings
+* Updated model negation for interdependent models
+* Fixed #219. We verify if the lambdify signatures are what we expect, and if not we patch accordingly
+* Loglikelihood mutivariate (#218)
+* Fixed error in docstring
+* Processed @pckroon's simpler comments
+* Upgrade matplotlib etc if possible
+* Small fix, params for jacobian\_model are already the same as for model itself
+* Introduced two alternative init methods: with\_dependency and as\_constraint, to make initiation of models as constraints more streamlined
+* Improved TestFitResults.test\_fitting\_2 by adding a bivariate normal distribution
+* Consistently use ScipyBoundedMinimizer
+* Changed docstrings to remove references to Constraint objects
+* Fixed two terrible mistakes in the tests
+* Adressed @pckroon's comments
+* Improved tests for boundaries by making it ignore MINPACK
+* Removed unused \_clear\_cache from objectives
+* Switched to using hessian\_model instead of the old umerical\_hessian
+* N-dimensional interactive guess (#130)
+* Fixed docstring sphinx error
+* Changes in scipy 1.2 mean differential evolution needs more iterations for our test to pass
+* py27 exception syntax compatibility
+* Adressed @pckroon's simpler comments
+* Address @pckroon suggestion that no Parameters should end up as variables
+* Made test on constraints tighter
+* Updated model tests to slight API changes
+* Update tests for direct interaction with minimizers
+* Added several tests for constrained fits
+* Data which does not belong to a variable, should not automatically be removed
+* Updated minimizers.py to the previous commit
+* Constraint builder functions have been improved
+* constraint\_type is now a kwarg to all models
+* Introduced FlattenSum in tests only so the printing of Sum's in general is not affected
+* Coveralls: Coverage badge (#213)
+* Remove Constraint objects from the API
+* Only pass a jacobian to ScipyConstrainedMinimizer if such a jacobian is present
+* Data is now also passed on to the constraints by the minimizers
+* If no Hessian can be found, return None as covariance matrix
+* Signature of \`Fit\` now includes any variables that constraints might have, independent of the model
+* Fixed #154: Constraints are no longer a seperate type. Any model can now be provided as a constraint, which creates endless posibilities. By default Eq constraint is assumed, unless specified otherwise
+* Check for precense of numerical jacobian by checking for 'jacobian\_model', not 'eval\_jacobian'
+* .params can now be set on BaseModel (subclasses). This makes preperation of internal jacobian\_models a lot cleaner
+* Added six as a dependency, fixed #205 (#211)
+* Added printing of Idx objects
+* Use nameless Dummy when generating  to prevent naming conflicts
+* Add pythoncode printermethod to Arguments
+* Made objectives explicitly loop over model.dependent\_vars, not model itself
+* Implement trust-constr wrapper (#189)
+* Fixed py27 compatibility some more
+* Fixed py27 compatibility
+* Removed (Non)LinearLeastSquares from the docs, and fixed docstrings
+* Removed leastsquares\_from\_model, has no purpose now that analytical fit objects are gone
+* Return the inverse hessian by default, so analytical chi2 and loglikelihood can also be performed at a users own responsibility
+* Updated a multicomponent model cov matrix test which never made sense
+* Covariance matrices of equal and unequal size are no longer a thing
+* Added a seed value to prevent Heisenbug tests
+* Model Hessians now have the correct shape based on the corresponding component. E.g., a model with shape (100,) and two parameters has a Hessian of (2, 2, 100)
+* Updated the tests to the new covariance matrix computation
+* Add GradientModel to the API
+* For some conditions the variances come out as negative. In those cases we should also apply the jacobian approximation
+* Check for MINPACK before checking for minimizemodel when choosing objectives
+* Mayor Covariance matrix calculation overhaul
+* Fit.data\_shapes never correctly returned dependent\_shapes
+* Minor bugfix to jacobian calculation for objectives
+* Updated shaping for hessians and jacobians
+* Pulled the infected tooth that was LinearLeastSquares
+* leastsquares\_from\_model returns a Dummy as dependent variable
+* Introduced HessianModel, and updated Model docstring
+* Internally we now use the CallableNumericalModel API correctly, so no more warnings are raised
+* Updated tests based on comments
+* Processed the straight forward part of the review, more comments, cleanup etc
+* Sort independent vars & params only once
+* Moved printing logic from Variable to Argument
+* Removed references to Model.chi\_squared from tests
+* Updated the CallableNumericalModel example to the new syntax
+* Made tests for CallableNumericalModel more robust
+* Removed straggling print statement
+* Removed some more fossilized code from the analytical test
+* Updated test to the fact that fixed parameters are now handled internally by objectives as invariants
+* Constraints can be initiated with parameters directly
+* Made ODEModel compatible with the new paradigm, though they do not support interdependent components. (yet?)
+* Removed some fossil code
+* Updated HasCovarianceMatrix
+* Updated the analytical fit models and TaylorModel to the new paradigm
+* Massive cleanup on Constraint: most of the special needs for constraints have been eliminated
+* Added methods to build the jacobian, hessian and least-squares from a model
+* Massive cleanup of Model: removed all references to chi\_squared, and hessians and jacobians are now seperate models
+* Numerical models now also use the connectivity\_mapping to create python callables for analytical components
+* Introduce BaseGradientModel for Models which have a derivative
+* eval\_components now uses the topological order to eval components
+* connectivity\_mapping added for numerical models
+* Fixed #84, models are now printed to resemble a list, which they always are even when scalar
+* BaseModel now supports the notation of interdependent\_vars: Variables shared between components
+* A minimizers called with a symfit model will now also accept that, not wrap it twice as before by accident
+* Update objectives to the notation that not all model vars are dependent vars: explicitely use self.model.dependent\_vars where needed
+* Added matrix methods to the printer
+* Treat derivatives wrt parameters as Variables in their own right
+* Tests for component interdependence for both MatrixExpr and normal models
+* Added variabletuple to replac namedtuple
+* Any valid Expr or MatrixExpr that is not a Parameter is now a valid variable
+* Remove wrapping from Objectives (#195)
+* \_\_reduce\_\_ replaced by \_\_setstate\_\_ for models. (#193)
+
+0.4.6
+-----
+
+* Added additional safeguards to the checking for pickling of constraints
+* Improved subclasses function as suggested
+* Made \_\_getstate\_\_ py27 compatible for ChainedMinimizers
+* Improved py27 compatibility of tests
+* Fixed mistake in test
+* Fixed model equality check
+* Tests for pickling of objectives
+* Fixed Constraint's \_\_reduce\_\_ method
+* Test models signature after pickling
+* Made minimizers picklable. Added tests, and made FitResults eq-comparable
+* Updated author email address
+* Pickle fit results & Models (#185)
+* Slightly improved the citation request
+* Removed trailing comma
+
+0.4.5
+-----
+
+* Added CallableNumericalModel (#182)
+* Added P.C. Kroon's ORCID
+* Make sure zenodo gets the authors right
+* fixed a typo
+* Added citation request
+* Add Examples to docs (#180)
+* Add \_\_version\_\_ (#167)
+* Deleted docs/\_build, this should no longer be tracked (#181)
+
+0.4.4
+-----
+
+* BasinHopping -> wraps scipy.optimize.basinhopping (#177)
+* Fixed params and constraints (#165) (#168)
+
+0.4.3
+-----
+
+* Freeze to sympy <= 1.1.1 until a solution has been found. (#170)
+* Global Minimizers (#166)
+* Update README, fixes #165
+* The constraint example in the README suffered from a long time bug (#164)
+
+0.4.2
+-----
+
+* Make parameters fully pickleable (#158)
+* Fixed #161
+* Fixed #159, ODEModels now have \_\_str\_\_ (#162)
+* Corrected a mistake in README
+* Housekeeping
+* Fixed #135. ODEModels can now be evaluated for any t-value. (#157)
+* Fix #42 and #82. (#153)
+* Demand numpy 1.12
+* Fixed deprecation test for py27
+* Fixed sphynx warning
+* changed the default param and var names to reduce the chance of conflict. (But starting with \_ is not allowed because Model results are returned as a namedtuple)
+* Updated docs to inspectless style
+* Fixed sphynx warning
+* Added a test for the deprecation warnings and exceptions raised
+* Added a clearer error message
+* Made auto-generated names clearer by adding an underscore
+* Updated tests to reflect inspectless style
+* No longer consider convinience methods as deprecated
+* Fix merge conflicts
+
+0.4.1
+-----
+
+* Rename wrap\_jac to resize\_jac
+* Environment issue, cant test locally
+* Address more out of band comments
+* Address out of band comments
+* Fixed docstring to find sympy.symbols
+* Fixed merge conflicts
+* Updated contrib tests to new standard
+* Throw warning when no name is provided to a symbol
+* Accept all\* sympy symbol types as vars
+* Added a deprecation warning for variables and parameters
+* Address comments the right way..
+* Address comments
+* Add test for #150
+* Cover case if jacobian is None
+* Make minimizers deal with fixed parameters
+* Revert "Make minimizers deal with fixed parameters"
+* Make minimizers deal with fixed parameters
+* Fixed #149 by replacing len with shape
+* Fixed changes in scipy minimize and matplotlib. Fixed minor issue with fixed parameters. Quickfix #144
+* Made Exception syntax py2 friendly
+* Updated contrib tests
+* Made the convinience methods use sympy
+* Removed inspect, more sympy style
+* Added DOI
+
+0.4.0
+-----
+
+* Fixed warning due to docstring
+* Removed test\_new\_fit.py
+* Throws an Error if you try to add weights to LikeLihood fits
+* Added example of calling a minimizer directly
+* Docs describing the new structure
+* Added a covariance matrix to Likelihood fitting
+* Fixed ScipyMinize's identity crisis. It's now a definitive mix-in class
+* No scipy for 3.7-dev, so not worth all the errors
+* Add 3.7-dev to travis
+* Made pytest.ini to ignore RuntimeWarnings and UserWarnings
+* Fixed Py2 errors. You want to check the docstring
+* Fixed Sphinx build error
+* Added a docstring to Models eval\_jac
+* Fixed broken links in the docs
+* Made existing documentation compatible with new structure
+* Cleared sphynx indentattion warning
+* py2 new-style classes
+* py2 compatible kwarg function calls
+* Fixed compatibility with newer numpys stricter (better) indexing rules
+* py2 dict initiation
+* py2 keywordonly decorator
+* py2 compatible syntax
+* Cleaned up cov matrix calculation so it now works with all current tests under py3.6
+* cov matrix is now calculated for ODEs, up to a factor of two
+* Improved the test of an exactly solvable ODE
+* If no regression coefficient is present, dont try to print it
+* Updated some docstrings
+* Removed fancy dict initialisation
+* Processed pckroon's comments, cleanup
+* Removed leftover print statements
+* Added basic tests for Minimizers
+* Minimizers now return FitResults
+* Moved FitResults to a seperate file
+* Now using wrapped\_jacobian for consistency
+* Added comments and docstrings to some Minimizers
+* Added negation as the way to maximize
+* Added Constraint objects to the public API
+* Added comments, and did some code cleaning
+* Added a test to make sure the parameter errors produced by the finite difference method are correct
+* Fixed the issue with py2.7. Floor division is a thing
+* Py2.7 compliance
+* Added a test for unequal data length; and fixed the bugs that it unearthed
+* Bomb-proofed \_cov\_mat\_unequal\_lengths. Polished finit\_difference tests
+* Fixed a the shape of jac in covariance matrix calculation if there's no independent data. Also fixed two ODE tests
+* Because no PR is complete without tests, and because tests find bugs
+* Added a finite difference method to approximate jacobians of CallabelModels
+* Initial Commit of new Fit
+* Updated docstring to reflex changes to FitResults
+* Stdevs can be None again
+* In tests comparing Maximize to scipys equivalent, we should still use SLSQP
+* Updated tests for bounds
+* Force max >= min for fixed params
+* Force max >= min
+* SLSQP is no longer the default of Minimize. This caused more problems than it solved
+* Constraint object work with all models now
+
+0.3.7
+-----
+
+* Switched back to last known working sphynx
+* Added a space
+* Use the reference
+* Fixed #123. Use np.array type if no array operations are supported on the provided data
+* Fixed #120. Only dividing by the overal chi once in the last step and then replacing nan by zero does the trick
+* Removed some old commented debugging lines
+* fixed fit by specifying seed for gaussian
+
+0.3.6
+-----
+
+* Updated two tests to reflect that stdevs can be None by default if they are not computed
+* Pragmatic fix of #116. Should be improved by giving ODEModels a numerical\_jacobian some day
+* Added/extended some comments
+* Did it properly now. Locally tests passed, making debugging challenging..
+* Implemented sigma \*= np.ones(N). Fixes #109
+* Changed my github username. Reflecting that change here
+* Changed the dependancy of travis to matplotlib rather than mpl2.0rc2
+* Changed FitResults to be more flexible wrt GoF qualifiers
+* Now that #45 was fixed, this line could be made a lot cleaner
+* FitResults are now initiated with a model, not just the list of Parameters. This feels more consistent
+* Fixed a bug in README and fixed a typo
+* Fixed #57, ParameterDict has been destroyed, so it no longer has an identity crisis. It has been replaced with an OrderedDict. However, Pitje06's point in #45 is now even more evident; confusion between the content of FitResults.params and Model.params is bound to arrise
+* Removed read-only proporties from FitResults all together
+* Removed \_\_ elsewhere where it wasn't strictly needed
+* Fixes #91, removed the private parts from FitResults
+* Fixed a minor mistake in the docs with header types
+* Updated the examples to reflect the API update
+* Adapted the tests to be compatible with the API update
+* Changed no\_show to show to get rid of double negations, and introduced .execute to make the API consistant with the project
+* Install matplotlib 2.0.0rc2 for all py versions
+* Install matplotlib 2.0.0rc2 for py3.6
+* Include installation instructions for the dependencies of contrib
+* Made InteractiveGuess2D objects printable
+* Add py3.6 to the travis build
+* Added interactive guess to the module docs
+* Final polishing
+* Changed the example to prevent #104 from cropping up
+* Process comments
+* Fixed an issue with the dimensionaly of the Dfun argument to odeint
+* Minor cosmetic changes to ODE\_2D\_example.py
+* Switched to using \_eval\_model in the test
+* Fixed typo
+* Changed \_get\_data to \_eval\_model since that is more descriptive
+* Fixed imports in ODE\_2D\_example.py
+* Cosmetic changes in vector\_valued\_2D.py
+* Fixed imports in vector\_valued\_2D.py
+* Fixed imports in simple\_2D\_example.py
+* Use Fit instead of ConstrainedNumericalLeastSquares by default
+* Minor housekeeping
+* Removed constraint\_type as a class attribute since it wasn't needed and caused the docs to panic
+* Added leastsqbound to the list of things to ignore, since it uses a different style of docstrings then we do (numpy?)
+* Enabled nitpick ignore for some packages
+* Updated some docstring that triggered warnings
+* Updated the bash command to a conditional code block for py3.5
+* Only build docs in py3.5
+* Fixed keywordonly in inheritance scenarios. Now survices all tests
+* Added inheritance tests for keywordonly
+* Updated keywordonly such that all tests for it work in py2. However, all other tests fail
+* Added tests for the keywordonly decorator
+* Switched keywordonly from getargspec to signature
+* Fixed keywordonly in inheritance scenarios. Now survices all tests
+* Added inheritance tests for keywordonly
+* Updated keywordonly such that all tests for it work in py2. However, all other tests fail
+* Added tests for the keywordonly decorator
+* Switched keywordonly from getargspec to signature
+* nitpick ignore module refs for now, and updated the build directory in conf so it is not scanned
+* pip install sphinx with --upgrade
+* Removed cache directory from sphinx command
+* Added docs\_build directory
+* Added sphinx-build script to autotest doc building
+* Fixed #99. Now only Eq, Le and Ge constraints are allowed
+* Seperated tests for Minimize from test\_general
+* Changed examples to use ConstrainedNumericalLeastSquares
+* Reordered some of the imports
+* Fixed duplicate target name warning
+* Made splitting over multiple lines in occordance with PEP8 and the Hitchhikers guide to Python (aka the bible)
+* Made sure tuple unpacking is always presented as the first choice
+* Some minor corrections to the style guide
+* Updated to version 0.3.5. 0.3.4 was skipped because PyPI is unforgiving to the correction of mistakes, but rightfully so. See pypa/packaging-problems, #74
+* Changed nose to pytest, since nose is retarded
+* Add the [all] extra requirement
+* Fix #95
+* Still trying to fix #95
+* Trying to fix #95, so trying a few things
+* Added \_build to gitignore
+* Wrapped all lines to ~80 characters
+* FInished linking to API docs
+* Extended some docstrings and added internal API links
+* Added a constrained fitting example
+* Made the notes on measurement errors a warning so it stands out
+* Fixed some typos, and added a label to the Global Fitting section
+* Started to weave a web of links
+* Fixed a small typo, and added another reference to the apidocs
+* Processed comments
+* Fixed a last few more rst formatting errors in the docstrings. These fixes required explicit escaping in the docstrings, so it's a separate commit, so it may be dropped separately
+* Fixed rst formatting errors in the docstrings
+* Changed some permanently redirected links
+* Added a description how the figures were made exactly to dependencies.rst
+* Made the harmonic oscillator figures conform to the other figures
+* Changed doc version to 0.3.3. Fixes #65
+* Fix #68
+* Fixed build warnings, and some minor blemishes
+* Seaborn'ed the oscillator image
+* Fixed a bunch of rst make-up
+* Improved style guide, particularly on accessing vector valued functions
+* Improved fitting types, added a few typos. Added a bunch of comments with questions/remarks
+* Removed .api from the tutorial Redid most of the examples to follow the changes in preferred syntax Added some (rst) comments with unclear things
+* fixed indentation and a typo, and processed @tBuLi's comments
+* Added an harmonic oscillator to the docs. Fixes #77
+
+0.3.5
+-----
+
+* Fixed FutureWarning for comparing with None
+* Added \_build to gitignore
+* Added myself to AUTHORS
+* Wrapped all lines to ~80 characters
+* FInished linking to API docs
+* Extended some docstrings and added internal API links
+* Added a constrained fitting example
+* Made the notes on measurement errors a warning so it stands out
+* Fixed some typos, and added a label to the Global Fitting section
+* Started to weave a web of links
+* Fixed a small typo, and added another reference to the apidocs
+* Processed comments
+* Fixed a last few more rst formatting errors in the docstrings. These fixes required explicit escaping in the docstrings, so it's a separate commit, so it may be dropped separately
+* Fixed rst formatting errors in the docstrings
+* Changed some permanently redirected links
+* Added a description how the figures were made exactly to dependencies.rst
+* Made the harmonic oscillator figures conform to the other figures
+* Changed doc version to 0.3.3. Fixes #65
+* Fix #68
+* Fixed build warnings, and some minor blemishes
+* Seaborn'ed the oscillator image
+* Fixed a bunch of rst make-up
+* Improved style guide, particularly on accessing vector valued functions
+* Improved fitting types, added a few typos. Added a bunch of comments with questions/remarks
+* Removed .api from the tutorial Redid most of the examples to follow the changes in preferred syntax Added some (rst) comments with unclear things
+* fixed indentation and a typo, and processed @tBuLi's comments
+* Added an harmonic oscillator to the docs. Fixes #77
+* Make travis install just the contrib optional dependencies (for now). Specifying [\*] give pip errors
+* Make travis install all extras
+* Added matplotlib (required by interactive guess) to an extra/contrib section in setup.cfg
+* Moved specific py2 dependancy to requirements.txt with an environment marker
+* Added setuptools to pip install -U, to make pbs happy
+* Link Fit.model to Fit.fit.model
+* Added more tests of auto fit, as well as the same checks for ConstrainedNumericalLeastSquares and NumericalLeastSquares seperately
+* Made minor changes to tests to switch to the use of either Fit, or to manually select a type
+* Model.shared\_parameters to check if parameters are shared between vector components
+* Define the new smart Fit object
+* Added tests for the new auto-fit object
+* Set pbr environment variable in before\_deploy
+* Final commit. Branch master will now be deployed to pypi if a commit is tagged
+* Fixed keyword formatting
+* Auto package everything in the symfit package
+* Fixed rst syntax error
+* Changed setup.cfg accordingly
+* Changed from README.md to README.rst
+* Deploy to test \*only\*
+* Deploy to test upon tagging this branch
+* README -> README.md
+* Changed from setup.py to pbr with setup.cfg. This will automize version management amongst other things
+* Changed to deploy master branch only, should be ready for use in the field\!
+* Reactivated setup.cfg for making wheels universal
+* Deploy both a universal wheel and a source dist
+* Added a lot of debuging print statements
+* Added skip\_cleanup=True
+* Removed matrix line, which was readded by merging with master
+* Removed import of other test objects  entirely since that is now done by nosetests
+* Fixed the bug in passing assumptions to sympy.Symbol
+* Fixed a small mistake of calling .value instead of .stdev
+* Re-enabled all tests
+* Changed checking for namedtuple to tuple for now, because the namedtyple returns a new type and can therefore not be checked for that easily
+* Added \_\_init\_\_.py to make tests a package
+* Improved the 2 2D Gaussian test
+* Switched all tests to the FitResults.value paradigm
+* Retired the old fit\_result.params.a paradigm from test\_general.py. It is updated to the new fit\_result.value(a)
+* Fixed typos, comments and improved readability of vector model initiation to be in accordance with style guide
+* Improved the test of Maximize to compare directly with the results from scipys minimize
+* Added namedtuple type assert for calls to Model
+* Seperated the testing of predefined distributions
+* Fixed py2 compatibility of skip
+* Fixed merge conflicts
+* Added matplotlib and seaborn to travis again, since the tests are still broken in this branch
+* Changed .travis.yml to use pip instead of conda
+* Moved install twine to the install section rather than before\_deploy
+* Force install twine before deploying
+* Updated version number to trigger an upload to testpypi
+* Deploy to PyPI test from all branches temporarily to see if this solves the issue
+* Added encrypted password
+* Enable both deployments, should be a go
+* Test branch only
+* Switched to branch master
+* Added encrypted PyPI password, should now be able to deplot to PyPI test server
+* Prepared .travis.yml up to but excluding password
+* Removed 3.3 support and changed setup.py accordingly
+* Force scipy 0.18.1 to be installed
+* Exploit proper test discovery with Travis
+* Removed symfit.tests from the package
+* Catch LinAlgError in case of singular covariance matrix, don't return one in that case
+* Moved tests to adhere to pytest/nosetest standards
+* Changed test locations to adhere to pytest/nosetest standards. This facilitates automatic test discovery dramatically
+* Skipping tests which are known failures
+* Added a bunch of docstrings to tests.py, and did some minor cleaning
+* removed seaborn and matplotlib from the travis requirements. Maybe travis should install requirements.txt from now on?
+* Minor polishing to reflect the changes in 5a57fd6
+* Improved the tragedy that was tests\_constrained
+* Restricted travis to only run the symfit tests, and not the sympy ones as well
+* Added tests for bounds and guesses to the vector fitting tests
+* Minor cosmetic changes
+* removed seaborn/matplotlib from tests\_constrained
+* Give default values to arguments to .execute through keywordonly, such that in the future they can be added to the docs dynamically
+* Merged constrained fitting branch into master
+* New version of ConstrainedNumericalLeastSquares, all ready to go, and with new tests :)
+* Minor fix to a test, calling models returns a namedtuple of arrays, the slicing of those arrays was missing
+* Slight cosmetic change
+* Removed print statements
+* Only pass the numerical\_jacobian to minimize if it exists
+* Updated covariance handeling in HasCovarianceMatrix to deal with all types of datasets
+* Added a test to make sure the method for estimation of covariances for datasets of unequal length is backwards compatible with equal length
+* Added ConstrainedNumericalLeastSquares, and tests. Not all bugs have been ironed out yet, but this is as a first version it works. Stay tuned for the next commits
+* ODEModel now also passes the jacobian of the model to the integrator
+* Minimize.execute now passes on args and kwargs, something it should have been doing all along
+* Removed hard type assertions in FitResults, because its causing more problems than it solves
+* Updated some docstrings and removed some commented code that has to go bye bye
+* Minor cleanup
+* Added ConstrainedNumericalLeastSquares to the API, and did some cleanup
+* Changed Fit calls to NumericalLeastSquares calls to make sure we do a local optimization after guessing. See #75, #86
+* Fixed a minor mistake in the initiation of Minimize from constraint objects
+* Changed interface of Minimize and its subclasses somewhat such that error\_func and eval\_jacobian accept the different types of data (dependent, independent, sigma), seperately. This makes the code inside these functions a lot clearer, and consistent with other Fitting objects
+* Fixed some minor typos and changed docstrings
+* Made test\_single\_eval even harsher
+* Changed all the data shorthand properties from dict to OrderedDict, to make sure one can always rely on the alphabetic ordering being respected
+* Fiddled around with the likelyhood fitting tests, but to no avail
+* Squelched all output, including warnings and print statements
+* Improved test\_single\_eval, to prevent the caching of previous results
+* Fixed some asserts for arrays of length 1
+* Removed .api from a bunch of imports
+* Changed \`from symfit.core import Fit\` to \`from symfit import Fit\`
+* Renamed Derivative back to D. Added from symfit.core.support import D
+* Fixed the call to curve\_fit in test\_straight\_line\_analytical
+* Removed unused imports
+* Changed from symfit.(api|core.fit) import \* to something more sensible. Also because this seems to break pytest for no good reason
+* Moved test\_read\_only\_results to tests\_fit\_results (and removed from tests) Small changes to use the new model syntax. Minor change to test\_straight\_line\_analytical (func to jac), but it still doesn't work (might be problem of pytest). Tried to make test\_gaussian\_2d\_fitting work. This uncovered a bug in all 2D fitting
+* Added the use of numpy.testing.allclose for array comparison Renamed D to Derivative
+* Commented out the imports for matplotlib and seaborn
+* Add a config file for travis-ci
+* renamed D to Derivative
+* This needs to be fixed more permanently to add all subdirs to setup.py
+* added contrib to setup.py
+* removed Iterable for imports
+* Changed another test to EAFP
+* Added Iterable to imports again..
+* Changed the if-statement back to a try-except, in order to be more EAFP
+* Some old changes?
+* Added some very simple initial data to make sure code examples from the readme will run
+* Slightly improved the global fitting example
+* Added some notes on global fitting to the docs, a long hidden feature of symfit
+* Fixed #61. D should now be present in the next version of the docs
+* Fixed #62. ODE models can now be evaluated at single points like their supposed to. Added a test to ensure this is true
+* Final MPL tweaks for today. Probably more tomorrow. Or maybe a bugreport for the MPL people
+* More annoyance caused by matplotlib. Apparently plt.show and Figure.show do completely different things. I can't wait to migrate to vispy
+* Improved number formatting for sliders, and added a two component ODE example
+* Sexified the plot titles for ODE models beyond compare
+* Reworked all examples to the preferred syntax. Closes #63
+* Made TakesData even more bulletproof
+* Minor fixes
+* Fixed an issue where plots occasionally wouldn't show up. I wrongly blamed ipython, but it's actually matplotlib's fault (suprise!)
+* Updated a test to reflect changes made in 9e65b61
+* Fixed model calls to make it work with ODE models (#63). Added an example with an ODE model
+* Update tutorial.rst
+* Fixed errors that happens when variables are None, which can now happen due to the ODE code
+* some old changes
+* Update README.md
+* Fixed some estatics
+* Updated version number
+* Fixed merge conflicts
+* Deleted some unused imports
+* added initial style guide to the docs. #36
+* Minor changes to ODE tests
+* Minor changes to ODE tests
+* Added images for the docs
+* #53, included ODEs in the documentation
+* Added an example of integrating a complex double equilibrium model. No fitting included. #48
+* Added axis labels
+* Example of simple ODE fitting has been added:
+* Removed .api from examples
+* Improved docstring on ODEModel and cleaned up some of its code
+* Fixed #59, which caused problems with unicode Argument names
+* Extended the plotrange and domain by 10% in all directions
+* Fixed a call to sympy.printing.latex, and fixed my tests
+* Added LaTeX-ified plotlabels
+* Somewhere, something went wrong merging
+* How do I merge this -.-
+* Newline at the end of the file
+* Fixed a small beautymark
+* Split off TakesData from BaseFit to suit PR#33
+* changed \`try: iter(x); except: ...\` to \`if not isinstance(x, collections.Iterable): ...\`
+* Minor change in visual\_guess
+* Added some documentation for the ODE branch
+* Fixed some typos. Probably added some too
+* Improvements!
+* Made symfit imports relative. Tried to use key2str and keywordsonly, but realised I can't/it doesn't make sense to
+* Fixed a beauty mark
+* Added something, such that contrib now actually tries to import \*all\* it's submodules automagically, and passes over failures silently
+* Python 2 compatibility. And added an \_\_init\_\_ to contrib, which \*tries\* to import all its submodules
+* Note to self: clean code first, commit later
+* Added tests and an example for vector-valued functions. Works nicely :)
+* Moved contrib a level deeper, so I can type \`import symfit.contrib\`
+* Cleaned out all the 3D things, they didn't work anyway. Added tests
+* Fixed #50 by adding more data
+* to appease git..
+* Fixed minor bug and increased the number of iterations for NonLinearLeastSquares
+* Fixed merge conflicts
+* Save changes to local ODE branch
+* Fixed #49 and Fixed #48. ODE models are now supported and fitable with at least NumericalLeastSquare. Other objects should be checked
+* Defined some model abcs, time to merge with ode
+* ODE roughly works now, up to the changes in the abc branch. Redifining ABC's now
+* Commit some minor changes before switching branch
+* Working ODEModel, compatiple with the default NumericalLeastSquares. Some fundamental changes to the definition of a Model have been made though, so all excisting tests now fail. This will be fixed by #49 in the near feature
+* First attempt at defining abc's
+* ODE work thus far
+* Removed some commented out code
+* Made the internal API consistent with #47, internally we now take full advantage of the sexier model API
+* Made Model's into dicts, thereby fixing #47
+* Added some notes on NonLinearLeastSquares to the docs, and hopefully got rid of \_\_weakref\_\_ autodocking
+* Minor changes to make the docs look better
+* Removed BaseFit as a seperate entry
+* 0.3.2 setup made
+
+0.3.2
+-----
+
+* (Non)LinearLeastSquares finished
+* Update README.md
+* Updated the README
+* Fixed #43. Added methods for (co)variance, stdev and value to fit\_results directly for convinience
+* Update README.md
+* Prepared the matplotlib side of InteractiveFit2D. All that remains for now is to reduce the dimensionality of the data at the set places
+* Solved the error in matplotlib
+* Fixed a crusial typo
+* Fixed #40: all BaseFit children must have error\_func and eval\_jacobian
+* Slightly changed the fits. py2 compatibility is restored
+* Made signatures py2 compatible, removed keywordonly arguments and replaced them by a decorator, and removed ABC, thereby fixing #38, restoring py2 compatibility!
+* keywordonly decorator build. Its a very pragmatic version of it, making readability the priority
+* Made inspect py2 compatible
+* Updated setup.py
+* Added keywordonly
+* Removed type annotations
+* COmmitted an awful mess, since this needs more cooperative thought..
+* Made Expr.\_\_call\_\_ consistent with calling a Model instance: also positional arguments are allowed now. However it turns out to be best not to fiddle with Expr to much since they don't have an instance dict. Therefore the current implementation with Model.numerical\_components seems like a good idea, although it's best to only use it as an internal method. #39
+* Update README.md
+* Added a supported symfit version check (rudimentary due to lack of symfit.version)
+* Added a simple 2D use example
+* Folder structure change Some minor changes in InteractiveFit2D docstrings. InteractiveFit3D changes are delayed to do something better than interpolating
+* Fixed InteractiveFit2D with respect to tBuLi's comments. Revised doc-strings and InteractiveFit3D will follow
+
+0.3.0
+-----
+
+* MANIFEST changed
+* Updated version number, and discontinued py2 support
+* Updated version number, and discontinued py2 support
+* Added requirements.txt
+* Reinitiated all tests
+* Updated docstrings
+* Updated docstrings
+* Updated the docs to match 0.3.0 and included API docs
+* Added pyinstaller support. Works by checking if the script is running as exe and then searches the exe folder for the required source file. Does require to distribute the python source code with the exe
+* Numerical fitting changed to the new style Models
+* Second batch of doc-strings and comments
+* Comment update Added docstrings and some code comments for InteractiveFit2D and ProjectionPlot
+* Create interactive\_fit.py
+* All I want to do is switch branch
+* Some first tentative steps towards sexy constrained fitting
+* Very sweet object added: LagrangeMultipliers. This object does purely symbolic constrained optimisation and the results are very sweet. The next step is to make a constrained fitting object that uses this object to soften up the problem if possible, and to only then do the numerical part
+* Added some tests for the new parameters/variables convinience methods
+* Fixed #27. Also added some docstrings to the support module
+* Updated text slightly to include the sigma keyword
+* Fixed #22, the biggest problem of symfit. The docs should be changed to clearly reflect the implementation of the sigma keyword in symfit
+
+0.2.6
+-----
+
+* Updated setup.py. Also included dependencies this time
+* Steps taken towards #22, but more theoretical backing is needed. This new version does reduce the problem, and now defaults to curve\_fit with absolute\_error=True. Fixed #23
+* Fixed #26. Symbols are ordered alphabetically
+* Fixed #24. Fitting to a constant is now allowed
+
+0.2.5
+-----
+
+* Updated setup.py
+* Fixed #20 and fixed #17. Python3 should now be supported
+
+0.2.4
+-----
+
+* Üpdated
+* Submodels can now be evaluated easely. Fixed #14
+* Fixed #19, #16. Might have solved #17, this has to be checked
+* Added math
+* Fixed some minor mistakes in the new docs
+* Docs changed to include basic instructions for Likelihood and Minimize
+* Added a test for the seperation of 2 2D gaussians in proximity to one another. Here we start to run into the fit an elephant problem, but some people might want to fit elephants
+* Added a test for Finding a single 2D gaussian population
+* stdev could be None, which messed up the printing of the results. Fixed it, althoug formatting may no longer be nice in case this happens
+* Update installation.rst
+* Update CONTRIBUTING.rst
+* Update CONTRIBUTING.rst
+* Update CONTRIBUTING.rst
+* Create CONTRIBUTING.rst
+* Update AUTHORS.rst
+* Update AUTHORS.rst
+* Create AUTHORS.rst
+* Update README.md
+* Updated installation instructions
+* Updated installation instructions
+* Incremented version, and fixed a typo in intro
+* Fixed the issue with leastsqbound not being imported
+
+0.2.2
+-----
+
+* Upgraded to the next arbitrary function
+* Fixed #11
+* Changed the way parameters are returned by FitResults.params to be more clear and easier to expand in the future
+* Updated setup.py with more metadata and added a new example
+
+0.2.1
+-----
+
+* Incrementet the version in setup.py
+* Made the ParameterDict's \_\_getattr\_\_ easier on the eye. It will also be easier to add more suffixes to parameter names now. Also improved some docstrings
+* Fixed #9, making sure lambda arguments are not dummified
+* Made FitResults read-only, Fixed #8
+* Minor change to comment
+* Fixed #6: traits removed
+* Update dependencies.rst
+* Update dependencies.rst
+* Create dependencies.rst
+* Create installation.rst
+* Update index.rst
+* Fixed #7 + altered the tests to match this
+* Update intro.rst
+* Added intro and Gaussian example
+* Added images to the tutorial and wrote a small introduction
+* Inserted maths in quickstart
+* Fixed typo's in quickstart
+* Added quickstart
+* Update tutorial.rst
+* Update tutorial.rst
+* Update tutorial.rst
+* Update tutorial.rst
+* Update tutorial.rst
+* Update tutorial.rst
+* Update tutorial.rst
+* Added documentation directory
+* Added sexy syntax, therefore Fixed #5
+* Some common functions have been included. Not all though
+* support.py was not included earlier :S
+* Fixed minor issue with underscores in param names
+
+0.2
+---
+
+* setup.py added
+* Fitting multidimensional data is now correctly implemented. Data is flattened upon initiation in a consistent way, therefore Fixed #4
+* Readded tests
+* Added setup.py to make this project installable and pip-able
+
+0.1.0
+-----
+
+* Update README.md
+
+0.1
+---
+
+* Update README.md
+* Improved syntax concerning accessing paramater's values and stdev's. More Tests. Reverted the changes to == and !=
+* Update README.md
+* Minimize removed until philosofical issues are resolved. Fixed #3 (symbolic functions are now callable). FitResults extended
+* Update README.md
+* Update README.md
+* Update README.md
+* Update README.md
+* Update README.md
+* Using some nice inspection, symbol names are now taken from the left side of the equation automatically if not provided as an argument. This might be slightly nasty on the inside, but it looks sexy like a photoshopped model on the outside
+* Remove duplicated directory core
+* Fixed #1, adding the sympy api to symfit.api. Furthermore, == and != operators overloaded so that constraints now have nice syntax. Added tests for Minimize
+* Minimize is now operational! Example problem is solved as a test. Only hickup is the fact that == is probably impossible to overload and therefore the sympy.Eq object will have to be used. This is a slight discomfort. Next up: MinimalizeParameters and a setup.py
+* Update README.md
+* Update README.md
+* Update README.md
+* Minimize object added and kind of working
+* Fit reports are nicely formatted when printed
+* Update README.md
+* Update README.md
+* args and kwargs can now be added to execute and will be provided to leastsq
+* Update README.md
+* Initial commit
+* added readme
+* First commit!
