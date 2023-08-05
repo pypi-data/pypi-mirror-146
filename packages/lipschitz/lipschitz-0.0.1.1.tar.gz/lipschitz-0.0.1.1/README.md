@@ -1,0 +1,44 @@
+![Lipschitz Logo](https://github.com/TheLipshitz/lipschitz/blob/master/docs/static/lipschitz-logo.png)
+
+## The Lipschitz System
+
+We envision Lipschitz to be an efficient and precise system for quantitative trading. While being sophisticated in functionalities, Lipschitz remains to be clear, friendly, and robust in its architecture design.
+
+Lipschitz provides three high-level features:
+-	Framework and scaffold template for implementing model-based quantitative strategies
+-	Toolchains for provisioning and evaluating quantitative strategies, including data loaders and backtesting tools
+-	Gateways to execute and monitor strategies on simulated and live trading platforms
+
+## Architecture Overview
+
+Lipschitz categorizes essential system functionalities into the following two roles:
+-	**Core Components**. Lipschitz currently have three types of core components, i.e., data loader, strategies, and gateways. Each type of core components is responsible for a specific type of tasks, interacting with the rest of the system using structuralized APIs. 
+-	**Pipeline Managers**. Built on top of core components, Pipeline managers are responsible for running end-to-end pipelines in quantitative trading. Depending on the actual pipeline it manages, pipeline managers may also include functionalities such as visualization (in evaluation pipeline), or anomaly detection (in production pipeline). 
+
+The illustration below depicts an overview of Lipschitz's system architecture.
+
+![Lipschitz Flow](https://github.com/TheLipshitz/lipschitz/blob/master/docs/static/lipschitz-flow.png)
+
+
+## Code Standards for Commits 
+
+### Environment
+1.	The minimum Python version supported is 3.8
+2.	Your code is expected to be executable in both MacOS and Linux
+
+### State Management
+1.	No global states or variables, all stateful operations should be implemented as classes
+2.	Limit the use of helper functions only to generic operations that are shared among multiple parts of the code
+3.	Avoid returning multiple values from a function, instead consider to returning a class instance
+
+### Name Conventions
+1.	Always use snake_case for variable, and use PascalCase for class names
+2.	Try at all costs to give a proper, clear name to your classes, functions, arguments, and variables, from which the user can directly understand their purposes
+3.	Class initialization and function calls should use named arguments
+
+### Documentation
+1.	For each publicly available class and functions, document their purpose, parameters, and returns in the docstring format along with your code. Read this [guide](https://pandas.pydata.org/docs/development/contributing_docstring.html)
+2.	Keep the documentation simple and precise, no need to repeat what is already obvious in their names, no need to include implementation details (make in-line comments instead)
+
+### Code Commits
+1. Create a branch for each functionality that you are working on. Submit a PR to master branch to merge

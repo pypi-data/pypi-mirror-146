@@ -1,0 +1,8 @@
+README.md
+setup.py
+lipschitz/__init__.py
+lipschitz.egg-info/PKG-INFO
+lipschitz.egg-info/SOURCES.txt
+lipschitz.egg-info/dependency_links.txt
+lipschitz.egg-info/requires.txt
+lipschitz.egg-info/top_level.txt
