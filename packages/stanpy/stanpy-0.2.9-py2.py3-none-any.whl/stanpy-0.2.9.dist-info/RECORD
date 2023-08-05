@@ -1,0 +1,15 @@
+stanpy/__init__.py,sha256=0znh8ibZwlaBPic2EIvxYXgLWFOfdwTLtoleAWblr5o,341
+stanpy/cross_section.py,sha256=QqheIIsFkhcPfmT9BZ9TfTb0CDRU7KhwdEGkdF63gzA,7282
+stanpy/helpers.py,sha256=be3LpIYMKXrtwjtSxH58b7v1c2u5KhGAI7TmrVXDN5w,1331
+stanpy/plotting.py,sha256=7jWDMdWFuA9idmdbY9y94o_L0BF7AJSmsgWpLg_ebbc,36672
+stanpy/reduction.py,sha256=Scd_K_jDLORaT_hZiM-SYb94aiun9hORn0AmRhzONXk,16851
+stanpy/test.py,sha256=Fl4AZ79KZA4WgZwxUb-Dc5-YOQd1L7Qk0RmiImBXXZU,799
+stanpy/transfer_relation.py,sha256=6Wrk0JgRdf8X6qNjlqjVtcApHiJDjSZs29F40y7pgxg,67220
+stanpy/utils.py,sha256=nwBozAp4J0j2GIzDfUdeSr41Pu_qs4rZyRnRNZYsAWE,571
+stanpy/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stanpy-0.2.9.dist-info/AUTHORS.rst,sha256=7Zo8h6vtlnSJABwOU3FIDJSpmj4I3i9xA9e8CpIxcnc,192
+stanpy-0.2.9.dist-info/LICENSE,sha256=_fjyTh_PhwnzLjCBRYb8_iWC86pwZC8eDhgQJNtSRak,1106
+stanpy-0.2.9.dist-info/METADATA,sha256=kyzd3o3dZxrEJN9tk7s2P6uJgsh6mWewRbXRhCDjzwM,1303
+stanpy-0.2.9.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+stanpy-0.2.9.dist-info/top_level.txt,sha256=oEKfSwhdJln2ulmrs_aHGoDWfpC18NC5JESKLFFPtZQ,7
+stanpy-0.2.9.dist-info/RECORD,,
