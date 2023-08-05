@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+uoo/__init__.py
+uoo/__version__.py
+uoo/core.py
+uoo.egg-info/PKG-INFO
+uoo.egg-info/SOURCES.txt
+uoo.egg-info/dependency_links.txt
+uoo.egg-info/top_level.txt
