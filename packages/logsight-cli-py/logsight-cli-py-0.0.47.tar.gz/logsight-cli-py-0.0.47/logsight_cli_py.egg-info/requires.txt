@@ -1,0 +1,4 @@
+logsight-sdk-py
+click
+prettytable
+tqdm
