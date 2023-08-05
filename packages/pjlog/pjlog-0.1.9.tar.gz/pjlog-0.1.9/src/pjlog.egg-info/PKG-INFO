@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pjlog
+Version: 0.1.9
+Summary: Simple library for Logarithm with useful functions.
+Home-page: https://github.com/immortal-zeus/pjlog
+Author: Parsh Jain
+Author-email: laspparshinc@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: Free For Educational Use
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# PJLOG
+
+This is a simple Logarithm Library to make working with Logarithm easy and with better useful functions.
+
+## Installation
+
+Run the following to install 
+```python
+pip install pjlog
+```
+
+## Usage
+
+```python
+import pjlog as pl
+
+# Make a Logarithm Object 
+a = pl.log(value = 100, base =10)
+
+# Printing the Object 
+print(a)
+
+# To get value
+print(a.Lget_value())
+
+# To add
+c = a + pl.log(value =4 , base =2 )
+```
+
