@@ -1,0 +1,10 @@
+aiofiles
+aiohttp
+certifi
+colorama
+gofile-client>=1.0.1
+requests
+tqdm
+yarl
+beautifulsoup4
+tldextract
