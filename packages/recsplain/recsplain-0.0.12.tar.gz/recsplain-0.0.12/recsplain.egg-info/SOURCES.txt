@@ -1,0 +1,10 @@
+README.md
+setup.py
+recsplain/__init__.py
+recsplain/__main__.py
+recsplain/version.py
+recsplain.egg-info/PKG-INFO
+recsplain.egg-info/SOURCES.txt
+recsplain.egg-info/dependency_links.txt
+recsplain.egg-info/requires.txt
+recsplain.egg-info/top_level.txt
