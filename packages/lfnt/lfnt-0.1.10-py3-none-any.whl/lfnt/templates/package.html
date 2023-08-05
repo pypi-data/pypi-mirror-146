@@ -1,0 +1,14 @@
+{% include "head.html" %}
+
+<b>{{ pkgmgr | capitalize }}</b>: {{ pkg }} <a href="{{pkg}}/uninstall">uninstall</a>
+<br/>
+
+<div id="terminal">
+  <div id="terminalcontent">
+    {% for line in pkginfo %}
+    {{ line }}<br/>
+    {% endfor %}
+  </div>
+</div>
+
+{% include "tail.html" %}
