@@ -1,0 +1,15 @@
+README.md
+setup.py
+xls_tools/__init__.py
+xls_tools/google_sheet_reader.py
+xls_tools/open_xl.py
+xls_tools/openpyxlrd.py
+xls_tools/util.py
+xls_tools/xl_reader.py
+xls_tools/xl_sheet.py
+xls_tools/xlrd_like.py
+xlstools.egg-info/PKG-INFO
+xlstools.egg-info/SOURCES.txt
+xlstools.egg-info/dependency_links.txt
+xlstools.egg-info/requires.txt
+xlstools.egg-info/top_level.txt
