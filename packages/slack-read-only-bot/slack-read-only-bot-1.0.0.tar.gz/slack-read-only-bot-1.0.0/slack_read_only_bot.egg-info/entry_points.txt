@@ -1,0 +1,2 @@
+[console_scripts]
+slack-read-only-bot = slack_read_only_bot:main

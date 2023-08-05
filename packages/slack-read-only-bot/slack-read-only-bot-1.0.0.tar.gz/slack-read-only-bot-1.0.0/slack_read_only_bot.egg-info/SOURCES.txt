@@ -1,0 +1,9 @@
+README.md
+setup.py
+slack_read_only_bot.py
+slack_read_only_bot.egg-info/PKG-INFO
+slack_read_only_bot.egg-info/SOURCES.txt
+slack_read_only_bot.egg-info/dependency_links.txt
+slack_read_only_bot.egg-info/entry_points.txt
+slack_read_only_bot.egg-info/requires.txt
+slack_read_only_bot.egg-info/top_level.txt
