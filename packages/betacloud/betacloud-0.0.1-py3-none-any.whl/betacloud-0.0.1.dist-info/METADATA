@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: betacloud
+Version: 0.0.1
+Summary: OSISM manager interface
+Home-page: https://github.com/betacloud/client
+Download-URL: https://github.com/betacloud/client/tarball/main
+Author: OSISM GmbH
+Author-email: info@osism.tech
+Maintainer: OSISM GmbH
+Maintainer-email: info@osism.tech
+License: UNKNOWN
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cliff
+
+# Betacloud client
+
+.. image:: https://img.shields.io/pypi/v/betacloud.svg
+    :target: https://pypi.org/project/betacloud/
+    :alt: Latest Version
+
+This is a command-line client for the Betacloud.
+
+
