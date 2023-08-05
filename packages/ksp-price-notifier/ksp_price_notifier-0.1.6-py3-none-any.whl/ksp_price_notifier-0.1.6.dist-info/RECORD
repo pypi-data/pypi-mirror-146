@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=x85mUjFrWBqq4KUItDbG_ZU31rUwURWymwnW1lqPsZ4,123
+LICENSE,sha256=IAwC7-_ExWH1e31Mx0buus6TB42NOAkopirU0qH5J10,1072
+ksp_price_notifier/__init__.py,sha256=UrMGMnbJfmMadcL4np9mP_FK4Qk6MhB2d5zK8En-fG8,238
+ksp_price_notifier/__main__.py,sha256=AJO_OxjyXVPz-2FLciz81B5g12aPfHwOxtiXdEBD4UI,828
+ksp_price_notifier/get_price.py,sha256=EHWiyT4Sg6wF3_R25Te4IZV6CCk30dBAFZTyv2z1NuQ,382
+ksp_price_notifier-0.1.6.dist-info/entry_points.txt,sha256=vEnOlUoL6_xjN9RiSv-8F7cIkyFdgOk6kdjKuHa1270,70
+ksp_price_notifier-0.1.6.dist-info/LICENSE,sha256=IAwC7-_ExWH1e31Mx0buus6TB42NOAkopirU0qH5J10,1072
+ksp_price_notifier-0.1.6.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+ksp_price_notifier-0.1.6.dist-info/METADATA,sha256=uF0bDZ70LGOY-ldMcKsOImtzqe_r5qM28geqkKiKtjc,1218
+ksp_price_notifier-0.1.6.dist-info/RECORD,,

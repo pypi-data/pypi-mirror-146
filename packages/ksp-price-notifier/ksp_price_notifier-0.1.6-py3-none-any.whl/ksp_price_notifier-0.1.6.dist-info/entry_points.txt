@@ -1,0 +1,3 @@
+[console_scripts]
+ksp-price-notifier=ksp_price_notifier.__main__:app
+
