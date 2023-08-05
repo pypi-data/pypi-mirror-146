@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/roughset_tools/__init__.py
+src/roughset_tools/roughset.py
+src/roughset_tools_rofilde.egg-info/PKG-INFO
+src/roughset_tools_rofilde.egg-info/SOURCES.txt
+src/roughset_tools_rofilde.egg-info/dependency_links.txt
+src/roughset_tools_rofilde.egg-info/top_level.txt
