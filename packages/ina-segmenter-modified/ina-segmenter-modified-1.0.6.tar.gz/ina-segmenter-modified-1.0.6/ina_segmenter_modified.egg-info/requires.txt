@@ -1,0 +1,6 @@
+tensorflow
+numpy
+pandas
+scikit-image
+soundfile
+numba
