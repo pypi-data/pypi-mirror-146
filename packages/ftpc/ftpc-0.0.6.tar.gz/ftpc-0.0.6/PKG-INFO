@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: ftpc
+Version: 0.0.6
+Summary: You should install -> sudo apt-get install default-jre libreoffice-java-common to Ubuntu
+Home-page: UNKNOWN
+Author: Baxromov Shahzodbek
+Author-email: UNKNOWN
+License: MIT
+Description: # **FTPC** - File To PDF Converter
+        
+        Any file can be converted to PDF using this tool.
+        
+        But only PDF to HTML converter for **Ubuntu**.
+Keywords: file to pdf converter
+Platform: UNKNOWN
