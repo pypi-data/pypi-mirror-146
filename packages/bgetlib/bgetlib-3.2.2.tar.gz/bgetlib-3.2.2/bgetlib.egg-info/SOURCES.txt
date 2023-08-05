@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bgetlib/__init__.py
+bgetlib/__metainfo__.py
+bgetlib/api.py
+bgetlib/codec.py
+bgetlib/models.py
+bgetlib/streamer.py
+bgetlib/utils.py
+bgetlib.egg-info/PKG-INFO
+bgetlib.egg-info/SOURCES.txt
+bgetlib.egg-info/dependency_links.txt
+bgetlib.egg-info/requires.txt
+bgetlib.egg-info/top_level.txt
