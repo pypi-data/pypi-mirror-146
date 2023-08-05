@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+bin/cpu-power
+src/cpu_power/__init__.py
+src/cpu_power.py.egg-info/PKG-INFO
+src/cpu_power.py.egg-info/SOURCES.txt
+src/cpu_power.py.egg-info/dependency_links.txt
+src/cpu_power.py.egg-info/top_level.txt
