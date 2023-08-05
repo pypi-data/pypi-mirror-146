@@ -1,0 +1,17 @@
+algo_ops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algo_ops/ops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algo_ops/ops/cv.py,sha256=MsXbaszf9qp7m4_L9__gXLFhmalOg_j1H-_WTCqVz2c,2531
+algo_ops/ops/op.py,sha256=WW_XDRL2scKFMeeZaiQv3alJAEO9J18vHD2LHc3GKAc,5122
+algo_ops/ops/text.py,sha256=8DiuErqCbwAvu-y3j5_fQPZteSbJjUDHJ5XN4iOJGtw,1271
+algo_ops/paraloop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algo_ops/paraloop/paraloop.py,sha256=s8SBEiRk_3K_h0068hV9p-5pmO3S41dgp0luzt3r8DU,1669
+algo_ops/pickleable_object/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algo_ops/pickleable_object/pickleable_object.py,sha256=zFGg6Ma-SAjkQ74Lk29FFU0q04hoVRv9aMT3BcUSrW8,763
+algo_ops/pipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algo_ops/pipeline/cv_pipeline.py,sha256=TcfOvukxSNml28jYx53vhDveYKQWa1qoxWlRxf296n4,1988
+algo_ops/pipeline/pipeline.py,sha256=aX-LHoa2hI2MZVKOLU6zpqiwVTdU0B3GZkdPZ10c390,4158
+algo_ops-0.0.1.5.1.dist-info/LICENSE,sha256=guMGZuRBpXlmEcmvY0L_bnRPmdQq-RR_gdbTOd8uwmA,1071
+algo_ops-0.0.1.5.1.dist-info/METADATA,sha256=c-VB93cNYbkHUBbT3hoArHYscTf-ltN2clkyi7Qt6EU,2640
+algo_ops-0.0.1.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+algo_ops-0.0.1.5.1.dist-info/top_level.txt,sha256=9e-Snbj3QJgvI_ot8cmh4yB2mYkDuEk2AzOXqkTvx6Y,9
+algo_ops-0.0.1.5.1.dist-info/RECORD,,
