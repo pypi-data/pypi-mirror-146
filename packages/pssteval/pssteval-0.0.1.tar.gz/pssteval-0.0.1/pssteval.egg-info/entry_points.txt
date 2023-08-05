@@ -1,0 +1,4 @@
+[console_scripts]
+pssteval-asr = pssteval.asr:main
+pssteval-correctness = pssteval.correctness:main
+pssteval-viewer = pssteval.viewer:main
