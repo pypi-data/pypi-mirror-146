@@ -1,0 +1,2 @@
+class InvalidQRCode(Exception):
+    pass
