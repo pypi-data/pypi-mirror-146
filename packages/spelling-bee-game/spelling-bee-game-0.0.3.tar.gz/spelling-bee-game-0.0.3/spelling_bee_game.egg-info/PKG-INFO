@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: spelling-bee-game
+Version: 0.0.3
+Summary: A simple spelling bee game
+Home-page: UNKNOWN
+Author: ChurningLava
+Author-email: snoopydankl@gmail.com
+License: UNKNOWN
+Keywords: python,spelling-bee,game
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+A game that takes a word and gets images related to it. Prompts for input and records your scores. 
+
