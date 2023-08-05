@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: memray
+Version: 1.0.0
+Summary: Analysis of the stack of remote python processes
+Author: Pablo Galindo Salgado
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7.0
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: lint
+Provides-Extra: benchmark
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
