@@ -1,0 +1,17 @@
+mtrayapp/__init__.py,sha256=GYmv1N3_Tlviwub01tCl6_OUOjySRJAhBL2S2TYh7mw,1972
+mtrayapp/_appindicator.py,sha256=RPJxJ1gg77Y-V4goKzEjSr6M0gKgeCW__ak00G16g5c,3173
+mtrayapp/_base.py,sha256=JSaGXj53fFVv5oZmq8UUse8GsXGkhYb4SD4zypfJD_Q,22992
+mtrayapp/_darwin.py,sha256=yLnsy1p4IqR0Ht6HLNX3ujuPQnN9cEA44FMV7CcCrf0,8622
+mtrayapp/_dummy.py,sha256=NgxhtdhA0FOoRaac_HUWYqGw62aPnESdq4XM9Ssfk5U,877
+mtrayapp/_win32.py,sha256=HnOSR8zl6ex4CjIWNFcd-VH2zGNU4G235v9oywnXiwY,14163
+mtrayapp/_util/__init__.py,sha256=RB9bGH0M4ab8HyXybPOEg1aIw3Y_TfouF1PWVzf_hMY,1589
+mtrayapp/_util/gtk.py,sha256=w5Ov3glBIBCHy2kTkAQvIcWWP28ilzn1NyGUSJ5PORw,6579
+mtrayapp/_util/notify_dbus.py,sha256=ffdf-8EbqFw3JnBQEVT5jJqKHCB9k4AJ42VFU5gvSDU,2850
+mtrayapp/_util/win32.py,sha256=oxRdIjF5IYXfEmg0Wn9V1fLDvstQM0l0p0KPH0fL6WQ,10061
+mtrayapp-1.0.2.dist-info/COPYING,sha256=Hk0MLrERuFHeEteyc3GVuVD642INKiOkdM6NRuHS5LY,35152
+mtrayapp-1.0.2.dist-info/COPYING.LGPL,sha256=5YPuimTNKudEQiv3ahKVg4rK42mDR_OirwdGLd-vDS0,7656
+mtrayapp-1.0.2.dist-info/METADATA,sha256=MtCjagD3El6MnlK69AdimVUk2Gi6I5ScXXifrw34Cdo,1730
+mtrayapp-1.0.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+mtrayapp-1.0.2.dist-info/top_level.txt,sha256=4BhZAc_fzXZavViLuhcw6Lt357tEhgMFux4B4Tb4-e4,9
+mtrayapp-1.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mtrayapp-1.0.2.dist-info/RECORD,,
