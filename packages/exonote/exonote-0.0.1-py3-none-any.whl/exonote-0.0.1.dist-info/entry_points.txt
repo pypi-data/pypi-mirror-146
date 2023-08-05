@@ -1,0 +1,3 @@
+[console_scripts]
+exonote = exonote.__main__:main
+
