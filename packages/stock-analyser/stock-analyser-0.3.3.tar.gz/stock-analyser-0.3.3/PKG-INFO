@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: stock-analyser
+Version: 0.3.3
+Summary: Classes for technical analysis of stocks.
+Home-page: UNKNOWN
+Author: Stefanie Molin
+Author-email: d19cyber@gmail.com
+License: UNKNOWN
+Keywords: python,stock,analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Stock Analysis
+
+Package for making elements of technical analysis of a stock easier. This package is meant to be a starting point for you to develop your own. As such, all the instructions for installing/setup will be assuming you will continue to develop on your end.
+
+## Setup
+
+```shell
+$ pip3 install stock-analyser 
+```
+
+## Authors
+
+
+Developed by [Stefanie Molin](https://github.com/stefmolin)  (c) 2019
+
+Maintained by [Dipan Nanda](https://github.com/themagicalmammal) (c) 2021
+
