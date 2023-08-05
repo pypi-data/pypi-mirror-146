@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/XPathMongoCompiler/__init__.py
+src/XPathMongoCompiler/compiler.py
+src/XPathMongoCompiler.egg-info/PKG-INFO
+src/XPathMongoCompiler.egg-info/SOURCES.txt
+src/XPathMongoCompiler.egg-info/dependency_links.txt
+src/XPathMongoCompiler.egg-info/top_level.txt
