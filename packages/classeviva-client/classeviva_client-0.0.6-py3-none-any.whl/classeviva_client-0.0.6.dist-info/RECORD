@@ -1,0 +1,12 @@
+classeviva/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classeviva/client.py,sha256=X64W2QjdbwSSseRwEvRKAzUs3fUTZAo0ofcFowPLG24,3635
+classeviva/credentials.py,sha256=mlWoXXj9ebGoj-uYDUp73LfY477tIZPYkFvKo9z4dVU,693
+classeviva/model.py,sha256=iJI0JCi533rILe0_fsMMuIj8Ynju0gwkpGbWwdFBGSI,324
+classeviva_client-0.0.6.data/scripts/classeviva,sha256=CBLloQQw3xYom83N3N13i-yYOYB92WrzKUPBt5dLR8I,2405
+tests/cli/__init__.py,sha256=2aHAbm2gIpo0zJFGHyLJjhxiBijMexleD1kSh_Ut2Ls,2175
+tests/cli/test_agenda.py,sha256=LkvIbFfk_Eck8Tgg92xUOa8xuy05Zd9OtO0hzki9hZQ,870
+tests/cli/test_grades.py,sha256=sLEKzGXd_yDSMEQzKDv9FAs_gWD8NA1GuecIBfLZPJE,709
+classeviva_client-0.0.6.dist-info/METADATA,sha256=Qbd7W-REeN1Q-VszsteBoC1hbWsNTX54ZRr_68WMUak,2028
+classeviva_client-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+classeviva_client-0.0.6.dist-info/top_level.txt,sha256=LxlILa0D7JY49YFZZ9pysF5EWVZ7HfSa8hSaADwPEpg,17
+classeviva_client-0.0.6.dist-info/RECORD,,
