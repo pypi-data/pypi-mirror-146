@@ -1,0 +1,5 @@
+setup.py
+jupyterlab_filesystem_access.egg-info/PKG-INFO
+jupyterlab_filesystem_access.egg-info/SOURCES.txt
+jupyterlab_filesystem_access.egg-info/dependency_links.txt
+jupyterlab_filesystem_access.egg-info/top_level.txt
