@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: PlayroomAI
+Version: 0.0.1
+Summary: Playroom Simulator
+Home-page: UNKNOWN
+Author: Jiafei, Jieyi
+Author-email: duanjiafei@hotmail.sg
+License: MIT
+Description: 
+        
+        
+Keywords: simulator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

@@ -1,0 +1,8 @@
+MANIFEST.in
+README.txt
+setup.py
+PlayroomAI.egg-info/PKG-INFO
+PlayroomAI.egg-info/SOURCES.txt
+PlayroomAI.egg-info/dependency_links.txt
+PlayroomAI.egg-info/top_level.txt
+VPR/__init__.py
