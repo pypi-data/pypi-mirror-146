@@ -1,0 +1,4 @@
+importlib_resources
+numpy
+pysnirf2
+setuptools
