@@ -1,0 +1,10 @@
+Click
+dask
+dask-image
+numpy
+h5py
+matplotlib
+pytables
+
+[:python_version == "3.8"]
+importlib
