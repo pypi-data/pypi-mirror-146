@@ -1,0 +1,2 @@
+[console_scripts]
+bwm = bwm.__main__:main
