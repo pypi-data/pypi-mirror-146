@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/fgreter.egg-info/PKG-INFO
+src/fgreter.egg-info/SOURCES.txt
+src/fgreter.egg-info/dependency_links.txt
+src/fgreter.egg-info/entry_points.txt
+src/fgreter.egg-info/requires.txt
+src/fgreter.egg-info/top_level.txt
