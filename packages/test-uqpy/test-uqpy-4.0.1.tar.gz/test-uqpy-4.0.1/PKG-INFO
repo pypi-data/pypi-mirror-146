@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: test-uqpy
+Version: 4.0.1
+Summary: UNKNOWN
+License: MIT
+Platform: OSX
+Platform: Windows
+Platform: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+License-File: LICENSE
+
+UNKNOWN
+
