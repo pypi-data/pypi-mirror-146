@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+hoodat_vertex_components.egg-info/PKG-INFO
+hoodat_vertex_components.egg-info/SOURCES.txt
+hoodat_vertex_components.egg-info/dependency_links.txt
+hoodat_vertex_components.egg-info/top_level.txt
