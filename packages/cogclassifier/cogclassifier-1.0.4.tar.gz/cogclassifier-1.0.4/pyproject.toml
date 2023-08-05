@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "cogclassifier"
+version = "1.0.4"
+description = "A tool for classifying prokaryote protein sequences into COG functional category"
+authors = ["moshi"]
+license = "MIT"
+homepage = "https://github.com/moshi4/COGclassifier/"
+repository = "https://github.com/moshi4/COGclassifier/"
+readme = "README.md"
+keywords = [
+    "COG",
+    "bioinformatics",
+    "genomics",
+    "functional-annotation",
+    "functional-analysis",
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+include = ["tests"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--cov=src --tb=line --cov-report=xml --cov-report=term"
+testpaths = ["tests"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.27.1"
+pandas = "^1.4.1"
+altair = "^4.2.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+flake8 = "^4.0.1"
+pydocstyle = "^6.1.1"
+pytest = "^7.1.1"
+pytest-cov = "^3.0.0"
+
+[tool.poetry.scripts]
+COGclassifier = "cogclassifier.cogclassifier:main"
+plot_cog_classifier_barchart = "cogclassifier.script.plot_cog_classifier_barchart:main"
+plot_cog_classifier_piechart = "cogclassifier.script.plot_cog_classifier_piechart:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
