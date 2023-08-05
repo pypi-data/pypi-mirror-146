@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: geometor
+Version: 0.0.2
+Summary: model, render & analyze complex geometric constructions
+Home-page: https://geometor.github.io/geomentor-explorer
+Author: phi ARCHITECT
+Author-email: phi@geometor.com
+License: UNKNOWN
+Project-URL: Code, https://github.com/geometor/geometor-explorer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: sympy
+Requires-Dist: matplotlib
+
+# GEOMETOR • explorer
+
+Preparing for the Python transformation.
+
+Stay tuned!
+
+~ φ
+
+

@@ -1,0 +1,10 @@
+geometor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geometor/model.py,sha256=W1y2yuRY0oovnvMjwkpqZOQXGeVmyt7sb2ZcViPeHeE,14364
+geometor/pappus.py,sha256=6quVo4FOTB-1Igbr7jt55Vh4YkNPG2L7Smwyt849rT4,1591
+geometor/render.py,sha256=mslmKMfMp-hNJOJIUSOGC3FHjHkkRy_yx7XVbWbbT-k,24567
+geometor/spirals.py,sha256=li02FkIO6LW26oPthauUH6jbfj6fw4ZRC9k85_QBP4E,1863
+geometor/utils.py,sha256=JdIDeETP8TRRDM2TF2i33pWjXf-2W5BU__ulvm5vpdQ,809
+geometor-0.0.2.dist-info/METADATA,sha256=nnxhEX_RT32PxSQtJmDGbDHubAB07saHgvoMdmpwyUU,671
+geometor-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+geometor-0.0.2.dist-info/top_level.txt,sha256=THhvXTbUceKKapcbp_gz1bNYVYhZMOlOUA4ibBCy4XM,9
+geometor-0.0.2.dist-info/RECORD,,
