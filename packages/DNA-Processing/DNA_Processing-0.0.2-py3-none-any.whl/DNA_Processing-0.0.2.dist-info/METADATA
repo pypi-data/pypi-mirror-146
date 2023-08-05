@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: DNA-Processing
+Version: 0.0.2
+Summary: dna_processing: Module to work with DNA, RNA and Protein sequences. And interact with them.
+Home-page: https://github.com/R-Rijnbeek/DNA_Processing
+Author: Robert Rijnbeek
+Author-email: robert270384@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/R-Rijnbeek/DNA_Processing/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python_DNAProcessing
+
+Repository that has the standard DNA, RNA and Protein Objects and the standard methods to interact with them.
+
+# Instalation: 
+
+It works whith a standard Python instalation
+
+
