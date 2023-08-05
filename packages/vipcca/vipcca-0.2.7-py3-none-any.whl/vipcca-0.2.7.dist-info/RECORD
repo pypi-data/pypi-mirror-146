@@ -1,0 +1,13 @@
+vipcca/__init__.py,sha256=mG1jugawTC-IeQo6BNNk90BH1y2remAYHrZR0I36Lfw,108
+vipcca/model/__init__.py,sha256=x7S-XsUHJt-89_6K1xt_v78V9oItYmirNW0lpPvlUg8,43
+vipcca/model/vipcca.py,sha256=UYFvYojdDslupvQVf82GkTs6l9Ia3GqTAeAx_aTvXEQ,32841
+vipcca/tools/__init__.py,sha256=SMou4LwrFgLfWe8lfPnRxdxaCJJo2HFJuYXnzCNc2Pw,528
+vipcca/tools/parser.py,sha256=ah8dqMAq4E9AKd9x6CReCJWLFPONIvdTzZNsiTmhas4,2011
+vipcca/tools/plotting.py,sha256=ebPTmkIRA8c2GRVyf-MKOUd119GEMoG2KcKiEX-w4jM,6915
+vipcca/tools/qqnorm.py,sha256=e2pdtGgRmAUvqmT5QFtu18sCKMLPPMFpC2w1emIVRF0,1019
+vipcca/tools/transferLabel.py,sha256=w-Bx8KkcrK5j0Kt6zTN-hfpmwQQgoq0YZ_Vw6sh4aXc,2032
+vipcca/tools/utils.py,sha256=3RH_4yOBmYWtlXq9veJb6eZSdMGdl0oEDOD1ixyrOPI,15528
+vipcca-0.2.7.dist-info/METADATA,sha256=zxXG4RZwjj0xsASnN5bQBgeKRwwiOyPdqXXqsd3CDRk,2943
+vipcca-0.2.7.dist-info/RECORD,,
+vipcca-0.2.7.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+vipcca-0.2.7.dist-info/top_level.txt,sha256=e4_p4f-OJExRmWmM9EC9i7MEwxIrAVQ_9DCBp080i3Y,7
