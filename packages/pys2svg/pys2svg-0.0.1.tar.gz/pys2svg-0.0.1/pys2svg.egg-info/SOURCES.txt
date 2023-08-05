@@ -1,0 +1,7 @@
+README.md
+setup.py
+pys2svg.egg-info/PKG-INFO
+pys2svg.egg-info/SOURCES.txt
+pys2svg.egg-info/dependency_links.txt
+pys2svg.egg-info/entry_points.txt
+pys2svg.egg-info/top_level.txt

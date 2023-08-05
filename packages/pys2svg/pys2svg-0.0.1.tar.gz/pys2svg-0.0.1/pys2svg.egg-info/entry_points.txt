@@ -1,0 +1,3 @@
+[console_scripts]
+pyspread = pys2svg.pys2svg:main
+
