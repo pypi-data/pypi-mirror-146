@@ -1,0 +1,845 @@
+#!/usr/bin/env python
+
+import yaml
+import json
+import argparse
+import subprocess
+import os,sys,re
+import string
+import struct
+
+import pyaes
+import hashlib
+import base64
+from urllib.parse import urlparse
+
+ENCRYPTED_SECRET_PREFIX='<SECRET>'
+
+def get_context(commands,kubeconfig):
+	command=[
+		commands['kubectl'],
+		'config',
+		'current-context'
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+
+	try:
+		return subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode().strip()
+		if output=='error: current-context is not set':
+			return 'not set'
+		print("Failed to check context with kubectl: %s"%output)
+		quit(1)
+
+
+def encrypt_secret(commands,kubeconfig,plaintext_secret):
+	print("Retreiving master key")
+	master_key=get_secret_master_key(commands,kubeconfig)
+	if master_key is None:
+		print("Please initialize the master key before encrypting secrets.")
+		quit(1)
+	return aes_encrypt(master_key,'!DEC!%s'%plaintext_secret)
+
+def decrypt_secret(commands,kubeconfig,encrypted_secret,master_key_cache={}):
+	if not encrypted_secret.startswith(ENCRYPTED_SECRET_PREFIX):
+		print("Encrypted secrets must start with %s"%ENCRYPTED_SECRET_PREFIX)
+		quit(1)
+	master_key=None
+	if 'key' in master_key_cache:
+		master_key=master_key_cache['key']
+	if master_key is None:
+		print("Loading master key to decrypt secrets")
+		master_key=get_secret_master_key(commands,kubeconfig)
+		if master_key is None:
+			print("No master key found - unable to decrypt secret")
+			quit(1)
+		master_key_cache['key']=master_key
+	plain=aes_decrypt(master_key,encrypted_secret[len(ENCRYPTED_SECRET_PREFIX):])
+	if not plain.startswith('!DEC!'):
+		print("Decryption of %s failed, either the master key or the ciphertext is wrong!"%encrypted_secret)
+		quit(1)
+	return plain[5:]
+
+def aes_encrypt(key,plain):
+	aes = pyaes.AESModeOfOperationCTR(key)
+	cipher = aes.encrypt(plain)
+	return base64.b64encode(cipher).decode()
+
+def aes_decrypt(key,encrypted):
+	import binascii
+	try:
+		data=base64.b64decode(encrypted)
+	except binascii.Error as e:
+		print("Error in secret %s: %s"%(encrypted,e))
+		quit(1)
+
+	aes = pyaes.AESModeOfOperationCTR(key)
+	plain=aes.decrypt(data)
+	try:
+		return plain.decode()
+	except UnicodeDecodeError:
+		return ''
+
+def get_raw_secret(commands,kubeconfig,namespace,secret):
+	command=[
+		commands['kubectl'],
+		'--namespace',
+		namespace,
+		'get',
+		'secret',
+		secret,
+		'--output=yaml',
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+
+	try:
+		result=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode()
+		if 'Error from server (NotFound):' in output:
+			return None
+		print ("Error getting secret: %s"%output)
+		quit(1)
+	return yaml.load(result,Loader=yaml.SafeLoader)['data']
+
+def get_secret_master_key(commands,kubeconfig):
+	secret=get_raw_secret(commands,kubeconfig,'kube-system','evermind-deployment-tool')
+	if secret is not None:
+		master_key_b64=base64.b64decode(secret['master-key'])
+		# master key is b64 encoded twice - one my us, once by kubernetes
+		return base64.b64decode(master_key_b64)
+
+def create_namespace(commands,kubeconfig,namespace):
+	command=[
+		commands['kubectl'],
+		'create',
+		'namespace',
+		namespace
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+
+	try:
+		result=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+		print("Namespace created.")
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode()
+		if 'Error from server (AlreadyExists)' in output:
+			print("Namespace already exists.")
+		else:
+			print ("Error creating namespace: %s"%output)
+			quit(1)
+
+def kubectl_run(commands,kubeconfig,args,namespace=None):
+	command=[
+		commands['kubectl'],
+		]
+	command+=args;
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+
+	if namespace:
+		command+=['--namespace',namespace]
+
+	try:
+		result=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+		print(result)
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode()
+		print ("Error running kubectl: %s"%output)
+		quit(1)
+
+
+def kubectl_apply(commands,kubeconfig,basedir,ressources,namespace=None):
+
+	temp=os.path.join(basedir,".resources.yaml")
+	with open(temp,'w') as f:
+		yaml.dump(ressources,f,default_flow_style=False)
+
+	args=[
+		'apply',
+		'-f',
+		temp
+		]
+
+	kubectl_run(commands,kubeconfig,args,namespace)
+
+def init_secret_masterkey(commands,kubeconfig,predefined_master_key=None):
+	master_key=get_secret_master_key(commands,kubeconfig)
+	if master_key is not None:
+		print("Master key already exists. If you want to use a different one, delete the existing one manually before!")
+		quit(1)
+	if predefined_master_key:
+		master_key=base64.b64decode(predefined_master_key)
+		if len(master_key)!=32:
+			print("The given master key has incorrect size. Required are 32 bytes, got %s bytes"%(len(master_key)))
+			quit(1)
+	else:
+		master_key=os.urandom(32) # 32bit=256 byte key
+
+	master_key_b64=base64.b64encode(master_key).decode()
+
+	command=[
+		commands['kubectl'],
+		'--namespace',
+		'kube-system',
+		'create',
+		'secret',
+		'generic',
+		'evermind-deployment-tool',
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+
+	command+=['--from-literal=master-key=%s'%master_key_b64]
+
+	try:
+		yaml=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode()
+		print ("Error storing master key: %s"%output)
+		quit(1)
+
+	print("Master key is initialized with: %s\nKeep a backup of it, if you loose it, you will not be able to decrypt your passwords anymore!"
+		% master_key_b64)
+
+def ensure_context(commands,kubeconfig,expected_context):
+	context=get_context(commands,kubeconfig)
+
+	if context!=expected_context and kubeconfig is None:
+		alternative_kubeconfig=os.path.expanduser("~/.kube/config.%s"%expected_context)
+		if (os.path.exists(alternative_kubeconfig)):
+			alternative_context=get_context(commands,alternative_kubeconfig)
+			if alternative_context==expected_context:
+				context=	alternative_context
+				kubeconfig=alternative_kubeconfig
+				print("Using alternative kube config : %s"%kubeconfig)
+
+	if context==expected_context:
+		print("Using context: %s"%context)
+		return kubeconfig
+	else:
+		print("Expected context: %s"%expected_context)
+		print("Current context:  %s"%context)
+		print("Please switch to the correct context to continue!")
+		print("Command: kubectl config use-context %s"%expected_context)
+		quit(1)
+
+def deploy_charts(commands,kubeconfig,basedir,charts,args):
+	if args.dry_run:
+		print('---------------------------------------------------------')
+		print('---                   DRY RUN MODE                    ---')
+		print('---------------------------------------------------------')
+
+	only_this_chartnames=args.charts;
+	for chart in charts:
+		chartname=chart['name']
+		# if chart.skip=true, skip the chart unless it' explicitely listed on command line
+		skip=bool(chart['skip']) if 'skip' in chart else False
+		if len(only_this_chartnames)>0:
+			if chartname in only_this_chartnames:
+				skip=False
+			else:
+				skip=True
+		if skip:
+			print("Skipping chart: %s"%chartname)
+			continue
+		deploy_chart(commands,kubeconfig,basedir,chart,args)
+
+def deploy_docker_secrets(commands,kubeconfig,basedir,secrets,args):
+	if args.dry_run:
+		print('---------------------------------------------------------')
+		print('---                   DRY RUN MODE                    ---')
+		print('---------------------------------------------------------')
+
+	for secret in secrets:
+		namespace=secret['namespace']
+		name=secret['name']
+
+		secrets_path=os.path.join(basedir,"docker-secrets","%s.yaml"%name)
+		if not os.path.exists(secrets_path):
+			print("Missing secrets file: %s"%secrets_path)
+		with open(secrets_path,'r') as f:
+			secrets_data=yaml.load(f,Loader=yaml.SafeLoader);
+
+		decrypt_secrets(commands,kubeconfig,secrets_data)
+
+		try:
+			docker_auth_json=json.dumps({
+				"auths": {
+					secrets_data['registry']: {
+						"username": secrets_data['username'],
+						"password": secrets_data['password']
+					}
+				}
+			})
+		except KeyError as e:
+			print("Missing key %s in %s"%(e,secrets_path))
+			quit(1)
+
+		docker_auth_secret={
+			"apiVersion": "v1",
+			"kind": "Secret",
+			"type": "kubernetes.io/dockerconfigjson",
+			"metadata": {
+				"name": name,
+				"namespace": namespace,
+			},
+			"data": {
+				".dockerconfigjson": base64.b64encode(docker_auth_json.encode()).decode()
+			}
+		}
+
+		print("Creating namespace '%s' if not exists"%namespace)
+		if not args.dry_run:
+			create_namespace(commands,kubeconfig,namespace)
+		print("Creating/updating secret '%s' in namespace '%s'"%(name,namespace))
+		if not args.dry_run:
+			kubectl_apply(commands,kubeconfig,basedir,docker_auth_secret)
+
+def decrypt_secrets(commands,kubeconfig,values):
+	if type(values) is dict:
+		for (k,v) in values.items():
+			values[k]=decrypt_secrets(commands,kubeconfig,v)
+	elif type(values) is str:
+		if values.startswith('!ENC!'):
+			print('Prefix !ENC! is deprecated, please use :ENC: instead')
+			values='<SECRET>'+values[5:]
+		if values.startswith('<SECRET>'):
+			values=decrypt_secret(commands,kubeconfig,values)
+	elif type(values) is list:
+		for (i,v) in enumerate(values):
+			values[i]=decrypt_secrets(commands,kubeconfig,v)
+	return values
+
+def helm_add_repository(commands,kubeconfig,repository,skip_update):
+	#repo_id=hashlib.md5(repository.encode()).hexdigest()[:8]
+	repo_id=generate_repository_id(repository)
+	command=[
+		commands['helm'],
+		'repo',
+		'add',
+		repo_id,
+		repository,
+		('--no-update' if skip_update else '--force-update')
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+
+	try:
+		result=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+		print(result)
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode()
+		print ("Error running helm repo add: %s"%output)
+		quit(1)
+
+	return repo_id
+
+
+def run_chart_pre_deploy_script(commands,kubeconfig,chartname, chartpath,namespace):
+	run_chart_deploy_script(commands,kubeconfig,chartname, chartpath,namespace,'pre-deploy.yaml')
+
+def run_chart_post_deploy_script(commands,kubeconfig,chartname, chartpath,namespace):
+	run_chart_deploy_script(commands,kubeconfig,chartname, chartpath,namespace,'post-deploy.yaml')
+
+
+def run_chart_deploy_script(commands,kubeconfig,chartname,chartpath,namespace,scriptname):
+	basedir=os.path.join(chartpath,'deploy')
+	script_yaml=os.path.join(basedir,scriptname)
+	if not os.path.exists(script_yaml):
+		return
+
+	print("Running %s for chart: %s"%(scriptname,chartname))
+
+	with open(script_yaml,'r') as f:
+		script_data=yaml.load(f,Loader=yaml.SafeLoader);
+
+	for script in script_data:
+		if 'apply' in script:
+			filename=script['apply']
+			print("Running kubectl apply for: %s"%filename)
+			args=["apply","-f",os.path.join(basedir,filename)]
+			if ('validate' in script) and script['validate']==False:
+				args+=["--validate=false"]
+			kubectl_run(commands,kubeconfig,args,namespace)
+		if 'delete' in script:
+			filename=script['delete']
+			print("Running kubectl delete for: %s"%filename)
+			args=["delete","--ignore-not-found=true","-f",os.path.join(basedir,filename)]
+			kubectl_run(commands,kubeconfig,args,namespace)
+		if 'replace' in script:
+			filename=script['replace']
+			print("Running kubectl replace for: %s"%filename)
+			args=["replace","-f",os.path.join(basedir,filename)]
+			if ('validate' in script) and script['validate']==False:
+				args+=["--validate=false"]
+			kubectl_run(commands,kubeconfig,args,namespace)
+
+def generate_repository_id(repo):
+	u=urlparse(repo)
+	repo_id="%s%s"%(u.hostname,u.path)
+	repo_id=re.sub('[^a-z0-9]','_',repo_id)
+	repo_id=re.sub('__+','_',repo_id)
+	repo_id=re.sub('^_','',repo_id)
+	repo_id=re.sub('_$','',repo_id)
+	return repo_id
+
+def deploy_chart(commands,kubeconfig,basedir,chart,args):
+	chartname=chart['name']
+	chartinfo=chart['chart']
+	if type(chartinfo) is not dict:
+		print('"charts" must be a dict of "key: value" pairs but was "%s"!'%chartinfo)
+		quit(1)
+
+	if 'repo' in chartinfo:
+		repository=chartinfo['repo']
+		print("Adding helm repository %s"%repository)
+		repo_id=helm_add_repository(commands,kubeconfig,repository,args.skip_dependency_update)
+		chartpath=repo_id+'/'+chartinfo['name']
+	else:
+		chartpath=chartinfo['path']
+
+	if 'namespace' in chart:
+		namespace=chart['namespace']
+	else:
+		namespace=None
+
+	if not args.skip_dependency_update:
+
+		if not 'repo' in chartinfo:
+			for depfile in ['requirements.yaml','Chart.yaml']:
+				requirements_yaml=os.path.join(chartpath,depfile)
+				if os.path.exists(requirements_yaml):
+					with open(requirements_yaml,'r') as f:
+						requirements_data=yaml.load(f,Loader=yaml.SafeLoader);
+					if 'dependencies' in requirements_data:
+						print("The chart %s has external dependencies"%chartname)
+						for dep in requirements_data['dependencies']:
+							if 'repository' not in dep:
+								continue;
+							repository=dep['repository']
+							if not repository.startswith("http"):
+								continue;
+							print("Adding helm repository %s"%repository)
+							helm_add_repository(commands,kubeconfig,repository,args.skip_dependency_update)
+						print("Running helm dependency update")
+						command=[
+							commands['helm'],
+							'dependency',
+							'update',
+							chartpath
+							]
+						if args.debug:
+							print('Running: %s'%subprocess.list2cmdline(command))
+
+						try:
+							subprocess.check_call(command)
+						except subprocess.CalledProcessError:
+							print("ERROR!")
+							quit(1)
+
+	if args.template_only:
+		print("Rendering chart: %s"%chartname)
+		command=[
+			commands['helm'],"template"]
+		if commands['helm_version']=="helm2":
+			command+=[chartpath,'--name',chartname]
+		else:
+			command+=[chartname,chartpath]
+		if args.debug:
+			command+=['--debug']
+
+	else:
+		# creation of namespaces is required for helm 3
+		if namespace is not None and not args.dry_run:
+			create_namespace(commands,kubeconfig,namespace)
+
+		if 'repository' not in chart:
+			run_chart_pre_deploy_script(commands,kubeconfig,chartname,chartpath,namespace)
+
+		print("Installing chart: %s"%chartname)
+		command=[
+			commands['helm'],
+			'upgrade',
+			'--install'
+			]
+		if kubeconfig:
+			command+=['--kubeconfig',kubeconfig]
+		if args.dry_run:
+			command+=['--dry-run']
+		if args.debug:
+			command+=['--debug']
+		if args.force:
+			command+=['--force']
+		command+=[chartname, chartpath]
+
+	if namespace:
+		command+=['--namespace',namespace]
+
+	if 'version' in chart:
+		command+=['--version',chart['version']]
+
+	if 'vars' in chart:
+		print('"vars" is deprecated. Please use "values" instead.')
+		if 'values' in chart:
+			print('Please set "values" only, not "vars" and "values"')
+			quit(1)
+		chart['values']=chart['vars']
+
+	if 'values' in chart:
+		values=chart['values']
+		if type(values) is not dict:
+			print('Values must be a dict of "key: value" pairs!')
+			quit(1)
+		values=decrypt_secrets(commands,kubeconfig,values)
+		varsfile=os.path.join(basedir,".values.yaml")
+		with open(varsfile,'w') as f:
+			
+			yaml.dump(values,f,default_flow_style=False,default_style='|')
+		command+=['--values',varsfile]
+
+	if args.debug:
+		print('Running: %s'%subprocess.list2cmdline(command))
+
+	yamlError=None
+	p=re.compile('^Error:.* YAML parse error on (.+?): error converting YAML to JSON: yaml: line (\d+): (.*)$')
+	# run process, capture stderr
+	process=subprocess.Popen(command,stderr=subprocess.PIPE)
+	while process.poll() is None:
+		line = process.stderr.readline().decode().rstrip()
+		match=p.match(line)
+		if (match):
+			yamlError={
+			  'file':  match.group(1),
+			  'line':  int(match.group(2)),
+			  'error': match.group(3)
+			}
+		if (line):
+			print(line, file=sys.stderr)
+
+	if process.returncode!=0:
+		if yamlError:
+			rendered_template = None
+			try:
+				command=[
+					commands['helm'],"template"]
+				if commands['helm_version']=="helm2":
+					command+=[chartpath,'--name',chartname]
+				else:
+					command+=[chartname,chartpath]
+				if 'namespace' in chart:
+					command+=['--namespace',chart['namespace']]
+				if 'version' in chart:
+					command+=['--version',chart['version']]
+				if 'vars' in chart:
+					command+=['--values',varsfile]
+				rendered_template=subprocess.check_output(command,stderr=subprocess.STDOUT)
+			except:
+				print("(deploy.py was unable to render the template to display some more information to this error!")
+				pass
+
+
+			# print the error line with some context
+			if rendered_template:
+				lineNo=-1
+				fromLine=yamlError['line']-5;
+				toLine=yamlError['line']+5;
+				for line in rendered_template.decode().splitlines():
+					if line.startswith("# Source: "):
+						if line[10:]==yamlError['file']:
+							lineNo=0 # in yaml with error
+						else:
+							lineNo=-1 # in other yaml
+						continue
+
+					if lineNo<0: # in other yaml
+						continue
+
+					linestr=str(lineNo).rjust(4)+':'+line;
+					if lineNo==yamlError['line']:
+						print('\033[31m',linestr,'\033[0m',sep="")
+						print('\033[31m','      ','^'*len(line),' ',yamlError['error'],'\033[0m',sep="")
+					elif lineNo>=fromLine and lineNo<=toLine:
+						print(linestr)
+
+					lineNo=lineNo+1
+		else:
+			print("ERROR!")
+
+		quit(1)
+
+	if not args.template_only:
+		if 'repository' not in chart:
+			run_chart_post_deploy_script(commands,kubeconfig,chartname,chartpath,namespace)
+
+	if 'show-service-account' in chart:
+		for sa in chart['show-service-account']:
+			 show_serviceaccount_token(commands,kubeconfig,
+			 	sa['namespace'] if 'namespace' in sa else None,
+			 	sa['name'])
+
+
+# TODO: remove when everything runs on helm3
+def init_helm(kubeconfig):
+	command=[
+		'kubectl',
+		'--namespace','kube-system',
+		'create','serviceaccount','tiller'
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+
+	try:
+		result=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+		print(result)
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode().strip()
+		if 'Error from server (AlreadyExists)' in output:
+			print("Service account already exists")
+		else:
+			print("Failed to create service account: %s"%output)
+			quit(1)
+
+	command=[
+		'kubectl',
+		'--namespace','kube-system',
+		'create','clusterrolebinding','tiller',
+		'--clusterrole','cluster-admin',
+		'--serviceaccount=kube-system:tiller'
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+
+	try:
+		result=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+		print(result)
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode().strip()
+		if 'Error from server (AlreadyExists)' in output:
+			print("Cluster role binding already exists")
+		else:
+			print("Failed to create cluster role binding: %s"%output)
+			quit(1)
+
+	command=[
+		'helm',
+		'init',
+		'--upgrade',
+		'--service-account','tiller',
+		'--wait'
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+
+	try:
+		result=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+		print(result)
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode().strip()
+		print("Helm init failed: %s"%output)
+		quit(1)
+
+def show_serviceaccount_token(commands,kubeconfig,namespace,serviceaccount):
+	command=[
+		commands['kubectl'],
+		'get','serviceaccount',serviceaccount,
+		'-o','json'
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+	if namespace:
+		command+=['--namespace',namespace]
+
+	try:
+		result=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode().strip()
+		print("Failed to get service account: %s"%output)
+		quit(1)
+
+	result=json.loads(result)
+	if not 'secrets' in result:
+		print("The service account has no secrets set")
+		quit(1)
+
+	secret_name=result['secrets'][0]['name']
+
+	command=[
+		commands['kubectl'],
+		'get','secret',secret_name,
+		'-o','json'
+		]
+
+	if kubeconfig:
+		command+=['--kubeconfig',kubeconfig]
+	if namespace:
+		command+=['--namespace',namespace]
+
+	try:
+		result=subprocess.check_output(command,stderr=subprocess.STDOUT).decode().strip()
+	except subprocess.CalledProcessError as e:
+		output=e.output.decode().strip()
+		print("Failed to get service account secret: %s"%output)
+		quit(1)
+
+	result=json.loads(result)
+	data=result['data']
+	print("The secret token for %s is: %s"%(serviceaccount,base64.b64decode(data['token']).decode()))
+	if 'ca.crt' in data:
+		ca=base64.b64decode(data['ca.crt']).decode()
+		print("For direct access to the API servers, use the following CA:")
+		print(ca)
+
+def get_helm_version(helm_command):
+	try:
+		result=subprocess.check_output([helm_command,'version','--client'],stderr=subprocess.STDOUT).decode().strip()
+		if (re.compile('.*{SemVer:"v2\.\d+\.\d+",.*',re.DOTALL).match(result)):
+			return "helm2"
+		if (re.compile('.*{Version:"v3\.\d+\.\d+",.*',re.DOTALL).match(result)):
+			return "helm3"
+		print("Unable to parse helm version for %s: %s"%(helm_command,result))
+
+	except FileNotFoundError as e:
+		return None
+
+
+def deploy_main(args):
+	parser = argparse.ArgumentParser(description='Deploy helm charts to kubernetes. Run as %s secrets --help for secret management'
+        % sys.argv[0])
+	parser.add_argument('config', metavar='config.yaml', type=str, help='The deployent config file')
+	parser.add_argument('charts', metavar='chartname', type=str, nargs='*', help='Charts to deploy')
+	parser.add_argument('--debug', action='store_true', help='Enable helm debugging')
+	parser.add_argument('--dry-run', action='store_true', help="Don't deploy anything.")
+	parser.add_argument('--force', action='store_true', help="If deployment fails, remove and re-create items")
+	parser.add_argument('--kubeconfig', metavar='kubeconfig', type=str, default=None, help='Kube config to use.')
+	parser.add_argument('--skip-dependency-update',action='store_true', help="Don't update helm chart dependencies.")
+	parser.add_argument('--template-only',action='store_true', help="Just render and print the chart template, do nothing else.")
+	args = parser.parse_args(args)
+
+	# check that the config exists
+	if not os.path.exists(args.config):
+		print("File not found: %s" % args.config)
+		quit(1)
+
+	basedir = os.path.dirname(os.path.abspath(args.config))
+
+	# read the config as yaml
+	with open(args.config) as f:
+		config=yaml.load(f,Loader=yaml.SafeLoader)
+
+	commands = {
+		'kubectl': 'kubectl'
+	}
+
+	# use the helm version defined in the chart, default to "helm2"
+	if 'helm' in config:
+		commands['helm_version']=config['helm']
+	else:
+		commands['helm_version']='helm3'
+
+	helm_command_candidates=[commands['helm_version'],'helm']
+
+	# check common helm command names to find one with a matching version
+	for helm in helm_command_candidates:
+		if get_helm_version(helm)==commands['helm_version']:
+			commands['helm']=helm
+			break
+	
+	if not 'helm' in commands:
+		print("Unable to find a helm command that matches version %s. Tested commands : %s" % (commands['helm_version'],', '.join(helm_command_candidates)))
+		quit(1)
+
+	if 'kubectl' in config:
+		commands['kubectl']=config['kubectl']
+
+	# check that 'charts' key is defined in yaml
+	if not "charts" in config:
+		print("No charts found in %s",args.config)
+		quit(1)
+
+	kubeconfig=args.kubeconfig
+
+	# if 'context' key is defined in yaml, chack that we deploy against the corrcect context
+	if "context" in config:
+		kubeconfig=ensure_context(commands,args.kubeconfig, config['context']);
+
+	if not args.template_only:
+		if 'docker-secrets' in config:
+			deploy_docker_secrets(commands,kubeconfig,basedir,config['docker-secrets'],args)
+
+	deploy_charts(commands,kubeconfig, basedir,config['charts'],args)
+
+def secrets_main(args):
+	parser = argparse.ArgumentParser(description='Manage secrets using a master key stored in kubernetes.')
+	parser.add_argument('--kubeconfig', metavar='kubeconfig', type=str, default=None, help='Kube config to use.')
+	parser.add_argument('--context', metavar='context', type=str, required=True, help='Context to use.')
+	group = parser.add_mutually_exclusive_group(required=True)
+	group.add_argument('--encrypt', action='store_true',help='Encrypt a secret (will prompt for the plaintext)')
+	group.add_argument('--decrypt', action='store_true',help='Decrypt a secret (will prompt for the encrypted secret)')
+	group.add_argument('--init-masterkey', action='store_true', help='Initializes the master key to encrypt/decrypt secrets if not already initialized (will prompt for the master key)')
+	parser.add_argument('--file', metavar='file', type=str, required=False, help='(Encrypt only) Read from a file rather than a text input')
+
+	args = parser.parse_args(args)
+
+	commands = {
+		'helm': 'helm',
+		'kubectl': 'kubectl'
+	}
+
+	if args.context:
+		kubeconfig=ensure_context(commands,args.kubeconfig,args.context)
+
+	if args.encrypt:
+		if args.file:
+			with open(args.file, "r") as f:
+				plain = f.read()
+		else:
+			plain = input("Please enter text to encrypt (enter a number to get a random digits password of this length): ")
+		try:
+			number_of_chars=int(plain)
+			alphabet = string.ascii_letters + string.digits
+			# https://stackoverflow.com/a/47352487/1471588
+			plain = ''.join([alphabet[int(x * len(alphabet) / 256)] for x in struct.unpack('%dB' % (number_of_chars,), os.urandom(number_of_chars))])
+			print("Encrypting the following password: %s"%plain)
+		except ValueError:
+			pass
+
+		enc=encrypt_secret(commands,kubeconfig,plain)
+		enc="%s%s"%(ENCRYPTED_SECRET_PREFIX,enc)
+		if len(enc)>120:
+			import textwrap
+			enc='\n'.join(textwrap.wrap(enc,80))
+		print("Encrypted text: %s"%enc)
+	elif args.decrypt:
+		enc = input("Please enter text to decrypt: ")
+		plain=decrypt_secret(commands,kubeconfig,enc)
+		print("Decrypted text: %s"%plain)
+	elif args.init_masterkey:
+		master_key = input("Please enter an existing master key to use. Leave empty to create a new one: ")
+		init_secret_masterkey(commands,kubeconfig,master_key)
+	else:
+		print("Nothing to do.")
+		quit(1)
+
+def main():
+    if len(sys.argv)>1 and sys.argv[1]=='secrets':
+        secrets_main(sys.argv[2:])
+    else:
+        deploy_main(sys.argv[1:])
+
+if __name__ == "__main__":
+    main()

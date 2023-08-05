@@ -1,0 +1,7 @@
+README.md
+kuploy
+setup.py
+kuploy.egg-info/PKG-INFO
+kuploy.egg-info/SOURCES.txt
+kuploy.egg-info/dependency_links.txt
+kuploy.egg-info/top_level.txt
