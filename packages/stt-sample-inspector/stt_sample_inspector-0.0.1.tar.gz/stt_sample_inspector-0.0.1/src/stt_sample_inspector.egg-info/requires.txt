@@ -1,0 +1,10 @@
+numpy
+scipy
+flask
+pandas
+librosa
+matplotlib
+
+[testing]
+pytest
+pytest-cov
