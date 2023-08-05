@@ -1,0 +1,10 @@
+find_and_check_hosts/__init__.py,sha256=aQ6kawitsm7T7hI18Ht69EnOXt8RH6IhF2SzQd6TG_M,44
+find_and_check_hosts/checker.py,sha256=Jw3wNYNuGtKbhih4EMrNxYkBV62QwI06KHmAdDCvmKk,10519
+find_and_check_hosts/example-config.yaml,sha256=fwuX29VYjtOCRCnJ2IMfZdX3oDUkAelJqCOJLC_Ayzg,409
+find_and_check_hosts/iana_tld_list.txt,sha256=KAFTiNREstmK8ygLSt7Q-8bFUVYZz9rmlbV4IkVRcXE,10032
+find_and_check_hosts/rules.py,sha256=try-R7YjR-rN6VhbkEZY9Rv6QtSm3hN3FcLiJTj4qVo,2549
+find_and_check_hosts-0.1.0.data/scripts/find-and-check-hosts,sha256=33UbolybpIcnbS7OC8f1p9C-pIyVWMz1X38Nw1YPRx0,66
+find_and_check_hosts-0.1.0.dist-info/METADATA,sha256=qfaDbYfn-xFe7zeyqZvZ5s9QmM7kS4Ou0Qa13eSw30o,1365
+find_and_check_hosts-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+find_and_check_hosts-0.1.0.dist-info/top_level.txt,sha256=F4VbuiM3MeFYpb2QHqlv4mRbmqMt9rPUKxQIwY-y80I,21
+find_and_check_hosts-0.1.0.dist-info/RECORD,,
