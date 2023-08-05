@@ -1,0 +1,7 @@
+README.md
+setup.py
+urlopenlib/__init__.py
+urlopenlib.egg-info/PKG-INFO
+urlopenlib.egg-info/SOURCES.txt
+urlopenlib.egg-info/dependency_links.txt
+urlopenlib.egg-info/top_level.txt
