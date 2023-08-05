@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mtmt
+Version: 0.0.1
+Summary: mtmt: Marine Turbulence Microstructure Toolbox
+Home-page: https://github.com/MarineDataTools/mtmt
+Author: mtmt developers
+Author-email: peter.holtermann@io-warnemuende.de
+License: GPLv03
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+License-File: LICENSE
+
+mtmt: Toolbox to process microstructure data from turbulence profilers
+
