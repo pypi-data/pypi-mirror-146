@@ -1,0 +1,17 @@
+numpy
+pandas
+scikit-image
+squidpy
+
+[dev]
+precommit
+pytest
+pytest-qt
+
+[testing]
+pytest
+pytest-cov
+tox
+
+[tissuumaps]
+TissUUmaps[full]
