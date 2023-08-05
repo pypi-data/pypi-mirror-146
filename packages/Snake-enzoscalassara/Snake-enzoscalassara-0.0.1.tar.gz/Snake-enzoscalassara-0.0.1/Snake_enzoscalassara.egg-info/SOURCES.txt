@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+Snake/Food.py
+Snake/__init__.py
+Snake/main.py
+Snake/scoreboard.py
+Snake/snake.py
+Snake_enzoscalassara.egg-info/PKG-INFO
+Snake_enzoscalassara.egg-info/SOURCES.txt
+Snake_enzoscalassara.egg-info/dependency_links.txt
+Snake_enzoscalassara.egg-info/top_level.txt

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Snake-enzoscalassara
+Version: 0.0.1
+Summary: Snake I did
+Home-page: https://github.com/enzoscalassara/package-test
+Author: Enzo Scalassara
+Author-email: enzo_scalassara@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Snake
+
+### Description.
+The snake game package is separated in:
+- Main
+- Food
+- Scoreboard
+- Snake
+
+### Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Snake
+
+```bash
+pip install Snake
+ ```
+
+## Author
+Enzo Scalassara
+
