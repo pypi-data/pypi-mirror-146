@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: wordler-machine
+Version: 0.0.1
+Summary: Wordle solver, can you beat the machine?
+Home-page: https://github.com/e-stan/wordler/
+Author: Ethan Stancliffe
+Author-email: estancl1234@gmail.com
+License: MIT
+Download-URL: https://github.com/e-stan/wordler/archive/v0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: wordler
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7

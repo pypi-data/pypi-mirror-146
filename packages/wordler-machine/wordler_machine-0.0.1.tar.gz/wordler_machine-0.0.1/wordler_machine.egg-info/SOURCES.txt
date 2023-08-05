@@ -1,0 +1,8 @@
+setup.py
+wordler/__init__.py
+wordler/model.pkl
+wordler_machine.egg-info/PKG-INFO
+wordler_machine.egg-info/SOURCES.txt
+wordler_machine.egg-info/dependency_links.txt
+wordler_machine.egg-info/requires.txt
+wordler_machine.egg-info/top_level.txt
