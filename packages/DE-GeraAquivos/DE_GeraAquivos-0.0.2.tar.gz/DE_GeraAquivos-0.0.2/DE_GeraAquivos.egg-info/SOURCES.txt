@@ -1,0 +1,7 @@
+DE_Gera_Arquivos.py
+main.py
+setup.py
+DE_GeraAquivos.egg-info/PKG-INFO
+DE_GeraAquivos.egg-info/SOURCES.txt
+DE_GeraAquivos.egg-info/dependency_links.txt
+DE_GeraAquivos.egg-info/top_level.txt
