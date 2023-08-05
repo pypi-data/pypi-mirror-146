@@ -1,0 +1,7 @@
+README.md
+setup.py
+lamda_recorder.egg-info/PKG-INFO
+lamda_recorder.egg-info/SOURCES.txt
+lamda_recorder.egg-info/dependency_links.txt
+lamda_recorder.egg-info/requires.txt
+lamda_recorder.egg-info/top_level.txt
