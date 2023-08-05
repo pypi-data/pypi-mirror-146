@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: django-mqueue
+Version: 0.16.0
+Summary: Events queue for Django
+Home-page: https://github.com/synw/django-mqueue
+Download-URL: https://github.com/synw/django-mqueue/releases/tag/0.16.0
+Author: synw
+Author-email: synwe@yahoo.com
+License: UNKNOWN
+Keywords: django,logging,monitoring
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Django Mqueue
+
+Events queue application for Django. Features:
+
+- **Monitor models**: models can be registered to autogenerate events on create/update/delete actions
+- **Export events**: save events to Redis or send them over websockets
+
+Example:
+
+   ```python
+   MEvent.objects.create(name="Test event", event_class="test", data={"k":"v"})
+   ```
+
+Events can be linked to a model instance and a user instance.
+
+Check the [documentation](http://django-mqueue.readthedocs.org/en/latest/)
+
+![Event queue screenshot](https://raw.github.com/synw/django-mqueue/master/docs/_static/events_list.png)
+
+## Real time events demo
+
+A websockets demo: [django-mqueue-livefeed](https://github.com/synw/django-mqueue-livefeed) is available
+
+
