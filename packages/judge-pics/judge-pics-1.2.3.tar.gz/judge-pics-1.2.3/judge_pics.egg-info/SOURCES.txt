@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+judge_pics/__init__.py
+judge_pics/convert_images.py
+judge_pics/search.py
+judge_pics/update.py
+judge_pics/upload.py
+judge_pics.egg-info/PKG-INFO
+judge_pics.egg-info/SOURCES.txt
+judge_pics.egg-info/dependency_links.txt
+judge_pics.egg-info/requires.txt
+judge_pics.egg-info/top_level.txt
+judge_pics/scrapers/__init__.py
+judge_pics/scrapers/cand_judges.py
+judge_pics/scrapers/dc_circuit_judges.py
