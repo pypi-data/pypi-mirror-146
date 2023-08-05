@@ -1,0 +1,12 @@
+aliyun_ddns/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyun_ddns/config.py,sha256=gCxHhCOWY7_lJeZmMuxws8m_Rp0ZWN8tGSGjHt3MfXE,3788
+aliyun_ddns/ddns.py,sha256=1jBRrW_1xuDTWFnyrcC4oqOGofZFj09M6O0RoMQzvcA,3158
+aliyun_ddns/record.py,sha256=kXwVzf37TiL_zjmxB-8tsRjHfM4b2hgvAZFDZNRLPQU,6216
+aliyun_ddns/utils.py,sha256=wtOAqkeSvYa4qCjJnOMbd0_TORVV5fqDdKkDqo2kIW8,2870
+aliyun_ddns/yunresolver.py,sha256=jSJsTmTQoHFZSGL1BHjcatrY9AvUF2y3T7toL55Emrw,8895
+aliyun_ddns_client-0.4.dist-info/METADATA,sha256=7dgerrOHSBmY7k1TTrlcXOZIIjGrMKLXhnOVTBQ5Ids,2079
+aliyun_ddns_client-0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aliyun_ddns_client-0.4.dist-info/entry_points.txt,sha256=d-eKmHDBwQSDKv-F-zu2w5ThqT5J-RlR3XOgqIEzNIo,55
+aliyun_ddns_client-0.4.dist-info/top_level.txt,sha256=eq2fmmje-SIyiym-ocz9JK-8Z5PhTgx7B92v1VoUfeY,12
+aliyun_ddns_client-0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aliyun_ddns_client-0.4.dist-info/RECORD,,
