@@ -1,0 +1,10 @@
+setup.py
+client/__init__.py
+client/client.py
+server/__init__.py
+server/server.py
+tcp_client_server_raidix.egg-info/PKG-INFO
+tcp_client_server_raidix.egg-info/SOURCES.txt
+tcp_client_server_raidix.egg-info/dependency_links.txt
+tcp_client_server_raidix.egg-info/requires.txt
+tcp_client_server_raidix.egg-info/top_level.txt
