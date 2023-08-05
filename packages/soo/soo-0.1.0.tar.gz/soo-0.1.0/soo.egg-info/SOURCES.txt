@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+soo/__init__.py
+soo/__version__.py
+soo/core.py
+soo.egg-info/PKG-INFO
+soo.egg-info/SOURCES.txt
+soo.egg-info/dependency_links.txt
+soo.egg-info/top_level.txt
