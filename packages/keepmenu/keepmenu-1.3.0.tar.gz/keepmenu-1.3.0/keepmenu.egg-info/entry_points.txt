@@ -1,0 +1,2 @@
+[console_scripts]
+keepmenu = keepmenu.__main__:main
