@@ -1,0 +1,2 @@
+include *py
+include seg_mask_modifs/*json
