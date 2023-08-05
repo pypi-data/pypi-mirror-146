@@ -1,0 +1,5 @@
+fast_ctc_decode-0.3.2.dist-info/METADATA,sha256=d_RFsxNpBKSxM8rzZlGQ8JNrX0ExujsKEbgU4WfhY-I,4587
+fast_ctc_decode-0.3.2.dist-info/WHEEL,sha256=gLlepTJpLUswwZFRzGgEMyLJS9W3eFCZwcXROH2ySuM,105
+fast_ctc_decode/__init__.py,sha256=9sew2njcc9gXJ4QdtqWHzKxAn0CFEVSNVhiPqy0xvk0,66
+fast_ctc_decode/fast_ctc_decode.cpython-39-darwin.so,sha256=jqM4HSxcPvyT2sfvYBtXdTr_ctO86PUa4mn6elb1GNw,577992
+fast_ctc_decode-0.3.2.dist-info/RECORD,,
