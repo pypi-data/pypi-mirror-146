@@ -1,0 +1,15 @@
+solys2/__init__.py,sha256=YBd1Vopd-KaPH4sP0rRmNejtCnBwcda3a5rScIx8oUk,115
+solys2/common.py,sha256=jW4gMfBnYGXTiLj0znhMTdoTE1OGB-mcJZgA6SntuAA,3519
+solys2/connection.py,sha256=ZWTkPLUjIxRvvFgO9sMSmVbkLhpKaPpQELWq9Ay-nxc,3769
+solys2/response.py,sha256=KOJR9MyNv5v25QtCtVhsc-F74oGuyeEIvYw7n5Jmrsc,8663
+solys2/solys2.py,sha256=kJ6AR6zM_byqsP_0gZM0TBGm7Sgy6_5JpdYeSSea_Wc,30407
+solys2/automation/__init__.py,sha256=aMKMWT661PmONQZVn9nK4EB22Ifigi1MXgPIfazxeuI,102
+solys2/automation/autohelper.py,sha256=YhdgOiQDn9eJuZ8LmRhkB475PRgSthzjhhP1NCtlqIY,9198
+solys2/automation/autotrack.py,sha256=WxouI4gUKyOp5oeMqYxzYyAFu86gPQvLXTqkyYNZPl8,11457
+solys2/automation/calibration.py,sha256=0FyLRPnh0-AvKvdbFKFt_3V7uN5wBMNncxGSGvVqPdA,37069
+solys2/automation/positioncalc.py,sha256=YDGy3JeNEu-Ito6sBeykuDGajV2hpwHOKcHqkbddfuE,11011
+solys2-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+solys2-0.2.0.dist-info/METADATA,sha256=ybCcaPe6vp4ywgJVU2adaYDrHbMLMONWhqveSgzeHss,10409
+solys2-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+solys2-0.2.0.dist-info/top_level.txt,sha256=YQF2YZtBVjFf5ck2WKoGIYJ797aQWT7JR_StOsXMd24,7
+solys2-0.2.0.dist-info/RECORD,,
