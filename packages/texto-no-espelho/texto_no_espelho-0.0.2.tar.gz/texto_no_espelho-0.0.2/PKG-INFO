@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: texto_no_espelho
+Version: 0.0.2
+Summary: Texto no espelho
+Home-page: https://github.com/israelruiz2005/texto_no_espelho_package
+Author: Israel Ruiz
+Author-email: israelruiz2005@gmail.com
+License: UNKNOWN
+Description: # texto_no_espelho
+        
+        Description. 
+        O pacote texto_no_espleho Ã© usando para:
+        	- Receber um texto qualquer
+        	- imprimir o retorno original e espelhado
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install texto_no_espelho
+        
+        ```bash
+        pip install texto_no_espelho
+        ```
+        
+        ## Author
+        Israel Ruiz
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
