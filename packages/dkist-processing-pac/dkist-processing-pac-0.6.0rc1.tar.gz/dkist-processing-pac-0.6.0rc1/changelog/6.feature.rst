@@ -1,0 +1,1 @@
+Include `lmfit` `MinimizerResult` objects in return from `FittingFramework.run_core`
