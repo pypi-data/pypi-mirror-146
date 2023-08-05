@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+xmo/__init__.py
+xmo/__version__.py
+xmo/core.py
+xmo.egg-info/PKG-INFO
+xmo.egg-info/SOURCES.txt
+xmo.egg-info/dependency_links.txt
+xmo.egg-info/top_level.txt
