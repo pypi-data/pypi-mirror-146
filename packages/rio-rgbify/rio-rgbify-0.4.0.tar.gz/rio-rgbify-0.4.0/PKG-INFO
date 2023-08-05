@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rio-rgbify
+Version: 0.4.0
+Summary: Encode arbitrary bit depth rasters in psuedo base-256 as RGB
+Home-page: https://github.com/mapbox/rio-rgbify
+Author: Damon Burgett
+Author-email: damon@mapbox.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: dev
