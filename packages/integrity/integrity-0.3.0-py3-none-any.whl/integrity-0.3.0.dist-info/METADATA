@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: integrity
+Version: 0.3.0
+Summary: Development facilities for the bolt environment
+Home-page: https://github.com/thewii/integrity
+License: MIT
+Keywords: beet,minecraft,bolt,mecha
+Author: TheWii
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: beet (>=0.56.0,<0.57.0)
+Requires-Dist: mecha (>=0.43.3,<0.44.0)
+Project-URL: Repository, https://github.com/thewii/integrity
+Description-Content-Type: text/markdown
+
+# Integrity
+
+> Development facilities for the bolt environment
+
