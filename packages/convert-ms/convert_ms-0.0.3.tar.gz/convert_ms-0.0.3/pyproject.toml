@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "convert_ms"
+version = "0.0.3"
+description = "Convert a time units to seconds"
+authors = ["Forzy <nikita11tzby@gmail.com>"]
+license = "Apache License 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
