@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+zitncov/__init__.py
+zitncov/__main__.py
+zitncov/main.py
+zitncov/tool.py
+zitncov/user.py
+zitncov.egg-info/PKG-INFO
+zitncov.egg-info/SOURCES.txt
+zitncov.egg-info/dependency_links.txt
+zitncov.egg-info/entry_points.txt
+zitncov.egg-info/requires.txt
+zitncov.egg-info/top_level.txt
