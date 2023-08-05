@@ -1,0 +1,11 @@
+pymegle/__init__.py,sha256=qV4yjiKoiJ475TYD8oWWxTzvnaM19hMNQ4ILtgtsyEU,97
+pymegle/chat.py,sha256=7kqC7135TdrOw3Q_OhuPLLItzjZzSYgWImgRCUxQyJg,14095
+pymegle/core.py,sha256=f_oFyxBhrFo1jUyUmF9S8Sc8t3uHixWKlboI_Ee2mdQ,1512
+pymegle/exceptions.py,sha256=AH_3nMPA7xiYbAnWYRU0sbYpbufdamqpr8iORv-1xaU,192
+pymegle/log.py,sha256=MxVUSOJijUMUHo19UQAoM0IeTqKsDEAj45VxghA9pjc,4449
+pymegle/userclient.py,sha256=AV42RrAmRUtFbYoYffbf9z9c3LRnI5olLScZJm63lsM,5016
+pymegle-0.0.1.dist-info/LICENSE,sha256=RDqpD5MbwkOkgKTllF6jh9S-vcFAtyVnCPzH_afLuYw,1090
+pymegle-0.0.1.dist-info/METADATA,sha256=w5uZhT-RqNu87rivrVezoGdhNNX3Bm4pSUoWVKM_-_0,2704
+pymegle-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pymegle-0.0.1.dist-info/top_level.txt,sha256=b5ECwlzPuvXLhMTDaPtbO_agChW2uGtnq9APHPLT5Ic,8
+pymegle-0.0.1.dist-info/RECORD,,
