@@ -1,0 +1,6 @@
+keras
+tensorflow
+scikit-image
+sklearn
+PyQt5
+opencv-python
