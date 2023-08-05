@@ -1,0 +1,14 @@
+RSS-parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+RSS-parser/__main__.py,sha256=KDgbsHhibUC8kPDXZxFKrp3PVCEiT8CP6QBfXR9kDzQ,68
+RSS-parser/arg_parser.py,sha256=IfLQiMibmLzuj4Ywo8ql3NdBx4zo3RBk4OXzOyXENZQ,1142
+RSS-parser/displayer.py,sha256=pkxGGzHz3sQKsqSXBy2jUGvik-pXG-K0lLOSOr7wl6w,986
+RSS-parser/log.py,sha256=EF-HSRgxUe7GryB74-PQtETYTvVjEWvRKXcykJ8O2Ss,724
+RSS-parser/rss_reader.py,sha256=6t94XHv6Vy-y3oVFxBABbufG4phlbXXXHvnRv71Qy1c,3012
+RSS-parser/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+RSS-parser/tests/test_argparse.py,sha256=PgjdTEImHOoAqMv6AgR0tmNux93o6dbiDZwi_Zx4h-g,761
+RSS-parser/tests/test_log.py,sha256=FR-UvYAmyMWefyKqq1mRrvcnaWORnBJB-ZSldu8Akl4,387
+RSS-parser/tests/test_rss_reader.py,sha256=uNH9x3i6Fl7O3-8Lgla7TyyzA0wLRE-t4GjlIXLnW_0,1986
+daily_rss_news-1.0.2.dist-info/METADATA,sha256=d5WcVkP5CmETlHD_gw4lBkBdvYxIcj6IBvmAvXEoOQI,4485
+daily_rss_news-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+daily_rss_news-1.0.2.dist-info/top_level.txt,sha256=52nmhfJJW7T-NqknG9Tv4R70NP9MTqw4r7Deblmdq5c,11
+daily_rss_news-1.0.2.dist-info/RECORD,,
