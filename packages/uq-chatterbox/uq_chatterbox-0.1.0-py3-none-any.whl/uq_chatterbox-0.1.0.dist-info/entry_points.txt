@@ -1,0 +1,3 @@
+[console_scripts]
+chatterbox=chatterbox.__main__:cli
+
