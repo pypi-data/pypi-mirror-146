@@ -1,0 +1,7 @@
+Flask
+Jinja2
+WTForms
+Werkzeug>=1.0.0
+aedir>=1.4.6
+mailutil>=0.4.0
+setuptools
