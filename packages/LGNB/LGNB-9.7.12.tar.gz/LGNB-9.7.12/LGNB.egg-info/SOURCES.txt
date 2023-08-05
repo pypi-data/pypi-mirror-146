@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+BBData/__init__.py
+BBData/config.py
+BBData/lib.py
+BBData/reader_utils.py
+BBData/saver_utils.py
+BBData/tools.py
+BBData/utils.py
+LGNB.egg-info/PKG-INFO
+LGNB.egg-info/SOURCES.txt
+LGNB.egg-info/dependency_links.txt
+LGNB.egg-info/top_level.txt
