@@ -1,0 +1,1 @@
+Telethon@ https://github.com/Telethon-Fork/Telethon/archive/main.zip

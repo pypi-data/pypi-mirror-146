@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+telethon_patch.egg-info/PKG-INFO
+telethon_patch.egg-info/SOURCES.txt
+telethon_patch.egg-info/dependency_links.txt
+telethon_patch.egg-info/requires.txt
+telethon_patch.egg-info/top_level.txt
+telethonpatch/__init__.py
+telethonpatch/custom.py
+telethonpatch/events.py
+telethonpatch/methods.py
