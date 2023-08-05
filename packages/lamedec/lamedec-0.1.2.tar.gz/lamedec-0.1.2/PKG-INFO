@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: lamedec
+Version: 0.1.2
+Summary: 
+Home-page: https://github.com/sengokyu/python-lamedec
+License: MIT
+Author: sengokyu
+Author-email: sengokyu+gh@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: lame-ctypes (>=0.1.3,<0.2.0)
+Project-URL: Repository, https://github.com/sengokyu/python-lamedec.git
+Description-Content-Type: text/markdown
+
+# LAME MP3 decoding wrapper
+
+## Usage
+
+```python
+lamedec.decode(src, dst)
+```
+
+### Parameters
+
+_src_ Instance of io.RawIOBase (eg. FileIO, ByteIO ...).
+
+_dst_ Same parameter for wave module.
+
+## Sample
+
+```python
+import io
+import lamedec
+
+
+src = io.FileIO("src.mp3", "rb")
+dst = "dst.wav"
+
+lamedec.decode(src, dst)
+```
+
+See [samples](https://github.com/sengokyu/python-lamedec/blob/main/samples).
+
