@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fatal-ctrl
+Version: 0.0.1
+Summary: An auto control frame for mouse & keyboard simulation.
+Home-page: https://gitee.com/yy_kuhaha/fatal_control
+Author: yangyang
+Author-email: bityyt@126.com
+License: MIT Licence
+Keywords: pip,control,mouse,autotest,simulation,yangyang
+Platform: any
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Fatal Control Readme
+
++ powered by - yangyang (aka 缇婄緤)
+
