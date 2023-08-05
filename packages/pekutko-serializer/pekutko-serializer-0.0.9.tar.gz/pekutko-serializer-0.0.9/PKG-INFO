@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pekutko-serializer
+Version: 0.0.9
+Summary: Dmitry Pekutko, gruop 053504, format cenverter (Serializer)
+Home-page: https://github.com/DimaPekutko/ISP-2022-053504/
+Author: Dmitry Pekutko
+Author-email: dkefir03@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.8.0
