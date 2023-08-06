@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sync_to_async
+Version: 0.1
+Summary: Simple python decorator that will convert your sync function into async function
+Home-page: https://github.com/menooa25/sync_to_async/
+Author: Menoua Esk
+Author-email: menooa2013@gmail.com
+License: MIT
+Download-URL: https://github.com/menooa25/sync_to_async/archive/refs/heads/main.zip
+Description: UNKNOWN
+Keywords: SYNC TO ASYNC,CONVERT SYNC TO ASYNC,CONVERT SYNC,CONVERT ASYNC,SYNC,ASYNC
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
