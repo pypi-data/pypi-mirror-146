@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: circuitml
+Version: 1.0
+Summary: Generate C code for microcontrollers from Python's machine learning models
+Home-page: https://github.com/KaspiElectronics/CircuitML/
+Author: KaspiElectronics
+Author-email: kaspielectronics@pm.me
+License: MIT
+Keywords: ML,microcontrollers,sklearn,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: jinja2
+
+UNKNOWN
+
