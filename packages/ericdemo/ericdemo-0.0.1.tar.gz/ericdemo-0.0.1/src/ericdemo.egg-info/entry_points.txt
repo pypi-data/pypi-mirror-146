@@ -1,0 +1,3 @@
+[console_scripts]
+ericdemo = ericdemo.cli:main
+
