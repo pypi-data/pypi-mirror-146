@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/feature_extractor/FeatureExtractor.py
+src/feature_extractor/__init__.py
+src/image_classifier/ImageClassifier.py
+src/image_classifier/__init__.py
+src/image_feature_extractor.egg-info/PKG-INFO
+src/image_feature_extractor.egg-info/SOURCES.txt
+src/image_feature_extractor.egg-info/dependency_links.txt
+src/image_feature_extractor.egg-info/top_level.txt
