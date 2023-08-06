@@ -1,0 +1,7 @@
+PyYAML>=3.10.0
+jsonschema>=3.2.0
+netaddr>=0.7.13
+oslo.concurrency>=3.8.0
+oslo.utils>=3.20.0
+pbr>=2.0.0
+pyudev>=0.16.1
