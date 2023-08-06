@@ -1,0 +1,2 @@
+[console_scripts]
+tianqiai = tianqiai._tianqiai_scripts:main
