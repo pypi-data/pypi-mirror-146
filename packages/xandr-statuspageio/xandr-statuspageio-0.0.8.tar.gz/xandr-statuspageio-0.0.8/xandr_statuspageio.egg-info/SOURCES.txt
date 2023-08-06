@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+statuspageio/__init__.py
+statuspageio/client.py
+statuspageio/configuration.py
+statuspageio/errors.py
+statuspageio/http_client.py
+statuspageio/services.py
+statuspageio/version.py
+xandr_statuspageio.egg-info/PKG-INFO
+xandr_statuspageio.egg-info/SOURCES.txt
+xandr_statuspageio.egg-info/dependency_links.txt
+xandr_statuspageio.egg-info/requires.txt
+xandr_statuspageio.egg-info/top_level.txt
