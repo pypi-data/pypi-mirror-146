@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: code-engine-client
+Version: 1.0.1
+Summary: a code engine of jimugaoshou bot which can control the motors of blocks
+Home-page: https://github.com/moc-master/code_engine_client
+Author: moc-master
+Author-email: mocmaster123@163.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client
+Requires-Dist: grpcio
+
+# code_engine_client
+a code engine of jimugaoshou's bot which can control the motors of blocks
+
+
