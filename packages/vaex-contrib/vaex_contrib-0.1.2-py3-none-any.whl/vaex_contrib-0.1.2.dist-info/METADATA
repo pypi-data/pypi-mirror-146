@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vaex-contrib
+Version: 0.1.2
+Summary: Community contributed modules to vaex
+Home-page: https://www.github.com/vaexio/vaex
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: vaex-core (<5,>=4.0.0)
+Provides-Extra: gcp
+Requires-Dist: google-cloud-bigquery ; extra == 'gcp'
+Requires-Dist: google-cloud-bigquery-storage ; extra == 'gcp'
+
+UNKNOWN
+
+
