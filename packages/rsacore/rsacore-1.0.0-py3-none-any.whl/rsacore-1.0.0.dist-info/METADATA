@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: rsacore
+Version: 1.0.0
+Summary: A simple RSA library for python with built-in AES, which allows you to exchange encrypted data with an unlimited size.  Examples at https://github.com/DarkestStream69/RSACore
+Author: TheMade4427
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
