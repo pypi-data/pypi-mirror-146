@@ -1,0 +1,10 @@
+django_error_reporting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_error_reporting/apps.py,sha256=cuSScn-eX1bEO21_mywhOj1KPszYOU7mBjs5aWAQadM,1160
+django_error_reporting/middleware.py,sha256=cQI6O2xI-faNGlCpCFV5Sj7AfmOIGu8SmsffyvBgaqU,3518
+django_error_reporting/settings.py,sha256=HKBdAO7dlY4otE9S3gzoDaB_Kkzwq7WoOHhbFeC0ggU,336
+django_error_reporting/utils.py,sha256=qRy3SIcf5x7TL38zrG7CnQSb7b881c4cI6VkxOODAbA,1928
+django_error_reporting-0.5.dist-info/LICENSE,sha256=BB1FeqD1Ivo2sRF48Vc84slrTtI4w5xJSGvMTd9VQ5U,1556
+django_error_reporting-0.5.dist-info/METADATA,sha256=Vj3R5wiu9nILlE_FCoHnVz2iWcwBVanOWjO_02BUin0,2429
+django_error_reporting-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_error_reporting-0.5.dist-info/top_level.txt,sha256=i7QeOKg6Imc3X99Z-L7D7XIt7DzRzTUk0vaBq97W7wk,23
+django_error_reporting-0.5.dist-info/RECORD,,
