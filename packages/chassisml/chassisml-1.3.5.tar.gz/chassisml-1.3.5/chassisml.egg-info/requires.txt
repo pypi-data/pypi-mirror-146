@@ -1,0 +1,8 @@
+requests
+mlflow
+numpy
+pyyaml
+validators
+grpc-requests
+grpcio>=1.44.0
+docker
