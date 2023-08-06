@@ -1,0 +1,2 @@
+pytest
+pip_services3_commons<4.0,>=3.3.14
