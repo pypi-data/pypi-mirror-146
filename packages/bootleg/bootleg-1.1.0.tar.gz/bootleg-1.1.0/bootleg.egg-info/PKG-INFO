@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bootleg
+Version: 1.1.0
+Summary: Bootleg NED System
+Home-page: https://github.com/HazyResearch/bootleg
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: embs-gpu
+License-File: LICENSE
+
+UNKNOWN
+
