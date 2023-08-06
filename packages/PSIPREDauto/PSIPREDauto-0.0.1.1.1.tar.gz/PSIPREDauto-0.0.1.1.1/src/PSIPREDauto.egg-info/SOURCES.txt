@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PSIPREDauto/__init__.py
+src/PSIPREDauto/commandline.py
+src/PSIPREDauto/functions.py
+src/PSIPREDauto.egg-info/PKG-INFO
+src/PSIPREDauto.egg-info/SOURCES.txt
+src/PSIPREDauto.egg-info/dependency_links.txt
+src/PSIPREDauto.egg-info/requires.txt
+src/PSIPREDauto.egg-info/top_level.txt
