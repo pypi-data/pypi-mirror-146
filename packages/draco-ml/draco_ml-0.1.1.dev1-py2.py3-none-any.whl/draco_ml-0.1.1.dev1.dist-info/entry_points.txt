@@ -1,0 +1,4 @@
+[mlblocks]
+pipelines = draco:MLBLOCKS_PIPELINES
+primitives = draco:MLBLOCKS_PRIMITIVES
+
