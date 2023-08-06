@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tractosearch/__init__.py
+tractosearch/io.py
+tractosearch/resampling.py
+tractosearch/search.py
+tractosearch/util.py
+tractosearch.egg-info/PKG-INFO
+tractosearch.egg-info/SOURCES.txt
+tractosearch.egg-info/dependency_links.txt
+tractosearch.egg-info/not-zip-safe
+tractosearch.egg-info/requires.txt
+tractosearch.egg-info/top_level.txt

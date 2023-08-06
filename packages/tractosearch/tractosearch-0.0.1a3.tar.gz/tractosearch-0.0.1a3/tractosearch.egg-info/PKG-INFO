@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tractosearch
+Version: 0.0.1a3
+Summary: Fast Tractography Streamline Search
+Home-page: https://github.com/StongeEtienne/tractosearch
+Author: Etienne St-Onge
+Author-email: Firstname.Lastname@usherbrooke.ca
+License: BSD 3-Clause
+Platform: UNKNOWN
+Provides-Extra: numba
+Provides-Extra: all
+License-File: LICENSE
+
+UNKNOWN
+
