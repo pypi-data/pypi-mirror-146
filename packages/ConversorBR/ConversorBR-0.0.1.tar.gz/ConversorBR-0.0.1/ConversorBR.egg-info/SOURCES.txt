@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+ConversorBR.egg-info/PKG-INFO
+ConversorBR.egg-info/SOURCES.txt
+ConversorBR.egg-info/dependency_links.txt
+ConversorBR.egg-info/top_level.txt
+conversorBR/__init__.py
+conversorBR/conversor de alturas e distancias.py
+conversorBR/conversor de peso.py
+conversorBR/conversor de temperatura.py
+conversorBR/conversor de volume.py

@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: ConversorBR
+Version: 0.0.1
+Summary: Converter mediadas usadas nos estados Unidos para medidas usadas no Brasil 
+Home-page: https://github.com/RNNSNTS/ConversorBR
+Author: RNNSMP
+Author-email: renansampaio@id.uff.br
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	Converter unidades de medidas americanas para unidades de medidas usadas no Brasil.
+	FunÃ§Ãµes:
+	altura 
+	height 
+	quilometros 
+	miles 
+	metros 
+	yards -
+	pounds
+	quilos
+	farenheit
+	celsius
+	gallons 
+	litros
+	quart 
+	litros2
+	-
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install ConversorBR
+```
+
+## Usage
+
+```python
+from package_name.module1_name import file1_name
+file1_name.my_function()
+```
+
+## Author
+RNNSMP
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
