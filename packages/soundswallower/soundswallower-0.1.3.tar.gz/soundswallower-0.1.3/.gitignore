@@ -1,0 +1,9 @@
+build/
+*~
+.vscode/settings.json
+*.egg-info
+_skbuild
+dist
+MANIFEST
+__pycache__
+jsbuild
