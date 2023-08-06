@@ -1,0 +1,247 @@
+# ndraw
+
+---
+
+<div >
+    <img src='https://shields.io/badge/version-1.0.10-green.svg'>
+    <img src='https://shields.io/badge/dependencies-tensorflow/metricflow.js-blue.svg'>
+    <img src='https://shields.io/badge/author-Chang Zhang-dbab09.svg'>
+    <h4>ndraw是一个简单的神经网络可视化以及自定义网络图工具,目前支持Tensorflow2.0+模型可视化</h4>
+</div>
+
+
+## 安装
+
+### 1、pip安装
+```
+pip install ndraw -U
+```
+
+### 2、源码安装
+
+下载源码，打开命令行
+
+```
+python setup.py bdist_egg
+
+python setup.py install
+```
+
+
+## TF模型可视化
+
+> 可以参考testTFmodel.py
+
+### 1、pb模型可视化
+```
+--pbpath
+  |--variables
+  |--saved_model.pb
+
+```
+
+```python
+import ndraw
+ndraw.server("pbpath")
+# 打开浏览器访问9999端口即可
+```
+
+### 2、h5模型可视化
+
+```python
+import ndraw
+ndraw.server("model.h5")
+# 打开浏览器访问9999端口即可
+```
+
+### 3、模型对象可视化
+
+```python
+import ndraw
+import tensorflow as tf
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(512, activation='relu'),
+    tf.keras.layers.Dense(256, activation='relu'),
+    tf.keras.layers.Dense(2, activation='softmax')
+])
+model.build(input_shape=(None, 100))
+ndraw.server(model)
+# 打开浏览器访问9999端口即可
+```
+
+### 4、生成html文件
+
+```python
+import ndraw
+html = ndraw.render("pb/h5/mode均可",out_file="model.html")
+# 生成一个model.html文件
+```
+
+### 5、可视化主题
+
+1、DEFAULT
+
+```python
+import ndraw
+ndraw.server("model.h5",theme=ndraw.DEFAULT)
+```
+![输入图片说明](image/default.png)
+
+2、BLACK_WHITE
+
+```python
+import ndraw
+ndraw.server("model.h5",theme=ndraw.BLACK_WHITE)
+```
+![black_white](image/black_white.png)
+
+3、LIGHTBLACK_WHITE
+
+```python
+import ndraw
+ndraw.server("model.h5",theme=ndraw.LIGHTBLACK_WHITE)
+```
+![lightblack_white](image/lightblack_white.png)
+
+4、GREEN_WHITE
+
+```python
+import ndraw
+ndraw.server("model.h5",theme=ndraw.GREEN_WHITE)
+```
+![green_white](image/green_white.png)
+
+6、PURPLE_WHITE
+
+```python
+import ndraw
+ndraw.server("model.h5",theme=ndraw.PURPLE_WHITE)
+```
+![输入图片说明](image/purple.png)
+
+### 6、其他参数
+
+```
+:param host: 服务地址 可自定义
+:param port: 服务端口可自定义
+:param flow: 布局方式：vertical and horizontal
+```
+
+## 自定义画图
+
+### 1、简单直线流程
+```python
+# -*- encoding: utf-8 -*-
+import ndraw
+graph = ndraw.AutoGraph()
+graphs = graph.create("开始").to("过程1").to("过程2").to("过程3").to("过程4").to("结束")
+ndraw.server(graphs,theme=ndraw.BLUE_WHITE)
+```
+
+![输入图片说明](image/auto-sim.png)
+
+### 2、添加元素信息
+
+> Node
+
+```python
+# -*- encoding: utf-8 -*-
+import ndraw
+from ndraw import Node
+
+graph = ndraw.AutoGraph()
+graphs = graph.create("开始")\
+    .to(Node("过程1",["1.xxx","2.xxx"]))\
+    .to(Node("过程2",["1.xxx","2.xxx"]))\
+    .to("结束")
+ndraw.server(graphs,theme=ndraw.DEFAULT,flow=ndraw.HORIZONTAL)
+```
+
+![输入图片说明](auto-node.png)
+
+### 3、定义单节点样式
+
+> theme
+
+```python
+# -*- encoding: utf-8 -*-
+import ndraw
+from ndraw import Node
+
+graph = ndraw.AutoGraph()
+graphs = graph.create(Node("开始",theme=ndraw.GREEN_WHITE))\
+    .to(Node("过程1",data=["1.xxx","2.xxx"],theme=ndraw.DEEPGRAY_WHITE))\
+    .to(Node("过程2",data=["1.xxx","2.xxx"],theme=ndraw.BLUE_WHITE))\
+    .to(Node("结束",theme=ndraw.GREEN_WHITE))
+ndraw.server(graphs)
+```
+
+![输入图片说明](image/auto-theme.png)
+
+### 4、分流
+
+> tos()
+
+```python
+# -*- encoding: utf-8 -*-
+import ndraw
+from ndraw import Node
+
+graph = ndraw.AutoGraph()
+graphs = graph.create(Node("开始", theme=ndraw.GREEN_WHITE)) \
+    .tos([
+             Node("分流1", data=["1.xxx", "2.xxx"], theme=ndraw.DEEPGRAY_WHITE),
+             Node("分流2", data=["1.xxx", "2.xxx"], theme=ndraw.DEEPGRAY_WHITE),
+        ]) \
+    .to(Node("汇总", theme=ndraw.GREEN_WHITE))\
+            .tos([
+                Node("分流1", data=["1.xxx", "2.xxx"], theme=ndraw.DEEPGRAY_WHITE),
+                Node("分流2", data=["1.xxx", "2.xxx"], theme=ndraw.DEEPGRAY_WHITE),
+            ]) \
+    .to(Node("结束", theme=ndraw.GREEN_WHITE))
+ndraw.server(graphs)
+```
+
+![输入图片说明](auto-stream.png)
+
+### 5、汇总
+
+> creates()
+
+```python
+# -*- encoding: utf-8 -*-
+import ndraw
+from ndraw import Node
+
+graph = ndraw.AutoGraph()
+graphs = graph.creates([
+             Node("分流1", data=["1.xxx", "2.xxx"], theme=ndraw.DEEPGRAY_WHITE),
+             Node("分流2", data=["1.xxx", "2.xxx"], theme=ndraw.DEEPGRAY_WHITE),
+        ]) \
+             .to(Node("结束", theme=ndraw.GREEN_WHITE))
+ndraw.server(graphs)
+```
+
+![输入图片说明](image/auto-sum.png)
+
+### 6、自定义图形位置
+
+```python
+# -*- encoding: utf-8 -*-
+import ndraw
+g = ndraw.StableGraph()
+
+node1 = g.add_node(ndraw.Node(name='节点1',x=10,y=10))
+node2 = g.add_node(ndraw.Node(name='节点2',data =['111111111','22222222'],x=200,y=10))
+node3 = g.add_node(ndraw.Node(name='节点3',data =['111111111','22222222'],x=10,y=200))
+g.add_link((node1,node2))
+g.add_link((node1,node3))
+ndraw.server(g,theme=ndraw.DEFAULT)
+```
+
+
+## 参考图
+
+![输入图片说明](image.png)
+
+![输入图片说明](1image.png)
