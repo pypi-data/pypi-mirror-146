@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+selenium_utilities/__init__.py
+selenium_utilities/selenium_utilities.py
+selenium_utilities.egg-info/PKG-INFO
+selenium_utilities.egg-info/SOURCES.txt
+selenium_utilities.egg-info/dependency_links.txt
+selenium_utilities.egg-info/requires.txt
+selenium_utilities.egg-info/top_level.txt
