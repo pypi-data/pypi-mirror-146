@@ -1,0 +1,11 @@
+ptwebdiscover/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptwebdiscover/ptwebdiscover.py,sha256=IhgMvfMXSH9PN_LK4Y94o0ZFnLlUm4C0G-IC1MWNcqs,54125
+ptwebdiscover/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptwebdiscover/utils/cachefile.py,sha256=d710nofUYoP1hOHwVqU6IwkLseav-1ymQ4JaR3cXFLE,9605
+ptwebdiscover/utils/treeshow.py,sha256=g7RH1KMMidlSguWqX-0Zrb2_TmhZ_kA-d2qsJhm5oo4,1745
+ptwebdiscover-0.0.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+ptwebdiscover-0.0.5.dist-info/METADATA,sha256=RxRrphdtOy7fDoEd39AbySuRvER9cxXO4Uw2CkGpOo8,8059
+ptwebdiscover-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ptwebdiscover-0.0.5.dist-info/entry_points.txt,sha256=WUTy4nVMCkx-oLwlXpvhVdf9JInrhLv5I4HrBoCtImg,67
+ptwebdiscover-0.0.5.dist-info/top_level.txt,sha256=WL9--dTu4On7nj6eMO_CkRfe4YbMFoDxbwChzFii2LY,14
+ptwebdiscover-0.0.5.dist-info/RECORD,,
