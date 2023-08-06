@@ -1,0 +1,14 @@
+sdk/__init__.py,sha256=drt99ADNH-7VDFAlW06TdIYhZJeuROho0VYbEAjpaS4,3436
+sdk/_version.py,sha256=S3JbuU52oVUbl7kwk5yjio0lHnFqDZj6jOMUVG1_vJ8,625
+sdk/batch.py,sha256=e2uzf7jd9U7SaOMTPFb_B0ul17PIWND1LX1y_jA-ff0,3599
+sdk/client.py,sha256=JsKACKYDvJRkWRPxxczhkTt8qwwr3-80-v67cq75doo,4452
+sdk/endpoints.py,sha256=5DE_UVIEhc_M2L_Tz3ipXvzoCRIOHCU54zt452l8vtM,890
+sdk/errors.py,sha256=GW2JP-qA8U_ODQtVDUgDroTIcK4IPRTw-Vvoe6iPwWg,959
+sdk/job.py,sha256=LrRV58Nv_q1JjV70hVYpVCB3DXgn1Kbw7ZAVTvbS0pk,884
+sdk/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk/utils/jsend.py,sha256=QtCYKPz6VQSC7ejcf2oOwXiOv0nxB79xG8HuxW-aaq0,726
+pasqal_sdk-0.0.16.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pasqal_sdk-0.0.16.dist-info/METADATA,sha256=mDe15dJEilkGgYZakJYzwMjxOmqAEuqA9E7Pb_ypSwg,3414
+pasqal_sdk-0.0.16.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pasqal_sdk-0.0.16.dist-info/top_level.txt,sha256=JuXS55gRP3EzGKmJgbLfVfUolO3cM_u69k3qvutnBuw,4
+pasqal_sdk-0.0.16.dist-info/RECORD,,
