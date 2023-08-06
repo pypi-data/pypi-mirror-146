@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+hashable_df/__init__.py
+hashable_df.egg-info/PKG-INFO
+hashable_df.egg-info/SOURCES.txt
+hashable_df.egg-info/dependency_links.txt
+hashable_df.egg-info/requires.txt
+hashable_df.egg-info/top_level.txt
