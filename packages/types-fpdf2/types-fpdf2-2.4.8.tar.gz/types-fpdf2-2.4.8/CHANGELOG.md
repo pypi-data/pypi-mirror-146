@@ -1,0 +1,35 @@
+## 2.4.8 (2022-04-16)
+
+Use `TypeAlias` where possible for type aliases (#7630)
+
+## 2.4.7 (2022-02-10)
+
+fpdf2: Correct annotations of @contextmanager methods (#7172)
+
+## 2.4.5 (2021-12-28)
+
+Use PEP 585 syntax wherever possible (#6717)
+
+## 2.4.4 (2021-12-23)
+
+Fix third-party issues found by stubtest (#6667)
+
+## 2.4.3 (2021-12-21)
+
+Add some missing attributes and types to FPDF (#6618)
+
+## 2.4.2 (2021-11-26)
+
+Add mypy error codes to '# type: ignore' comments (#6379)
+
+## 2.4.1 (2021-11-16)
+
+Improve fpdf.image_parsing (#6313)
+
+* Annotate more attributes, arguments, and return types.
+* Add "dims" argument to get_img_info(), added in 2.4.6.
+
+## 2.4.0 (2021-11-10)
+
+Add stubs for fpdf2 (#6252)
+
