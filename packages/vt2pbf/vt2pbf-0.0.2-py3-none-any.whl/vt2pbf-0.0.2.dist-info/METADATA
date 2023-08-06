@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vt2pbf
+Version: 0.0.2
+Summary: Python library for encoding mapbox vector tiles into pbf
+Home-page: https://github.com/DenysMoskalenko/vt2pbf
+Author: DenysMoskalenko
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: protobuf (<4,>=3.20.0)
+
+# Encode VectorTiles into PBF
+
