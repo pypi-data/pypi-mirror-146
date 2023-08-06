@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: linref
+Version: 0.0.2
+Summary: Linearly referenced data management, manipulation, and operations
+Home-page: UNKNOWN
+Author: Tariq Shihadah
+Author-email: <tariq.shihadah@gmail.com>
+License: UNKNOWN
+Description: Module featuring EventsCollection object class for the management of linearly referenced data and optimized performance of various simple and complex events and geospatial operations.
+Keywords: python,geospatial,linear,data,event,dissolve,overlay,range,numeric,interval
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
