@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: senka
+Version: 0.1.1
+Summary: making journal for transactions on blockchain
+Author: settler
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bscscan-python (>=2.0.0,<3.0.0)
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Requires-Dist: senkalib
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: web3 (>=5.28.0,<6.0.0)

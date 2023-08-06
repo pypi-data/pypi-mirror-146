@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "senka"
+version = "0.1.1"
+description = "making journal for transactions on blockchain"
+authors = ["settler"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+web3 = "^5.28.0"
+bscscan-python = "^2.0.0"
+pandas = "^1.4.1"
+senkalib = "latest"
+toml = "^0.10.2"
+
+[tool.poetry.group.development.dependencies]
+flake8 = "^4.0.1"
+pre-commit = "^2.17.0"
+pytest = "^7.0.1"
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.7.0"
+pyright = "^1.1.227"
+black = "^22.1.0"
+isort = "^5.10.1"
+
+[tool.isort]
+profile = "black"
+
+[senka.plugin]
+senka_plugin = []
