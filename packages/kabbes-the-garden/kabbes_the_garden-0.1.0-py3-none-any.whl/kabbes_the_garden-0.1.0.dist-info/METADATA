@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: kabbes-the-garden
+Version: 0.1.0
+Summary: Package for easily installing and setting up project environments
+Home-page: https://pypi.org/project/kabbes-the-garden/
+Author: James Kabbes
+Author-email: james.kabbes@gmail.com
+License: UNKNOWN
+Project-URL: GitHub, https://github.com/jameskabbes/the_garden
+Project-URL: Documentation, https://jameskabbes.github.io/the_garden
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kabbes-smart-documentation
+Requires-Dist: kabbes-aws-connections
+Requires-Dist: kabbes-database-connections
+Requires-Dist: kabbes-aws-credentials
+Requires-Dist: kabbes-pypi-builder
+Requires-Dist: kabbes-repository-generator
+Requires-Dist: kabbes-user-profile
+Requires-Dist: kabbes-ml-pipeline
+Requires-Dist: kabbes-dir-ops
+Requires-Dist: kabbes-nanoid
+Requires-Dist: kabbes-parent-class
+Requires-Dist: kabbes-analytics-packages
+Requires-Dist: kabbes-py-starter
+
+[GitHub Pages](https://jameskabbes.github.io/the_garden/)
+
+# the_garden
+A build of commonly-used open-source tools
+
+# Project Description
+A collection of Python repositories used collectively to ease the pains of team development.
+
+# First-Time Setup
+Follow along for first-time setup.
+
+## 1. Install Git on Anaconda Prompt
+Inside Anaconda Prompt, install Git. (if you have not done so already)
+```
+conda install -c anaconda git
+```
+
+## 2. Navigate to a Handy Folder
+Inside Anaconda Prompt, navigate to a directory on your machine that will be good for holding repositories
+
+For example:
+```
+cd C:/Users/e150445/Documents/Repos
+```
+
+## 3. Clone the Repository
+Inside Anaconda Prompt at your selected directory, clone the GitHub repo.
+```
+git clone https://github.com/jameskabbes/the_garden.git
+```
+
+## 4. Navigate into the Directory
+Inside Anaconda Prompt in the directory for your repositories, navigate into the_garden
+```
+cd the_garden
+```
+
+## 5. Run the script main_garden.py
+Run the setup script.
+```
+python first_time_setup.py
+```
+
+
+
+# Author(s)
+James Kabbes
+
