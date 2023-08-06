@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pparse/__init__.py
+pparse/__main__.py
+pparse/policy.py
+pparse.egg-info/PKG-INFO
+pparse.egg-info/SOURCES.txt
+pparse.egg-info/dependency_links.txt
+pparse.egg-info/entry_points.txt
+pparse.egg-info/requires.txt
+pparse.egg-info/top_level.txt
