@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=8iW0vn5TBnWdEqc_gvV_BHLT2d0jloEyyRciyx-M_y8,431
+casbin_tortoise_adapter/__init__.py,sha256=TzYmNiC9zSNOLUvjSgJuZxqIyiD5aKkxxL4kL_6tXdc,159
+casbin_tortoise_adapter/adapter.py,sha256=egtn-kZH2coDwHTiAiDdvTDD0ZZWeF3zX3KxgWoIFt4,3501
+casbin_tortoise_adapter/filter.py,sha256=Sf4PCIFtkRVgxxiKkpjQgiDvXF7R3fxNIJ2W9f16IGU,400
+casbin_tortoise_adapter/model.py,sha256=vgzjET74cnRxHCCSi5D6-cOmfuC8OqX0IFOfWhuupjc,1001
+casbin_tortoise_adapter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+casbin_tortoise_adapter/typing.py,sha256=dlxAdBgJ1Myk98MYJphu_A2ayUMabkjZ4pohyr4HLhU,46
+casbin_tortoise_adapter-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+casbin_tortoise_adapter-1.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+casbin_tortoise_adapter-1.1.0.dist-info/METADATA,sha256=VEbfvJ5wZRXeZb5I7489zAAAImydDMm-hXiORap3u70,4299
+casbin_tortoise_adapter-1.1.0.dist-info/RECORD,,
