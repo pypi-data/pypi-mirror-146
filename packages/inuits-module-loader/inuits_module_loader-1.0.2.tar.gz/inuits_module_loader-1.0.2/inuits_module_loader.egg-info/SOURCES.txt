@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+readme.md
+setup.py
+inuits_module_loader/__init__.py
+inuits_module_loader/module_loader.py
+inuits_module_loader.egg-info/PKG-INFO
+inuits_module_loader.egg-info/SOURCES.txt
+inuits_module_loader.egg-info/dependency_links.txt
+inuits_module_loader.egg-info/top_level.txt
