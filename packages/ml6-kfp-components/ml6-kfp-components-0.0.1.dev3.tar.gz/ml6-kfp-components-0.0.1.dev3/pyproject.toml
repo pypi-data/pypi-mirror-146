@@ -1,0 +1,20 @@
+[build-system]
+requires = [
+    "setuptools >= 61.1.0",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.bandit]
+exclude_dirs = ["**/test_*.py",]
+
+# Pytest
+[tool.pytest.ini_options]
+testpaths = ["ml6_kfp_components"]
+python_files = "test_*.py"
+addopts = "--strict-markers --disable-pytest-warnings"
+markers = []
+
+# Pytest coverage
+[tool.coverage.run]
+source = ["ml6_kfp_components"]
+omit = ["**/__init__.py", "**/test_*.py"]

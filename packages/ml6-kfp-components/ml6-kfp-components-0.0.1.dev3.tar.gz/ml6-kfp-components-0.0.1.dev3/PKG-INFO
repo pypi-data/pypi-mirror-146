@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ml6-kfp-components
+Version: 0.0.1.dev3
+Summary: A compilation of ML6 shared KFP components.
+Home-page: UNKNOWN
+Author: Maximilian Gartz
+Author-email: maximilian.gartz@ml6.eu
+License: Apache License 2.0
+Description: # kfp-components
+        Repository for shared Kubeflow pipelines components.
+        
+Keywords: kfp,vertex-ai-pipelines,components
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: docs
