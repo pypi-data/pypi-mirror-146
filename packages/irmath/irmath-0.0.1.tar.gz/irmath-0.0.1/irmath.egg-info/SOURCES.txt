@@ -1,0 +1,10 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+changelog.txt
+setup.py
+irmath.egg-info/PKG-INFO
+irmath.egg-info/SOURCES.txt
+irmath.egg-info/dependency_links.txt
+irmath.egg-info/top_level.txt

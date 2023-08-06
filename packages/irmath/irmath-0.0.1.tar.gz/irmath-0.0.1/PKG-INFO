@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: irmath
+Version: 0.0.1
+Summary: ir calculator
+Home-page: UNKNOWN
+Author: Z3N1X
+Author-email: iliya.souri7890@gmail.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Math For Iranians
+
+v 0.0.1:
+    testing chamber
+
