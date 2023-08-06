@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: rolling-checksum-py-mod
+Version: 1.0.1
+Summary: Pure Python module providing a variable-length, content-based blocking algorithm
+Home-page: http://stromberg.dnsalias.org/~dstromberg/rolling_checksum_mod/
+Author: Daniel Richard Stromberg
+Author-email: strombrg@gmail.com
+License: GPLv3
+Description: 
+        Chop a file into variable-length, content-based chunks.
+        
+        Example use:
+        .. code-block:: python
+        
+            >>> import rolling_checksum_mod
+            >>> with open('/tmp/big-file.bin', 'rb') as file_:
+            >>>     for chunk in rolling_checksum_mod.min_max_chunker(file_):
+            >>>         # chunk is now a piece of the data from file_, and it will not always have the same length.
+            >>>         # Instead, it has the property that if you insert a byte at the beginning of /tmp/big-file.bin,
+            >>>         # most of the chunks of the file will remain the same.  This can be nice for a deduplicating
+            >>>         # backup program.
+            >>>         print(len(chunk))
+        
+Platform: Cross platform
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
