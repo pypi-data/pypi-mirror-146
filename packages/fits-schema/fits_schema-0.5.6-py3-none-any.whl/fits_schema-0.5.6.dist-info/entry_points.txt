@@ -1,0 +1,2 @@
+[console_scripts]
+fibonacci = eschool21_demo.__main__:main
