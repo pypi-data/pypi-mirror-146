@@ -1,0 +1,15 @@
+[console_scripts]
+cat = winux:cat
+clear = winux:clear
+cp = winux:cp
+date = winux:date
+kill = winux:kill
+ls = winux:ls
+man = winux:man
+mem = winux:mem
+mkdir = winux:mkdir
+mv = winux:mv
+nano = winux:nano
+ps = winux:psX
+pwd = winux:pwd
+rm = winux:rm

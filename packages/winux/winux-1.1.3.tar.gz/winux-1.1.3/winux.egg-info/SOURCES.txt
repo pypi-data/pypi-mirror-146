@@ -1,0 +1,10 @@
+README.md
+setup.py
+winux/__init__.py
+winux/winux.py
+winux.egg-info/PKG-INFO
+winux.egg-info/SOURCES.txt
+winux.egg-info/dependency_links.txt
+winux.egg-info/entry_points.txt
+winux.egg-info/requires.txt
+winux.egg-info/top_level.txt
