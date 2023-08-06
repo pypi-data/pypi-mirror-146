@@ -1,0 +1,19 @@
+CHANGES
+=======
+
+0.7.8
+-----
+
+* add timeout support when switch ssl hang up
+* remove useless socket timeout
+* add default socket timeout
+* little update, maybe no needed
+* update run-usbmux-proxy.sh
+* 📄docs: add wireshark capture example cmd
+* 🐞fix: git rid of unknown tinstruments package
+* ✨feat: Complete TLS analyze support and support SSLKEYLOGFILE
+* ✨feat: get rid of ideviceinstaller dependency
+* fix tidevice relay
+* fix weakref usage
+* add promopt when crashreport output\_directory not provided
+* support list with tabulate
