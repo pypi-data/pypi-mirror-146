@@ -1,0 +1,3 @@
+[console_scripts]
+sequana_bioconvert = sequana_pipelines.bioconvert.main:main
+
