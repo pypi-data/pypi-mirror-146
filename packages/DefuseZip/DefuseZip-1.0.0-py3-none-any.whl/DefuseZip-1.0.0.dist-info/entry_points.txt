@@ -1,0 +1,2 @@
+[console_scripts]
+DefuseZip = DefuseZip.__main__:main
