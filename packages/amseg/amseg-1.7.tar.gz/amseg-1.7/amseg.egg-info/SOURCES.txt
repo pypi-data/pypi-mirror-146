@@ -1,0 +1,16 @@
+HOWTO-INSTALL.txt
+LICENSE.txt
+MANIFEST
+README.md
+README.rst
+setup.cfg
+setup.py
+amseg/__init__.py
+amseg/amharicNormalizer.py
+amseg/amharicRomanizer.py
+amseg/amharicSegmenter.py
+amseg/amharicTranslitrator.py
+amseg.egg-info/PKG-INFO
+amseg.egg-info/SOURCES.txt
+amseg.egg-info/dependency_links.txt
+amseg.egg-info/top_level.txt
