@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+log2file/__init__.py
+log2file/logger.py
+log2file/singleton.py
+log2file.egg-info/PKG-INFO
+log2file.egg-info/SOURCES.txt
+log2file.egg-info/dependency_links.txt
+log2file.egg-info/top_level.txt
