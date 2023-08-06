@@ -1,0 +1,13 @@
+[roast.board]
+host_target = roast.component.board.target_board:TargetBoard
+network_target = roast.component.board.target_board:TargetBoard
+
+[roast.component.system]
+hwflow = roast.component.hwflow:HwbuildRunner
+
+[roast.relay]
+usb = roast.component.usbrelay:UsbRelay
+
+[roast.serial]
+host = roast.component.host_serial:HostSerial
+
