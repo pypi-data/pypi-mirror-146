@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: orkgnlp
+Version: 0.1.3
+Summary: Python package wrapping the ORKG NLP Services.
+Home-page: http://orkg.org/about
+License: MIT
+Keywords: ORKG,NLP,Scholarly Communication,Digital Library
+Author: Omar Arab Oghli
+Author-email: omar.araboghli@outlook.com
+Maintainer: Omar Arab Oghli
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: huggingface-hub (>=0.5.1,<0.6.0)
+Project-URL: Documentation, https://orkg-nlp-pypi.readthedocs.io/en/latest/
+Project-URL: Repository, https://gitlab.com/TIBHannover/orkg/nlp/orkg-nlp-pypi
+Description-Content-Type: text/markdown
+
+# ORKG NLP PyPI
+[![Documentation Status](https://readthedocs.org/projects/orkg-nlp-pypi/badge/?version=latest)](https://orkg-nlp-pypi.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/orkgnlp.svg)](https://badge.fury.io/py/orkgnlp)
+
+PyPI package wrapping the ORKG NLP services.
+
+Check our [Read the Docs](https://orkg-nlp-pypi.readthedocs.io/en/latest/) for more details!
