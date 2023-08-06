@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: fhir-cli
+Version: 0.10.1
+Summary: DBTonFhir cli
+Home-page: https://github.com/arkhn/dbtonfhir
+Author: Arkhn
+Author-email: engineering@arkhn.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/arkhn/dbtonfhir/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DBTonFHIR
+
+## Description
+
+The goal is to be able to map from a given source to a FHIR server without the help of a gui leveraging existing tools
+such as git and DBT.
+
+- [project template repository](https://github.com/arkhn/dbtonfhir-template)
+
+## Documentation
+
+- Generate the documentation
+```shell
+make docs
+```
+- Visit http://localhost:8000
+
+
