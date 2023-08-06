@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: trimgmi
+Version: 0.0.2
+Summary: Opinionated parsing of gemtext.
+Home-page: https://gitlab.com/lofidevops/trimgmi
+Author: David Seaward
+Author-email: david@librem.one
+License: GPL-3.0-or-later
+Description: # trimgmi
+        
+        Opinionated parsing of gemtext.
+        
+        # Usage
+        
+        See "convert", "command" and "sample" modules for examples.
+        
+        > FIXME: Document this in more detail.
+        
+        # Description
+        
+        Gemtext (GMI) is a lightweight, line-oriented markup language designed for the Gemini internet protocol. This module parses gemtext, ignoring extraneous whitespace. Text after closing ``` marks is also ignored.
+        
+        The resulting objects can be rendered line-by-line without further parsing logic.
+        
+        Also included are:
+        
+        * round-trip render back to GMI with minimal whitespace
+        * simple render to CommonMark
+        * opinionated render to HTML
+        * primitive command line tools for the above
+        
+        Read more about gemtext (requires Gemini client):
+        
+        * <gemini://gemini.circumlunar.space/docs/gemtext.gmi>
+        
+        Read more about gemtext (proxy for web clients):
+        
+        * <https://gemini.circumlunar.space/docs/gemtext.gmi>
+        
+        # Implementation
+        
+        This module has no external dependencies.
+        
+        This implementation is deliberately verbose so that a developer can confirm by reading that the parser follows the gemtext specification. Optimising the core module is out-of-scope.
+        
+        # Testing
+        
+        The following commands should run without changing the target files:
+        
+        ```bash
+        trimgi test_search
+        # example.gmi remains tidy
+        # example.txt remains untidy
+        
+        convertgmi gmi README.gmi test_output/README.gmi  # identical
+        convertgmi md README.gmi test_output/README.md  # readable
+        convertgmi html README.gmi test_output/README.html  # readable
+        ```
+        
+        > FIXME: Implement and document a comprehensive round-trip test harness.
+        
+        # Build
+        
+        ```
+        python setup.py sdist bdist_wheel
+        ```
+        
+        If everything works as expected you should end up with the files:
+        
+        ```
+        dist/trimgmi-<version>-py3-none-any.whl
+        dist/trimgmi-<version>.tar.gz
+        ```
+        
+        You can now optionally upload to PyPI:
+        
+        ```
+        twine upload dist/*
+        ```
+        
+        # Sharing and contributions
+        
+        ```
+        trimgmi
+        https://gitlab.com/lofidevops/trimgmi
+        Copyright 2022 David Seaward and contributors
+        SPDX-License-Identifier: GPL-3.0-or-later
+        ```
+        
+        Shared under GPL-3.0-or-later. We adhere to the Contributor Covenant 2.0 without modification, and certify origin per DCO 1.1 with a signed-off-by line (git -s). Contributions under the same terms are welcome.
+        
+        For details see:
+        
+        * [GPL-3.0-or-later.txt license text](./GPL-3.0-or-later.txt)
+        * [CODE_OF_CONDUCT.md (report via a private ticket)](./CODE_OF_CONDUCT.md)
+        * [CONTRIBUTING.DCO.txt origin text](CONTRIBUTING.DCO.txt)
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing :: Markup
+Description-Content-Type: text/markdown; charset=UTF-8
