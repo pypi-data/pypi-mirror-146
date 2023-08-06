@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: makerpy
+Version: 0.0.1
+Summary: A very work in progress tool that helps you create a python project by helping you with for example pygame
+Home-page: UNKNOWN
+Author: Rocko Visser
+Author-email: rockodagamer@gmail.com
+License: MIT
+Keywords: app development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+Requires-Dist: pygame
+Requires-Dist: tensorflow
+
+This is a very work in progress tool that can be used to create python projects
+For example it can help you with making a window with pygame or helps you make hitboxes with only 4 inputs
+Its mostly just pre programmed stuff that you need to use in you every line of code.
+
+Change Log
+==========
+
+0.0.1 (10/04/2022)
+-------------------
+- Uploaded to pip without code.
+
