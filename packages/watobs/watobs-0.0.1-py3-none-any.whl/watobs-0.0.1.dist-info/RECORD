@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_altimetry_api.py,sha256=ntro03920ve6W91XYKvtKEg2jEfxIdy9w1nPCBSk2hQ,4428
+tests/test_dmi_api.py,sha256=plaghtmgMxPJBcco1PQTvlWMmbW0ik8QxnZZsrDzyLc,2135
+watobs/__init__.py,sha256=XwLP1UbXPcuKBDeR9O9PviVTnP6MqPg2knJNphdUDBY,85
+watobs/altimetry.py,sha256=fixcnhp41a__U6U8-qNGfwJQJdObxcBM-U7XxL1gJSo,25334
+watobs/dmi.py,sha256=iGX1yQM1w0tFBQcTwOEeL841cc3176t3WOvyH_g_yOs,8589
+watobs-0.0.1.dist-info/METADATA,sha256=5GsF81C0iH-VAAvKWN7dZXhPSLOXgvShxuzfuO_uLjY,3073
+watobs-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+watobs-0.0.1.dist-info/top_level.txt,sha256=AB8MMWyzDeRe8AFAsMqQBKX0O4wwwVPtN8_a37219gU,13
+watobs-0.0.1.dist-info/RECORD,,
