@@ -1,0 +1,9 @@
+requests
+ipython
+
+[server]
+uvicorn
+fastapi
+databases
+pydantic
+sqlalchemy
