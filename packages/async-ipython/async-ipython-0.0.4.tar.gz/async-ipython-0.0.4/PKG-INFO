@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: async-ipython
+Version: 0.0.4
+Summary: An enhanced async interactive python.
+Home-page: https://github.com/FrostiiWeeb/aipython
+License: MPL-2.0
+Keywords: interactive,console,python
+Author: Alex Hutz
+Author-email: frostiiweeb@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Project-URL: Repository, https://github.com/FrostiiWeeb/aipython
+Description-Content-Type: text/markdown
+
+# aipython
+
+An enhanced Python shell with IPython-like features.
+
+## Features
+
+[x] **Autocompletion**
+[x] **History**
+[x] **Magic commands**
+
+### Installation
+
+```bash
+pip install aipython
+```
+
+### Usage
+
+```shell
+$ aipython
+```
+
+## License
+
+This project was distributed under the [MPL-2.0 License](LICENSE).
+
