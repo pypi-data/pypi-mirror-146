@@ -1,0 +1,12 @@
+shitsort/__init__.py,sha256=30FVlAgirxwzdproeAeMiILcHhFOfJvCfi-syMSM--M,150
+shitsort/bogo.py,sha256=RdKHw4pU2qbF9IcndR9ytE32-QKJwKY9pEcE9cXey58,851
+shitsort/bozo.py,sha256=9IF4vrpypObYi21DPvJ2P5kMQvrHoWCorWG5YxqcPJ4,707
+shitsort/multibogo.py,sha256=LEArYBB1jG5MMOyf2EUOJh-aQ48faURkTB6h-GJFCVM,1329
+shitsort/peripherals.py,sha256=IiJFxsAKuVsVss84pgaRk0Bg9LTjSN-aWBKR1RgxBqM,295
+shitsort/slow.py,sha256=1yx4kljJ_x1JNDQryxClFjlCFwu8Ads3JIL9sqFzDFc,601
+shitsort/slowsort.py,sha256=1yx4kljJ_x1JNDQryxClFjlCFwu8Ads3JIL9sqFzDFc,601
+shitsort-1.1.1.dist-info/LICENSE.txt,sha256=auDbMKHG9Z_7jJSaSvTz_BHTZc0ygs-rpv1jo-qr188,31912
+shitsort-1.1.1.dist-info/METADATA,sha256=pjI7jzpAU4GMQj75wdniPxbaOy07nCj4Ynu7OuCi4L8,1750
+shitsort-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shitsort-1.1.1.dist-info/top_level.txt,sha256=wn4NLmGCpbBMb9UhMG5ECplGtW6uLbKSzZd3bsClZ3A,9
+shitsort-1.1.1.dist-info/RECORD,,
