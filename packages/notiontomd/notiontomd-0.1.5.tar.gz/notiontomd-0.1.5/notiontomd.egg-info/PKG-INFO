@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: notiontomd
+Version: 0.1.5
+Summary: convert notion page content to markdown
+Home-page: https://github.com/akkuman/notiontomd
+Author: Akkuman
+Author-email: akkumans@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# notiontomd
+
+Convert notion page content to markdown
+
+## Usage
+
+### Quickstart
+
+`pip install notiontomd`
+
+```python
+from notiontomd import NotionToMarkdown
+
+token = os.environ['token']
+page_id = os.environ['page_id']
+
+print(NotionToMarkdown(token, page_id).parse())
+```
+
+### Feature
+
+Support block:
+
+- paragraph
+- numbered_list_item
+- bulleted_list_item
+- image
+- code
+- heading_1
+- heading_2
+- heading_3
+- bookmark
+- quote
+- to_do
+- unsupported (The current notion API does not support SimpleTable)
+- child_database
+- divider
+- callout
+- 
+
