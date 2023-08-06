@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bapp-api-client
+Version: 1.1.20
+Summary: BAPP API
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: office@cbsoft.ro
+License: UNKNOWN
+Keywords: Swagger,BAPP API
+Platform: UNKNOWN
+Requires-Dist: certifi (>=2017.4.17)
+Requires-Dist: python-dateutil (>=2.1)
+Requires-Dist: six (>=1.10)
+Requires-Dist: urllib3 (>=1.23)
+
+This is the primary API for BAPP platform development  # noqa: E501
+
+
