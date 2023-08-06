@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+[tool.portray]
+extra_dirs = ["examples"]
+modules = ["dicebear"]
+[tool.portray.mkdocs.theme]
+favicon = "images/favicon.svg"
+logo = "images/favicon.svg"
+name = "material"
