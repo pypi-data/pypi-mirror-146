@@ -1,0 +1,12 @@
+appdirs
+sqlalchemy>=1.0
+
+[testing]
+pytest
+pytz
+patchy
+pylint
+mypy
+lxml
+bandit
+more-itertools
