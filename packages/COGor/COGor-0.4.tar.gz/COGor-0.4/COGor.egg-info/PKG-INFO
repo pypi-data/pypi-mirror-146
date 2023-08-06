@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: COGor
+Version: 0.4
+Summary: Package for improving the functional annotation of bacterial genomes, classification of protein-coding sequences into clusters of orthologous groups, and visualization of the final annotated genome
+Home-page: https://github.com/xpolak37/the-COG-or
+Author: Petra Polakovicova
+Author-email: xpolak37@vut.cz
+License: MIT
+Download-URL: https://github.com/xpolak37/the-COG-or/archive/refs/tags/0.4.tar.gz
+Keywords: Bacterial genome,Functional annotation,bioinformatics,COG
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+License-File: LICENSE.txt
+
+UNKNOWN
+

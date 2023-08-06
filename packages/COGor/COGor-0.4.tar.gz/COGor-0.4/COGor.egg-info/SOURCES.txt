@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+COGor/__init__.py
+COGor/cogor.py
+COGor/consensus.py
+COGor/program_processor.py
+COGor/track_manager.py
+COGor.egg-info/PKG-INFO
+COGor.egg-info/SOURCES.txt
+COGor.egg-info/dependency_links.txt
+COGor.egg-info/requires.txt
+COGor.egg-info/top_level.txt
