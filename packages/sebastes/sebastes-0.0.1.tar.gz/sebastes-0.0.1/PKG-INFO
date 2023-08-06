@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: sebastes
+Version: 0.0.1
+Summary: Pydantic library code generator for Redfish targets
+Home-page: https://b.yadro.com/projects/QAQC/repos/service-pxe-api/
+Author: Sergey Parshin
+Author-email: s.parshin@yadro.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Redfish Model Generator
+
+----
+FILL THIS
+
+## Getting Started
+
+### Prerequisites
+
+FILL THIS
+
+### Installing
+
+FILL THIS
+
+### Launching
+
+FILL THIS
+
+## Built With
+
+FILL THIS
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning.
+
+## Authors
+
+* FILL THIS
+
+## Acknowledgments
+
+* FILL THIS
+
+
