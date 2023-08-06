@@ -1,0 +1,11 @@
+gpapi2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpapi2/config.py,sha256=K2OIbEhQTJkZM4ZfLJSX3NJbt7rnK6YlZkWAhXuDWJs,9893
+gpapi2/device.properties,sha256=kv0GQVHhdc2v_kXtofPUQCyimy590kCqRVDiiOU-qAs,298464
+gpapi2/googleplay.py,sha256=UwlWdT2J3ZEiigvOgbBPGNsnbBRRIb8WZdD2luwj_Mw,29321
+gpapi2/googleplay_pb2.py,sha256=mZSQUkFKqBHZcbgliM39oR24Tr3fNPYE2v7rlDa9uus,129384
+gpapi2/utils.py,sha256=79tK90c4zZllbfPf9HEXTZ0tCkFu7cPw1Vw0pxPmekY,1866
+gpapi2-0.4.5.dist-info/LICENSE.md,sha256=9MC9nE7_xnzpxmAH_qPmCthinJSu31qAeOhSfZ0GsSE,35102
+gpapi2-0.4.5.dist-info/METADATA,sha256=gSsE66hwfd3uTufWQNuGhZ5n0vN33Bht08mddvieAtk,2212
+gpapi2-0.4.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gpapi2-0.4.5.dist-info/top_level.txt,sha256=AeEYmMqqs6nJd4sJNjF2GIWT8Z3qym-pzsUtfZwB8SA,7
+gpapi2-0.4.5.dist-info/RECORD,,
