@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-exclude universal_uploader_widget_demo *
+recursive-include universal_uploader_widget *
+recursive-include universal_uploader_widget/static *
+recursive-include universal_uploader_widget/templates *
