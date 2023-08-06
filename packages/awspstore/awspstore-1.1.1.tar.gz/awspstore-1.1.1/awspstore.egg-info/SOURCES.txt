@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+awspstore/__init__.py
+awspstore.egg-info/PKG-INFO
+awspstore.egg-info/SOURCES.txt
+awspstore.egg-info/dependency_links.txt
+awspstore.egg-info/requires.txt
+awspstore.egg-info/top_level.txt
