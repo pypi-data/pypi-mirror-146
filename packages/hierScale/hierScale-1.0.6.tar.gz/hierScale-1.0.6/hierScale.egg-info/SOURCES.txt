@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+hierScale/CheckOptScreen.py
+hierScale/FitPath.py
+hierScale/FitSingleLambda.py
+hierScale/InitialRun.py
+hierScale/RelaxationSolver.py
+hierScale/Structs.py
+hierScale/Utilities.py
+hierScale/__init__.py
+hierScale.egg-info/PKG-INFO
+hierScale.egg-info/SOURCES.txt
+hierScale.egg-info/dependency_links.txt
+hierScale.egg-info/requires.txt
+hierScale.egg-info/top_level.txt
