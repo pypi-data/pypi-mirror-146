@@ -1,0 +1,13 @@
+spextra/__init__.py,sha256=iNzgQ0t4kugEdhYwtcxUAxVNPvl6ngHeW1JYj8lw7JM,478
+spextra/database.py,sha256=fh2RD5QEUnBQBzNE_TmnXb0VkkT2hFhWSWq3osOeXus,15981
+spextra/spextra.py,sha256=hj1voT6RWNnrVNhNSlf0ELWT53NWOH6345zbeXcW1sY,39786
+spextra/utils.py,sha256=R2DSEo0aCes-PJFO6oYV3JAopbYY6BzFXNgNTsROB_U,10184
+spextra/version.py,sha256=tQG8sGKjpHVCfUw3Z-Rk7Fz0OrUULN18z18lJZpHawc,103
+spextra/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spextra/data/config.yml,sha256=T5Bxr8XP9ZReC3p8viBt63AMsDcjxk2PIWbthnL-Vt4,194
+speXtra-0.30.dist-info/AUTHORS.rst,sha256=lxzBLd94Vs_ukxm5FRv4DSRS4a4V6RDZPXxDki5Vi1E,87
+speXtra-0.30.dist-info/LICENSE.txt,sha256=ofIyfsfQIZQBYThJtdXyDXGA46U8EqKZDNNIpxRsOvo,1103
+speXtra-0.30.dist-info/METADATA,sha256=3_F1ZtsfgPw40-kAWOLnpGnNLRKK94qhfQVSkRkYV8U,2227
+speXtra-0.30.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+speXtra-0.30.dist-info/top_level.txt,sha256=cDgQMeLliem9BcsfTC558PbBGvghK5ttLodmrHBm56w,8
+speXtra-0.30.dist-info/RECORD,,
