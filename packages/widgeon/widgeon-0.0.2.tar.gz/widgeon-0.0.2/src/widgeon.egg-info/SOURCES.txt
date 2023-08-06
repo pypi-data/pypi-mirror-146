@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/widgeon/__init__.py
+src/widgeon/pg.py
+src/widgeon.egg-info/PKG-INFO
+src/widgeon.egg-info/SOURCES.txt
+src/widgeon.egg-info/dependency_links.txt
+src/widgeon.egg-info/top_level.txt
+src/widgeon/data/empty_icon.png
+src/widgeon/data/icon.png
