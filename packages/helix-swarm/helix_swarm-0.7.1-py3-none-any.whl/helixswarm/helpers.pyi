@@ -1,0 +1,3 @@
+from .exceptions import SwarmCompatibleError as SwarmCompatibleError
+
+def minimal_version(version): ...
