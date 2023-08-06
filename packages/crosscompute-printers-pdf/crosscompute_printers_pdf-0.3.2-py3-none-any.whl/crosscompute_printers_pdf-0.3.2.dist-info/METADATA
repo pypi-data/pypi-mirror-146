@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: crosscompute-printers-pdf
+Version: 0.3.2
+Summary: Print your automations in PDF format.
+Home-page: https://crosscompute.com
+Author: CrossCompute Inc.
+Author-email: support@crosscompute.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/crosscompute/crosscompute-printers-pdf/issues
+Project-URL: Documentation, https://github.com/crosscompute/crosscompute-printers-pdf
+Project-URL: Source Code, https://github.com/crosscompute/crosscompute-printers-pdf
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: crosscompute (>=0.9.2.1)
+Provides-Extra: test
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# PDF Printers for CrossCompute
+
+## Installation
+
+```bash
+# Install packages
+sudo dnf -y install chromium node
+# Install latest version of node
+npm cache clean -f
+npm install -g n
+sudo n latest
+# Install package
+pip install crosscompute-printers-pdf
+# Install dependencies
+cd $(python -c "import crosscompute_printers_pdf; print(crosscompute_printers_pdf.__path__[0] + '/scripts')")
+npm install
+```
+
+## Usage
+
+1. Add prints to your configuration file.
+
+```yaml
+prints:
+  - format: pdf
+    configuration:
+      header-footer:
+          font-family: sans-serif
+          font-size: 8pt
+          color: '#808080'
+          padding: 0.1in 0.25in
+          skip-first: true
+      page-number:
+          location: footer
+          alignment: right
+    folder: ~/Documents/attachments/randomize-histograms-{timestamp}
+    name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
+```
+
+2. Run batch print.
+
+```bash
+crosscompute --print
+```
+
+
