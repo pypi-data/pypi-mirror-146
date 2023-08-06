@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: oacmpy
+Version: 0.0.3
+Summary: Parse CCSDS Data Message, including OEM, AEM and CDM, and convert them to a CZML scenario file.
+Home-page: https://gitlab.com/jorispio/ccsds2czml
+Author: Joris T. OLYMPIO
+Author-email: jto.devs@gmail.com
+License: MIT
+Keywords: "space trajectory" orbit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+oacmpy
+=========
+
+## Description
+The object of **oacmpy** is currently two-fold:
+- to parse CCSDS Data Message files and, 
+- to convert them to CZML file for [cesium] 3d mapping framework.
+
+CCSDS is a standard for communicating satellite data between operators, but it is generally widely used for any flight dynamics software, and library [orekit].
+(see also [odmpy] and [orekit for python]). 
+Here, Data Messages include broadly the Navigation Data Messages but also Conjunction Data Message (CDM). Tracking Data Message (TDM) will not be implemented.
+
+The idea behind **oacmpy** is to keep current tools interfaces. Rather than updating tools with specific CZML features, this module creates the files for Cesium, from your standardized output files.
+The generated CZML file is customizable and allow showing:
+- display trajectory (through OEM)
+- illustrating spacecraft attitude motion (through AEM) 
+- showing close encounter (through CDM)
+
+The approach is different than the use of TLE as no propagation is performed here. The propagation (and hence its accuracy and fidelity) is down to the tool used to generate the initial ephemeris file. 
+
+
+
+[cesium]:https://cesium.com/cesiumjs/
+[orekit]:http://www.orekit.org
+[odmpy]:https://pypi.org/project/odmpy/
+[orekit for python]:https://anaconda.org/conda-forge/orekit
+
+## Usage
+
+### Extracting data from Data Messages
+#### OEM
+
+    from oacmpy import ccsds
+
+    oem = cc.Oem.Oem("oem.xml", "xml")
+    oem.get_satellite_list()
+    oem.get_ephemeris("SATELLITE NAME")  # array list of epoch - position/velocity vectors
+    oem.get_covariances("SATELLITE NAME")  # array list of covariance parameter
+    
+    
+Covariance data can be extracted like,
+    
+    cov_data = oem.get_covariances("SATELLITE NAME")[0]
+    cov_data.get_epoch()  # covariance epoch
+    cov_data.get_reference_frame() # covariance reference frame
+    cov_date.get_covariance_matrix()  # covariance matrix
+
+    
+#### AEM (Attitude file)
+
+    aem = ccsds.Aem.Aem("aem.txt", "kvn")
+    aem.get_satellite_list()
+    aem.get_attitudes("SATELLITE NAME")  # array list of epoch - quaternions 
+
+
+#### CMD (Conjunction file)
+
+    cdm = ccsds.Cdm.Cdm("cdm.xml", "xml") # conjunction event    
+    cdm.get_satellite_list()
+    cdm.get_tca()
+    cdm.get_miss_distance()
+    cdm.get_probability()
+    
+### Generation of CZML   
+The generation of CZML script for use with [Cesium](https://cesium.com/) is the main purpose of this lib.
+You can ingest different CCSDS data file (e.g., OEM, AEM or CDM) and create a Cesium scene description. This can be 
+helpful to illustrate satellite trajectory or satellite conjunctions.
+
+#### From Python Console
+Create the CZML from OEM and AEM:
+
+    from oacmpy.czml import CdmToCzml, OemToCzml, ScenarioCzml 
+    oem1_czml = OemToCzml.OemAemToCzml(oem1, aem1)  # aem1 is optional
+    
+Add conjunction event with CDM:      
+
+    cdm_czml = CdmToCzml.CdmToCzml(cdm)
+
+Generate CZML file:
+
+    start = oem1.get_start_time("SATELLITE NAME").datetime
+    end = oem1.get_stop_time("SATELLITE NAME").datetime
+    
+    scenario = ScenarioCzml.ScenarioCzml(start, end)
+    scenario.add_content(oem1_czml.dump())
+    scenario.add_content(oem2_czml.dump())
+    scenario.add_content(cdm_czml.dump())
+    scenario.create_document([], "scenario.czml")
+
+Plotting attributes are customizable, e.g., changing color, material, line with, etc.
+
+#### Command line tool
+If you have an OEM file and you do not bother about attitude, or configuring the graphics, you can simply run:
+
+    python -m aocmpy -i [your-oem-file] -o [output-file.czml]   
+
+_[your-oem-file]_ can include wildcard to process several OEM into a single CZML file.
+The file format (KVN or XML) of the OEM file will be guessed with the file extension.
+
+
+.. image:: ./example/screenshot.png
+
+<img src="./example/screenshot.png" width=400/>
+
+## Testing
+Run unit tests with
+
+    python -m unittest discover --start-directory ../tests
+
+
+## References
+  * Orbit Data Messages, CCSDS 502.0-B-2, Nov 2009
+  * Attitude Data Messages, CCSDS 504.0-B-1, May 2008
+  * Conjunction Data Messages, CCSDS 508.0-B-1, June 2013
+  * XML SPECIFICATION FOR NAVIGATION DATA MESSAGES, CSDS 505.0-B-1, December 2010
+
+
