@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: complex-number
+Version: 0.1.0
+Summary: This is a simple complex number python package.
+Home-page: UNKNOWN
+Author: Enzo Baraldi
+License: MIT
+Keywords: python,python3,python3.10,complex number,complex numbers
+Platform: UNKNOWN
+Classifier: License :: OSI Approved
+Programming Language :: Python :: 3.10 :: or higher
+Topic :: Software Development
+Operating System :: Microsoft :: Windows
+Operating System :: POSIX
+Operating System :: Unix
+Operating System :: MacOS
+
+Requires-Python: >=3.10
+License-File: LICENSE
+
+This is a simple complex number python package.
+
