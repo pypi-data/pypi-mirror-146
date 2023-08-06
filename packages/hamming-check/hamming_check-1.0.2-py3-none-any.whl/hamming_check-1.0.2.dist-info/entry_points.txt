@@ -1,0 +1,3 @@
+[console_scripts]
+hamming_check = hamming_check.entry_points:cli
+hamming_flip = hamming_check.entry_points:flip_a_bit_in_file
