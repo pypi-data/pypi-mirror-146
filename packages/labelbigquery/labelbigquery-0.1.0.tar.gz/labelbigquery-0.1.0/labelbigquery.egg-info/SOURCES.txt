@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+labelbigquery/__init__.py
+labelbigquery/fetch_and_write_rows.py
+labelbigquery/load_data_to_big_query.py
+labelbigquery/make_dataset_and_data_rows.py
+labelbigquery.egg-info/PKG-INFO
+labelbigquery.egg-info/SOURCES.txt
+labelbigquery.egg-info/dependency_links.txt
+labelbigquery.egg-info/requires.txt
+labelbigquery.egg-info/top_level.txt
