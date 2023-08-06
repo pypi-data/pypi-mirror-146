@@ -1,0 +1,4 @@
+[console_scripts]
+nas = PyNAS.main:main
+nas-gui = PyNAS.main_gui:main
+
