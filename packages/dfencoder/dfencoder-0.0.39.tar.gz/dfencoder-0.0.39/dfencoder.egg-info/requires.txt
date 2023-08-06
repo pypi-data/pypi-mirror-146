@@ -1,0 +1,9 @@
+torch
+numpy
+pandas<1.0.0
+tqdm
+scikit-learn
+tensorboardX
+matplotlib
+wheel
+dill
