@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bascodes/__init__.py
+bascodes/__main__.py
+bascodes/main.py
+bascodes.egg-info/PKG-INFO
+bascodes.egg-info/SOURCES.txt
+bascodes.egg-info/dependency_links.txt
+bascodes.egg-info/entry_points.txt
+bascodes.egg-info/not-zip-safe
+bascodes.egg-info/top_level.txt

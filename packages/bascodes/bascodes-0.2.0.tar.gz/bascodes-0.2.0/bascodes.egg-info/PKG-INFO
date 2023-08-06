@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: bascodes
+Version: 0.2.0
+Summary: Bas Steins – Terminal Card
+Home-page: https://bas.codes/
+Author: Bas Steins
+Author-email: blog@bascodes.com
+License: License :: Public Domain
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: Public Domain
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Bas Steins
+This is the package that allows you to access Bas Steins' contact details via
+
+```
+pipx run bascodes
+```
+
