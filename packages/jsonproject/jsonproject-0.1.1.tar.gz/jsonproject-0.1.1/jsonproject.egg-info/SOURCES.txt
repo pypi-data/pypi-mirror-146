@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+jsonproject/__main__.py
+jsonproject.egg-info/PKG-INFO
+jsonproject.egg-info/SOURCES.txt
+jsonproject.egg-info/dependency_links.txt
+jsonproject.egg-info/top_level.txt
