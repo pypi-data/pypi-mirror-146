@@ -1,0 +1,3 @@
+importlib_resources
+lxml
+pycalphad>=0.10.0
