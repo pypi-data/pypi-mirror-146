@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lambdashim"
+version = "0.1.0"
+description = "A little wsgi shim for AWS Lambda."
+authors = ["Abram Isola <abram@isola.mn>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.25.0"
+pytest = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
