@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+http_plot_server.egg-info/PKG-INFO
+http_plot_server.egg-info/SOURCES.txt
+http_plot_server.egg-info/dependency_links.txt
+http_plot_server.egg-info/entry_points.txt
+http_plot_server.egg-info/requires.txt
+http_plot_server.egg-info/top_level.txt
+plot_server/__init__.py
+plot_server/__main__.py
+plot_server/data_handlers.py
+plot_server/request_handler.py
+plot_server/server_setup.py
+plot_server/utils.py
+plot_server/plotly/minimal.html

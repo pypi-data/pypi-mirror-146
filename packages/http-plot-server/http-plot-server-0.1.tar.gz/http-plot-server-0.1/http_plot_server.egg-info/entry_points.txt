@@ -1,0 +1,2 @@
+[console_scripts]
+plot_server = plot_server.server_setup:main
