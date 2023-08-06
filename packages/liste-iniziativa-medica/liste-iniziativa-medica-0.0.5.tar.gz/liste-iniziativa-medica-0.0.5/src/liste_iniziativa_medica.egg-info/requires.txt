@@ -1,0 +1,4 @@
+pandas>=1.4.2
+pdfkit>=1.0.0
+PyPDF2>=1.27.3
+reportlab>=3.6.9
