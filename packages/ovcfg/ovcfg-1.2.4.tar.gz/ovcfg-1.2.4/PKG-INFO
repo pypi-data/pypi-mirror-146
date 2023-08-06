@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: ovcfg
+Version: 1.2.4
+Summary: OvCfg
+Home-page: 
+Author: Dmitry Yakovlev
+Author-email: opensuse12@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# ovcfg
+
+Simple module for creating your config files and use it in your projects. Configs may store in /etc and user local directory (~/.config).
+## Prerequisites
+
+	- Python3.5 or newer
+
+## Installion
+$ python3 -m pip install ovcfg<br /><br />
+**OR**<br /><br />
+$ python3 -m pip install git+https://github.com/jok4r/ovcfg.git
+
+## Usage
+```
+from ovcfg import Config
+
+default_config = {
+        'first': 'first param',
+        'second': 'second param',
+    }
+cfg = Config(default_config, 'config_name_here.json', 'config_dir_name').import_config()
+```
+Config file in code above will create config with local path *"~/.config/config_dir_name/config_name_here.json"* **OR** */etc/config_dir_name/config_name_here.json* (if have write permissions to /etc)
+MIT License
+
+Copyright (c) 2021 Dmitry Yakovlev
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
