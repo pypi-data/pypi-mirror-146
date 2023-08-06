@@ -1,0 +1,8 @@
+AnimePFP.py
+AnimePFP.pyi
+MANIFEST.in
+setup.py
+AnimePFP.egg-info/PKG-INFO
+AnimePFP.egg-info/SOURCES.txt
+AnimePFP.egg-info/dependency_links.txt
+AnimePFP.egg-info/top_level.txt
