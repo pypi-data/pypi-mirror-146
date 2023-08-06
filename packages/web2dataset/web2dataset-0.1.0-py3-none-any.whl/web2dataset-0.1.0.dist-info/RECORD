@@ -1,0 +1,11 @@
+web2dataset/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+web2dataset/_nbdev.py,sha256=P4p7u9BeXVmCQtXbT2cAj3ptY6saijVNFMau0yovnu0,898
+web2dataset/cleaner.py,sha256=bj-U5v6kf9xwSGOYAekxOst_S5zqloLDORLCy3_Ckd8,286
+web2dataset/cli.py,sha256=PxjzJJFanli7TtyZOVJ91r0r5nxm2VNc-_9dfzoHcCQ,1439
+web2dataset/downloader.py,sha256=TvVuWrKrt4jmf8M_bMpykaNNIOxa1C3gGuu1u4iObsw,6992
+web2dataset/paralel.py,sha256=XtR_bjkzEAvwKv8f5rOUj8mVG5NFlEE4jvb9-dMOKP4,2478
+web2dataset/torch_dataset.py,sha256=K42iiikO4eSaXO0bWT4NJbtpZFHGCqfbdJf8ci30C0Y,1158
+web2dataset-0.1.0.dist-info/entry_points.txt,sha256=FatUmp8bMviWUa18iI5b0H5wprDw8j_zEP6gA41kSFo,51
+web2dataset-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+web2dataset-0.1.0.dist-info/METADATA,sha256=hpoQo8ZhVjLwH3WujTA8ramQnhSDWpAbDm9WYzPCabc,726
+web2dataset-0.1.0.dist-info/RECORD,,

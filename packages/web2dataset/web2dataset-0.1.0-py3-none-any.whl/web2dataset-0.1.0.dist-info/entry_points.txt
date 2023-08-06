@@ -1,0 +1,3 @@
+[console_scripts]
+web2dataset=web2dataset.cli:cli
+
