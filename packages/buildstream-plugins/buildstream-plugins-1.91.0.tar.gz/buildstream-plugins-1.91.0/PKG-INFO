@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: buildstream-plugins
+Version: 1.91.0
+Summary: A collection of plugins for BuildStream.
+Home-page: https://buildstream.build
+Author: BuildStream Developers
+Author-email: dev@buildstream.apache.org
+License: Apache License Version 2.0
+Project-URL: Documentation, https://docs.buildstream.build/
+Description: BuildStream Plugins
+        ===================
+        A collection of plugins for the BuildStream project.
+        
+        
+        How to use plugins
+        ------------------
+        Plugins must be declared by your buildstream project.conf for use in your
+        project. For instructions on how to load plugins in your buildstream project,
+        please consult the `plugin loading documentation <https://docs.buildstream.build/master/format_project.html#loading-plugins>`_
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: cargo

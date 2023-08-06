@@ -1,0 +1,4 @@
+projects:
+- project-path: /home/tristan/work/buildstream-plugins/.tox/py39-bst-fixed/tmp/popen-gw5/test_open_bzr_customize0
+  element-name: target.bst
+format-version: 1

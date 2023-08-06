@@ -1,0 +1,4 @@
+projects:
+- project-path: /home/tristan/work/buildstream-plugins/.tox/py39-bst-fixed/tmp/popen-gw9/test_open_git_0
+  element-name: workspace-test-git.bst
+format-version: 1
