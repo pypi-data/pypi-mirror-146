@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aebo-pi
+Version: 0.2
+Summary: This package is for ABG robot running on a RPI
+Home-page: http://www.aeroboticsglobal.com/
+Author: Aerobotics Global
+Author-email: lokeshkode@aeroboticsglobal.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: nltk
+Requires-Dist: scikit-learn (>=0.24)
+Requires-Dist: numpy (>=1.21)
+Requires-Dist: opencv-contrib-python
+Requires-Dist: lobe
+Requires-Dist: mediapipe-rpi4
+
+UNKNOWN
+
