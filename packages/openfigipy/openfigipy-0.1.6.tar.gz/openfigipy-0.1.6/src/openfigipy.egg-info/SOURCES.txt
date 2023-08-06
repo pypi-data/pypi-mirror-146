@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/openfigipy/__init__.py
+src/openfigipy/_version.py
+src/openfigipy/open_figi.py
+src/openfigipy.egg-info/PKG-INFO
+src/openfigipy.egg-info/SOURCES.txt
+src/openfigipy.egg-info/dependency_links.txt
+src/openfigipy.egg-info/not-zip-safe
+src/openfigipy.egg-info/requires.txt
+src/openfigipy.egg-info/top_level.txt
