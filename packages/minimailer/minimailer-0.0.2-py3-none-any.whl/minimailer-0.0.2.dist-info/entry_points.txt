@@ -1,0 +1,2 @@
+[console_scripts]
+minimailer = minimailer.app:run_from_cmdline

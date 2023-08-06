@@ -1,0 +1,9 @@
+minimailer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minimailer/app.py,sha256=c0sL1Cg3IlL2HxltLXlfYYoeySCSmy9kqydIc0YoVzY,3214
+minimailer/csv.py,sha256=yunyP-TOFlT7yWe2D_-rsaO5HDvBIFv-9k1ooHC9sAM,2334
+minimailer-0.0.2.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+minimailer-0.0.2.dist-info/METADATA,sha256=0vIO5nBvxyCoSOvjh-ZetSPJVRJeLTc_Q5vAwxoqH0Y,3448
+minimailer-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+minimailer-0.0.2.dist-info/entry_points.txt,sha256=4MCfbX63CMNLZWEcTfJgwvWtObtUzcDAq_JEH50q_Io,63
+minimailer-0.0.2.dist-info/top_level.txt,sha256=I-hNu5vxqNvBPxlLeAWMStOMdP3t8TMwv6QTTk2-Md0,11
+minimailer-0.0.2.dist-info/RECORD,,
