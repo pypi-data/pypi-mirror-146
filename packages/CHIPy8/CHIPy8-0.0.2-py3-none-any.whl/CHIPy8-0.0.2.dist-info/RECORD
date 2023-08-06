@@ -1,0 +1,10 @@
+CHIPy8-0.0.2.data/scripts/chipy8,sha256=grOM6JYjCwBM27suNtf0KfSXnhpE3nhcCjxsR3BAOZI,572
+chipy8/Chip8.py,sha256=nUgauI4GoIHP8dMGOKSzly6atPiILFeNnHExf7oGpjY,15060
+chipy8/Interface.py,sha256=DJQh5CI9sQbQOowz_cU5PB6DzW-JVadZcEe2CO2KTxY,1870
+chipy8/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chipy8/config.py,sha256=2Uo74g0t--wqsUbpL2pF0OtXwuViuzW5fGISlFGeXH4,783
+chipy8/run.py,sha256=cImSsncnN4Q1lgqcDFmYooWuxpsDUIqTeIkmYRpHkiE,574
+CHIPy8-0.0.2.dist-info/METADATA,sha256=_bqtTT5WQZlabeo14Zs-TAgs9obOzN9kyiUHoTy-YWs,1618
+CHIPy8-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CHIPy8-0.0.2.dist-info/top_level.txt,sha256=pMJwGudta0G7nCX3RQ5YWpC1mNtUTmRmDgF9j4PUeyo,7
+CHIPy8-0.0.2.dist-info/RECORD,,
