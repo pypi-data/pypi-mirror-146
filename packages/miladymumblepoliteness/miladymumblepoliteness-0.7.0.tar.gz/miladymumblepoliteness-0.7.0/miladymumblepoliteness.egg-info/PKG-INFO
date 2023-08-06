@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: miladymumblepoliteness
+Version: 0.7.0
+Summary: fork of better_profanity for milady mumble politeness 
+Home-page: https://github.com/nullbuddy1243/miladymumblepoliteness
+Author: nullbuddy1243
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# milady mumble politeness
+
+independent fork of better_profanity
+
