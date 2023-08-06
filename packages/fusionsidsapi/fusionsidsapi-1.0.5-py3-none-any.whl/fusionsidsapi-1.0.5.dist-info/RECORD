@@ -1,0 +1,15 @@
+fusionsid/__init__.py,sha256=8ViHeiCJLyRFGx5zOLbDGDPvQ6KTiCh0KJr7k1I0cRs,1597
+fusionsid/__main__.py,sha256=ghKVCW2O2YuaXn4N42yayobE8UNy4Ifn6TF_B3UaBiU,7028
+fusionsid/decorators.py,sha256=Zh-aBoQwnb5lWXpCmNEUyx4dfnsz2GeZ6O6X-DCzyb0,3079
+fusionsid/errors.py,sha256=-NhmxoCyQTWPvBMMfawWN616GT2UXxwJMyfcOyom1zs,268
+fusionsid/filter.py,sha256=aulFbAcUGs7fwOYszMEmln16o1S_eO69xlAw2O4kF5M,1967
+fusionsid/fun.py,sha256=dlaewixdDiGJTY-Wo-gnL3iisosu-nv1r6ciZzX8RzM,2848
+fusionsid/http.py,sha256=m5nMlsnU5gXPrNc8NNvspDPStWu5ddNzAXw6MamlqIc,2357
+fusionsid/image.py,sha256=Zvzlk0hydicf0xMRa3wyA1K82jP2-_siHhArmo0pfOs,16284
+fusionsid/text.py,sha256=AN9Nzbo6FVLesB295v1wTX4rK77m0iDEcTxSTUSNU3U,4282
+fusionsidsapi-1.0.5.dist-info/LICENCE,sha256=AiyeMlamdGIaa4g3Ga5qEmibE2n9_xHuOE99BeRpo_M,1054
+fusionsidsapi-1.0.5.dist-info/METADATA,sha256=F1EKUq_mVhhuViEvWHESOfwA-jW5dhmecTlfxBYOwEc,5892
+fusionsidsapi-1.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fusionsidsapi-1.0.5.dist-info/entry_points.txt,sha256=evRvtD3lxTTOp9VmLHwHtA2k1ULtLV13IOWR9LSbbFc,54
+fusionsidsapi-1.0.5.dist-info/top_level.txt,sha256=J43_uTUnPhV3TRzrnW_CelFVI5axgN9cRSorNSSu1nY,10
+fusionsidsapi-1.0.5.dist-info/RECORD,,
