@@ -1,0 +1,2 @@
+[console_scripts]
+ciclops = ciclops.__main__:main
