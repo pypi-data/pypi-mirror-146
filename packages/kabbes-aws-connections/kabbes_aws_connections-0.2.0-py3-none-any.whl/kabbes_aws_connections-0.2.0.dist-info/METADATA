@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: kabbes-aws-connections
+Version: 0.2.0
+Summary: provides helper functions for connections to AWS services via Python
+Home-page: https://pypi.org/project/kabbes_aws_connections/
+Author: James Kabbes
+Author-email: james.kabbes@gmail.com
+License: UNKNOWN
+Project-URL: GitHub, https://github.com/jameskabbes/aws_connections
+Project-URL: Documentation, https://jameskabbes.github.io/aws_connections
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: kabbes-dir-ops
+Requires-Dist: kabbes-py-starter
+
+[Documentation](https://jameskabbes.github.io/aws_connections)
+
+# aws_connections
+provides helper functions for connections to AWS services via Python
+
+
