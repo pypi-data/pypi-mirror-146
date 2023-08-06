@@ -1,0 +1,8 @@
+trytond_account_invoice<6.3,>=6.2
+trytond_carrier<6.3,>=6.2
+trytond_currency<6.3,>=6.2
+trytond_product<6.3,>=6.2
+trytond_sale<6.3,>=6.2
+trytond_stock<6.3,>=6.2
+trytond_stock_shipment_cost<6.3,>=6.2
+trytond<6.3,>=6.2
