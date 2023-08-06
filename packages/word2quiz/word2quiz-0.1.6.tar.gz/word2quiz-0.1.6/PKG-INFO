@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: word2quiz
+Version: 0.1.6
+Summary: Create quizzes in Canvas from simple Word docx files uaing Canvasapi. In construction.
+Author: Nico de Groot
+Author-email: ndegroot0@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: attrs (>=21.4.0,<22.0.0)
+Requires-Dist: docx2python (>=2.0.4,<3.0.0)
+Requires-Dist: python-docx (>=0.8.11,<0.9.0)

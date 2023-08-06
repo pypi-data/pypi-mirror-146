@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "word2quiz"
+version = "0.1.6"
+description = "Create quizzes in Canvas from simple Word docx files uaing Canvasapi. In construction."
+authors = ["Nico de Groot <ndegroot0@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-docx = "^0.8.11"
+docx2python = "^2.0.4"
+attrs = "^21.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
