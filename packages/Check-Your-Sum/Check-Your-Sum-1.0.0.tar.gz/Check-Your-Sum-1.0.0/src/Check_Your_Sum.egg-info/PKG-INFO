@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Check-Your-Sum
+Version: 1.0.0
+Summary: Checksum Tool
+Home-page: https://github.com/johnjkenny/Check-Your-Sum
+Author: John J Kenny
+Author-email: johnjkenny88@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/johnjkenny/Check-Your-Sum/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Check-Your-Sum
+Checksum Tool
+
+
