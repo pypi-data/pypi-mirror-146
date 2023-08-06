@@ -1,0 +1,11 @@
+target/__init__.py,sha256=uJaaVcPqB5k44Mt4YZ87F5L0wgU7VEn9Rp_S085HyHY,7564
+target/file.py,sha256=sMNlG5jHKSMHH2jVmIZCV0vu_LRfVmXupg7pgnPIMX0,2117
+target/logger.py,sha256=w5lS4F-bWmT1XyJLSrN3bBoeV4kg77kbVuQ3f5SpGQg,606
+target/logging.conf,sha256=erahU2eOyFu9aZMWaSjQb-oUfqucntt4RJ7uunrN-as,297
+target/s3.py,sha256=eZalLY4QOcJ3qPXPgTmIhRT9_EtM0ToLRVAa1SE92Z8,2786
+target_core-0.0.1.dist-info/LICENSE,sha256=HPMkbbY5GDmdfhkWY_Tk5VO4goYfIHm4pWpXY0Mgxxk,11333
+target_core-0.0.1.dist-info/METADATA,sha256=lSrNRoSl9W0GhIWmG35yqgxscrs9C9Wz1UmdW004qks,13380
+target_core-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+target_core-0.0.1.dist-info/entry_points.txt,sha256=joljXLzEHXjnuUCoUKbcySoY7JW5UpT8qfjDqnumpzo,44
+target_core-0.0.1.dist-info/top_level.txt,sha256=yX7P2k0gUZC5cyMtz9sMKXSFIcJTTdhmvMeC8wsIZzg,7
+target_core-0.0.1.dist-info/RECORD,,
