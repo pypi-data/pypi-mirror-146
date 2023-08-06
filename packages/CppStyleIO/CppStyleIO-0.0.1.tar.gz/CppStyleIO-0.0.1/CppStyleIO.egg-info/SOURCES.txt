@@ -1,0 +1,15 @@
+setup.py
+CppStyleIO/CSyntax.py
+CppStyleIO/Ctype.py
+CppStyleIO/Exceptions.py
+CppStyleIO/PycharmFakeStdinFix.py
+CppStyleIO/Utils.py
+CppStyleIO/__init__.py
+CppStyleIO/iostream.py
+CppStyleIO/namespace.py
+CppStyleIO/stdio.py
+CppStyleIO/stream.py
+CppStyleIO.egg-info/PKG-INFO
+CppStyleIO.egg-info/SOURCES.txt
+CppStyleIO.egg-info/dependency_links.txt
+CppStyleIO.egg-info/top_level.txt
