@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cbcvalidator
+Version: 0.0.12
+Summary: A package to help validate limits in a dataframe column
+Home-page: https://github.com/Cold-Bore-Capital/cbcvalidator
+Author: Cold Bore Capital
+Author-email: it-group@coldborecapital.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+

@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.txt
+build-deploy.sh
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+cbcvalidator/__init__.py
+cbcvalidator/main.py
+cbcvalidator.egg-info/PKG-INFO
+cbcvalidator.egg-info/SOURCES.txt
+cbcvalidator.egg-info/dependency_links.txt
+cbcvalidator.egg-info/not-zip-safe
+cbcvalidator.egg-info/requires.txt
+cbcvalidator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py
