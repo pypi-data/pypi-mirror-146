@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/assertio/__init__.py
+src/assertio/config.py
+src/assertio/decorators.py
+src/assertio/request.py
+src/assertio/runner.py
+src/assertio.egg-info/PKG-INFO
+src/assertio.egg-info/SOURCES.txt
+src/assertio.egg-info/dependency_links.txt
+src/assertio.egg-info/requires.txt
+src/assertio.egg-info/top_level.txt
