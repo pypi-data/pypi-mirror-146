@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: atomquant
+Version: 0.0.1
+Summary: AtomQuant: Quantization For Human.
+Home-page: https://github.com/jinfagang/atomquant
+Author: Lucas Jin
+Author-email: 11@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Atom Quant
+
+**Atom Quant** AKA: `aq` is a easy quantization lib supports most decent and fashion quantization method through `torch.fx`. Unlike original pytorch fx quantization support, we add a fully deploy chain from PTQ and QAT quantization to exporting onnx and then shiping to target inference framework.
+
+atomquant can be easily use to quant any model without a specific dataloader or evaluator, you can even evaluator quantization performance without any GT. 
+
+We also support different quantization from vendor package, such as `onnxruntime`, `pytorch_quantization`, make it more easy to use and with fully examples.
+
+There are 3 main components in atomquant:
+
+- onnx: directly quantize on onnx model (via onnxruntime);
+- atom: Our built-in quantization method;
+- tensorrt: Quantization specific for convert to TensorRT engine usage;
+
+
+## Install
+
+atomquant can be installed via:
+
+```
+pip install atomquant
+```
+
+
+## Model Zoo
+
+Here, we provide some models quantized for coco, it devided into CPU use, or TensorRT use. Related training code also available:
+
+
+
+## Examples
+
+1. Quant Classification
+
+
+2. Quant GPT3
+
+
+3. Quant VITS
+
+
+4. Quant AlphaPose
+
+
+
+5. Quant YOLOv7
+
+
+
+
