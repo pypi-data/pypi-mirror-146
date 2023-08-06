@@ -1,0 +1,8 @@
+setup.py
+stat3255demo/__init__.py
+stat3255demo/demo.py
+stat3255demo.egg-info/PKG-INFO
+stat3255demo.egg-info/SOURCES.txt
+stat3255demo.egg-info/dependency_links.txt
+stat3255demo.egg-info/requires.txt
+stat3255demo.egg-info/top_level.txt
