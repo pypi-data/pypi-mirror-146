@@ -1,0 +1,2 @@
+dbnd==0.70.2
+dbnd-airflow==0.70.2
