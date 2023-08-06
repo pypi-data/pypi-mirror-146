@@ -1,0 +1,13 @@
+README.md
+setup.py
+hbac_bias_detection/__init__.py
+hbac_bias_detection/config.py
+hbac_bias_detection/hbac_bias_detection.py
+hbac_bias_detection/hbac_kmeans.py
+hbac_bias_detection/hbac_utils.py
+hbac_bias_detection.egg-info/PKG-INFO
+hbac_bias_detection.egg-info/SOURCES.txt
+hbac_bias_detection.egg-info/dependency_links.txt
+hbac_bias_detection.egg-info/requires.txt
+hbac_bias_detection.egg-info/top_level.txt
+test/test_basics.py
