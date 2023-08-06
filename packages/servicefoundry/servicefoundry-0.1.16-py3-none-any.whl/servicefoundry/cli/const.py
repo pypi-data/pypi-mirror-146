@@ -1,0 +1,1 @@
+TEMP_FOLDER = '.servicefoundry_templates'
