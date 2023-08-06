@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: kabbes_the_garden
+Version: 0.2.0
+Summary: Package for easily installing and setting up project environments
+Home-page: https://pypi.org/project/kabbes-the-garden/
+Author: James Kabbes
+Author-email: james.kabbes@gmail.com
+License: UNKNOWN
+Project-URL: GitHub, https://github.com/jameskabbes/the_garden
+Project-URL: Documentation, https://jameskabbes.github.io/the_garden
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[GitHub Pages](https://jameskabbes.github.io/the_garden/)
+
+# the_garden
+A build of commonly-used open-source tools
+
+# Project Description
+A collection of Python packages used collectively to ease the pains of team development.
+
+# Installing
+To install for the first time:
+```
+pip install kabbes_the_garden
+```
+
+To upgrade an installation
+```
+pip install kabbes_the_garden --upgrade
+```
+
+# Author(s)
+James Kabbes
+

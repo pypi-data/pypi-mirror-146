@@ -1,0 +1,14 @@
+kabbes_py_starter
+kabbes_parent_class
+kabbes_dir_ops
+kabbes_aws_connections
+kabbes_aws_credentials
+kabbes_analytics_packages
+kabbes_real_time_input
+kabbes_user_profile
+kabbes_nanoid
+kabbes_database_connections
+kabbes_ml_pipeline
+kabbes_repository_generator
+kabbes_pypi_builder
+kabbes_smart_documentation
