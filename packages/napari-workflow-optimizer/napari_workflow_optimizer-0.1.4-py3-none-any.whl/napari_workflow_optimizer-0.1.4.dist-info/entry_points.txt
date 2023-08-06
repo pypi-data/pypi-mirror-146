@@ -1,0 +1,2 @@
+[napari.plugin]
+napari-workflow-optimizer = napari_workflow_optimizer
