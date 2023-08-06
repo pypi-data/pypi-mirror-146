@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: briscola-gym
+Version: 0.1.0
+Summary: Gym environment for Briscola game
+Author: Mikedev
+Author-email: mdv1994@gmail.com
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: gym (>=0.21.0,<0.22.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
