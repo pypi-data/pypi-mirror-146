@@ -1,0 +1,16 @@
+charmonium/cache/__init__.py,sha256=Rv_42aDQMLk_XHYyV4AuRk0i7iwKnkheih45tVa1-HI,1143
+charmonium/cache/helpers.py,sha256=0Jr1mM8DqQi5ulBszx2Esb7AnzMOYt4Zl9MvkcJUuxM,3869
+charmonium/cache/index.py,sha256=oMG44KocZUpMJ6e3FLKaYOQcRJnA3ZLlv_0QObjRe6c,4957
+charmonium/cache/memoize.py,sha256=s6QI5acVBlQH1S0EQulA_TOGX7CVYtTxd0WPLaRXxdk,27153
+charmonium/cache/obj_store.py,sha256=cJvbaOuGxAWSo3ha7eXVXbtrK1w8uxOTbkiwnv7kSe4,3362
+charmonium/cache/pathlike.py,sha256=h4bKU-Z_inrICYDUuhmq77YspOSY8nSky05IruxPr1g,1385
+charmonium/cache/pickler.py,sha256=RvIPbH5i5Jv8hoKuotgqRDRCFIrzfPIEtWa1LiRmsNI,299
+charmonium/cache/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+charmonium/cache/replacement_policies.py,sha256=5NMXeu6e_RkjUT16z7Vvyk9_9viAaLo6F_ggaLmXGk8,3481
+charmonium/cache/rw_lock.py,sha256=4Jo199ytfmJnPEVmPQa5hQw-g4U-6Ubsrr2wwkiB8JM,2142
+charmonium/cache/util.py,sha256=11lPw0ZyGwq6vleS6EpgVuCVOXELBXryUz-aJpH-PFs,4006
+charmonium.cache-1.2.9.dist-info/entry_points.txt,sha256=CCDyR2UkCSklzW718QiPWzZ6H-ir-Lz0okxKqt4QzvU,52
+charmonium.cache-1.2.9.dist-info/LICENSE,sha256=-OKc4kftE-cMfnSZdTSYacuPcdKdeBDorkYQe7vD3NA,1112
+charmonium.cache-1.2.9.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+charmonium.cache-1.2.9.dist-info/METADATA,sha256=L5f7zVJZnFldSwstoU1EGAvJuK7Q607TJv2BW72-EMc,7902
+charmonium.cache-1.2.9.dist-info/RECORD,,
