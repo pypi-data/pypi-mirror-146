@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "lunespy"
+version = "2.0.0"
+description = "Library for communication with nodes in mainnet or testnet of the lunes-blockchain network Allows the automation of sending assets, issue end reissue tokens, leasing, registry, and create new wallet."
+authors = [
+    "Lunes Platform <development@lunes.io>"
+]
+license = "Apache-2.0"
+readme = "README.md"
+documentation = "https://github.com/lunes-platform/lunespy/blob/main/docs/TUTORIAL.md" 
+keywords = [
+    "cryptocurrency",
+    "lunes",
+    "blockchain"
+]
+
+[tool.poetry.dependencies]
+python-axolotl-curve25519 = "^0.4.1.post2"
+requests = "^2.26.0"
+base58 = "^2.1.0"
+python = ">=3.6.2,<4.0"
+pydantic = "^1.9.0"
+httpx = "^0.22.0"
+pysha3 = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+pytest-parallel = "^0.1.1"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+python = "^3.10"
+
+[tool.pytest.ini_options]
+markers = [
+    "requests: marks tests as slow",
+    "now: marks current dev test"
+]
