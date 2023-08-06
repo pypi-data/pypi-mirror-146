@@ -1,0 +1,14 @@
+CppStyleIO/CSyntax.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CppStyleIO/Ctype.py,sha256=VKduecdqMaDld0H1YJaTJySgadnWihYXRWnhX-BCLBo,5607
+CppStyleIO/Exceptions.py,sha256=4scRpdx2nw_p8KuZ_PjripTBjTVnMsLzuEdvzzCNitI,1774
+CppStyleIO/PycharmFakeStdinFix.py,sha256=UzvnGn5Ez56B1oKC1A14_jMOB14R50ZRAIsWvNqIPfY,547
+CppStyleIO/Utils.py,sha256=-JwNiDk24Se8Q0QL80T7LifHhX18Kh7WiumbEZ-NeL0,411
+CppStyleIO/__init__.py,sha256=26VxWOdX3RNsrZaox3k_yagmzp7gdIvh6rwtqtXeeXk,185
+CppStyleIO/iostream.py,sha256=39g5KFg8jJJnweZ43KN_QsbCbhZ4oCkeOiJekPeiz2Y,1636
+CppStyleIO/namespace.py,sha256=zztFwC28WoPtEdAGpN_XoskY_IW4hGfauUyuBa_Nemo,90
+CppStyleIO/stdio.py,sha256=E_LsvvVn9BhY-YIQ1Y3QeJNCEr-buFKejCiuMk2KDYc,3261
+CppStyleIO/stream.py,sha256=phyTco_lSs-DcVAlzOexne5h_i0-Fyjp1QfY8qD4hMY,198
+CppStyleIO-0.0.1.dist-info/METADATA,sha256=DjM4qqNTUoDDojH0CyHcaZrKCqTXbgfL5YExVcVKNY4,181
+CppStyleIO-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CppStyleIO-0.0.1.dist-info/top_level.txt,sha256=hgbpXs_hLa9hz9H0SzHQu3ChyTdk5JrSymBvii_wVgg,11
+CppStyleIO-0.0.1.dist-info/RECORD,,
