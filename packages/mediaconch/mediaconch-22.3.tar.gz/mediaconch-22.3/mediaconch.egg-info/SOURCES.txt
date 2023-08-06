@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mediaconch/__init__.py
+mediaconch.egg-info/PKG-INFO
+mediaconch.egg-info/SOURCES.txt
+mediaconch.egg-info/dependency_links.txt
+mediaconch.egg-info/top_level.txt
+mediaconch/darwin/arm64/libmediaconch.0.dylib
+mediaconch/darwin/x86_64/libmediaconch.0.dylib
+mediaconch/linux/x86_32/libmediaconch.so.0
+mediaconch/linux/x86_64/libmediaconch.so.0
