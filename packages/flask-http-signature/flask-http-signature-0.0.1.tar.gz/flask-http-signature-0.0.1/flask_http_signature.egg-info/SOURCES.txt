@@ -1,0 +1,8 @@
+README.rst
+setup.py
+flask_http_signature/__init__.py
+flask_http_signature.egg-info/PKG-INFO
+flask_http_signature.egg-info/SOURCES.txt
+flask_http_signature.egg-info/dependency_links.txt
+flask_http_signature.egg-info/requires.txt
+flask_http_signature.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+http-message-signatures>=0.2.2
+http-sfv>=0.9.3
+flask
+
+[tests]
+flake8
+coverage
+build
+wheel
+mypy
