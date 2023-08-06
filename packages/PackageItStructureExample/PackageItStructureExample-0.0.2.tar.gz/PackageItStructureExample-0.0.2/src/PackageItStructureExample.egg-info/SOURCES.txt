@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+src/PackageItStructureExample.egg-info/PKG-INFO
+src/PackageItStructureExample.egg-info/SOURCES.txt
+src/PackageItStructureExample.egg-info/dependency_links.txt
+src/PackageItStructureExample.egg-info/entry_points.txt
+src/PackageItStructureExample.egg-info/requires.txt
+src/PackageItStructureExample.egg-info/top_level.txt
+src/packageitstructureexample/bar/__init__.py
+src/packageitstructureexample/bar/__main__.py
+src/packageitstructureexample/foo/__init__.py
