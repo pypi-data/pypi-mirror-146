@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+nhanes_dl.egg-info/PKG-INFO
+nhanes_dl.egg-info/SOURCES.txt
+nhanes_dl.egg-info/dependency_links.txt
+nhanes_dl.egg-info/requires.txt
+nhanes_dl.egg-info/top_level.txt
+src/__init__.py
+src/download.py
+src/types.py
