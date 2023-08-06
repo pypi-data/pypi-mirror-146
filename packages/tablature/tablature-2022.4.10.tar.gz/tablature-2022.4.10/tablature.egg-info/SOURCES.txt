@@ -1,0 +1,8 @@
+README.md
+setup.py
+tablature/__init__.py
+tablature.egg-info/PKG-INFO
+tablature.egg-info/SOURCES.txt
+tablature.egg-info/dependency_links.txt
+tablature.egg-info/not-zip-safe
+tablature.egg-info/top_level.txt
