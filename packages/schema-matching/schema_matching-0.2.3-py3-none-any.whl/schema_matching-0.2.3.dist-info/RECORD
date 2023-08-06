@@ -1,0 +1,12 @@
+schema_matching/__init__.py,sha256=Wm-De1CNvx0tttQZk2oVbITGSQBUQaq4jGFDv3iBl4s,49
+schema_matching/cal_column_similarity.py,sha256=C1FWsqU0i-2jKWv13clU86nFIPOrT_N0VHiHgxMNK7Q,4429
+schema_matching/init.py,sha256=bMy3WQtWMFU9qKzTwnifIMR05OM156mgxoza9ceJMGo,262
+schema_matching/relation_features.py,sha256=oLmrVpk-sWF5uCscGqZHJCbxx3LjpPI057McBjA1ccc,7040
+schema_matching/self_features.py,sha256=F_7D_LhkjUNGsVMPkcX5sZPZKoL4gTIMf_AfzXM6aEA,8052
+schema_matching/train.py,sha256=i9m5WkwWg9-CvxQ_OG4869h1G83b19Z6JP42gymL4RM,7238
+schema_matching/utils.py,sha256=DUjK8R5ll0dHianMV8CqIeSCsqcywBzW1U5s06GHYQk,1801
+schema_matching-0.2.3.dist-info/LICENSE,sha256=bUnh7_VAaE7qyrGH0Owwm1b6igKYOH7Q2N77jqgZKEA,11360
+schema_matching-0.2.3.dist-info/METADATA,sha256=DUFnalViFC31cvxWjPwrwQxhW-8-Rje2LTr1aIwUj80,6628
+schema_matching-0.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+schema_matching-0.2.3.dist-info/top_level.txt,sha256=m7rbNX3ukRiyoIw9BC9H6LRyBNN9rDTnh2R328qmIew,16
+schema_matching-0.2.3.dist-info/RECORD,,
