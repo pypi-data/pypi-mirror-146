@@ -1,0 +1,2 @@
+[console_scripts]
+wattr = filatt:main
