@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: kivy-translate
+Version: 0.1.1
+Summary: Tool to make translations in kivy a little easier.
+Home-page: https://github.com/NomadDemon/kivy_translate
+Author: Marcin Drobnik
+Author-email: hydra@stacja1.pl
+License: MIT
+Project-URL: Source, https://github.com/NomadDemon/kivy_translate
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Localization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
