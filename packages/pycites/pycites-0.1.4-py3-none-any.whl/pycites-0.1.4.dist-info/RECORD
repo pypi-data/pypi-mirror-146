@@ -1,0 +1,8 @@
+pycites/__init__.py,sha256=HGmebjaBSFZ8wCot1wMTWEUlAOsjzGFeBXs5B3Sz6WU,96
+pycites/cites_download.py,sha256=FMtgcbU5wynus6oAl7P-EF6ddgr8ZjZgqgBLgYZp_F8,6473
+pycites/cli.py,sha256=Cro5vwZ86VkX-0L1hY_HFJGrBTBnk836AeBDTfxEe4Y,431
+pycites-0.1.4.dist-info/entry_points.txt,sha256=mM8x932UUurIUR2WM6RlvwqAnHUW9DGwwEVqN2CHgBI,50
+pycites-0.1.4.dist-info/LICENSE,sha256=vU61CIwRTmcSEgj0XKAIrrSiyw37vuqhZP9FSlLj9cA,1054
+pycites-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pycites-0.1.4.dist-info/METADATA,sha256=KWa0XmIQCtdb9dRYcP1jM8fkGKsqU81eQgfxHeWcNzg,2247
+pycites-0.1.4.dist-info/RECORD,,

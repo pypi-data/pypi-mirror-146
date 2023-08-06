@@ -1,0 +1,3 @@
+[console_scripts]
+get_cites_data=pycites.cli:cli
+
