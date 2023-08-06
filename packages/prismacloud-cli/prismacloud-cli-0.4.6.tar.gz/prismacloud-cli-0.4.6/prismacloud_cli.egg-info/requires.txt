@@ -1,0 +1,12 @@
+api-client
+click
+click_completion
+click_help_colors
+coloredlogs
+ipython
+jsondiff
+pandas
+requests
+tabulate
+pydantic
+prismacloud-api
