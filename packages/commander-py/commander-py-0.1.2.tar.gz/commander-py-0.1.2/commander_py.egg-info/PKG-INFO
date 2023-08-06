@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: commander-py
+Version: 0.1.2
+Summary: A very simple tool to create beautiful console application.
+Home-page: https://ozcanyarimdunya.github.io/commander/
+Author: Özcan Yarımdünya
+Author-email: ozcanyd@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Commander
+
+A very simple tool to create beautiful console application.
+
+| Project       | Tabler                                       |
+|---------------|----------------------------------------------|
+| Author        | Özcan Yarımdünya                             |
+| Documentation | https://ozcanyarimdunya.github.io/commander/ |
+| Source code   | https://github.com/ozcanyarimdunya/commander |
+
+## Installation
+
+```shell
+pip install commander-py
+```
+
+## Example
+
+![gif](docs/images/money.gif)
+
+For more checkout [documentation.](https://ozcanyarimdunya.github.io/commander/)
+
+
