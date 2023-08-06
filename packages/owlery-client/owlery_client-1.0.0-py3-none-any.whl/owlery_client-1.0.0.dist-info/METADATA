@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: owlery-client
+Version: 1.0.0
+Summary: Owlery API
+Home-page: 
+Author: Phenoscape and OpenAPI Generator community
+Author-email: rpgoldman@sift.net
+License: MIT
+Keywords: OpenAPI,OpenAPI-Generator,Owlery API,Owlery,OWL,Ontology
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+Requires-Dist: frozendict (>=2.0.3)
+
+    Owlery provides a web API for an [OWL API](http://owlapi.sourceforge.net)-based reasoner containing a configurable set of ontologies (a \&quot;knowledgebase\&quot;).   # noqa: E501
+    
+
