@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/graph2sound/__init__.py
+src/graph2sound.egg-info/PKG-INFO
+src/graph2sound.egg-info/SOURCES.txt
+src/graph2sound.egg-info/dependency_links.txt
+src/graph2sound.egg-info/requires.txt
+src/graph2sound.egg-info/top_level.txt
