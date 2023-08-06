@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ibsplib/__init__.py
+ibsplib/base.py
+ibsplib/constants.py
+ibsplib/ibsp.py
+ibsplib.egg-info/PKG-INFO
+ibsplib.egg-info/SOURCES.txt
+ibsplib.egg-info/dependency_links.txt
+ibsplib.egg-info/top_level.txt
