@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+numpy_eiei/__init__.py
+numpy_eiei/crossed.py
+numpy_eiei/onehot.py
+numpy_eiei.egg-info/PKG-INFO
+numpy_eiei.egg-info/SOURCES.txt
+numpy_eiei.egg-info/dependency_links.txt
+numpy_eiei.egg-info/requires.txt
+numpy_eiei.egg-info/top_level.txt
+numpy_eiei.egg-info/zip-safe
+test/__init__.py
+test/test_crossed.py
+test/test_onehot.py
