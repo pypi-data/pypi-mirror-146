@@ -1,0 +1,15 @@
+judoscale/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+judoscale/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+judoscale/core/adapter_api_client.py,sha256=I9et_Ho2WVSuzG23Xu0a9EY8_04IoGzVc9MaJZvhqfo,502
+judoscale/core/config.py,sha256=mWISFWWjVBLiKU7xOl9jdkWeOFSkkT6aTCPHB0Oy9A8,1011
+judoscale/core/metric.py,sha256=O85JL1cVQuf7hQqq7XKjvTu9pLDzu_G4xTN2rZtwQ4c,180
+judoscale/core/metrics_store.py,sha256=miEifjhAvpKC8p3qKfoTGWaZd07PyHwcJ3QUSdU6pVQ,1177
+judoscale/core/reporter.py,sha256=1XFEtgnqkYkKyrADkXhl9OSyPMQzRPqPCvdpyUpY2sY,1237
+judoscale/django/__init__.py,sha256=rPbI-NOz1iHr0TTqwXiQnCNCja3d_PU9u_c5CEHRYlo,192
+judoscale/django/apps.py,sha256=B_9SnOtmt8tTCt0kX09bbHQD1_YzTsuSpQR-kOYkRPM,1296
+judoscale/django/middleware.py,sha256=q9_xS_VwcWMc8Nv_tetET-gY743KbNVvVUxQA6XPOOM,1277
+judoscale_python-1.0.0rc1.dist-info/LICENSE,sha256=_eksN_RLSjwR7z9dq0ShDY6MSFCrKEx-ijFZa22f1RU,1066
+judoscale_python-1.0.0rc1.dist-info/METADATA,sha256=XEdSFV9Ol9jzW90yfSiM3wqWpRsWMBUNspg5G_rd34s,1905
+judoscale_python-1.0.0rc1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+judoscale_python-1.0.0rc1.dist-info/top_level.txt,sha256=ro2ZsIMBU0Nf22Dq4jIHsqYU9lYjRhZS3OTReKl6QMs,10
+judoscale_python-1.0.0rc1.dist-info/RECORD,,
