@@ -1,0 +1,9 @@
+README.md
+setup.py
+PhasorMicroscopy/__init__.py
+PhasorMicroscopy/funciones.py
+PhasorMicroscopy.egg-info/PKG-INFO
+PhasorMicroscopy.egg-info/SOURCES.txt
+PhasorMicroscopy.egg-info/dependency_links.txt
+PhasorMicroscopy.egg-info/requires.txt
+PhasorMicroscopy.egg-info/top_level.txt
