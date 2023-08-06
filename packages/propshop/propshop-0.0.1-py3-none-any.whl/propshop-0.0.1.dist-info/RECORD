@@ -1,0 +1,9 @@
+propshop/__init__.py,sha256=kTnZdL7KtMsJjc0Ovmhxal5eOXFqImckouA3kX44zrE,136
+propshop/api.py,sha256=5iUrrHh1V-so8B80cH4UwfggDNeaHJRFZuGAESAKbEo,743
+propshop/configs.py,sha256=C2qmAMOEXDV5tIFzAi2at_XTZDFPxcfH-Q20jgvgiXY,943
+propshop/defaults.toml,sha256=RgNV8xpX07p4PoTWvZGCQsHeL6TIfWQ-9_LC4n5QLds,28
+propshop/library.py,sha256=eeFkriLgfkLdnEJ9F9XZ7JcHCEaiGkDwY_zzDAz8TfM,211
+propshop-0.0.1.dist-info/LICENSE,sha256=cU-HNVvIQ0pIyExAoqcgw7pskmFMdqUqtCFWh8SFIqg,1072
+propshop-0.0.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+propshop-0.0.1.dist-info/METADATA,sha256=9MCYB0igT592fEumr-n0awE3cGwTuz_-A6GgCboOc2M,776
+propshop-0.0.1.dist-info/RECORD,,
