@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yni
+Version: 0.0.1
+Summary: A parser for the yni config file.
+Home-page: https://github.com/FrostiiWeeb/yni
+License: MPL-2.0
+Keywords: yni,config,parser
+Author: Alex Hutz
+Author-email: frostiiweeb@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/FrostiiWeeb/yni
+Description-Content-Type: text/x-rst
+
+
