@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/malbook/__init__.py
+src/malbook/__main__.py
+src/malbook/environment.py
+src/malbook/errors.py
+src/malbook/framework.py
+src/malbook.egg-info/PKG-INFO
+src/malbook.egg-info/SOURCES.txt
+src/malbook.egg-info/dependency_links.txt
+src/malbook.egg-info/entry_points.txt
+src/malbook.egg-info/requires.txt
+src/malbook.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+malbook = malbook.__main__:_main

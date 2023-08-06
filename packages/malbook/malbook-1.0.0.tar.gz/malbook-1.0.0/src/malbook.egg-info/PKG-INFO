@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: malbook
+Version: 1.0.0
+Summary: Jupyter notebooks framework for automated malware analysis
+Home-page: https://github.com/rdzhaafar/malbook
+Author: Rida Dzhaafar
+Author-email: rdzhaafar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+
+https://github.com/rdzhaafar/malbook
+
