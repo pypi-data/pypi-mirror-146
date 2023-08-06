@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: py-taliro
+Version: 0.2.1
+Summary: Py-TaLiRo is the Python interface for TP/DP-TaLiRo.
+Home-page: https://gitlab.com/sbtg/dp-taliro
+Download-URL: https://pypi.org/project/py-taliro
+Author: Jacob Anderson
+Author-email: andersonjwan@gmail.com
+License: GPLv2
+Project-URL: Bug Tracker, https://gitlab.com/sbtg/dp-taliro/issues
+Platform: Linux
+Platform: Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.22)
+
+It provides:
+
+- A robust interface to the C libraries of TP/DP-TaLiRo
+- Euclidean distance robustness computations
+- Hybrid Automata (HA) representations as graphs
+- Hybrid distance robustness computations
+
+
