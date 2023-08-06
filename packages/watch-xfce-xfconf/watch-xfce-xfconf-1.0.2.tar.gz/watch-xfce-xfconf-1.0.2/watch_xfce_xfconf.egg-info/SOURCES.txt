@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+watch_xfce_xfconf/__init__.py
+watch_xfce_xfconf/xfconf.py
+watch_xfce_xfconf.egg-info/PKG-INFO
+watch_xfce_xfconf.egg-info/SOURCES.txt
+watch_xfce_xfconf.egg-info/dependency_links.txt
+watch_xfce_xfconf.egg-info/entry_points.txt
+watch_xfce_xfconf.egg-info/requires.txt
+watch_xfce_xfconf.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+watch-xfce-xfconf = watch_xfce_xfconf.__init__:watch_xfce_xfconf
