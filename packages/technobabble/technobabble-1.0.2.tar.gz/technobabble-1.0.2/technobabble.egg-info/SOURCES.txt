@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+.venv/lib/python3.9/site-packages/webencodings-0.5.1.dist-info/metadata.json
+technobabble/Babbler.py
+technobabble/__init__.py
+technobabble.egg-info/PKG-INFO
+technobabble.egg-info/SOURCES.txt
+technobabble.egg-info/dependency_links.txt
+technobabble.egg-info/top_level.txt
+technobabble/resources/babbles.json
+tests/test_data/should_have_babbles.json
