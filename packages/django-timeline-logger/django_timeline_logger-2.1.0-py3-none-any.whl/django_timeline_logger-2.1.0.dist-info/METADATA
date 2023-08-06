@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: django-timeline-logger
+Version: 2.1.0
+Summary: Generic event logger for Django models.
+Home-page: https://github.com/maykinmedia/django-timeline-logger
+Author: Maykin Media
+Author-email: support@maykinmedia.nl
+License: MIT
+Project-URL: Documentation, http://django-timeline-logger.readthedocs.io/en/latest/
+Project-URL: Changelog, https://github.com/maykinmedia/django-timeline-logger/blob/master/docs/changelog.rst
+Project-URL: Bug Tracker, https://github.com/maykinmedia/django-timeline-logger/issues
+Project-URL: Source Code, https://github.com/maykinmedia/django-timeline-logger
+Keywords: django,generic logging
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: django (>=3.2)
+Requires-Dist: django-appconf
+Provides-Extra: coverage
+Requires-Dist: pytest-cov ; extra == 'coverage'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: pep8
+Requires-Dist: flake8 ; extra == 'pep8'
+Provides-Extra: release
+Requires-Dist: bump2version ; extra == 'release'
+Requires-Dist: twine ; extra == 'release'
+Provides-Extra: tests
+Requires-Dist: factory-boy ; extra == 'tests'
+Requires-Dist: psycopg2 ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-django ; extra == 'tests'
+Requires-Dist: pytest-pep8 ; extra == 'tests'
+Requires-Dist: pytest-pylint ; extra == 'tests'
+Requires-Dist: pytest-pythonpath ; extra == 'tests'
+Requires-Dist: pytest-runner ; extra == 'tests'
+Requires-Dist: tox ; extra == 'tests'
+Requires-Dist: black ; extra == 'tests'
+Requires-Dist: isort ; extra == 'tests'
+
+======================
+django-timeline-logger
+======================
+
+A reusable Django app to log actions and display them in a timeline
+
+|build-status| |code-quality| |coverage| |black|
+
+|python-versions| |django-versions| |pypi-version|
+
+Prerequisites
+=============
+
+This project uses ``django.contrib.postgres.JSONField``, and as such, you need:
+
+* at least Django 3.2+
+* a database supporting ``django.db.models.JSONField``
+* A modern setuptools version
+
+
+Installation
+============
+
+Install from PyPI by running
+
+    pip install django-timeline-logger
+
+Add ``'timeline_logger'`` to your ``INSTALLED_APPS``.
+
+Run the migrations:
+
+    python manage.py migrate
+
+
+Usage in templates
+==================
+
+A custom template tag is provided to render the message of a log entry, for example::
+
+    {% extends "timeline_logger/base.html" %}
+    {% load timeline %}
+
+    {% block timeline %}
+        <ul class="timeline__list col__22--vw">
+        {% for log in object_list %}
+            <li class="timeline__entry">
+                {% render_message log in_view=True %}
+            </li>
+        {% endfor %}
+        </ul>
+    {% endblock timeline %}
+
+
+This way, you can pass extra context to the template used for the log object.
+
+
+Documentation
+=============
+
+The extended documentation is available on `Read the Docs`_.
+
+.. _Read the Docs: http://django-timeline-logger.readthedocs.io/en/latest/
+
+
+.. |build-status| image:: https://github.com/maykinmedia/django-timeline-logger/actions/workflows/ci.yml/badge.svg
+    :alt: Build status
+    :target: https://github.com/maykinmedia/django-timeline-logger/actions/workflows/ci.yml
+
+.. |code-quality| image:: https://github.com/maykinmedia/django-timeline-logger/actions//workflows/code_quality.yml/badge.svg
+    :alt: Code quality checks
+    :target: https://github.com/maykinmedia/django-timeline-logger/actions//workflows/code_quality.yml
+
+.. |coverage| image:: https://codecov.io/gh/maykinmedia/django-timeline-logger/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/maykinmedia/django-timeline-logger
+    :alt: Coverage status
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+
+.. |python-versions| image:: https://img.shields.io/pypi/pyversions/django-timeline-logger.svg
+
+.. |django-versions| image:: https://img.shields.io/pypi/djversions/django-timeline-logger.svg
+
+.. |pypi-version| image:: https://img.shields.io/pypi/v/django-timeline-logger.svg
+    :target: https://pypi.org/project/django-timeline-logger/
+
+
