@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+HISTORY.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nftscan/__init__.py
+nftscan/nftscan_api.py
+nftscan/utils.py
+nftscan_api.egg-info/PKG-INFO
+nftscan_api.egg-info/SOURCES.txt
+nftscan_api.egg-info/dependency_links.txt
+nftscan_api.egg-info/not-zip-safe
+nftscan_api.egg-info/requires.txt
+nftscan_api.egg-info/top_level.txt
