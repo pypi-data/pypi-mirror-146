@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/gui_scripter/__init__.py
+src/gui_scripter.egg-info/PKG-INFO
+src/gui_scripter.egg-info/SOURCES.txt
+src/gui_scripter.egg-info/dependency_links.txt
+src/gui_scripter.egg-info/requires.txt
+src/gui_scripter.egg-info/top_level.txt

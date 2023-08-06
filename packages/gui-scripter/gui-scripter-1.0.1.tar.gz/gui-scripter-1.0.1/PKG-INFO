@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: gui-scripter
+Version: 1.0.1
+Summary: Simple GUI for Python Scripts
+Home-page: https://github.com/MayasMess/gui-scripter/issues
+Author: Amayas Messara
+Author-email: amayas.messara@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MayasMess/pandas-oop/issues
+Keywords: gui,scripts,simple gui,python gui
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Simple GUI for scripts 🤖 !
+-
+![image](img/app1.png)
+
+Installation:
+-
+```shell script
+  pip install gui-scripter
+```
+Example:
+-
+```python
+from gui_scripter import Gui, entry, drop_box
+```
+
+```python
+class MyFirstApplication(Gui):
+
+    inputs = [
+        entry('name'),
+        entry('age'),
+    ]
+    title = 'My First Application'
+
+    def script(self):
+        for x in range(1, 51):
+            self.set_progress_bar(x*2)
+        print(f"Yo, my name is {self.get('name')} and i'm {self.get('age')} years old")
+```
+
+
