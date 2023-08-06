@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: mp3get
+Version: 0.2.0
+Summary: My short description for my project.
+Home-page: https://github.com/hsw1020/mp3get/tree/master
+Author: wsh
+Author-email: w4hao@sina.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# mp3get
+一个python库，可以搜索和下载任何歌曲 
+## 安装
+pip install mp3get
+## 使用
+from mp3get import Mp3find  
+
+mp=Mp3find()  
+
+list=mp.searcher('孤勇者')  
+
+mp3_link=mp.down_mp3(rid)  
+
+rid 为searcher返回值，为具体mp3的id
+
+
