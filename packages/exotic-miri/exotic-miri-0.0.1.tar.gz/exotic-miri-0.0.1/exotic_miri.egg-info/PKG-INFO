@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: exotic-miri
+Version: 0.0.1
+Summary: ExoTiC MIRI data reduction steps
+Home-page: https://github.com/Exo-TiC/ExoTiC-MIRI
+Author: David Grant
+Author-email: david.grant@bristol.ac.uk
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+ExoTiC-MIRI
+===========
+
+**Custom steps for JWST MIRI data reduction. Interoperable with the STScI pipeline.**
+
+.. image:: https://github.com/DavoGrant/ExoTiC-MIRI/workflows/unittests/badge.svg
+   :target: https://github.com/DavoGrant/ExoTiC-MIRI/actions/workflows/python-app.yml
+   
+.. image:: https://readthedocs.org/projects/exotic-miri/badge/?version=latest
+   :target: https://exotic-miri.readthedocs.io/en/latest/?badge=latest
+
+|
+
+::
+
+   pip install exotic-miri
+
+| Read the full documentation at: `exotic-miri.readthedocs.io <https://exotic-miri.readthedocs.io/>`_
+
+

@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.py
+exotic_miri/__init__.py
+exotic_miri/drop_groups_step.py
+exotic_miri/drop_integrations_step.py
+exotic_miri/extract_1d_step.py
+exotic_miri/reference_pixel_step.py
+exotic_miri/regroup_step.py
+exotic_miri.egg-info/PKG-INFO
+exotic_miri.egg-info/SOURCES.txt
+exotic_miri.egg-info/dependency_links.txt
+exotic_miri.egg-info/requires.txt
+exotic_miri.egg-info/top_level.txt
+exotic_miri.egg-info/zip-safe

@@ -1,0 +1,5 @@
+numpy
+pandas
+scipy
+matplotlib
+jwst>=1.4.3
