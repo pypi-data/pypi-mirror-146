@@ -1,0 +1,7 @@
+geocoder
+pillow
+requests
+xerox
+
+[:platform_system == "Windows"]
+pywin32
