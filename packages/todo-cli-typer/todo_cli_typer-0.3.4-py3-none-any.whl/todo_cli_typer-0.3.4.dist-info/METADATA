@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: todo-cli-typer
+Version: 0.3.4
+Summary: CLI Todo app with typer, FastAPI and sqlite
+Author: Xinyuan Chen
+Author-email: 45612704+tddschn@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: shellingham (==1.4.0)
+Requires-Dist: typer (==0.3.2)
