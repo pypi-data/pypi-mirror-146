@@ -1,0 +1,3 @@
+[console_scripts]
+ezwsl = easywsl.__main__:main
+
