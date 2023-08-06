@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: face_hunters
+Version: 0.6.7
+Summary: This is an application developped by 4BIM INSA students to help you create a robot portait of your agressor.
+Home-page: https://github.com/lucieschwoertzig/face_hunters
+Author: G3
+Author-email: lucieschw@gmail.com
+License: MIT
+Keywords: PORTRAITS,AUTOENCODER,GENETIC
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+UNKNOWN
+
