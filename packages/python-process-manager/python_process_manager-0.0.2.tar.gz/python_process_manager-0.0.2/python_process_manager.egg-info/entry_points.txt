@@ -1,0 +1,2 @@
+[console_scripts]
+ppm = python_process_manager.__init__:run
