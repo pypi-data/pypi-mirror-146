@@ -1,0 +1,4 @@
+[console_scripts]
+blescan = qtooth.blescan:main
+sensortag = qtooth.sensortag:main
+thingy52 = qtooth.thingy52:main
