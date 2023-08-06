@@ -1,0 +1,2 @@
+[console_scripts]
+lkmlstyle = lkmlstyle.cli:main
