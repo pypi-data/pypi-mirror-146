@@ -1,0 +1,12 @@
+cooldowns/__init__.py,sha256=SZl8kPhnIibdv6NGW0ARN8zb0a4yJllKLOl4hzy9u8w,505
+cooldowns/buckets.py,sha256=dtrD4YBFjqSvFkG0PpQldFGlVti5MVhqEtu-NRpSFpg,2978
+cooldowns/cooldown.py,sha256=j8T_3zkks8em0y0byr6IRvBbbu71lz-k6l-taiFYQes,8846
+cooldowns/exceptions.py,sha256=vHUO188NkY6r30r02pLfO5CJUjed0i8Pdb9PtEwCSSY,1387
+cooldowns/utils.py,sha256=29_u29ShDxs5HDa9yFAQ7ERTWEipYY_O_MEL6MstP6U,349
+cooldowns/protocols/__init__.py,sha256=IqMj81_cjd7XIxq0mHMKrGjRMr82Gedz0KmNWbEFrfA,82
+cooldowns/protocols/bucket.py,sha256=FJ2KTwYhf-xIGYnJkMSvO83E2aqllypW3U-ZQA9RCMc,375
+function_cooldowns-0.1.0.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+function_cooldowns-0.1.0.dist-info/METADATA,sha256=gK-i3-laPrbh0j0MnskjHUR-A1BUnXUhoCB_JbLPqZM,579
+function_cooldowns-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+function_cooldowns-0.1.0.dist-info/top_level.txt,sha256=VPs_cKv3v89FunKzyYWp54ZAL27fRX2pMw2T3q6h5BI,10
+function_cooldowns-0.1.0.dist-info/RECORD,,
