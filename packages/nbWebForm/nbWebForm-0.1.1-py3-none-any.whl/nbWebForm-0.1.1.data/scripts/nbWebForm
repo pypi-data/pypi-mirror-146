@@ -1,0 +1,113 @@
+#!python
+"""Present an HTML form for the parameters of a notebook, and run it on submission.
+
+To use this example, run::
+
+    python3 webapp.py "Stock display.ipynb"
+
+The form fields are not hardcoded here; they are built from the notebook, so it
+should build a suitable form for any notebook you run this with. Try it with
+Fibonacci.ipynb as well.
+"""
+
+from dotenv import dotenv_values
+import os
+import sys
+import time
+
+from nbclient import execute
+from nbconvert.exporters import HTMLExporter
+import nbformat
+import tornado.ioloop
+import tornado.web
+
+from nbparameterise import extract_parameters, replace_definitions, Parameter
+from nbWebForm.htmlform import build_form
+
+static_path = os.path.join(os.path.dirname(__file__), 'static')
+
+
+class MainHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.write(str(build_form(self.application.parameters,
+                                  self.application.nbname)))
+
+class SubmissionHandler(tornado.web.RequestHandler):
+    def post(self):
+        defined = []
+        for v in self.application.parameters:
+            if v.type is bool:
+                inp = v.with_value(self.get_argument(v.name, default='off') == 'on')
+            elif v.type is list:
+                #parse select element as string otherwise v.type will convert to a series of letters
+                inp = v.with_value(str(self.get_argument(v.name)))
+            else:
+                inp = v.with_value(v.type(self.get_argument(v.name)))
+            defined.append(inp)
+        nb = replace_definitions(self.application.nb, defined)
+        try:
+            nb = execute(nb, cwd=os.path.dirname(self.application.path))
+        except Exception as e:
+            print(e)
+        output, _ = HTMLExporter().from_notebook_node(nb)
+        self.write(output)
+
+
+class NbparameteriseApplication(tornado.web.Application):
+    def __init__(self, path):
+        self.path = path
+        self.nb = nbformat.read(path, as_version=4)
+        
+        basename = os.path.basename(path)
+        assert basename.endswith('.ipynb')
+        self.nbname = basename[:-6]
+        self.parameters = extract_parameters(self.nb)
+        super().__init__([
+            (r"/", MainHandler),
+            (r"/submit", SubmissionHandler)
+        ], static_path=static_path)
+
+def main():
+    config = {
+        **dotenv_values(".env.shared"),  # load shared development variables
+        **os.environ,  # override loaded values with environment variables
+    }
+
+    NOTEBOOK = sys.argv[1]
+    if NOTEBOOK is None:
+        NOTEBOOK = os.getenv("NotebookPath")
+        if NOTEBOOK is None:
+            if os.path.exists("App.ipynb"):
+                NOTEBOOK = "App.ipynb"
+
+            elif os.path.exists("Main.ipynb"):
+                NOTEBOOK = "Main.ipynb"
+
+            elif os.path.exists("__init__.ipynb"):
+                NOTEBOOK = "__init__.ipynb"
+
+    HOST = os.getenv("NotbookWebAppHOST")
+    if HOST is None:
+        HOST = "localhost"
+
+    PORT = os.getenv("NotbookWebAppPort")
+    if PORT is None:
+        PORT=3131
+
+    UPNP = os.getenv("NotbookWebAppUPNP") == "true"
+    if UPNP:
+        import miniupnpc
+        upnp = miniupnpc.UPnP()
+        upnp.discoverdelay = 10
+        upnp.discover()
+        upnp.selectigd()
+        # addportmapping(external-port, protocol, internal-host, internal-port, description, remote-host)
+        upnp.addportmapping(PORT, 'TCP', upnp.lanaddr, PORT, f"{NOTEBOOK} Server", '')
+
+    application = NbparameteriseApplication(NOTEBOOK)
+    application.listen(PORT)
+    print(f"Visit http://{HOST}:{PORT}/")
+    tornado.ioloop.IOLoop.instance().start()
+
+if __name__ == "__main__":
+    main()

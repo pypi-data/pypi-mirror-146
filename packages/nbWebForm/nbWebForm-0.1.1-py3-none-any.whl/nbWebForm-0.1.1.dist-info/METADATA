@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nbWebForm
+Version: 0.1.1
+Summary: Simple jupyter Notebook WebForm System
+Home-page: https://github.com/sam2332/nbWebForm
+Author: Sam Rudloff
+Author-email: sam.rudloff@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argparse
+Requires-Dist: nbformat
+Requires-Dist: nbclient
+Requires-Dist: nbparameterise
+
+UNKNOWN
+
