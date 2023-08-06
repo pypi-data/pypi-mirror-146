@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/liste_iniziativa_medica/__init__.py
+src/liste_iniziativa_medica/__main__.py
+src/liste_iniziativa_medica/gui.py
+src/liste_iniziativa_medica/helpers.py
+src/liste_iniziativa_medica/list.py
+src/liste_iniziativa_medica.egg-info/PKG-INFO
+src/liste_iniziativa_medica.egg-info/SOURCES.txt
+src/liste_iniziativa_medica.egg-info/dependency_links.txt
+src/liste_iniziativa_medica.egg-info/entry_points.txt
+src/liste_iniziativa_medica.egg-info/requires.txt
+src/liste_iniziativa_medica.egg-info/top_level.txt
