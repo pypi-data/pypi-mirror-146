@@ -1,0 +1,13 @@
+plana/__init__.py,sha256=wil8mcnQP7FHSDvlIlzXZCivazFTPE4g7mhv5MoU-ZA,156
+plana/dom.py,sha256=iLfUzlnASJWhOxsm7VsFzry2TFXmbSrHPOW8LVLS614,2078
+plana/expr.py,sha256=DsSEo6J0WVy4bi1fl0h_uCXrzhDiC-a9ds0PvxO6uvw,6496
+plana/mesh.py,sha256=M4aBdxqTca4_lwWxV5tMIx0XMry59e6PznAPkhHHrRk,5283
+plana/plana.cp39-win_amd64.pyd,sha256=ALozo_qe46hKaVQdoTs473dqanlGlpppnVf55guZBXA,3075584
+plana-0.1.0.data/data/README/README.md,sha256=ijG2g85q_1kDudUJnqL0CbZIHpZqiJEUE6n6i5CeCdo,684
+plana-0.1.0.data/data/licenses/APACHE2,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+plana-0.1.0.data/data/licenses/MIT,sha256=jBMu7f7Rlfn-QCQS4DI-hTe1l7dK5LwkcstRQhWXjTQ,1094
+plana-0.1.0.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+plana-0.1.0.dist-info/METADATA,sha256=ZtOddXH0jD3d5oqrHkgigHvjzXCmhbLy8NOgazwQHDM,1191
+plana-0.1.0.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+plana-0.1.0.dist-info/top_level.txt,sha256=_Q6om2unne0S-rmCnYEKurwYW9giCDifp6EqqbPdInQ,6
+plana-0.1.0.dist-info/RECORD,,
