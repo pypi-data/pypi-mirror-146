@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+KekikTaban/__init__.py
+KekikTaban/konsolTaban.py
+KekikTaban.egg-info/PKG-INFO
+KekikTaban.egg-info/SOURCES.txt
+KekikTaban.egg-info/dependency_links.txt
+KekikTaban.egg-info/requires.txt
+KekikTaban.egg-info/top_level.txt

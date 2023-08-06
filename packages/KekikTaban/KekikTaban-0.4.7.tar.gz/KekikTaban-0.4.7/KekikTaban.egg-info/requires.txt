@@ -1,0 +1,10 @@
+requests
+parsel
+pytz
+pyfiglet
+rich
+qrcode
+Pillow
+notify-py
+tqdm
+tabulate
