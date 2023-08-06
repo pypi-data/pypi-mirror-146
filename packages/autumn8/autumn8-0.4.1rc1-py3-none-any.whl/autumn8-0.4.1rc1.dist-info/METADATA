@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: autumn8
+Version: 0.4.1rc1
+Summary: Utilities to export models to the autumn8.ai service
+Author: Autumn8
+Author-email: marcink@radcode.co
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: appdirs
+Requires-Dist: wheel (>=0.31.0)
+Requires-Dist: boto3 (>=1.20.15)
+Requires-Dist: tensorflow
+Requires-Dist: click (>=8.0.1)
+Requires-Dist: questionary (>=1.10.0)
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+UNKNOWN
+
