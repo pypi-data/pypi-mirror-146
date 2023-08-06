@@ -1,0 +1,15 @@
+dataset_orm/__init__.py,sha256=aflKX-zSWkV1gLmcDDZFrUoKOQsuXLLmfIJXBFgLLHw,247
+dataset_orm/columns.py,sha256=d078NyjMalgi0EpEUBIYbAGNGeGqBUwYVZ2ALo2qem4,3872
+dataset_orm/files.py,sha256=3VQfO-3c4gMLnZd6OJOqe-MpvbUIKr7sGyFlHu7pbgE,8082
+dataset_orm/model.py,sha256=4YhJGM-4YmDicM4dlm9QBSFM2fOxAWR1an5tDiqQi0I,12235
+dataset_orm/query.py,sha256=R7aSXq8duxuA1K9uZA5AishcUJmOdPEuMEG-wR_kwfE,4674
+dataset_orm/util.py,sha256=H94R6Xegbfk26R_w52-ABOlQ5nk2eFT0O-YT6j_ivzU,336
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/examples.py,sha256=FR0o3-19gKk07pbgsaeLdAiEQ33NtHM2mOL8-PJsBho,756
+tests/test_files.py,sha256=3DKq8MMpcha8z0esZaB1JkTRZZkM0Hdcl1DqMzrvihU,6906
+tests/test_models.py,sha256=RHPZ7K9sr_p05BuonRtQdmH9_7bSmrz1iVrQIzUWup4,11077
+dataset_orm-0.2.dist-info/LICENSE,sha256=0Z0j6IYIugIDbnK3ASi2fp1Ws7Tp0UVJPaFk4VGYohk,1071
+dataset_orm-0.2.dist-info/METADATA,sha256=fo5DYLJ5dg-7-BBK5HyY2a395Gqn2QnX3yhjCc8CMRQ,2749
+dataset_orm-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dataset_orm-0.2.dist-info/top_level.txt,sha256=6kOy-Md7z8hKXvmHJSXn-BL_Y88Ur1r4fndLMGQcBiA,18
+dataset_orm-0.2.dist-info/RECORD,,
