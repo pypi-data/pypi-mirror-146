@@ -1,0 +1,11 @@
+itk_splitcomponents-2.0.6.dist-info/RECORD,,
+itk_splitcomponents-2.0.6.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+itk_splitcomponents-2.0.6.dist-info/METADATA,sha256=xepD8MrSlwlKC6_4SpyAXKPCjMrMm1G8kj-ly1JWNkI,1689
+itk_splitcomponents-2.0.6.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_splitcomponents-2.0.6.dist-info/WHEEL,sha256=JF3UXHJj4JM6mlpzuJRLIBiNGz-qtiju4I0SwT1Jy04,141
+itk/SplitComponentsPython.py,sha256=Jmam3SBNvQmxye_aoQCvqI3PNwk30ghhX4IccTKunkA,2376
+itk/_SplitComponentsPython.so,sha256=M0r-1fahS19KqWspUGLFBvkrIzmgLnyt2m5qm5p-cj0,5318048
+itk/itkSplitComponentsImageFilterPython.py,sha256=bBeFmRIpoCU9FSKtqB8fExqocEk8YQ_NF-Se4_aW7e0,80289
+itk/Configuration/SplitComponentsConfig.py,sha256=yhRcKiXGNp4TxZqwreEsJizDRiFt-hAIgiLfVExMCfQ,5073
+itk/Configuration/SplitComponents_snake_case.py,sha256=IYV7v7mkeMGffdoC9kYXlUCQVNsZ_20x5gCnvR1ebaY,59
+itk_splitcomponents.libs/libtbb-a0c974ac.so.12.3,sha256=hR9M_Owl0elxvtqil2P_Mc94oql-oiwpI6M8fiNyn6g,444448
