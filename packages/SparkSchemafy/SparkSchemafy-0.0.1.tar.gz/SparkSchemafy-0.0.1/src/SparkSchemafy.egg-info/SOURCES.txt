@@ -1,0 +1,10 @@
+.gitignore
+LICENSE.txt
+README.md
+setup.py
+src/schemafy.py
+src/SparkSchemafy.egg-info/PKG-INFO
+src/SparkSchemafy.egg-info/SOURCES.txt
+src/SparkSchemafy.egg-info/dependency_links.txt
+src/SparkSchemafy.egg-info/requires.txt
+src/SparkSchemafy.egg-info/top_level.txt
