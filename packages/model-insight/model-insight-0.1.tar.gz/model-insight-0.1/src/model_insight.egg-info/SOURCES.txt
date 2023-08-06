@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+src/model-insight/__init__.py
+src/model-insight/example/__init__.py
+src/model-insight/example/mcdm_functions.py
+src/model_insight.egg-info/PKG-INFO
+src/model_insight.egg-info/SOURCES.txt
+src/model_insight.egg-info/dependency_links.txt
+src/model_insight.egg-info/requires.txt
+src/model_insight.egg-info/top_level.txt
