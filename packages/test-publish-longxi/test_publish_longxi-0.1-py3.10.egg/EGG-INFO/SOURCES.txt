@@ -1,0 +1,5 @@
+setup.py
+test_publish_longxi.egg-info/PKG-INFO
+test_publish_longxi.egg-info/SOURCES.txt
+test_publish_longxi.egg-info/dependency_links.txt
+test_publish_longxi.egg-info/top_level.txt
