@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/sussy/__init__.py
+src/sussy/prompts.py
+src/sussypy.egg-info/PKG-INFO
+src/sussypy.egg-info/SOURCES.txt
+src/sussypy.egg-info/dependency_links.txt
+src/sussypy.egg-info/top_level.txt
