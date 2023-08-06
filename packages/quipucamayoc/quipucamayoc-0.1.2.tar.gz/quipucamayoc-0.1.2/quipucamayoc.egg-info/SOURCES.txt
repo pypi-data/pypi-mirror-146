@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+quipucamayoc/__init__.py
+quipucamayoc/aws_extract_tables.py
+quipucamayoc/aws_setup.py
+quipucamayoc/cli.py
+quipucamayoc/old_aws_extract_tables.py
+quipucamayoc/version.py
+quipucamayoc.egg-info/PKG-INFO
+quipucamayoc.egg-info/SOURCES.txt
+quipucamayoc.egg-info/dependency_links.txt
+quipucamayoc.egg-info/entry_points.txt
+quipucamayoc.egg-info/not-zip-safe
+quipucamayoc.egg-info/requires.txt
+quipucamayoc.egg-info/top_level.txt
