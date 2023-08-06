@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+how_its_made/src/how_its_made.py
+how_its_made/src/how_its_made.egg-info/PKG-INFO
+how_its_made/src/how_its_made.egg-info/SOURCES.txt
+how_its_made/src/how_its_made.egg-info/dependency_links.txt
+how_its_made/src/how_its_made.egg-info/requires.txt
+how_its_made/src/how_its_made.egg-info/top_level.txt
