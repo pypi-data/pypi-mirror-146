@@ -1,0 +1,4 @@
+[console_scripts]
+amk.kakashi = amk.kakashi:main
+amk_kakashi = amk.kakashi:main
+kks = amk.kakashi:main

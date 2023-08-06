@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+amk.kakashi.egg-info/PKG-INFO
+amk.kakashi.egg-info/SOURCES.txt
+amk.kakashi.egg-info/dependency_links.txt
+amk.kakashi.egg-info/entry_points.txt
+amk.kakashi.egg-info/requires.txt
+amk.kakashi.egg-info/top_level.txt
+amk/kakashi/__init__.py
+amk/kakashi/arg_parse.py
+amk/kakashi/consts.py
+amk/kakashi/kakashi.py
+amk/kakashi/logger.py
