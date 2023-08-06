@@ -1,0 +1,3 @@
+[console_scripts]
+kzr_snowflake = kzr_snowflake.cli:main
+
