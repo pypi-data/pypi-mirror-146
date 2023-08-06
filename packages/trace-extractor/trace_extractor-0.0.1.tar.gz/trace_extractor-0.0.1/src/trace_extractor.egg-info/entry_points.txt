@@ -1,0 +1,2 @@
+[console_scripts]
+trace_extractor = trace_extractor.main:main
