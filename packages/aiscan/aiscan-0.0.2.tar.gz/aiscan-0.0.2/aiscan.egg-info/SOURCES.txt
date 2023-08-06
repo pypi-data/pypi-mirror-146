@@ -1,0 +1,10 @@
+README.rst
+setup.py
+aiscan/__init__.py
+aiscan/__main__.py
+aiscan.egg-info/PKG-INFO
+aiscan.egg-info/SOURCES.txt
+aiscan.egg-info/dependency_links.txt
+aiscan.egg-info/entry_points.txt
+aiscan.egg-info/requires.txt
+aiscan.egg-info/top_level.txt
