@@ -1,0 +1,92 @@
+{
+  "start_time": "2022-04-14 00:00:00",
+  "end_time": "2022-04-15 00:00:00",
+  "title": "测试秒杀",
+  "is_preheat": 0,
+  "rules[is_commission]": 0,
+  "rules[limit_type]": 0,
+  "goods_info": [
+                {
+                  "goods_id":"11160",
+                  "has_option":"1",
+                  "rules":[
+                          {
+                            "option_id":"28395",
+                            "activity_stock":"2",
+                            "activity_price":"30",
+                            "is_join":"1"
+                          },
+                  {
+                    "option_id":"28397",
+                    "activity_stock":"2",
+                    "activity_price":"35",
+                    "is_join":"1"
+                  },
+                  {
+                    "option_id":"28400",
+                    "activity_stock":"2",
+                    "activity_price":"30",
+                    "is_join":"0"
+                  },
+                  {
+                    "option_id":"28401",
+                    "activity_stock":"2",
+                    "activity_price":"30",
+                    "is_join":"0"
+                  },
+                  {
+                    "option_id":"28402",
+                    "activity_stock":"2",
+                    "activity_price":"30",
+                    "is_join":"0"
+                  },
+                  {
+                    "option_id":"28403",
+                    "activity_stock":"2",
+                    "activity_price":"30",
+                    "is_join":"0"
+                  },
+                  {
+                    "option_id":"28404",
+                    "activity_stock":"2",
+                    "activity_price":"30",
+                    "is_join":"0"
+                  },
+                  {
+                    "option_id":"28405",
+                    "activity_stock":"2",
+                    "activity_price":"30",
+                    "is_join":"0"
+                  },
+                  {
+                    "option_id":"28408",
+                    "activity_stock":"2",
+                    "activity_price":"30",
+                    "is_join":"0"
+                  },
+                  {
+                    "option_id":"28409",
+                    "activity_stock":"2",
+                    "activity_price":"30",
+                    "is_join":"0"
+                  },
+                  {
+                    "option_id":"28410",
+                    "activity_stock":"2",
+                    "activity_price":"30",
+                    "is_join":"0"
+                  }
+                  ]
+                },
+                {
+                  "goods_id":"9519",
+                  "has_option":"0",
+                  "option_id":0,
+                  "activity_stock":"2",
+                  "activity_price":"20"
+                }
+  ],
+  "client_type": 21,
+  "goods_ids": "11160,9519",
+  "option_ids": "28395,28397"
+}

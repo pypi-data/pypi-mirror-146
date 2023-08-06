@@ -1,0 +1,110 @@
+[
+     {
+          "goods_id": "9603",
+          "has_option": "1",
+          "rules": [
+               {
+                    "option_id": "24224",
+                    "activity_stock": "10",
+                    "activity_price": "4",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24225",
+                    "activity_stock": "10",
+                    "activity_price": "4",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24226",
+                    "activity_stock": "10",
+                    "activity_price": "4",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24227",
+                    "activity_stock": "10",
+                    "activity_price": "10",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24228",
+                    "activity_stock": "10",
+                    "activity_price": "10",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24229",
+                    "activity_stock": "10",
+                    "activity_price": "10",
+                    "is_join": "1"
+               }
+          ]
+     },
+     {
+          "goods_id": "9602",
+          "has_option": "1",
+          "rules": [
+               {
+                    "option_id": "24214",
+                    "activity_stock": "10",
+                    "activity_price": "3",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24215",
+                    "activity_stock": "10",
+                    "activity_price": "3",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24216",
+                    "activity_stock": "10",
+                    "activity_price": "3",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24217",
+                    "activity_stock": "10",
+                    "activity_price": "3",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24218",
+                    "activity_stock": "10",
+                    "activity_price": "3",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24219",
+                    "activity_stock": "10",
+                    "activity_price": "3",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24220",
+                    "activity_stock": "10",
+                    "activity_price": "3",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24221",
+                    "activity_stock": "10",
+                    "activity_price": "4",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24222",
+                    "activity_stock": "10",
+                    "activity_price": "4",
+                    "is_join": "1"
+               },
+               {
+                    "option_id": "24223",
+                    "activity_stock": "10",
+                    "activity_price": "4",
+                    "is_join": "1"
+               }
+          ]
+     }
+]
