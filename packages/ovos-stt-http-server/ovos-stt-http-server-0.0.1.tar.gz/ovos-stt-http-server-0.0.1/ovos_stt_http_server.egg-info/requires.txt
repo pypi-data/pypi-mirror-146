@@ -1,0 +1,3 @@
+ovos-plugin-manager
+asgiref
+aiohttp
