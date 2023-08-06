@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+sci_dl/__init__.py
+sci_dl/main.py
+sci_dl/sci_dl.py
+sci_dl.egg-info/PKG-INFO
+sci_dl.egg-info/SOURCES.txt
+sci_dl.egg-info/dependency_links.txt
+sci_dl.egg-info/entry_points.txt
+sci_dl.egg-info/requires.txt
+sci_dl.egg-info/top_level.txt
+sci_dl/locale/zh_CN/LC_MESSAGES/sci-dl.mo
