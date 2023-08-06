@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyCDTT
+Version: 0.0.1
+Summary: 这是CDT的工具包模块！
+Author: CDT
+Author-email: ZMF_CDT-1@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+欢迎使用pyCDTT！
+我们是ComputerDefenderTeam。
+这个包的语言是中文，
+其他国家的外国人就不要用了。
+自己可以钻研我们的包，
+如何用就不说了。
+再见！
+（注：本模块无Demos）
+

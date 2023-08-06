@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyCDTT/__init__.py
+pyCDTT/cmd.py
+pyCDTT/delete.py
+pyCDTT.egg-info/PKG-INFO
+pyCDTT.egg-info/SOURCES.txt
+pyCDTT.egg-info/dependency_links.txt
+pyCDTT.egg-info/top_level.txt
