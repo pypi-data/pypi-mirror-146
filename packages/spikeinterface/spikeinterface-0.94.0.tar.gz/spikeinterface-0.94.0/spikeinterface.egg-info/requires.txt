@@ -1,0 +1,22 @@
+numpy
+neo>=0.10.2
+joblib
+tqdm
+probeinterface>=0.2.9
+
+[extractors]
+MEArec>=1.7.1
+pynwb>=1.4
+
+[extractors:python_version > "3.7"]
+sonpy
+
+[full]
+zarr
+h5py
+pandas
+scipy
+scikit-learn
+matplotlib
+distinctipy
+networkx
