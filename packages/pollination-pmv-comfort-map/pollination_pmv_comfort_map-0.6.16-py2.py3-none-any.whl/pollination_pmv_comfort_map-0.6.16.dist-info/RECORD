@@ -1,0 +1,11 @@
+pollination/pmv_comfort_map/__init__.py,sha256=BpvGBugwU3sFvaVsvpAvfdHyRsWsJdzQPx-m0V3MGLY,110
+pollination/pmv_comfort_map/_comfort.py,sha256=BOxN0nDoo_jHb3O4d3pa6ZLpqA_PqYkpITkhlwgrnkQ,8502
+pollination/pmv_comfort_map/_dynamic.py,sha256=eKBF_06SsBaX5B5qXamAN82LHwqOIVeMXob3QkkpQQA,3294
+pollination/pmv_comfort_map/_radcontrib.py,sha256=2ZiqHH1pG-qDWba2w5012QMiTIPBDKS3728ubeeVo0c,8650
+pollination/pmv_comfort_map/_radiance.py,sha256=IeiHic24VoFRvxyw0r5IUuU1rf9ZKXbmL10YAbSp6EM,6892
+pollination/pmv_comfort_map/entry.py,sha256=SMeAS4gAWEfcUaxNGYdNZ1jLPcxIRaGZGSe3YFIvZoU,26934
+pollination_pmv_comfort_map-0.6.16.dist-info/LICENSE,sha256=Z1MPjprfzF0unXK4BFAM67dHL_hMNKZymoCiqb6QHuY,5748
+pollination_pmv_comfort_map-0.6.16.dist-info/METADATA,sha256=NOG_qYvjBLiLF50vzcTBlgyMcXt3_Wi1I-g72LbyqaI,3302
+pollination_pmv_comfort_map-0.6.16.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pollination_pmv_comfort_map-0.6.16.dist-info/top_level.txt,sha256=XqhRsBTtFfrCqv7O3outMqm3JZeMavDRExrfL0uUs74,12
+pollination_pmv_comfort_map-0.6.16.dist-info/RECORD,,
