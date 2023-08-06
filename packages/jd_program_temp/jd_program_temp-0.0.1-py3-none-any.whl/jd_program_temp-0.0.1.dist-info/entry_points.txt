@@ -1,0 +1,3 @@
+[console_scripts]
+jd_program_temp = jd_program_temp.commands.cmdline:execute
+
