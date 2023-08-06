@@ -1,0 +1,12 @@
+sagemakerify/__init__.py,sha256=6iQjxcoPJxmPBPWcmgIcLfJiVuU33Bj8t4W-Cu41hXM,104
+sagemakerify/_version.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+sagemakerify/data_types.py,sha256=WZURy82IXA3zd3KiCeTsuzjRHnLJDZhYk3aReewsFFQ,181
+sagemakerify/globals.py,sha256=06tIdb7hUZbcAuuPNgqxKVKOUJMwEYDrXs22NMDGP8Y,32
+sagemakerify/handler.py,sha256=nJczKcgAf1stC0RV2PablpT4iqAP4epRtE_dICs1Cqk,4131
+sagemakerify/processing.py,sha256=yw-WTOEp_kIaZkYU_cQaOCVExnoRlScKux14uhDg22w,9544
+sagemakerify/utils.py,sha256=S7W0sYERC0tUdBTKXlSU8p5PZhzo7sAaGuvZ1k20NsE,3408
+sagemakerify-0.0.1.dist-info/LICENSE,sha256=NEJLwoQAO3LeI0UGUBuVzFElH4K_s6PsKB1eD-JUyfE,1077
+sagemakerify-0.0.1.dist-info/METADATA,sha256=P5NWxO8qTpt6Mjk489IuJyXw41GOMLvR9cl9z0s9X7o,614
+sagemakerify-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sagemakerify-0.0.1.dist-info/top_level.txt,sha256=2Wmy1Zrsc8JEOhWhRKWDZIWubAG-42sesaFQrSSlJhs,13
+sagemakerify-0.0.1.dist-info/RECORD,,
