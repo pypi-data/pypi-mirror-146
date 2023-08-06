@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+nwebsocket/__init__.py
+nwebsocket/events.py
+nwebsocket/utils.py
+nwebsocket.egg-info/PKG-INFO
+nwebsocket.egg-info/SOURCES.txt
+nwebsocket.egg-info/dependency_links.txt
+nwebsocket.egg-info/not-zip-safe
+nwebsocket.egg-info/requires.txt
+nwebsocket.egg-info/top_level.txt
