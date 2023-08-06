@@ -1,0 +1,16 @@
+scikit_hep_repo_review/__init__.py,sha256=aqrbw6ZcLO3mlVUCE6V9nsIs2CtF66-qCqyiAqL_c1k,245
+scikit_hep_repo_review/__main__.py,sha256=y1QoQNY092ebad8rcxjvqonz1mzNI9zNfkb4t3GeFc4,2015
+scikit_hep_repo_review/processor.py,sha256=SGY7a79jjqXcg8QA7hYf18Wv-UBg5FR3DKn02TbucSQ,2891
+scikit_hep_repo_review/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scikit_hep_repo_review/ratings/__init__.py,sha256=HoSOruBqwrI1B1JJxy0qahraxOmAHMakfi5e4sUgC6o,167
+scikit_hep_repo_review/ratings/flake8.py,sha256=OKbjwx2e6I7aAd4nwDiD5FHVC7ZMoz3zPDSJf29aNOg,2006
+scikit_hep_repo_review/ratings/general.py,sha256=IlLS4Nw7wi1hs4I9FFalpTIbjCyKAZH3Lyj2frmMhdQ,2083
+scikit_hep_repo_review/ratings/github.py,sha256=Gz38bZmEUoxmNyLAGHQLeXtl_MqH-4EjyMIJAfgN_n4,4895
+scikit_hep_repo_review/ratings/mypy.py,sha256=CUGfwvjypMG-MeW1OQfG0zbw6n-mqJ69jrPvEwMB2ZU,2780
+scikit_hep_repo_review/ratings/precommit.py,sha256=pBKiA8UG5gUtAOX_etp7408pB_oEtl_EAIqUt9DmS8k,2839
+scikit_hep_repo_review/ratings/pyproject.py,sha256=kob0ZZ3lfL-037-zUmCGVjvUuSSJTtmIDi0HyrEii30,4408
+scikit_hep_repo_review-0.2.1.dist-info/entry_points.txt,sha256=gaFvMlsmdz4jLpOveYEB-IAhVHu_A6acuTMnpqS-JAc,393
+scikit_hep_repo_review-0.2.1.dist-info/LICENSE,sha256=X7yOxzyAEckYl17p01lZzbraqDVmWEWXE8BnKKRrh7c,1525
+scikit_hep_repo_review-0.2.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+scikit_hep_repo_review-0.2.1.dist-info/METADATA,sha256=dxqfMxMmXnuPUeCTMN4b0OPQYgR2B7uFmcxXAKe0aIQ,3223
+scikit_hep_repo_review-0.2.1.dist-info/RECORD,,
