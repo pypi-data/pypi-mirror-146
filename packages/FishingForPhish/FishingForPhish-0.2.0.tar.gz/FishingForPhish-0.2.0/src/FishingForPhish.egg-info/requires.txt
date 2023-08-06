@@ -1,0 +1,17 @@
+beautifulsoup4
+cssutils
+filetype
+ImageHash
+IPy
+Pillow
+pyshorteners
+python_weka_wrapper3
+requests
+selenium
+tldextract
+urllib3
+validators
+weka
+
+[dev]
+flake8==4.0.1

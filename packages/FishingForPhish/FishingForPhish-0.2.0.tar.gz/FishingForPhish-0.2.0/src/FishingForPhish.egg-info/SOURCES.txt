@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/FishingForPhish.egg-info/PKG-INFO
+src/FishingForPhish.egg-info/SOURCES.txt
+src/FishingForPhish.egg-info/dependency_links.txt
+src/FishingForPhish.egg-info/requires.txt
+src/FishingForPhish.egg-info/top_level.txt

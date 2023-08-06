@@ -1,0 +1,6 @@
+[build-system]
+# I may need to tweak these values; I built it myself on setuptools 45.2, and haven't
+# done thorough testing for other versions
+# numpy is a build-time dependency for the python-javabridge library
+requires = ["setuptools>=42", "wheel", "numpy>=1.22.3"]
+build-backend = "setuptools.build_meta"
