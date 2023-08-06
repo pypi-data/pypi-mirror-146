@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "id": "A9999_豆一主力合约",
+            "file_path": [
+                "sample_data",
+                "commodity-daily",
+                "A9999_豆一主力合约_2015-01-05_2021-08-13.csv"
+            ],
+            "start_date": "2021-01-05",
+            "end_date": "2021-08-13",
+            "train_day": 10,
+            "date_column_name": "date"
+        },
+        {
+            "id": "AG9999_白银主力合约",
+            "file_path": [
+                "sample_data",
+                "commodity-daily",
+                "AG9999_白银主力合约_2015-01-05_2021-08-13.csv"
+            ],
+            "start_date": "2021-01-05",
+            "end_date": "2021-08-13",
+            "train_day": 10,
+            "date_column_name": "date"
+        }
+    ],
+    "remark": "This is for testing purpose"
+}

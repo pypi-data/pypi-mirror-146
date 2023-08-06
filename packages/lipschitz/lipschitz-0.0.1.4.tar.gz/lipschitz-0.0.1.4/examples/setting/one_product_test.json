@@ -1,0 +1,24 @@
+{
+    "data": {
+        "item_name": "A9999_豆一主力合约",
+        "file_path": [
+            "..",
+            "examples",
+            "sample_data",
+            "commodity-daily",
+            "A9999_豆一主力合约_2015-01-05_2021-08-13.csv"
+        ],
+        "start_date": "2016-01-05",
+        "end_date": "2021-07-30",
+        "train_interval_span": "360d",
+        "test_interval_span": "30d",
+        "date_column_name": "date"
+        
+    },
+    "save_result_to":[
+        "..",
+        "examples",
+        "demo.pdf"
+    ],
+    "remark": "This is for testing purpose"
+}
