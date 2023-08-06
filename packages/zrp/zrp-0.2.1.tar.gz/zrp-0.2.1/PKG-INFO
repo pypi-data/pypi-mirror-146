@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: zrp
+Version: 0.2.1
+Summary: The Zest Race Predictor tool predicts race/ethnicity using a name and address as inputs.
+Home-page: https://github.com/zestai/zrp
+Author: Kasey Matthews et al.
+Author-email: abetterway@zest.ai
+License: Apache-2.0
+Keywords: race ethnicity names address acs geocode
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<_io.TextIOWrapper name='README.md' mode='r' encoding='utf-8'>
+
