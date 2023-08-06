@@ -1,0 +1,9 @@
+README.md
+setup.py
+helloyoshi/__init__.py
+helloyoshi/hello.py
+helloyoshi.egg-info/PKG-INFO
+helloyoshi.egg-info/SOURCES.txt
+helloyoshi.egg-info/dependency_links.txt
+helloyoshi.egg-info/requires.txt
+helloyoshi.egg-info/top_level.txt
