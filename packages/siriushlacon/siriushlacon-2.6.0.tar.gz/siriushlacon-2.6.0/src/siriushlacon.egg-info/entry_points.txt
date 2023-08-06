@@ -1,0 +1,5 @@
+[gui_scripts]
+sirius-hla-as-ap-conlauncher = siriushlacon_launcher:launch_main_window
+sirius-hla-as-ap-generic-launcher = siriushlacon_launcher:launch_generic
+sirius-hla-as-va-vbc = siriushlacon_launcher:launch_vbc
+
