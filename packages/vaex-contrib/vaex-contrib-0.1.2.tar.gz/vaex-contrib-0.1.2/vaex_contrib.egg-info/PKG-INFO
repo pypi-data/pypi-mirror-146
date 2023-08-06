@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vaex-contrib
+Version: 0.1.2
+Summary: Community contributed modules to vaex
+Home-page: https://www.github.com/vaexio/vaex
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: gcp

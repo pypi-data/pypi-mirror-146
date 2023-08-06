@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+vaex/contrib/__init__.py
+vaex/contrib/_version.py
+vaex/contrib/io/__init__.py
+vaex/contrib/io/gbq.py
+vaex/contrib/io/gbq_test.py
+vaex_contrib.egg-info/PKG-INFO
+vaex_contrib.egg-info/SOURCES.txt
+vaex_contrib.egg-info/dependency_links.txt
+vaex_contrib.egg-info/not-zip-safe
+vaex_contrib.egg-info/requires.txt
+vaex_contrib.egg-info/top_level.txt
