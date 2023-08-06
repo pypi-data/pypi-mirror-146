@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: fvisionNetwork14
+Version: 0.0.5
+Summary: fvisionNetwork14 is an image classification CNN model that can classify the  number of classes.
+Home-page: https://github.com/KalyanMohanty/fvisionNetwork14
+Author: Kalyan Mohanty
+Author-email: kalyanrisingstar@gmail.com
+License: MIT
+Description: # fvisionNetwork14
+        "fvisionNetwork14" is a CNN model for image classification that can categorise "n" classes. It has been tuned to have less codes than other models with higher code complexity. The model can categorise with improved accuracy with just a few lines of code. The dataset can be immediately fed into the model using an image pre-processing module that has been built into the package. Two graphical modules are given for plotting model accuracy and loss by providing model history as input.
+        
+        ## Installation
+        ```pip install fvisionNetwork14```
+        
+        ## Description
+        version: 0.0.5
+        
+        modules:
+                - image_preprocessing
+                - fvNet14
+                - plot_accuracy
+                - plot_loss
+        
+         pre-requisites:
+                - tensorflow 2
+        
+        Dependancy modules:
+                - numpy
+                - matplotlib
+        
+        ## How to use?
+        e.g:
+        
+        <!-- TABLE OF CONTENTS -->
+        <details>
+          <summary>Dataset directory</summary>
+          <ol>
+            <li>
+              <a text = "#class A">  class A</a>
+            </li>
+            <li>
+              <a text ="#class B">  class B</a>
+            </li>
+            <li><a text="#class C">  class C</a></li>
+            <li><a text="#class D">  class D</a></li>
+            <li><a text="#class E">  class E</a></li>
+            <li><a text="#class F">  class F</a></li>
+          </ol>
+        </details>
+        
+        
+        ### image_preprocessing
+            image_pre_processing.image_preprocessing(path, image_height = 50, image_width = 50)
+        
+        ### fvNet14
+            model_test = fvNet14.fvNet14(image_height = 50, image_width = 50, color_channel = 3, output_layer = 10)
+            history = model_test.fit(xtrain,ytrain,epochs=50,validation_data=(xtest,ytest))
+        
+        ## plot_accuracy
+            plot_model_acuracy.plot_accuracy(history, height = 10, width = 10)
+        
+        ## plot_loss
+            plot_model_loss.plot_loss(history, height = 10, width = 10)
+        ## License
+        
+        Â© 2022 Kalyan Mohanty
+        
+        This repository is licensed under the MIT license. See LICENSE for details.
+        
+Keywords: fvisionNetwork14,fvNet14,image classification,deep neural network,cnn,keras model,cnn
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
