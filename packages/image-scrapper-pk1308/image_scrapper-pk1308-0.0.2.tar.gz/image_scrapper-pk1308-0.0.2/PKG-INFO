@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: image_scrapper-pk1308
+Version: 0.0.2
+Summary: Image scrapping from google
+Home-page: https://github.com/pk1308/image_scrapper
+Author: pk1308
+Author-email: princevkurien@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pk1308/image_scrapper/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# image_scrapper
+
+
+step 1 
+
+pip install gridfs-fuse
+
+step 2
+
+from src.imagescrapper import imagescrapper
+
+step 3
+
+mongourl ="mongodb+srv://`<username>`:`<password>`@`<cluster-name>`.mongodb.net/myFirstDatabase"
+
+scrapper = imagescrapper.imagescrapper(mongourl)
+
+step4
+
+scrapper.search_and_download(search_term="Virat kholi",number_images=10)
+
+
