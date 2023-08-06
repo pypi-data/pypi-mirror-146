@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyutttils
+Version: 0.1.0
+Summary: Package de fonctions utilitaires pour l'Université de Technologie de Troyes (UTT)
+Home-page: https://github.com/larueli/pyutttils
+Author: Ivann LARUELLE
+Author-email: ivann@laruelle.me
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Pyutttils [![Build package and publish to PyPi](https://github.com/larueli/pyutttils/actions/workflows/pypi.yml/badge.svg?branch=master)](https://github.com/larueli/pyutttils/actions/workflows/pypi.yml) [![Build docs and publish to github pages](https://github.com/larueli/pyutttils/actions/workflows/gh-pages.yml/badge.svg?branch=master)](https://github.com/larueli/pyutttils/actions/workflows/gh-pages.yml)
+
+Ce package permet de fournir des fonctions utilitaires pour l'Université de Technologie de Troyes.
+
+# Quickstart
+
+`pip install pyutttils`
+
+Dans votre code python :
+
+```
+from pyutttils import utt_auth
+sessionSMTP = utt_auth.smtp() 
+```
+
+# Documentation
+
+La documentation du package se trouve à [https://larueli.github.io/pyutttils/](https://larueli.github.io/pyutttils/)
+

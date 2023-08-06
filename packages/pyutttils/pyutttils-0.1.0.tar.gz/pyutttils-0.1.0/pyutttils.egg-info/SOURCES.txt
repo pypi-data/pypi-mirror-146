@@ -1,0 +1,16 @@
+LICENCE.txt
+README.md
+setup.py
+pyutttils/Member.py
+pyutttils/Semester.py
+pyutttils/__init__.py
+pyutttils/utils.py
+pyutttils/utt_auth.py
+pyutttils.egg-info/PKG-INFO
+pyutttils.egg-info/SOURCES.txt
+pyutttils.egg-info/dependency_links.txt
+pyutttils.egg-info/requires.txt
+pyutttils.egg-info/top_level.txt
+tests/TestMember.py
+tests/TestSemester.py
+tests/__init__.py
