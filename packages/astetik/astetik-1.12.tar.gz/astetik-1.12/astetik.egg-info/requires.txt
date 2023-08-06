@@ -1,0 +1,9 @@
+seaborn
+wrangle
+numpy
+pandas
+IPython
+patsy
+geonamescache
+statsmodels
+sklearn
