@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+TinyAutoML/Estimator.py
+TinyAutoML/EstimatorCV.py
+TinyAutoML/__init__.py
+TinyAutoML/builders.py
+TinyAutoML.egg-info/PKG-INFO
+TinyAutoML.egg-info/SOURCES.txt
+TinyAutoML.egg-info/dependency_links.txt
+TinyAutoML.egg-info/requires.txt
+TinyAutoML.egg-info/top_level.txt
+examples/__init__.py
