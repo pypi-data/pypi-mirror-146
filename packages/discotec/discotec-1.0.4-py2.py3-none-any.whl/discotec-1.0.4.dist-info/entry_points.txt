@@ -1,0 +1,3 @@
+[console_scripts]
+disco=disco:main
+
