@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: CToPy
+Version: 1.0.0
+Summary: C function compiler library
+Home-page: 
+Author: Ondřej Baudisch
+Author-email: ondrabaudisch@gmail.com
+License: MIT
+Keywords: compiler
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This library offers easy integration of C functions into python
+
+Change Log
+===========
+
+1.0.0 (14.4.2022)
+------------------
+- First release
+
+
