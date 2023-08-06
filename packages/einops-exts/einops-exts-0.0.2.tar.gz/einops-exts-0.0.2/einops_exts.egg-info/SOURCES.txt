@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+einops_exts/__init__.py
+einops_exts/einops_exts.py
+einops_exts/torch.py
+einops_exts.egg-info/PKG-INFO
+einops_exts.egg-info/SOURCES.txt
+einops_exts.egg-info/dependency_links.txt
+einops_exts.egg-info/requires.txt
+einops_exts.egg-info/top_level.txt
