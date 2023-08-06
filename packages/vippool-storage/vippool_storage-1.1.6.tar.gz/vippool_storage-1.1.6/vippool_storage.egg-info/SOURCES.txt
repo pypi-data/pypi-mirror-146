@@ -1,0 +1,11 @@
+MANIFEST.in
+README.en.md
+README.md
+setup.py
+vippool/__init__.py
+vippool/storage.py
+vippool_storage.egg-info/PKG-INFO
+vippool_storage.egg-info/SOURCES.txt
+vippool_storage.egg-info/dependency_links.txt
+vippool_storage.egg-info/requires.txt
+vippool_storage.egg-info/top_level.txt
