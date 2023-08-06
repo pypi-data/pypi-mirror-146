@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: deeplite-tools
+Version: 0.0.3
+Summary: Tools for Deeplite components
+Home-page: https://www.deeplite.ai
+Author: Deeplite
+Author-email: support@deeplite.ai
+License: Proprietary
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: License :: Other/Proprietary License
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-logging (==1.15.1)
+Requires-Dist: pyAesCrypt (==0.4.3)
+Requires-Dist: cryptography (==3.4.6)
+
+# deeplite-tools
+Repository for all tools used accross our libraries (such as encryptions of files and logging)
+
+

@@ -1,0 +1,8 @@
+deeplite_tools-0.0.3.dist-info/METADATA,sha256=9tzWFKHcQzYEFT0iZa9H_VXycWtGABDDiVW_M3e-e4k,1228
+deeplite_tools-0.0.3.dist-info/RECORD,,
+deeplite_tools-0.0.3.dist-info/top_level.txt,sha256=EzGBnA_OUxZo6lu5MSxbBuNNUxF5OT87AsHDp1dtt3I,26
+deeplite_tools-0.0.3.dist-info/LICENSE,sha256=ZR4NODueVwmPkLfmBJ7rxJeQ8_XM4TqTnmrns899Ihs,464
+deeplite_tools-0.0.3.dist-info/WHEEL,sha256=0k8JcxMWZX7TJIi6JFgSy7UEc0KxSHdqNxJk5plm2FY,112
+deeplite/deeplite_encryption.cpython-36m-x86_64-linux-gnu.so,sha256=eVFvIMhT6SUYJrYoqjoLG4sKDWlXlIsjjmNpXY6CU5Q,489856
+deeplite/deeplite_logging.cpython-36m-x86_64-linux-gnu.so,sha256=J8Lz7tDUJ5mUzxaUywZvYjGakVjqPi4AnYWyUjGUeiw,973520
+deeplite/package_signature.cpython-36m-x86_64-linux-gnu.so,sha256=5X5A7j3kXojs5nX1D7baZL4tAcHy1f45Hj-XtX5uANk,502448
