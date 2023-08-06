@@ -1,0 +1,17 @@
+pyopencap-1.2.2.dist-info/RECORD,,
+pyopencap-1.2.2.dist-info/LICENSE,sha256=WidcLVq_z6sJmD41noQmFzRH7FLhJhXMphUTC1Ji9tc,1070
+pyopencap-1.2.2.dist-info/WHEEL,sha256=WNDaNjKExbj7FYlATX8TTKOb7xiYQ2wyPzozmr4cK84,116
+pyopencap-1.2.2.dist-info/top_level.txt,sha256=L-t-oWaqE7mkx8Zfv058kSIMjXhzSjvxsPEbMURdQZ8,10
+pyopencap-1.2.2.dist-info/METADATA,sha256=lq5pDmIxSWFtCqFf1b9j8T47lBYbZq_v4K5GhZCSyEc,894
+pyopencap/System.py,sha256=NUgA-99rfQp_AMCZMY0KWDb1FEF7ygQLiTrD9-_kglQ,1206
+pyopencap/pyopencap_cpp.cpython-38-darwin.so,sha256=QtolayXFobwIEjtUb7p0ML5iVzJdFukksn4TLmJ3qCc,1832688
+pyopencap/CAP.py,sha256=vAmRUzvdY2c44kP_L8Yl1AEQu5ZKWmRKe7NhehRoxXo,1137
+pyopencap/pyopencap_cpp.pypy38-pp73-darwin.so,sha256=EIhU92HITzcWv_qQuEA-GirEuslYVk_GMD0KYiPxWDc,1815952
+pyopencap/__init__.py,sha256=UIJ9EJGRX0a0mHJUQmLFqCXs_RQ6G3ntuOBlLjYmEpQ,1282
+pyopencap/analysis/ColumbusParser.py,sha256=sKx3QTBluJco3o8m3IfIZQYF9gl1WhdD8R9JLyyqHXg,14626
+pyopencap/analysis/CAPTrajectory.py,sha256=1GZ7gnEU1N1J4GRrT_MmwqDJXA_DzljWZ_WwNw-4JU4,31544
+pyopencap/analysis/__init__.py,sha256=MQb3CnVExahYAaWGtSxP1wdlzxl75COrYFh7mvfhZQI,1278
+pyopencap/.dylibs/libstdc++.6.dylib,sha256=9bWIezJxzFkC8ObD4y3yYVk9cMungrnfXW4XutstfFY,3655760
+pyopencap/.dylibs/libhdf5.200.dylib,sha256=lS6treu2fiVSvX4GPdkx-Pao7OqjSZ8wrbefpsCy72A,4879168
+pyopencap/.dylibs/libgcc_s.1.dylib,sha256=PysDxxdGBG0n4TseRjRHemM9FwTtkruCn7EXEPoQIFk,188816
+pyopencap/.dylibs/libgomp.1.dylib,sha256=b-6cr6iGiBXORkRZjF3qn1f-z3Xz8y_qvDUSQnGm9OA,415024
