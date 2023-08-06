@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aiohttp_dynamic/__init__.py
+aiohttp_dynamic/__main__.py
+aiohttp_dynamic/middlewares.py
+aiohttp_dynamic/routing.py
+aiohttp_dynamic.egg-info/PKG-INFO
+aiohttp_dynamic.egg-info/SOURCES.txt
+aiohttp_dynamic.egg-info/dependency_links.txt
+aiohttp_dynamic.egg-info/requires.txt
+aiohttp_dynamic.egg-info/top_level.txt
