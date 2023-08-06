@@ -1,0 +1,2 @@
+[console_scripts]
+dicombrowser = dicombrowser:mainargv
