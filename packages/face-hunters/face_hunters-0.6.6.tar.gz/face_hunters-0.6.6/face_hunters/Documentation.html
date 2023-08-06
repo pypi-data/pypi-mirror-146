@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/">
+
+    <title>Project package — 4BIM_Project 1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="./Documentation_files/pygments.css">
+    <link rel="stylesheet" type="text/css" href="./Documentation_files/alabaster.css">
+    <script data-url_root="./" id="documentation_options" src="./Documentation_files/documentation_options.js"></script>
+    <script src="./Documentation_files/jquery.js"></script>
+    <script src="./Documentation_files/underscore.js"></script>
+    <script src="./Documentation_files/doctools.js"></script>
+    <link rel="index" title="Index" href="file:///Users/lucieschwoertzig/face_hunters/build/html/genindex.html">
+    <link rel="search" title="Search" href="file:///Users/lucieschwoertzig/face_hunters/build/html/search.html">
+    <link rel="prev" title="Welcome to 4BIM_Project’s documentation!" href="file:///Users/lucieschwoertzig/face_hunters/build/html/index.html">
+   
+  <link rel="stylesheet" href="./Documentation_files/custom.css" type="text/css">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="project-package">
+<h1>Project package<a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#project-package" title="Permalink to this headline">¶</a></h1>
+<section id="module-AutoEncoder">
+<span id="autoencoder-module"></span><h2>AutoEncoder module<a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#module-AutoEncoder" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="AutoEncoder.cut_list">
+<span class="sig-prename descclassname"><span class="pre">AutoEncoder.</span></span><span class="sig-name descname"><span class="pre">cut_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/AutoEncoder.html#cut_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#AutoEncoder.cut_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function allows to cut a list into parts of a certain length.
+It returns a new list which takes less memory and contains for each index a part of the initial list.</p>
+<dl>
+<dt>Args :</dt><dd><p>list : list of the images path of the whole database</p>
+<p>length (int): the length of the parts</p>
+</dd>
+<dt>Returns :</dt><dd><p>list containing the images path cut by parts of &lt;length&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="AutoEncoder.show_face_data">
+<span class="sig-prename descclassname"><span class="pre">AutoEncoder.</span></span><span class="sig-name descname"><span class="pre">show_face_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nparray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/AutoEncoder.html#show_face_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#AutoEncoder.show_face_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function allows to show the faces from a numpy array.</p>
+<dl>
+<dt>Args :</dt><dd><p>nparray : array containing the images</p>
+<p>n (int): the number of images we want to plot (default=10)</p>
+<p>title : the title of the plotted faces</p>
+</dd>
+<dt>Returns :</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-evolutionary">
+<span id="evolutionary-module"></span><h2>evolutionary module<a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#module-evolutionary" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="evolutionary.cross_over">
+<span class="sig-prename descclassname"><span class="pre">evolutionary.</span></span><span class="sig-name descname"><span class="pre">cross_over</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lamb</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/evolutionary.html#cross_over"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#evolutionary.cross_over" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function allows to cross-over the selected parent with random other images with the same characteristics (sex, age and hair/beard wise).
+It returns a new population of mutated vectors while keeping the parent.</p>
+<dl>
+<dt>Args :</dt><dd><p>pop : encoded images vector of the whole database</p>
+<p>parent: the array selected by the user</p>
+<p>lamb (int): the size of the total population (children + parent)</p>
+</dd>
+<dt>Returns :</dt><dd><p>array containing lamb vectors from encoded pictures</p>
+</dd>
+<dt>Example :</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">cross_over</span><span class="p">(</span><span class="n">population</span><span class="p">,</span> <span class="n">population</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">4</span><span class="p">))</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">cross</span><span class="o">-</span><span class="n">over</span><span class="p">(</span><span class="n">population</span><span class="p">,</span><span class="n">population</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="evolutionary.get_children_from_parent">
+<span class="sig-prename descclassname"><span class="pre">evolutionary.</span></span><span class="sig-name descname"><span class="pre">get_children_from_parent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lamb</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/evolutionary.html#get_children_from_parent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#evolutionary.get_children_from_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function allows to cross-over the parent pictures with other pictures and mutate the children to add diversity.
+It returns a new population of mutated vectors.</p>
+<dl>
+<dt>Args :</dt><dd><p>pop : encoded images vector of the whole database</p>
+<p>parent: the array selected by the user</p>
+<p>lamb (int): the size of the total population (children + parent)</p>
+</dd>
+<dt>Returns :</dt><dd><p>array containing lamb vectors from encoded pictures</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="evolutionary.mutation">
+<span class="sig-prename descclassname"><span class="pre">evolutionary.</span></span><span class="sig-name descname"><span class="pre">mutation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pop</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/evolutionary.html#mutation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#evolutionary.mutation" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function allows to mutate the picture’s attributes using Gaussian distribution.
+It returns a new population of mutated vectors.</p>
+<dl class="simple">
+<dt>Args :</dt><dd><p>pop : encoded images vector to mute</p>
+</dd>
+<dt>Returns :</dt><dd><p>nparray containing modified vectors from encoded pictures</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-filter_data">
+<span id="filter-data-module"></span><h2>filter_data module<a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#module-filter_data" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="filter_data.filter">
+<span class="sig-prename descclassname"><span class="pre">filter_data.</span></span><span class="sig-name descname"><span class="pre">filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/filter_data.html#filter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#filter_data.filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function creates 8 files containing different pictures sorted according specific attributes.</p>
+<dl class="simple">
+<dt>Args :</dt><dd><p>path : path to the database</p>
+</dd>
+<dt>Returns :</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="filter_data.split_encoded_images">
+<span class="sig-prename descclassname"><span class="pre">filter_data.</span></span><span class="sig-name descname"><span class="pre">split_encoded_images</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encoder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csv_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/filter_data.html#split_encoded_images"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#filter_data.split_encoded_images" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function creates a file containing encoded vectors of images with the same characteristics.</p>
+<dl>
+<dt>Args :</dt><dd><p>encoder : encoder loaded from file “encodeur.h5”</p>
+<p>csv_file : path to the csv file containing the listed pictures with the same characteristics</p>
+</dd>
+<dt>Returns :</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-interface">
+<span id="interface-module"></span><h2>interface module<a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#module-interface" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.bevent">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">bevent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#bevent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.bevent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for choosing the characteristic for man which is ‘beard’ not ‘no beard’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.break_time">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">break_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nb_children</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#break_time"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.break_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function offers the user a break time with a peaceful picture wtih cute Koala.
+The user can have the break time whenever he/she wants it.</p>
+<dl>
+<dt>Args:</dt><dd><p>pop : encoded images vector</p>
+<p>parent : the array selected by the user</p>
+<p>nb_children(int) : the number of children generated from the parent</p>
+</dd>
+<dt>Returns:</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.choice_database">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">choice_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">char</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#choice_database"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.choice_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for returning the images according to the user’s selection.</p>
+<dl class="simple">
+<dt>Args :</dt><dd><p>char : dictionary of characteristics for the aggressor.</p>
+</dd>
+<dt>Returns :</dt><dd><p>returns the vector of encoded images according to the user’s selection.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.chooseimage">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">chooseimage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nb_children</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#chooseimage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.chooseimage" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates a new interface for asking the user whether he/she recognizes the suspects.</p>
+<dl>
+<dt>Args :</dt><dd><p>pop : encoded images vector</p>
+<p>parent : the array selected by the user</p>
+<p>nb_children(int) : the number of children generated from the parent</p>
+</dd>
+<dt>Returns :</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.end_or_continue">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">end_or_continue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nb_children</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#end_or_continue"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.end_or_continue" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates a new interface for asking the user whether he/she found the suspect.
+It also asks the user if he/she wants other pictures of suspects.</p>
+<dl>
+<dt>Args :</dt><dd><p>photo : photo of the selected parent</p>
+<p>pop : encoded images vector</p>
+<p>parent : the array selected by the user</p>
+<p>nb_children(int) : the number of children generated from the parent</p>
+</dd>
+<dt>Returns :</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.fevent">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">fevent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#fevent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.fevent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for choosing the gender which is ‘woman’ not ‘man’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.found_agressor">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">found_agressor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#found_agressor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.found_agressor" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function allows to generate the final interface showing the robot portrait of the agressor.</p>
+<dl class="simple">
+<dt>Args :</dt><dd><p>photo : the photo of the agressor</p>
+</dd>
+<dt>Returns :</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.hevent">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">hevent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#hevent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.hevent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for choosing the gender which is ‘man’ not ‘woman’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.inital_population">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">inital_population</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#inital_population"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.inital_population" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for showing the initial 10 pictures of the suspects according to the user’s choice.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.initialize">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#initialize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function allows to put all the agressor’s characteristics to ‘False’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.nbevent">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">nbevent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#nbevent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.nbevent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for choosing the characteristic for man which is ‘no beard’ not ‘beard’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.nsevent">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">nsevent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#nsevent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.nsevent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for choosing the characteristic for woman which is ‘wavy hair’ not ‘straight hair’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.oevent">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">oevent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#oevent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.oevent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for choosing the age group which is ‘old’ not ‘young’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.onClick">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">onClick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#onClick"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.onClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function allows to generate a new interface to ask and store the characteristics of the agressor.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.reselect">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">reselect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#reselect"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.reselect" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is about asking the user for selecting the characteristic again because he/she did not click on a button so the data is missing.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.sevent">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">sevent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#sevent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.sevent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for choosing the characteristic for woman which is ‘straight hair’ not ‘wavy hair’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.sex_characteristics">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">sex_characteristics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#sex_characteristics"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.sex_characteristics" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for asking the characteristic regarding to the gender.
+‘beard’ or ‘no beard’ for man and ‘straight hair’ or ‘wavy hair’ for woman.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="interface.yevent">
+<span class="sig-prename descclassname"><span class="pre">interface.</span></span><span class="sig-name descname"><span class="pre">yevent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/_modules/interface.html#yevent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#interface.yevent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is for choosing the age group which is ‘young’ not ‘old’.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="file:///Users/lucieschwoertzig/face_hunters/build/html/index.html">4BIM_Project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#">Project package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#module-AutoEncoder">AutoEncoder module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#module-evolutionary">evolutionary module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#module-filter_data">filter_data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///Users/lucieschwoertzig/face_hunters/build/html/Project.html#module-interface">interface module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="file:///Users/lucieschwoertzig/face_hunters/build/html/index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="file:///Users/lucieschwoertzig/face_hunters/build/html/index.html" title="previous chapter">Welcome to 4BIM_Project’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="file:///Users/lucieschwoertzig/face_hunters/build/html/search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      ©2022, Blanc, Charfi, Hong, Martin, Schwoertzig.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="file:///Users/lucieschwoertzig/face_hunters/build/html/_sources/Project.rst.txt" rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  
+</body></html>
