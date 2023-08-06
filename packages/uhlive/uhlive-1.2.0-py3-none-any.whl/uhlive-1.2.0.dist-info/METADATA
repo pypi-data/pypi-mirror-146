@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: uhlive
+Version: 1.2.0
+Summary: Python bindings for the Uh!ive API
+Home-page: https://github.com/allo-media/uhlive-python
+Author: Allo-Media
+Author-email: support@allo-media.fr
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: examples
+Requires-Dist: websocket-client ; extra == 'examples'
+Requires-Dist: requests ; extra == 'examples'
+Requires-Dist: aiohttp ; extra == 'examples'
+Requires-Dist: sounddevice ; extra == 'examples'
+Requires-Dist: toml ; extra == 'examples'
+
+# Uh!live Python SDK
+
+The Uh!live Python SDK provides convenient access to the Uh!live API from
+applications written in the Python language.
+
+Read the [documentation for the Conversation API](https://docs.allo-media.net/live-api/) and [for the Recognition API (vocal bot toolkit)](https://docs.allo-media.net/stream-api-bots/).
+
+## Requirements
+
+### Installation from source
+
+Install with `pip install .[examples]` to install the the library and all the dependencies necessary to run the examples.
+
+### Audio files
+
+To play with the examples, you should have a raw audio file.
+This raw audio file should be in the proper format. This can be done
+using a source audio file in wav format using the following command:
+```
+sox audio_file.wav  -t raw -c 1 -b 16 -r 8k -e signed-integer audio_file.raw
+```
+
+## Usage
+
+See the `README.md` in each of the example folders.
+
+
