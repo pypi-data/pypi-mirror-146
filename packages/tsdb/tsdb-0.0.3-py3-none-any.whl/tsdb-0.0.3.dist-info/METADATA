@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tsdb
+Version: 0.0.3
+Summary: TSDB (Time Series DataBase)
+Home-page: https://github.com/WenjieDu/PyCorruptor
+Download-URL: https://github.com/WenjieDu/PyCorruptor/archive/master.zip
+Author: Wenjie Du
+Author-email: wenjay.du@gmail.com
+License: GPL-3.0
+Keywords: missing data,missing values,data corruption,incomplete data,partially observed,data mining
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+# Time-Series Database ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FWenjieDu%2FTime_Series_Database&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
+
+This repository lists and stores open-source time-series datasets.
+
+## ❖ Usage Example
+Install from PyPI: 
+> pip install tsdb
+
+or install from source code: 
+> pip install `https://github.com/WenjieDu/Time_Series_Database/archive/master.zip`
+
+
+```python
+import tsdb
+tsdb.list_available_datasets()  # list all available datasets in TSDB
+data = tsdb.load_specific_dataset('physionet_2012')  # select the dataset you need and load it, TSDB will download, extract, and process it automatically
+tsdb.download_and_extract('physionet_2012', 'save it here')  # if you only need the raw data, use download_and_extract() 
+tsdb.list_cached_data()  # datasets you loaded are cached. You can check them with list_cached_data().
+tsdb.delete_cached_data()  # and you can delete all cache with delete_cached_data()
+```
+
+That's all. Simple and efficient. Enjoy it! 😃
+
+## ❖ List of Available Datasets
+
+| Name                                                                  | Main Tasks                              |
+|-----------------------------------------------------------------------|-----------------------------------------|
+| [PhysioNet Challenge 2012](datasets/PhysioNet-2012)                   | Classification, Forecasting, Imputation |
+| [Beijing Multi-Site Air-Quality](datasets/BeijingMultiSiteAirQuality) | Forecasting, Imputation                 |
+| [Electricity Load Diagrams](datasets/ElectricityLoadDiagrams)         | Forecasting, Imputation                 |
+| [All UCR & UEA Datasets](datasets/UCR_UEA_Datasets)                   | Classification                          |
+
+
