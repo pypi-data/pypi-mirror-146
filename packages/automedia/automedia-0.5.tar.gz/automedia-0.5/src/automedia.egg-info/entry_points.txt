@@ -1,0 +1,2 @@
+[console_scripts]
+automedia = automedia.main:main

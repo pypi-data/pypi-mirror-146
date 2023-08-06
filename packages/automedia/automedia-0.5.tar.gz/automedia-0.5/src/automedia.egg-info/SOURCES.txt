@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/automedia/ffmpeg.py
+src/automedia/ffmpeg_transcoder.py
+src/automedia/ffmpeg_validator.py
+src/automedia/forward_progress.py
+src/automedia/jobqueue.py
+src/automedia/main.py
+src/automedia/operation.py
+src/automedia/par2.py
+src/automedia/path_scan.py
+src/automedia.egg-info/PKG-INFO
+src/automedia.egg-info/SOURCES.txt
+src/automedia.egg-info/dependency_links.txt
+src/automedia.egg-info/entry_points.txt
+src/automedia.egg-info/top_level.txt
