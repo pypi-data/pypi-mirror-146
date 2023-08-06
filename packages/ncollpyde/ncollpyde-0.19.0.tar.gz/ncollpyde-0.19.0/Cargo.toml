@@ -1,0 +1,43 @@
+[package]
+authors = ["Chris L. Barnes <chrislloydbarnes@gmail.com>"]
+name = "ncollpyde"
+version = "0.19.0"
+description = "A python wrapper around a subset of the ncollide rust library"
+readme = "README.rst"
+edition = "2018"
+
+[package.metadata.maturin]
+requires-dist = ["numpy>=1.21.0", "trimesh[easy]>=3.7.7; extra == 'validate'"]
+requires-python = ">=3.6"
+classifier = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+provides-extra = ["validate"]
+
+[dependencies]
+pyo3 = { version = "0.15", features = ["extension-module", "abi3-py36"] }
+parry3d-f64 = { version = "0.8", features = ["dim3", "f64", "enhanced-determinism"] }
+rayon = "1.5"
+rand = "0.8"
+rand_pcg = "0.3"
+numpy = { version = "0.15", features = ["rayon"] }
+
+[dev-dependencies]
+stl_io = "0.6"
+cargo-release = "0.20"
+
+[lib]
+name = "ncollpyde"
+crate-type = ["cdylib"]
+
+[package.metadata.release]
+disable-publish = true
+no-dev-version = true

@@ -1,0 +1,28 @@
+# build
+maturin==0.12.9
+
+# run
+numpy==1.21.4
+trimesh[easy]==3.9.35
+
+# test
+meshio==5.0.2
+pytest==6.2.5
+pytest-runner==5.3.1
+
+# bench
+# pyoctree==0.2.10
+pytest-benchmark==3.4.1
+
+# develop
+isort==5.10.1
+pip
+black==22.3.0
+watchdog==2.1.6
+flake8==4.0.1
+coverage==6.1.1
+Sphinx==4.2.0
+mypy==0.910
+
+# docs
+-r docs/requirements.txt
