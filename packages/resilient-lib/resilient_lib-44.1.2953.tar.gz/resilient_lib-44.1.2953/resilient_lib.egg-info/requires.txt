@@ -1,0 +1,6 @@
+resilient>=44.1.0
+bs4
+jinja2
+pytz
+six
+deprecated
