@@ -1,0 +1,2 @@
+[console_scripts]
+osc2parser = osc2parser.osc2parser:main
