@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Kinop
+Version: 1.1.0
+Summary: Music cog for discord bots. Supports YouTube, YoutubeMusic, SoundCloud and Spotify.
+Home-page: UNKNOWN
+License: MIT
+Project-URL: Bug Reports, https://github.com
+Project-URL: Source, https://github.com
+Keywords: musicbot
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: aiohttp
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cringe
+```
+pip install kinop
+```
+
+
+
+
+
+
+
+
