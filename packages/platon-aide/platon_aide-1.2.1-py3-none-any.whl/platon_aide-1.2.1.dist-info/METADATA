@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: platon-aide
+Version: 1.2.1
+Summary: An aide that helps you quickly access the platon chain and use its basic functions.
+Home-page: https://github.com/shinnng/platon-aide
+Author: Shinnng
+Author-email: shinnng@outlook.com
+License: MIT
+Keywords: platon
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: platon.py (>=1.1.1)
+Requires-Dist: platon-account (>=0.5.5)
+Requires-Dist: platon-hash (>=0.3.1)
+Requires-Dist: platon-keys (>=0.3.3)
+Requires-Dist: platon-typing (>=2.2.3)
+Requires-Dist: platon-utils (>=1.10.0)
+Requires-Dist: rlp (>=1.2.0)
+Requires-Dist: gql (>=3.0.0rc0)
+Provides-Extra: platon-aide
+Requires-Dist: platon.py (>=1.1.1) ; extra == 'platon-aide'
+Requires-Dist: platon-account (>=0.5.5) ; extra == 'platon-aide'
+Requires-Dist: platon-hash (>=0.3.1) ; extra == 'platon-aide'
+Requires-Dist: platon-keys (>=0.3.3) ; extra == 'platon-aide'
+Requires-Dist: platon-typing (>=2.2.3) ; extra == 'platon-aide'
+Requires-Dist: platon-utils (>=1.10.0) ; extra == 'platon-aide'
+Requires-Dist: rlp (>=1.2.0) ; extra == 'platon-aide'
+Requires-Dist: gql (>=3.0.0rc0) ; extra == 'platon-aide'
+
+UNKNOWN
+
