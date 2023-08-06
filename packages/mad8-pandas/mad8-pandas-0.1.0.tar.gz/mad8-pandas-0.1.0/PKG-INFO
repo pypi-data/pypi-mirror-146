@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mad8-pandas
+Version: 0.1.0
+Summary: load mad8 output with pandas
+Home-page: https://github.com/st-walker/mad8-pandas
+Author: Stuart Walker
+Author-email: stuart.walker@desy.de
+License: MIT
+Keywords: mad8 pandas twiss
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+License-File: LICENSE
+
+UNKNOWN
+
