@@ -1,0 +1,8 @@
+sigma/backends/splunk/__init__.py,sha256=-noTY7ToG7GTaUM1kL60QpU-C3tYjcVQrAgLEJFwwE8,33
+sigma/backends/splunk/splunk.py,sha256=B0V-6X3SBpdw_mwgoaYVIt3bvZpew3FoYzwQF0CChlo,6864
+sigma/pipelines/splunk/__init__.py,sha256=8ZZnk35T3N027Fk9EaYPpi2TZhoZthZCsV_9Rxq2ipI,88
+sigma/pipelines/splunk/splunk.py,sha256=7EefmoKOqMbAupv2YmJ0wQwLg9BPYTmfs4_buPsXd68,10537
+pysigma_backend_splunk-0.3.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+pysigma_backend_splunk-0.3.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pysigma_backend_splunk-0.3.0.dist-info/METADATA,sha256=KjN8MMbJtmiEbsVGqCEXUxqsh0QdGhJqGapalxBFdzg,478
+pysigma_backend_splunk-0.3.0.dist-info/RECORD,,
