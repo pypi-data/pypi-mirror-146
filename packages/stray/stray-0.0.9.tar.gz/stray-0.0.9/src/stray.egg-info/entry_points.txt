@@ -1,0 +1,4 @@
+[console_scripts]
+stray-export = stray.scripts.dataset_export:main
+stray-import = stray.scripts.dataset_import:main
+stray-show = stray.scripts.show:main
