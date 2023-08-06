@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: coopihc
+Version: 0.0.2
+Summary: Two-agent component-based interaction environments for computational HCI with Python
+License: MIT
+Author: Julien Gori
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: rl
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: gym (>=0.17,<0.18); extra == "rl"
+Requires-Dist: matplotlib (>=3,<4)
+Requires-Dist: numpy (>=1,<2)
+Requires-Dist: pytest-timeout (>=2.0.2,<3.0.0)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)
+Requires-Dist: stable-baselines3 (>=1.3.0,<2.0.0); extra == "rl"
+Requires-Dist: tabulate
+Requires-Dist: tensorboard (>=2.8.0,<3.0.0); extra == "rl"
+Requires-Dist: websockets (>=10.1,<11.0)
