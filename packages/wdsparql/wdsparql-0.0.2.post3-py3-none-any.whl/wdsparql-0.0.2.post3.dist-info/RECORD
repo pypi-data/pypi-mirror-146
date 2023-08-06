@@ -1,0 +1,9 @@
+wdsparql/__init__.py,sha256=gMOGV_5QPtgZaWFJCSv-ow2n2EvPGEBxIN_hge0i4zE,587
+wdsparql/_version.py,sha256=WiYdMQL-leU-QO_1QLfvJKZHsqy2ooKzwQhqNQAAGH4,148
+wdsparql/exceptions.py,sha256=x5jgZcTA9MSfMyKTDaJPIL2xniddiYSMAtKPtYD7HB8,419
+wdsparql/wdsparqlmagic.py,sha256=4zMfTU_xAXnIOazCn1Ctd986EjVIezY7pT8P3Bqw6E4,1760
+wdsparql-0.0.2.post3.dist-info/LICENSE,sha256=qozW0zvDQvhw1Ojnx2opaQAZ1hDFa-MtG7QVc0l6piY,1068
+wdsparql-0.0.2.post3.dist-info/METADATA,sha256=bqh4WjB92gE2YMJdGZQI3v7o6YxgqbiqjRrWND1FBM8,2541
+wdsparql-0.0.2.post3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wdsparql-0.0.2.post3.dist-info/top_level.txt,sha256=LbgfrqJDSc7jAJODFXcOMlcFUUMO_6FgEcr2bTBhVa8,9
+wdsparql-0.0.2.post3.dist-info/RECORD,,
