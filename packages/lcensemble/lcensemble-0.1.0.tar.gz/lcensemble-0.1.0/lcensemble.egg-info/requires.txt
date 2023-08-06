@@ -1,0 +1,16 @@
+hyperopt
+matplotlib
+numpy
+scikit-learn
+xgboost
+
+[docs]
+sphinx
+sphinx-gallery
+sphinx_rtd_theme
+numpydoc
+pillow
+
+[tests]
+pytest
+pytest-cov
