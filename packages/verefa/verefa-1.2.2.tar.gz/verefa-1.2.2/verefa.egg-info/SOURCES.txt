@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+verefa/__init__.py
+verefa/main.py
+verefa.egg-info/PKG-INFO
+verefa.egg-info/SOURCES.txt
+verefa.egg-info/dependency_links.txt
+verefa.egg-info/top_level.txt

@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: verefa
+Version: 1.2.2
+Summary: Verefa client side package for sending and receiving data from the Verefa database system.
+Home-page: https://verefa.com/
+Author: Verefa Development
+Author-email: admin@verefa.com
+License: UNKNOWN
+Description: # VEREFA CLIENT PACKAGE
+        
+        *THIS SOFTWARE IS PROTECTED BY THE MIT LICENSE*
+        
+        **REQUIREMENTS:**
+        > REQUESTS MODULE
+        
+        **CHANGES**
+        > Machine setup supports debug, default False, ``client=verefa.machine(debug=True)``
+        > Connect collects important security data and warns if unable to collect.
+        
+        **FUNCTIONS**
+        >``client.connect()``
+        
+        >``client.send()``
+        
+        >``client.get()``
+        
+        >``client.iterate()``
+        
+        >``client.purge()``
+        
+        
+        
+        **EXAMPLE SETUP**
+        
+        __STEP1:__
+        > Visit https://verefa.com/ and register as a developer, here you must click "New App" and copy the "token" and "tokenid"
+        
+        
+        __STEP2:__
+        > Install verefa as shown below.
+        `pip install verefa`
+        
+        __STEP3:__
+        > Create a python client as shown below.
+        ```
+        import verefa
+        
+        client=verefa.machine()
+        client.connect(TOKENID,TOKEN,"APPNAME")
+        ```
+        Ensure you substitute the values from your developer portal into the above connect statement.
+        
+        __STORING DATA:__
+        > Begin storing data as shown below.
+        ```
+        data = {
+        	"Name":"Marcus",
+        	"Email":"marcus@demomail.com"
+        }
+        
+        response = client.send("tablename/document", data)
+        ```
+        __Send Rules:__
+        > Data must be created as a dictionary
+        > The location must not begin or end with ``/``
+        > The paths in a send/get statement must be even.
+        
+        
+        __GETTING DATA:__
+        ```
+        response = client.get("tablename/document")
+        ```
+        
+        __Get Rules:__
+        > Data returned will be in dictionary format.
+        > You can specify parameters ``client.get("tablename/document", "Name")`` This would call all documents which include the "Name" field
+        
+        
+        __EXAMPLE:__
+        
+        ```
+        import verefa
+        
+        client=verefa.machine()
+        client.connect(123,34982,1)
+        
+        print("DEMONSTRATION")
+        
+        userdict = {
+            "name":"Daniel",
+            "email":"daniel@gmail.com"
+            }
+        
+        response = client.send(f"users/2", userdict)
+        
+        print(response)
+        #prints success message
+        
+        data = client.get(f"users/2")
+        
+        print(data)
+        #prints dictionary of data previously submitted
+        
+        print(data["name"])
+        #prints the value of field "name"
+        
+        documents = client.iterate(f"users")
+        
+        print(documents)
+        #prints a dictionary with embedded dictionaries for each user document in the table of users.
+        
+        
+        result = client.purge(f"users/mike", "FIELD", "email")
+        #deletes the field "email" in the document "mike"
+        
+        
+        result = client.purge(f"users/mike", "DOC")
+        #deletes the document "mike" and the document's data, but not the documents or directories mike held.
+        
+        
+        result = client.purge(f"users", "ALL")
+        #deletes the table users and all the content beneath it, does not delete content which is hidden
+        
+        ```
+        
+        __WARNINGS:__
+        
+        You can't have locations with an odd number of positions **unless using .iteration()**:
+        > ``client.send(f"users/bob/rewards", userdict)`` THIS IS WRONG AND WILL ERROR
+        > ``client.get(f"users/bob/rewards")`` THIS IS WRONG AND WILL ERROR
+        
+        > ``client.send(f"users/bob/rewards/recent", userdict)`` THIS IS CORRECT AND WILL FUNCTION
+        > ``client.get(f"users/bob/rewards/recent")`` THIS IS CORRECT AND WILL FUNCTION
+        
+        __FAQ's:__
+        
+        >What is "hidden" data?
+        
+        When you delete a document using ``client.purge(f"users/mike", "DOC")`` all other documents and directories under the "mike" document are not deleted, they are known as "hidden" data, and can only be manually deleted by specifically deleting each path.
+Keywords: python,verefa,encryption,database
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
