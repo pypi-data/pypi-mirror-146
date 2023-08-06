@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: dynamic-kobo
+Version: 0.0.4
+Summary: Replace / update / redeploy KoBo forms
+Home-page: https://github.com/rodekruis/dynamic-kobo
+Author: J. Margutti
+Author-email: jmargutti@redcross.nl
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/rodekruis/dynamic-kobo/issues
+Project-URL: Source, https://github.com/rodekruis/dynamic-kobo
+Keywords: KoBo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+
+# dynamic-kobo
+[![PyPI Latest Release](https://img.shields.io/pypi/v/dynamic-kobo)](https://pypi.org/project/dynamic-kobo/)
+
+Replace / update and redeploy KoBo forms.
+
+Developed by Karla Peña Ramírez, packaged by [Jacopo Margutti](https://github.com/jmargutt).
+
+## Requirements
+1. [Python >= 3.7](https://www.python.org/downloads/)
+2. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+2. [Geckodriver](https://github.com/mozilla/geckodriver)
+
+## Set up
+1. Download and install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+2. Download the geckodriver binary for your platform ([here](https://github.com/mozilla/geckodriver/releases))
+3. Install dynamic-kobo from [PyPI](https://pypi.org/project/dynamic-kobo/)
+
+```pip install dynamic-kobo```
+
+
+## Usage
+```
+Usage: replace-redeploy [OPTIONS]
+
+  replace KoBo form with a new one and redeploy
+
+Options:
+  --config            path to configuration file (.env)
+  --headless          run headless (no GUI)
+  --koboserver TEXT   URL of KoBo server
+  --username TEXT     username
+  --password TEXT     password
+  --formid TEXT       form (asset) ID
+  --newform TEXT      absolute path to new form (.xlsx)
+  --geckodriver TEXT  absolute path to geckodriver binary
+  --help              show this message and exit
+  ```
+N.B. all options can be stored in a `.env` file, the script will load them automatically as environment variables. Example:
+```
+GECKODRIVER=C:\geckodriver\geckodriver.exe
+KOBO_SERVER=https://kobo.humanitarianresponse.info/
+USERNAME=...
+PASSWORD=...
+FORM_ID=ai3sdfC1GnERTW72rwwSFq
+NEW_FORM='C:\forms\new-form.xlsx'
+```
+
+

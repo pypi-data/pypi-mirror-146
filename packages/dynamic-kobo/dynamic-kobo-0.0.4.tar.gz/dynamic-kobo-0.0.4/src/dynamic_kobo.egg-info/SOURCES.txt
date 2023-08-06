@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+src/dynamic_kobo/__init__.py
+src/dynamic_kobo/replace_redeploy.py
+src/dynamic_kobo.egg-info/PKG-INFO
+src/dynamic_kobo.egg-info/SOURCES.txt
+src/dynamic_kobo.egg-info/dependency_links.txt
+src/dynamic_kobo.egg-info/entry_points.txt
+src/dynamic_kobo.egg-info/requires.txt
+src/dynamic_kobo.egg-info/top_level.txt

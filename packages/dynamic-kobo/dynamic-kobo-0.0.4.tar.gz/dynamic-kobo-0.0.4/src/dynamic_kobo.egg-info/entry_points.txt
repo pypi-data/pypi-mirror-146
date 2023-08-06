@@ -1,0 +1,3 @@
+[console_scripts]
+replace-redeploy = dynamic_kobo.replace_redeploy:main
+
