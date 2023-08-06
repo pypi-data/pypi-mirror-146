@@ -1,0 +1,13 @@
+poetry.lock,sha256=KbsnCf0c2uNaFzF1dLs21lj-O7cVHQm_0NqtciueA9U,197416
+pureskillgg_makenew_pyskill/__init__.py,sha256=Ajv-BzTKJPxMKt1fnGZUcYLMaaI75VgvsRSzyNygEsc,46
+pureskillgg_makenew_pyskill/env_functions/env_setup.py,sha256=I1ReP6_xvWaySWZvHBGSNHvBtTnG8Xkr3vgsEq-M6bQ,802
+pureskillgg_makenew_pyskill/notebook/__init__.py,sha256=5r33-lsTh8d5FKaGnJ1snfWPitNOZJTuRZzQuwlg3E0,81
+pureskillgg_makenew_pyskill/notebook/setup_notebook.py,sha256=ivKXq2SQBozP8q5JVwQFL6IjJLtXkKhEFU87XP8L7z8,271
+pureskillgg_makenew_pyskill/todo.py,sha256=tJ4FQA9L-odvLFdDa8wS-qLM4wBvTnbBVEQjp_mbH0A,56
+pureskillgg_makenew_pyskill/todo_test.py,sha256=eCx13JgXdFAo8eZ81GjpdnuF1WDGRGInRrMzHg807qM,156
+pureskillgg_makenew_pyskill/tutorial/__init__.py,sha256=N9tdcnqpVkz9Yo9n9cLlx9pfLOt4f1lFZXyRZgtjaDs,173
+pureskillgg_makenew_pyskill/tutorial/footsteps_example.py,sha256=LX3xAlwOajfEgsKk6nBNHviQvRDUqfElMHO_qHElToY,997
+pureskillgg_makenew_pyskill-0.1.0.dist-info/LICENSE.txt,sha256=hsrr0FnuaRDi0YFvn2HbhYWeAbM-jzvpHsXywwCgjrA,1083
+pureskillgg_makenew_pyskill-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pureskillgg_makenew_pyskill-0.1.0.dist-info/METADATA,sha256=cOa4WsH1Uaay_vXMqZJNcd7Ku0_DWxEp90maY2JiWUk,7861
+pureskillgg_makenew_pyskill-0.1.0.dist-info/RECORD,,
