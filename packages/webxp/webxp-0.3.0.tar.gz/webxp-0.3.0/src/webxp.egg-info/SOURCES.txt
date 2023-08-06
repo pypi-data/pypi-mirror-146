@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/webxp.egg-info/PKG-INFO
+src/webxp.egg-info/SOURCES.txt
+src/webxp.egg-info/dependency_links.txt
+src/webxp.egg-info/entry_points.txt
+src/webxp.egg-info/top_level.txt
