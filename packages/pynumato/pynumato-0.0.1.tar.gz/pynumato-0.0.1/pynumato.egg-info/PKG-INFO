@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: pynumato
+Version: 0.0.1
+Summary: Library to communicate with relays
+Home-page: https://github.com/henitsoa-tiempo/pynumato.git
+Author: Tiempo
+Author-email: henitsoa.rakotomalala@tiempo-secure.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Pynumato
+========
+
+Pynumato allows to control relay modules (ON or OFF states).
+This module is only compatible with the Numato series `1-2-4-8 Channels USB Solid State Relay Module`, listed in the following link : `<https://numato.com/?s=Channel+USB+Solid+State+Relay+Module>`.
+
+Requirement
+-----------
+
+The module requires the minimum configuration :
+
+- Windows7 64-bits
+- Linux 64-bits
+- Python3.7
+
+How to use it
+-------------
+
+The command line to drive relays are :
+
+```
+python3 -m pynumato.pynumato --cmd=<string to drive relays> --relays=<Number of relays> --port=<port> --baudrate=<baudrate>
+```
+
+Parameters are :
+
+- the number of relays to drive (default is 1)
+
+- the port (default is /dev/ttyUSB1)
+
+- the baudrate (default is 921600)
+
+- the command to drive relays
+
+A relay can receive two types of orders (OFF or ON). The order in the module is encoding by an ASCII character such as :
+
+`"c"` : close the relay (OFF state)
+
+`"o"` : open the relay (ON state)
+
+`"x"` : do not change the current state of the relay  
+
+In an example, if we have :
+
+- 4 available relays : 0, 1, 2 and 3
+- baudrate is 921600
+- port is COM27
+
+To turn on all relays, string command is `oooo` and the command line is :
+```
+python3 -m pynumato.pynumato --cmd="oooo" --relays=2 --port="COM27" --baudrate=921600
+```
+
+To turn off all relays, string command is `cccc` and the command line is :
+```
+python3 -m pynumato.pynumato --cmd="cccc" --relays=2 --port="COM27" --baudrate=921600
+```
+
+To turn on the relay 0, and it does not matter about other ones, string command is `oxxx` and the command line is :
+```
+python3 -m pynumato.pynumato --cmd="oxxx" --relays=2 --port="COM27" --baudrate=921600
+```
+
+To turn on the relays 1 and 3, and it does not matter about other ones, string command is `xoxo`and the command line is :
+```
+python3 -m pynumato.pynumato --cmd="xoxo" --relays=2 --port="COM27" --baudrate=921600
+```
+
+
