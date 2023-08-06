@@ -1,0 +1,5 @@
+setup.py
+HPLCdataLoader.egg-info/PKG-INFO
+HPLCdataLoader.egg-info/SOURCES.txt
+HPLCdataLoader.egg-info/dependency_links.txt
+HPLCdataLoader.egg-info/top_level.txt
