@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: lhub-cli
+Version: 0.0.6.7
+Summary: LogicHub CLI
+Home-page: https://github.com/deathbywedgie/lhub_cli
+Author: Chad Roberts
+Author-email: chad@logichub.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/deathbywedgie/lhub_cli/issues
+Description: A Python package for interacting with LogicHub via shell commands
+Keywords: python,lhub,LogicHub,api,security,cli
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Natural Language :: English
