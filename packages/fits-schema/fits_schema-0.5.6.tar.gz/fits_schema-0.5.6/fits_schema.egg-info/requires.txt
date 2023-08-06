@@ -1,0 +1,16 @@
+numpy
+astropy>=4
+
+[all]
+codecov
+pyflakes
+pytest
+pytest-cov
+
+[ci]
+codecov
+pyflakes
+
+[tests]
+pytest
+pytest-cov
