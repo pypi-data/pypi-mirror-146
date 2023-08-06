@@ -1,0 +1,371 @@
+Metadata-Version: 2.1
+Name: RelevanceAI-dev
+Version: 2.1.0.2022.4.12.7.15.24.382833
+Summary: UNKNOWN
+Home-page: https://relevance.ai/
+Author: Relevance AI
+Author-email: dev@relevance.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Database
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+Classifier: Topic :: Multimedia :: Video :: Conversion
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm (>=4.49.0)
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: loguru (>=0.5.3)
+Requires-Dist: document-utils (>=1.7.1)
+Requires-Dist: requests (>=2.0.0)
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: joblib (>=1.0.0)
+Requires-Dist: scikit-learn (>=0.20.0)
+Requires-Dist: typing-extensions (>=3.0)
+Requires-Dist: analytics-python (~=1.4.0)
+Requires-Dist: aiohttp (>=3.8.1)
+Requires-Dist: appdirs (>=1.4.4)
+Requires-Dist: orjson (>=3.6.7)
+Provides-Extra: dev
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-dotenv ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+Requires-Dist: pytest-sugar ; extra == 'dev'
+Requires-Dist: pytest-rerunfailures ; extra == 'dev'
+Requires-Dist: tqdm (>=4.49.0) ; extra == 'dev'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'dev'
+Requires-Dist: loguru (>=0.5.3) ; extra == 'dev'
+Requires-Dist: document-utils (>=1.7.1) ; extra == 'dev'
+Requires-Dist: requests (>=2.0.0) ; extra == 'dev'
+Requires-Dist: numpy (>=1.19.0) ; extra == 'dev'
+Requires-Dist: joblib (>=1.0.0) ; extra == 'dev'
+Requires-Dist: scikit-learn (>=0.20.0) ; extra == 'dev'
+Requires-Dist: typing-extensions (>=3.0) ; extra == 'dev'
+Requires-Dist: analytics-python (~=1.4.0) ; extra == 'dev'
+Requires-Dist: aiohttp (>=3.8.1) ; extra == 'dev'
+Requires-Dist: appdirs (>=1.4.4) ; extra == 'dev'
+Requires-Dist: orjson (>=3.6.7) ; extra == 'dev'
+Requires-Dist: openpyxl (>=3.0.9) ; extra == 'dev'
+Requires-Dist: fsspec (>=2021.10.1) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.5.0) ; extra == 'dev'
+Requires-Dist: pydata-sphinx-theme (==0.8.1) ; extra == 'dev'
+Requires-Dist: sphinx-autoapi (==1.8.4) ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints (==1.12.0) ; extra == 'dev'
+Provides-Extra: dev-vis
+Requires-Dist: autopep8 ; extra == 'dev-vis'
+Requires-Dist: pylint ; extra == 'dev-vis'
+Requires-Dist: jupyter ; extra == 'dev-vis'
+Requires-Dist: pytest ; extra == 'dev-vis'
+Requires-Dist: pytest-dotenv ; extra == 'dev-vis'
+Requires-Dist: pytest-xdist ; extra == 'dev-vis'
+Requires-Dist: pytest-cov ; extra == 'dev-vis'
+Requires-Dist: pytest-mock ; extra == 'dev-vis'
+Requires-Dist: mypy ; extra == 'dev-vis'
+Requires-Dist: types-requests ; extra == 'dev-vis'
+Requires-Dist: pytest-sugar ; extra == 'dev-vis'
+Requires-Dist: pytest-rerunfailures ; extra == 'dev-vis'
+Requires-Dist: tqdm (>=4.49.0) ; extra == 'dev-vis'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'dev-vis'
+Requires-Dist: loguru (>=0.5.3) ; extra == 'dev-vis'
+Requires-Dist: document-utils (>=1.7.1) ; extra == 'dev-vis'
+Requires-Dist: requests (>=2.0.0) ; extra == 'dev-vis'
+Requires-Dist: numpy (>=1.19.0) ; extra == 'dev-vis'
+Requires-Dist: joblib (>=1.0.0) ; extra == 'dev-vis'
+Requires-Dist: scikit-learn (>=0.20.0) ; extra == 'dev-vis'
+Requires-Dist: typing-extensions (>=3.0) ; extra == 'dev-vis'
+Requires-Dist: analytics-python (~=1.4.0) ; extra == 'dev-vis'
+Requires-Dist: aiohttp (>=3.8.1) ; extra == 'dev-vis'
+Requires-Dist: appdirs (>=1.4.4) ; extra == 'dev-vis'
+Requires-Dist: orjson (>=3.6.7) ; extra == 'dev-vis'
+Requires-Dist: openpyxl (>=3.0.9) ; extra == 'dev-vis'
+Requires-Dist: fsspec (>=2021.10.1) ; extra == 'dev-vis'
+Requires-Dist: sphinx-rtd-theme (>=0.5.0) ; extra == 'dev-vis'
+Requires-Dist: pydata-sphinx-theme (==0.8.1) ; extra == 'dev-vis'
+Requires-Dist: sphinx-autoapi (==1.8.4) ; extra == 'dev-vis'
+Requires-Dist: sphinx-autodoc-typehints (==1.12.0) ; extra == 'dev-vis'
+Provides-Extra: dev-viz
+Requires-Dist: autopep8 ; extra == 'dev-viz'
+Requires-Dist: pylint ; extra == 'dev-viz'
+Requires-Dist: jupyter ; extra == 'dev-viz'
+Requires-Dist: pytest ; extra == 'dev-viz'
+Requires-Dist: pytest-dotenv ; extra == 'dev-viz'
+Requires-Dist: pytest-xdist ; extra == 'dev-viz'
+Requires-Dist: pytest-cov ; extra == 'dev-viz'
+Requires-Dist: pytest-mock ; extra == 'dev-viz'
+Requires-Dist: mypy ; extra == 'dev-viz'
+Requires-Dist: types-requests ; extra == 'dev-viz'
+Requires-Dist: pytest-sugar ; extra == 'dev-viz'
+Requires-Dist: pytest-rerunfailures ; extra == 'dev-viz'
+Requires-Dist: tqdm (>=4.49.0) ; extra == 'dev-viz'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'dev-viz'
+Requires-Dist: loguru (>=0.5.3) ; extra == 'dev-viz'
+Requires-Dist: document-utils (>=1.7.1) ; extra == 'dev-viz'
+Requires-Dist: requests (>=2.0.0) ; extra == 'dev-viz'
+Requires-Dist: numpy (>=1.19.0) ; extra == 'dev-viz'
+Requires-Dist: joblib (>=1.0.0) ; extra == 'dev-viz'
+Requires-Dist: scikit-learn (>=0.20.0) ; extra == 'dev-viz'
+Requires-Dist: typing-extensions (>=3.0) ; extra == 'dev-viz'
+Requires-Dist: analytics-python (~=1.4.0) ; extra == 'dev-viz'
+Requires-Dist: aiohttp (>=3.8.1) ; extra == 'dev-viz'
+Requires-Dist: appdirs (>=1.4.4) ; extra == 'dev-viz'
+Requires-Dist: orjson (>=3.6.7) ; extra == 'dev-viz'
+Requires-Dist: openpyxl (>=3.0.9) ; extra == 'dev-viz'
+Requires-Dist: fsspec (>=2021.10.1) ; extra == 'dev-viz'
+Requires-Dist: sphinx-rtd-theme (>=0.5.0) ; extra == 'dev-viz'
+Requires-Dist: pydata-sphinx-theme (==0.8.1) ; extra == 'dev-viz'
+Requires-Dist: sphinx-autoapi (==1.8.4) ; extra == 'dev-viz'
+Requires-Dist: sphinx-autodoc-typehints (==1.12.0) ; extra == 'dev-viz'
+Provides-Extra: docs
+Requires-Dist: sphinx-rtd-theme (>=0.5.0) ; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme (==0.8.1) ; extra == 'docs'
+Requires-Dist: sphinx-autoapi (==1.8.4) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints (==1.12.0) ; extra == 'docs'
+Provides-Extra: excel
+Requires-Dist: tqdm (>=4.49.0) ; extra == 'excel'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'excel'
+Requires-Dist: loguru (>=0.5.3) ; extra == 'excel'
+Requires-Dist: document-utils (>=1.7.1) ; extra == 'excel'
+Requires-Dist: requests (>=2.0.0) ; extra == 'excel'
+Requires-Dist: numpy (>=1.19.0) ; extra == 'excel'
+Requires-Dist: joblib (>=1.0.0) ; extra == 'excel'
+Requires-Dist: scikit-learn (>=0.20.0) ; extra == 'excel'
+Requires-Dist: typing-extensions (>=3.0) ; extra == 'excel'
+Requires-Dist: analytics-python (~=1.4.0) ; extra == 'excel'
+Requires-Dist: aiohttp (>=3.8.1) ; extra == 'excel'
+Requires-Dist: appdirs (>=1.4.4) ; extra == 'excel'
+Requires-Dist: orjson (>=3.6.7) ; extra == 'excel'
+Requires-Dist: openpyxl (>=3.0.9) ; extra == 'excel'
+Requires-Dist: fsspec (>=2021.10.1) ; extra == 'excel'
+Provides-Extra: hdbscan
+Requires-Dist: hdbscan (>=0.8.27) ; extra == 'hdbscan'
+Provides-Extra: kmedoids
+Requires-Dist: scikit-learn-extra (>=0.2.0) ; extra == 'kmedoids'
+Provides-Extra: notebook
+Requires-Dist: jsonshower ; extra == 'notebook'
+Requires-Dist: tqdm (>=4.49.0) ; extra == 'notebook'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'notebook'
+Requires-Dist: loguru (>=0.5.3) ; extra == 'notebook'
+Requires-Dist: document-utils (>=1.7.1) ; extra == 'notebook'
+Requires-Dist: requests (>=2.0.0) ; extra == 'notebook'
+Requires-Dist: numpy (>=1.19.0) ; extra == 'notebook'
+Requires-Dist: joblib (>=1.0.0) ; extra == 'notebook'
+Requires-Dist: scikit-learn (>=0.20.0) ; extra == 'notebook'
+Requires-Dist: typing-extensions (>=3.0) ; extra == 'notebook'
+Requires-Dist: analytics-python (~=1.4.0) ; extra == 'notebook'
+Requires-Dist: aiohttp (>=3.8.1) ; extra == 'notebook'
+Requires-Dist: appdirs (>=1.4.4) ; extra == 'notebook'
+Requires-Dist: orjson (>=3.6.7) ; extra == 'notebook'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-dotenv ; extra == 'tests'
+Requires-Dist: pytest-xdist ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-mock ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: types-requests ; extra == 'tests'
+Requires-Dist: pytest-sugar ; extra == 'tests'
+Requires-Dist: pytest-rerunfailures ; extra == 'tests'
+Requires-Dist: tqdm (>=4.49.0) ; extra == 'tests'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'tests'
+Requires-Dist: loguru (>=0.5.3) ; extra == 'tests'
+Requires-Dist: document-utils (>=1.7.1) ; extra == 'tests'
+Requires-Dist: requests (>=2.0.0) ; extra == 'tests'
+Requires-Dist: numpy (>=1.19.0) ; extra == 'tests'
+Requires-Dist: joblib (>=1.0.0) ; extra == 'tests'
+Requires-Dist: scikit-learn (>=0.20.0) ; extra == 'tests'
+Requires-Dist: typing-extensions (>=3.0) ; extra == 'tests'
+Requires-Dist: analytics-python (~=1.4.0) ; extra == 'tests'
+Requires-Dist: aiohttp (>=3.8.1) ; extra == 'tests'
+Requires-Dist: appdirs (>=1.4.4) ; extra == 'tests'
+Requires-Dist: orjson (>=3.6.7) ; extra == 'tests'
+Requires-Dist: openpyxl (>=3.0.9) ; extra == 'tests'
+Requires-Dist: fsspec (>=2021.10.1) ; extra == 'tests'
+Provides-Extra: umap
+Requires-Dist: umap-learn (>=0.5.2) ; extra == 'umap'
+Provides-Extra: vis
+Requires-Dist: tqdm (>=4.49.0) ; extra == 'vis'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'vis'
+Requires-Dist: loguru (>=0.5.3) ; extra == 'vis'
+Requires-Dist: document-utils (>=1.7.1) ; extra == 'vis'
+Requires-Dist: requests (>=2.0.0) ; extra == 'vis'
+Requires-Dist: numpy (>=1.19.0) ; extra == 'vis'
+Requires-Dist: joblib (>=1.0.0) ; extra == 'vis'
+Requires-Dist: scikit-learn (>=0.20.0) ; extra == 'vis'
+Requires-Dist: typing-extensions (>=3.0) ; extra == 'vis'
+Requires-Dist: analytics-python (~=1.4.0) ; extra == 'vis'
+Requires-Dist: aiohttp (>=3.8.1) ; extra == 'vis'
+Requires-Dist: appdirs (>=1.4.4) ; extra == 'vis'
+Requires-Dist: orjson (>=3.6.7) ; extra == 'vis'
+Provides-Extra: viz
+Requires-Dist: tqdm (>=4.49.0) ; extra == 'viz'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'viz'
+Requires-Dist: loguru (>=0.5.3) ; extra == 'viz'
+Requires-Dist: document-utils (>=1.7.1) ; extra == 'viz'
+Requires-Dist: requests (>=2.0.0) ; extra == 'viz'
+Requires-Dist: numpy (>=1.19.0) ; extra == 'viz'
+Requires-Dist: joblib (>=1.0.0) ; extra == 'viz'
+Requires-Dist: scikit-learn (>=0.20.0) ; extra == 'viz'
+Requires-Dist: typing-extensions (>=3.0) ; extra == 'viz'
+Requires-Dist: analytics-python (~=1.4.0) ; extra == 'viz'
+Requires-Dist: aiohttp (>=3.8.1) ; extra == 'viz'
+Requires-Dist: appdirs (>=1.4.4) ; extra == 'viz'
+Requires-Dist: orjson (>=3.6.7) ; extra == 'viz'
+
+---
+pipeline_tag: sentence-similarity
+tags:
+- sentence-transformers
+- feature-extraction
+- sentence-similarity
+- transformers
+---
+
+# {MODEL_NAME}
+
+This is a [sentence-transformers](https://www.SBERT.net) model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search.
+
+<!--- Describe your model here -->
+
+## Usage (Sentence-Transformers)
+
+Using this model becomes easy when you have [sentence-transformers](https://www.SBERT.net) installed:
+
+```
+pip install -U sentence-transformers
+```
+
+Then you can use the model like this:
+
+```python
+from sentence_transformers import SentenceTransformer
+sentences = ["This is an example sentence", "Each sentence is converted"]
+
+model = SentenceTransformer('{MODEL_NAME}')
+embeddings = model.encode(sentences)
+print(embeddings)
+```
+
+
+
+## Usage (HuggingFace Transformers)
+Without [sentence-transformers](https://www.SBERT.net), you can use the model like this: First, you pass your input through the transformer model, then you have to apply the right pooling-operation on-top of the contextualized word embeddings.
+
+```python
+from transformers import AutoTokenizer, AutoModel
+import torch
+
+
+#Mean Pooling - Take attention mask into account for correct averaging
+def mean_pooling(model_output, attention_mask):
+    token_embeddings = model_output[0] #First element of model_output contains all token embeddings
+    input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
+    return torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
+
+
+# Sentences we want sentence embeddings for
+sentences = ['This is an example sentence', 'Each sentence is converted']
+
+# Load model from HuggingFace Hub
+tokenizer = AutoTokenizer.from_pretrained('{MODEL_NAME}')
+model = AutoModel.from_pretrained('{MODEL_NAME}')
+
+# Tokenize sentences
+encoded_input = tokenizer(sentences, padding=True, truncation=True, return_tensors='pt')
+
+# Compute token embeddings
+with torch.no_grad():
+    model_output = model(**encoded_input)
+
+# Perform pooling. In this case, mean pooling.
+sentence_embeddings = mean_pooling(model_output, encoded_input['attention_mask'])
+
+print("Sentence embeddings:")
+print(sentence_embeddings)
+```
+
+
+
+## Evaluation Results
+
+<!--- Describe how your model was evaluated -->
+
+For an automated evaluation of this model, see the *Sentence Embeddings Benchmark*: [https://seb.sbert.net](https://seb.sbert.net?model_name={MODEL_NAME})
+
+
+## Training
+The model was trained with the parameters:
+
+**DataLoader**:
+
+`torch.utils.data.dataloader.DataLoader` of length 500 with parameters:
+```
+{'batch_size': 16, 'sampler': 'torch.utils.data.sampler.SequentialSampler', 'batch_sampler': 'torch.utils.data.sampler.BatchSampler'}
+```
+
+**Loss**:
+
+`gpl.toolkit.loss.MarginDistillationLoss` 
+
+Parameters of the fit()-Method:
+```
+{
+    "epochs": 1,
+    "evaluation_steps": 0,
+    "evaluator": "NoneType",
+    "max_grad_norm": 1,
+    "optimizer_class": "<class 'transformers.optimization.AdamW'>",
+    "optimizer_params": {
+        "lr": 2e-05
+    },
+    "scheduler": "WarmupLinear",
+    "steps_per_epoch": 500,
+    "warmup_steps": 1000,
+    "weight_decay": 0.01
+}
+```
+
+
+## Full Model Architecture
+```
+SentenceTransformer(
+  (0): Transformer({'max_seq_length': 350, 'do_lower_case': False}) with Transformer model: DistilBertModel 
+  (1): Pooling({'word_embedding_dimension': 768, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False})
+)
+```
+
+## Citing & Authors
+
+<!--- Describe where people can find more information -->
+
