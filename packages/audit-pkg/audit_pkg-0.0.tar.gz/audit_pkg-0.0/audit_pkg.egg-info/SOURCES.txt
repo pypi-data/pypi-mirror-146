@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+audit_pkg/__init__.py
+audit_pkg/main.py
+audit_pkg.egg-info/PKG-INFO
+audit_pkg.egg-info/SOURCES.txt
+audit_pkg.egg-info/dependency_links.txt
+audit_pkg.egg-info/not-zip-safe
+audit_pkg.egg-info/top_level.txt
