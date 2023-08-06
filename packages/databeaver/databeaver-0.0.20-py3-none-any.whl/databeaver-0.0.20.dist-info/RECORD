@@ -1,0 +1,14 @@
+databeaver/__init__.py,sha256=D_cN641B8I9koE0yWZXxhNGcduwR9pZiH6nm0jWiCRA,153
+databeaver/data/configSample.ini,sha256=D-3iwo6vJvvnnNj9JLJrzQhfqeDvV-IAz-wHA9NDslw,2998
+databeaver/data/configSample.toml,sha256=Hn6MeuvqHewHdIUOBH7jDbRPontdjln-uEKL3RErHj4,3195
+databeaver/lib/DataBeaver.py,sha256=XTj2CvbpiiIbxefWON4mIpd0aIxOpaZ3SK2KKzNfxVs,19704
+databeaver/lib/DataModel.py,sha256=ail75Aky6H4mKxCyh2PIm5cmWexiFC4olZ2WcLRCFI4,425
+databeaver/lib/NotInstantiatedError.py,sha256=87UwTJtO16fTxO2ayXLFrceADETZqtX2IvJ8tCNsjdQ,182
+databeaver/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databeaver/lib/constants.py,sha256=m3RixNhwW46cAEtSV1r7r4iaigVgIsVXqb4wLIU6ofw,688
+databeaver-0.0.20.data/scripts/beaver,sha256=7BEUWd_xHJ2WqKHvNylbDpY7UagkmWehmx7V33ZYuUY,1729
+databeaver-0.0.20.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+databeaver-0.0.20.dist-info/METADATA,sha256=0tIlVifki5YKbi-JwzLbxRuvoHZD8YoMJRuEll3VgLE,2735
+databeaver-0.0.20.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+databeaver-0.0.20.dist-info/top_level.txt,sha256=7wSuffP33zcVCvgfdcCYVcT3G3DjU03Ce6HQhAhnKFk,11
+databeaver-0.0.20.dist-info/RECORD,,
