@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: shittypackage
+Version: 0.0.1
+Summary: Its have not function!
+Home-page: UNKNOWN
+Author: hayoto
+Author-email: hayoto.does.not.exist@gmail.com
+License: UNKNOWN
+Keywords: python,shit
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# shittypack
+is a shit package!
+Only for a test lol!
+
+# Commands
+`shittypackage.why()`: say you some stuff!
+`shittypackage.credits()`: who make this shit here?
+
+
