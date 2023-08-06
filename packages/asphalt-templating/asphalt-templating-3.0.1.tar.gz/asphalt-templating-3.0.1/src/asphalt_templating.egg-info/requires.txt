@@ -1,0 +1,33 @@
+asphalt~=4.6
+typeguard~=2.0
+
+[:extra == "django" or extra == "doc" or extra == "test"]
+Django>=1.9.0
+
+[:extra == "jinja2" or extra == "doc" or extra == "test"]
+Jinja2>=2.7.3
+
+[:extra == "mako" or extra == "doc" or extra == "test"]
+Mako>=1.0.1
+
+[:extra == "tornado" or extra == "doc" or extra == "test"]
+tornado>=4.3.0
+
+[django]
+
+[doc]
+Sphinx>=1.5
+sphinx_rtd_theme
+sphinx-autodoc-typehints>=1.0.5
+sphinxcontrib-asyncio>=0.2.0
+
+[jinja2]
+
+[mako]
+
+[test]
+pytest
+pytest-cov
+pytest-asyncio
+
+[tornado]
