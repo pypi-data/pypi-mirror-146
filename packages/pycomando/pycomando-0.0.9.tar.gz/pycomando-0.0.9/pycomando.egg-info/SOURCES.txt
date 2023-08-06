@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+examples/ejemplo1.py
+pycomando/__init__.py
+pycomando/pycomando.py
+pycomando.egg-info/PKG-INFO
+pycomando.egg-info/SOURCES.txt
+pycomando.egg-info/dependency_links.txt
+pycomando.egg-info/entry_points.txt
+pycomando.egg-info/requires.txt
+pycomando.egg-info/top_level.txt
