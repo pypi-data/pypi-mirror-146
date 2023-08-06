@@ -1,0 +1,5 @@
+kabbes_dir_ops
+pandas
+matplotlib
+numpy
+xlwings
