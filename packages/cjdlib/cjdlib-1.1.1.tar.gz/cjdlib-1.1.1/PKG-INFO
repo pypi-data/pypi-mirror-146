@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cjdlib
+Version: 1.1.1
+Summary: 学而思编程社区陈峻德的库
+Home-page: https://github.com/dede-a/cjdlib
+Author: dede
+Author-email: chenjunde_2020@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cjdlib
+安装方法
+```shell
+pip install cjdlib
+```
+
