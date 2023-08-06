@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+axisem3Dshapes.egg-info/PKG-INFO
+axisem3Dshapes.egg-info/SOURCES.txt
+axisem3Dshapes.egg-info/dependency_links.txt
+axisem3Dshapes.egg-info/top_level.txt
+axisem3dshapes/__init__.py
+axisem3dshapes/cylinder.py
+axisem3dshapes/ellipsoid.py
+axisem3dshapes/global.py
+axisem3dshapes/injector.py
+axisem3dshapes/model.py
+axisem3dshapes/object.py
+axisem3dshapes/slab.py
+axisem3dshapes/sphere.py
