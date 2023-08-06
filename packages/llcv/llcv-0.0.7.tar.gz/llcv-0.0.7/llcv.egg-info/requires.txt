@@ -1,0 +1,9 @@
+python-dateutil
+py-cpuinfo
+tqdm
+numpy
+pillow
+tensorboard
+linearlr
+pycocotools
+scipy

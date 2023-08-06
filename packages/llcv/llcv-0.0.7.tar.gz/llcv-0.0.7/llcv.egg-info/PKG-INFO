@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: llcv
+Version: 0.0.7
+Summary: A modular and extensible framework for computer vision
+Home-page: https://github.com/mtli/llcv
+Author: Mengtian (Martin) Li
+Author-email: martinli.work@gmail.com
+License: MIT
+Description: See project page: https://github.com/mtli/llcv
+Keywords: latency,throughput,computer vision,deep learning,pytorch
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
