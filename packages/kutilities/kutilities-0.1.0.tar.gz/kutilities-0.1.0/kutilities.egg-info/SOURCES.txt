@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+kutilities/__init__.py
+kutilities.egg-info/PKG-INFO
+kutilities.egg-info/SOURCES.txt
+kutilities.egg-info/dependency_links.txt
+kutilities.egg-info/not-zip-safe
+kutilities.egg-info/top_level.txt

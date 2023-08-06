@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kutilities
+Version: 0.1.0
+Summary: Provides template utility functions as well as generatebase teßßmplate files used within web development frameworks
+Home-page: https://github.com/Kaleiko/kutilities
+Author: Chase Kaleikilo
+Author-email: code@kaleiko.net
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: Freeware
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+
