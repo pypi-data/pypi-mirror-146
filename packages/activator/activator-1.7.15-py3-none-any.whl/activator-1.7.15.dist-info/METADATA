@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: activator
+Version: 1.7.15
+Summary: Advanced Firebase
+Home-page: UNKNOWN
+Author: Artem Lukashenko
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: firebase-admin
+Requires-Dist: advancedfirebase
+Requires-Dist: pywebio
+
+UNKNOWN
+
+
