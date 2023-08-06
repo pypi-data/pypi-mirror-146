@@ -1,0 +1,13 @@
+setuptools
+zope.i18nmessageid
+zope.interface
+zope.schema>=3.6
+
+[docs]
+Sphinx
+repoze.sphinx.autointerface
+sphinx_rtd_theme
+
+[test]
+zope.testing
+zope.testrunner

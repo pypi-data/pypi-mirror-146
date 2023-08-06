@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: z3c.schema
+Version: 1.2.0
+Summary: Additional schema fields for Zope 3
+Home-page: https://github.com/zopefoundation/z3c.schema
+Author: Zope Community
+Author-email: zope-dev@zope.org
+License: ZPL 2.1
+Keywords: zope zope3 z3c schema
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Framework :: Zope :: 3
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE.txt
+
+This package provides different additional Zope 3 schema fields.
+
+The provided fields include support for:
+
+- Base URLs
+- Date selection
+- RFC 822 mail addresses
+- Hostnames and IP addresses
+- Credit card numbers
+- Regular expressions
+- Optional choices
+
+Complete documentation can be found at https://z3cschema.readthedocs.io.
+
+The `full change log <https://z3cschema.readthedocs.io/en/latest/changelog.html>`_ is available.
+
+
+
+
