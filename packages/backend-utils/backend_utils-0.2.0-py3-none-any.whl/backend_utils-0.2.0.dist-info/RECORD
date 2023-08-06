@@ -1,0 +1,13 @@
+backend_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backend_utils/http/__init__.py,sha256=SPxrvBrQzRFuCluB_uvU6N-aiMN-1HUz0LMLS3CFGIo,160
+backend_utils/http/base.py,sha256=a6T7Tt01ewtMt4R2o63h22iQYoyAeZkegpHxwBd37mw,4146
+backend_utils/http/middleware.py,sha256=V09eXPnYYcNxPONTAbpd1__5QCRhVPBpOF-9VbldlvM,962
+backend_utils/server/__init__.py,sha256=uBTdL2pj3rS7RmrelbfuppdR_LIX6dwPpoOArwUBlDs,136
+backend_utils/server/app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backend_utils/server/app/routers.py,sha256=TZbXVQps-zyqt-ukXZAW3NWg_KIVc5Pv48W7F5RmV10,1349
+backend_utils/tools/__init__.py,sha256=bRAoU79rPpqzBqE1LJ6o2an9sFddWdTPGoDhXObsUk0,102
+backend_utils/tools/enums.py,sha256=RiER944qKNUQUfUXc14_gJGPW1GjBi_XZFphbNMWlmY,472
+backend_utils/tools/singleton.py,sha256=rh2f8q_vxziZ5JhW_vHReyi3Rg7AqREZVwGdy_gxI8U,325
+backend_utils-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+backend_utils-0.2.0.dist-info/METADATA,sha256=swv9Qh5EWfLVAeDQMYV4U_UPDwbK5WKe4dKmNjtHjlU,4776
+backend_utils-0.2.0.dist-info/RECORD,,
