@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: modelflow
+Version: 0.0.9
+Summary: ML flows from start to finish
+Home-page: https://github.com/felixzhu17/ModelFlow
+Author: Felix Zhu
+Author-email: zhu.felix@outlook.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: interpret
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: plotly-express
+Requires-Dist: xgboost
+Requires-Dist: statsmodels
+Requires-Dist: shap
+Requires-Dist: numpy (==1.21)
+Requires-Dist: pytest
+
+# ModelFlow
+0.0.9
+
+
