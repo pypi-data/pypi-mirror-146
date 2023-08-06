@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/fdata.py
+src/fdata.egg-info/PKG-INFO
+src/fdata.egg-info/SOURCES.txt
+src/fdata.egg-info/dependency_links.txt
+src/fdata.egg-info/top_level.txt
