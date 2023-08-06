@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/sergiu_dyno.egg-info/PKG-INFO
+src/sergiu_dyno.egg-info/SOURCES.txt
+src/sergiu_dyno.egg-info/dependency_links.txt
+src/sergiu_dyno.egg-info/top_level.txt
