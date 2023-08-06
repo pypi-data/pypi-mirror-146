@@ -1,0 +1,24 @@
+appdirs
+Click>=6.0
+flask>=1.0.2
+Werkzeug<2.1.0
+future
+requests>=2.20.1
+whichcraft==0.6.1
+
+[:python_version < "3.0"]
+python-jose<3.3.0
+rsa==4.5
+
+[:python_version >= "3.0"]
+python-jose
+rsa
+
+[test]
+pytest
+pytest-cov
+python-jose
+requests-mock
+
+[test:python_version < "3.3"]
+mock
