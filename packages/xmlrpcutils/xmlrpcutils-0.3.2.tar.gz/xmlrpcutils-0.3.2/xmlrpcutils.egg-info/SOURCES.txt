@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.en.md
+README.md
+requirements.txt
+setup.py
+xmlrpcutils/__init__.py
+xmlrpcutils/server.py
+xmlrpcutils/service.py
+xmlrpcutils.egg-info/PKG-INFO
+xmlrpcutils.egg-info/SOURCES.txt
+xmlrpcutils.egg-info/dependency_links.txt
+xmlrpcutils.egg-info/requires.txt
+xmlrpcutils.egg-info/top_level.txt
