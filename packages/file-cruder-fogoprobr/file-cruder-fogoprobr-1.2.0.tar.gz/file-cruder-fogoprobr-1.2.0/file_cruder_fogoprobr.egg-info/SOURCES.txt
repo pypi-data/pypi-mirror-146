@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+file_cruder_fogoprobr.egg-info/PKG-INFO
+file_cruder_fogoprobr.egg-info/SOURCES.txt
+file_cruder_fogoprobr.egg-info/dependency_links.txt
+file_cruder_fogoprobr.egg-info/top_level.txt
+filecruder_fogoprobr/__init__.py
+filecruder_fogoprobr/add.py
+filecruder_fogoprobr/check.py
+filecruder_fogoprobr/remove.py
