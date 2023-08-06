@@ -1,0 +1,4 @@
+[console_scripts]
+Metaplex-calculate-IJR = metaplex.index_jump:main
+Metaplex-per-sample-filter = metaplex.per_sample_filtering:main
+Metaplex-remultiplex = metaplex.remultiplexing:main
