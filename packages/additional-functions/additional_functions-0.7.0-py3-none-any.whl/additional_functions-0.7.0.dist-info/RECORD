@@ -1,0 +1,11 @@
+additional_functions/__init__.py,sha256=tOo_Y2zVOtelcN-EojU4YVKQsYYeZDH2m0oYV6aCP3Y,1127
+additional_functions/arithmetic.py,sha256=rYZwg0hYqdyu0VveBl8addPc-o9OkbHoWbOmdYDwU4g,1821
+additional_functions/combinatorics.py,sha256=eVpdPh-Hn1sTlMtwPrWJ0w39mXNS8z-L388DurK3qkg,2042
+additional_functions/factorials.py,sha256=CS6gDayQO3bFRkIQa5CLVfP2VrsO6es5067HEN5s17g,1340
+additional_functions/progressions.py,sha256=zBfDIxIRrjpdpmmmEJNia2QuHyBc8CKfOORP9zabxi4,1184
+additional_functions/roman_arabic_numerals.py,sha256=v_SeGSbSVAc3lA861tpo3ypIV_VSF221jeTPy0_0VwY,2347
+additional_functions/sortings.py,sha256=3-SL2Sl7hoHUi4uSuRtI0fu-o1Sf5gf2Ie7TDuhneI4,2525
+additional_functions-0.7.0.dist-info/METADATA,sha256=t18H-KHf6gBHuXuBhplvZNr1h18vwEHRztPyGu_C81A,433
+additional_functions-0.7.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+additional_functions-0.7.0.dist-info/top_level.txt,sha256=OhR9T8Oe3iCgObpy4KXlICLTSCH9_84yBnDqt22nvTI,21
+additional_functions-0.7.0.dist-info/RECORD,,
