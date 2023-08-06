@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: nftscan-api
+Version: 0.1.4
+Summary: Python 3 wrapper for the NFTScan API
+Home-page: https://github.com/nftscan2022/nftscan-api-python-sdk
+Author: Alex Ausch
+Author-email: alex@ausch.name
+Maintainer: Alex Ausch
+Maintainer-email: alex@ausch.name
+License: MIT license
+Project-URL: Source, https://github.com/nftscan2022/nftscan-api-python-sdk
+Keywords: nft,blockchain,nftscan
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: parameters-validation (==1.2.0)
+
+# NFTScan NFT API Python 3 wrapper
+
+A library providing Python 3 bindings for the [NFTScan API](https://developer.nftscan.com/)
+
+This library is in Alpha / Early Alpha state, and is untested / provided as is. Feel free to open PRs or bug reports for issues, features or extensions
+
+# Installation:
+
+```
+pip install nftscan-api
+```
+
+# Usage:
+
+Get a key and secret. Then, check out the api endpoints listed, eg (getGroupByNftContract)[https://developer.nftscan.com/doc/#operation/getAllNftByUserAddressUsingPOST] - and try to use them
+
+```
+from nftscan import NftScanAPI
+nftScan = NftScanAPI(
+    apiKey=<key>,
+    apiSecret=<secret>)
+test_wallet = "0x3becf83939f34311b6bee143197872d877501b11"
+
+print(nftScan.getGroupByNftContract(erc="erc721", user_address=test_wallet))
+```
+
+If looking to also use pro api endpoints:
+
+```
+from nftscan import NftScanAPI
+nftScanPro = NftScanProAPI(
+    apiKey=<key>,
+    apiSecret=<secret>)
+test_wallet = "0x3becf83939f34311b6bee143197872d877501b11"
+test_nft = "0xffe572aee5cded696f617125aa66b9746960f4ec"
+
+print(nftScanPro.getGroupByNftContract(erc="erc721", user_address=test_wallet))
+print(nftScanPro.getNftByContract(nft_address=test_nft))
+```
+
+Write json encoded response to a file:
+
+```
+nftScan.getGroupByNftContract(erc="erc721", user_address=test_wallet, export_file_name='out.txt'))
+
+```
+
+
+## 0.1.4 (2022-04-14)
+
+Partial support for pro API
+Fixed missing dependencies and bad formatting for requirements.dev.stxt
+
+## 0.1.3 (2022-03-31)
+
+Moved source repo to main NFTScan github org - https://github.com/nftscan2022/nftscan-api-python-sdk
+
+## 0.1.2 (2022-03-31)
+
+Bugfixes:
+ * page_index should start at 1 
+ * removed spurious "walletType" argument accidentally sent to  "getAllNftByUserAddress" endpoint	
+
+## 0.1.1 (2022-03-31)
+
+* Fixed a corner case for dumping response data to file
+
+## 0.1.0 (2022-03-30)
+
+* Created
+
+
