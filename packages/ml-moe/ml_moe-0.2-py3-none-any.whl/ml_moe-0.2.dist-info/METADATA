@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ml-moe
+Version: 0.2
+Summary: Mixture of Experts
+Home-page: UNKNOWN
+Author: Shagun Sodhani
+Author-email: sshagunsodhani@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+
+[![CircleCI](https://circleci.com/gh/fairinternal/MoE.svg?style=svg&circle-token=add2a49d91af29ce1f823156bf2d91fbff8dd751)](https://circleci.com/gh/fairinternal/MoE)
+
+# moe
+Mixture of Experts
+
+
