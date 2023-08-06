@@ -1,0 +1,52 @@
+{
+            "name": "{{request.name}}",
+            "event": [
+            {%- if 'prerequest' in request.events %} 
+                {
+                    "listen": "prerequest",
+                    "script": {
+                        "exec": [
+                            {%- for script in request.events['prerequest'].script %}
+                            {{script | to_json}}{{ ", " if not loop.last else "" }}
+                            {%- endfor %}
+
+                        ],
+                        "type": "text/javascript"
+                    }
+                }{{ ", " if "test" in request.events else "" }}
+            {%- endif %}
+            {%- if "test" in request.events %}
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [
+                            {%- for script in request.events['test'].script %}
+                            {{script | to_json}}{{ ", " if not loop.last else "" }}
+                            {%- endfor %}
+
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            {%- endif %}
+            ],
+            "request": {
+                "method": "{{request.method}}",
+                "header": [
+                    {%- for key, value in request.headers.items() -%}
+                    {% include "header.j2" -%}
+                    {{ ", " if not loop.last else "" }}
+                    {%- endfor -%}
+                ],
+                {% if request.body %}"body": {% include "requestBody.j2" -%} ,{%- endif %}
+                "url": {
+                    "raw": "{{request.url.raw}}",
+                    {%- if request.url.protocol %} 
+                    "protocol": "{{request.url.protocol}}",
+                    {%- endif %}
+                    "host": {{request.url.host | to_json}}
+                },
+                "description": "{{request.description}}"
+            },
+            "response": []
+        }

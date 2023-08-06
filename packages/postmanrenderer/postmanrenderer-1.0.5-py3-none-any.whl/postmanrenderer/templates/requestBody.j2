@@ -1,0 +1,9 @@
+{
+			"mode": "{{request.body.mode}}",
+			"{{request.body.mode}}": {{request.body.content.to_json()}},
+			{% if request.body.require_options %}"options": {
+				"raw": {
+					"language": "{{request.body.content.language}}"
+				}
+			}{%- endif %}
+		}
