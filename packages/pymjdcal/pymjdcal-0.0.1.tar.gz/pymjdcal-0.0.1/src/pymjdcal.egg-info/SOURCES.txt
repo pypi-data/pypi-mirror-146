@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pymjdcal/__init__.py
+src/pymjdcal/__main__.py
+src/pymjdcal/pymjdcal.py
+src/pymjdcal.egg-info/PKG-INFO
+src/pymjdcal.egg-info/SOURCES.txt
+src/pymjdcal.egg-info/dependency_links.txt
+src/pymjdcal.egg-info/requires.txt
+src/pymjdcal.egg-info/top_level.txt

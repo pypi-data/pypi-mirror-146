@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pymjdcal
+Version: 0.0.1
+Summary: MJD Calender in Python
+Home-page: https://github.com/tungthai92/pymjdcal
+Author: Tung Thai
+Author-email: tung.t.thai92@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tungthai92/pymjdcal/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Description
+Python program to print on terminal a MJD calendar.
+
+# Usage
+Basic usage, which prints current month: `python -m pymjdcal`
+
+To print a specific month, pass year and month number as argument, e.g.
+`python -m pymjdcal 2000 1`
+
+
