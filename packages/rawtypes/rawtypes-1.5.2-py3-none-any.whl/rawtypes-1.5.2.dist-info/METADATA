@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: rawtypes
+Version: 1.5.2
+Summary: UNKNOWN
+Author: ousttrue
+License: UNKNOWN
+Project-URL: Documentation, https://ousttrue.github.io/rawtypes/
+Project-URL: Source, https://github.com/ousttrue/rawtypes
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2
+
+# rawtypes
+
+code generator for python extension
+
+## clang.cindex
+
+This library is use 'clang.cindex` from <https://raw.githubusercontent.com/llvm/llvm-project/llvmorg-13.0.0/clang/bindings/python/clang/>.
+And placement in rawtypes.clang.
+
+```py
+from rawtypes.clang import cindex
+```
+
+
