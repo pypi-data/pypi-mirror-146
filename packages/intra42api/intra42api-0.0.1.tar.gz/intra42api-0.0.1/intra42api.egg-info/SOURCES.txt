@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+intra42api/__init__.py
+intra42api/intra42.py
+intra42api.egg-info/PKG-INFO
+intra42api.egg-info/SOURCES.txt
+intra42api.egg-info/dependency_links.txt
+intra42api.egg-info/requires.txt
+intra42api.egg-info/top_level.txt
