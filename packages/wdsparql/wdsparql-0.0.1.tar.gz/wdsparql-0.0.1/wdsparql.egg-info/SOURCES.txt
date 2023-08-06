@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+wdsparql/__init__.py
+wdsparql/wdsparqlmagic.py
+wdsparql.egg-info/PKG-INFO
+wdsparql.egg-info/SOURCES.txt
+wdsparql.egg-info/dependency_links.txt
+wdsparql.egg-info/requires.txt
+wdsparql.egg-info/top_level.txt
