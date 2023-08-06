@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ontoxref/__init__.py
+src/ontoxref/backend.py
+src/ontoxref/service.py
+src/ontoxref.egg-info/PKG-INFO
+src/ontoxref.egg-info/SOURCES.txt
+src/ontoxref.egg-info/dependency_links.txt
+src/ontoxref.egg-info/requires.txt
+src/ontoxref.egg-info/top_level.txt
