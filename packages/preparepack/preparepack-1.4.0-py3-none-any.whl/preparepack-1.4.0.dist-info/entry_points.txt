@@ -1,0 +1,4 @@
+[console_scripts]
+buildpack = prepack:build
+prepack = prepack:prepack
+uploadpypi = prepack:pypi
