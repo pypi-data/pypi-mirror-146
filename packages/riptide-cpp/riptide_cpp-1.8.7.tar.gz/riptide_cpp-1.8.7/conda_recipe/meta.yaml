@@ -1,0 +1,35 @@
+package:
+  name: riptide_cpp
+  version: {{ environ.get('BUILD_VERSION', 'DEV') }}
+
+source:
+  path: ..
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python {{ python }}
+    - {{ compiler('cxx') }}
+    - cmake {{ 3.22 }}
+    - setuptools_scm
+    - numpy {{ numpy }}
+  host:
+    - python {{ python }}
+    - {{ pin_compatible('numpy', min_pin='x.x', max_pin='x.x') }}
+    - setuptools_scm
+  run:
+    - python {{ python }}
+    - {{ pin_compatible('numpy', min_pin='x.x', max_pin='x.x') }}
+
+test:
+  imports:
+    riptide_cpp
+
+about:
+  home: https://github.com/rtosholdings/riptide_cpp
+  license: BSD 3-Clause License
+  license_file: LICENSE
+  summary: 'Python Package with fast math util functions'
+
