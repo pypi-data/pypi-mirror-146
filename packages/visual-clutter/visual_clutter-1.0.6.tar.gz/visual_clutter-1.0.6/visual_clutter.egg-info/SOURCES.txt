@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+visual_clutter/__init__.py
+visual_clutter/clutter.py
+visual_clutter/utils.py
+visual_clutter.egg-info/PKG-INFO
+visual_clutter.egg-info/SOURCES.txt
+visual_clutter.egg-info/dependency_links.txt
+visual_clutter.egg-info/requires.txt
+visual_clutter.egg-info/top_level.txt
