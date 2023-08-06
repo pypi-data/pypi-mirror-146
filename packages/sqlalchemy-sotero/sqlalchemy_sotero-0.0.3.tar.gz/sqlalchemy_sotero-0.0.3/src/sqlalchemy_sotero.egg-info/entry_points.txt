@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+sotero.postgres = sqlalchemy_sotero.postgres:SoteroPGDialect

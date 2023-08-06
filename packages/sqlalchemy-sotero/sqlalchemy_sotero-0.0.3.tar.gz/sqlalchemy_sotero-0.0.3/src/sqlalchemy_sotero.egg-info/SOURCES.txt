@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/sqlalchemy_sotero/__init__.py
+src/sqlalchemy_sotero/base.py
+src/sqlalchemy_sotero/postgres.py
+src/sqlalchemy_sotero.egg-info/PKG-INFO
+src/sqlalchemy_sotero.egg-info/SOURCES.txt
+src/sqlalchemy_sotero.egg-info/dependency_links.txt
+src/sqlalchemy_sotero.egg-info/entry_points.txt
+src/sqlalchemy_sotero.egg-info/not-zip-safe
+src/sqlalchemy_sotero.egg-info/requires.txt
+src/sqlalchemy_sotero.egg-info/top_level.txt
