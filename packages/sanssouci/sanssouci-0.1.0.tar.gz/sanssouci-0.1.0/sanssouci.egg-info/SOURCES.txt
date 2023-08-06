@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sanssouci/__init__.py
+sanssouci/lambda_calibration.py
+sanssouci/post_hoc_bounds.py
+sanssouci/reference_families.py
+sanssouci/row_welch.py
+sanssouci/version.py
+sanssouci.egg-info/PKG-INFO
+sanssouci.egg-info/SOURCES.txt
+sanssouci.egg-info/dependency_links.txt
+sanssouci.egg-info/requires.txt
+sanssouci.egg-info/top_level.txt
