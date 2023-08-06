@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_slick/SlickSlider.py
+dash_slick/__init__.py
+dash_slick/_imports_.py
+dash_slick/dash_slick.min.js
+dash_slick/dash_slick.min.js.map
+dash_slick/metadata.json
+dash_slick/package-info.json
+dash_slick.egg-info/PKG-INFO
+dash_slick.egg-info/SOURCES.txt
+dash_slick.egg-info/dependency_links.txt
+dash_slick.egg-info/top_level.txt
