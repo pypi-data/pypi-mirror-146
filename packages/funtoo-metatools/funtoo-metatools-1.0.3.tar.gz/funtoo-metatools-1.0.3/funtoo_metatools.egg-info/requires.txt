@@ -1,0 +1,11 @@
+subpop>=2.0.0
+beautifulsoup4
+dict_toolbox
+httpx
+Jinja2>=3
+packaging
+pymongo
+PyYAML
+toml
+xmltodict
+colorama
