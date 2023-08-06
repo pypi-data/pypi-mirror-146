@@ -1,0 +1,4 @@
+[console_scripts]
+intelliw = intelliw.interface.entrypoint:run
+intelliw_server = intelliw.interface.controller:run
+
