@@ -1,0 +1,14 @@
+sco_py/expr.py,sha256=CtrM9-coGvNxqAormjExUQDZf0ZTSMTJqwo7csHM-W0,12371
+sco_py/sco_gurobi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sco_py/sco_gurobi/prob.py,sha256=VpcJEiD9SXUgqWvzf6nc4KekB_SoFFfw2XjjpATj3JU,20771
+sco_py/sco_gurobi/solver.py,sha256=2lFHTXAHvn-I9BKx9HOvZFpK9B11YXRdgVOhGKmonVI,9230
+sco_py/sco_gurobi/variable.py,sha256=I__9sMryRdkSoZl3fBsd2UMXT7ZQ7OuYRTkSgDHYO9Q,2330
+sco_py/sco_osqp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sco_py/sco_osqp/osqp_utils.py,sha256=4TBOkV1c3xV5Ic79t2s8YA--4DGH9yY3ascTAzL083M,7857
+sco_py/sco_osqp/prob.py,sha256=CoUmlEcLWys8mgjn-YPvLqkCla18T0OP2WpkYu2qdKk,26384
+sco_py/sco_osqp/solver.py,sha256=QXDWLqjiz3YdTia1M7x1_2g1UDnygwY2RXLqjj_04XM,11385
+sco_py/sco_osqp/variable.py,sha256=J9QWuNeesFp5v94PR7QX6dGLZhpUOWcszlGMmVfn0sU,2349
+sco_py-0.4.0.dist-info/LICENSE,sha256=GEfg4GmBQu1DR8FEGp-oHI-93USx2LvNXjZH-ZF1nX8,1035
+sco_py-0.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+sco_py-0.4.0.dist-info/METADATA,sha256=dnCP1zoHjhNiCnnCST57ByEhEH_vNHhSZh4IzZxvA1M,3496
+sco_py-0.4.0.dist-info/RECORD,,
