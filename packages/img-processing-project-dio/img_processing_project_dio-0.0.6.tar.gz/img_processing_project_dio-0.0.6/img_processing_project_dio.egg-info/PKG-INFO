@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: img-processing-project-dio
+Version: 0.0.6
+Summary: This project is part of a bootcamp
+Home-page: https://github.com/BetaTH/image_processing_th.git
+Author: Thielson Alemendra
+Author-email: thielson12@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# [img_processing_project_dio](https://pypi.org/project/img-processing-project-dio/)
+
+Description:
+
+This project is part of Cloud Data Engineer bootcamp from DIO - Digital Innovation One.
+
+The package **img_processing_project_dio** is used to:
+
+	Processing:
+	- Histrogam matching
+	- Structural similarity
+	- Resize image
+
+	Utils:
+	- Read image
+	- Save image
+	- Plot result
+	- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install [**img_processing_project_dio**](https://pypi.org/project/img-processing-project-dio/)
+
+```bash
+pip install img-processing-project-dio
+```
+
+## Usage
+
+```python
+from image_processing_desafio_dio.processing import combination, transformation
+from image_processing_desafio_dio.utils import io, plot
+```
+
+## Author
+Thielson Almendra
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
