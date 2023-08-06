@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: databricks-cdk
+Version: 0.1.0
+Summary: Deploying databricks resources from cdk
+Home-page: https://github.com/godatadriven/databricks-cdk
+License: MIT
+Keywords: databricks,cdk,aws
+Author: Peter van 't Hof'
+Author-email: peter.vanthof@godatadriven.com
+Requires-Python: >=3.6.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.21.10,<2.0.0)
+Requires-Dist: cfnresponse (>=1.1.2,<2.0.0)
+Requires-Dist: pydantic (>=1.4.0,<2.0.0)
+Requires-Dist: requests (>=2.22)
+Project-URL: Repository, https://github.com/godatadriven/databricks-cdk
+Description-Content-Type: text/markdown
+
+
