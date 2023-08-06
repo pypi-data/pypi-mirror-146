@@ -1,0 +1,5 @@
+beautifulsoup4
+edc-he>=0.1.0
+edc-mnsi>=0.1.1
+edc-qol>=0.1.1
+sarscov2>=0.1.14
