@@ -1,0 +1,3 @@
+[console_scripts]
+time-tracker-cli=time_tracker_cli:main
+
