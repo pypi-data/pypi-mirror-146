@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ultimate_parser/__init__.py
+ultimate_parser/parser.py
+ultimate_parser.egg-info/PKG-INFO
+ultimate_parser.egg-info/SOURCES.txt
+ultimate_parser.egg-info/dependency_links.txt
+ultimate_parser.egg-info/requires.txt
+ultimate_parser.egg-info/top_level.txt
