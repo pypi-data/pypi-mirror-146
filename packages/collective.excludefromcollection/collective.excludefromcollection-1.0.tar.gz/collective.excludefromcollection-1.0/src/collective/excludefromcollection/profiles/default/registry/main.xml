@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<registry
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.excludefromcollection">
+
+<!-- -*- extra stuff goes here -*- -->
+
+<records prefix="plone.app.querystring.field.exclude_from_collection"
+         interface='plone.app.querystring.interfaces.IQueryField'>
+  <value key="title" i18n:translate="">Exclude from Collection</value>
+  <value key="description" i18n:translate="">Filters objects which have exclude_from_collection enabled</value>
+  <value key="enabled">True</value>
+  <value key="sortable">True</value>
+  <value key="operations">
+    <element>plone.app.querystring.operation.boolean.isTrue</element>
+    <element>plone.app.querystring.operation.boolean.isFalse</element>
+  </value>
+  <value key="group" i18n:translate="">Text</value>
+</records>
+
+</registry>

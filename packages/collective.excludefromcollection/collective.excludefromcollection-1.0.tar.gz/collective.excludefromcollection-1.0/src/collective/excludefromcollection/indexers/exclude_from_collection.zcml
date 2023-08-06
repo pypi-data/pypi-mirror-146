@@ -1,0 +1,9 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <adapter factory=".exclude_from_collection.dummy"
+    name="exclude_from_collection" />
+
+  <adapter factory=".exclude_from_collection.exclude_from_collection"
+    name="exclude_from_collection" />
+
+</configure>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+  <!-- <column value="exclude_from_collection"/> -->
+  <index name="exclude_from_collection" meta_type="BooleanIndex">
+    <indexed_attr value="exclude_from_collection" />
+  </index>
+</object>
