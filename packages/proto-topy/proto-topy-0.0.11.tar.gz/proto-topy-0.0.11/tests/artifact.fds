@@ -1,0 +1,15 @@
+
+ÿ
+google/protobuf/timestamp.protogoogle.protobuf";
+	Timestamp
+seconds (Rseconds
+nanos (RnanosB…
+com.google.protobufBTimestampProtoPZ2google.golang.org/protobuf/types/known/timestamppbø¢GPBªGoogle.Protobuf.WellKnownTypesbproto3
+‚
+p1/p2/other2.protogoogle/protobuf/timestamp.proto"C
+OtherThing24
+created (2.google.protobuf.TimestampRcreatedbproto3
+X
+p3/p4/test6.protop1/p2/other2.proto"'
+Test6
+foo (2.OtherThing2Rfoobproto3
