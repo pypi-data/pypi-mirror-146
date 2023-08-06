@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "pycites"
+version = "0.1.4"
+description = "Package to download and interact with the CITES Trade Database in Python"
+authors = ["Lee Tirrell <tirrell.le@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ltirrell/pycites"
+#homepage = "https://github.com/"
+#documentation = "https://readthedocs.io"
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+exclude = ["pycites/*.ipynb"]
+packages = [
+    {include = "pycites"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+pandas = "^1.2"
+requests = "^2.24.0"
+tqdm = "^4.46.1"
+appdirs = "^1.4.4"
+click = ">=7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.1.0"
+isort = "^5.10.1"
+jupyterlab-code-formatter = "^1.4.10"
+vaex-core = "^4.8.0"
+vaex-hdf5 = "^0.12.0"
+vaex-viz = "^0.5.1"
+vaex-jupyter = "^0.7.0"
+
+[tool.poetry.extras]
+
+[tool.poetry.scripts]
+get_cites_data='pycites.cli:cli'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
