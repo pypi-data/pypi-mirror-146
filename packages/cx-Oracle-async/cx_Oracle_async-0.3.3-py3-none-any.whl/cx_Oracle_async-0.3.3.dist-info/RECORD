@@ -1,0 +1,12 @@
+cx_Oracle_async/AQ.py,sha256=K5Fi_0Zkw1I05NnVFRIB1Y2ZTUUcwV8sSicbV8Upjx8,4581
+cx_Oracle_async/__init__.py,sha256=nTzrLTPC2yRJfOmwM8jA4XKhy56K7CwJ49bfFK_nE6o,3952
+cx_Oracle_async/connections.py,sha256=lYOKSCfZhjpI1JgbQvGdxcNOimmuZdrF0d32Dpnagfs,3199
+cx_Oracle_async/context.py,sha256=Ij2ASUVUzfrW7Ow3RXC9d13wq6ZmuYxXuoNfRJ0M4ow,506
+cx_Oracle_async/cursors.py,sha256=Hy70kQdhbA-cz9AwEdq0SAtqD07vRQ7EIb48pfbA-4Y,1764
+cx_Oracle_async/pools.py,sha256=iuVpHikuOPZX0JPeq7T_5SRn9YOTmDc5AYtdl3kOyy4,3543
+cx_Oracle_async/utils.py,sha256=WBOnwtyB4NeHd3gY_YKY597jHtVgvnj0LoV48uL_9oQ,2414
+cx_Oracle_async-0.3.3.dist-info/LICENSE,sha256=YPEZK_rnnbta095gY9IlIaH9PtztykkvdgamO_dh_p0,1067
+cx_Oracle_async-0.3.3.dist-info/METADATA,sha256=PhYpqHULkbrGmfkk4V4VWWecV8WvQlxCXvVz3do0Ydo,4618
+cx_Oracle_async-0.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cx_Oracle_async-0.3.3.dist-info/top_level.txt,sha256=02Oq4OtGmS5aSst6Uyr4bGn-QlWIYYvEYKg5gKh28ps,16
+cx_Oracle_async-0.3.3.dist-info/RECORD,,
