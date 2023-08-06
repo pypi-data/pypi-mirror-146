@@ -1,0 +1,4 @@
+[console_scripts]
+amk.rfwd = amk.rfwd:main
+amk_rfwd = amk.rfwd:main
+rfwd = amk.rfwd:main
