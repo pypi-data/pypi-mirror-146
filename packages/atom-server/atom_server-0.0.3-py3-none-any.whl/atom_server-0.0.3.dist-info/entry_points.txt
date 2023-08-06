@@ -1,0 +1,3 @@
+[console_scripts]
+atom-cli = atom.cli:cli
+
