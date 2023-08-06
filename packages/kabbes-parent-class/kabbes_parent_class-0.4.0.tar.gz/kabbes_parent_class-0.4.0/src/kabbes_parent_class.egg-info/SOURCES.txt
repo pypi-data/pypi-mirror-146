@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/kabbes_parent_class.egg-info/PKG-INFO
+src/kabbes_parent_class.egg-info/SOURCES.txt
+src/kabbes_parent_class.egg-info/dependency_links.txt
+src/kabbes_parent_class.egg-info/requires.txt
+src/kabbes_parent_class.egg-info/top_level.txt
+src/parent_class/ParentClass.py
+src/parent_class/ParentPlural.py
+src/parent_class/ParentPluralDict.py
+src/parent_class/ParentPluralList.py
+src/parent_class/__init__.py
+src/parent_class/__main__.py
