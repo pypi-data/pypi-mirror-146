@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pytest-gather-fixtures
+Version: 0.1.1
+Summary: set up asynchronous pytest fixtures concurrently
+Home-page: https://github.com/bentheiii/pytest-gather-fixtures
+License: MIT
+Author: Biocatch LTD
+Author-email: serverteam@biocatch.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytest (>=6.0.0)
+Requires-Dist: pytest-asyncio (>=0.18.1)
+Project-URL: Repository, https://github.com/bentheiii/pytest-gather-fixtures
+Description-Content-Type: text/markdown
+
+# Pytest-Gather-Fixtures:  run async fixtures concurrently
+
+pytest-gather-fixtures is a library for pytest that allows you to set up and tear down fixtures in 
+parallel. It's useful for when you have multiple independent fixtures that take a long time to set
+up. 
+
+```python
+import asyncio
+from pytest_gather_fixtures import ConcurrentFixtureGroup
+
+my_fixture_group = ConcurrentFixtureGroup('my_fixture_group')
+
+@my_fixture_group.fixture
+async def my_fixture_1():
+    await asyncio.sleep(1)
+
+@my_fixture_group.fixture
+async def my_fixture_2():
+    await asyncio.sleep(1)
+
+def test_foo(my_fixture_1, my_fixture_2):
+    # setup for this test will only take 1 second
+    pass
+```
