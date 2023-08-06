@@ -1,0 +1,10 @@
+alive-progress>=2.4.0
+bibtexparser
+
+[dev]
+black
+flake8
+isort
+mypy
+pre-commit
+pytest
