@@ -1,0 +1,3 @@
+[console_scripts]
+slapd-parser=openldap_config_parser.command:cli
+
