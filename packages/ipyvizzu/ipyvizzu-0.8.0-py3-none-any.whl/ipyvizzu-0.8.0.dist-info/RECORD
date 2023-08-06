@@ -1,0 +1,12 @@
+ipyvizzu/__init__.py,sha256=mjVCh6pK7AQgwBUeeo4YZ-xx5_ARAq7Z_x2OzigNFlg,350
+ipyvizzu/animation.py,sha256=e0bQ76zZWbfcR3aBLMGi2D3bzDt5IXnyvB1YIBI4nG4,4567
+ipyvizzu/chart.py,sha256=NREZ41TiJGrQR7pKdkYpmnvoRkNw6vhXdmyQU7kmNzE,3853
+ipyvizzu/json.py,sha256=lcGPgj7X7Svhin0TzSRuW-7pWyUpFAG3QJowqBmACOo,807
+ipyvizzu/method.py,sha256=blXINDZIY_BFOUlhJ-Awc9CW3Z5mB3lh4iUpzG-86R0,682
+ipyvizzu/template.py,sha256=V4llG-ZJCYy9gK5RbHTt_PYteJ_NbE5b_4Fu4otv3L0,788
+ipyvizzu/templates/ipyvizzu.js,sha256=p4S0v0RoFAm-QCciqfJ293ppqGAwuVhVHLk2q6ZPHS0,3073
+ipyvizzu-0.8.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ipyvizzu-0.8.0.dist-info/METADATA,sha256=Qtjq0dM6wheqAw46pxEWzvpF_2UyEosqfIm6-VaLSk4,5028
+ipyvizzu-0.8.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ipyvizzu-0.8.0.dist-info/top_level.txt,sha256=nrHN2s5qXYV9C6-L51PoraUgC7alTNeMAR1K8gsh2OE,9
+ipyvizzu-0.8.0.dist-info/RECORD,,
