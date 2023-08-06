@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: odoo14-addon-shopinvader-product-video-link
+Version: 14.0.1.0.1
+Summary: Add video on your Shopinvader website
+Home-page: https://github.com/shopinvader/odoo-shopinvader
+Author: Akretion
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.6
+Requires-Dist: odoo14-addon-product-video-link
+Requires-Dist: odoo14-addon-shopinvader
+Requires-Dist: odoo (<14.1dev,>=14.0a)
+
+UNKNOWN
+
