@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2022-04-08 15:15 and 2022-04-16 07:02.
 
-The repo is 34% (13996/40000) complete.
+The repo is 39% (15996/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-146/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| ddtrace | 236 |
-| shewchuk | 216 |
-| zenroom | 208 |
-| nestpy-test2 | 186 |
-| great-expectations-experimental | 144 |
-| cfractions | 144 |
-| spanishconjugator | 120 |
-| opentdf | 113 |
-| light-curve | 93 |
-| pysyd | 88 |
-| jetpack-io | 88 |
-| cdktf-cdktf-provider-newrelic | 88 |
-| aim | 88 |
-| copclib | 84 |
-| pymongo | 83 |
-| zengl | 80 |
-| raptor-functions | 80 |
-| hammingdist | 78 |
-| snipar | 73 |
-| symba | 72 |
-| setproctitle | 71 |
-| coiled | 68 |
-| deciphon-api | 66 |
-| Geode-BackgroundMesh | 64 |
-| lalsuite | 63 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-146).
 
 
