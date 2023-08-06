@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wn_editor/__init__.py
+wn_editor/editor.py
+wn_editor.egg-info/PKG-INFO
+wn_editor.egg-info/SOURCES.txt
+wn_editor.egg-info/dependency_links.txt
+wn_editor.egg-info/requires.txt
+wn_editor.egg-info/top_level.txt
