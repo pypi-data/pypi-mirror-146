@@ -1,0 +1,8 @@
+README.md
+setup.py
+bidexhands.egg-info/PKG-INFO
+bidexhands.egg-info/SOURCES.txt
+bidexhands.egg-info/dependency_links.txt
+bidexhands.egg-info/not-zip-safe
+bidexhands.egg-info/requires.txt
+bidexhands.egg-info/top_level.txt

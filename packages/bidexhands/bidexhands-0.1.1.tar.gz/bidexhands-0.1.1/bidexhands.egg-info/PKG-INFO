@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: bidexhands
+Version: 0.1.1
+Summary: Benchmark environments for Dexterous Hand in NVIDIA IsaacGym.
+Home-page: UNKNOWN
+Author: cypypccpy
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: robotics,rl
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6.*
