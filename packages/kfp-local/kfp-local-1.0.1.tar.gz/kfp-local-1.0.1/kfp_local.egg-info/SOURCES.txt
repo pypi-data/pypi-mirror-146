@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+kfp_local/__init__.py
+kfp_local/_dag.py
+kfp_local/_local_client.py
+kfp_local/_version.py
+kfp_local.egg-info/PKG-INFO
+kfp_local.egg-info/SOURCES.txt
+kfp_local.egg-info/dependency_links.txt
+kfp_local.egg-info/requires.txt
+kfp_local.egg-info/top_level.txt
