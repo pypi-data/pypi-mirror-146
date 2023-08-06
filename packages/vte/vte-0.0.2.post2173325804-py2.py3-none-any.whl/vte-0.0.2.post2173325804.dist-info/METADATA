@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vte
+Version: 0.0.2-2173325804
+Summary: VTE is a Verification Template Engine for generating content for verification environments from template files and parameters.
+Home-page: https://github.com/mballance/vte
+Author: Matthew Ballance
+Author-email: matt.ballance@gmail.com
+License: Apache 2.0
+Keywords: SystemVerilog,Verilog,RTL,GoogleTest
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: jinja2 (>=2.10)
+
+UNKNOWN
+

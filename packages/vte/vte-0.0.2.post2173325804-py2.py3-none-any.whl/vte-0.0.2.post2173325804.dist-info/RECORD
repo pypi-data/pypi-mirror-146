@@ -1,0 +1,11 @@
+vte/__init__.py,sha256=pa9ABJq5IEYcrVhNMlj4mxHRQkYey_ktwJWpiWIu0Tw,828
+vte/__main__.py,sha256=7zjqM5QVdeBn1UWPVpYZVMrku0dRtJMtQkhjcMOLNpY,7764
+vte/template_engine.py,sha256=S1WskafXi_KCLwk8erQYzjGMRpeVs0MMuCNWUt6Uu9Q,5727
+vte/template_info.py,sha256=4k_X3O-_lhXH8vOOQkd60MmtTZlLCsC5yypxDFq_dk0,3122
+vte/template_rgy.py,sha256=C41pSOvWwTipwUI8W88tJK08ieV1iBDxwa9FEAGYw2A,1262
+vte-0.0.2.post2173325804.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vte-0.0.2.post2173325804.dist-info/METADATA,sha256=6O5CaHhLREtJWxa6z4801gz1mqyzIWrGr8GiP6QQ5ZQ,449
+vte-0.0.2.post2173325804.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+vte-0.0.2.post2173325804.dist-info/entry_points.txt,sha256=ZxhwjrkUj8VHmZn0nW-Jw3vLJkpiLY70UfEoKSYyfDM,42
+vte-0.0.2.post2173325804.dist-info/top_level.txt,sha256=28qPiHuWPEK-KaDFQk9gmj5E25Hqq8lU1sRqAnFgOMU,4
+vte-0.0.2.post2173325804.dist-info/RECORD,,
