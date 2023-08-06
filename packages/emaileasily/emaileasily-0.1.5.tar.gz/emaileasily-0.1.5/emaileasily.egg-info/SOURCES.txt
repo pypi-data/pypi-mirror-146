@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+emaileasily/__init__.py
+emaileasily/emaileasily.py
+emaileasily.egg-info/PKG-INFO
+emaileasily.egg-info/SOURCES.txt
+emaileasily.egg-info/dependency_links.txt
+emaileasily.egg-info/top_level.txt
