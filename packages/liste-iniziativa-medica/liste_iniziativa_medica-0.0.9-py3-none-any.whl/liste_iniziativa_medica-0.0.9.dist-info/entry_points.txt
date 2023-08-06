@@ -1,0 +1,2 @@
+[console_scripts]
+liste-iniziativa-medica = src.liste_iniziativa_medica.gui:run
