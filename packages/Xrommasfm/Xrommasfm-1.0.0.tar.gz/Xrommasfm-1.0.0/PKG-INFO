@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: Xrommasfm
+Version: 1.0.0
+Summary: Playroom Simulator
+Home-page: UNKNOWN
+Author: Jiafei, Jieyi
+Author-email: duanjiafei@hotmail.sg
+License: MIT
+Description: **Simulator Features**
+        
+        **Scenes.** Infinite random playroom configuration, depends on the import asset classes. 
+        
+        **Objects.** 500+ custom annotated household objects and kids playing toys across 50 different object classes. 
+        
+        **Agent Types.** Support teacher and baby learning agent. 
+        
+        **Actions.** 20+ actions that facilitate research in a wide range of interaction and navigation based embodied AI tasks.
+        
+        **Images.** Render RGBD, Depth and Instance segmentation. We also provide a selection of different camera angles for rendering.
+        
+        **Metadata.** After each step in the environment, there is a large amount of sensory and visual data will be available and saved.  
+        
+        **Installation**
+        
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/04/2020)
+        -------------------
+        - First Release
+Keywords: simulator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
