@@ -1,0 +1,16 @@
+kdeLF.libs/libiomp5-c273031f.so,sha256=XykCrrldbHrEsr2UdNSP4bu6RvEJQ3jjimbJMmZFxoM,2521872
+kdeLF.libs/libintlc-4288b807.so.5,sha256=Bj9u5akywJb8dGag2vbpjr_nfjeRFokxRZrg3HQPEgI,529888
+kdeLF.libs/libifcoremt-6f6154a6.so.5,sha256=3a5NswhwD-bGww32gcwKrXfd52D1pEWL1OWsl1Gsy00,1548888
+kdeLF.libs/libifport-09b14e3a.so.5,sha256=zpLvsYip6GmcuJV6EMmgAIYjlpf3hk6aU0O3f5Mecbs,239600
+kdeLF.libs/libsvml-86a14aea.so,sha256=8AfyMccIoGCA_hkppmkY1B8fF9crrDEs_ezg0zwgxcA,35421752
+kdeLF.libs/libimf-5a80a3b3.so,sha256=mSSyB-3N6AcAJxTnJ0uAT3e76VDunSWdz2OyGbsAZIQ,5158088
+kdeLF/__init__.py,sha256=bvNTFrdatG9rfI3_P3MXYnnM3Me3EoEodfqc3GFH7a8,60
+kdeLF/kdeLF.py,sha256=kc8YtsrFWrk__9KcxPIO39yeOjSWw8oXZ5xjNmpvEVQ,54206
+kdeLF/kde_fortran.cpython-38-x86_64-linux-gnu.so,sha256=pRkPaJCGN_gJS2QiOgTou8bn2ifeKljepleEEWSnCP0,788128
+kdeLF/test_kdeLF.py,sha256=hehNa5KXFUtS5wboQYx3SNGVOk_I4DK7nSC65egYGps,862
+kdeLF/examples/data/test_sample.dat,sha256=Qm-NWENs2JRYsOTVaUDDwixfm2NePr-rLtevbq3aXZY,400575
+kdeLF-1.0.7.dist-info/top_level.txt,sha256=p8n2CM5j_xoIhcaZspKcEGwUZxKaPJQ6GVUmnh_5NsY,6
+kdeLF-1.0.7.dist-info/LICENSE.txt,sha256=b0N6GzD4OYKI2xltWIt9Oz_NNfjVNbb6Ezit59AA39M,1114
+kdeLF-1.0.7.dist-info/WHEEL,sha256=-ijGDuALlPxm3HbhKntps0QzHsi-DPlXqgerYTTJkFE,148
+kdeLF-1.0.7.dist-info/METADATA,sha256=S0yWwnwwzQ35ZxleYcR50cbR50LxxVwlRIQPlHO7aew,3086
+kdeLF-1.0.7.dist-info/RECORD,,
