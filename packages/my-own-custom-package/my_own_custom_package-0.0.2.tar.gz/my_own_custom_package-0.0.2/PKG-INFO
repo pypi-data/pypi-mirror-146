@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: my_own_custom_package
+Version: 0.0.2
+Summary: A small example package
+Home-page: https://some_url_to_the_code_usually_github.com
+Author: You
+Author-email: its_you@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# What is this?
+This is an example code for Ignacio Vargas Article about how to package your python code.
+It does nothing short of awsome. 
+

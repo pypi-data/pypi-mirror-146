@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/my_awesome_module/__init__.py
+src/my_awesome_module/hello.py
+src/my_own_custom_package.egg-info/PKG-INFO
+src/my_own_custom_package.egg-info/SOURCES.txt
+src/my_own_custom_package.egg-info/dependency_links.txt
+src/my_own_custom_package.egg-info/top_level.txt
