@@ -1,0 +1,2 @@
+[console_scripts]
+omicsone-runserver = omicsone.gui_tkinter:gui
