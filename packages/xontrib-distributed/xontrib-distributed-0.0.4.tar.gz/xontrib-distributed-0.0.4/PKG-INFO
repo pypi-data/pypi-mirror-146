@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: xontrib-distributed
+Version: 0.0.4
+Summary: The distributed parallel computing library hooks for xonsh
+Home-page: https://github.com/xonsh/xontrib-distributed
+License: MIT
+Keywords: xontrib,xonsh
+Author: Xonsh Dev
+Author-email: jnoortheen@gmail.com
+Requires-Python: >=3.8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Terminals
+Requires-Dist: distributed (>=2022.3.0)
+Requires-Dist: xonsh (>=0.12)
+Project-URL: Code, https://github.com/xonsh/xontrib-distributed
+Project-URL: Documentation, https://github.com/xonsh/xontrib-distributed/blob/master/README.md
+Project-URL: Issue tracker, https://github.com/xonsh/xontrib-distributed/issues
+Project-URL: Repository, https://github.com/xonsh/xontrib-distributed
+Description-Content-Type: text/markdown
+
+<p align="center">  
+The <a href="https://pypi.org/project/distributed/">distributed</a> parallel computing library hooks for xonsh
+<br><br>
+If you like the idea click ⭐ on the repo and <a href="https://twitter.com/intent/tweet?text=Nice%20xontrib%20for%20the%20xonsh%20shell!&url=https://github.com/xonsh/xontrib-distributed" target="_blank">tweet</a>.
+</p>
+
+
+Importantly this provides a substitute 'dworker' command
+which enables distributed workers to have access to xonsh builtins.
+
+Furthermore, this xontrib adds a 'DSubmitter' context manager
+for executing a block remotely.
+Moreover, this also adds a convenience function 'dsubmit()'
+for creating DSubmitter and Executor instances at the same time.
+
+Thus users may submit distributed jobs with::
+
+```pycon
+with dsubmit('127.0.0.1:8786', rtn='x') as dsub:
+    x = $(echo I am elsewhere)
+res = dsub.future.result()
+print(res)
+```
+
+This is useful for long running or non-blocking jobs.
+
+## Installation
+
+To install use pip:
+
+```bash
+xpip install xontrib-distributed
+# or: xpip install -U git+https://github.com/xonsh/xontrib-distributed
+```
+
+## Usage
+
+```bash
+xontrib load distributed
+# TODO: what's next?
+```
+
+## Releasing your package
+
+- Bump the version of your package.
+- Create a GitHub release (The release notes are automatically generated as a draft release after each push).
+- And publish with `poetry publish --build` or `twine`
+
+## Credits
+
+This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).
+
+
