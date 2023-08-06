@@ -1,0 +1,9 @@
+dqdatasdk/__init__.py,sha256=78jatp4Vwt3J2qHNaNxhQxhmlxlOX_Fp33vNdV1e-h4,236
+dqdatasdk/_version.py,sha256=m9uRjRuEfrT34PNcegv1P0-mx2fj5ynbMWtI3jOa6dM,518
+dqdatasdk/client.py,sha256=Whlmi5AyAY7Eqzn9ds4ujxAI865Lu18djpTtrafw_-o,3694
+dqdatasdk/connections.py,sha256=qr5JaZmlcMXJBqWn3F2vuJyKc1t8lXW97G1gQ6HwzCw,708
+dqdatasdk/dqcertificate.py,sha256=3xtmT4jxMKityUpCZUowPvHhNR4rE7DpHzf0nkCGEic,1921
+dqdatasdk-0.1.1.dist-info/METADATA,sha256=VI7zTNwosDZerF88sI5YPNduiz9p-LZYqtO_-ejN9Ro,785
+dqdatasdk-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dqdatasdk-0.1.1.dist-info/top_level.txt,sha256=wTfG258H3HRLHl7-WH1P1oytObO9_J8EnExgxXUBa1w,10
+dqdatasdk-0.1.1.dist-info/RECORD,,
