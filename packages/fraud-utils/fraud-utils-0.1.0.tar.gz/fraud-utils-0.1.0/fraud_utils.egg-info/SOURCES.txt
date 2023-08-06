@@ -1,0 +1,7 @@
+README.md
+setup.py
+fraud-utils/__init__.py
+fraud_utils.egg-info/PKG-INFO
+fraud_utils.egg-info/SOURCES.txt
+fraud_utils.egg-info/dependency_links.txt
+fraud_utils.egg-info/top_level.txt
