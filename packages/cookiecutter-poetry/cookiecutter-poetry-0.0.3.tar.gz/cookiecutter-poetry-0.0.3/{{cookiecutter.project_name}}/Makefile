@@ -1,0 +1,68 @@
+PYTHON_VERSION := {{cookiecutter.python_version}}
+
+install: ## Install the poetry environment
+	@echo "🚀 Creating virtual environment using pyenv and poetry"
+	@poetry install	
+	@poetry shell
+
+format: ## Format code using isort and black.
+	@echo "🚀 Formatting code: Running isort and black"
+	@isort .
+	@black .
+
+lint: ## Check code formatting using isort, black, and flake8.
+	@echo "🚀 Checking code formatting: Running black, isort and flake8"
+	@isort --check-only --diff .
+	@black --check .
+	@flake8 .
+
+test: ## Test the code with pytest
+	@echo "🚀 Testing code: Running pytest"
+	@pytest --doctest-modules
+
+build: clean-build ## Build wheel file using poetry
+	@echo "🚀 Creating wheel file"
+	@poetry build
+
+clean-build: ## clean build artifacts
+	@rm -rf dist
+
+{% if cookiecutter.publish_to == "pypi" -%}
+publish: ## publish a release to pypi.
+	@echo "🚀 Publishing: Dry run."
+	@poetry config pypi-token.pypi $(PYPI_TOKEN)
+	@poetry publish --dry-run
+	@echo "🚀 Publishing."
+	@poetry publish
+
+build-and-publish: build publish ## Build and publish.
+{%- elif cookiecutter.publish_to == "artifactory" -%}
+publish: ## Publish to the Artifactory repository using poetry. Requires ARTIFACTORY_TOKEN for DPS-FF-ILO to be set.
+	@echo "🚀 Publishing: Dry run."
+	@poetry config repositories.artifactory $(ARTIFACTORY_URL)
+	@poetry publish --repository artifactory --username $(ARTIFACTORY_USERNAME) --password $(ARTIFACTORY_PASSWORD) --dry-run
+	@echo "🚀 Publishing."
+	@poetry publish --repository artifactory --username $(ARTIFACTORY_USERNAME) --password $(ARTIFACTORY_PASSWORD)
+
+build-and-publish: build publish ## Build and publish.
+{%- endif %}
+
+{% if cookiecutter.sphinx_docs == "y" -%}
+docs-generate: ## convert docstrings to docs
+	@sphinx-apidoc -o docs/source/ {{cookiecutter.project_slug}}
+
+docs-build: ## Build the docs
+	@sphinx-build -b html docs docs/_build
+
+docs-open: ## Build the docs
+	@open docs/_build/index.html
+
+docs: docs-generate docs-build docs-open ## Generate, build and open the docs.
+{% endif -%}
+
+.PHONY: help
+
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
+.DEFAULT_GOAL := help

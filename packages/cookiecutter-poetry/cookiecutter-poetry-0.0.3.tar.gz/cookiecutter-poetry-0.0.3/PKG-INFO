@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cookiecutter-poetry
+Version: 0.0.3
+Summary: A python cookiecutter application to create a new python project that uses poetry to manage its dependencies.
+Home-page: https://github.com/fpgmaas/cookiecutter-poetry
+Author: Florian Maas
+Author-email: fpgmaas@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Sphinx (>=4.5.0,<5.0.0)
+Requires-Dist: cookiecutter (>=1.7.3,<2.0.0)
+Requires-Dist: pytest-cookies (>=0.6.1,<0.7.0)
+Requires-Dist: sphinx-rtd-theme (>=1.0.0,<2.0.0)
+Project-URL: Documentation, https://fpgmaas.github.io/cookiecutter-poetry/
+Project-URL: Repository, https://github.com/fpgmaas/cookiecutter-poetry
