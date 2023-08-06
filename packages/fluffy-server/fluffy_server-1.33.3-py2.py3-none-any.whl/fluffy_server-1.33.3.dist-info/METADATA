@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: fluffy-server
+Version: 1.33.3
+Summary: UNKNOWN
+Author: Chris Kuehl
+Author-email: ckuehl@ckuehl.me
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: cached-property
+Requires-Dist: csscompressor
+Requires-Dist: flask
+Requires-Dist: guesslang
+Requires-Dist: identify
+Requires-Dist: mistune (<0.999)
+Requires-Dist: pygments
+Requires-Dist: pygments-ansi-color (>=0.0.3)
+Requires-Dist: pygments-solarized-style
+Requires-Dist: pyquery
+Provides-Extra: guesslang
+Requires-Dist: guesslang ; extra == 'guesslang'
+
+UNKNOWN
+
