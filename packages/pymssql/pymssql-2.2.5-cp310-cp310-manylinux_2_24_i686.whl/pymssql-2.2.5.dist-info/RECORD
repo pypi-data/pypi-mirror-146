@@ -1,0 +1,10 @@
+pymssql/__init__.py,sha256=gCvDAOmyYHayctLk18bhGfRWthMG5xpXwM1EFyzm_3s,101
+pymssql/_mssql.cpython-310-i386-linux-gnu.so,sha256=aUZ2FAi7xmzwqnaJUzmI_X9ggq1o7PhmKwKoSn2qB2s,2100920
+pymssql/_pymssql.cpython-310-i386-linux-gnu.so,sha256=fzsofG28XUYAm0RUTV9ttWOBAS2lXKlnM5OE63DZKQo,1096232
+pymssql.libs/libssl-a342e711.so.1.1,sha256=1K3heMUlxrLorzGdtbL7-TYZRmj2t_6GtlK4iO3SqPY,491728
+pymssql.libs/libcrypto-33bffc3f.so.1.1,sha256=YPDUKSVigaRJBnScS0Dtr49R_tRKSMfjw7rrqVBFv_Q,2649056
+pymssql-2.2.5.dist-info/RECORD,,
+pymssql-2.2.5.dist-info/LICENSE,sha256=XfBwBxmJicYi9dQd6NcD577z0OedYuJDMu5zmkUq9io,26436
+pymssql-2.2.5.dist-info/METADATA,sha256=Vny8mdzKLwoasb6jpGZ1dmLhl9l56JRz-WduJKBHCCo,4193
+pymssql-2.2.5.dist-info/top_level.txt,sha256=HlTBOE3UmM9y83_GIjyFhGMgISoya2SiN-iIO9Efa8o,8
+pymssql-2.2.5.dist-info/WHEEL,sha256=-AEWSmmPX2napY0KgFkOkhU4tG_r1jAc9rjCSZ0EDrY,112
