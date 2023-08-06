@@ -1,0 +1,5 @@
+[console_scripts]
+arxml2xml = cli.doc_cli:main
+arxml_timestamp = cli.timestamp_cli:main
+arxml_uuid = cli.uuid_cli:main
+
