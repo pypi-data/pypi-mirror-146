@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+seq2seq/__init__.py
+seq2seq/dataset.py
+seq2seq/model.py
+seq2seq/tokenizer.py
+seq2seq_pytorch.egg-info/PKG-INFO
+seq2seq_pytorch.egg-info/SOURCES.txt
+seq2seq_pytorch.egg-info/dependency_links.txt
+seq2seq_pytorch.egg-info/requires.txt
+seq2seq_pytorch.egg-info/top_level.txt
