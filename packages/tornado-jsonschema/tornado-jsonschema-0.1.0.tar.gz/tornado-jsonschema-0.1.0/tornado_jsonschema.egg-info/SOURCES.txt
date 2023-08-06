@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tests/__init__.py
+tornado_jsonschema/__init__.py
+tornado_jsonschema.egg-info/PKG-INFO
+tornado_jsonschema.egg-info/SOURCES.txt
+tornado_jsonschema.egg-info/dependency_links.txt
+tornado_jsonschema.egg-info/requires.txt
+tornado_jsonschema.egg-info/top_level.txt

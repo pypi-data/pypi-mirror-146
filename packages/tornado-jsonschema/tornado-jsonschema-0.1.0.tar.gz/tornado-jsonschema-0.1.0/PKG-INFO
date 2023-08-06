@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: tornado-jsonschema
+Version: 0.1.0
+Summary: JSON Schema support for Tornado
+Home-page: https://github.com/webfucktory/tornado-jsonschema
+Author: webfucktory
+Author-email: root@webfucktory.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tornado-jsonschema
+
+JSON Schema support for Tornado.
+
+## Getting started
+
+### Requirements
+
+- Python >= 3.8
+
+### Installation
+
+```bash
+pip install tornado-jsonschema
+```
+
+## Usage
+
+### TO-DO
+
+## License
+
+Distributed under the MIT License. See `LICENSE` file for more information.
+
+
