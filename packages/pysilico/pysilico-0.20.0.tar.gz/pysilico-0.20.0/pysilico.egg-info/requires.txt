@@ -1,0 +1,6 @@
+plico>=0.18
+numpy
+six
+astropy
+pyqtgraph
+PyQt5
