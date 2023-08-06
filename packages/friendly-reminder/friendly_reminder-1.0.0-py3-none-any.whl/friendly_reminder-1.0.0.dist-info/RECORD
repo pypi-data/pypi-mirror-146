@@ -1,0 +1,17 @@
+main.py,sha256=4VcvXG-kslAsXesIUfMTK6l9JEBhfxFvKFSBvqc7SXk,460
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/add.py,sha256=H8FFOnW9_XX3UUXYxWgxZwEyV6Jayg88-6Vw68lxhhc,722
+app/check.py,sha256=9zX_lf7gSD0yY8lEeO5tMG_FMztYHZ7pHy-LJWYtJX8,1015
+app/config.py,sha256=4haPKFNAbGtXtgqsOOsZdxkRCq-M5zE99cCXkhxvjt0,933
+app/constants.py,sha256=si2RPdhLciAzcXXu8C5HsAoMGwV7ElYQKfzX7qBFEcY,244
+app/data.py,sha256=6nC1KRoL8TrAKZ8UoUtcQMAX3RWL4JB3Rr1WI3oWNSc,918
+app/remove.py,sha256=nAmOn8BGOEPwj9H2dvrQ2z8aA7aIIHB4MB-jt7IDeQs,421
+app/renew.py,sha256=1shuyhJ3-EiZ1Apzs0dkCcKtPsGsRRPqVzSOkI03Iog,560
+app/update.py,sha256=ErIUrHNciMPMs6OHq1cxHx3FfwI1Q_X-QCNKwY24Pto,1209
+friendly_reminder-1.0.0.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+friendly_reminder-1.0.0.dist-info/METADATA,sha256=xSUsGGyJxDqMhqENiyCvFthKgvBI95PCL_jGWdZUI_k,3247
+friendly_reminder-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+friendly_reminder-1.0.0.dist-info/entry_points.txt,sha256=X3R9Wx5ItoiqO_RHFGVXat3Cy_a9Lf529ETIrzNlt14,66
+friendly_reminder-1.0.0.dist-info/top_level.txt,sha256=9oQ_FNT16Rd5oaH2RO5M65pchAl0SNtg9LysL2pfNFk,9
+friendly_reminder-1.0.0.dist-info/RECORD,,
