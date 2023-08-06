@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: shikari
+Version: 0.9
+Summary: Create Powerful Backdoor in Termux
+Home-page: https://github.com/Bhai4You/
+Author: Parixit Sutariya
+Author-email: parixit1337@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<!--
+https://pypi.org/project/shikari/
+-->
+
+[![](https://img.shields.io/pypi/pyversions/readme-generator.svg?longCache=True)](https://pypi.org/project/readme-generator/)
+
+#### Installation
+```bash
+$ pip install shikari
+```
+
+#### Features
++   **`shikari`**, ** Create your own Malware ;) **
+
+
+#### How it works
+```
+$ pip install shikari
+```
+
+#### Usage
+```
+$ shikari
+
+
+Created by Parixit Sutariya
+Github : github.com/Bhai4You
+Blogspot : https://bhai4you.blogspot.com
+
+```
+
+<p align="center">
+    <a href="https://github.com/Bhai4you/shikari">Github</a>
+</p>
+
+
