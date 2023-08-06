@@ -1,0 +1,3 @@
+speckenv
+speckenv_django
+speckenv_django_patch
