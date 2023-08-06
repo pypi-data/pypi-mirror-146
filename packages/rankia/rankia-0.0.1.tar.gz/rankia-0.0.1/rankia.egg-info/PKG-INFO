@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rankia
+Version: 0.0.1
+Summary: Recommender systems for ranked lists in Python
+Home-page: https://github.com/fpai/rankia
+Author: Fusion Power AI
+Author-email: eyal@fusionpower.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rankia
+Recommender systems for ranked lists in Python
+
+

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+rankia.egg-info/PKG-INFO
+rankia.egg-info/SOURCES.txt
+rankia.egg-info/dependency_links.txt
+rankia.egg-info/requires.txt
+rankia.egg-info/top_level.txt
