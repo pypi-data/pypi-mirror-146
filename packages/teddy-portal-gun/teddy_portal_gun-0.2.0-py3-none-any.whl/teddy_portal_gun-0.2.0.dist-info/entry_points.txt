@@ -1,0 +1,3 @@
+[console_scripts]
+teddy-portal-gun=teddy_portal_gun.main:app
+
