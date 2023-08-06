@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+oprfs/__init__.py
+oprfs/oprfs.py
+oprfs.egg-info/PKG-INFO
+oprfs.egg-info/SOURCES.txt
+oprfs.egg-info/dependency_links.txt
+oprfs.egg-info/requires.txt
+oprfs.egg-info/top_level.txt
