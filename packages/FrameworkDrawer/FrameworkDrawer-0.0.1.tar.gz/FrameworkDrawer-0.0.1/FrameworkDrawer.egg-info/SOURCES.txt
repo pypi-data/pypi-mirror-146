@@ -1,0 +1,9 @@
+README.md
+setup.py
+FrameworkDrawer/FrameworkDrawer.py
+FrameworkDrawer/__init__.py
+FrameworkDrawer.egg-info/PKG-INFO
+FrameworkDrawer.egg-info/SOURCES.txt
+FrameworkDrawer.egg-info/dependency_links.txt
+FrameworkDrawer.egg-info/requires.txt
+FrameworkDrawer.egg-info/top_level.txt
