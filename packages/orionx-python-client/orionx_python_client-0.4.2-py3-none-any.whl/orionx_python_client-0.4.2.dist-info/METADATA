@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: orionx-python-client
+Version: 0.4.2
+Summary: 
+Author: adolfrodeno
+Author-email: amvillalobos@uc.cl
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiodns (>=3.0.0,<4.0.0)
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: cchardet (>=2.1.7,<3.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: python-dotenv (>=0.19.1,<0.20.0)
+Requires-Dist: requests (>=2.25.0)
