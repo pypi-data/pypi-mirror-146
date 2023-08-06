@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/gufo/loader/__init__.py
+src/gufo_loader.egg-info/PKG-INFO
+src/gufo_loader.egg-info/SOURCES.txt
+src/gufo_loader.egg-info/dependency_links.txt
+src/gufo_loader.egg-info/top_level.txt
