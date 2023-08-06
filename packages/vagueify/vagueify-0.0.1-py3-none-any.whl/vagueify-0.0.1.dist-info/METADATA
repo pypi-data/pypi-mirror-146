@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vagueify
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: 
+Author: Danny McDonald
+Author-email: daniel.mcdonald@uzh.ch
+License: MIT
+Keywords: corpus,linguistics,nlp
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nltk (==3.5)
+Requires-Dist: wheel (==0.37.0)
+Provides-Extra: sci
+Requires-Dist: pandas ; extra == 'sci'
+
+# vague
+
+> Vague sentences
+
