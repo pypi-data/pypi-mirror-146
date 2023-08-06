@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/decisao_diretoria_363.egg-info/PKG-INFO
+src/decisao_diretoria_363.egg-info/SOURCES.txt
+src/decisao_diretoria_363.egg-info/dependency_links.txt
+src/decisao_diretoria_363.egg-info/requires.txt
+src/decisao_diretoria_363.egg-info/top_level.txt
+src/normas/__init__.py
+src/normas/decisao_diretoria_363.py
+src/normas/data/tab_dd_363.xlsx
