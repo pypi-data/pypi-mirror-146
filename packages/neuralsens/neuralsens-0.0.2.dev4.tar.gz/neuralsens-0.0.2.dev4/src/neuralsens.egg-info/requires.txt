@@ -1,0 +1,8 @@
+
+[neuralsens]
+setuptools>=42
+wheel
+numpy
+pandas
+scipy
+matplotlib
