@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+vim_client/__init__.py
+vim_client/cli.py
+vim_client.egg-info/PKG-INFO
+vim_client.egg-info/SOURCES.txt
+vim_client.egg-info/dependency_links.txt
+vim_client.egg-info/entry_points.txt
+vim_client.egg-info/top_level.txt
