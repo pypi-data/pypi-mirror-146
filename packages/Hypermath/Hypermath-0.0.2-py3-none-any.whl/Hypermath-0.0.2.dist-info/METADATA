@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Hypermath
+Version: 0.0.2
+Summary: Math
+Home-page: https://cafe.naver.com/mersenne
+Author: 7kcrafter7
+Author-email: mathcodin7@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: gmpy2
+Requires-Dist: numpy
+Requires-Dist: Crypto
+Requires-Dist: iteration-utilities
+
+UNKNOWN
+
