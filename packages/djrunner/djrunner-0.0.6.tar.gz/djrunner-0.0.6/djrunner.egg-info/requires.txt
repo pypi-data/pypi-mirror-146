@@ -1,0 +1,8 @@
+django-environ==0.8.1
+django==3.0.13
+fabric3==1.14.post1
+gunicorn==20.1.0
+pip>=22.0.4
+psycopg2-binary==2.8.6
+requests==2.27.1
+six==1.16.0
