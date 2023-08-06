@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/instadmapi/__init__.py
+src/instadmapi/api.py
+src/instadmapi.egg-info/PKG-INFO
+src/instadmapi.egg-info/SOURCES.txt
+src/instadmapi.egg-info/dependency_links.txt
+src/instadmapi.egg-info/requires.txt
+src/instadmapi.egg-info/top_level.txt
