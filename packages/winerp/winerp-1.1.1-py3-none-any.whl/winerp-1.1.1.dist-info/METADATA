@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: winerp
+Version: 1.1.1
+Summary: Websocket based IPC for discord.py bots
+Home-page: https://github.com/BlackThunder01001/winerp
+Author: BlackThunder
+Author-email: nouman0103@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/BlackThunder01001/winerp/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: websockets
+Requires-Dist: websocket-server
+
+...
+
