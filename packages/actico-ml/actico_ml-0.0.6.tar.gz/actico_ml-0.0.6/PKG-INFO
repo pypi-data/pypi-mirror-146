@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: actico_ml
+Version: 0.0.6
+Summary: Function to upload trained ml models to ACTICO Model Hub
+Home-page: https://www.actico.com/
+Author: ACTICO GmbH
+License: MIT License
+Platform: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: spark
+License-File: LICENSE.txt
+
+# ACTICO ML Python
+
+With this package, a user is able to export a trained H2O ML model 
+to ACTICO Model Hub.
+
+
+## Function
+The package `export_util` contains the function `release_model`
+
+## Parameters of release_model
+`api_key : string` Generated within Model Hub and required for a connection.
+
+`model_hub_url : string` The link to model hub, e.g. "http://localhost:8080".
+
+`model_name : string` The name of the model to be released, e.g. "credit-rf-model".
+
+`training_frame_name : string` The name of the frame used for the training, e.g. "credit-train.hex".
+
+`module_id : string` The module id is used to group related model projects into one logical unit, e.g. "actico.credit".
+
+`project_id : string` The model project id is used to refer to the released machine learning model, e.g. "gm-model".
+
+`version : string, optional` The version is used to distinguish between different iterations of a model. If left blank, an automatically generated version is used.
+
+`sc : SparkContext, optional` The SparkContext to be used, if a Spark Pipeline should be added to the release.
+
+`pipeline_model : PipelineModel, optional` The fitted Pipeline, that should be added to the release.
+
+`df : DataFrame, optional` The Dataframe, that was used to fit the Pipeline.
+
+## Example
+```python
+from actico_ml import export_util
+
+export_util.release_model(api_key="API_KEY", 
+                          model_hub_url="http://localhost:8080", 
+                          model_name="credit-rf-model", 
+                          training_frame_name="credit-train.hex", 
+                          module_id="actico", 
+                          project_id="credit-rf")
+```
+
