@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: spatialprofilingtoolbox
+Version: 0.9.107
+Summary: Toolbox for spatial analysis of pathology images.
+Home-page: https://spatialprofilingtoolbox.readthedocs.io/en/prerelease/readme.html
+Author: Rami Vanguri, James Mathews
+Author-email: mathewj2@mskcc.org
+License: UNKNOWN
+Project-URL: Documentation, https://spatialprofilingtoolbox.readthedocs.io/en/prerelease/readme.html
+Project-URL: Source code, https://github.com/nadeemlab/SPT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: Cython (==0.29.23)
+Requires-Dist: matplotlib (==3.4.2)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: networkx (==2.5.1)
+Requires-Dist: POT (==0.7.0)
+Requires-Dist: seaborn (==0.11.1)
+Requires-Dist: plotly (==5.1.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: numpy (==1.21.0)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: scipy (==1.7.1)
+Requires-Dist: scikit-learn (==0.24.1)
+Requires-Dist: psycopg2-binary (==2.9.3)
+Requires-Dist: pyshp (==2.2.0)
+Requires-Dist: tabulate (==0.8.9)
+
+See the [user documentation](https://github.com/nadeemlab/SPT).
+
+
