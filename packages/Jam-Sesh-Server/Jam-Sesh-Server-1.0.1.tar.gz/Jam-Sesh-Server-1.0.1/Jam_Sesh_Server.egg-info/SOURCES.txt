@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+Jam_Sesh_Server.egg-info/PKG-INFO
+Jam_Sesh_Server.egg-info/SOURCES.txt
+Jam_Sesh_Server.egg-info/dependency_links.txt
+Jam_Sesh_Server.egg-info/not-zip-safe
+Jam_Sesh_Server.egg-info/requires.txt
+Jam_Sesh_Server.egg-info/top_level.txt
+server/__init__.py
+server/app.py

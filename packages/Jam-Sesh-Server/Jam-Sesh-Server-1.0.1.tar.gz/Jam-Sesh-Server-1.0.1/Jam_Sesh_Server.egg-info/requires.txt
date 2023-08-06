@@ -1,0 +1,7 @@
+flask
+amqp
+celery
+psycopg2
+SQLAlchemy
+requests
+python-dotenv
