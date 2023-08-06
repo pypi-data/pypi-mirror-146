@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: flask-cloudflared
+Version: 0.0.6
+Summary: Start a TryCloudflare Tunnel from your flask app.
+Home-page: https://github.com/UWUplus/flask-cloudflared
+Author: Ralf Rademacher
+License: UNKNOWN
+Keywords: flask cloudflared
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask (>=0.8)
+Requires-Dist: requests
+
+# flask_cloudflared
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/flask-cloudflared)
+
+Start a [TryCloudflare](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/trycloudflare) tunnel to your flask app right from code.  
+This requires at least `Python 3.6`
+
+## Acknowledgements
+
+This project is based on [flask-ngrok](https://github.com/gstaff/flask-ngrok).
+
+
