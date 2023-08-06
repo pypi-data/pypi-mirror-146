@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: findmypy
+Version: 0.1.8
+Summary: Library to use Apple's FindMy Api.
+Home-page: https://github.com/LoPablo/findmypy
+Author: LoPablo
+Author-email: lopablo@protonmail.com
+License: MIT
+Keywords: icloud,find-my-iphone
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# findmypy - Apple FindMy Python Library
+
+Library to use Apple's FindMy Api.
+
+This Library is heavily inspired by [pyicloud](https://github.com/picklepete/pyicloud) because it was programmed to replace it for device tracking in [home-assistant](https://github.com/home-assistant/core) because of continuus Emails about iCloud-Logins.
+
+Code uses also parts of [PHP-FindMyiPhone](https://github.com/albeebe/PHP-FindMyiPhone) and the [openHAB iCloud-Binding](https://github.com/openhab/openhab-addons/tree/main/bundles/org.openhab.binding.icloud)
+
+
