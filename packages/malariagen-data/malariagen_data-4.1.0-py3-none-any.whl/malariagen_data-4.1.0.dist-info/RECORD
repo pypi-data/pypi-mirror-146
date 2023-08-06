@@ -1,0 +1,14 @@
+malariagen_data/__init__.py,sha256=WeGLU03F-ESLTVdcgccQ6EKhaMv00eYm6sZBlCU9vDM,311
+malariagen_data/ag3.py,sha256=mC1PS5XNue0pqCjQKkBX5shSNpe182eN5_qfKC6hyGc,204552
+malariagen_data/amin1.py,sha256=Kal7KidfyFtd0-OFKhLt6_A-mZN9OKGF1LFfPtdDanE,9343
+malariagen_data/pf7.py,sha256=hdWOcy7bOVxXr3qTN8fQM7QCa6YFD8GWeHAgxPowmwU,1269
+malariagen_data/pf7_config.json,sha256=7H6E7ULNwfimyeq1X2wFx_1IA4CpWWuCsszOFo5DWgo,3971
+malariagen_data/plasmodium.py,sha256=9hb5E4mQ3doCVlCf4YiOuQp4ErDcmtmm01D6-pWuBEI,7113
+malariagen_data/pv4.py,sha256=tlrEGF6fktc1ilIdSsshzFDlSitXGy_Eu_zXguYoy78,1269
+malariagen_data/pv4_config.json,sha256=X7TyHYqFr-Jh5P7IjdEDOVz0vxmdAMMR_CpMQ5L82PY,1609
+malariagen_data/util.py,sha256=CW76CpoJqQSoA94kgE6JyPyD63-y39GrHzA9KD6RYdY,13182
+malariagen_data/veff.py,sha256=pQoSjGySoxzOoBSeakSx7eNYY0tt5Wf8Ozf37yZyw0g,17587
+malariagen_data-4.1.0.dist-info/LICENSE,sha256=YTVWnWQ6NdK7fiMDustNn2uOZnIwnUg7kGBFaQPDq-s,1067
+malariagen_data-4.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+malariagen_data-4.1.0.dist-info/METADATA,sha256=wW3mwtKu3ZY30RFMt5uE-JkZXCra1wxARaP946uoyfo,1070
+malariagen_data-4.1.0.dist-info/RECORD,,
