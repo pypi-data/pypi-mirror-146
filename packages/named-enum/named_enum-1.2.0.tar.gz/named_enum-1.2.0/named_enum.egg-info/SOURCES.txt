@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+named_enum/__init__.py
+named_enum/enum.py
+named_enum/meta.py
+named_enum/version.py
+named_enum.egg-info/PKG-INFO
+named_enum.egg-info/SOURCES.txt
+named_enum.egg-info/dependency_links.txt
+named_enum.egg-info/not-zip-safe
+named_enum.egg-info/requires.txt
+named_enum.egg-info/top_level.txt
