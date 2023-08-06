@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: uturn-cli
+Version: 0.0.1
+Summary: CLI utility for Uturn
+Home-page: https://github.com/UturnOSS/Uturn-CLI
+Author: 0x0elliot
+Author-email: adityanrsinha@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: colorama
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnANZz2V7ZWIsbyjtJzH4zw2B-LQObn06ziQ&usqp=CAU" height=150 alt="Uturn"/>
+  
+
+![image](https://img.shields.io/badge/Release-0.0.1-orange?style=for-the-badge&logo=appveyor)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge&logo=appveyor)](https://github.com/UturnOSS/uturn-web/graphs/commit-activity)
+![Linux](https://img.shields.io/badge/For-Linux-green?style=for-the-badge&logo=appveyor)
+[![GitHub forks](https://img.shields.io/github/forks/UturnOSS/Uturn-CLI.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/network/)
+[![GitHub stars](https://img.shields.io/github/stars/UturnOSS/Uturn-CLI.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/stargazers/)
+
+# uturn-cli
+
+
