@@ -1,0 +1,17 @@
+CODE_OF_CONDUCT.md
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.md
+SECURITY.md
+SUPPORT.md
+setup.py
+admin_torch/__init__.py
+admin_torch/admin.py
+admin_torch.egg-info/PKG-INFO
+admin_torch.egg-info/SOURCES.txt
+admin_torch.egg-info/dependency_links.txt
+admin_torch.egg-info/not-zip-safe
+admin_torch.egg-info/requires.txt
+admin_torch.egg-info/top_level.txt
+doc/source/_static/output_change.png
