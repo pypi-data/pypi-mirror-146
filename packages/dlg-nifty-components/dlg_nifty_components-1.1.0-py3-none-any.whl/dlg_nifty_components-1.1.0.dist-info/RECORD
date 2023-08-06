@@ -1,0 +1,10 @@
+dlg_nifty_components/__init__.py,sha256=_a-t3_qImeqZe_dbMZT35jiWAximzv8JC4wo5A5-s5E,516
+dlg_nifty_components/cpu_gridder.py,sha256=NQpoZXe0c6SkUstrC8GvSiPfuUg0VA7H4uELQdmplD0,7646
+dlg_nifty_components/cuda_gridder.py,sha256=CY2C9hd35gJGaqb7Iure87UpSs4m9ugSVTVvLhZYxkQ,7660
+dlg_nifty_components/degridder.py,sha256=2wdouVNGGMzm9fPQP5g5jeDbM_oJo_J75xNfN8yDXHc,4410
+dlg_nifty_components/gridder.py,sha256=F57dCWcmSACy_8fo9o5sLCPFqqFQbgQse0UAPtFKRFo,5033
+dlg_nifty_components-1.1.0.dist-info/LICENSE,sha256=kjZa4knm4Z4rGKjl5RtJSW2LWWvN_x7EacUJ-oXGEPs,1537
+dlg_nifty_components-1.1.0.dist-info/METADATA,sha256=2ibztHEZHO3QhzVw5LHzP28sqGj4WLYKndq9vf5-_NY,4575
+dlg_nifty_components-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dlg_nifty_components-1.1.0.dist-info/top_level.txt,sha256=eWKxUJXZ9yFALncQPb9y5aebAWgLytBtKlXH-CkWT68,21
+dlg_nifty_components-1.1.0.dist-info/RECORD,,
