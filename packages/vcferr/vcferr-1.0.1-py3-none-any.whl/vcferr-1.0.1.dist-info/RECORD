@@ -1,0 +1,9 @@
+vcferr/__init__.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+vcferr/__main__.py,sha256=a3aORFDwILqGN5d9QBEIOJ2AsxN0FlZyA6GA3jdd7nc,127
+vcferr/err.py,sha256=hB0fT7mwv6afgeIV11Hvn3MCMngtoHaK05SZq77gnjM,5622
+vcferr-1.0.1.dist-info/LICENSE,sha256=jcBke-R9KEL6-r_Z9l5qKcLieQcAUjCVjxfrO3gfKs4,1082
+vcferr-1.0.1.dist-info/METADATA,sha256=KK1EBaHJ63chwjXB8mVPdv88z9jvWRO5opkn2caALFk,2389
+vcferr-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vcferr-1.0.1.dist-info/entry_points.txt,sha256=MDF7JYLHemENxgE39ij0cOprl60OqC8Z4V08zzd4aMY,73
+vcferr-1.0.1.dist-info/top_level.txt,sha256=0bdpLDuhRG2_cXLWf57md77IN9NghmFfKjdhvp0lyhs,7
+vcferr-1.0.1.dist-info/RECORD,,
