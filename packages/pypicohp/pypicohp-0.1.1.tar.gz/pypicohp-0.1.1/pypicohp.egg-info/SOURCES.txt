@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+pypicohp/__init__.py
+pypicohp/picohttpparser.c
+pypicohp/picohttpparser.h
+pypicohp/request.c
+pypicohp/request.h
+pypicohp.egg-info/PKG-INFO
+pypicohp.egg-info/SOURCES.txt
+pypicohp.egg-info/dependency_links.txt
+pypicohp.egg-info/top_level.txt
