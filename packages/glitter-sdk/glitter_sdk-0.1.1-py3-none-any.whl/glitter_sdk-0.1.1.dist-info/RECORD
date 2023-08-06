@@ -1,0 +1,14 @@
+glitter_sdk/__init__.py,sha256=K0RKbs6j7747lqobPhlPePUwT_uYEZ6cKaVUK35Kr04,349
+glitter_sdk/connection.py,sha256=mcdLzDV9wbdl4Re_B5Odps4FBj0bzM4Exk766JxibBU,4853
+glitter_sdk/driver.py,sha256=_BQHt23NdeAJntIl4UJg4G9vrHqJOEV2ZmnWKw5FVyU,14607
+glitter_sdk/exceptions.py,sha256=oYWSA-nK11Lfqhy8hCroXx6QA1LFe5UfttlmfhIdcXs,2144
+glitter_sdk/pool.py,sha256=gmndxsGB2sgCh__hd5UNLw4I-_pysWLTMS5DIHGTv-c,2406
+glitter_sdk/transport.py,sha256=fJeKIo7GHQaEPYxAkrI1jmEo39pCTd_617Pn9vFUi2k,3172
+glitter_sdk/utils.py,sha256=i1KZ3sdzEbNxnrdhDCvoZPq-7OQC817FOOXRAojwGmI,3519
+tests/__init__.py,sha256=DCwzjYsw-BthGGQYH9TK0siDDDkVF-fjwcsQr2xZit0,36
+tests/test_onebyone.py,sha256=4ZynG_lIeI5YljWG_-IqRHHZpV2P16facHs5fpzg3mc,5381
+glitter_sdk-0.1.1.dist-info/LICENSE,sha256=Q605qoOWgq62Ctvmdb7Za1hw-ONLZRCQHC1NMESa36w,10696
+glitter_sdk-0.1.1.dist-info/METADATA,sha256=fSQl64njXmGIVB5oyLmMxAQ7jrzTKb9TKCeTKeSm5hU,3399
+glitter_sdk-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+glitter_sdk-0.1.1.dist-info/top_level.txt,sha256=AhONXPv6s_YOEyHZLAAe29-DYsvRCkk-IsTEv1tVDXg,18
+glitter_sdk-0.1.1.dist-info/RECORD,,
