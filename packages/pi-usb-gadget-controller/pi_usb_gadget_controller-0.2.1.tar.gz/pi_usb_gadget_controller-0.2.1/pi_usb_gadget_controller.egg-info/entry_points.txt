@@ -1,0 +1,4 @@
+[console_scripts]
+UsbGadgetController = pi_usb_gadget_controller.UsbGadgetController:main
+send_key = pi_usb_gadget_controller.send_key:main
+
