@@ -1,0 +1,17 @@
+delphifmx/__init__.py,sha256=vhaxL7Add2rgqSgVj4gRBqJYDz-_uVr9Nn1vgchMn9I,2334
+delphifmx/__version__.py,sha256=6ak6J_3GLVYH79iSCY8wWsCV4clQHUuDdcBlOnUh9K8,23
+delphifmx/Android/libDelphiFMX.so,sha256=JzqrUvBrNyASh3TgD0jRrWHuo2yapfEcF_biPyoFVx4,27007272
+delphifmx/Android64/libDelphiFMX.so,sha256=aVP8lfwQ18PThWOB-i4VUZL8PKlNSrBnXu2uX0tiGIo,43934136
+delphifmx/Linux64/libDelphiFMX.so,sha256=ctGcTWOZZ254U1dawAz9U58cze-vtGy0W4WfIqPPCIc,45691808
+delphifmx/OSX64/libDelphiFMX.dylib,sha256=PkFyrOJy5G1595pHOhed4FhTEKco603pUJ1bd480k3U,47610096
+delphifmx/OSX64/libDelphiFMX.dylib.dSYM,sha256=NryXrVCnNUA9P7Fa3pAETl-_UDFLFIKw1WrzX89VESE,54805507
+delphifmx/OSXARM64/libDelphiFMX.dylib,sha256=0VL5C-CBK-A-76nqUb8sNwMArs1kkIcVcXSVzNGuqcE,48120496
+delphifmx/OSXARM64/libDelphiFMX.dylib.dSYM,sha256=61Mrgw9e0A2rFhRW7seRiE_KmAKfpptqJ8lXrAPwh6w,51659791
+delphifmx/Win32/DelphiFMX.pyd,sha256=oy4FpoufBqq6BfZAz-UZiKH7sO-N6ZLdUwHS_0wXpUk,11562496
+delphifmx/Win32/DelphiFMX.tds,sha256=AacJKsGseo0Ksf4BJ0uQ3SV6ZFZBPooqL75QN81AeHw,19936427
+delphifmx/Win64/DelphiFMX.pyd,sha256=dlWleYqWbR3Ow-FLkR9CDaNGnS70vGLd7udo_5Q9P8I,37170221
+delphifmx-0.1.49.dist-info/LICENSE.md,sha256=Xet5LfOpWZMEXm3InNOfL5a2uBzwE7JaEG3a7t2Fu-I,24689
+delphifmx-0.1.49.dist-info/METADATA,sha256=JQEPbjs2_Ba_7NJnqFbHBI_EftpCEWBD7cY332d3oCE,2879
+delphifmx-0.1.49.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+delphifmx-0.1.49.dist-info/top_level.txt,sha256=rpESKl3sJw1cEcnKmYsMRCwmYPV-Suwi-h6nCSD3yu8,10
+delphifmx-0.1.49.dist-info/RECORD,,
