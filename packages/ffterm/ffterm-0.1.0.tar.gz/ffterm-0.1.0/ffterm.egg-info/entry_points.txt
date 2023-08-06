@@ -1,0 +1,2 @@
+[console_scripts]
+ffterm = ffterm.main:main

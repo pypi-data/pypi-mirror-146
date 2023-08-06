@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ffterm/__init__.py
+ffterm/ffterm.cpp
+ffterm/main.py
+ffterm.egg-info/PKG-INFO
+ffterm.egg-info/SOURCES.txt
+ffterm.egg-info/dependency_links.txt
+ffterm.egg-info/entry_points.txt
+ffterm.egg-info/requires.txt
+ffterm.egg-info/top_level.txt
