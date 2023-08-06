@@ -1,0 +1,3 @@
+[poetry.application.plugin]
+poetry-audit-plugin=poetry_opeco17_test_plugin.plugin:TestApplicationPlugin
+
