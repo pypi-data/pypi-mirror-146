@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: formio-data
+Version: 0.4.0
+Summary: formio.js JSON-data API
+Home-page: https://github.com/novacode-nl/python-formio-data
+Author: Bob Leers
+Author-email: bob@novacode.nl
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: json_logic
+Requires-Dist: json-logic-qubit ; extra == 'json_logic'
+
+UNKNOWN
+
+
