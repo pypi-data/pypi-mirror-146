@@ -1,0 +1,10 @@
+README.md
+setup.py
+pydantic_errors_messages_translations/__init__.py
+pydantic_errors_messages_translations/helpers.py
+pydantic_errors_messages_translations/translations.py
+pydantic_errors_messages_translations.egg-info/PKG-INFO
+pydantic_errors_messages_translations.egg-info/SOURCES.txt
+pydantic_errors_messages_translations.egg-info/dependency_links.txt
+pydantic_errors_messages_translations.egg-info/requires.txt
+pydantic_errors_messages_translations.egg-info/top_level.txt
