@@ -1,0 +1,16 @@
+PythonStarterPackage-0.4.2.data/data/pythonstarterpackage/config/config.json,sha256=ZKN90WlHbDbMqv_nDj-gaSPJQbP12Q42oyJVDAzai0I,38
+pythonstarterpackage/__init__.py,sha256=XnkY5R2ZhNDUGit7PCpyIHcduk94JtSk6X4o8ZcHumM,180
+pythonstarterpackage/__main__.py,sha256=Y-Cb8M9KQGvvcb5um4k3Y1kUEUeoMRWIGMFnidlP0cs,247
+pythonstarterpackage/main.py,sha256=zHET0B83TbUx33_D2YVyb9NcxX1cws-N42TIvk6wtqE,256
+pythonstarterpackage/starterpkg.py,sha256=68niJiaG8iM51CV8aSotwES8MX5lRac7VoC-P2MHd2Q,3809
+pythonstarterpackage/data/data.json,sha256=PxKcbj_9OsfalpuXlIVBuxSLLsU6SDcSUEfptA4zg-0,898
+pythonstarterpackage/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pythonstarterpackage/utils/configloader.py,sha256=Xjk5qNXGWcxW5PFmKmfm39NfX2MlTKg6NstrD1sjhJU,3659
+pythonstarterpackage/utils/crawler.py,sha256=DyNBvYDBli1qNUk9uI99O9bCNTVHIWjxKDbV7qVXb1Y,3139
+pythonstarterpackage/utils/filemodder.py,sha256=9wargV8cg9-fZIyOqt_oq36LCgIwNQ9wWabWYA-oGaU,1321
+PythonStarterPackage-0.4.2.dist-info/LICENSE,sha256=5d4eKL9tRpBLHc0sC_0R4vQ-t-_GWP9AQWJ-3o6_Z1U,1077
+PythonStarterPackage-0.4.2.dist-info/METADATA,sha256=vpdT4Kqgf68FUxWuNrVkM9TGFtOGDP8c0bt4tqWLw-k,10418
+PythonStarterPackage-0.4.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PythonStarterPackage-0.4.2.dist-info/entry_points.txt,sha256=V5UmLr5Vm1xbkshHsnvrFD0_UEEDWmMHgydJSDqNJzw,72
+PythonStarterPackage-0.4.2.dist-info/top_level.txt,sha256=Y7tcIkJ8djg2JPV8Q3jrsb8BhYhwxELLYk0NwB7Wlqs,21
+PythonStarterPackage-0.4.2.dist-info/RECORD,,
