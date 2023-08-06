@@ -1,0 +1,12 @@
+setup.py
+pysproto/__init__.py
+pysproto/_sproto.c
+pysproto/sprotodump.py
+pysproto/sprotoparser.py
+sproto/sproto.c
+sproto.egg-info/PKG-INFO
+sproto.egg-info/SOURCES.txt
+sproto.egg-info/dependency_links.txt
+sproto.egg-info/not-zip-safe
+sproto.egg-info/requires.txt
+sproto.egg-info/top_level.txt
