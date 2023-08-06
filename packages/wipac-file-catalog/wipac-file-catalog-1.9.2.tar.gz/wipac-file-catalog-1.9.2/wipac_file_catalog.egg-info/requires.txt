@@ -1,0 +1,9 @@
+coloredlogs
+ldap3
+motor
+pymongo
+requests
+requests-futures
+requests-toolbelt
+tornado
+wipac-rest-tools[telemetry]
