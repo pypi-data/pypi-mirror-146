@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+basata/__init__.py
+basata/nlp.py
+basata/supervised.py
+basata/timeseries.py
+basata/unsupervised.py
+basata.egg-info/PKG-INFO
+basata.egg-info/SOURCES.txt
+basata.egg-info/dependency_links.txt
+basata.egg-info/requires.txt
+basata.egg-info/top_level.txt
