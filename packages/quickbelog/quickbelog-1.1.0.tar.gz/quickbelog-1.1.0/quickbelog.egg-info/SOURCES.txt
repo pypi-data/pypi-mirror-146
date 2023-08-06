@@ -1,0 +1,8 @@
+README.md
+setup.py
+quickbelog/__init__.py
+quickbelog/logger.py
+quickbelog.egg-info/PKG-INFO
+quickbelog.egg-info/SOURCES.txt
+quickbelog.egg-info/dependency_links.txt
+quickbelog.egg-info/top_level.txt
