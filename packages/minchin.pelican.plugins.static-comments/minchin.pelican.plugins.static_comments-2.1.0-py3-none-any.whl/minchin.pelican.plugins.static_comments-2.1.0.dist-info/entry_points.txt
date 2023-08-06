@@ -1,0 +1,3 @@
+[console_scripts]
+blogger-comment-export = minchin.pelican.plugins.static_comments.import.blogger_comment_export:main
+
