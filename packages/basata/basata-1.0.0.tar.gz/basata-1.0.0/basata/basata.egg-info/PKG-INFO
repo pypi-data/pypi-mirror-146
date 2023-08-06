@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: basata
+Version: 1.0.0
+Summary: BASATA - Code less while gaining more
+Home-page: https://github.com/sg-tarek/BASATA
+Author: Tarek K. Ghanoum
+Author-email: ta.ghanoum@gmail.com
+License: MIT
+Keywords: ML AI Supervised TimeSeries Unsupservised
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<p align="center">
+  <img width="491" alt="basata" src="https://github.com/sg-tarek/BASATA/blob/main/logo.png">
+</p>
+
+
+Installing
+============
+
+.. code-block:: bash
+
+    pip install basata
+
+Usage
+=====
+
+.. code-block:: bash
+
+    from basata import basata
+
