@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+scriptforge/__init__.pyi
+scriptforge/py.typed
+types_scriptforge.egg-info/PKG-INFO
+types_scriptforge.egg-info/SOURCES.txt
+types_scriptforge.egg-info/dependency_links.txt
+types_scriptforge.egg-info/requires.txt
+types_scriptforge.egg-info/top_level.txt

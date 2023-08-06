@@ -1,0 +1,4 @@
+types-unopy>=0.1.5
+
+[:python_version < "3.7"]
+typing_extensions>=3.7.4.3
