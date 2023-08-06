@@ -1,0 +1,7 @@
+tqdm
+scikit-learn
+transformers==4.7.0
+torch>=1.7.0
+numpy>=1.17
+setuptools
+spacy

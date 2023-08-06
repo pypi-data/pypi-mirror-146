@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: uctopic
+Version: 0.3
+Summary: A phrase embedding and topic mining (unsupervised aspect extraction) tool based on UCTopic
+Home-page: https://github.com/JiachengLi1995/UCTopic
+Author: Jiacheng Li, Jingbo Shang, Julian McAuley
+Author-email: j9li@eng.ucsd.edu
+License: MIT
+Description: UNKNOWN
+Keywords: phrase,embedding,uctopic,nlp
+Platform: UNKNOWN

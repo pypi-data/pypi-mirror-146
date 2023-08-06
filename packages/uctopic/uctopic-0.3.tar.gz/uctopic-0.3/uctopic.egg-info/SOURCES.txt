@@ -1,0 +1,15 @@
+README.md
+setup.py
+uctopic/__init__.py
+uctopic/dataloader.py
+uctopic/kmeans.py
+uctopic/models.py
+uctopic/tokenizer.py
+uctopic/tool.py
+uctopic/trainer.py
+uctopic/utils.py
+uctopic.egg-info/PKG-INFO
+uctopic.egg-info/SOURCES.txt
+uctopic.egg-info/dependency_links.txt
+uctopic.egg-info/requires.txt
+uctopic.egg-info/top_level.txt
