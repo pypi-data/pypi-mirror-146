@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/unifi_tracker/__init__.py
+src/unifi_tracker/unifi_tracker.py
+src/unifi_tracker.egg-info/PKG-INFO
+src/unifi_tracker.egg-info/SOURCES.txt
+src/unifi_tracker.egg-info/dependency_links.txt
+src/unifi_tracker.egg-info/top_level.txt
