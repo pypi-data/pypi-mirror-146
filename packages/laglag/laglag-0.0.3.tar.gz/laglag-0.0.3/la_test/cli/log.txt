@@ -1,0 +1,789 @@
+[03/30/2022 15:54:14] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[03/30/2022 15:54:14] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[03/30/2022 15:54:14] INFO - pytorch_lightning.utilities.seed - Global seed set to 42
+[03/30/2022 15:55:22] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[03/30/2022 15:55:22] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[03/30/2022 15:55:22] INFO - pytorch_lightning.utilities.seed - Global seed set to 42
+[03/30/2022 15:55:22] WARNING - bsp_bendai.core.datamodule - Test dataloader config was given but no test dataset was provided
+[03/30/2022 15:55:22] INFO - pytorch_lightning.utilities.distributed - GPU available: False, used: False
+[03/30/2022 15:55:22] INFO - pytorch_lightning.utilities.distributed - TPU available: False, using: 0 TPU cores
+[03/30/2022 15:55:22] INFO - pytorch_lightning.utilities.distributed - IPU available: False, using: 0 IPUs
+[03/30/2022 15:55:22] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+[03/30/2022 15:55:22] INFO - STDOUT - 
+
+[03/30/2022 15:55:22] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./data/MNIST/raw/train-images-idx3-ubyte.gz
+[03/30/2022 15:55:22] INFO - STDOUT - 
+
+[03/30/2022 15:55:24] INFO - STDOUT - 
+
+[04/07/2022 11:15:59] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/07/2022 11:15:59] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/07/2022 11:15:59] INFO - pytorch_lightning.utilities.seed - Global seed set to 42
+[04/07/2022 11:15:59] WARNING - bsp_bendai.core.datamodule - Test dataloader config was given but no test dataset was provided
+[04/07/2022 11:15:59] INFO - pytorch_lightning.utilities.rank_zero - GPU available: False, used: False
+[04/07/2022 11:15:59] INFO - pytorch_lightning.utilities.rank_zero - TPU available: False, using: 0 TPU cores
+[04/07/2022 11:15:59] INFO - pytorch_lightning.utilities.rank_zero - IPU available: False, using: 0 IPUs
+[04/07/2022 11:15:59] INFO - pytorch_lightning.utilities.rank_zero - HPU available: False, using: 0 HPUs
+[04/07/2022 11:15:59] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+[04/07/2022 11:15:59] INFO - STDOUT - 
+
+[04/07/2022 11:15:59] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./data/MNIST/raw/train-images-idx3-ubyte.gz
+[04/07/2022 11:15:59] INFO - STDOUT - 
+
+[04/07/2022 11:16:01] INFO - STDOUT - Extracting ./data/MNIST/raw/train-images-idx3-ubyte.gz to ./data/MNIST/raw
+[04/07/2022 11:16:01] INFO - STDOUT - 
+
+[04/07/2022 11:16:01] INFO - STDOUT - 
+
+[04/07/2022 11:16:01] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+[04/07/2022 11:16:01] INFO - STDOUT - 
+
+[04/07/2022 11:16:01] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./data/MNIST/raw/train-labels-idx1-ubyte.gz
+[04/07/2022 11:16:01] INFO - STDOUT - 
+
+[04/07/2022 11:16:01] INFO - STDOUT - 
+
+[04/07/2022 11:18:10] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/07/2022 11:18:10] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/07/2022 11:18:11] INFO - pytorch_lightning.utilities.seed - Global seed set to 42
+[04/07/2022 11:18:11] WARNING - bsp_bendai.core.datamodule - Test dataloader config was given but no test dataset was provided
+[04/07/2022 11:18:11] INFO - pytorch_lightning.utilities.rank_zero - GPU available: False, used: False
+[04/07/2022 11:18:11] INFO - pytorch_lightning.utilities.rank_zero - TPU available: False, using: 0 TPU cores
+[04/07/2022 11:18:11] INFO - pytorch_lightning.utilities.rank_zero - IPU available: False, using: 0 IPUs
+[04/07/2022 11:18:11] INFO - pytorch_lightning.utilities.rank_zero - HPU available: False, using: 0 HPUs
+[04/07/2022 11:18:11] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+[04/07/2022 11:18:11] INFO - STDOUT - 
+
+[04/07/2022 11:18:11] INFO - STDOUT - Using downloaded and verified file: ./data/MNIST/raw/train-images-idx3-ubyte.gz
+[04/07/2022 11:18:11] INFO - STDOUT - 
+
+[04/07/2022 11:18:11] INFO - STDOUT - Extracting ./data/MNIST/raw/train-images-idx3-ubyte.gz to ./data/MNIST/raw
+[04/07/2022 11:18:11] INFO - STDOUT - 
+
+[04/07/2022 11:18:11] INFO - STDOUT - 
+
+[04/07/2022 11:18:11] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+[04/07/2022 11:18:11] INFO - STDOUT - 
+
+[04/07/2022 11:18:11] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./data/MNIST/raw/train-labels-idx1-ubyte.gz
+[04/07/2022 11:18:11] INFO - STDOUT - 
+
+[04/07/2022 11:18:12] INFO - STDOUT - Extracting ./data/MNIST/raw/train-labels-idx1-ubyte.gz to ./data/MNIST/raw
+[04/07/2022 11:18:12] INFO - STDOUT - 
+
+[04/07/2022 11:18:12] INFO - STDOUT - 
+
+[04/07/2022 11:18:12] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+[04/07/2022 11:18:12] INFO - STDOUT - 
+
+[04/07/2022 11:18:12] INFO - STDOUT - Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to ./data/MNIST/raw/t10k-images-idx3-ubyte.gz
+[04/07/2022 11:18:12] INFO - STDOUT - 
+
+[04/07/2022 11:18:12] INFO - STDOUT - 
+
+[04/08/2022 10:50:43] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/08/2022 10:50:43] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/08/2022 10:50:44] DEBUG - cookiecutter.generate - Context generated is OrderedDict([('cookiecutter', OrderedDict([('author_email', 'ai-technology@bendingspoons.com'), ('author_name', 'AI Technology'), ('notion_url', 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a'), ('project_description', 'AI Science research project'), ('project_name', 'bendai-testing'), ('python_package', "ai_research_{{ cookiecutter.project_name.replace(' ', '_').replace('-','_').lower().strip('-') }}"), ('repo_name', "ai-research-{{ cookiecutter.project_name.replace(' ', '-').lower().strip('-') }}")]))])
+[04/08/2022 10:50:50] INFO - STDOUT - b''
+[04/08/2022 10:50:50] INFO - STDOUT - 
+[04/08/2022 10:50:50] INFO - STDOUT - b''
+[04/08/2022 10:50:50] INFO - STDOUT - 
+[04/08/2022 10:50:50] INFO - STDOUT - 
+Project Name:
+=============
+Please enter a human readable name for your new project.
+Spaces and punctuation are allowed.
+ [bendai-testing]:
+[04/08/2022 10:50:50] INFO - STDOUT -  
+[04/08/2022 10:50:52] INFO - STDOUT - 
+Notion Project:
+===============
+Please enter the link to the Notion Project
+ [https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a]:
+[04/08/2022 10:50:52] INFO - STDOUT -  
+[04/08/2022 10:50:53] INFO - STDOUT - 
+Project Description:
+====================
+Please enter a short but meaningful description
+ [AI Science research project]:
+[04/08/2022 10:50:53] INFO - STDOUT -  
+[04/08/2022 10:50:53] INFO - STDOUT - 
+Author Name:
+============
+Please insert your full name: e.g., John Smith
+ [AI Technology]:
+[04/08/2022 10:50:53] INFO - STDOUT -  
+[04/08/2022 10:50:54] INFO - STDOUT - 
+Author Email:
+=============
+Please insert your Bending Spoons email: e.g., john@bendingspoons.com
+ [ai-technology@bendingspoons.com]:
+[04/08/2022 10:50:54] INFO - STDOUT -  
+[04/08/2022 10:52:32] INFO - STDOUT - PyDev console: starting.
+
+[04/08/2022 10:52:32] INFO - STDOUT - 
+
+[04/08/2022 10:54:04] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/08/2022 10:54:04] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/08/2022 10:54:05] DEBUG - cookiecutter.generate - Context generated is OrderedDict([('cookiecutter', OrderedDict([('author_email', 'ai-technology@bendingspoons.com'), ('author_name', 'AI Technology'), ('notion_url', 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a'), ('project_description', 'AI Science research project'), ('project_name', 'bendai-testing'), ('python_package', "ai_research_{{ cookiecutter.project_name.replace(' ', '_').replace('-','_').lower().strip('-') }}"), ('repo_name', "ai-research-{{ cookiecutter.project_name.replace(' ', '-').lower().strip('-') }}")]))])
+[04/08/2022 10:54:05] INFO - STDOUT - b''
+[04/08/2022 10:54:05] INFO - STDOUT - 
+[04/08/2022 10:54:05] INFO - STDOUT - b''
+[04/08/2022 10:54:05] INFO - STDOUT - 
+[04/08/2022 10:54:05] INFO - STDOUT - 
+Project Name:
+=============
+Please enter a human readable name for your new project.
+Spaces and punctuation are allowed.
+ [bendai-testing]:
+[04/08/2022 10:54:05] INFO - STDOUT -  
+[04/08/2022 10:54:06] INFO - STDOUT - 
+Notion Project:
+===============
+Please enter the link to the Notion Project
+ [https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a]:
+[04/08/2022 10:54:06] INFO - STDOUT -  
+[04/08/2022 10:54:06] INFO - STDOUT - 
+Project Description:
+====================
+Please enter a short but meaningful description
+ [AI Science research project]:
+[04/08/2022 10:54:06] INFO - STDOUT -  
+[04/08/2022 10:54:07] INFO - STDOUT - 
+Author Name:
+============
+Please insert your full name: e.g., John Smith
+ [AI Technology]:
+[04/08/2022 10:54:07] INFO - STDOUT -  
+[04/08/2022 10:54:07] INFO - STDOUT - 
+Author Email:
+=============
+Please insert your Bending Spoons email: e.g., john@bendingspoons.com
+ [ai-technology@bendingspoons.com]:
+[04/08/2022 10:54:07] INFO - STDOUT -  
+[04/08/2022 10:54:08] INFO - STDOUT - {'output_dir': '/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli', 'no_input': True, 'extra_context': {'project_name': 'bendai-testing', 'notion_url': 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a', 'project_description': 'AI Science research project', 'author_name': 'AI Technology', 'author_email': 'ai-technology@bendingspoons.com', 'bendai_version': '1.6.0'}, 'directory': 'starters/base'}
+[04/08/2022 10:54:08] INFO - STDOUT - 
+
+[04/08/2022 10:54:08] DEBUG - cookiecutter.config - User config not found. Loading default config.
+[04/08/2022 10:54:08] DEBUG - cookiecutter.main - context_file is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/cookiecutter.json
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Context generated is OrderedDict([('cookiecutter', OrderedDict([('author_email', 'ai-technology@bendingspoons.com'), ('author_name', 'AI Technology'), ('notion_url', 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a'), ('project_description', 'AI Science research project'), ('project_name', 'bendai-testing'), ('python_package', "ai_research_{{ cookiecutter.project_name.replace(' ', '_').replace('-','_').lower().strip('-') }}"), ('repo_name', "ai-research-{{ cookiecutter.project_name.replace(' ', '-').lower().strip('-') }}")]))])
+[04/08/2022 10:54:08] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/.cookiecutter_replay/
+[04/08/2022 10:54:08] DEBUG - cookiecutter.find - Searching /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base for the project template.
+[04/08/2022 10:54:08] DEBUG - cookiecutter.find - The project template appears to be /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/{{ cookiecutter.repo_name }}
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Generating project from /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/{{ cookiecutter.repo_name }}...
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 10:54:08] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing
+[04/08/2022 10:54:08] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Project directory is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing
+[04/08/2022 10:54:08] DEBUG - cookiecutter.hooks - hooks_dir is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/hooks
+[04/08/2022 10:54:08] DEBUG - cookiecutter.hooks - No hooks/dir in template_dir
+[04/08/2022 10:54:08] DEBUG - cookiecutter.hooks - No pre_gen_project hook found
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 10:54:08] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools
+[04/08/2022 10:54:08] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 10:54:08] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks
+[04/08/2022 10:54:08] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 10:54:08] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing
+[04/08/2022 10:54:08] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Processing file README.bk.md
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/README.bk.md
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Check README.bk.md to see if it's a binary
+[04/08/2022 10:54:08] DEBUG - binaryornot.check - is_binary: 'README.bk.md'
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/README.bk.md
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Processing file bendai.yaml
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/bendai.yaml
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Check bendai.yaml to see if it's a binary
+[04/08/2022 10:54:08] DEBUG - binaryornot.check - is_binary: 'bendai.yaml'
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/bendai.yaml
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Processing file LICENSE
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/LICENSE
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Check LICENSE to see if it's a binary
+[04/08/2022 10:54:08] DEBUG - binaryornot.check - is_binary: 'LICENSE'
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/LICENSE
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Processing file install.sh
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/install.sh
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Check install.sh to see if it's a binary
+[04/08/2022 10:54:08] DEBUG - binaryornot.check - is_binary: 'install.sh'
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/install.sh
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Processing file pyproject.toml
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/pyproject.toml
+[04/08/2022 10:54:08] DEBUG - cookiecutter.generate - Check pyproject.toml to see if it's a binary
+[04/08/2022 10:54:08] DEBUG - binaryornot.check - is_binary: 'pyproject.toml'
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 10:54:08] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 10:54:08] INFO - STDOUT - bsp_bendai.cli.utils.BendaiCliError: Failed to generate project when running cookiecutter.
+Run with --verbose to see the full exception
+
+[04/08/2022 10:54:33] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/08/2022 10:54:33] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/08/2022 10:54:34] DEBUG - cookiecutter.generate - Context generated is OrderedDict([('cookiecutter', OrderedDict([('author_email', 'ai-technology@bendingspoons.com'), ('author_name', 'AI Technology'), ('notion_url', 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a'), ('project_description', 'AI Science research project'), ('project_name', 'bendai-testing'), ('python_package', "ai_research_{{ cookiecutter.project_name.replace(' ', '_').replace('-','_').lower().strip('-') }}"), ('repo_name', "ai-research-{{ cookiecutter.project_name.replace(' ', '-').lower().strip('-') }}")]))])
+[04/08/2022 10:54:35] INFO - STDOUT - b''
+[04/08/2022 10:54:35] INFO - STDOUT - 
+[04/08/2022 10:54:35] INFO - STDOUT - b''
+[04/08/2022 10:54:35] INFO - STDOUT - 
+[04/08/2022 10:54:35] INFO - STDOUT - 
+Project Name:
+=============
+Please enter a human readable name for your new project.
+Spaces and punctuation are allowed.
+ [bendai-testing]:
+[04/08/2022 10:54:35] INFO - STDOUT -  
+[04/08/2022 10:54:40] INFO - STDOUT - 
+Notion Project:
+===============
+Please enter the link to the Notion Project
+ [https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a]:
+[04/08/2022 10:54:40] INFO - STDOUT -  
+[04/08/2022 10:54:40] INFO - STDOUT - 
+Project Description:
+====================
+Please enter a short but meaningful description
+ [AI Science research project]:
+[04/08/2022 10:54:40] INFO - STDOUT -  
+[04/08/2022 10:54:40] INFO - STDOUT - 
+Author Name:
+============
+Please insert your full name: e.g., John Smith
+ [AI Technology]:
+[04/08/2022 10:54:40] INFO - STDOUT -  
+[04/08/2022 10:54:41] INFO - STDOUT - 
+Author Email:
+=============
+Please insert your Bending Spoons email: e.g., john@bendingspoons.com
+ [ai-technology@bendingspoons.com]:
+[04/08/2022 10:54:41] INFO - STDOUT -  
+[04/08/2022 11:09:03] INFO - STDOUT - {'output_dir': '/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli', 'no_input': True, 'extra_context': {'project_name': 'bendai-testing', 'notion_url': 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a', 'project_description': 'AI Science research project', 'author_name': 'AI Technology', 'author_email': 'ai-technology@bendingspoons.com', 'bendai_version': '1.6.0'}, 'directory': 'starters/base'}
+[04/08/2022 11:09:03] INFO - STDOUT - 
+
+[04/08/2022 11:09:07] INFO - STDOUT - PyDev console: starting.
+
+[04/08/2022 11:09:07] INFO - STDOUT - 
+
+[04/08/2022 11:09:07] DEBUG - cookiecutter.config - User config not found. Loading default config.
+[04/08/2022 11:09:07] DEBUG - cookiecutter.main - context_file is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/cookiecutter.json
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Context generated is OrderedDict([('cookiecutter', OrderedDict([('author_email', 'ai-technology@bendingspoons.com'), ('author_name', 'AI Technology'), ('notion_url', 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a'), ('project_description', 'AI Science research project'), ('project_name', 'bendai-testing'), ('python_package', "ai_research_{{ cookiecutter.project_name.replace(' ', '_').replace('-','_').lower().strip('-') }}"), ('repo_name', "ai-research-{{ cookiecutter.project_name.replace(' ', '-').lower().strip('-') }}")]))])
+[04/08/2022 11:09:07] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/.cookiecutter_replay/
+[04/08/2022 11:09:07] DEBUG - cookiecutter.find - Searching /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base for the project template.
+[04/08/2022 11:09:07] DEBUG - cookiecutter.find - The project template appears to be /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/{{ cookiecutter.repo_name }}
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Generating project from /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/{{ cookiecutter.repo_name }}...
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:09:07] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing
+[04/08/2022 11:09:07] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Project directory is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing
+[04/08/2022 11:09:07] DEBUG - cookiecutter.hooks - hooks_dir is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/hooks
+[04/08/2022 11:09:07] DEBUG - cookiecutter.hooks - No hooks/dir in template_dir
+[04/08/2022 11:09:07] DEBUG - cookiecutter.hooks - No pre_gen_project hook found
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:09:07] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools
+[04/08/2022 11:09:07] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:09:07] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks
+[04/08/2022 11:09:07] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:09:07] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing
+[04/08/2022 11:09:07] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Processing file README.bk.md
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/README.bk.md
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Check README.bk.md to see if it's a binary
+[04/08/2022 11:09:07] DEBUG - binaryornot.check - is_binary: 'README.bk.md'
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/README.bk.md
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Processing file bendai.yaml
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/bendai.yaml
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Check bendai.yaml to see if it's a binary
+[04/08/2022 11:09:07] DEBUG - binaryornot.check - is_binary: 'bendai.yaml'
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/bendai.yaml
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Processing file LICENSE
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/LICENSE
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Check LICENSE to see if it's a binary
+[04/08/2022 11:09:07] DEBUG - binaryornot.check - is_binary: 'LICENSE'
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/LICENSE
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Processing file install.sh
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/install.sh
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Check install.sh to see if it's a binary
+[04/08/2022 11:09:07] DEBUG - binaryornot.check - is_binary: 'install.sh'
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/install.sh
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Processing file pyproject.toml
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/pyproject.toml
+[04/08/2022 11:09:07] DEBUG - cookiecutter.generate - Check pyproject.toml to see if it's a binary
+[04/08/2022 11:09:07] DEBUG - binaryornot.check - is_binary: 'pyproject.toml'
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:09:07] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:05] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/08/2022 11:10:05] DEBUG - git.cmd - Popen(['git', 'version'], cwd=/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli, universal_newlines=False, shell=None, istream=None)
+[04/08/2022 11:10:06] DEBUG - cookiecutter.generate - Context generated is OrderedDict([('cookiecutter', OrderedDict([('author_email', 'ai-technology@bendingspoons.com'), ('author_name', 'AI Technology'), ('notion_url', 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a'), ('project_description', 'AI Science research project'), ('project_name', 'bendai-testing'), ('python_package', "ai_research_{{ cookiecutter.project_name.replace(' ', '_').replace('-','_').lower().strip('-') }}"), ('repo_name', "ai-research-{{ cookiecutter.project_name.replace(' ', '-').lower().strip('-') }}"), ('bendai_version', '1.4.0')]))])
+[04/08/2022 11:10:10] INFO - STDOUT - b''
+[04/08/2022 11:10:10] INFO - STDOUT - 
+[04/08/2022 11:10:10] INFO - STDOUT - b''
+[04/08/2022 11:10:10] INFO - STDOUT - 
+[04/08/2022 11:10:10] INFO - STDOUT - 
+Project Name:
+=============
+Please enter a human readable name for your new project.
+Spaces and punctuation are allowed.
+ [bendai-testing]:
+[04/08/2022 11:10:10] INFO - STDOUT -  
+[04/08/2022 11:10:13] INFO - STDOUT - 
+Notion Project:
+===============
+Please enter the link to the Notion Project
+ [https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a]:
+[04/08/2022 11:10:13] INFO - STDOUT -  
+[04/08/2022 11:10:14] INFO - STDOUT - 
+Project Description:
+====================
+Please enter a short but meaningful description
+ [AI Science research project]:
+[04/08/2022 11:10:14] INFO - STDOUT -  
+[04/08/2022 11:10:14] INFO - STDOUT - 
+Author Name:
+============
+Please insert your full name: e.g., John Smith
+ [AI Technology]:
+[04/08/2022 11:10:14] INFO - STDOUT -  
+[04/08/2022 11:10:14] INFO - STDOUT - 
+Author Email:
+=============
+Please insert your Bending Spoons email: e.g., john@bendingspoons.com
+ [ai-technology@bendingspoons.com]:
+[04/08/2022 11:10:14] INFO - STDOUT -  
+[04/08/2022 11:10:35] INFO - STDOUT - {'output_dir': '/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli', 'no_input': True, 'extra_context': {'project_name': 'bendai-testing', 'notion_url': 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a', 'project_description': 'AI Science research project', 'author_name': 'AI Technology', 'author_email': 'ai-technology@bendingspoons.com', 'bendai_version': '1.6.0'}, 'directory': 'starters/base'}
+[04/08/2022 11:10:35] INFO - STDOUT - 
+
+[04/08/2022 11:10:41] INFO - STDOUT - PyDev console: starting.
+
+[04/08/2022 11:10:41] INFO - STDOUT - 
+
+[04/08/2022 11:10:41] DEBUG - cookiecutter.config - User config not found. Loading default config.
+[04/08/2022 11:10:41] DEBUG - cookiecutter.main - context_file is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/cookiecutter.json
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Context generated is OrderedDict([('cookiecutter', OrderedDict([('author_email', 'ai-technology@bendingspoons.com'), ('author_name', 'AI Technology'), ('notion_url', 'https://www.notion.so/bendingspoons/AI-Technology-2f857ca6dc584bdb98b10162f6ebb25a'), ('project_description', 'AI Science research project'), ('project_name', 'bendai-testing'), ('python_package', "ai_research_{{ cookiecutter.project_name.replace(' ', '_').replace('-','_').lower().strip('-') }}"), ('repo_name', "ai-research-{{ cookiecutter.project_name.replace(' ', '-').lower().strip('-') }}"), ('bendai_version', '1.6.0')]))])
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/.cookiecutter_replay/
+[04/08/2022 11:10:41] DEBUG - cookiecutter.find - Searching /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base for the project template.
+[04/08/2022 11:10:41] DEBUG - cookiecutter.find - The project template appears to be /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/{{ cookiecutter.repo_name }}
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Generating project from /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/{{ cookiecutter.repo_name }}...
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Project directory is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing
+[04/08/2022 11:10:41] DEBUG - cookiecutter.hooks - hooks_dir is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/hooks
+[04/08/2022 11:10:41] DEBUG - cookiecutter.hooks - No hooks/dir in template_dir
+[04/08/2022 11:10:41] DEBUG - cookiecutter.hooks - No pre_gen_project hook found
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file README.bk.md
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/README.bk.md
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check README.bk.md to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'README.bk.md'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/README.bk.md
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file bendai.yaml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/bendai.yaml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check bendai.yaml to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'bendai.yaml'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/bendai.yaml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file LICENSE
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/LICENSE
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check LICENSE to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'LICENSE'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/LICENSE
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file install.sh
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/install.sh
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check install.sh to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'install.sh'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/install.sh
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file pyproject.toml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/pyproject.toml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check pyproject.toml to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'pyproject.toml'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/pyproject.toml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file README.md
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/README.md
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check README.md to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'README.md'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.007194244604316547
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 0.9928057553956835
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - SHIFT_JIS Japanese prober hit error at byte 15
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - EUC-JP Japanese prober hit error at byte 13
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - EUC-KR Korean prober hit error at byte 13
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - CP949 Korean prober hit error at byte 13
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - Big5 Chinese prober hit error at byte 14
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - EUC-TW Taiwan prober hit error at byte 13
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - utf-8  confidence = 0.7525
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - SHIFT_JIS not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - EUC-JP not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - GB2312 Chinese confidence = 0.01
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - EUC-KR not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - CP949 not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - Big5 not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - EUC-TW not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - windows-1251 Russian confidence = 0.01
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - KOI8-R Russian confidence = 0.01
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - ISO-8859-5 Russian confidence = 0.0
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - MacCyrillic Russian confidence = 0.01
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - IBM866 Russian confidence = 0.6826397542769941
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - IBM855 Russian confidence = 0.01
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - ISO-8859-7 Greek confidence = 0.0
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - windows-1253 Greek confidence = 0.0
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - ISO-8859-5 Bulgarian confidence = 0.0
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - windows-1251 Bulgarian confidence = 0.01
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - TIS-620 Thai confidence = 0.01
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - ISO-8859-9 Turkish confidence = 0.5092123533947005
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - windows-1255 Hebrew confidence = 0.0
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - windows-1255 Hebrew confidence = 0.0
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - windows-1255 Hebrew confidence = 0.0
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - utf-8  confidence = 0.7525
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - SHIFT_JIS not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - EUC-JP not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - GB2312 Chinese confidence = 0.01
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - EUC-KR not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - CP949 not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - Big5 not active
+[04/08/2022 11:10:41] DEBUG - chardet.charsetprober - EUC-TW not active
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'utf-8', 'confidence': 0.7525, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/README.md
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file mypy.ini
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/mypy.ini
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check mypy.ini to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'mypy.ini'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/mypy.ini
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file .gitignore
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/.gitignore
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check .gitignore to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '.gitignore'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/.gitignore
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file setup.cfg
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/setup.cfg
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check setup.cfg to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'setup.cfg'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/setup.cfg
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file environment.yaml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/environment.yaml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check environment.yaml to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'environment.yaml'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/environment.yaml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file .env.example
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/.env.example
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check .env.example to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '.env.example'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/.env.example
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file entrypoint.sh
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/entrypoint.sh
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check entrypoint.sh to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'entrypoint.sh'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/entrypoint.sh
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file spell_run.sh
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/spell_run.sh
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check spell_run.sh to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'spell_run.sh'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/spell_run.sh
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file tools/bendai.yaml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/bendai.yaml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check tools/bendai.yaml to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'tools/bendai.yaml'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/bendai.yaml
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file tools/predict.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/predict.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check tools/predict.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'tools/predict.py'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/predict.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file tools/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check tools/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'tools/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file tools/test.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/test.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check tools/test.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'tools/test.py'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/test.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file tools/train.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/train.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check tools/train.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'tools/train.py'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/tools/train.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file notebooks/.gitkeep
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks/.gitkeep
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check notebooks/.gitkeep to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: 'notebooks/.gitkeep'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/notebooks/.gitkeep
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/losses must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/losses
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/losses
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/loggers must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/loggers
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/loggers
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/callbacks must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/callbacks
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/callbacks
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/lr_schedulers must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/lr_schedulers
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/lr_schedulers
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/utils must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/utils
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/utils
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/models must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/models
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/models
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/optimizers must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/optimizers
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/optimizers
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/engines must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/engines
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/engines
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/losses/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/losses/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/losses/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/losses/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/losses/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/loggers/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/loggers/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/loggers/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/loggers/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/loggers/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/callbacks/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/callbacks/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/callbacks/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/callbacks/__init__.py'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/callbacks/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/lr_schedulers/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/lr_schedulers/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/lr_schedulers/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/lr_schedulers/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/lr_schedulers/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Rendered dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules/datasets must exist in output_dir /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Making sure path exists: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules/datasets
+[04/08/2022 11:10:41] DEBUG - cookiecutter.utils - Created directory at: /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules/datasets
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/datamodules/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/datamodules/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/datamodules/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/datamodules/mnist.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules/mnist.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/datamodules/mnist.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/datamodules/mnist.py'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules/mnist.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/datamodules/datasets/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules/datasets/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/datamodules/datasets/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/datamodules/datasets/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/datamodules/datasets/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/utils/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/utils/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/utils/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/utils/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/utils/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/utils/gcs_bucket_fs.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/utils/gcs_bucket_fs.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/utils/gcs_bucket_fs.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/utils/gcs_bucket_fs.py'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/utils/gcs_bucket_fs.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/utils/git_auto_commit.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/utils/git_auto_commit.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/utils/git_auto_commit.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/utils/git_auto_commit.py'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/utils/git_auto_commit.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/models/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/models/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/models/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/models/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/models/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/models/model.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/models/model.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/models/model.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/models/model.py'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/models/model.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/optimizers/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/optimizers/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/optimizers/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/optimizers/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/optimizers/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/engines/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/engines/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/engines/__init__.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/engines/__init__.py'
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/engines/__init__.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Processing file {{ cookiecutter.python_package }}/engines/mnist.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Created file at /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/engines/mnist.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Check {{ cookiecutter.python_package }}/engines/mnist.py to see if it's a binary
+[04/08/2022 11:10:41] DEBUG - binaryornot.check - is_binary: '{{ cookiecutter.python_package }}/engines/mnist.py'
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio1: 0.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - nontext_ratio2: 1.0
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - is_likely_binary: False
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - detected_encoding: {'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+[04/08/2022 11:10:41] DEBUG - binaryornot.helpers - failure: decodable_as_unicode: False
+[04/08/2022 11:10:41] DEBUG - cookiecutter.generate - Writing contents to file /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing/ai_research_bendai_testing/engines/mnist.py
+[04/08/2022 11:10:41] DEBUG - cookiecutter.hooks - hooks_dir is /Users/lucaactisgrosso/PycharmProjects/ai-research-lib/starters/base/hooks
+[04/08/2022 11:10:41] DEBUG - cookiecutter.hooks - No hooks/dir in template_dir
+[04/08/2022 11:10:41] DEBUG - cookiecutter.hooks - No post_gen_project hook found
+[04/08/2022 11:10:41] INFO - STDOUT - '/Users/lucaactisgrosso/PycharmProjects/ai-research-lib/bsp_bendai/cli/ai-research-bendai-testing'
+[04/08/2022 11:10:41] INFO - STDOUT - 
+
