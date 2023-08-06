@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: pybrowsers
+Version: 0.0.0a0
+Summary: Python library for detecting and launching browsers
+Home-page: https://github.com/roniemartinez/browsers
+License: MIT
+Author: Ronie Martinez
+Author-email: ronmarti18@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Donate, https://github.com/sponsors/roniemartinez
+Project-URL: Repository, https://github.com/roniemartinez/browsers
+Description-Content-Type: text/markdown
+
+<table>
+    <tr>
+        <td>License</td>
+        <td><img src='https://img.shields.io/pypi/l/pybrowsers.svg?style=for-the-badge' alt="License"></td>
+        <td>Version</td>
+        <td><img src='https://img.shields.io/pypi/v/pybrowsers.svg?logo=pypi&style=for-the-badge' alt="Version"></td>
+    </tr>
+    <tr>
+        <td>Github Actions</td>
+        <td><img src='https://img.shields.io/github/workflow/status/roniemartinez/pybrowsers/Python?label=actions&logo=github%20actions&style=for-the-badge' alt="Github Actions"></td>
+        <td>Coverage</td>
+        <td><img src='https://img.shields.io/codecov/c/github/roniemartinez/pybrowsers/branch?label=codecov&logo=codecov&style=for-the-badge' alt="CodeCov"></td>
+    </tr>
+    <tr>
+        <td>Supported versions</td>
+        <td><img src='https://img.shields.io/pypi/pyversions/pybrowsers.svg?logo=python&style=for-the-badge' alt="Python Versions"></td>
+        <td>Wheel</td>
+        <td><img src='https://img.shields.io/pypi/wheel/pybrowsers.svg?style=for-the-badge' alt="Wheel"></td>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td><img src='https://img.shields.io/pypi/status/pybrowsers.svg?style=for-the-badge' alt="Status"></td>
+        <td>Downloads</td>
+        <td><img src='https://img.shields.io/pypi/dm/pybrowsers.svg?style=for-the-badge' alt="Downloads"></td>
+    </tr>
+</table>
+
+# browsers
+
+Python library for detecting and launching browsers
+
+> I recently wrote a snippet for detecting installed browsers in an OSX machine in 
+> https://github.com/mitmproxy/mitmproxy/issues/5247#issuecomment-1095337723 based on https://github.com/httptoolkit/browser-launcher
+> and I thought this could be useful to other devs since I cannot seem to find an equivalent library in Python
+
+## Installation
+
+```bash
+pip install pybrowsers
+```
+
+## Usage
+
+### Python
+
+```python
+import browsers
+
+browser = browsers.get("chrome")
+```
+
+## TODO:
+
+- [x] Detect browser on OSX
+- [ ] Detect browser on Linux/Unix
+- [ ] Detect browser on Windows
+- [ ] Launch browser with arguments
+- [ ] Get browser by version (support wildcards)
+
+## Author
+
+- [Ronie Martinez](mailto:ronmarti18@gmail.com)
+
