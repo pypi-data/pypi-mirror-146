@@ -1,0 +1,8 @@
+palm_jax/__init__.py,sha256=4AfvdwEoV7ZyGTfXRa_k23FXKVP-FmpEjO9AghnycmQ,31
+palm_jax/palm.py,sha256=5C1pmpWp9MvL0SELdsFcl_Iiy96JQbBJAd0Jv0iUTeY,4711
+palm_jax/palm_lite.py,sha256=6FhKe-xg1cCs3qWpLhSAaf9C5ETR3mK2PGdxs9WMDIE,4705
+PaLM_jax-0.0.12.dist-info/LICENSE,sha256=xZDkKtpHE2TPCAeqKe1fjdpKernl1YW-d01j_1ltkAU,1066
+PaLM_jax-0.0.12.dist-info/METADATA,sha256=Q0VQ4oKxcGPjr6foa-avBFIYMlzaFI9WmmcwLvB5boQ,761
+PaLM_jax-0.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PaLM_jax-0.0.12.dist-info/top_level.txt,sha256=s4PS8FjP9my6dITVdTLf_VXIKL1Yu2UKG2MvxS2zSGg,9
+PaLM_jax-0.0.12.dist-info/RECORD,,
