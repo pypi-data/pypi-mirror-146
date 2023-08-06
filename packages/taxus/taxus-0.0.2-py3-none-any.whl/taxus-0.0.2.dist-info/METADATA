@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: taxus
+Version: 0.0.2
+Summary: Gaussian Process models for transcriptome data
+Home-page: https://github.com/holmrenser/taxus
+License: MIT
+Author: Rens Holmer
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Utilities
+Requires-Dist: gpytorch (>=1.6.0,<2.0.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Requires-Dist: patsy (>=0.5.2,<0.6.0)
+Requires-Dist: torch (>=1.11.0,<2.0.0)
+Requires-Dist: tqdm (>=4.63.1,<5.0.0)
+Project-URL: Repository, https://github.com/holmrenser/taxus
+Description-Content-Type: text/markdown
+
+# _taxus_
+
+### Gaussian Process models for transcriptome data
+
