@@ -1,0 +1,2 @@
+[console_scripts]
+oonidata = oonidata.main:main

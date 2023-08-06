@@ -1,0 +1,13 @@
+oonidata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oonidata/main.py,sha256=So8ZxKSdgnCNLyhxIij7KwzwVG3uN06Ml4ETziYQfC8,4082
+oonidata/metrics.py,sha256=G730FHmqKVY1SeRbPVPpUpgtUMLVFtYEiRW4toHyNLY,1342
+oonidata/mytypes.py,sha256=6yvCGe4J6DEelY7xPm8jVCPK0Xdfn0Q5eS58xN6xBeo,86
+oonidata/normalize.py,sha256=8yi5xc5uD0339lY7CL6OGdvzNZUOn5p-LSTG3q-f3Fc,19811
+oonidata/s3feeder.py,sha256=P0453qnDn6Q0mJTC6fNAB1Fy05z3duXhHla2Pq4eSVU,16884
+oonidata/utils.py,sha256=b6SIloEIRTaoCp0cionqXG5UAMT21A7YuTYfTPXkA8s,101943
+oonidata-0.0.1.dist-info/LICENSE,sha256=VGiXC8VSHJGCbqDQUMfezp2Z52uCxa8O1w-8yNekrLQ,1483
+oonidata-0.0.1.dist-info/METADATA,sha256=dwPnb8lMNBO9mL1tQ5EZPdzFfX6C5rGuvSdNwnHdf8Y,1464
+oonidata-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+oonidata-0.0.1.dist-info/entry_points.txt,sha256=gGOgxPA3cyvJqnr79u1FY3AqLfV5SlGEHC8QmEA3lIE,48
+oonidata-0.0.1.dist-info/top_level.txt,sha256=xwNH7uIPlmEcWf3CU4i8vXuHIRTf6NljAxaAfIYy4C4,9
+oonidata-0.0.1.dist-info/RECORD,,
