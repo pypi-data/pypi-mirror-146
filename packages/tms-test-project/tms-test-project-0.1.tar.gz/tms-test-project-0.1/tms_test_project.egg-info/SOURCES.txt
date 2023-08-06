@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+test/__init__.py
+test/run.py
+tms_test_project.egg-info/PKG-INFO
+tms_test_project.egg-info/SOURCES.txt
+tms_test_project.egg-info/dependency_links.txt
+tms_test_project.egg-info/requires.txt
+tms_test_project.egg-info/top_level.txt
