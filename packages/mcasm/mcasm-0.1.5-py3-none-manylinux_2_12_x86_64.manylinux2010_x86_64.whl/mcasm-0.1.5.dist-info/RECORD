@@ -1,0 +1,10 @@
+mcasm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcasm/__init__.py,sha256=LiUOwra0TFY9pum8-vb53r7NxSxvtxg3Yy1l7b4us8Q,164
+mcasm/version.py,sha256=ud5vhIbEBEFTHppmfSOxkR3Fe9_-DDi2JZhzLOZuOfs,44
+mcasm/__main__.py,sha256=e9_nJPg1M1itGGXKN1SJjSZ6fEqxZMNMsrsD6O3Rs4k,780
+mcasm/assembler.py,sha256=3-k30T2wN38c--Na_8jsZ7IRAQ7JwRedQNWfQ2WTl40,3754
+mcasm/libmcasm.so,sha256=L2xvIm-aUSv7lKTMCTbMUVLVQA9nEbF_UstqZjdMTzQ,29327800
+mcasm-0.1.5.dist-info/RECORD,,
+mcasm-0.1.5.dist-info/top_level.txt,sha256=7WrJNF7RMzWsHLLSmn-dAslcuK3850SaWNye9PJ2SWQ,6
+mcasm-0.1.5.dist-info/METADATA,sha256=zDETlY_8siE_zbEcqfmGm6nRSxYEzdfXby82vfHll6Q,1569
+mcasm-0.1.5.dist-info/WHEEL,sha256=deDx9kODPsXYD0_jtjiIU-pf4qQvIH61B4Yu5vubyEc,145
