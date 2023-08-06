@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bin/vague_all.sh
+vagueify/__init__.py
+vagueify/vagueify.py
+vagueify.egg-info/PKG-INFO
+vagueify.egg-info/SOURCES.txt
+vagueify.egg-info/dependency_links.txt
+vagueify.egg-info/requires.txt
+vagueify.egg-info/top_level.txt
+vagueify.egg-info/zip-safe

@@ -1,0 +1,1 @@
+from .vagueify import vagueify as vagueify
