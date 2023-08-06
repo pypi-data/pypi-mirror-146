@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+parse_ingredients/__init__.py
+parse_ingredients/__version__.py
+parse_ingredients.egg-info/PKG-INFO
+parse_ingredients.egg-info/SOURCES.txt
+parse_ingredients.egg-info/dependency_links.txt
+parse_ingredients.egg-info/top_level.txt

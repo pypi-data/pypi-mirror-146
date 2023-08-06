@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: parse-ingredients
+Version: 0.0.4
+Summary: Parse strings of ingredients to their name, unit, quantity and optional comments.
+Home-page: https://github.com/MichielMag/parse-ingredients
+Author: Michiel K
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# parse-ingredients
+Parse strings of ingredients to their name, unit, quantity and optional comments.
+
+## To install
+```
+pip install parse-ingredients
+```
+
+## To use
+```python
+from parse_ingredients import parse_ingredient
+
+result = parse_ingredient("12 ounces lean ground beef, preferably 85 percent lean")
+print(f"Found results: \n {result}")
+```
+```parse_ingredient()``` returns an object in the form of:
+
+
+```json
+{
+    "name": "lean ground beef",
+    "quantity": 12,
+    "unit": "oz",
+    "comment": "preferably 85 percent lean",
+    "original_string": "12 ounces lean ground beef, preferably 85 percent lean"
+}
+```
+
