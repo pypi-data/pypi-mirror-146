@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: jcloud
+Version: 0.0.0
+Summary: The data structure for unstructured data
+Home-page: https://github.com/jina-ai/wolf-cli
+Author: Jina AI
+Author-email: hello@jina.ai
+License: Apache 2.0
+Download-URL: https://github.com/jina-ai/wolf-cli/tags
+Project-URL: Documentation, https://wolf-cli.jina.ai
+Project-URL: Source, https://github.com/jina-ai/wolf-cli/
+Project-URL: Tracker, https://github.com/jina-ai/wolf-cli/issues
+Description: # wolf-cli
+        Client of WOLF
+        
+Keywords: wolf-cli deep-learning data-structures cross-modal multi-modal unstructured-data nested-data neural-search
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Unix Shell
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
