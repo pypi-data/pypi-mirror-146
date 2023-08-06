@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: kabbes-database-connections
+Version: 0.2.0
+Summary: Provides database-agnostic connection tools
+Home-page: https://pypi.org/project/kabbes-database-connections/
+Author: James Kabbes
+Author-email: james.kabbes@gmail.com
+License: UNKNOWN
+Project-URL: GitHub, https://github.com/jameskabbes/database_connections
+Project-URL: Documentation, https://jameskabbes.github.io/database_connections
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kabbes-py-starter
+Requires-Dist: kabbes-parent-class
+Requires-Dist: kabbes-dir-ops
+Requires-Dist: cryptography
+Requires-Dist: teradatasql
+Requires-Dist: pandas
+Requires-Dist: pysqlite3
+Requires-Dist: sqlalchemy
+Requires-Dist: cx-Oracle
+
+[Documentation](https://jameskabbes.github.io/database_connections)
+
+# database_connections
+Provides database-agnostic connection tools
+
+
