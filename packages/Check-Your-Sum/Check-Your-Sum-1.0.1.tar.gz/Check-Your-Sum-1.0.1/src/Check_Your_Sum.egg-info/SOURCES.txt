@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/CheckYourSum/__init__.py
+src/CheckYourSum/check_your_sum.py
+src/Check_Your_Sum.egg-info/PKG-INFO
+src/Check_Your_Sum.egg-info/SOURCES.txt
+src/Check_Your_Sum.egg-info/dependency_links.txt
+src/Check_Your_Sum.egg-info/requires.txt
+src/Check_Your_Sum.egg-info/top_level.txt
