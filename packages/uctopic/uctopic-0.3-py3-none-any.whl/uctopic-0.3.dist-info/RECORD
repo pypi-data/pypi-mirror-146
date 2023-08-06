@@ -1,0 +1,13 @@
+uctopic/__init__.py,sha256=sucS5Wls3WOWWmU0AvoFVDwTvfNlboAKNFr-QyLhQms,142
+uctopic/dataloader.py,sha256=7rg7RDnMsdSVQSvn3Bpf9Uf5Gr4p8pjo-z4K7Cb_WZo,9817
+uctopic/kmeans.py,sha256=Wan5BFgZFPAscGR37SCAhNK1pnqHoOq5ZnwXQQs1Kh8,8470
+uctopic/models.py,sha256=QciM0fUJEQ2vv2JsP3OdnpcOOGlWACsIaV0Pjmp1IGc,14242
+uctopic/tokenizer.py,sha256=jqIb0JJYQdK_VjyOUFPtxLRGu_W9lr9iFzrI2ZwnE4g,417
+uctopic/tool.py,sha256=1CV1cZz7s-uM5qXj-QFd2aKaSTU7g-zri-k5tYzKWco,23707
+uctopic/trainer.py,sha256=BbNv0gpuTZScC3uMqPqwMWQqf4873AHDUhNxixCQ524,628
+uctopic/utils.py,sha256=RcWLfLfHOI1ZDvVRmy6blBY4xRpdYZ26j7OvrPEkZCc,4297
+uctopic-0.3.dist-info/LICENSE,sha256=-PJ0lGsrPA14sG0HXb40zhKiQAobvcLWRX1b2XEumv8,1067
+uctopic-0.3.dist-info/METADATA,sha256=Y5xnEdDjdSjNANdr5chvbk88NrazNUnJaJDdrJddLR0,559
+uctopic-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+uctopic-0.3.dist-info/top_level.txt,sha256=E4x1bDPHL3jzz1hw14XHjVqtxpUwaK3w3RnwSlzLq64,8
+uctopic-0.3.dist-info/RECORD,,
