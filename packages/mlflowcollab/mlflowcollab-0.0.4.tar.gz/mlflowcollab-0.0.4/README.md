@@ -1,0 +1,83 @@
+
+![logo_mlflowcollab](examples/img/logo_mlflowcollab_smaller_margins.png)
+
+**MLFlowCollab is een wrapper die het werken met [MLFlow](#mlflow) gemakkelijker en sneller maakt, vooral op het gebied van samenwerken.**
+
+[MLFlow](#mlflow) is een handige, simpele, open source en gratis manier om machine learning experimenten bij te houden (onderdeel van MLOps). Echter is er ook een tweetal nadelen aan MLOps die deze module tracht op te lossen:
+
+1. Samenwerken op een centrale locatie, zoals MS Teams mappen werkt onhandig.
+2. Het loggen van standaard paketten zoals scikit-learn kan nóg sneller en makkelijker.
+
+Zie [Achtergrond](#achtergrond) voor een uitgebreide beschrijving wie dit pakket wanneer nodig kan hebben. 
+
+# Aan de slag
+## Installatie
+Installeren kan in je Command Prompt / Anaconda Prompt (al dan niet in een virtuele environment) met:
+
+```pip install git+https://gitlab.com/hetwaterschapshuis/kenniscentrum/tooling/mlflowcollab.git```
+
+Of [clone de repository](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#clone-a-repository) en 
+ga in de cmd naar de bovenste map van `mlflowcollab` (waarin `setup.py` staat) en run het 
+command `pip install .` of in de edit mode `pip install -e .`
+
+## mlflowwrapper
+
+De module `mlflowcollab` werkt met de package `mlflowwrapper`. 
+
+De workflow is als volgt:
+
+1. Creeer een folder op je Teams omgeving, waarbij de laagste folder `\mlruns` is.
+1. Setup een MLFlow experiment met `setup_mflow`. Hierin geef je een naam en de locatie van je experiment mee, inclusief die `\mlruns`.
+1. Run `mlwrapper.get_directory_prompt()` in je IDE.  Een map boven de tracking uri wordt gekopieerd naar je clipboard.
+1. Open een instance van Anaconda Prompt. 
+1. Typ `cd` en dan `Shift`+`Insert`, `Enter`. Hiermee ga je naar de goede locatie om MLFlow op te starten.
+1. Typ `mlflow ui`, `Enter`.
+1. Kopieer (selecteer + rechtermuisknop) de url waar MLFlow is gestart en plak deze in je browser.
+1. Zorg ervoor dat de Anaconda Prompt open blijft staan en dat de run van MLFlow UI niet geblokkeerd wordt.
+1. Run een experiment met `mlflow_run_sklearn(Xtrain, ytrain, Xtest, ytest, sklearn_model)`.
+1. Je kan MLFlow uiteindelijk afsluiten met `Ctrl`+`C` in je prompt.
+
+## Voorbeeld
+Een voorbeeld van bijna alle functionaliteiten is te vinden in [examples/usage_mlflowcollab.ipynb](examples/usage_mlflowcollab.ipynb).
+
+# Achtergrond
+## MLFlow 
+![](examples/img/mlflow_in_browser.png)
+
+[MLFlow](https://mlflow.org/) is een pakket dat het gemakkelijk maakt om machine learning experimenten te loggen. 
+
+Als je bezig bent met het optimaliseren van input data, hyperparameters en soorten modellen is het niet altijd nuttig om iedere keer de volledige code op te slaan en dan de score te printen: dit vergelijkt moeilijk en zorgt ervoor dat je heel veel code hebt. 
+
+Met MLFlow log je steeds experimenten en kun je al je instellingen/hyperparameters etc. meegeven, samen met de score (of verschillende scores). Deze kun je daarna vergelijken in een scatter plot, of bijvoorbeeld een contour plot.
+
+
+![](examples/img/vergelijk_scores.png)
+
+Echter is er een aantal stappen in MLFlow die omslachtig of onhandig zijn, waaronder het gebruiken van een gedeelde map om experimenten te loggen. In MLFlowCollab wordt met een wrapper om MLFlow het loggen van experimenten een stuk makkelijker gemaakt.
+
+## Voor wie is *MLFlowCollab* nuttig?
+* Iedereen die nog niet alle ins- and outs kent van MLFlow maar er wel graag mee aan de slag wil
+* Iedereen die op een laagdrempelige manier graag samen wil werken met anderen met MLFlow
+* Iedereen die meer wil leren over MLFlow: met behulp van [het voorbeeld](examples/usage_mlflowcollab.ipynb) en [`mlflowwrapper`](mlflowcollab/mlflowwrapper.py) zie je veel over hoe je het pakket handig kunt gebruiken
+
+
+## Wat zijn handige plekken om MLFlow te delen?
+Om MLFlow te delen met MLFlowCollab, moet je de bestanden die MLFlow wegschrijft op een gedeelde plek zetten. Dit kan bijvoorbeeld een
+* gedeelde Teams/OneDrive map,
+* gedeelde netwerkschijf,
+* op een andere manier gedeelde online map,
+* of een verzonden zip-map zijn.
+
+## Wat zijn eventuele alternatieven?
+Bijvoorbeeld
+* [Zelf hosten van een MLFlow server](https://github.com/mlflow/mlflow/issues/40)
+* [Azure Machine Learning](https://azure.microsoft.com/nl-nl/services/machine-learning/) (uitgebreider en met eigen rekenmodules, niet gratis)
+* [Amazon SageMaker](https://aws.amazon.com/sagemaker/) (vergelijkbaar met Azure Machine Learning)
+
+
+## Maintainer
+De beheerder van dit pakket is Sjoerd Gnodde (Hoogheemraadschap van Delfland).
+
+sgnodde {at} hhdelfland {dot} nl - https://gitlab.com/SjoerdGnHHDelfland - https://github.com/SjoerdGn/ 
+
+
