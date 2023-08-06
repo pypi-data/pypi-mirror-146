@@ -1,0 +1,5 @@
+pandas
+numba
+numpy
+xlrd
+srpp
