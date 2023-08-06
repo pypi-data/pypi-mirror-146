@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "umigap"
+version = "0.1.0"
+description = "umigap is an art-as-code tool for describing and managing 3D art assets in indie games"
+authors = ["Luke Miller <dodgyville@gmail.com>"]
+license = "GPLv3"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.8"
+bvh = "^0.3"
+pygltflib = "^1.15.1"
+future-fstrings = "^1.2.0"
+mathutils = "^2.81.2"
+typer = "^0.4.1"
+simple-term-menu = "^1.4.1"
+dataclasses-json = "^0.5.7"
+"ruamel.yaml" = "^0.17.21"
+
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+umigap = "umigap.cli:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
