@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: STRISH
+Version: 0.2.0
+Summary: Spatial TRanscriptomic In Situ Hybridization (STRISH)
+Home-page: https://github.com/minhtran1309/STRISH
+Author: Genomics and Machine Learning lab
+Author-email: uqmtra12@uq.edu.au
+License: BSD license
+Keywords: STRISH
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+License-File: LICENSE
+
+# Spatial TRanscriptomic In Situ Hybridization (STRISH): 
+---
+
+STRISH is a package for detecting cells local coexpression of biomarkers within tissue using highly multiplex image as input. STRISH include quality assessment, preprocessing, cell colocalisation detection.
+
+  
+
+
+
+=======
+History
+=======
+
+0.2.0 (2022-04-10)
+
