@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: raumd
+Version: 0.0.2
+Summary: .
+Home-page: UNKNOWN
+Author: Roman Botnari
+Author-email: romanbotnari@me.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: argcomplete (==2.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: commonmark (==0.9.1)
+Requires-Dist: psutil (==5.9.0)
+Requires-Dist: Pygments (==2.11.2)
+Requires-Dist: rich (==11.0.0)
+Requires-Dist: python-json-logger (==2.0.2)
+
+Raumdeuter runs your sequence of bash commands defined custom json files.     This files can be created on the online platform https://airlocks.xyz.
+
+
