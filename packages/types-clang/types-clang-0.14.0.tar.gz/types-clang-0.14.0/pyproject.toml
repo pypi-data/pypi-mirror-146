@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "types-clang"
+version = "0.14.0"
+description = "Stubs package for Clang Python bindings"
+authors = ["Travis Gockel <travis@gockelhut.com>"]
+license = "Apache-2.0"
+readme = "README.rst"
+homepage = "https://github.com/tgockel/clang-stubs"
+repository = "https://github.com/tgockel/clang-stubs"
+keywords = ["clang", "stubs", "typing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Compilers",
+    "Typing :: Stubs Only"
+]
+packages = [
+    { include = "clang-stubs", from = "." }
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+clang = "^14.0"
+Jinja2 = "^3.1.1"
+mypy = "^0.942"
+tox = "^3.23.1"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py{37, 38, 39}
+skipsdist = true
+isolated_build = true
+
+[testenv]
+allowlist_externals = poetry
+commands_pre =
+    poetry install -v
+commands =
+    python3 -m mypy.stubtest clang
+"""
