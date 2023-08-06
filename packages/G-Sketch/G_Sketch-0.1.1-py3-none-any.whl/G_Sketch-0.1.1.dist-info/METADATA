@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: G-Sketch
+Version: 0.1.1
+Summary: Converts image files to coordinates
+Home-page: UNKNOWN
+Author: Gerald Negvesky
+License: Free use
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+README.md
+
