@@ -1,0 +1,17 @@
+mmorpg_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mmorpg_scraper/app.py,sha256=a6B9hzxcBJ52IegcMWQfCdUPDnlF_UUPXUJi9Uy_5Ks,927
+mmorpg_scraper/scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mmorpg_scraper/scraper/constants.py,sha256=Ef7NZYvqeBOZHEAuGs2wS5t0f_mgWlCC1u3VTX3ilPI,731
+mmorpg_scraper/scraper/exceptions.py,sha256=joqjY7pgzWD8eH5214Jvg7WANoiP0n5hAxjndZNoR3Q,169
+mmorpg_scraper/scraper/game_detail.py,sha256=6JT4dQPhc38HPTF1YVHxmYyMjlmnws5u0QEzfIobLsI,1831
+mmorpg_scraper/scraper/game_list.py,sha256=Pp-DWIH0urfAHkQtuDWPJ-qhp9M4bBL88jB8fnhDZ3Y,23305
+mmorpg_scraper/scraper/headers_generator.py,sha256=SlVGksd-4ftYjrXbfHySc011nw5UnvSXE6NcooYkyDU,845
+mmorpg_scraper/scraper/request.py,sha256=fblHrAVoaiMu1K6QZGwo4zOEHUrphLvjVfUYVGI52jE,856
+mmorpg_scraper/scraper/scraper.py,sha256=iaticZWIJS0zk8n4TkRxUVoTrJKn7GTXci5GaWwEb7w,5834
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=6hilTjPh6hVeDZww3jrUNY1Tw3d5V4AEkZOItHyQEzU,1801
+mmorpg_scraper-0.0.3.dist-info/LICENSE,sha256=MKa9JfBOgwULxbZslM_e7tediyk2tpptyqFccRbggaE,1095
+mmorpg_scraper-0.0.3.dist-info/METADATA,sha256=5_el9jTA0_TERM-kkFetuCLl1-Df4yBLL6eB4xLG0cU,4852
+mmorpg_scraper-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mmorpg_scraper-0.0.3.dist-info/top_level.txt,sha256=dzJ51-9UuE2xevDB354PgnPzYHDeAaZP793PX7qPPXo,21
+mmorpg_scraper-0.0.3.dist-info/RECORD,,
