@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fse
+Version: 1.0.0
+Summary: Fast Sentence Embeddings for Gensim
+Home-page: UNKNOWN
+Author: Oliver Borchers
+Author-email: o.borchers@oxolo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.11.3)
+Requires-Dist: scipy (>=0.18.1)
+Requires-Dist: smart-open (>=1.5.0)
+Requires-Dist: scikit-learn (>=0.19.1)
+Requires-Dist: gensim (>=4)
+Requires-Dist: wordfreq (>=2.2.1)
+Requires-Dist: huggingface-hub
+Requires-Dist: psutil
+Requires-Dist: dataclasses ; python_version < "3.7"
+
+UNKNOWN
+
+
