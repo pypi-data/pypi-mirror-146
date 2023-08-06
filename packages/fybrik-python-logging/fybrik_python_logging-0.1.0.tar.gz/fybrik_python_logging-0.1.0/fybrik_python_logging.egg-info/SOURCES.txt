@@ -1,0 +1,8 @@
+README.md
+setup.py
+fybrik_python_logging/__init__.py
+fybrik_python_logging.egg-info/PKG-INFO
+fybrik_python_logging.egg-info/SOURCES.txt
+fybrik_python_logging.egg-info/dependency_links.txt
+fybrik_python_logging.egg-info/requires.txt
+fybrik_python_logging.egg-info/top_level.txt
