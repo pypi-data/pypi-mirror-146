@@ -1,0 +1,10 @@
+gcal_cmd_tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcal_cmd_tool/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcal_cmd_tool/libs/acl.py,sha256=uslJ9UMAFGbkPjwoLPNzyQHpeWaAl01QzNgRL8e30AY,1556
+gcal_cmd_tool/libs/calendars.py,sha256=d7B2zsYUM5kdOwSk8trXpHEC65cuStyK5Q4f3FQ0G08,852
+gcal_cmd_tool/main.py,sha256=aUdGvHi1u1P3_SMiYbWdlnvdLgUKcL0c1UZQCMfwuuY,166
+gcal_cmd_tool-0.1.0.dist-info/entry_points.txt,sha256=-4akXsbwtlV5SdLc_SJA6TQqqOR5Yw_eScSTSTNAjks,56
+gcal_cmd_tool-0.1.0.dist-info/LICENSE,sha256=CeLO2jpC8G0HxuyOvwJqOaeozWEEbLRUlDloT8siHUo,1073
+gcal_cmd_tool-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+gcal_cmd_tool-0.1.0.dist-info/METADATA,sha256=rVn2AVzRyLQ2bCddPC1rNr_5j5tU9-01n0pOltvXQeY,1542
+gcal_cmd_tool-0.1.0.dist-info/RECORD,,

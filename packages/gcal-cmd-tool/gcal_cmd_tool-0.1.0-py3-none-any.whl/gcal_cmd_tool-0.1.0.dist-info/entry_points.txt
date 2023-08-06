@@ -1,0 +1,3 @@
+[console_scripts]
+gcal-cmd-tool=gcal_cmd_tool.main:app
+
