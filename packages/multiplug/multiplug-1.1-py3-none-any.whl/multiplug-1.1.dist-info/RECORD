@@ -1,0 +1,14 @@
+multiplug/__init__.py,sha256=iCxCOjPTKDZv5rbCiOKT3zAntByT7Sd2Hq8Vyi09sFc,245
+multiplug/bash_mod.py,sha256=yvlCV9XAhZeramfL-ZJUpVVKCNW5oUH6gJL8Pz3WunM,3119
+multiplug/error.py,sha256=JzIrIU_RcjBDICFeCdtfqN1A5c4icsvQfRP1FOUPB-s,427
+multiplug/importer.py,sha256=5ca7Sg4mSxFQA_Bg34yo82RykP0av8NXRpg--81EkzU,3174
+multiplug/nim_mod.py,sha256=poqKGO7phzEygwPqAHfZu99TmeB9ViupB1nRx9TpIno,1535
+multiplug/plugin_api.py,sha256=Z0Jn7TIvy9BIWTUFnGTjrlZjm_m0MIZrB5FO4zWYQ2k,1650
+multiplug/plugins.py,sha256=vxsB2I0F4oDB2Gp3BLpiK_RpVoitBXCsSRo5l6L9SyY,1630
+multiplug/py_mod.py,sha256=ZvYajILUpJeYzX0K1hJsU3YR2sWSY9zyIeVYZcMsbHE,928
+multiplug/rust_mod.py,sha256=N3QtMojFJWiVoSugbQqSxb91RZbO3gD8WjuPZQOopmo,4136
+multiplug-1.1.dist-info/LICENSE.txt,sha256=pll8-egJDQ7aiVQ_jVY7zqpjeSqtopswVIyxIUdQN0U,1076
+multiplug-1.1.dist-info/METADATA,sha256=oGjKW0_GYQTxscayckpZ4ID4DHNV5l43LZwWS0Fg5z4,2795
+multiplug-1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+multiplug-1.1.dist-info/top_level.txt,sha256=pD85nxQSAV_KyNxpQOIrdYfD4aGSNoohsQL5fqNFOJE,10
+multiplug-1.1.dist-info/RECORD,,
