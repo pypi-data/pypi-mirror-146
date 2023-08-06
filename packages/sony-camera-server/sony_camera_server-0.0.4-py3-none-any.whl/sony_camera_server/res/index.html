@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=UTF-8>
+    <link rel="stylesheet" href="styling.css" type="text/css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+
+  <body onload="init()">
+
+    <div class="server">
+      <h1>Devices</h1>
+
+      <select name="sony-devices" id="device-select" onchange="changeDevice()" value="no-device">
+        <option value="no-device">no-device</option>
+      </select>
+      <button class="server-btn" onclick="refreshDevices()" id="device-refresh">Refresh</button>
+    </div>
+
+    <div class="camera row">
+
+      <div class="column middle">
+        <div class="camera-liveview">
+          <h2>Liveview</h2>
+          <div>
+            <img id="liveview" ondblclick="setLiveviewFocus(event, this)" src="liveview.mjpg" />
+          </div>
+        </div>
+
+        <div class="camera-mode row">
+
+          <div class="column">
+            <h2>Camera Mode</h2>
+            <div id="camera-function">
+            </div>
+          </div>
+          <div class="column">
+            <h2>Shoot Mode</h2>
+            <div id="camera-shoot-mode">
+            </div>
+          </div>
+          <div class="column">
+            <h2>Actions</h2>
+            <div id="camera-action">
+            </div>
+          </div>
+        </div>
+
+        <div class="camera-files">
+          <h2>File tree</h2>
+
+          <input type="button" onclick="updateFileTree()" value="Rebuild">
+
+          <ul id="filetree">
+            <li><span class="caret">Date 0</span>
+              <ul class="nested">
+                <li>Img0</li>
+                <li>Img1</li>
+                <li>Vide0</li>
+              </ul>
+            </li>
+
+            <li><span class="caret">Date 1</span>
+              <ul class="nested">
+                <li>Img0</li>
+                <li>Img1</li>
+                <li>Vide0</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Status</h2>
+          <div id="camera-status">
+          </div>
+        </div>
+
+        <div class="camera-log">
+          <h2>Camera Log</h2>
+          <div>
+            <textarea readonly rows="14" cols="90" id="camera-logging-area"></textarea>
+          </div>
+          <button onclick="prettyLog(this)">Pretty</button>
+          <button onclick="clearLog()">Clear</button>
+        </div>
+
+      </div>
+
+      <div class="column right" style="overflow-y: auto; height: 800px;">
+
+        <div>
+          <h2>Camera Settings</h2>
+          <div id="camera-settings">
+          </div>
+        </div>
+
+        <div >
+          <h2>Raw Camera Methods</h2>
+          <div id="raw-camera-methods">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
