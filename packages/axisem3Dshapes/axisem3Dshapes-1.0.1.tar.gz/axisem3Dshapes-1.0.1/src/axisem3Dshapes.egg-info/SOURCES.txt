@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/axisem3Dshapes.egg-info/PKG-INFO
+src/axisem3Dshapes.egg-info/SOURCES.txt
+src/axisem3Dshapes.egg-info/dependency_links.txt
+src/axisem3Dshapes.egg-info/top_level.txt
