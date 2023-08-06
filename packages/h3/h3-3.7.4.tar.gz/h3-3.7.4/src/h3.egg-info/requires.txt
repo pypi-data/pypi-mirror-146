@@ -1,0 +1,16 @@
+
+[all]
+numpy
+pytest
+pytest-cov
+flake8
+pylint
+
+[numpy]
+numpy
+
+[test]
+pytest
+pytest-cov
+flake8
+pylint
