@@ -1,0 +1,5 @@
+requests
+playsound
+gtts
+SpeechRecognition
+pyttsx3
