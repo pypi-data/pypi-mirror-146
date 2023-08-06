@@ -1,0 +1,45 @@
+{% extends 'generic/object_edit.html' %}
+{% load render_table from django_tables2 %}
+{% load form_helpers %}
+
+{% block title %}
+  Deep Copy Device {{ device }}
+{% endblock %}
+
+{% block form %}
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Target Device {{ device }}</strong></div>
+      <div class="panel-body">
+        {% render_field form.name %}
+        {% render_field form.status %} 
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Target Location</strong></div>
+      <div class="panel-body">
+          {% render_field form.region %}
+          {% render_field form.site %}
+          {% render_field form.rack_group %}
+          {% render_field form.rack %}
+          {% render_field form.position %}
+          {% render_field form.face %}
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Add Tags</strong></div>
+      <div class="panel-body">
+          {% render_field form.tags %}
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Add Comments</strong></div>
+      <div class="panel-body">
+          {% render_field form.comments %}
+      </div>
+    </div>
+{% endblock %}
+
+{% block buttons %}
+    <button type="submit" name="_create" class="btn btn-primary">Create</button>
+    <a href="{{ return_url }}" class="btn btn-default">Cancel</a>
+{% endblock %}

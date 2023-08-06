@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+nautobot_deepcopy/__init__.py
+nautobot_deepcopy/forms.py
+nautobot_deepcopy/template_content.py
+nautobot_deepcopy/urls.py
+nautobot_deepcopy/views.py
+nautobot_deepcopy.egg-info/PKG-INFO
+nautobot_deepcopy.egg-info/SOURCES.txt
+nautobot_deepcopy.egg-info/dependency_links.txt
+nautobot_deepcopy.egg-info/not-zip-safe
+nautobot_deepcopy.egg-info/top_level.txt
+nautobot_deepcopy/templates/nautobot_deepcopy/copy.html
+nautobot_deepcopy/templates/nautobot_deepcopy/inc/buttons.html
