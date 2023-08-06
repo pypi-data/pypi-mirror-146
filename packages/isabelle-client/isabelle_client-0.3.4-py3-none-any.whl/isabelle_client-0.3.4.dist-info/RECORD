@@ -1,0 +1,12 @@
+isabelle_client/__init__.py,sha256=Bjes4tIUw-MgQg5VySiXMN9rexZrJc1yuZmH-tWEbBc,944
+isabelle_client/compatibility_helper.py,sha256=7WTfyLKYG-4cCHuYNvaTTDLTb-skbTrnpvtvgsWDlR0,1312
+isabelle_client/conftest.py,sha256=kIN9yxdoL6aoMxeOqCBTzXUtvS_NobmlHyE0KQ7a63c,3021
+isabelle_client/isabelle__client.py,sha256=o6FbhtQB2jSY4YftzYeXPUgbneKBk3TxicXKBdcTGsA,11449
+isabelle_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isabelle_client/resources/isabelle,sha256=kHvHznGGFUrIwuXSvhLCcICnj75UlYs-qwaTBv3taok,79
+isabelle_client/socket_communication.py,sha256=uY-_WttG8_AWkMdHL5FXdsNoH-p9rhcDaiFKgY83WD4,5151
+isabelle_client/utils.py,sha256=Ezl_DWP6r250pFFj9yyT8iuUREINabuuvbWw_VfIxEc,2884
+isabelle_client-0.3.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+isabelle_client-0.3.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+isabelle_client-0.3.4.dist-info/METADATA,sha256=omJA6oj8isYBbxpsbESeyicFFQ19BslpyMUuzliS7ro,4781
+isabelle_client-0.3.4.dist-info/RECORD,,
