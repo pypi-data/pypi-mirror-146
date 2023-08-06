@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: auxfuncs
+Version: 0.1.2
+Summary: Personal library for handling functions
+Home-page: https://github.com/oliverm91/auxguncs
+Author: Oliver Mohr B.
+Author-email: oliver.mohr.b@gmail.com
+License: UNKNOWN
+Keywords: function handling
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: multimethod
+
+# auxfuncs
+Set of auxiliar methods for handling functions 
+
+
