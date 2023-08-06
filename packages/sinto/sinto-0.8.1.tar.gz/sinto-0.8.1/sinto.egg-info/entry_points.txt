@@ -1,0 +1,2 @@
+[console_scripts]
+sinto = sinto.arguments:main
