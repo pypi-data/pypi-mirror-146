@@ -1,0 +1,9 @@
+README.md
+setup.py
+stringtoolsfpat/__init__.py
+stringtoolsfpat.egg-info/PKG-INFO
+stringtoolsfpat.egg-info/SOURCES.txt
+stringtoolsfpat.egg-info/dependency_links.txt
+stringtoolsfpat.egg-info/top_level.txt
+tests/__init__.py
+tests/test_stringtools.py
