@@ -1,0 +1,10 @@
+authentication/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+authentication/apps.py,sha256=JnoIRYCPu4tvrjXYlJBXGZZrtJQdR45lkqJKUiegHSg,160
+authentication/urls.py,sha256=sRZ0WJ5KCXhh4F32jtIsoFl_ONo37SVIats3_2kmwVQ,772
+authentication/util.py,sha256=TZkKj9CCtF_QeRtrpKlN6_PRmsXI4PJ8KW077KiDE5k,1934
+authentication/views.py,sha256=B-tcHcONUrB6XYCS3qpePJUJY6Yb2wkvJ86HMxdw6uo,11134
+django_user_login-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+django_user_login-0.0.1.dist-info/METADATA,sha256=g3yX_NHNB5nrr3UJkDV1HFhYbQ6h9c--65uSNR5AZYw,3621
+django_user_login-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_user_login-0.0.1.dist-info/top_level.txt,sha256=VXISBSpQIrEFW1wlnq3UihPHmjYCFTAMV1PReHDUpis,15
+django_user_login-0.0.1.dist-info/RECORD,,
