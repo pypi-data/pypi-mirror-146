@@ -1,0 +1,3 @@
+[console_scripts]
+minidata = minidata.clis.cli:cli
+
