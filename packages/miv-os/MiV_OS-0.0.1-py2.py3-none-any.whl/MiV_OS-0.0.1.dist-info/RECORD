@@ -1,0 +1,16 @@
+miv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miv/version.py,sha256=Q8raD6k02z4DoYniAz3iui5d6EdM1el95SMTLXJbeCA,18
+miv/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miv/io/binary.py,sha256=ADVoGqzd9ncS5iTHCnACTHp8Gr91rYJ0BPxdUoQqnjs,6684
+miv/signal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miv/signal/filter/__init__.py,sha256=zMNq-l6ufXDe9-wZBMMZyAVXbttbtz-FS_1PZRYZHXQ,57
+miv/signal/filter/continuous_signal_filter.py,sha256=AAFVQ3T3GrBz3lMR_77VeM6qYehHrOkg8xbOXYAkQ1M,530
+miv/signal/spike/__init__.py,sha256=7sbmmkdMW6VpyfcofsdVwAFJE4F9hOR91ZWEcTGacuc,41
+miv/signal/spike/detection.py,sha256=952yQwdwRRdrC716V3wmyd7poP0eICaLme3e-gt5ZqE,3131
+miv/statistics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miv/statistics/spike_analysis.py,sha256=7lM5vSIm5bbq05bJeeLhERCPHkQHEY4pIP4DqUXmgbQ,830
+MiV_OS-0.0.1.dist-info/LICENSE,sha256=OH9QswM0u-W16d-oj4y77BMbcAQBXGVoiTBc3n84VpM,1068
+MiV_OS-0.0.1.dist-info/METADATA,sha256=uCI8tXMPrT25AW6r3j3eDZkUNF0Gqh9ktzEh2RBL6KA,4011
+MiV_OS-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+MiV_OS-0.0.1.dist-info/top_level.txt,sha256=w5j4oC3usYx_VLYOClcrZCS6mT7b-_UJuxV6IOUAWH4,4
+MiV_OS-0.0.1.dist-info/RECORD,,
