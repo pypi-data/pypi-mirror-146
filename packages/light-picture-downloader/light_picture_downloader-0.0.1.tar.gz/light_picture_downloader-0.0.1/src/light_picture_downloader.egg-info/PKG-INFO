@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: light-picture-downloader
+Version: 0.0.1
+Summary: A simple package to download images from web
+Home-page: https://github.com/rasmusilm/light_picture_downloader
+Author: Rasmus Ilmjärv
+Author-email: author@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rasmusilm/light_picture_downloader/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# light_picture_downloader
+A simple, lightweight solution to download images from the web.
+It does not include file conversion, but enables you to add/overwrite the original file extension, if you deem that necessary.
+Download by giving the image url as a parameter to a download function.
+You can edit the list of file extensions, that the downloader should accept.
+
