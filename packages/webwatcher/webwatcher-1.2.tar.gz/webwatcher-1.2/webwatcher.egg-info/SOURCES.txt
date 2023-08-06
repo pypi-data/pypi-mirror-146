@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+webwatcher/MediaFile.py
+webwatcher/__init__.py
+webwatcher/__main__.py
+webwatcher/args.py
+webwatcher/logging.py
+webwatcher/utils.py
+webwatcher/watchdog.py
+webwatcher.egg-info/PKG-INFO
+webwatcher.egg-info/SOURCES.txt
+webwatcher.egg-info/dependency_links.txt
+webwatcher.egg-info/requires.txt
+webwatcher.egg-info/top_level.txt

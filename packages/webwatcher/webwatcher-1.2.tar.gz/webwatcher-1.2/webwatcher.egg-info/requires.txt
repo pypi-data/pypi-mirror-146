@@ -1,0 +1,3 @@
+environs
+watchdog
+ffmpeg-python

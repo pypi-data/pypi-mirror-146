@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: webwatcher
+Version: 1.2
+Summary: Convert media files to a modern smaller equivalent.
+Home-page: https://gitlab.com/cclloyd1
+Author: cclloyd
+Author-email: cclloyd@cclloyd.com
+License: MIT
+Keywords: media,webp,webm,convert,compress
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+
+UNKNOWN
+
