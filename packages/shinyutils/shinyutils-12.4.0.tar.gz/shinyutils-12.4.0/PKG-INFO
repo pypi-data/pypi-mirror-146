@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: shinyutils
+Version: 12.4.0
+Summary: Personal collection of common utilities
+Home-page: https://github.com/jayanthkoushik/shinyutils
+License: MIT
+Author: Jayanth Koushik
+Author-email: jnkoushik@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Provides-Extra: colors
+Requires-Dist: corgy (>=4.1,<5.0)
+Requires-Dist: crayons (>=0.4.0,<0.5.0); extra == "colors"
+Requires-Dist: rich (>=10.0,<11.0); extra == "colors"
+Requires-Dist: typing_extensions (>=4.0,<5.0); python_version < "3.9"
+Project-URL: Repository, https://github.com/jayanthkoushik/shinyutils
+Description-Content-Type: text/markdown
+
+# shinyutils
+Various utilities for common tasks. :sparkles: :sparkles: :sparkles:
+
+## Setup
+Install with `pip` (Python 3.7 or higher is required).
+
+```bash
+pip install shinyutils  # basic install
+pip install "shinyutils[colors]"  # install with color support
+```
+
+## Usage
+For documentation on usage, refer to docs/index.md.
+
