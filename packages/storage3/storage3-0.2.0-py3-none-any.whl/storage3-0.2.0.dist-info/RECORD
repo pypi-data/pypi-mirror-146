@@ -1,0 +1,16 @@
+storage3/__init__.py,sha256=JMeWj4BufMdkh8lA9EGSOJ3rVF0DP1R1riML58-6IC0,767
+storage3/_async/__init__.py,sha256=TZiUEZTaGOmiwssRI2RHxq-wHhwwT8ilQt1ThxRSzP8,61
+storage3/_async/bucket.py,sha256=j9gedVmHYeZ-sRKQZy4xKKjvex2ssdZVdQdVg0h-TLc,3475
+storage3/_async/client.py,sha256=lS92xxIChoBEdVLp2fg5Tt7gZIeLAoMuZqmsbdsu0wQ,765
+storage3/_async/file_api.py,sha256=Jo2HhjH9K8qC57fD2rUs9ITrKHFMSV3RUnKcQnPv6Vc,6461
+storage3/_sync/__init__.py,sha256=Ch9jXcmr8nDlpnUnvC6bCZRgMSVwJ2tdlmksljOyqPw,59
+storage3/_sync/bucket.py,sha256=Ws54lW8gu27MecQbmaP_lPTS52b-OMGJjXezZ7b8mQ4,3372
+storage3/_sync/client.py,sha256=h9H1NfKSApRqoklEVQUp5-SrHhlDlCtgbIbYh1fO6e0,756
+storage3/_sync/file_api.py,sha256=6APS3lYwjFnVzAXkNVXLXxKVEJ2bHxPlsxolD3SU8Vk,6367
+storage3/constants.py,sha256=zZDDGQzZfvatksmOgdb7VFf5NWd3W4T2ILMeQKYswXs,264
+storage3/types.py,sha256=-9GxNsxfo8cKCHaMtfl06B0nPHKvLd5proAO4iJnBNw,908
+storage3/utils.py,sha256=AtMHDP_cEVMBOnnbPyG7EcxR4_SM5nja07F8jagjwOo,308
+storage3-0.2.0.dist-info/LICENSE,sha256=z1oJWhGxyWdRVl4FE2sIHbVFmHVOH5UaSOgMC-UVixI,1147
+storage3-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+storage3-0.2.0.dist-info/METADATA,sha256=utJHaU_BuXqHp2_6arEXNqngzRFNJiefLytpTapeF-I,1426
+storage3-0.2.0.dist-info/RECORD,,
