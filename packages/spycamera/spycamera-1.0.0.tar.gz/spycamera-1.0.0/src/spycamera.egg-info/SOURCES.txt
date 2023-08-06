@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/spycamera/__init__.py
+src/spycamera/record.py
+src/spycamera.egg-info/PKG-INFO
+src/spycamera.egg-info/SOURCES.txt
+src/spycamera.egg-info/dependency_links.txt
+src/spycamera.egg-info/top_level.txt
