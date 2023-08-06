@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: lutstrings
+Version: 0.1.3
+Summary: Python package to reorder init strings
+Home-page: https://github.com/byuccl/encrypted_ip/tree/main/lutstrings
+Author: Daniel Hutchings
+Author-email: dhutch@dazoo.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Easy LUT Init String manipulation
+
+You only need two things:
+
+1. A pin mapping given by rapidwright.
+2. A 64 bit initstring in hex format like `"0x0123456789ABCDEF"`
+
+Then by using the following you can obtain the init string found in the bitstream
+```python
+from lutstrings import lut
+bitstream_init_string = lut.fullConversion(pin_mapping, init_string)
+```
+
+
+The pin mapping can be obtained using rapidwright from a LUT cell with
+
+```python
+pin_mapping = cell_lut.getPinMappingsL2P()
+```
+
+This currently only works for 6 input luts with 64 bit init strings
+
