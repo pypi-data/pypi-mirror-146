@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/example/__init__.py
+src/example/test.py
+src/ishaiPkg.egg-info/PKG-INFO
+src/ishaiPkg.egg-info/SOURCES.txt
+src/ishaiPkg.egg-info/dependency_links.txt
+src/ishaiPkg.egg-info/top_level.txt
