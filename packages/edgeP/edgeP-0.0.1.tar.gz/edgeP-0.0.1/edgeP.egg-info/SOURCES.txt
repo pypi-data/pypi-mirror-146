@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+edgeP.egg-info/PKG-INFO
+edgeP.egg-info/SOURCES.txt
+edgeP.egg-info/dependency_links.txt
+edgeP.egg-info/top_level.txt
+edgrP/__init__.py
