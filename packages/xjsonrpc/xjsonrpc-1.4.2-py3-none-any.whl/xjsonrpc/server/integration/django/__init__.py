@@ -1,0 +1,3 @@
+"""
+Django xjsonrpc integration.
+"""
