@@ -1,0 +1,5 @@
+lxml>=4.0.0
+benchexec>=1.20
+pycparser>=2.19
+numpy>=1.15
+tsbuilder>=2.0
