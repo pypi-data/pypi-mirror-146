@@ -1,0 +1,8 @@
+cocotb~=1.6
+attrs>=21
+python-box>=6
+cffi>=1.14
+
+[test]
+pytest>7
+pytest-cov[all]
