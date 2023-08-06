@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tractosearch
+Version: 0.0.1a3
+Summary: Fast Tractography Streamline Search
+Home-page: https://github.com/StongeEtienne/tractosearch
+Author: Etienne St-Onge
+Author-email: Firstname.Lastname@usherbrooke.ca
+License: BSD 3-Clause
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy (>=1.16.2)
+Requires-Dist: scipy (>=1.0)
+Requires-Dist: tqdm (>=4.29.0)
+Requires-Dist: h5py (>=2.5.0)
+Requires-Dist: dipy (>=1.0.0)
+Requires-Dist: lpqtree (>=0.0.4)
+Provides-Extra: all
+Requires-Dist: numba (>=0.53) ; extra == 'all'
+Provides-Extra: numba
+Requires-Dist: numba (>=0.53) ; extra == 'numba'
+
+UNKNOWN
+
