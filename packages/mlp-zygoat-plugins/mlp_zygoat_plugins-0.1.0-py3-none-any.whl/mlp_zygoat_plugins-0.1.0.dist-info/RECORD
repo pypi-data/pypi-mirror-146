@@ -1,0 +1,9 @@
+mlp_zygoat_plugins/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+mlp_zygoat_plugins/images/__init__.py,sha256=Lbr7JOzO485fLX4BWi2O8laytOwxBQhpvRq19u1lu8c,44
+mlp_zygoat_plugins/images/backend.py,sha256=4nuOibAVhvhYfZ_5I-qtCywwVvnY2yvfCXABQDmNfB0,451
+mlp_zygoat_plugins/images/resources/Dockerfile,sha256=60Hvb-K1xmZxB8fXygQUCOr6GewS6hALh2b5HxcmZdg,435
+mlp_zygoat_plugins/images/resources/Dockerfile.local,sha256=mxo3LLiZ26y8RY8p8jS7I1BC8aOQYgPoc-NgDHgtGv8,390
+mlp_zygoat_plugins/images/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlp_zygoat_plugins-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+mlp_zygoat_plugins-0.1.0.dist-info/METADATA,sha256=yPXiIOT8-hb0ndbxjkqxvy2j60busk4hSdilReXTbK8,344
+mlp_zygoat_plugins-0.1.0.dist-info/RECORD,,

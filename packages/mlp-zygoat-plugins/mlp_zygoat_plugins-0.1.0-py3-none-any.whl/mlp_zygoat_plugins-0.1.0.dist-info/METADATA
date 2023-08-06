@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mlp-zygoat-plugins
+Version: 0.1.0
+Summary: 
+Author: Mark Rawls
+Author-email: markrawls96@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: zygoat (>=1.16.0,<2.0.0)
