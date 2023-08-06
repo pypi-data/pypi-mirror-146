@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: AutoUpdatePypi
+Version: 0.0.1
+Summary: Auto Update Pypi Packages
+Home-page: UNKNOWN
+Author: Byte King
+Author-email: lixuannan2020@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+Auto Update Pypi Packages
+
