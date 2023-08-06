@@ -1,0 +1,9 @@
+napari-plugin-engine>=0.1.4
+numpy
+pyclesperanto_prototype
+scikit-learn
+napari-time-slicer
+matplotlib
+scipy
+napari-workflows
+napari-assistant>=0.1.9
