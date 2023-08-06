@@ -1,0 +1,2 @@
+include pysenti/original/*
+include pysenti/original/data/*
