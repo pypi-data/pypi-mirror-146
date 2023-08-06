@@ -1,0 +1,3 @@
+include ./shell-completion/.bb-complete.bash
+include ./shell-completion/.bb-complete.fish
+include ./shell-completion/.bb-complete.zsh
