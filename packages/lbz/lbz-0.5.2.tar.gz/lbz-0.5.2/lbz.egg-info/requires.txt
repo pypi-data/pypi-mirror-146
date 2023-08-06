@@ -1,0 +1,2 @@
+multidict<6.1.0,>=6.0.0
+python-jose<3.4.0,>=3.3.0
