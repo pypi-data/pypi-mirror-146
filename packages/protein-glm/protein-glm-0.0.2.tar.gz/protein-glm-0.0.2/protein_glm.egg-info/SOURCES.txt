@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+protein_glm/__init__.py
+protein_glm/protein_glm.py
+protein_glm.egg-info/PKG-INFO
+protein_glm.egg-info/SOURCES.txt
+protein_glm.egg-info/dependency_links.txt
+protein_glm.egg-info/requires.txt
+protein_glm.egg-info/top_level.txt
