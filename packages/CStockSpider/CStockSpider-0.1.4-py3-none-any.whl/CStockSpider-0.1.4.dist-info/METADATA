@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: CStockSpider
+Version: 0.1.4
+Summary: A module for fetching stock info and public stock company in China
+Home-page: https://github.com/me/myproject
+Author: Leo
+Author-email: me@example.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+An easy-used module for fetching data in China exchange
+Only for academic use
+
+here's the module structure and params instruction:
+class StockSpider(builtins.object)
+ |  爬取股票交易信息。
+ |  
+ |  Methods defined here:
+ |  
+ |  __init__(self)
+ |      对象参数成员：
+ |          url1：接口url
+ |          default_params1：数据属性
+ |  
+ |  get(self, exchange, code, start, end, params=None)
+ |      获取历史（按日）交易信息
+ |      :param exchange: 交易所信息  数据类型：int   交易所信息 0：上证交易所；1：深圳交易所
+ |      :param code: 股票代码   数据类型：str
+ |      :param start: 开始日期  数据类型：str    格式：yyyyMMdd
+ |      :param end: 结束日期    数据类型：str    格式：yyyyMMdd
+ |      :param params: 访问数据类型   数据类型：List[str]
+ |          TCLOSE: 收盘价
+ |          HIGH: 当日最高
+ |          LOW: 当日最低
+ |          TOPEN: 开盘价
+ |          LCLOSE: 前收盘
+ |          CHG: 涨跌额
+ |          PCHG: 涨跌幅
+ |          TURNOVER: 换手率
+ |          VATURNOVER: 成交量
+ |          VOTURNOVER: 成交金额
+ |          TCAP: 总市值
+ |          MCAP: 流通市值
+ |      
+ |      :return: DataFrame对象
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+
+None
+Help on class smSpider in module __main__:
+
+class smSpider(builtins.object)
+ |  获取报表（Statement）信息
+ |  
+ |  Methods defined here:
+ |  
+ |  __init__(self)
+ |      初始化
+ |      数据成员：
+ |          url1: 接口url
+ |          headers: 主要是用于存放UA伪装
+ |          encoding: 编码
+ |          type_ls: 报表类型 包括：资产负债表、利润表、现金流量表、财务报表摘要、主要财务指标（又包括：偿债能力、营运能力、盈利能力）
+ |          parts: 财务指标类型， 包括：偿债能力、盈利能力、营运能力
+ |  
+ |  get(self, code, sm_type, frequency='report', part='')
+ |      获取财报信息
+ |      :param code: 股票代码   数据类型：str
+ |      :param sm_type: 报表类型
+ |          可选参数: 资产负债表、利润表、资金流量表、财务报告摘要、主要财务指标
+ |      :param frequency: 频率    数据类型
+ |          可选参数: report、year
+ |      :param part: 主要财务指标追加参数
+ |          可选参数: 盈利能力、偿债能力、营运能力
+ |      :return: DateFrame对象
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+
+None
+Help on class holderSpider in module __main__:
+
+class holderSpider(builtins.object)
+ |  爬取持股信息
+ |  
+ |  Methods defined here:
+ |  
+ |  __init__(self)
+ |      初始函数
+ |      数据成员：
+ |          encoding: GBK编码
+ |          url1: 股东分析接口
+ |          url2: 基金持股接口
+ |          period: 报告期
+ |  
+ |  getDividen(self, code)
+ |      分红信息查询
+ |      :param code: 股票代码   数据类型：int
+ |      :return: DataFrame数据结构
+ |  
+ |  getFundHolders(self, code, year, period=1)
+ |      获取基金持股信息（按报告期）
+ |      :param code: 股票代码   数据类型：str
+ |      :param year: 年份 数据类型：int
+ |      :param period: 报告期 数据类型：int 可选参数：1、2、3、4
+ |      :return: DataFrame对象
+ |  
+ |  getFundHolders2(self, code, start, end)
+ |      获取基金持股信息（不推荐，参数格式要求高）
+ |      代码：复用getFundHolders，代码简化将在以后进行
+ |      :param code: 股票代码   数据类型：int
+ |      :param start: 开始日期  数据类型：str    必须符合报告期要求，包括：yyyy-03-31、yyyy-06-30、yyyy-09-30、yyyy-12-31
+ |      :param end: 结束日期    数据类型：str    必须符合报告期要求，与start参数要求一直
+ |      :return: DataFrame对象
+ |  
+ |  getTop10(self, code, year, period=1, lt=False)
+ |      获取10大股东信息
+ |      :param code: 股票编码   数据类型：str
+ |      :param year: 年份 数据类型：int
+ |      :param period: 报告期  数据类型：int    可选参数：1、2、3、4
+ |      :param lt: 是否是流通股
+ |      :return: DataFrame数据对象
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+
