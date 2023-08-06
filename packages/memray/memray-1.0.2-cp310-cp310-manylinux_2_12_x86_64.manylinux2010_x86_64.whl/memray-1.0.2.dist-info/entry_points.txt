@@ -1,0 +1,2 @@
+[console_scripts]
+memray3.10 = memray.__main__:main
