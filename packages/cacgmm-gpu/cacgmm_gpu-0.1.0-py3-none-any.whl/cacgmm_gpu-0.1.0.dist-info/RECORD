@@ -1,0 +1,11 @@
+cacgmm/__init__.py,sha256=ObYzjzGcRMgloPGLfQIdRA6iRvBDRfAl5giSjHg5muY,180
+cacgmm/cacg.py,sha256=bdnD0AWMqaqxzrTEYpnamyTsjKNl_WDmQWdPaF6E3S4,4477
+cacgmm/cacg_trainer.py,sha256=UFor1rDmwEtAtlhXT-1c-3kwMPzMSTPJ96gFhTEvQe0,4158
+cacgmm/cacgmm.py,sha256=XE_4aoHHtb_aY5lo1xQ3wAiR9Ptb3SMzOKYIS1fIvjQ,3063
+cacgmm/cacgmm_trainer.py,sha256=dbAHi7FG6AbxXR14XLwhTEGewwPmTsY-W9HJ-pIqeXk,7315
+cacgmm/utils.py,sha256=nPHjo3YW1v91BfQypDeCPG47DQCZ6cl3_EdcbMY6Low,3249
+cacgmm_gpu-0.1.0.dist-info/LICENSE,sha256=0jWdfCfpe8pjgn9WozQhRZdNL-4CQHs31__4ajGVS8Q,1065
+cacgmm_gpu-0.1.0.dist-info/METADATA,sha256=TkAviXsOFFOe9zo7xk4lCnixdfWJIh2IubdLK1f6NYk,1599
+cacgmm_gpu-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cacgmm_gpu-0.1.0.dist-info/top_level.txt,sha256=HMPwKismUcnjxoeHTZZQHPKQKkoL1qpZij2mtuQmud4,7
+cacgmm_gpu-0.1.0.dist-info/RECORD,,
