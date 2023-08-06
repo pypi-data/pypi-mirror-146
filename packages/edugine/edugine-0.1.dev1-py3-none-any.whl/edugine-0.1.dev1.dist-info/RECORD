@@ -1,0 +1,16 @@
+edugine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edugine/widget.py,sha256=tiOPG7_VzMEntMBsAlZaS8y8Xuzq51gtdyzM25W4tiM,830
+edugine/core/__init__.py,sha256=5Imady3RYry2jsNBWfGkQDAcN526mJhMM3rxvlQzFLI,5720
+edugine/core/gui.py,sha256=I3qGLIxU0mA9lf63p8106MFP7N5FsVnKQlGpnwC0WRs,18593
+edugine/gridgame/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edugine/gridgame/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edugine/gridgame/core/controllers.py,sha256=isqIaPRnltgBcU_nNAX93NnoOfBiWuZqZd1wgznUQF4,1051
+edugine/gridgame/core/models.py,sha256=42jEUCRTAPlS5dY4sMFKJVLGRW9nd1VzPHXaBMnE9rs,5386
+edugine/gridgame/pyglet/__init__.py,sha256=qx6S9kRhpjB3u4m2phQZRvJ6veIccXQJ0jDL4YRCInA,9695
+edugine/pyglet/__init__.py,sha256=7MWI8ZBg0k9eQ8RrqlRhmMVLIE5gG6fPHSxcHBunzHc,2536
+edugine/pyglet/gui.py,sha256=b8j6HWo1fp7hlz9AApmQVDd7c7wwsvXBQ6ED7NtzEOQ,575
+edugine-0.1.dev1.dist-info/LICENSE,sha256=tqi_Y64slbCqJW7ndGgNe9GPIfRX2nVGb3YQs7FqzE4,34670
+edugine-0.1.dev1.dist-info/METADATA,sha256=eFmUJzsVhQ4rx0aNtjn6zWvcusTxn9YbOxuVGTlHveo,1027
+edugine-0.1.dev1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+edugine-0.1.dev1.dist-info/top_level.txt,sha256=bH7Lt2Fgm76XZ4rG8us12aAh4IKlqSxNAHvOWEEnNJE,8
+edugine-0.1.dev1.dist-info/RECORD,,
