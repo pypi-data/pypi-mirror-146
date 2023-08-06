@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: csv-remapper
+Version: 1.1.5
+Summary: A GUI/CLI tool for manipulating CSV file data 
+Author-email: Andrej Perfilov <andrej.perfilov@ymail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PySide2
+Requires-Dist: python-dateutil
+Project-URL: Home, https://github.com/p3rfilov/csv-remapper
+
+# CSV Remapper
+
+A GUI/CLI tool for manipulating CSV file data
+
+## Description
+
+Allows you to remap, extract and combine data from multiple CSV sources.
+Key features:
+- Easy to use GUI for creating mapping Templates and processing files
+- Batch-remap files using command line interface
+- Combine data from multiple csv sources
+- Extract data using Regex
+- Omit data based on predefined values
+
+## Getting Started
+
+### Dependencies
+
+* Python 3.7 or higher
+
+### Installing
+
+```
+pip install csv-remapper
+```
+
+### Executing
+
+Display help:
+```
+csv-remapper -h
+```
+
+Run in GUI mode:
+```
+csv-remapper
+```
+
+## Workflow
+
+...
+
