@@ -1,0 +1,14 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>icons/checkbox_checked.svg</file>
+    <file>icons/checkbox_unchecked.svg</file>
+    <file>icons/down.svg</file>
+    <file>icons/down_disabled.svg</file>
+    <file>icons/up.svg</file>
+    <file>icons/up_disabled.svg</file>
+    <!--
+    <file>audio/big_bell[cc0].wav</file>
+    <file>audio/small_bell_short[cc0].wav</file>
+    -->
+</qresource>
+</RCC>

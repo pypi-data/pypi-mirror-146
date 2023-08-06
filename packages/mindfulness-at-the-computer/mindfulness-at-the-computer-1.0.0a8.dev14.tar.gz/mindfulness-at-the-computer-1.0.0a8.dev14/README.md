@@ -1,0 +1,63 @@
+[![Awesome Humane Tech](https://raw.githubusercontent.com/humanetech-community/awesome-humane-tech/main/humane-tech-badge.svg?sanitize=true)](https://github.com/humanetech-community/awesome-humane-tech)
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/mindfulness-at-the-computer/community)
+[![pipeline](https://gitlab.com/mindfulness-at-the-computer/mindfulness-at-the-computer/badges/master/pipeline.svg)](https://gitlab.com/mindfulness-at-the-computer/mindfulness-at-the-computer/-/pipelines/latest)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+# Mindfulness at the Computer
+
+This application reminds you to take breaks from the computer, helps you remember to stay in touch with and be mindful of your breathing and body while sitting at the computer, and helps you concentrate on breathing in and out when you need a breathing pause.
+
+**The [application website](https://mindfulness-at-the-computer.gitlab.io) has more information** (including screenshots and downloads).
+
+The application is written in Python and uses Qt/PyQt for the front-end.
+
+License: GPLv3
+
+Social: [**Gitter chat**](https://gitter.im/mindfulness-at-the-computer/community)
+
+*This project is beginner-friendly:* You can ask for help in the Gitter chat room and we will try to help you. Also we try to provide documentation useful for newcomers.
+
+## Motivation when contributing to this project
+
+> *"Don't do anything except with the joy of a small child feeding a hungry duck"*
+
+By feeding the hungry duck, you are helping their well-being and making them happy. You’re not feeding it just because you feel like you *should* or *ought* to, but because it makes both of you happy. That’s how we’d love for you to help with this project! When you contribute, not only are you are helping this project, you are helping others who will use this application, helping them to be mindful whilst working at the computer and to be aware of their breathing and well-being. 
+
+## Project and Software Goals
+
+Project goals:
+* Providing a friendly environment for people new to software and development to contribute and improve their skills
+* Promoting [free/libre software](https://www.gnu.org/philosophy/free-sw.en.html) (free as in freedom!) - and helping people see free software in the context of human rights
+
+Software goals:
+* Increasing mindfulness of breathing, body, and posture. Helping people become more aware of (and kind to) their bodies when using the computer for long periods of time
+* Reminding people to take breaks from the computer
+
+## Developer documentation
+
+Most documents are located in the [docs directory](docs/). There's also a [wiki](https://gitlab.com/mindfulness-at-the-computer/mindfulness-at-the-computer/wikis/home) that is open for editing
+
+Some important documents:
+* [**CONTRIBUTING**](CONTRIBUTING.md)
+  * [Translations](CONTRIBUTING.md#translations)
+* [Technical Architecture](docs/tech-architecture.md)
+* [Running the application from source](docs/howto/running-from-source.md)
+
+[Markdown](https://about.gitlab.com/handbook/product/technical-writing/markdown-guide/) is used for the text documents. [draw.io](https://www.draw.io/) is used for editing the `.xml` files.
+
+## What is Mindfulness?
+
+When we spend many hours in front of our computer screen, focused on solving problems, we may forget that we also have a body. Unnoticed we build up a lot of tension in our body because of bad posture or stress.
+
+With mindfulness, we can become aware of our breathing and our body. This gives us the possibility to notice if there is tension, and then relax our muscles or take a break. Or maybe we are hungry and need to eat something. We may even become aware that we are running around in circles trying to solve a problem. A break may give us a breakthrough.
+
+Mindfulness can also help when we are dealing with negative emotions. When we become aware of them, we can stop, go back to our breathing and relax.
+
+Being mindful means being aware of the present moment in an open and accepting way. What is going on in the here and the now, in the room, in our body, in our mind?
+
+Have a look at these links for more information.
+
+* https://en.wikipedia.org/wiki/Mindfulness
+* http://franticworld.com/what-is-mindfulness/
+* https://www.youtube.com/watch?v=3nwwKbM_vJc&t=1s
+* https://www.youtube.com/watch?v=mjtfyuTTQFY
