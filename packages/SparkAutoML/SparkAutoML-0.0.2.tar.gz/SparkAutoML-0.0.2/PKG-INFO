@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: SparkAutoML
+Version: 0.0.2
+Summary: For an easy implementation of spark's ml  
+Author: Fahad Akbar
+Author-email: <fahadakbar@gmail.com>
+License: UNKNOWN
+Keywords: python,spark,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+
+# SparkAutoML
+
+### This is a TRIAL version
+
+The main idea of the package is to quickly build and deploy pyspark's ml models
+
+If you want to contribute please reachout to fahadakbar@gmail.com
+
+Thanks
+
+
