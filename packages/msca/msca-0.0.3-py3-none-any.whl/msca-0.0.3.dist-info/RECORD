@@ -1,0 +1,17 @@
+msca/__about__.py,sha256=vvqbQ2E7Ij4ohHSrixPu5Z8UrsaSjkalQO-tQYIiJGI,508
+msca/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msca/c2fun/__init__.py,sha256=8D5a8oKgqd6WA1RUkiKCn4l_PVemtyuckxQut0vDHXM,20
+msca/c2fun/main.py,sha256=xDQRbklZssnUzxsXKm8XvDNengFyF4zsPwlc9tfZoPg,12660
+msca/linalg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msca/linalg/matrix.py,sha256=6hRcTSTyvsWnCtAbpsF_YTRuH4doZ1gxrazlk0qs7YU,7466
+msca/optim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msca/optim/prox/__init__.py,sha256=e5LkLaHvbDCYMT5OkSD_8ONYGjyoWbbYUuZCdJZ02lc,48
+msca/optim/prox/capped_simplex.py,sha256=7_XVhNex-tih_V_CxavMyPWW2wpZ3OPdymE4pyQe0WQ,2172
+msca/optim/solver/__init__.py,sha256=HoMZfgh_oUhkGPiYTftREofVwHM3WNJ0GX4JsIg39Uw,62
+msca/optim/solver/ipsolver.py,sha256=bGXe1TQ61qu3q9wia5YC_g2qzNAr_IWvEJ5ldBjscFs,6745
+msca/optim/solver/ntsolver.py,sha256=-gmdSXu91_HalArVqnlDQ580akOqb1n7UL14_43egxY,3907
+msca-0.0.3.dist-info/LICENSE,sha256=63w0xbN99sgqV5CB-FQxrw5Elm64xVcg0EzzZDSPhWA,1328
+msca-0.0.3.dist-info/METADATA,sha256=Emz8ZHcbJlVoSE_vvaEagZwgArNGyuiuQMJ34CYMRu0,1071
+msca-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+msca-0.0.3.dist-info/top_level.txt,sha256=tT5TlPi3O2x7qDbZ4dEVkWBz9-Y96a60Qqa8bzezgA8,5
+msca-0.0.3.dist-info/RECORD,,
