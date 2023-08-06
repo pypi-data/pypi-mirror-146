@@ -1,0 +1,15 @@
+django_gazing_select_widget/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_gazing_select_widget/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_gazing_select_widget/apps.py,sha256=mgsvcHE0XABytXKu133b5kwIAL2r9nAyulemqM9qOPA,126
+django_gazing_select_widget/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_gazing_select_widget/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_gazing_select_widget/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_gazing_select_widget/widgets.py,sha256=oPpl5DljAirJV-B869LeUTaNLKWoiVAtn1yMyZo-TrY,2390
+django_gazing_select_widget/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_gazing_select_widget/static/django-gazing-select-widget/js/django-gazing-select-widget.js,sha256=zAmEhjR_6x8qho54ijT8xYMhQI-hOlDCSl90edHW5jI,3367
+django_gazing_select_widget/templates/django-gazing-select-widget/django-gazing-select-widget.html,sha256=gp0ZiM1XELoK1-B91_cpQTHiaYNtPtLoSM9h6dRlzns,49
+django_gazing_select_widget-0.1.2.dist-info/LICENSE,sha256=830tSKpSA0GRFwrvooavlyskTlSN2vZgOLPVo4IPlKg,1067
+django_gazing_select_widget-0.1.2.dist-info/METADATA,sha256=FG1Scq-mXY-1tCN2KA7236Ql3hGPJkdpKsEGLoxdDi0,4057
+django_gazing_select_widget-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_gazing_select_widget-0.1.2.dist-info/top_level.txt,sha256=K64fq3i6Fulm0UfFw06HomWnFdOvsyM1B4REgrunLh4,28
+django_gazing_select_widget-0.1.2.dist-info/RECORD,,
