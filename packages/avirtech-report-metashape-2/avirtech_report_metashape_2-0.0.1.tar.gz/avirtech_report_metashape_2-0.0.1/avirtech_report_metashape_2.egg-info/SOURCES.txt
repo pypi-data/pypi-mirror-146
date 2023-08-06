@@ -1,0 +1,8 @@
+README.md
+setup.py
+avirtech_report_metashape_2.egg-info/PKG-INFO
+avirtech_report_metashape_2.egg-info/SOURCES.txt
+avirtech_report_metashape_2.egg-info/dependency_links.txt
+avirtech_report_metashape_2.egg-info/top_level.txt
+generate_merge_report_camera/__init__.py
+generate_merge_report_camera/generate_merge_report_camera.py
