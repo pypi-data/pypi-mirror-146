@@ -1,0 +1,7 @@
+freqtrade_custom_indicators/__init__.py,sha256=RozMQefWo0BiDvP2HqPI5VFCaDCN7fSBiiDDaJh0F_w,445
+freqtrade_custom_indicators/squeeze.py,sha256=Ce6YMXOzD3KTWfuieGpXo7Kr95omaCrgHI0yQDr47pA,2056
+freqtrade_custom_indicators/tsv.py,sha256=OTvmziR1Mu0Fhs9XgiIxMXgKs4fgIQ2f2ko9Sy2woWY,1311
+freqtrade_custom_indicators-0.2.1.dist-info/LICENSE,sha256=xZ_IniJHwrGuML1X4aQTRIXIz4_yLjkaKelfBdnO_qk,1092
+freqtrade_custom_indicators-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+freqtrade_custom_indicators-0.2.1.dist-info/METADATA,sha256=MfK06mNjvzPhIMnQ2AZLN2lWWKwOK3R-luEL8e4ZQco,14469
+freqtrade_custom_indicators-0.2.1.dist-info/RECORD,,
