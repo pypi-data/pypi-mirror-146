@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/durandal/__init__.py
+src/durandal/nlp.py
+src/durandal.egg-info/PKG-INFO
+src/durandal.egg-info/SOURCES.txt
+src/durandal.egg-info/dependency_links.txt
+src/durandal.egg-info/requires.txt
+src/durandal.egg-info/top_level.txt
+test/test_initalization.py
+test/test_solve.py
+test/test_supporting_hyperplane.py
