@@ -1,0 +1,2 @@
+[console_scripts]
+pronunciation-dictionary-cli = pronunciation_dictionary.cli:run
