@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ifttt/__init__.py
+ifttt/notice.py
+ifttt_notice_sdk.egg-info/PKG-INFO
+ifttt_notice_sdk.egg-info/SOURCES.txt
+ifttt_notice_sdk.egg-info/dependency_links.txt
+ifttt_notice_sdk.egg-info/requires.txt
+ifttt_notice_sdk.egg-info/top_level.txt
