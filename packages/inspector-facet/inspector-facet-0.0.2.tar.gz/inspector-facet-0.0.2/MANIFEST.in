@@ -1,0 +1,2 @@
+include ./inspector_facet/abis/*.json
+include ./inspector_facet/version.txt
