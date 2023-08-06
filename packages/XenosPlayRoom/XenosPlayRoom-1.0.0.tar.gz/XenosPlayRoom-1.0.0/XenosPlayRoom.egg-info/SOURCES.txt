@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+requirements.txt
+setup.py
+XenosPlayRoom.egg-info/PKG-INFO
+XenosPlayRoom.egg-info/SOURCES.txt
+XenosPlayRoom.egg-info/dependency_links.txt
+XenosPlayRoom.egg-info/top_level.txt
+room/GUI.py
+room/Run.py
+room/__init__.py
+room/download.py
