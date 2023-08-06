@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mini-scripts
+Version: 0.1.0
+Summary: 
+Author: lordralinc
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pymorphy2 (>=0.9.1)
+Requires-Dist: pytz (>=2022.1)
