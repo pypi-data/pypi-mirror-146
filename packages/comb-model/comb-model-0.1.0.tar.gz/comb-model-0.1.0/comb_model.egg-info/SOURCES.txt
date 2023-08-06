@@ -1,0 +1,11 @@
+LICENSE.rst
+README.rst
+setup.cfg
+setup.py
+comb_model.egg-info/PKG-INFO
+comb_model.egg-info/SOURCES.txt
+comb_model.egg-info/dependency_links.txt
+comb_model.egg-info/requires.txt
+comb_model.egg-info/top_level.txt
+combmodel/__init__.py
+combmodel/combmodel.py

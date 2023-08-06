@@ -1,0 +1,4 @@
+stochastic
+numpy
+tqdm
+scipy
