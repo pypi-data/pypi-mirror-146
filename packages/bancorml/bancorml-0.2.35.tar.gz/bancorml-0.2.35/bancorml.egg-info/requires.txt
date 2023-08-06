@@ -1,0 +1,8 @@
+pandas
+numpy
+pydantic
+fxpmath
+matplotlib
+eth-brownie
+
+[complete]
