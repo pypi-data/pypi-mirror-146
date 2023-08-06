@@ -1,0 +1,2 @@
+recursive-include languagestring/assets *.txt
+recursive-include languagestring *.py
