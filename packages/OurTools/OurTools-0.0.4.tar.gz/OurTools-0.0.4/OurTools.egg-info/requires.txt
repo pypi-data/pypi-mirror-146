@@ -1,0 +1,3 @@
+pytorch
+numpy
+line_profiler
