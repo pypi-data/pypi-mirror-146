@@ -1,0 +1,10 @@
+table2sql/__init__.py,sha256=uD1WDMLeI8x9wdDwQWsiWxKdGjbIRq4VHdm_PpSJ46g,94
+table2sql/cli.py,sha256=vjEujMde-ykE4f9r4t-8SfuDTaS9xKTmJRM9_DErRoQ,1393
+table2sql/converters/from_csv.py,sha256=BevbzV5BdyhyjBTydGsN85bDh1V64v8tVVh59BdrYhs,262
+table2sql/converters/from_excel.py,sha256=N2wxfMezRC4S1buURYbgEVuvTzora8ladNko5M4kwOE,458
+table2sql/helpers.py,sha256=4nxOXnThj_y-czf0pGVDDx3qFpd3uY3dZcxdezAFLNg,148
+table2sql/main.py,sha256=5q-ou4O6kXr27FJmTYQHpo1ZKIp6RDaN7WoyD_nDQVo,4656
+table2sql-1.0.1.dist-info/entry_points.txt,sha256=SazHIJxo5uK3cOb0l7_C6U2kz4SPG3KkkBo8yl1aHXE,53
+table2sql-1.0.1.dist-info/WHEEL,sha256=KXNDfOTTCr-VyxnCJDozfJ6nmi3hNN9RABDaCXBsNak,85
+table2sql-1.0.1.dist-info/METADATA,sha256=vvritiiXHWDzPrW9UiKrf_E4jN-n-1h7zWpSqMlascg,2351
+table2sql-1.0.1.dist-info/RECORD,,

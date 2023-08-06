@@ -1,0 +1,3 @@
+[console_scripts]
+table2sql=table2sql.cli:table2sql
+
