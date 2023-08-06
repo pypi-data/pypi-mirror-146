@@ -1,0 +1,3 @@
+[console_scripts]
+ninjaparser = ninjaparser:main
+
