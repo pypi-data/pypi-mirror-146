@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nanobind
+Version: 0.0.3
+Summary: Seamless operability between C++17 and Python
+Home-page: https://github.com/wjakob/nanobind
+Author: Wenzel Jakob
+Author-email: wenzel.jakob@epfl.ch
+License: BSD
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+_nanobind_ is a small binding library that exposes C++ types in Python and
+vice versa. It is reminiscent of
+_[Boost.Python](https://www.boost.org/doc/libs/1_64_0/libs/python/doc/html)_
+and _[pybind11](http://github.com/pybind/pybind11)_ and uses near-identical
+syntax. In contrast to these existing tools, _nanobind_ is more _efficient_:
+bindings compile in a shorter amount of time, producing smaller binaries with
+better runtime performance.
+
