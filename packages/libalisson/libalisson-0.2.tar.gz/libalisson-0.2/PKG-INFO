@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: libalisson
+Version: 0.2
+Summary: modulo para exemplificar construção de projetos python no curso pytools
+Home-page: https://github.com/AlissonLGoncalves/libalisson
+Author: Alisson Luiz Gonçalves
+Author-email: alisson.16lg@gmail.com
+License: LICENSE
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Pytest
+License-File: LICENSE
+
+# libalisson
+mÃ³dulo para exemplificar construÃ§Ã£o de projetos Python no curso PyTools
+
+Nesse teste estou buscando entender como contribuir com projetos de cÃ³digo aberto.
+
+[![Build Status](https://app.travis-ci.com/AlissonLGoncalves/libalisson.svg?branch=main)](https://app.travis-ci.com/AlissonLGoncalves/libalisson)
+[![Updates](https://pyup.io/repos/github/AlissonLGoncalves/libalisson/shield.svg)](https://pyup.io/repos/github/AlissonLGoncalves/libalisson/)
+
+Suportada a versÃ£o 3 de python
+
+Para instalar:
+
+'''console
+python3 -m venv .venv
+source .venv\Scripts\activate
+pip instal -r requirements-dev.txt
+'''
+
+Para conferir o cÃ³digo
+
+'''console
+flake8
+'''
+tÃ³picos a serem abordados:
+1. Git
+2. Virtualenv
+3. Pip
+
