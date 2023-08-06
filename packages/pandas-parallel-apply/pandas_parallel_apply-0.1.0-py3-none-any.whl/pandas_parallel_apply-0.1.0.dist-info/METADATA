@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pandas-parallel-apply
+Version: 0.1.0
+Summary: Wrapper for df and df[col].apply parallelized
+Home-page: https://gitlab.com/mihaicristianpirvu/pandas-parallel-apply
+License: WTFPL
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# pandas-parallel-apply
+
+`df.apply(fn)` and `df[col].apply(fn)` wrappers with tqdm included
+
+## Installation
+
+`pip install pandas-parallel-apply`
+
+## Usage
+
+### Apply on each row of a dataframe
+
+`df.apply(fn)` -> `apply_on_df_parallel(df: pd.DataFrame, fn: Callable, n_cores: int, pbar: bool = True)`
+
+### Apply on a column of a dataframe and return the Series
+
+`df[col].apply(fn)` -> `apply_on_df_col_parallel(df: pd.DataFrame, col_name: str, fn: Callable, n_cores: int, pbar: bool = True)`
+
+### Switches for boolean parallel/non-parallel
+
+`apply_on_df_maybe_parallel(df: pd.DataFrame, fn: Callable, parallel: bool, n_cores: int, pbar: bool = True)`
+
+and
+
+`apply_on_df_col_maybe_parallel(df: pd.DataFrame, col_name: str, fn: Callable, parallel: bool, n_cores: int, pbar: bool = True)`
+
+
+That's all.
+
+
