@@ -1,0 +1,3 @@
+[pyworkflow.plugin]
+prody2 = prody2
+
