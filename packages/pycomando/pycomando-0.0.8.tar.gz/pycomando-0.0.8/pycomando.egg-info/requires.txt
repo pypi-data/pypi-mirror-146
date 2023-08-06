@@ -1,0 +1,8 @@
+argcomplete
+rich
+tabulate
+redis
+pandas
+eland
+elasticsearch
+PyYAML
