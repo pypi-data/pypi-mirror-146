@@ -1,0 +1,13 @@
+pymultirole_plugins/__init__.py,sha256=oM0O-X6vGruuh6XQXVV1m00Nec-j8pbJ6PBQFbXbs8o,55
+pymultirole_plugins/schema.py,sha256=GrtkkECRigjibpbfo-tgrzcPju-M1138KpcUic5eSt0,318
+pymultirole_plugins/util.py,sha256=JqBFSmVLyj_YsG_tc5NObLEYRxR0yRkIomNV_7E-Al0,1238
+pymultirole_plugins/v1/__init__.py,sha256=3sJgnt4sXJTBGUPr9TjqC6mwWEG-c9PFFz6oK8t68qQ,104
+pymultirole_plugins/v1/annotator.py,sha256=syg__KQ9duoBYWYcsCrZDgNiXMEFdxumRfobAJcVSRI,813
+pymultirole_plugins/v1/converter.py,sha256=tXIiw4E5EswTdZWHGf2bpwGs5_0qrbrVwFbqV9DBFtw,934
+pymultirole_plugins/v1/formatter.py,sha256=ythBXuOOAAf-_IkP7uJheDN8HQWc8iv2O3LXyTplHA0,814
+pymultirole_plugins/v1/processor.py,sha256=6RV4IbWIgJ-2wXCBh-7TlYqiLCcxAy24LLf2sHuO7Ig,826
+pymultirole_plugins/v1/schema.py,sha256=OYmCO5wKAXD3eC1goT_XJYsAusgeghAGnT2txry8GlY,5969
+pymultirole_plugins/v1/segmenter.py,sha256=INlrs2BZs8NYhxAgcX9lqI6b17AGBc-oCBwQgrV20Uc,826
+pymultirole_plugins-0.5.157.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+pymultirole_plugins-0.5.157.dist-info/METADATA,sha256=Hs0itcCH109_7_sRpkg87F5-t2B74s6-RJBtjKw1vUs,1702
+pymultirole_plugins-0.5.157.dist-info/RECORD,,
