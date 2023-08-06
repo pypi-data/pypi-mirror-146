@@ -1,0 +1,10 @@
+setup.py
+linearAlgebraOperations/__init__.py
+linearAlgebraOperations/basicOperations.py
+linearAlgebraOperations/globalFunctions.py
+linearAlgebraOperations/matrixOperations.py
+linearAlgebraVectorMath.egg-info/PKG-INFO
+linearAlgebraVectorMath.egg-info/SOURCES.txt
+linearAlgebraVectorMath.egg-info/dependency_links.txt
+linearAlgebraVectorMath.egg-info/requires.txt
+linearAlgebraVectorMath.egg-info/top_level.txt
