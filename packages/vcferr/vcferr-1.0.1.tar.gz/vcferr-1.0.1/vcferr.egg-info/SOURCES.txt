@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+vcferr/__init__.py
+vcferr/__main__.py
+vcferr/err.py
+vcferr.egg-info/PKG-INFO
+vcferr.egg-info/SOURCES.txt
+vcferr.egg-info/dependency_links.txt
+vcferr.egg-info/entry_points.txt
+vcferr.egg-info/not-zip-safe
+vcferr.egg-info/requires.txt
+vcferr.egg-info/top_level.txt
