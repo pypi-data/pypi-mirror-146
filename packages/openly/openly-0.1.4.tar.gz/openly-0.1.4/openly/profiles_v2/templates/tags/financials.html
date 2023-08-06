@@ -1,0 +1,61 @@
+{% load i18n %}
+{% load profiles_filters %}
+
+{% trans 'How is this calculated?' as how_calcuated %}
+<financials>
+    <div class="row">
+        <div class="col-xs-4 col-sm-4">
+            {% blocktrans asvar aidtypebycategories_help %}This chart shows the total funds directly provided by the donor by Aid Type Category.{% endblocktrans %}
+            <h4>{%  trans "Aid Type by Categories" %}
+                <a id="category_value" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{{how_calcuated|escape}}" data-content="{{aidtypebycategories_help|escape}}" ></a>
+            </h4>
+            <div id="aid_type_category_breakdown"></div>
+        </div>
+        <div class="col-xs-4 col-sm-4">
+            {% blocktrans asvar activitybystatus_help %}This chart shows the percentage of all funds allocated by {{activity_singular_lower}} status.{% endblocktrans %}
+            <h4>{% blocktrans %}{{activity_plural}} Status & Percentage{% endblocktrans %}
+                <a id="status_percent" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{{how_calcuated|escape}}" data-content="{{activitybystatus_help|escape}}" ></a>
+            </h4>
+            <div if={ !activity_status_percentages } >{% trans 'Loading' %}</div>
+            <div id="activities_status_percentage"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-8 col-sm-8">
+            {% blocktrans asvar transactionbyyear_help %}This chart shows the total assistance for all {{activity_plural_lower}} the development partner is associated with.{% endblocktrans %}
+            <h4 class="profile_subheader text-center">{% trans 'Commitments, Disbursements & Expenditures' %}
+                <a id="cumulative_com_disb" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{{how_calcuated|escape}}" data-content="{{transactionbyyear_help|escape}}" ></a>
+            </h4>
+            <br />
+            <div if={ !transactions_by_year } >{% trans 'Loading' %}</div>
+            <div id="activities_by_year"></div>
+        </div>
+    </div>
+    <div class="page-break"></div>
+    <div class="row">
+        <div class="col-xs-8 col-sm-8">
+            {% blocktrans asvar activitybystatus_help %}This chart shows the number and total value of all {{activity_plural_lower}} the development partner is associated with based on the {{activity_singular_lower}} status.{% endblocktrans %}
+            <h4 class="profile_subheader text-center">{% blocktrans %}{{activity_plural}} by Status & Value{% endblocktrans %}
+                <a id="status_value" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{{how_calcuated|escape}}" data-content="{{activitybystatus_help|escape}}" ></a>
+            </h4>
+            <div if={ !activity_status_data } >{% trans 'Loading' %}</div>
+            <div id="activities_by_status"></div>
+        </div>
+    </div>
+
+    <style>
+        #aid_type_category_breakdown .c3-chart-arc text, #activities_status_percentage .c3-chart-arc text {
+            font-size:  12px;
+            paint-order: stroke;
+            stroke: white;
+            fill: black;
+            stroke-width: 1px;
+            stroke-linecap: butt;
+            stroke-linejoin: miter;
+            font-weight: 600;
+        }
+    </style>
+
+    {% include 'tags/financials.js' %}
+
+</financials>

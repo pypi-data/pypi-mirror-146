@@ -1,0 +1,180 @@
+{% extends 'dashboard/base.html' %}
+{% load i18n %}
+
+
+{% block nav_pulldown %}
+    <div class="btn-group sub-nav_pulldown">
+        <button type="button" class="btn btn-input dropdown-toggle drop-caret dash_subnav" data-toggle="dropdown">
+            {% if current_donor %} {{ current_donor.name }}
+            {% else %} {% trans "All Donors" %} {% endif %}
+        </button>
+        <ul class="dropdown-menu dash_subnav" role="menu">
+            <li><a href="{% url 'aid_by_donor' %}">{% trans "All Donors" %}</a></li>
+            {% for code, name in donors %}
+            <li><a href="{% url 'aid_by_donor' donor=code%}">{{ name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+
+
+{% block local_content %}
+<div class="container">
+    <h1 class="CompareTitle">
+        {% trans "Aid by Donor" %}
+        <a id="commitChart" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="" data-content="This chart shows the total amount of development assistance committed by donor partners (including grants, loans, debt relief and other forms of assistance) for activities currently being implemented. This chart corresponds to the date filter above. Filters are also available." data-original-title=""></a>
+    </h1>
+    <p class="CompareSubtitle">
+        {% blocktrans with site=site_name|default:'Openly' %}
+        The reports allow us to export and disaggregate aid data reported to {{site}}
+        {% endblocktrans %}
+    <div class="row donor_commit_row_1">
+        <div class="col-sm-12 col-md-12">
+            <br />
+            <h4 class="stats text-center">{% trans "Commitment by Donor" %}
+             <a id="commitChart" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Commitment by Donor' %}" data-content="{% trans 'This chart shows the total amount of development assistance committed by development partners. This chart corresponds to the date filter above.' %}" ></a>
+            </h4>
+            <p class="chart_instructions text-center">{% trans 'click on an individual chart bar below to filter the statistics by that specific donor' %}</p>
+            <br />
+            <div id="donor_commitments"></div>
+            <br />
+        </div>
+
+        <div class="col-xs-12">
+            <h5 class="stats align-center">{{count}} total activities</h5>
+        </div>
+
+        <div class="col-sm-5 col-md-5 donor_row_1">
+            <h4 class="stats align-center">{% trans "Commitment by Aid Sector" %}
+                <a id="comit_cat" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Commitment by Aid Sector' %}" data-content="{% trans 'This chart shows the total amount of commitments from development partners by aid sector.' %}" ></a>
+            </h4>
+            <div id="sector_commitments"></div>
+        </div>
+
+        <div class="col-sm-7 col-md-7 donor" >
+            <div class="row donor_row_1">
+                <div class="col-sm-6 col-md-6 dots_right stats_block">
+                    <h3 class="stats align-center">{% trans "Total Donors" %}
+                        <a id="tot_don" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Total Donors' %}" data-content="{% trans 'This is the total number of development partners.' %}" ></a>
+                    </h3>
+                    <div class="count_block">
+                        <p class="big_count align-center">{{donors_count}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border_btm"></div>
+            <div class="row donor_row_2">
+
+                <div class="col-sm-6 col-md-6 stats_block commitment-block">
+                    <h3 class="stats align-center">{% trans "Total Commitment" %}
+                        <a id="tot_comit" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Total commitment' %}" data-content="{% trans 'This is the total amount of development assistance committed across all activities. This amount corresponds to the date filter.' %}"></a>
+                    </h3>
+                    <div class="count_block">
+                        <p class="big_count align-center"><span class="big_bucks">$</span>{{donors_commitment.0|floatformat:"2"}}
+                        <p class="count_suffix align-center">{{donors_commitment.1}}</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 dots_right stats_block">
+                    <h3 class="stats align-center">{% trans "Total Disbursements" %}
+                        <a id="tot_exe" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Total disbursements' %}" data-content="{% trans 'This is the total amount of development assistance disbursed. This amount corresponds to the date filter.' %}" ></a>
+                    </h3>
+                    <div class="count_block">
+                        <p class="big_count align-center"><span class="big_bucks">$</span>{{donors_disbursement.0|floatformat:"2"}}<p class="count_suffix">{{donors_disbursement.1}}</p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border_btm"></div>
+            <div class="row donor_row_3">
+                <div class="col-sm-4 col-md-4">
+                  <h5 class="stats align-center">{% trans "Activities by Ministry" %}
+                      <a id="comit_min" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Activities by Ministry' %}" data-content="{% trans 'This chart shows the total number of activities associated with each relevant partner Ministry. This chart corresponds to the date filter.' %}" ></a>
+                  </h5>
+                  <div id="donut_commitment_ministry" class="donor-donut"></div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                <h5 class="stats align-center">{% trans "Loans Vs Grants" %}
+                   <a id="tot_loan_grant" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover"  title="{% trans 'Loans vs Grants' %}" data-content="{% trans 'This chart shows the breakdown of commitment transactions between loans and grants.' %}" ></a>
+                </h5>
+                   <div id="donut_loans_grants" class="donor-donut"></div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                  <h5 class="stats align-center">{% trans "Commitment by Status" %}
+                      <a id="tot_proj" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Commitment by status' %}" data-content="{% trans 'This chart shows the total committed value of activities by status (i.e. pipeline, implementation, completed, or post-completion). This chart corresponds to the date filter.' %}" ></a>
+                  </h5>
+                  <div id="donut_activities_status" class="donor-donut"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock local_content %}
+
+{% block local_scripts %}
+
+    <!--Popover-->
+
+    <script>
+        $(function ()
+        {
+            $("#tot_comit").popover({placement:'left'});
+            $("#commitChart").popover({placement:'right'});
+            $("#tot_don").popover({placement:'top'});
+            $("#tot_exe").popover({placement:'top'});
+            $("#comit_min").popover({placement:'top'});
+            $("#tot_loan_grant").popover({placement:'top'});
+            $("#don_type").popover({placement:'top'});
+            $("#tot_proj").popover({placement:'left'});
+            $("#per_exe").popover({placement:'left'});
+            $("#comit_cat").popover({placement:'top'});
+        });
+    d3.select(window).on('resize', resize_window);
+    </script>
+
+    <!--Donut Graph for Loans VS Grants-->
+
+    <script>
+        // Uses the "mixdonut" function defined in this template's superclass to generate chart data
+        window.chart_data = {
+            donuts: {
+                donut_commitment_ministry: mixdonut({by: 'ministry', money: true, property: 'dollars', currencysymbol: ' ', count: 5}),
+                donut_activities_status:mixdonut({by:'status', money: true, property:'dollars', count:20 }),
+                donut_loans_grants: mixdonut({by: 'financetype', money: true, property: 'dollars', currencysymbol: ' ', count: 20})
+            },
+            horizontal_bars: {
+                sector_commitments: mixdonut({by: 'category', money: true, property: 'dollars', currencysymbol: ' ', count: 20})
+            },
+            bars: {
+                donor_commitments: mixdonut({by:'donor', count:20, money:true, currencysymbol:' '})
+            },
+            click: {
+                donor_commitments: function click_donor(d){document.location = "{% url 'aid_by_donor' %}"+d.code}
+            }
+        };
+
+        $(function graphChartData() {
+            _(window.chart_data.donuts).each(function (data, id) {
+                var height = 155;
+                var width = 200;
+                draw_donut_into_div('#' + id, data, height, width, undefined)
+            });
+            (function () {
+                var data = window.chart_data.horizontal_bars.sector_commitments;
+                var height = 300;
+                var width = 16.5;
+                draw_horizontal_bar_chart_into_div('#sector_commitments', data, height, width)
+            })();
+            (function () {
+                var data = window.chart_data.bars.donor_commitments;
+                var height = 400;
+                var width = $("#donor_commitments").width();
+                var margin = {top: 10, right: 40, bottom: 100, left: 60};
+                var onclick = window.chart_data.click.donor_commitments;
+                var code = '';
+                {% if current_donor and "code" in current_donor%}
+                code = '{{current_donor.code}}'; {% endif %}
+                draw_bar_chart_into_div('#donor_commitments', data, width, height, margin, onclick, code === '' ? undefined : code);
+            })();
+        });
+    </script>
+
+{% endblock %}

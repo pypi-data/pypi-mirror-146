@@ -1,0 +1,117 @@
+{% extends 'base_site.html' %}
+
+{% load i18n %}
+{% load static  %}
+{% load tag_library %}
+
+{% block title %}
+{{ page_title }} | {{ site_name }}
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+<script>
+$(function(){
+    riot.mount('activity-check-table')
+    }
+)
+
+</script>
+
+<script type="riot/tag">
+    <activity-check-table>
+        <h5 if={ loading }>Fetching data</h5>
+        <table class='table table-white table-bordered' if={!loading && activities}>
+            <thead>
+                <tr>
+                    <th><a onclick={orderById}>Activity Id</a></th>
+                    <th>Activity Title</th>
+                    <th><a onclick={orderByReporting}>Reporting Organisation</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr each={activity in activities}>
+                    <td style='width:15%'><a href="/en/editor/activity/{activity.id}/{anchor}">{activity.id}</a></td>
+                    <td style='width:55%'><a href="/en/editor/activity/{activity.id}/{anchor}">{activity.preferred_title_title}</td>
+                    <td style='width:30%'>{activity.reporting_organisation.name} / {activity.reporting_organisation.abbreviation}</td>
+
+                </tr>
+            </tbody>
+        </table>
+        var tag = this;
+
+        tag.anchor = ''; // {% if test.url_anchor %}
+        tag.anchor = '{{ test.url_anchor }}' //{%  endif %}
+
+        function orderBy(field, direction) {
+            tag.sortedBy = [[field], [direction || 'asc']];
+            return _.orderBy(tag.activities, [field], [direction || 'asc']);
+        }
+
+        function orderByField(field) {
+            var direction = (tag.sortedBy && tag.sortedBy[0][0] == field && tag.sortedBy[1][0] == 'asc') ? 'desc' : 'asc';
+            tag.update({activities: orderBy(field, direction)});
+        }
+
+        tag.orderById = function () {orderByField('id') };
+        tag.orderByReporting = function () {orderByField('reporting_organisation_sort') };
+        tag.orderByName = function () {  orderByField('preferred_title_title') };
+
+        function setTitles(activities, language) {
+            _.each(activities, function (activity) {
+                /* Set the preferred title */
+                var t = activity.title_set;
+                var choose;
+                var count = t.length;
+                if (count === 0) { choose = { title: 'No title' } ;} else if (count === 1) { choose = t[0]; } else { choose = _.find(t, { language: language || 'en' }, _.first(t)); }
+                activity.preferred_title_title = choose.title;
+            });
+        }
+
+        tag.on('before-mount', function () {
+            tag.loading = true;
+        });
+
+        tag.on('mount', function () {
+            $.getJSON('json/').then(function (data) {
+                tag._initial = data.activities;
+                tag.activities = _.clone(tag._initial);
+                setTitles(tag.activities);
+                _(tag.activities).each(function(activity){activity.reporting_organisation_sort = activity.reporting_organisation.name})
+                tag.update({
+                    activities: tag.activities,
+                    loading: false
+                });
+            });
+        });
+    </activity-check-table>
+</script>
+
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block nav_right_dropdown %}
+{% endblock %}
+
+{% block content %}
+<div class="background">
+    <div class="container">
+        <h2>Data Quality Checks</h2>
+        <div class="o-form-box">
+            <div class="row" style="margin-left: 0px; margin-right:0px;">
+                <div class="col col-sm-12">
+                    <h5 class="page-header">{{ test.title }}</h5>
+                    <activity-check-table></activity-check-table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}

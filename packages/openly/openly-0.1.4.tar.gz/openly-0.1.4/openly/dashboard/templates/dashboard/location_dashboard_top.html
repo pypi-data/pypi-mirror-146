@@ -1,0 +1,63 @@
+{% load i18n %}
+
+        <div class="col-sm-4 col-md-4 map_row_1" id="map_container">
+            <h3 class="stats align-center">{% trans "Commitment by Location" %}
+             <a id="commitLocation" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Commitment by location' %}" data-content="{% trans 'The map below shows the amount of development assistance committed by location for activities. The map corresponds to the date filter. Click on the map to zoom in' %}" ></a>
+            </h3>
+            <br />
+            {% include 'dashboard/location_map.html' %}
+        </div>
+
+        <div class="col-sm-8 col-md-8">
+            <div class="row location_row_1">
+                <div class="col-sm-6 col-md-6 dots_right stats_block">
+                    <h3 class="stats align-center">{% trans "Total Commitments" %}
+                        <a id="tot_comm" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Total Commitments' %}" data-content="{% trans 'This is the total amount of development assistance committed across all activities. This number corresponds to the date filter.' %}" ></a>
+                    </h3>
+                    <div class="count_block">
+                        <p class="big_count"><span class="big_bucks">$</span>{{total_commitments.0 | floatformat:"2"}}<p class="count_suffix">{{total_commitments.1}}</p></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 stats_block">
+                    <h3 class="stats align-center">{% trans "Total Disbursements" %}
+                        <a id="tot_disb" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Total Disbursements' %}" data-content="{% trans 'This is the total amount of development assistance disbursed across all activities. This number corresponds to the date filter.' %}" ></a>
+                    </h3>
+                    <div class="count_block">
+                        <p class="big_count"><span class="big_bucks">$</span>{{total_disbursements.0 | floatformat:"2"}}<p class="count_suffix">{{total_disbursements.1}}</p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border_btm"></div>
+            <div class="row location_row_2">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h5 class="stats align-center">{% trans "Commitment by Status" %}
+                        <a id="comit_stat" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Commitment by status' %}" data-content="{% trans 'This chart shows the total volume of funds committed to activities by the activity status i.e pipeline, implementation, completed, post-completed. The chart also corresponds to the date filter.' %}"></a>
+                    </h5>
+                    <div id="donut_commitment_status"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h5 class="stats align-center">{% trans "Activities by Ministry" %}
+                        <a id="comm_min" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Activities by Ministry' %}" data-content="{% trans 'This chart shows the total number of activities associated with each relevant Ministry. This chart corresponds to the date filter.' %}" ></a>
+                    </h5>
+                    <div id="donut_commitment_ministry"></div>
+                </div>
+                <div class="col-xs-12">
+                        <h5 class="stats align-center">{{count}} total activities</h5>
+                </div>
+            </div>
+            <div class="border_btm"></div>
+            <div class="row location_row_3">
+                <div class="col-xs-12 col-sm-6 col-md-6 hori_bar_mobile">
+                    <h4 class="stats align-center">{% trans "Commitment by donor" %}
+                        <a id="don_comit" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Donor commitment' %}" data-content="{% trans 'The bar chart below shows the total value of commitments by development partner. The chart also corresponds to the date filter.' %}" ></a>
+                    </h4>
+                    <div id="barchart_horizontal_donors_commitments"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 no-padding hori_bar_mobile">
+                    <h4 class="stats align-center">{% trans "Commitment by aid sector" %}
+                        <a id="sec_comit" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover"  title="{% trans 'Commitment by sector' %}" data-content="{% trans 'This chart shows the total amount of commitments from development partners by sector for activities.' %}" ></a>
+                    </h4>
+                    <div id="sector_commitments"></div>
+                </div>
+            </div>
+        </div>

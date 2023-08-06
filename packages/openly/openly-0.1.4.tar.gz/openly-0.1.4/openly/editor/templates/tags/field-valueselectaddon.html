@@ -1,0 +1,42 @@
+{% load i18n %}
+{% blocktrans asvar label_title %}The currency value date{% endblocktrans %}
+{% blocktrans asvar label_content %}This is the date we will use for determining the exchange rate for currency conversions.{% endblocktrans %}
+
+<field-valueselectaddon>
+
+    <div class="{classes.formgroup}">
+
+        <label class="{classes.label}">
+            <i if={required_to_publish} class="ion-record publish_warning"></i>
+             {title}
+            <required-field></required-field>
+        </label>
+
+        <div class="{classes.input_addon}">
+            <field-choice
+                show_label=false
+                select2=true
+                store={opts.store}
+                fieldname={opts.choice_fieldname}
+                classes="{classes}"
+            >
+            </field-choice>
+                <field-input
+                    label={opts.input_field_label}
+                    store={opts.store}
+                    path="{path}.value"
+                    fieldname={opts.value_fieldname}
+                    classes="{classes}"
+                    formgroup=false>
+                </field-input>
+
+            <input class="form-control c-input input-addon-right required" id="id_transaction_set-0-value" name="transaction_set-0-value" step="0.01" type="number" value="2091647.00">
+
+        </div>
+
+        <label class="col-sm-1 control-label">{% trans 'Date' %} <a class="form_help ion-help-circled dash-info" rel="popover" data-trigger="hover" title="" data-content="{{ label_content|escape }}" data-original-title="{{ label_title|escape }}"></a></label>
+        <div class="col-sm-2">
+            <input class="form-control c-input required" data-date-autoclose="true" data-date-orientation="top left" data-provide="datepicker" id="id_transaction_set-0-value_date" name="transaction_set-0-value_date" type="text" value="01 Jan 2011">
+
+        </div>
+    </div>

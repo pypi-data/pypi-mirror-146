@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 12:42+0900\n"
+"PO-Revision-Date: 2017-03-20 09:05+0822\n"
+"Last-Translator: b'  <sean@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+msgid "Activities"
+msgstr "Atividade"
+
+#, fuzzy
+msgid "No results found"
+msgstr "La iha rezultadu"
+
+msgid "No results found."
+msgstr "La iha rezultadu"
+
+msgid "Partners"
+msgstr "Parseiru"
+
+msgid "Results found by activities"
+msgstr ""
+
+msgid "Results found by activity"
+msgstr ""
+
+msgid "Results found by organisation"
+msgstr ""
+
+msgid "Search"
+msgstr "Buka"
+
+msgid "Search Results"
+msgstr "Rezultadu "
+
+#, fuzzy
+msgid "see all results"
+msgstr "hare resultado liu tan"
+
+#~ msgid "Advanced filter"
+#~ msgstr "Filtru Avansadu"
+
+#~ msgid "Organisations"
+#~ msgstr "Organizasaun"
+
+#~ msgid "Participating Org"
+#~ msgstr "Organizasaun nebe partisipa"
+
+#~ msgid "Reporting Org"
+#~ msgstr "Organizasaun nebe halo reportajen"
+
+#~ msgid "Sector"
+#~ msgstr "Setor"
+
+#, fuzzy
+#~ msgid "Sectors"
+#~ msgstr "Setor"
+
+#~ msgid "Set Filter"
+#~ msgstr "Filtru Set"

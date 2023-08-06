@@ -1,0 +1,335 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static  %}
+{% load tag_library %}
+{% load widget_tweaks %}
+{% block title %}
+{{ page_title }} | {{ site_name }}
+{% endblock %}
+
+{% block scripts %}
+        <!-- dashboard base scripts -->
+        <!-- https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js" -->
+        <script type="text/javascript" src="{% static 'js/jquery.validate.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/detectmobilebrowser.js' %}"></script>
+        <!-- https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js" -->
+        <script type="text/javascript" src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/intro.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/d3_v34.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/c3.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/topojson.v1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.tipsy.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/charts-drawing.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/icheck.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/endless-pagination-jq3-fix.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/drawer.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'select2/select2.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'lodash/lodash.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/accounting.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/accounting.compactformat.js' %}"></script>
+        <script>
+            {# translated content assigned to template variables to escape for use in javascript #}
+            {% trans "No Information Available" as global_no_data_text %}
+            {% trans "No Information" as global_no_data_text_donut_1 %}
+            {% trans "Available" as global_no_data_text_donut_2 %}
+            var global_no_data_text ='{{ global_no_data_text|escapejs }}';
+            var global_no_data_text_donut_1 = '{{ global_no_data_text_donut_1|escapejs }}';
+            var global_no_data_text_donut_2 = '{{ global_no_data_text_donut_2|escapejs }}';
+            var global_for_print=false;
+        {% if for_render %}
+            global_for_print=true;
+        {% else %}
+            global_for_print=false;
+        {% endif %}
+        </script>
+
+        <script>
+            {% if data %}
+             window.context_data = {{ data }};
+            {% endif %}
+        </script>
+
+{% endblock %}
+
+{% block style %}
+        <!-- dashboard base styles -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/ionicons.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/select2-bootstrap.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-datepicker.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/introjs.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/tipsy.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/square/blue.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/c3.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-drawer.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'select2/select2-bootstrap.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'select2/select2.css' %}">
+        {% if for_render %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/for_export.css' %}" />
+        {% endif %}
+
+        <style type="text/css">
+            @-moz-document url-prefix() {
+                .start-date::before { left: 50px !important; }
+                .start-date::after { top: -40px !important; right: -180px !important; }
+                .end-date::before { top: -40px !important; right: 115px !important; }
+                .end-date::after { top: -40px !important; left: 215px !important; }
+            }
+        </style>
+        {% block dashboard_style %}
+        {% endblock %}
+{% endblock %}
+
+{% block nav_right_dropdown %}
+    <script type="text/javascript" src="{% url 'welcomejs' %}"></script>
+    <li class="tutorial-trigger"><a href="javascript:;">{% trans "Start tutorial" %}</a></li>
+{% endblock %}
+
+{% block content %}
+    <div class="has-inner-drawer" >
+
+        <div id="drawer" class="drawer drawer-inside fold" aria-labelledby="drawer">
+            <div class="drawer-contents">
+                <div class="drawer-header">
+                    <a href="#drawer" class="drawer-close pull-right" data-toggle="drawer" aria-controls="drawer" aria-foldedopen="false"><i class="ion-android-close"></i></a>
+                    <h5 class="dashboard_query_title">{% trans 'Dashboard Filter' %}</h5>
+                    <a class="all-filter-clear sm pull-right" href="{{ request.path }}">{% trans 'Revert to default filters' %}</a>
+                </div>
+                <div class="drawer-body">
+                    <form method="get" class="form-horizontal filter-form" id='id-activity-filter-form'>
+                        <div class='form-group'>
+                            <a class="dashboard-filter-toggle" data-toggle="collapse" href="#collapseFinancetype" aria-expanded="false" aria-controls="collapseExample">
+                              <p for='id_finance_type_category'><i class="ion-chevron-right filter-checkbox"></i> {% trans 'Finance Type Category' %}</p>
+                            </a>
+                            <div class="collapse dashboard-filter-list" id="collapseFinancetype">
+                                <a onclick="clearFilters('id_finance_type_category')"><i class="ion-close-circled clear-dashboard-filter"> {% trans 'Clear' %}</i></a>
+                                {{ filter_form.finance_type_category }}
+                            </div>
+                            {{ filter_form.finance_type_category.errors }}
+                        </div>
+                        <div class='form-group'>
+                            <a class="dashboard-filter-toggle" data-toggle="collapse" href="#collapseAidtype" aria-expanded="false" aria-controls="collapseExample">
+                              <p for='id_aid_type_category'><i class="ion-chevron-right filter-checkbox"></i> {% trans 'Aid Type Category' %}</p>
+                            </a>
+                            <div class="collapse dashboard-filter-list" id="collapseAidtype">
+                                <a onclick="clearFilters('id_aid_type_category')"><i class="ion-close-circled clear-dashboard-filter"> {% trans 'Clear' %}</i></a>
+                                {{ filter_form.aid_type_category }}
+                            </div>
+                            {{ filter_form.aid_type_category.errors }}
+                        </div>
+                        <div class='form-group'>
+                          <a class="dashboard-filter-toggle" data-toggle="collapse" href="#collapseActivitystatus" aria-expanded="false" aria-controls="collapseExample">
+                              <p for='id_activity_status'><i class="ion-chevron-right filter-checkbox"></i> {% trans 'Activity Status' %}</p>
+                          </a>
+                          <div class="collapse dashboard-filter-list" id="collapseActivitystatus">
+                                <a onclick="clearFilters('id_activity_status')"><i class="ion-close-circled clear-dashboard-filter"> {% trans 'Clear' %}</i></a>
+                                {{ filter_form.activity_status }}
+                          </div>
+                          {{ filter_form.activity_status.errors }}
+                        </div>
+                        {% if by != "location" %}
+                        <div class='form-group'>
+                            <label for='id_state' class='control-label col-xs-12'>{% trans 'State' %}</label>
+                            <div class="clearfix"></div>
+                            {{ filter_form.state| add_class:"form-control drop-caret" }}
+                            {{ filter_form.state.errors }}
+                        </div>
+                        {% endif %} {% if by != "sector" %}
+                        <div class='form-group'>
+                            <label for='id_sector' class='control-label col-xs-12'>{% trans 'Sector' %}</label>
+                            <div class="clearfix"></div>
+                            <div>{{ filter_form.sector| add_class:"form-control drop-caret" }}</div>
+                            {{ filter_form.sector.errors }}
+                        </div>
+                        {% endif %} {% if by != "ministry" %}
+                        <div class='form-group'>
+                            <label for='id_ministry' class='control-label col-xs-12'>{% trans 'Ministry' %}</label>
+                            <div class="clearfix"></div>
+                            {{ filter_form.ministry| add_class:"form-control drop-caret" }}
+                            {{ filter_form.ministry.errors }}
+                        </div>
+                        {% endif %} {% if by != "donor" %}
+                        <div class='form-group'>
+                            <label for='id_donor' class='control-label col-xs-12'>{% trans 'Donor' %}</label>
+                            <div class="clearfix"></div>
+                            {{ filter_form.donor| add_class:"form-control drop-caret" }}
+                            {{ filter_form.donor.errors }}
+                        </div>
+                        {% endif %}
+                        <div class='form-group'>
+                            <br>
+                            <button type='submit' class="btn btn-primary btn-block">{% trans "Set Filter" %}</button>
+                        </div>
+                    {% comment %} </form> {% endcomment %}
+                </div>
+            </div>
+        </div>
+<div class="query-tool-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 dash-header"> {# Removing the dash-header class will affect the intro tour - see welcome.js #}
+                    <div class="col-xs-12 col-md-2">
+                        {% block nav_pulldown %}
+                        {% endblock %}
+                    </div>
+                    <div class="col-xs-12 col-md-10">
+                        <div class="pull-right">
+                            <span style="position: relative; left: 75px;">
+                                <label style="position: relative;">All</label>
+                                <input id="allDates" type="checkbox">
+                            </span>
+                            {% comment %} <form action="{{ request.path }}" method="get" id="date-form"> {% endcomment %}
+                                <span class="input-daterange{% if date_filter_active %} filter-active{% endif %}" id="datepicker">
+                                    <span class="start-date">
+                                        <input type="text" readonly="readonly" class="input-date dashboard-date" name="start" id = "start" value="{{ start_date }}" />
+                                    </span>
+                                    <span class="end-date">
+                                        <input type="text" readonly="readonly" class="input-date dashboard-date" id="end" name="end" value="{{ end_date }}"/>
+                                    </span>
+                                    <button type="submit" class="btn btn-primary btn-small">{% trans 'Go' %}</button>
+                                </span>
+                            </form>
+                            <button href="#drawer" type="button" class="btn btn-default btn-small {% if filter_form_active %} filter-form-active{% endif %}" data-toggle="drawer" aria-controls="drawer" aria-foldedopen="false">
+                                {% trans 'Filter' %}
+                            </button>
+                                <button type="button" onclick="javascript:window.print()" class="btn btn-default btn-small hidden-xs">{% trans 'Print' %}</button>
+
+                                <a class="hide-on-mobile" id="export-button" href="">
+                                    <button type="button" class="btn btn-default btn-small export-csv">{% trans 'Export' %}</button>
+                                </a>
+                            </span>
+                            <style scoped>
+                                .end-date {
+                                    position: relative;
+                                    top: -1px;
+                                }
+                                .start-date {
+                                    position: relative;
+                                    top: -1px;
+                                }
+                                .end-date input, .start-date input { border-radius: 3px !important; }
+                            </style>
+                            {% if not for_render %}
+                                <span class="filter-active-toggle hidden-xs{% if not date_filter_active %} hidden{% endif %}"><a href="?date_filter_clear"><i class="ion-close-circled"></i> {% trans "Clear current date filters, and sorts" %}</a></span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div><!-- /top row   -->
+            </div>
+        </div>
+    </div>
+            {% block local_content %}
+            {% endblock %}
+            {# Include an endless-paginated list of activities #}
+            {% include "dashboard/activities_list.html" %}
+    </div>
+
+    <script>
+    // Date Picker
+    $('.input-daterange').datepicker({
+        format: "M yyyy",
+        startView: 1,
+        startDate: "Jan 1900",
+        minViewMode: 1,
+        // orientation: "top left",
+        orientation: "bottom auto"
+    });
+
+    function clearFilters(div_id) {
+        $('#'+div_id+' li div.icheckbox_square-blue').removeClass('checked');
+        $('#'+div_id+' li input[type=checkbox]').attr('checked', false);
+    }
+
+    $('.dropdown-menu.filter_dropdown').find('form').on('click', function(e) {
+        e.stopPropagation()
+    });
+
+    $(function (){
+        $("#activityTable").popover({placement:'top'});
+    });
+
+    $('.dropdown-menu input, .dropdown-menu label').on('click', function(e) {
+        e.stopPropagation();
+    });
+
+    $.endlessPaginate({
+        paginateOnScroll: true,
+        paginateOnScrollMargin: 600,
+        cssSortingClassAsc: 'sorttable_sorted_reverse headerSortUp',
+        cssSortingClassDesc: 'sorttable_sorted headerSortDown',
+    });
+
+    $(document).ready(function(){
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+
+        $('input#allDates').on('ifChanged', function(event) {
+            var max_date = "{{ max_date_iso }}";
+            var min_date = "{{ min_date_iso }}";
+            var start_date = $('input#start').datepicker();
+            var end_date = $('input#end').datepicker();
+
+            if (event.target.checked) {
+                // set dates as max and min values
+                start_date.datepicker('setDate', new Date(min_date));
+                end_date.datepicker('setDate', new Date(max_date));
+                // freeze input into date boxes
+                start_date.attr('readonly','readonly').attr('style', 'background:#cccccc7a !important');
+                end_date.attr('readonly','readonly').attr('style', 'background:#cccccc7a  !important');
+                $('.end-date').addClass('lighten-up');
+            } else {
+                // un-freeze input into date boxes
+                start_date.attr('disabled', false).attr('style', 'background:inherit');
+                end_date.attr('disabled', false).attr('style', 'background:inherit');
+                $('.end-date').removeClass('lighten-up');
+            }
+        });
+
+        $('#id_sector, #id_ministry, #id_donor').select2();
+        if (location.search) {
+            $('#export-button').attr('href', window.location.href + '&export');
+        } else {
+            $('#export-button').attr('href', window.location.href + '?export');
+        }
+    });
+    $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+
+    // hide filter drawer when hide filters clicked
+    $('#hide-filters').on('click', function(){
+        $('#drawer').drawer('hide');
+    });
+    $('.collapse').on('shown.bs.collapse', function(){
+        $(this).parent().find(".ion-chevron-right").removeClass("ion-chevron-right").addClass("ion-chevron-down");
+    }).on('hidden.bs.collapse', function(){
+        $(this).parent().find(".ion-chevron-down").removeClass("ion-chevron-down").addClass("ion-chevron-right");
+    });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+        function scrollTriggers(scrolltop, scrolltable){
+            // Sync the widths of child elements
+            var scrolltop_div = scrolltop.children().first() // This ought to be a div with at least 1px height
+            var scrolltable_table = scrolltable.children().first() // This ought to be a table
+            scrolltop_div.width(scrolltable_table.width()) /* Keep the widths the same */
+            scrolltop.on('scroll', function(){scrolltable.scrollLeft(scrolltop.scrollLeft());});
+            scrolltable.on('scroll', function(){scrolltop.scrollLeft(scrolltable.scrollLeft());});
+        };
+        var scrolltop = $('#activity-top-scroll')
+        var scrolltable = $('#activity-top-scroll').next()
+        if (scrolltop.length && scrolltable.length){ scrollTriggers(scrolltop, scrolltable);}
+    });
+
+    </script>
+
+    {% block local_scripts %}
+    {% endblock %}
+
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,92 @@
+{% load i18n %}
+
+<aims_stats>
+    <div class="row" if="{ stats }" ref="summary">
+        <div class="col-xs-12">
+            <div class="col-sm-3">
+                <div class="key-stats-value">
+                    { accounting.compactFormatMoney(stats.total_commitment) }
+                </div>
+                <div class="key-stats-label">
+                    {% trans 'Commitment' %}
+                    <a class="ion-ios-help-outline dash-info" rel="popover" data-toggle="popover" data-trigger="hover" title="{% trans 'Commitment' %}" data-content="{% trans 'The total amounts of firm, written obligations from donors or providers to provide specified amounts of funds, under particular terms and conditions, for specific purposes, for the benefit of recipients.' %}" ></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="key-stats-value">
+                    { accounting.compactFormatMoney(stats.total_disbursement) }
+                </div>
+                <div class="key-stats-label">
+                    {% trans 'Disbursement' %}
+                    <a class="ion-ios-help-outline dash-info" rel="popover" data-toggle="popover" data-trigger="hover" title="{% trans 'Disbursement' %}" data-content="{% trans 'The total amount of outgoing funds that placed at the disposal of recipient governments or organisations, or funds transferred between two separately reported activities.' %}" ></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="key-stats-value">
+                    { accounting.compactFormatMoney(stats.total_expenditure) }
+                </div>
+                <div class="key-stats-label">
+                    {% trans 'Expenditure' %}
+                    <a class="ion-ios-help-outline dash-info" rel="popover" data-toggle="popover" data-trigger="hover" title="{% trans 'Expenditure' %}" data-content="{% trans 'The total amount of outgoing funds that are spent on goods and services.' %}" ></a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="key-stats-value">
+                    { accounting.compactFormatMoney(stats.total_other) }
+                </div>
+                <div class="key-stats-label">
+                    {% trans 'Other' %}
+                    <a class="ion-ios-help-outline dash-info" rel="popover" data-toggle="popover" data-placement="left" data-trigger="hover" title="{% trans 'Other' %}" data-content="{% trans 'All other types of transactions (Interest Repayment, Loan Repayment, Reimbursement, Purchase of Equity, Sale of Equity, Credit Guarantee, Incoming Commitment)' %}" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var self = this;
+        self.stats = { total_commitment: 0, total_disbursement: 0, total_expenditure: 0, total_other: 0 };
+
+        self.on('mount', function(){
+            RiotControl.trigger('request_filtered_stats');
+            $(self.refs.summary).find('[data-toggle="popover"]').popover();
+        });
+
+        RiotControl.on('filtered_stats', function(stats){
+            self.stats = stats
+            self.update()
+        });
+        self.export_worksheet = function(){
+            function gettext_noop(s){return s}
+
+            function finance_type(cell){
+                /* Split and capitalize the "finance type" if it has a dash in the name */
+                var header = cell.v.split('_')[1];
+                cell.v = _.capitalize(gettext_noop(header));
+                return cell;
+            };
+
+            var data = _.map(self.stats, function(v, k){return {finance_type: k, amount: v}});
+            var money_format = { t: 'n', z: '[$$-409]#,##0;-[$$-409]#,##0' };
+
+            return {
+                data: data,
+                rows: {
+                    'amount': money_format
+                },
+                headers: _.keys(data[0]),
+                sheet_name: gettext_noop('Stats'),
+                row_display: {
+                    finance_type: finance_type,
+                    amount: function(cell){_.extend(cell, money_format); return cell}
+                },
+                header_display: {
+                    finance_type: gettext_noop('Finance Type'),
+                    amount: gettext_noop('Amount')
+                }
+            };
+        }
+
+
+    </script>
+</aims_stats>

@@ -1,0 +1,133 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static %}
+{% load common_text %}
+
+{% block meta %}
+<meta name="description" content="{% blocktrans %}Browse & search all prioritised {{activity_plural}}. Narrow down the list through search, and export to Excel.{% endblocktrans %}">
+{% endblock %}
+
+{% block title %}
+{% if page_title %}| {{ page_title }} {% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'select2/select2.min.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+
+<div>
+    <div class="filter-bar background">
+        <div class="container">
+            <div id="title-download-row">
+                <h1> {% blocktrans %}{{activity_singular}} List{% endblocktrans %} </h1>
+            </div>
+        </div>
+
+        <div class="project-filter">
+            <project-list-filter></project-list-filter>
+        </div>
+    </div>
+    <div class="container">
+        <activities></activities>
+        <activity-list-paginate></activity-list-paginate>
+    </div>
+</div>
+
+<script type="riot/tag">
+    {% include 'tags/sortable-header.html' %}
+</script>
+
+<script type="riot/tag" src="{% url 'riot' 'project-list-filter' %}"></script>
+<script type="riot/tag" src="{% url 'riot' 'activity-list-paginate' %}"></script>
+<script type="riot/tag">
+    <activities>
+        <div class="row header-row hidden-xs">
+            <div class="activity-title">
+                <store-sortable-header store={opts.store} sort_key="title"> {% trans 'Project Name' %} </store-sortable-header>
+            </div>
+            <div class="activity-ministry">
+                <store-sortable-header store={opts.store} sort_key="government_agency"> {% trans 'IGA' %} <a tabindex="0" role="button" class="ion-ios-help-outline dash-info" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{% trans 'This government entity is responsible for oversight or maintenance of this project.' %}"> <span class="sr-only"> IGA-help </span></a> </store-sortable-header>
+            </div>
+            <div class="activity-status">
+                <store-sortable-header store={opts.store} sort_key="status"> {% trans 'Status' %} </store-sortable-header>
+            </div>
+            <div class="activity-budget">
+                <store-sortable-header store={opts.store} sort_key="sort_budget"> {% trans 'Total Project Cost' %} </store-sortable-header>
+            </div>
+        </div>
+        <div class="spinner" if="{loading}">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+        <a if="{!loading}" each={activity in opts.store.activities} href="{activity.profile_url}">
+            <div class="row activity-row" show={activity.show && activity.paged}>
+                <div class="activity-title">
+                    {activity.title}
+                </div>
+                <div class="activity-ministry">
+                    <span class="mobile-status-label"> {% trans 'IGA' %}: </span>
+                    {activity.government_agency}
+                </div>
+                <div class="activity-status">
+                    <span class="mobile-status-label"> {% trans 'Status' %}: </span>
+                    {activity.status}
+                </div>
+                <div class="activity-budget">
+                    <span class="mobile-status-label"> {% trans 'Total Project Cost' %}:</span>
+                    {activity.total_budget_rounded}
+                </div>
+            </div>
+        </a>
+
+        var tag = this;
+        
+        tag.on('mount', function() {
+            $('[data-toggle="popover"]').popover();
+            tag.opts.store.on('activities_filtered', function() {
+                // create a fake loading impression
+                // otherwise users do not realise filters have been applied
+                tag.update({ loading: true });
+                setTimeout(() => { tag.update({ loading: false }); }, 500);
+            })
+            tag.opts.store.on('applied_pagination', function(){
+                tag.update();
+            })
+        });
+
+    </activities>
+</script>
+
+{{activities|json_script:"activities-data" }}
+{{lookups|json_script:"lookups-data" }}
+
+<script type="text/javascript" src="{% static 'activity_list/activity_list_store.js' %}"></script>
+<script>
+    activitystore = new activityStore({per_page:50});
+
+    activitystore.on('activities_ready', function(){
+        riot.mount('activities', {store: activitystore});
+    })
+
+    activitystore.on('filters_ready', function(){
+        riot.mount('project-list-filter', {store: activitystore});
+        riot.mount('activity-list-paginate', {store:activitystore});
+    })
+    activitystore.trigger('init');
+</script>
+{% endblock %}
+
+
+{% block openly_project_head %}
+{{block.super}}
+<link rel="stylesheet" type="text/css" href="{% static 'select2/select2.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'select2/select2-bootstrap.css' %}" />
+<script type="text/javascript" src="{% static 'js/icheck.min.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/square/blue.css' %}" />
+{% endblock %}

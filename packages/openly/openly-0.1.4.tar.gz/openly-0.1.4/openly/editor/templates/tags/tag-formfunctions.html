@@ -1,0 +1,16 @@
+{% load i18n %}
+
+<tag-formfunctions>
+    <button class="btn btn-warning btn-lg" onclick="{reset}">{% trans "Reset" %}</button>
+    <button class="btn btn-default btn-lg" onclick="{next}">{% trans "Next" %}</button>
+
+    var tag = this;
+
+    tag.reset = reset;
+    tag.next = next;
+
+    function reset(e){
+        tag.store.trigger('restore_activity')
+    };
+    function next(e){};
+</tag-formfunctions>

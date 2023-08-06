@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load profiles_filters %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block title %} {% if page_title %}| {{ page_title }} {% endif %} {% endblock %}
+
+{% block style %}
+{{ block.super }}
+    <link type="text/css" rel="stylesheet" href="{% static 'css/resources.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/select2-bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'select2/select2-bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'select2/select2.css' %}">
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+<script type="application/javascript" src="{% static 'js/clipboard.min.js' %}"></script>
+<script type="application/javascript" src="{% static 'moment/moment.min.js' %}"></script>
+<script type="application/javascript" src="{% static 'moment/locale/tet.js' %}"></script>
+<script type="application/javascript" src="{% static 'axios/dist/axios.min.js' %}"></script>
+<script type="application/javascript" src="{% static 'riot-route/dist/route+tag.min.js' %}"></script>
+<script type="application/javascript" src="{% static 'showdown/dist/showdown.min.js' %}"></script>
+<script type="application/javascript" src="{% static 'simple-gettext/gettext.js' %}"></script>
+<script type="text/javascript" src="{% static 'select2/select2.min.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<script type="riot/tag">
+    {% include 'tags/resources_interface.html' %}
+    {% include 'tags/add_edit_form.html' %}
+    // {% include 'tags/filter_controls.html' %}
+    {% include 'tags/categories_list.html' %}
+    {% include 'tags/resources_list.html' %}
+    {% include 'tags/resource_profile.html' %}
+    {% include 'tags/breadcrumbs.html' %}
+</script>
+<div class="background">
+    <resources_interface></resources_interface>
+</div>
+
+<script>
+    // process Django view data to be passed on to the Riot tags
+    var categories = JSON.parse({{resource_categories|js}}).concat([{pk: "NONE", name: "Other"}]);
+    var related_projects = JSON.parse({{resource_projects|js}});
+    var default_resources = [{
+        title: 'Please go online...',
+        narrative: [
+            {'language': 'en', 'description': 'Revisit this page when you are online and the latest information about available resources will be downloaded in the background'},
+            {'language': 'tet', 'description': 'Re-vizita pajina nee bainhira ita boot online no informasaun foun kona ba disponibilidade rekursus sei download iha laiar oin'},
+        ],
+        categories: [],
+        iso_date: '2019-05-20'
+    }];
+
+    // mount the interface riot tags
+    riot.mount('add_edit_form');
+    // riot.mount('filter_controls');
+    riot.mount('categories_list');
+    riot.mount('resources_list');
+    riot.mount('resources_profile');
+    riot.mount('breadcrumbs');
+    riot.mount('resources_interface', {
+        categories: categories,
+        related_projects: related_projects,
+        default_resources: default_resources
+    });
+
+    var newLanguageCode = '{{ LANGUAGE_CODE }}' === 'tm' ? 'tet' : 'en';
+    window.setLanguage(newLanguageCode);
+
+    $(document).ready(function() {
+        moment.locale(languageCode);
+        $('#language').select2();
+        $('#activity').select2();
+        $('#categories').select2({
+            dropdownParent: $('#resource-add-modal'),
+            placeholder: 'Select categories',
+        });
+        // animation for fields with errors
+        jQuery.fn.shake = function(interval, distance, times) {
+            interval = typeof interval == "undefined" ? 100 : interval;
+            distance = typeof distance == "undefined" ? 10 : distance;
+            times = typeof times == "undefined" ? 3 : times;
+            var jTarget = $(this);
+            jTarget.css('position','relative');
+            for(var iter=0;iter<(times+1);iter++) {
+                jTarget.animate({ left: ((iter%2==0 ? distance : distance*-1))}, interval);
+            }
+            return jTarget.animate({ left: 0},interval);
+        }
+    });
+</script>
+{% endblock %}

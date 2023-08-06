@@ -1,0 +1,60 @@
+{% load i18n %}
+{% load common_text %}
+
+<sector-working-group-edit>
+
+    <div class="row">
+        <field-choice
+            classes={classes.label_hidden}
+            store={opts.store}
+            path=".sector_working_group"
+            fieldname='sector_working_group'
+            choices="{get_relevant_choices('sector_working_group', 'text')}"
+            select2="1"
+            select2_opts="{select2_opts}"
+            no_data_transform="1"
+            sort_by="name"
+            formgroup=false>
+        </field-choice>
+        <field-input
+            store="{opts.store}"
+            classes="{classes.percentage}"
+            path=".percentage"
+            fieldname="percentage"
+            input_type="number"
+            input_step="any"
+            input_max="100"
+            input_min="0"
+            formgroup=false>
+        </field-input>
+        <div if="{_.get(opts.store, opts.path).sector_working_group.code != null}" class="col-xs-1" onclick="{delete_sector}">
+            <a class="remove_form_row" href="javascript:void(0)"> </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" if="{errors}">
+            <span class="error-line">{errors}</span>
+        </div>
+    </div>
+
+    {# <script> #}
+    var tag = this;
+    tag.mixin('SerializerMixin');
+    tag.mixin('SectorMixin');
+
+    tag.classes = {
+        label_hidden: {
+            label: 'hidden',
+            select: 'col-xs-8',
+        },
+        percentage: {
+            label: 'hidden',
+            input: 'col-xs-2',
+        },
+    };
+
+    tag.select2_opts = {'placeholder': 'Add a {{ 'non_iati_sector_object'|common_text }}...'};
+
+    {# </script> #}
+
+</sector-working-group-edit>

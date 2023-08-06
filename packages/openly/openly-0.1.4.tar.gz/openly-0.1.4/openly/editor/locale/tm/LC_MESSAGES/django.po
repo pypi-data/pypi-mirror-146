@@ -1,0 +1,1313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 12:42+0900\n"
+"PO-Revision-Date: 2018-10-22 11:54+0822\n"
+"Last-Translator: b'  <dejesusony@gmail.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid " You are about to <span class=\"bold\">approve and publish</span> the activity indicating that you are satisfied with the information provided. This will make the activity information publicly available and the information contained will appear in your reports. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">cancel</span> the review of this activity. This will revert the status of the activity to draft. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">endorse</span> the activity indicating that you are satisfied with the information provided. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">remove</span> your endorsement of the activity, indicating that the activity information is not sufficient. Please add a comment to explain your decision. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">submit</span> this activity to be reviewed and approved by Government Partners prior to publication. Based on this activity, the following organisations will be notified: "
+msgstr ""
+
+msgid "#"
+msgstr ""
+
+msgid "A Partner ID is an optional reference used internally by an Organisation to refer to an Activity."
+msgstr ""
+
+msgid "A policy or theme addressed by the activity. This element was designed for the reporting of OECD DAC CRS policy markers."
+msgstr "Polítika ka tema ne'ebé hato'o hosi atividade ne'e. Elementu ne'e mak halo ona relatóriu ba OCDE DAC CRS polítika markador sira."
+
+msgid "About the activity"
+msgstr "Kona ba Atividade"
+
+msgid "Accountable Partners"
+msgstr "Responsavel Parseiru "
+
+#, fuzzy
+msgid "Activities Ending"
+msgstr "Ita nian atividade la públikável"
+
+msgid "Activities for Review"
+msgstr "Ita nian atividade la públikável"
+
+msgid "Activity Budgets"
+msgstr "Orsamentu Atividade"
+
+msgid "Activity Completion Rating"
+msgstr "Klasifikasaun husi Atividade Kompleta"
+
+msgid "Activity Description"
+msgstr "Deskrisaun Atividade"
+
+msgid "Activity Endorsed by"
+msgstr "Jerente Atividade"
+
+msgid "Activity List"
+msgstr "Lista Atividade"
+
+msgid "Activity Manager"
+msgstr "Jerente Atividade"
+
+msgid "Activity Objectives"
+msgstr "Objetivu Atividade"
+
+#, fuzzy
+msgid "Activity Partner ID"
+msgstr "Jerente Atividade"
+
+msgid "Activity Status"
+msgstr "Estatus Atividade"
+
+msgid "Activity Title"
+msgstr "Titulu Atividade"
+
+msgid "Activity currency:"
+msgstr "Moeda Atividade"
+
+msgid "Activity log"
+msgstr "Rekorda atividade"
+
+msgid "Activity results"
+msgstr "Rezultadu atividade "
+
+msgid "Activity start and end dates"
+msgstr "Data hahu no ikus ba atividade"
+
+msgid "Activity was not found in Mohinga database."
+msgstr ""
+
+msgid "Actual End Date"
+msgstr "Atual Data Ikus"
+
+msgid "Actual Start Date"
+msgstr "Atual Data Hahu"
+
+msgid "Add Budget Breakdown"
+msgstr ""
+
+msgid "Add a comment"
+msgstr "Hatama komentariu"
+
+msgid "Add a contact"
+msgstr "Aumenta kontaktu"
+
+msgid "Add a document"
+msgstr "Hatama dokumentu"
+
+msgid "Add a government partner"
+msgstr "Aumenta Governu ninia Parseiru"
+
+msgid "Add a location"
+msgstr "Aumenta fatin"
+
+msgid "Add a related location"
+msgstr "Aumenta fatin ne'ebé relasiona"
+
+msgid "Add a related sector"
+msgstr "Aumenta seitor ne'ebé relasiona"
+
+msgid "Add a result"
+msgstr "Aumenta rezultadu"
+
+msgid "Add a sector..."
+msgstr "Aumenta seitor..."
+
+msgid "Add a start date"
+msgstr "Aumenta data hahu"
+
+msgid "Add a transaction"
+msgstr "Aumenta tranzasaun"
+
+msgid "Add a transaction of type 'Commitment'"
+msgstr "Aumenta tranzasaun ho tipu 'Komitmentu'"
+
+msgid "Add a value"
+msgstr "Aumenta valor"
+
+msgid "Add an accountable partner"
+msgstr "Aumenta Responsavel Parseiru "
+
+msgid "Add an activity description"
+msgstr "Aumenta deskrisaun atividade"
+
+msgid "Add an activity status"
+msgstr "Aumenta estatus atividade"
+
+msgid "Add an activity title"
+msgstr "Aumenta titulu atividade"
+
+msgid "Add an extending partner"
+msgstr "Aumenta parseiru estensaun"
+
+msgid "Add an funding partner"
+msgstr "Aumenta Parseiru Finansiamentu"
+
+msgid "Add an implementing partner"
+msgstr "Aumenta Parseiru Implementasaun"
+
+msgid "Add an indicator to your result"
+msgstr "Aumenta indikador ba ita nian resultadu"
+
+#, python-format
+msgid "Add another %(object)s"
+msgstr "Aumenta %(object)s seluk"
+
+msgid "Add another accountable partner"
+msgstr "Aumenta Responsavel Parseiru seluk"
+
+msgid "Add another document category"
+msgstr "Aumenta kategoria seluk"
+
+msgid "Add another extending partner"
+msgstr "Aumenta parseiru estensaun seluk"
+
+msgid "Add another funding partner"
+msgstr "Aumenta Parseiru Finansiamentu seluk"
+
+msgid "Add another government partner"
+msgstr "Aumenta Governu ninia Parseiru seluk"
+
+msgid "Add another implementing partner"
+msgstr "Aumenta Parseiru Implentasaun seluk"
+
+msgid "Add another location"
+msgstr "Aumenta fatin seluk"
+
+msgid "Add another policy marker"
+msgstr "Aumenta polítika markador seluk"
+
+msgid "Add another sector"
+msgstr "Aumenta seitor seluk"
+
+msgid "Additional data required"
+msgstr ""
+
+msgid "Agree and Stop IATI Sync"
+msgstr ""
+
+msgid "Agree and Sync from IATI"
+msgstr ""
+
+msgid "Amt. (USD)"
+msgstr ""
+
+msgid "Approval & Comments"
+msgstr "Aprovasaun & Komentariu Sira"
+
+msgid "Approve &amp; Publish"
+msgstr "Aprova &amp; Publika"
+
+msgid "Approve &amp; Publish Activity"
+msgstr "Aprova &amp; Publika Aktividade"
+
+msgid "Approved"
+msgstr "Aprova ona"
+
+msgid "Approved and Published"
+msgstr "Aprova no Publika ona"
+
+msgid "Are You Sure?"
+msgstr "Ita bo'ot serteza?"
+
+msgid "Are you sure you want to delete this activity?"
+msgstr "Ita boot serteza hakarak atu hamos atividade ida ne'e?"
+
+#, fuzzy
+msgid "Are you sure you want to sync from IATI?"
+msgstr "Ita boot serteza hakarak atu hamos atividade ida ne'e?"
+
+msgid "Available for import"
+msgstr "Disponivel atu importa"
+
+msgid "Average completion"
+msgstr "Kompleta Média"
+
+msgid "Below compare your local Mohinga activity with the activity reported to the IATI Registry. If these activities match, please link your IATI activity to Mohinga."
+msgstr ""
+
+msgid "Browse"
+msgstr "Hili"
+
+#, fuzzy
+msgid "Budget"
+msgstr "Orsamentu"
+
+msgid "Budget Currency"
+msgstr "Moeda Padraun"
+
+msgid "Budgets"
+msgstr "Orsamentu"
+
+msgid "Budgets:"
+msgstr "Orsamentu:"
+
+msgid "Cancel"
+msgstr "Kansela"
+
+msgid "Cancel review"
+msgstr "Kansela revisaun"
+
+msgid "Categories"
+msgstr "Kategoria sira"
+
+msgid "Change Activity Status"
+msgstr "Troka Estatus Atividade"
+
+msgid "Choose organisation"
+msgstr "Hili organizasaun"
+
+msgid "Click to endorse"
+msgstr ""
+
+msgid "Click to remove endorsement"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Collaboration Type"
+msgstr "Tipu Kolaborasaun"
+
+msgid "Commit."
+msgstr ""
+
+msgid "Commitment"
+msgstr ""
+
+#, fuzzy
+msgid "Commitments"
+msgstr "Dokumentu sira"
+
+msgid "Compare Activities"
+msgstr "Kompara Atividade sira"
+
+msgid "Compare local activities with IATI "
+msgstr "Kompara atividade lokal ho IATI"
+
+#, fuzzy
+msgid "Compare your information"
+msgstr "Informasaun Jeral"
+
+msgid "Complete"
+msgstr "Kompletu"
+
+msgid "Connect this activity to IATI Sync"
+msgstr ""
+
+msgid "Contact Type"
+msgstr "Tipu Kontaktu"
+
+msgid "Contacts"
+msgstr "Kontaktu"
+
+msgid "Coordination Bodies"
+msgstr "Orgaun Kordenasaun"
+
+#, fuzzy
+msgid "Create "
+msgstr "Kria Relatóriu"
+
+msgid "Create an activity for..."
+msgstr "Kria atividade ida ba..."
+
+msgid "Creating the result, please wait"
+msgstr "Kria resultadu, Favor hein"
+
+#, fuzzy
+msgid "Data Completion"
+msgstr "Kompleta Hatama Dadus "
+
+msgid "Data Entry Completion"
+msgstr "Kompleta Hatama Dadus "
+
+msgid "Date Created:"
+msgstr ""
+
+msgid "Date submitted"
+msgstr "Data haruka"
+
+msgid "Dates:"
+msgstr "Data:"
+
+msgid "Default Aid Type"
+msgstr "Tipu Asistensia Padraun"
+
+msgid "Default Finance Type"
+msgstr "Tipu Finansa Padraun"
+
+msgid "Default Flow Type"
+msgstr "Tipu Fluxu Padraun"
+
+msgid "Default Settings"
+msgstr "Konfigurasaun padraun"
+
+msgid "Default Tied Status"
+msgstr ""
+
+msgid "Delete"
+msgstr "Hamos"
+
+msgid "Delete Activity"
+msgstr "Apaga Atividade"
+
+msgid "Delete Activity?"
+msgstr "Hamos Atividade?"
+
+#, fuzzy
+msgid "Delete Link"
+msgstr "Hamos"
+
+msgid "Description"
+msgstr "Deskrisaun"
+
+msgid "Details of groups that are intended to benefit from the activity."
+msgstr "Detalle husi grupu sira ne'ebé intende atu hetan benefisiu husi atividade."
+
+msgid "Disbursed:"
+msgstr "Dezembolsa:"
+
+msgid "Discard changes"
+msgstr "Kancela mudansa"
+
+msgid "Do you want to discard your changes?"
+msgstr "Ita hakarak kancela mudansa?"
+
+msgid "Document Description"
+msgstr "Deskrisaun Dokumentu"
+
+msgid "Documents"
+msgstr "Dokumentu sira"
+
+msgid "Documents & Images"
+msgstr "Dokumentu & Imajen sira"
+
+msgid "Documents and images should include key supporting materials related to this activity."
+msgstr "Dokumentu no imajen sira tenke inklui material prinsipal sira ne'be apoiu relasiona ho atividade ida ne'e."
+
+msgid "Download"
+msgstr ""
+
+msgid "Draft"
+msgstr "Esbosu"
+
+msgid "Draft Activities"
+msgstr "Atividade Esbosu"
+
+msgid "Edit"
+msgstr ""
+
+msgid "Edit Activity"
+msgstr "Editar Atividade"
+
+msgid "Edit a value"
+msgstr "Hadia valor"
+
+msgid "Edit/Remove IATI ID"
+msgstr ""
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Endorse Activity"
+msgstr "Aseita Atividade"
+
+msgid "Endorsed"
+msgstr ""
+
+msgid "Error deleting IATI Identifier Link."
+msgstr ""
+
+msgid "Error running IATI Sync."
+msgstr ""
+
+msgid "Error suspending IATI Sync."
+msgstr ""
+
+msgid "Error updating IATI Identifier Link."
+msgstr ""
+
+msgid "Error updating IATI Sync settings."
+msgstr ""
+
+msgid "Extending Partners"
+msgstr "Parseiru Estensaun"
+
+msgid "Extending:"
+msgstr "Estensaun:"
+
+msgid "Fetching IATI Data"
+msgstr ""
+
+msgid "Fetching the freshest IATI data"
+msgstr ""
+
+msgid "Filter"
+msgstr "Filtru"
+
+msgid "Finance Type:"
+msgstr "Tipu Finansa:"
+
+msgid "Finances"
+msgstr "Finansa"
+
+msgid "Financial Summary"
+msgstr ""
+
+msgid "Financial Transactions"
+msgstr "Tranzasaun Finansial"
+
+msgid "Flow Type:"
+msgstr "Tipu Fluxu:"
+
+msgid "Full IATI Sync of data is running..."
+msgstr ""
+
+msgid "Funding Partners"
+msgstr "Finansiamentu Parseiru Sira"
+
+msgid "Funding:"
+msgstr "Finansiamentu:"
+
+msgid "General"
+msgstr "Jeral"
+
+msgid "General Information"
+msgstr "Informasaun Jeral"
+
+msgid "Government Partners"
+msgstr "Parseiru husi Governu"
+
+#, fuzzy
+msgid "IATI Activity ID"
+msgstr "ID Atividade"
+
+#, fuzzy
+msgid "IATI Activity Identifier"
+msgstr "Objetivu Atividade"
+
+msgid "IATI Activity Identifier given was not found in the datastore."
+msgstr ""
+
+msgid "IATI Identifier Link deleted."
+msgstr ""
+
+msgid "IATI Identifier Link updated."
+msgstr ""
+
+#, fuzzy
+msgid "IATI Linked Activities"
+msgstr "Atividade ne'ebé Públika"
+
+msgid "IATI Sync"
+msgstr ""
+
+msgid "IATI Sync History"
+msgstr ""
+
+msgid "IATI Sync Settings"
+msgstr ""
+
+msgid "IATI Sync completed."
+msgstr ""
+
+msgid "IATI Sync settings updated."
+msgstr ""
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Implementing Partners"
+msgstr " Implementasaun Parseiru Sira"
+
+msgid "Implementing:"
+msgstr "Implementadu:"
+
+msgid "Import"
+msgstr "Importa"
+
+msgid "Import IATI"
+msgstr "Importa IATI"
+
+msgid "Import all"
+msgstr "Importa hotu-hotu"
+
+msgid "Improve my rating?"
+msgstr "Hadiak hau nia klasifikasaun?"
+
+msgid "Incoming"
+msgstr ""
+
+msgid "Incoming Funds"
+msgstr ""
+
+msgid "Incomplete activities"
+msgstr "Atividade seidauk kompletu"
+
+msgid "Indicator Periods"
+msgstr ""
+
+msgid "Indicators"
+msgstr "Indikador sira"
+
+msgid "Initiate"
+msgstr ""
+
+msgid "Input a organisation name for this contact"
+msgstr "Hatama organizasaun nia naran ba kontaktu ne'e"
+
+msgid "Input a website name for this contact"
+msgstr "Hatama website nia naran ba kontaktu ne'e"
+
+msgid "Input an email address for this contact"
+msgstr "Hatama enderessu E-mail ba kontaktu ne'e"
+
+msgid "Input mailing address for this contact"
+msgstr "Hatama enderessu ne'ebe korespondensia ba kontaktu ne'e"
+
+msgid "Input name of person for this contact"
+msgstr "Hatama ema nia naran ba kontaktu ne'e"
+
+msgid "Input phone number for this contact"
+msgstr "Hatama numeru telemovel ba kontaktu ne'e"
+
+msgid "Invalid IATI Data"
+msgstr ""
+
+msgid "Job Title"
+msgstr "Titulu Servisu"
+
+msgid "Keep Local"
+msgstr "Mantein Lokal"
+
+msgid "Language"
+msgstr "Lian"
+
+msgid "Last Fetched"
+msgstr ""
+
+msgid "Last Updated:"
+msgstr ""
+
+msgid "Link"
+msgstr ""
+
+msgid "Loading..."
+msgstr "Lao hela..."
+
+msgid "Local Activities"
+msgstr "Atividade Lokal"
+
+msgid "Locally Reported"
+msgstr ""
+
+msgid "Location"
+msgstr "Fatin"
+
+msgid "Locations"
+msgstr "Fatin"
+
+msgid "Locations represent what regions are targeted. Percentages represent what share of the total commitment amount will flow to a particular region."
+msgstr "Fatin reprezenta rejiaun saida mak sai alvu/tarjete. Persentajen sira reprezenta proporsaun husi montante total komitmentu sei fó fila-fali ba rejiaun ida-ne ' ebé partikulár"
+
+msgid "Locations represent where the activity takes place. For activities in Manufahi, add all relevant aldeias. For activities in other municipalities in Timor-Leste, add all relevant sub-districts. To select a location please type your location in the search bar."
+msgstr "Fatin reprezenta atividade hala'o iha ne'ebe. Ba atividade iha Manufahi, aumenta aldeia hotu sira ne'ebe mak relevante. Ba atividade iha munisipiu seluk iha Timor-Leste, aumenta postu administrativu hotu ne'ebe mak relevante. Atu hili fatin ida, favor hakerek fatin ne'e nian naran iha espasu buka nian."
+
+msgid "Mailing Address"
+msgstr "Enderesu Korespondensia"
+
+msgid "Name"
+msgstr "Naran"
+
+msgid "Nationwide"
+msgstr "Nasaun laran tomak"
+
+msgid "Next"
+msgstr "Tuir mai"
+
+msgid "No Activity found matching the query"
+msgstr "Laiha atividade ne'ebé amk hetan koresponde ho kriteria"
+
+msgid "No sync history available."
+msgstr ""
+
+msgid "No, Don't Approve"
+msgstr ""
+
+msgid "No, Don't Cancel"
+msgstr "Lae, Labele kansela"
+
+msgid "No, Don't Endorse"
+msgstr ""
+
+msgid "No, Don't Remove"
+msgstr ""
+
+msgid "OECD Sector Classifications"
+msgstr "Seitor Klasifikasaun OECD "
+
+msgid "Okay, got it"
+msgstr "Okey, komprende ona"
+
+msgid "Organisation"
+msgstr "Organizasaun"
+
+msgid "Organisations"
+msgstr "Organizasaun"
+
+msgid "Outgoing"
+msgstr ""
+
+msgid "Outgoing Funds"
+msgstr ""
+
+msgid "Participating Organisations"
+msgstr "Organizasaun sira ne'ebé partisipa"
+
+msgid "Pending"
+msgstr "Pendente"
+
+msgid "Percent"
+msgstr "Pursentu"
+
+msgid "Person Name"
+msgstr "Naran"
+
+#, fuzzy
+msgid "Planned Dates:"
+msgstr "Data Ikus Planu"
+
+msgid "Planned End Date"
+msgstr "Data Ikus Planu"
+
+msgid "Planned Start Date"
+msgstr "Data Hahu Planu"
+
+msgid "Please input clearly a title of job"
+msgstr "Favor hatama titlu serbisu ho klaru "
+
+#, python-format
+msgid "Please specify what percentage of the total budget is allocated to each %(object)s. All percentages should add up to 100%%."
+msgstr ""
+
+msgid "Policy Marker"
+msgstr "Markador Polítika "
+
+msgid "Policy Markers"
+msgstr "Markador Polítika Sira"
+
+msgid "Post"
+msgstr "Post"
+
+msgid "Providing budgets helps to improve aid predictability and supports better quality forward planning. Please provide a quarterly or annual budget breakdown for your activity. You can change the default currency in the default settings tab"
+msgstr ""
+
+msgid "Published"
+msgstr "Públika"
+
+msgid "Published Activities"
+msgstr "Atividade ne'ebé Públika"
+
+msgid "Remove"
+msgstr ""
+
+msgid "Remove Endorsement"
+msgstr ""
+
+#, fuzzy
+msgid "Reported to IATI"
+msgstr "Importa IATI"
+
+msgid "Reporting Organisation"
+msgstr "Organizasaun ne'ebé halo relatóriu"
+
+msgid "Reporting organisation"
+msgstr "Organizasaun ne'ebé halo relatóriu"
+
+msgid "Reporting:"
+msgstr "Relatóriu:"
+
+msgid "Required to publish"
+msgstr "Presiza atu públika"
+
+msgid "Reset"
+msgstr "Defini fali"
+
+msgid "Restore Archived"
+msgstr "Rekupera fali Arkivu"
+
+msgid "Result Description"
+msgstr "Deskrisaun Rezultadu"
+
+msgid "Result Title"
+msgstr "Titulu Rezultadu"
+
+msgid "Result Type"
+msgstr "Tipu Rezultadu"
+
+msgid "Results"
+msgstr "Rezultadu"
+
+msgid "Results:"
+msgstr "Rezultadu:"
+
+msgid "Return"
+msgstr "Fila"
+
+msgid "Revert back to manual entry?"
+msgstr ""
+
+msgid "Save"
+msgstr "Rai"
+
+msgid "Save and Next"
+msgstr "Rai no Tuir Mai"
+
+msgid "Save and Return"
+msgstr "Rai no Fila"
+
+msgid "Save changes"
+msgstr "Rai mudansa"
+
+msgid "Saving changes to IATI Sync settings"
+msgstr ""
+
+msgid "Search IATI"
+msgstr ""
+
+msgid "Search again"
+msgstr ""
+
+msgid "Search for the IATI Activity Identifier"
+msgstr ""
+
+msgid "Search the IATI Datastore for this activity"
+msgstr ""
+
+msgid "Sector"
+msgstr "Seitor"
+
+msgid "Sectors"
+msgstr "Seitor"
+
+msgid "Sectors & Policy Markers"
+msgstr "Seitor & Markador Polítika"
+
+msgid "Sectors represent the purpose of the activity"
+msgstr "Seitor sira ne'ebe representa objetivu husi atividade"
+
+msgid "Sectors represent the purpose of the activity. For more information and clarification, please refer to the OECD&#8216;s list of CRS purpose codes:"
+msgstr "Seitor sira reprezenta objetivu husi atividade. Ba informasaun liu tan no klarifikasaun, favor refere ba lista OECD&#8216; husi kódigu CRS:"
+
+msgid "See More"
+msgstr "Hare liu tan"
+
+#, fuzzy
+msgid "See Preview"
+msgstr "Kansela revisaun"
+
+msgid "Select type of contact"
+msgstr "Hili tipu kontaktu"
+
+msgid "Selecting 'Create Link' will link these activities, but will not import data. You can control what financial data is imported in the next step."
+msgstr ""
+
+msgid "Send back to Draft"
+msgstr ""
+
+msgid "Send back to Review"
+msgstr ""
+
+msgid "Sending the activity back to Draft status will hide the activity from the public site and reports. It will also remove prior endorsements for the activity."
+msgstr ""
+
+msgid "Sending the activity back to Review status will hide the activity from the public site and reports. It will also alert each party to review the activity. Please note that it does not remove prior endorsements"
+msgstr ""
+
+msgid "Setup IATI Sync"
+msgstr ""
+
+msgid "Setup IATI Sync to automatically import the financial transactions for this activity from your officially published IATI activity file found in the IATI Registry"
+msgstr ""
+
+msgid "Significance"
+msgstr "Signifikadu"
+
+msgid "Sorry, you cant publish just yet."
+msgstr "Deskulpa, ita sidauk bele públika."
+
+msgid "Stop IATI Synchronization"
+msgstr ""
+
+msgid "Submit for review"
+msgstr ""
+
+msgid "Suspend IATI Sync"
+msgstr ""
+
+msgid "Suspended IATI Sync."
+msgstr ""
+
+msgid "Sync"
+msgstr ""
+
+#, fuzzy
+msgid "Sync Date"
+msgstr "Data Ikus"
+
+msgid "Synchronize With IATI"
+msgstr ""
+
+msgid "Target Groups"
+msgstr "Grupu Alvu"
+
+msgid "Telephone"
+msgstr "Telefone"
+
+msgid "The completion rating reflects the overall percentage of important fields completed within the data entry form."
+msgstr "Klasifikasaun kompleta reflete persentajen jeral hosi area importante ne'ebé kompleta durante formulariu hatama dadus."
+
+msgid "The contacts should include key team members who support this activity."
+msgstr "Kontaktu sira ne'e tenke inklui membru ekipa prinsipal sira ne'ebé suporta atividade ida ne'e."
+
+msgid ""
+"The date on which the activity actually started or ended,\n"
+"                    for example the date of the first or last disbursement\n"
+"                    or when physical activity started or ended."
+msgstr "Data ida ne'ebé atividade ne'e atualmente hahu ka remata, por exemplu data husi dezembolsu dahuluk no ikus ka wainhira atividade fiziku hahu ka remata."
+
+msgid ""
+"The date on which the activity is planned to start or end,\n"
+"                        for example the date of the first or last planned disbursement\n"
+"    \t\t            or when physical activity starts or ends."
+msgstr "Data ida ne'ebé atividade ne'e planu atu hahu ka remata, por exemplu data husi dezembolsu planu dahuluk no ikus ka wainhira atividade fiziku hahu ka remata."
+
+msgid "The end date cannot be before the start date"
+msgstr "Data ikus labele molok data hahu"
+
+msgid "The financial information in your activity will remain as of the last import date."
+msgstr ""
+
+msgid "The government entity or entities responsible for oversight or maintenance of the activity. Often this will be the government entity with which a MoU or similar agreement is signed. In many cases, the MoU will be signed directly with the implementing partner."
+msgstr "Entidade governu ka entidade responsável  sira ba supervizaun ka manutensaun ba atividade. Dala barak ida-ne'e entidade governu ne'ebé MoU ka akordu hanesan, asina. Iha kazu barak, MoU sei asina diretamente ho parseiru implementasaun."
+
+msgid "The implementer of the activity is the organisation(s) which is/are principally responsible for delivering this activity."
+msgstr "Implementador husi atividade ida ne'e mak organizasaun ne'ebé responsável prinsipalmente atu ezekuta atividade ida ne'e."
+
+msgid "The objectives should include a detailed description of the activity and expected outcomes."
+msgstr "Objetivu tenke inklui deskrisaun detalle husi atividade no rezultadu ne'ebé espera."
+
+msgid "The title should be a human readable name of the project. Please ensure that acronyms are fully spelled out"
+msgstr "Titulu tenke naran projetu ida ne'ebé ema bele lee. Favor garante katak akronimu sira totalmente definida"
+
+msgid "The type of finance (e.g. grant, loan, debt relief, etc). This the default value for all transactions in the activity report; it can be overridden by individual transactions."
+msgstr "Tipu husi finansa (exemplu: bolsa, eprestimu, menus dívida, nss). Ida ne'e valor padraun ba tranzasaun hotu-hotu iha relatóriu atividade; ida ne'e bele sustitui husi tranzasaun individual."
+
+msgid "There are no Funding partners"
+msgstr "Laiha parseiru finansiamentu"
+
+msgid "There are no accountable partners"
+msgstr "Laiha parseiru responsavel"
+
+msgid "There are no budgets"
+msgstr "Laiha orsamentu sira"
+
+msgid "There are no contacts"
+msgstr "Seidauk iha kontaktu"
+
+msgid "There are no documents or images uploaded"
+msgstr "Seidauk iha dokumentu ka imajen"
+
+msgid "There are no extending partners"
+msgstr "Laiha Parseiru Estensaun"
+
+msgid "There are no government partners"
+msgstr "Laiha Governu ninia parseiru sira"
+
+msgid "There are no implementing partners"
+msgstr "Laiha parseiru Implementasaun"
+
+msgid "There are no results"
+msgstr "Laiha rezultadu"
+
+msgid "There are no values"
+msgstr "Laiha valor sira"
+
+#, python-format
+msgid "They must add up to 100%%"
+msgstr "Sira tenki aumenta sa'e too 100%%"
+
+msgid "This action will replace selected locally reported transactions for this activity with those contained within the IATI Registry."
+msgstr ""
+
+msgid "This explains what the activity is, it is longer than the title and contains more detail"
+msgstr "Ida ne'e isplika saida mak atividade, nia naruk liu titulu no fó detalle liu tan."
+
+msgid "This explains what the result is, it is longer than the title and contains more detail"
+msgstr "Ida ne'e isplika saida mak resulzadu, ne'e naruk liu titulu no fó detallu barak liu"
+
+msgid "This is the currency for the activity budget."
+msgstr "Ida ne'e mak moeda ba orsamentu atividade"
+
+msgid "This is the government entity or development partner agency receiving funds from financing partner(s) for channeling to implementing partner(s)."
+msgstr "Ida-ne'e entidade governu ka ajensia parseiru dezenvolvimentu ne'ebé simu fundu husi parseiru finansiamentu atu passa ba parseiru implementasaun. "
+
+msgid "Title"
+msgstr "Titulu"
+
+msgid "To add endorsers for this activity, select government partners in the organisations tab."
+msgstr ""
+
+msgid "To be approved"
+msgstr "Aprova ona"
+
+msgid "To be endorsed"
+msgstr ""
+
+msgid "To change this list please change the organisations listed as accountable partners in the Organisations tab."
+msgstr ""
+
+msgid "To publish you need to:"
+msgstr "Atu públika ita presiza:"
+
+msgid "To see your official IATI record visit"
+msgstr ""
+
+msgid "Transactions"
+msgstr "Tranzasaun"
+
+msgid "Transactions:"
+msgstr "Tranzasaun:"
+
+msgid "Type"
+msgstr "Tipu"
+
+msgid "Untitled"
+msgstr "Títulu Laiha"
+
+msgid "Update"
+msgstr ""
+
+msgid "Update "
+msgstr ""
+
+#, python-format
+msgid "Updated %(modified)s"
+msgstr "Atualiza %(modified)s"
+
+msgid "Upload document"
+msgstr "hatama dokumentu"
+
+msgid "Url"
+msgstr ""
+
+msgid "Users can choose to stop IATI Sync at any time and edit imported transactions locally. However, those local changes would be lost if users choose to turn IATI Sync back on again."
+msgstr ""
+
+msgid "Visit profile page"
+msgstr "Vizita pajina perfil"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "When IATI Sync is activated, you will no longer be able to edit transactions locally for the transaction types you have selected to sync. To make changes, you will need to edit the relevant official IATI Activity File reported to the IATI Registry."
+msgstr ""
+
+msgid "Whether the aid is untied, tied, or partially tied."
+msgstr ""
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Yes, Approve"
+msgstr ""
+
+msgid "Yes, Cancel"
+msgstr "Loos, Kansela"
+
+msgid "Yes, Endorse"
+msgstr "Loos, Aseita"
+
+msgid "Yes, Remove"
+msgstr ""
+
+msgid "Yes, send back to Draft"
+msgstr "Loos, haruka fila ba konseptu"
+
+msgid "Yes, send back to Review"
+msgstr ""
+
+msgid "You cannot publish this activity for review before you:"
+msgstr ""
+
+msgid "You cannot submit this activity for review before you:"
+msgstr ""
+
+msgid "You have no activities to review."
+msgstr "Ita laiha atividade ne'ebe atu revista"
+
+msgid "You have unsaved changes on the current tab."
+msgstr "Iha mudansa iha pajina nee ne'ebe seidauk rai."
+
+msgid "You may not edit this activity"
+msgstr "Ita labele edite atividade ida ne'e"
+
+#, python-format
+msgid "You may replace the activity on the %(position_1)s with the %(status)s activity on the %(position_2)s"
+msgstr "Ita bele truka atividade iha %(position_1)s ho %(status)s atividade iha %(position_2)s"
+
+msgid "Your Stats"
+msgstr "Ita-nian Estatistiku"
+
+msgid "Your result should be ready shortly"
+msgstr "Ita nian resultadu lakleur tan tenki prontu"
+
+msgid "all subregions of "
+msgstr "sub rejiaun hotu-hotu hosi"
+
+#, python-brace-format
+msgid "all subregions of {area}"
+msgstr "sub rejiaun hotu-hotu husi {area}"
+
+msgid "back"
+msgstr "fila"
+
+msgid "left"
+msgstr "karuk"
+
+msgid "mandatory"
+msgstr ""
+
+msgid "no results"
+msgstr "laiha rezultadu"
+
+msgid "right"
+msgstr "lo'os"
+
+#~ msgid "A funding partner of the activity is an organisation which is at least partially responsible for funding this activity."
+#~ msgstr "Parseiru finansiadu husi atividade ida ne'e mak organizasaun ida ne'ebé pelu menus responsavel parsialmente ba finanseiru atividade ne'e nian."
+
+#, fuzzy
+#~ msgid "About Budgets"
+#~ msgstr "Orsamentu"
+
+#, fuzzy
+#~ msgid "Actions"
+#~ msgstr "Fatin"
+
+#, fuzzy
+#~ msgid "Activities you can endorse"
+#~ msgstr "Jerente Atividade"
+
+#, fuzzy
+#~ msgid "Add a commitment transaction"
+#~ msgstr "Aumenta tranzasaun"
+
+#~ msgid "Add an attachment"
+#~ msgstr "Aumenta anexu ida"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "Panel Kontrolu Asistensia"
+
+#~ msgid "Aid Type"
+#~ msgstr "Tipu Asistensia"
+
+#~ msgid "Aid by Donor"
+#~ msgstr "Asistensia husi Doador"
+
+#~ msgid "Aid by Location"
+#~ msgstr "Asistensia husi fatin"
+
+#~ msgid "Aid by Ministry"
+#~ msgstr "Asistensia husi Ministériu"
+
+#~ msgid "Aid by Sector"
+#~ msgstr "Asistensia husi Seitor"
+
+#~ msgid "Amount"
+#~ msgstr "Montante"
+
+#, fuzzy
+#~ msgid "Budget Status"
+#~ msgstr "Orsamentu"
+
+#~ msgid "Budget Type"
+#~ msgstr "Tipu Orsamentu"
+
+#~ msgid "Currency"
+#~ msgstr "Moeda"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "Delete activity"
+#~ msgstr "Hamos Atividade"
+
+#~ msgid "Disbursement Channel"
+#~ msgstr "Kánal dezembolsu"
+
+#~ msgid "Error loading combo"
+#~ msgstr "Erru loading combo"
+
+#~ msgid "FILTER BY ACTIVITY STATUS"
+#~ msgstr "FILTRU HUSI ESTATUTU ATIVIDADE"
+
+#~ msgid "FILTER BY ORGANISATION ROLE"
+#~ msgstr "FILTRU HUSI KNAAR ORGANIZASAUN"
+
+#~ msgid "Finance Type"
+#~ msgstr "Tipu Finansa"
+
+#~ msgid "Finances & Budgets"
+#~ msgstr "Finansa &  Orsamentu"
+
+#~ msgid "Flow Type"
+#~ msgstr "Tipu Fluxu"
+
+#~ msgid "If you set any dates you must set a start date"
+#~ msgstr "Se ita defini data ruma, ita tenke defini data hahu"
+
+#, fuzzy
+#~ msgid "Log"
+#~ msgstr "Prosesu"
+
+#~ msgid "Next tab"
+#~ msgstr "Tab tuir mai"
+
+#~ msgid "No attachments uploaded"
+#~ msgstr "Laiha anexu"
+
+#, fuzzy
+#~ msgid "Partner organisation"
+#~ msgstr "Organizasaun Fornesedor"
+
+#~ msgid "Profile"
+#~ msgstr "Pájina Perfil"
+
+#~ msgid "Provider"
+#~ msgstr "Fornesedor"
+
+#~ msgid "Provider Organisation"
+#~ msgstr "Organizasaun Fornesedor"
+
+#~ msgid "Receiver"
+#~ msgstr "Reseptor"
+
+#~ msgid "Receiver Organisation"
+#~ msgstr "Organizasaun Reseptor"
+
+#~ msgid "Reporting"
+#~ msgstr "Relatóriu"
+
+#~ msgid "Reports"
+#~ msgstr "Relatóriu"
+
+#~ msgid "Required"
+#~ msgstr "Presiza"
+
+#~ msgid "Sectors represent the purpose of the activity. To select a broad sector category as opposed to a subsector please select \"Sector name [unspecified]\"."
+#~ msgstr "Seitor reprezeta objetivu husi atividade. Atu hili kategoria seitor ne'ebé luan en vez de subseitor, favor hili  \"Naran Seitor [laespesifika]\"."
+
+#~ msgid "Select a region..."
+#~ msgstr "Hili rejiaun ida..."
+
+#~ msgid "Select a transaction type..."
+#~ msgstr "Hili tipu tranzasaun ida..."
+
+#~ msgid "Select an aid type..."
+#~ msgstr "Hili tipu asistensia ida..."
+
+#~ msgid "Software designed & developed by"
+#~ msgstr "Software dezeña & dezenvolve husi"
+
+#~ msgid "Something is wrong."
+#~ msgstr "Buat ruma lalo'os"
+
+#~ msgid "Start Date"
+#~ msgstr "Data Hahu"
+
+#~ msgid "The IATI identifier will be created when this activity is saved"
+#~ msgstr "Identifikador IATI sei kria wainhira atividade ida ne'e salva ona"
+
+#~ msgid "The currency value date"
+#~ msgstr "Moeda nian data validade"
+
+#~ msgid "The date of transaction"
+#~ msgstr "Data tranzasaun"
+
+#, fuzzy
+#~ msgid "There are no transactions"
+#~ msgstr "Laiha tranzasaun"
+
+#~ msgid "This date is an actual date and must be in the past"
+#~ msgstr "Data ida ne'e data atual no tenke iha pasadu"
+
+#~ msgid "This is the date on which the transaction was made or (in the case of commitments) agreed."
+#~ msgstr "Ida ne'e data iha ne'ebé tranzasaun ne'e halo ka (iha kazu ida ne'e komitmentu) akordu."
+
+#~ msgid "This is the date we will use for determining the exchange rate for currency conversions."
+#~ msgstr "Ida ne'e data ne'ebe ita sei uza atu determina taxa interkambiu ba konversaun moeda."
+
+#, fuzzy
+#~ msgid "To make sure that you can publish your activity you need to add a commitment. The total budget for an activity should be reported as a commitment in the transaction element."
+#~ msgstr "Atu asegura katak ita bele publika ita nian atividade, ita presiza atu aumenta montante komitmentu. Orsamentu total ba atividade ida tenke hetan reportajen hanesan komitmentu ida iha elementu tranzasaun."
+
+#~ msgid "Transaction Type"
+#~ msgstr "Tipu tranzasaun"
+
+#~ msgid "Upload a Document"
+#~ msgstr "Aumenta dokumentu ida"
+
+#~ msgid "Value"
+#~ msgstr "Valor"
+
+#~ msgid "Value Date"
+#~ msgstr "Data Validade"
+
+#~ msgid "View"
+#~ msgstr "Haree"
+
+#~ msgid "You have saved successfully!"
+#~ msgstr "Ita salva ho susesu!"
+
+#~ msgid "You must select a location"
+#~ msgstr "Ita tenke hili fatin ida"
+
+#~ msgid "Your Pages"
+#~ msgstr "Ita-nian Pájina"
+
+#~ msgid "Your actual end date (%(end)s) cannot be before your actual start date (%(start)s)"
+#~ msgstr "Ita nian data ikus atual (%(end)s) labele molok data hahu atual (%(start)s)"
+
+#~ msgid "Your budget end date (%(end)s) cannot be before your budget start date (%(start)s)"
+#~ msgstr "Ita nian data ikus orsamentu (%(end)s) labele molok data hahu orsamentu (%(start)s)"
+
+#~ msgid "Your planned end date (%(end)s) cannot be before your planned start date (%(start)s)"
+#~ msgstr "Ita nian data ikus planu (%(end)s) labele molok data hahu planu (%(start)s)"
+
+#~ msgid "no transactions"
+#~ msgstr "laiha tranzasaun"

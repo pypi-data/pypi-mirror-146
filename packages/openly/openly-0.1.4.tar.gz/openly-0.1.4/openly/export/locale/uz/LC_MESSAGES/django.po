@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-28 14:20+0900\n"
+"PO-Revision-Date: 2017-06-04 16:42+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+msgid ""
+" Example: select \"No Actual Start Date\" and \"No Actual End Date\" to get all\n"
+"                            activities that have either no actual start date or no actual end date. "
+msgstr "Masalan: \"Amalda boshlanish kuni yo'q\" va \"Amalda yakunlanish kuni yo'q\"ni tanlab, amalda boshlanish kuni yoki amalda yakunlanish kuni yo'q barcha faoliyat yo'nalishlarini toping."
+
+msgid "Activities Absent From The Dashboard"
+msgstr "Boshqaruv paneled yo'q faoliyat yo'nalishlari"
+
+#, fuzzy
+msgid "Activities Without Budgets"
+msgstr "Sanalarsiz faoliyat yo'nalishlari"
+
+msgid "Activities Without Commitments"
+msgstr "Majburiyatlarsiz faoliyat yo'nalishlari"
+
+msgid "Activities Without Dates"
+msgstr "Sanalarsiz faoliyat yo'nalishlari"
+
+msgid "Activities Without Transactions"
+msgstr "Tranzaktsiyalarsiz faoliyat yo'nalishlari"
+
+msgid "Activity Status"
+msgstr "Faoliyat holati"
+
+msgid "Annual Breakdown By Activity"
+msgstr "Faoliyat yo'nalishlarining yillik kesimi"
+
+msgid "Annual Breakdown By Development Partner"
+msgstr "Taraqqiyot sohasidagi hamkor bo'yicha yillik kesim"
+
+msgid "Annual Breakdown By Sector"
+msgstr "Tarmoq bo'yicha yillik kesim"
+
+msgid "Annual Breakdown By State/Region"
+msgstr "Viloyat/hudud bo'yicha yillik kesim"
+
+msgid "Annual Breakdown By Township"
+msgstr "Shaharchalar bo'yicha yillik kesim"
+
+msgid "Create Report"
+msgstr "Hisobot yaratish"
+
+msgid "Data Quality"
+msgstr "Ma'lumotlar sifati"
+
+msgid "Data Quality Type"
+msgstr "Ma'lumotlar sifati turi"
+
+msgid "Development Partner"
+msgstr "Taraqqiyot sohasida hamkor"
+
+msgid "Development Partner Profiles"
+msgstr "Taraqqiyot sohasidagi hamkor profillari"
+
+msgid "Development Partner Report"
+msgstr "Taraqqiyot sohasidagi hamkor hisoboti"
+
+#, python-format
+msgid "Disaggregate by %(object)s"
+msgstr "%(object)s dezagregatsiya"
+
+msgid "Disaggregate by development partner."
+msgstr "Taraqqiyot sohasida hamkor kesimida dezagregatsiya"
+
+msgid "Disaggregate by location."
+msgstr "Joylashuvga ko'ra dezagregatsiya"
+
+msgid "Disaggregate by sector."
+msgstr "Tarmoq bo'yicha dezagregatsiya"
+
+msgid "Donor Summary Report"
+msgstr "Donor bo'yicha umumlashtirilgan hisobot"
+
+msgid "End Date"
+msgstr "Yakunlanish muni"
+
+msgid "Finance Type"
+msgstr "Moliyalashtirish turi"
+
+msgid "Location"
+msgstr "Joylashuv"
+
+msgid "Location Report"
+msgstr "Hudud bo'yicha hisobot"
+
+msgid "Missing Dates"
+msgstr "Yo'q sanalar"
+
+msgid "No Actual End Date"
+msgstr "Amaldagi yakunlanish sanasi yo'q"
+
+msgid "No Actual Start Date"
+msgstr "Amaldagi boshlanish sanasi yo'q"
+
+msgid "No Planned End Date"
+msgstr "Rejalashtirilgan yakunlanish sanasi yo'q"
+
+msgid "No Planned Start Date"
+msgstr "Rejalashtirilgan boshlanish sanasi yo'q"
+
+msgid "Quarterly Breakdown By Development Partner"
+msgstr "Taraqqiyot sohasidagi hamkor bo'yicha choraklik kesim"
+
+msgid "Quarterly Breakdown By Sector"
+msgstr "Tarmoqlar bo'yicha choraklik kesim"
+
+msgid "Quarterly Breakdown By State/Region"
+msgstr "Viloyat/hudud bo'yicha choraklik kesim"
+
+msgid "Quarterly Breakdown By Township"
+msgstr "Shaharlar bo'yicha choraklik kesim"
+
+msgid "Report Category"
+msgstr "Hisobot toifasi"
+
+msgid "Sector"
+msgstr "Tarmoq"
+
+msgid "Sector Report"
+msgstr "Tarmoq bo'yicha hisobot"
+
+msgid "Sector Summary Report"
+msgstr "Tarmoq bo'yicha umumlashtirilgan hisobot "
+
+msgid "Start Date"
+msgstr "Boshlanish kuni"
+
+#, python-format
+msgid "The reports allow us to export and disaggregate aid data reported to %(site_name)s."
+msgstr "Ushbu hisobotlar Palov %(site_name)s kiritilgan tashqi ko'makka oid ma'lumotlarni kesimda taqdim qilishga imkon beradi."
+
+#~ msgid "Activity Manager"
+#~ msgstr "Faoliyat bo'yicha menejer"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "Ko'mak \"priborlar doskasi\""
+
+#~ msgid "Aid by Donor"
+#~ msgstr "Tashqi ko'mak donorlar kesimida"
+
+#~ msgid "Aid by Location"
+#~ msgstr "Tashqi ko'mak hududlar kesimida"
+
+#~ msgid "Aid by Ministry"
+#~ msgstr "Tashqi ko'mak  vazirliklar kesimida"
+
+#~ msgid "Aid by Sector"
+#~ msgstr "Tashqi ko'mak tarmoqlar kesimida"
+
+#~ msgid "Disaggregate by sector working group."
+#~ msgstr "Tarmoq ishchi guruhi kesimida dezagregatsiya"
+
+#~ msgid "Profile Page"
+#~ msgstr "Profil sahifasi"
+
+#~ msgid "Query Builder"
+#~ msgstr "Izlash ustasi"
+
+#~ msgid "Report Templates"
+#~ msgstr "Hisobot shablonlari"
+
+#~ msgid "Reports"
+#~ msgstr "Hisobotlar"
+
+#~ msgid "Sector Working Group"
+#~ msgstr "Tarmoq ishchi guruhi"
+
+#~ msgid "Software designed & developed by"
+#~ msgstr "Dastur ta'minoti loyihalashtiruvchi va ishlab chiquvchi"
+
+#~ msgid "Your Pages"
+#~ msgstr "Sizning sahifalar"

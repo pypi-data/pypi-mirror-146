@@ -1,0 +1,1746 @@
+{% load i18n %}
+
+{% comment %}
+These Riot tags allow operations via a RESTful interface on the following objects
+
+✓ = complete
+p = pending
+f = future / not planned yet
+
+Result ✓
+ResultDescription ✓
+ResultIndicator ✓
+ResultIndicatorBaselineComment p
+ResultIndicatorDescription ✓
+ResultIndicatorPeriod ✓
+ResultIndicatorPeriodActualComment f
+ResultIndicatorPeriodActualDimension ✓
+ResultIndicatorPeriodActualLocation f
+ResultIndicatorPeriodTargetComment f
+ResultIndicatorPeriodTargetDimension f
+ResultIndicatorPeriodTargetLocation f
+ResultIndicatorReference f
+ResultIndicatorTitle ✓
+ResultIndicatorType ✓
+ResultTitle ✓
+
+{% endcomment %}
+
+<editor-back>
+    <a if="{link.url}" href="#{link.url}"><i class="ion-android-arrow-back"></i> {link.text || 'back'}</a>
+    var tag = this;
+    tag.link = {};
+    tag.on('mount', function(){
+        tag.update({link: _.invoke(tag.parent, 'getBackLink')})
+    })
+</editor-back>
+
+<cancel-save-delete-buttons>
+   <div class="cancel-save-group pull-right">
+        <button onclick="{cancel}" if={cancel} type="button" class="btn btn-primary">Cancel</button>
+        <button onclick="{goBack}" if={goBack} type="button" class="btn btn-primary">Return</button>
+        <button onclick="{save}"  if={save} type="button" class="btn btn-primary ">Save</button>
+        <button onclick="{edit}"  if={edit} type="button" class="btn btn-primary ">Edit</button>
+        <button if="{item.id && delete_item}" onclick="{delete_item}" type="button" class="btn btn-primary">Delete</button>
+    </div>
+
+    var tag = this;
+    tag.item = {};
+    tag.cancel = tag.parent.cancel;
+    tag.goBack = tag.parent.goBack;
+    tag.save = tag.parent.save;
+    tag.delete_item = tag.parent.delete_item;
+    tag.edit = tag.parent.edit;
+    tag.on('mount', function(){
+        tag.update({item: tag.parent.item});
+    })
+    tag.on('update', function(){
+        if (tag.item != tag.parent.item){
+            tag.update({item: tag.parent.item});
+        }
+    })
+
+</cancel-save-delete-buttons>
+
+
+<results-app>
+  <router>
+    <route path="results">
+        <div data-is="result-list"></div><btn-editor-next></btn-editor-next>
+    </route>
+
+    <route path="results-list">
+        <div data-is="result-list"></div><btn-editor-next></btn-editor-next>
+    </route>
+
+    <route path="results/*">
+        <div data-is="result-detail"></div>
+    </route>
+
+    <route path="results/*/edit">
+        <div data-is="result-edit"></div>
+    </route>
+
+    <route path="results/create/create">
+        <div data-is="result-create"></div>
+    </route>
+
+    <route path="results/indicator/*">
+        <div data-is="indicator-detail"></div>
+    </route>
+
+    <route path="results/indicator/*/edit">
+        <div data-is="indicator-edit"></div>
+    </route>
+
+
+    <route path="results/indicator/create..">
+        <div data-is="indicator-edit"></div>
+    </route>
+
+    <route path="results/narrative/*/*/*">
+        {# EG resultindicatortitle/result_indicator/3 : the title(s) for result indicator 3 #}
+        <div>
+            <div class="col-xs-12">
+                <form data-is="result-narrative"></form>
+            </div>
+        </div>
+    </route>
+
+    <route path="results/period/*/edit">
+        <div data-is="indicator-period-edit"></div>
+    </route>
+
+    <route path="results/period/create/..">
+        <div data-is="indicator-period-edit"></div>
+    </route>
+
+  </router>
+  /* manually call 'exec' to initiate this nested router */
+  this.on('mount', function(){route.exec('')})
+</results-app>
+
+
+<tab-results id="results" class="tab-pane">
+    <div class="form_header"><h4>{% trans 'Results' %}</h4>
+        <a if='{location.hash == "#results"}' href="#results/create/create" class="btn btn-primary pull-right">Add a result</a>
+    </div>
+    <results-app></results-app>
+    {% include "tags/tab-results.js" %}
+</tab-results>
+
+
+<result-list>
+    <div class='form_body'>
+        <div class='row'>
+            <div class="col-xs-12 text-center" if="{!items.length}">
+                    <br>
+                    <img src="/static/img/Notebook.png" width="125">
+                    <h3 class="no-objects-text">{% trans 'There are no results' %}</h3>
+                    <!-- <p class="in-line-help">{% trans 'The contacts should include key team members who support this activity.' %}</p> -->
+            </div>
+            <div class="col-xs-12" if="{items.length}" each="{result, index in items}">
+                <div class="gray-bottom-border" data-is="result-titles" result="{result}" if="{result.id}" narrated_model="result" content_type="resulttitle"></div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .gray-bottom-border { border-bottom: 1px solid lightgray; }
+    </style>
+
+    var tag = this;
+    var store = stores.resultsStore;
+    var content_type = 'result';
+
+    function get_filter(){return {content_type:content_type}}
+    function update_items(){tag.update({items: _.filter(store.getItems(get_filter())) })}
+
+    tag.on('before-mount', function(){update_items()});
+
+</result-list>
+
+<indicator-list>
+    <hr>
+    <h4 if="{!items.length}">{% trans 'Add an indicator to your result' %}</h4>
+    <h4 if="{items.length}">{% trans 'Indicators' %}</h4>
+
+    <table class="table" if="{items.length}">
+        <thead>
+            <tr>
+                <td>Indicator</td>
+                <td>Type</td>
+{#                <td>Visible</td>#}
+                <td>{# Actions #}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr each="{item, index in items}">
+                <td><a href="#results/indicator/{item.id}">{item.title}<em if="{!item.title}">Untitled</em></a></td>
+                <td>{_.get(item, 'result_indicator_type.display')}</td>
+{#                <td>{_.get(item, 'result_indicator_type.visible')}</td>#}
+                <td>
+                    <a href="#results/period/create/?result_indicator={item.id}" class="btn btn-default" role="button">Add a value</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+{#    <script>#}
+    var tag = this;
+    tag.items = [];
+    var content_type = 'resultindicator';
+    var store = stores.resultsStore;
+
+    function get_filter(){return {content_type:content_type, result:tag.parent.item.id}}
+    function update_items(){tag.update({items: _.filter(store.getRichItems(get_filter())) })}
+
+    tag.on('before-mount', function(){update_items()})
+{#    </script>#}
+
+</indicator-list>
+
+<result-create>
+
+        <div class="col-xs-12 text-center" if="{!items || !items.length}">
+                <br>
+                <img src="/static/img/Notebook.png" width="125">
+                <h3 class="no-objects-text">{% trans 'Creating the result, please wait' %}</h3>
+                <p class="in-line-help">{% trans 'Your result should be ready shortly' %}</p>
+        </div>
+
+    var store = stores.resultsStore;
+    var content_type = 'result';
+    function onRoute() {
+        /* 
+        In order to save the narrative fields 'Title' and 'Description'
+        we first need a result ID. For this, we'll show a "Please wait" screen while we post the server for a new RESULT.
+        */
+        var request = store.make_request({ content_type: content_type, data: store.getTemplate(content_type)})
+        request.then(function(response){
+            route('results/'+response.id+'/edit')
+        })
+    }
+    this.on('route', onRoute());
+
+</result-create>
+
+<result-edit>
+    <div class='form_body'>
+        <div class='row'>
+            <div class="col-xs-12">
+                <a href="#results/{item.id}"><i class="ion-android-arrow-back"></i>back</a>
+            </div>
+
+            <div class="col-xs-12">
+
+                <h4>Edit Result</h4>
+
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-12">Type
+                    
+                                <select ref="type.code" class="form-control">
+                                    <option each="{option in optionsForType}" selected="{option[0] == _.get(item, 'type.code')}" value="{option[0]}">{option[1]}</option>
+                                </select>
+                        
+                        </label>
+                    </div>
+                </form>
+
+                <form data-is="result-narrative"
+                    content_type="resulttitle"
+                    related_type="result"
+                    label="Result title"
+                    id="{ object_id ||  item ? item.id : undefined}"
+                    hide_save_button="true"
+                ></form>
+                <form data-is="result-narrative"
+                    content_type="resultdescription"
+                    related_type="result"
+                    label="Result description"
+                    id="{ object_id || item ? item.id : undefined}"
+                    hide_save_button="true"
+                ></form>
+            </div>
+        </div>
+    </div>
+    <div data-is="cancel-save-delete-buttons"></div>
+
+{#    <script>#}
+        var tag = this;
+        tag.item = { id: undefined};
+        tag.object_id = undefined;
+        var store = stores.resultsStore;
+        var content_type = 'result';
+        var base = 'results/';
+
+        function getItem() {
+            var id = tag.object_id || tag.item.id || undefined;
+            return id ? store.getRichItem(content_type, _.toInteger(id)) : store.getTemplate(content_type);
+        }
+
+        function onRoute(id) {
+            tag.object_id = id;
+            tag.update({item: getItem()})}
+
+        tag.on('mount', function(){
+            tag.update({optionsForType: store.contentTypeOptions('resulttype', 'code', 'name', ["3"])}); /* exclude "Impact" type */
+        })
+
+        tag.on('route', function(id){onRoute(id)});
+
+        function updateNarratives() {
+            _.invokeMap(tag.tags['result-narrative'], 'save')
+        }
+
+        function getData() {
+            var data = _.clone(tag.item);
+            _.each(tag.refs, function (control, ref) {_.set(data, ref, control.value)});
+            return data;
+        }
+
+        function save() {
+            var data = getData();
+            var request = {content_type: content_type, data: data};
+            store.make_request(request)
+                .then(function (response) {
+                    tag.object_id = response.id;
+                    tag.update({item: getItem()});
+                    updateNarratives();
+                })
+                .fail(function (response) {
+                    tag.update({item: data})
+                })
+        }
+
+        function goBack(){
+            route(tag.item.id ? base + tag.item.id : base)
+        }
+
+        function delete_item() {
+            var request = {method: 'DELETE', content_type: content_type, data: {id: tag.item.id}};
+            store.make_request(request).then(function () {
+                route(base)
+            })
+        }
+
+        tag.save = save;
+        tag.delete_item = delete_item;
+
+        tag.getBackLink = function(){return {url: base + tag.item.id}};
+
+{#    </script>#}
+</result-edit>
+
+<indicator-edit>
+    <div class='form_body'>
+            <div class='row'>
+        <div class="col-xs-12" data-is="editor-back"></div>
+
+        <div class="col-xs-12">
+            <h4 if="{!item || !item.id}">Add an indicator to your result</h4>
+            <h4 if="{item && item.id}">Edit an indicator</h4>
+        </div>
+
+        <div class="col-xs-12">
+            <form data-is="result-narrative"
+                content_type="resultindicatortitle"
+                related_type="result_indicator"
+                label="Indicator title"
+                id="{ item ? item.id : undefined}"
+                hide_save_button="true"
+            ></form>
+            <form data-is="result-narrative"
+                content_type="resultindicatordescription"
+                related_type="result_indicator"
+                label="Indicator description"
+                id="{ item ? item.id : undefined}"
+                hide_save_button="true"
+            ></form>
+
+        </div>
+
+        <div class="col-xs-12">
+
+            <result-type-edit></result-type-edit>
+
+            <h5>Report the Baseline:</h5>
+            <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2">Baseline Year</label>
+                <div class="col-sm-4">
+                    <input type="text" ref="baseline_year" class="form-control"  value="{item.baseline_year || moment().year()}">
+                </div>
+
+                <label class="col-sm-2">Baseline Value</label>
+                <div class="col-sm-4">
+                    <input type="text" ref="baseline_value" class="form-control"  value="{item.baseline_value}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2">Direction</label>
+                    <div class="col-sm-4">
+                        <select ref="ascending" class="form-control">
+                            <option selected={item.ascending} value="1">Ascending</option>
+                            <option selected={!item.ascending} value="0">Descending</option>
+                        </select>
+                    </div>
+
+                <label class="col-sm-2">Measure</label>
+                <div class="col-sm-4">
+                    <select ref="measure" class="form-control">
+                        <option each="{choice in choices.indicatormeasure}"
+                                selected="{item.measure == choice[0]}" value="{choice[0]}">{choice[1]}
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            </form>
+        </div>
+    </div>
+    </div>
+    <div data-is="cancel-save-delete-buttons"></div>
+
+
+
+{#    <script>#}
+
+    var tag = this;
+    tag.item = {
+        ascending: true,
+        measure: choices.indicatormeasure[0][0]
+    };
+    var store = stores.resultsStore;
+    var content_type = 'resultindicator';
+
+    function onRoute(id) {
+        if (id) {
+            tag.update({item: store.getRichItem(content_type, parseInt(id))});
+        } else {
+            tag.update({item: store.getTemplate(content_type)});
+        }
+        tag.query_params = route.query();
+        if (tag.query_params.result){
+            tag.item.result = tag.query_params.result
+        }
+    }
+    tag.on('route', function (id) {onRoute(id)});
+
+    tag.save = function () {
+            var data = _.clone(tag.item);
+            var request;
+            _.each(tag.refs, function (control, ref) {
+                _.set(data, ref, control.value)
+            });
+
+            if (!data.result){
+                throw new Error('No result item')
+            }
+
+            request = {content_type: content_type, data: data};
+            tag.update({item: {}});
+            store.make_request(request)
+                .then(function (response) {
+                    tag.update({item: response})
+                    /* Narratives are handled separately after the main request */
+                    _.invokeMap(tag.tags['result-narrative'], 'save')
+                    _.invoke(tag.tags['result-type-edit'], 'save')
+                })
+                .fail(function (response) {
+                    tag.update({item: data})
+                })
+        }
+
+    tag.delete_item = function(){
+        store.make_request({method: 'DELETE', content_type: content_type, data: {id: tag.item.id}}).then(function(){
+            goBack()
+        })
+    }
+
+    function goBack(){
+        route('results/'+tag.item.result)
+    }
+
+    tag.getBackLink = function(){
+        var url;
+        if (tag.item.id) {url = 'results/indicator/'+tag.item.id }
+        if (route.query().result) {url = 'results/'+route.query().result}
+        return {url: url}
+    }
+
+
+{#    </script>#}
+
+</indicator-edit>
+
+
+<dimension-form>
+
+    <virtual  each="{option_array, name in options}">
+        <h5>{name}</h5>
+        <div class="checkbox" each="{value in option_array}">
+          <label>
+            <input type="checkbox" name="{name}" value="{value}" checked="{_.includes(checked, name+'='+value)}" onchange="{toggleOption}">
+            {value}
+          </label>
+        </div>
+    </virtual>
+
+{#    <script>#}
+    var tag = this;
+    var store = stores.resultsStore;
+    var content_type = 'resultindicatorperiodactualdimension';
+    var content_type_set = content_type + '_set';
+
+    tag.items = [];
+    tag.options = {
+        gender: ['male', 'female']
+    };
+
+    function getParentItemId() {
+        return tag.parent.item.id
+    }
+
+    function getFilter() {
+        return {content_type: content_type, result_indicator_period: getParentItemId() || 'new'}
+    }
+
+    function getItems() {
+        return store.getItems(getFilter())
+    }
+
+    function setCheckedItems() {
+        tag.items = getItems();
+        tag.update({
+            checked: _.map(tag.items, function (item) {
+                return item.name + '=' + item.value
+            })
+        })
+    }
+
+    function getData() {
+        function getItem(item) {
+            var props = ['result_indicator_period', 'id', 'name', 'value'];
+            return _.pick(item, props)
+        }
+
+        var d = {id: getParentItemId()};
+        d[content_type_set] = _.map(getItems(), getItem);
+        return d
+    }
+
+    function addDimensions(response) {
+        /* Store does not handle "sets" well, This function rebuilds the store's record of items */
+
+        function dropDimensions() {
+            /* Save via the REST api completely removes all objects - need to reflect that in the store or we'll get dupes */
+            var period_id = getParentItemId();
+            _.remove(store.results, function (i) {
+                return i.content_type === content_type && i.result_indicator_period === period_id
+            });
+        }
+
+        dropDimensions();
+        _.each(response[content_type_set], function (object) {
+            object.content_type = content_type;
+            store.add_content(object);
+        })
+    }
+
+    tag.save = function save() {
+        var items = getItems();
+        _.each(items, function (item) {
+            item.result_indicator_period = getParentItemId()
+        });
+        store.make_request({object_type: 'actualdimensionset', data: getData()}).done(function (response) {
+            addDimensions(response);
+            setCheckedItems();
+        });
+    };
+
+    tag.on('mount', function () {
+        setCheckedItems()
+    });
+
+    tag.toggleOption = function (e) {
+        var item = getFilter();
+        var comparator = function (i) {
+            return i.content_type === item.content_type && item.name === i.name && item.result_indicator_period === i.result_indicator_period
+        }
+        item.name = e.target.name;
+        item.value = e.target.value;
+        _.remove(store.results, comparator);
+        if (e.target.checked) {
+            store.results.push(item);
+        }
+        setCheckedItems();
+    }
+
+{#    </script>#}
+
+</dimension-form>
+
+<result-type-edit>
+
+    <h5>Indicator Type</h5>
+    <form class="form-horizontal"  if="{item}">
+      <div class="form-group">
+          <label for="indicator_type" class="col-sm-2">Type</label>
+
+            <div class="col-sm-4">
+            <select ref="display" class="form-control">
+                <option selected="{item.display == choice[0]}" each="{choice in choices.resultindicatortype_display}" value="{choice[0]}">{choice[1]}</option>
+            </select>
+        </div>
+
+        <label for="indicator_sector" class="col-sm-2">Sector</label>
+
+            <div class="col-sm-4">
+                <select ref="sector" class="form-control">
+                    <option selected="{item.sector == choice[0]}" each="{choice in choices.resultindicatortype_sector}" value="{choice[0]}">{choice[1]}</option>
+                </select>
+            </div>
+
+          </div>
+
+        <label show={false} class="col-sm-2">Target</label>
+            <div show={false} class="col-sm-4">
+                <textarea ref="target" class="form-control"  value="{item.target}"></textarea>
+          </div>
+      </div>
+
+    </form>
+
+    var tag = this;
+    tag.item = {};
+    var store = stores.resultsStore;
+    var content_type = 'resultindicatortype';
+    tag.object_id = undefined;
+
+    function onMount() {
+        if(tag.parent.item.id){
+            return tag.update({item: store.getItems({content_type: content_type, result_indicator: tag.parent.item.id}, true) })
+        }
+        tag.update({item: store.getTemplate(content_type)});
+    }
+
+
+    tag.on('mount', function(id){
+        onMount();
+    })
+
+    tag.save = function () {
+        var data = _.clone(tag.item);
+        var request;
+        _.each(tag.refs, function (control, ref) {
+            data[ref] = control.value;
+        });
+
+        /* Ensure a result_indicator is set */
+        data.result_indicator = tag.parent.item.id;
+        if (!data.result_indicator){throw new Error('Oops! No resultindicator')};
+
+        request = {content_type: content_type, data: data};
+        tag.update({item: undefined});
+        store.make_request(request)
+            .then(function (response) {
+                tag.update({item: response})
+            })
+            .fail(function (response) {
+                tag.update({item: data})
+            })
+    }
+
+</result-type-edit>
+
+
+<result-narrative>
+      <div class="form-group">
+          <div class="row">
+                <label class="col col-sm-12" for="content" >{opts.label || 'Narrative Content'}
+                <textarea style="height: {opts.height || '150px'}; width:{opts.width||'100%'}" class="form-control" ref="content" value="{narrative ? narrative.content : ''}" id="content"></textarea>
+                </label>
+            </div>
+        </div>
+
+        <button class="btn btn-default" type="button" hide={opts.hide_save_button} disabled={!enabled || !content} onclick="{save}">{opts.buttonText || 'Save'}</button>
+
+        <style>
+            textarea { width: 100%;}
+        </style>
+
+{#    <script>#}
+
+    var tag = this;
+    tag.content = undefined;
+    tag.narrative = undefined;
+
+    tag.enabled = true; //:boolean
+    var store = stores.resultsStore;
+
+    function narrativeFactory(){
+        var template_name = 'narrative';
+        narrative = store.getTemplate(template_name)
+        narrative.content = tag.refs.content.value
+        return narrative
+    }
+
+    function getNarrativeContainerFilter(){
+        var filter = {};
+        filter.content_type = tag.content_type;
+        filter[tag.related_type] = _.toInteger(tag.narrativeContainerId);
+        return filter;
+    }
+
+    function getNarrativeContainers(){
+        var filter = getNarrativeContainerFilter();
+        return store.getItems(filter)
+    }
+
+    function getNarrativeContainer(){
+        return getNarrativeContainers()[0]
+    }
+
+    function getNarrative() {
+        return getNarrativeContainers()[0].narratives[0]
+    }
+
+    function makeContainer() {
+
+        if (!tag.narrativeContainerId) {
+            return;
+        }
+        return store.make_request({
+            content_type: tag.content_type,
+            data: getNarrativeContainerFilter()
+        }).then(function (data) {
+            tag.update({content: data, narrative: narrativeFactory()});
+        });
+    }
+
+
+    function onRoute() {
+        /* To save a new narrative requires a "base" content_type instance to be present */
+        /* First let's check for one in our store */
+
+        tag.content = getNarrativeContainer();
+        if (!tag.content) {
+            return makeContainer();
+        }
+        if (tag.content.narratives) {
+            tag.update({narrative: getNarrative()})
+        }
+        if (!tag.narrative){
+            tag.update({ narrative: narrativeFactory() });
+        }
+    }
+
+    tag.on('route', function (content_type, related_type, id) {
+        tag._routed = true;
+        tag.content_type = content_type;
+        tag.related_type = related_type;
+         if (!content_type || !related_type) { throw new Error('Required options were not included')}
+        tag.narrativeContainerId = id;
+        onRoute();
+    });
+
+    tag.on('mount', function(){
+        if ( tag._routed ){return;}
+        tag.content_type = tag.opts.content_type;
+        tag.related_type = tag.opts.related_type;
+        tag.narrativeContainerId = tag.opts.id;
+        if ( !tag.content_type || !tag.related_type ) { throw new Error('Required options were not included')}
+        tag.update({ narrative: narrativeFactory() });
+        onRoute();
+    });
+
+    tag.on('update', function(){
+        if ( tag.opts.id && !tag.narrativeContainerId){
+            tag.update({narrativeContainerId: tag.opts.id});
+            }
+    });
+
+    tag.on('updated', function(){
+
+        if (tag.saveOnUpdate && tag.content){
+            tag.saveOnUpdate = false;
+            tag.save()
+        }
+    });
+
+    tag.save = function () {
+
+        if (!tag.content){
+            tag.saveOnUpdate = true;
+            makeContainer();
+            return;
+        }
+
+        var data = _.clone(tag.narrative);
+        /* Create / update this Narrative */
+        data.content = tag.refs.content.value;
+        if (!data.content){
+            /* Not implemented yet */
+            /* tag.delete_item() */
+            return
+        }
+        data.related_object_id = tag.content.id;
+        data.related_content_type = store.getContentTypeId(tag.content_type);
+        tag.update({enabled:false})
+        store.make_request({ content_type: 'narrative', data: data }).then(function(response){
+            tag.update({narrative: response, enabled: true});
+        });
+    };
+
+
+{#    </script>#}
+</result-narrative>
+
+<indicator-description>
+    <form>
+      <div class="form-group">
+        <label for="key_progress_statement">Key Progress Statement</label>
+          <textarea class="form-control" id="indicator_description" ref="indicator_description"></textarea>
+      </div>
+    </form>
+
+</indicator-description>
+
+
+<indicator-detail>
+    <div class='form_body'>
+        <div class='row'>
+            <div class="col-xs-12" data-is="editor-back"></div>
+            <div class="col-xs-12" if="{item}">
+                <h4>
+                    <virtual if="{item.title}">{item.title}</virtual>
+                    <virtual if="{!item.title}"><em>No Title provided</em></virtual>
+                </h4>
+        
+                <p>
+                    <virtual if="{item.description}">{item.description}</virtual>
+                    <virtual if="{!item.description}">No Description</virtual>
+                </p>
+        
+                <form if="{_.get(item, 'result_indicator_type.display') == 'Narrative'}"
+                        data-is="result-narrative"
+                        content_type="resultindicatorkeyprogressstatement"
+                        related_type="result_indicator"
+                        label="Key Progress Statement"
+                        id="{ item ? item.id : undefined}"
+                ></form>
+        
+                <indicator-period-list if="{_.get(item, 'result_indicator_type.display') == 'Values'}"></indicator-period-list>
+        
+                <div class="row" if="{_.get(item, 'result_indicator_type.display') == 'Values'}">
+                    <div class="col col-sm-10"><a href="#results/period/create/?result_indicator={item.id}" class="add_form_row">{%  trans "Add a value" %}</a></div>
+                </div>
+        
+        
+                <form data-is="result-narrative"
+                        content_type="resultindicatorbaselinecomment"
+                        related_type="result_indicator"
+                        label="Provide a Narrative for this indicator:"
+                        id="{ item ? item.id : undefined}"
+                ></form>
+        
+                <a class="btn btn-primary" href="{ profile_page }">Profile page</a>
+            </div>
+        </div>
+    </div>
+   
+
+    <div data-is="cancel-save-delete-buttons"></div>
+
+
+
+
+    <style scoped>
+        textarea { width:100%};
+    </style>
+    var tag = this;
+    tag.item = {};
+    tag.display = undefined;
+
+    var store = stores.resultsStore;
+    var content_type = 'resultindicator';
+
+    function onRoute(id){tag.update({item: store.getRichItem(content_type, parseInt(id)), profile_page: store.navigation_urls({content_type: 'resultindicator', id: parseInt(id), action: 'profile'})});}
+    tag.on('route', function (id) {onRoute(id)})
+    tag.getBackLink = function(){return {url:'results/'+tag.item.result}}
+    tag.edit = function(){route('results/indicator/'+tag.item.id+'/edit')}
+
+</indicator-detail>
+
+<result-detail>
+    <div class='form_body'>
+        <div class='row'>
+            <div class="col-xs-12" data-is="editor-back"></div>
+            <div class="col-xs-12" if="{item}">
+                <h4>
+                    <virtual if="{item.title}">  {item.title}</virtual>
+                    <virtual if="{!item.title}"> <em> No title provided </em></virtual>
+                </h4>
+
+                <p>
+                    <span if="{item.description}">  {item.description}</span>
+                    <span if="{!item.description}"> No description provided </span>
+                </p>
+
+                <indicator-list></indicator-list>
+                <a href="#results/indicator/create?result={item.id}" class="add_form_row add_indicator">Add an indicator</a>
+            </div>
+        </div>
+    </div>
+    <div data-is="cancel-save-delete-buttons"></div>
+
+    var tag = this;
+    var store = stores.resultsStore;
+    var content_type = 'result';
+    function onRoute(id){tag.update({item: store.getRichItem(content_type, parseInt(id))})}
+    tag.on('route', function (id) {onRoute(id)})
+    tag.edit = function(){route('results/'+tag.item.id+'/edit')}
+    tag.getBackLink = function(){return {url: 'results'}}
+
+</result-detail>
+
+<result-titles>
+    <span if="{!stores.resultsStore.admin_fields}" each="{narrative in narratives}">
+        <a href="#results/{parent.opts.result.id}"> 
+            <h3 if={narrative.content}>{narrative.content}</h3>
+            <h3 if={!narrative.content}><em>{% trans "Untitled" %}</em></h3>
+        </a>
+    </span>
+    this.mixin('NarrativeMixin')
+
+</result-titles>
+
+<result-descriptions>
+    <span data-is="narrative-form"
+          each="{narrative in narratives}"
+          narrative="{narrative}"
+          label="Result Description"
+          placeholder="Result Description"
+          textarea="1"
+          if="{stores.resultsStore.admin_fields}"
+    ></span>
+
+    <span if="{!stores.resultsStore.admin_fields}" each="{narrative in narratives}">
+        <p>{narrative.content}</p>
+    </span>
+    this.mixin('NarrativeMixin')
+</result-descriptions>
+
+<narrative-form>
+
+    <p if="{opts.readonly}">{opts.narrative.content}</p>
+
+    <form class="form-horizontal" if="{!opts.readonly}">
+        <input type="hidden" ref="activity" value="{stores.activityStore.activity.id}">
+        <input type="hidden" ref="language" value="en"> {# Ready for multilingual inputs #}
+        <div class="form-group">
+            <label class="col-sm-12">{opts.label}</label>
+            <div class="col-sm-12">
+                <input if={!opts.textarea} ref="content" type="text" class="form-control" oninput="{oninput}" onkeyup="{oninput}" placeholder='{opts.placeholder}' value="{opts.narrative.content}">
+                <textarea  if={opts.textarea} rows={opts.textarea} ref="content" type="text" class="form-control" oninput="{oninput}" onkeyup="{oninput}" placeholder="Result description">{opts.narrative.content}</textarea>
+            </div>
+            <div class="col-sm-12">
+              <button onclick="{save_narrative}" if={has_changed} type="submit" class="btn btn-warning">Save</button>
+              <button onclick="{delete_narrative}" if="{opts.narrative.id}" type="submit" class="btn btn-default">Delete</button>
+            </div>
+        </div>
+    </form>
+
+{#    <script>#}
+      this.mixin('NarrativeFieldMixin')
+{#    </script>#}
+
+    <style>
+        textarea {width: 95%}
+
+    </style>
+
+</narrative-form>
+
+<narrative-detail>
+    <label class="col-sm-2 control-label">{opts.label}</label>
+    <div class="col-sm-4">
+        <h4>{opts.narrative.content}</h4>
+    </div>
+
+</narrative-detail>
+
+
+<result-indicators>
+
+    <div each="{n, index in indicators}">
+        <hr if="{index == 0}"/>
+        <h5> Indicator {index+1}</h5>
+        <div data-is="indicator-form" indicator="{n}" if="{stores.resultsStore.admin_fields}"></div>
+        <div data-is="indicator-titles" result_indicator="{n}" if="{n.id}" narrated_model="result_indicator" content_type="resultindicatortitle"></div>
+        <div data-is="indicator-baseline-comment" result_indicator="{n}" if="{n.id}" narrated_model="result_indicator" content_type="resultindicatorbaselinecomment"></div>
+        <div data-is="indicator-descriptions" result_indicator="{n}" if="{n.id}" narrated_model="result_indicator" content_type="resultindicatordescription"></div>
+        <div data-is="indicator-period-items" result_indicator="{n}" if="{n.id}"></div>
+        <hr/>
+    </div>
+
+    <p if="{_.size(indicators) == 0 && stores.resultsStore.admin_fields}">This result has no indicators</p>
+    <a if="{stores.resultsStore.admin_fields}" onclick="{add_indicator}" class="add_form_row">Add an indicator</a>
+
+{#    <script>#}
+    var tag = this;
+    var store = stores.resultsStore;
+
+    function get_filter(){
+        return {content_type:'resultindicator', result: tag.opts.result.id}
+    }
+
+    function update_items(){
+        var indicators = _.filter(store.results, get_filter());
+        if (!_.isEqual(indicators, tag.indicators)){tag.update({indicators: indicators})}
+    }
+
+    tag.on('mount', function () {
+        update_items();
+        store.on('removed_resultindicator', update_items)
+    });
+    this.on('unmount', function () {
+        store.off('removed_resultindicator', update_items)
+    });
+
+
+    function add_indicator(){
+        var indicator = _.cloneDeep(templates.resultindicator);
+        _.assign(indicator, get_filter())
+        store.add_content(indicator);
+        store.make_request({object_type: 'resultindicator', data: indicator, assign:indicator}).then(function(){
+        update_items();
+        })
+    }
+
+    tag.add_indicator = add_indicator;
+{#    </script>#}
+
+
+</result-indicators>
+
+
+<indicator-type>
+    <p>Indicator Type</p>
+    <form class="form-horizontal" if="{content}">
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Type</label>
+
+            <div class="col-sm-4">
+                <select ref="display" class="form-control">
+                    <option selected="{content.display == choice[0]}" each="{choice in choices.resultindicatortype_display}" value="{choice[0]}">{choice[1]}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Sector</label>
+
+            <div class="col-sm-4">
+                <select ref="sector" class="form-control">
+                    <option selected="{content.sector == choice[0]}" each="{choice in choices.resultindicatortype_sector}" value="{choice[0]}">{choice[1]}</option>
+                </select>
+            </div>
+        </div>
+
+    </form>
+    <button onclick="{save}" type="submit" class="btn btn-default">Update</button>
+
+{#    <script>#}
+    var tag = this;
+    var store = stores.resultsStore;
+
+    tag.content_type = 'resultindicatortype';
+    tag.content = undefined;
+
+    function get_filter() {
+        return {content_type: tag.content_type, result_indicator: tag.opts.indicator.id}
+    }
+
+    /**
+     * Generate data for saving this object or creating a template
+     */
+    function get_data() {
+        var data = _.clone(tag.content || templates[tag.content_type]);
+        _.assign(data, _.mapValues(tag.refs, 'value'));
+        _.assign(data, get_filter());
+        return data;
+    }
+
+    tag.on('mount', function(){
+        /* Get or create a new ResultIndicatorType */
+        tag.update({content:_.find(store.results, get_filter()) || store.add_content(get_data())});
+
+        /* hehe */
+        if (!tag.content.id){tag.save()}
+    });
+
+
+    /**
+     * Make the request for saving this object
+     * @param e
+     * @returns {boolean}
+     */
+    tag.save = function (e) {
+        _.invoke(e, 'preventDefault');
+        store.make_request({object_type: tag.content_type, data: get_data(), assign:tag.content}).done(function (response) {
+            tag.update();
+        });
+        return false;
+    }
+
+{#    </script>#}
+
+</indicator-type>
+
+<indicator-form>
+    <h5>Report the Baseline:</h5>
+    <form class="form-horizontal">
+        <input type="hidden" ref="result" value="{opts.indicator.result}">
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Baseline Year</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" ref="year" value="{opts.indicator.baseline_year || moment().year()}">
+            </div>
+
+            <label class="col-sm-2 control-label">Baseline Value</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" ref="value" value="{opts.indicator.baseline_value}">
+            </div>
+        </div>
+        <div class="form-group">
+
+            <label class="col-sm-2 control-label">Direction</label>
+            <div class="col-sm-4">
+                <select ref="ascending" class="form-control">
+                    <option selected={opts.indicator.ascending} value="1">Ascending</option>
+                    <option selected={!opts.indicator.ascending} value="0">Descending</option>
+                </select>
+            </div>
+
+            <label class="col-sm-2 control-label">Measure</label>
+            <div class="col-sm-4">
+                <select ref="measure" class="form-control">
+                    <option each="{choice in choices.indicatormeasure}"
+                            selected="{parent.opts.indicator.measure == choice[0]}" value="{choice[0]}">{choice[1]}
+                    </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-xs-12" data-is="indicator-type" if="{opts.indicator.id && stores.resultsStore.admin_fields}" indicator="{opts.indicator}"></div>
+
+        <button onclick="{save}" type="submit" class="btn btn-default">Update</button>
+        <button onclick="{delete_indicator}" type="submit" class="btn btn-default">Delete</button>
+    </form>
+
+    <style>
+        .form-control {width: 100%}
+    </style>
+{#    <script>#}
+
+        var tag = this;
+
+        var store = stores.resultsStore;
+        function get_data() {
+            var data = _.clone(opts.indicator);
+            _.assign(data, _.mapValues(tag.refs, 'value'));
+            return data;
+        }
+
+        tag.save = function (e) {
+            e.preventDefault();
+            store.make_request({
+                object_type: 'resultindicator',
+                data: get_data(),
+                assign: tag.opts.indicator
+            }).done(function () {
+                tag.update();
+            });
+            return false;
+
+        };
+
+        /**
+         * Delete this indicator
+         */
+        tag.delete_indicator = function (e) {
+            e.preventDefault();
+
+            /* In case the indicator was initialized but never sent to the server */
+            if (!opts.indicator.id) {
+                _.pull(store.results, opts.indicator);
+                store.trigger('removed_resultindicator');
+                return false;
+            }
+
+            store.make_request({
+                object_type: 'resultindicator',
+                data: {id: tag.opts.indicator.id},
+                method: 'delete'
+            });
+            return false;
+        }
+{#</script>#}
+
+</indicator-form>
+
+<indicator-titles>
+    <span data-is="narrative-form"
+          each="{narrative in narratives}"
+          narrative="{narrative}"
+          label="Indicator Title"
+          placeholder="Indicator Title"
+          textarea="2"
+          if="{stores.resultsStore.admin_fields}"
+    ></span>
+    <span if="{!stores.resultsStore.admin_fields}">
+        <h5>Indicator Title:</h5>
+        <p each="{narrative in narratives}">{narrative.content}</p>
+    </span>
+
+
+    this.mixin('NarrativeMixin')
+</indicator-titles>
+
+<indicator-baseline-comment>
+    <span data-is="narrative-form"
+          each="{narrative in narratives}"
+          narrative="{narrative}"
+          label="Key Progress Statement:"
+          placeholder=""
+          textarea="2"
+
+    ></span>
+    this.mixin('NarrativeMixin')
+</indicator-baseline-comment>
+
+<indicator-descriptions>
+    <span data-is="narrative-form"
+          each="{narrative in narratives}"
+          narrative="{narrative}"
+          label="Provide a narrative for this indicator:"
+          placeholder=""
+          textarea="10"
+    ></span>
+    this.mixin('NarrativeMixin')
+</indicator-descriptions>
+
+{# Placeholders to be filled out #}
+
+<placeholder-list>
+    <p>{opts.title || 'items'}</p>
+    <ul>
+        <li each="{item in opts.items}">
+            <span data-is="placeholder-detail" item="{item}"></span>
+        </li>
+    </ul>
+</placeholder-list>
+
+<placeholder-detail>
+    <p>{JSON.stringify(opts.item)}</p>
+</placeholder-detail>
+
+<indicator-period-items>
+    <div class='form_body'>
+        <div class='row'>
+            <span if="{indicator_type == 'Values'}">
+                <h5>Indicator Periods</h5>
+                <table class="table table-bordered table-condensed" data-is="indicator-period-table" items="{items}"></table>
+                <div class="row">
+                    <div class="col col-sm-10"><a onclick="{add_content}" class="add_form_row">{%  trans "Add a value" %}</a></div>
+                </div>
+            </span>    
+        </div>
+    </div>
+
+    <style>
+        .table {margin-left: 0;}
+    </style>
+
+{#    <script>#}
+    var tag = this;
+    var store = stores.resultsStore;
+    tag.content_type = 'result_indicator_period';
+    tag.content_type_parent = 'result_indicator';
+
+    /** Escape underscores in content_type */
+    function _e(content_type){
+       return _.replace(content_type, /_/g, '');
+    }
+
+    /**
+     * Add a clone of this content_type template to the ResultStore
+     */
+    function add_content(){
+        var data = _.cloneDeep(_.get(templates, _e(tag.content_type), {}));
+        _.assign(data, tag.filter);
+        data[tag.content_type_parent] = tag.opts[tag.content_type_parent].id;
+        store.results.push(data);
+        tag.filter = get_filter();
+        tag.update({items: _.filter(store.results, tag.filter)});
+    }
+
+    function get_filter() {
+        var filter = {content_type: _e(tag.content_type)};
+        filter[tag.content_type_parent] = tag.opts[tag.content_type_parent].id;
+        return filter;
+    }
+
+     function update_items () {
+        tag.filter = get_filter();
+        tag.update({items:_.filter(store.results, tag.filter)});
+    }
+
+    function set_indicator_type(){
+        /** Inspect the results store for a result indicator type
+        * to give a "hint" about whether indicator periods are required or not
+        * Otherwise load resultindicatortype.type from the global 'templates'
+        */
+        var rt = _.find(store.results, {content_type: 'resultindicatortype', result_indicator: tag.opts.result_indicator.id}) || templates['resultindicatortype'] || {display: 'Narrative'};
+        if (tag.indicator_type !== rt.display){
+            tag.update({indicator_type:rt.display})
+        }
+    }
+
+    tag.on('mount', function () {
+        set_indicator_type();
+        update_items();
+        store.on('removed_resultindicatorperiod', update_items)
+        store.on('updated_resultindicatortype', set_indicator_type)
+    });
+    this.on('unmount', function () {
+        store.off('removed_resultindicatorperiod', update_items)
+        store.off('updated_resultindicatortype', set_indicator_type)
+    });
+
+    tag.add_content = add_content;
+{#    </script>#}
+
+</indicator-period-items>
+
+<indicator-period-list>
+    <div class='form_body'>
+        <div class='row'>
+            <div class='col-xs-12'>
+                <h4 if="{!items || !items.length}">{% trans 'There are no values' %}</h4>
+
+                <h4 if="{items && items.length}">{% trans 'Indicator Periods' %}</h4>
+            
+                <table class="table table-bordered table-condensed" if="{items.length}">
+                    <thead>
+                        <tr>
+                            <td>Date</td>
+                            <td>Target </td>
+                            <td>Actual </td>
+                            <td> </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr each="{item, index in items}">
+                            <td>{item.period_end}</td>
+                            <td>{item.target}</td>
+                            <td>{item.actual}</td>
+                            <td>
+                                <a href="#results/period/{item.id}/edit" class="btn btn-default" role="button">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  
+
+{#    <script>#}
+    var tag = this;
+    tag.items = [];
+    var content_type = 'resultindicatorperiod';
+    var store = stores.resultsStore;
+    function get_filter(){ return { content_type:content_type, result_indicator:tag.parent.item.id } }
+    function update_items(){tag.update({items: _.filter(store.getRichItems(get_filter())) })}
+    tag.on('mount', function(){ update_items()})
+{#    </script>#}
+
+
+</indicator-period-list>
+
+<indicator-period-edit>
+    <div class='form_body'>
+        <div class='row'>
+            <div class="col-xs-12" data-is="editor-back"></div>
+            <div class="col-xs-12">
+
+                <h4 if="{add_or_edit == 'Add'}">{%  trans "Add a value" %}</h4>
+                <h4 if="{add_or_edit == 'Edit'}">{%  trans "Edit a value" %}</h4>
+
+                <form class="form-horizontal">
+                <div class="form-group">
+
+                    <label for="indicator_sector" class="col-sm-2">Date</label>
+                        <div class="col-sm-4">
+                        <input type="text" ref="period_end" class="form-control"  value="{item.period_end}">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2">Target Value</label>
+                    <div class="col-sm-4">
+                        <input type="text" ref="target" class="form-control"  value="{item.target}">
+                    </div>
+
+                    <label class="col-sm-2">Actual Value</label>
+                    <div class="col-sm-4">
+                        <input type="text" ref="actual" class="form-control"  value="{item.actual}">
+                    </div>
+                </div>
+                </form>
+                <form class="form-horizontal" data-is="dimension-form"></form>
+            </div>
+        </div>
+    </div>
+    <div data-is="cancel-save-delete-buttons"></div>
+
+    var tag = this;
+    tag.item = {};
+    var store = stores.resultsStore;
+    var content_type = 'resultindicatorperiod';
+
+    function getDatepickerOpts() {
+        var datepicker_opts = $.extend({
+            orientation: 'top left',
+            startView: 1,
+            autoclose: true,
+            format: 'yyyy-mm-dd',
+            clearBtn: true
+
+        }, tag.opts.datepicker_opts);
+
+        if (tag.opts.validate_date_is_past) {
+            tag.datepicker_opts.endDate = '0d';
+        }
+        return datepicker_opts;
+    }
+
+    function intializeDatePicker(ref) {
+
+        var selector = "[ref="+ref+"]"
+        var element = $(selector, tag.root)
+
+        if (!element[0]) { return; }
+
+        var datepicker = element.datepicker(getDatepickerOpts());
+        datepicker.on('changeDate', function () {
+            var date = $(this).datepicker('getUTCDate');
+            var iso_date = moment(date).format('YYYY-MM-DD');
+            tag.item.date = iso_date;
+            tag.update();
+        });
+        datepicker.on('clearDate', function () {
+            tag.item.date = '';
+            tag.update();
+        });
+    }
+
+
+    function getData(){
+        var data = _.clone(tag.item);
+        _.each(tag.refs, function (control, ref) {
+            data[ref] = control.value
+        });
+
+        // Drop blank values
+        _.each(['period_start', 'period_end', 'actual', 'target'], function(date_field){
+            if(data[date_field] === ''){
+                data[date_field] = null
+            }
+        })
+
+        return data;
+    }
+
+    function onRoute() {
+        intializeDatePicker('period_start');
+        intializeDatePicker('period_end');
+        if (tag.object_id) {
+            tag.add_or_edit = 'Edit'
+            tag.update({item: store.getRichItem(content_type, parseInt(tag.object_id))});
+        } else {
+            tag.add_or_edit = 'Add'
+            tag.update({item: store.getTemplate(content_type)});
+        }
+        tag.query_params = route.query();
+        if (tag.query_params.result_indicator){
+            tag.item.result_indicator = _.toInteger(tag.query_params.result_indicator)
+        };
+    }
+
+    tag.on('route', function (id) {
+        tag.object_id = id; onRoute()
+    });
+
+    tag.save = function save(){
+        if (!tag.item){return}
+        store.make_request({object_type: content_type, data: getData()}).done(function (response) {
+            tag.update({item:store.getRichItem(content_type, response.id)});
+            _.invoke(tag.tags['dimension-form'], 'save')
+
+        });
+    }
+
+    tag.delete_item = function delete_item(){
+        if (!tag.item){return}
+        store.make_request({method: 'DELETE', object_type: content_type, data: getData()}).done(function (response) {
+            route(tag.getBackLink().url);
+        });
+    }
+
+    tag.getBackLink = function(){return {url: 'results/indicator/'+ (tag.query_params.result_indicator || tag.item.result_indicator)}}
+
+</indicator-period-edit>
+
+<indicator-period-table>
+    <thead>
+        <tr>
+            <th each="{col in cols}">{ col }</th>
+            <th>{# Save #}</th>
+            <th>{# Delete #}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr each="{content in opts.items}" data-is="indicator-period-tr">
+        </tr>
+    </tbody>
+
+    var tag = this;
+    tag.cols = ['Period Start', 'Period End', 'Target', 'Actual', 'Dimension']
+
+</indicator-period-table>
+
+<indicator-period-tr>
+
+    <td><input ref="period_start" value="{ content.period_start }"></td>
+    <td><input ref="period_end" value="{ content.period_end }"></td>
+    <td><input ref="target" value="{ content.target }"></td>
+    <td><input ref="actual" value="{ content.actual }"></td>
+    <td><virtual data-is="indicator-period-actual-dimension" item="{ content }"/></td>
+    <td>
+        <button class="btn btn-sm btn-primary" onclick="{save}">Save</button></td>
+    <td>
+        <button class="btn btn-sm btn-default" if="{content.id}" onclick="{del}">Delete</button>
+    </td>
+
+{#    <script>#}
+    var tag = this;
+    var store = stores.resultsStore;
+    var content_type = 'resultindicatorperiod';
+
+    /**
+     * Generate data for saving this object
+     */
+    function get_data(){
+        var data = tag.content;
+        _.assign(data, _.mapValues(tag.refs, 'value'));
+        return data
+    }
+
+    /**
+     * Make the request for saving this object
+     * @param e
+     * @returns {boolean}
+     */
+    function save(e) {
+        e.preventDefault();
+        store.make_request({content_type: content_type, data: get_data(), assign:tag.content});
+        return false;
+    }
+    tag.save = save;
+
+    function del(e){
+        e.preventDefault();
+        store.make_request({content_type: content_type, data: {id: tag.content.id}, method: 'DELETE'});
+        return false;
+    }
+    tag.del = del;
+
+    /** Trigger set_content where the tag is the subject of an update */
+
+    function set_content(){
+        var content;
+
+        function get_filter(){
+            return {content_type: content_type, id: tag.content.id}
+        }
+
+        content = _.find(store.results, get_filter());
+
+        /* Push if not exists */
+        if (_.isUndefined(content)){
+            content = get_filter();
+            store.results.push(content);
+        }
+        /* Update the tag if its current state does not reflect what has been returned from server */
+        if (get_data() !== content){
+            tag.update({content:content})
+        }
+    }
+
+    tag.on('mount', set_content);
+    tag.on('mount', function(){ store.on('updated_'+content_type, set_content) });
+    tag.on('unmount', function(){ store.off('updated_'+content_type, set_content) });
+{#    </script>#}
+
+</indicator-period-tr>
+
+
+<indicator-period-detail>
+    <form>
+        <div class="col-xs-2"><input class="form-control" ref="period_start" value="{item.period_start}"></div>
+        <div class="col-xs-2"><input class="form-control" ref="period_end" value="{item.period_end}"></div>
+        <div class="col-xs-2"><input class="form-control" ref="target" value="{item.target}"></div>
+        <div class="col-xs-2"><input class="form-control" ref="actual" value="{item.actual}"></div>
+
+        <div class="col-xs-2" data-is="indicator-period-actual-dimension" item="{item}">
+        </div>
+
+        <div class="col-xs-2">
+            <div class="btn-group btn-group-xs">
+                <button onclick="{save}" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-save" aria-hidden="true"></span></button>
+                <button onclick="{delete}" if="{opts.item.id}" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+            </div>
+        </div>
+
+    </form>
+{#    <script>#}
+
+    var tag=this;
+    var store = stores.resultsStore;
+    tag.content_type = 'result_indicator_period';
+
+    /** Escape underscores in content_type */
+    function _e(content_type){
+       return _.replace(content_type, /_/g, '');
+    }
+
+
+    /**
+     * Make the request for saving this object
+     * @param e
+     * @returns {boolean}
+     */
+    tag.save = function (e) {
+        /**
+         * Generate data for saving this object
+         */
+        function get_data(){
+            var data = _.clone(tag.opts.item);
+            _.assign(data, _.mapValues(tag.refs, 'value'));
+            return data
+        }
+        e.preventDefault();
+        store.make_request({object_type: _e(tag.content_type), data: get_data(), assign:tag.opts.item}).done(function (response) {
+            tag.update();
+        });
+        return false;
+    };
+
+    /**
+     * Delete this narrative
+     */
+    tag.delete = function (e) {
+        e.preventDefault();
+        store.make_request({
+            object_type: _e(tag.content_type),
+            data: {id: tag.opts.item.id},
+            method: 'delete'
+        });
+    };
+{#    </script>#}
+</indicator-period-detail>
+
+<indicator-period-actual-dimension>
+    <select onchange="{set_dimension}" ref="dimension" disabled="{!_.get(opts, 'item.id')}" class="form-control">
+      <option selected="{_.isUndefined(content.value)}" value="{DELETE}">-----</option>
+        <optgroup each="{values, name in choices.r_i_p_dimension}" label="{name}">
+          <option each="{value in values}" value="{name + '_' + value}" selected="{name==content.name && value==content.value}">{value}</option>
+        </optgroup>
+    </select>
+
+{#    <script>#}
+    var tag = this;
+    var store = tag.store = stores.resultsStore;
+    var content_type = tag.content_type = 'resultindicatorperiodactualdimension';
+    tag.content = {};
+
+    /** Assign content from the store to this tab. If there is no match from the "filter" property a new
+    * object is pushed onto the store. */
+    function set_content(){
+        var content;
+
+        function get_filter(){
+            return {content_type: content_type, result_indicator_period: _.toInteger(tag.opts.item.id)}
+        }
+
+        content = _.find(store.results, get_filter());
+
+        /* Push if not exists */
+        if (_.isUndefined(content)){
+            content = get_filter();
+            store.results.push(content);
+        }
+        if (tag.content !== content){
+            tag.update({content:content})
+        }
+    }
+
+    /** Set the "dimension" for the result indicator
+     * This is a very much simplified version of the IATI standard
+     * which allows multiple arbitrary dimensions for both target and result
+     * This is a single choice from a set list which applies only to Actual
+     */
+    tag.set_dimension = function(e){
+        /**
+         * Retrieve data used to generate a request
+         * The name / value is an underscore separated 2element
+         */
+        function get_data(){
+
+            /* Set name and value fields for this Dimension */
+            function get_name_and_value() {
+                var name_value = $(tag.refs.dimension).find(':selected').val(); /* blergh, jquery... */
+                var values = _.split(name_value, '_');
+                return {name: values[0], value: values[1]}
+            }
+
+            var data = _.clone(tag.content) || {};
+            _.assign(data, get_name_and_value());
+            data.result_indicator_period = _.get(opts, 'item.id');
+            return data
+        }
+
+        var data = get_data();
+
+        if (_.isUndefined(data.value) && _.has(data, 'id')){
+            store.make_request({method:'DELETE', content_type: content_type, data: {id: tag.content.id}})}
+        else {
+            store.make_request({content_type: content_type, data:data, assign:tag.content});
+        }
+    };
+
+    /** Trigger set_content where the tag is the subject of an update */
+    tag.on('mount', set_content);
+    tag.on('mount', function(){ tag.store.on('updated_'+content_type, set_content) });
+    tag.on('unmount', function(){ tag.store.off('updated_'+content_type, set_content) });
+    tag.on('mount', function(){ tag.store.on('removed_'+content_type, set_content) });
+    tag.on('unmount', function(){ tag.store.off('removed_'+content_type, set_content) });
+{#    </script>#}
+</indicator-period-actual-dimension>

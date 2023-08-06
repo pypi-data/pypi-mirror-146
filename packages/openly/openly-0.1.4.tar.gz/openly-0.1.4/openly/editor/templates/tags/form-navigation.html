@@ -1,0 +1,64 @@
+{% load i18n %}
+{% load ifsetting %}
+
+<form-navigation>
+    <div class="animated fadeInLeft">
+        <span if="{show_status_badge}" id="activity-status-badge" class="local_badge {'published': activity_status === 'published'}"> {activity_status} </span>
+        <h5 class="side_title" data-is="activity-link"></h5>
+        <hr />
+        <p class="help-text">
+            <span><strong>{ opts.project_name } ID:</strong> { data.activity.id }</span>
+            <span if={ data.activity.internal_identifier }><br><strong>{% trans 'Partner ID' %}:</strong> { data.activity.internal_identifier }</span>
+            {% ifsetting OIPA_SYNC_ENABLED %}
+            <span if={ data.activity.iati_identifier }><br><strong>{% trans 'IATI ID' %}:</strong> { data.activity.iati_identifier }</span>
+            <span if={ data.activity.iati_identifier }><br><strong>IATI Sync:</strong>
+                <span if={ data.iati_data.link_info.oipa_fields.length >= 1 }><i class="ion-ios-checkmark-outline"></i>{% trans 'Active' %}</span>
+                <span if={ data.iati_data.link_info.oipa_fields.length == 0 }><i class="ion-android-remove-circle"></i>{% trans 'Not Active' %}</span>
+            </span>
+            {% endifsetting %}
+            <span if={ data.activity.date_created }><br><strong>{% trans 'Date Created' %}:</strong> { data.activity.date_created }</span>
+            <span if={ data.activity.date_modified }><br><strong>{% trans 'Last Updated' %}:</strong> { data.activity.date_modified }</span>
+            {% if user.is_superuser %}
+            <span if={ data.activity.reporting_organisation } class="reporting-org-info"><br><strong>{% trans 'Reporting Org' %}:</strong> { data.activity.reporting_organisation.name }</span>
+            {% endif %}
+        </p>
+        <hr />
+    </div>
+    <ul class="nav nav-pills nav-stacked nav-form" id="side-navigation">
+        <li each="{opts.list_items}" class="{active: this.name == route, animated: true, fadeInLeft: true}">
+            <a href="#{name}" class="btn-link" onclick="{letsgetouttahere}">
+                { title }
+                <span class="badge form_badge" data-related-tab="{name}" style="display:none;">!</span>
+                <span class="badge form_badge_publish" data-related-tab="{name}" style="display:none;"><i class="ion-record"></i></span>
+            </a>
+        </li>
+    </ul>
+
+    {% include 'tags/form-navigation.js' %}
+</form-navigation>
+
+<activity-link>
+    <a if="{!disabled}" href="{link}">{title}</a>
+    <p if="{disabled}">{title || untitled}</p>
+    var tag = this;
+    // Django-ish template code
+    tag.link =  "{%  url 'activity_profile' activity.pk  %}";
+    var lc = '{{ LANGUAGE_CODE }}'
+
+    tag.untitled = "{% trans 'Untitled' %}";
+    tag.on('update', function(){
+        // Get title from the store.
+        // Prefer current language, if available
+        var title_in_native = _.find(stores.activityStore.activity.title_set, {language: lc});
+        var fallback = _.find(stores.activityStore.activity.title_set, {language: 'en'});
+        tag.title = _.get((title_in_native || fallback), 'title');
+        // Disable the link where the openly status is not yet set - the profile page returns a 404
+        tag.disabled = !(stores.activityStore.activity.openly_status === 'published')
+    });
+    tag.on('mount', function(){
+        stores.activityStore.on('activity_status_changed', function(){tag.update()})
+        if (stores.reviewStore){
+            stores.reviewStore.on('activity_status_changed', function(){tag.update()})
+        }
+    })
+</activity-link>

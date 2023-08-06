@@ -1,0 +1,142 @@
+{% extends 'dashboard/base.html' %}
+{% load i18n %}
+{% load static  %}
+{% load tag_library %}
+{% load widget_tweaks %}
+{% block title %}
+{{ page_title }} | {{ site_name }}
+{% endblock %}
+
+{% block local_content %}
+    <div class="container" id="location-dashboard">
+        <h1 class="CompareTitle">{% trans "Aid Aggregation Summary" %}</h1>
+        <p class="CompareSubtitle">This report shows aggregation summaries.</p>
+
+        <div class="row">
+            <div class="col col-xs-6">
+                <table class="table table-consensed table-bordered" >
+                    <caption>Location</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        {% for k in chart_data.by.location %}
+                        <tr>
+                            <td>{{k.name}} {{k.code}}</td>
+                            <td>{{k.dollars}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>  
+            </div>
+
+            <div class="col col-xs-6">
+                <table class="table table-consensed table-bordered" >
+                    <caption>Totals</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                        <tr>
+                    </thead>
+                    <tbody>
+                        {% for k, v in chart_data.total.items %}
+                        <tr>
+                            <td>{{k}}</td>
+                            <td>{{v}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>  
+            </div>
+
+            <div class="col col-xs-6">
+                    <table class="table table-consensed table-bordered" >
+                        <caption>Location with Subareas</caption>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Amount</th>
+                            <tr>
+                        </thead>
+                        <tbody>
+                            {% for k in chart_data.by.location_with_subareas %}
+                            <tr>
+                                <td>{{k.name}} {{k.code}}</td>
+                                <td>{{k.dollars}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>  
+                </div>
+
+                <div class="col col-xs-6">
+                        <table class="table table-consensed table-bordered" >
+                            <caption>Ministry</caption>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Amount</th>
+                                <tr>
+                            </thead>
+                            <tbody>
+                                {% for k in chart_data.by.ministry %}
+                                <tr>
+                                    <td>{{k.name}} {{k.code}}</td>
+                                    <td>{{k.dollars}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>  
+                    </div>
+    
+                    <div class="col col-xs-6">
+                            <table class="table table-consensed table-bordered" >
+                                <caption>Donor</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Amount</th>
+                                    <tr>
+                                </thead>
+                                <tbody>
+                                    {% for k in chart_data.by.donor %}
+                                    <tr>
+                                        <td>{{k.name}} {{k.code}}</td>
+                                        <td>{{k.dollars}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>  
+                        </div>
+
+                        <div class="col col-xs-6">
+                                <table class="table table-consensed table-bordered" >
+                                    <caption>Category</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Amount</th>
+                                        <tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for k in chart_data.by.category %}
+                                        <tr>
+                                            <td>{{k.name}} {{k.code}}</td>
+                                            <td>{{k.dollars}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>  
+                            </div>
+
+        </div>
+
+   
+    
+    </div>
+
+{% endblock %}

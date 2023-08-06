@@ -1,0 +1,38 @@
+{% load i18n %}
+<field-activity-narrative>
+
+<div class="{classes.outer || classes.formgroup}">
+
+    <div class="{ classes.tabpanel }">
+        <div role="tabpanel" class="form-group-language">
+            <div class="language-tab-block pull-right">
+                <ul class="nav nav-tabs language_tab" role="tablist">
+                    <li each="{language_description, language_code in languages}" role="presentation"
+                    class="{language_code == language ? 'active' : ''}">
+                    <a onclick="{select_narrative}">
+                        { language_description.language_name }
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <field-textarea
+                classes={classes.title}
+                label={opts.title}
+                show_title=false
+                formgroup=false
+                store={opts.store}
+                path="{language_path}"
+                cols="40" maxlength="40000"
+                helptext="{opts.helptext}"
+                minheight="{opts.minheight}"
+                >
+                </field-textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%  include "tags/field-activity-narrative.js" %}
+
+</field-activity-narrative>

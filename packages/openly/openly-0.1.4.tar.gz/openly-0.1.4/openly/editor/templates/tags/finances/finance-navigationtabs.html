@@ -1,0 +1,10 @@
+{% load i18n %}
+<finance-navigationtabs>
+     <ul class="nav nav-pills sub_tab_navigation">
+        <li each="{list_items}" class="{active: active && this.name == active.name }">
+            <a href="#{name}" onclick="{tab}" aria-controls="{name}">{ title }<span if="{errors}">(!)</span></a>
+        </li>
+    </ul>
+    var tag = this;
+    this.mixin('RouteableTriggerMixin');
+</finance-navigationtabs>

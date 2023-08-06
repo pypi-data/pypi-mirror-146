@@ -1,0 +1,201 @@
+{% load i18n %}
+{% load ifsetting %}
+
+<tab-container>
+    <editor-routes></editor-routes>
+</tab-container>
+
+<editor-routes>
+    <router>
+        <route path="general"><div data-is="tab-general" validate_banner validation_banner_initial="{stores.activityStore.activity.openly_status === 'blank' ? 'false' : 'true'}" store="{stores.activityStore}" path='activity' header='General'></div></route>
+        {% ifnotsetting EDITOR_HIDE_SECTOR_TAB %}
+        <route path="sectors"><div data-is="tab-sectors" validate_banner store="{stores.sectorStore}"></div></route>
+        {% endifnotsetting %}
+        {% ifsetting EDITOR_HAS_MSDP %}
+        <route path="msdp"><div data-is="tab-msdp" store="{stores.msdpStore}"></div></route>
+        {% endifsetting %}
+        {% ifnotsetting EDITOR_HIDE_ORGS %}
+        <route path="part_orgs"><div data-is="tab-organisations" validate_banner show_extending={ true } show_funding={ false } route="part_orgs" store={stores.activityStore} path="activity.participating_organisations"></div></route>
+        {% endifnotsetting %}
+        <route path="locations">
+        {% ifnotsetting USE_SIMPLE_LOCATIONS %}
+        <div data-is="tab-locations" validate_banner store={stores.locationStore}></div> {% else %}
+        {% ifsetting EDITOR_USES_SIMPLELOCATIONS %}
+        <div data-is="tab-locations" validate_banner store={stores.locationStore}></div>
+        {% else %}
+        <div data-is="tab-simplelocations" validate_banner store={stores.locationStore}></div>
+        {% endifsetting %}
+        {% endifnotsetting %}
+        </route>
+
+    {% ifapp dird_templates %}
+        <route path="compliance"><div data-is="tab-compliance" validate_banner store={stores.activityStore}></div></route>
+    {% endifapp %}
+
+    {% ifsetting EDITOR_HAS_FINANCIALS %}
+        {% if editor_custom_finances_tab %}
+        <route path="finances"><div data-is="tab-finances" validate_banner store={stores.activityStore}></div></route>
+        {% else %}
+        <route path="finances"><finances-nav/></route>
+        <route sub-tag path="finances/general"><finances-nav/> <div data-is="tab-defaultsettings" store="{stores.activityStore}" url="update/"></div></route>
+        <route sub-tag path="finances/transactions"><finances-nav/> <div data-is="tab-transactions" validate_banner store="{stores.transactionStore}" path="transaction_set"></div></route>
+       
+            <route sub-tag path="finances/iati"><finances-nav/><div data-is="tab-iati-sync" url="update/"></div></route>
+  
+        {% ifnotsetting BUDGETS_DISABLED %}
+        <route sub-tag path="finances/budgets"><finances-nav/> <div data-is="tab-budgets" validate_banner store="{stores.budgetStore}" path="budget_set" url="update/" nosubmit="true"></div></route>
+        {% endifnotsetting %}
+        {% endif %}
+    {% endifsetting %}
+
+    {% ifapp dird_templates %}
+        <route path="expenditures..">
+            <div data-is="tab-expenditures" store="{ stores.activityStore }" validate_banner></div>
+        </route>
+        <route path="project_completion">
+            <div data-is="tab-project-completion" store="{ stores.activityStore }" validate_banner></div>
+        </route>
+    {% endifapp %}
+
+    {% ifsetting EDITOR_HAS_LEGACY_RESULTS %}
+        <route path="results.."><div data-is="tab-results" validate_banner store={stores.resultsStore} path="results"></div></route>
+    {% endifsetting %}
+    {% ifsetting EDITOR_HAS_RESULTS %}
+        <route path="results.."><div data-is="tab-results" validate_banner store={stores.resultsStore} path="results"></div></route>
+    {% endifsetting %}
+        <route path="contacts.."><div data-is="tab-contacts" validate_banner store={stores.contactsStore} path="contactinfo_set"></div></route>
+    {% ifsetting EDITOR_HAS_DOCUMENTS_TAB %}
+        <route path="documents.."><div data-is="tab-documents" validate_banner store={stores.documentStore} path={stores.documentStore.el}></div></route>
+    {% endifsetting %}
+        {% ifsetting ENDORSEMENT_ENABLED %}
+        <route path="review"><div data-is="tab-review" store="{stores.reviewStore}"></div></route>
+    {% endifsetting %}
+    {% ifapp dird_templates %}
+        <route path="review"><div data-is="tab-review" store="{stores.reviewStore}"></div></route>
+    {% endifapp %}
+    </router>
+    var tag = this;
+    function getRoutes(){
+        /* returns a list of all the possible routes for this tag */
+        return  _.map(tag.tags.router.tags.route, 'opts.path');
+    }
+    function excludeEditor(routes){
+        /* exclude "editor" routes which are not really directly addressable */
+        var exported_routes = _.reject(routes, function(r){return _.includes(r, '*')});
+        /* Sometimes we have a situation such as 'results..', when this occurs we need to route to 'results' not 'results..' */
+        exported_routes = _.map(exported_routes, function(r){
+            if (r.substring(r.length-2) === '..'){
+                return r.substring(0, r.length-2)
+            }
+            return r;
+        })
+        return exported_routes;
+    }
+
+    tag.on('mount', function(){
+        (function setGlobalRoutes(w){
+            w.routeToTag = {
+                next: function(){
+                    var routes = excludeEditor(getRoutes());
+                    var currentPage = _.replace(location.hash, '#', '');
+                    var currentRouteIndex = _.indexOf(routes, currentPage);
+                    var routeTo = routes[currentRouteIndex+1] || routes[0];
+                    route(routeTo);
+                },
+                getNext: function(){
+                    var routes = excludeEditor(getRoutes());
+                    var currentPage = _.replace(location.hash, '#', '');
+                    var currentRouteIndex = _.indexOf(routes, currentPage);
+                    var routeTo = routes[currentRouteIndex+1] || routes[0];
+                    return routeTo;
+                }
+            }
+        })(window);
+    })
+
+
+</editor-routes>
+
+<finances-nav>
+
+    <div class="form_header">
+        <h4>{% trans 'Finances' %}</h4>
+
+        <div if="{current_route == 'finances/transactions'}" class="btn-group pull-right">
+            <a if={!iati_commitments_disabled || !iati_disbursements_disabled || !iati_other_disabled} role="button" id="transaction-dropdown" class="btn btn-success dropdown-toggle" data-toggle="dropdown">{% trans 'Add a transaction' %}</a>
+            <ul class="dropdown-menu dropdown-menu-md" id="transaction-dropdown">
+                <li if={!iati_commitments_disabled}><a role='button' onclick="{commitment}"><img class="menu-icon-small" src="/static/img/financial_commitment.svg">Add a commitment</a></li>
+                <li if={!iati_other_disabled}><a role='button' onclick="{incoming_funds}"><img class="menu-icon" src="/static/img/arrow_bottom_left.svg"> Add incoming funds</a></li>
+                <li if={!iati_disbursements_disabled}><a role='button' onclick="{transaction}"><img class="menu-icon" src="/static/img/arrow_top_right.svg"> Add outgoing transaction</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <ul class="nav nav-pills sub_tab_navigation">
+        <li each="{name, route in navs}" class="{ active: route == current_route }">
+            <a href="#{route}" onclick="{tab}" aria-controls="{name}">{ name }</a>
+        </li>
+    </ul>
+    <style>
+        a {border-bottom: 3px solid white;}
+    </style>
+
+    var tag = this;
+    var oipa_fields;
+    var default_finance_tag = 'finances/transactions'
+    tag.current_route = tag.parent.opts.path;
+    tag.on('mount', function(){
+        if (tag.parent.opts.path === 'finances'){
+            route(default_finance_tag)
+        }
+    });
+
+    {% ifsetting OIPA_SYNC_ENABLED %}
+        tag.iati_budgets_disabled = (data.iati_data.link_info.oipa_fields.indexOf("B") != -1);
+        tag.iati_commitments_disabled = (data.iati_data.link_info.oipa_fields.indexOf("C") != -1);
+        tag.iati_disbursements_disabled = (data.iati_data.link_info.oipa_fields.indexOf("OF") != -1);
+        tag.iati_other_disabled = (data.iati_data.link_info.oipa_fields.indexOf("IF") != -1);
+    {% else %}
+        tag.iati_budgets_disabled = false;
+        tag.iati_commitments_disabled = false;
+        tag.iati_disbursements_disabled = false;
+        tag.iati_other_disabled = false;
+    {% endifsetting %}
+
+    tag.navs = {
+        'finances/transactions': '{% trans "Transactions" %}',
+        /* {% ifnotsetting BUDGETS_DISABLED %} */
+        'finances/budgets': '{% trans "Budgets" %}',
+        /* {% endifnotsetting %} */
+        /* {% if iati_tab_accessable %} */
+        'finances/iati': '{% trans "IATI Sync" %}',
+        /* {% endif %} */
+        'finances/general': '{% trans "Default Settings" %}',
+    }
+
+    function letsgetouttahere(e) {
+        // Going somewhere? We probably want to check that there are no unsaved changes
+        var modal_opts = {};
+        var current_tab = window.current_tab;
+        e.preventDefault(); // Override the usual behaviour of <a> links
+        if (!current_tab) {
+            route(e.item.route);
+        } else if (current_tab.enableRouting()) {
+            /* console.log('ok!! You are clear to navigate') */
+            route(e.item.route);
+        } else {
+            modal_opts = {
+                show: true,
+                current_tag: window.current_tab,
+                route: e.item.route
+            };
+            $('discard-modal')[0]._tag.update({ opts: modal_opts });
+        }
+    };
+
+    tag.tab = letsgetouttahere;
+
+    this.incoming_funds = function(){window.modals.incoming_funds.toggle()};
+    this.commitment = function(){window.modals.commitment.toggle()};
+    this.transaction = function(){window.modals.transaction.toggle()};
+</finances-nav>

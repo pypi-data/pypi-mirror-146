@@ -1,0 +1,108 @@
+{% load i18n %}
+{% load common_text %}
+{% trans 'MSDP Alignment' as header %}
+{% trans 'MSDP alignment' as label %}
+{% blocktrans asvar add_text %} Add another {{ label }} {% endblocktrans %}
+{% blocktrans asvar placeholder %} Add an {{label}}...{% endblocktrans %}
+<tab-msdp id="msdp" class="tab-pane list">
+    <div class="form_header">
+        <h4>{{ header }}</h4>
+    </div>
+
+    <div class="form_body">
+        <div id="section-msdp">
+            <virtual if="{loading}">
+                <div class="spinner" if="{loading}">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+            </virtual>
+            <virtual if="{!loading}">
+                <help-text active helptext='{{ "msdp_text" | common_text }}'/><br>
+                <label class="control-label">{{header}}</label>
+
+                <div if="{msdps && msdps.length == 0}">
+                    <div class="alert alert-info" role="alert">
+                        <span
+                            class="glyphicon glyphicon-exclamation-sign"
+                        ></span
+                        >{% trans 'There are no MSDP' %}
+                    </div>
+                </div>
+
+                <div class="row" each="{msdp, index in msdps}" style="margin-bottom:5px;">
+                    <div class="col-xs-11">
+                        <field-dropdownselect
+                            hide_label="{true}"
+                            formgroup="false"
+                            store="{parent.store}"
+                            choice_fieldname="msdps"
+                            path="msdps[{index}].tag"
+                            select_name="{msdp.name}"
+                            groupfield="goal.title"
+                            disabled_choices="{msdp_ids}"
+                            searchfield="name"
+                            placeholder="{{placeholder}}"
+                        >
+                        </field-dropdownselect>
+                    </div>
+                    <div class="col-xs-1 remove_msdp">
+                        <a class="remove_form_row" onclick="{drop_object}"> </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 add_form_row_container">
+                        <a class="add_form_row add_msdp" onclick="{add_object}">
+                            {% trans 'Add another MSDP Alignment' %}
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </virtual>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="save-group save-msdp">
+        <btn-group-editor
+            id_save="save-msdp"
+            id_next="next-msdp"
+            use_parent_save
+        ></btn-group-editor>
+    </div>
+
+    <style scoped>
+        li {
+            list-style: none;
+        }
+        .fadeIn {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.1s linear;
+        }
+        .fadeOut {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s 0.3s, opacity 0.3s linear;
+        }
+
+        #msdp-search-results {
+            max-height: 400px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        #no-msdps {
+            overflow: hidden;
+        }
+
+        .search {
+            margin-bottom: 10px;
+        }
+    </style>
+
+    {% include 'tags/tab-msdp.js' %}
+</tab-msdp>

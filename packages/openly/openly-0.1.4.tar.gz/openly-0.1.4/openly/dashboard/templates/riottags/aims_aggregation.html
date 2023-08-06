@@ -1,0 +1,212 @@
+<aims_aggregation>
+    <br>
+    <div class="table-responsive">
+        <div class="top-scroll" ref="topScroll">
+            <div></div>
+        </div>
+        <div ref="table" class="tableScroll">
+            <table class="table" id="aims_aggregation">
+                <thead class="query-table-head">
+                    <tr class="sortable">
+                        <th nowrap onclick="{ sort }" data-colname='title'>{ selected_aggregation.name } <span class="{ unsorted: applied_sort != 'title', sorted_up: applied_sort == 'title' && sort_dir == 'asc', sorted_down: applied_sort == 'title' && sort_dir != 'asc', align-left:1 }"></span></th>
+                        <th nowrap onclick="{ sort }" data-colname='commitment'>Commitment <span class="{ unsorted: applied_sort != 'commitment', sorted_up: applied_sort == 'commitment' && sort_dir == 'asc', sorted_down: applied_sort == 'commitment' && sort_dir != 'asc', align-right:1}"></span></th>
+                        <th nowrap onclick="{ sort }" data-colname='disbursement'>Disbursement <span class="{ unsorted: applied_sort != 'disbursement', sorted_up: applied_sort == 'disbursement' && sort_dir == 'asc', sorted_down: applied_sort == 'disbursement' && sort_dir != 'asc', align-right:1 }"></span></th>
+                        <th nowrap onclick="{ sort }" data-colname='expenditure'>Expenditure <span class="{ unsorted: applied_sort != 'expenditure', sorted_up: applied_sort == 'expenditure' && sort_dir == 'asc', sorted_down: applied_sort == 'expenditure' && sort_dir != 'asc', align-right:1 }"></span></th>
+                        <th nowrap onclick="{ sort }" data-colname='other'>Other <span class="{ unsorted: applied_sort != 'other', sorted_up: applied_sort == 'other' && sort_dir == 'asc', sorted_down: applied_sort == 'other' && sort_dir != 'asc', align-right:1 }"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-cell" each={a in aggregation }>
+                        <td align="left" class="query-fixed-column">
+                            <span if="{!has_link(a)}">{ a.title || 'None' }</span>
+                            <a if="{has_link(a)}" href="{make_link(a)}">
+                                {a.title || 'None'}
+                            </a>
+                        </td>
+                        <td align="right">{ accounting.compactFormatMoney(a.commitment) }</td>
+                        <td align="right">{ accounting.compactFormatMoney(a.disbursement) }</td>
+                        <td align="right">{ accounting.compactFormatMoney(a.expenditure) }</td>
+                        <td align="right">{ accounting.compactFormatMoney(a.other) }</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var self = this;
+        self.mixin('topScrollMixin')
+        self.selected_aggregation = { name:'Pending...' };
+
+        /* Functions for creating anchor href's */
+        var organisation_url_pattern = "{% url 'donor_profile' 'replaceme' %}"; // TODO: Verify that this is the correct page to direct to
+        function organisation_link(org_id){return organisation_url_pattern.replace('replaceme', org_id);}
+        self.has_link = function(aggregation){return _.has(aggregation, ['meta', 'org_id', 0])};
+        self.make_link = function(agg){return organisation_link(_.get(agg, ['meta', 'org_id', 0]))};
+
+
+        self.sort_dir = 'asc';
+        self.applied_sort = 'title';
+        self.sort_types = {
+            'title': 'alphabet',
+            'commitment': 'order',
+            'disbursement': 'order',
+            'expenditure': 'order',
+            'other': 'order'
+            };
+
+        self.sort = function sort(e){
+            var applied_sort = e.currentTarget.attributes['data-colname'].value;
+            var sort_dir = self.sort_dir === 'asc' ? 'desc' : 'asc';
+            sort_aggregation(applied_sort, sort_dir)
+        };
+
+        function sort_aggregation(applied_sort, sort_dir){
+            self.update({
+                applied_sort: applied_sort,
+                sort_dir: sort_dir,
+                aggregation: _.orderBy(self.aggregation, [applied_sort], [sort_dir] )
+            });
+        }
+
+        self.on('mount', function() {
+            RiotControl.trigger('request_available_aggregations')
+        });
+
+        RiotControl.on('available_aggregations', function(available_aggregations){
+            self.available_aggregations = available_aggregations;
+            self.selected_aggregation = available_aggregations[0];
+            self.update();
+            RiotControl.trigger('request_filtered_aggregation', self.selected_aggregation)
+        });
+
+        RiotControl.on('filtered_aggregation', function(aggregation){
+            self.aggregation = aggregation.data;
+            self.selected_aggregation = aggregation.selected;
+            sort_aggregation(self.applied_sort, self.sort_dir);
+        });
+
+        self.export_worksheet = function(){
+
+            function gettext_noop(text){return text}
+
+            var money_format = {t: 'n', z: '[$$-409]#,##0;-[$$-409]#,##0'};
+            var data = self.aggregation;
+
+            return _.map(querybuilder.all_aggregations(), function(agg) {
+                var rows = {
+                    title: {format: {t: 's'}},
+                    commitment: {format: money_format},
+                    disbursement:  {format: money_format},
+                    expenditure: {format:  money_format},
+                    other: {format: money_format}
+                };
+
+                var header_display = {
+                    title: gettext_noop(agg.name),
+                    commitment: gettext_noop('Commitment'),
+                    disbursement: gettext_noop('Disbursement'),
+                    expenditure: gettext_noop('Expenditure'),
+                    other: gettext_noop('Other')
+                };
+                return {
+                    data: agg.data,
+                    rows: rows,
+                    headers: _.keys(rows),
+                    header_display: header_display,
+                    sheet_name: agg.name
+                }
+            });
+        };
+
+    </script>
+</aims_aggregation>
+
+<query-th-sortable>
+    <span nowrap onclick="{ sort }" data-colname='other'><yield/>
+        <span class="{_class}"></span>
+    </span>
+
+    <style>
+        /*table-sorting*/
+
+        query-th-sortable .unsorted::before {
+            content: "\f104";
+            font: 13px "ionicons";
+            color: #bebdbd;
+            position: relative;
+            top: 5px;
+            left: 1px;
+        }
+
+        query-th-sortable .unsorted::after{
+            content: "\f10d";
+            font: 13px "ionicons";
+            color: #bebdbd;
+            position: relative;
+            top: -2px;
+            left: -7px;
+        }
+
+        query-th-sortable .sorted_up::before {
+            content: "\f104";
+            font: 13px "ionicons";
+            color: #ddd;
+            position: relative;
+            top: 5px;
+            left: 1px;
+        }
+
+        query-th-sortable .sorted_up::after {
+            content: "\f10d";
+            font: 13px "ionicons";
+            color: #73777a;
+            position: relative;
+            top: -2px;
+            left: -7px;
+        }
+
+        query-th-sortable .sorted_down::before {
+            content: "\f104";
+            font: 13px "ionicons";
+            color: #73777a;
+            position: relative;
+            top: 5px;
+            left: 1px;
+        }
+
+        query-th-sortable .sorted_down::after {
+            content: "\f10d";
+            font: 13px "ionicons";
+            color: #ddd;
+            position: relative;
+            top: -2px;
+            left: -7px;
+        }
+    </style>
+
+    <script>
+        var tag = this;
+        tag.sort_dir = 'asc';
+        tag._class = 'unsorted';
+
+        tag.sort = function sort(e){
+            if (tag.opts.no_sort){return}
+            tag.sort_dir = tag.sort_dir === 'asc' ? 'desc' : 'asc';
+            var update = {};
+            update[tag.opts.sort] =  _.orderBy(tag.parent[tag.opts.sort], [tag.opts.sort_by], [tag.sort_dir] );
+            tag.parent.update(update);
+            var siblings = tag.parent.tags['query-th-sortable'];
+            siblings = !_.isArray(siblings) ? [siblings] : siblings;
+            _.each(siblings, function(sibling){sibling.update({applied_sort: tag.opts.sort_by, sort_dir: tag.sort_dir})});
+        };
+
+        tag.on('updated', function() {
+            var _class;
+            if (tag.opts.no_sort){_class = ''}
+            else if (tag.applied_sort !== tag.opts.sort_by){ _class = 'unsorted' }
+            else if (tag.sort_dir === 'desc') {_class = 'sorted_up' }
+            else if (tag.sort_dir === 'asc') {_class = 'sorted_down' }
+            if (tag._class !== _class) { tag.update({_class: _class})}
+        });
+    </script>
+</query-th-sortable>

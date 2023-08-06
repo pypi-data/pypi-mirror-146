@@ -1,0 +1,718 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-02 14:15+0900\n"
+"PO-Revision-Date: 2019-12-03 09:06+0000\n"
+"Last-Translator: b'Myo Min Oo  <myo@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user's "
+"password, but you can change the password using <a "
+"href=\"../password/\">this form</a>."
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Personal info"
+msgstr ""
+
+msgid "Admin access"
+msgstr ""
+
+msgid "Important dates"
+msgstr ""
+
+msgid "Mohinga"
+msgstr ""
+
+msgid "The budget end date cannot be before the budget start date"
+msgstr ""
+
+msgid "Nationwide"
+msgstr ""
+
+msgid "all subregions of "
+msgstr ""
+
+msgid "Your planned end date must be after your planned start date"
+msgstr ""
+
+msgid "Your actual end date must be after your actual start date"
+msgstr ""
+
+msgid "If you set end dates you must set at least one start date."
+msgstr ""
+
+#| msgid "Planned Start date"
+msgid "Planned Start Date"
+msgstr "စီမံကိန်းစတင်သည့်ရက်စွဲ"
+
+#| msgid "Actual Start date"
+msgid "Actual Start Date"
+msgstr "အမှန်တကယ်စတင်သည့်ရက်စွဲ "
+
+#, fuzzy
+#| msgid "Planned End date"
+msgid "Planned End Date"
+msgstr "စီမံကိန်းပြီးဆုံးသည့်ရက်စွဲ"
+
+#, fuzzy
+#| msgid "Actual End date"
+msgid "Actual End Date"
+msgstr "အမှန်တကယ်ပြီးဆုံးသည့်ရက်စွဲ"
+
+msgid "Unknown"
+msgstr "မသိပါ"
+
+msgid "?"
+msgstr "?"
+
+msgid "Unnamed"
+msgstr "အမည်မသိပါ"
+
+msgid "trillion"
+msgstr "ံအလွန်များပြားသောပမာဏ(ထရီလီယံ)"
+
+msgid "billion"
+msgstr "သန်း"
+
+msgid "million"
+msgstr "သန်း"
+
+msgid "thousand"
+msgstr "ထောင်"
+
+#, fuzzy
+#| msgid "Collaboration Type"
+msgid "Coordination Body"
+msgstr "ပူးပေါင်းဆောင်ရွက်မှုပုံစံ"
+
+msgid "Coordination Body Report"
+msgstr ""
+
+msgid "Coordination Bodies"
+msgstr ""
+
+msgid ""
+"Coordination Bodies are multi-stakeholder dialogue bodies responsible for "
+"ensuring that development priorities are identified, discussed and "
+"implemented in a co-ordinated and transparent manner."
+msgstr ""
+
+msgid "Welcome to Mohinga"
+msgstr ""
+
+msgid "Mohinga is Myanmar's Aid Information Management System (AIMS)."
+msgstr ""
+
+msgid ""
+"The Mohinga application allows development partners to report their "
+"assistance to Myanmar in a simple, common, comparable format."
+msgstr ""
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid ""
+"Data contained within Mohinga has been collected in partnership with "
+"Myanmar’s development partners as part of an ongoing process of "
+"collaboration and dialogue."
+msgstr ""
+
+msgid ""
+"Before using the data, we encourage all users to first contact the relevant "
+"development partners to ensure data is accurate."
+msgstr ""
+
+msgid "Search within Mohinga"
+msgstr ""
+
+msgid ""
+"Mohinga contains a lot of information. To find what you’re looking for try "
+"searching by development partner, activity or sector"
+msgstr ""
+
+msgid "Profile pages"
+msgstr ""
+
+msgid ""
+"Each development partner also has a dedicated profile page with information "
+"on all their activities"
+msgstr ""
+
+msgid "You can access their profile pages by searching for their name here"
+msgstr ""
+
+msgid "Visualise aid flows"
+msgstr ""
+
+msgid ""
+"Mohinga visualises aid flows to Myanmar via four interactive dashboards"
+msgstr ""
+
+msgid "you can see aid by location, donor, sector or Ministry responsible"
+msgstr ""
+
+msgid "Click here to access the dashboards"
+msgstr ""
+
+msgid "Filtering the dashboard by date"
+msgstr ""
+
+msgid ""
+"The date filter allows you to filter information presented on the dashboards"
+" between a specific time period"
+msgstr ""
+
+msgid ""
+"Select a start and end date and then click the refresh button to set the "
+"filter"
+msgstr ""
+
+msgid "Exporting data from Mohinga"
+msgstr ""
+
+msgid "The export function will download the dashboard data to a .CSV file"
+msgstr ""
+
+msgid ""
+"Also, if you have set a date range or zoomed into Shan state or selected a "
+"specific organisation, clicking export will just give you that data"
+msgstr ""
+
+msgid "Activity List"
+msgstr ""
+
+msgid ""
+"Data from all of the activities below is used to calculate the figures that "
+"appear in the dashboard above."
+msgstr ""
+
+msgid ""
+"Click on the blue activity number in the Activity List to visit the Activity"
+" Profile page and learn more."
+msgstr ""
+
+msgid "That is it... for now"
+msgstr ""
+
+msgid "If you need any further information"
+msgstr ""
+
+msgid "look for these help icons"
+msgstr ""
+
+msgid ""
+"and they will provide you with some additional information about Mohinga."
+msgstr ""
+
+msgid ""
+"We are also working hard to bring new features and functions to Mohinga"
+msgstr ""
+
+msgid ""
+"These include advanced reporting tools and better integration with "
+"internationally available IATI aid data as well as other tools to help make "
+"the management of aid information simple, time efficient and even enjoyable."
+" We will be in touch."
+msgstr ""
+
+msgid "Activity"
+msgstr ""
+
+msgid "Activities"
+msgstr ""
+
+#, python-format
+msgid ""
+"Locations represent where the %(activity_or_program)s takes place. For "
+"%(activities_or_programs)s in Manufahi, add all relevant aldeias. For "
+"%(activities_or_programs)s in other municipalities, add all relevant sub-"
+"districts. To select a location please type your location in the search bar."
+msgstr ""
+
+msgid "Default"
+msgstr "ပုံသေ"
+
+msgid "Title"
+msgstr "ခေါင်းစဉ်"
+
+msgid "Description"
+msgstr "ဖော်ပြချက်"
+
+msgid "Objective"
+msgstr "ရည်ရွယ်ချက်"
+
+msgid "no title"
+msgstr "ခေါင်းစဉ်မရှိပါ"
+
+msgid "no description"
+msgstr "ရည်ရွယ်ချက်မရှိပါ"
+
+msgid "id"
+msgstr "id"
+
+msgid "Sector"
+msgstr "ကဏ္ဍ"
+
+msgid "Status"
+msgstr "အခြေအနေ"
+
+msgid "Collaboration Type"
+msgstr "ပူးပေါင်းဆောင်ရွက်မှုပုံစံ"
+
+msgid "Aid Type Categories"
+msgstr ""
+
+#, fuzzy
+#| msgid "Default Finance Type"
+msgid "Finance Types"
+msgstr "ပုံသေငွေကြေးစနစ်"
+
+#, fuzzy
+#| msgid "Total Disbursement"
+msgid "Total Commitment"
+msgstr "စုစုပေါင်းငွေရရှိမှု"
+
+msgid "Total Disbursement"
+msgstr "စုစုပေါင်းငွေရရှိမှု"
+
+#, fuzzy
+#| msgid "Total Disbursement USD"
+msgid "Total Commitment USD"
+msgstr "စုစုပေါင်းငွေရရှိမှု (အမေရိကန်ဒေါ်လာ)"
+
+msgid "Total Disbursement USD"
+msgstr "စုစုပေါင်းငွေရရှိမှု (အမေရိကန်ဒေါ်လာ)"
+
+msgid "Transaction count"
+msgstr ""
+
+#, fuzzy
+#| msgid "Total Disbursement USD"
+msgid "Filtered Commitment USD"
+msgstr "စုစုပေါင်းငွေရရှိမှု (အမေရိကန်ဒေါ်လာ)"
+
+#, fuzzy
+#| msgid "Total Disbursement USD"
+msgid "Filtered Disbursement USD"
+msgstr "စုစုပေါင်းငွေရရှိမှု (အမေရိကန်ဒေါ်လာ)"
+
+msgid "Filtered Transaction count"
+msgstr ""
+
+msgid "Reporting Organisation"
+msgstr "အစီရင်ခံသောအဖွဲ့အစည်း"
+
+msgid "Financing"
+msgstr "ငွေကြေးထောက်ပံ့ခြင်း"
+
+msgid "Extending"
+msgstr "တိုးချဲ့ဆောင်ရွက်ခြင်း"
+
+msgid "Implementing"
+msgstr "အကောင်အထည်ဖော်ဆောင်ရွက်ခြင်း"
+
+msgid "Partner Ministry"
+msgstr "မိတ်ဖက်ဝန်ကြီးဌာန"
+
+msgid "State/Region"
+msgstr "ပြည်နယ်/တိုင်းဒေသကြီး"
+
+msgid "Township"
+msgstr "မြို့နယ် "
+
+msgid "Planned Start date"
+msgstr "စီမံကိန်းစတင်သည့်ရက်စွဲ"
+
+msgid "Planned End date"
+msgstr "စီမံကိန်းပြီးဆုံးသည့်ရက်စွဲ"
+
+msgid "Actual Start date"
+msgstr "အမှန်တကယ်စတင်သည့်ရက်စွဲ "
+
+msgid "Actual End date"
+msgstr "အမှန်တကယ်ပြီးဆုံးသည့်ရက်စွဲ"
+
+msgid "Contact Name"
+msgstr "ဆက်သွယ်ရန်အမည် "
+
+msgid "Contact Phone"
+msgstr "ဆက်သွယ်ရန်ဖုန်းနံပါတ် "
+
+msgid "Contact Email"
+msgstr "ဆက်သွယ်ရန်အီးမေးလ်"
+
+msgid "IATI Identifer"
+msgstr ""
+
+#, fuzzy
+#| msgid "IATI XML"
+msgid "IATI Linked"
+msgstr "IATI XML"
+
+msgid "IATI Sync"
+msgstr ""
+
+msgid "original"
+msgstr "မူလ"
+
+msgid "pending"
+msgstr "ဆုံးဖြတ်ချက်မကျသေးသော"
+
+msgid "Base Currency"
+msgstr "အခြေခံငွေကြေးစနစ်"
+
+msgid "Exchange Currency"
+msgstr "ငွေလဲလှယ်မှုစနစ်"
+
+msgid "Exchange Rate"
+msgstr "ငွေလဲလှယ်မှုနှုန်း"
+
+msgid "Date Created"
+msgstr "ဖန်တီးထားသောအချက်အလက်"
+
+msgid "Last Modified"
+msgstr "နောက်ဆုံးပြုပြင်ထားသော"
+
+msgid "IATI XML"
+msgstr "IATI XML"
+
+msgid "Draft"
+msgstr "မူကြမ်း"
+
+msgid "Published"
+msgstr "ထုတ်ဝေပြီး"
+
+msgid "Archived"
+msgstr "မှတ်တမ်းတင်ထားသော"
+
+msgid "Blank"
+msgstr ""
+
+msgid "Under review"
+msgstr ""
+
+msgid "Year"
+msgstr ""
+
+msgid "Month"
+msgstr ""
+
+msgid "Day"
+msgstr ""
+
+msgid "The reporting organisation has not been specified."
+msgstr ""
+
+#, fuzzy
+#| msgid "Planned End date"
+msgid "Set a Planned End Date."
+msgstr "စီမံကိန်းပြီးဆုံးသည့်ရက်စွဲ"
+
+#, fuzzy
+#| msgid "Planned Start date"
+msgid "Set a Planned Start Date."
+msgstr "စီမံကိန်းစတင်သည့်ရက်စွဲ"
+
+#, fuzzy
+#| msgid "Actual Start date"
+msgid "Set an Actual Start Date."
+msgstr "အမှန်တကယ်စတင်သည့်ရက်စွဲ "
+
+#, fuzzy
+#| msgid "Actual End date"
+msgid "Set an Actual End Date."
+msgstr "အမှန်တကယ်ပြီးဆုံးသည့်ရက်စွဲ"
+
+msgid "Add a Participating Organisation with role \"Funding\"."
+msgstr ""
+
+msgid "Add a Participating Organisation with role \"Implementing\"."
+msgstr ""
+
+msgid "Add a Participating Organisation with role \"Accountable\"."
+msgstr ""
+
+msgid "Add a Participating Organisation with role \"Extending\"."
+msgstr ""
+
+msgid "Add a Location."
+msgstr ""
+
+msgid "Add a Transaction with a Provider Organisation."
+msgstr ""
+
+msgid "Add a Disbursement Transaction."
+msgstr ""
+
+#, fuzzy
+#| msgid "Default Currency"
+msgid "Set a Default Currency."
+msgstr "ပုံသေငွေကြေးစနစ်"
+
+#, fuzzy
+#| msgid "Default Aid Type"
+msgid "Set a Default Aid Type."
+msgstr "ပုံသေအကူအညီစနစ်"
+
+#, fuzzy
+#| msgid "Default Flow Type"
+msgid "Set a Default Flow Type."
+msgstr "ပုံသေငွေကြေးစနစ်"
+
+msgid ""
+"Add a Contact with all of the following attributes set: Name, Telephone, "
+"Email address."
+msgstr ""
+
+msgid "Add a Document."
+msgstr ""
+
+msgid "Not applicable"
+msgstr ""
+
+msgid "Fully"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Partially"
+msgstr ""
+
+msgid "Created this Activity"
+msgstr ""
+
+#, python-brace-format
+msgid "Edited {tabname}"
+msgstr ""
+
+#, python-brace-format
+msgid "Changed the status from {from_status} to {to_status}"
+msgstr ""
+
+#, python-brace-format
+msgid "Endorsement {action} by {organisation}"
+msgstr ""
+
+msgid "added"
+msgstr ""
+
+msgid "removed"
+msgstr ""
+
+#, python-brace-format
+msgid "{1} in {0}"
+msgstr ""
+
+#, python-brace-format
+msgid "User ID {user_id}"
+msgstr ""
+
+msgid "Iati Codelist Sector"
+msgstr ""
+
+msgid "National Sector"
+msgstr ""
+
+#, fuzzy
+#| msgid "Partner Ministry"
+msgid "Partners"
+msgstr "မိတ်ဖက်ဝန်ကြီးဌာန"
+
+msgid "Dashboards"
+msgstr ""
+
+msgid "Aid by Location"
+msgstr ""
+
+msgid "Aid by Ministry"
+msgstr ""
+
+#, fuzzy
+#| msgid "Sector"
+msgid "Aid by Sector"
+msgstr "ကဏ္ဍ"
+
+msgid "Aid by Donor"
+msgstr ""
+
+msgid "Results Dashboard"
+msgstr ""
+
+msgid "Reports"
+msgstr ""
+
+msgid "Report Builder"
+msgstr ""
+
+msgid "Query Builder"
+msgstr ""
+
+msgid "Hello, "
+msgstr ""
+
+msgid "Data Quality"
+msgstr ""
+
+msgid "Admin"
+msgstr ""
+
+#, fuzzy
+#| msgid "Export Credit"
+msgid "Export Data"
+msgstr "ပို့ကုန်ချေးငွေ"
+
+msgid "Help"
+msgstr ""
+
+msgid "Sign out"
+msgstr ""
+
+msgid "Sign in"
+msgstr ""
+
+#, fuzzy
+#| msgid "Published"
+msgid "Public Page"
+msgstr "ထုတ်ဝေခဲ့သော"
+
+#, python-format
+msgid "%(activity_singular)s Manager"
+msgstr ""
+
+#, python-format
+msgid "%(activity_plural)s for Review"
+msgstr ""
+
+#, python-format
+msgid "Add %(activity_singular)s"
+msgstr ""
+
+#, python-format
+msgid "Delete %(activity_singular)s"
+msgstr "ဤ%(activity_singular)sကိုဖျက်မည်။"
+
+msgid "Report Templates"
+msgstr ""
+
+msgid "Aid Dashboards"
+msgstr ""
+
+msgid "Your Pages"
+msgstr ""
+
+msgid "Profile Page"
+msgstr ""
+
+msgid "Software designed & developed by"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+#, fuzzy
+#| msgid "Sector"
+msgid "Sectors"
+msgstr "ကဏ္ဍ"
+
+msgid "Sector Categories"
+msgstr ""
+
+#, fuzzy
+#| msgid "Total Disbursement USD"
+msgid "Total commitment by sector shown in USD."
+msgstr "စုစုပေါင်းငွေရရှိမှု (အမေရိကန်ဒေါ်လာ)"
+
+msgid "Multiple Donors"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Aid By Sector"
+#~ msgstr "ကဏ္ဍ"
+
+#~ msgid "Default Aid Type"
+#~ msgstr "ပုံသေအကူအညီစနစ်"
+
+#~ msgid "Default Flow Type"
+#~ msgstr "ပုံသေငွေကြေးစနစ်"
+
+#~ msgid "Default Currency"
+#~ msgstr "ပုံသေငွေကြေးစနစ်"
+
+#~ msgid "Grants"
+#~ msgstr "အကူအညီများ"
+
+#~ msgid "Interest Subsidies"
+#~ msgstr "ထောက်ပံ့ငွေ"
+
+#~ msgid "Capital Subscriptions"
+#~ msgstr "အရင်းအနှီးငွေပေးသွင်းခြင်း"
+
+#~ msgid "Loans"
+#~ msgstr "ချေးငွေများ"
+
+#~ msgid "Equity"
+#~ msgstr "ရှယ်ယာတန်ဖိုး"
+
+#~ msgid "Debt Relief"
+#~ msgstr "သက်သာသောကြွေးမြီ"
+
+#~ msgid "Investment"
+#~ msgstr "ရင်းနှီးမြှပ်နှံမှု"
+
+#~ msgid "Bonds"
+#~ msgstr "ခံဝန်ချုပ်မှုများ"
+
+#~ msgid "Other"
+#~ msgstr "အခြားအကြောင်းအရာများ"
+
+#~ msgid "Pipeline/Identification"
+#~ msgstr "ဆောင်ရွက်ရန်စီစဉ်ထားခြင်း"
+
+#~ msgid "Implementation"
+#~ msgstr "အကောင်အထည်ဖော်ခြင်း"
+
+#~ msgid "Completion"
+#~ msgstr "ဆောင်ရွက်ပြီးစီးခြင်း "
+
+#~ msgid "Post-Completion"
+#~ msgstr "ဆောင်ရွက်ပြီးစီးခြင်း "
+
+#~ msgid "Cancelled"
+#~ msgstr "ဖျက်သိမ်းခြင်း"
+
+#~ msgid "Suspended"
+#~ msgstr "ဆိုင်းငံ့ထားခြင်း"
+
+#~ msgid "Remote Data"
+#~ msgstr "ထိန်းချုပ်ထားသောအချက်အလက်"
+
+#~ msgid "Sector Working Group"
+#~ msgstr "လုပ်ငန်းကဏ္ဍအဖွဲ့"
+
+#, fuzzy
+#~ msgid "Sector Working Groups"
+#~ msgstr "လုပ်ငန်းကဏ္ဍအဖွဲ့"
+
+#~ msgid "Total Budget"
+#~ msgstr "စုစုပေါင်းဘတ်ဂျတ်"
+
+#~ msgid "Total Budget USD"
+#~ msgstr "စုစုပေါင်းဘတ်ဂျတ်(အမေရိကန်ဒေါ်လာ)"

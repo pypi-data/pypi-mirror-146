@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Expand Carrot - closed</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Transaction-editor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Transaction---modal---disbursement" transform="translate(-489.000000, -417.000000)" stroke="#00B9FF">
+            <g id="Transaction-modal" transform="translate(449.000000, 199.000000)">
+                <g id="Expand-Carrot---closed" transform="translate(41.000000, 219.000000)">
+                    <g id="Group" transform="translate(7.000000, 5.000000)" stroke-linecap="square">
+                        <polyline id="Line-3" points="0 3.02210533 2.75 0.342105263 5.5 3.02210533"></polyline>
+                        <polyline id="Line-3" transform="translate(2.750000, 7.842105) rotate(-180.000000) translate(-2.750000, -7.842105) " points="0 9.18421053 2.75 6.5 5.5 9.18421053"></polyline>
+                    </g>
+                    <circle id="Oval" cx="10" cy="10" r="10"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

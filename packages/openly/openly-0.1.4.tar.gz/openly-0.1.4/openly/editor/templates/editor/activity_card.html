@@ -1,0 +1,166 @@
+{% load i18n %}
+{% load tag_library %}
+{% load humanize %}
+{% with status=activity.openly_status %}
+{% load ifsetting %}
+
+<div class="activity_card media draggable" data-pk="{{activity.pk }}">
+    <div class="import_buttons pull-right" id="{{ activity.id }}_import_iati_btns">
+            {% if status == iati_xml_status and activity.iati_identifier not in local_iati_identifiers %}
+            <button class="btn btn-primary btn-card btn-newimport" data-url="{% url 'import_activity_to_local' activity.id %}">{% trans "Import" %}</button>
+            {% elif activity.pk in compare_details %}
+                {% with compare_details|get_item:activity.pk as details %}
+                <a href="{% url 'compare' details.local details.xml %}" class="btn btn-card btn-default" role="button">IATI <i class="ion-arrow-swap"></i></a>
+                {% endwith %}
+            {% endif %}
+    </div>
+
+    <div class="media-left media-top card_icon_status {{status}}">
+        {% if activity.iati_sync_enabled %}
+            <span class="center-icon {{status}}-iati"></span>
+            <span class="card_icon_status iati-card-label"></span>
+        {% else %}
+            <span class="center-icon {{status}} no-iati"></span>
+        {% endif %}
+    </div>
+
+    <div class="media-body">
+        <span class="help-text-small">
+            {{ project_name }} ID: <span class="card_id">{{activity.id}}</span>
+            {% if activity.internal_identifier %}
+                | Partner ID: {{activity.internal_identifier}}
+            {% endif %}
+            {% ifsetting OIPA_SYNC_ENABLED %}
+            {% if activity.iati_identifier %}
+                | IATI ID: {{activity.iati_identifier}}
+            {% endif %}
+            {% endifsetting %}
+        </span>
+        <div class="activity_card_title">
+            <span class="card_title" {% if status != iati_xml_status %} style="display:none"{% endif %}>
+                {{ activity.title }}
+            </span>
+            <a class="card_link" href="{% url 'edit_activity' activity.pk %}" {% if status == iati_xml_status %} style="display:none"{% endif %}>
+                {{ activity.title|default:_('Untitled') }}
+            </a>
+        </div>
+        <div class="activity_card_substats">
+            <span id="activity_status_name" class="help-text-small">{{ activity.activity_status.name }}</span>
+            <span class="help-text-small"> - {% trans 'Data Completion' %}: {{activity.completion | percentify }}</span>
+            {% comment %} {% if activity.date_modified %}
+            <span class="activity_card_stats">Updated {{ activity.date_modified }}</span>
+            {% endif %} {% endcomment %}
+        </div>
+        <div class="activity_total_commit">
+            <span class="total-commit-value">US${{ activity.total_commitment_usd|floatformat:"0"|intcomma }}</span><br>
+            <span class="help-text-small total-commit-label">{% trans 'Commitment' %}</span>
+        </div>
+        <div class="see_more_card">
+            <a class="expand_card">{% trans "See Preview" %}<i class="ion-chevron-down"></i></a>
+        </div>
+        <div class="collapse collapse_card">
+            <div class="activity_card_description help-text">
+                {{ activity.general_description }}
+            </div>
+            <div class="row section_lines">
+                <div class="col-sm-2">
+    <span class="card_subtitle">{% trans 'General' %}</span>
+                </div>
+                <div class="col-sm-5">
+                    <ul class="list-unstyled activity_card_expanded">
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Planned Dates:' %} </span>{{ activity.start_planned }} to {{ activity.end_planned }}  </li>
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Implementing:' %} </span>{{ activity.implementing }}</li>
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Funding:' %} </span>{{ activity.funding }}</li>
+                        {% if activity.date_modified %}
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Last Updated:' %} </span>{{ activity.date_modified }}</li>
+                        {% endif %}
+                    </ul>
+                </div>
+                <div class="col-sm-5">
+                    <ul class="list-unstyled activity_card_expanded">
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Reporting:' %} </span>{{ activity.reporting_organisation.abbreviation }}</li>
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Extending:' %} </span>{{ activity.extending }}</li>
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Results:' %} </span>{% if activity.results.count %} {{ activity.results.count }}{% else %}None{% endif %}</li>
+                        {% if activity.date_created %}
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Date Created:' %} </span>{{ activity.date_created }}  </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div class="row section_lines">
+                <div class="col-sm-2">
+                    <span class="card_subtitle">Finances</span>
+                </div>
+                <div class="col-sm-5">
+                    <ul class="list-unstyled activity_card_expanded">
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Budgets:' %} </span>{{ activity.budget__count }} Entries</li>
+                        <!-- TODO: implement <li class="card_stats"><span class="sub-subtitle">{% trans 'Disbursed:' %} </span>117.19M or 51.9%</li>-->
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Transactions:' %} </span>{{ activity.transaction__count }} </li>
+                    </ul>
+                </div>
+                <div class="col-sm-5">
+                    <ul class="list-unstyled activity_card_expanded">
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Finance Type:' %} </span>{{ activity.default_finance_type.name }}</li>
+                        <li class="card_stats"><span class="sub-subtitle">{% trans 'Flow Type:' %} </span>{{ activity.default_flow_type.name }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row section_lines">
+                <div class="col-sm-2">
+                    <span class="card_subtitle">{% trans 'Sectors' %}</span>
+                </div>
+                <div class="col-sm-10">
+                    <ul class="list-unstyled activity_card_expanded">
+                        <li class="card_stats">
+                            {% for sector in activity.sector.all %}
+                                <span class="sub-subtitle">{{ sector }}</span>
+                            {% endfor %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row section_lines">
+                <div class="col-sm-2">
+                    <span class="card_subtitle">{% trans 'Location' %}</span>
+                </div>
+                <div class="col-sm-10">
+                    <ul class="list-unstyled activity_card_expanded">
+                        <li class="card_stats">
+                            {% for location in activity.location_set.all %}
+                            <span class="sub-subtitle">{{ location.name }} {{ location.percentage }}%</span>
+                            {% endfor %}
+                        </li>
+                    </ul>
+                </div>
+            </div> <!--end of row  -->
+            <div class="row section_lines edit-delete-row">
+                <div class="col-sm-2">
+                    <span class="card_subtitle">&nbsp;</span>
+                </div>
+                <div class="col-sm-5">
+                    <ul class="list-unstyled activity_card_expanded">
+                        <li class="card_stats">
+                            <a href="{% url 'edit_activity' activity.pk %}" type="button" class="btn btn-success btn-super-small hidden-print">{% trans 'Edit' %}</a>
+                        </li>
+                    </ul>
+                </div>
+                {% if user.is_superuser or user.organisation_code == activity.reporting_organisation.code %}
+                <div class="col-sm-5">
+                    <ul class="list-unstyled activity_card_expanded">
+                        <li class="card_stats">
+                            <button class="btn btn-danger btn-super-small hidden-print" onclick="open_delete_list_modal('{% url 'archive_activity' activity.pk %}')">{% trans 'Delete' %}</button>
+                        </li>
+                    </ul>
+                </div>
+                {% endif %}
+            </div> <!--end of row  -->
+        </div> <!--end of collapse-->
+    </div> <!--end of card-->
+</div>
+{% endwith %}
+
+<script>
+    function open_delete_list_modal(delete_url) {
+        window.delete_list_modal.show(delete_url);
+    };
+</script>

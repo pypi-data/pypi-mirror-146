@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: 2019-06-02 16:31+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#, python-format
+msgid ""
+"\n"
+"    Hi %(user)s,\n"
+"\n"
+"    You recently requested a link to reset your %(site_name)s password for the username %(user)s.\n"
+"    Please set a new password by following the link below:\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"\n"
+"    Thanks,\n"
+"    - The %(site_name)s Team.\n"
+msgstr ""
+
+msgid "Aid transparency isn't just about numbers."
+msgstr "Tashqi ko'mak oshkoraligi faqat raqamlar haqida emas."
+
+msgid "An email with password reset instructions has been sent."
+msgstr "Parolni o'zgartirish bo'yicha yo'l-yo'riqli email jo'natildi."
+
+msgid "By ensuring open access to aid information"
+msgstr "Tashqi ko'mak haqidagi ma'lumotni ochiqligini ta'minlash orqali"
+
+msgid "Can't access your account?"
+msgstr "O'z hisob yozuvlaringizga kira olmayapsizmi?"
+
+msgid "Change Password"
+msgstr "Parolni o'zgartirish"
+
+msgid "Email Sent"
+msgstr "Email jo'natildi"
+
+msgid "Let's start a conversation about aid transparency"
+msgstr "Kelin tashqi ko'mak oshkoraligi haqida suhbat boshlaylik"
+
+msgid "Log In"
+msgstr "Kirish"
+
+msgid "Log in"
+msgstr "Kirish"
+
+#, python-format
+msgid "Log in to %(site)s"
+msgstr ""
+
+msgid "Login"
+msgstr "Login (Kirish)"
+
+msgid "Making aid transparent helps to ensure aid goes where it is most needed."
+msgstr "Tashqi ko'makning oshkora bo'lish u eng zarur joyga yo'naltirilishini ta'minlaydi."
+
+msgid "Open access to aid information means that people  are better able to see the impact that aid activities have in their communities. This also helps other countries learn what may work, or not work, in their country."
+msgstr "Tashqi ko'makka oid ma'lumotlardan erkin foydalanish odamlar o'z jamoalarida ko'mak faoliyatining ta'sirini yaxshiroq ko'ra olishini anglatadi. Bu yana boshqa mamlakatlarga o'zlarida nima samarali yoki besamara bo'lishini anglab yetishiga yordam beradi."
+
+msgid "Open information about international aid activities"
+msgstr "Xalqaro ko'mak faoliyati haqida ochiq ma'lumotlar"
+
+msgid "Password Reset"
+msgstr "Parolni o'zgartirish"
+
+msgid "Password changed"
+msgstr "Parol o'zgartirildi"
+
+msgid "Password reset failed"
+msgstr "Parolni o'zgartirib bo'lmadi"
+
+msgid "Password reset successfully"
+msgstr "Parol muvaffaqiyatli o'zgartirildi"
+
+msgid "Please sign in"
+msgstr "Iltimos, login va parol bilan kiring"
+
+msgid "Reset your password."
+msgstr "Parolingizni o'zgartirish."
+
+msgid "Results matter too."
+msgstr "Natijalar ham ahamiyatga ega."
+
+msgid "See you next time!"
+msgstr "Yana ko'rishguncha hayr!"
+
+msgid "Sign in"
+msgstr "Kirish"
+
+msgid "Software designed and developed by"
+msgstr "Dastur ta'minoti ishlab chiqaruvchisi"
+
+msgid "Submit"
+msgstr "Topshirish"
+
+msgid "Submit Request"
+msgstr "So'rovni topshirish"
+
+msgid "To reset your password please enter your email address below. We will send you an email with some instructions."
+msgstr "Parolni o'zgartirish uchun, iltimos, quyida o'z elektron pochta manzilingizni kiriting.  Biz sizga ba'zi yo'rignomalar bilan elektron pochta xabari jo'natamiz."
+
+msgid "What are the results?"
+msgstr "Natijalar qanday bo'ldi"
+
+msgid "Why is open aid important?"
+msgstr "Nega tashqi ko'mak ochiq bo'lishi mumkin?"
+
+msgid "You have logged out."
+msgstr "Siz chiqib ketdingiz."
+
+msgid "Your username and password didn't match. Please try again."
+msgstr "Sizning foydalanuvchi nomingiz va parol mos kelmadi. Iltimos, yang harakat qiling."
+
+msgid "a wider group of stakeholders are able to clearly see who is doing what and where? Access to better quality aid information also supports the equitable allocation of resources, both sectorally and geographically, ensuring that all people can benefit."
+msgstr "kattaroq guruhdagi manfaatdor tomonlar kim qaerda va Nima qilayotganini ko'ra oladi?  Tashqi ko'mak haqidagi sifatliroq ma'lumotlarga ega bo'lish resurslarni had tarmoqlar, ham geografik jihatdan adolatliroq taqsimlanishi , hamma odamlar foyda ko'rishini ta'minlaydi."
+
+msgid "aid transparency portal"
+msgstr "Tashqi ko'mak transparentligi portali"
+
+msgid "aid works better when we work together"
+msgstr "Biz birgalikda ishlaganda tashqi ko'mak samaraliroq bo'ladi"
+
+msgid "logout"
+msgstr "Chiqish"
+
+msgid "tracking international aid activities"
+msgstr "xalqaro ko'mak faoliyatini kuzatib borish"
+
+#~ msgid "Activity Manager"
+#~ msgstr "Faoliyat yo'nalishini menejeri"
+
+#~ msgid "Add Activity"
+#~ msgstr "Faoliyat yo'nalishini qo'shish"
+
+#~ msgid "Add a new activity"
+#~ msgstr "Faoliyat yo'nalishini qo'shish"
+
+#~ msgid "Aid By Donor"
+#~ msgstr "Tashqi ko'mak kesimida"
+
+#~ msgid "Aid By Location"
+#~ msgstr "Tashqi ko'mak kesimida"
+
+#~ msgid "Aid By Ministry"
+#~ msgstr "Tashqi ko'mak kesimida"
+
+#~ msgid "Aid By Sector"
+#~ msgstr "Tashqi ko'mak kesimida"
+
+#~ msgid "Aid Dashboard"
+#~ msgstr "Boshqaruv panel"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "Boshqaruv panellari"
+
+#~ msgid "Aid by Donor"
+#~ msgstr "Tashqi ko'mak donorlar kesimida"
+
+#~ msgid "Aid by Location"
+#~ msgstr "Tashqi ko'mak hududlar kesimida"
+
+#~ msgid "Aid by Ministry"
+#~ msgstr "Tashqi ko'mak vazirliklar kesimida"
+
+#~ msgid "Aid by Sector"
+#~ msgstr "Tashqi ko'mak tarmoqlar kesimida"
+
+#~ msgid "Create Report"
+#~ msgstr "Hisobot yaratish"
+
+#~ msgid "Delete activity"
+#~ msgstr "Faoliyat yo'nalishini o'chirish"
+
+#~ msgid "Hello"
+#~ msgstr "Salom"
+
+#~ msgid "Profile Page"
+#~ msgstr "Profil sahifasi"
+
+#~ msgid "Public Page"
+#~ msgstr "Jamoatchilik uchun sahifa"
+
+#~ msgid "Query Builder"
+#~ msgstr "Izlash ustasi"
+
+#~ msgid "Report Builder"
+#~ msgstr "Hisobot tuzuvchi"
+
+#~ msgid "Search"
+#~ msgstr "Izlash"
+
+#~ msgid "Settings"
+#~ msgstr "Sozlamalar"
+
+#~ msgid "Sign out"
+#~ msgstr "Chiqish"
+
+#~ msgid "Start tutorial"
+#~ msgstr "Qo'llanmani boshlash"
+
+#~ msgid "Your Pages"
+#~ msgstr "Sizning sahifalar"

@@ -1,0 +1,330 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-08 11:00+0900\n"
+"PO-Revision-Date: 2017-06-01 15:27+0822\n"
+"Last-Translator: b'  <sean@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+#, fuzzy
+msgid "Locations"
+msgstr "Fatin"
+
+#, fuzzy, python-format
+#| msgid "The map below shows where this activity is implemented."
+msgid ""
+"The map below shows where this %(activity_singular_lower)s is implemented."
+msgstr "Mapa iha kraik hatudu fatin iha ne'ebé atividade ne'e implementa"
+
+msgid "About"
+msgstr "Informasaun"
+
+msgid "Location"
+msgstr "Fatin"
+
+msgid "Finances"
+msgstr ""
+
+msgid "Documents"
+msgstr "Dokumentu"
+
+msgid "Contacts"
+msgstr "Kontaktu"
+
+#, python-format
+msgid "Profile page for %(activity_title)s"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Edit %(activity_singular)s"
+msgstr "Hadia Atividade"
+
+msgid "Edit Banner"
+msgstr "Troka Imajen Banner"
+
+msgid "Add Banner"
+msgstr "Aumenta Banner"
+
+msgid "Print"
+msgstr ""
+
+msgid "Status:"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "This is the main development area addressed by this activity."
+msgid ""
+"This is the main development area addressed by this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Ida ne'e mak área prinsipal dezenvolvimentu nian ne'ebé mak hala'o husi "
+"atividade ida ne'e"
+
+#, fuzzy, python-format
+#| msgid "These are the main development areas addressed by this activity."
+msgid ""
+"These are the main development areas addressed by this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Sira ne'e mak área prinsipal dezenvolvimentu nian ne'ebé mak hala'o husi "
+"atividade ida ne'e"
+
+#, fuzzy, python-format
+msgid "%(activity_singular)s Description"
+msgstr "Fatin Atividade"
+
+#, fuzzy, python-format
+#| msgid "Activity Objective"
+msgid "%(activity_singular)s Objective"
+msgstr "Objetivu Atividade"
+
+msgid "Target Groups"
+msgstr "Grupo Alvu"
+
+msgid "Total Project Cost"
+msgstr ""
+
+#, fuzzy
+#| msgid "Implementing Partners"
+msgid "Implementing Government Agency"
+msgstr "Parseiru Implementasaun"
+
+#, fuzzy, python-format
+#| msgid ""
+#| "This government entity is responsible for oversight or maintenance of "
+#| "this activity."
+msgid ""
+"This government entity is responsible for oversight or maintenance of this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Entidade governu ida ne'e mak prinsipalmente responsavel ba halo supervizaun "
+"ka manutensaun husi atividade ida ne'e."
+
+#, fuzzy, python-format
+#| msgid ""
+#| "These government entities are responsible for oversight or maintenance of "
+#| "this activity."
+msgid ""
+"These government entities are responsible for oversight or maintenance of\n"
+"                these %(activity_plural_lower)s."
+msgstr ""
+"Entidade governu sira ne'e mak prinsipalmente responsavel ba halo "
+"supervizaun ka manutensaun husi atividade ida ne'e."
+
+msgid "Implementing Partners"
+msgstr "Parseiru Implementasaun"
+
+#, fuzzy, python-format
+#| msgid ""
+#| "This organisation is principally responsible for delivering this activity."
+msgid ""
+"This organisation is principally responsible for delivering this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Organizasaun ida ne'e mak prinsipalmente responsavel atu hala'o atividade "
+"ida ne'e."
+
+#, fuzzy, python-format
+#| msgid ""
+#| "These organisations are principally responsible for delivering this "
+#| "activity."
+msgid ""
+"These organisations are principally responsible for delivering\n"
+"                these %(activity_plural_lower)s."
+msgstr ""
+"Organizasaun sira ne'e mak prinsipalmente responsavel atu hala'o atividade "
+"ida ne'e."
+
+msgid "Government Partners"
+msgstr "Parseiru Governu"
+
+msgid "Donors"
+msgstr "Doadór"
+
+#, fuzzy, python-format
+#| msgid "This activity is funded by this donor."
+msgid "This %(activity_singular_lower)s is funded by this donor."
+msgstr "Atividade ida ne'e finansiadu husi doadór ida ne'e"
+
+#, fuzzy, python-format
+#| msgid "This activity is funded by these donors."
+msgid "This %(activity_plural_lower)s is funded by these donors."
+msgstr "Atividade ida ne'e finansiadu husi doadór sira ne'e"
+
+msgid "Upload banner image"
+msgstr "Upload imajen banner"
+
+#, fuzzy
+msgid ""
+"Since your cover photo goes across the entire width of your profile, the "
+"image you pick should be at least <strong>1500 pixels wide</strong>. The "
+"image should be formatted as a <strong>JPEG</strong> or <strong>PNG</strong> "
+"file."
+msgstr ""
+"Tanba ita nian foto kapa taka tomak espasu hotu husi ita-nian perfil, imajen "
+"ne'ebé ita hili tenke pelu menus luan 100 pixels. Imajen ne'e tenke formata "
+"hanesan fishheiru JPEG ka PNG ida."
+
+msgid "Close"
+msgstr "Taka"
+
+msgid "Choose Image"
+msgstr "Hili imajen"
+
+msgid ""
+"The charts below present a financial overview of the assistance provided by "
+"the development partner."
+msgstr ""
+
+msgid "Total Commitment: "
+msgstr ""
+
+#, python-format
+msgid ""
+"Total committed budget for the duration of the %(activity_singular_lower)s. "
+"Calculated as the sum of all commitment transactions for this "
+"%(activity_singular_lower)s."
+msgstr ""
+
+msgid "Total Commitment USD: "
+msgstr ""
+
+msgid "Total Commitment above converted to US dollars."
+msgstr ""
+
+msgid "Finance Type(s): "
+msgstr ""
+
+msgid "Percent disbursed"
+msgstr ""
+
+msgid "Cumulative Commitments & Disbursements"
+msgstr ""
+
+#, python-format
+msgid ""
+"This chart shows the total cumulative assistance for all transactions "
+"associated with this %(activity_singular_lower)s."
+msgstr ""
+
+msgid "Transactions"
+msgstr ""
+
+#, python-format
+msgid ""
+"Transactions recording committed or actual funds flowing in or out of an aid "
+"%(activity_singular_lower)s"
+msgstr ""
+
+msgid "Aid Type"
+msgstr ""
+
+msgid "Finance Type"
+msgstr ""
+
+msgid "Provider"
+msgstr ""
+
+msgid "Receiver"
+msgstr ""
+
+msgid "Tied"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+#, python-format
+msgid " The %(activity_singular_lower)s aligns with the following strategies: "
+msgstr ""
+
+msgid "Contact Details"
+msgstr "Detallu Kontaktu"
+
+msgid "Phone"
+msgstr "Telefone"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "Address"
+msgstr "Enderesu"
+
+msgid "see less"
+msgstr "hare menus"
+
+msgid "see more"
+msgstr "hare liu tan"
+
+msgid "Show less"
+msgstr ""
+
+msgid "Show more"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid ""
+#| "These are the key documents and images related to this activity. Select a "
+#| "document title to download."
+msgid ""
+"These are the key documents and images related to this "
+"%(activity_singular_lower)s. Select a document title to download."
+msgstr ""
+"Sira ne'e mak dokumentu xave no imajen relasiona ho atividade ida ne'e. Hili "
+"dokumentu ida atu download."
+
+#, fuzzy
+#~ msgid "This shows the current status of the %(activity_singular_lower)s."
+#~ msgstr "Nasaun ka instituisaun ne'ebé mak finansia atividade ne'e"
+
+#~ msgid "These are some of this activity&apos;s key team members."
+#~ msgstr "Sira ne'e mak ekipa xave balun husi atividade ida ne'e"
+
+#~ msgid ""
+#~ "Information below generally contains a description of the activity, as "
+#~ "well as activity objectives and target groups."
+#~ msgstr ""
+#~ "Informasaun iha kraik jeralmente inklui deskrisaun husi atividade ne'e, "
+#~ "no mós hanesan objetivu atividade no grupu alvu."
+
+#~ msgid "Key Activity Documents"
+#~ msgstr "Dokumentu Atividade Xave"
+
+#~ msgid "Profile"
+#~ msgstr "Perfil"
+
+#~ msgid "The countries or institutions that fund the activity."
+#~ msgstr "Nasaun sira ka instituisaun sira ne'ebé mak finansia atividade ne'e"
+
+#~ msgid "The government entities with whom the activity has been agreed."
+#~ msgstr "Entidade governu sira ho ida ne'ebé atividade ne'e akordu ona."
+
+#~ msgid "The government entity with whom the activity has been agreed."
+#~ msgstr "Entidade governu ho ida ne'ebé atividade ne'e akordu ona."
+
+#~ msgid "The location the activity is taking place."
+#~ msgstr "Fatin atividade ne'e hala'o"

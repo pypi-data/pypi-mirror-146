@@ -1,0 +1,74 @@
+[
+{
+  "model": "iati_vocabulary.indicatorvocabulary",
+  "pk": "1",
+  "fields": {
+    "name": "WHO Registry",
+    "description": null,
+    "url": "http://apps.who.int/gho/indicatorregistry/App_Main/indicator_registry.aspx"
+  }
+},
+{
+  "model": "iati_vocabulary.indicatorvocabulary",
+  "pk": "2",
+  "fields": {
+    "name": "Sphere Handbook",
+    "description": null,
+    "url": "http://www.spherehandbook.org"
+  }
+},
+{
+  "model": "iati_vocabulary.indicatorvocabulary",
+  "pk": "3",
+  "fields": {
+    "name": "US Foreign Assistance Framework",
+    "description": null,
+    "url": "http://www.state.gov/s/d/rm/rls/dosstrat/2007/html/82981.htm"
+  }
+},
+{
+  "model": "iati_vocabulary.indicatorvocabulary",
+  "pk": "4",
+  "fields": {
+    "name": "World Bank World Development Indicators",
+    "description": null,
+    "url": "http://data.worldbank.org/data-catalog/world-development-indicators"
+  }
+},
+{
+  "model": "iati_vocabulary.indicatorvocabulary",
+  "pk": "5",
+  "fields": {
+    "name": "UN Millennium Development Goals Indicators",
+    "description": null,
+    "url": "http://mdgs.un.org/unsd/mdg/Host.aspx?Content=Indicators/OfficialList.htm"
+  }
+},
+{
+  "model": "iati_vocabulary.indicatorvocabulary",
+  "pk": "6",
+  "fields": {
+    "name": "UNOCHA Humanitarian Response Indicators",
+    "description": null,
+    "url": "https://www.humanitarianresponse.info/applications/ir/indicators"
+  }
+},
+{
+  "model": "iati_vocabulary.indicatorvocabulary",
+  "pk": "7",
+  "fields": {
+    "name": "HIV/AIDS Indicator Registry",
+    "description": null,
+    "url": "http://www.indicatorregistry.org"
+  }
+},
+{
+  "model": "iati_vocabulary.indicatorvocabulary",
+  "pk": "99",
+  "fields": {
+    "name": "Reporting Organisation",
+    "description": null,
+    "url": null
+  }
+}
+]

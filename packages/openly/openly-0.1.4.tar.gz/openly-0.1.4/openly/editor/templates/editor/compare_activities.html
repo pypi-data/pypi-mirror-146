@@ -1,0 +1,102 @@
+{% extends 'editor/base.html' %}
+{% load tag_library %}
+{% load humanize %}
+{% load i18n %}
+{% load static  %}
+
+{% block editor_scripts %}
+    <script type="text/javascript" src="{% static 'js/activity_compare.js' %}" defer></script>
+    <script type="text/javascript" src="{% static 'js/ajax_csrf.js' %}" defer></script>
+{% endblock %}
+
+{% block editor_style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/result_display.css' %}" />
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container-fluid editor_container">
+    <div class="row" id="ajax_messages">
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <a href="#" class="back-arrow" id="btn-back-top"><i class="ion-android-arrow-back"></i> {% trans 'back' %}</a>
+        <h1 class="CompareTitle">{% blocktrans %}Compare local {{activity_plural_lower}} with IATI{% endblocktrans %}</h2>
+            {% if available_action %}
+                <p class="CompareSubtitle">{% trans available_action.description %}</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>{{ left.get_status_display }}</h5>
+        </div>
+        <div class="col-md-6">
+            <h5>{{ right.get_status_display }}</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            {% include 'editor/activity_card.html' with activity=left %}
+            <div class="text-center">
+                <button class="btn btn-default" id="{% if available_action.left_button_action %}btn-resolve{% else %}btn-back{% endif %}">{{ available_action.left_button_text }}</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            {% include 'editor/activity_card.html' with activity=right %}
+            <div class="text-center">
+                <button class="btn btn-default" id="{% if available_action.right_button_action %}btn-resolve{% else %}btn-back{% endif %}">{{ available_action.right_button_text }}</button>
+            </div>
+        </div>
+    </div>
+    {% if available_action %}
+    <div class="row">
+        <div class="col-md-12 row-resolve">
+            <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="confirmModalLabel">{% trans 'Are You Sure?' %}</h4>
+                        </div>
+                        <div class="modal-body">
+                            {{ available_action.description }}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            <button type="button" class="btn btn-primary" data-url="{{ available_action.url }}" id="btn-modal-action" >{% trans 'Yes' %}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="form-action" action="{{ available_action.url }}" method="POST">
+                {% csrf_token %}
+            </form>
+            <div class="modal fade confirm-modal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // show modal on click
+            $('#btn-resolve').on('click', function(){
+                $('#confirmModal').modal();
+            })
+
+            // on modal action make ajax request to action url
+            $('#btn-modal-action').on('click', function() {
+                $('#form-action').submit();
+            })
+
+            // back button
+            $('#btn-back, #btn-back-top').on('click', function() {
+                document.location = '{% url 'activity_manager' left.reporting_organisation_id %}';
+            })
+        })
+    </script>
+    {% endif %}
+    
+</div>
+{% endblock %}

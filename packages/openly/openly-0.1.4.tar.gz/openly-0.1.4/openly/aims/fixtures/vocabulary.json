@@ -1,0 +1,79 @@
+[
+{
+  "model": "aims.vocabulary",
+  "pk": "ADT",
+  "fields": {
+    "name": "AidData"
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "COFOG",
+  "fields": {
+    "name": "Classification of the Functions of Government (UN)"
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "DAC",
+  "fields": {
+    "name": "OECD Development Assistance Committee"
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "DAC-3",
+  "fields": {
+    "name": "OECD Development Assistance Committee 3 digit codes"
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "DAC-5",
+  "fields": {
+    "name": "OECD Development Assistance Committee 5 digit codes"
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "ISO",
+  "fields": {
+    "name": "International Organization for Standardization"
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "NACE",
+  "fields": {
+    "name": "Statistical classification of economic activities in the European Community"
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "NTEE",
+  "fields": {
+    "name": "National Taxonomy for Exempt Entities (USA)"
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "RO",
+  "fields": {
+    "name": "Reporting Organisation (i.e. maintained by the organisation referred to in the <reporting-org> element."
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "RO2",
+  "fields": {
+    "name": "Reporting Organisation (2) - where reporting organisations have more than one vocabulary that they wish to reference"
+  }
+},
+{
+  "model": "aims.vocabulary",
+  "pk": "WB",
+  "fields": {
+    "name": "World Bank"
+  }
+}
+]

@@ -1,0 +1,156 @@
+{% load i18n %}
+
+<activity-list-paginate>
+    <div class="row">
+        <nav>
+            <p class="pagination page_count pull-left" if="{ opts.store.pagination.count === 0 }">0 {% trans "matching projects" %}</p>
+            <p class="pagination page_count pull-left" if="{ opts.store.pagination.count !== 0 }">{% trans "Showing" %} { opts.store.pagination.start_showing_at + 1 } {% trans "to" %} {Math.min(opts.store.pagination.end_showing_at, opts.store.pagination.count)} {% trans "of" %} { opts.store.pagination.count } {% trans "projects" %}</p>
+            <ul class="pagination pull-right">
+                <li>
+                    <a href="#activity-list-header" aria-label="Previous" class="{ disabled: opts.store.pagination.page <= 1 }" onclick="{ previous }">
+                    <span aria-hidden="true">{% trans "Previous" %}</span>
+                    </a>
+                </li>
+                <li class="{ active: page + 1 == opts.store.pagination.page }" onclick="{ page_go }" each="{ page in _.range(opts.store.pagination.num_pages) }">
+                    <a href="#activity-list-header">{ page+1 }</a>
+                </li>
+                <li>
+                    <a href="#activity-list-header" aria-label="Next" class="{ disabled: opts.store.pagination.page >= opts.store.pagination.num_pages }" onclick="{ next }">
+                    <span aria-hidden="true">{% trans "Next" %}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <style>
+        .pagination > li > a {
+            border: 1px solid transparent;
+            color: var(--light-text);
+            border-radius: 4px;
+            margin: 0 1px;
+        }
+
+        .pagination > li > a:hover {
+            border-color: var(--light-text);
+            background-color: white;
+            color: var(--light-text);
+        }
+
+        .pagination > li > a:focus {
+            background-color: white;
+            color: var(--light-text);
+            border: none;
+        }
+
+        .pagination > li.active > a {
+            background-color: var(--light-text);
+            border-color: var(--light-text);
+        }
+
+        .pagination > li.active > a:hover, .pagination > li.active > a:focus {
+            background-color: var(--light-text);
+            border-color: var(--light-text);
+        }
+
+        .pagination > li > a.disabled {
+            pointer-events: none;
+            cursor: default;
+            color: #73777a;
+        }
+
+        .pagination > li:first-child > a::before {
+            -webkit-clip-path: polygon(9.8px 12.8px,8.7px 12.8px,4.5px 8.5px,4.5px 7.5px,8.7px 3.2px,9.8px 4.3px,6.1px 8px,9.8px 11.7px,9.8px 12.8px);
+            clip-path: polygon(9.8px 12.8px,8.7px 12.8px,4.5px 8.5px,4.5px 7.5px,8.7px 3.2px,9.8px 4.3px,6.1px 8px,9.8px 11.7px,9.8px 12.8px);
+            background-color: var(--light-text);
+            vertical-align: middle;
+            display: inline-block;
+            margin-top: -2px;
+            height: 16px;
+            width: 16px;
+            content: "";
+        }
+
+        .pagination > li:last-child > a::after {
+            -webkit-clip-path: polygon(6.2px 3.2px,7.3px 3.2px,11.5px 7.5px,11.5px 8.5px,7.3px 12.8px,6.2px 11.7px,9.9px 8px,6.2px 4.3px,6.2px 3.2px);
+            clip-path: polygon(6.2px 3.2px,7.3px 3.2px,11.5px 7.5px,11.5px 8.5px,7.3px 12.8px,6.2px 11.7px,9.9px 8px,6.2px 4.3px,6.2px 3.2px);
+            background-color: var(--light-text);
+            vertical-align: middle;
+            display: inline-block;
+            margin-top: -2px;
+            height: 16px;
+            width: 16px;
+            content: "";
+        }
+
+        .pagination > li:first-child > a.disabled::before,
+        .pagination > li:last-child > a.disabled::after {
+            background-color: #73777a;
+        }
+
+        .page_count {
+            padding-right: 0;
+            padding-left: 0;
+            color: #002d42;
+        }
+
+        @media (max-width: 480px) {
+            .pagination {
+                justify-content: center;
+                float: none !important;
+                display: flex;
+            }
+        }
+    </style>
+
+    <script>
+        /* eslint-disable indent */
+        /* eslint-disable strict */
+        var tag = this;
+        var store;
+        tag.show_all = false;
+
+        tag.on('before-mount', function () {
+            store = tag.opts.store;
+            store.on('activities_filtered', function () {
+                tag.update();
+            });
+        });
+
+        function first() {
+            tag.paginate(1);
+        }
+
+        function page_go(e) {
+            tag.paginate(e.item.page + 1);
+        }
+
+        function last() {
+            tag.paginate(store.pagination.num_pages);
+        }
+
+        function next() {
+            if (store.pagination.page < store.pagination.num_pages) {
+                tag.paginate(store.pagination.page + 1);
+            }
+        }
+
+        function previous() {
+            if (store.pagination.page > 1) {
+                tag.paginate(store.pagination.page - 1);
+            }
+        }
+
+        function paginate(page) {
+            /* Triggers 'paginate' with a page number and per-page on the store */
+            tag.opts.store.trigger('paginate', page, store.pagination.per_page);
+        }
+
+        tag.first = first;
+        tag.page_go = page_go;
+        tag.last = last;
+        tag.next = next;
+        tag.previous = previous;
+        tag.paginate = paginate;
+    </script>
+</activity-list-paginate>

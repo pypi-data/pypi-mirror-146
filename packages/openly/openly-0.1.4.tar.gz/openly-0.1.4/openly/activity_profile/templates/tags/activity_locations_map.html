@@ -1,0 +1,49 @@
+{% load ifsetting %}
+
+<activity_locations_map>
+    <div class="leaflet-map-size" ref="map">
+    </div>
+
+    var tag = this;
+    tag.on('mount', function () {
+        var dataurl = '{% url "data" %}';
+        var areaIds = activity_object.locations.map( function(l)
+                { return l.location.code; }
+            );
+
+        tag.map = L.map(tag.refs.map, {
+            attributionControl: !tag.opts.remove_controls,
+            zoomControl: !tag.opts.remove_controls,
+            preferCanvas: true
+        }).setView([19.75, 96.1], 5);
+        {% ifsetting MAP_USES_MAPBOX %}
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', { 
+            attribution: '© <a href="https://www.mapbox.com/">Mapbox</a>. The depiction and use of boundaries, geographic names and related data shown on maps and included in the Project Bank portal do not necessarily imply official endorsement or acceptance by the Government of Myanmar.',
+            id: 'mapbox/streets-v11',
+            accessToken: 'pk.eyJ1IjoicmFwaGFlbG1lcngiLCJhIjoiY2s5bTkyYnoxMDZ6eTNrbnFidnJhaW95aSJ9.Ebytc0xrmVdowpQOE6qRKg',
+        {% else %}
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+        {% endifsetting %}
+            minZoom: 4,
+        }).addTo(tag.map);
+
+        // Download GeoJSON via Ajax
+        $.getJSON(dataurl, {
+            locations: areaIds
+        }, function (data) {
+            function onEachFeature(feature, layer) {
+                layer.bindPopup(feature.properties.name);
+                return layer.feature.properties.name;
+            }
+            function style(geoJsonFeature) {
+                return {'color':'#4485F5', 'weight': 1, 'fillOpacity': '0.3' }
+            }
+            // Add GeoJSON layer
+            var township = L.geoJson(data, { onEachFeature: onEachFeature, style: style }).addTo(tag.map);
+            tag.map.fitBounds(township.getBounds());
+        });
+    });
+    
+
+</activity_locations_map>

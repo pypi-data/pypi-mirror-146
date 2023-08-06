@@ -1,0 +1,29 @@
+<field-metadata>
+  <input type="hidden" each="{key, value in meta}" name="{key}" value="{value}"/>
+
+  var tag = this;
+  tag.deparam = deparam;
+
+  tag.on('mount', function(){
+    tag.meta = deparam(opts.meta);
+    tag.update()
+  })
+
+  function deparam(query) {
+    var pairs, i, keyValuePair, key, value, map = {};
+
+    if (query !== '' && query !== undefined) {
+        pairs = query.split('&');
+        for (i = 0; i < pairs.length; i += 1) {
+            keyValuePair = pairs[i].split('=');
+            key = decodeURIComponent(keyValuePair[0]);
+            value = (keyValuePair.length > 1) ? decodeURIComponent(keyValuePair[1]) : undefined;
+            map[key] = value;
+        }
+    }
+    return map;
+    }
+
+
+</field-metadata>
+

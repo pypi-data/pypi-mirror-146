@@ -1,0 +1,70 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block meta %}
+<meta name="description" content="Partners Page">
+{% endblock %}
+
+{% block title %}
+{{ page_title }} | {{ site_name }}
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="{% static 'riot/riot+compiler.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bootstrap-toggle/js/bootstrap-toggle.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/storemixin.js' %}"></script>
+{% endblock %}
+
+{% block style %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'css/navbar-fixed-side.css' %}">
+<link rel="stylesheet" href="{% static 'bootstrap-toggle/css/bootstrap-toggle.min.css' %}"/>
+{% endblock %}
+
+{% block content %}
+<div class="background">
+    <div class="container">
+        <partner_list></partner_list>
+    </div>
+</div>
+
+{% include 'partners/partners_extension.html' %}
+
+{% block stores %}
+<script>
+    {% include 'stores/partners_store.js' %}
+    {% include 'stores/SectorStore.js' %}
+
+    _.extend(PartnersStore.prototype, StoreMixin);
+    var choices = JSON.parse('{{ choices|escapejs }}');
+    var stores = {};
+    (function() {
+        var partners = JSON.parse("{{ partners|escapejs }}");
+        stores.partners_store = new PartnersStore(partners, choices);
+        RiotControl.addStore(stores.partners_store);
+    })();
+</script>
+{% endblock %}
+
+{% block local_scripts %}
+<script type="riot/tag">{% include 'tags/partner_list.html' %}</script>
+
+<script>
+    riot.mount('partner_list', {
+        statuses: choices.activity_status,
+        locations: choices.locations,
+        sectors: choices.sectors,
+        store: stores.partners_store,
+    });
+</script>
+{% endblock %}
+
+
+
+{% endblock %}
+
+{% block footer %}
+{{block.super}}
+{% endblock %}

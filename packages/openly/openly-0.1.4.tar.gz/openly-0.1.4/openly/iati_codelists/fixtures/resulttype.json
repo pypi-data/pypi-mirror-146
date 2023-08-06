@@ -1,0 +1,34 @@
+[
+{
+  "model": "iati_codelists.resulttype",
+  "pk": "1",
+  "fields": {
+    "name": "Output",
+    "description": null
+  }
+},
+{
+  "model": "iati_codelists.resulttype",
+  "pk": "2",
+  "fields": {
+    "name": "Outcome",
+    "description": null
+  }
+},
+{
+  "model": "iati_codelists.resulttype",
+  "pk": "3",
+  "fields": {
+    "name": "Impact",
+    "description": null
+  }
+},
+{
+  "model": "iati_codelists.resulttype",
+  "pk": "9",
+  "fields": {
+    "name": "Other",
+    "description": null
+  }
+}
+]

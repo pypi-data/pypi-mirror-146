@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Review">
+            <g id="Group-2">
+                <circle id="Oval-Copy-16" fill="#DFE3E4" cx="15" cy="15" r="15"></circle>
+                <g id="Group-210" opacity="0.506057518" transform="translate(6.000000, 7.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2.3868,9.92589474 C3.37053913,12.6535263 5.95627826,14.6051053 8.99984348,14.6051053 C12.8901913,14.6051053 16.0433217,11.4243158 16.0433217,7.49984211" id="Stroke-202"></path>
+                    <path d="M15.6132,5.07410526 C14.6294609,2.34647368 12.0437217,0.394894737 9.00015652,0.394894737 C5.1098087,0.394894737 1.95667826,3.57568421 1.95667826,7.50015789" id="Stroke-204"></path>
+                    <polyline id="Stroke-206" points="0.391304348 6.71052632 1.95652174 8.28947368 3.52173913 6.71052632"></polyline>
+                    <polyline id="Stroke-208" points="14.4782609 8.28947368 16.0434783 6.71052632 17.6086957 8.28947368"></polyline>
+                    <polyline id="Stroke-201" points="9 1.97368421 9 7.5 11.3478261 9.86842105"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,76 @@
+{% load i18n %}
+{% load common_text %}
+{% trans 'Locations' as header %}
+{% trans 'Location' as label %}
+{% trans 'location' as label_lower %}
+
+{% blocktrans asvar add_location_placeholder %} Add a {{label_lower}}...{% endblocktrans %}
+<tab-simplelocations id='locations' class='tab-pane list'>
+    <div class="form_header">
+        <h4>{{header}}</h4>
+    </div>
+    <div class="form_body">
+        <div class="row">
+            <div class="col-xs-12">
+                <help-text if={EDITOR_SHOW_HELPTEXT_ABOVE} always helptext="{{'simple_locations_text'|common_text}}"/>
+                </p>
+                <label class="control-label pull-left">
+                    {{label}}
+                </label>
+            </div>
+            <div class='search col-xs-12'>
+                <input ref="search" type="search" value={ keyword } onblur={hide_select} onfocus={show_select} onkeyup={ searchKeyup } placeholder="{{add_location_placeholder}}">
+                <button class="btn button-clear ion-close" if={ refs.search.value.length != 0} onclick={ clearSearch } id="search-close"></button>
+                <help-text if={!EDITOR_SHOW_HELPTEXT_ABOVE} always helptext="{{'simple_locations_text'|common_text}}"/>
+            </div>
+            <div id='location-search-results' ref="location_list" class="{select_hidden ? 'fadeOut' : 'fadeIn'}">
+                <div class="col-xs-12" each={ location, index in search_locations } _show="{index < 10}" >
+                    <button value={ location.code } disabled="{location_ids.indexOf(_.toString(location.code)) !== -1}" name={ location.name } class="button btn btn-default" onclick={ add_location }>
+                        {location.full_name }
+                    </button>
+                </div>
+                <div class="no-locations" show="{search_locations.length == 0}" class="col-xs-12">
+                    <button class="button btn btn-default" disabled> No locations match that search. Please try again.</button>
+                </div>
+        </div>
+
+        <div class="col-xs-12" if={ locations.length > 0 }>
+
+            <p class="selected-items" each={ locations } data={ this } if={ this.location.name && this.location.name.length > 0 }>
+                { this.location.name }
+                <span class="erase-location"><button type="button" class="close" aria-label="Close" onclick={ delete_location }><span aria-hidden="true" value={ this.location.code }>&times;</span></button></span>
+            </p>
+        </div>
+    </div>
+</div>
+    <div class="clearfix"></div>
+    <div class="save-group">
+        <btn-group-editor id_save="save-locations" id_next="next-locations" use_parent_save></btn-group-editor>
+    </div>
+
+    <style scoped>
+        li {list-style:none}
+        .fadeIn {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.1s linear;
+        }
+        .fadeOut{
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s 0.3s, opacity 0.3s linear;
+        }
+
+        #location-search-results {
+            max-height:400px; 
+            overflow-x:hidden; 
+            overflow-Y:auto;
+        }
+
+        #no-locations {
+            overflow:hidden;
+        }
+    </style>
+    {% include 'tags/tab-simplelocations.js' %}
+
+</tab-simplelocations>

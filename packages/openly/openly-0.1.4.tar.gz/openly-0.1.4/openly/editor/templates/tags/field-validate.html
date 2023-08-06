@@ -1,0 +1,46 @@
+{%  load i18n %}
+{# This is a validation wrapper for date order #}
+<validate-group>
+    <validation-error-list message_class="{opts.message_class}"></validation-error-list>
+
+    var tag = this;
+    tag.mixin('SerializerMixin');
+    tag.mixin('FormFieldMixin');
+    tag.mixin('ValidationMixin');
+
+</validate-group>
+
+
+<validate-tag>
+    <validation-error-list only_if_changed message_class="{opts.message_class}"></validation-error-list>
+
+    var tag = this;
+    tag.mixin('SerializerMixin');
+    tag.mixin('FormFieldMixin');
+    tag.mixin('ValidationMixin');
+
+</validate-tag>
+
+<validation-error-list>
+
+    <small show='{!hide}' class="{validation-error:!hide, minor: !_.isUndefined(opts.only_if_unchanged), major: !_.isUndefined(opts.only_if_changed)}">
+        <span each='{message, error in parent.errors}'>{ message }<br></span>
+    </small>
+
+    <style>
+        .major {
+            color: #a94442;
+        }
+        .minor {
+            top: 0;
+        }
+    </style>
+    {% include "tags/validation-error-list.js" %}
+</validation-error-list>
+
+<validation-message>
+    <div if={opts.title} class="alert alert-danger" role="alert">
+        <strong>{opts.title}</strong>
+        {opts.content}
+    </div>
+</validation-message>

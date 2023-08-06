@@ -1,0 +1,214 @@
+body {
+    background: none !important;
+}
+
+.sector-filter {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 40px;
+}
+
+.sector-filter ul {
+    padding-top: 30px;
+    cursor: pointer;
+    display: table;
+}
+
+.sector-filter li {
+    font-weight: 500;
+    width: unset;
+}
+
+.sector-filter li:hover a {
+    color: #017ee5;
+}
+
+.sector-filter a {
+    border-bottom: 4px solid #017ee5;
+}
+
+.sector-filter a.inactive {
+    border-bottom: 0;
+    color: gray;
+}
+
+.results-title {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.dashboard_cards_container {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,.25)!important;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    padding: 0;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0,0,0,.25)!important;
+    padding: 15px 15px 10px;
+    height: 90px;
+}
+
+.card-header h5 {
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(0,0,0,.54)!important;
+    margin: 0;
+}
+
+.card-title {
+    font-weight: 600;
+    line-height: 17px;
+    display: block;
+    color: #3d464d;
+    height: 53px;
+}
+
+.card-body {
+    padding: 20px 15px 15px;
+    height: 360px;
+}
+
+.card-body button {
+    border: 1px solid rgba(0, 0, 0, .25) !important;
+    color: rgba(0, 0, 0, .54) !important;
+    font-weight: 500;
+    border-radius: 4px;
+    position: absolute;
+    background: none;
+    font-size: 14px;
+    bottom: 45px;
+    right: 30px;
+    width: 90px;
+}
+
+.card-body button:hover {
+    color: #017EE5!important;
+    background: rgba(1,126,229,.15)!important;
+    border: 1px solid #017EE5!important;
+}
+
+.card-body button:focus {
+    outline: 0;
+}
+
+.last-updated {
+    font-weight: 500;
+    position: absolute;
+    line-height: 10px;
+    font-size: 12px;
+    color: rgba(0,0,0,.54)!important;
+    bottom: 45px;
+}
+
+.card-chart {
+    justify-content: center;
+}
+
+.card-chart,
+.card-narrative {
+    align-items: center;
+    display: flex;
+    height: 285px;
+}
+
+.card-narrative p {
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+    font-size: 16px;
+}
+
+.reported-by {
+    position: absolute;
+    z-index: 1;
+    top: 660px;
+}
+
+.reported-by a:hover {
+    cursor: pointer;
+}
+
+.reported-by a {
+    color: #017EE5;
+}
+
+.back-to-dashboard {
+    margin-bottom: 15px;
+    display: block;
+    color: #017ee5;
+    height: 48px;
+}
+
+.back-to-dashboard:hover {
+    cursor: pointer;
+    color: #017ee5;
+}
+
+.profile h4 {
+    margin: 0 0 15px;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.profile p {
+    word-wrap: break-word;
+    font-size: 15px;
+}
+
+.card-circle {
+    background-color: rgba(226, 227, 228, 0.58);
+    font-weight: 800;
+    border: 2px solid #dfe3e4;
+    border-radius: 64px;
+    line-height: 130px;
+    text-align: center;
+    font-size: 30px;
+    color: #3d464d;
+    height: 130px;
+    margin: 15px;
+    width: 130px;
+}
+
+.card-circle.positive {
+    background-color: #d3f1db;
+    border: 2px solid #7fd99b;
+    color: #6ebb86;
+}
+
+.card-circle.negative {
+    background-color: rgba(255, 128, 128, 0.58);
+    border: 2px solid #ff8080;
+    color: #ff8080;
+}
+
+.card-circle-month,
+.card-circle-year {
+    text-align: center;
+    display: block;
+    color: #adb2b4;
+}
+
+.card-circle-year {
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.card-circle-month {
+    font-weight: 600;
+    margin-top: -3px;
+    font-size: 10px;
+}
+
+@media (max-width: 991px) {
+    .profile h4 {
+        margin-top: 20px;
+    }
+}

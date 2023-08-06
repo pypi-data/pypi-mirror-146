@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 12:42+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, python-format
+msgid ""
+"\n"
+"    Hi %(user)s,\n"
+"\n"
+"    You recently requested a link to reset your %(site_name)s password for the username %(user)s.\n"
+"    Please set a new password by following the link below:\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"\n"
+"    Thanks,\n"
+"    - The %(site_name)s Team.\n"
+msgstr ""
+
+msgid "Aid transparency isn't just about numbers."
+msgstr ""
+
+msgid "An email with password reset instructions has been sent."
+msgstr ""
+
+msgid "By ensuring open access to aid information"
+msgstr ""
+
+msgid "Can't access your account?"
+msgstr ""
+
+msgid "Change Password"
+msgstr ""
+
+msgid "Email Sent"
+msgstr ""
+
+msgid "Let's start a conversation about aid transparency"
+msgstr ""
+
+msgid "Log In"
+msgstr ""
+
+msgid "Log in"
+msgstr ""
+
+#, python-format
+msgid "Log in to %(site)s"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Making aid transparent helps to ensure aid goes where it is most needed."
+msgstr ""
+
+msgid "Open access to aid information means that people  are better able to see the impact that aid activities have in their communities. This also helps other countries learn what may work, or not work, in their country."
+msgstr ""
+
+msgid "Open information about international aid activities"
+msgstr ""
+
+msgid "Password Reset"
+msgstr ""
+
+msgid "Password changed"
+msgstr ""
+
+msgid "Password reset failed"
+msgstr ""
+
+msgid "Password reset successfully"
+msgstr ""
+
+msgid "Please sign in"
+msgstr ""
+
+msgid "Reset your password."
+msgstr ""
+
+msgid "Results matter too."
+msgstr ""
+
+msgid "See you next time!"
+msgstr ""
+
+msgid "Sign in"
+msgstr ""
+
+msgid "Software designed and developed by"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Submit Request"
+msgstr ""
+
+msgid "To reset your password please enter your email address below. We will send you an email with some instructions."
+msgstr ""
+
+msgid "What are the results?"
+msgstr ""
+
+msgid "Why is open aid important?"
+msgstr ""
+
+msgid "You have logged out."
+msgstr ""
+
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+
+msgid "a wider group of stakeholders are able to clearly see who is doing what and where? Access to better quality aid information also supports the equitable allocation of resources, both sectorally and geographically, ensuring that all people can benefit."
+msgstr ""
+
+msgid "aid transparency portal"
+msgstr ""
+
+msgid "aid works better when we work together"
+msgstr ""
+
+msgid "logout"
+msgstr ""
+
+msgid "tracking international aid activities"
+msgstr ""

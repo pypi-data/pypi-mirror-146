@@ -1,0 +1,16 @@
+[
+{
+    "model": "aims.documentcategorycategory",
+    "pk": "A",
+    "fields": {
+        "name": "Activity Level"
+    }
+},
+{
+    "model": "aims.documentcategorycategory",
+    "pk": "B",
+    "fields": {
+        "name": "Organisation Level"
+    }
+}
+]

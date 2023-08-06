@@ -1,0 +1,21 @@
+<field-date>
+
+    <div if={classes} class="{classes.outer || classes.formgroup}">
+
+        <label class="{classes.date_label}">
+           { label } <label-required-field></label-required-field>
+            <br if="{!opts.help_popover_content}">
+            <help-popover-field></help-popover-field>
+            <validation-error-list only_if_unchanged></validation-error-list>
+        </label>
+
+        <div class="{ classes.date }">
+            <input type="hidden" class="form-control textarea c-input drop-caret-date" onchange="{set}" value="{bystring(path)}">
+            <p class="form-control c-input" value="{formatted_date}">{formatted_date}</p>
+            <validation-error-list only_if_changed></validation-error-list>
+            <help-text/>
+        </div>
+    </div>
+
+{%  include "tags/field-date.js" %}
+</field-date>

@@ -1,0 +1,592 @@
+{% load i18n %}
+
+<query_builder>
+
+<div class="background">
+    <!--MAIN CONTAINER-->
+    <div if={ loading } class="row loader">
+    </div>
+    <span id="loadingMsg">
+        <h3 class="text-center">{% trans 'There are a lot of numbers to crunch' %}</h3>
+        <p class="text-center">{% trans 'This may take a few moments.' %}</p>
+    </span>
+    <div class="container">
+        <div if={ !loading } class="row">
+            <div class="col-xs-12">
+                <h2>{% trans 'Query Builder' %}</h2>
+            </div>
+            <!--SIDE NAVIGATION-->
+            <div class="col-xs-3">
+               <div class="filter-side-panel">
+                    <aims_filter></aims_filter>
+                </div>
+            </div>
+
+            <div class="col-xs-9">
+                <div class="o-form-box query-builder">
+                    <div class="form_header">
+                        <h4>{% trans 'Query Results' %}</h4>
+                        <div class="pull-right date-change-form">
+                            <span data-is="excel-export-button" table_id="aims_aggregation" type="xlsx"></span>
+                        </div>
+                    </div>
+                    <div class="query-tool-bar">
+                        <div class="row">
+                            <div class="col-xs-3" id="display-results-menu">
+                                <button type="button" class="btn btn-input btn-input-small dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{% trans 'Display by' %} <span class="drop-caret" id='disply-by-caret'></span> </button>
+                                <ul class="dropdown-menu dropdown-menu-md list-group year-select">
+                                    <li class="dropdown-header"><h4>{% trans 'Display results by' %}</h4></li>
+                                    <li each="{ available_aggregations }" class="{ nav-list-item: true, active: current_aggregation.id == id }">
+                                        <a onclick="{ show_aggregation }">{ name }</a>
+                                    </li>
+                                    <li class="dropdown-header"><h4>{% trans 'Show by' %}</h4></li>
+                                    <li class="nav-list-item { active: showing_tab == 'activities' }">
+                                        <a onclick="{ show_activities }">{% trans 'Activities' %} <span class="query-result-count">({ activity_count })</span></a>
+                                    </li>
+                                    <li class="nav-list-item { active: showing_tab == 'transactions' }">
+                                        <a onclick="{ show_transactions }">{% trans 'Transactions' %} <span class="query-result-count">({ transaction_count })</span></a>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <div class="col-xs-9">
+                                <form data-is="date-change-form"></form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-form-box-body">
+                        <aims_stats>
+                        </aims_stats>
+                        <span data-is="toggle-currencydisplay"></span>
+                        <div class="tab-pane in active query-table" id="summary" show="{ showing_tab == 'aggregation' }">
+                            <aims_aggregation>
+                            </aims_aggregation>
+                        </div>
+
+                        <!--ACTIVITY TAB-->
+                        <div role="tabpanel" class="tab-pane query-table" id="activities" show="{ showing_tab == 'activities' }">
+                            <aims_activities>
+                            </aims_activities>
+                        </div>
+
+                        <!--TRANSACTIONS TAB-->
+                        <div role="tabpanel" class="tab-pane query-table" id="transactions" show="{ showing_tab == 'transactions' }">
+                            <aims_transactions>
+                            </aims_transactions>
+                        </div>
+
+                    </div>
+                </div> <!--end of o-form-box-->
+            </div> <!--end of col 8  -->
+        </div> <!--end of row-->
+    </div> <!--end of container-->
+</div>
+
+    <style scoped>
+        .loading {
+            padding-top: 100px;
+            text-align: center;
+        }
+        .navbar.filter-tabs{
+            padding-right: 20px;
+        }
+        .filter-tab-a {
+            border-bottom: 3px solid white;
+        }
+        .input-daterange input {
+            top: 1px;
+        }
+        .end-date::before {
+            right: 170px;
+        }
+        .col-xs-3 .btn-input-small .drop-caret::before{
+            right: 39px;
+            top: 10px;
+        }
+        .btn-input-small .drop-caret::before {
+            right: 17px;
+            top: 10px;
+        }
+        .background .container {
+            min-width: 1140px !important;
+        }
+        #display-results-menu {
+            padding-top: 28px;   
+        }
+        #display-results-menu button,
+        #fy-dropdown {
+            font-weight: 500;
+        }
+        #disply-by-caret {
+            position: relative;
+            top: -9px;
+            left: 95px;
+        }
+        th {
+            font-weight: 600 !important;
+        }
+    </style>
+    <script>
+    var self = this;
+
+    self.loading = true;
+    self.showing_tab = 'aggregation';
+    self.current_aggregation = { name:'Pending...' };
+
+    self.on('mount', function(){
+        RiotControl.trigger('query_builder_fetch');
+    });
+
+    RiotControl.on('hide_loader', function(){
+        $('#loadingMsg').hide();
+        self.update({loading: false});
+    });
+
+    RiotControl.on('available_aggregations', function on_available_aggregations(available_aggregations){
+        self.available_aggregations = available_aggregations;
+        self.current_aggregation = available_aggregations[0];
+        self.update();
+    });
+
+    RiotControl.on('transaction_count', function on_transaction_count(count){
+        self.transaction_count = count;
+        self.update();
+    });
+
+    RiotControl.on('activity_count', function on_activity_count(count){
+        self.activity_count = count;
+        self.update();
+    });
+
+    RiotControl.on('accounting_compact_money_format_changed', function(){
+        self.update()
+    });
+
+    self.show_transactions = function(){
+        self.current_aggregation = { name:'Pending...' };
+        self.showing_tab = 'transactions';
+    };
+
+    self.show_activities = function(){
+        self.current_aggregation = { name:'Pending...' };
+        self.showing_tab = 'activities';
+    };
+
+    self.show_aggregation = function(e){
+        self.showing_tab = 'aggregation';
+        self.current_aggregation = e.item;
+        RiotControl.trigger('apply_aggregation', e.item);
+        return true;
+    };
+    </script>
+</query_builder>
+
+<date-change-form>
+    <span style="position: relative; left: 25px; top: 35px;">
+        <label style="position: relative;">All</label>
+        <input id="allDates" type="checkbox">
+    </span>
+    <span class="pull-right input-daterange{% if date_filter_active %} filter-active{% endif %}" id="datepicker">
+        <span class="start-date">
+            <input type="text" ref="start" readonly="readonly" class="input-date dashboard-date" name="start" id="start" value="{ start_date ? start_date.format('MMM YYYY') : '' }" />
+        </span>
+        <span class="end-date">
+            <input type="text" ref="end" readonly="readonly" class="input-date dashboard-date" id="end" name="end" value="{ end_date ? end_date.format('MMM YYYY') : '' }"/>
+        </span>
+        <button id="fy-dropdown" type="button" class="btn btn-input btn-input-small dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            { label || default_label }
+            <span class="drop-caret fy-caret"></span>
+        </button>
+          <ul class="dropdown-menu dropdown-menu-md pull-right list-group year-select">
+              <li class="dropdown-header"><h4>{fy_header}</h4></li>
+              <li class="year" each="{year in years}"> <a onclick="{ setYear }"> FY {year}</a></li>
+            </ul>
+    </span>
+
+    <style>
+        ul.dropdown-menu { margin-right:60px; z-index: 1001; height:400px; overflow-y:scroll; }
+        .btn-filter { top: 0; }
+        ul.year-select {padding: 10px;}
+        .year-select li { cursor: pointer; }
+        .year-select li.year:hover { color: #545454; }
+        .fy-caret {
+            position: relative;
+            top: -9px;
+            left: 40px;
+        }
+    </style>
+    <script>
+    var tag = this;
+    tag.default_label = "{% trans 'Financial Years' %}"
+    tag.label = "{% trans 'Financial Years' %}"
+    tag.fy_header = "{% trans 'Financial Year' %}"
+    tag.all_date_trigger = false;
+
+    function years(){
+        /* Returns the unique Financial Years associated with transactions */
+        return _(querybuilder.rich_transactions)
+            .map('fy')
+            .uniq()
+            .compact()
+            .sort()
+            .reverse()
+            .value();
+    }
+
+    tag.on('mount',function(){
+        // The start_date and end_date ought to be Moment objects
+        tag.start_date = window.openly_filters.start_date;
+        tag.end_date = window.openly_filters.end_date;
+        tag.datepicker_init = false;
+        tag.years = years();
+        /* If our initially selected dates conform to an FY show the FY as the label on the dropdown */
+        tag.label = financialYearCheck() || "{% trans 'Financial Years' %}"
+    });
+
+    tag.on('updated', function(){
+        var $el;
+        var $el_picker;
+        $el = $('.input-daterange', tag.root);
+        if ($el.length === 0 || self.datepicker_init || !_.isFunction($.fn.datepicker)){return};
+        // If the datepicker fails to init you might check that "datepicker" js lib is loaded
+
+        $el_picker = $el.datepicker({
+            format: "M yyyy",
+            startView: 1,
+            startDate: "Jan 1900",
+            minViewMode: 1,
+            orientation: "top left"
+        });
+        $el_picker.on('changeDate', onChangeDate);
+        tag.datepicker_init = true;
+        tag.datepicker = $el_picker;
+    });
+
+    $(document).ready(function(){
+        $('input#allDates').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+
+        $('input#allDates').on('ifChanged', function(event) {
+            var start_date = $(tag.refs.start);
+            var end_date = $(tag.refs.end);
+            if (event.target.checked) {
+                tag.all_date_trigger = true;
+                // set dates as max and min values
+                start_date.datepicker().datepicker('setDate', new Date(window.GLOBALS.min_date));
+                end_date.datepicker().datepicker('setDate', new Date(window.GLOBALS.max_date));
+                // freeze input into date boxes
+                $('#fy-dropdown').attr("disabled", true).attr('style', 'background:#cccccc7a !important');
+                start_date.attr("disabled", true).attr('style', 'background:#cccccc7a !important');
+                end_date.attr("disabled", true).attr('style', 'background:#cccccc7a  !important');
+            } else {
+                // un-freeze input into date boxes
+                $('#fy-dropdown').attr("disabled", false).attr('style', 'background:inherit');
+                start_date.attr('disabled', false).attr('style', 'background:inherit');
+                end_date.attr('disabled', false).attr('style', 'background:inherit');
+            }
+            tag.all_date_trigger = false;
+            onChangeDate();
+        });
+    });
+
+    function postSessionParams(update){
+        var url = "{% url 'session_params' %}";
+        /* Note that this assumes that 'csrftoken' is being set via $.ajaxSetup */
+        $.ajax( {
+            type: 'POST',
+            url: url,
+            data: {start: tag.refs.start.value, end: tag.refs.end.value},
+            dataType: 'json',
+            responseType: 'json'
+        })
+    }
+
+    function isoMonthToMoment(isomonth){
+        /* Convert an iso -'ish' string such as "2018-04" to a moment object */
+        var date = isomonth.split('-');
+        return moment().year(date[0]).month(date[1] - 1);
+    }
+
+    function isoMonthRangeToMoments(isomonthrange){
+        /* Convert a 'month range' like '2018-05 - 2019-04' to moment objects */
+        var dates = isomonthrange.split(' - ')
+        mapped = dates.map(isoMonthToMoment)
+        mapped[0].startOf('month')
+        mapped[1].endOf('month')
+        return mapped
+    }
+
+    function isoMonthRangeToFormatted(isomonthrange){
+        /* Convert a month range to nicelyformatted date like 'Jan 2018 - May 2019' */
+        return isoMonthRangeToMoments(isomonthrange).map(function(m){return m.format('MMM YYYY')})
+    }
+
+    tag.setYear = function(e){
+        var isomonthrange = querybuilder.lookups.financial_year[e.item.year]
+        var mapped = isoMonthRangeToMoments(isomonthrange)
+        /* Update the tag value, the ref value and the datepicker value >-< */
+        tag.start_date = mapped[0];
+        tag.end_date = mapped[1];
+        tag.refs.start.value = mapped[0].format('MMM YYYY');
+        tag.refs.end.value = mapped[1].format('MMM YYYY');
+        /* Minor UI bug associated with the datepicker; the view does not correctly refresh
+        An issue on master also, Perhaps an update to datepicker lib will fix this */
+        $(tag.refs.start).datepicker("setDate", mapped[0].toDate())
+        $(tag.refs.end).datepicker("setDate", mapped[1].toDate())
+        onChangeDate();
+    };
+
+    function financialYearCheck(){
+        /*
+        If our tag's start date and end date match a financial year
+        range provided, returns that year
+        */
+        var start_date = tag.start_date.format('MMM YYYY');
+        var end_date = tag.end_date.format('MMM YYYY');
+        if (!tag.fyLookup){
+            tag.fyLookup = _.mapValues(querybuilder.lookups.financial_year, isoMonthRangeToFormatted);
+            _.each(tag.fyLookup, function(value, key){value.push('FY ' + key)});
+        }
+        var fy = _.find(tag.fyLookup, function(o, key){
+            return start_date == o[0] && end_date == o[1];
+        });
+        return fy ? fy[2] : undefined;
+    }
+
+    function onChangeDate(){
+        var update = {label: financialYearCheck()};
+        var refs = tag.refs;
+        var startValue = refs.start.value;
+        var endValue = refs.end.value;
+
+        function notEmpty(value){ return value !== ''; }
+        function momentFromField(value){ return moment(value, 'MMM YYYY'); }
+        function hasChanged(){ return !(tag.start_date.isSame(update.start_date) && tag.end_date.isSame(update.end_date) && tag.label === update.label); }
+        if (!tag.all_date_trigger) {
+            if (notEmpty(startValue)) {
+                update.start_date = momentFromField(startValue).date('1')
+            }
+            if (notEmpty(endValue)) {
+                update.end_date = momentFromField(endValue).add(1, 'months').date(0)
+            }
+            if (hasChanged()){
+                tag.update(update);
+                RiotControl.trigger('updateDates', tag.start_date, tag.end_date);
+                postSessionParams(update);
+            }
+        }
+    }
+    </script>
+</date-change-form>
+
+<excel-export-button>
+    <a class="btn btn-success" disabled="{disabled}" onclick="{export_data}">{% trans 'Export Data' %}</a>
+    <a class="btn btn-success" disabled="{disabled}" onclick="{export_data_activities}">{% trans 'Export Activities' %}</a>
+    <script>
+        /**
+         * excel-export-button tag
+         * This tag exports data using SheetJS
+         */
+        var self = this;
+
+        /** Code sourced from SheetJS demo */
+        function s2ab(s) {
+            if(typeof ArrayBuffer !== 'undefined') {
+                var buf = new ArrayBuffer(s.length);
+                var view = new Uint8Array(buf);
+                for (var i=0; i!==s.length; ++i) view[i] = s.charCodeAt(i) & 0xFF;
+                return buf;
+            } else {
+                var buf = new Array(s.length);
+                for (var i=0; i!==s.length; ++i) buf[i] = s.charCodeAt(i) & 0xFF;
+                return buf;
+            }
+        }
+
+        /** End of code sourced from SheetJS demo */
+
+        function set_disabled(){ self.disabled = !(self.opts.table_id && self.opts.type); }
+
+        /**
+         * Locate worksheets to include in the workbook
+         */
+        function find_worksheets(sheet_names){
+            /* Optionally pass a list of sheet names */
+            var sheets =  _(self.parent.tags).values().flatten().filter(
+                function(child_tag){return _.isFunction(child_tag.export_worksheet)}
+            )
+            if (sheet_names){
+                sheets = sheets.filter(function(s){return _.includes(sheet_names, s.sheet_name)})
+            }
+            return sheets
+        }
+
+        function create_worksheet(opts){
+
+            var headers = opts.headers || [];
+            var data = opts.data || [];
+            var rows = opts.rows || [];
+            var ws = {'!cols':[]};
+            var row = 0;
+            var cell = 0;
+            var max_row_length = {};
+            var string_padding = 3;
+            var date_format = /^\d{2}-\d{2}-\d{4}$/;
+
+            function isDate(d){
+                return date_format.test(d)
+            }
+            /**
+             * Set the column sizes based on the widest string in the column
+             */
+            function autosize_columns(){
+                _(headers).each(function(header, row_index) {
+                    _.set(ws, ['!cols', row_index, 'wch'], max_row_length[header]);
+                });
+            }
+
+            function header_display(header){
+                /* If header is included in 'header_display' parameter, return the translated text */
+                /* Alternatively we may consider using 'gettext' here too? */
+                return _.get(opts, ['header_display', header], header)
+            }
+
+            /**
+             * Write headers and jump to the next row
+             */
+            function write_headers() {
+                cell = 0;
+                _(headers).each(function (header) {
+                    var address = XLSX.utils.encode_cell({c: cell, r: row});
+                    cell += 1;
+                    ws[address] = {
+                        t: 's', //String type
+                        v: header_display(header)
+                    };
+                });
+                row += 1;
+                cell = 0;
+            }
+
+            /* Get 'header' property from the row and apply a format
+            Format is cell_content.t and the default 's' represents string
+             */
+            function encode_cell(row_source, header){
+                var content_type = _.get(rows, [header, 'format'], {t:'s'});
+                var cell_content = {
+                    v: _.get(row_source, header)
+                };
+               _.extend(cell_content, content_type);
+                if (_.isFunction(_.get(opts, ['row_display', header]))){cell_content = opts.row_display[header](cell_content, row_source, header)}
+
+                if (cell_content.t === 's' && !_.isString(cell_content.v)){
+                    cell_content.v = _.toString(cell_content.v)
+                }
+                if (cell_content.t === 'd' && _.isNull(cell_content.v)){cell_content = {t:'s', v:''}}
+                // Format a YYYY-MM-DD string to a pretty format
+                if (cell_content.t === 'd' && isDate(cell_content.v)){cell_content.v = moment(cell_content.v, 'YYYY-MM-DD').toISOString();}
+                return cell_content;
+            }
+
+            /*
+            Iterate through the provided data and add cell data to the sheet
+             */
+            function write_rows(){
+                _(data).each(function(row_source){
+                    cell = 0;
+                    _(headers).each(function(header){
+                        var address = XLSX.utils.encode_cell({c:cell,r:row});
+                        var string_length;
+                        var encoded_cell = encode_cell(row_source, header);
+                        ws[address] = encoded_cell;
+
+                        // Header length setting
+                        if (!max_row_length[header]){max_row_length[header] = _.size(header);}
+                        string_length = _.size(_.toString(encoded_cell.v)) + string_padding;
+                        if (max_row_length[header] <= string_length){
+                            max_row_length[header] = string_length;
+                        }
+                        cell += 1;
+                    });
+                    row +=1;
+                });
+            }
+
+            /*
+            Sets the range to be displayed
+             */
+            function set_range() {
+                ws['!ref'] = XLSX.utils.encode_range(
+                    {s: {c: 0, r: 0}, e: {c: headers.length, r: row}}
+                );
+            }
+
+            write_headers();
+            write_rows();
+            set_range(); // !important - omit this and nothing will be exported
+            autosize_columns();
+            return ws;
+        }
+
+        function get_filename(filetype) {
+            return $('head title').text() + moment().toISOString() + '.' + filetype
+        }
+
+        function export_data(filetype, sheet_names){
+            var defaults = {
+                filename: get_filename(filetype || 'xlsx'),
+                type: filetype || 'xlsx'
+            };
+
+            var workbook = new XLSX.utils.book_new();
+            var opts = _.defaults({}, self.export_opts || {}, defaults);
+            var wbout;
+            var sheet_index = 0;
+
+             find_worksheets(sheet_names).each(function(sheet_tag){
+                 function addSheet(worksheet_opts){
+                    var worksheet = create_worksheet(worksheet_opts);
+                    var sheet_name = worksheet_opts.sheet_name || sheet_tag.opts.sheet_name || "sheet_"+  (sheet_index += 1);
+                    workbook.SheetNames.push(sheet_name);
+                    workbook.Sheets[sheet_name] = worksheet;
+                 }
+                var worksheet_opts = sheet_tag.export_worksheet();
+                 if (_.isArray(worksheet_opts)){
+                     _.each(worksheet_opts, function(opts){addSheet(opts)})
+                 }
+                 else addSheet(worksheet_opts)
+
+            });
+            wbout = XLSX.write(workbook, {bookType:opts.type, bookSST:true, type: 'binary'});
+            try {
+                saveAs(new Blob([s2ab(wbout)],{type:"application/octet-stream"}), opts.filename);
+            } catch(e) { if(typeof console !== 'undefined') console.log(e, wbout); }
+            return XLSX.write(workbook, {bookType:opts.type, bookSST:true, type: 'binary'});
+        }
+
+        self.export_data = function(e){export_data('xlsx')};
+        self.export_data_activities = function(e){export_data('xlsx', ['Activities'])};
+
+    </script>
+</excel-export-button>
+
+<toggle-currencydisplay>
+    <a class="all-filter-clear toggle"
+       onclick="{toggle_currency_display}">{text}
+    </a>
+
+    <script>
+        var tag = this;
+        function text(){
+            return accounting.compact_money_format ? "{%  trans 'Long value' %}" : "{%  trans 'Short value' %}"
+        }
+        tag.on('update', function(){tag.text = text()});
+
+        toggle_currency_display = function(){
+            accounting.compact_money_format = !accounting.compact_money_format;
+            RiotControl.trigger('accounting_compact_money_format_changed');
+        }
+    </script>
+</toggle-currencydisplay>

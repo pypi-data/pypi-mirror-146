@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-13 11:42+0900\n"
+"PO-Revision-Date: 2019-06-02 13:15+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid "Saving"
+msgstr "Saqlash"
+
+msgid "Required"
+msgstr "Talab qilinadi"
+
+msgid "There are validation errors on this tab."
+msgstr "Ushbu kiritmada validatsiya (tekshirib, tasdiqlash) xatolari mavjud"
+
+msgid "This date is not valid"
+msgstr ""
+
+msgid "This date cannot be in the future."
+msgstr "Ushbu sana kelajakda bo'lolmaydi"
+
+msgid "This date cannot be in the past."
+msgstr "Bu sana o'tmishda bo'lishi mumkin emas"
+
+msgid "Must be a number"
+msgstr "Raqam bo'lishi shart"
+
+msgid "Must be a number greater than zero"
+msgstr "Noldan katta bo'lishi kerak"
+
+msgid "There is an invalid date"
+msgstr ""
+
+msgid "The start date must occur before the end date"
+msgstr "Boshlanish sanasi tugash sanasidan oldin bo'lishi kerak"
+
+msgid "An end date must have a valid start date"
+msgstr "Yakunlanish sanasining haqiqiy boshlanish sanasi bo'lishi kerak"
+
+msgid "Percentages should add up to 100."
+msgstr "Foizlar yig'indisi 100 ga teng bo'lishi kerak"
+
+msgid "These must be unique values"
+msgstr "Bu bemisol (misli ko'rilmagan) ko'rsatkichlar bo'lishi lozim"
+
+msgid "Please choose a different file format"
+msgstr "Iltimos, boshqa fayl formatini tanlang"
+
+msgid "Please choose a smaller file"
+msgstr "Iltimos, kichikroq faylni tanlang"
+
+msgid "Saved"
+msgstr "Saqlandi"
+
+msgid "Error while saving, please try again"
+msgstr "Saqlashda xato bo'ldi, iltimos, yana harakat qilib ko'ring"
+
+msgid "No file currently selected"
+msgstr ""
+
+msgid "success"
+msgstr ""
+
+msgid "Set the Start Date"
+msgstr ""
+
+msgid "Add a sector"
+msgstr ""
+
+msgid "Add a location"
+msgstr ""
+
+msgid "Add a transaction of type Commitment"
+msgstr ""
+
+msgid "Set the End Date"
+msgstr ""
+
+msgid "Sorry, you cant publish just yet."
+msgstr ""
+
+msgid "Total Project Cost should be 15 digits or less"
+msgstr ""
+
+#, fuzzy
+#| msgid "Saving the Sectors"
+msgid "Saving the Msdps"
+msgstr "Sektor (tarmoq)larni saqlash"
+
+#, fuzzy
+#| msgid "Successfully saved the Sectors"
+msgid "Successfully saved the MSDP Alignment"
+msgstr "Muvaffaqiyatli saqlangan sektor (tarmoq)lar"
+
+#, fuzzy
+#| msgid "Error while saving, please try again"
+msgid "Error while saving"
+msgstr "Saqlashda xato bo'ldi, iltimos, yana harakat qilib ko'ring"
+
+msgid "Region/State Governments"
+msgstr ""
+
+msgid "Error saving the Results, please try again"
+msgstr "Natijalarni saqlashda xato bo'ldi, iltimos, qaytadan harakat qiling"
+
+msgid "Saving the Sectors"
+msgstr "Sektor (tarmoq)larni saqlash"
+
+msgid "Successfully saved the Sectors"
+msgstr "Muvaffaqiyatli saqlangan sektor (tarmoq)lar"
+
+msgid "Error saving the Sectors, please try again"
+msgstr ""
+"Sektor (tarmoq)larni saqlashda xato bo'ldi, iltimos, qaytadan harakat qiling"
+
+msgid "Saving the Locations"
+msgstr "Joylashgan manzillarni saqlash"
+
+msgid "Successfully saved the Locations"
+msgstr "Muvaffaqiyatli saqlangan joy/manzillar"
+
+#~ msgid "Click to edit document"
+#~ msgstr "Hujjatni tahrir qilish uchun bosing"
+
+#~ msgid "Download document"
+#~ msgstr "Hujjatni yuklab olish"
+
+#~ msgid ""
+#~ "Please ensure the document is under 15mb and is one of the following "
+#~ "supported formats - .jpeg, .png, .gif, .pdf, MS Office file types, and "
+#~ "OpenOffice file types."
+#~ msgstr ""
+#~ "Hujjat 15MBdan kichik ekanligi va quyidagi qo'llab quvvatlaydigan "
+#~ "formatlardan biri - .jpeg, .png, .gif, .pdf, MS Office va OpenOffice fayl "
+#~ "turlaridan biri ekanligiga ishonch hosil qiling."
+
+#~ msgid "Remove document"
+#~ msgstr "Hujjatni o'chirish"
+
+#~ msgid "Saving the Activity"
+#~ msgstr "Faoliyatni saqlash"

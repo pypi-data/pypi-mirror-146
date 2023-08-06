@@ -1,0 +1,1818 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-03 02:15+0000\n"
+"PO-Revision-Date: 2020-01-21 08:26+0000\n"
+"Last-Translator: b'Myo Min Oo  <myo@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#, python-format
+msgid "%(activity_plural)s for Review"
+msgstr ""
+
+msgid "Import"
+msgstr "ထည့်သွင်းမည်"
+
+msgid "Untitled"
+msgstr "ခေါင်းစဉ်မဲ့"
+
+#, fuzzy
+#| msgid "Complete"
+msgid "Data Completion"
+msgstr "ဆောင်ရွက်ပြီး"
+
+msgid "Commitment"
+msgstr ""
+
+msgid "See Preview"
+msgstr "Preview ကြည့်မည်။"
+
+msgid "General"
+msgstr "ယေဘုယျသတင်းအချက်အလက်"
+
+#, fuzzy
+#| msgid "Planned End Date"
+msgid "Planned Dates:"
+msgstr "စီစဉ်ထားသော ပြီးဆုံးရက်"
+
+msgid "Implementing:"
+msgstr "အကောင်အထည်ဖော်ခြင်း"
+
+msgid "Funding:"
+msgstr "ရန်ပုံငွေ"
+
+msgid "Last Updated:"
+msgstr ""
+
+msgid "Reporting:"
+msgstr "အစီရင်ခံတင်ပြခြင်း"
+
+msgid "Extending:"
+msgstr "ချဲ့ခြင်း"
+
+msgid "Results:"
+msgstr "ရလဒ်များ"
+
+msgid "Date Created:"
+msgstr ""
+
+msgid "Budgets:"
+msgstr "ရသုံးမှန်းခြေငွေစာရင်း"
+
+msgid "Disbursed:"
+msgstr "ရရှိပြီးသော"
+
+msgid "Transactions:"
+msgstr "လုပ်ငန်းများ"
+
+msgid "Finance Type:"
+msgstr "ငွေကြေးအမျိုးအစား"
+
+msgid "Flow Type:"
+msgstr "စီးဆင်းမှုပုံစံ"
+
+msgid "Sectors"
+msgstr "ကဏ္ဍများ"
+
+msgid "Location"
+msgstr "နေရာဒေသ"
+
+msgid "Edit"
+msgstr ""
+
+msgid "Delete"
+msgstr "ဤစီမံကိန်းကိုဖျက်မည်။"
+
+msgid "See More"
+msgstr "ထပ်ကြည့်ပါ"
+
+msgid "Dates:"
+msgstr "နေ့များ"
+
+#, python-format
+msgid "Updated %(modified)s"
+msgstr ""
+
+msgid "Complete"
+msgstr "ဆောင်ရွက်ပြီး"
+
+#, python-format
+msgid "%(activity_singular)s Manager"
+msgstr ""
+
+msgid "Import IATI"
+msgstr "နိုင်ငံတကာပွင့်လင်းမြင်သာမှုရှိစေရေးအစီအစဉ်ကို တင်သွင်းခြင်း"
+
+msgid "Import all"
+msgstr "အရေးပါသောအားလုံး "
+
+msgid "Available for import"
+msgstr "တင်သွင်းရန်ရနိုင်သော"
+
+#, fuzzy
+#| msgid "Your Pages"
+msgid "Your Stats"
+msgstr "မင်းရဲ့စာမျက်နှာများ"
+
+#, fuzzy
+#| msgid "No Information Available"
+msgid "IATI Import Available"
+msgstr "သတင်းအချက်အလက်မရနိုင်ပါ။"
+
+#, fuzzy, python-format
+#| msgid "Local Activities"
+msgid "Published %(activity_plural)s"
+msgstr "ပြည်တွင်းလုပ်ငန်းများ"
+
+#, python-format
+msgid "Draft %(activity_plural)s"
+msgstr ""
+
+#, fuzzy
+#| msgid "Transactions"
+msgid "Financial Transactions"
+msgstr "လုပ်ငန်းများ"
+
+#, python-format
+msgid "%(activity_singular)s Budgets"
+msgstr ""
+
+#, python-format
+msgid "%(activity_plural)s Ending"
+msgstr ""
+
+#, python-format
+msgid "IATI Linked %(activity_plural)s"
+msgstr ""
+
+msgid "Data Entry Completion"
+msgstr ""
+
+#, python-format
+msgid "Incomplete %(activity_plural_lower)s"
+msgstr ""
+
+msgid "Average completion"
+msgstr ""
+
+#, python-format
+msgid "Filter %(activity_plural_lower)s by title"
+msgstr ""
+
+msgid "Show All"
+msgstr ""
+
+#, python-format
+msgid "Add %(activity_singular)s"
+msgstr ""
+
+#, python-format
+msgid "No %(activity_plural)s Found"
+msgstr ""
+
+msgid "Visit profile page"
+msgstr ""
+
+#, python-format
+msgid "Create an %(activity_singular)s for..."
+msgstr ""
+
+#, fuzzy
+#| msgid "Receiver Organisation"
+msgid "Reporting organisation"
+msgstr "အဖွဲ့အစည်းကို လက်ခံသူ"
+
+msgid "back"
+msgstr "နောက်ဘက်သို့"
+
+#, fuzzy, python-format
+#| msgid "Compare local activities with IATI "
+msgid "Compare local %(activity_plural_lower)s with IATI"
+msgstr "ပြည်တွင်းလုပ်ငန်းများနှင့် နိုင်ငံတကာပွင့်လင်းမြင်သာမှုရှိစေရေးအစီအစဉ်ကို နှိုင်းယှဉ်ပါ။"
+
+msgid "Are You Sure?"
+msgstr "သေချာပြီလား"
+
+msgid "Yes"
+msgstr "ဟုတ်တယ်"
+
+#, python-format
+msgid "Delete %(activity_singular)s"
+msgstr ""
+
+#, python-format
+msgid "Are you sure you want to delete this %(activity_singular_lower)s?"
+msgstr "ဤ%(activity_singular_lower)sကို ဖျက်လိုတာသေချာပါသလား?"
+
+msgid "Cancel"
+msgstr "မလုပ်ဆောင်တော့ပါ။"
+
+#, python-format
+msgid "Edit %(activity_singular)s"
+msgstr ""
+
+msgid "Organisations"
+msgstr "အဖွဲ့အစည်းများ"
+
+msgid "Locations"
+msgstr "နေရာဌာနများ"
+
+#, fuzzy
+#| msgid "Financing"
+msgid "Finances"
+msgstr "ငွေကြေး"
+
+msgid "Results"
+msgstr "ရလဒ်များ"
+
+msgid "Contacts"
+msgstr "ဆက်သွယ်ချက်များ"
+
+#, fuzzy
+#| msgid "Total Commitments"
+msgid "Approval & Comments"
+msgstr "လျာထားငွေစုစုပေါင်း"
+
+msgid "Documents & Images"
+msgstr ""
+
+#, fuzzy
+#| msgid "Aid by Donor"
+msgid "IGA & Donors"
+msgstr "အလှူရှင်အလိုက်အကူအညီ"
+
+msgid "MSDP Alignment"
+msgstr "MSDP ကိုက်ညီမှု"
+
+#, python-format
+msgid "You may not edit this %(activity_singular_lower)s"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "Title"
+msgstr "ခေါင်းစဉ်"
+
+#, fuzzy
+#| msgid "Receiver Organisation"
+msgid "Reporting Organisation"
+msgstr "အဖွဲ့အစည်းကို လက်ခံသူ"
+
+msgid "Date submitted"
+msgstr ""
+
+msgid "Endorsed"
+msgstr ""
+
+#, fuzzy
+#| msgid "Filter "
+msgid "Filter"
+msgstr "စစ်ဆေးသူ"
+
+#, fuzzy
+#| msgid "Your activity is not publishable"
+msgid "You have no activities to review."
+msgstr "မင်းလုပ်ငန်းကို လူသိဖို့ မလိုဘူး။"
+
+msgid "Save"
+msgstr "သိမ်းထားပါ"
+
+msgid "Save and Next"
+msgstr ""
+
+msgid "Next"
+msgstr "နောက်"
+
+#, python-format
+msgid "Delete %(activity_singular_lower)s?"
+msgstr ""
+
+msgid "Do you want to discard your changes?"
+msgstr ""
+
+msgid "You have unsaved changes on the current tab."
+msgstr ""
+
+msgid "Return"
+msgstr ""
+
+msgid "Discard changes"
+msgstr ""
+
+msgid "Save changes"
+msgstr ""
+
+msgid "Approved and Published"
+msgstr ""
+
+msgid "To be approved"
+msgstr ""
+
+#, fuzzy
+#| msgid "Extending:"
+msgid "Pending"
+msgstr "ချဲ့ခြင်း"
+
+msgid "Approved"
+msgstr ""
+
+#, python-format
+msgid "%(activity_singular_lower)s Endorsed by"
+msgstr ""
+
+msgid "To be endorsed"
+msgstr ""
+
+msgid "Click to endorse"
+msgstr ""
+
+msgid "Click to remove endorsement"
+msgstr ""
+
+#, python-format
+msgid "To add endorsers for this %(activity_singular_lower)s, select government partners in the organisations tab"
+msgstr ""
+
+msgid "The end date cannot be before the start date"
+msgstr ""
+
+msgid "Search for..."
+msgstr ""
+
+msgid "There are many options so some are not displayed. Please use the search box to limit the options."
+msgstr ""
+
+msgid "Only selected options are displayed."
+msgstr ""
+
+msgid "Show all"
+msgstr ""
+
+msgid "All options are displayed."
+msgstr ""
+
+msgid "Show less"
+msgstr ""
+
+msgid "The currency value date"
+msgstr "လက်ရှိ ရက်စွဲတန်ဖိုး "
+
+msgid "This is the date we will use for determining the exchange rate for currency conversions."
+msgstr "ငွေကြေးပြောင်းလဲမှုအား လဲလှယ်မှုနှုန်း ဆုံးဖြတ်ရန်အတွက် သုံးသောနေ့စွဲ ဖြစ်သည်။"
+
+msgid "Date"
+msgstr "နေ့စွဲ"
+
+#, fuzzy
+#| msgid "no budgets"
+msgid "There are no budgets"
+msgstr "ငွေစာရင်းမရှိပါ။"
+
+#, python-format
+msgid "Providing budgets helps to improve aid predictability and supports better quality forward planning. Please provide a quarterly or annual budget breakdown for your %(activity_singular_lower)s."
+msgstr ""
+
+#, python-format, python-brace-format
+msgid "There are multiple currencies being used for this %(activity_singular_lower)s and its Budgets. On Save, all currencies will be saved in {stores.activityStore.activity.default_currency.name}."
+msgstr ""
+
+msgid "Add Budget Breakdown"
+msgstr ""
+
+#, python-format
+msgid "%(activity_singular)s currency"
+msgstr ""
+
+#, python-format
+msgid "Providing budgets helps to improve aid predictability and supports better quality forward planning. Please provide a quarterly or annual budget breakdown for your %(activity_singular_lower)s. You can change the default currency in the default settings tab"
+msgstr ""
+
+msgid "Annual Total"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Budgets default currency is not set"
+msgstr ""
+
+msgid "A default Budget Currency setting is required in order to view and edit budgets."
+msgstr ""
+
+#, fuzzy
+#| msgid "Default Currency"
+msgid "Set Budget Currency"
+msgstr "ပုံသေငွေ"
+
+msgid "Budgets haven't been fitted yet to quarters. You can't save them."
+msgstr ""
+
+msgid "IATI Sync active"
+msgstr ""
+
+#, fuzzy
+#| msgid "Default Currency"
+msgid "Budget Currency"
+msgstr "ပုံသေငွေ"
+
+#, python-format
+msgid "This is the currency for the %(activity_singular_lower)s budget."
+msgstr ""
+
+msgid "Default Aid Type"
+msgstr "ပုံသေအကူအညီအမျိုးအစား"
+
+msgid "Default Finance Type"
+msgstr "ပုံသေငွေကြေးအမျိုးအစား"
+
+#, python-format
+msgid "The type of finance (e.g. grant, loan, debt relief, etc). This the default value for all transactions in the %(activity_singular_lower)s report; it can be overridden by individual transactions."
+msgstr ""
+
+msgid "Default Flow Type"
+msgstr "ပုံသေစီးဆင်းမှုပုံစံ"
+
+msgid "Default Tied Status"
+msgstr "ပုံသေ Status အဟောင်း"
+
+msgid "Whether the aid is untied, tied, or partially tied."
+msgstr "အကူအညီဟာ မခိုင်လုံဘူးလား၊ ခိုင်လုံသလား (သို့) တပိုင်းတစပဲ ခိုင်လုံသလား။"
+
+msgid "Budget Currency Changed"
+msgstr ""
+
+#, python-format
+msgid "Please update the %(activity_singular)s budgets to match the %(activity_singular)s currency"
+msgstr ""
+
+msgid "Search the IATI Datastore for this activity"
+msgstr ""
+
+msgid "To see your official IATI record visit"
+msgstr ""
+
+msgid "Search for the IATI Activity Identifier"
+msgstr ""
+
+#, fuzzy
+#| msgid "Activity ID"
+msgid "IATI Activity ID"
+msgstr "လုပ်ငန်း IDနံပါတ်"
+
+msgid "Fetching the freshest IATI data"
+msgstr ""
+
+msgid "IATI Activity Identifier given was not found in the datastore."
+msgstr ""
+
+msgid "Sorry, there was an error syncing this activity."
+msgstr ""
+
+#, fuzzy
+#| msgid "No Information"
+msgid "Compare your information"
+msgstr "သတင်းအချက်အလက်မရှိ။"
+
+msgid "Below compare your local Mohinga activity with the activity reported to the IATI Registry. If these activities match, please link your IATI activity to Mohinga."
+msgstr ""
+
+msgid "Selecting 'Create Link' will link these activities, but will not import data. You can control what financial data is imported in the next step."
+msgstr ""
+
+msgid "Locally Reported"
+msgstr ""
+
+#, fuzzy
+#| msgid "Imported from IATI"
+msgid "Reported to IATI"
+msgstr "နိုင်ငံတကာပွင့်လင်းမြင်သာမှုရှိစေရေးအစီအစဉ်မှ အရေးပါမှု"
+
+#, fuzzy
+#| msgid "Activity Objective"
+msgid "IATI Activity Identifier"
+msgstr "လုပ်ငန်းရည်ရွယ်ချက်"
+
+msgid "Activity Title"
+msgstr "လုပ်ငန်းခေါင်းစဉ်"
+
+msgid "Activity Status"
+msgstr "လုပ်ငန်းအခြေအနေ"
+
+msgid "Financial Summary"
+msgstr ""
+
+msgid "Type"
+msgstr "အမျိုးအစား"
+
+msgid "Amt. (USD)"
+msgstr ""
+
+msgid "#"
+msgstr ""
+
+msgid "Commit."
+msgstr ""
+
+msgid "Incoming"
+msgstr ""
+
+msgid "Outgoing"
+msgstr ""
+
+#, fuzzy
+#| msgid "Budgets:"
+msgid "Budget"
+msgstr "ရသုံးမှန်းခြေငွေစာရင်း"
+
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete Link"
+msgstr "ပယ်ဖျက်ပါ။"
+
+msgid "Search again"
+msgstr ""
+
+msgid "Search IATI"
+msgstr ""
+
+#, fuzzy
+#| msgid "Create Report"
+msgid "Create "
+msgstr "အစီရင်ခံစာကို ဖန်တီးပါ။"
+
+msgid "Update "
+msgstr ""
+
+msgid "Link"
+msgstr ""
+
+msgid "Synchronize With IATI"
+msgstr ""
+
+#, fuzzy
+#| msgid "Are you sure you want to delete this activity"
+msgid "Are you sure you want to sync from IATI?"
+msgstr "ဒီလုပ်ငန်းကို ဖျက်ချင်တာသေချာလား။"
+
+msgid "This action will replace selected locally reported transactions for this activity with those contained within the IATI Registry."
+msgstr ""
+
+msgid "When IATI Sync is activated, you will no longer be able to edit transactions locally for the transaction types you have selected to sync. To make changes, you will need to edit the relevant official IATI Activity File reported to the IATI Registry."
+msgstr ""
+
+msgid "Users can choose to stop IATI Sync at any time and edit imported transactions locally. However, those local changes would be lost if users choose to turn IATI Sync back on again."
+msgstr ""
+
+#, fuzzy
+#| msgid "Imported from IATI"
+msgid "Agree and Sync from IATI"
+msgstr "နိုင်ငံတကာပွင့်လင်းမြင်သာမှုရှိစေရေးအစီအစဉ်မှ အရေးပါမှု"
+
+msgid "Stop IATI Synchronization"
+msgstr ""
+
+msgid "Revert back to manual entry?"
+msgstr ""
+
+msgid "The financial information in your activity will remain as of the last import date."
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Agree and Stop IATI Sync"
+msgstr ""
+
+msgid "Saving changes to IATI Sync settings"
+msgstr ""
+
+msgid "IATI Sync completed."
+msgstr ""
+
+msgid "Error updating IATI Sync settings."
+msgstr ""
+
+msgid "IATI Sync settings updated."
+msgstr ""
+
+msgid "Full IATI Sync of data is running..."
+msgstr ""
+
+msgid "Suspended IATI Sync."
+msgstr ""
+
+msgid "Error suspending IATI Sync."
+msgstr ""
+
+msgid "IATI Identifier Link updated."
+msgstr ""
+
+msgid "Error updating IATI Identifier Link."
+msgstr ""
+
+msgid "IATI Identifier Link deleted."
+msgstr ""
+
+msgid "Error deleting IATI Identifier Link."
+msgstr ""
+
+msgid "Fetching IATI Data"
+msgstr ""
+
+msgid "Error running IATI Sync."
+msgstr ""
+
+msgid "Connect this activity to IATI Sync"
+msgstr ""
+
+msgid "IATI Sync Settings"
+msgstr ""
+
+msgid "Setup IATI Sync to automatically import the financial transactions for this activity from your officially published IATI activity file found in the IATI Registry"
+msgstr ""
+
+msgid "Setup IATI Sync"
+msgstr ""
+
+msgid "Sync"
+msgstr ""
+
+msgid "Edit/Remove IATI ID"
+msgstr ""
+
+msgid "Suspend IATI Sync"
+msgstr ""
+
+msgid "Initiate"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "IATI Sync"
+msgstr ""
+
+msgid "IATI Sync History"
+msgstr ""
+
+msgid "Last Fetched"
+msgstr ""
+
+#, fuzzy
+#| msgid "No Information Available"
+msgid "No sync history available."
+msgstr "သတင်းအချက်အလက်မရနိုင်ပါ။"
+
+#, fuzzy
+#| msgid "End Date"
+msgid "Sync Date"
+msgstr "ပြီးဆုံးနေ့"
+
+#, fuzzy
+#| msgid "Budgets:"
+msgid "Budgets"
+msgstr "ရသုံးမှန်းခြေငွေစာရင်း"
+
+msgid "Commitments"
+msgstr ""
+
+msgid "Outgoing Funds"
+msgstr ""
+
+msgid "Incoming Funds"
+msgstr ""
+
+msgid "Invalid IATI Data"
+msgstr ""
+
+#, python-format
+msgid "%(activity_singular)s Completion Rating"
+msgstr ""
+
+#, python-format
+msgid "Set the %(activity_singular)s Description"
+msgstr ""
+
+#, fuzzy
+#| msgid "How can I improve my rating?"
+msgid "Improve my rating?"
+msgstr "ငါ့ရဲ့နှုန်းတိုးတက်အောင် ဘယ်လိုလုပ်နိုင်မလဲ။"
+
+msgid "Partner ID"
+msgstr ""
+
+msgid "IATI ID"
+msgstr ""
+
+#, fuzzy
+#| msgid "Locations"
+msgid "Active"
+msgstr "နေရာဌာနများ"
+
+#, fuzzy
+#| msgid "Local Activities"
+msgid "Not Active"
+msgstr "ပြည်တွင်းလုပ်ငန်းများ"
+
+msgid "Date Created"
+msgstr ""
+
+msgid "Last Updated"
+msgstr ""
+
+#, fuzzy
+#| msgid "Reporting"
+msgid "Reporting Org"
+msgstr "အစီရင်ခံတင်ပြခြင်း"
+
+msgid "Required to publish"
+msgstr "ထုတ်ဝေနိုင်ရန် လိုအပ်သည်။"
+
+#, python-format
+msgid " will be removed from this %(activity_singular_lower)s permanently"
+msgstr ""
+
+#, fuzzy
+#| msgid "Are You Sure?"
+msgid "Are you sure?"
+msgstr "သေချာပြီလား"
+
+msgid "Back to"
+msgstr ""
+
+msgid "Discard and move on"
+msgstr ""
+
+msgid "Sorry, you cant publish just yet."
+msgstr "ဝမ်းနည်းပါတယ်။ ဤစီမံကိန်းကို ထုတ်ဝေလို့မရသေးပါဘူး။"
+
+msgid "Published"
+msgstr "ထုတ်ဝေမည်"
+
+msgid "Draft"
+msgstr "မူကြမ်း"
+
+msgid "To publish you need to:"
+msgstr "ထုတ်ဝေရန် လိုအပ်သည်များ"
+
+msgid "Okay, got it"
+msgstr "Okay, ရပြီ။"
+
+msgid "Additional data required"
+msgstr ""
+
+msgid "You cannot submit this activity for review before you:"
+msgstr ""
+
+msgid "Submit for review"
+msgstr ""
+
+#, python-format
+msgid " You are about to <span class=\"bold\">submit</span> this %(activity_singular_lower)s to be reviewed and approved by Government Partners prior to publication. Based on this %(activity_singular_lower)s, the following organisations will be notified: "
+msgstr ""
+
+msgid "mandatory"
+msgstr ""
+
+msgid "To change this list please change the organisations listed as accountable partners in the Organisations tab."
+msgstr ""
+
+msgid "Loading..."
+msgstr "တင်နေသော"
+
+msgid "Cancel review"
+msgstr "ရီဗျူးကိုဖျက်မည်။"
+
+#, python-format
+msgid " You are about to <span class=\"bold\">cancel</span> the review of this %(activity_singular_lower)s. This will revert the status of the %(activity_singular_lower)s to draft. "
+msgstr "သင်သည်  %(activity_singular_lower)s ၏ ပြန်လည်သုံးသပ်မှု ကို <span class=\"bold\">ဖျက်ပစ်မည့် </span> အနေအထားသို့ရောက်ရှိနေပါသည်။ ဤလုပ်ဆောင်ချက်သည် %(activity_singular_lower)s ၏ အခြေအနေကို မူကြမ်းအဖြစ်သို့ သတ်မှတ်လိုက်မည်ဖြစ်ပါသည်။"
+
+msgid "No, Don't Cancel"
+msgstr "မဖျက်တော့ပါ။"
+
+msgid "Yes, Cancel"
+msgstr "ဖျက်မည်။"
+
+#, fuzzy
+#| msgid "Edit Activity"
+msgid "Endorse Activity"
+msgstr "လုပ်ငန်းကို ပြင်ဆင်ပါ။"
+
+#, python-format
+msgid " You are about to <span class=\"bold\">endorse</span> the %(activity_singular_lower)s indicating that you are satisfied with the information provided. "
+msgstr ""
+
+msgid "Remove Endorsement"
+msgstr ""
+
+#, python-format
+msgid " You are about to <span class=\"bold\">remove</span> your endorsement of the %(activity_singular_lower)s, indicating that the %(activity_singular_lower)s information is not sufficient. Please add a comment to explain your decision. "
+msgstr ""
+
+msgid "No, Don't Endorse"
+msgstr ""
+
+msgid "No, Don't Remove"
+msgstr ""
+
+#, fuzzy
+#| msgid "Cancel"
+msgid "Yes, Endorse"
+msgstr "ပယ်ဖျက်ပါ။"
+
+msgid "Yes, Remove"
+msgstr ""
+
+#, python-format
+msgid "You cannot publish this %(activity_singular_lower)s for review before you"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "Local Activities"
+msgid "Approve &amp; Publish %(activity_singular)s"
+msgstr "ပြည်တွင်းလုပ်ငန်းများ"
+
+#, python-format
+msgid " You are about to <span class=\"bold\">approve and publish</span> the %(activity_singular_lower)s indicating that you are satisfied with the information provided. This will make the %(activity_singular_lower)s information publicly available and the information contained will appear in your reports. "
+msgstr ""
+
+msgid "No, Don't Approve"
+msgstr ""
+
+msgid "Yes, Approve"
+msgstr ""
+
+#, fuzzy
+#| msgid "Activity Status"
+msgid "Change Activity Status"
+msgstr "လုပ်ငန်းအခြေအနေ"
+
+msgid "Send back to Review"
+msgstr ""
+
+#, python-format
+msgid " \"Sending the activity back to Review status will hide the %(activity_singular_lower)s from the public site and reports. It will also alert each party to review the %(activity_singular_lower)s. Please note that it does not remove prior endorsements"
+msgstr ""
+
+msgid "Yes, send back to Review"
+msgstr ""
+
+msgid "Send back to Draft"
+msgstr ""
+
+#, python-format
+msgid "Sending the %(activity_singular_lower)s back to Draft status will hide the activity from the public site and reports. It will also remove prior endorsements for the %(activity_singular_lower)s"
+msgstr ""
+
+msgid "Yes, send back to Draft"
+msgstr ""
+
+msgid "Approve &amp; Publish"
+msgstr ""
+
+#, python-format
+msgid "Endorse %(activity_singular)s"
+msgstr ""
+
+#, python-format
+msgid "Change %(activity_singular)s Status"
+msgstr ""
+
+msgid "This contact will be deleted permanently."
+msgstr ""
+
+msgid "Please add a name"
+msgstr ""
+
+#, fuzzy
+#| msgid "Add another contact"
+msgid "There are no contacts"
+msgstr "အခြားဆက်စပ်မှုကိုထည့်ပါ။"
+
+#, python-format
+msgid "The contacts should include key team members who support this %(activity_singular_lower)s"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Job Title"
+msgstr "အလုပ်ခေါင်းစဉ်"
+
+msgid "Organisation"
+msgstr "အဖွဲ့အစည်း"
+
+msgid "Person Name"
+msgstr "လူအမည်"
+
+#, fuzzy
+#| msgid "Contact Type"
+msgid "Contact Type"
+msgstr "ဆက်သွယ်မှုအမျိုးအစား"
+
+msgid "Telephone"
+msgstr "တယ်လီဖုန်း"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "Mailing Address"
+msgstr "အီးမေးလ်လိပ်စာ"
+
+#, fuzzy
+#| msgid "Add another contact"
+msgid "Add a contact"
+msgstr "အခြားဆက်စပ်မှုကိုထည့်ပါ။"
+
+msgid "General Information"
+msgstr "ယေဘုယျသတင်းအချက်အလက်"
+
+#, fuzzy
+#| msgid "Add a new transaction"
+msgid "Add a transaction"
+msgstr "လုပ်ငန်းအသစ်ထပ်ထည့်ပါ။"
+
+msgid "Transactions"
+msgstr "လုပ်ငန်းများ"
+
+#, fuzzy
+#| msgid "Default Tied Status"
+msgid "Default Settings"
+msgstr "ပုံသေ Status အဟောင်း"
+
+#, fuzzy
+#| msgid "Add another accountable partner"
+msgid "There are no documents or images uploaded"
+msgstr "အခြားတာဝန်ခံမိတ်ဖက်တစ်ယောက်ထည့်ပါ"
+
+#, python-format
+msgid "Documents and images should include key supporting materials related to this %(activity_singular_lower)s"
+msgstr ""
+
+msgid "Download"
+msgstr "ဒေါင်းလုပ်ဆွဲရန်"
+
+msgid "Categories"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+#, fuzzy
+#| msgid "Add another sector"
+msgid "Add another document category"
+msgstr "အခြားကဏ္ဍကို ပေါင်းထည့်ပါ"
+
+msgid "Language"
+msgstr ""
+
+#, fuzzy
+#| msgid "Result Description"
+msgid "Document Description"
+msgstr "ရလာသောဖော်ပြချက်"
+
+#, fuzzy
+#| msgid "Add a commitment"
+msgid "Upload document"
+msgstr "လျာထားငွေတခုပေါင်းထည့်ပါ။"
+
+msgid "Browse"
+msgstr ""
+
+msgid "Url"
+msgstr ""
+
+msgid "Save and Return"
+msgstr ""
+
+#, fuzzy
+#| msgid "Add a commitment"
+msgid "Documents"
+msgstr "လျာထားငွေတခုပေါင်းထည့်ပါ။"
+
+#, fuzzy
+#| msgid "Add a commitment"
+msgid "Add a document"
+msgstr "လျာထားငွေတခုပေါင်းထည့်ပါ။"
+
+msgid "Saving"
+msgstr ""
+
+#, fuzzy
+#| msgid "Save"
+msgid "Saved"
+msgstr "သိမ်းထားပါ"
+
+msgid "Total Project Cost in millions of USD"
+msgstr ""
+
+msgid "Estimated tender commencement date"
+msgstr ""
+
+#, python-format
+msgid "About the %(activity_singular_lower)s"
+msgstr ""
+
+#, python-format
+msgid "%(activity_singular)s Partner ID"
+msgstr ""
+
+#, python-format
+msgid "A Partner ID is an optional reference used internally by an Organisation to refer to an %(activity_singular)s"
+msgstr ""
+
+#, python-format
+msgid "%(activity_singular)s Title"
+msgstr "%(activity_singular)sခေါင်းစဉ်"
+
+#, fuzzy, python-format
+#| msgid "The title should be a human readable name of the project. Please ensure that acronyms are fully spelled out."
+msgid "The title should be a human readable name of the %(activity_singular_lower)s. Please ensure that acronyms are fully spelled out."
+msgstr "ေခါင္းစဥ္သည္ စီမံကိန္းအတြက္ သင့္ေတာ္တဲ့ နာမည္တခုခု ျဖစ္သင့္ တယ္    ။ေက်းဇူးျပဳျပီး ေသခ်ာေအာင္လုပ္ပါ။ ဆုိလုိသည္မွာ အတုိေကာက္စာလုံးသည္ စာလုံးေပါင္း မွန္ဖုိ့ ျဖစ္တယ္။"
+
+#, python-format
+msgid "%(activity_singular)s Description"
+msgstr "လုပ်ငန်းအကြောင်းအရာဖော်ပြချက်"
+
+#, python-format
+msgid "This explains what the %(activity_singular_lower)s is, it is longer than the title and contains more detail."
+msgstr "ဤနေရာတွင် လုပ်ငန်းအကြောင်းကို ပိုအသေးစိတ်ရှင်းပြထားသည်။"
+
+#, python-format
+msgid "%(activity_singular)s Objectives"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "The objectives should include a detailed description of the activity and expected outcomes."
+msgid "A detailed description of the %(activity_singular_lower)s objectives and its expected outcomes."
+msgstr "ရည်ရွယ်ချက်မှာလုပ်ငန်း၏ အသေးစိတ်ပါသင့်ပြီး ရလဒ်ကို မျှော်လင့်တယ်။"
+
+#, python-format
+msgid "%(activity_singular)s Target Groups"
+msgstr ""
+
+#, python-format
+msgid "Details of groups that are intended to benefit from the %(activity_singular_lower)s."
+msgstr ""
+
+msgid "Collaboration Type"
+msgstr "ပူးပေါင်းဆောင်ရွက်ခြင်းအမျိုးအစား"
+
+#, python-format
+msgid "%(activity_singular)s Status"
+msgstr "%(activity_singular)s အခြေအနေ"
+
+#, python-format
+msgid "%(activity_singular)s Expected Benefits"
+msgstr "%(activity_singular)s၏ ရည်ရွယ်ထားသော အကျိုးရလဒ်များ"
+
+#, python-format
+msgid "A detailed description of the %(activity_singular_lower)s expected benefits."
+msgstr ""
+
+#, fuzzy
+#| msgid "Result Description"
+msgid "Description"
+msgstr "ရလာသောဖော်ပြချက်"
+
+#, fuzzy
+#| msgid "Planned End Date"
+msgid "Start and End dates"
+msgstr "စီစဉ်ထားသော ပြီးဆုံးရက်"
+
+msgid "Planned Start Date"
+msgstr "စီစဉ်ထားသော အစနေ့ "
+
+msgid "Planned End Date"
+msgstr "စီစဉ်ထားသော ပြီးဆုံးရက်"
+
+#, python-format
+msgid ""
+"The date on which the %(activity_singular_lower)s is planned to start or end,\n"
+"                        for example the date of the first or last planned disbursement\n"
+"                        or when physical %(activity_singular_lower)s starts or ends."
+msgstr ""
+
+msgid "Actual Start Date"
+msgstr "တကယ့် အစရက်"
+
+msgid "Actual End Date"
+msgstr "တကယ့် ပြီးဆုံးရက်"
+
+#, python-format
+msgid ""
+"The date on which the %(activity_singular_lower)s actually started or ended,\n"
+"                    for example the date of the first or last disbursement\n"
+"                    or when physical %(activity_singular_lower)s started or ended."
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "Please add the percentage of total commitments or total activity budget dedicated to this location"
+msgid "Please add the percentage of total commitments or total %(activity_singular_lower)s budget dedicated to this location."
+msgstr "ေက်းဇူးျပဳျပီး လ်ာထားေငြစုစုေပါင္း၏ ရာခုိင္နွဳန္းကုိ ေပါင္းထည့္ပါ(သုိ့) ဒီ ေဒသအတြက္ ျမွဳပ္နွံထားတဲ့စုစုေပါင္း လုပ္ငန္းသုံးေငြ"
+
+msgid "Error saving the Locations."
+msgstr ""
+
+msgid "Locations represent what regions are targeted. Percentages represent what share of the total commitment amount will flow to a particular region."
+msgstr ""
+
+msgid "Percent"
+msgstr "ရာခိုင်နှုန်း"
+
+#, fuzzy
+#| msgid "Add another location"
+msgid "Add another location"
+msgstr "အခြားနေရာတခုထည့်ပါ။"
+
+msgid "MSDP alignment"
+msgstr "MSDP ကိုက်ညီမှု"
+
+#, python-format
+msgid " Add another %(label)s "
+msgstr ""
+
+#, python-format
+msgid " Add an %(label)s..."
+msgstr ""
+
+#, fuzzy
+#| msgid "no budgets"
+msgid "There are no MSDP"
+msgstr "ငွေစာရင်းမရှိပါ။"
+
+#, fuzzy
+#| msgid "Add another budget"
+msgid "Add another MSDP Alignment"
+msgstr "အခြားငွေစာရင်းကို ထည့်ပါ။"
+
+msgid "Select the donors providing Overseas Development Assistance (ODA) funds to this project."
+msgstr ""
+
+msgid "This is the government entity or development partner agency receiving funds from financing partner(s) for channeling to implementing partner(s)."
+msgstr "ဒါက အစိုးရအေဆာက္အအုံ (သို့) ေငြေျကးမိတ္ဖက္မ်ားမွ အေကာင္အထည္ေဖာ္သည့္ မိတ္ဖက္မ်ား လမ္းေျကာင္းရေစရန္အတြက္ ဖြံ့ျဖဳိးမွဳမိတ္ဖက္ေအဂ်င္စီမ်ားလက္ခံရရွိေသာရန္ပုံေငြ  ျဖစ္သည္။"
+
+msgid "Participating Organisations"
+msgstr "အဖွဲ့အစည်းများတွင် ပါဝင်ခြင်း"
+
+msgid "Select the Implementing Government Agency (IGA) responsible for this project."
+msgstr ""
+
+msgid "IGA"
+msgstr ""
+
+msgid "Donors"
+msgstr ""
+
+#, fuzzy
+#| msgid "Add another contact"
+msgid "There are no Donors"
+msgstr "အခြားဆက်စပ်မှုကိုထည့်ပါ။"
+
+#, fuzzy
+#| msgid "Add a commitment"
+msgid "Add a donor"
+msgstr "လျာထားငွေတခုပေါင်းထည့်ပါ။"
+
+#, fuzzy
+#| msgid "Add another sector"
+msgid "Add another donor"
+msgstr "အခြားကဏ္ဍကို ပေါင်းထည့်ပါ"
+
+#, fuzzy
+#| msgid "Extending Partner"
+msgid "Extending Partners"
+msgstr "မိတ်ဖက်တိုးချဲ့ခြင်း"
+
+#, fuzzy
+#| msgid "Add another extending partner"
+msgid "There are no extending partners"
+msgstr "နောက်တိုးမည့်မိတ်ဖက်ကို ပေါင်းပါ"
+
+#, fuzzy
+#| msgid "Add another extending partner"
+msgid "Add an extending partner"
+msgstr "နောက်တိုးမည့်မိတ်ဖက်ကို ပေါင်းပါ"
+
+#, fuzzy
+#| msgid "Add another extending partner"
+msgid "Add another extending partner"
+msgstr "နောက်တိုးမည့်မိတ်ဖက်ကို ပေါင်းပါ"
+
+#, fuzzy
+#| msgid "Implementing Partner"
+msgid "Implementing Partners"
+msgstr "ဆောင်ရွက်ဆဲမိတ်ဖက်"
+
+msgid "The implementer of the activity is the organisation(s) which is/are principally responsible for delivering this activity."
+msgstr "လုပ္ငန္းအေကာင္အထည္ေဖာ္သူသည္ လုပ္ငန္းလြွဲအပ္ရန္အတြက္ စည္းမ်ဥ္းစည္းကမ္းနွင့္အညီ တာဝန္ယူေသာ အဖြဲ့အစည္းျဖစ္သည္။"
+
+#, fuzzy
+#| msgid "Add another implementing partner"
+msgid "There are no implementing partners"
+msgstr "ဆောင်ရွက်ဆဲမိတ်ဖက် အခြားတစ်ဦးထည့်ပါ"
+
+#, fuzzy
+#| msgid "Implementing Partner"
+msgid "Add an implementing partner"
+msgstr "ဆောင်ရွက်ဆဲမိတ်ဖက်"
+
+#, fuzzy
+#| msgid "Add another implementing partner"
+msgid "Add another implementing partner"
+msgstr "ဆောင်ရွက်ဆဲမိတ်ဖက် အခြားတစ်ဦးထည့်ပါ"
+
+#, fuzzy
+#| msgid "Implementing Partner"
+msgid "Government Partners"
+msgstr "ဆောင်ရွက်ဆဲမိတ်ဖက်"
+
+msgid "The government entity or entities responsible for oversight or maintenance of the activity. Often this will be the government entity with which a MoU or similar agreement is signed. In many cases, the MoU will be signed directly with the implementing partner."
+msgstr ""
+
+#, fuzzy
+#| msgid "Add another implementing partner"
+msgid "There are no government partners"
+msgstr "ဆောင်ရွက်ဆဲမိတ်ဖက် အခြားတစ်ဦးထည့်ပါ"
+
+#, fuzzy
+#| msgid "Implementing Partner"
+msgid "Add a government partner"
+msgstr "ဆောင်ရွက်ဆဲမိတ်ဖက်"
+
+#, fuzzy
+#| msgid "Add another implementing partner"
+msgid "Add another government partner"
+msgstr "ဆောင်ရွက်ဆဲမိတ်ဖက် အခြားတစ်ဦးထည့်ပါ"
+
+#, fuzzy
+#| msgid "Accountable Partner"
+msgid "Accountable Partners"
+msgstr "တာဝန်ခံမိတ်ဖက်"
+
+#, fuzzy
+#| msgid "Add another accountable partner"
+msgid "There are no accountable partners"
+msgstr "အခြားတာဝန်ခံမိတ်ဖက်တစ်ယောက်ထည့်ပါ"
+
+#, fuzzy
+#| msgid "Accountable Partner"
+msgid "Add an accountable partner"
+msgstr "တာဝန်ခံမိတ်ဖက်"
+
+#, fuzzy
+#| msgid "Add another accountable partner"
+msgid "Add another accountable partner"
+msgstr "အခြားတာဝန်ခံမိတ်ဖက်တစ်ယောက်ထည့်ပါ"
+
+#, fuzzy
+#| msgid "no budgets"
+msgid "There are no results"
+msgstr "ငွေစာရင်းမရှိပါ။"
+
+msgid "The contacts should include key team members who support this activity."
+msgstr ""
+
+msgid "Add an indicator to your result"
+msgstr ""
+
+msgid "Indicators"
+msgstr ""
+
+msgid "Creating the result, please wait"
+msgstr ""
+
+msgid "Your result should be ready shortly"
+msgstr ""
+
+#, fuzzy
+#| msgid "Add a new budget"
+msgid "Add a value"
+msgstr "ငွေစာရင်းအသစ်ထားပါ။"
+
+#, fuzzy
+#| msgid "no budgets"
+msgid "There are no values"
+msgstr "ငွေစာရင်းမရှိပါ။"
+
+msgid "Indicator Periods"
+msgstr ""
+
+#, fuzzy
+#| msgid "Add a commitment"
+msgid "Edit a value"
+msgstr "လျာထားငွေတခုပေါင်းထည့်ပါ။"
+
+#, fuzzy
+#| msgid "Add another result"
+msgid "Add a result"
+msgstr "အခြားရလဒ်ကို ထည့်ပါ။"
+
+#, fuzzy
+#| msgid "Activity List"
+msgid "Activity results"
+msgstr "လုပ်ငန်းစာရင်း"
+
+msgid "Result Type"
+msgstr "ရလဒ္ပုံစံ"
+
+#, fuzzy
+#| msgid "Results"
+msgid "no results"
+msgstr "ရလဒ်များ"
+
+msgid "Result Title"
+msgstr "ရလာသောခေါင်းစဉ်"
+
+msgid "Result Description"
+msgstr "ရလာသောဖော်ပြချက်"
+
+msgid "This explains what the result is, it is longer than the title and contains more detail"
+msgstr "ဤနေရာတွင် လုပ်ငန်း၏ ရလဒ်တွေအကြောင်းကို ပိုအသေးစိတ်ရှင်းပြထားသည်။"
+
+#, python-format
+msgid "%(activity_singular)s log"
+msgstr ""
+
+#, fuzzy
+#| msgid "Add a commitment"
+msgid "Add a comment"
+msgstr "လျာထားငွေတခုပေါင်းထည့်ပါ။"
+
+msgid "Post"
+msgstr ""
+
+#, python-format
+msgid "Sectors represent the purpose of the %(activity_singular_lower)s."
+msgstr ""
+
+#, python-format
+msgid "Please select which sectors this %(activity_singular_lower)s is relevant to."
+msgstr "ဤ %(activity_singular_lower)s နှင့်ကိုက်ညီသည့် ကဏ္ဍကိုရွေးပါ။"
+
+#, fuzzy
+#| msgid "Sector"
+msgid "sector"
+msgstr "ကဏ္ဍ"
+
+#, python-format
+msgid "Add a %(label_lower)s..."
+msgstr ""
+
+msgid "Sector"
+msgstr "ကဏ္ဍ"
+
+msgid "Add another sector"
+msgstr "အခြားကဏ္ဍကို ပေါင်းထည့်ပါ"
+
+msgid "Sectors & Policy Markers"
+msgstr "ကဏ္ဍများနှင့် မူဝါဒများကို ချမှတ်သူများ"
+
+msgid "Sectors represent the purpose of the activity"
+msgstr ""
+
+#, python-format
+msgid "They must add up to 100%%"
+msgstr ""
+
+msgid "Coordination Bodies"
+msgstr ""
+
+#, python-format
+msgid "Please specify what percentage of the total budget is allocated to each %(object)s. All percentages should add up to 100%%."
+msgstr ""
+
+#, python-format
+msgid "Add another %(object)s"
+msgstr ""
+
+#, fuzzy
+#| msgid "Policy Marker"
+msgid "Policy Markers"
+msgstr "မူဝါဒချမှတ်သူ"
+
+msgid "A policy or theme addressed by the activity. This element was designed for the reporting of OECD DAC CRS policy markers."
+msgstr "မူူူဝါဒ (သုိ့) အဓိကဆုိလုိရင္းကုိ လုပ္ငန္းကထင္ရွားေစသည္။ ဒီလုိအပ္ခ်က္သည္ OECD DAC CRS မူဝါဒခ်မွတ္သူကုိ အစီရင္ခံတင္ျပရာတြင္ ပုံစံထုတ္ေပးပါသည္။"
+
+msgid "Policy Marker"
+msgstr "မူဝါဒချမှတ်သူ"
+
+msgid "Significance"
+msgstr "ရည်ရွယ်ချက်"
+
+msgid "Add another policy marker"
+msgstr "မူဝါဒချမှတ်သူအခြားတစ်ယောက်ကို ထည့်ပါ"
+
+#, fuzzy
+#| msgid "Location"
+msgid "location"
+msgstr "နေရာဒေသ"
+
+#, python-format
+msgid " Add a %(label_lower)s..."
+msgstr ""
+
+#, fuzzy
+#| msgid "The date of transaction"
+msgid "There are no Locations"
+msgstr "လုပ်ငန်းရက်"
+
+msgid "Reset"
+msgstr ""
+
+msgid "Add an activity title"
+msgstr "လုပ်ငန်းခေါင်းစဉ်ထည့်ပါ။"
+
+msgid "Add an activity description"
+msgstr "လုပ်ငန်းဖော်ပြချက်ထည့်ပါ။"
+
+msgid "Add a start date"
+msgstr "အစနေ့ထည့်ပါ။"
+
+msgid "Add an activity status"
+msgstr "လုပ်ငန်းအခြေအနေထည့်ပါ။"
+
+msgid "Add a related sector"
+msgstr "ဆက်စပ်ရာကဏ္ဍတစ်ခုထည့်ပါ။"
+
+msgid "Add a related location"
+msgstr "ဆက်စပ်ရာနေရာတစ်ခုထည့်ပါ။"
+
+msgid "Add a transaction of type 'Commitment'"
+msgstr "လျာထားငွေအမျိုးအစားလုပ်ငန်းတစ်ခု ထည့်ပါ။"
+
+#, fuzzy
+#| msgid "Activities List"
+msgid "Activities for Review"
+msgstr "လုပ်ငန်းစာရင်း"
+
+#, fuzzy
+#| msgid "Organisation"
+msgid "Choose organisation"
+msgstr "အဖွဲ့အစည်း"
+
+msgid "Edit {}"
+msgstr ""
+
+msgid "Nationwide"
+msgstr "နိုင်ငံအလိုက်"
+
+msgid "all subregions of "
+msgstr "ဒေသခွဲအားလုံး"
+
+#, fuzzy, python-brace-format
+#| msgid "all subregions of "
+msgid "all subregions of {area}"
+msgstr "ဒေသခွဲအားလုံး"
+
+msgid "left"
+msgstr "ဘယ်ဘက်"
+
+msgid "right"
+msgstr "ညာဘက်"
+
+#, python-format
+msgid "You may replace the activity on the %(position_1)s with the %(status)s activity on the %(position_2)s"
+msgstr ""
+
+msgid "Restore Archived"
+msgstr "ရရှိမှုကို နဂိုအတိုင်း ပြန်ထားပါ။"
+
+msgid "Keep Local"
+msgstr "ဒေသခံကိုထားပါ။"
+
+msgid "No Activity found matching the query"
+msgstr "လုပ်ငန်းအပေါ် မေးခွန်းမရှိပါ။"
+
+msgid "Compare Activities"
+msgstr "လုပ်ငန်းများကို နှိုင်းယှဉ်ပါ။"
+
+#, fuzzy
+#~| msgid "Extending Partner"
+#~ msgid "Funding Partners"
+#~ msgstr "မိတ်ဖက်တိုးချဲ့ခြင်း"
+
+#, fuzzy
+#~| msgid "Add another extending partner"
+#~ msgid "There are no Funding partners"
+#~ msgstr "နောက်တိုးမည့်မိတ်ဖက်ကို ပေါင်းပါ"
+
+#, fuzzy
+#~| msgid "Add another extending partner"
+#~ msgid "Add an funding partner"
+#~ msgstr "နောက်တိုးမည့်မိတ်ဖက်ကို ပေါင်းပါ"
+
+#, fuzzy
+#~| msgid "Add another extending partner"
+#~ msgid "Add another funding partner"
+#~ msgstr "နောက်တိုးမည့်မိတ်ဖက်ကို ပေါင်းပါ"
+
+#, fuzzy
+#~| msgid "Add another contact"
+#~ msgid "Select type of contact"
+#~ msgstr "အခြားဆက်စပ်မှုကိုထည့်ပါ။"
+
+#~ msgid "Activity List"
+#~ msgstr "လုပ်ငန်းစာရင်း"
+
+#~ msgid "Local Activities"
+#~ msgstr "ပြည်တွင်းလုပ်ငန်းများ"
+
+#, fuzzy
+#~ msgid "Profile"
+#~ msgstr "ဆောင်းပါးစာမျက်နှာ"
+
+#~ msgid "Delete Activity?"
+#~ msgstr "လုပ်ငန်းကို ဖျက်ပါ။"
+
+#, fuzzy
+#~ msgid "Delete Activity"
+#~ msgstr "လုပ်ငန်းကို ဖျက်ပါ။"
+
+#, fuzzy
+#~ msgid "About Budgets"
+#~ msgstr "စုစုပေါင်းငွေစာရင်း"
+
+#~ msgid "Budget Type"
+#~ msgstr "ငွေကြေးအမျိုးအစား"
+
+#~ msgid "Start Date"
+#~ msgstr "အစေန့"
+
+#~ msgid "Amount"
+#~ msgstr "ပမာဏ"
+
+#, fuzzy
+#~ msgid "Budget Status"
+#~ msgstr "ငွေစာရင်း အစနေ့"
+
+#, fuzzy
+#~ msgid "Currency"
+#~ msgstr "ပုံသေငွေ"
+
+#~ msgid "Value Date"
+#~ msgstr "တန်ဖိုးရှိသောနေ့"
+
+#~ msgid "This is the default currency for the activity, you can override this in an individual transaction."
+#~ msgstr "လုပ်ငန်းအတွက် ပုံသေငွေကြေးကို လုပ်ငန်းတစ်ခုချင်းစီမှာ လွှမ်းမိုးစေနိုင်တယ်။"
+
+#, fuzzy
+#~ msgid "Add a commitment transaction"
+#~ msgstr "လုပ်ငန်းအသစ်ထပ်ထည့်ပါ။"
+
+#~ msgid "Provider"
+#~ msgstr "ထောက်ပံ့သူ"
+
+#~ msgid "Receiver"
+#~ msgstr "လက်ခံသူ"
+
+#~ msgid "no transactions"
+#~ msgstr "လုပ်ငန်းမရှိပါ။"
+
+#~ msgid "Transaction Type"
+#~ msgstr "လုပ်ငန်းအမျိုးအစား"
+
+#~ msgid "The date of transaction"
+#~ msgstr "လုပ်ငန်းရက်"
+
+#~ msgid "This is the date on which the transaction was made or (in the case of commitments) agreed."
+#~ msgstr "လုပ်ငန်းစတင်လုပ်သောနေ့ (သို့) သဘောတူသောနေ့ ဖြစ်သည်။"
+
+#~ msgid "Value"
+#~ msgstr "တန်ဖိုး"
+
+#~ msgid "Provider Organisation"
+#~ msgstr "အဖွဲ့အစည်းကို ပံ့ပိုးသူ "
+
+#~ msgid "Receiver Organisation"
+#~ msgstr "အဖွဲ့အစည်းကို လက်ခံသူ"
+
+#~ msgid "Disbursement Channel"
+#~ msgstr "ရရှိငွေကို လမ်းကြောင်းဖော်ပေးသည်။"
+
+#~ msgid "Aid Type"
+#~ msgstr "အကူအညီအမျိုးအစား"
+
+#~ msgid "Finance Type"
+#~ msgstr "ငွေကြေးအမျိုးအစား"
+
+#~ msgid "Flow Type"
+#~ msgstr "စီးဆင်းမှုပုံစံ"
+
+#~ msgid "Tied Status"
+#~ msgstr "Status အဟောင်း"
+
+#~ msgid "The completion rating reflects the overall percentage of important fields completed within the data entry form."
+#~ msgstr "ျပီးဆုံးမွဳနွဳန္းသည္ Data ဝင္လာမွဳပုံစံနွင့္အတူ အေရးျကီးသည့္ ျပီးဆုံးမွဳနယ္ပယ္၏ စုစုေပါင္းရာခုိင္နွဳန္းကုိ ထင္ဟပ္ေစသည္။"
+
+#, fuzzy
+#~ msgid "Add an attachment"
+#~ msgstr "လျာထားငွေတခုပေါင်းထည့်ပါ။"
+
+#, fuzzy
+#~ msgid "Upload a Document"
+#~ msgstr "လျာထားငွေတခုပေါင်းထည့်ပါ။"
+
+#~ msgid "The IATI identifier will be created when this activity is saved"
+#~ msgstr "နိုင်ငံတကာပွင့်လင်းမြင်သာမှုရှိစေရေးအစီအစဉ်ကို ဖော်ထုတ်သူများက ဒီလုပ်ငန်းကို သိမ်းပြီး ဖန်တီးတယ်။"
+
+#~ msgid "This explains what the activity is, it is longer than the title and contains more detail"
+#~ msgstr "လုပ်ငန်းကဘာလဲဆိုတာရှင်းလင်းခြင်းက ခေါင်းစဉ်ထက်ပိုမရှည်ဘူး။ပြီးတော့ ပိုပြီး အသေးစိတ်ပါရှိတယ်။"
+
+#, fuzzy
+#~ msgid "A funding partner of the activity is an organisation which is at least partially responsible for funding this activity."
+#~ msgstr "လုပ္ငန္းအေကာင္အထည္ေဖာ္သူသည္ လုပ္ငန္းလြွဲအပ္ရန္အတြက္ စည္းမ်ဥ္းစည္းကမ္းနွင့္အညီ တာဝန္ယူေသာ အဖြဲ့အစည္းျဖစ္သည္။"
+
+#, fuzzy
+#~ msgid "Activity log"
+#~ msgstr "လုပ်ငန်း"
+
+#~ msgid "Finances & Budgets"
+#~ msgstr "ငွေကြေးနှင့် ရသုံးမှန်းခြေငွေစာရင်း"
+
+#~ msgid "Sector Working Groups are multi-stakeholder dialogue bodies responsible for ensuring that development priorities are identified, discussed and implemented in a co-ordinated and transparent manner."
+#~ msgstr "အထူးသျဖင့္ ျမန္မာနုိင္ငံမွာ လုပ္ငန္းက႑အဖြဲ့မ်ားသည္ အစုိးရအဖြဲ့မွ ေျပာေရးဆုိခြင့္ရွိသူက ျမန္မာနုိင္ငံ၏ ဖြံ့ျဖဳိးမွဳ ဦးစားေပးအရာမ်ားကုိ ပူးေပါင္း၍ ပြင့္ပြင့္လင္းလင္းေဆာင္ရြက္ရာမွာ သတ္မွတ္ေဆြးေနြး အေကာင္အ ထည္ေဖာ္သည္ဆုိသည္ကုိ ေသခ်ာေစသည္။"
+
+#, fuzzy
+#~ msgid "Activities you can endorse"
+#~ msgstr "လုပ်ငန်းစီစဉ်သူ"
+
+#, fuzzy
+#~ msgid "Partner organisation"
+#~ msgstr "အဖွဲ့အစည်းကို ပံ့ပိုးသူ "
+
+#~ msgid "Reports"
+#~ msgstr "အစီရင်ခံစာများ"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "အကူအညီဆိုင်ရာ Dashboards"
+
+#~ msgid "Aid by Location"
+#~ msgstr "နေရာဒေသအလိုက်အကူအညီ"
+
+#~ msgid "Aid by Sector"
+#~ msgstr "ကဏ္ဍအလိုက်အကူအညီ"
+
+#~ msgid "Aid by Ministry"
+#~ msgstr "ဝန်ကြီးဌာနအလိုက်အကူအညီ"
+
+#~ msgid "Your Pages"
+#~ msgstr "မင်းရဲ့စာမျက်နှာများ"
+
+#~ msgid "Software designed & developed by"
+#~ msgstr "Software  ပုံစံထုတ်သူနှင့် တည်ထောင်သူ"
+
+#, fuzzy
+#~ msgid "Log"
+#~ msgstr "တင်နေသော"
+
+#~ msgid "FILTER BY ACTIVITY STATUS"
+#~ msgstr "အလုပ်အခြေအနေအလိုက် စစ်ခြင်း"
+
+#~ msgid "FILTER BY ORGANISATION ROLE"
+#~ msgstr "အဖွဲ့အစည်းကဏ္ဍအလိုက် စစ်ခြင်း"
+
+#~ msgid "If you set any dates you must set a start date"
+#~ msgstr "နေ့တခုခု ထားမယ်ဆိုရင် အစနေ့ကိုထားရမယ်။"
+
+#~ msgid "Select a region..."
+#~ msgstr "တိုင်းဒေသကြီးရွေးချယ်ပါ။"
+
+#~ msgid "You must select a location"
+#~ msgstr "ဒေသတစ်ခုကို ရွေးရမယ်။"
+
+#~ msgid "This date is an actual date and must be in the past"
+#~ msgstr "သေချာတဲ့နေ့ ဖြစ်ပြီး အတိတ်ကဖြစ်ရမယ်။"
+
+#~ msgid "Select an aid type..."
+#~ msgstr "အကူအညီအမျိုးအစားကို ရွေးချယ်ပါ။"
+
+#~ msgid "Select a transaction type..."
+#~ msgstr "လုပ်ငန်းအမျိုးအစား ရွေးချယ်ပါ။"
+
+#~ msgid "Available"
+#~ msgstr "ရနိုင်သော"
+
+#~ msgid "to"
+#~ msgstr "ရန်(သို့) ဖို့"
+
+#~ msgid "Advanced Filter Coming Soon"
+#~ msgstr "မကြာခင်လာမယ့်အဆင့်မြင့်စစ်ဆေးသူ"
+
+#~ msgid "FILTER BY DONOR"
+#~ msgstr "အလှူရှင်အလိုက်စစ်ခြင်း"
+
+#~ msgid "FILTER BY SECTOR"
+#~ msgstr "ကဏ္ဍအလိုက်စစ်ခြင်း"
+
+#~ msgid "FILTER BY STATUS"
+#~ msgstr "အခြေအနေအလိုက်စစ်ခြင်း"
+
+#~ msgid "Implementing"
+#~ msgstr "အကောင်အထည်ဖော်ခြင်း"
+
+#~ msgid "Planned"
+#~ msgstr "စီစဉ်ထားသော"
+
+#~ msgid "Completed"
+#~ msgstr "ဆောင်ရွက်ပြီး"
+
+#~ msgid "Set Filter"
+#~ msgstr "စစ်ဆေးပါ။"
+
+#~ msgid "Print Page"
+#~ msgstr "စာမျက်နှာကိုထုတ်ပါ"
+
+#~ msgid "Export Data"
+#~ msgstr "Data ကိုတင်ပို့ပါ။"
+
+#~ msgid "Clear current date filters, and sorts"
+#~ msgstr "လက်ရှိdate filters ကိုရှင်ပြီး စီပေးပါ။"
+
+#~ msgid "The Activity List"
+#~ msgstr "လုပ်ငန်းစာရင်း"
+
+#~ msgid "The activities listed below are those used to calculate the above charts and graphics. These activities correspond to the date filter above."
+#~ msgstr "ေအာက္ပါ လုပ္ငန္းစာရင္းသည္ အထက္ပါ charts and graphics ကုိ တြက္ရာတြင္ သုံးေလ့ရွိသည္။ဒီလုပ္ငန္းမ်ားသည္ ေန့စြဲကုိစစ္ရန္ ရည္ညြွန္းပါသည္။"
+
+#~ msgid "Status"
+#~ msgstr "အခြေအနေ"
+
+#~ msgid "Start"
+#~ msgstr "စတင်ပါ။"
+
+#~ msgid "End"
+#~ msgstr "အဆုံး"
+
+#~ msgid "Created Locally"
+#~ msgstr "ဒေသတွင်း ဖန်တီးသည်။"
+
+#~ msgid "Adding a percentage"
+#~ msgstr "ရာခိုင်နှုန်းတခုထပ်ထည့်ခြင်း"
+
+#~ msgid "Please add the percentage of total commitments or total activity budget dedicated to this sector"
+#~ msgstr "ေက်းဇူးျပဳျပီး လ်ာထားေငြစုစုေပါင္း၏ ရာခုိင္နွဳန္းကုိ ေပါင္းထည့္ပါ(သုိ့) ဒီက႑အတြက္ ျမွဳပ္နွံထားတဲ့စုစုေပါင္း လုပ္ငန္းသုံးေငြ"
+
+#~ msgid "Sector Working Group"
+#~ msgstr "လုပ်ငန်းကဏ္ဍအဖွဲ့"
+
+#~ msgid "Please add the percentage of total commitments or total activity budget dedicated to this sector working group."
+#~ msgstr ""
+#~ "ေက်းဇူးျပဳျပီး လ်ာထားေငြစုစုေပါင္း၏ ရာခုိင္နွဳန္းကုိ ေပါင္းထည့္ပါ(သုိ့) ဒီ လုပ္ငန္းက႑အဖြဲ့\n"
+#~ "အတြက္ ျမွဳပ္နွံထားတဲ့စုစုေပါင္း လုပ္ငန္းသုံးေငြ"
+
+#~ msgid "Add another sector working group"
+#~ msgstr "အခြား လုပ်ငန်းကဏ္ဍအဖွဲ့ကို ပေါင်းထည့်ပါ"
+
+#~ msgid "Adding a significance"
+#~ msgstr "ရည်ရွယ်ချက်ထပ်တိုးခြင်း"
+
+#~ msgid "This is an OECD DAC CRS code indicating the significance of the policy marker for this activity."
+#~ msgstr "OECD DAC CRS သည် လုပ်ငန်းအတွက် မူဝါဒချမှတ်သူ၏ သင်္ကေတကို ဖော်ညွှန်းသောcode ဖြစ်ပါသည်။"
+
+#~ msgid "Total Disbursements"
+#~ msgstr "ရရှိပြီးငွေစုစုပေါင်း"
+
+#~ msgid "Edit transaction"
+#~ msgstr "လုပ်ငန်းကိုပြင်ဆင်ပါ။"
+
+#~ msgid "Save Transaction"
+#~ msgstr "လုပ်ငန်းကိုသိမ်းပါ။"
+
+#~ msgid "Add another transaction"
+#~ msgstr "အခြားလုပ်ငန်းတခု ထည့်ပါ။"
+
+#~ msgid "Edit budget"
+#~ msgstr "ငွေစာရင်းပြင်ပါ။"
+
+#~ msgid "The budget date range is usually each financial quarter or year over the lifetime of the activity."
+#~ msgstr "ေငြေျကးဆုိင္ရာ ေန့စြဲအစီအစဥ္သည္လုပ္ငန္း၏ ဘ႑ာေရးဆုိင္ရာ ေလးလပတ္ (သို့) တနွစ္စာ သက္တမ္းအတြက္ ျဖစ္သည္။"
+
+#~ msgid "Budget Amount"
+#~ msgstr "ငွေစာရင်းပမာဏ"
+
+#~ msgid "Required"
+#~ msgstr "လိုအပ်သော"
+
+#~ msgid "Something is wrong."
+#~ msgstr "အမှားရှိနေတယ်"
+
+#~ msgid "You have saved successfully!"
+#~ msgstr "မင်းအောင်မြင်စွာသိမ်းထားတယ်"

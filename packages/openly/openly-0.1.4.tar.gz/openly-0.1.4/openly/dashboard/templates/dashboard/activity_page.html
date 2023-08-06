@@ -1,0 +1,54 @@
+{% load humanize %}
+{% load el_pagination_tags %}
+{% load tag_library %}
+
+
+{% lazy_paginate 20 object_list %}
+
+{% for activity in object_list %}
+    <tr>
+        <td class="no-wrap" {% if activity.id|to_int %} sorttable_customkey="{{activity.id|to_int}}"{% endif %}>
+            <a href="{{ profile_url }}" target="_blank" class="heavy-text">{{activity.id}}</a>
+        </td>
+        <td class="title-cell">
+            <a href="{{ profile_url }}" target="_blank">
+            {{ activity.title }}
+            </a>
+        </td>
+        <td>
+            {% for sector in activity.prefetch_sector_categories %}
+            {% if not forloop.first %}
+            <br>
+            {% endif %}
+            {{sector.category}}
+            {% endfor %}
+        </td>
+        <td>
+            <a href="{{ profile_url }}" target="_blank">
+            {{ activity|financing_organisation }} 
+            </a>
+        </td>
+        <td class="no-wrap align-right">
+            <a href="{{ profile_url }}" target="_blank" class="heavy-text">
+                {% if activity.commitmenttotal.currency_id %}
+                {{ activity.commitmenttotal.currency_id }}
+                {% endif %}
+                {{ activity.total_commitment|floatformat:"0"|intcomma }}
+            </a>
+        </td>
+        <td> {{ activity|financing_organisation }} </td>
+        {% if activity.start_actual %}
+        <td class="no-wrap" sorttable_customkey="{{activity.start_actual|to_date}}" title="{{activity.start_actual|date:'F d Y'}}"> {{activity.start_actual|date:"M `y"}} </td>
+        {% else %}
+        <td class="no-wrap" sorttable_customkey="{{activity.start_planned|to_date}}" title="{{activity.start_planned|date:'F d Y'}}"> {{activity.start_planned|date:"M `y" }} </td>
+        {% endif %}
+        {% if activity.end_actual %}
+        <td class="no-wrap" sorttable_customkey="{{activity.end_actual|to_date}}" title="{{activity.end_actual|date:'F d Y'}}"> {{activity.end_actual|date:"M `y"}} </td>
+        {% else %}
+        <td class="no-wrap" sorttable_customkey="{{activity.end_planned|to_date}}"  title="{{activity.end_planned|date:'F d Y'}}"> {{activity.end_planned|date:"M `y"}} </td>
+        {% endif %}
+    </tr>
+
+{% endfor %}
+
+{% show_more %}

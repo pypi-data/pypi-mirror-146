@@ -1,0 +1,199 @@
+{% load i18n %}
+
+<aims_filter>
+
+    <div>
+        <form ref="filter_form">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <div class="clear-filters">
+                        <a class="help-text" onclick="{ show_all }">{% trans 'Show all' %}</a> |
+                        <a class="help-text" onclick="{ clear }">{% trans 'Clear all' %}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="add-filter-box">
+                <div class="centeredPrompt dropdown">
+                    <a href="#" id="filter-select" id="filter_choice_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        {% trans 'Add a filter' %} <i class="ion-android-add"></i>
+                    </a>
+                    <ul id="filter-select-content" class="dropdown-menu pull-center query-dropdown filter-dropdown pointer-top" aria-labelledby="filter_choice_dropdown">
+                        <li each={ filters } onclick="{toggle_filter}">
+                            <input type="checkbox" checked="{ visible }" value="{ id }" onchange="{ toggle_filter }" >{ name }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-item" each={ filters } show={ visible }>
+                        <p class="side-bar-category">
+                            { name }
+                            <a class="ion-ios-help-outline dash-info" rel="popover" data-toggle="popover" data-trigger="hover" title="{ name }" data-content="{ helps[id] }" ></a>
+                            <a class="filter-close pull-right" onclick="{ toggle_filter }"><i class="ion-close"></i></a>
+                        </p>
+                        <select class="form-control" name="{ id }" multiple onchange="{ refresh }" placeholder="Add a filter" class="styled-select">
+                            <option each="{ option, value in options }" value="{ value }" selected="{ is_selected(id, value) }">{ option.display }</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script type="text/javascript">
+
+        /* globals dashboard_translations */
+        var self = this;
+
+        var visible_on_load = {
+            reporting_organisations: true,
+            providing_organisations: true,
+            sector_dac3s: true,
+            national_sectors: true,
+            finance_categories: true
+        };
+
+        self.filters_applied = [];
+        var additional_filters_applied = [
+            {
+                name: 'start',
+                value: moment.isMoment(window.openly_filters.start_date) ? window.openly_filters.start_date : undefined
+            }, {
+                name: 'end',
+                value: moment.isMoment(window.openly_filters.end_date) ? window.openly_filters.end_date : undefined
+            }
+        ];
+        self.helps = dashboard_translations.filter_helps;
+
+        self.on('mount', function () {
+            RiotControl.trigger('request_available_filters');
+            $(self.refs.filter_form).find('[data-toggle="popover"]').popover();
+        });
+        self.on('updated', function () {
+            $('#filter-select-content').iCheck('update');
+        });
+
+        // Register a listener for store change events.
+        RiotControl.on('available_filters', function (filters) {
+            var $filter = $('#filter-select-content');
+            self.filters = filters.map(function (f) {
+                f.visible = visible_on_load[f.id];
+                return f;
+            });
+            self.update();
+            $filter.iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+                increaseArea: '20%' // optional
+            });
+            $filter.find('input').on('ifChanged', function (e) {
+                e.target.dispatchEvent(new Event('change'));
+            });
+            $(self.refs.filter_form).find('select').select2().on('change', function () { self.refresh(); });
+        });
+
+        self.show_all = function show_all() {
+            self.filters.forEach(function (filter) {
+                filter.visible = true;
+            });
+        };
+
+        self.clear = function clear() {
+            self.filters.forEach(function (filter) {
+                filter.visible = false;
+
+                // empty the select2
+                $('select[name=' + filter.id + ']').select2('data', null);
+            });
+            if (self.filters_applied.length) {
+                self.filters_applied = [];
+                RiotControl.trigger('apply_filter', self.filters_applied);
+            }
+        };
+
+        self.refresh = function refresh() {
+            var filters = $(self.refs.filter_form).serializeArray();
+            filters = _.concat(filters, additional_filters_applied);
+            self.filters_applied = filters;
+            RiotControl.trigger('apply_filter', filters);
+        };
+
+        self.is_selected = function is_selected(id, val) {
+            return self.filters_applied.some(function (f) { return f.name === id && f.value === val; });
+        };
+
+        function updateFilters(filters){
+            _.each(filters, function(f){
+                _.remove(additional_filters_applied, {name: f.name});
+                if (!f.value) {return}
+                additional_filters_applied.push({name:f.name, value:f.value});
+            });
+            self.refresh();
+        }
+
+        function updateDates(start, end){
+            /* Send updateDates a 'start' and 'end' in moment format */
+            updateFilters([{name:'start', value:start}, {name:'end', value:end}])
+        }
+
+        RiotControl.on('updateDates', updateDates);
+
+        self.toggle_filter = function toggle_filter(e) {
+            e.stopPropagation();
+            if (e.item.visible) {
+                // empty the select2
+                $('select[name=' + e.item.id + ']').select2('data', null);
+
+                // hide the filter
+                e.item.visible = false;
+
+                // remove filter if applied
+                if (self.filters_applied.some(function (f) { return f.name === e.item.id; })) {
+                    self.filters_applied = self.filters_applied.filter(function (f) {
+                        return f.name !== e.item.id;
+                    });
+
+                    RiotControl.trigger('apply_filter', self.filters_applied);
+                }
+            } else {
+                // show the filter
+                e.item.visible = true;
+            }
+        };
+
+        self.export_worksheet = function () {
+
+            function list_filters(){
+                return _.map($(self.refs.filter_form).serializeArray(), function(applied){
+                    var filter = _.find(self.filters, {id:applied.name});
+                    var option = filter.options[applied.value];
+                    return {Filter:filter.name, Option:option.display}
+                })
+            }
+
+            function list_additional_filters(){
+                return _.map(additional_filters_applied, function(applied){
+                    var display = moment.isMoment(applied.value) ? applied.value.format('MMM YYYY') : applied.value
+                    var name;
+                    if (applied.name === 'start'){
+                        name = 'Transactions in or after'
+                    }
+                    if (applied.name === 'end'){
+                        name = 'Transactions in or before'
+                    }
+                    return {Filter:name, Option:display}
+                })
+            }
+
+            function gettext_noop(text){return text}
+            return {
+                sheet_name: gettext_noop('Applied Filters'),
+                data: _.concat(list_filters(), list_additional_filters()),
+                headers: ['Filter', 'Option']
+            }
+        }
+
+    </script>
+</aims_filter>

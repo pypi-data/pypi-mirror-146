@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-23 15:14+0900\n"
+"PO-Revision-Date: 2020-01-21 09:49+0000\n"
+"Last-Translator: b'Myo Min Oo  <myo@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#, python-format
+msgid "%(activity_singular)s List"
+msgstr "%(activity_singular)s စာရင်း"
+
+msgid "Download Projects"
+msgstr "ပရောဂျက်များ ‌ဒေါင်းလုပ်ရယူရန်"
+
+msgid "Title"
+msgstr "ခေါင်းစဥ်"
+
+msgid "IGA"
+msgstr "IGA"
+
+msgid "This government entity is responsible for oversight or maintenance of this project."
+msgstr "ဤအစိုးရ အဖွဲ့သည် သက်ဆိုင်ရာ စီမံကိန်: အတွက် ခြုံငုံသုံးသပ်ခြင်း နှင့် ထိန်းသိမ်းမှုတို့အတွက်တာဝန်ရှိသည် ဟုဆိုလိုသည်။"
+
+msgid "Status"
+msgstr "အခြေအနေ"
+
+msgid "Total Cost"
+msgstr "စုစုပေါင်းစီမံကိန်းကုန်ကျငွေ"
+
+msgid "Show all"
+msgstr "Show All"
+
+msgid "Clear all"
+msgstr "Clear All"
+
+msgid "Add a filter"
+msgstr "Add a Filter"
+
+#, python-format
+msgid "Search %(activity_plural)s"
+msgstr "%(activity_plural)s ရှာရန်"
+
+#, python-format
+msgid "%(activity_plural_lower)s found"
+msgstr " %(activity_plural_lower)s  ခု ရှာတွေ့ပါသည်။"
+
+msgid "Project List"
+msgstr "စီမံကိန်းစာရင်း"

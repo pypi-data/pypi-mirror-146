@@ -1,0 +1,31 @@
+{% load i18n %}
+{% trans 'Sorry, you cant publish just yet.' as sorry %}
+
+{% block publish-button %}
+<publish-button>
+    <div id="publish-toggle-and-labels" if="{activity.id}">
+        <div class="publish_label pull-right" >{% trans "Published" %}</div>
+        <div class="switch pull-right" id="publish_popover" data-toggle="tooltip" title='{{ sorry|escape }}' >
+            <input checked="{is_published}" class="cmn-toggle cmn-toggle-round-flat" id="published-toggle" type="checkbox" onclick="{toggle_publish}">
+            <label for="published-toggle" id="publish-error-popover" data-toggle="popover" data-trigger="manual"></label>
+        </div>
+        <div class="publish_label draft pull-right">{% trans "Draft" %}</div>
+    </div>
+    <div class="hide" id="publish_popover_template">
+        <div class="popover" role="tooltip" >
+            <div class="arrow"></div>
+            <h3 class="popover-title warning_title"></h3>
+            <p class="in-line-help publish_todo_list">{% trans 'To publish you need to:' %}</p>
+            <ul class=" publish_todo_list">
+                <li each="{message, i in error_messages}"> {message} </li>
+            </ul>
+            <div class="text-center">
+                <a class="publish_popover_cancel" href="#">{% trans 'Okay, got it' %}</a>
+            </div>
+        </div>
+    </div>
+
+    {%  include "tags/publish-button.js" %}
+
+</publish-button>
+{% endblock %}

@@ -1,0 +1,588 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-12 12:53+0900\n"
+"PO-Revision-Date: 2019-05-31 02:50+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid "?"
+msgstr "?"
+
+msgid "Activities for Review"
+msgstr "Направления деятельности для обзора"
+
+msgid "Activity List"
+msgstr "Список направлений деятельности"
+
+msgid "Activity Manager"
+msgstr "Руководитель направления деятельности"
+
+msgid "Actual End Date"
+msgstr "Фактическая дата завершения"
+
+msgid "Actual End date"
+msgstr "Фактическая дата завершения"
+
+msgid "Actual Start Date"
+msgstr "Фактическая дата начала"
+
+msgid "Actual Start date"
+msgstr "Фактическая дата начала"
+
+msgid "Add a Contact with all of the following attributes set: Name, Telephone, Email address."
+msgstr "Добавить Контакт со  всеми следующими атрибутами: ФИО, Телефон, Адрес электронной почты"
+
+msgid "Add a Disbursement Transaction."
+msgstr "Добавить Транзакцию по расходованию"
+
+msgid "Add a Document."
+msgstr "Добавить Документ"
+
+msgid "Add a Location."
+msgstr "Добавить Месторасположение"
+
+msgid "Add a Participating Organisation with role \"Accountable\"."
+msgstr "Добавить участвующую организацию с ролью \"Подотчетный\""
+
+msgid "Add a Participating Organisation with role \"Extending\"."
+msgstr "Добавить участвующую организацию с ролью \"\""
+
+msgid "Add a Participating Organisation with role \"Funding\"."
+msgstr "Добавить участвующую организацию с ролью \"Финансирование\""
+
+msgid "Add a Participating Organisation with role \"Implementing\"."
+msgstr "Добавить участвующую организацию с ролью \"Исполнитель\""
+
+msgid "Add a Transaction with a Provider Organisation."
+msgstr "Добавить Транзакцию с организацией - провайдером"
+
+msgid "Add a new Activity"
+msgstr "Добавить новое направление деятельности"
+
+msgid "Admin"
+msgstr "Админ"
+
+msgid "Admin access"
+msgstr "Доступ администратора"
+
+msgid "Aid By Donor"
+msgstr "Содействие в разрезе доноров"
+
+msgid "Aid By Location"
+msgstr "Содействие в разрезе месторасположения"
+
+msgid "Aid By Ministry"
+msgstr "Содействие в разрезе ведомств"
+
+msgid "Aid By Sector"
+msgstr "Содействие в разрезе сектора/отрасли"
+
+msgid "Aid Dashboard"
+msgstr "Информационная панель (монитор) по содействию"
+
+msgid "Aid Dashboards"
+msgstr "Информационные панели (мониторы) по внешнему содействию"
+
+msgid "Aid Type Categories"
+msgstr "Категории типа содействия"
+
+msgid "Aid by Donor"
+msgstr "Содействие в разрезе доноров"
+
+msgid "Aid by Location"
+msgstr "Содействие в разрезе месторасположения"
+
+msgid "Aid by Ministry"
+msgstr "Содействие в разрезе министерств"
+
+msgid "Aid by Sector"
+msgstr "Содействие в разрезе сектора/отрасли"
+
+#, fuzzy
+msgid "Also, if you have set a date range or zoomed into Shan state or selected a specific organisation, clicking export will just give you that data"
+msgstr "Кроме того, если вы установили диапазон дат или просматриваете штат Шань с увеличением масштаба, или выбрали конкретную организацию, нажатие на экспорт предоставит вам эти данные."
+
+msgid "Archived"
+msgstr "Архивировано"
+
+msgid "Base Currency"
+msgstr "Базовая валюта"
+
+msgid "Before using the data, we encourage all users to first contact the relevant development partners to ensure data is accurate."
+msgstr "Перед использованием данных мы рекомендуем всем пользователям сначала связаться с соответствующими партнерами в сфере развития, чтобы убедиться в достоверности данных"
+
+msgid "Blank"
+msgstr "Пустой"
+
+#, python-brace-format
+msgid "Changed the status from {from_status} to {to_status}"
+msgstr ""
+
+msgid "Click here to access the dashboards"
+msgstr "Нажмите здесь, чтобы получить доступ к информационным панелям"
+
+msgid "Click on the blue activity number in the Activity List to visit the Activity Profile page and learn more."
+msgstr "Нажмите на синий номер деятельности в Списке направлений деятельности, чтобы посетить страницу Профиля деятельности и узнать больше."
+
+msgid "Collaboration Type"
+msgstr "Тип сотрудничества"
+
+msgid "Contact Email"
+msgstr "Контактный адрес электронной почты"
+
+msgid "Contact Name"
+msgstr "ФИО контактного лица"
+
+msgid "Contact Phone"
+msgstr "Контактный телефон"
+
+msgid "Coordination Bodies"
+msgstr "Muvofiqlashtirish idoralari"
+
+msgid "Coordination Bodies are multi-stakeholder dialogue bodies responsible for ensuring that development priorities are identified, discussed and implemented in a co-ordinated and transparent manner."
+msgstr "Координационные органы являются многосторонними диалоговыми органами, ответственными за обеспечение того, чтобы приоритеты развития были определены, обсуждены и реализованы скоординированным и прозрачным образом."
+
+msgid "Coordination Body"
+msgstr "Координационный орган"
+
+msgid "Coordination Body Report"
+msgstr "Muvofiqlashtirish idorasi hisoboti"
+
+msgid "Create Report"
+msgstr "Создать отчет"
+
+msgid "Created this Activity"
+msgstr "создал это направление деятельности"
+
+#, fuzzy
+msgid "Data contained within Mohinga has been collected in partnership with Myanmar’s development partners as part of an ongoing process of collaboration and dialogue."
+msgstr "Данные, содержащиеся в Mohinga, были собраны в партнерстве с партнерами по развитию Мьянмы (Узбекистана) в рамках продолжающегося процесса сотрудничества и диалога."
+
+msgid "Data from all of the activities below is used to calculate the figures that appear in the dashboard above."
+msgstr "Данные по всем приведенным ниже действиям используются для расчета цифр, отображаемых на панели инструментов выше."
+
+msgid "Date Created"
+msgstr "Дата создания"
+
+msgid "Default"
+msgstr "по умолчанию"
+
+msgid "Delete activity"
+msgstr "Удалить направление деятельности"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Disclaimer"
+msgstr "Оговорка"
+
+msgid "Draft"
+msgstr "Черновик/Рабочий вариант"
+
+msgid "Each development partner also has a dedicated profile page with information on all their activities"
+msgstr "У каждого партнера в сфере также есть отдельная страница профиля с информацией о всех направлениях его деятельности."
+
+#, python-brace-format
+msgid "Edited {tabname}"
+msgstr ""
+
+#, python-brace-format
+msgid "Endorsement {action} by {organisation}"
+msgstr ""
+
+msgid "Exchange Currency"
+msgstr "Обменная валюта"
+
+msgid "Exchange Rate"
+msgstr "Обменный курс"
+
+msgid "Exporting data from Mohinga"
+msgstr "Экспорт данных из Mohinga(Plov)"
+
+msgid "Extending"
+msgstr "Продление"
+
+msgid "Filtering the dashboard by date"
+msgstr "Фильтрация панели инструментов по дате"
+
+msgid "Financing"
+msgstr "Финансирование"
+
+msgid "Fully"
+msgstr "Полностью"
+
+msgid "Hello, "
+msgstr "Привет,"
+
+msgid "IATI XML"
+msgstr "IATI XML"
+
+msgid "Iati Codelist Sector"
+msgstr "Сектор согласно списку кодов IATI"
+
+msgid "If you need any further information"
+msgstr "Если Вам требуется дополнительная информация"
+
+msgid "If you set end dates you must set at least one start date."
+msgstr "Если Вы устанавливаете даты завершения, то должны установить не менее одной даты начала"
+
+msgid "Implementing"
+msgstr "Исполняющий"
+
+msgid "Important dates"
+msgstr "Важные даты"
+
+msgid "Last Modified"
+msgstr "Дата последней модификации"
+
+msgid "Mohinga contains a lot of information. To find what you’re looking for try searching by development partner, activity or sector"
+msgstr "Plov содержит большой массив информации. Чтобы найти то, что вы ищете, попробуйте поиск по партнеру в сфере развития, виду деятельности или отрасли"
+
+#, fuzzy
+msgid "Mohinga is Myanmar's Aid Information Management System (AIMS)."
+msgstr "Mohinga (Plov) - система управления информацией о помощи в Мьянме (Узбекистане) (AIMS)."
+
+msgid "Mohinga visualises aid flows to Myanmar via four interactive dashboards"
+msgstr "Mohinga (Plov) визуализирует потоки содействия в Узбекистан (Мьянму) с помощью четырех интерактивных панелей"
+
+msgid "Multiple Donors"
+msgstr "Несколько доноров"
+
+msgid "National Sector"
+msgstr "Национальный сектор"
+
+msgid "Nationwide"
+msgstr "По всей стране"
+
+msgid "None"
+msgstr "Ничего"
+
+msgid "Not applicable"
+msgstr "Не применимо"
+
+msgid "Objective"
+msgstr "Задача"
+
+msgid "Partially"
+msgstr "Частично"
+
+msgid "Partner Ministry"
+msgstr "Ведомство - партнер"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Personal info"
+msgstr "Личные данные"
+
+msgid "Planned End Date"
+msgstr "Запланированная дата завершения"
+
+msgid "Planned End date"
+msgstr "Запланированная дата завершения"
+
+msgid "Planned Start Date"
+msgstr "Запланированная дата начала"
+
+msgid "Planned Start date"
+msgstr "Запланированная дата начала"
+
+msgid "Profile Page"
+msgstr "Профильная страница"
+
+msgid "Profile pages"
+msgstr "Страницы профиля"
+
+msgid "Public Page"
+msgstr "Общественная страница"
+
+msgid "Published"
+msgstr "Опубликовано"
+
+msgid "Query Builder"
+msgstr "Мастер поиска"
+
+msgid "Raw passwords are not stored, so there is no way to see this user's password, but you can change the password using <a href=\"../password/\">this form</a>."
+msgstr "Сырые пароли не сохраняются, поэтому невозможно увидеть пароль данного пользователя, но Вы можете изменить пароль, используя <a href=\"../password/\">this form</a>."
+
+msgid "Report Builder"
+msgstr "Мастер по формированию отчета"
+
+msgid "Report Templates"
+msgstr "Шаблоны отчетов"
+
+msgid "Reporting Organisation"
+msgstr "Подотчетная организация"
+
+msgid "Reports"
+msgstr "Отчеты"
+
+msgid "Search"
+msgstr "Поиск"
+
+#, fuzzy
+msgid "Search within Mohinga"
+msgstr "Mohinga (Plov)da izlash"
+
+msgid "Sector"
+msgstr "Сектор/отрасль"
+
+msgid "Sectors"
+msgstr "Секторы/отрасли"
+
+msgid "Select a start and end date and then click the refresh button to set the filter"
+msgstr "Выберите дату начала и окончания, а затем нажмите кнопку обновления, чтобы установить фильтр"
+
+msgid "Set a Default Aid Type."
+msgstr "Установить тип содействия по умолчанию"
+
+msgid "Set a Default Currency."
+msgstr "Установить валюту по умолчанию"
+
+msgid "Set a Default Flow Type."
+msgstr "Установить метод содействия по умолчанию"
+
+msgid "Set a Planned End Date."
+msgstr "Установить планируемую дату завершения"
+
+msgid "Set a Planned Start Date."
+msgstr "Установить планируемую дату начала"
+
+msgid "Set an Actual End Date."
+msgstr "Установить фактическую дату завершения"
+
+msgid "Set an Actual Start Date."
+msgstr "Установить фактическую дату начала"
+
+msgid "Sign in"
+msgstr "Войти"
+
+msgid "Sign out"
+msgstr "Выйти"
+
+msgid "Software designed & developed by"
+msgstr "Программное обеспечение разработано"
+
+msgid "State/Region"
+msgstr "Область / регион"
+
+msgid "Status"
+msgstr "Состояние"
+
+msgid "That is it... for now"
+msgstr "Пока что...это все"
+
+#, fuzzy
+msgid "The Mohinga application allows development partners to report their assistance to Myanmar in a simple, common, comparable format."
+msgstr "Приложение Mohinga (Plov) позволяет партнерам в сфере развития отчитываться о своей содействии Мьянме (Узбекистану) в простом, общем, сопоставимом формате."
+
+msgid "The budget end date cannot be before the budget start date"
+msgstr "Дата истечения бюджетного периода не может быть раньше начала бюджетного периода"
+
+msgid "The date filter allows you to filter information presented on the dashboards between a specific time period"
+msgstr "Фильтр даты позволяет фильтровать информацию, представленную на информационных панелях, за определенный период времени."
+
+msgid "The export function will download the dashboard data to a .CSV file"
+msgstr "Функция экспорта загрузит данные информационной панели в файл .CSV"
+
+msgid "The reporting organisation has not been specified."
+msgstr "Подотчетная/вышестоящая организация не указана"
+
+msgid "These include advanced reporting tools and better integration with internationally available IATI aid data as well as other tools to help make the management of aid information simple, time efficient and even enjoyable. We will be in touch."
+msgstr "К ним относятся усовершенствованные инструменты отчетности и лучшая интеграция с доступными на международном уровне данными  IATI о содействии, а также другие инструменты, помогающие упростить управление информацией о содействии , сделав эффективным по времени и даже приятным. Будем на связи"
+
+msgid "Title"
+msgstr "Название"
+
+msgid "Total Commitment"
+msgstr "Совокупные ассигнования"
+
+msgid "Total Commitment USD"
+msgstr "Совокупные выплаты в долл. США"
+
+msgid "Total Disbursement"
+msgstr "Совокупные ассигнования"
+
+msgid "Total Disbursement USD"
+msgstr "Совокупные выплаты в долл. США"
+
+msgid "Township"
+msgstr "Поселок городского типа"
+
+msgid "Transaction count"
+msgstr "Учет транзакций"
+
+msgid "Under review"
+msgstr "На рассмотрении"
+
+msgid "Unknown"
+msgstr "Неизвестно"
+
+msgid "Unnamed"
+msgstr "Безымянный"
+
+#, python-brace-format
+msgid "User ID {user_id}"
+msgstr ""
+
+msgid "Visualise aid flows"
+msgstr "Визуализация потоков содействия"
+
+msgid "We are also working hard to bring new features and functions to Mohinga"
+msgstr "Мы также прилагаем все усилия, чтобы привнести новые функции и возможности в Mohinga"
+
+#, fuzzy
+msgid "Welcome to Mohinga"
+msgstr "Mohinga (Plovga) xush kelibsiz"
+
+msgid "You can access their profile pages by searching for their name here"
+msgstr "Вы можете получить доступ к страницам их профиля, выполнив здесь поиск по их названию"
+
+msgid "Your Pages"
+msgstr "Ваши страницы"
+
+msgid "Your actual end date must be after your actual start date"
+msgstr "Фактическая дата завершения должна быть позже фактической даты начала"
+
+msgid "Your planned end date must be after your planned start date"
+msgstr "Планируемая Вами дата завершения должна быть позже планируемой Вами даты начала"
+
+msgid "added"
+msgstr "добавлено"
+
+msgid "all subregions of "
+msgstr "все суб-регионы"
+
+#, fuzzy
+msgid "and they will provide you with some additional information about Mohinga."
+msgstr "Мы также прилагаем все усилия, чтобы привнести новые функции и возможности в Mohinga"
+
+msgid "billion"
+msgstr "миллиард"
+
+msgid "id"
+msgstr "Идентификация"
+
+msgid "look for these help icons"
+msgstr "Ищите эти иконки помощи"
+
+msgid "million"
+msgstr "миллион"
+
+msgid "no description"
+msgstr "Без описания"
+
+msgid "no title"
+msgstr "Без названия"
+
+msgid "original"
+msgstr "Оригинал"
+
+msgid "pending"
+msgstr "На рассмотрении"
+
+msgid "removed"
+msgstr "удалено"
+
+msgid "thousand"
+msgstr "тысяча"
+
+msgid "trillion"
+msgstr "триллион"
+
+msgid "you can see aid by location, donor, sector or Ministry responsible"
+msgstr "Вы можете просматривать содействие по месту нахождения, донору, сектору или ответственному министерству"
+
+#, python-brace-format
+msgid "{1} in {0}"
+msgstr ""
+
+#~ msgid "Bonds"
+#~ msgstr "Облигации"
+
+#~ msgid "Cancelled"
+#~ msgstr "Отменено"
+
+#~ msgid "Capital Subscriptions"
+#~ msgstr "Подписка на капитал"
+
+#~ msgid "Completion"
+#~ msgstr "Завершение"
+
+#~ msgid "Debt Relief"
+#~ msgstr "Списание долга"
+
+#~ msgid "Default Aid Type"
+#~ msgstr "Тип содействия по умолчанию"
+
+#~ msgid "Default Currency"
+#~ msgstr "Валюта по умолчанию"
+
+#~ msgid "Default Finance Type"
+#~ msgstr "Тип финансирования по умолчанию"
+
+#~ msgid "Default Flow Type"
+#~ msgstr "Метод предоставления по умолчанию"
+
+#~ msgid "Equity"
+#~ msgstr "Собственные средства"
+
+#~ msgid "Export Credit"
+#~ msgstr "Экспортный кредит"
+
+#~ msgid "Grants"
+#~ msgstr "Гранты"
+
+#~ msgid "Implementation"
+#~ msgstr "Реализация"
+
+#~ msgid "Interest Subsidies"
+#~ msgstr "Субсидии по процентам"
+
+#~ msgid "Investment"
+#~ msgstr "Инвестиция"
+
+#~ msgid "Loans"
+#~ msgstr "Займы"
+
+#~ msgid "Other"
+#~ msgstr "Иное"
+
+#~ msgid "Pipeline/Identification"
+#~ msgstr "В проработке"
+
+#~ msgid "Post-Completion"
+#~ msgstr "После завершения"
+
+#~ msgid "Remote Data"
+#~ msgstr "Дистанционные данные"
+
+#~ msgid "Sector Working Group"
+#~ msgstr "Отраслевая рабочая группа"
+
+#, fuzzy
+#~ msgid "Sector Working Groups"
+#~ msgstr "Отраслевая рабочая группа"
+
+#~ msgid "Suspended"
+#~ msgstr "Приостановлено"
+
+#~ msgid "Total Budget"
+#~ msgstr "Совокупный бюджет"
+
+#~ msgid "Total Budget USD"
+#~ msgstr "Совокупный бюджет в долл. США"

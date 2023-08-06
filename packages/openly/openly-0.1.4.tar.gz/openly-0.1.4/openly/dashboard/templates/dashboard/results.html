@@ -1,0 +1,5 @@
+<ul class="results_list">
+{% for result in results %}
+    <li>{% include 'dashboard/result.html' with result=result only %}</li>
+{% endfor %}
+</ul>

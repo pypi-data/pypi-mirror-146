@@ -1,0 +1,25 @@
+{% load i18n %}
+{% load leaflet_tags %}
+
+<h3 class="stats align-center">{% trans "Commitment by Location" %}
+   <a id="commitLocation" class="ion-information-circled dash-info" rel="popover" data-trigger="hover" title="{% trans 'Commitment by location' %}" data-content="{% trans 'The map below shows the amount of development assistance committed by location for activities. The map corresponds to the date filter. Click on the map to zoom in' %}" ></a>
+</h3>
+<br />
+
+<!--// Main Map    -->
+
+{% leaflet_map "yourmap" callback="main_map_init" %}
+
+<script>
+
+function main_map_init (map, options) {
+
+    var dataurl = '{% url "data" %}';
+    // Download GeoJSON via Ajax
+    $.getJSON(dataurl, function (data) {
+        // Add GeoJSON layer
+        L.geoJson(data).addTo(map);
+    });
+
+}
+</script>

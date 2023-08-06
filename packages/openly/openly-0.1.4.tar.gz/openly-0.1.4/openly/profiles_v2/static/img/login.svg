@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="-Icon54---30x_Grid_set_2_Smart_Stroke" transform="translate(-180.000000, -2710.000000)" stroke="#000000">
+            <g id="Login" transform="translate(179.000000, 2664.000000)">
+                <g id="Group-7" transform="translate(1.000000, 46.000000)">
+                    <path d="M9.5,9.5 L9.5,3 C9.5,1.619 10.619,0.5 12,0.5 L26,0.5 C27.381,0.5 28.5,1.619 28.5,3 L28.5,26 C28.5,27.381 27.381,28.5 26,28.5 L12,28.5 C10.619,28.5 9.5,27.381 9.5,26 L9.5,19.5" id="Stroke-1"></path>
+                    <path d="M0.5,14.5 L16.5,14.5" id="Stroke-3"></path>
+                    <polyline id="Stroke-5" points="11.5 9.5 16.5 14.5 11.5 19.5"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

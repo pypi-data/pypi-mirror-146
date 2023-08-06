@@ -1,0 +1,248 @@
+{% load i18n %}
+{% load static  %}
+{% load tag_library %}
+{% load tag_library_aims %}
+{% get_available_languages as LANGUAGES %}
+{% load change_language %}
+{% load initialize_tracking_raven %}
+{% load ifsetting %}
+{% load get_help_url %}
+
+<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <title>{% block title %}{{ request.site }}{% endblock %}</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% comment %}
+    <!-- JQUERY Migration Path
+    First, we need to upgrade to the latest 1.12 version
+    Then we can upgrade to the latest 3.0 version -->
+
+    <!-- <script src="http://code.jquery.com/jquery-1.12.4.js"></script> -->
+    <!-- <script src="http://code.jquery.com/jquery-migrate-1.4.1.js"></script> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script> -->
+    {% endcomment %}
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'riot3/riot+compiler.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'RiotControl/riotcontrol.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/route+tag.min.js' %}"></script>
+    {% block scripts %}
+    {% endblock %}
+    {% initialize_sentry %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+    {% block style %}
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/aims.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/openly.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}" />
+    <link rel="stylesheet" type="text/css" href="/static/css/ionicons.min.css">
+    {% block extra_style %}
+    {% endblock %}
+
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon" />
+    <link href="{% static 'img/apple-touch-icon-76x76.png' %}" rel="apple-touch-icon" sizes="76x76" />
+    <link href="{% static 'img/apple-touch-icon-120x120.png' %}" rel="apple-touch-icon" sizes="120x120" />
+    <link href="{% static 'img/apple-touch-icon-152x152.png' %}" rel="apple-touch-icon" sizes="152x152" />
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
+    {# Links to alternative languages, used by Google. See https://support.google.com/webmasters/answer/189077 #}
+    {% for language_code, language_name in LANGUAGES %}
+    <link rel="alternate" hreflang="{{ language_code }}" href="{% change_language language_code %}">
+    {% endfor %}
+
+    {% block meta %}
+    {% endblock %}
+
+    {% block openly_project_head %}
+    {% endblock %}
+</head>
+<body>
+
+    {% block header %}
+
+    <nav id="openly_top_nav" class="navbar navbar-default simple-nav ">
+        <div class="container">
+            <div class="navbar-header pull-xs-left">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="pull-xs-left">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </span>
+                </button>
+                <a class="navbar-brand" id="navbar-brand" href="{% url 'index' %}">
+                {% block navbar_brand %}
+                    <span class="logo"></span>
+                {% endblock %}
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-nav">
+                <div class="container">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'partners_page' %}">{% trans 'Partners' %}</a></li>
+                        <li class="dropdown nav-bar-item">
+                            <a href="#" id="dashboard-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% trans 'Dashboards' %}</a>
+                            <ul class="dropdown-menu dropdown-menu-md dropdown-menu-left">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'aid_by_location' %}">{% trans 'Aid by Location' %}</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'aid_by_ministry' %}">{% trans 'Aid by Ministry' %}</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'aid_by_sector' %}">{% trans 'Aid by Sector' %}</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'aid_by_donor' %}">{% trans 'Aid by Donor' %}</a></li>
+                                {% ifsetting EDITOR_HAS_RESULTS %}<li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'results_page' %}">{% trans "Results Dashboard" %}</a></li>{% endifsetting %}
+                            </ul>
+                        </li>
+                        <li class="dropdown nav-bar-item">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{% trans "Reports" %} </a>
+                            <ul class="dropdown-menu dropdown-menu-md dropdown-menu-left">
+                                <li class="nav-list-item" role="presentation"><a href="{% url 'exports:index' %}" role="menuitem" tabindex="-1" >{% trans 'Report Builder' %}</a></li>
+                                <li class="nav-list-item" role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'query' %}">{% trans 'Query Builder' %}</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown nav-bar-item navbar-border-top">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                {% if request.user.is_authenticated %}
+                                {% trans 'Hello, ' %}<b class="user-name">{{ request.user.first_name|default:request.user.username }}</b>
+                                <div class="caret"></div>
+                                {% else %}
+                                <img class="menu-icon-small" src="/static/img/settings.svg">
+                                {% endif %}
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-md" id="account-dropdown">
+
+                                {% block nav_right_dropdown %}
+                                {% endblock %}
+
+                                <li class="drop_toggle">
+                                    {% get_available_languages as LANGUAGES %}
+                                    {% for language_code, language_name in LANGUAGES %}
+
+                                    {% if language_code == LANGUAGE_CODE %}
+                                    <a class="selected">{{ language_name }}</a>
+                                    {% else %}
+                                    <a href="{% change_language language_code %}">{{ language_name }}</a>
+                                    {% endif %}
+                                    {% endfor %}
+                                </li>
+                                <li class="divider"></li>
+                                {% if request.user.is_staff or request.user.organisation %}
+                                <li>
+                                    <a href="{% url 'dataquality' %}"><img class="menu-icon-quality" src="/static/img/quality.svg">{% trans "Data Quality" %}</a>
+                                </li>
+                                {% endif %}
+                                {% if request.user.is_staff %}
+                                <li>
+                                    <a href="{% url 'admin:index' %}"><img class="menu-icon-small" src="/static/img/settings.svg">{% trans "Admin" %}</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="{% url 'exports:portal' %}"><img class="menu-icon-quality" src="/static/img/spreadsheets.svg">{% trans "Export Data" %}</a>
+                                </li>
+                                <li class="divider"></li>
+                                {% endif %}
+                                {% ifsetting HELP_URL %}
+                                <li>
+                                    <a href="{% get_help_url %}" target="_blank"><img class="menu-icon-quality" src="/static/img/help.svg">{% trans "Help" %}</a>
+                                </li>
+                                <li class="divider"></li>
+                                {% endifsetting %}
+                                <li class="settings log_out"  id="log-out">
+                                    {% if request.user.is_authenticated %}
+                                    <a href="{% url 'auth_logout' %}"><img class="menu-icon-small" src="/static/img/logout.svg">{% trans "Sign out" %}</a>
+                                    {% else %}
+                                    <a href="{% url 'auth_login' %}?next={{ request.path }}"><img class="menu-icon-small" src="/static/img/login.svg">{% trans "Sign in" %}</a>
+                                    {% endif %}
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!-- /.navbar-collapse -->
+                </div><!-- /.container -->
+            </div>
+        </div>
+    </nav>
+
+    <!--    Logged in User Admin Sub Navigation -->
+    {% if request.user.is_superuser or request.user.organisation_count > 0 %}
+    <div class="nav-toolbar">
+        <div class="container">
+            <ul class="hidden-xs hidden-sm col-md-8 nav navbar-nav">
+                {% if request.user.organisation_count > 0 %}
+                {% url 'donor_profile' request.user.organisation.code as profile_link %}
+                <li class="{% if profile_link in request.path %} active {% endif %}">
+                    <a href="{{ profile_link }}">{% trans 'Public Page' %}</a>
+                </li>
+                {% url 'activity_manager' request.user.organisation.code as manager_link %}
+                {% url 'activities_for_review' request.user.organisation.code as review_link %}
+                <li class="{% if manager_link in request.path and review_link not in request.path %} active {% endif %}">
+                    <a href="{{ manager_link }}">{% blocktrans %}{{activity_singular}} Manager{% endblocktrans %}</a>
+                </li>
+
+                {% ifsetting ENDORSEMENT_ENABLED %} {% if request.user.organisation.is_ministry or request.user.organisation.is_admin %}
+                <li id="activities-for-review-tab" class="{% if review_link in request.path %} active {% endif %}">
+                    <a href="{{ review_link }}">{% blocktrans %}{{activity_plural}} for Review{% endblocktrans %}</a>
+                    {% with review_count=request.user.organisation.activities_for_review.count %} {% if review_count != 0 %}
+                    <span class="badge"> {{ review_count }} </span>
+                    {% endif %} {% endwith %}
+                </li>
+                {% endif %} {% endifsetting %}
+
+                {% endif %}
+            </ul>
+
+            <div class="col-xs-12 col-md-4 hidden-print">
+                <div class="pull-right">
+                    {% if request.user.is_superuser or organisation %}
+                    {% with org=organisation|default:None %}
+                    {% with create_url=request.user|create_actvity_url:org %}
+                    {% if create_url and 'editor/activity-manager' not in request.path %}
+                        <a href="{{ create_url }}" class="btn btn-small btn-primary pull-right small-margin-bottom" id="new-activity-btn">
+                            {% blocktrans %}Add {{activity_singular}}{% endblocktrans %}
+                        </a>
+                    {% else %}
+                        {% comment %} Placeholder element to keep header spacing the same {% endcomment %}
+                        <a class="btn btn-small pull-right small-margin-bottom" style="background-color: var(--dark-text); color: var(--dark-text);width: 1px !important;padding: 0px !important;">&nbsp;</a>
+                    {% endif %}
+                    {% endwith %}
+                    {% endwith %}
+                    {% endif %}
+
+                    {% if delete_url %}
+                    <button id="deleteActivity" class="btn btn-sm btn-danger btn-add-new pull-right button-font-size" data-toggle="modal" data-target="#deleteActivityModal">{% blocktrans %}Delete {{activity_singular}}{% endblocktrans %}</button>
+                    {% endif %}
+
+                    {% block subnavbar_buttons %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+    {% block footer %}
+    {% include "footer.html" %}
+    {% endblock %}
+    {% ifnotsetting DISABLE_PIWIK %}
+    {% ifsetting DEBUG %}{% else %}
+    {% initialize_tracking %}
+    {% endifsetting %}
+    {% endifnotsetting %}
+
+
+    <script>
+        if (document.querySelector('nav_search')) {
+            riot.mount('nav_search');
+        }
+    </script>
+</body>
+</html>

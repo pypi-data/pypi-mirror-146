@@ -1,0 +1,24 @@
+{% load i18n %}
+{% load static %}
+
+<activity-tags>
+    <virtual if={ has_tags }>
+        <div class="container">
+            <h2>{ title }</h2>
+            <section>
+                <p> {% blocktrans %} The {{activity_singular_lower}} aligns with the following strategies: {% endblocktrans %}
+                <div class="no-padding" each={ tag in tag_list }>
+                    <p class="activity-tag"> { tag.name } </p>
+                </div>
+            </section>
+        </div>
+    </virtual>
+
+    var tag = this;
+    tag.on('before-mount', function() {
+        tag.has_tags = _.keys(opts.activity_tags).length > 0;
+        if (!tag.has_tags) return;
+        tag.title = _.keys(opts.activity_tags)[0];
+        tag.tag_list = opts.activity_tags[tag.title];
+    });
+</activity-tags>

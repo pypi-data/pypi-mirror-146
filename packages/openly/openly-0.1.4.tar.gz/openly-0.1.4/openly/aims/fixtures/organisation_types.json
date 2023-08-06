@@ -1,0 +1,72 @@
+[
+{
+    "model": "aims.organisationtype",
+    "pk": 10,
+    "fields": {
+        "name": "Government"
+    }
+},
+{
+    "model": "aims.organisationtype",
+    "pk": 15,
+    "fields": {
+        "name": "Other Public Sector"
+    }
+},
+{
+    "model": "aims.organisationtype",
+    "pk": 21,
+    "fields": {
+        "name": "International NGO"
+    }
+},
+{
+    "model": "aims.organisationtype",
+    "pk": 22,
+    "fields": {
+        "name": "National NGO"
+    }
+},
+{
+    "model": "aims.organisationtype",
+    "pk": 23,
+    "fields": {
+        "name": "Regional NGO"
+    }
+},
+{
+    "model": "aims.organisationtype",
+    "pk": 30,
+    "fields": {
+        "name": "Public Private Partnership"
+    }
+},
+{
+    "model": "aims.organisationtype",
+    "pk": 40,
+    "fields": {
+        "name": "Multilateral"
+    }
+},
+{
+    "model": "aims.organisationtype",
+    "pk": 60,
+    "fields": {
+        "name": "Foundation"
+    }
+},
+{
+    "model": "aims.organisationtype",
+    "pk": 70,
+    "fields": {
+        "name": "Private Sector"
+    }
+},
+{
+    "model": "aims.organisationtype",
+    "pk": 80,
+    "fields": {
+        "name": "Academic, Training and Research"
+    }
+}
+]

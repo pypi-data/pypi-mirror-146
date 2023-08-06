@@ -1,0 +1,41 @@
+<input-addon class="input-group">
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-default" onclick="{toggle}">{data.text}<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li each="{choice in choices}"><a href="#" onclick="{choose}">{choice.text}</a></li>
+        </ul>
+    </div>
+    var tag = this;
+    tag.mixin('SerializerMixin');
+    tag.mixin('FormFieldMixin');
+    tag.toggle = toggle;
+    tag.show = show;
+    tag.hide = hide;
+
+    tag.store.choices = tag.store.choices || {};
+    tag.input_choices = tag.store.choices[opts.choice_fieldname || opts.fieldname] || [(1,'one'),(2,'two')]
+    // reformat tuple -> object
+    tag.choices = tag.input_choices.map(function(choice){
+        return {value:choice[0], text:choice[1]};
+    })
+    tag.choose = choose;
+
+    function choose(e){
+        tag.bystring(tag.opts.path, e.item, true)
+        alert(tag.bystring(tag.opts.path))
+        tag.hide()
+    }
+
+    function toggle(e){
+        $('.dropdown-menu', tag.root).toggle()
+    }
+
+    function show(e){
+        $('.dropdown-menu', tag.root).show()
+    }
+
+    function hide(e){
+        $('.dropdown-menu', tag.root).hide()
+    }
+
+</input-addon>

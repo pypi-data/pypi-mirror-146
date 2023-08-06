@@ -1,0 +1,236 @@
+[
+{
+    "model": "aims.documentcategory",
+    "pk": "A01",
+    "fields": {
+        "name": "Pre- and post-project impact appraisal",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A02",
+    "fields": {
+        "name": "Objectives / Purpose of activity",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A03",
+    "fields": {
+        "name": "Intended ultimate beneficiaries",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A04",
+    "fields": {
+        "name": "Conditions",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A05",
+    "fields": {
+        "name": "Budget",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A06",
+    "fields": {
+        "name": "Summary information about contract",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A07",
+    "fields": {
+        "name": "Review of project performance and evaluation",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A08",
+    "fields": {
+        "name": "Results, outcomes and outputs",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A09",
+    "fields": {
+        "name": "Memorandum of understanding (If agreed by all parties)",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A10",
+    "fields": {
+        "name": "Tender",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "A11",
+    "fields": {
+        "name": "Contract",
+        "description": "",
+        "category": "A"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B01",
+    "fields": {
+        "name": "Annual report",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B02",
+    "fields": {
+        "name": "Institutional Strategy paper",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B03",
+    "fields": {
+        "name": "Country strategy paper",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B04",
+    "fields": {
+        "name": "Aid Allocation Policy",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B05",
+    "fields": {
+        "name": "Procurement Policy and Procedure",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B06",
+    "fields": {
+        "name": "Institutional Audit Report",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B07",
+    "fields": {
+        "name": "Country Audit Report",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B08",
+    "fields": {
+        "name": "Exclusions Policy",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B09",
+    "fields": {
+        "name": "Institutional Evaluation Report",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B10",
+    "fields": {
+        "name": "Country Evaluation Report",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B11",
+    "fields": {
+        "name": "Sector strategy",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B12",
+    "fields": {
+        "name": "Thematic strategy",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B13",
+    "fields": {
+        "name": "Country-level Memorandum of Understanding",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B14",
+    "fields": {
+        "name": "Evaluations policy",
+        "description": "",
+        "category": "B"
+    }
+},
+{
+    "model": "aims.documentcategory",
+    "pk": "B15",
+    "fields": {
+        "name": "General Terms and Conditions",
+        "description": "",
+        "category": "B"
+    }
+}
+]

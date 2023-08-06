@@ -1,0 +1,51 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static  %}
+
+{% block title %}
+{% trans 'Export Data' %} | {{ site_name }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Export Data</h1>
+        </div>
+    </div>
+        {% for group, model_list in models.items %}
+        <div class="row">
+            <div class="col col-xs-12"><h2>{{group}}</h2></div>
+        {% for model in model_list %}
+        <div class="col-xs-4">
+            <div class="info-box">
+                {% if model.title %}
+                <h3>{{model.title}}</h3>
+                {% else %}
+                <h3>{{model.cache_properties.module}} Class</h3>
+                {% endif %}
+                {% if model.description %}
+                <p>{{model.description}}</p>
+                {% endif %}
+                {% if model.description_list %}
+                <ul>{% for item in model.description_list %}
+                    <li>{{item}}</li>{% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <p><a class="btn btn-block btn-default" href='{% url model.cache_properties.url|lower %}'>Excel</a></p>
+            <p><a class="btn btn-block btn-default" href='{% url model.cache_properties.url|lower %}?format=csv'>CSV</a></p>
+        </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+        {% comment %}
+        {% url "exports:supersetsecretsquirrel" %}' for Superset code
+        {% endcomment %}
+        <style> .info-box { min-height: 250px; } </style>
+    </div>
+    </div>
+
+</div>
+{% endblock content %}

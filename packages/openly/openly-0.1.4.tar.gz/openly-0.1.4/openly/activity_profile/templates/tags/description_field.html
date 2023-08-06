@@ -1,0 +1,42 @@
+{% load i18n %}
+
+<description-field>
+    <p each={paragraph in paragraphs}>
+        { paragraph }
+    </p>
+    <button type="button" class="btn btn-super-small btn-default hidden-print" onclick="{toggleShowMore}" if="{canShowMore}">
+        { moreShown ? "{% trans 'Show less' %}" : "{% trans 'Show more' %}" }
+    </button>
+
+    var tag = this;
+
+    tag.toggleShowMore = function() {
+        tag.moreShown = !tag.moreShown;
+        if (tag.moreShown) {
+            tag.paragraphs = tag.allParagraphs;
+        } else {
+            tag.paragraphs = tag.allParagraphs.slice(0, 5);
+        }
+    }
+
+    tag.on('before-mount', function() {
+        tag.allParagraphs = tag.opts.description.split('\n').filter(function(s) { return s !== ''; });
+
+        if (tag.allParagraphs.length > 5 && tag.opts.description.length > 500) {
+            tag.canShowMore = true;
+            tag.moreShown = false;
+            tag.paragraphs = tag.allParagraphs.slice(0, 5);
+        } else {
+            tag.paragraphs = tag.allParagraphs;
+        }
+    });
+
+    <style>
+        .description-paragraph {
+            white-space: pre-wrap;
+        }
+        p:last-child {
+            margin-bottom: 5rem;
+        }
+    </style>
+</description-field>

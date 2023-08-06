@@ -1,0 +1,9 @@
+{% load i18n %}
+{% load common_text %}
+{% load ifsetting %}
+
+{% ifsetting EDITOR_SIMPLE_SECTORS %}
+{% include 'tags/tab-sectors-no-percentage.html' %}
+{% else %}
+{% include 'tags/tab-sectors-with-percentage.html' %}
+{% endifsetting %}

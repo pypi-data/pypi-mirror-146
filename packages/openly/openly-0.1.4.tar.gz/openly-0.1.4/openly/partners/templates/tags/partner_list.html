@@ -1,0 +1,154 @@
+{% load i18n %}
+{% load static %}
+{% load common_text %}
+
+
+<partner_list>
+    <h2 id="partner_header">{% trans 'Partners' %}</h2>
+
+    <div class="filter-bar-btns">
+        <button class="btn btn-default btn-small" ref="filter_toggle" onclick={ toggle_filter }>
+            <span class="filter-label">{% trans 'Filter' %}</span>
+            { ('partner_filter' in refs && refs.partner_filter.classList.contains('collapsed')) ? ' {% trans "show" %}' : '{% trans " hide" %}' }
+        </button>
+        <button class="button clear-all-button" onclick={ clear_filters }>
+            {% trans 'Clear filters' %}
+        </button>
+    </div>
+
+    <div id="partner_search">
+        <div class="search-wrapper">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg class="search-icon" width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>search</title>
+            <defs></defs>
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Search---secondary" transform="translate(-11.000000, -5.000000)">
+                        <g id="Group">
+                            <g id="search" transform="translate(11.000000, 5.000000)">
+                                <rect id="Rectangle-path" x="0" y="0" width="17.2744981" height="17.2744981"></rect>
+                                <path d="M12.2947088,11.4296142 L16.4530649,15.5879703 C16.5936089,15.7285143 16.5936089,15.9563811 16.4530649,16.0969251 C16.3125209,16.2374691 16.0846541,16.2374691 15.9441101,16.0969251 L11.8066305,11.9594454 C10.7061008,13.022003 9.20817991,13.6756443 7.55759291,13.6756443 C4.17868644,13.6756443 1.43954151,10.9364994 1.43954151,7.55759291 C1.43954151,4.17868644 4.17868644,1.43954151 7.55759291,1.43954151 C10.9364994,1.43954151 13.6756443,4.17868644 13.6756443,7.55759291 C13.6756443,9.02673517 13.1578105,10.3749309 12.2947088,11.4296142 Z M7.55759291,12.9558736 C10.538981,12.9558736 12.9558736,10.538981 12.9558736,7.55759291 C12.9558736,4.57620485 10.538981,2.15931226 7.55759291,2.15931226 C4.57620485,2.15931226 2.15931226,4.57620485 2.15931226,7.55759291 C2.15931226,10.538981 4.57620485,12.9558736 7.55759291,12.9558736 Z" id="Shape" stroke="#637281" fill="#637281" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                    </g>
+            </svg><!--End of the SVG-->
+            <input class="search-partners" ref="name_filter" type="search" value={ org_name_filter } onkeyup={ org_name_keyup } placeholder="{{ _('Search Organisations')|force_escape }}">
+        </div>
+    </div>
+
+    <div class="collapsed" ref="partner_filter" id="partner_filter">
+        <div class="filter-body">
+            <h5 class="page-header">{% trans 'Filter partners' %}</h5>
+            <div class="row">
+                <div class="col-xs-12">
+                    <label class="control-label">
+                        {% trans 'Sector' %}
+                    </label>
+                    <select ref="sector_filter" class="form-control" onchange={ filter_by_sector }>
+                        <option each={ sectors } value={ this.value } selected={ this.value == sector_filter }>{ this.name }</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="lines"></div>
+
+            <div class="row" id="partner-location-search">
+                <div class="col-xs-12">
+                    <label class="control-label">
+                        {% trans 'Location' %}
+                    </label>
+                    <input class="form-control" type="search" value={ location_filter } onkeyup={ location_filter_keyup } placeholder="{{ _('Filter by location')|force_escape }}">
+                    <button class="btn button-clear" if={ location_filter.length != 0 } onclick={ clear_location_filter }>&times;</button>
+                    <div class="col-xs-12 locations-list" if={ filter_locations.length != 0 }>
+                        <div class="location-item" each={ filter_locations }>
+                            <button value={ this.code } name={ this.name } class="button" onclick={ select_location }>{ this.full_name }</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- End of Location Sector -->
+
+            <div class="lines" id="partner-location-search"></div>
+
+            <div class="row">
+                <div class="filter-block">
+                    <div class="col-xs-12">
+                        <label class="filter-title control-label many-label">
+                            {% trans 'Activity Status' %}
+                        </label>
+                    </div>
+                </div>
+            </div><!-- End of Activity Section -->
+            <!-- Checkbox filters -->
+            <ul class="col-xs-12" id="checkbox-filters">
+                <li class="list-unstyled" each={ statuses }>
+                    <input type="checkbox" class="checkbox-tick" value={ this.value } onclick={ toggle_status } checked={filtered_statuses[value]}/>
+                    <label class="checkbox-label">{ name }</label>
+                </li>
+            </ul> <!-- End of checkbox filter -->
+        </div>
+    </div><!-- End of the side filters section -->
+
+    <div id="partner_cards_section" class="partner-cards-wide">
+        <div id="partner_list">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Governments</h3>
+                </div>
+            </div>
+            <div class="row" if={ gos.length != 0 }>
+                <div each={ gos } data={ this } class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="partner-board" href="{ profile }">
+                        <div class="partner-board-item">
+                            <a href={ profile }>
+                                <img src={ logo } alt="{ name }"/>
+                                <a if={ profile.length > 0 } href={ profile }><p>{ name }</p></a>
+                                <p if={ profile.length == 0 }>{ name }</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" if={ gos.length == 0 }>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    No organisations found.
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>{{ 'partner_page_NGOs'|common_text_optional|default:'NGOs' }}</h3>
+                </div>
+            </div>
+            <div class="row" if={ ngos.length != 0 }>
+                <div each={ ngos } data={ this } class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="partner-board" href="{ profile }">
+                        <div class="partner-board-item">
+                            <a href={ profile }>
+                                <img if={logo} src={ logo } alt="{ name }"/>
+                                <a if={ profile.length > 0 } href={ profile }><p>{ name }</p></a>
+                                <p if={ profile.length == 0 }>{ name }</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" if={ ngos.length == 0 }>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    No organisations found.
+                </div>
+            </div>
+
+        </div><!-- End of the partners list -->
+    </div><!-- End of the partners cards section -->
+
+{% include 'tags/partner_list.js' %}
+    <style>
+        .search-wrapper {
+            float: right;
+            max-width: 300px;
+        }
+    </style>
+
+</partner_list>

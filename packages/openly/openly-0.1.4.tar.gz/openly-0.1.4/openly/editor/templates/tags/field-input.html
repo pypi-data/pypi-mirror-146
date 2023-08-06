@@ -1,0 +1,21 @@
+<field-input>
+
+    <div class="{classes.outer || classes.formgroup}">
+
+        <label if={!opts.hide_label} class={classes.label}>
+           { label }
+            <help-popover-field></help-popover-field>
+            <br if="{!opts.help_popover_content}">
+            <label-required-field></label-required-field>
+            <label-info-field></label-info-field>
+        </label>
+
+        <div class="{classes.input}">
+            <input class="form-control textarea" type='{opts.input_type || "text"}' name="{opts.fieldname}" oninput={set} onkeypress={block_enter} value="{data}"
+            step={opts.input_step} max={opts.input_max} min={opts.input_min} readonly='{opts.readonly}'>
+            <validation-error-list if={value_has_changed || opts.ValidationMixin.show_as_changed}></validation-error-list>
+            <help-text/>
+        </div>
+    </div>
+{%  include "tags/field-input.js" %}
+</field-input>

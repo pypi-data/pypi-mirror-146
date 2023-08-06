@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: 2019-06-02 14:03+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid " Optional"
+msgstr "Tanlash mumkin"
+
+msgid " Required Field"
+msgstr "Talab qilingan satr"
+
+msgid "About"
+msgstr "haqida"
+
+msgid "About Us"
+msgstr "Biz haqimizda"
+
+msgid "Activities"
+msgstr "Faoliyat yo'nalishlari"
+
+msgid "Add A New Team Member"
+msgstr "Yangi komanda a'zosini qo'shish"
+
+msgid "Add People"
+msgstr "Odamlarni qo'shish"
+
+msgid "Background"
+msgstr "Umumiy ma'lumotlar"
+
+msgid "Cancel"
+msgstr "Bekor qilish"
+
+msgid "Change Banner"
+msgstr "Bannerni o'zgartirish"
+
+msgid "Change Logo"
+msgstr "Logotipni o'zgartirish"
+
+msgid "Character count"
+msgstr "Simvollar soni"
+
+msgid "Choose Image"
+msgstr "Suratni tanlash"
+
+msgid "Close"
+msgstr "Yopish"
+
+msgid "Contact Information"
+msgstr "Aloqa uchun ma'lumot"
+
+msgid "Contact details"
+msgstr "Aloqa uchun ma'lumotlar"
+
+msgid "Delete"
+msgstr "O'chirish"
+
+msgid "E-Mail"
+msgstr "Elektron pochta"
+
+msgid "Edit Person"
+msgstr "Shaxsni tahrir qilish"
+
+msgid "Email Address"
+msgstr "Elektron pochta"
+
+msgid "Facebook Name"
+msgstr "Feysbukdagi ism"
+
+msgid "For interactivity and display of your social networking please provide your organisation’s costumised links."
+msgstr "Interaktivlik va ijtimoiy tarmoqni namoyish qilish uchun tashkilotingizning moslashtirilgan iqtiboslarini taqdim eting."
+
+msgid "Locations"
+msgstr "Joylar"
+
+msgid "Name -"
+msgstr "Ism-"
+
+msgid "Nutrition Specialist"
+msgstr "Oziqlanish bo'yicha mutaxassis"
+
+msgid "Office Address"
+msgstr "Idora manzili"
+
+msgid "Office Number"
+msgstr "Idora telefoni"
+
+msgid "Our Activities"
+msgstr "Bizning faoliyat"
+
+msgid "Our People"
+msgstr "Bizning odamlar"
+
+msgid "People"
+msgstr "Odamlar"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Phone Number"
+msgstr "Telefon raqami"
+
+msgid "Position"
+msgstr "Lavozim"
+
+msgid "Publish"
+msgstr "Chop etish"
+
+msgid "Save"
+msgstr "Saqlash"
+
+msgid "Since your cover photo goes across the entire width of your profile, the image you pick should be at least 1500 pixels wide. The image should be formatted as a JPEG or PNG file."
+msgstr "Muqova rasmingiz sizning profilingizning butun kengligini qamrab olganligi sababli  siz tanlagan rasm kamida 1500 piksel kenglikda bo'lishi kerak. Tasvirni JPEG yoki PNG fayli sifatida formatlash kerak."
+
+msgid "Social Network"
+msgstr "Ijtimoiy tarmoq"
+
+msgid "The map below shows where the activities for this organisation are currently implemented."
+msgstr "Quyidagi xarita ushbu tashkilotning faoliyati qaerda amalga oshirilishi"
+
+msgid "The photo has to be 120X120px, it has to be in jpg or png formats and not exceed the 200kb."
+msgstr "Surat 120x120 pikselli, jpg yoki png formatida bo'lib, 200kBdan katta bo'lmasligi lozim."
+
+msgid "These are some of this organisation&apos;s key team members."
+msgstr "Ular ushbu tashkilotning asosiy xodimlari/komandasi a'zolari."
+
+msgid "These are this organisation&apos;s activities."
+msgstr "Bu ushbu tashkilotning faoliyati"
+
+msgid "Twitter Handle"
+msgstr "Twitter ilmog'i"
+
+msgid "Upload Photo"
+msgstr "Suratni yuklash"
+
+msgid "Upload banner image"
+msgstr "Banner suratini yuklash"
+
+msgid "Upload persons photo"
+msgstr "Shaxsning suratini yuklash"
+
+msgid "Website"
+msgstr "Veb-sahifa (vebsayt)"
+
+msgid "of"
+msgstr "ning"
+
+msgid "see less"
+msgstr "Kamroq ko'rish"
+
+msgid "see more"
+msgstr "Ko'proq ko'rish"

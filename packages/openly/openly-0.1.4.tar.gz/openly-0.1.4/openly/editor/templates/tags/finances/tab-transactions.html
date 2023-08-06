@@ -1,0 +1,392 @@
+{% load i18n %}
+{% load ifsetting %}
+
+<tab-transactions>
+    <div class="row">
+        <div class="background-editor col-xs-12">
+            <div data-is="tab-transactions-header" totals='{totals}'></div>
+            <div data-is="tab-transactions-commitments" transactions={commitments}></div>
+            <div data-is="tab-transactions-received-funds" transactions={received_funds}></div>
+            <div data-is="tab-transactions-spent" transactions={spent}></div>
+        </div>
+    </div>
+    <style scoped>
+        thead > tr { font-weight: 600 !important; }
+    </style>
+    var tag = this;
+    tag.mixin('TabMixin');
+    tag.store = stores.transactionStore;
+    tag.transactions = tag.store[tag.store.el]
+
+    window.modals = {
+        commitment: riot.mount('tab-transactions-add-commitment-modal')[0],
+        incoming_funds: riot.mount('tab-transactions-add-incoming-funds-modal')[0],
+        transaction: riot.mount('tab-transactions-add-transaction-modal')[0],
+        sync_update: riot.mount('tab-iati-sync-confirm-update-modal')[0],
+        sync_delete: riot.mount('tab-iati-sync-confirm-delete-modal')[0],
+        update_iati_link: riot.mount('tab-iati-sync-update-link-modal')[0],
+    }
+
+    function refreshData(){
+
+        function sumValue(objects){return _(objects).map('usd_value').map(_.toNumber).sum();}
+        function sortValue(objects){return _.sortBy(objects, function(m){return _.toNumber(m.usd_value)}).reverse();}
+
+        tag.transactions = tag.store[tag.store.el]
+        tag.commitments = sortValue(_.filter(tag.transactions, function(t){return t.transaction_type === 'C'}));
+        tag.spent = sortValue(_.filter(tag.transactions, function(t){return t.transaction_type === 'D' || t.transaction_type === 'E'}));
+        tag.received_funds = sortValue(_.filter(tag.transactions, function(t){return t.transaction_type === 'IF'}));
+
+        tag.totals = {
+            commitments : sumValue(tag.commitments),
+            received_funds :  sumValue(tag.received_funds),
+            spent: sumValue(tag.spent)
+        }
+        var makeSyncActivitiesRequest = function(job){
+            var url = "{% url 'oipa_activity' %}" + data.activity.iati_identifier + '?celerize';
+            if (job) { url = url + '&job=' + job}
+            var request = $.ajax({
+                type: 'GET',
+                url: url,
+                data: {'openly_id': data.activity.id},
+                headers: { 'X-CSRFTOKEN': window.csrf_token }
+            });
+            request.done(function(res){
+                if (request.status == 202){
+                    /* 2-second Loop on a "202:Accepted" return code */
+                    return setTimeout(function(){makeSyncActivitiesRequest(res.job)}, 2000); 
+                } else {
+                    // set iati activity and transaction data from responce
+                    data.iati_data.link_info = res['link_info'];
+                    tag.update();
+                }
+            })
+        }
+        makeSyncActivitiesRequest();
+        tag.update();
+    };
+
+    tag.has_changed = function(){ return false };
+
+    {% ifsetting OIPA_SYNC_ENABLED %}
+        tag.iati_commitments_disabled = (data.iati_data.link_info.oipa_fields.indexOf("C") != -1);
+        tag.iati_disbursements_disabled = (data.iati_data.link_info.oipa_fields.indexOf("OF") != -1);
+        tag.iati_other_disabled = (data.iati_data.link_info.oipa_fields.indexOf("IF") != -1);
+    {% else %}
+        tag.iati_commitments_disabled = false;
+        tag.iati_disbursements_disabled = false;
+        tag.iati_other_disabled = false;
+    {% endifsetting %}
+
+    tag.on('before-mount', refreshData);
+    tag.on('mount', function(){tag.store.on(tag.store.el+'_changed', refreshData);})
+    tag.on('unmount', function(){tag.store.off(tag.store.el+'_changed', refreshData);})
+
+    $(document).ready(function() {
+        $('tr th:contains("Date")').css('min-width', '82px');
+        var sortableTables = ['#transactions-committed-table', '#transactions-received-table', '#transactions-spent-table'];
+        sortableTables.forEach(function(tableId) {
+            $(tableId + ' thead th').each(function(col) {
+                $(this).hover(
+                    function() {
+                        $(this).addClass('focus');
+                    },
+                    function() {
+                        $(this).removeClass('focus');
+                    }
+                );
+
+                $(this).click(function() {
+                    if ($(this).is('.asc')) {
+                        $(this).removeClass('asc');
+                        $(this).addClass('desc selected');
+                        sortOrder = -1;
+                    } else {
+                        $(this).addClass('asc selected');
+                        $(this).removeClass('desc');
+                        sortOrder = 1;
+                    }
+                    $(this).siblings().removeClass('asc selected');
+                    $(this).siblings().removeClass('desc selected');
+
+                    var arrData = $(tableId).find('tbody >tr:has(td)').get();
+
+                    arrData.sort(function(a, b) {
+                        var val1 = $(a).children('td').eq(col).text().toUpperCase().trim();
+                        var val2 = $(b).children('td').eq(col).text().toUpperCase().trim();
+                        var val1_float = parseFloat(val1.slice(4, ).replace(/,/g , "" ));
+                        var val2_float = parseFloat(val2.slice(4, ).replace(/,/g , "" ));
+                        try {
+                            var val1_date = new Date(val1);
+                            var val2_date = new Date(val2);
+                        } catch(e) {
+                            var val1_date = 0;
+                            var val2_date = 0;
+                        }
+
+                        if (val1_float >= 0 && val2_float >= 0) {
+                            return sortOrder == 1 ? val1_float - val2_float : val2_float - val1_float;
+                        } else if (val1_date != 0 && val2_date != 0) {
+                            return sortOrder == 1 ? val1_date - val2_date : val2_date - val1_date;
+                        } else {
+                            return (val1 < val2) ? -sortOrder : (val1 > val2) ? sortOrder : 0;
+                        }
+                    });
+
+                    $.each(arrData, function(index, row) { $(tableId + ' tbody').append(row); });
+                });
+            });
+        });
+    });
+</tab-transactions>
+
+<tab-transactions-header>
+    <div class="row">
+        <div class="transaction-stats-panel">
+            <div class="col col-xs-4">
+                <p>Total commitment</p>
+                <h2 class="editor-stat">{totals.commitments}</h2>
+            </div>
+
+            <div class="col col-xs-4">
+                <p>Total incoming funds</p>
+                <h2 class="editor-stat">{totals.received_funds}</h2>
+            </div>
+
+            <div class="col col-xs-4">
+                <p>Total spent</p>
+                <h2 class="editor-stat">{totals.spent}</h2>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .row {padding-left: 30px; padding-right: 30px;}
+    </style>
+    var tag = this;
+    tag.totals = {};
+
+    tag.on('before-mount', function(){
+        _.map(tag.opts.totals, function(v, k){
+            tag.totals[k] = accounting.formatMoney(v, 'USD ', 0)
+        })
+    })
+    tag.on('update', function(){
+        _.map(tag.opts.totals, function(v, k){
+            tag.totals[k] = accounting.formatMoney(v, 'USD ', 0)
+        })
+    })
+
+</tab-transactions-header>
+
+<tab-transactions-commitments>
+    <div class="row no-margin">
+        <div class="transaction-set">
+            <div class="col-xs-12" if="{!opts.transactions.length}">
+                <iati-sync-locked-transactions if={parent.iati_commitments_disabled}></iati-sync-locked-transactions>
+                <h5 class="page-header">How much have you allocated for the project?</h5>
+                <div class="center-wrapper">
+                    <button if={!parent.iati_commitments_disabled} class="btn btn-large btn-default" onclick="{toggle_modal}">Add a commitment transaction</button>
+                </div>
+                <p class="text-center help-text">There are no financial commitments added to this activity</p>
+            </div>
+            <div class="col-xs-12" if="{opts.transactions.length}">
+                <iati-sync-locked-transactions if={parent.iati_commitments_disabled}></iati-sync-locked-transactions>
+                <h5 class="page-header">Funds allocated to this activity</h5>
+                <table id="transactions-committed-table" data-is='transactions-table' class="table" transactions='{opts.transactions}' editmodal='{window.modals.commitment}' fields="{['transaction_type', 'finance_type', 'aid_type', 'provider_organisation', 'receiver_organisation', 'value']}"></table>
+                <a class="add-row" onclick="{toggle_modal}" if={!parent.iati_commitments_disabled}>Add another commitment</a>
+            </div>
+        </div>
+    </div>
+    this.toggle_modal = function(){window.modals.commitment.toggle()};
+</tab-transactions-commitments>
+
+<tab-transactions-received-funds>
+    <div class="row no-margin">
+        <div class="transaction-set">
+            <div class="col-xs-12" if="{!opts.transactions.length}">
+                <iati-sync-locked-transactions if={parent.iati_other_disabled}></iati-sync-locked-transactions>
+                <h5 class="page-header">Did you receive funds from another donor?</h5>
+                <div class="center-wrapper">
+                    <button if={!parent.iati_other_disabled} class="btn btn-large btn-default" onclick="{toggle_modal}">Add funds received from another donor</button>
+                </div>
+                <p class="text-center help-text">There are no funds from another donor added to this activity</p>
+            </div>
+
+            <div class="col-xs-12" if="{opts.transactions.length}">
+                <iati-sync-locked-transactions if={parent.iati_other_disabled}></iati-sync-locked-transactions>
+                <h5 class="page-header">Funds received from other donors</h5>
+                <table id="transactions-received-table" data-is='transactions-table' class="table" transactions='{opts.transactions}' editmodal='{window.modals.incoming_funds}' fields="{['transaction_type', 'finance_type', 'aid_type', 'provider_organisation', 'receiver_organisation', 'provider_activity', 'transaction_date', 'value']}"></table>
+                <a class="add-row" onclick="{toggle_modal}" if={!parent.iati_other_disabled}>Add another incoming fund</a>
+            </div>
+        </div>
+    </div>
+    this.toggle_modal = function(){window.modals.incoming_funds.toggle()};
+</tab-transactions-received-funds>
+
+<tab-transactions-spent>
+    <div class="row no-margin">
+        <div class="transaction-set">
+            <div class="col-xs-12" if="{!opts.transactions.length}">
+                <iati-sync-locked-transactions if={parent.iati_disbursements_disabled}></iati-sync-locked-transactions>
+                <h5 class="page-header">How much have you spent?</h5>
+                <div class="center-wrapper">
+                    <button if={!parent.iati_disbursements_disabled} class="btn btn-large btn-default" onclick="{toggle_modal}">Add a disbursement/expenditure transaction</button>
+                </div>
+                <p class="text-center help-text">There are no disbursements or expenditures added to this activity</p>
+            </div>
+
+            <div class="col-xs-12" if="{opts.transactions.length}">
+                <iati-sync-locked-transactions if={parent.iati_disbursements_disabled}></iati-sync-locked-transactions>
+                <h5 class="page-header">Financial Transactions</h5>
+                <table id="transactions-spent-table" data-is='transactions-table' class="table" transactions='{opts.transactions}' editmodal='{window.modals.transaction}' fields="{['transaction_type', 'finance_type', 'aid_type', 'provider_organisation', 'receiver_organisation', 'transaction_date', 'value']}"></table>
+                <a class="add-row" onclick="{toggle_modal}" if={!parent.iati_disbursements_disabled}>Add another disbursement/expenditure</a>
+            </div>
+        </div>
+    </div>
+    this.toggle_modal = function(){window.modals.transaction.toggle()};
+</tab-transactions-spent>
+
+<transactions-table>
+    <thead><tr>
+        <th each='{field in fields}'>{fieldHeader(field)}</th>
+        <th if={show_edit}>{% comment %} Edit {% endcomment %}</th>
+    </tr></thead>
+    <tbody>
+        <tr each="{transaction in opts.transactions}">
+            <td each='{field in fields}'>
+                <div if={field == "value" && use_flags} class="currency-flag currency-flag-{_.lowerCase(transaction.currency)}"></div>
+                {fieldContent(parent.transaction, field)}</th>
+            <td if={show_edit} class='edit-field'>
+                <button show={fieldContent(transaction, 'iati_disabled')} class="btn edit-button btn-default btn-sm" onclick='{edit}'>View</button>
+                <button show={!fieldContent(transaction, 'iati_disabled' )} class="btn edit-button btn-default btn-sm" onclick='{edit}'>Edit</button>
+                <button show={!fieldContent(transaction, 'iati_disabled')} if={show_delete} class="btn edit-button btn-danger btn-sm" onclick='{delete}'>Delete</button>
+            </td>
+        </tr>
+    </tbody>
+
+    <style scoped>
+        td.edit-field {
+            text-align:right;
+            min-width: 120px;
+            max-width: 121px;
+        }
+        .edit-button,.delete-button {background-color: white; align:right}
+        .delete-button:hover {background-color: #ec971f;}
+        td:nth-child(3) { max-width: 86px; min-width: 85px; }
+    </style>
+
+    var tag = this;
+    var fieldHeaders;
+    var fieldContentFunctions;
+    tag.show_edit = true;
+    tag.show_delete = true;
+
+    {% ifsetting OIPA_SYNC_ENABLED %}
+        tag.iati_commitments_disabled = (data.iati_data.link_info.oipa_fields.indexOf("C") != -1);
+        tag.iati_disbursements_disabled = (data.iati_data.link_info.oipa_fields.indexOf("OF") != -1);
+        tag.iati_other_disabled = (data.iati_data.link_info.oipa_fields.indexOf("IF") != -1);
+    {% else %}
+        tag.iati_commitments_disabled = false;
+        tag.iati_disbursements_disabled = false;
+        tag.iati_other_disabled = false;
+    {% endifsetting %}
+
+    /* Pick which attributes of a transaction you would like to show */
+    var all_fields = ['id', 'activity', 'value', 'finance_type', 'provider_organisation', 'provider_activity', 'receiver_organisation', 'currency', 'value_date', 'transaction_date', 'transaction_type', 'aid_type', 'flow_type', 'finance_type', 'tied_status', 'iati_disabled']
+    tag.fields = opts.fields || all_fields;
+    tag.use_flags = opts.use_flags || false;
+    tag.edit = function(e){
+        e.item.transaction;
+        tag.opts.editmodal.toggle(e.item.transaction);
+    }
+
+    tag.delete = function(e){
+        /* Raise modal */
+        var confirm = function(){ stores.transactionStore.delete(tag, e.item.transaction);};
+        var content = 'This transaction will be deleted permanently';
+        RiotControl.trigger('confirm-delete', { confirm: confirm, content: content })
+    }
+
+    /* 'fieldHeader' and 'fieldContent' functions */
+
+    fieldHeaders = {
+        activity: 'Activity',
+        transaction_type: 'Type',
+        finance_type: 'Finance Type',
+        aid_type: 'Aid Type',
+        value: 'Amount',
+        receiver_organisation: 'Receiver',
+        provider_organisation: 'Provider',
+        provider_activity: 'Activity',
+        transaction_date: 'Date',
+        description: 'Description',
+        usd_value: 'Amount in USD'
+    }
+
+    fieldContentFunctions = {
+        transaction_type: function(t){
+            return _.find(choices.transaction_type, {code: t.transaction_type}).code},
+        aid_type: function(t){
+            return _.find(choices.aid_type, function(at){return at[0] === t.aid_type})[2]},
+        finance_type: function(t){
+            return _.find(choices.finance_type, function(ft){return ft[0] === t.finance_type})[2]},
+        value: function(t){ return accounting.formatMoney(t.value, t.currency ? t.currency +' ' : '', 2)},
+        usd_value: function(t){ return accounting.formatMoney(t.usd_value, '$', 2)},
+        provider_organisation: function(t){
+            /* This relies on magic-number indexing. It's not ideal, we ought to use JSON for organisation choices */
+            var code = t.provider_organisation;
+            if (_.isNull(code)) {return 'None'}
+            else {return _.find(choices.organisation, function(o){return o[0] === code})[3]};
+        },
+        receiver_organisation: function(t){
+            /* This relies on magic-number indexing. It's not ideal, we ought to use JSON for organisation choices */
+            var code = t.receiver_organisation;
+            if (_.isNull(code)) {return 'None'}
+            else {return _.find(choices.organisation, function(o){return o[0] === code})[3]};
+        },
+        provider_activity: function(t){
+            /* This relies on magic-number indexing. It's not ideal, we ought to use JSON for activity choices */
+            var code = t.provider_activity;
+            if (_.isNull(code)) {return 'None'}
+            else {return _.find(choices.activity, function(o){return o[0] === code})[1]}
+        },
+        iati_disabled: function(t){
+            if (t.transaction_type == "C") {
+                if (tag.iati_commitments_disabled) { return true }
+            }
+            else if (t.transaction_type == "D" || t.transaction_type == "E") {
+                if (tag.iati_disbursements_disabled) { return true }
+            }
+            else if (tag.iati_other_disabled) { return true }
+            else { return false }
+        }
+    };
+
+    tag.fieldHeader = function(field){ return _.get(fieldHeaders, field, field) }
+    tag.fieldContent = function(transaction, field){return _.invoke(fieldContentFunctions, field, transaction) || _.get(transaction, field) }
+
+</transactions-table>
+
+<iati-sync-locked-transactions>
+    <span class="right-locked">
+        <img id="lock-img" src="/static/img/lock.svg">
+        &nbsp;IATI Sync active
+    </span>
+    <style>
+        .right-locked {
+            float: right;
+            position: absolute;
+            top: 18px;
+            right: 25px;
+            font-size: 14px;
+            color: grey;
+        }
+        #lock-img {
+            width: 15px;
+            padding-bottom: 5px;
+        }
+    </style>
+</iati-sync-locked-transactions>
+
+{% include 'tags/finances/tab-transactions-modals.html' %}

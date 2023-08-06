@@ -1,0 +1,320 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-08 11:00+0900\n"
+"PO-Revision-Date: 2019-06-01 11:32+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#, fuzzy
+#| msgid "Location"
+msgid "Locations"
+msgstr "Joylashgan manzil"
+
+#, fuzzy, python-format
+#| msgid "The map below shows where this activity is implemented."
+msgid ""
+"The map below shows where this %(activity_singular_lower)s is implemented."
+msgstr ""
+"Quyidagi xarita bu faoliyatning qayerda amalga oshirilganligini ko'rsatadi."
+
+msgid "About"
+msgstr "Haqida"
+
+msgid "Location"
+msgstr "Joylashgan manzil"
+
+msgid "Finances"
+msgstr ""
+
+msgid "Documents"
+msgstr "Hujjatlar"
+
+msgid "Contacts"
+msgstr "Aloqa uchun ma'lumot"
+
+#, python-format
+msgid "Profile page for %(activity_title)s"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "Edit activity"
+msgid "Edit %(activity_singular)s"
+msgstr "Faoliyatni tahrir qilish"
+
+msgid "Edit Banner"
+msgstr "Bannerni tahrir qilish"
+
+msgid "Add Banner"
+msgstr "Banner qo'shish"
+
+msgid "Print"
+msgstr ""
+
+msgid "Status:"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "This is the main development area addressed by this activity."
+msgid ""
+"This is the main development area addressed by this "
+"%(activity_singular_lower)s."
+msgstr "Bu ushbu faoliyat qaratilgan asosiy rivojlanish sohasidir."
+
+#, fuzzy, python-format
+#| msgid "These are the main development areas addressed by this activity."
+msgid ""
+"These are the main development areas addressed by this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Bular ushbu faoliyat qaratilgan asosiy rivojlanish  yo'nalishlari hisoblanadi"
+
+#, python-format
+msgid "%(activity_singular)s Description"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "Activity Objective"
+msgid "%(activity_singular)s Objective"
+msgstr "Faoliyat maqsadi"
+
+msgid "Target Groups"
+msgstr "Mo'ljaldagi guruhlar"
+
+msgid "Total Project Cost"
+msgstr ""
+
+#, fuzzy
+#| msgid "Implementing Partners"
+msgid "Implementing Government Agency"
+msgstr "Ijrochi hamkorlar"
+
+#, fuzzy, python-format
+#| msgid ""
+#| "This government entity is responsible for oversight or maintenance of "
+#| "this activity."
+msgid ""
+"This government entity is responsible for oversight or maintenance of this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Ushbu davlat idorasi umazku faoliyatni nazorat qilish yoki ta'minlash uchun "
+"mas'uldir."
+
+#, fuzzy, python-format
+#| msgid ""
+#| "These government entities are responsible for oversight or maintenance of "
+#| "this activity."
+msgid ""
+"These government entities are responsible for oversight or maintenance of\n"
+"                these %(activity_plural_lower)s."
+msgstr ""
+"Ushbu davlat idoralari mazkur faoliyatni nazorat qilish yoki ta'minlash "
+"uchun mas'uldirlar."
+
+msgid "Implementing Partners"
+msgstr "Ijrochi hamkorlar"
+
+#, fuzzy, python-format
+#| msgid ""
+#| "This organisation is principally responsible for delivering this activity."
+msgid ""
+"This organisation is principally responsible for delivering this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Bu tashkilot mazkur faoliyatni amalga oshirish uchun asosiy mas'ul tarafdir."
+
+#, fuzzy, python-format
+#| msgid ""
+#| "These organisations are principally responsible for delivering this "
+#| "activity."
+msgid ""
+"These organisations are principally responsible for delivering\n"
+"                these %(activity_plural_lower)s."
+msgstr ""
+"Ushbu tashkilotlar mazkur faoliyatni amalga oshirish uchun asosiy mas'ul "
+"tarafdir."
+
+msgid "Government Partners"
+msgstr "Hamkor davlat idoralari"
+
+msgid "Donors"
+msgstr "Donorlar"
+
+#, fuzzy, python-format
+#| msgid "This activity is funded by this donor."
+msgid "This %(activity_singular_lower)s is funded by this donor."
+msgstr "Ushbu faoliyat mazkur donor tomonidan moliyalashtiriladi."
+
+#, fuzzy, python-format
+#| msgid "This activity is funded by these donors."
+msgid "This %(activity_plural_lower)s is funded by these donors."
+msgstr "Ushbu faoliyat mazkur donorlar tomonidan moliyalashtiriladi"
+
+msgid "Upload banner image"
+msgstr "Banner rasmini yuklash"
+
+#, fuzzy
+#| msgid ""
+#| "Since your cover photo goes across the entire width of your profile, the "
+#| "image you pick should be at least 1500 pixels wide. The image should be "
+#| "formatted as a JPEG or PNG file."
+msgid ""
+"Since your cover photo goes across the entire width of your profile, the "
+"image you pick should be at least <strong>1500 pixels wide</strong>. The "
+"image should be formatted as a <strong>JPEG</strong> or <strong>PNG</strong> "
+"file."
+msgstr ""
+"Muqova rasmingiz sizning profilingizning butun kengligiyb qamragani sababli "
+"siz tanlagan rasm kamida 1500 piksel kenglikda bo'lishi kerak. Tasvirni JPEG "
+"yoki PNG fayli sifatida formatlash kerak."
+
+msgid "Close"
+msgstr "Yopish"
+
+msgid "Choose Image"
+msgstr "Suratni tanlash"
+
+msgid ""
+"The charts below present a financial overview of the assistance provided by "
+"the development partner."
+msgstr ""
+
+msgid "Total Commitment: "
+msgstr ""
+
+#, python-format
+msgid ""
+"Total committed budget for the duration of the %(activity_singular_lower)s. "
+"Calculated as the sum of all commitment transactions for this "
+"%(activity_singular_lower)s."
+msgstr ""
+
+msgid "Total Commitment USD: "
+msgstr ""
+
+msgid "Total Commitment above converted to US dollars."
+msgstr ""
+
+msgid "Finance Type(s): "
+msgstr ""
+
+msgid "Percent disbursed"
+msgstr ""
+
+msgid "Cumulative Commitments & Disbursements"
+msgstr ""
+
+#, python-format
+msgid ""
+"This chart shows the total cumulative assistance for all transactions "
+"associated with this %(activity_singular_lower)s."
+msgstr ""
+
+msgid "Transactions"
+msgstr ""
+
+#, python-format
+msgid ""
+"Transactions recording committed or actual funds flowing in or out of an aid "
+"%(activity_singular_lower)s"
+msgstr ""
+
+msgid "Aid Type"
+msgstr ""
+
+msgid "Finance Type"
+msgstr ""
+
+msgid "Provider"
+msgstr ""
+
+msgid "Receiver"
+msgstr ""
+
+msgid "Tied"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+#, python-format
+msgid " The %(activity_singular_lower)s aligns with the following strategies: "
+msgstr ""
+
+msgid "Contact Details"
+msgstr "Aloqa uchun ma'lumotlar"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Email"
+msgstr "Elektron pochta"
+
+msgid "Website"
+msgstr "Veb sahifa"
+
+msgid "Address"
+msgstr "Manzil"
+
+msgid "see less"
+msgstr "kichikroq"
+
+msgid "see more"
+msgstr "ko'proq ko'rish"
+
+msgid "Show less"
+msgstr ""
+
+msgid "Show more"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid ""
+#| "These are the key documents and images related to this activity. Select a "
+#| "document title to download."
+msgid ""
+"These are the key documents and images related to this "
+"%(activity_singular_lower)s. Select a document title to download."
+msgstr ""
+"Bu ushbu faoliyatga doir asosiy hujjatlar va suratlardir.  Yuklab olish "
+"uchun hujjat nomini tanlang."
+
+#~ msgid "Activity Locations"
+#~ msgstr "Faoliyat joylari"
+
+#~ msgid ""
+#~ "Information below generally contains a description of the activity, as "
+#~ "well as activity objectives and target groups."
+#~ msgstr ""
+#~ "Quyidagi ma'lumotlar odatda faoliyatning tavsifi, shuningdek, faoliyat "
+#~ "maqsadlari va maqsadli guruhlarni o'z ichiga oladi."
+
+#~ msgid "Key Activity Documents"
+#~ msgstr "Asosiy faoliyatga oid hujjatlar "
+
+#~ msgid "Profile"
+#~ msgstr "Profil"
+
+#~ msgid "These are some of this activity&apos;s key team members."
+#~ msgstr "Bular ayrim faoliyat yo'nalishlari bo'yicha asosiy xodimlardir."

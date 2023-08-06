@@ -1,0 +1,218 @@
+{% load i18n %}
+
+var ReviewModalMixin = {
+    show: function () {
+        var modal = this;
+        $('.modal', modal.root).modal('show');
+        modal.update();
+    },
+    hide: function () {
+        var modal = this;
+        $('.modal', modal.root).modal('hide');
+        modal.update();
+    },
+};
+
+<submit-for-review-modal>
+    <div class="modal fade in review-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <span if="{parent.store.publish_errors.length}">
+                        <h3> {% trans "Additional data required" %} </h3>
+                        <p> {% trans "You cannot submit this activity for review before you:" %} </p>
+                        <ul>
+                            <li each="{error, index in parent.store.publish_errors}">
+                                { error }
+                            </li>
+                        </ul>
+                    </span>
+
+                    <span if="{parent.store.publish_errors.length == 0}">
+                        <h3> {% trans "Submit for review" %} </h3>
+                        {% blocktrans %} You are about to <span class="bold">submit</span> this {{activity_singular_lower}} to be reviewed and approved by Government Partners prior to publication. Based on this {{activity_singular_lower}}, the following organisations will be notified: {% endblocktrans %}
+                        <ul>
+                            <li> {admin_organisation_name} ({% trans "mandatory" %})
+                            <li each="{organisation, index in parent.store.endorsers}">
+                                { organisation.name }
+                            </li>
+                        </ul>
+                        <p> {% trans "To change this list please change the organisations listed as accountable partners in the Organisations tab." %} </p>
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="{ hide }"> {% trans "Cancel" %} </button>
+                    <button if="{parent.store.publish_errors.length == 0}" disabled={parent.loading} class="btn btn-primary"
+                        target_status="review" onclick="{parent.change_status}">
+                        <span if="{!parent.loading}"> {% trans 'Submit for review' %} </span>
+                        <span if="{parent.loading}"> {% trans 'Loading...' %} </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    this.mixin(ReviewModalMixin);
+</submit-for-review-modal>
+
+<cancel-review-modal>
+    <div class="modal fade in review-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3> {% trans "Cancel review" %} </h3>
+                    {% blocktrans %} You are about to <span class="bold">cancel</span> the review of this {{activity_singular_lower}}. This will revert the status of the {{activity_singular_lower}} to draft. {% endblocktrans %}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="{ hide }"> {% trans "No, Don't Cancel" %} </button>
+                    <button type="button" disabled={parent.loading} class="btn btn-primary" target_status="draft" onclick="{parent.change_status}">
+                        <span if="{!parent.loading}"> {% trans 'Yes, Cancel' %} </span>
+                        <span if="{parent.loading}"> {% trans 'Loading...' %} </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    this.mixin(ReviewModalMixin);
+</cancel-review-modal>
+
+<endorse-modal>
+    <div if="{parent.endorser_organisation}" class="modal fade in review-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <span if="{!parent.endorser_organisation.endorsed}">
+                    <h3> {% trans "Endorse Activity" %} </h3>
+                    {% blocktrans %} You are about to <span class="bold">endorse</span> the {{activity_singular_lower}} indicating that you are satisfied with the information provided. {% endblocktrans %}
+                    </span>
+
+                    <span if="{parent.endorser_organisation.endorsed}">
+                    <h3> {% trans "Remove Endorsement" %} </h3>
+                    {% blocktrans %} You are about to <span class="bold">remove</span> your endorsement of the {{activity_singular_lower}}, indicating that the {{activity_singular_lower}} information is not sufficient. Please add a comment to explain your decision. {% endblocktrans %}
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="{ hide }">
+                        <span if="{!parent.endorser_organisation.endorsed}"> {% trans "No, Don't Endorse" %} </span>
+                        <span if="{parent.endorser_organisation.endorsed}"> {% trans "No, Don't Remove" %} </span>
+                    </button>
+                    <button type="button" disabled={parent.loading} class="btn btn-primary" onclick="{parent.toggle_endorsement}">
+                        <span if="{!parent.endorser_organisation.endorsed && !parent.loading}"> {% trans 'Yes, Endorse' %} </span>
+                        <span if="{parent.endorser_organisation.endorsed && !parent.loading}"> {% trans 'Yes, Remove' %} </span>
+                        <span if="{parent.loading}"> {% trans 'Loading...' %} </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    this.mixin(ReviewModalMixin);
+</endorse-modal>
+
+<approve-review-modal>
+    <div class="modal fade in review-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <span if="{parent.store.publish_errors.length}">
+                        <h3> {% trans "Additional data required" %} </h3>
+                        <p> {% blocktrans %}You cannot publish this {{activity_singular_lower}} for review before you{% endblocktrans %}:</p>
+                        <ul>
+                            <li each="{error, index in parent.store.publish_errors}">
+                                { error }
+                            </li>
+                        </ul>
+                    </span>
+
+                    <span if="{parent.store.publish_errors.length === 0}">
+                        <h3> {% blocktrans %}Approve &amp; Publish {{activity_singular}}{% endblocktrans %} </h3>
+                        {% blocktrans %} You are about to <span class="bold">approve and publish</span> the {{activity_singular_lower}} indicating that you are satisfied with the information provided. This will make the {{activity_singular_lower}} information publicly available and the information contained will appear in your reports. {% endblocktrans %}
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <span if="{parent.store.publish_errors.length}">
+                        <button type="button" class="btn btn-default" onclick="{ hide }"> {% trans "Return" %} </button>
+                    </span>
+
+                    <span if="{parent.store.publish_errors.length === 0}">
+                        <button type="button" class="btn btn-default" onclick="{ hide }"> {% trans "No, Don't Approve" %} </button>
+                        <button type="button" disabled={parent.loading} class="btn btn-primary" target_status="published" onclick="{parent.change_status}">
+                            <span if="{!parent.loading}"> {% trans 'Yes, Approve' %} </span>
+                            <span if="{parent.loading}"> {% trans 'Loading...' %} </span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    this.mixin(ReviewModalMixin);
+</approve-review-modal>
+
+<cancel-published-modal>
+    <div class="modal fade in review-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3> {% trans "Change Activity Status" %} </h3>
+                    <p class="bold"> {% trans "Send back to Review" %} </p>
+                    <p>{% blocktrans %}Sending the activity back to Review status will hide the {{activity_singular_lower}} from the public site and reports. It will also alert each party to review the {{activity_singular_lower}}. Please note that it does not remove prior endorsements{% endblocktrans %}</p>
+                    <button type="button" disabled={parent.loading} class="btn btn-primary" target_status="review" onclick="{parent.change_status}">
+                        <span if="{!parent.loading}"> {% trans 'Yes, send back to Review' %} </span>
+                        <span if="{parent.loading}"> {% trans 'Loading...' %} </span>
+                    </button>
+
+                    <hr/>
+
+                    <p class="bold"> {% trans "Send back to Draft" %} </p>
+                    <p>{% blocktrans %}Sending the {{activity_singular_lower}} back to Draft status will hide the activity from the public site and reports. It will also remove prior endorsements for the {{activity_singular_lower}}{% endblocktrans %}</p>
+                    <button type="button" disabled={parent.loading} class="btn btn-primary" target_status="draft" onclick="{parent.change_status}">
+                        <span if="{!parent.loading}"> {% trans 'Yes, send back to Draft' %} </span>
+                        <span if="{parent.loading}"> {% trans 'Loading...' %} </span>
+                    </button>
+                    <hr/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="{ hide }"> {% trans "Cancel" %} </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    this.mixin(ReviewModalMixin);
+</cancel-published-modal>
+
+<review-buttons>
+    <div class="review-buttons-container">
+        <button class="btn btn-primary btn-small pull-right" type="button" disabled="{loading}"
+            if="{is_admin_or_donor && (store.openly_status === 'blank' || store.openly_status === 'draft')}" target_modal="submit_for_review_modal" check_publish_errors onclick="{show_modal}">
+            <span if="{!loading}"> {% trans 'Submit for review' %} </span>
+            <span if="{loading}"> {% trans 'Loading...' %} </span>
+        </button>
+        <button id="approve-review-button" class="btn btn-primary pull-right" type="button" disabled="{loading}"
+            if="{store.openly_status == 'review' && can_publish}" target_modal="approve_review_modal" check_publish_errors onclick="{show_modal}">
+            {% trans "Approve &amp; Publish" %}
+        </button>
+        <button id="endorse-button" class="btn btn-primary pull-right" type="button" disabled="{loading}"
+            if="{(store.openly_status == 'review' || store.openly_status == 'published') && endorser_organisation}" target_modal="endorse_modal" onclick="{show_modal}">
+            <span if="{!endorser_organisation.endorsed}"> {% blocktrans %}Endorse {{activity_singular}}{% endblocktrans %} </span>
+            <span if="{endorser_organisation.endorsed}"> {% trans "Remove Endorsement" %} </span>
+        </button>
+        <button id="cancel-review-button" class="btn btn-grey pull-right" type="button" disabled="{loading}"
+            if="{is_admin_or_donor && store.openly_status == 'review'}" target_modal="cancel_review_modal" onclick="{show_modal}">
+            {% trans "Cancel review" %}
+        </button>
+        <button class="btn btn-primary pull-right btn-small change-activity-status" type="button" disabled="{loading}"
+            if="{store.openly_status == 'published' && is_admin_or_donor}" target_modal="cancel_published_modal" onclick="{show_modal}">
+            {% blocktrans %}Change {{activity_singular}} Status{% endblocktrans %}
+        </button>
+    </div>
+
+    <submit-for-review-modal ref="submit_for_review_modal"></submit-for-review-modal>
+    <cancel-review-modal ref="cancel_review_modal"></cancel-review-modal>
+    <endorse-modal ref="endorse_modal"></endorse-modal>
+    <approve-review-modal ref="approve_review_modal"></approve-review-modal>
+    <cancel-published-modal ref="cancel_published_modal"></cancel-published-modal>
+
+    <style>
+        button.change-activity-status {margin-left: 5px;}
+    </style>
+    {% include 'tags/review-buttons.js' %}
+
+</review-buttons>

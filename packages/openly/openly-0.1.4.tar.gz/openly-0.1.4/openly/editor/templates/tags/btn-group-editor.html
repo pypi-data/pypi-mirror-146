@@ -1,0 +1,36 @@
+{% load i18n %}
+
+<btn-group-editor>
+    <div class="pull-right {opts.id_save}">
+        <button id="{opts.id_save}" class="btn btn-large btn-primary" disabled="{disable_save}" onclick="{ save }">
+            {% trans "Save" %}
+        </button>
+        <button id="{opts.id_next}" class="btn btn-large btn-default" disabled="{disable_save}" onclick="{ next }">
+            {% trans "Save and Next" %}
+        </button>
+    </div>
+
+    {% include 'tags/btn-group-editor.js' %}
+    <style>
+        div.pull-right {margin-top: 10px;}
+    </style>
+</btn-group-editor>
+
+<btn-editor-next>
+    <div class="pull-right">
+        <button class="btn btn-large btn-default" onclick="{ next }">
+            {% trans "Next" %}
+        </button>
+    </div>
+
+    <style>
+        div.pull-right {margin-top: 10px;}
+    </style>
+    var tag = this;
+    tag.next = function () {
+        _.set(tag, 'parent.opts.ValidationMixin.allow_tab_change', true);
+        routeToTag.next();
+        _.unset(tag, 'parent.opts.ValidationMixin.allow_tab_change');
+    };
+
+</btn-editor-next>

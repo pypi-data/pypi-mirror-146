@@ -1,0 +1,129 @@
+{% load i18n %}
+{% load static %}
+{% load ifsetting %}
+
+
+<about_activity>
+    <div class="container" if={ mounted }>
+        <div class="row metadata-row hidden-print">
+            <div class="col-sm-8 metadata-title-column">
+                {% ifnotsetting ACTIVITY_PROFILE_HIDE_METADATA %}
+                <a href={ organisation_profile } class="org-profile-link">{ activity.reporting_organisation.name }</a>
+                <p class="activity-id no-padding">
+                    <strong>{ opts.project_name } ID:</strong> { activity.id }
+                    <span if={ activity.internal_identifier }> | <strong>Partner ID:</strong> { activity.internal_identifier }</span>
+                    <span if={ activity.iati_identifier }> | <strong>IATI ID:</strong> { activity.iati_identifier }</span>
+                    {% comment %} <span if={ activity.date_created }>| Date Created: { activity.date_created } </span> {% endcomment %}
+                    <span if={ activity.date_modified }><br/><strong>Last Updated:</strong> { activity.date_modified } </span>
+                </p>
+                {% endifnotsetting %}
+                <h1 class="activity-title">{ title }</h1>
+            </div>
+
+            <div class="col-sm-4 edition-container">
+                <div class="hidden-xs">
+                    <div class="align-right">
+                        {% if editor %}
+                        <a href="{% url 'edit_activity' activity.pk %}" class="btn btn-small btn-default">{% blocktrans %}Edit {{activity_singular}}{% endblocktrans %}</a>
+                        <button type="button" class="btn btn-small btn-default" id="edit-banner-btn" data-toggle="modal" data-target="#activity-banner-modal">
+                            {% if activity_profile.banner_image %} {% trans 'Edit Banner' %}
+                            {% else %} {% trans 'Add Banner' %}
+                            {% endif %}
+                        </button>
+                        {% endif %}
+                        {% ifnotsetting PROFILE_HIDE_PRINT_BUTTON %}
+                        <button onclick="javascript:window.print()" id="print-button" class="btn btn-small btn-default hidden-print">{% trans 'Print' %}</button>
+                        {% endifnotsetting %}
+                        {% block buttons_extra %}
+                            {# used by projectbank to add the "Project Factsheet" button #}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dates-background">
+    <div class="container" if={ mounted }>
+        <div class="row status-dates-row">
+            <div class="col-xs-12">
+                <div class="section-block">
+                    <div class="col-sm-3 col-xs-12 no-padding">
+                        <span class="date-label">{% trans 'Status:' %} </span>
+                        <span class="activity-profile-status">{ activity.activity_status.name } </span>
+                        {% if activity.activity_status.name_en == 'New' %}
+                        <a tabindex="0" role="button" class="ion-ios-help-outline dash-info" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{% blocktrans %}This means the project has no funding donor or developer company, or has not yet been tendered.{% endblocktrans %}" aria-label="help status"> </a>
+                        {% endif %}
+                    </div>
+                    <div class="col-sm-2 col-xs-6 date-container" if='{start_date.iso_date}'>
+                        <span class="date-label">{ start_date.type.name }:</span>
+                        <span class="activity-dates"> { start_date.display_date }</span>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 date-container end" if='{end_date.iso_date}'>
+                        <span class="date-label">{ end_date.type.name }:</span>
+                        <span class="activity-dates">{ end_date.display_date }</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container description-partners-container" if={ mounted }>
+        <div class="row description-partners-row">
+            <div class="col-sm-8 left-column">
+                <section id="about">
+                    <sectors sector_class="col-xs-12 list-row-margin" singular_help_text="{% blocktrans %}This is the main development area addressed by this {{activity_singular_lower}}.{% endblocktrans %}" plural_help_text="{% blocktrans %}These are the main development areas addressed by this {{activity_singular_lower}}.{% endblocktrans %}"></sectors>
+
+                    <virtual if={ description }>
+                    <h3>{% blocktrans %}{{activity_singular}} Description{% endblocktrans %}</h3>
+                    <description-field description={description}></description-field>
+                    </virtual>
+
+                    <virtual if={ objectives }>
+                    <h3>
+                        {% ifsetting ACTIVITY_OBJECTIVES_ARE_EXPECTED_BENEFITS %}
+                        {% blocktrans %}{{activity_singular}} Expected Benefits{% endblocktrans %}
+                        {% else %}
+                        {% blocktrans %}{{activity_singular}} Objectives{% endblocktrans %}
+                        {% endifsetting %}
+                    </h3>
+                    <description-field description={objectives}></description-field>
+                    </virtual>
+
+                    <virtual if={ target_groups }>
+                    <h3>{% blocktrans %}Target Groups{% endblocktrans %}</h3>
+                    <description-field description={target_groups}></description-field>
+                    </virtual>
+                </section>
+            </div>
+            <div class="col-sm-4 partners-column">
+                {% ifsetting ACTIVITY_PROFILE_SHOW_TOTAL_BUDGET %}
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>{% trans 'Total Project Cost' %}</h3>
+                        <div class='partners-list'>
+                            <p class="total-budget-value">{ activity.total_budget }</p>
+                        </div>
+                    </div>
+                </div>
+                {% endifsetting %}
+                {% block side_panel_extra %}
+                    {# used by projectbank to add pb-specific information #}
+                {% endblock %}
+                {% ifsetting ACTIVITY_PROFILE_GOVERNMENT_AGENCY %}
+                <partners data={ [activity] } partners_class="col-xs-12 no-padding list-row-margin" participating_org_type="Accountable" title="{% trans 'Implementing Government Agency' %}" partners={ partners } singular_help_text="{% blocktrans %}This government entity is responsible for oversight or maintenance of this {{activity_singular_lower}}.{% endblocktrans %}" plural_help_text="{% blocktrans %}These government entities are responsible for oversight or maintenance of
+                these {{activity_plural_lower}}.{% endblocktrans %}"></partners>
+                {% else %}
+                <partners data={ [activity] } partners_class="col-xs-12 no-padding list-row-margin" participating_org_type="Implementing" title="{% trans 'Implementing Partners' %}"  partners={ partners } singular_help_text="{% blocktrans %}This organisation is principally responsible for delivering this {{activity_singular_lower}}.{% endblocktrans %}" plural_help_text="{% blocktrans %}These organisations are principally responsible for delivering
+                these {{activity_plural_lower}}.{% endblocktrans %}" id="activity-sectors"></partners>
+                <partners data={ [activity] } partners_class="col-xs-12 no-padding list-row-margin" participating_org_type="Accountable" title="{% trans 'Government Partners' %}" partners={ partners } singular_help_text="{% blocktrans %}This government entity is responsible for oversight or maintenance of this {{activity_singular_lower}}.{% endblocktrans %}" plural_help_text="{% blocktrans %}These government entities are responsible for oversight or maintenance of
+                these {{activity_plural_lower}}.{% endblocktrans %}"></partners>
+                {% endifsetting %}
+                <partners class="funding-donors-list" data={ [activity] } partners_class="col-xs-12 no-padding list-row-margin" participating_org_type="Funding" title="{% trans 'Donors' %}" partners={ partners } singular_help_text="{% blocktrans %}A donor is a country or institution which provides funds for this {{activity_singular_lower}}.{% endblocktrans %}" plural_help_text="{% blocktrans %}This {{activity_plural_lower}} is funded by these donors.{% endblocktrans %}"></partners>
+            </div>
+        </div>
+    </div>
+
+    {% include 'tags/about_activity.js' %}
+</about_activity>

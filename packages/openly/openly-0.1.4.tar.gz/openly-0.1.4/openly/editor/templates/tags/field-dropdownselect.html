@@ -1,0 +1,194 @@
+{% load i18n %}
+
+<field-dropdownselect>
+    <div class="{classes ? (classes.outer || classes.formgroup) : ''}">
+
+        <label if={!opts.hide_label} class="{classes.label} control-label">
+           <span class="dropdownselect-label" hide={opts.hide_label_only}>{ label }</span>
+            <help-popover-field></help-popover-field>
+            <label-required-field></label-required-field>
+            <label-info-field></label-info-field>
+            <validation-error-list only_if_unchanged></validation-error-list>
+        </label>
+
+        <div class="dropdown {_.get('classes', dropdown)} {open:dropdown_open} {isempty: !fn.display_name()}">
+
+            <button class="btn btn-input dropdown-toggle" type="button" onclick="{toggle_dropdown}" disabled="{opts.is_disabled}">
+                <span class="text-ellipsis drop-caret">{fn.display_name()} <span if="{opts.show_code}" class="small">{fn.display_code()} {fn.display_search()}<span class="drop-caret"></span></span>
+            </button>
+
+             <ul if="{dropdown_open}" class="dropdown-menu">
+                 <li if="{choice_count > 6 || (search && search.value != '')}">
+                     <div class="input-group search">
+                          <input type="text" class="form-control" placeholder="{% trans 'Search for...' %}" ref="search" oninput="{ get_choices }">
+                         <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+                        </div><!-- /input-group -->
+                 </li>
+
+                 <li if="{choice_count > 6 || opts.choice_fieldname_short}" role="separator" class="divider"></li>
+                 <li if="{!opts.no_null_choice}"><a href="#" data-code="" onclick="{fn.nullify_dropdown_select}"> ------ </a></li>
+
+                <li each="{choice in choose.solo}">
+                    <a href="#" data-code="{choice.code}" class="btn btn-link {btn-disabled: !choice.meta.enabled}" disabled="{!choice.meta.enabled}" onclick="{fn.choose}">
+                        {choice.name}
+                        <span if="{parent.opts.show_code}">{fn.display_code_and_search(choice)}
+                        </span>
+                    </a>
+                </li>
+
+                 <virtual each="{n, i in choose}" if="{i != 'solo'}">
+                     <li><span class="group">{i}</span></li>
+                     <li each="{choice in n}">
+                         <a href="#" data-code="{choice.code}"
+                            class="btn btn-link {btn-disabled: !choice.meta.enabled} grouped"
+                            disabled="{!choice.meta.enabled}" onclick="{fn.choose}">
+                             {choice.name}
+                             <span if="{opts.show_code}">{choice.code}</span>
+                         </a>
+                     </li>
+                 </virtual>
+
+                <li if="{opts.too_many_options}">
+                     <div class="input-group" style="padding:10px;">
+                         <div class="alert alert-info options-hidden">
+                             {% trans 'There are many options so some are not displayed. Please use the search box to limit the options.' %}
+                         </div>
+                     </div>
+                </li>
+
+                 <li if="{opts.short_list}">
+                     <div class="input-group" style="padding:10px;">
+                         <div class="alert alert-info options-hidden">
+                             {% trans 'Only selected options are displayed.' %}
+                             <button role="button" class="btn btn-default btn-xs show_more" onclick="{show_more}">{% trans 'Show all' %}</button>
+                         </div>
+                     </div>
+                 </li>
+
+                 <li if="{opts.short_list_codes && !opts.short_list && !opts.too_many_options}">
+                     <div class="input-group" style="padding:10px;">
+                         <div class="alert alert-info options-hidden">
+                             {% trans 'All options are displayed.' %}
+                             <button role="button" class="btn btn-default btn-xs show_less" onclick="{show_less}">{% trans 'Show less' %}</button>
+                         </div>
+                     </div>
+                </li>
+
+            </ul>
+
+            <div class="{_.get('classes', 'helptext')}">
+                <validation-error-list only_if_changed></validation-error-list>
+                <help-text/>
+            </div>
+        </div>
+    </div>
+
+    <div if="{dropdown_open}" class='modal' onclick="{toggle_dropdown}">
+    </div>
+
+    <style>
+
+        field-dropdownselect .right {
+            float:right;
+        }
+
+        field-dropdownselect .dropdown-toggle {
+            border-radius: 3px;
+            background-color:white;
+            font-weight: 400;
+        }
+
+        field-dropdownselect .dropdown-menu {
+                height: auto;
+                width: 100%;
+                max-height: 400px;
+                overflow-x: hidden;
+            }
+
+        field-dropdownselect .input-group {
+                width: 100%;
+            }
+
+        field-dropdownselect .btn, field-dropdownselect .btn:hover  {
+            white-space: normal;
+            text-align: left;
+            padding: 5px;
+            background-color:white;
+        }
+
+        field-dropdownselect .input-group.search {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        field-dropdownselect .input-group.search input {
+            padding-left: 10px;
+            padding-right: 10px;
+            border-width: 1px 0 1px 1px;
+            border-style: solid;
+            border-color: #ccc !important;
+        }
+
+        field-dropdownselect .input-group.search .input-group-addon {
+            background-color:white;
+            border-left-width:0;
+            padding-bottom: 16px;
+            padding-top: 17px;
+        }
+
+        field-dropdownselect .matched-search {
+            color: black;
+            font-weight: 600;
+        }
+
+        field-dropdownselect .alert.options-hidden {
+            display: block;
+
+            width: 100%;
+            margin:3px 0px;
+        }
+
+        field-dropdownselect input {
+            width: 100%;
+            height: auto !important;
+            min-height: 26px;
+            padding: 4px 20px 4px 5px;
+            margin: 0;
+            outline: 0;
+            font-size: 1em;
+            border: 1px solid #aaa;
+            box-shadow:none!important;
+            border-right-width:0;
+        }
+
+
+        field-dropdownselect .dropdown-menu li {
+            list-style: none;
+
+        }
+
+        field-dropdownselect .dropdown-menu li a {
+            display: block;
+            padding: 3px 20px!important;
+            clear: both;
+            line-height: 1.428571429;
+            color: #2e4369;
+            white-space: normal;
+            font-weight: 400;
+        }
+
+        field-dropdownselect .dropdown-menu li a.grouped {
+            padding: 3px 30px!important;
+        }
+
+        field-dropdownselect .dropdown-menu li span.group {
+            display: block;
+            padding: 3px 20px!important;
+            clear: both;
+            color: #2e4369;
+            font-weight: 600;
+            line-height: 1.428571429;
+        }
+    </style>
+{% include "tags/field-dropdownselect.js" %}
+</field-dropdownselect>

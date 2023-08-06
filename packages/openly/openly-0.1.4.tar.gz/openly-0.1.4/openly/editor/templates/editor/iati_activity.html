@@ -1,0 +1,17 @@
+{% extends 'editor/base.html' %}
+{% load tag_library %}
+{% load humanize %}
+{% load i18n %}
+
+
+{% block content %}
+
+
+<div class="container-fluid editor_container">
+    <div class="row">
+        <div class="col-md-12">
+            <h5>{% blocktrans %}You may not edit this {{activity_singular_lower}}{% endblocktrans %}</h5>
+        </div>
+    </div>
+</div>
+{% endblock %}

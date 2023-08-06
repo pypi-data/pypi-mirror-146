@@ -1,0 +1,52 @@
+{% load i18n %}
+
+<next-tab-modal>
+
+    <div class="modal fade in" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header model-header-style"><h3 class="modal-title modal-title-style">{% trans 'Are you sure?' %}</h3></a>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="{ close }" aria-label="{% trans 'Close' %}"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">{opts.title}</h4>
+                </div>
+                <div class="modal-body">
+                    {opts.content}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-large btn-primary" onclick="{ close }">{% trans 'Back to' %} {opts.tab_name}</button>
+                    <button type="button" class="btn btn-large btn-default" onclick="{ next }">
+                        {% trans 'Discard and move on' %}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{#    <script>#}
+    var tag = this;
+
+    tag.on('update', function(){
+        if (tag.opts.show == true) {
+            $('.modal', tag.root).modal('show')
+        }
+        if (tag.opts.show == false) {
+            $('.modal', tag.root).modal('hide')
+        }
+    });
+
+    tag.close = function() {
+        tag.opts.show = false;
+    };
+
+    tag.next = function(){
+        tag.close();
+        if (tag.opts.current_tag) {
+            $(tag.opts.current_tag.root).hide();
+        }
+        if (_.isFunction(tag.opts.next)) {
+            tag.opts.next();
+        }
+    }
+{#    </script>#}
+</next-tab-modal>

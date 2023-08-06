@@ -1,0 +1,23 @@
+{% load i18n %}
+
+<breadcrumbs>
+    <div id="table-list-wrapper" class="row">
+        <div class="bread-wrapper {hidden : !breadcrumbCategory} {bread-wrapper-bottom : breadcrumbCategory}">
+            <span>
+                <span><a class="breaded-text" onclick={parent.showCategoriesList}>{% trans 'Resource Library' %}</a></span>
+            <span>
+                <span if={!breadcrumbResource} class="breaded-text"> / {breadcrumbCategory}</span>
+                <span if={breadcrumbResource}> / <a id="{breadcrumbCategoryId}" class="breaded-text" onclick={parent.showResourcesList}>{breadcrumbCategory}</a></span>
+            <span if={breadcrumbResource} class="breaded-text"> / {breadcrumbResource}</span>
+        </div>
+    </div>
+
+    var tag = this;
+
+    tag.on('update', function(){
+        tag.breadcrumbCategory = tag.parent.breadcrumbCategory;
+        tag.breadcrumbCategoryId = tag.parent.breadcrumbCategoryId;
+        tag.breadcrumbResource = tag.parent.breadcrumbResource;
+    });
+
+</breadcrumbs>

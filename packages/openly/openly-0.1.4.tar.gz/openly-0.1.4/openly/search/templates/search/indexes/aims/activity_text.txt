@@ -1,0 +1,8 @@
+{{ object.id }}
+{{ object.iati_identifier }}
+{{ object.internal_identifier }}
+{{ object.subquery_titles }}
+{{ object.reporting_organisation.name }}
+{{ object.subquery_sectors|force_escape }}
+{{ object.subquery_locations|force_escape }}
+{{ object.subquery_descriptions|force_escape }}

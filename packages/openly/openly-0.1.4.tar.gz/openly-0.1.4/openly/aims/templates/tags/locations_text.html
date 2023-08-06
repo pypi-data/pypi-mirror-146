@@ -1,0 +1,24 @@
+{% load i18n %}
+{% load static %}
+
+<locations-text>
+    <virtual if={ locations }>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id='locations-list'>
+                    <ul>
+                        <li each={ locations } data={ this } class="profile-list-element">
+                            { location.name }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </virtual>
+
+    var tag = this;
+    tag.on('mount', function() {
+        tag.locations = opts.locations;
+        tag.update();
+    });
+</locations-text>

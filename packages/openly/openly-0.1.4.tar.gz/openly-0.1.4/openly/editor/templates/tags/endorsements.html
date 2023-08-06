@@ -1,0 +1,67 @@
+{% load i18n %}
+{% load static  %}
+
+<endorsements>
+    <div class="row endorsements">
+        <div class="col-xs-12" each="{organisation, index in store.endorsers}">
+            <div class="alert alert-warning" if="{!organisation.code}">The participating organisation <strong>{organisation.name} </strong> must be associated with an organisation id before endorsing changes</div>
+        </div>
+
+        <div class="col-xs-4 approver">
+            <h5>{% trans 'Approved and Published' %}</h4>
+            <div class="row">
+                <div class="col-xs-3">
+                    <span if="{openly_status == 'draft' || openly_status == 'blank'}" class="endorsement-icon blank"></span>
+                    <span if="{openly_status == 'review'}" class="endorsement-icon in-process"></span>
+                    <span if="{openly_status == 'published'}" class="endorsement-icon tick"></span>
+                </div>
+                <div class="col-xs-9">
+                    <div class="row ministry-name"> {admin_organisation_name} </div>
+                    <div class="row small">
+                        <span if="{openly_status == 'draft' || openly_status == 'blank'}"> {% trans 'To be approved' %} </span>
+                        <span if="{openly_status == 'review'}"> {% trans 'Pending' %} </span>
+                        <span if="{openly_status == 'published'}"> {% trans 'Approved' %} </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-8 endorsers">
+            <h5>{% blocktrans %}{{activity_singular_lower}} Endorsed by{% endblocktrans %}</h3>
+            <div class="row">
+                <div class="col-xs-6" each="{organisation, index in store.endorsers}">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <span if="{openly_status == 'draft' || openly_status == 'blank'}" class="endorsement-icon blank"></span>
+                            <span if="{(openly_status == 'review' || openly_status == 'published') && !organisation.endorsed}" class="endorsement-icon in-process"></span>
+                            <span if="{organisation.endorsed}" class="endorsement-icon tick"></span>
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="row ministry-name"> {organisation.name} </div>
+                            <div class="row small">
+                                <span if="{openly_status == 'draft' || openly_status == 'blank'}"> {% trans 'To be endorsed' %} </span>
+                                <span if="{openly_status == 'review' || openly_status == 'published'}">
+                                    <span if="{!organisation.endorsed && !can_endorse_on_behalf}"> {% trans 'Pending' %} </span>
+                                    <a class="{'disabled': loading}" if="{!organisation.endorsed && can_endorse_on_behalf}" onclick="{toggle_endorsement}">
+                                        {% trans 'Click to endorse' %}
+                                    </a>
+                                    <a class="{'disabled': loading}" if="{organisation.endorsed && can_endorse_on_behalf}" onclick="{toggle_endorsement}">
+                                        {% trans 'Click to remove endorsement' %}
+                                    </a>
+                                    <span if="{organisation.endorsed && !can_endorse_on_behalf}"> {% trans 'Endorsed' %} </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8" if="{store.endorsers.length === 0}">
+                    <p class="ministry-name">
+                    {% blocktrans %}To add endorsers for this {{activity_singular_lower}}, select government partners in the organisations tab{% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'tags/endorsements.js' %}
+</endorsements>
+

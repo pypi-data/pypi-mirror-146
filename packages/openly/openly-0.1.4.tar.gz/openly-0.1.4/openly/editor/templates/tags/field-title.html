@@ -1,0 +1,40 @@
+{% load i18n %}
+<field-title>
+    <div class="activity_title {classes.outer || classes.formgroup}">
+
+        <div class="{ classes.tabpanel }">
+            <div role="tabpanel" class="form-group-language">
+                <div class="language-tab-block pull-right">
+                  <ul class="nav nav-tabs language_tab" role="tablist">
+                        <li each="{language_description, language_code in store.languages}" role="presentation" class="{language_code == language ? 'active' : ''}">
+                          <a data-languagecode="{language_code}" onclick="{select_language}">
+                             { language_description.language_name }
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="tab-content">
+                  <field-textarea
+                    classes={classes.title}
+                    label={opts.title}
+                    required_to_publish_field='title'
+                    show_title=false
+                    formgroup=false
+                    store={opts.store}
+                    path="{language_path}"
+                    cols="40" maxlength="40000"
+                    helptext="{opts.helptext}"
+                    minheight="{opts.minheight}"
+                    >
+                    </field-textarea>
+                <div class="clearfix"></div>
+                  <div>
+                    <validation-error-list message_class="major"></validation-error-list>
+                </div>
+             </div>
+          </div>
+        </div>
+    </div>
+   {%  include 'tags/field-title.js' %}
+
+</field-title>

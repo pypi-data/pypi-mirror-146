@@ -1,0 +1,368 @@
+{% extends 'profiles_v2/profile_base.html' %}
+{% load i18n %}
+{% load static %}
+{% load profiles_filters %}
+{% load to_class_name %}
+{% load leaflet_tags %}
+
+{% block scripts %}
+{{ block.super }}
+
+{% comment %} See https://developers.facebook.com/docs/plugins/like-button# for code below {% endcomment %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript" src="{% static 'js/character_limit.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mixin-serializer.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/storemixin.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/accounting.compactformat.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/moment-with-locales.min.js' %}"></script>
+<script>
+    /* Set momentjs Locale to suitable language code
+    The line below appears as a blank comment in rendered template
+    {% get_current_language as LANGUAGE_CODE %}
+     */
+    moment.locale('{{LANGUAGE_CODE}}')
+</script>
+<script type="riot/tag">{% include 'tags/sectors.html' %}</script>
+{% leaflet_js %}
+{% endblock %}
+
+{% block style %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'css/medium-editor.min.css' %}" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="{% static 'css/c3.css' %}" />
+{% leaflet_css %}
+{% endblock %}
+
+{% block profile_content %}
+{% block banner %}
+
+<!-- print version of the org title and icon -->
+<div class="row visible-print section_lines_bottom">
+    <div class="col-xs-2">
+        {% if organisation_profile.logo %}
+            <img class="print_logo" src="{{ organisation_profile.logo.url }}" />
+        {% endif %}
+    </div>
+    <div class="col-xs-10">
+        <h1 class="name-position">{{ organisation.name }}</h1>
+    </div>
+</div>
+
+<div class="banner">
+    <div><banner_image></banner_image></div>
+    <div class="logo-position"><logo></logo></div>
+</div>
+{% endblock banner %}
+
+{% block profile_tabs %}
+<div class="hidden-xs">
+    <tabs></tabs>
+</div>
+
+{% endblock %}
+
+<div class="wrapper">
+<div data-spy="scroll" data-target=".profile-navbar">
+    {% block organisation_descr %}
+    <section class="profile-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8"> <h2 class="section-title no-margin no-padding">{% trans 'About' %}</h2></div>
+                <div class="col-xs-4">
+                    <div class="align-right hidden-xs">
+                        {% if editor %}
+                            {% if user.is_superuser %}
+                            <a href="{% url 'activity_manager' organisation_code %}">
+                                <button type="button" class="btn btn-small btn-default hidden-print">{% blocktrans %}{{activity_singular}} Manager{% endblocktrans %}</button>
+                            </a>
+                            {% endif %}
+                        <button type="button" data-toggle="modal" data-target="#banner-image-modal" class="btn btn-small btn-default hidden-print">{% trans 'Edit Banner' %}</button>
+                        <a href="{% url 'exports:comprehensive' %}?org_id={{organisation_code}}">
+                            <button type="button" class="btn btn-small btn-default hidden-print">{% trans 'Export' %}</button>
+                        </a>
+                        {% endif %}
+                        <button onclick="javascript:window.print()" class="btn btn-small btn-default hidden-print">{% trans 'Print' %}</button>
+                        <style scoped>
+                            button {
+                                margin-bottom: 5px !important;
+                                {% comment %} In case of overly lengthy translations {% endcomment %}
+                                max-width: 275px !important;
+                                overflow: hidden;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <editable_text_field id=org_background_text_field></editable_text_field>
+                    <sectors></sectors>
+                    {% endblock organisation_descr %}
+                    {% block profile_body %}
+                    {% endblock %}
+                </div><!-- End of left col-->
+                <div class="col-xs-12 col-sm-4"><!--Contacts Area-->
+                    <organisation_contact_info></organisation_contact_info>
+                </div><!-- End of right col-->
+            </div><!-- End of row-->
+        </div><!-- End of container-->
+    </section>
+
+    {% block active_locations %}
+    <!-- Locations allowed by default and must be explicitly turned OFF in app settings-->
+    {% if donor_locations_allowed %}
+    <section class="profile-section" id='locations'>
+        <div class="container">
+            <div class="row">
+{% blocktrans asvar helpcontent_map %}The map below shows where the {{activity_plural_lower}} for this organisation are currently implemented.{% endblocktrans %}
+                <div class="col-xs-12 hidden-print">
+                    <h2 class="section-title">{% trans 'Locations' %} <a tabindex="0" role="button" class="ion-ios-help-outline dash-info hidden-print" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{{ helpcontent_map|escape }}"> </a></h2>
+                    <activities_without_financials_map></activities_without_financials_map>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    {% endblock %}
+
+    {% block organisation_finances %}
+    {% if financial_data_exists %}
+    <section class="profile-section" id="financials">
+        <div class="page-break"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="section-title">{% trans 'Financials' %} <a tabindex="0" role="button" class="ion-ios-help-outline dash-info hidden-print" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{{ _('This provides an aggregated summary of this partners financial contribution.')|force_escape }}"> </a></h2>
+                    <!--<stats></stats> -->
+                    <financials></financials>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    {% endblock %}
+
+    {% block organisation_activities %}
+    {% if activity_count > 0 %}
+    <section class="profile-section" id="activities">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <activities></activities>
+                </div>
+            </div>
+        </div><!-- End of container-->
+    </section>
+    {% endif %}
+    {% endblock %}
+
+    {% block organisation_resources %}
+    {% if resources_in_profile %}
+    <section class="profile-section" id="resources">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <resources></resources>
+                </div>
+            </div>
+        </div><!-- End of container-->
+    </section>
+    {% endif %}
+    {% endblock %}
+
+    {% block organisation_people %}
+    <people></people>
+    {% endblock %}
+</div>
+</div> <!-- End of wrapper-->
+
+<style>
+editable_text_field {
+  text-align: justify !important;
+  text-justify: inter-word;
+}
+</style>
+
+
+{% block stores %}
+{{ people|json_script:"people-data" }}
+<script>
+
+{% include 'stores/organisation_activity_store.js' %}
+{% include 'stores/organisation_contact_info_store.js' %}
+{% include 'stores/people_store.js' %}
+{% include 'tags/expand-mixin.js' %}
+
+riot.mixin('ExpandMixin', ExpandMixin);
+riot.mixin('SerializerMixin', SerializerMixin);
+
+_.extend(OrganisationActivityStore.prototype, StoreMixin);
+_.extend(OrganisationContactInfoStore.prototype, StoreMixin);
+_.extend(PeopleStore.prototype, StoreMixin);
+// stores and choices are global objects
+var choices = {};
+var stores = {};
+var languages = JSON.parse('{{ languages|escapejs }}');
+(function() {
+
+    var contact_info = JSON.parse('{{ contact_info|escapejs }}');
+    var people = JSON.parse(document.getElementById('people-data').textContent);
+
+    stores.organisation_activities_store = new OrganisationActivityStore([], choices, "{{ organisation.pk }}");
+    stores.contact_info_store = new OrganisationContactInfoStore(contact_info, choices, "{{ organisation.pk }}");
+    stores.people_store = new PeopleStore(people, choices);
+
+    RiotControl.addStore(stores.organisation_activities_store);
+    RiotControl.addStore(stores.contact_info_store);
+    RiotControl.addStore(stores.people_store);
+    stores.organisation_activities_store.fetch(); // Trigger a fetch JSON request
+    choices.areas = JSON.parse('{{ areas|escapejs }}');
+    choices.areas.ancestor_of_kind = function(id, kind) {
+    area = choices.areas[id]
+    while(area.kind > kind) {
+        area = choices.areas[area.parent];
+    }
+    return area;
+    }
+})();
+</script>
+{% endblock stores %}
+
+{% endblock profile_content%}
+
+{% block local_scripts %}
+<script type="riot/tag">{% include 'tags/banner_image.html' %}</script>
+<script type="riot/tag">{% include 'tags/editable_text_field.html' %}</script>
+<script type="riot/tag">{% include 'tags/logo.html' %}</script>
+<script type="riot/tag">{% include 'tags/organisation_contact_info.html' %}</script>
+<script type="riot/tag">{% include 'tags/people.html' %}</script>
+<script type="riot/tag">{% include 'tags/activities.html' %}</script>
+{% if resources_in_profile %}
+ <script type="riot/tag">{% include 'tags/resources.html' %}</script>
+{% endif %}
+<script type="riot/tag">{% include 'tags/tabs.html' %}</script>
+
+{% if financial_data_exists %}
+    <script src="{% static 'riot/donor_provider.js' %}"></script>
+    <script type="riot/tag">{% include 'tags/stats.html' %}</script>
+    <script type="riot/tag">{% include 'tags/financials.html' %}</script>
+{% else %}
+    <script type="riot/tag">{% include 'tags/activities_without_financials_map.html' %}</script>
+{% endif %}
+
+{{ background_translations|json_script:"background_translations-data" }}
+<script>
+var background_translations = JSON.parse(document.getElementById('background_translations-data').textContent);
+var csrf_token = '{{ csrf_token }}';
+var map_config = JSON.parse("{{ map_config|escapejs }}");
+
+riot.mount('banner_image', {upload_url: "{% url 'upload' %}", csrf_token: csrf_token});
+riot.mount('logo', {upload_url: "{% url 'upload' %}", csrf_token: csrf_token});
+riot.mount('#org_background_text_field', {
+    character_limit: 20000,
+    collapsed_height: 600,
+    field_name: "{% trans 'Background' %}",
+    field_text_id: 'organisation_background',
+    field_text: background_translations,
+    languages: languages,
+    model_field: 'background',
+    update_endpoint: '{% url "edit_organisation_profile" organisation.pk %}',
+});
+
+{% trans 'About' as tab_name_about %}
+{% trans 'Locations' as tab_name_locations %}
+{% trans 'Financials' as tab_name_financials %}
+{% trans 'People' as tab_name_people %}
+{% trans 'Resources' as tab_name_resources %}
+var tab_name_about = '{{ tab_name_about|escape }}';
+var tab_name_locations = '{{ tab_name_locations|escape }}';
+var tab_name_financials = '{{ tab_name_financials|escape }}';
+var tab_name_activities = '{{ activity_plural|escape }}';
+var tab_name_resources = '{{ tab_name_resources |escape }}';
+var tab_name_people = '{{ tab_name_people|escape }}';
+riot.mount('tabs', {
+    tabs: [
+        { name: tab_name_about, link: '#about' },
+        { name: tab_name_locations, link: '#locations' },
+        { name: tab_name_financials, link: '#financials' },
+        { name: tab_name_activities, link: '#activities' },
+        {% if resource_count > 0 %}
+        { name: tab_name_resources, link: '#resources' },
+        {% endif %}
+        { name: tab_name_people, link: '#people' },
+    ],
+});
+
+riot.mount('organisation_contact_info', {
+    store: stores.contact_info_store,
+});
+riot.mount('activities', {
+    store: stores.organisation_activities_store, organisation: '{{organisation.pk}}', organisation_name: "{{organisation.name|safe}}"
+});
+{% if resources_in_profile and resource_count > 0 %}
+riot.mount('resources', {
+    resources: JSON.parse({{resources|js}}),
+});
+{% endif %}
+riot.mount('people', {
+    csrf_token: csrf_token,
+    editor: {{ editor|yesno:"true,false" }},
+    profile_pk: "{{ organisation_profile.pk }}",
+    store: stores.people_store,
+    upload_class: "{{ person_model|to_class_name }}",
+    upload_url: "{% url 'upload' %}",
+});
+
+{% blocktrans asvar sector_help_singular %}This organisation is currently implementing development {{activity_plural_lower}} in this area.{% endblocktrans %}
+{% blocktrans asvar sector_help_plural %}This organisation is currently implementing development {{activity_plural_lower}} in these areas.{% endblocktrans %}
+riot.mount('sectors', {
+    sector_categories: true,
+    sector_class: "col-sm-6 col-xs-12 list-row-margin no-padding org-sectors",
+    singular_help_text: "{{sector_help_singular|escape}}",
+    plural_help_text: "{{sector_help_plural|escape}}",
+});
+</script>
+
+{% if financial_data_exists %}
+    <script type="text/javascript">
+        var djangoUrls = {
+            person_html: '{% url "fetch_person" "0000" %}',
+            contact_html: '{% url "fetch_contact" "0000" %}',
+            person_data: '{% url "person_data" "0000" %}',
+            update_person: '{% url "update_person" "0000" %}',
+            delete_person: '{% url "delete_person" "0000" %}',
+            reorder_people: '{% url "reorder_people" %}',
+            media_url: '{{ MEDIA_URL }}',
+            update: '{% url "update" %}'
+        };
+
+        djangoUrls['commitment_by_category'] = '{% url "commitment_by_category" donor %}';
+        djangoUrls['activities_status_values'] = '{% url "activities_status_values" donor %}';
+        djangoUrls['transactions_by_year'] = '{% url "transactions_by_year" donor %}';
+        djangoUrls['activities'] = '{% url "donor_activities" donor %}';
+        RiotControl.addStore(new DonorProvider());
+        riot.mount('financials');
+        riot.mount('stats');
+    </script>
+{% else %}
+    <script type="text/javascript">
+        riot.mount('activities_without_financials_map', {
+            map_id: 'hamutuk_activities',
+            store: stores.organisation_activities_store,
+            areas: choices.areas,
+            center_lat: map_config.DEFAULT_CENTER[0],
+            center_lon: map_config.DEFAULT_CENTER[1],
+            default_zoom: map_config.DEFAULT_ZOOM,
+            max_zoom: map_config.MAX_ZOOM,
+            min_zoom: map_config.MIN_ZOOM,
+        });
+    </script>
+{% endif %}
+
+{% endblock local_scripts %}

@@ -1,0 +1,25 @@
+{% load i18n %}
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td>{% trans 'ID' %}</td>
+                        <td>{% trans 'Title' %}</td>
+                        <td>{% trans 'Reporting Organisation' %}</td>
+                        <td>{% trans 'Date submitted' %}</td>
+                        <td>{% trans 'Endorsed' %}</td>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for activity in the_activities %}
+                    {% with activity.get_endorsements as endorsements %}
+                    <tr>
+                        <td><a href="{% url 'edit_activity' pk=activity.id %}">{{ activity.id }}</a></td>
+                        <td><a href="{% url 'edit_activity' pk=activity.id %}">{{ activity.title }}</a></td>
+                        <td><a href="{% url 'activity_manager' org_id=activity.reporting_organisation.code %}">{{ activity.reporting_organisation }}</a></td>
+                        <td>{{ endorsements.submitted }}</td>
+                        <td>{{ endorsements.endorsed.0 }}/{{ endorsements.endorsed.1 }}</td>
+                    </tr>
+                    {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>

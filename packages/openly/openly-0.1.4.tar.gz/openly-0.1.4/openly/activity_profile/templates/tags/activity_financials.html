@@ -1,0 +1,106 @@
+{% load i18n %}
+
+<activity_finances>
+    <div class="container" id="finances">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                <section id="finances">
+                    <h2>{% trans 'Finances' %}
+                        <a tabindex="0" role="button" class="ion-ios-help-outline dash-info hidden-print" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" title="Financial information" data-content="{% trans 'The charts below present a financial overview of the assistance provided by the development partner.' %}" aria-label="help finances"> </a>
+                    </h2>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!--FINANCES TAB-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="list-unstyled profile_txt">
+                                        <li>
+                                            {% trans "Total Commitment: " %}
+                                            <strong class="currency" each={value, currency in opts.commitment_by_currency}>{ currency } { value }</strong>
+                                            <a id="total_commitment" class="ion-ios-help-outline dash-info"
+                                                rel="popover" data-trigger="hover" data-placement="left" title="Total Commitment"
+                                                                                                         data-content="{% blocktrans%}Total committed budget for the duration of the {{activity_singular_lower}}. Calculated as the sum of all commitment transactions for this {{activity_singular_lower}}.{% endblocktrans %}" >
+                                            </a>
+                                        </li>
+
+                                        <li show={ _.keys(opts.commitment_by_currency) != ['USD'] }>
+                                            {% trans "Total Commitment USD: " %}
+                                            <strong>${ opts.total_commitment_usd }</strong>
+                                            <a id="total_commitment_usd" class="ion-ios-help-outline dash-info"
+                                                rel="popover" data-trigger="hover" data-placement="left" title="Total Commitment USD"
+                                                data-content="{% trans 'Total Commitment above converted to US dollars.' %}" ></a>
+                                        </li>
+                                        <li>
+                                            { opts.aid_type_categories_header }:
+                                            <strong>{ opts.aid_type_categories }</strong>
+                                            <a id="total_commitment" class="ion-ios-help-outline dash-info"
+                                                rel="popover" data-trigger="hover" data-placement="left" title="Aid Type Categories"
+                                                data-content="">
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            {% trans "Finance Type(s): " %}
+                                            <strong>{ opts.finance_types_list }</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4 class="profile_subheader">{% trans 'Percent disbursed' %}</h4>
+                                    <div id="arcChart"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>{% trans "Cumulative Commitments & Disbursements" %}
+                                        <a id="cum_disb" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="How is this calculated?" data-content="{% blocktrans %}This chart shows the total cumulative assistance for all transactions associated with this {{activity_singular_lower}}.{% endblocktrans %}" ></a>
+                                </h3>
+                                    <div id="transactions_by_month_year"></div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </section>
+            </div> <!-- end of col-xs-8 -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>{% trans "Transactions" %}
+                        <a id="transactions" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{{activity_singular}} transactions" data-content="{% blocktrans %}Transactions recording committed or actual funds flowing in or out of an aid {{activity_singular_lower}}{% endblocktrans %}" ></a>
+                    </h3>
+                    <div class="table-responsive">
+                        <table class="table transactions-table table-striped">
+                            <tr>
+                                <th>{% trans "Aid Type" %}</th>
+                                <th>{% trans "Finance Type" %}</th>
+                                <th>{% trans "Provider" %}</th>
+                                <th>{% trans "Receiver" %}</th>
+                                <!-- <th>{% trans "Tied" %} <span class="visible-lg">{% trans "Status" %}</span></th> -->
+                                <th class="fixed-width-100">{% trans "Date" %}</th>
+                                <th class="fixed-width-140">{% trans "Type" %}</th>
+                                <th class="fixed-width-140">{% trans "Value" %}</th>
+                            </tr>
+                            <tr each={ opts.transactions }>
+                                <td>{ aid_type }</td>
+                                <td>{ finance_type }</td>
+                                <td>{ provider_organisation }</td>
+                                <td>{ receiver_organisation }</td>
+                                <!-- <td>{ tied_status }</td>-->
+                                <td>{ transaction_date }</td>
+                                <td>{ transaction_type }</td>
+                                <td>{ currency_code } { value }</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style scoped>
+        .currency + .currency::before {
+        content: ', ';
+        }
+    </style>
+
+    {% include 'tags/activity_financials.js' %}
+</activity_finances>

@@ -1,0 +1,234 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load common_text %}
+{% load static  %}
+{% load widget_tweaks %}
+
+{% block title %}
+{% trans "Create Report" %} | {{ site_name }}
+{% endblock %}
+
+{% block scripts %}
+        <!-- export base scripts -->
+        <script type="text/javascript" src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+    {% block export_scripts %}
+    {% endblock %}
+    <script type="text/javascript" src="{% static 'js/export.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.validate.min.js' %}"></script>
+{% endblock %}
+
+
+{% block style %}
+        <!-- export base styles -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/select2-bootstrap.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-datepicker.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/export.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/ionicons.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/square/blue.css' %}" />
+
+        <script type="text/javascript" src="{% static 'js/icheck.min.js' %}"></script>
+
+        {% block export_style %}
+        {% endblock %}
+{% endblock %}
+
+
+{% block content %}
+
+ <!-- format / style errors -->
+{{ filter_form.non_field_errors }}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 report-builder-view">
+            <br />
+            <h1 class="CompareTitle">{% trans "Create Report" %}</h1>
+            <p class="col-xs-offset-1 col-xs-10 CompareSubtitle">
+                {% blocktrans trimmed%}
+                    The reports allow us to export and disaggregate aid data reported to {{ request.site }}.
+                {% endblocktrans %}
+            </p>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <form method="get" name='export'>
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="report_category_group">
+                            <label class="control-label">
+                                {% trans 'Report Category' %}
+                            </label>
+                            {{ filter_form.report_type| add_class:"form-control drop-caret"}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group input-daterange">
+                            <div class="col-xs-6 no-padding-left">
+                                <label class="control-label">{% trans 'Start Date' %}</label>
+                                <input type="text" class="form-control textarea datepicker_export" id="id_start_date" name="start" value='{{ start_date }}'>
+                            </div>
+                            <div class="col-xs-6 no-padding-right">
+                                <label class="control-label">{% trans 'End Date' %}</label>
+                                <input type="text" class="form-control textarea datepicker_export" id="id_end_date" name="end" value='{{ end_date }}'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="development_partner_group">
+                            <label class="control-label">{% trans 'Development Partner' %}</label>
+                                {{ filter_form.development_partner| add_class:"form-control drop-caret" }}
+                                {{ filter_form.development_partner.errors }}
+                            <p class="in-line-help help-text">{% trans 'Disaggregate by development partner.' %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="sector_working_group_group">
+                            <label class="control-label">{{ 'non_iati_sector_title'|common_text }}</label>
+                                {{ filter_form.sector_working_group| add_class:"form-control drop-caret" }}
+                                {{ filter_form.sector_working_group.errors }}
+                            <p class="in-line-help help-text">{% blocktrans with object='non_iati_sector_object'|common_text %}Disaggregate by {{object}}{% endblocktrans %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="sector_group">
+                            <label class="control-label">{% trans 'Sector' %}</label>
+                                {{ filter_form.sector| add_class:"form-control drop-caret" }}
+                                {{ filter_form.sector.errors }}
+                            <p class="in-line-help help-text">{% trans 'Disaggregate by sector.' %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="location_group">
+                            <label class="control-label">{% trans 'Location' %}</label>
+                                {{ filter_form.state| add_class:"form-control drop-caret" }}
+                                {{ filter_form.state.errors }}
+                            <p class="in-line-help help-text">{% trans 'Disaggregate by location.' %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="report_activitystatus_group">
+                            <h5 class="page-header">{% trans 'Activity Status' %}</h5>
+                            <div class="filter_checkboxes filter_checkboxes_status">
+                                    {{ filter_form.activity_status }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="finance_type_group">
+                            <h5 class="page-header">{% trans 'Finance Type' %}</h5>
+                            <div class="filter_checkboxes">
+                                {{ filter_form.finance_type_category }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="aid_type_category_group">
+                            <h5 class="page-header">{% trans 'Aid Type Category' %}</h5>
+                            <div class="aid_type_select">
+                                <div class="filter_checkboxes">
+                                    {{ filter_form.aid_type_category }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="data_quality_type_group">
+                            <h5 class="page-header">{% trans 'Data Quality Type' %}</h5>
+                            {{ filter_form.data_quality_type| add_class:"form-control drop-caret" }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group" id="missing_dates_group">
+                            <label class="control-label">{% trans 'Missing Dates' %}</label>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="filter_checkboxes missing_dates_checkboxes">
+                                        {{ filter_form.missing_dates }}
+                                    </div>
+                                    {{ filter_form.missing_dates.errors }}
+                                    <p class="in-line-help">
+                                        {% blocktrans %} Example: select "No Actual Start Date" and "No Actual End Date" to get all
+                                        activities that have either no actual start date or no actual end date. {% endblocktrans %} <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <br />
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <button type='submit' class="btn btn-large btn-primary btn-block">{% trans 'Create Report' %}</button>
+                                <br><br><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div
+
+            </form>
+
+        </div><!-- end of col -->
+    </div> <!-- end of row -->
+</div> <!-- end of container -->
+
+
+
+
+
+
+
+<script>
+    FORM_RULES = {
+        '{{ filter_form.development_partner.name }}': 'required',
+        '{{ filter_form.sector.name }}': 'required',
+        '{{ filter_form.sector_working_group.name }}': 'required',
+        '{{ filter_form.state.name }}': 'required'
+    };
+    $(document).ready(function(){
+        $('form[name=export]').validate({
+            rules: FORM_RULES
+        });
+    });
+</script>
+
+{% endblock content %}
+
+
+{% block local_scripts %}
+{% endblock %}

@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-08 17:32+0900\n"
+"PO-Revision-Date: 2017-05-16 01:57+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+msgid "Activities"
+msgstr "Faoliyat yo'nalishlari"
+
+msgid "Activities List"
+msgstr "Faoliyat yo'nalishlari ro'yxati"
+
+msgid "Activities by Ministry"
+msgstr "Faoliyat yo'nalishlari vazirliklar boy'lab taqsimlanishi"
+
+msgid "Activities by Status"
+msgstr "Faoliyat yo'nalishlari holatiga ko'ra"
+
+msgid "Activities by status"
+msgstr "Faoliyat yo'nalishlari ahvoliga ko'ra"
+
+msgid "Activity"
+msgstr "Faoliyat yo'nalishi"
+
+msgid "Activity Status"
+msgstr "Faoliyat holati"
+
+msgid "Add a filter"
+msgstr "Filtr qo'shish"
+
+msgid "Advanced filter"
+msgstr "Ilg'or filtr"
+
+msgid "Aid By Donor"
+msgstr "Tashqi ko'mak donorlar kesimida"
+
+msgid "Aid By Location"
+msgstr "Tashqi ko'mak hududlar kesimida"
+
+msgid "Aid By Ministry"
+msgstr "Tashqi ko'mak vazirliklar kesimida"
+
+msgid "Aid By Sector"
+msgstr "Ko'mak tarmoqlar kesimida"
+
+msgid "Aid by Donor"
+msgstr "Donorlararo ko'mak"
+
+msgid "Aid by Location"
+msgstr "Tashqi ko'makning hududiy joylashishiga ko'ra taqsimlanishi"
+
+msgid "Aid by Ministry"
+msgstr "Tashqi ko'makning vazirliklar bo'yicha taqsimlanishi"
+
+msgid "Aid by Sector"
+msgstr "Ko'mak tarmoqlar kesimida"
+
+msgid "All Donors"
+msgstr "Barcha donorlar"
+
+msgid "All Ministries"
+msgstr "Barcha vazirliklar"
+
+msgid "All categories"
+msgstr "Barcha toifalar"
+
+msgid "All other types of transactions (Interest Repayment, Loan Repayment, Reimbursement, Purchase of Equity, Sale of Equity, Credit Guarantee, Incoming Commitment)"
+msgstr "Barcha boshqa turdagi tranzaktsiyalar (foizlar to'lovi, kreditni qaytarish, xarajatlarni qoplash, hissa xarid qilish, kredit kafolati, olingan majburiyat) "
+
+msgid "Available"
+msgstr "Mavjud"
+
+msgid "Clear all filters"
+msgstr "Barcha filtrlarni o'chirish"
+
+msgid "Clear current date filters, and sorts"
+msgstr "Mavjud sana filtrlari va turlarini o'chirish"
+
+msgid "Commitment"
+msgstr "Majburiyat"
+
+msgid "Commitment by Aid Sector"
+msgstr "Tashqi ko'mak sektori bo'yicha olingan majburiyat"
+
+msgid "Commitment by Donor"
+msgstr "Donorlar olgan majburiyatlar"
+
+msgid "Commitment by Location"
+msgstr "Majburiyatlar hududlar kesimida"
+
+msgid "Commitment by Sector"
+msgstr "Majburiyatlar tarmoqlar kesimida"
+
+msgid "Commitment by Status"
+msgstr "Majburiyatlar holatiga ko'ra"
+
+msgid "Commitment by aid sector"
+msgstr "Majburiyatlar ko'mak tarmog'i kesimida"
+
+msgid "Commitment by donor"
+msgstr "Majburiyatlar donorlar kesimida"
+
+msgid "Commitment by location"
+msgstr "Majburiyatlar hududlar kesimida"
+
+msgid "Commitment by sector"
+msgstr "Majburiyatlar tarmoqlar kesimida"
+
+msgid "Commitment by status"
+msgstr "Majburiyatlar holatiga ko'ra"
+
+msgid "Dashboard Filter"
+msgstr "\"Boshqaruv paneli\" filtri"
+
+msgid "Disbursement"
+msgstr "Ajratilgan mablag'"
+
+msgid "Donor"
+msgstr "Donor"
+
+msgid "Donor commitment"
+msgstr "Donor o'ziga olgan majburiyati"
+
+msgid "Edit columns"
+msgstr "Ustunlarni tahrir qilish"
+
+#, python-format
+msgid "Empty list and ``%(class_name)s.allow_empty`` is False."
+msgstr ""
+
+msgid "End"
+msgstr "Yakun"
+
+msgid "Expenditure"
+msgstr "Xarajat"
+
+msgid "Finance Type Category"
+msgstr "Moliya turi toifasi"
+
+msgid "Financing"
+msgstr "Moliyalashtirish"
+
+msgid "Largest Donor & projects"
+msgstr "Eng yirik donorlar va loyihalar"
+
+msgid "Largest donor & projects"
+msgstr "Eng yirik donor va loyihalar"
+
+msgid "Loans Vs Grants"
+msgstr "Zayom va grantlar"
+
+msgid "Loans vs Grants"
+msgstr "Zayom va grantlar"
+
+msgid "Ministry"
+msgstr "Vazirlik"
+
+msgid "Multiple Donors"
+msgstr "Ko'p donorlar"
+
+msgid "No Information"
+msgstr "Axborot yo'q"
+
+msgid "No Information Available"
+msgstr "Tayyor ma'lumot yo'q"
+
+msgid "No results found."
+msgstr "Natijalar topilmadi."
+
+msgid "Number of Activities"
+msgstr "Faoliyat yo'nalishlari soni"
+
+msgid "Number of Activities by Ministry"
+msgstr "Faoliyat yo'nalishlari soni vazirliklar taqsimotida"
+
+msgid "Oops! An error has occurred"
+msgstr "Obbo! Xato boldi!"
+
+msgid "Organisations"
+msgstr "Tashkilotlar"
+
+msgid "Other"
+msgstr "Boshqa"
+
+msgid "Page Not Found"
+msgstr "Sahifa topilmadi"
+
+msgid "Participating Org"
+msgstr "Qatnashchi tashkilot"
+
+msgid "Percent Disbursed"
+msgstr "Ajratilgan mablag'lar foil"
+
+msgid "Projects"
+msgstr "Loyihalar"
+
+msgid "Reporting Org"
+msgstr "Hisobot beruvchi tashkilot"
+
+msgid "Revert to default filters"
+msgstr "Standart filtrlarga qaytish"
+
+#, fuzzy
+msgid "Search"
+msgstr "Izlash natijalari"
+
+msgid "Search Results"
+msgstr "Izlash natijalari"
+
+msgid "Sector"
+msgstr "Tarmoq"
+
+msgid "Set Filter"
+msgstr "Filtr o'rnatish"
+
+msgid "Show All"
+msgstr "Barchasini ko'rsatish"
+
+msgid "Show Pages"
+msgstr "Sahifalarni ko'rsatish"
+
+msgid "Start"
+msgstr "Boshlanish"
+
+msgid "State"
+msgstr "Davlat"
+
+msgid "Status"
+msgstr "Holat (maqom)"
+
+msgid "Summary"
+msgstr "Umumiy tavsif"
+
+msgid "TOTAL"
+msgstr "JAMI"
+
+msgid "The Activity List"
+msgstr "Faoliyat yo'nalishlari ro'yxati"
+
+msgid "The activities listed below are those used to calculate the above charts and graphics. These activities correspond to the date filter above."
+msgstr "Ushbu faoliyat yo'nalishlari xronologik filtrga mos keladi. "
+
+msgid "The bar chart below shows the total value of commitments by development partner. The chart also corresponds to the date filter."
+msgstr ""
+"Quyidagi diagrammada taraqqiyot sohasidagi hamkor o'ziga Olga majburiyatlarning umumiy miqdori keltirilgan.\n"
+"Ushbu diagramma ham xronologik filtrga mos keladi. "
+
+msgid "The map below shows the amount of development assistance committed by location for activities. The map corresponds to the date filter. Click on the map to zoom in"
+msgstr "Quyidagi xaritada taraqqiyot sohasidagi hamkorlar va'da qilgan taraqqiyot uchun ko'mak hududlar kesimida ko'rsatilgan. Ushbu xarita xronologik filtrga mos keladi.  Zum (kattalashtirish) uchun xaritaning ustida kursorni bosing."
+
+msgid "The total amount of outgoing funds that are spent on goods and services."
+msgstr "Tovarlar va xizmatlarga sarflangan  mablag'larning umumiy miqdori."
+
+msgid "The total amount of outgoing funds that placed at the disposal of recipient governments or organisations, or funds transferred between two separately reported activities."
+msgstr "Benefisiar hukumatlar yoki tashkilotlar ixtiyoriga berilgan yoki ikkita alohida hisobot beriluvchi faoliyat yo'nalishlari orasidagi yo'naltirilgan mablag'lar."
+
+msgid "The total amounts of firm, written obligations from donors or providers to provide specified amounts of funds, under particular terms and conditions, for specific purposes, for the benefit of recipients."
+msgstr "Donorlar yoki boshqa manbalarning benefisiarlar uchun muayyan maqsadlarga va anis belgilangan shartlarga binoan muayyan miqdorda mablag'lar ajratish haqidagi yozma va qat'iy majburiyatlari."
+
+#, fuzzy
+msgid "This chart shows the breakdown of commitment transactions between loans and grants."
+msgstr "Ushbu diagrammada ko'mak sektoridagi taraqqiyot sohasidagi hamkorlar o'ziga Olga majburiyatlarning umumiy miqdori ko'rsatilgan."
+
+msgid "This chart shows the total amount of commitments from development partners by DAC3 sector."
+msgstr "Ushbu diagrammada DAC3 tarmog'i bo'yicha taraqqiyot sohasidagi hamkorlar majburiyatlarining umumiy miqdori ko'rsatilgan."
+
+msgid "This chart shows the total amount of commitments from development partners by aid sector."
+msgstr "Ushbu diagrammada ko'mak sektoridagi taraqqiyot sohasidagi hamkorlar o'ziga Olga majburiyatlarning umumiy miqdori ko'rsatilgan."
+
+msgid "This chart shows the total amount of commitments from development partners by sector for activities."
+msgstr "Ushbu diagrammada taraqqiyot sohasidagi hamkorlar tomonidan tarmoqlar kesimida faoliyat yo'nalishlari uchun umumiy majburiyatlar miqdori ko'rsatilgan."
+
+msgid "This chart shows the total amount of development assistance committed by development partners. This chart corresponds to the date filter above."
+msgstr "Ushbu diagrammada taraqqiyot sohasidagi hamkorlar va'da qilgan taraqqiyot uchun ko'makning umumiy miqdori ko'rsatilgan."
+
+msgid "This chart shows the total amount of development assistance committed by development partners. This chart corresponds to the date filter."
+msgstr "Ushbu diagrammada taraqqiyot sohasidagi hamkorlar va'da bergan taraqqiyot uchun ko'makning umumiy miqdori ko'rsatilgan. Ushbu diagramma xronologik filtrga mos keladi."
+
+msgid "This chart shows the total amount of development assistance committed by the largest five donors. This chart corresponds to the date filter."
+msgstr "Ushbu diagramma xronologik filtrga mos keladi. "
+
+msgid "This chart shows the total number of activities associated with each relevant Ministry."
+msgstr "Ushbu diagrammada har bir tegishli vazirlik bilan bog'liq faoliyat yo'nalishlarining umumiy soni ko'rsatilgan."
+
+msgid "This chart shows the total number of activities associated with each relevant Ministry. This chart corresponds to the date filter."
+msgstr "Ushbu diagrammada har bir vazirlikka aloqador aoliyat yo'nalishlarining umumiy soni kor'satilgan.  Ushbu diagramma xronologik filtrga mos keladi. "
+
+msgid "This chart shows the total number of activities associated with each relevant partner Ministry. This chart corresponds to the date filter."
+msgstr "Ushbu diagrammada har bir hamkor vazirlik bilan bog'liq bo'lgan faoliyat yo'nalishlarining umumiy sonini ko'rsatadi. Ushbu miqdor xronologik filtrga mos keladi. "
+
+msgid "This chart shows the total number of activities by status (i.e. pipeline, implementation, completed, post-completion). This chart corresponds to the date filter."
+msgstr "Ushbu diagrammada faoliyat yo'nalishlarining umumiy soni holatiga ko'ra (tayyorlanmoqda, ijroda, yakunlangan, yakundan so'ng) aks ettirilgan. Ushbu diagramma xronologik filtrga mos keladi. "
+
+msgid "This chart shows the total volume of funds committed to activities by the activity status i.e pipeline, implementation, completed, post-completed. The chart also corresponds to the date filter."
+msgstr "Ushbu diagrammada faoliyat yo'nalishlarining umumiy soni holatiga ko'ra (tayyorlanmoqda, ijroda, yakunlangan, yakundan so'ng) aks ettirilgan. Ushbu diagramma xronologik filtrga mos keladi. "
+
+msgid "This is the percentage total of committed development assistance disbursed. This percentage corresponds to the date filter."
+msgstr ""
+"Bu barcha faoliyat yo'nalishlari bo'yicha va'da qilingan   taraqqiyot uchun ko'makning foizidiir.\n"
+"Ushbu foil ko'rsatkich xronologik filtrga mos keladi. "
+
+msgid "This is the percentage total of development assistance disbursed. This percentage corresponds to the date filter."
+msgstr "Bu amalda ajratilgan taraqqiyot uchun ko'makning umumiy miqdorining foizi. Ushbu miqdor xronologik filtrga mos keladi. "
+
+msgid "This is the total amount of development assistance committed across all activities that have been linked to a partner Ministry. This number corresponds to the date filter."
+msgstr "Bu hamkor vazirlikka bo'g'langan barcha faoliyat yo'nalishlari bo'ylab va'da berilgan taraqqiyot uchun ko'makning umumiy miqdoridir."
+
+msgid "This is the total amount of development assistance committed across all activities. This amount corresponds to the date filter."
+msgstr "Bu barcha faoliyat yo'nalishlari bo'yicha va'da qilingan taraqqiyot uchun ko'makning umumiy miqdori. Ushbu miqdor xronologik filtrga mos keladi. "
+
+msgid "This is the total amount of development assistance committed across all activities. This number corresponds to the date filter."
+msgstr ""
+"Bu barcha faoliyat yo'nalishlari bo'yicha va'da qilingan taraqqiyot uchun ko'makning umumiy miqdoridir. \n"
+"Ushbu son xronologik filtrga mos keladi. "
+
+msgid "This is the total amount of development assistance committed. This amount corresponds to the date filter."
+msgstr "Bu taraqqiyot sohasida va'da berilgan ko'makning umumiy miqdoridir."
+
+msgid "This is the total amount of development assistance disbursed across all activities. This number corresponds to the date filter."
+msgstr ""
+"Bu barcha faoliyat yo'nalishlari bo'yicha ajratilgan taraqqiyot uchun ko'makning umumiy miqdoridir.\n"
+"Ushbu son xronologik filtrga mos keladi. "
+
+msgid "This is the total amount of development assistance disbursed. This amount corresponds to the date filter."
+msgstr "Bu taraqqiyot sohasidagi ko'mak "
+
+msgid "This is the total amount of development assistance disbursed. This number corresponds to the date filter."
+msgstr "Bu taraqqiyot sohasidagi ajratilgan ko'makning umumiy miqdoridir."
+
+msgid "This is the total number of development partners."
+msgstr "Bu taraqqiyot sohasidagi hamkorlarning umumiy soni."
+
+msgid "This is the total volume of development assistance committed across all activities by collaboration type."
+msgstr "Bu hamkorlik  kesimida faoliyat yo'nalishlari bo'ylab  taraqqiyot uchun ko'makka oid umumiy majburiyatlar miqdoridir."
+
+msgid "Title"
+msgstr "Nom"
+
+msgid "Total"
+msgstr "Jami"
+
+msgid "Total Commitment"
+msgstr "Barcha majburiyatlar"
+
+msgid "Total Commitments"
+msgstr "Jami majburiyatlar"
+
+msgid "Total Disbursed"
+msgstr "Umumiy ajratilgan mablag'lar"
+
+msgid "Total Disbursements"
+msgstr "Umumiy ajratilgan mablag'lar"
+
+msgid "Total Donors"
+msgstr "Barcha donorlar"
+
+msgid "Total Donors & Type"
+msgstr "Jami donorlar va turlari"
+
+msgid "Total commitment"
+msgstr "Barcha majburiyatlar"
+
+msgid "Total disbursed"
+msgstr "Umumiy ajratilgan mablag'lar"
+
+msgid "Total disbursements"
+msgstr "Umumiy ajratilgan mablag'lar"
+
+msgid "Total donors & Type"
+msgstr "Jami donorlar va turlari"
+
+msgid "Transactions"
+msgstr "Tranzaktsiyalar"
+
+msgid "Value"
+msgstr "Qiymati"
+
+msgid "You cannot access this page because you do not have appropriate access rights."
+msgstr "Siz ushbu sahifani ocha olmaysiz, chunki tegishli foydalanish huquqiga ega emassiz."
+
+msgid "click on an individual chart bar below to filter the statistics by Ministry"
+msgstr "Statistika ma'lumotlarini vazirliklar kesimida filtrlash uchun quyidagi alohida diagrammani bosing"
+
+msgid "click on an individual chart bar below to filter the statistics by that specific donor"
+msgstr "Muayyan donorlar bo'yicha statistikani filtrlash uchun quyidagi diagrammani sichqoncha bilan bosing"
+
+msgid "percent"
+msgstr "foiz"
+
+msgid "to"
+msgstr "kimga"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "Tashqi ko'mak boshqaruv paneli"
+
+#~ msgid "Create Report"
+#~ msgstr "Hisobot yaratish"
+
+#~ msgid "Reports"
+#~ msgstr "Hisobotlar"
+
+#~ msgid "Software designed & developed by"
+#~ msgstr "Dastur ta'minotining ishlab chiqaruvchisi"
+
+#~ msgid "This chart shows the total number of activities by aid finance type."
+#~ msgstr "Ushbu diagrammada faoliyat yo'nalishlarining umumiy soni ko'makni moliyalashtirish turi kesimida ko'rsatilgan."
+
+#~ msgid "Total Budget"
+#~ msgstr "Umumiy byudjet"
+
+#~ msgid "click on an individual chart bar below to filter the statistics by specific sector"
+#~ msgstr "Statistika ma'lumotlarini muayyan sektorlar bo'yicha filtrlash uchun quyidagi diagrammaga kursor bilan bosing"

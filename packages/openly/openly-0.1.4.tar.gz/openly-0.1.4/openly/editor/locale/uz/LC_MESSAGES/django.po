@@ -1,0 +1,911 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 17:02+0900\n"
+"PO-Revision-Date: 2019-06-02 16:27+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid " You are about to <span class=\"bold\">approve and publish</span> the activity indicating that you are satisfied with the information provided. This will make the activity information publicly available and the information contained will appear in your reports. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">cancel</span> the review of this activity. This will revert the status of the activity to draft. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">endorse</span> the activity indicating that you are satisfied with the information provided. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">remove</span> your endorsement of the activity, indicating that the activity information is not sufficient. Please add a comment to explain your decision. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">submit</span> this activity to be reviewed and approved by Government Partners prior to publication. Based on this activity, the following organisations will be notified: "
+msgstr ""
+
+msgid "A funding partner of the activity is an organisation which is at least partially responsible for funding this activity."
+msgstr "Ushbu faoliyatni hech bo'lmaganda qisman moliyalashtirish uchun mas'ul bo'lgan tashkilot moliyalshtiruvchi hamkordir."
+
+msgid "About Budgets"
+msgstr "Byudjetlar haqida"
+
+msgid "Accountable Partner"
+msgstr "Hisobdor hamkor"
+
+msgid "Activities for Review"
+msgstr "Qayta ko'rib chiqish uchun faoliyat yo'nalishlari"
+
+msgid "Activity Budgets"
+msgstr "Faoliyat byudjetlari"
+
+msgid "Activity Completion Rating"
+msgstr "Faoliyatni yakunlash reytingi"
+
+msgid "Activity Description"
+msgstr "Faoliyat tavsifi"
+
+#, fuzzy
+msgid "Activity Endorsed by"
+msgstr "Faoliyat rahbari (menejeri)"
+
+msgid "Activity ID"
+msgstr "Faoliyat ID raqami"
+
+msgid "Activity List"
+msgstr "Faoliyat ro'yxati"
+
+msgid "Activity Objectives"
+msgstr "Faoliyat maqsadlari"
+
+msgid "Activity Status"
+msgstr "Faoliyat holati"
+
+msgid "Activity Title"
+msgstr "Faoliyat nomi"
+
+msgid "Activity log"
+msgstr "Faoliyat jurnali"
+
+msgid "Actual End Date"
+msgstr "Amaldagi yakunlash kuni"
+
+msgid "Actual Start Date"
+msgstr "Amaldagi boshlash kuni"
+
+msgid "Add a budget"
+msgstr "Byudjet qo'shish"
+
+msgid "Add a comment"
+msgstr "Izoh qo'shing"
+
+#, fuzzy
+msgid "Add a commitment transaction"
+msgstr "Majburiyat turini qo'shish"
+
+msgid "Add a contact"
+msgstr "Aloqa ma'lumotini qo'shing"
+
+msgid "Add a government partner"
+msgstr "Davlat tarafdan hamkorni qo'shish"
+
+msgid "Add a location"
+msgstr "Joyni qo'shish"
+
+msgid "Add a related location"
+msgstr "Aloqador joyini qo'shing"
+
+msgid "Add a related sector"
+msgstr "Aloqador tarmoqni qo'shing"
+
+msgid "Add a result"
+msgstr "Natija qo'shish"
+
+msgid "Add a start date"
+msgstr "Boshlanish kunini qo'shing"
+
+msgid "Add a transaction"
+msgstr "Tranzaktsiya qo'shish"
+
+msgid "Add a transaction of type 'Commitment'"
+msgstr "\"Majburiyat\" turidagi tranzaktsiyani qo'shing"
+
+msgid "Add an accountable partner"
+msgstr "Hisobdor hamkorni o'shish"
+
+msgid "Add an activity description"
+msgstr "Faoliyat yo'nalishini tavsifini qo'shish"
+
+msgid "Add an activity status"
+msgstr "Faoliyat holatini qo'shing"
+
+msgid "Add an activity title"
+msgstr "Faoliyat yo'nalishi nomini qo'shing"
+
+msgid "Add an attachment"
+msgstr "Ilova qo'shish"
+
+#, fuzzy
+msgid "Add an extending partner"
+msgstr "Qayta moliyalashtiruvchi hamkorni qo'shing"
+
+msgid "Add an funding partner"
+msgstr "Moliyalashtiruvchi hamkorni qo'shish"
+
+msgid "Add an implementing partner"
+msgstr "Ijrochi sherikni qo'shish"
+
+#, python-format
+msgid "Add another %(object)s"
+msgstr ""
+
+msgid "Add another accountable partner"
+msgstr "Yana bir hisobdor hamkorni qo'shish"
+
+msgid "Add another category"
+msgstr "Yana bitta toifa qo'shish"
+
+#, fuzzy
+msgid "Add another extending partner"
+msgstr "Yana bitta qayta moliyalashtiruvchi hamkorni qo'shing"
+
+msgid "Add another funding partner"
+msgstr "Yana bitta moliyalashtiruvchi hamkorni qo'shish"
+
+msgid "Add another government partner"
+msgstr "Davlat tarafdan yana bir hamkorni qo'shish"
+
+msgid "Add another implementing partner"
+msgstr "Yana bitta ijrochi hamkorni qo'shish"
+
+msgid "Add another sector"
+msgstr "Yana bir tarmoqni qo'shish"
+
+msgid "Additional data required"
+msgstr "Qo'shimcha ma'lumotlar kerak"
+
+msgid "Aid Type"
+msgstr "ko'mak turi"
+
+msgid "Amount"
+msgstr "Miqdor"
+
+msgid "Approval & Comments"
+msgstr "Tasdiqlash va izoh berish"
+
+msgid "Approve &amp; Publish"
+msgstr ""
+
+#, fuzzy
+msgid "Approve &amp; Publish Activity"
+msgstr "Mahalliy faoliyat yo'nalishlari"
+
+msgid "Approved"
+msgstr "Tasdiqlangan"
+
+msgid "Approved and Published"
+msgstr "Tasdiqlandi va nashr qilindi"
+
+msgid "Are You Sure?"
+msgstr "Ishonchingiz komilmi?"
+
+msgid "Are you sure you want to delete this activity?"
+msgstr "Siz ushbu faoliyat yo'nalishini o'chirishga ishonchingiz komilmi?"
+
+msgid "Available for import"
+msgstr "Import uchun mavjud"
+
+msgid "Average completion"
+msgstr "O'rta darajada to'ldirish"
+
+msgid "Browse"
+msgstr ""
+
+msgid "Budget Status"
+msgstr "Byudjet holati"
+
+msgid "Budget Type"
+msgstr "Byudjet turi"
+
+msgid "Budgets"
+msgstr "Byudjetlar"
+
+msgid "Budgets represent the indicative or committed funding for each financial quarter or year over the lifetime of the activity. The reporting of budgets helps to provide predictability and assist with forward planning. The total budget for an activity should be reported as a commitment transaction."
+msgstr "Byudjetlar faoliyat muddati davomida har moliyaviy kvartal yoki yil uchun dastlabki yoki tasdiqlangan moliyalashtirishni anglatadi.  Byudjetlar bo'yicha hisobot berish istiqbolni belgilash va rejalashtirishni ta'minlashga yordam beradi. Faoliyat uchun umumiy byudjetni olingan majburiyat tranzaktsiyasi deb hisobot berilishi lozim."
+
+msgid "Budgets:"
+msgstr "Byudjetlar"
+
+msgid "Cancel"
+msgstr "Bekor qilish"
+
+msgid "Cancel review"
+msgstr "Ko'rib chiqishni bekor qilish"
+
+msgid "Categories"
+msgstr "Toifalar"
+
+msgid "Change Activity Status"
+msgstr "Faoliyat holatini o'zgartirish"
+
+msgid "Choose organisation"
+msgstr "Tashkilotni tanlang"
+
+msgid "Click to endorse"
+msgstr "Ma'qullash uchun kursor bilan bosing"
+
+msgid "Click to remove endorsement"
+msgstr "Ma'qullashni o'chirish uchun kursor bilan bosing"
+
+msgid "Collaboration Type"
+msgstr "Hamkorlik turi"
+
+msgid "Compare Activities"
+msgstr "Faoliyat yo'nalishlarini qiyoslash"
+
+msgid "Compare local activities with IATI "
+msgstr "Mahalliy faoliyat yo'nalishlarini IATI bilan qiyoslash"
+
+msgid "Complete"
+msgstr "Yakunlangan"
+
+msgid "Contact type"
+msgstr "Aloqa turi"
+
+msgid "Contacts"
+msgstr "Aloqa uchun ma'lumot"
+
+msgid "Create an activity for..."
+msgstr "Faoliyat yo'nalishini yaratish"
+
+msgid "Currency"
+msgstr "Valyuta"
+
+msgid "Data Entry Completion"
+msgstr "Ma'lumotlarni kiritishni yakunlash"
+
+msgid "Date"
+msgstr "Sana"
+
+msgid "Date submitted"
+msgstr "Taqdim etilgan sana"
+
+msgid "Dates:"
+msgstr "Sanalar:"
+
+msgid "Default Aid Type"
+msgstr "Belgilangan tashqi ko'mak turi"
+
+msgid "Default Currency"
+msgstr "Belgilangan valyuta"
+
+msgid "Default Finance Type"
+msgstr "Belgilangan moliyalashtirish turi"
+
+msgid "Default Flow Type"
+msgstr "Belgilangan oqim turi"
+
+msgid "Default Settings"
+msgstr "Standart belgilangan moslamalar"
+
+msgid "Default Tied Status"
+msgstr "Belgilangan bog'liq holat (maqom)"
+
+msgid "Delete"
+msgstr "O'chirish"
+
+msgid "Delete Activity"
+msgstr "Faoliyatni o'chirish"
+
+msgid "Delete Activity?"
+msgstr "Faoliyat yo'nalishi o'chirilsinmi?"
+
+msgid "Delete activity"
+msgstr "Faoliyat yo'nalishi o'chirilsinmi?"
+
+msgid "Description"
+msgstr "Tavsif"
+
+msgid "Details of groups that are intended to benefit from the activity."
+msgstr "Faoliyat benefitsiarlari bo'lishi kutilgan guruhlar haqida tafsilotlar."
+
+msgid "Disbursed:"
+msgstr "Ajratilgan:"
+
+msgid "Disbursement Channel"
+msgstr "O'zlashtirish kanali"
+
+msgid "Document Description"
+msgstr "Hujjat tavsifi"
+
+msgid "Documents & Images"
+msgstr "Hujjatlar va suratlar"
+
+msgid "Documents and images should include key supporting materials related to this activity."
+msgstr "Hujjatlar va suratlarda ushbu faoliyat yo'nalishiga bog'liq bo'lgan asosiy ko'mak materiallar ko'rsatilishi zarur."
+
+msgid "Draft"
+msgstr "Qoralama"
+
+msgid "Draft Activities"
+msgstr "Xomaki faoliyat yo'nalishlari"
+
+msgid "Edit Activity"
+msgstr "Faoliyat yo'nalishini tahrir qiling"
+
+msgid "Edit a Document"
+msgstr "Hujjatni tahrir qilish"
+
+msgid "Email"
+msgstr "Elektron pochta"
+
+msgid "End Date"
+msgstr "Yakunlash kuni"
+
+msgid "Endorse Activity"
+msgstr "Faoliyat yo'nalishini ma'qullash"
+
+msgid "Endorsed"
+msgstr "Tasdiqlangan"
+
+msgid "Extending:"
+msgstr "Uzaytiruvchi:"
+
+msgid "Filter"
+msgstr "Filtr"
+
+msgid "Finance Type"
+msgstr "Moliya turi"
+
+msgid "Finance Type:"
+msgstr "Moliyalashtirish turi:"
+
+msgid "Finances"
+msgstr "Moliya"
+
+msgid "Financial Transactions"
+msgstr "Moliyaviy tranzaktsiyalar"
+
+msgid "Flow Type"
+msgstr "Oqim turi"
+
+msgid "Flow Type:"
+msgstr "Oqim turi:"
+
+msgid "Funding Partner"
+msgstr "Moliyalashtiruvchi hamkor"
+
+msgid "Funding:"
+msgstr "Moliyalashtiruvchi:"
+
+msgid "General"
+msgstr "Umumiy"
+
+msgid "General Information"
+msgstr "Umumiy ma'lumot"
+
+msgid "Government Partner"
+msgstr "Davlat tarafdan hamkor"
+
+msgid "How can I improve my rating?"
+msgstr "Men o'z reytingzimni qanday oshirishim mumkin?"
+
+msgid "ID"
+msgstr "Identifikatsiya"
+
+msgid "Implementing Partner"
+msgstr "Ijrochi sherik"
+
+msgid "Implementing:"
+msgstr "Ijrochi:"
+
+msgid "Import"
+msgstr "Import"
+
+msgid "Import IATI"
+msgstr "IATI import qilish"
+
+msgid "Import all"
+msgstr "Barchasini import qilish"
+
+msgid "Incompletely specified activities"
+msgstr "To'liq belgilanmagan faoliyat yo'nalishlari"
+
+msgid "Job Title"
+msgstr "Lavozim nomi"
+
+msgid "Keep Local"
+msgstr "Mahalliy saqlash"
+
+msgid "Language"
+msgstr "Til"
+
+msgid "Loading..."
+msgstr "Yuklanmoqda .."
+
+msgid "Local Activities"
+msgstr "Mahalliy faoliyat yo'nalishlari"
+
+msgid "Location"
+msgstr "Joy"
+
+msgid "Locations"
+msgstr "Joylar"
+
+msgid "Locations represent what regions are targeted. Percentages represent what share of the total commitment amount will flow to a particular region."
+msgstr "Hududlar qaysi mintaqalar maqsadli etib belgilanganini anglatadi. Foizlarda muayyan mintaqaga yo'naltiriluvchi umumiy majburiyatlar hissasi ko'rsatilgan."
+
+msgid "Locations represent where the activity takes place. For activities in Manufahi, add all relevant aldeias. For activities in other municipalities in Timor-Leste, add all relevant sub-districts. To select a location please type your location in the search bar."
+msgstr "Hududlar faoliyat amalga oshiriluvchi joylardir.  Manufahidagi faoliyat yo'nalishlari bo'yicha barcha tegishli aldeialarni qo'shing. Sharqiy Timordagi boshqa munitsipalitetlargidagi faoliyat uchun barcha tegishli tumanosti hududlarni qo'shing.  Hududni tanlash uchun iltimos izlash satrida o'z joyingizni yozing."
+
+msgid "Mailing Address"
+msgstr "Pochta manzili"
+
+msgid "Name"
+msgstr "Ism/Nom"
+
+msgid "Nationwide"
+msgstr "Mamlakat bo'ylab "
+
+msgid "Next"
+msgstr "Keyingi"
+
+msgid "No Activity found matching the query"
+msgstr "Izlovga mos Faoliyat yo'nalishi topilmadi"
+
+msgid "No, Don't Approve"
+msgstr "Yo'q, tasdiqlamang"
+
+msgid "No, Don't Cancel"
+msgstr "Yo'q, bekor qilmang"
+
+msgid "No, Don't Endorse"
+msgstr "Yo'q, ma'qullamang"
+
+msgid "No, Don't Remove"
+msgstr "Yo'q, o'chirmang"
+
+msgid "Okay, got it"
+msgstr "Yaxshi, tushundim"
+
+msgid "Organisation"
+msgstr "Tashkilot"
+
+msgid "Organisations"
+msgstr "Tashkilotlar"
+
+msgid "Participating Organisations"
+msgstr "Ishtirokchi tashkilotlar"
+
+#, fuzzy
+msgid "Pending"
+msgstr "Uzaytiruvchi:"
+
+msgid "Person Name"
+msgstr "Shaxs ismi"
+
+msgid "Planned End Date"
+msgstr "Rejalashtirilgan yakunlash kuni"
+
+msgid "Planned Start Date"
+msgstr "Rejalashtirilgan boshlash kuni"
+
+#, python-format
+msgid "Please specify what percentage of the total budget is allocated to each %(object)s. All percentages should add up to 100%%."
+msgstr ""
+
+msgid "Post"
+msgstr ""
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Provider"
+msgstr "Beruvchi"
+
+msgid "Provider Organisation"
+msgstr "Beruvchi tashkilot"
+
+msgid "Published"
+msgstr "Chop etildi"
+
+msgid "Published Activities"
+msgstr "Chop etilgan faoliyat yo'nalishlari"
+
+msgid "Receiver"
+msgstr "Oluvchi"
+
+msgid "Receiver Organisation"
+msgstr "Oluvchi tashkilot"
+
+msgid "Remove Endorsement"
+msgstr "Ma'qullashni o'chirish"
+
+msgid "Reporting Organisation"
+msgstr "Hisobot beruvchi tashkilot"
+
+msgid "Reporting organisation"
+msgstr "Hisobot beruvchi tashkilot"
+
+msgid "Reporting:"
+msgstr "Hisobot beruvchi:"
+
+msgid "Required to publish"
+msgstr "Chop etish talab qilinadi"
+
+msgid "Reset"
+msgstr "Qayta yuk lash"
+
+msgid "Restore Archived"
+msgstr "Arxivlanganni qayta tickling"
+
+msgid "Result Description"
+msgstr "Natija tavsifi"
+
+msgid "Result Title"
+msgstr "Natija nomi"
+
+msgid "Result Type"
+msgstr "Natija turi"
+
+msgid "Results"
+msgstr "Natijalar"
+
+msgid "Results:"
+msgstr "Natijalar:"
+
+msgid "Return"
+msgstr "Qaytish"
+
+msgid "Save"
+msgstr "Saqlash"
+
+msgid "Save and Next"
+msgstr "Saqlash va keyingi"
+
+msgid "Save and Return"
+msgstr "Saqlash va qaytish"
+
+msgid "Sector"
+msgstr "Tarmoq"
+
+msgid "Sectors"
+msgstr "Tarmoqlar"
+
+msgid "Sectors & Policy Markers"
+msgstr "Tarmoqlar va stratégie markerlar"
+
+msgid "Sectors represent the purpose of the activity. For more information and clarification, please refer to the OECD&#8216;s list of CRS purpose codes: http://www.oecd.org/dac/stats/purposecodessectorclassification.htm"
+msgstr "Tarmoqlar faoliyat maqsadini aks ettiradi. Qo'shimcha ma'lumot va izohlar uchun, iltimos, Iqtisodiy hamkorlik va taraqqiyot tashkilotining  CRS maqsadlar kodlari ro'yxatiga qarang: http://www.oecd.org/dac/stats/purposecodessectorclassification.htm"
+
+msgid "Sectors represent the purpose of the activity. To select a broad sector category as opposed to a subsector please select \"Sector name [unspecified]\"."
+msgstr "Tarmoqlar faoliyat maqsadini aks ettiradi.  Quyi tarmow emas, keng tarmoq toifasini tanlash uchun, iltimos, \"Sector name\" (unspecified) , y'ani, \"Tarmoq nomi\"(belgilanmagan)ni tanlang"
+
+msgid "See More"
+msgstr "Ko'proq ko'rish"
+
+msgid "Send back to Draft"
+msgstr "Xomakiga qaytarish"
+
+msgid "Send back to Review"
+msgstr "Ko'rib chiqish uchun qaytarib jo'nating"
+
+msgid "Sending the activity back to Draft status will hide the activity from the public site and reports. It will also remove prior endorsements for the activity."
+msgstr ""
+
+msgid "Sending the activity back to Review status will hide the activity from the public site and reports. It will also alert each party to review the activity. Please note that it does not remove prior endorsements"
+msgstr ""
+
+msgid "Sorry, you cant publish just yet."
+msgstr "Uzr, siz hozircha chop etolmaysiz"
+
+msgid "Start Date"
+msgstr "Boshlash kuni"
+
+msgid "Submit for review"
+msgstr "Ko'rib chiqilishi uchun topshirilgan"
+
+msgid "Target Groups"
+msgstr "Mo'ljaldagi guruhlar"
+
+msgid "Telephone"
+msgstr "Telefon"
+
+msgid "The IATI identifier will be created when this activity is saved"
+msgstr "Ushbu faoliyat saqlanganda IATI identifikatori yaratiladi"
+
+msgid "The completion rating reflects the overall percentage of important fields completed within the data entry form."
+msgstr "To'ldirish retying ma'lumotlar kiritish formasidagi muhim satrlarni umumiy foizini aks ettiradi."
+
+msgid "The contacts should include key team members who support this activity."
+msgstr "Aloqa uchun ma'lumotlarda ushbu faoliyatni amalga oshiruvchi guruhning asosiy a'zolarini ko'rsatish lozim."
+
+msgid "The currency value date"
+msgstr "Valyuta bahosi kuni"
+
+msgid "The date of transaction"
+msgstr "Tranzaktsiya sanasi"
+
+msgid ""
+"The date on which the activity actually started or ended,\n"
+"                    for example the date of the first or last disbursement\n"
+"\t\t    or when physical activity started or ended."
+msgstr "Faoliyat amalda boshlanuvchi yoki yakunlanuvchi sana, masalan, birinchi yoki oxirgi marta mablag' ajratilishi yoki amaliy faoliyat boshlanishi yoki yakunlanishi."
+
+msgid ""
+"The date on which the activity is planned to start or end,\n"
+"                    for example the date of the first or last planned disbursement\n"
+"\t\t    or when physical activity starts or ends."
+msgstr "Faoliyat boshlanishi yoki yakunlanishi lozim bo'lgan sana, masalan, birinchi yoki oxirgi rejalashtirilgan mablag' ajratilishi yoki amaliy faoliyat boshlanuvchi yoki yakunlanuvchi sana."
+
+msgid "The end date cannot be before the start date"
+msgstr "Yakunlash kuni boshlanish kunidan avval bo'lishi mumkin emas"
+
+msgid "The government entity or entities responsible for oversight or maintenance of the activity. Often this will be the government entity with which a MoU or similar agreement is signed. In many cases, the MoU will be signed directly with the implementing partner."
+msgstr "Nazorat yoki faoliyatning amalga oshirilishi uchun mas'ul davlat muassasasi yoki tashkilotlari. Ko'pincha bu o'zaro tushunish to'g'risida memorandum (OTM) yoki shunga o'xshash shartnoma imzolovchi tashkilotdir.  Ko'p hollarda OTM bevosita Ijrochi hamkor bilan imzolanadi."
+
+msgid "The implementer of the activity is the organisation(s) which is/are principally responsible for delivering this activity."
+msgstr "Faoliyat ijrochsi ushbu faoliyat yo'nalishini amalga oshirish uchun asosiy mas'uliyatli tashkilotdir."
+
+msgid "The objectives should include a detailed description of the activity and expected outcomes."
+msgstr "Maqsadlarda faoliyatdan kutilgan natijalarning batafsil tavsifi bo'lishi lozim."
+
+msgid "The status explains whether the budget being reported is indicative or has been formally committed."
+msgstr "Ushbu status hisobot berilayotgan byudjet dastlabki holatdami yoki rasman tasdiqlanganligini izohlaydi."
+
+msgid "The title should be a human readable name of the project. Please ensure that acronyms are fully spelled out"
+msgstr "Nom inson o'qiy oladigan loyihaning nomi bo'lishi zarur. Qisqartmalar to'liq yozilganiga ishonch hosil qiling"
+
+msgid "The type of finance (e.g. grant, loan, debt relief, etc). This the default value for all transactions in the activity report; it can be overridden by individual transactions."
+msgstr "Moliya turi (masalan, grant, kredit, qarzdan kechish va hokazo).  Bu faoliyat to'g'risidagi hisobotda barcha tranzaktsiyalar uchun belgilangan qiymatdir."
+
+msgid "There are no accountable partners"
+msgstr "Hisobot beruvchi hamkorlar yo'q"
+
+msgid "There are no budgets"
+msgstr "Byudjetlar yo'q"
+
+msgid "There are no contacts"
+msgstr "Aloqa uchun ma'lumotlar yo'q"
+
+msgid "There are no documents or images uploaded"
+msgstr "Hujjatlar yoki suratlar yuklanmagan"
+
+#, fuzzy
+msgid "There are no extending partners"
+msgstr "Qayta moliyalashtiruvchi hamkorlar yo'q"
+
+msgid "There are no funding partners"
+msgstr "Moliyalashtiruvchi hamkorlar yo'q"
+
+msgid "There are no government partners"
+msgstr "Davlat idoralaridan sheriklar yo'q"
+
+msgid "There are no implementing partners"
+msgstr "Ijrochi hamkorlar yo'q"
+
+msgid "There are no results"
+msgstr "Natijalar yo'q"
+
+msgid "There are no transactions"
+msgstr "Tranzaktsiyalar yo'q"
+
+msgid "This explains what the activity is, it is longer than the title and contains more detail"
+msgstr "Tavsifda faoliyat nimadan iboratligi tushuntirilgan.  U nomdan ko'ra uzunroq va ko'proq tafsilotlarga ega."
+
+msgid "This explains what the result is, it is longer than the title and contains more detail"
+msgstr "Bunda natija nimaligi tushuntiriladi va u nomdan ko'ra uzunroq va ko'proq tafsilotlarga ega"
+
+msgid "This is the date on which the transaction was made or (in the case of commitments) agreed."
+msgstr "Ushbu kunda tranzaktsiya amagla oshirilgan yoki (majburiyatlar holida) kelishilgan."
+
+msgid "This is the date we will use for determining the exchange rate for currency conversions."
+msgstr "Biz valyuta almashtiruv kursini belgilashda ushbu sanadan foydalanamiz."
+
+msgid "This is the default currency for the activity, you can override this in an individual transaction."
+msgstr "Bu ushbu faoliyat uchun belgilangan valyuta.  Siz alohida tranzaktsiyada buni o'zgartirishingiz mumkin."
+
+msgid "This is the government entity or development partner agency receiving funds from financing partner(s) for channeling to implementing partner(s)."
+msgstr "Bu Moliyalashtiruvchi Hamkor(lar) mablag'lar olib, Ijrochi hamkorga yetkazib berishi lozim bo'lgan davlat muassasasi yoki taraqqiyot agentligi."
+
+msgid "Tied Status"
+msgstr "Bog'langan holat"
+
+msgid "Title"
+msgstr "Nom"
+
+msgid "To add endorsers for this activity, select government partners in the organisations tab."
+msgstr "Ushbu faoliyat yo'nalishini ma'qullovchilarni qo'shish uchun tashkilotlar ilovasida hukumat hamkorlarini tanlang"
+
+msgid "To be approved"
+msgstr "Tasdiqlanishi kerak"
+
+msgid "To be endorsed"
+msgstr "Ma'qullash lozim"
+
+msgid "To change this list please change the organisations listed as accountable partners in the Organisations tab."
+msgstr "Ushbu ro'yxatni o'zgartirish uchun Tashkilotlar kiritmasida hisobdor sheriklar sifatida sanab o'tilgan tashkilotlarni o'zgartiring"
+
+#, fuzzy
+msgid "To make sure that you can publish your activity you need to add a commitment. The total budget for an activity should be reported as a commitment in the transaction element."
+msgstr "O'z faoliyatingizni chop eta polish uchun siz olingan majburiyat miqdorini kiritishingiz lozim.  Faoliyat uchun ajratilgan umumiy byudjetni tranzaktsiya elementida majburiyat sifatida ko'rsatish lozim."
+
+msgid "To publish you need to:"
+msgstr "Chop etish uchun quyidagilar talab qilinadi"
+
+msgid "Transaction Type"
+msgstr "Tranzaktsiya turi"
+
+msgid "Transactions"
+msgstr "Tranzaktsiyalar"
+
+msgid "Transactions:"
+msgstr "Tranzaktsiyalar:"
+
+msgid "Type"
+msgstr "Tur"
+
+msgid "Untitled"
+msgstr "Nomi yo'q"
+
+#, python-format
+msgid "Updated %(modified)s"
+msgstr ""
+
+msgid "Upload a Document"
+msgstr "Hujjatni yuklash"
+
+msgid "Upload document"
+msgstr "Hujjatni yuklash"
+
+msgid "Value"
+msgstr "Qiymat"
+
+msgid "Value Date"
+msgstr "Baholash kuni"
+
+msgid "View"
+msgstr "Qarash"
+
+msgid "Website"
+msgstr "Veb sahifa"
+
+msgid "Whether the aid is untied, tied, or partially tied."
+msgstr "Tashqi ko'mak biror shartga bog'liqmi, qisman bog'liqmi yoki bog'liq emasmi."
+
+msgid "Whether this is the original budget (prepared when the original commitment was made) or whether it has subsequently been revised."
+msgstr "Bu byudjet aslimi (birlamchi majburiyat olingan paytda tayyorlangan) yoki keyin qayta ko'rib chiqilganmi."
+
+msgid "Yes"
+msgstr "Ha"
+
+msgid "Yes, Approve"
+msgstr "Ha, tasdiqlang"
+
+msgid "Yes, Cancel"
+msgstr "Ha, bekor qiling"
+
+msgid "Yes, Endorse"
+msgstr "Ha, ma'qullang"
+
+msgid "Yes, Remove"
+msgstr "Ha, o'chiring"
+
+msgid "Yes, send back to Draft"
+msgstr "Ha, xomakiga qaytaring"
+
+msgid "Yes, send back to Review"
+msgstr "Ha, ko'rib chiqish uchun qaytarib jo'nating"
+
+msgid "You cannot publish this activity for review before you:"
+msgstr "Siz ushbu faoliyatni ko'rib chiqish uchun nashr etishdan avval:"
+
+msgid "You cannot submit this activity for review before you:"
+msgstr "Siz ushbu faoliyatni ko'rib chiqish uchun topshirishdan avval:"
+
+msgid "You have no activities to review."
+msgstr "Siz ko'rib chiqadigan hech qanday faoliyatingiz yo'q"
+
+msgid "You may not edit this activity"
+msgstr "Siz ushbu faoliyatni tahrir qilishingiz  mumkin emas"
+
+#, python-format
+msgid "You may replace the activity on the %(position_1)s with the %(status)s activity on the %(position_2)s"
+msgstr ""
+
+msgid "Your Stats"
+msgstr "Sizning statistikangiz"
+
+msgid "all subregions of "
+msgstr "barcha sub-mintaqalar"
+
+#, fuzzy, python-brace-format
+msgid "all subregions of {area}"
+msgstr "barcha sub-mintaqalar"
+
+msgid "back"
+msgstr "ortga"
+
+msgid "left"
+msgstr "chap"
+
+msgid "mandatory"
+msgstr "majburiy"
+
+msgid "no results"
+msgstr "Natijalar yo'q"
+
+msgid "no transactions"
+msgstr "Tranzaktsiyalar yo'q"
+
+msgid "right"
+msgstr "o'ng"
+
+#, fuzzy
+#~ msgid "Actions"
+#~ msgstr "Joylar"
+
+#~ msgid "Activities under review"
+#~ msgstr "Ko'rib chiqilayotgan faoliyat yo'nalishlari"
+
+#, fuzzy
+#~ msgid "Activities you can endorse"
+#~ msgstr "Faoliyat rahbari (menejeri)"
+
+#~ msgid "Activity Manager"
+#~ msgstr "Faoliyat rahbari (menejeri)"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "Ko'mak boshqaruv panellari"
+
+#~ msgid "Aid by Donor"
+#~ msgstr "Ko'mak donorlar kesimida"
+
+#~ msgid "Aid by Location"
+#~ msgstr "Ko'mak hududlar kesimida"
+
+#~ msgid "Aid by Ministry"
+#~ msgstr "Ko'mak vazirliklar kesimida"
+
+#~ msgid "Aid by Sector"
+#~ msgstr "Ko'mak tarmoqlar kesimida"
+
+#~ msgid "Create Report"
+#~ msgstr "Hisobot yaratish"
+
+#~ msgid "Endorsements"
+#~ msgstr "Ma'qullashlar"
+
+#~ msgid "Finances & Budgets"
+#~ msgstr "Moliya va byudjetlar"
+
+#, fuzzy
+#~ msgid "Partner organisation"
+#~ msgstr "Beruvchi tashkilot"
+
+#~ msgid "Reports"
+#~ msgstr "Hisobotlar"
+
+#~ msgid "Revert to draft status"
+#~ msgstr "Dastlabki holatga qaytarish"
+
+#~ msgid "Software designed & developed by"
+#~ msgstr "Dastur ta'minotining ishlab chiquvchisi"
+
+#~ msgid "Submitted for review at"
+#~ msgstr "da ko'rib chiqilishi uchun topshirilgan"
+
+#~ msgid "Your Pages"
+#~ msgstr "Sizning sahifalaringiz"
+
+#~ msgid "Your activities under review"
+#~ msgstr "Hozirgi paytda ko'rib chiqilayotgan"

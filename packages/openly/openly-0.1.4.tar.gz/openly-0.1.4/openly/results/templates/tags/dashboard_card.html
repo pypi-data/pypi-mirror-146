@@ -1,0 +1,44 @@
+{% load i18n %}
+
+<dashboard_card>
+    <div class="col-xs-12 col-md-4" if="{ !hide }">
+        <div class="card" if="{indicator}">
+            <div class="card-header">
+                {% if request.user.is_authenticated %}
+                    <a class="btn btn-default btn-super-small pull-right" href="{ edit_link }">{% trans 'Edit' %}</a>
+                {% endif %}
+                <h5>{ _.get(type, 'sector') }</h5>
+                <span class="card-title">{ title }</span>
+            </div>
+            <div class="card-body">
+                <div if="{ _.get(type, 'display') == 'Values' && periods}" class="card-chart">
+                    <circle if="{ periods.length <= 2 }"
+                        period="{ periods[0] }"
+                        period_set="{ periods }"
+                        measure="{ measure }">
+                    </circle>
+
+                    <circle if="{ periods.length == 2 }"
+                        period_set="{ periods }"
+                        period="{ periods[1] }"
+                        ascending="{ indicator.ascending }"
+                        measure="{ measure }">
+                    </circle>
+
+                    <div if="{ periods.length > 2 }" id="card-{ indicator.id }-line-chart"></div>
+                </div>
+
+                <div if="{ _.get(type, 'display') == 'Narrative' }" class="card-narrative">
+                    <p>"{ indicator.key_progress_statement }"</p>
+                </div>
+
+                <span class="last-updated">
+                    {% trans 'Updated' %} { _.get(indicator, 'last_updated') }
+                </span>
+                <button if="{ !opts.hide_more_button }" type="button" class="btn btn-sm" onclick="{ open_indicator_profile }">{% trans 'See more' %}</button>
+            </div>
+        </div>
+    </div>
+
+{% include 'tags/dashboard_card.js' %}
+</dashboard_card>

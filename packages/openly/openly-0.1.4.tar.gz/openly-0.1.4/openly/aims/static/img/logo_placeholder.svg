@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo Placeholder</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo-Placeholder">
+            <g id="Group-6">
+                <rect id="Rectangle-9" fill="#FFFFFF" x="0" y="0" width="200" height="200"></rect>
+                <path d="M16,12.75 L16,13 L16,34 L16,34.5 L17,34.5 L17,34 L17,13 L37.5,13 L38,13 L38,12 L37.5,12 L16.5,12 L16,12 L16,12.75 Z" id="Combined-Shape" stroke="#037E78" stroke-linecap="square"></path>
+                <path d="M13,164.75 L13,165 L13,186 L13,186.5 L14,186.5 L14,186 L14,165 L34.5,165 L35,165 L35,164 L34.5,164 L13.5,164 L13,164 L13,164.75 Z" id="Combined-Shape-Copy-2" stroke="#037E78" stroke-linecap="square" transform="translate(24.000000, 175.250000) rotate(-90.000000) translate(-24.000000, -175.250000) "></path>
+                <path d="M163.25,12.75 L163.25,33.75 L163.25,34.25 L162.25,34.25 L162.25,33.75 L162.25,12.75 L162.25,11.75 L162.75,11.75 L183.75,11.75 L184.25,11.75 L184.25,12.75 L183.75,12.75 L163.25,12.75 Z" id="Combined-Shape-Copy" stroke="#037E78" stroke-linecap="square" transform="translate(173.250000, 23.000000) rotate(-270.000000) translate(-173.250000, -23.000000) "></path>
+                <path d="M161.25,164.5 L161.25,164.75 L161.25,185.75 L161.25,186.25 L162.25,186.25 L162.25,185.75 L162.25,164.75 L182.75,164.75 L183.25,164.75 L183.25,163.75 L182.75,163.75 L161.75,163.75 L161.25,163.75 L161.25,164.5 Z" id="Combined-Shape-Copy-3" stroke="#037E78" stroke-linecap="square" transform="translate(172.250000, 175.000000) rotate(-180.000000) translate(-172.250000, -175.000000) "></path>
+                <text id="Your-Organisation’s" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400" letter-spacing="-0.210000008" fill="#037E78">
+                    <tspan x="48.8490001" y="88">Your Organisation’s</tspan>
+                    <tspan x="66.347" y="104" font-family="AvenirNext-Bold, Avenir Next" font-size="14" font-weight="bold">Logo Here</tspan>
+                    <tspan x="134.653" y="104" font-family="AvenirNext-DemiBold, Avenir Next" font-size="14" font-weight="500"></tspan>
+                    <tspan x="70.389" y="123">(200 x 200)</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

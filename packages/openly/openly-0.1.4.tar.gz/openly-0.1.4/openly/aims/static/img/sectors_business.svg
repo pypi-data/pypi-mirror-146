@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="26px" viewBox="0 0 30 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="-Icon54---30x_Grid_set_1_Smart_Stroke" transform="translate(-156.000000, -1149.000000)" stroke="#000000">
+            <g id="Business" transform="translate(156.000000, 1092.000000)">
+                <g id="Group-11" transform="translate(0.000000, 57.000000)">
+                    <path d="M28.5,25.5 L1.5,25.5 C0.804,25.5 0.5,24.696 0.5,24 L0.5,5.5 C0.5,4.804 0.804,4.5 1.5,4.5 L28.5,4.5 C29.196,4.5 29.5,4.804 29.5,5.5 L29.5,24 C29.5,24.696 29.196,25.5 28.5,25.5 L28.5,25.5 Z" id="Stroke-1"></path>
+                    <path d="M18.5,0.5 L11.5,0.5 C10.804,0.5 10.5,0.804 10.5,1.5 L10.5,4.5 L19.5,4.5 L19.5,1.5 C19.5,0.804 19.196,0.5 18.5,0.5 L18.5,0.5 Z" id="Stroke-3"></path>
+                    <path d="M1,12.5 L29,12.5" id="Stroke-5"></path>
+                    <polyline id="Stroke-7" points="5.5 12.5 5.5 16.5 9.5 16.5 9.5 12.5"></polyline>
+                    <polyline id="Stroke-9" points="24.5 12.5 24.5 16.5 20.5 16.5 20.5 12.5"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

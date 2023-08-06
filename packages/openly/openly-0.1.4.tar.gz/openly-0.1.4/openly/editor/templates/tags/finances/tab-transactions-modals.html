@@ -1,0 +1,521 @@
+{% load ifsetting %}
+
+<tab-transactions-add-commitment-modal>
+    <transaction-modal title="Add a commitment">
+        <yield to='modal-content'>
+            <div class="col-xs-12">
+                <input if={parent.values.id} show={false} ref='id' value={parent.values.id}/>
+                <input show={false} ref='transaction_type' value='C'/>
+                <form>
+                    <p class="text-section-break">How much has been committed?</p>
+                    <label class="control-label">Total commitment</label>
+                    <div  id="currency-value-select-commitment" data-is="currency-value-select" choices={choices.currency} display={parent.values.currency} amount={parent.values.value}></div>
+                    <div if='{parent.validations.value}' class='form-group has-warning'>
+                        <span class='help-block'>{parent.validations.value.message}</span>
+                    </div>
+                    <br>
+                    <div class='form-group' id="transactions-date-picker-commitment">
+                        <label data-is='tab-transactions-date-picker' date={parent.values.transaction_date || parent.values.value_date}></label>
+                    </div>
+                    <div if='{parent.validations.value_date}' class='form-group has-warning'>
+                        <span class='help-block'>{parent.validations.value_date.message}</span>
+                    </div>
+
+                    <p class="text-section-break">Where is the money coming from?</p>
+                    <div class='form-group'>
+                        <label class="control-label">Organisation</label>
+                        <field-dropdownselect label='Organisation'
+                            label='Organisation'
+                            hide_label=true
+                            store={stores.transactionStore}
+                            path="provider_organisation" initial='{parent.values.provider_organisation }'
+                            fieldname="organisation"
+                            short_list=true
+                            short_list_codes='{_.get(parent, ["organisations","funding_list"])}'
+                            choice_fieldname="organisation"
+                            onchoose='setdropdown'
+                            classes={parent.classes}
+                            >
+                        </field-dropdownselect>
+                    </div>
+
+                    <p class="text-section-break">Where is the money going to?</p>
+                    <div class='form-group'>
+                        <label class="control-label">Organisation</label>
+                        <field-dropdownselect label='Organisation'
+                            label='Organisation'
+                            hide_label=true
+                            store={stores.transactionStore}
+                            path="receiver_organisation" initial='{parent.values.receiver_organisation}'
+                            fieldname="organisation"
+                            short_list=true
+                            short_list_codes='{_.get(parent, ["organisations","implementing_list"])}'
+                            choice_fieldname="organisation"
+                            onchoose='setdropdown'
+                            classes={parent.classes}
+                            >
+                        </field-dropdownselect>
+                    </div>
+                </form>
+            </div>
+        </yield>
+        <yield to='modal-footer'>
+            <button type="button" onclick='{hide}' class="btn btn-default btn-large">Close</button>
+            <button show={!iati_block_saving} type="button" onclick='{save}' disabled={disabled:!parent.saveEnabled} class="btn btn-large btn-primary">Save changes</button>
+        </yield>
+    </transaction-modal>
+
+    var tag = this;
+    tag.mixin('TransactionModalMixin')
+
+    {% ifsetting OIPA_SYNC_ENABLED %}
+    tag.iati_block_saving = (data.iati_data.link_info.oipa_fields.indexOf("C") != -1);
+    {% else %}
+    tag.iati_block_saving = false;
+    {% endifsetting %}
+
+    tag.validationFunctions = {
+        value: function validateValue(value, field){
+            var validated = _.isNumber(_.toNumber(value)) && !_.isNaN(_.toNumber(value))
+            if (validated) {
+                tag.trigger('unSetValidation', field);
+                $('#currency-value-select-commitment').removeClass('has-error');
+            } else {
+                tag.trigger('setValidation', field, 'warning', 'Value is not a number');
+                $('#currency-value-select-commitment').addClass('has-error');
+                $('.has-warning').addClass('has-error');
+                $('.has-warning').addClass('validation-error');
+            }
+        },
+        value_date: function(value, field){
+            var validated = moment(value).isValid()
+            if (validated) {
+                tag.trigger('unSetValidation', field);
+                $('#transactions-date-picker-commitment').removeClass('has-error');
+            } else {
+                tag.trigger('setValidation', field, 'warning', 'Valid date required');
+                $('#transactions-date-picker-commitment').addClass('has-error');
+                $('.has-warning').addClass('has-error');
+                $('.has-warning').addClass('validation-error');
+            }
+        }
+    }
+
+</tab-transactions-add-commitment-modal>
+
+<tab-transactions-add-incoming-funds-modal>
+    <transaction-modal title="Add incoming funds">
+        <yield to='modal-content'>
+            <div class="col-xs-12">
+
+                <input if={parent.values.id} show={false} ref='id' value={parent.values.id}/></label>
+                <input show={false} ref='transaction_type' value='IF'/>
+
+                <form>
+                    <p class="text-section-break">How much money?</p>
+
+                    <div id="currency-value-select-incoming" data-is="currency-value-select" choices={choices.currency} display={parent.values.currency} amount={parent.values.value}></div>
+                    <div if='{parent.validations.value}' class='form-group has-warning'>
+                        <span class='help-block'>{parent.validations.value.message}</span>
+                    </div>
+                    <div class='form-group' id="transactions-date-picker-incoming">
+                            <br>
+                        <label class="control-label" data-is='tab-transactions-date-picker' date={parent.values.transaction_date || parent.values.value_date}></label>
+                    </div>
+                    <div if='{parent.validations.value_date}' class='form-group has-warning'>
+                        <span class='help-block'>{parent.validations.value_date.message}</span>
+                    </div>
+
+                    <p class="text-section-break">Where is the money coming from?</p>
+                    <div class='form-group'>
+                        <label class="control-label">Organisation</label>
+                        <field-dropdownselect label='Organisation'
+                            label='Organisation'
+                            hide_label=true
+                            store={stores.transactionStore}
+                            path="provider_organisation" initial='{parent.values.provider_organisation}'
+                            fieldname="organisation"
+                            short_list=true
+                            short_list_codes='{_.get(parent, ["organisations","funding_list"])}'
+                            choice_fieldname="organisation"
+                            onchoose='setdropdown'
+                            classes={parent.classes}
+                            >
+                        </field-dropdownselect>
+                    </div>
+
+                    <p class="text-section-break">Where is the money going to?</p>
+                    <div class='form-group'>
+                        <label class="control-label">Organisation</label>
+                        <field-dropdownselect label='Organisation'
+                            label='Organisation'
+                            hide_label=true
+                            store={stores.transactionStore}
+                            path="receiver_organisation" initial='{parent.values.receiver_organisation}'
+                            fieldname="organisation"
+                            choice_fieldname="organisation"
+                            onchoose='setdropdown'
+                            classes={parent.classes}
+                            >
+                        </field-dropdownselect>
+                    </div>
+
+                    <p class="text-section-break">And from which activity?</p>
+                    <div class='form-group'>
+                        <label class="control-label">Activity</label>
+                        <field-dropdownselect
+                            label='Activity'
+                            hide_label=true
+                            store={stores.transactionStore}
+                            path="provider_activity"
+                            fieldname="activity"
+                            choice_fieldname="activity"
+                            onchoose='setdropdown'
+                            classes={parent.classes}
+                            >
+                        </field-dropdownselect>
+                    </div>
+                </form>
+            </div>
+        </yield>
+        <yield to='modal-footer'>
+            <button type="button" onclick='{hide}' class="btn btn-large btn-default">Close</button>
+            <button show={!iati_block_saving} type="button" onclick='{save}' disabled={disabled:!parent.saveEnabled} class="btn btn-large btn-primary">Save changes</button>
+        </yield>
+
+    </transaction-modal>
+    var tag = this;
+    this.mixin('TransactionModalMixin')
+
+    {% ifsetting OIPA_SYNC_ENABLED %}
+    tag.iati_block_saving = (data.iati_data.link_info.oipa_fields.indexOf("IF") != -1);
+    {% else %}
+    tag.iati_block_saving = false;
+    {% endifsetting %}
+
+    tag.validationFunctions = {
+        value: function validateValue(value, field){
+            var validated = _.isNumber(_.toNumber(value)) && !_.isNaN(_.toNumber(value))
+            if (validated) {
+                tag.trigger('unSetValidation', field);
+                $('#currency-value-select-incoming').removeClass('has-error');
+            } else {
+                tag.trigger('setValidation', field, 'warning', 'Value is not a number');
+                $('#currency-value-select-incoming').addClass('has-error');
+                $('.has-warning').addClass('has-error');
+                $('.has-warning').addClass('validation-error');
+            }
+        },
+        value_date: function(value, field){
+            var validated = moment(value).isValid()
+            if (validated) {
+                tag.trigger('unSetValidation', field);
+                $('#transactions-date-picker-incoming').removeClass('has-error');
+            } else {
+                tag.trigger('setValidation', field, 'warning', 'Valid date required');
+                $('#transactions-date-picker-incoming').addClass('has-error');
+                $('.has-warning').addClass('has-error');
+                $('.has-warning').addClass('validation-error');
+            }
+        }
+    }
+
+</tab-transactions-add-incoming-funds-modal>
+
+<tab-transactions-add-transaction-modal>
+    <transaction-modal title="Add a transaction">
+        <yield to='modal-content'>
+            <div class="col-xs-12">
+                <label if={parent.values.id} show={false}>id<input ref='id' value={parent.values.id}/></label>
+                <form>
+                    <p class="text-section-break">What type of transaction is it?</p>
+                    <label class="control-label col-xs-12">Transaction type</label>
+                    <div class="btn-group">
+                    <button show={!iati_disbursements_disabled}  type='button' class='btn btn-large btn-default {active: parent.values.transaction_type == "D"}' onclick='{parent.setDisbursement}'>Disbursement</button>
+                    <button show={!iati_other_disabled} class='btn btn-large btn-default {active: parent.values.transaction_type == "E"}' onclick='{parent.setExpenditure}'>Expenditure</button>
+                    </div>
+                    <p class="text-section-break">How much money?</p>
+                    <label class="control-label">Transaction type</label>
+                    <div  id="currency-value-select-transaction" data-is="currency-value-select" choices={choices.currency} display={parent.values.currency} amount={parent.values.value}></div>
+                    <div if='{parent.validations.value}' class='form-group has-warning'>
+                        <span class='help-block'>{parent.validations.value.message}</span>
+                    </div>
+                    <div class='form-group' id="transactions-date-picker-transaction">
+                        <br>
+                        <label data-is='tab-transactions-date-picker' date={parent.values.transaction_date || parent.values.value_date}></label>
+                    </div>
+                    <div if='{parent.validations.value_date}' class='form-group has-warning'>
+                        <span class='help-block'>{parent.validations.value_date.message}</span>
+                    </div>
+
+                    <p class="text-section-break">Where is the money coming from?</p>
+                    <div class='form-group'>
+                        <label class="control-label">Organisation</label>
+                        <field-dropdownselect label='Organisation'
+                            label='Organisation'
+                            hide_label=true
+                            store={stores.transactionStore}
+                            path="provider_organisation" initial='{parent.values.provider_organisation}'
+                            fieldname="organisation"
+                            short_list=true
+                            short_list_codes='{_.get(parent, ["organisations","funding_list"])}'
+                            choice_fieldname="organisation"
+                            onchoose='setdropdown'
+                            classes={parent.classes}
+                            >
+                        </field-dropdownselect>
+                    </div>
+                    <p class="text-section-break">Where is the money going to?</p>
+                    <div class='form-group'>
+                        <label class="control-label">Organisation</label>
+                        <field-dropdownselect label='Organisation'
+                            label='Organisation'
+                            hide_label=true
+                            store={stores.transactionStore}
+                            path="receiver_organisation" initial='{parent.values.receiver_organisation}'
+                            fieldname="organisation"
+                            choice_fieldname="organisation"
+                            onchoose='setdropdown'
+                            classes={parent.classes}
+                            >
+                        </field-dropdownselect>
+                    </div>
+                    <p class="text-section-break">And for what purpose?</p>
+                    <label class="control-label">Description</label>
+                    <div class='form-group'>
+                        <textarea class='form-control' ref='description' value={parent.values.description}>{parent.values.description}</textarea>
+                    </div>
+                </form>
+            </div>
+        </yield>
+
+        <yield to='modal-footer'>
+            <button type="button" onclick='{hide}' class="btn btn-large btn-default">Close</button>
+            <button show={!iati_block_saving} type="button" onclick='{save}' class="btn btn-large btn-primary">Save changes</button>
+        </yield>
+    </transaction-modal>
+    this.mixin('TransactionModalMixin')
+
+    var tag = this;
+    {% ifsetting OIPA_SYNC_ENABLED %}
+        tag.iati_block_saving = (data.iati_data.link_info.oipa_fields.indexOf("OF") != -1);
+    {% else %}
+        tag.iati_block_saving = false;
+    {% endifsetting %}
+    tag.setDisbursement = function(){
+        tag.values.transaction_type = 'D';
+        tag.update();
+    }
+    tag.setExpenditure = function(){
+        tag.values.transaction_type = 'E';
+        tag.update();
+    }
+
+    tag.validationFunctions = {
+        value: function validateValue(value, field){
+            var validated = _.isNumber(_.toNumber(value)) && !_.isNaN(_.toNumber(value))
+            if (validated) {
+                tag.trigger('unSetValidation', field);
+                $('#currency-value-select-transaction').removeClass('has-error');
+            } else {
+                tag.trigger('setValidation', field, 'warning', 'Value is not a number');
+                $('#currency-value-select-transaction').addClass('has-error');
+                $('.has-warning').addClass('has-error');
+                $('.has-warning').addClass('validation-error');
+            }
+        },
+        value_date: function(value, field){
+            var validated = moment(value).isValid()
+            if (validated) {
+                tag.trigger('unSetValidation', field);
+                $('#transactions-date-picker-transaction').removeClass('has-error');
+            } else {
+                tag.trigger('setValidation', field, 'warning', 'Valid date required');
+                $('#transactions-date-picker-transaction').addClass('has-error');
+                $('.has-warning').addClass('has-error');
+                $('.has-warning').addClass('validation-error');
+            }
+        }
+    }
+
+    tag.on('update', function(){
+        if (!tag.values.transaction_type) {tag.setDisbursement();}
+    })
+
+</tab-transactions-add-transaction-modal>
+
+<transaction-modal>
+        <div class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" onclick='{hide}' aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">{opts.title}</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <yield from="modal-content"></yield>
+
+                            <a class='col-xs-12 expand-transactions' onclick={toggleExtraFields}  if={!toggleExtraFieldsOn}><img class="menu-icon-expand" src="/static/img/Expand-closed.svg"> Show detailed transaction view</a>
+                            <a class='col-xs-12 expand-transactions' onclick={toggleExtraFields}  if={toggleExtraFieldsOn}><img class="menu-icon-expand" src="/static/img/Expand-opened.svg"> Hide detailed transaction view</a>
+
+                            <virtual if={!toggleExtraFieldsOn}>
+                                {% comment %} Put hints about what can be edited here {% endcomment %}
+                                <br>
+                                <div class="clearfix"></div>
+                                <ul class="help-text">
+                                    <li>Default settings: { default_settings }</li>
+                                </ul>
+                            </virtual>
+
+                            <virtual if={toggleExtraFieldsOn}>
+                                <div class="col-xs-12">
+                                    <div class='form-group'>
+                                        <br>
+                                        <label class="control-label">Aid Type</label>
+                                        <field-dropdownselect
+                                            label='Aid Type'
+                                            hide_label=true
+                                            store={stores.transactionStore}
+                                            path="aid_type"
+                                            fieldname="aid_type"
+                                            choice_fieldname="aid_type"
+                                            onchoose='setdropdown'
+                                            initial='{_.get(parent.values, "aid_type")}'
+                                            classes={parent.classes}>
+                                        </field-dropdownselect>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class='form-group'>
+                                        <label class="control-label">Finance Type</label>
+                                        <field-dropdownselect
+                                            label='Finance Type'
+                                            hide_label=true
+                                            store={stores.transactionStore}
+                                            path="finance_type"
+                                            fieldname="finance_type"
+                                            choice_fieldname="finance_type"
+                                            onchoose='setdropdown'
+                                            initial='{_.get(parent.values, "finance_type")}'
+                                            classes={parent.classes}>
+                                        </field-dropdownselect>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class='form-group'>
+                                        <label class="control-label">Flow Type</label>
+                                        <field-dropdownselect
+                                            label='Flow Type'
+                                            hide_label=true
+                                            store={stores.transactionStore}
+                                            path="flow_type"
+                                            fieldname="flow_type"
+                                            choice_fieldname="flow_type"
+                                            onchoose='setdropdown'
+                                            initial='{_.get(parent.values, "flow_type")}'
+                                            classes={parent.classes}>
+                                        </field-dropdownselect>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class='form-group'>
+                                        <label class="control-label">Tied Status</label>
+                                        <field-dropdownselect
+                                            label='Tied Status'
+                                            hide_label=true
+                                            store={stores.transactionStore}
+                                            path="tied_status"
+                                            fieldname="tied_status"
+                                            choice_fieldname="tied_status"
+                                            onchoose='setdropdown'
+                                            initial='{_.get(parent.values, "tied_status")}'
+                                            classes={parent.classes}>
+                                        </field-dropdownselect>
+                                    </div>
+                                </div>
+                            </virtual>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><yield from="modal-footer"></yield>
+                    </div>
+                </div>
+            </div>
+        </div>
+        var tag = this;
+        var store = stores.transactionStore;
+        function parent(event){return _.invoke(tag.parent, event, tag)}
+        tag.toggle = function(){parent('toggle')}
+        tag.hide = function(){parent('hide')}
+        tag.save = function(){
+            if (this.parent.values.value) {
+                $('#currency-value-select-commitment').removeClass('has-error');
+                $('#currency-value-select-incoming').removeClass('has-error');
+                $('#currency-value-select-transaction').removeClass('has-error');
+                parent('save')
+            } else {
+                $('#currency-value-select-commitment').addClass('has-error');
+                $('#currency-value-select-incoming').addClass('has-error');
+                $('#currency-value-select-transaction').addClass('has-error');
+                $('.has-warning').addClass('has-error');
+                $('.has-warning').addClass('validation-error');
+                this.parent.trigger('setValidation', 'value', 'error', 'Amount value is not a set!')
+            }
+        }
+
+        /* For dropdown-select inclusions in yielded modal-content, passes the event and the data to the parent tag */
+        tag.on('setdropdown', function(event, data, child_tag){
+            tag.parent.trigger('setdropdown', event, data, child_tag)
+        })
+
+        /* Pass through any "set" events triggered */
+        this.on('set', function set(field, amount){tag.parent.trigger('set', field, amount)})
+        this.on('setCurrency', function(currency){this.trigger('set', 'currency', currency)})
+        this.on('setAmount', function(amount){this.trigger('set', 'value', amount)}) /* saved as 'value' in db, displayed as 'amount' */
+
+        tag.on('before-mount', function(){tag.toggleExtraFieldsOn = false});
+        tag.toggleExtraFields = function(){tag.update({toggleExtraFieldsOn: !tag.toggleExtraFieldsOn})}
+
+        tag.on('update', function set_default_settings(){
+            var get_choice = store.get_choice;
+            var values = tag.parent.values;
+            var choices = ["aid_type", "finance_type", "flow_type", "tied_status"]
+            var default_settings = _.map(choices, function(choice){ return get_choice(choice, _.get(values,choice)) })
+            tag.default_settings = _.join(_.compact(default_settings), ', ')
+        })
+</transaction-modal>
+
+{% comment %}
+Transaction Date Picker sends a "set" trigger to its parent when its value is changed
+to set the 'transaction_date' and 'value_date' fields of its thingamagig
+{% endcomment %}
+<tab-transactions-date-picker>
+    <span>Date</span>
+    <input class='form-control no-hide-bs-modal' value={opts.date} onkeyup={setDate}/>
+
+    var tag = this;
+    tag.setDate = function(e){
+        tag.parent.trigger('set', 'transaction_date', e.target.value);
+        tag.parent.trigger('set', 'value_date', e.target.value);
+    }
+
+    tag.on('mount', function () {
+        tag.datepicker_opts = $.extend({
+            orientation: 'top left',
+            startView: 1,
+            autoclose: true,
+            format: 'yyyy-mm-dd',
+            clearBtn: false,
+            endDate:'0d'
+
+        }, tag.opts.datepicker_opts);
+
+        tag.datepicker = $('input.form-control', tag.root).datepicker(tag.datepicker_opts);
+        tag.datepicker.on('changeDate', function () {
+            var date = $(this).datepicker('getUTCDate');
+            var iso_date = moment(date).format('YYYY-MM-DD');
+            tag.setDate({target:{value:iso_date}})
+            tag.update();
+        });
+    });
+</tab-transactions-date-picker>

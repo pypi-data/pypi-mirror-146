@@ -1,0 +1,144 @@
+{% load i18n %}
+{% load static %}
+
+<organisation_contact_info>
+    <div>
+    	<div "edit-title">
+    	    <h3>
+    		{% trans "Contact Details" %}
+    		{% if editor %}
+            <button type="button" class="btn btn-success btn-super-small hidden-print" data-toggle='modal' data-target='#contact_info_modal'onclick={ init_modal_values }>{% trans 'Edit' %}</button>
+    		{% endif %}
+    	    </h3>
+        </div>
+        <div class="print-contact-detail">
+    	    <virtual if={ contact_info.address }>
+    		<pre class="pre-break-lines address-pre">{ contact_info.address }</pre>
+    	    </virtual>
+    	    <virtual if={ contact_info.phone_number }>
+    		<strong>{% trans 'Phone' %}:</strong> { contact_info.phone_number }
+    	    </virtual>
+            <virtual if={ contact_info.fax }>
+            <br>
+            <strong>{% trans 'Fax' %}:</strong> { contact_info.fax }
+            </virtual>
+    	    <virtual if={ contact_info.email }>
+    	    <br>
+    		<strong>{% trans 'Email' %}:</strong> <a class="contact-list-item" href="mailto:{ contact_info.email }">{ contact_info.email }</a>
+    	    </virtual>
+    	    <virtual if={ contact_info.website }>
+    	    <br>
+    		<strong>{% trans 'Website' %}:</strong> <a class="contact-list-item" href="{ contact_info.website }"> { contact_info.website }</a>
+            </virtual>
+    	    <virtual if={ contact_info.facebook }>
+            <br>
+            <strong>{% trans 'Facebook Profile' %}:</strong> <a class="contact-list-item" href="{ contact_info.facebook }"> { contact_info.facebook }</a>
+            </virtual>
+    	</div>
+    </div><!-- End of Organisation Contact Container -->
+
+    <div class="modal fade" id="contact_info_modal" tabindex="-1" role="dialog" aria-labelledby="contact_info_modal">
+	<div class="modal-dialog modal-dimensions" role="document">
+	    <div class="modal-content modal-content-dimensions">
+		<div class="modal-header modal-header-style">
+		    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		    <h3 class="modal-title modal-title-style">{% trans 'Contact Information' %}</h3>
+		</div>
+		<div class="modal-body modal-body-dimensions">
+            <div class="row">
+                <div class="col-xs-12">
+        		    <div class="form-group">
+        	    	    <label class="control-label">{% trans 'Office Address' %}</label>
+        			    <textarea class="form-control textarea" type="textarea" placeholder='Address' value={ new_contact_info.address } onkeyup={ edit_address } rows="3"></textarea>
+        		    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+        		    <div class="form-group">
+        		        <label class="control-label">{% trans 'Office Phone Number' %}</label>
+        		    	<input class="form-control textarea" placeholder='+67077777777' value={ new_contact_info.phone_number } onkeyup={ edit_phone_number } onblur={ valid_phone_number }>
+        		    	<p class="validation-message" if={ phone_number_validation_message != '' }>{ phone_number_validation_message }'</p>
+        		    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label class="control-label">{% trans 'Office Fax' %}</label>
+                        <input class="form-control textarea" placeholder='+67077777777' value={ new_contact_info.fax } onkeyup={ edit_fax } onblur={ valid_fax }>
+                        <p class="validation-message" if={ fax_validation_message != '' }>{ fax_validation_message }'</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+        		    <div class="form-group">
+        			    <label class="control-label">{% trans 'Email Address' %}</label>
+        		    	<input class="form-control textarea" placeholder='account@hostname' value={ new_contact_info.email } onkeyup={ edit_email } onblur={ valid_email }>
+        		    	<p if={ email_validation_message != '' } class="validation-message">'{ email_validation_message }'</p>
+        		    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+        		    <div class="form-group">
+        		    	<label class="control-label">{% trans 'Website' %}</label>
+        		    	<input class="form-control textarea" placeholder="http://yourorganisation.com" value={ new_contact_info.website } onkeyup={ edit_website } onblur={ valid_website }>
+        		    	<p class="validation-message" if={ website_validation_message != '' }>'{ website_validation_message }'</p>
+        		    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h5 class="page-header">{% trans 'Social Network' %}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+        		    <div class="form-group">
+        		    	<label class="control-label">{% trans 'Facebook Name' %}<small> - {% trans ' Optional' %}</small></label>
+        		    	<input class="form-control textarea" placeholder='Your Facebook Name' value={ new_contact_info.facebook } onkeyup={ edit_facebook } onblur={ valid_facebook }>
+        		    	<p if={ facebook_validation_message != '' }>'{ facebook_validation_message }'</p>
+        		    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+        		    <div class="form-group">
+            	    	<label class="control-label">{% trans 'Twitter Handle' %}<small> - {% trans ' Optional' %}</small></label>
+        		    	<input class="form-control textarea" placeholder='Twitter Handle' value={ new_contact_info.twitter } onkeyup={ edit_twitter } onblur={ valid_twitter }>
+        			    <p if={ twitter_validation_message != '' }>'{ twitter_validation_message }'</p>
+        		    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer modal-footer-style">
+
+            <button disabled={ !valid } type="button" class="btn btn-primary btn-large btn-block" data-dismiss="modal" onclick={ save_contact_info } onmouseover={ validate }>{% trans 'Save contacts' %}</button>
+        </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <section class="social-media-interaction hidden-print" if={ contact_info.facebook || contact_info.twitter }>
+        <!-- Facebook -->
+        <virtual if={ contact_info.facebook }>
+            <div class="fb-like" data-href="{ contact_info.facebook }" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+            <br/>
+        </virtual>
+        <!-- Twitter -->
+        <virtual if={ contact_info.twitter }>
+            <span class="twitter-following-button"><a href="https://twitter.com/{ contact_info.twitter }" class="twitter-follow-button" data-show-count="false">Follow @{ contact_info.twitter }</a></span>
+        </virtual>
+    </section><!-- End of Social Media Interaction -->
+
+    <style scoped>
+        .fb-like {margin-bottom: 3px;}
+        .contact-list-item {color: var(--dark-text);}
+
+    </style>
+
+    {% include 'tags/organisation_contact_info.js' %}
+
+</organisation_contact_info>

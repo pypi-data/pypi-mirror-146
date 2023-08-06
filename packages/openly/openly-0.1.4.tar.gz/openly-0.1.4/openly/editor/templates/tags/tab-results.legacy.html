@@ -1,0 +1,115 @@
+{% load i18n %}
+{% comment %}
+This file is maintained as a compatibility layer between "Mohinga" editor and "PHD" results
+Hopefully this file will outlive its usefulness when Mohinga gets joyfully acquainted with
+Sergio and Josh's work on the 'Results Dashboard' and new editor interface
+{% endcomment %}
+
+<tab-results id="results" class="tab-pane">
+    <div class="form_header">
+        <h4>{% trans 'Results' %}</h4>
+        <button class="btn btn-success pull-right" onclick="{add_result}">{% trans 'Add a result' %}</button>
+    </div>
+    <div class="form_body">
+        <div class="row no-results-indicator" if="{data && data.length == 0}">
+            <div class="col-xs-12 text-center">
+                <br>
+                <img src="/static/img/results.png" width="125">
+                <h3 class="no-objects-text">{% trans 'There are no results' %}</h3>
+                <p class="in-line-help">This allows you to report on the outputs, outcomes, impacts and other results that relate to your activity.</p>
+            </div>
+        </div>
+
+        <!-- <h5 class="page-header">{% trans 'Activity results' %}</h5> -->
+
+        <table if="{current_edit == -1 && data && data.length > 0}" class="table table-editor">
+            <thead>
+                <tr>
+                    <th class="min-width">{% trans 'Result Type' %}</th>
+                    <th class="min-width">{% trans 'Title' %}</th>
+                    <th class="min-width">{% trans 'Description' %}</th>
+                    <th></th>
+                </tr>
+                <tr if="{data.length == 0}" class="no_entries">
+                    <td colspan="5">{% trans 'no results' %}</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr each="{result, index in data}">
+                    <td onclick="{trigger_edit}">{result.result_type_name}</td>
+                    <td onclick="{trigger_edit}">{result.title}</td>
+                    <td class="description-field" onclick="{trigger_edit}">{result.description}</td>
+                    <td>
+                        <a onclick="{delete_result}" class="remove_form_row" data-resultindex="{index}"> </a>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <div  each="{result, index in data}">
+            <div if="{current_edit == index }">
+                <a class="btn-back" onclick="{cancel}"><i class="ion-android-arrow-back"></i> {% trans 'back' %}</a>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <field-dropdownselect
+                            label='{%  trans "Result Type" %}'
+                            store={parent.opts.store}
+                            path='[{index}].result_type'
+                            fieldname='result_type'
+                            choice_fieldname="result_type"
+                            classes={classes}
+                            no-null-choice="true"
+                            >
+                        </field-dropdownselect>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <field-input
+                            label='{%  trans "Result Title" %}'
+                            store={parent.opts.store}
+                            path='[{index}].title'
+                            fieldname='title'
+                            classes={classes}
+                            >
+                        </field-input>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <field-textarea
+                            label='{%  trans "Result Description" %}'
+                            store={parent.opts.store}
+                            path='[{index}].description'
+                            helptext='{{ _("This explains what the result is, it is longer than the title and contains more detail")|force_escape }}'
+                            fieldname='description'
+                            rows="3"
+                            classes={classes}
+                            >
+                        </field-textarea>
+                    </div>
+                </div>
+                <cancel-save-group if="{current_edit == index}" validate_current_edit="parent"></cancel-save-group>
+            </div>
+        </div>
+
+    </div>
+
+    <btn-editor-next></btn-editor-next>
+
+    <style media="screen">
+    .cancel-save-group {
+        margin-top: 0px;
+        top: 64px;
+        right: -56px;
+        position: relative;
+        }
+    .description-field {
+        text-overflow: ellipsis;
+    }
+    </style>
+
+    {% include "tags/tab-results.legacy.js" %}
+</tab-results>

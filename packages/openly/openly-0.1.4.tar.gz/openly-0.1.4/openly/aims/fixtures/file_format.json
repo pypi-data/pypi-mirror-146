@@ -1,0 +1,10096 @@
+[
+{
+    "model": "aims.fileformat",
+    "pk": "application/1d-interleaved-parityfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/3gpp-ims+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/CSTAdata+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/EDI-X12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/EDI-consent",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/EDIFACT",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/H224",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ODX",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/PDX",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/activemessage",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-costmap+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-costmapfilter+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-directory+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-endpointcost+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-endpointcostparams+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-endpointprop+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-endpointpropparams+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-error+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-networkmap+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/alto-networkmapfilter+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/andrew-inset",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/applefile",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/atom+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/atomcat+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/atomdeleted+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/atomicmail",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/atomsvc+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/auth-policy+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/bacnet-xdd+zip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/batch-SMTP",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/beep+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/calendar+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/calendar+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/call-completion",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cals-1840",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cbor",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ccmp+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ccxml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cdmi-capability",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cdmi-container",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cdmi-domain",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cdmi-object",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cdmi-queue",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cea-2018+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cellml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cfw",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cms",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cnrp+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/commonground",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/conference-info+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cpl+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/csrattrs",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/csta+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/cybercash",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dash+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dashdelta",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/davmount+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dca-rft",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dec-dx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dialog-info+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dicom",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dns",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dskpp+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dssc+der",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dssc+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/dvcs",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ecmascript",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/emma+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/emotionml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/encaprtp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/epp+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/eshop",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/example",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/exi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/fastinfoset",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/fastsoap",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/fdt+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/fits",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/font-sfnt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/font-tdpfr",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/font-woff",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/framework-attributes+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/gzip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/held+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/http",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/hyperstudio",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ibe-key-request+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ibe-pkg-reply+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ibe-pp-data",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/iges",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/im-iscomposing+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/index",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/index.cmd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/index.obj",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/index.response",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/index.vnd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/inkml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/iotp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ipfix",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ipp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/isup",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/its+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/javascript",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/jrd+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/json-patch+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/kpml-request+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/kpml-response+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ld+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/link-format",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/load-control+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/lost+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/lostsync+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mac-binhex40",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/macwriteii",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mads+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/marc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/marcxml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mathematica",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mathml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mathml-content+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mathml-presentation+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-associated-procedure-description+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-deregister+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-envelope+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-msk+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-msk-response+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-protection-description+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-reception-report+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-register+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-register-response+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-schedule+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbms-user-service-description+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mbox",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/media-policy-dataset+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/media_control+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mediaservercontrol+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/metalink4+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mets+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mikey",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mods+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/moss-keys",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/moss-signature",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mosskey-data",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mosskey-request",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mp21",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mp4",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mpeg4-generic",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mpeg4-iod",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mpeg4-iod-xmt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mrb-consumer+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mrb-publish+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/msc-ivr+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/msc-mixer+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/msword",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/mxf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/nasdata",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/news-checkgroups",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/news-groupinfo",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/news-transmission",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/nlsml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/nss",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ocsp-request",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ocsp-response",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/octet-stream",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/oda",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/oebps-package+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ogg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/oxps",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/p2p-overlay+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/parityfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/patch-ops-error+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pdf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pgp-encrypted",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pgp-keys",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pgp-signature",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pidf+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pidf-diff+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pkcs10",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pkcs7-mime",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pkcs7-signature",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pkcs8",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pkix-attr-cert",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pkix-cert",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pkix-crl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pkix-pkipath",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pkixcmp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pls+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/poc-settings+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/postscript",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/provenance+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/prs.alvestrand.titrax-sheet",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/prs.cww",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/prs.hpub+zip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/prs.nprend",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/prs.plucker",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/prs.rdf-xml-crypt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/prs.xsf+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/pskc+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/qsig",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/raptorfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rdf+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/reginfo+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/relax-ng-compact-syntax",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/remote-printing",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/reputon+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/resource-lists+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/resource-lists-diff+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/riscos",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rlmi+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rls-services+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rpki-ghostbusters",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rpki-manifest",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rpki-roa",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rpki-updown",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rtf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rtploopback",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/rtx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/samlassertion+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/samlmetadata+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sbml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/scvp-cv-request",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/scvp-cv-response",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/scvp-vp-request",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/scvp-vp-response",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sdp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sep+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sep-exi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/session-info",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/set-payment",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/set-payment-initaimson",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/set-registration",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/set-registration-initaimson",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sgml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sgml-open-catalog",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/shf+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sieve",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/simple-filter+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/simple-message-summary",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/simpleSymbolContainer",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/slate",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/smil",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/smil+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/smpte336m",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/soap+fastinfoset",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/soap+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sparql-query",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sparql-results+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/spirits-event+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sql",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/srgs",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/srgs+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/sru+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ssml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-apex-update",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-apex-update-confirm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-community-update",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-community-update-confirm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-error",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-sequence-adjust",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-sequence-adjust-confirm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-status-query",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-status-response",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-update",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tamp-update-confirm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tei+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/thraud+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/timestamp-query",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/timestamp-reply",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/timestamped-data",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ttml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/tve-trigger",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/ulpfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/urc-grpsheet+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/urc-ressheet+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/urc-targetdesc+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/urc-uisocketdesc+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vcard+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vcard+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vemmi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.3M.Post-it-Notes",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.3gpp.bsf+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.3gpp.pic-bw-large",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.3gpp.pic-bw-small",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.3gpp.pic-bw-var",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.3gpp.sms",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.3gpp2.bcmcsinfo+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.3gpp2.sms",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.3gpp2.tcap",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.FloGraphIt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.HandHeld-Entertainment+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.Kinar",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.MFER",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.Mobius.DAF",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.Mobius.DIS",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.Mobius.MBK",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.Mobius.MQY",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.Mobius.MSL",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.Mobius.PLC",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.Mobius.TXF",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.Quark.QuarkXPress",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.RenLearn.rlprint",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.SimTech-MindMapper",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.accpac.simply.aso",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.accpac.simply.imp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.acucobol",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.acucorp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.adobe.flash.movie",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.adobe.formscentral.fcdt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.adobe.fxp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.adobe.partial-upload",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.adobe.xdp+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.adobe.xfdf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.aether.imp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ah-barcode",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ahead.space",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.airzip.filesecure.azf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.airzip.filesecure.azs",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.americandynamics.acc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.amiga.ami",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.amundsen.maze+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.anser-web-certificate-issue-initaimson",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.antix.game-component",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.api+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.apple.installer+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.apple.mpegurl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.arastra.swi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.aristanetworks.swi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.astraea-software.iota",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.audiograph",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.autopackage",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.avistar+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.balsamiq.bmml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.bekitzur-stech+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.blueice.multipass",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.bluetooth.ep.oob",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.bluetooth.le.oob",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.bmi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.businessobjects",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cab-jscript",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.canon-cpdl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.canon-lips",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cendio.thinlinc.clientconf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.century-systems.tcp_stream",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.chemdraw+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.chipnuts.karaoke-mmd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cinderella",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cirpack.isdn-ext",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.claymore",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cloanto.rp9",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.clonk.c4group",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cluetrust.cartomobile-config",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cluetrust.cartomobile-config-pkg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.collection+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.collection.doc+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.collection.next+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.commerce-battelle",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.commonspace",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.contact.cmsg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cosmocaller",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.crick.clicker",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.crick.clicker.keyboard",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.crick.clicker.palette",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.crick.clicker.template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.crick.clicker.wordbank",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.criticaltools.wbs+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ctc-posml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ctct.ws+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cups-pdf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cups-postscript",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cups-ppd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cups-raster",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cups-raw",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.curl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cyan.dean.root+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.cybank",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dart",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.data-vision.rdz",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dece.data",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dece.ttml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dece.unspecified",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dece.zip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.denovo.fcselayout-link",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.desmume.movie",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dir-bi.plate-dl-nosuffix",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dm.delegation+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dna",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.document+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dolby.mobile.1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dolby.mobile.2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dpgraph",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dreamfactory",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dtg.local",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dtg.local.flash",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dtg.local.html",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.ait",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.dvbj",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.esgcontainer",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.ipdcdftnotifaccess",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.ipdcesgaccess",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.ipdcesgaccess2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.ipdcesgpdd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.ipdcroaming",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.iptv.alfec-base",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.iptv.alfec-enhancement",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.notif-aggregate-root+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.notif-container+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.notif-generic+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.notif-ia-msglist+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.notif-ia-registration-request+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.notif-ia-registration-response+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.notif-init+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.pfr",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dvb.service",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dxr",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.dynageo",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.easykaraoke.cdgdownload",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ecdis-update",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ecowin.chart",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ecowin.filerequest",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ecowin.fileupdate",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ecowin.series",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ecowin.seriesrequest",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ecowin.seriesupdate",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.emclient.accessrequest+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.enliven",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.eprints.data+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.epson.esf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.epson.msf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.epson.quickanime",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.epson.salt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.epson.ssf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ericsson.quickcall",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.eszigno3+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.aoc+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.asic-e+zip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.asic-s+zip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.cug+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.iptvcommand+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.iptvdiscovery+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.iptvprofile+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.iptvsad-bc+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.iptvsad-cod+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.iptvsad-npvr+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.iptvservice+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.iptvsync+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.iptvueprofile+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.mcid+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.mheg5",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.overload-control-policy-dataset+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.pstn+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.sci+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.simservs+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.timestamp-token",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.tsl+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.etsi.tsl.der",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.eudora.data",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ezpix-album",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ezpix-package",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.f-secure.mobile",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fdf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fdsn.mseed",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fdsn.seed",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ffsns",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fints",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fluxtime.clip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.font-fontforge-sfd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.framemaker",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.frogans.fnc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.frogans.ltf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fsc.weblaunch",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujitsu.oasys",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujitsu.oasys2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujitsu.oasys3",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujitsu.oasysgp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujitsu.oasysprs",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujixerox.ART-EX",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujixerox.ART4",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujixerox.HBPL",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujixerox.ddd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujixerox.docuworks",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujixerox.docuworks.binder",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fujixerox.docuworks.container",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fut-misnet",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.fuzzysheet",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.genomatix.tuxedo",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.geocube+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.geogebra.file",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.geogebra.tool",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.geometry-explorer",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.geonext",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.geoplan",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.geospace",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.globalplatform.card-content-mgt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.globalplatform.card-content-mgt-response",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.gmx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.google-earth.kml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.google-earth.kmz",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.grafeq",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.gridmp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.groove-account",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.groove-help",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.groove-identity-message",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.groove-injector",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.groove-tool-message",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.groove-tool-template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.groove-vcard",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hal+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hal+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hbci",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hcl-bireports",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.heroku+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hhe.lesson-player",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hp-HPGL",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hp-PCL",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hp-PCLXL",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hp-hpid",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hp-hps",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hp-jlyt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.httphone",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hydrostatix.sof-data",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.hzn-3d-crossword",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ibm.MiniPay",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ibm.afplinedata",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ibm.electronic-media",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ibm.modcap",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ibm.rights-management",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ibm.secure-container",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.iccprofile",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ieee.1905",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.igloader",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.immervision-ivp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.immervision-ivu",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.informedcontrol.rms+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.informix-visionary",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.infotech.project",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.infotech.project+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.innopath.wamp.notification",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.insors.igm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.intercon.formnet",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.intergeo",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.intertrust.digibox",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.intertrust.nncp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.intu.qbo",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.intu.qfx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.iptc.g2.catalogitem+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.iptc.g2.conceptitem+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.iptc.g2.knowledgeitem+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.iptc.g2.newsitem+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.iptc.g2.newsmessage+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.iptc.g2.packageitem+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.iptc.g2.planningitem+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ipunplugged.rcprofile",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.irepository.package+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.is-xpr",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.isac.fcs",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.jam",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.japannet-directory-service",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.japannet-jpnstore-wakeup",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.japannet-payment-wakeup",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.japannet-registration",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.japannet-registration-wakeup",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.japannet-setstore-wakeup",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.japannet-verification",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.japannet-verification-wakeup",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.jcp.javame.midlet-rms",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.jisp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.joost.joda-archive",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.jsk.isdn-ngn",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kahootz",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kde.karbon",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kde.kchart",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kde.kformula",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kde.kivio",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kde.kontour",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kde.kpresenter",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kde.kspread",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kde.kword",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kenameaapp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kidspiration",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.koan",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.kodak-descriptor",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.las.las+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.liberty-request+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.llamagraphics.life-balance.desktop",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.llamagraphics.life-balance.exchange+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.lotus-1-2-3",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.lotus-approach",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.lotus-freelance",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.lotus-notes",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.lotus-organizer",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.lotus-screencam",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.lotus-wordpro",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.macports.portpkg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.marlin.drm.actiontoken+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.marlin.drm.conftoken+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.marlin.drm.license+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.marlin.drm.mdcf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mason+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mcd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.medcalcdata",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mediastation.cdkey",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.meridian-slingshot",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mfmp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.micrografx.flo",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.micrografx.igx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mif",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.minisoft-hp3000-save",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mitsubishi.misty-guard.trustweb",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mophun.application",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mophun.certificate",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.motorola.flexsuite",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.motorola.flexsuite.adsi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.motorola.flexsuite.fis",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.motorola.flexsuite.gotap",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.motorola.flexsuite.kmr",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.motorola.flexsuite.ttc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.motorola.flexsuite.wem",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.motorola.iprm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mozilla.xul+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-artgalry",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-asf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-cab-compressed",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-excel",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-excel.addin.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-excel.sheet.binary.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-excel.sheet.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-excel.template.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-fontobject",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-htmlhelp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-ims",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-lrm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-office.activeX+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-officetheme",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-playready.initiator+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-powerpoint",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-powerpoint.addin.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-powerpoint.presentation.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-powerpoint.slide.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-powerpoint.slideshow.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-powerpoint.template.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-project",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-tnef",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-windows.printerpairing",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-wmdrm.lic-chlg-req",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-wmdrm.lic-resp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-wmdrm.meter-chlg-req",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-wmdrm.meter-resp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-word.document.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-word.template.macroEnabled.12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-works",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-wpl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ms-xpsdocument",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mseq",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.msign",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.multiad.creator",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.multiad.creator.cif",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.music-niff",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.musician",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.muvee.style",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.mynfc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ncd.control",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ncd.reference",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nervana",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.netfpx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.neurolanguage.nlu",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nintendo.nitro.rom",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nintendo.snes.rom",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nitf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.noblenet-directory",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.noblenet-sealer",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.noblenet-web",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.catalogs",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.conml+wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.conml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.iSDS-radio-presets",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.iptv.config+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.landmark+wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.landmark+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.landmarkcollection+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.n-gage.ac+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.n-gage.data",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.n-gage.symbian.install",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.ncd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.pcd+wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.pcd+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.radio-preset",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.nokia.radio-presets",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.novadigm.EDM",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.novadigm.EDX",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.novadigm.EXT",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ntt-local.content-share",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ntt-local.file-transfer",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ntt-local.sip-ta_remote",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ntt-local.sip-ta_tcp_stream",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.chart",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.chart-template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.database",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.formula",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.formula-template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.graphics",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.graphics-template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.image",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.image-template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.presentation",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.presentation-template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.spreadsheet",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.spreadsheet-template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.text",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.text-master",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.text-template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oasis.opendocument.text-web",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.obn",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oftn.l10n+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.contentaccessdownload+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.contentaccessstreaming+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.cspg-hexbinary",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.dae.svg+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.dae.xhtml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.mippvcontrolmessage+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.pae.gem",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.spdiscovery+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.spdlist+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.ueprofile+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oipf.userprofile+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.olpc-sugar",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma-scws-config",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma-scws-http-request",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma-scws-http-response",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.associated-procedure-parameter+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.drm-trigger+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.imd+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.ltkm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.notification+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.provisioningtrigger",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.sgboot",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.sgdd+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.sgdu",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.simple-symbol-container",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.smartcard-trigger+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.sprov+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.bcast.stkm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.cab-address-book+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.cab-feature-handler+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.cab-pcc+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.cab-subs-invite+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.cab-user-prefs+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.dcd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.dcdc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.dd2+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.drm.risd+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.group-usage-list+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.pal+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.poc.detailed-progress-report+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.poc.final-report+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.poc.groups+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.poc.invocation-descriptor+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.poc.optimized-progress-report+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.push",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.scidm.messages+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.oma.xcap-directory+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.omads-email+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.omads-file+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.omads-folder+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.omaloc-supl-init",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openeye.oeb",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.custom-properties+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.customXmlProperties+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.drawing+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.drawingml.chart+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.drawingml.chartshapes+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.drawingml.diagramColors+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.drawingml.diagramData+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.drawingml.diagramLayout+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.drawingml.diagramStyle+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.extended-properties+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.commentAuthors+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.comments+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.handoutMaster+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.notesMaster+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.presProps+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.slide",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.slide+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.slideUpdateInfo+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.tableStyles+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.tags+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.template.main+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.presentationml.viewProps+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.calcChain+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.externalLink+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheDefinition+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotCacheRecords+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotTable+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.queryTable+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionHeaders+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionLog+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheetMetadata+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.tableSingleCells+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.userNames+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.volatileDependencies+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.theme+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.themeOverride+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.vmlDrawing",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-package.core-properties+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-package.digital-signature-xmlsignature+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.openxmlformats-package.relationships+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.orange.indata",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.osa.netdeploy",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.osgeo.mapguide.package",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.osgi.bundle",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.osgi.dp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.osgi.subsystem",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.otps.ct-kip+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.palm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.paos.xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.pawaafile",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.pcos",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.pg.format",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.pg.osasli",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.piaccess.application-licence",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.picsel",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.pmi.widget",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.poc.group-advertisement+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.pocketlearn",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.powerbuilder6",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.powerbuilder6-s",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.powerbuilder7",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.powerbuilder7-s",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.powerbuilder75",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.powerbuilder75-s",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.preminet",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.previewsystems.box",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.proteus.magazine",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.publishare-delta-tree",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.pvi.ptid1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.pwg-multiplexed",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.pwg-xhtml-print+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.qualcomm.brew-app-res",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.quobject-quoxdocument",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.moml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-audit+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-audit-conf+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-audit-conn+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-audit-dialog+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-audit-stream+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-conf+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-dialog+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-dialog-base+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-dialog-fax-detect+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-dialog-fax-sendrecv+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-dialog-group+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-dialog-speech+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.radisys.msml-dialog-transform+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.rainstor.data",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.rapid",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.realvnc.bed",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.recordare.musicxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.recordare.musicxml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.rig.cryptonote",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.route66.link66+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.rs-274x",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ruckus.download",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.s3sms",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sailingtracker.track",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sbm.cid",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sbm.mid2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.scribus",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealed.3df",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealed.csf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealed.doc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealed.eml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealed.mht",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealed.net",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealed.ppt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealed.tiff",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealed.xls",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealedmedia.softseal.html",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sealedmedia.softseal.pdf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.seemail",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sema",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.semd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.semf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.shana.informed.formdata",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.shana.informed.formtemplate",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.shana.informed.interchange",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.shana.informed.package",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.siren+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.smaf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.smart.notebook",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.smart.teacher",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.software602.filler.form+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.software602.filler.form-xml-zip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.solent.sdkm+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.spotfire.dxp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.spotfire.sfs",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sss-cod",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sss-dtf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sss-ntf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.stepmania.package",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.stepmania.stepchart",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.street-stream",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sun.wadl+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.sus-calendar",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.svd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.swiftview-ics",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.syncml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.syncml.dm+wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.syncml.dm+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.syncml.dm.notification",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.syncml.dmddf+wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.syncml.dmddf+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.syncml.dmtnds+wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.syncml.dmtnds+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.syncml.ds.notification",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.tao.intent-module-archive",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.tcpdump.pcap",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.tmobile-livetv",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.trid.tpt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.triscape.mxs",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.trueapp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.truedoc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ubisoft.webplayer",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.ufdl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uiq.theme",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.umajin",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.unity",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uoml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.alert",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.alert-wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.bearer-choice",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.bearer-choice-wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.cacheop",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.cacheop-wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.channel",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.channel-wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.list",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.list-wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.listcmd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.listcmd-wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.uplanet.signal",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.vcx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.vd-study",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.vectorworks",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.verimatrix.vcas",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.vidsoft.vidconference",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.visio",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.visionary",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.vividence.scriptfile",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.vsf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wap.sic",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wap.slc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wap.wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wap.wmlc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wap.wmlscriptc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.webturbo",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wfa.p2p",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wfa.wsc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.windows.devicepairing",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wmc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wmf.bootstrap",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wolfram.mathematica",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wolfram.mathematica.package",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wolfram.player",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wordperfect",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wqd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wrq-hp3000-labelled",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wt.stf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wv.csp+wbxml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wv.csp+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.wv.ssp+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xacml+json",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xara",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xfdl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xfdl.webform",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xmi+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xmpie.cpkg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xmpie.dpkg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xmpie.plan",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xmpie.ppkg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.xmpie.xlim",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.hv-dic",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.hv-script",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.hv-voice",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.openscoreformat",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.openscoreformat.osfpvg+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.remote-setup",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.smaf-audio",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.smaf-phrase",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.through-ngn",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yamaha.tunnel-udpencap",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.yellowriver-custom-menu",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.zul",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vnd.zzazz.deck+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/voicexml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/vq-rtcpxr",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/watcherinfo+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/whoispp-query",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/whoispp-response",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/widget",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/wita",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/wordperfect5.1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/wsdl+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/wspolicy+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/x400-bp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xacml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xcap-att+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xcap-caps+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xcap-diff+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xcap-el+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xcap-error+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xcap-ns+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xcon-conference-info+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xcon-conference-info-diff+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xenc+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xhtml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xhtml-voice+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xml-dtd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xml-external-parsed-entity",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xmpp+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xop+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xslt+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/xv+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/yang",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/yin+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/zip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "application/zlib",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/1d-interleaved-parityfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/32kadpcm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/3gpp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/3gpp2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/AMR",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/AMR-WB",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/ATRAC-ADVANCED-LOSSLESS",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/ATRAC-X",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/ATRAC3",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/BV16",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/BV32",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/CN",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/DAT12",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/DV",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/DVI4",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRC",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRC-QCP",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRC0",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRC1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRCB",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRCB0",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRCB1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRCNW",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRCNW0",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRCNW1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRCWB",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRCWB0",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/EVRCWB1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G719",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G722",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G7221",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G723",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G726-16",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G726-24",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G726-32",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G726-40",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G728",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G729",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G7291",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G729D",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/G729E",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/GSM",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/GSM-EFR",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/GSM-HR-08",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/L16",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/L20",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/L24",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/L8",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/LPC",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/MP4A-LATM",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/MPA",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/PCMA",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/PCMA-WB",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/PCMU",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/PCMU-WB",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/QCELP",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/RED",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/SMV",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/SMV-QCP",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/SMV0",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/UEMCLIP",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/VDVI",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/VMR-WB",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/ac3",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/asc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/basic",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/clearmode",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/dls",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/dsr-es201108",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/dsr-es202050",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/dsr-es202211",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/dsr-es202212",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/eac3",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/encaprtp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/example",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/fwdred",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/iLBC",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/ip-mr_v2.5",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/mobile-xmf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/mp4",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/mpa-robust",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/mpeg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/mpeg4-generic",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/ogg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/parityfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/prs.sid",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/raptorfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/rtp-enc-aescm128",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/rtp-midi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/rtploopback",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/rtx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/sp-midi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/speex",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/t140c",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/t38",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/telephone-event",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/tone",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/ulpfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.3gpp.iufp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.4SB",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.CELP",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.audiokoz",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.cisco.nse",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.cmles.radio-events",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.cns.anp1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.cns.inf1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dece.audio",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.digital-winds",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dlna.adts",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dolby.heaac.1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dolby.heaac.2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dolby.mlp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dolby.mps",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dolby.pl2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dolby.pl2x",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dolby.pl2z",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dolby.pulse.1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dra",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dts",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dts.hd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.dvb.file",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.everad.plj",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.hns.audio",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.lucent.voice",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.ms-playready.media.pya",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.nokia.mobile-xmf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.nortel.vbk",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.nuera.ecelp4800",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.nuera.ecelp7470",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.nuera.ecelp9600",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.octel.sbc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.qcelp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.rhetorex.32kadpcm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.rip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.sealedmedia.softseal.mpeg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vnd.vmx.cvsd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vorbis",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "audio/vorbis-config",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/cgm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/example",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/fits",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/g3fax",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/gif",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/ief",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/jp2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/jpeg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/jpm",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/jpx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/ktx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/naplps",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/png",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/prs.btif",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/prs.pti",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/pwg-raster",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/svg+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/t38",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/tiff",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/tiff-fx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.adobe.photoshop",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.airzip.accelerator.azv",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.cns.inf2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.dece.graphic",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.djvu",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.dvb.subtitle",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.dwg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.dxf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.fastbidsheet",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.fpx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.fst",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.fujixerox.edmics-mmr",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.fujixerox.edmics-rlc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.globalgraphics.pgb",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.microsoft.icon",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.mix",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.ms-modi",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.net-fpx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.radiance",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.sealed.png",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.sealedmedia.softseal.gif",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.sealedmedia.softseal.jpg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.svf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.valve.source.texture",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.wap.wbmp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "image/vnd.xiff",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/CPIM",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/delivery-status",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/disposition-notification",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/example",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/external-body",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/feedback-report",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/global",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/global-delivery-status",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/global-disposition-notification",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/global-headers",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/http",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/imdn+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/news",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/partial",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/rfc822",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/s-http",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/sip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/sipfrag",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/tracking-status",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/vnd.si.simp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "message/vnd.wfa.wsc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/example",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/iges",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/mesh",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.collada+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.dwf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.flatland.3dml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.gdl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.gs-gdl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.gtw",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.moml+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.mts",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.parasolid.transmit.binary",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.parasolid.transmit.text",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vnd.vtu",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/vrml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/x3d+fastinfoset",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/x3d+xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "model/x3d-vrml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/alternative",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/appledouble",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/byteranges",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/digest",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/encrypted",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/example",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/form-data",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/header-set",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/mixed",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/parallel",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/related",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/report",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/signed",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "multipart/voice-message",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/1d-interleaved-parityfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/RED",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/calendar",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/css",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/csv",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/directory",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/dns",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/ecmascript",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/encaprtp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/enriched",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/example",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/fwdred",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/grammar-ref-list",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/html",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/javascript",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/jcr-cnd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/mizar",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/n3",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/parameters",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/parityfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/plain",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/provenance-notation",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/prs.fallenstein.rst",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/prs.lines.tag",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/raptorfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/rfc822-headers",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/richtext",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/rtf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/rtp-enc-aescm128",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/rtploopback",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/rtx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/sgml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/t140",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/tab-separated-values",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/troff",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/turtle",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/ulpfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/uri-list",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vcard",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.DMClientScript",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.IPTC.NITF",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.IPTC.NewsML",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.a",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.abc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.curl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.debian.copyright",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.dvb.subtitle",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.esmertec.theme-descriptor",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.fly",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.fmi.flexstor",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.graphviz",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.in3d.3dml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.in3d.spot",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.latex-z",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.motorola.reflex",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.ms-mediapackage",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.net2phone.commcenter.command",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.radisys.msml-basic-layout",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.si.uricatalogue",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.sun.j2me.app-descriptor",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.trolltech.linguist",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.wap.si",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.wap.sl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.wap.wml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/vnd.wap.wmlscript",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/xml",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "text/xml-external-parsed-entity",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/1d-interleaved-parityfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/3gpp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/3gpp-tt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/3gpp2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/BMPEG",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/BT656",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/CelB",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/DV",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/H261",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/H263",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/H263-1998",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/H263-2000",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/H264",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/H264-RCDO",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/H264-SVC",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/JPEG",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/MJ2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/MP1S",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/MP2P",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/MP2T",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/MP4V-ES",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/MPV",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/SMPTE292M",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/encaprtp",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/example",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/iso.segment",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/jpeg2000",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/mp4",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/mpeg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/mpeg4-generic",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/nv",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/ogg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/parityfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/pointer",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/quicktime",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/raptorfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/raw",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/rtp-enc-aescm128",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/rtploopback",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/rtx",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/ulpfec",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vc1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.CCTV",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.dece.hd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.dece.mobile",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.dece.mp4",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.dece.pd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.dece.sd",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.dece.video",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.directv.mpeg",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.directv.mpeg-tts",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.dlna.mpeg-tts",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.dvb.file",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.fvt",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.hns.video",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.iptvforum.1dparityfec-1010",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.iptvforum.1dparityfec-2005",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.iptvforum.2dparityfec-1010",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.iptvforum.2dparityfec-2005",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.iptvforum.ttsavc",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.iptvforum.ttsmpeg2",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.motorola.video",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.motorola.videop",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.mpegurl",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.ms-playready.media.pyv",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.nokia.interleaved-multimedia",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.nokia.videovoip",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.objectvideo",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.radgamettools.bink",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.radgamettools.smacker",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.sealed.mpeg1",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.sealed.mpeg4",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.sealed.swf",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.sealedmedia.softseal.mov",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.uvvu.mp4",
+    "fields": {
+        "name": ""
+    }
+},
+{
+    "model": "aims.fileformat",
+    "pk": "video/vnd.vivo",
+    "fields": {
+        "name": ""
+    }
+}
+]

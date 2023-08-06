@@ -1,0 +1,27 @@
+{% load i18n %}
+{% load widget_tweaks %}
+
+{{ formset.management_form }}
+
+<div role="tabpanel" class="form-group-language">
+  <ul class="nav nav-tabs pull-right language_tab" role="tablist">
+    {% for form in formset.forms %}
+        <li role="presentation"{% if forloop.first %} class="active"{% endif %}>
+          <a href="#{{ formset.prefix }}_language_input_{{ forloop.counter0 }}" role="tab" data-toggle="tab" >
+             {% get_language_info for form.language.value as lang %}
+             {{ lang.name_local }}
+          </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="tab-content">
+    {% for form in formset.forms %}
+         <div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ formset.prefix }}_language_input_{{ forloop.counter0 }}">
+            {% render_field form.narrative class+="form-control c-input" rows="2" %}
+            {{ form.narrative.errors }}
+            {{ form.language }}
+            {{ form.id }}
+        </div>
+    {% endfor %}
+  </div>
+</div>

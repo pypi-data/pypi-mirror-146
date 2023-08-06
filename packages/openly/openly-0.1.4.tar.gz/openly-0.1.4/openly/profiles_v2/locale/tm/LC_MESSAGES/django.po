@@ -1,0 +1,352 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 12:42+0900\n"
+"PO-Revision-Date: 2017-06-01 16:28+0822\n"
+"Last-Translator: b'  <sean@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+msgid " Optional"
+msgstr "Opsionál"
+
+msgid " to Myanmar"
+msgstr ""
+
+msgid "About"
+msgstr "Informasaun"
+
+msgid "Activities"
+msgstr "Atividade"
+
+msgid "Activities Status & Percentage"
+msgstr ""
+
+msgid "Activities by Status & Value"
+msgstr ""
+
+#, fuzzy
+msgid "Activity Manager"
+msgstr "Atividade"
+
+msgid "Add A New Team Member"
+msgstr "Aumenta Membru Ekipa Foun"
+
+msgid "Add People"
+msgstr "Aumenta Ema"
+
+msgid "Aid Type by Categories"
+msgstr ""
+
+msgid "Associated with"
+msgstr ""
+
+msgid "Background"
+msgstr "Antesedente"
+
+msgid "Brief biography (limit 500 characters)"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Kansela"
+
+msgid "Change Logo"
+msgstr "Troka Logo"
+
+msgid "Character count"
+msgstr "sura karater"
+
+msgid "Choose Image"
+msgstr "Hili Imajen"
+
+msgid "Close"
+msgstr "Taka"
+
+msgid "Commitment by Sector"
+msgstr ""
+
+msgid "Commitment by sector"
+msgstr ""
+
+msgid "Commitments, Disbursements & Expenditures"
+msgstr ""
+
+msgid "Committed"
+msgstr ""
+
+#, fuzzy
+msgid "Contact Details"
+msgstr "Detallu Kontaktu"
+
+msgid "Contact Information"
+msgstr "Informasaun Kontaktu"
+
+msgid "Delete contact"
+msgstr "Hamos Kontaktu"
+
+msgid "Disbursed"
+msgstr ""
+
+msgid "Edit"
+msgstr "Hadia"
+
+msgid "Edit Banner"
+msgstr "Troka Imajen Banner"
+
+msgid "Edit Person"
+msgstr "Hadia Ema"
+
+msgid "Email"
+msgstr ""
+
+msgid "Email Address"
+msgstr "Enderesu Email"
+
+msgid "Enter contact details"
+msgstr "Hatama detallu kontaktu"
+
+msgid "Export"
+msgstr ""
+
+msgid "Facebook Name"
+msgstr "Facebook nia naran"
+
+#, fuzzy
+msgid "Facebook Profile"
+msgstr "Facebook nia naran"
+
+msgid "Fax"
+msgstr ""
+
+msgid "Filter"
+msgstr ""
+
+msgid "Financials"
+msgstr ""
+
+msgid "General statistics"
+msgstr ""
+
+msgid "How is this calculated?"
+msgstr ""
+
+msgid "Loading"
+msgstr ""
+
+msgid "Locations"
+msgstr "Fatin"
+
+msgid "Name"
+msgstr "Naran"
+
+msgid "Nutrition Specialist"
+msgstr "Espesialista Nutrisaun"
+
+msgid "Office Address"
+msgstr "Enderesu Eskritóriu"
+
+msgid "Office Fax"
+msgstr "Númeru Fax"
+
+#, fuzzy
+msgid "Office Phone Number"
+msgstr "Númeru Eskritóriu"
+
+msgid "People"
+msgstr "Ema"
+
+msgid "Phone"
+msgstr "Telefone"
+
+msgid "Phone number"
+msgstr "Númeru Telefone"
+
+msgid "Position"
+msgstr "Pozisaun"
+
+msgid "Print"
+msgstr ""
+
+msgid "Publish"
+msgstr "Publika"
+
+msgid "Save Contact"
+msgstr "Rai Kontaktu"
+
+msgid "Save contacts"
+msgstr ""
+
+msgid "See less"
+msgstr "hare menus"
+
+msgid "See more"
+msgstr "hare liu tan"
+
+msgid "Show All"
+msgstr ""
+
+msgid "Show Less"
+msgstr ""
+
+#, fuzzy
+msgid "Since your cover photo goes across the entire width of your profile, the image you pick should be at least <strong>1500 pixels wide.</strong> The image should be formatted as a <strong>JPEG</strong> or <strong>PNG</strong> file."
+msgstr "Tanba ita-nian foto kapa taka tomak spasu husi ita-nian perfil, imajen ne'ebé ita hili tenke pelumenus pixel 1500. Imajen ne'e tenke ho formatu hanesan JPEG ka PNG."
+
+msgid "Social Network"
+msgstr "Rede Sosiál"
+
+msgid "The image you pick should be <strong>200x200 pixels.</strong> The image should be formatted as a <strong>JPEG</strong> or <strong>PNG</strong> file."
+msgstr ""
+
+msgid "The map below shows where the activities for this organisation are currently implemented."
+msgstr "Mapa iha kraik ne'e hatudu fatin ne'ebé atividade sira ba organizasaun ida ne'e implementa atualmente."
+
+msgid "The photo has to be 120 x 120px, it has to be in jpg or png formats and not exceed the 200kb."
+msgstr "Foto tenke 120x120px, tenke iha formatu jpg ka png no la bo'ot liu 200kb"
+
+msgid "These are some of this organisation&apos;s key team members."
+msgstr "Hirak ne'e mak organizasaun nian membru ekipa xave balun"
+
+msgid "These are the sectors that this development partner is supporting along with the total value committed."
+msgstr ""
+
+msgid "These are this organisation&apos;s activities."
+msgstr "Hirak ne'e mak organizasaun ninia atividade sira"
+
+msgid "These statistics provide a quick overview of the assistance provided by this development partner."
+msgstr ""
+
+msgid "This chart shows the number and total value of all activities the development partner is associated with based on the activity status."
+msgstr ""
+
+msgid "This chart shows the percentage of all funds allocated by activity status."
+msgstr ""
+
+msgid "This chart shows the total assistance for all activities the development partner is associated with."
+msgstr ""
+
+msgid "This chart shows the total funds directly provided by the donor by Aid Type Category."
+msgstr ""
+
+msgid "This organisation is currently implementing development activities in these areas."
+msgstr "Organizasaun ida ne'e mak agora dadaun implementa atividade iha aria ne'e."
+
+msgid "This organisation is currently implementing development activities in this area."
+msgstr "Organizasaun ida ne'e mak agora dadaun implementa atividade iha aria ne'e."
+
+msgid "This provides an aggregated summary of this partners financial contribution."
+msgstr ""
+
+msgid "Twitter Handle"
+msgstr "Twitter nian Naran"
+
+msgid "Upload Photo"
+msgstr "Hatama Foto"
+
+msgid "Upload banner image"
+msgstr "Hatama imajen banner"
+
+msgid "Upload logo image"
+msgstr "Hatama imajen logo"
+
+msgid "Upload persons photo"
+msgstr "Hatama foto pesoal"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "activities"
+msgstr "Atividade"
+
+#, fuzzy
+msgid "activities_or_programs"
+msgstr "Atividade"
+
+msgid "no statistics"
+msgstr ""
+
+msgid "statistics since "
+msgstr "Statistika desde"
+
+#~ msgid "About Us"
+#~ msgstr "Informasaun Konabá Ami"
+
+#~ msgid "Change Banner"
+#~ msgstr "Hadia imajen banner"
+
+#~ msgid "Contacts"
+#~ msgstr "Kontaktu"
+
+#~ msgid "Do you really want to delete this item?"
+#~ msgstr "Ita konfirma hakarak hamos buat ne'e?"
+
+#~ msgid "E-Mail"
+#~ msgstr "Email"
+
+#~ msgid "E-mail"
+#~ msgstr "E-mail"
+
+#~ msgid "Follow Us On Social Media"
+#~ msgstr "Tuir Ami iha Média Sosiál"
+
+#~ msgid "For interactivity and display of your social networking please provide your organisation’s costumised links."
+#~ msgstr "Ba interatividade no expozisaun husi ita-nian rede sosiál favor fó ligasaun personalizadu husi ita-nian organizasaun."
+
+#~ msgid "Help Text"
+#~ msgstr "Textu ajuda"
+
+#~ msgid "Our Activities"
+#~ msgstr "Ami-nian Atividade"
+
+#~ msgid "Our People"
+#~ msgstr "Ami-nian Ema"
+
+#~ msgid "Required"
+#~ msgstr "Área ne'ebé presiza"
+
+#~ msgid "Results"
+#~ msgstr "Rezultadu"
+
+#~ msgid "Save"
+#~ msgstr "Salva"
+
+#~ msgid "The list below contains information about the activities this organisation is currently implementing."
+#~ msgstr "Lista iha okos inklui informasaun kona ba aktividade sira ne'ebe organizasaun ida ne'e implementa"
+
+#~ msgid "Top ten activities"
+#~ msgstr "Atividade top 10"
+
+#~ msgid "You have to fill all of the following fields"
+#~ msgstr "Ita tenki hatama informasaun tuir nee"
+
+#~ msgid "of"
+#~ msgstr "husi"
+
+#~ msgid "{ email_validation_message }"
+#~ msgstr "{ mensajen_validasaun_email }"
+
+#~ msgid "{ facebook_validation_message }"
+#~ msgstr "{ mensajen_validasaun_facebook }"
+
+#~ msgid "{ name_validation_message }"
+#~ msgstr "{ mensajen_validasaun_naran }"
+
+#~ msgid "{ phone_number_validation_message }"
+#~ msgstr "{ mensajen_validasaun_númeru_telefone }"
+
+#~ msgid "{ twitter_validation_message }"
+#~ msgstr "{ mensajen_validasaun_twitter }"
+
+#~ msgid "{ website_validation_message }"
+#~ msgstr "{ mensajen_validasaun_website }"

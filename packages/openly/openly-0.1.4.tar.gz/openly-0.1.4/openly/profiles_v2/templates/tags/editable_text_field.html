@@ -1,0 +1,48 @@
+{% load i18n %}
+{% load static %}
+
+<editable_text_field>
+    <div class="text-faded-wrapper">
+        <div class="profile-container">
+            <div class="editable-text-container">
+                <div class="edit-title">
+                    <h3>{ opts.field_name }
+                        {% if editor %}
+                        <button type="button" class="btn btn-success btn-super-small hidden-print" if={ editing === false} onclick="{edit}">{% trans 'Edit' %}</button>
+                        {% endif %}
+                    </h3>
+                </div>
+                {% if editor %}
+                <div class="pull-right language-toggle language-toggle-profile" if="{ editing }">
+                    <ul class='nav nav-tabs pull-right language_tab' role='tablist'>
+                        <li each={ languages } data={ this } class='{language_code == language ? "active" : ""}'>
+                            <a data-languagecode="{ language_code }" onclick="{select_language}">{ language_name }</a>
+                        </li>
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            <div class="text-field-wrapper">
+                <div id="{ opts.field_text_id }" class="editable-text-field" data-placeholder=" ">
+                    <span></span>
+                </div>
+                <span show={ !hide_toggles && hide_text && !editing } class="expand-button-fakelink hidden-print" onClick={show_overflow}>Read More</span>
+                <span show={ !hide_toggles && !hide_text && !editing } class="expand-button-fakelink hidden-print" onClick={hide_overflow}>Close</span>
+                <div if="{editing}" class="pull-right">
+                    <button onclick="{discard}" class="btn btn-small btn-default">{% trans "Cancel" %}</button>
+                    <button onclick="{save}" class="btn btn-small btn-primary">{% trans "Publish" %}</button>
+                </div>
+                <div id="{ opts.field_text_id }_counts" class="hidden">
+                    <p class="help-text">{% trans 'Character count' %}: { character_count } / { opts.character_limit }</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'tags/editable_text_field.js' %}
+
+<style scoped>
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+        display: none;
+    }
+</style>
+</editable_text_field>

@@ -1,0 +1,541 @@
+{% load i18n %}
+
+<tab-iati-sync-update-link-modal>
+    <iati-sync-modal title="Connect to the IATI Datastore">
+        <yield to='modal-content'>
+            <form id="iatiIdForm">
+            <div class="col col-sm-10 col-sm-offset-1">
+                <div class="row" id="iatiFetchData" show={search_for_data}>
+                    <h3 class="text-section-break">{% trans 'Search the IATI Datastore for this activity' %}</h3>
+                    <p class="help-text">{% trans 'To see your official IATI record visit' %} <a target="_blank" href="https://www.iatiregistry.org/publisher" class="help-text">https://www.iatiregistry.org/publisher</a></p>
+                    <div class="col-xs-12 no-padding">
+                        {% csrf_token %}
+                        <label>{% trans 'Search for the IATI Activity Identifier' %}</label>
+                        <input type="hidden" id="aims-activity-id" name="aims-activity-id" value="{data.activity.id}">
+                        <input type="text" id="oipa-iati-id" name="oipa-iati-id" placeholder="{% trans 'IATI Activity ID' %}" value="{data.activity.iati_identifier}">
+                    </div>
+                </div>
+                <div id="iatiFetchLoader" class="row" hidden>
+                    <div class="row">
+                        <div class="col col-sm-10 col-sm-offset-3" style="padding-top: 20px;">
+                            <p class="help-text">{% trans 'Fetching the freshest IATI data' %}</p>
+                            <p class="help-text" if="{xhrmessage}">{xhrmessage}</p>
+                        </div>
+                    </div>
+                    <div class="row loader"></div>
+                </div>
+                <div id="iatiFetchError" class="row" hidden>
+                    <p class="has-error validation-error">{% trans 'IATI Activity Identifier given was not found in the datastore.' %}</p>
+                </div>
+                <div id="otherFetchError" class="row" hidden>
+                    <p class="has-error validation-error">{% trans 'Sorry, there was an error syncing this activity.' %}</p>
+                </div>
+                <div class="row" id="iatiCompareTable" show={compare_data}>
+                    <h3 class="text-section-break">{% trans 'Compare your information' %}</h3>
+                    <p class="help-text">
+                        {% trans 'Below compare your local Mohinga activity with the activity reported to the IATI Registry. If these activities match, please link your IATI activity to Mohinga.' %}
+                    </p>
+                    <p class="help-text">
+                        {% trans "Selecting 'Create Link' will link these activities, but will not import data. You can control what financial data is imported in the next step." %}
+                    </p>
+                    <table class="table micro-text">
+                        <thead class="td-light-lines">
+                            <tr class="tr-bg-blue">
+                                <th>{% trans 'Locally Reported' %}</th>
+                                <th>{% trans 'Reported to IATI' %}</th>
+                            </tr>
+                        </thead>
+                        <tbody class="td-light-lines">
+                            <tr>
+                                <td class="even-width">
+                                    <strong>{% trans 'IATI Activity Identifier' %}</strong><br>
+                                    <span if={data.activity.iati_identifier == "" || !data.activity.iati_identifier }><i>none</i></span>
+                                    <span if={data.activity.iati_identifier != "" && data.activity.iati_identifier }>{ data.activity.iati_identifier }</span>
+                                </td>
+                                <td class="even-width">
+                                    <strong>{% trans 'IATI Activity Identifier' %}</strong><br>
+                                   { data.iati_data.activity.iati_id }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>{% trans 'Activity Title' %}</strong><br>
+                                    { _.get(data, ['activity','title_set', 0, 'title'], "-") }
+                                </td>
+                                <td>
+                                    <strong>{% trans 'Activity Title' %}</strong><br>
+                                    { data.iati_data.activity.title }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>{% trans 'Activity Status' %}</strong><br>
+                                    { data.activity.activity_status.name }
+                                </td>
+                                <td>
+                                    <strong>{% trans 'Activity Status' %}</strong><br>
+                                    { data.iati_data.activity.status }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>{% trans 'Reporting Organisation' %}</strong><br>
+                                    { data.activity.reporting_organisation.name }
+                                </td>
+                                <td>
+                                    <strong>{% trans 'Reporting Organisation' %}</strong><br>
+                                    { data.iati_data.activity.reporting_org }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>{% trans 'Financial Summary' %}</strong>
+                                    <table class="table micro-text">
+                                        <thead class="td-light-lines">
+                                            <tr class="tr-bg-blue">
+                                                <td>{% trans 'Type' %}</td>
+                                                <td>{% trans 'Amt. (USD)' %}</td>
+                                                <td>{% trans '#' %}</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>{% trans 'Commit.' %}</td>
+                                                <td>{ openly_commitments }</td>
+                                                <td>{ openly_commitments_count }</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{% trans 'Incoming' %}</td>
+                                                <td>{ openly_incoming }</td>
+                                                <td>{ openly_incoming_count }</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{% trans 'Outgoing' %}</td>
+                                                <td>{ openly_outgoing }</td>
+                                                <td>{ openly_outgoing_count }</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{% trans 'Budget' %}</td>
+                                                <td>{ openly_budgets }</td>
+                                                <td>{ data.budgets.length }</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td>
+                                    <strong>{% trans 'Financial Summary' %}</strong>
+                                    <table class="table micro-text">
+                                        <thead class="td-light-lines">
+                                            <tr class="tr-bg-blue">
+                                                <td>{% trans 'Type' %}</td>
+                                                <td>{% trans 'Amt. (USD)' %}</td>
+                                                <td>{% trans '#' %}</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>{% trans 'Commit.' %}</td>
+                                                <td>{ accounting.formatMoney(data.iati_data.transactions['C']['raw_sum'], "", 0); }</td>
+                                                <td>{ data.iati_data.transactions['C']['raw_count'] }</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{% trans 'Incoming' %}</td>
+                                                <td>{ accounting.formatMoney(data.iati_data.transactions['IF']['raw_sum'], "", 0); }</td>
+                                                <td>{ data.iati_data.transactions['IF']['raw_count'] }</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{% trans 'Outgoing' %}</td>
+                                                <td>{ accounting.formatMoney(data.iati_data.transactions['OF']['raw_sum'], "", 0); }</td>
+                                                <td>{ data.iati_data.transactions['OF']['raw_count'] }</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{% trans 'Budget' %}</td>
+                                                <td>{ accounting.formatMoney(data.iati_data.transactions['B']['raw_sum'], "", 0);}</td>
+                                                <td>{ data.iati_data.transactions['B']['raw_count'] }</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <style>
+                        ul { padding: 0 0 0 15px; }
+                        .even-width { width: 225px; }
+                        .micro-text { font-size: 75%; }
+                        .micro-subtext { font-size: 100% !important; }
+                        .tr-bg-blue { background-color: #f1f5f7; }
+                        .micro-subtext {
+                            font-size: 80%;
+                            margin-bottom: 0px !important;
+                        }
+                        .micro-subtext > tbody > tr > td {
+                            border-top: 0px !important;
+                        }
+                        .no-top-border {
+                            border-top: 0px !important;
+                            padding-top: 15px!important;
+                        }
+                        .td-light-lines { outline: thin solid #dee2e4; /* #f1f5f7; */ }
+                        .loader {
+                            margin: 0 0 0 175px;
+                            top: inherit;
+                        }
+                    </style>
+                </div>
+            </div>
+            </form>
+        </yield>
+        <yield to='modal-footer'>
+            <button show={data.iati_data.link_info.activity_id != ""} type="button" onclick='{deleteLink}' class="btn btn-large btn-danger">{% trans 'Delete Link' %}</button>
+            <button show={compare_data} type='button' class="btn btn-large btn-default" onclick='{search_again}'>{% trans 'Search again' %}</button>
+            <button show={data.iati_data.link_info.activity_id == ""} type="button" onclick='{hide}' class="btn btn-large btn-default">{% trans 'Cancel' %}</button>
+            <button show={search_for_data} type="button" onclick='{fetchIati}' class="btn btn-large btn-primary">{% trans 'Search IATI' %}</button>
+            <button show={compare_data} type="button" onclick='{confirmLink}' class="btn btn-large btn-primary">
+                <span show={data.iati_data.link_info.activity_id == ""}>{% trans 'Create ' %}</span>
+                <span show={data.iati_data.link_info.activity_id != ""}>{% trans 'Update ' %}</span>
+                {% trans 'Link' %}
+            </button>
+        </yield>
+    </iati-sync-modal>
+    var tag = this;
+    tag.mixin('IatiSyncModalMixin');
+    tag.on('before-mount', function() {
+        if (!data.iati_data.activity) {
+            // if nothing linked yet or bad link setup default values
+            data.iati_data.activity = {
+                iati_id: '',
+                title: '',
+                status: '',
+                reporting_org: '',
+            };
+        }
+    });
+</tab-iati-sync-update-link-modal>
+
+<tab-iati-sync-confirm-update-modal>
+    <iati-sync-modal title="{% trans 'Synchronize With IATI' %}">
+        <yield to='modal-content'>
+            <div class="col col-sm-10 col-sm-offset-1">
+                <div class="row">
+                    <h3 class="text-section-break">{% trans 'Are you sure you want to sync from IATI?' %}</h3>
+                    <p>{% trans 'This action will replace selected locally reported transactions for this activity with those contained within the IATI Registry.' %}</p><br>
+                    <p>{% trans 'When IATI Sync is activated, you will no longer be able to edit transactions locally for the transaction types you have selected to sync. To make changes, you will need to edit the relevant official IATI Activity File reported to the IATI Registry.' %}</p><br>
+                    <p>{% trans 'Users can choose to stop IATI Sync at any time and edit imported transactions locally. However, those local changes would be lost if users choose to turn IATI Sync back on again.' %}</p>
+                </div>
+            </div>
+        </yield>
+        <yield to='modal-footer'>
+            <button type="button" onclick='{hide}' class="btn btn-large btn-default">{% trans 'Cancel' %}</button>
+            <button type="button" onclick='{save}' disabled={disabled:!parent.saveEnabled} class="btn btn-large btn-primary">{% trans 'Agree and Sync from IATI' %}</button>
+        </yield>
+    </iati-sync-modal>
+    var tag = this;
+    tag.mixin('IatiSyncModalMixin')
+</tab-iati-sync-confirm-update-modal>
+
+
+<tab-iati-sync-confirm-delete-modal>
+    <iati-sync-modal title="{% trans 'Stop IATI Synchronization' %}">
+        <yield to='modal-content'>
+            <div class="col col-sm-10 col-sm-offset-1">
+                <div class="row">
+                    <h3 class="text-section-break">{% trans 'Revert back to manual entry?' %}</h3>
+                    <p>
+                        {% trans 'The financial information in your activity will remain as of the last import date.' %}
+                    </p>
+                </div>
+            </div>
+        </yield>
+        <yield to='modal-footer'>
+            <button type="button" onclick='{hide}' class="btn btn-large btn-default">{% trans 'Close' %}</button>
+            <button type="button" onclick='{breakUp}' class="btn btn-large btn-primary">{% trans 'Agree and Stop IATI Sync' %}</button>
+        </yield>
+    </iati-sync-modal>
+    var tag = this;
+    tag.mixin('IatiSyncModalMixin')
+</tab-iati-sync-confirm-delete-modal>
+
+
+<iati-sync-modal>
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" onclick='{hide}' aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title">{opts.title}</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <yield from="modal-content"></yield>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <yield from="modal-footer"></yield>
+                </div>
+            </div>
+        </div>
+    </div>
+    var tag = this;
+    function parent(event){return _.invoke(tag.parent, event, tag)}
+    tag.toggle = function(){parent('toggle')}
+    tag.hide = function(){parent('hide')}
+    tag.save = function(e) {
+        e.preventDefault();
+        var form = $("#oipaActivityLinkForm");
+        tag.hide();
+        $.confirm({
+            closeIcon: false,
+            type: 'blue',
+            theme: 'modern',
+            columnClass: 'medium',
+            title: 'Saving IATI Sync settings',
+            content: function() {
+                var self = this;
+                var form_data = {};
+                self.setContentAppend('<div>'+'{% trans "Saving changes to IATI Sync settings" %}'+'...</div>');
+                return $.ajax({
+                    type: 'POST',
+                    url: "{% url 'oipa_activity_link_update' %}",
+                    data: form.serialize(),
+                    headers: { 'X-CSRFTOKEN': window.csrf_token }
+                }).done(function (res) {
+                    /* Define the wait-until-ready ajax loop */
+                    /* Expected behaviour is a 302: redirect to the job specific page, 202s until ready, then a 200 */
+                    var makeSyncActivitiesRequest = function(job){
+                        var url = "{% url 'oipa_sync_activities' %}" + res.activity_id + '?celerize';
+                        if (job) { url = url + '&job=' + job}
+                        var request = $.ajax({
+                            type: 'GET',
+                            url: url
+                        });
+                        request.done(function(){
+                            if (request.status == 202){
+                                /* 2-second Loop on a "202:Accepted" return code */
+                                return setTimeout(function(){makeSyncActivitiesRequest(request.responseJSON.job)}, 2000); 
+                            } else {
+                                /* Hopefully this is a 200 code */
+                                setTimeout(function hide(){
+                                    /* This races the "fade in" if the result returns very quickly */
+                                    $('#iatiSyncRunning').hide(300, function() {
+                                        self.setContentAppend('<div><span class="glyphicon glyphicon-ok" style="color:green;"></span>'+" {% trans "IATI Sync completed." %}"+'</div>');
+                                        self.buttons.close_success.show();
+                                    })
+                                }, 1000)
+                            }
+                        }).fail(function (err) {
+                            $('#iatiSyncRunning').hide(300, function() {
+                                self.setContentAppend('<div><span class="glyphicon glyphicon-remove" style="color:red;"></span>'+" {% trans "Error updating IATI Sync settings." %}"+'</div>');
+                                self.buttons.close_fail.show();
+                            });
+                        })
+                    };
+                    self.setContentAppend('<div><span class="glyphicon glyphicon-ok" style="color:green;"></span>'+" {% trans "IATI Sync settings updated." %}"+'</div>');
+                    self.setContentAppend('<div>'+"{% trans "Full IATI Sync of data is running..." %}"+'</div>');
+                    self.setContentAppend('<div id="iatiSyncRunning" style="height:100px;"><p class="loader" style="top:0px;"></p></div>');
+                    /* Begin the request loop */
+                    makeSyncActivitiesRequest();
+                })
+
+            },
+            buttons: {
+                close_success: {
+                    text: "Refresh",
+                    isHidden: true,
+                    action: function() { window.location.reload(); }
+                },
+                close_fail: {
+                    text: "Close",
+                    isHidden: true,
+                    action: function() { }
+                }
+            }
+        });
+    }
+    tag.breakUp = function(e) {
+        var form = $("#oipaActivityLinkForm");
+        var xhr = $.ajax({
+            type: 'POST',
+            url: "{% url 'oipa_activity_link_clear' %}",
+            data: form.serialize(),
+            headers: { 'X-CSRFTOKEN': window.csrf_token }
+        }).done(function (data) {
+            tag.hide();
+            window.banner_message.hide('danger');
+            window.banner_message.show('{% trans "Suspended IATI Sync." %}', 'success');
+            window.location.reload();
+        }).fail(function (err) {
+            tag.hide();
+            window.banner_message.hide('success');
+            window.banner_message.show('{% trans "Error suspending IATI Sync." %}', 'danger');
+        });
+        e.preventDefault();
+    }
+
+    tag.search_for_data = true;
+    tag.compare_data = false;
+    tag.oipa_temp_data = {};
+
+    tag.search_again = function (e) {
+        tag.search_for_data = true;
+        tag.compare_data = false;
+        tag.update();
+    }
+
+    tag.totals = {};
+
+    function calc_sums(trans) {
+        return _(trans).map('value').map(_.toNumber).sum();
+    }
+
+    tag.on('before-mount', function(){
+        _.map(tag.opts.totals, function(v, k){
+            tag.totals[k] = accounting.formatMoney(v, 'USD ', 0)
+        })
+
+        // calculate sums for Openly transaction and budget data
+        if (data.budgets.length > 0) {
+            tag.openly_budgets = accounting.formatMoney(calc_sums(data.budgets), "", 0);
+        } else {
+            tag.openly_budgets = "0";
+        }
+
+        if (data.transactions.length > 0) {
+            var commitment_temp = data.transactions.filter(t => t.transaction_type == 'C');
+            var outgoing_temp = data.transactions.filter(t => (t.transaction_type == 'D' || t.transaction_type == 'E'));
+            var incoming_temp = data.transactions.filter(t => t.transaction_type == 'IF');
+
+            tag.openly_commitments = commitment_temp.length > 0 ? accounting.formatMoney(calc_sums(commitment_temp), "", 0) : "0";
+            tag.openly_commitments_count = commitment_temp.length;
+            tag.openly_outgoing = outgoing_temp.length > 0 ? accounting.formatMoney(calc_sums(outgoing_temp), "", 0) : "0";
+            tag.openly_outgoing_count = outgoing_temp.length;
+            tag.openly_incoming = incoming_temp.length > 0 ? accounting.formatMoney(calc_sums(incoming_temp), "", 0) : "0";
+            tag.openly_incoming_count = incoming_temp.length;
+        }
+    })
+
+    tag.fetchIati = function (e) {
+        // hide error message
+        $('#iatiFetchError').hide();
+        $('#otherFetchError').hide();
+        // show processing spinner
+        $('#iatiFetchLoader').show();
+        var request_data = {
+            'openly_id': document.getElementById('aims-activity-id').value,
+            'iati_identifier': document.getElementById('oipa-iati-id').value,
+            'celerize': 'True',
+        };
+        if (tag.job){ request_data.job = tag.job };
+        var xhr = $.ajax({
+            type: 'GET',
+            url: "{% url 'oipa_activity_by_iati_identifier' %}",
+            data: request_data,
+            headers: { 'X-CSRFTOKEN': window.csrf_token }
+        });
+        xhr.done(function (res) {
+            if (xhr.status == 202){
+                /*
+                Assert that this is type 200 OR type 202 AND has a "job" UUID in json
+                Return type 202: Accepted indicated the server is still waiting for OIPA
+                Exit and call tag.fetchIati until we have a 200 
+                */
+                if (res.job){tag.job = res.job};
+                if (res.info) { tag.update({xhrmessage:res.info}) };
+                return setTimeout(function(){tag.fetchIati(e)}, 2000);
+            }
+            // hide processing spinner
+            $('#iatiFetchLoader').hide();
+            if (res['activity'] && res['transactions'] && res['validation_results']) {
+                tag.compare_data = true;
+                tag.search_for_data = false;
+                // set iati activity and transaction data
+                data.iati_data.activity = res['activity'];
+                data.iati_data.transactions = res['transactions'];
+                data.iati_data.validation_results = res['validation_results'];
+            } else {
+                // show error message
+                $('#iatiFetchError').show();
+                // wiggle input field with JS shake function
+                $('#oipa-iati-id').shake();
+            }
+            tag.update();
+        }).fail(function (err) {
+            $('#iatiFetchLoader').hide();
+            $('#otherFetchError').show();
+            $('#oipa-iati-id').shake();
+        });
+        e.preventDefault();
+    }
+
+    tag.confirmLink = function(e) {
+        var form = $('#iatiIdForm');
+        var xhr = $.ajax({
+            type: 'POST',
+            url: "{% url 'iati_identifier_update' %}",
+            data: form.serialize(),
+            headers: { 'X-CSRFTOKEN': window.csrf_token }
+        }).done(function (res) {
+            window.banner_message.hide('danger');
+            window.banner_message.show('{% trans "IATI Identifier Link updated." %}', 'success');
+            window.location.reload();
+        }).fail(function (err) {
+            window.banner_message.hide('success');
+            window.banner_message.show('{% trans "Error updating IATI Identifier Link." %}', 'danger');
+        });
+        e.preventDefault();
+    }
+
+    tag.deleteLink = function(e) {
+        e.preventDefault();
+        $.confirm({
+            type: 'orange',
+            theme: 'modern',
+            icon: 'glyphicon glyphicon-warning-sign',
+            columnClass: 'medium',
+            title: 'Are you sure you want to remove this IATI Identifier Link?',
+            content: 'Removing the IATI Identifier will stop all IATI Syncing, and remove the IATI Sync record. Previously Synced data will not be affected and must be removed manually.',
+            buttons: {
+                confirm: {
+                    btnClass: 'btn-danger',
+                    action: function () {
+                        var form = $('#iatiIdForm');
+                        var xhr = $.ajax({
+                            type: 'POST',
+                            url: "{% url 'oipa_activity_link_delete' %}",
+                            data: form.serialize(),
+                            headers: { 'X-CSRFTOKEN': window.csrf_token }
+                        }).done(function (res) {
+                            window.banner_message.hide('danger');
+                            window.banner_message.show('{% trans "IATI Identifier Link deleted." %}', 'success');
+                            window.location.reload();
+                        }).fail(function (err) {
+                            window.banner_message.hide('success');
+                            window.banner_message.show('{% trans "Error deleting IATI Identifier Link." %}', 'danger');
+                        });
+                    }
+                },
+                cancel: {
+                    btnClass: 'btn-default',
+                    action: function () {
+                        parent('hide');
+                    }
+                }
+            }
+        });
+
+
+
+    }
+
+    jQuery.fn.shake = function(interval, distance, times) {
+        interval = typeof interval == "undefined" ? 100 : interval;
+        distance = typeof distance == "undefined" ? 10 : distance;
+        times = typeof times == "undefined" ? 3 : times;
+        var jTarget = $(this);
+        jTarget.css('position','relative');
+        for(var iter=0;iter<(times+1);iter++) {
+            jTarget.animate({ left: ((iter%2==0 ? distance : distance*-1))}, interval);
+        }
+        return jTarget.animate({ left: 0},interval);
+    }
+</iati-sync-modal>

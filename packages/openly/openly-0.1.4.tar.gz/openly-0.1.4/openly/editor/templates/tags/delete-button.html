@@ -1,0 +1,9 @@
+{% load i18n %}
+
+<delete-button>
+    <button class="btn btn-small btn-danger pull-right" id="delete-activity-button" if="{can_delete}" onclick="{open_delete_modal}">{% blocktrans %}Delete {{activity_singular}}{% endblocktrans %}</button>
+
+    <delete-modal ref="delete_modal"></delete-modal>
+    {% include 'tags/delete-button.js' %}
+
+</delete-button>

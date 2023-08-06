@@ -1,0 +1,320 @@
+ {% load i18n %}
+ {% load static %}
+
+<documents-app>
+    <router>
+        <route path="documents">
+            <div class="row" data-is="document-list"></div>
+        </route>
+        <route path="documents/*"><div class="row" data-is="document-edit"></div></route>
+    </router>
+    /* manually call 'exec' to initiate this nested router */
+    var tag = this;
+    this.on('mount', function(){route.exec('')})
+</documents-app>
+
+<document-not-present-warning>
+    <div class="row no-documents-indicator">
+        <div class="col-xs-12">
+            <div class="text-center">
+                <br>
+                <img src="{% static 'img/books.png' %}" width="85" height="85">
+                <h3 class="no-objects-text">{% trans 'There are no documents or images uploaded' %}</h3>
+                <p class="in-line-help">{% blocktrans %}Documents and images should include key supporting materials related to this {{activity_singular_lower}}{% endblocktrans %}</p>
+            </div>
+        </div>
+    </div>
+</document-not-present-warning>
+
+<document-list>
+    <div if={!documents.length} data-is="document-not-present-warning"></div>
+    <div each="{doc in documents}" class="row doc doc-container" >
+        <div class="row" data-is="document-row" document="{doc}">
+        </div>
+    </div>
+     
+    var tag = this;
+    var store = stores.documentStore;
+    tag.store = store;
+    tag.documents = store[store.el];
+
+    var update = function(){
+        tag.update({documents: store[store.el]})
+    }
+
+    tag.on('mount', function(){
+        store.on('documents-updated', update)
+    })
+    tag.on('unmount', function(){
+        store.off('documents-updated', update)
+    })
+
+    tag.save = function () {
+        tag.document.iso_date = moment().format('YYYY-MM-DD'); // Tag document with iso-format date
+        if (tag.state.new) { tag.store.create(tag, tag.editing.item); return; }
+        tag.store.update(tag, tag.editing.item);
+    },
+
+    tag.mixin('TabMixin');  
+
+</document-list>
+
+<document-row>
+    <div class="col-xs-1">
+        <p class="doc doc-title" onclick="{edit}">
+            <img width="{icon_size}" src="{doc.icon_url}" height="{icon_size}" class='docImg'>
+        </p>
+    </div>
+    <div class="col-xs-7 col-lg-8">
+        <a class="doc-title" onclick="{edit}"><span>{doc.title}</span> <em if="{doc.title == ''}">{% trans 'Untitled' %}</em></a>
+        <p class="no-margin help-text">
+            <span if={doc.categories.length == 1}>Category: </span>
+            <span if={doc.categories.length > 1}>Categories: </span>
+            <span each="{cat in doc.categories_verbose}">{cat[1]}. </span>
+        </p>
+        <div class="help-block in-line-help no-padding no-margin">
+            <span>{doc.iso_date}</span>
+            <span if={doc.file_type}> - {doc.file_type}</span>
+            <span if={!doc.file_type && doc.url}> - URL </span>
+            <span if={doc.file_size}> - {doc.display_file_size}</span>
+        </div>
+    </div>
+    <div class="col-xs-4 col-lg-3 doc doc-toolbar">
+        <div class="btn-toolbar" role="toolbar">
+            <a class="btn btn-default btn-small" if='{doc.url}' href="{doc.url}">{% trans 'Download' %}</a>
+            <span class="no-btn" if='{!doc.url}'>{% trans 'No file' %}</span>
+            <a class="remove_form_row" onclick="{delete}"></a>
+        </div>
+    </div>
+
+    var tag = this;
+    tag.icon_size = 85;
+    var store = stores.documentStore;
+    tag.store = store;
+
+    tag.delete = function(e){
+        function remove(){
+            _.remove(tag.store[tag.store.el], {id: e.item.doc.id});
+            store.trigger('documents-updated');
+        }
+        function del() {
+            tag.store.save(tag, {method: 'DELETE', url:tag.store.urls.delete(e.item.doc.id)}).then(remove)
+        }
+        RiotControl.trigger('confirm-delete', { confirm: del, content: 'This document will be deleted permanently.' });
+    }
+
+    function edit(e){route('documents/'+tag.opts.document.id);}
+    function annotate(sourceDoc){
+        doc = _.clone(sourceDoc);
+        doc.display_file_size = (doc.file_size / (1024 * 1024)).toFixed(2) + 'mb';
+        doc.icon_url = _.get(store.icons, doc.file_format, '{% static "img/text_doc.svg" %}');
+        doc.categories_verbose = _.map(doc.categories, function(cat){return [cat, store.get_choice('document_category', cat)]})
+        return doc;
+    }
+    tag.edit = edit;
+    tag.on('before-mount', function(){
+        tag.doc = annotate(tag.opts.document);
+    })
+</document-row>
+
+<document-edit>
+
+    <div class="col col-xs-12">
+        <a class="btn-back" href='#documents'><i class="ion-android-arrow-back"></i> {% trans 'back' %}</a>
+        <div class="row">
+            <div class="col-xs-12">
+                <field-input validate_not_null='true' label="{% trans 'Title' %}" store={opts.store} path="this.document.title"></field-input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-12">
+                <label class="control-label">{% trans 'Categories' %}</label>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-bottom:5px;" each='{category, index in document.categories}'>
+            <div class="col-xs-12">
+                <field-dropdownselect
+                    store={store}
+                    hide_label=true
+                    path='this.document.categories[{index}]'
+                    initial='{document.categories[index]}'
+                    fieldname='document_category'
+                    onchoose='onchoose'
+                    disabled_choices="{document.categories}"
+                >
+                </field-dropdownselect>
+            </div>
+            <div if='{index>0}' class="remove_document_category"> 
+                <a title="{% trans "Remove" %}" class="remove_form_row remove_category" onclick='{remove_category}'> </a> 
+            </div>
+        </div>
+
+        <div class="row form-section">
+            <div class="col-xs-12">
+                <div class="add-line">
+                    <a id="add-document-link" class="add_form_row" onclick="{add_empty_category}">{% trans 'Add another document category' %} </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row form-section">
+            <div class="col col-xs-12">
+                <label class="control-label">{% trans 'Language' %}</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <field-dropdownselect
+                    choice_fieldname="language"
+                    label="{%  trans 'Language' %}"
+                    hide_label={true}
+                    store={store}
+                    path='this.document.language'
+                    initial='{document.language}'
+                    classes="{classes_language}"
+                ></field-dropdownselect>
+            </div>
+        </div>
+
+        <div class="row form-section control-label"> 
+            <div class="col-xs-12"> 
+                <field-narrative name="description_field" 
+                    title='{% trans "Document Description" %}' 
+                    store={store} 
+                    languages={stores.activityStore.languages} 
+                    path="edited_document.narrative" 
+                    fieldname='description'> 
+                </field-narrative> 
+            </div> 
+        </div> 
+
+        <div class="row form-section">
+            <div class="col-xs-12">
+                <br>
+                <div class="form-group">
+                    <field-upload
+                        label="{{ _('Upload document')|force_escape }}"
+                        classes='{classes_upload}'
+                        ajax="{upload_opts}"
+                        button_text="{{ _('Browse')|force_escape }}"
+                        path="this.document._file"
+                        store={opts.store}
+                        validate_type={validate_type}
+                        validate_max_size={validate_max_size}
+                        helptext='{upload_helptext}'
+                    ></field-upload>
+                </div>
+            </div>
+            <div class="col-xs-12" if="{show_url_field}">
+                <field-input label="{% trans 'Url' %}" store={opts.store} path="this.document.url"></field-input>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-group-editor">
+        <div class="pull-right">
+            <a id="next-documents" class="btn btn-large btn-default" onclick="{ next }">{% trans "Next" %}</a>
+            <a class="btn btn-large btn-default" href='#documents'>{%  trans 'Return' %}</a>
+            <a class="btn btn-large btn-primary" onclick="{save}">{%  trans 'Save and Return' %}</a>
+        </div>
+    </div>
+
+    var tag = this;
+    var store = stores.documentStore;
+    store.edited_document = defaultDoc();
+    tag.store = store;
+    tag.mixin('TabMixin');  
+    tag.mixin('ValidationMixin');
+    tag.validate_type = _.keys(store.icons);
+    tag.validate_max_size = 15 * 1024 * 1024; // 15 Mb limit
+
+    
+    function add_category(code){
+        _.pull(tag.document.categories, code || '')
+        if (_.isUndefined(tag.document.categories)){
+            tag.document.categories = [];
+        }
+        tag.document.categories.push(code || '');
+        tag.update();
+    }
+
+    tag.on('onchoose', function(event, data, _tag){
+        /* Replace the existing tag */
+        var idx = _.indexOf(tag.document.categories, _tag.data);
+        if (idx > -1){
+            tag.document.categories[idx] = data.code;
+            return;
+        }
+        add_category(data.code) 
+    
+    })
+    tag.remove_category = function(e){
+        if (_.has(e, 'item.category')){
+        _.pull(tag.document.categories, e.item.category);
+        }
+    }
+
+    tag.add_empty_category = add_category;
+
+    function defaultDoc(){
+        var categoriesPK = store.choices.document_category.map(function(tuple) { return tuple[0]; });
+        return {
+            // default to A02: Objectives of activity for IATI-based deployments, otherwise default to the first category
+            categories: categoriesPK.indexOf('A02') > -1 ? ['A02'] : [categoriesPK[0]],
+            language: 'en'
+        }
+    }
+
+    tag.on('route', function(document_id){
+        store.edited_document = document_id === 'create' ? defaultDoc() : _.find(store[store.el], {id:_.toInteger(document_id)}, defaultDoc())
+        
+        var updates = {
+            document:store.edited_document,
+            document_id: document_id !== 'create' ? document_id : null,
+            show_url_field: document_id === 'create' || !store.edited_document.url.startsWith('/media/by_organisation')
+        }
+        tag.update(updates)
+    })
+
+    tag.validate_type = _.keys(store.icons);
+    tag.validate_max_size = 15 * 1024 * 1024; // 15 Mb limit
+
+    tag.save = function(){
+        var request;
+        var doc = _.clone(tag.document);
+        var serialize = function(){return _(tag.refs).mapValues(function(k){return k.value}).value()}
+        
+        doc.iso_date = moment().format('YYYY-MM-DD')
+        doc.activity = stores.activityStore.activity.id;
+        doc.categories = _.compact(doc.categories);
+        doc.types = []; //{# ResourceType model - see openly_hamutuk milestones 17, 18 #}
+        _.assign(doc, serialize());
+        _.assign(doc, store.edited_document);
+
+        tag.fn_validate._validate_loudly(tag);
+        tag.validate();
+        if (tag.validated === false || tag.validate_with_children() === false) { 
+            window.banner_message.show(gettext('There are validation errors on this tab.'), 'warning');
+            return; 
+        }
+
+        request = _.isNull(tag.document_id) ? tag.store.create(tag, doc) : tag.store.update(tag, doc);
+        request.done(function(){
+            store.edited_document = {};
+            route('documents')
+        })
+    }
+
+</document-edit>
+
+<tab-documents id="documents" class="tab-pane">
+    <div class="form_header"><h4>{% trans 'Documents' %}</h4>
+        <a if="{location.hash == '#documents'}" href="#documents/create" class="btn btn-primary pull-right">{% trans 'Add a document' %}</a>
+    </div>
+    <div class="form_body">
+        <documents-app></documents-app>
+    </div>
+    <btn-editor-next if={location.hash == '#documents'}></btn-editor-next>
+</tab-documents>

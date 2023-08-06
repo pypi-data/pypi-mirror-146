@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>close</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-7.9%" y="-25.0%" width="115.7%" height="165.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pill" transform="translate(-87.000000, -5.000000)" fill="#565A5C">
+            <g id="pill" filter="url(#filter-1)" transform="translate(2.000000, 0.000000)">
+                <path d="M96.3550136,12.8243243 L99.8780488,9.28378378 C100.04065,9.12162162 100.04065,8.87837838 99.8780488,8.71621622 L99.3360434,8.14864865 C99.1734417,7.98648649 98.9295393,7.98648649 98.7669377,8.14864865 L95.2168022,11.6891892 C95.1084011,11.7972973 94.9457995,11.7972973 94.8373984,11.6891892 L91.2872629,8.12162162 C91.1246612,7.95945946 90.8807588,7.95945946 90.7181572,8.12162162 L90.1490515,8.68918919 C89.9864499,8.85135135 89.9864499,9.09459459 90.1490515,9.25675676 L93.699187,12.7972973 C93.8075881,12.9054054 93.8075881,13.0675676 93.699187,13.1756757 L90.1219512,16.7432432 C89.9593496,16.9054054 89.9593496,17.1486486 90.1219512,17.3108108 L90.6910569,17.8783784 C90.8536585,18.0405405 91.097561,18.0405405 91.2601626,17.8783784 L94.8102981,14.3378378 C94.9186992,14.2297297 95.0813008,14.2297297 95.1897019,14.3378378 L98.7398374,17.8783784 C98.902439,18.0405405 99.1463415,18.0405405 99.3089431,17.8783784 L99.8780488,17.3108108 C100.04065,17.1486486 100.04065,16.9054054 99.8780488,16.7432432 L96.3550136,13.2027027 C96.2466125,13.0945946 96.2466125,12.9324324 96.3550136,12.8243243 L96.3550136,12.8243243 Z" id="close"></path>
+            </g>
+        </g>
+    </g>
+</svg>

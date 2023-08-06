@@ -1,0 +1,95 @@
+{% load i18n %}
+{% load common_text %}
+{% trans 'Locations' as header %}
+{% trans 'Location' as label %}
+{% trans 'location' as label_lower %}
+{% blocktrans asvar placeholder %} Add a {{label_lower}}...{% endblocktrans %}
+
+<tab-simplelocations id='locations' class='tab-pane list'>
+    <div class="form_header">
+        <h4>{{header}}</h4>
+    </div>
+    <div class="form_body">
+
+        <div id="section-locations">
+            <help-text active helptext="{{'simple_locations_text'|common_text}}"/>
+            <div if="{locations.length == 0}">
+                <div class="alert alert-info" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans 'There are no Locations' %}
+                </div>
+            </div>
+
+            <virtual each='{location, index in locations}'>
+                <div class="row" style="margin-bottom:5px;">
+                    
+                    <div class="col-xs-11">
+                        <field-dropdownselect
+                            hide_label={true}
+                            formgroup=false
+                            store="{parent.store}"
+                            choice_fieldname="locations_by_parent"
+                            path="locations[{index}].location"
+                            disabled_choices="{location_ids_numeric}"
+                            groupfield='parent_name'
+                            max_length=10000
+                            searchfield='full_name'
+                            placeholder="{{placeholder}}"
+                            >
+                        </field-dropdownselect>
+                    </div>
+                    <div class="col-xs-1 remove_location"> 
+                        <a class="remove_form_row" onclick='{drop_object}' data-code='{location.location.code}'> </a> 
+                    </div>
+                </div>
+            </virtual>
+            
+            <div class="row">
+                <div class="col-xs-12">
+                    <validate-group store="{stores.activityStore}" path='' validate_unique_in_array="organisation.code" validator_filter="role.code,Funding"></validate-group>
+                </div>
+            </div>
+
+            <div class="col-xs-12 add_form_row_container">
+                <a class="add_form_row add_partner_funding" onclick="{add_object}">
+                    {% trans 'Add another location' %}
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="clearfix"></div>
+    <div class="save-group">
+        <btn-group-editor id_save="save-locations" id_next="next-locations" use_parent_save></btn-group-editor>
+    </div>
+
+    <style scoped>
+        li {list-style:none}
+        .fadeIn {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.1s linear;
+        }
+        .fadeOut{
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s 0.3s, opacity 0.3s linear;
+        }
+
+        #location-search-results {
+            max-height:400px; 
+            overflow-x:hidden; 
+            overflow-Y:auto;
+        }
+
+        #no-locations {
+            overflow:hidden;
+        }
+
+        .search {
+            margin-bottom: 10px;
+        }
+    </style>
+    {% include 'tags/tab-simplelocations-dropdowns.js' %}
+</tab-simplelocations>
