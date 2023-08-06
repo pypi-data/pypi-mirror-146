@@ -1,0 +1,3 @@
+[console_scripts]
+hokusai=hokusai.command_line:main
+
