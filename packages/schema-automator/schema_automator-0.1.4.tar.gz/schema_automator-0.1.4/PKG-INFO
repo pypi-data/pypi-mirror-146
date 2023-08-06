@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: schema_automator
+Version: 0.1.4
+Summary: toolkit that assists with generating LinkML schemas from existing serializations like JSON-schema
+Home-page: https://github.com/linkml/schema_automator
+Author: Mark Miller
+Author-email: mam@lbl.gov
+License: BSD
+Description: UNKNOWN
+Keywords: linkml
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7.0
