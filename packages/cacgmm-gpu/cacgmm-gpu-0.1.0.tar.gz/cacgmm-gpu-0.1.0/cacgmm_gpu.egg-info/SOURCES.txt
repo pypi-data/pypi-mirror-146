@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+cacgmm/__init__.py
+cacgmm/cacg.py
+cacgmm/cacg_trainer.py
+cacgmm/cacgmm.py
+cacgmm/cacgmm_trainer.py
+cacgmm/utils.py
+cacgmm_gpu.egg-info/PKG-INFO
+cacgmm_gpu.egg-info/SOURCES.txt
+cacgmm_gpu.egg-info/dependency_links.txt
+cacgmm_gpu.egg-info/top_level.txt
