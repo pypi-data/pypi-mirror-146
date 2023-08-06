@@ -1,0 +1,9 @@
+README.md
+setup.py
+GenshinHarpPC/GenshinHarp.py
+GenshinHarpPC/__init__.py
+GenshinHarpPC.egg-info/PKG-INFO
+GenshinHarpPC.egg-info/SOURCES.txt
+GenshinHarpPC.egg-info/dependency_links.txt
+GenshinHarpPC.egg-info/requires.txt
+GenshinHarpPC.egg-info/top_level.txt
