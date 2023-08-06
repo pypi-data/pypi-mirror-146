@@ -1,0 +1,3 @@
+[console_scripts]
+vigrep=vigrep.__main__:main
+
