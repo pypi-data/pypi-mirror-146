@@ -1,0 +1,3 @@
+[console_scripts]
+mrad_proxy = luna.radiology.proxy_table.generate:cli
+
