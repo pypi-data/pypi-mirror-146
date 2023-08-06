@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: waifus
+Version: 1.0.0
+Summary: getting some waifu pics
+Home-page: https://github.com/phoenixthrush-develops/waifus
+Author: Phoenixthrush UwU
+Author-email: <contact@phoenixthrush.com>
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/phoenixthrush-develops/waifus/issues
+Keywords: waifus,python,package,library,lib,module
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argparse
+Requires-Dist: requests
+Requires-Dist: tk
+Requires-Dist: Pillow
+
+<p align="center">
+  <img src="https://img.shields.io/pypi/v/waifus?style=flat-square" </a>
+  <img src="https://img.shields.io/pypi/l/waifus?style=flat-square" </a>
+  <img src="https://img.shields.io/pypi/dm/waifus?style=flat-square" </a>
+</p>
+
+---
+
+### Code example
+
+Example of how you can use [waifus](https://pypi.org/project/waifus/) <br>
+- possible options [`only_link`, `custom_path`, `displaying`, `count`, `meow`, `nsfw`, `sleeping_time`, `deleting`]
+
+### installing it
+
+```shell
+python -m pip install waifus
+```
+
+### executing it (for example)
+
+```python
+import waifus
+
+waifus.module(count = 5, sleeping_time = 1)
+```
+
+### getting only a link out [`https://api.waifu.pics/sfw/neko`, `https://api.waifu.pics/nsfw/neko`, `https://api.waifu.pics/sfw/waifu`, `https://api.waifu.pics/nsfw/waifu`]
+
+```python
+import waifus
+
+waifus.getting_url("https://api.waifu.pics/sfw/waifu")
+```
+
