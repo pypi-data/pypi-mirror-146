@@ -1,0 +1,5 @@
+setup.py
+amar.egg-info/PKG-INFO
+amar.egg-info/SOURCES.txt
+amar.egg-info/dependency_links.txt
+amar.egg-info/top_level.txt
