@@ -1,0 +1,7 @@
+boto3
+botocore
+simple-salesforce
+psycopg2-binary
+cx-Oracle
+pymongo
+pycryptodomex
