@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ KUBE_SERVICE_NAME }}
+spec:
+  replicas: 2
+  revisionHistoryLimit: 10
+  selectors:
+    matchLabels:
+      app: {{ KUBE_SERVICE_NAME }}
+  template:
+    metadata:
+      labels:
+        app: {{ KUBE_SERVICE_NAME }}
+    spec:
+      containers:
+      - name: {{ KUBE_SERVICE_NAME }}
+        image: "{{ DOCKER_REGISTRY_NAME }}/{{ DOCKER_IMAGE_NAME }}"
+        ports:
+        - containerPort: {{ KUBE_SERVICE_PORT }}
+        resources:
+          requests:
+            cpu: 10m
+      imagePullSecrets:
+      - name: {{ DOCKER_REGISTRY_DOMAIN }}
