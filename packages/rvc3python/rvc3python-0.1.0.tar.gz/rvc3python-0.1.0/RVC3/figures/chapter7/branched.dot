@@ -1,0 +1,14 @@
+digraph G {
+graph [rankdir=LR];
+  BASE [shape=square, style=filled, fillcolor=gray]
+  link1 [shape="circle"];
+  BASE -> link1 [label="R(q0)", arrowhead="normal"];
+  link2 [shape="circle"];
+  link1 -> link2 [label="tx(1) ⊕ tx(1.2) ⊕ ty(-0.5) ⊕ R(q1)", arrowhead="normal"];
+  ee_1 [shape="doublecircle", color="blue", fontcolor="blue"];
+  link2 -> ee_1 [label="tx(1)", arrowhead="normal"fontcolor="blue"];
+  link3 [shape="circle"];
+  link1 -> link3 [label="tx(1) ⊕ tx(0.6) ⊕ ty(0.5) ⊕ R(q2)", arrowhead="normal"];
+  ee_2 [shape="doublecircle", color="blue", fontcolor="blue"];
+  link3 -> ee_2 [label="tx(1)", arrowhead="normal"fontcolor="blue"];
+}

@@ -1,0 +1,96 @@
+digraph G {
+
+    graph [splines=ortho, rankdir=LR, splines=spline]
+    node [shape=box]
+    
+    	subgraph step0 {
+		rank=same;
+		"fdyn_x.0"
+		"f*"
+		"x*"
+		"xd*"
+	}
+
+	subgraph step1 {
+		rank=same;
+		"f/t sensor"
+		"xerror"
+		"inertia_x.0"
+		"_gain.2<ndarray>"
+		"_sum.2"
+		"index.0"
+	}
+
+	subgraph step2 {
+		rank=same;
+		"fprod"
+		"_sum.0"
+		"_gain.3(100.0)"
+		"_gain.4(50.0)"
+	}
+
+	subgraph step3 {
+		rank=same;
+		"_gain.0(20.0)"
+		"_sum.3"
+	}
+
+	subgraph step4 {
+		rank=same;
+		"_sum.1"
+		"_gain.5<ndarray>"
+	}
+
+	subgraph step5 {
+		rank=same;
+		"pprod"
+		"_gain.1<ndarray>"
+	}
+
+	subgraph step6 {
+		rank=same;
+		"fsum"
+		"index.1"
+	}
+
+	subgraph step7 {
+		rank=same;
+		"_sum.4"
+	}
+
+	"inertia_x.0" -> "fprod"
+	"_gain.2<ndarray>" -> "fprod"
+	"inertia_x.0" -> "pprod"
+	"_gain.5<ndarray>" -> "pprod"
+	"_gain.1<ndarray>" -> "fsum"
+	"fprod" -> "fsum"
+	"fdyn_x.0" -> "f/t sensor"
+	"x*" -> "xerror"
+	"fdyn_x.0" -> "xerror"
+	"fdyn_x.0" -> "inertia_x.0"
+	"index.0" -> "position"
+	"f/t sensor" -> "force/torque"
+	"index.1" -> "command wrench"
+	"xerror" -> "x error"
+	"fsum" -> "fsum scope"
+	"fprod" -> "fprod scope"
+	"_sum.1" -> "_sum1 scope"
+	"f*" -> "_sum.0"
+	"f/t sensor" -> "_sum.0"
+	"_sum.0" -> "_gain.0(20.0)"
+	"f*" -> "_sum.1"
+	"_gain.0(20.0)" -> "_sum.1"
+	"_sum.1" -> "_gain.1<ndarray>"
+	"fdyn_x.0" -> "_gain.2<ndarray>"
+	"xerror" -> "_gain.3(100.0)"
+	"xd*" -> "_sum.2"
+	"fdyn_x.0" -> "_sum.2"
+	"_sum.2" -> "_gain.4(50.0)"
+	"_gain.3(100.0)" -> "_sum.3"
+	"_gain.4(50.0)" -> "_sum.3"
+	"_sum.3" -> "_gain.5<ndarray>"
+	"fsum" -> "_sum.4"
+	"pprod" -> "_sum.4"
+	"fdyn_x.0" -> "index.0"
+	"pprod" -> "index.1"
+}

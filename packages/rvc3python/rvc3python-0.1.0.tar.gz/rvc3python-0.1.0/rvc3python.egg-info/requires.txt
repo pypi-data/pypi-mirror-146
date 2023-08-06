@@ -1,0 +1,5 @@
+numpy>=1.17.4
+scipy
+matplotlib
+roboticstoolbox-python
+machinevision-toolbox-python
