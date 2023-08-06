@@ -1,0 +1,13 @@
+texplotlib/__init__.py,sha256=VQCgoNWGqpg8mX-oT9jfKylg22QvdajjGBB6O3zSojE,46
+texplotlib/attribute.py,sha256=4SLx572pFjlDJEMqp3t8_r-vSWz0ncDOV9Dv_nLjeF0,1087
+texplotlib/curve.py,sha256=xFo9y-K9vu8fGsQ8dr7uWweWgJ3noVS6-j-LDtBAe9c,603
+texplotlib/figure.py,sha256=vlQlID-DCT3x-CKl3Eew8nTyDvOauqg3KVV1nNTUbIQ,8595
+texplotlib/label.py,sha256=mp4gzx57ugNK8Zlx87rv3xqyLAC6hJO1XOe7iZHPwSg,284
+texplotlib/legend.py,sha256=N8GVwvwvMhx2nAqAzAwoHmLC4IubLHrxBC7-AaRwsu4,143
+texplotlib/logmodes.py,sha256=JNBC_3W560xGjXhGkOh_uGYbm1Jqt2A_-db5Es_Ouig,414
+texplotlib/strutils.py,sha256=1Qb1qzdwkc_AJFI1wuS32UEYDiKq1BaV6xvp-8BGoZA,621
+texplotlibx-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+texplotlibx-0.0.4.dist-info/METADATA,sha256=GmJMSeTwLSJt9s25yX_ccWVz4pFXTy1m7lItkbZf5Yw,1816
+texplotlibx-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+texplotlibx-0.0.4.dist-info/top_level.txt,sha256=bbg1GRMTXruRGagNFkroJpW9Kpu0pY2xDDCA32DPE_s,11
+texplotlibx-0.0.4.dist-info/RECORD,,
