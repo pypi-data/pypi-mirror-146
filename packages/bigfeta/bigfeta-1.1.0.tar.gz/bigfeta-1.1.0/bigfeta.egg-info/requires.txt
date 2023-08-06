@@ -1,0 +1,15 @@
+argschema<2.0
+descartes
+h5py
+marshmallow<3.0
+matplotlib
+mpl_scatter_density
+numpy
+pathos
+pymongo
+render-python>=2.2.1
+scipy
+shapely
+
+[:python_version == "2.7"]
+futures
