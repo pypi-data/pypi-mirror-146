@@ -1,0 +1,14 @@
+tbselenium
+lxml
+selenium
+random_user_agent
+pyrfc6266
+requests
+selenium-driver-updater
+
+[dev]
+shellescape
+json5
+pytest
+twine
+build

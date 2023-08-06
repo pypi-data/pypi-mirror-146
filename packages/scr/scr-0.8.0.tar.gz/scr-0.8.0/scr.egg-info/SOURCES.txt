@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+scr/__init__.py
+scr/__main__.py
+scr/scr.py
+scr.egg-info/PKG-INFO
+scr.egg-info/SOURCES.txt
+scr.egg-info/dependency_links.txt
+scr.egg-info/entry_points.txt
+scr.egg-info/requires.txt
+scr.egg-info/top_level.txt
+scr/selenium_drivers/chromedriver
+scr/selenium_drivers/geckodriver
