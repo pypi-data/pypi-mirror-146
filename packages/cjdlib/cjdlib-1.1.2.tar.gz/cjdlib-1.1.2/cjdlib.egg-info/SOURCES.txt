@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+cjdlib/__init__.py
+cjdlib.egg-info/PKG-INFO
+cjdlib.egg-info/SOURCES.txt
+cjdlib.egg-info/dependency_links.txt
+cjdlib.egg-info/requires.txt
+cjdlib.egg-info/top_level.txt
