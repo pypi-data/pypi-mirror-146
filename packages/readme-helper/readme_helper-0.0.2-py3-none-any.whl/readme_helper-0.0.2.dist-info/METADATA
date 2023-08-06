@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: readme-helper
+Version: 0.0.2
+Summary: Helpers for generating README files
+Home-page: https://github.com/kenjyco/readme-helper
+Download-URL: https://github.com/kenjyco/readme-helper/tarball/v0.0.2
+Author: Ken
+Author-email: kenjyco@gmail.com
+License: MIT
+Keywords: readme,cli,command-line,markdown,reStructuredText,jinja,template,pandoc,helper,kenjyco
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Text Processing :: Markup :: reStructuredText
+Classifier: Topic :: Utilities
+License-File: LICENSE.txt
+Requires-Dist: bg-helper
+Requires-Dist: click (>=6.0)
+Requires-Dist: input-helper
+Requires-Dist: jinja2
+Requires-Dist: settings-helper
+
+UNKNOWN
+
