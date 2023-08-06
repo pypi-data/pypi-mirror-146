@@ -1,0 +1,14 @@
+PyPDF2/__init__.py,sha256=mLFa1wqjIhG8mcM7pJ58NTRu2GPRmA-nwXxj1wLvN_E,211
+PyPDF2/_version.py,sha256=u7dvSLjEL98kU6IoSsvEmpXrkEzbc3MBIE1y4_0MHFA,23
+PyPDF2/filters.py,sha256=TF-JC2eOvlH5ksPWg9KP-iiCpk5C2qmZQ3aJ-W6u_pc,17543
+PyPDF2/generic.py,sha256=1kwB6ew6uQCeDyjXOm4u9gJ8roruvDmnENZIpphTC_c,45893
+PyPDF2/merger.py,sha256=zPqYbm9SKcO3UHR24nzX1Q74FghXF3ILcT3eBFZtosE,21738
+PyPDF2/pagerange.py,sha256=OeeylNuFMphj5voCBjk4ZapBxn7x1pakZp2RVgyQC7c,5670
+PyPDF2/pdf.py,sha256=zrPO73BR25wj0y25G2m5MbagWcM7Xo1npeAzSZE3RqE,130721
+PyPDF2/utils.py,sha256=0AIW5DncGEiGjN4VvkorpbRuLwyvrjymFHhOHrxM9E0,8511
+PyPDF2/xmp.py,sha256=CQNojzNAEuq2VfArIu3a1h_2okYrHhdCuYmU1jc7leU,13647
+PyPDF2-1.27.4.dist-info/LICENSE,sha256=qXrCMOXzPvEKU2eoUOsB-R8aCwZONHQsd5TSKUVX9SQ,1605
+PyPDF2-1.27.4.dist-info/METADATA,sha256=LlKahRMMQ3rdwpgtQWf7-6R_mD2RK8kMnFg2jQrliIo,5080
+PyPDF2-1.27.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyPDF2-1.27.4.dist-info/top_level.txt,sha256=BERWrwqdvKXaVKhpnMbtO6b11qPA-mBt2r9a0VPF-Ow,7
+PyPDF2-1.27.4.dist-info/RECORD,,
