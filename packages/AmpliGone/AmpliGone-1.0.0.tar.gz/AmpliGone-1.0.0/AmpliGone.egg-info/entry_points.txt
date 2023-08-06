@@ -1,0 +1,4 @@
+[console_scripts]
+AmpliGone = AmpliGone.AmpliGone:main
+ampligone = AmpliGone.AmpliGone:main
+
