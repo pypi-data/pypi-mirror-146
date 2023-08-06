@@ -1,0 +1,13 @@
+nyxus/__init__.py,sha256=CVFY5-M2HsuJ5YEU2X8qeL9bBJmKDjvmSjW727nPSJM,98
+nyxus/_version.py,sha256=JVWNZnHgvjx9dDB9V_jt8JqOXvXQcW25CIIgPdGl6Fc,497
+nyxus/interface.py,sha256=vJRaP0Hxd3GQbV3tY5ofOFGNvUgsKoK5o0NCTjpHUVg,4412
+nyxus/backend.cpython-36m-i386-linux-gnu.so,sha256=Tta9iB543Q9KVv5JSequWkeQv-Ew-tnHkbrzkXe61cM,2984332
+nyxus/nyxus.py,sha256=p_n_SulEMq13O3BnbHHVfXiz3U4swA8OMMnMrF8Yjks,4619
+nyxus.libs/libz-9f7255d3.so.1.2.3,sha256=4XNTSwxidfE5u042lZe5aN7zD6WPRGesxUOkMTCi3m8,79808
+nyxus.libs/libtiff-239a8acb.so.3.9.4,sha256=_hKyDWl3N9MB9ka1B0NsEsqhDuLevEGEEJ_adKPzjMw,426820
+nyxus.libs/libjpeg-58d1a961.so.62.0.0,sha256=vEiWlDqXwCEalLdqs3_V3pbSvlsN1yQ1DxZQou5LCik,294288
+nyxus-0.2.1.dist-info/RECORD,,
+nyxus-0.2.1.dist-info/LICENSE,sha256=dQhTh4F5f_QasaeL9FUAXSWabYeVbzeFZY5todRXZtQ,1084
+nyxus-0.2.1.dist-info/METADATA,sha256=mSC0lYtBHt3tiXxn1gC76KKBGOyMfR1HfsagKepurH4,16788
+nyxus-0.2.1.dist-info/top_level.txt,sha256=VSeqIm9my0j36BMlBNzVdw0hJE6Q-ztdFuF0JgQutgs,20
+nyxus-0.2.1.dist-info/WHEEL,sha256=k0liEFXsCO7h8rY6e_bIOH5wp2tWJFFQ1ncnoKgbSuU,146
