@@ -1,0 +1,3 @@
+[console_scripts]
+sog4onnx = sog4onnx:main
+
