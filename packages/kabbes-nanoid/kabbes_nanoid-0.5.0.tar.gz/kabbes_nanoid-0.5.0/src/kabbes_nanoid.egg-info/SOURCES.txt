@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/kabbes_nanoid.egg-info/PKG-INFO
+src/kabbes_nanoid.egg-info/SOURCES.txt
+src/kabbes_nanoid.egg-info/dependency_links.txt
+src/kabbes_nanoid.egg-info/requires.txt
+src/kabbes_nanoid.egg-info/top_level.txt
+src/nanoid/__init__.py
+src/nanoid/__main__.py
+src/nanoid/nanoid_main.py
