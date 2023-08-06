@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pylsp_black/__init__.py
+pylsp_black/plugin.py
+python_lsp_black.egg-info/PKG-INFO
+python_lsp_black.egg-info/SOURCES.txt
+python_lsp_black.egg-info/dependency_links.txt
+python_lsp_black.egg-info/entry_points.txt
+python_lsp_black.egg-info/requires.txt
+python_lsp_black.egg-info/top_level.txt
