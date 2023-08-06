@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: jess
+Version: 0.2.1
+Summary: Just in Time Elimination of Spurious Signals - jess
+Home-page: https://github.com/josephwkania/jess
+Author: Joseph W Kania
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Requires-Dist: matplotlib (>=3.1)
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: rich (>=8.0)
+Requires-Dist: scipy (<1.8,>=1.5)
+Requires-Dist: scikit-learn (>=0.23)
+Requires-Dist: your (>=0.6.1)
+Provides-Extra: cupy
+Requires-Dist: cupy (>=9.2) ; extra == 'cupy'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+UNKNOWN
+
