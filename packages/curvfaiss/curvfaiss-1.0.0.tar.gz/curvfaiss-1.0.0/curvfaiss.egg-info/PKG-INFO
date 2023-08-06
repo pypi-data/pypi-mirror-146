@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: curvfaiss
+Version: 1.0.0
+Summary: A library for efficient similarity search and clustering of dense vectors in non-Euclidean manifolds
+Home-page: https://github.com/alibaba/Curvature-Learning-Framework
+Author: Zhirong Xu
+Author-email: zhirong.xzr@alibaba-inc.com
+License: Apache
+Keywords: search nearest neighbors
+Platform: UNKNOWN
+License-File: LICENSE
+
+
+Curvfaiss is a library for efficient similarity search and clustering of dense vectors in non-Euclidean manifolds.
+The backbone is based on the Faiss project. Modifications are developed by Alibaba-Alimama Tech.
+
+
