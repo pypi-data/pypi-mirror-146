@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ficaptcha
+Version: 1.0.3
+Summary: Simple captcha
+Home-page: https://github.com/0x7o/fiCaptcha
+Author: Danil Kononyuk
+Author-email: me@0x7o.link
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fiCaptcha
+Module for image-captcha generation
+
+## Build from source
+```
+git clone https://github.com/0x7o/fiCaptcha
+cd fiCaptcha
+pip install .
+```
+
