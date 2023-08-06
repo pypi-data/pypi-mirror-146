@@ -1,0 +1,69 @@
+# Changelog
+
+All changes of DMT starting from version 1.3.0 will be documented in this file. A breaking change of DMT is defined as a change in one of the test cases for the core modules. If the API changes there, the MAJOR version has to be increased.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased] -
+
+### Added
+
+- added "no ending" to parameter loading in MCard
+- Added 3 policies how to handle missing parameters for McParameterCollection.set_values.
+- Documentation for M1 mac installation
+- logs directory directly in repo using .gitkeep
+
+### Changed
+
+- semver deprecated VersionInfo. Replaced by migration strategy from <https://python-semver.readthedocs.io/en/latest/migration/migratetosemver3.html?highlight=VersionInfo#use-version-instead-of-versioninfo>
+- Sweep creation had a faulty type for sweepdef
+
+## [1.4.0] - 2022.03.08
+
+### Added
+
+- Documentation for DMT.external library.
+- Added a proper Sweep.get_sweep
+
+### Changed
+
+- Merged df_to_sweep with Sweep.get_sweep to get_sweepdef
+- if copy_va_files = False in DutView, the VA-File is copied into a central VA-Codes cache and imported from there using a relative path into the netlist. This way the files are more likely to be cached correctly by the interfaced simulator.
+- For compatibility with python 3.8 and 3.9, do not use | operator for typing.
+
+### Move
+
+- Moved DMT.verilogae.helpers into DMT.external.verilogae. This is more fitting.
+- Moved vectorize, check_nan_inf and memoize to extraction.model
+- Moved SI_UNITS_CONVERTER, resolve_siunitx and tex_to_label from core.utils to external.latex
+- Moved is_iterable, flatten and strictly_increasing to data_processor
+
+### Removed
+
+- Removed DMT.core.tikz_postprocess. Currently no final implementation and also no integration with pyqtgraph. This feature will return with pyqtgraph integration and better documentation! No major bump as it was not part of test cases.
+
+### Deprecated
+
+- core.df_to_sweep is now deprecated (and merge into Sweep.get_sweep)
+
+## [1.3.0] - 2022.02.25
+
+### Added
+
+- Added ```__version__``` attribute and use it in setup.py
+- Added ```_Excluded``` class to correctly implement the Verilog-AMS standard
+- Added a test case for DMT.verilogae.helpers.get_param_list
+- Added McParameterCollection to replace the deprecated McParameterComposition
+
+### Changed
+
+- renamed load_model method of MCard to load_model_parameters to better reflect what the method does.
+- removed data_processor and data_reader pyx files and pyx import. The speed up is not worth the effort of two files to maintain.
+
+### Move
+
+- Moved the core in its own repository to protect proprietary data in the full repository
+
+### Deprecated
+
+- McParameterComposition is deprecated. Its name can be confusing because of the composition design pattern.
