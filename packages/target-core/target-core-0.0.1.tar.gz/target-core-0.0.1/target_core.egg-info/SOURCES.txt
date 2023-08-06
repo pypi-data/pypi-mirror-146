@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+target/__init__.py
+target/file.py
+target/logger.py
+target/logging.conf
+target/s3.py
+target_core.egg-info/PKG-INFO
+target_core.egg-info/SOURCES.txt
+target_core.egg-info/dependency_links.txt
+target_core.egg-info/entry_points.txt
+target_core.egg-info/requires.txt
+target_core.egg-info/top_level.txt
