@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: neatstel
+Version: 0.0.1
+Summary: Optimization of near-axis magnetic fields
+Home-page: https://github.com/rogeriojorge/NEAT
+Author: EUROfusion Enabling Research Team ENR-IST-MOD-01 2022
+Author-email: rogerio.jorge@tecnico.ulisboa.pt
+License: GPL-3.0
+Keywords: plasma physics,plasma,magnetohydrodynamics,mhd,nuclear fusion reactor,fusion,stellarator,vmec,simple,pybind,optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: mpi4py
+Requires-Dist: netCDF4
+Requires-Dist: numpy
+Requires-Dist: qsc
+Requires-Dist: scipy
+Requires-Dist: setuptools
+
+UNKNOWN
+
