@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ehelply-python-sdk
+Version: 1.1.41
+Summary: eHelply SDK - 1.1.41
+Home-page: UNKNOWN
+Author: Support
+Author-email: support@ehelply.com
+License: Apache 2.0
+Keywords: OpenAPI,OpenAPI-Generator,eHelply SDK - 1.1.41
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil
+
+eHelply SDK for SuperStack Services  # noqa: E501
+
+
