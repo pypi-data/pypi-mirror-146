@@ -1,0 +1,9 @@
+numpy
+wave
+matplotlib
+datetime
+scipy
+pystoi
+paramiko
+moviepy
+torch
