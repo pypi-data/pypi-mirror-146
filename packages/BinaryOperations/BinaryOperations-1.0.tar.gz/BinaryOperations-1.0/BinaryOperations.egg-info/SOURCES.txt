@@ -1,0 +1,5 @@
+setup.py
+BinaryOperations.egg-info/PKG-INFO
+BinaryOperations.egg-info/SOURCES.txt
+BinaryOperations.egg-info/dependency_links.txt
+BinaryOperations.egg-info/top_level.txt
