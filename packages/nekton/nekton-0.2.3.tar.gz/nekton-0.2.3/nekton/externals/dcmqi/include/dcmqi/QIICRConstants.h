@@ -1,0 +1,12 @@
+#ifndef DCMQI_QIICRCONSTANTS_H
+#define DCMQI_QIICRCONSTANTS_H
+
+// DCMQI includes
+#include "dcmqi/internal/VersionConfigure.h"
+
+#define QIICR_MANUFACTURER "QIICR"
+#define QIICR_DEVICE_SERIAL_NUMBER "0"
+#define QIICR_MANUFACTURER_MODEL_NAME dcmqi_WC_URL
+#define QIICR_SOFTWARE_VERSIONS dcmqi_WC_REVISION
+
+#endif //DCMQI_QIICRCONSTANTS_H
