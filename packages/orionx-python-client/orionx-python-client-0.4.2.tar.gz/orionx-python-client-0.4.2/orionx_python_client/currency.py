@@ -1,0 +1,22 @@
+CEROS = {
+    "BCH": 8,
+    "BNB": 8,
+    "BTC": 8,
+    "CHA": 8,
+    "DAI": 8,
+    "DASH": 8,
+    "ETH": 8,
+    "LTC": 8,
+    "LUK": 8,
+    "USDT": 8,
+    "XLM": 7,
+    "TRX": 6,
+    "XRP": 6,
+    "EOS": 4,
+    "CLP": 0,
+    "DOT": 8,
+    "ADA": 6,
+    "SOL": 8,
+    "MATIC": 8,
+    "AVAX": 8
+}
