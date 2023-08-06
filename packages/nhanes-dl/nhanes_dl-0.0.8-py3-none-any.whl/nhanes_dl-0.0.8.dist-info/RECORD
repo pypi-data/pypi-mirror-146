@@ -1,0 +1,8 @@
+nhanes_dl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nhanes_dl/download.py,sha256=OhZ7R3mtl-RMW1fYdAgWI8ND0FOcMwx7rZ2OVsvjyuk,4195
+nhanes_dl/types.py,sha256=F_JXs26pqiM79v5GhiXPmpxCMNbsNGppnggDR4Y4wp8,2094
+nhanes_dl-0.0.8.dist-info/LICENSE,sha256=IA5LhSd_rWyLNzhcF_s44hrjRdPV7orm71HbCxIrsHk,1071
+nhanes_dl-0.0.8.dist-info/METADATA,sha256=JLouktZBGIQZKMn7Koj_IRX87cutvIYvmBjU2X0xZlw,637
+nhanes_dl-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nhanes_dl-0.0.8.dist-info/top_level.txt,sha256=MFSPV3PX2EFvqOHe1d3H2k0BMtu5A7qw2_zd5EO83I8,10
+nhanes_dl-0.0.8.dist-info/RECORD,,
