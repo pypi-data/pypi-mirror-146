@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyplutchik
+Version: 0.0.10
+Summary: A library for visualizing emotions detected in corpora according to Plutchik's model.
+Home-page: https://github.com/alfonsosemeraro/pyplutchik
+Author: Alfonso Semeraro
+Author-email: <alfonso.semeraro@gmail.com>
+License: UNKNOWN
+Keywords: python,dataviz,emotions,plutchik
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+
+PyPlutchik is a library specifically designed for the visualisation of Plutchik’s emotions in texts or in corpora. PyPlutchik draws the Plutchik’s flower with each emotion petal sized after how much that emotion is detected or annotated in the corpus, also representing three degrees of intensity for each of them. PyPlutchik allows users to display also primary, secondary, tertiary and opposite dyads.
+
