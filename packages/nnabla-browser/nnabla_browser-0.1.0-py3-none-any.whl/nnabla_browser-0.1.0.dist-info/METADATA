@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nnabla-browser
+Version: 0.1.0
+Summary: A browser base visualizer for Neural Network Libraries (nnabla).
+Home-page: https://github.com/sony/nnabla-browser
+Author: Akio Hayakawa
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: gevent
+Requires-Dist: google
+Requires-Dist: nnabla
+Requires-Dist: numpy
+Requires-Dist: protobuf
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: watchdog
+
+UNKNOWN
+
+
