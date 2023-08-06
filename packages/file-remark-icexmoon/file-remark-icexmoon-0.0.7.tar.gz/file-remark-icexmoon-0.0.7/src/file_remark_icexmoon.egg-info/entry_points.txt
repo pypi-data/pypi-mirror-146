@@ -1,0 +1,2 @@
+[console_scripts]
+pyfr = file_remark.__main__:main
