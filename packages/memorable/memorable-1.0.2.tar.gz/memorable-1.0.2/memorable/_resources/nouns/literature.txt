@@ -1,0 +1,14 @@
+allegory
+ballad
+elegy
+epigram
+essay
+haiku
+handbook
+limerick
+novel
+novella
+ode
+poem
+soliloquy
+sonnet
