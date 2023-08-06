@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: NephLib
+Version: 0.0.1
+Summary: A collection of frequently used functions & modules. For quick importing.
+Author: Brandon Pooler
+Author-email: brandon.pooler@ibm.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+License-File: LICENSE
+
+# NephLib
+
+NephLib is a simple collection of frequently used functions accross many different use-cases for use in MVP software development.
+
