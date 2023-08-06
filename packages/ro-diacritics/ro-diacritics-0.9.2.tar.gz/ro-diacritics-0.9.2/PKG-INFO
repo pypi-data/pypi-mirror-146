@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: ro-diacritics
+Version: 0.9.2
+Summary: Python API for Romanian diacritics restoration
+Home-page: https://github.com/AndyTheFactory/RO-Diacritics
+Author: Andrei Paraschiv
+Author-email: andrei@thephpfactory.com
+Maintainer: Andrei Paraschiv
+Maintainer-email: andrei@thephpfactory.com
+License: UNKNOWN
+Keywords: romanian diacritcs language restoration diacritice python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RO Diacritics module
+
+**RO Diacritics** is a straightforward diacritics restoration module for Romanian Language
+
+```python
+from ro_diacritics import restore_diacritics
+print(restore_diacritics("fara poezie, viata e pustiu"))
+```
+
+or correcting a pandas dataframe:
+
+```python
+from ro_diacritics import restore_diacritics
+df['text-diacritice'] = df['text'].apply(restore_diacritics)
+```
+
+## Installing 
+
+```console
+$ python -m pip install ro-diacritics
+```
+or 
+
+```console
+$ pip install ro-diacritics
+```
+
+## Requirements
+
+ * torch and torchtext
+ * numpy 
+ * nltk and sklearn (for training)
+
+## References
+
+- Ruseti, S., Cotet, T. M., & Dascalu, M. (2020). Romanian Diacritics Restoration Using Recurrent Neural Networks. arXiv preprint arXiv:2009.02743.
+- https://github.com/teodor-cotet/DiacriticsRestoration
+
+
+

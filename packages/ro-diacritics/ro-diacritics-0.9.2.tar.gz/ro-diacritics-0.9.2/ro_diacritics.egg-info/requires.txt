@@ -1,0 +1,6 @@
+torch
+torchtext
+numpy
+tqdm
+nltk
+sklearn
