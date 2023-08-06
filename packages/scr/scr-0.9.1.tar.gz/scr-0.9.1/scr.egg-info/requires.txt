@@ -1,0 +1,21 @@
+tbselenium
+lxml
+selenium
+random_user_agent
+pyrfc6266
+requests
+selenium-driver-updater
+
+[:platform_system == "Windows"]
+pywin32>=1.0
+
+[dev]
+shellescape
+json5
+pytest
+pytest-parallel
+pytest-cov
+twine
+build
+mypy
+tox
