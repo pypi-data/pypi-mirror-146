@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+kdeLF/__init__.py
+kdeLF/kdeLF.f90
+kdeLF/kdeLF.py
+kdeLF/mod_dqag_dqags.f90
+kdeLF/quad2d.f90
+kdeLF/test_kdeLF.py
+kdeLF.egg-info/PKG-INFO
+kdeLF.egg-info/SOURCES.txt
+kdeLF.egg-info/dependency_links.txt
+kdeLF.egg-info/requires.txt
+kdeLF.egg-info/top_level.txt
+kdeLF/examples/data/test_sample.dat

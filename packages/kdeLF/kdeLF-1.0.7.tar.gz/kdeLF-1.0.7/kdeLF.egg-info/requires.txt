@@ -1,0 +1,8 @@
+numpy>=1.13
+scipy
+astropy
+emcee
+matplotlib
+h5py
+corner
+tqdm
