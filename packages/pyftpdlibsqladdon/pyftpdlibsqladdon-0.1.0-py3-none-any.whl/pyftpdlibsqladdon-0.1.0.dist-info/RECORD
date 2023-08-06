@@ -1,0 +1,8 @@
+pyftpdlibsqladdon/__init__.py,sha256=6ZeYaOsQgOVA27RH2l9pkanRLyu8LPe2nY2_SFuqgyE,115
+pyftpdlibsqladdon/client.py,sha256=eCtcltQWIDx1iSd4frN9DvBfbP0uBzIXQcSe66f_NVU,1510
+pyftpdlibsqladdon/dummysqlauthorizer.py,sha256=zLvJ0DEDali81EEheL9R9N_oCh2U2OpU00OFbPC-NSU,2778
+pyftpdlibsqladdon-0.1.0.dist-info/LICENSE,sha256=HHtndYUzidRcwLicbGCASqnehQoO8_yUFR233AJbBcw,1101
+pyftpdlibsqladdon-0.1.0.dist-info/METADATA,sha256=Lv3NzXwz1ytAVO82mSisBnOhb8ocii_09tfhyHWgfkA,2032
+pyftpdlibsqladdon-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyftpdlibsqladdon-0.1.0.dist-info/top_level.txt,sha256=jo1HrCMyNzGEz5D8nFeWm5ZXPdAdPGLB4tul9-RLMVM,18
+pyftpdlibsqladdon-0.1.0.dist-info/RECORD,,
