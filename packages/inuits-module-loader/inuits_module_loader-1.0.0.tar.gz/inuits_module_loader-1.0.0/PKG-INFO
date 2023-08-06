@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: inuits_module_loader
+Version: 1.0.0
+Summary: A library to load modules/classes based on their dotted string path.
+Author: Matthias Dillen
+Author-email: matthias.dillen@inuits.eu
+License: GPLv2
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Provides: inuits_module_loader
+License-File: LICENSE
+
+UNKNOWN
+
