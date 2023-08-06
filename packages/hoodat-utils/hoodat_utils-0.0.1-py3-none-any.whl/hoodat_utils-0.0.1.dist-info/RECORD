@@ -1,0 +1,13 @@
+hoodat_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hoodat_utils/facenet_embeddings.py,sha256=-4lTm9q9jAlDL9gFkZVz9CBzIEAP3cQcyOu_lXtO_G4,13811
+hoodat_utils/frame_object.py,sha256=RODYirUqbLmObliPv-n3ChHw_IXsAVzCU5mf3EtL-Ks,1761
+hoodat_utils/gs.py,sha256=fI7HCdpvkEQjFOqrMs6Y0wLHB4Pm38vBuARP6-AkI-4,2032
+hoodat_utils/hoodat_sqlalchemy.py,sha256=vkRQFstYG3pCiqgBYFEzWfaa2UtriVcJDglTwg2rOV4,1097
+hoodat_utils/models.py,sha256=wgmDOeINahBJPWajhu1nKJU695Sm3h6BAMzHfQXolY4,27657
+hoodat_utils/retrain_facenet.py,sha256=ThFlKnTEEERz6_1zxretWW4Fq0xqNj3tw9CFicYEvPc,15574
+hoodat_utils/s3.py,sha256=pE-uSgxN6aH4EYCjyF6n18uLQ3y7-8Nbj88F585Y9yM,4405
+hoodat_utils/vertex_ai.py,sha256=Ia3Uk2IpKadoM23YNFPtvEkUvNz9bGVIVa19XJUBdik,1249
+hoodat_utils-0.0.1.dist-info/LICENSE.txt,sha256=l6z6Dqfzwe2xw2Li0mKGVX-RQHjK3FMr0tkRptPCDOo,1069
+hoodat_utils-0.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+hoodat_utils-0.0.1.dist-info/METADATA,sha256=4tV3COoWFrQhl5aGJfWuImZEbeGjHO-0SM08GxuC1RA,483
+hoodat_utils-0.0.1.dist-info/RECORD,,
