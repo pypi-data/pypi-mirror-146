@@ -1,0 +1,2 @@
+[napari.plugin]
+iacs_ipac_reader = iacs_ipac_reader
