@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wiremind-kubernetes
+Version: 6.4.0
+Summary: Helper for Kubernetes.
+Home-page: https://github.com/wiremind/wiremind-kubernetes
+Author: Wiremind
+Author-email: dev@wiremind.io
+License: LGPLv3+
+Keywords: kubernetes
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3.7.0
+Provides-Extra: dev
+Provides-Extra: mypy
+Provides-Extra: test
+License-File: LICENCE.md
+
+This Python library is a high-level set of Kubernetes Helpers allowing either
+to manage individual standard Kubernetes controllers (Deployment, StatefulSets, etc) or a logical set
+of standard Kubernetes controllers through the `expecteddeploymentscales.wiremind.io` CRD (for example
+allowing to scale down ALL Deployments of a Helm Release marked as such).
+
