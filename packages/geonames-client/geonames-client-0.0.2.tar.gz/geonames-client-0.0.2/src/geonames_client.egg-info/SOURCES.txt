@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+src/geonames_client/__init__.py
+src/geonames_client/__main__.py
+src/geonames_client/client.py
+src/geonames_client/util.py
+src/geonames_client.egg-info/PKG-INFO
+src/geonames_client.egg-info/SOURCES.txt
+src/geonames_client.egg-info/dependency_links.txt
+src/geonames_client.egg-info/entry_points.txt
+src/geonames_client.egg-info/top_level.txt
