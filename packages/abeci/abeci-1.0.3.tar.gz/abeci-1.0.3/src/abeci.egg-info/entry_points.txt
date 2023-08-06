@@ -1,0 +1,2 @@
+[console_scripts]
+abeci-pangrams = abeci.pangrams:pangramsCli
