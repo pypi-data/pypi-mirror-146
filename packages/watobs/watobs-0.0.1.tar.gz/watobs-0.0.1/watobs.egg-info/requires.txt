@@ -1,0 +1,17 @@
+numpy
+pandas
+requests
+matplotlib
+
+[dev]
+pytest
+flake8
+black
+sphinx
+myst-parser
+sphinx-book-theme
+
+[test]
+pytest
+mikeio
+geopandas

@@ -1,0 +1,13 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_altimetry_api.py
+tests/test_dmi_api.py
+watobs/__init__.py
+watobs/altimetry.py
+watobs/dmi.py
+watobs.egg-info/PKG-INFO
+watobs.egg-info/SOURCES.txt
+watobs.egg-info/dependency_links.txt
+watobs.egg-info/requires.txt
+watobs.egg-info/top_level.txt
