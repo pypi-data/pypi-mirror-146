@@ -1,0 +1,3 @@
+[console_scripts]
+brockz=bedrockz.cli:app
+

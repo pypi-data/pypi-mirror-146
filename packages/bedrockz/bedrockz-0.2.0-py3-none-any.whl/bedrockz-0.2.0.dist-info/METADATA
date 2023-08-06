@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: bedrockz
+Version: 0.2.0
+Summary: 
+Author: Kevin H.
+Author-email: kevin@autoworkz.org
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.1.1,<4.0.0)
+Requires-Dist: addict (>=2.4.0,<3.0.0)
+Requires-Dist: anyio[all] (>=3.5.0,<4.0.0)
+Requires-Dist: auto-all (>=1.4.1,<2.0.0)
+Requires-Dist: blue (>=0.8.0,<0.9.0)
+Requires-Dist: cytoolz (>=0.11.2,<0.12.0)
+Requires-Dist: diskcache (>=5.4.0,<6.0.0)
+Requires-Dist: forbiddenfruit (>=0.1.4,<0.2.0)
+Requires-Dist: fs (>=2.4.15,<3.0.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: maya (>=0.6.1,<0.7.0)
+Requires-Dist: networkx (>=2.8,<3.0)
+Requires-Dist: orjson (>=3.6.7,<4.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: python-box[msgpack,toml,ruamel.yaml] (==6.0.0)
+Requires-Dist: questionary (>=1.10.0,<2.0.0)
+Requires-Dist: retworkx[all] (>=0.11.0,<0.12.0)
+Requires-Dist: typer[all] (>=0.4.1,<0.5.0)
+Requires-Dist: xxhash (>=3.0.0,<4.0.0)
+Requires-Dist: yapf (>=0.32.0,<0.33.0)
