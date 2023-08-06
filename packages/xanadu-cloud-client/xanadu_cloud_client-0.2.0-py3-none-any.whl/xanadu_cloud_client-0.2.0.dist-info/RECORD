@@ -1,0 +1,14 @@
+xcc/__init__.py,sha256=Qutab51gLWTDQoJ1jAXstQoOEwkOaxhV65B3hSdwxV4,513
+xcc/_version.py,sha256=MJfbsn8VC7P7LK_8-guimC2TRviW9ckd_Ss7n2LAdtA,144
+xcc/commands.py,sha256=83srFHJagWHpMJcX5ECDKIwDgdNBBhvfwT4d81g00Fw,10386
+xcc/connection.py,sha256=x97KiTRI-PMRN3yt2VB33j-FeTs_1Ys2mcwrFVms60w,13353
+xcc/device.py,sha256=SrXkhfU1Zs06sWIjlgUF9UswhAHACa54i04U93LNrXs,6427
+xcc/job.py,sha256=ulRMsWcDwRlCYV6o4wkQ6X2JH7DlDWn6HfVX8NL8hvE,12164
+xcc/settings.py,sha256=GzFJ1gfzHRYU8PF4185mZg3owvODzC6IGzHLs50G6tc,3778
+xcc/util.py,sha256=Iy7qpCfMzYwHLojCckUoJffWN-agbOyhUOyYRtjsb5Q,1466
+xanadu_cloud_client-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+xanadu_cloud_client-0.2.0.dist-info/METADATA,sha256=yVv5vhIUZ3bvnZspeJk3IGKMHCDHkNO5uYOW0aRDntI,8199
+xanadu_cloud_client-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xanadu_cloud_client-0.2.0.dist-info/entry_points.txt,sha256=tufFE4MfvtZJkW15kWRdqS5jRTDiPuSO9YeRO5NtAbA,43
+xanadu_cloud_client-0.2.0.dist-info/top_level.txt,sha256=z-O4D0C_UHWc4Y4O3Ppa-1QNig8MDUzeNVYNyBl_lv0,4
+xanadu_cloud_client-0.2.0.dist-info/RECORD,,
