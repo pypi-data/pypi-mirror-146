@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: kfp-local
+Version: 1.0.1
+Summary: kfp local client runs pipelines on local host or in docker container
+License: UNKNOWN
+Keywords: kubeflow,kfp,local
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: absl-py (==0.11.0)
+Requires-Dist: attrs (==21.4.0)
+Requires-Dist: cachetools (==4.2.4)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: charset-normalizer (==2.0.12)
+Requires-Dist: click (==8.1.2)
+Requires-Dist: cloudpickle (==2.0.0)
+Requires-Dist: deprecated (==1.2.13)
+Requires-Dist: docstring-parser (==0.13)
+Requires-Dist: fire (==0.4.0)
+Requires-Dist: google-api-core (==2.7.1)
+Requires-Dist: google-api-python-client (==1.12.11)
+Requires-Dist: google-auth (==1.35.0)
+Requires-Dist: google-auth-httplib2 (==0.1.0)
+Requires-Dist: google-cloud-core (==2.2.3)
+Requires-Dist: google-cloud-storage (==1.44.0)
+Requires-Dist: google-crc32c (==1.3.0)
+Requires-Dist: google-resumable-media (==2.3.2)
+Requires-Dist: googleapis-common-protos (==1.56.0)
+Requires-Dist: httplib2 (==0.20.4)
+Requires-Dist: idna (==3.3)
+Requires-Dist: importlib-metadata (==4.11.3)
+Requires-Dist: jsonschema (==3.2.0)
+Requires-Dist: kfp (==1.8.9)
+Requires-Dist: kfp-pipeline-spec (==0.1.14)
+Requires-Dist: kfp-server-api (==1.8.1)
+Requires-Dist: kubernetes (==18.20.0)
+Requires-Dist: oauthlib (==3.2.0)
+Requires-Dist: protobuf (==3.20.0)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: pydantic (==1.9.0)
+Requires-Dist: pyparsing (==3.0.7)
+Requires-Dist: pyrsistent (==0.18.1)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pyyaml (==5.4.1)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: requests-oauthlib (==1.3.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rsa (==4.8)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: strip-hints (==0.1.10)
+Requires-Dist: tabulate (==0.8.9)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: typer (==0.4.1)
+Requires-Dist: typing-extensions (==3.10.0.2)
+Requires-Dist: uritemplate (==3.0.1)
+Requires-Dist: urllib3 (==1.26.9)
+Requires-Dist: websocket-client (==1.3.2)
+Requires-Dist: wheel (==0.37.1)
+Requires-Dist: wrapt (==1.14.0)
+Requires-Dist: zipp (==3.8.0)
+
+# kfp-local
+Pipelines built with [kfp(kubeflow pipeline)](https://github.com/kubeflow/pipelines) execute in k8s cluster.
+
+During the development of kubeflow pipeline components, we usually upload the pipeline to kfp server and run it in k8s, if anything wrong we fix it locally and upload it again. 
+
+It should be helpful for the development efficiency if the above process takes place in local host, that's what `kfp-local` cares.
+
+## Installation
+```
+pip install kfp-local
+```
+
+## Usage
+```python
+from kfp_local import LocalClient
+
+local_client = LocalClient()
+result = local_client.create_run_from_pipeline_func(
+            pipeline_func,
+            arguments={"foo": "bar"},
+            execution_mode=LocalClient.ExecutionMode("local"),
+        )
+if result.success:
+    a_output_filepath = result.get_output_file(task_name="a-task", output="a_output_name")
+    
+```
+
+## Additional configuration
+
+The demo code in [Usage](#Usage) executes pipeline in local process with *ExecutionMode('local')*, `ExecutionMode` controls how the pipline executes.
+
+There are some options of `ExecutionMode`:
+* mode: Default execution mode, default 'docker'
+  
+* images_to_exclude: If the image of op is in images_to_exclude, the op is
+    executed in the mode different from default_mode.
+
+* tasks_to_exclude: If the name of task is in tasks_to_exclude, the op is executed in the mode different from default_mode.
+
+* docker_options: Docker options used in docker mode, e.g. docker_options=["-e", "foo=bar"].
+
+For more information about how to make use of kfp_local, please refer to unit test.
+
+## kfp compatibility
+kfp-local is tested with kfp=1.8.9 for now.
+
+Supports:
+* Control flow: Condition, ParallelFor, ExitHandler
+* Data passing: InputPath, OutputPath, Input
+
+Don't support for now:
+* Importer
+* Artifact iterator
+* Caching
+

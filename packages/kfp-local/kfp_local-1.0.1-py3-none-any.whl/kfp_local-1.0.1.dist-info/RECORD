@@ -1,0 +1,10 @@
+kfp_local/__init__.py,sha256=iv71nLDXS21PbP-AjR4nlRzhlAyh42wtT6Vmb7fQkjs,120
+kfp_local/_dag.py,sha256=ivUvoZ_uE3womRKbon9k7i5cb9tfWRCaqy3fJqiVGDY,2385
+kfp_local/_local_client.py,sha256=8U3ZSEI5mDIKTy7KP0wT0KHdVZYC7WciadQS5GzRDA8,25237
+kfp_local/_version.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+kfp_local/local_client_test.py,sha256=JLWsRTzJQcVnZEYw_T_1a10FMQvWvsQpUagaOMwHSZ4,9174
+kfp_local-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kfp_local-1.0.1.dist-info/METADATA,sha256=Ymm8ughw7dl-i-75ZlDqD6xTgJR8XMK8ztCVKNLuSeU,4052
+kfp_local-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kfp_local-1.0.1.dist-info/top_level.txt,sha256=i85z-Tqc-dc1Qxnk-rgfxO-10-3maJvsB69rfJqDB00,10
+kfp_local-1.0.1.dist-info/RECORD,,
