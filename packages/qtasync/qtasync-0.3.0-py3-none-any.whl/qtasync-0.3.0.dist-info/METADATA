@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qtasync
+Version: 0.3.0
+Summary: 
+Author: Brian Cefali
+Author-email: brian@atakama.com
+Requires-Python: >=3.9,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: PyQt5
+Provides-Extra: PyQt6
+Provides-Extra: PySide2
+Provides-Extra: PySide6
+Requires-Dist: PyQt5 (>=5.15.6,<6.0.0); extra == "PyQt5"
+Requires-Dist: PyQt5-stubs (>=5.15.2,<6.0.0); extra == "PyQt5"
+Requires-Dist: PyQt6 (>=6.2.2,<7.0.0); extra == "PyQt6"
+Requires-Dist: PySide2 (==5.15.2); extra == "PySide2"
+Requires-Dist: PySide6 (>=6.2.2,<7.0.0); extra == "PySide6"
