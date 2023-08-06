@@ -1,0 +1,10 @@
+CHANGELOG.txt
+License.txt
+MANIFEST.in
+README.txt
+_TripleCpy_.py
+setup.py
+TripleCpy.egg-info/PKG-INFO
+TripleCpy.egg-info/SOURCES.txt
+TripleCpy.egg-info/dependency_links.txt
+TripleCpy.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TripleCpy
+Version: 0.0.1
+Summary: Chatterjee Correlation Coefficient
+Home-page: UNKNOWN
+Author: Behnam Sadeghi
+Author-email: z5218858@zmail.unsw.edu.au
+License: MIT
+Keywords: Correlation Coefficient
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: License.txt
+
+UNKNOWN
+
