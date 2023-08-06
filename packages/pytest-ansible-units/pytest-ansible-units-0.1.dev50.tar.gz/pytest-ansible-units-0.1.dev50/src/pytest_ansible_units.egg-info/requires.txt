@@ -1,0 +1,16 @@
+pytest
+
+[ansible]
+ansible
+
+[ansible-base]
+ansible-base
+
+[ansible-core]
+ansible-core
+
+[test]
+darglint
+flake8-docstrings
+pre-commit
+pytest-cov
