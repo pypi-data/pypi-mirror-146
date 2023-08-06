@@ -1,0 +1,5 @@
+python-negar
+PyQt5
+pyperclip
+pyuca
+regex
