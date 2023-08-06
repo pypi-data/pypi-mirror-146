@@ -1,0 +1,10 @@
+uvicorn
+fastapi
+sqlalchemy
+sqlalchemy_mptt
+python-multipart
+hashids
+passlib
+python-jose
+bcrypt
+websockets
