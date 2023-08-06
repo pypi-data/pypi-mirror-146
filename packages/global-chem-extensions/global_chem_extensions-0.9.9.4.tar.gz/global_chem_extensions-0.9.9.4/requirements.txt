@@ -1,0 +1,8 @@
+global-chem
+rdkit-pypi
+pandas
+requests
+numpy
+dimorphite_dl
+pypdb
+biopandas
