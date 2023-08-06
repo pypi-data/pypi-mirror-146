@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: xontrib-jupyter-shell
+Version: 0.0.2
+Summary: A shell for the Jupyter kernel.
+Home-page: https://github.com/xonsh/xontrib-jupyter-shell
+License: MIT
+Keywords: xontrib,xonsh
+Author: Xonsh Dev
+Author-email: jnoortheen@gmail.com
+Requires-Python: >=3.7
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Terminals
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: xonsh (>=0.12)
+Project-URL: Code, https://github.com/xonsh/xontrib-jupyter-shell
+Project-URL: Documentation, https://github.com/xonsh/xontrib-jupyter-shell/blob/master/README.md
+Project-URL: Issue tracker, https://github.com/xonsh/xontrib-jupyter-shell/issues
+Project-URL: Repository, https://github.com/xonsh/xontrib-jupyter-shell
+Description-Content-Type: text/markdown
+
+<p align="center">
+Xonsh provides a kernel for Jupyter Notebook and Lab so you can execute
+xonsh commands in a notebook cell without any additional magic.
+</p>
+
+<p align="center">  
+If you like the idea click ⭐ on the repo and <a href="https://twitter.com/intent/tweet?text=Nice%20xontrib%20for%20the%20xonsh%20shell!&url=https://github.com/xonsh/xontrib-jupyter-shell" target="_blank">tweet</a>.
+</p>
+
+
+## Installation
+
+To install use pip:
+
+```bash
+xpip install xontrib-jupyter-shell
+# or: xpip install -U git+https://github.com/xonsh/xontrib-jupyter-shell
+```
+
+## Usage
+
+```bash
+$ xontrib load jupyter
+$ xonfig jupyter-kernel
+Installing Jupyter kernel spec:
+  root: None
+  prefix: <env_prefix>
+  as user: False
+```
+
+`<env_prefix>` is the path prefix of the Jupyter and Xonsh
+environment. `xonfig jupyter-kernel --help` shows options for installing
+the kernel spec in the user config folder or in a non-standard
+environment prefix.
+
+You can confirm the status of the installation:
+
+``` xonshcon
+$ xonfig info
++------------------+-----------------------------------------------------+
+| xonsh            | 0.9.21                                              |
+| Git SHA          | d42b4140                                            |
+
+               . . . . .
+
+| on jupyter       | True                                                |
+| jupyter kernel   | <env_prefix>\share\jupyter\kernels\xonsh            |
++------------------+-----------------------------------------------------+
+```
+
+Or:
+
+``` xonshcon
+$ jupyter kernelspec list
+Available kernels:
+  python3    <env_prefix>\share\jupyter\kernels\python3
+  xonsh      <env_prefix>\share\jupyter\kernels\xonsh
+```
+
+## Releasing your package
+
+- Bump the version of your package.
+- Create a GitHub release (The release notes are automatically generated as a draft release after each push).
+- And publish with `poetry publish --build` or `twine`
+
+## Credits
+
+This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).
+
