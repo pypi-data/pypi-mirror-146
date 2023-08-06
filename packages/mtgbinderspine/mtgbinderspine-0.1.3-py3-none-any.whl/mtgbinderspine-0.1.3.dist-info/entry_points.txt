@@ -1,0 +1,3 @@
+[console_scripts]
+mtgbinderspine=mtgbinderspine.main:render_spine_command
+
