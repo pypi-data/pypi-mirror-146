@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: file-cruder-fogoprobr
+Version: 1.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/melattofogo/file-cruder-fogoprobr
+Author: Joao Fogo
+Author-email: melatto.fogo@live.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# file-cruder-fogoprobr
+
+## Instalacao
+
+```
+pip install file-cruder-fogoprobr
+```
+
+## Autor
+Joao Fogo (melatto.fogo@live.com)
+
