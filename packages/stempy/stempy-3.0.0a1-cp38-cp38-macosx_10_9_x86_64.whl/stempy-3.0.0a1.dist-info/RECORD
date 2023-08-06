@@ -1,0 +1,17 @@
+stempy/__init__.py,sha256=QvteyKX0T-rZM-VhxZUrJBEPr7JyoQVDxn8NAQc8kNs,94
+stempy/libstem.dylib,sha256=wVuChPppD6upcuGRV_sRvaeQzgixYpK8-aajhJr9c9k,1048688
+stempy/_image.cpython-38-darwin.so,sha256=ULUSv_t7fs8Qrz5JX7-Qr0RPpDADI7htAwKsBVptvPE,413760
+stempy/utils.py,sha256=yGX4DpnAxwjy3n99uil0wosrnCnpEVuY5VAlBZKqEDE,536
+stempy/_io.cpython-38-darwin.so,sha256=VhsPAPbNwUV1I15ZWxbOUBsxBBKGIe1-J28ZNW7BJQ8,259456
+stempy/pipeline/__init__.py,sha256=hpGc5LPXKB5aUiBIOYxMnZeAlWay0m1QptJULIbxVu4,1436
+stempy/io/compatibility.py,sha256=lZPY1JB_p3bbdO18dyJCets-DIxepQSS2l0lc_Jrz2U,3611
+stempy/io/sparse_array.py,sha256=Ln0Cye8qiCk45aT_QKkMkWnrWLoZc1kQuDj8NSJ9RNs,32829
+stempy/io/__init__.py,sha256=Qu5ABdxbHR5ohf-SMwnICLZ0LaWBkVwfEiVekqKV3c8,7398
+stempy/image/__init__.py,sha256=j4Ccvxaan2qgVgj0t2gudiSSCAPF_9M0JrRauTijWog,25019
+stempy/.dylibs/libsz.2.0.1.dylib,sha256=eQHeX5AmOxDnt8YuyAdjrLbWR3YchxrtKJDoy0DhpDo,86992
+stempy/.dylibs/libhdf5.103.dylib,sha256=s0NfePBiVeuPR-aojluwIb6aqGMT7q7SE-XiiklZbJY,3087328
+stempy-3.0.0a1.dist-info/RECORD,,
+stempy-3.0.0a1.dist-info/LICENSE,sha256=QJBgecdAep_HzSB0K-kXJseqvy6SF5uH8CVPnhHUi0M,1504
+stempy-3.0.0a1.dist-info/WHEEL,sha256=e-pA8csyr5ssovnCFWVOFeowRspNaqe6263o9lY7nAg,103
+stempy-3.0.0a1.dist-info/top_level.txt,sha256=y781UigXVGwQbPQglCuxXrzVV_KW3zCDzfYZg-Fk_wE,7
+stempy-3.0.0a1.dist-info/METADATA,sha256=Qd3TU1pB4ljOlUqrjag6mScITq6llR3p6z_zAlDV7j0,497
