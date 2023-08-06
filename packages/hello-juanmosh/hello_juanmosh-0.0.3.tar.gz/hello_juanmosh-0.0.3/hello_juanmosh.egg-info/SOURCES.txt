@@ -1,0 +1,8 @@
+README.md
+setup.py
+hello_juanmosh/__init__.py
+hello_juanmosh/hello_juanmosh.py
+hello_juanmosh.egg-info/PKG-INFO
+hello_juanmosh.egg-info/SOURCES.txt
+hello_juanmosh.egg-info/dependency_links.txt
+hello_juanmosh.egg-info/top_level.txt
