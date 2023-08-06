@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: osparcAPIcontrol
+Version: 0.0.4
+Summary: tools to interact with osparc API
+Home-page: https://git.speag.com/msteiner/osparcapicontrol.git
+Author: Konohana
+Author-email: msteiner@itis.swiss
+License: MIT
+Keywords: OpenAPI,OpenAPI-Generator,osparc,web API
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# osparcAPIcontrol
+
+
+
+***
+
+## Name
+osparcAPIcontrol
+
+## Description
+providing a variety of tools to interact with osparc API faster. <br /> 
+Compiles the different functionalities of the osparc package into composites to simplify and speed up its usage. 
+## Badges
+On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+
+## Installation
+```bash
+pip install osparcAPIcontrol
+```
+## Usage
+```python
+import pprint
+from osparcAPIcontrol.controller import OsparcAPIcontroller
+
+# to instantiate a controller object, pass host, your username and password. 
+# hosts:
+# "https://api.osparc.io" for osparc.io
+# "https://api.osparc.speag.com" for s4l.speag.com
+#
+#username and password can be acquired by creating an API Token on the respective website.
+username = 'some_string'
+password = 'some_other_string'
+
+control = OsparcAPIcontroller(host="https://api.osparc.io",
+                              username=username,
+                              password=password)
+
+# prints a list of all available solvers and their properties
+control.print_solvers()
+
+# choose a set of solvers to use in your workflow which are saved in a dictionary
+control.initialize_solvers(solver_list=['isolve-mpi', 's4l Python Runner'])
+print('\n')
+pprint.pprint(control.solvers_in_use)
+print('\n')
+print(control.solvers_in_use['isolve-mpi'])
+```
+## Support
+msteiner@itis.swiss
+
+## Roadmap
+1. More functions to interact with the API will be added
+2. Functionalities to easily store and access the metadata files containing important file IDs
+
+## Authors and acknowledgment
+pcrespov, main author of the osparc package
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
