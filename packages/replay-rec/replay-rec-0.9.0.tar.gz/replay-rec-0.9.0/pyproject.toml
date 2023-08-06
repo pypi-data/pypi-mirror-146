@@ -1,0 +1,82 @@
+[tool.poetry]
+name = "replay-rec"
+version = "0.9.0"
+description = "RecSys Library"
+authors = ["AI Lab, Sber",
+           "Alexey Vasilev <AVaVasilyev@sberbank.ru>",
+           "Yan-Martin Tamm <YYTamm@sberbank.ru>",
+           "Anna Volodkevich <AAVolodkevich@sberbank.ru>",
+           "Boris Shminke",
+           "Alexander Sidorenko",
+           "Roza Aysina"]
+readme = "README.md"
+homepage = "https://sberbank-ai-lab.github.io/RePlay/"
+repository = "https://github.com/sberbank-ai-lab/RePlay"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed"
+]
+packages = [
+    { include = "replay" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7, <3.10"
+pytorch-ignite = "*"
+lightfm = "*"
+lightautoml = ">=0.3.1"
+numpy = ">=1.20.0"
+optuna = "*"
+pandas = "*"
+psutil = "*"
+pyspark = ">=3.0, < 3.2"
+scipy = "*"
+scikit-learn = "*"
+torch = "*"
+numba = ">=0.50"
+llvmlite = ">=0.32.1"
+seaborn = "*"
+pyarrow = "*"
+implicit = "<0.5"
+
+[tool.poetry.dev-dependencies]
+# dev only
+# visualization
+jupyter = "*"
+jupyterlab = "*"
+matplotlib = "*"
+# testing
+pytest = "5.4.3"
+pytest-cov = "2.9.0"
+parameterized = "0.7.4"
+statsmodels = "*"
+# style
+flake8 = "*"
+black = "*"
+pre-commit = "*"
+pylint = "*"
+# docs
+Sphinx = "*"
+sphinx-rtd-theme = "*"
+sphinx-autodoc-typehints = "*"
+docutils = "=0.16"
+myst-parser = "*"
+ghp-import = "*"
+# emacs dependencies
+rope = "*"
+virtualenv = "*"
+# stubs
+data-science-types = "*"
+pyspark-stubs = "*"
+
+[tool.black]
+line-length = 79
+
+[build-system]
+build-backend = "poetry.masonry.api"
