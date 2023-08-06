@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+summarize_template/__init__.py
+summarize_template/cli.py
+summarize_template.egg-info/PKG-INFO
+summarize_template.egg-info/SOURCES.txt
+summarize_template.egg-info/dependency_links.txt
+summarize_template.egg-info/entry_points.txt
+summarize_template.egg-info/requires.txt
+summarize_template.egg-info/top_level.txt
