@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: merlin-ts
+Version: 0.0.1
+Summary: Massive time series anomalies detection of arbitrary length
+Home-page: https://github.com/nla-group/slearn.git
+Author: Xinye Chen
+Author-email: xinye.chen@manchester.ac.uk
+Maintainer: Xinye Chen
+Maintainer-email: xinye.chen@manchester.ac.uk
+License: MIT License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+MERLIN-TS
+
+Massive Time Series Anomaly Detection of Arbitrary Length
+
