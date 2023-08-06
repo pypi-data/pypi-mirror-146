@@ -1,0 +1,16 @@
+AUTHORS.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+AIS/__init__.py
+AIS/ais.py
+AIS/exceptions.py
+AIS/pdf.py
+AIS2.py.egg-info/PKG-INFO
+AIS2.py.egg-info/SOURCES.txt
+AIS2.py.egg-info/dependency_links.txt
+AIS2.py.egg-info/requires.txt
+AIS2.py.egg-info/top_level.txt

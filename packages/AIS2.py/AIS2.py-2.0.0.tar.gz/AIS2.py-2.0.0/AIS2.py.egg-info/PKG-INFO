@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: AIS2.py
+Version: 2.0.0
+Summary: Python interface for the Swisscom All-in Signing Service
+Home-page: https://pypi.python.org/pypi/AIS2.py
+Author: Camptocamp
+Author-email: info@camptocamp.com
+Maintainer: Seantis GmbH
+Maintainer-email: info@seantis.ch
+License: GNU Affero General Public License v3 or later (AGPLv3+)
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+AIS2.py
+=======
+
+.. image:: https://img.shields.io/pypi/v/AIS2.py.svg
+    :target: https://pypi.org/project/AIS2.py
+    :alt: PyPI version
+
+.. image:: https://img.shields.io/pypi/pyversions/AIS2.py.svg
+    :target: https://pypi.org/project/AIS2.py
+    :alt: Python versions
+
+.. image:: https://github.com/seantis/AIS2.py/actions/workflows/python-tox.yaml/badge.svg
+    :target: https://github.com/seantis/AIS2.py/actions
+    :alt: Tests
+
+.. image:: https://codecov.io/gh/seantis/AIS2.py/branch/master/graph/badge.svg?token=NRPFO5L0PG
+    :target: https://codecov.io/gh/seantis/AIS2.py
+    :alt: Codecov.io
+
+AIS.py: a Python interface for the Swisscom All-in Signing Service (aka AIS).
+
+AIS2.py is a fork created to get rid of the licensing woes affected itext dependency and replace it with pyHanko. Furthermore the API was slightly adjusted to be more flexible, so buffers can be passed around rather than files that need to exist on the filesystem.
+
+AIS2.py works like this:
+
+.. code-block:: python
+
+    >>> from AIS import AIS, PDF
+    >>> client = AIS('alice', 'a_secret', 'a.crt', 'a.key')
+    >>> with open('source.pdf', 'rb') as fp:
+    ...     pdf = PDF(fp)
+    ...     with open('target.pdf', 'wb') as fp:
+    ...         fp.write(pdf.out_stream.getbuffer())
+    ... 
+
+License
+-------
+
+Copyright (C) 2016 Camptocamp SA
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+
+.. :changelog:
+
+Release History
+---------------
+
+2.0.0 (2022-04-12)
+++++++++++++++++++
+
+- Creation of AIS2.py fork
+- Replaced Travis CI with GitHub Actions.
+
+0.3.0-beta (2021-11-04)
++++++++++++++++++++++++
+
+- Remove Python 2.7, 3.4, 3.5, 3.6 support
+- Replace PyPDF2 and itext with pyHanko
+- Remove support for signing prepared PDFs
+
+0.2.2 (2018-10-22)
+++++++++++++++++++
+
+- Store the last created request_id on the AIS instance
+- Use a proper test matrix on Travis to test various Python releases
+- Add Python 3.6 to test matrix
+
+0.2.1 (2016-06-16)
+++++++++++++++++++
+
+- Return in batch mode timestamp and revocation information with the signature.
+- Fix python3 bugs.
+- Refactoring.
+
+0.2.0 (2016-05-19)
+++++++++++++++++++
+
+**Documentation**
+
+- Added sections for introduction, installation, testing, project status, API
+  reference.
+
+0.1 (2016-05-17)
+++++++++++++++++
+
+Initial release. It is possible to start with a batch of pdf files that do not
+yet have a prepared signature, and sign them.
+
+
