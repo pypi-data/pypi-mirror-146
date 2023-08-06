@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+src/alice/__init__.py
+src/alice/__main__.py
+src/alice/cli.py
+src/alice/configparser.py
+src/alice/exceptions.py
+src/alice/runnerfactory.py
+src/alice_ci.egg-info/PKG-INFO
+src/alice_ci.egg-info/SOURCES.txt
+src/alice_ci.egg-info/dependency_links.txt
+src/alice_ci.egg-info/entry_points.txt
+src/alice_ci.egg-info/requires.txt
+src/alice_ci.egg-info/top_level.txt
