@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tianqiai
+Version: 0.0.1
+Summary: Python client library for the tianqiai API
+Home-page: https://github.com/shanjiecai/tianqiai-python
+Author: tianqiai
+Author-email: jiecai.shan@aminer.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.1
+License-File: LICENSE
+Requires-Dist: requests (>=2.20)
+Requires-Dist: tqdm
+Requires-Dist: pandas (>=1.2.3)
+Requires-Dist: pandas-stubs (>=1.1.0.11)
+Provides-Extra: dev
+Requires-Dist: black (~=21.6b0) ; extra == 'dev'
+Requires-Dist: pytest (==6.*) ; extra == 'dev'
+
+UNKNOWN
+
