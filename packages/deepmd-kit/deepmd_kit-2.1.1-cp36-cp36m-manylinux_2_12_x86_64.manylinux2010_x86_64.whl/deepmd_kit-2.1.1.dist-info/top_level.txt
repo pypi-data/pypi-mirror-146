@@ -1,0 +1,12 @@
+deepmd
+deepmd/cluster
+deepmd/descriptor
+deepmd/entrypoints
+deepmd/fit
+deepmd/infer
+deepmd/loggers
+deepmd/loss
+deepmd/model
+deepmd/op
+deepmd/train
+deepmd/utils
