@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: git-pp
+Version: 1.2.0
+Summary: Git utility for auto-commiting and concurrent pushing
+License: MIT
+Author: Xinyuan Chen
+Author-email: 45612704+tddschn@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
