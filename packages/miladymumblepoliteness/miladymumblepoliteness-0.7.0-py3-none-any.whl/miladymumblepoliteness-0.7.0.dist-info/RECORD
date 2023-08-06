@@ -1,0 +1,14 @@
+better_profanity/__init__.py,sha256=4zDvXPwZY9c3fW4YMMekAwn9ZdFDevjNAaDF4fkJFso,187
+better_profanity/alphabetic_unicode.json,sha256=cChow2XXtliXIIiDE6OB04nEO6Ie5_7Gmwhb0AgqsY0,71076
+better_profanity/better_profanity.py,sha256=2-PCxRZYrMmN5h9Dzk3tK9nSZ2NM8rDVspGQoHW361c,9531
+better_profanity/constants.py,sha256=4vMLbO8aZdnAFCljPhdRQEtf-zZFv-ow3Rmo4L51NAk,452
+better_profanity/profanity_wordlist.txt,sha256=tq_GiuyMkf1UiN7PQObdx90bs5JPt-mZ3-0kYh2cG24,6335
+better_profanity/utils.py,sha256=yCIUOGYwxFFx0AJDu1E3rouLwIZiqjSldzb2Jmb7bys,1488
+better_profanity/varying_string.py,sha256=XqU49RMvaNTpy_Rz5vp3ZQM7U9XGo6PJVR7TZYQsoE4,2388
+miladymumblepoliteness-0.7.0.data/data/unicode_characters/alphabetic_unicode.json,sha256=cChow2XXtliXIIiDE6OB04nEO6Ie5_7Gmwhb0AgqsY0,71076
+miladymumblepoliteness-0.7.0.data/data/wordlist/profanity_wordlist.txt,sha256=tq_GiuyMkf1UiN7PQObdx90bs5JPt-mZ3-0kYh2cG24,6335
+miladymumblepoliteness-0.7.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+miladymumblepoliteness-0.7.0.dist-info/METADATA,sha256=3QFHGSFH-jAYm2IIxKy9zDAFDAOaVNP9SGhv0NgKeyA,567
+miladymumblepoliteness-0.7.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+miladymumblepoliteness-0.7.0.dist-info/top_level.txt,sha256=78dC3Z-GqCnEgM8JknUnfeJ8SZYspIPOhCHMs60Wnnw,17
+miladymumblepoliteness-0.7.0.dist-info/RECORD,,
