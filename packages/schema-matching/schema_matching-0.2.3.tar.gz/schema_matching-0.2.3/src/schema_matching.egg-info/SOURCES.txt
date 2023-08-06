@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/schema_matching/__init__.py
+src/schema_matching/cal_column_similarity.py
+src/schema_matching/init.py
+src/schema_matching/relation_features.py
+src/schema_matching/self_features.py
+src/schema_matching/train.py
+src/schema_matching/utils.py
+src/schema_matching.egg-info/PKG-INFO
+src/schema_matching.egg-info/SOURCES.txt
+src/schema_matching.egg-info/dependency_links.txt
+src/schema_matching.egg-info/requires.txt
+src/schema_matching.egg-info/top_level.txt
