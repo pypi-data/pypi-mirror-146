@@ -1,0 +1,44 @@
+---
+  menu_main:
+    - - caption: "📝 Balances"
+        action: "menu_balances"
+
+      - caption: "📥 Stats"
+        action: "menu_stats"
+
+    - - caption: "👮🏻‍ Users"
+        action: "menu_users"
+
+      - caption: "Nodes"
+        action: "menu_nodes"
+
+    - - caption: "Info"
+        action: "show_info"
+
+  menu_balances:
+    - - caption: "CSV"
+        action: "send_csv"
+
+      - caption: "XLSX"
+        action: "send_xlsx"
+
+  menu_nodes:
+    - - caption: "List nodes"
+        action: "list_nodes"
+      - caption: "Add node"
+        action: "add_node"
+      - caption: "Delete node"
+        action: "delete_node"
+
+  menu_users:
+    - - caption: "Add investor"
+        action: "add_investor"
+
+      - caption: "Add admin"
+        action: "add_admin"
+
+    - - caption: "Delete investor"
+        action: "delete_investor"
+
+      - caption: "Delete admin"
+        action: "delete_admin"
