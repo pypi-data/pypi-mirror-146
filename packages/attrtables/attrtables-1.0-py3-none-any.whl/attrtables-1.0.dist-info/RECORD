@@ -1,0 +1,8 @@
+attrtables/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attrtables/attribute_definition.py,sha256=j3dB8Rgi35hJ7OtN-Jyuo5y0sMrlrUbU1hkzMQMA0y8,656
+attrtables/attribute_value_mixin.py,sha256=1WVoELL2mh09YyKn5mJMwyYL0T6TeY9CEy3tbDYpTjg,759
+attrtables/attribute_value_tables.py,sha256=FGgAZaT-OWrGx4NBu2Kvcv2MQCBJF5HTml-95R3P12U,28989
+attrtables-1.0.dist-info/METADATA,sha256=LJWo2jOEJcVFccTVXX_EQh-zVFq9_JXHef-tHJj-jE8,10753
+attrtables-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+attrtables-1.0.dist-info/top_level.txt,sha256=GM_iOL8CKwZ7SX_p2QmA7aK10R89r89DDmIj-LgIVVA,11
+attrtables-1.0.dist-info/RECORD,,
