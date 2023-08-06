@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: boxdiff
+Version: 0.1.1
+Summary: Utilities for comparing bounding boxes
+Home-page: https://github.com/kevinsbarnard/box-diff
+Author: Kevin Barnard
+Author-email: kbarnard@mbari.org
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dataclasses-json (>=0.5.7,<0.6.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Project-URL: Repository, https://github.com/kevinsbarnard/box-diff

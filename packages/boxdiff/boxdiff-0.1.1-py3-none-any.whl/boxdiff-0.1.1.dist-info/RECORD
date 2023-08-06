@@ -1,0 +1,8 @@
+boxdiff/__init__.py,sha256=VUAS3AoeocR85ezZtgbAkLe5rUrhB0hLWE_qrQW1n7s,211
+boxdiff/models/__init__.py,sha256=8uwydg_ty-apGJOPjhIvXMtImWim-iZaYTHhD7ZTs0k,304
+boxdiff/models/core.py,sha256=6hDHoh0JFmBnP-v5NoiLQS5-_Dozn159gmNDNGHzewc,5845
+boxdiff/models/deltas.py,sha256=mwGqthjkCYENR3nhjW4jox8YPIpZF0SwbnnMxgNDFDQ,1907
+boxdiff/models/flags.py,sha256=EtwXfrNr2lr-CJFNIvhawbGZoQkjq9D7YxVu6YffrLQ,607
+boxdiff-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+boxdiff-0.1.1.dist-info/METADATA,sha256=YxuDMWekOP8USlUzB2WQVxMXjeljYEnxfMmMM7gKhKE,591
+boxdiff-0.1.1.dist-info/RECORD,,
