@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+wordwise/__init__.py
+wordwise/__version__.py
+wordwise/core.py
+wordwise/utils.py
+wordwise.egg-info/PKG-INFO
+wordwise.egg-info/SOURCES.txt
+wordwise.egg-info/dependency_links.txt
+wordwise.egg-info/requires.txt
+wordwise.egg-info/top_level.txt
