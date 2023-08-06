@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pychatz"
+version = "1.0.1"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/MattiooFR/package_name"
+repository = "https://github.com/MattiooFR/package_name"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.22.0"
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+pychatz = 'package_name:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

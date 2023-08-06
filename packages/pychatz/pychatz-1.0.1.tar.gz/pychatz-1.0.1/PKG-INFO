@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pychatz
+Version: 1.0.1
+Summary: 
+Home-page: https://github.com/MattiooFR/package_name
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx (>=0.22.0,<0.23.0)
+Project-URL: Repository, https://github.com/MattiooFR/package_name
+Description-Content-Type: text/markdown
+
+TEST md
+
