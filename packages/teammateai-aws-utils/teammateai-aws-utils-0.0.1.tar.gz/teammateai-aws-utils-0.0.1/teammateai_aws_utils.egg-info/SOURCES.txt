@@ -1,0 +1,10 @@
+README.md
+setup.py
+aws-utils/__init__.py
+aws-utils/dynamo.py
+aws-utils/s3.py
+teammateai_aws_utils.egg-info/PKG-INFO
+teammateai_aws_utils.egg-info/SOURCES.txt
+teammateai_aws_utils.egg-info/dependency_links.txt
+teammateai_aws_utils.egg-info/requires.txt
+teammateai_aws_utils.egg-info/top_level.txt
