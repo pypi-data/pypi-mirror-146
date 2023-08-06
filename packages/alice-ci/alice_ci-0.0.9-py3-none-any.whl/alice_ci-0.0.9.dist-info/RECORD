@@ -1,0 +1,11 @@
+alice/__init__.py,sha256=zDR9X7aD45kNhIKm5_sTENnMdKgiKbwgqlT7Sz9MBHw,354
+alice/__main__.py,sha256=vzM96RMqzy81XvybomEVtc_KVJPthqO6XBO6LDKuej8,38
+alice/cli.py,sha256=_9uZ8frB7y9J7se8zZalRVJh6KcujED64WHZQgWRsco,1643
+alice/configparser.py,sha256=DeC9iUm8fCpScy-SvX7wxbzLiOFDG9Dj1GeUdps908c,4239
+alice/exceptions.py,sha256=hVKa_zlvW5bSDeNy2DRVQx1vhyJN-TyRaVvQsjZgEas,138
+alice/runnerfactory.py,sha256=ZAgZOv6T2vYO0EjGG6PIvSLL3vvqNQJnSGG1Ia_-CnA,2484
+alice_ci-0.0.9.dist-info/METADATA,sha256=XJhrkX4tnmKiwTxtJ4sBaRtbDjFMlsYn9bmKf_EMy8A,900
+alice_ci-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alice_ci-0.0.9.dist-info/entry_points.txt,sha256=-QZq8O034UpFKuueOoPd_ku1r5sI-WNTXUMnKGarMS4,41
+alice_ci-0.0.9.dist-info/top_level.txt,sha256=-HFl4wWw98SCTTgGQ0-dCQlhCiVkGrh3PPkqSMnXdnA,6
+alice_ci-0.0.9.dist-info/RECORD,,

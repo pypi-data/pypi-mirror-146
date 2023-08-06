@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: alice-ci
+Version: 0.0.9
+Summary: Alice CI framework
+Home-page: https://git.gyulai.cloud/gyulaid/alice
+Author: Daniel Gyulai
+License: UNKNOWN
+Project-URL: Bug Tracker, https://git.gyulai.cloud/gyulaid/alice/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: virtualenv (==20.14.0)
+
+# Alice-CI
+
+Continous Integration framework with the goal of using the exact same code in CI and local env. Steps can be defined in yaml files, for syntax see the docs. Runs on LInux and Windows, Mac should work too, but not yet tested.
+
+## Usage
+
+Install with pip:
+```
+pythom3 -m pip install alice-ci
+```
+
+To run:
+
+```
+pythom3 -m alice [-i <ci.yaml>] STEPS
+```
+
