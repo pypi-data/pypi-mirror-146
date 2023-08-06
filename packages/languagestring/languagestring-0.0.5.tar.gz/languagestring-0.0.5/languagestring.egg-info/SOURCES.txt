@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+languagestring/__init__.py
+languagestring/character_scraper.py
+languagestring.egg-info/PKG-INFO
+languagestring.egg-info/SOURCES.txt
+languagestring.egg-info/dependency_links.txt
+languagestring.egg-info/top_level.txt
+languagestring/assets/language_detailed.json
+languagestring/assets/mapping.json
