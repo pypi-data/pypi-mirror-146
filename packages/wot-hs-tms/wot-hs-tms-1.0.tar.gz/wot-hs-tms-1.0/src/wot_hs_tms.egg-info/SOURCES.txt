@@ -1,0 +1,9 @@
+setup.py
+src/app/__init__.py
+src/app/ammos.py
+src/app/armours.py
+src/app/guns.py
+src/wot_hs_tms.egg-info/PKG-INFO
+src/wot_hs_tms.egg-info/SOURCES.txt
+src/wot_hs_tms.egg-info/dependency_links.txt
+src/wot_hs_tms.egg-info/top_level.txt
