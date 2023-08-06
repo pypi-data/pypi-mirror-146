@@ -1,0 +1,9 @@
+nnext/__init__.py,sha256=Yw-1DZ6sdnMYHl7FmoXHAPIe2lMg30l6jsCbNUS7ZMc,144
+nnext/client.py,sha256=YXYpqYSudktD_S2vkPEQS_b1XmaDVTkKgY7_e2f41sE,690
+nnext/config.py,sha256=-PxZ3C3TEdGlaaZAjo2xX8aJNG_xrMCoS2t1mPszvD4,193
+nnext/ops.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+nnext-0.0.24.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+nnext-0.0.24.dist-info/METADATA,sha256=we6KHXCscr46aBbSc7j5aJLf01mZkT9ZxSmjjdfI0oo,4581
+nnext-0.0.24.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+nnext-0.0.24.dist-info/top_level.txt,sha256=dAlSQS1eZ9HYAo0iBxph8kFuHQsV89X0kcNMup_1jHY,6
+nnext-0.0.24.dist-info/RECORD,,
