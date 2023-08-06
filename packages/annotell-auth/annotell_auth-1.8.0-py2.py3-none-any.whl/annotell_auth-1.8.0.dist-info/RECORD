@@ -1,0 +1,14 @@
+annotell_auth-1.8.0-py3.8-nspkg.pth,sha256=QpBPPgWNKzm0ysnHOq_yHjdpWnH3BJrz1TQeNgOzolw,549
+annotell/auth/__init__.py,sha256=nCcmAmn6ZV9spt_wuDsdDdt8ioKw2cMfrHqK3yogXrw,195
+annotell/auth/authsession.py,sha256=Y-2eZRwmN2-xXcFSfcmjDtoiQoHTmMqzJOFbj1Bh1co,4823
+annotell/auth/credentials_parser.py,sha256=MJDyDQUdqwzqyW7fufsbb2dt9A5x3wVMF-IEeLypZEU,2776
+annotell/auth/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+annotell/auth/base/auth_client.py,sha256=kLJWw32TgW0DQEfIWm-9DZVVF4LcSMquptfT65EdMyI,858
+annotell/auth/base/refresh_expiry_fix.py,sha256=GeHn1TBan6OBIuvPwqCtOSigoJ_duqwxRYa8e0l5erU,939
+annotell/auth/httpx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+annotell/auth/httpx/async_client.py,sha256=iTSCAYhHraaACvVcdmIpUi2iUi9RbyT-OjKWI3eggD8,2521
+annotell_auth-1.8.0.dist-info/METADATA,sha256=gAM4pSSO5Z7nHo6bCOVr3XMqTSfP1MJ347mrgqmp0es,3088
+annotell_auth-1.8.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+annotell_auth-1.8.0.dist-info/namespace_packages.txt,sha256=ovwDyo5ajMsAZxqAovd0d4s8ZFftRtmvbKk1zN8Z0go,9
+annotell_auth-1.8.0.dist-info/top_level.txt,sha256=ovwDyo5ajMsAZxqAovd0d4s8ZFftRtmvbKk1zN8Z0go,9
+annotell_auth-1.8.0.dist-info/RECORD,,
