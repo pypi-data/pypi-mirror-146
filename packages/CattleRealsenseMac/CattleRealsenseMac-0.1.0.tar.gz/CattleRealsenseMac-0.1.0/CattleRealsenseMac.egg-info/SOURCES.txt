@@ -1,0 +1,6 @@
+README.md
+setup.py
+CattleRealsenseMac.egg-info/PKG-INFO
+CattleRealsenseMac.egg-info/SOURCES.txt
+CattleRealsenseMac.egg-info/dependency_links.txt
+CattleRealsenseMac.egg-info/top_level.txt
