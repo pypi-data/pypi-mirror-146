@@ -1,0 +1,15 @@
+ipython<9
+numpy
+ipython_genutils
+pillow
+traitlets<6
+ipywidgets<8,>=7.6.0
+matplotlib<4,>=3.4.0
+
+[docs]
+myst-nb
+Sphinx>=1.5
+sphinx-copybutton
+sphinx-thebe
+sphinx-togglebutton
+sphinx-book-theme
