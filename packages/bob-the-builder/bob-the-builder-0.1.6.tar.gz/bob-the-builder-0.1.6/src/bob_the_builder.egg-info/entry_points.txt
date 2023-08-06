@@ -1,0 +1,3 @@
+[console_scripts]
+bobbuilder = bobthebuilder.cli:build_cli
+setversion = bobthebuilder.cli:set_version
