@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: smtp4helm
+Version: 0.0.2
+Summary: Wrapper for smtplib to interface with Helm server
+Home-page: https://github.com/evanottinger/helm-smtp
+Author: Evan Ottinger
+Author-email: evan@ottingerdigitallabs.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytomlpp
+
+# smtp4helm
+A package to leverage a Helm server to send emails through SMTP.
+
+
