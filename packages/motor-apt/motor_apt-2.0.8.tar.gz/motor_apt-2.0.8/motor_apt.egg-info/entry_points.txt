@@ -1,0 +1,3 @@
+[console_scripts]
+motor_apt_motor_apt = motor_apt.motor_apt.main:main
+

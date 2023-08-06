@@ -1,0 +1,149 @@
+CHANGES
+=======
+
+2.0.8
+-----
+
+* updated version for build
+
+2.0.7
+-----
+
+* -python3 version
+
+2.0.6
+-----
+
+* -python3 version
+
+2.0.5
+-----
+
+* -python3 version
+
+2.0.4
+-----
+
+* -python3 version
+* -python3 version
+
+2.0.3
+-----
+
+* -python3 version
+
+2.0.2
+-----
+
+* -python3 version
+
+2.0.1
+-----
+
+* -python3 version
+
+2.0
+---
+
+* -al\_project\_manager config added -python3 version
+* removed xeryon stage from this project
+* xeryon stage
+
+1.9.5
+-----
+
+* thorlabs ELL8 stage
+
+1.9.4
+-----
+
+* thorlabs ELL8 stage
+
+1.9.3
+-----
+
+* thorlabs ELL8 stage
+* thorlabs ELL6 stage homing command fix
+* thorlabs ELL6 stage commands
+
+1.9.2
+-----
+
+* keep alive try
+* Some comments/docstrings
+
+1.9.1
+-----
+
+* core2
+
+1.0.3
+-----
+
+* destructor calls close only called if the device was initialized
+
+1.0.2
+-----
+
+* reorder \_\_send\_message\_lock assignment in extended controller init
+
+1.0.1
+-----
+
+* remove logserviceclient
+
+1.0.0
+-----
+
+* replaced log messages throwing exceptions
+
+0.9.11
+------
+
+* auto keep alive (useful?)
+
+0.9.10
+------
+
+* Remove mention to configuration\_manager
+
+0.9.9
+-----
+
+* Remove mention of configuration\_manager
+* removed ipython requirement
+
+0.9.7
+-----
+
+* fixed default home velocity for Z612B
+* fixed default home velocity for Z612B
+
+0.9.6
+-----
+
+* Z612B motor for prod bar tester
+
+0.9.5
+-----
+
+* updated default values for z812b (integral gain higher -> better positioning precision)
+* added homing support to ThorlabsStageDeviceMockup refactoring bugfixes and imporvements
+* updated default values for z812b (switch makes to avoid errors)
+* updated default values for z812b
+* added Homing functionality print => logging.debug() persisting enccount now optional added homing test to z812b
+* default values for z812b
+* - class and tests for linear motor z812b [WIP] - instructions to solve driver issues in README
+* added ExtendedController class refactoring minor improvements
+* fix post\_release\_hook
+* added new functionality to the mockup - start / stop automatic messages, pause / resume end of move messages, stopped message, jog velocity, move velocity, actual velocity, synchronization
+* added FTDI device mockup, ThorlabsStageDeviceMockup and CR1Mockup messages now in enum
+* test
+* test
+* added keep-alive thread added unitttests fixed some bugs added functionality to save and load current encoder count in file on startup / exit
+* added some comments
+* code more compliant with PEP8 now
+* added checks for invalid values improved precision unittests added couple of bugfixes
+* added class for cr1 stage which includes implementation of necessary functions that were missing added message listener to listen to all messages add other support classes such as CurrentStatus() and TimeoutException a few changes to pyAPT/controller.py add a few unittests, still many missing added pylibftdi into requirements
+* Thorlabs documentation added to docs pyAPT library added
+* First import
