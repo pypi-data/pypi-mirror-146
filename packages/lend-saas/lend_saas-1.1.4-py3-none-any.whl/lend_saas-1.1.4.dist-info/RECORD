@@ -1,0 +1,13 @@
+lendSaaS/__init__.py,sha256=sgOcwH7zE5OrylCp_SLxSlx4jMzK4J7chRIifMwPrl0,121
+lendSaaS/__version__.py,sha256=f58pRUyB92OWbOkCyVD0ShYz-E0CEUMVa4uoAqSBlXw,86
+lendSaaS/client.py,sha256=ZI8sjmzYUy9I6h8TJ2DMeCKx8UqrImyUCfiS30Vs5lw,663
+lendSaaS/src/base_lend_saas.py,sha256=EYilKr7rVbzC55QM8dsIYrfF7bzh7PsrEFG62bAyY3c,1302
+lendSaaS/src/funding.py,sha256=rDIFsIwM22JSna7dLgH5UEi--OlaFfa8Uyd2fPV0gHc,991
+lendSaaS/src/leads.py,sha256=ECVyKnrCUcwL5kRSNo0uKiE5M0I4JzUlGNwQsSgeui4,3570
+lendSaaS/src/transactions.py,sha256=EDqLmuCv99nm0-Ml9-Hq19PLKD7G6Nj7ZWR_2sG7cEg,1187
+lendSaaS/src/underwriting.py,sha256=W3cbgUVwbismqWNilTwYjvnz-n7EJVTu_a9x_svF2E4,5035
+lend_saas-1.1.4.dist-info/LICENSE,sha256=_VS1oi7wehD-47QA6-hLkHAeWLkbobifUNs8DkdOxGg,1546
+lend_saas-1.1.4.dist-info/METADATA,sha256=Ef0Kr7ZRoAjOSfTB4pQcmyn2M_Ood9q1HKnatuTy-d8,3763
+lend_saas-1.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lend_saas-1.1.4.dist-info/top_level.txt,sha256=FUvFLO3VcitbMrPh4pRQrzovVaN3bdYzO7185WLCmec,9
+lend_saas-1.1.4.dist-info/RECORD,,
