@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: strawberry-graphql-mage
+Version: 0.0.1a7.dev1649954576
+Summary: An automated, modular, backend-agnostic GraphQL API generator
+License: MIT
+Author: Vojtěch Dohnal
+Author-email: vojdoh@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy-Utils (>=0.37.9,<0.38.0)
+Requires-Dist: SQLAlchemy[asyncio] (>=1.4.25,<2.0.0)
+Requires-Dist: aiosqlite (>=0.17.0,<0.18.0)
+Requires-Dist: frozendict (>=2.0.6,<3.0.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: overrides (>=6.1.0,<7.0.0)
+Requires-Dist: strawberry-graphql (>0.80.0,<1.0.0)
+Project-URL: Homepage, https://github.com/KundaPanda/strawberry-graphql-mage/
+Description-Content-Type: text/markdown
+
+# Strawberry-GraphQL-Mage
+
+An automated, modular, backend-agnostic GraphQL schema generator.
+
+The aim of this project is to simplify graphql api creation without being tied to one specific data backend.
+
+Performance is currently not a major factor - this is mostly a helper library to make creating GraphQL endpoints easier.
+
+## Still under heavy development
+
+Feel free to use it and create issues though.
+
+Contributions are welcome as well.
+
+## TO-DO list
+
+- [x] Generating a basic GraphQL schema
+- [x] Queries
+- [x] Mutations
+- [ ] Subscriptions
+- [x] Backend separation + dummy backend
+- [ ] Assess strawberry dataloader for other backends instead of the current implementation with large overhead
+- [ ] SQLAlchemy backend
+  - [x] Entity models
+  - [x] Implement basic mutations/queries
+  - [x] Add basic tests
+  - [ ] Add more tests
+  - [x] Asyncio
+  - [ ] Implement abstract sqla models
+- [ ] Python backend
+  - [x] Basic SQLAlchemy conversion
+  - [x] Database engine pool
+  - [ ] Native python datatype simple implementation
+  - [x] Queries
+  - [x] Queries with dynamic dataset
+  - [ ] Mutations
+  - [ ] TESTS
+- [ ] JSON (dict) backend
+  - [x] Conversion to python backend
+  - [x] Queries
+  - [x] Queries with dynamic dataset
+  - [ ] Mutations
+  - [ ] TESTS
+- [ ] API backend (REST/GraphQL)
+  - [x] Queries
+  - [x] Queries with dynamic dataset
+  - [x] Mutations
+  - [ ] Helpers for graphql input fields conversion
+  - [ ] Improve the structure
+  - [ ] TESTS
+- [ ] Separate backends into package extras
+- [ ] Add more filters
+- [ ] Add options for custom data-types
+- [ ] Setup CI
+- [ ] Try some authorization / authentication
+- [ ] Write instructions for using the app
+- [ ] Write instructions for creating custom backends
+
