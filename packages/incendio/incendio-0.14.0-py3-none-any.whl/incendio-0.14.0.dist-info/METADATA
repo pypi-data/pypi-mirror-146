@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: incendio
+Version: 0.14.0
+Summary: A mini-library of PyTorch utilities, wrappers, and miscellaneous tools for deep learning.
+Home-page: https://github.com/hdmamin/incendio
+Author: Harrison Mamin
+Author-email: hmamin55@gmail.com
+License: Apache Software License 2.0
+Keywords: PyTorch,deep learning,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3 (==1.15.*)
+Requires-Dist: einops (==0.3.*)
+Requires-Dist: matplotlib (==3.*)
+Requires-Dist: mmh3 (==3.0.*)
+Requires-Dist: multipledispatch (==0.6.*)
+Requires-Dist: numpy (==1.19.*)
+Requires-Dist: pandas (==1.1.*)
+Requires-Dist: requests (==2.22.*)
+Requires-Dist: scikit-learn (==0.24.*)
+Requires-Dist: spacy (==3.1.*)
+Requires-Dist: tabulate (==0.8.*)
+Requires-Dist: textblob (==0.15.*)
+Requires-Dist: tqdm (==4.61.*)
+Requires-Dist: htools
+Requires-Dist: comet-ml (==3.15.*)
+Requires-Dist: tldextract (==2.2.*)
+Requires-Dist: torch (==1.7.*)
+Requires-Dist: transformers (==4.8.*)
+Requires-Dist: mosestokenizer (==1.1.*)
+Requires-Dist: sentencepiece (==0.1.*)
+Requires-Dist: beautifulsoup4 (==4.11.*)
+Provides-Extra: gg
+Requires-Dist: accio ; extra == 'gg'
+
+# Incendio
+> A mini-library of PyTorch utilities, wrappers, and miscellaneous tools for deep learning.
+
+
+## Install
+
+`pip install incendio`
+
+## Documentation
+
+https://hdmamin.github.io/incendio/
+
+
