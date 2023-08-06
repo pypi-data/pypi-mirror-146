@@ -1,0 +1,11 @@
+LICENSE_GPL_v3.txt
+README.md
+setup.cfg
+setup.py
+ltbfiles/__init__.py
+ltbfiles/ltbfiles.py
+ltbfiles.egg-info/PKG-INFO
+ltbfiles.egg-info/SOURCES.txt
+ltbfiles.egg-info/dependency_links.txt
+ltbfiles.egg-info/requires.txt
+ltbfiles.egg-info/top_level.txt

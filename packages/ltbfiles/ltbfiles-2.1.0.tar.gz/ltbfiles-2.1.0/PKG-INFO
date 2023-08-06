@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ltbfiles
+Version: 2.1.0
+Summary: Module for loading of files created with spectrometers from LTB
+Home-page: https://gitlab.com/ltb_berlin/ltb_files
+Author: Sven Merk
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: tests
+Provides-Extra: publish
+License-File: LICENSE_GPL_v3.txt
+
+This is a selection of functions providing loading functionalities for files created with ARYELLE series spectrometers from [LTB Lasertechnik Berlin GmbH](https://www.ltb-berlin.de/) and the Sophi software.
+
+Documentation of the formats can be found on the corresponding [gitlab-page](https://gitlab.com/ltb_berlin/ltb_files/-/wikis/home).
+
+Issues can be reported online in the projects [issue-tracker](https://gitlab.com/ltb_berlin/ltb_files).
+
