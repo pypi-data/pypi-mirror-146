@@ -1,0 +1,7 @@
+aioconsole
+colorama
+async-eval
+prompt-toolkit
+rich
+pygments
+nose
