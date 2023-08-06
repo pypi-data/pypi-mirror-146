@@ -1,0 +1,5 @@
+typewriter_DINOTICK.egg-info/PKG-INFO
+typewriter_DINOTICK.egg-info/SOURCES.txt
+typewriter_DINOTICK.egg-info/dependency_links.txt
+typewriter_DINOTICK.egg-info/requires.txt
+typewriter_DINOTICK.egg-info/top_level.txt
