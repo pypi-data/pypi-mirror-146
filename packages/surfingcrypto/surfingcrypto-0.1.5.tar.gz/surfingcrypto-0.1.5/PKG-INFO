@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: surfingcrypto
+Version: 0.1.5
+Summary: Customizable interface to cryptocurrencies.
+Home-page: https://github.com/giocaizzi/surfingcrypto
+Author: giocaizzi
+Author-email: giocaizzi@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://giocaizzi.github.io/surfingcrypto/
+Project-URL: Bug Reports, https://github.com/giocaizzi/surfingcrypto/issues
+Project-URL: Source, https://github.com/giocaizzi/surfingcrypto
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+
+# surfingcrypto
+
+![img](docsrc/source/images/logo.png)
+
+![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20-blue)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/giocaizzi/surfingcrypto/ci)
+![Codecov](https://img.shields.io/codecov/c/gh/giocaizzi/surfingcrypto)
+
+python package to surf crypto-waves.
+
+- Scrapes *OHLC data* from [www.coinmarketcap.com](www.coinmarketcap.com) and stores it locally.
+- Compute *Technical Analysis* indicators and plot complex graphs
+- Interact with *Coinbase API* to read transaction data and to compute Portfolio statistics
+
+## Installation
+
+Install with `pip`
+   ```shell
+   pip install surfingcrypto
+   ```
+
+## Documentation
+
+### Read the docs
+
+Documentations can be found [here](https://giocaizzi.github.io/surfingcrypto/)
+
+
+
+
