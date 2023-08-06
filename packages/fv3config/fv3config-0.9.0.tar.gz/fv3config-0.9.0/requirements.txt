@@ -1,0 +1,14 @@
+pip
+bump2version
+wheel
+flake8==3.7.8
+click==8.0.4
+tox
+coverage
+Sphinx
+sphinx_rtd_theme
+pytest
+pytest-cov
+google-cloud-storage
+kubernetes
+black==19.10b0
