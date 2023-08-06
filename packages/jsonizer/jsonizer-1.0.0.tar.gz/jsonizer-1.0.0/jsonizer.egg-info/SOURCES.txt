@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+jsonizer/__init__.py
+jsonizer/builder.py
+jsonizer/exceptions.py
+jsonizer/hashes.py
+jsonizer/parser.py
+jsonizer/types.py
+jsonizer.egg-info/PKG-INFO
+jsonizer.egg-info/SOURCES.txt
+jsonizer.egg-info/dependency_links.txt
+jsonizer.egg-info/not-zip-safe
+jsonizer.egg-info/top_level.txt
