@@ -1,0 +1,16 @@
+mypythonwnywhere/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypythonwnywhere/pythonanywhere.py,sha256=KVx1t-77zxRI8LBDRyeu0jJs_CR34mG1Bk5X8RMGusk,1959
+mypythonwnywhere/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypythonwnywhere/types/account_type.py,sha256=ZF_fPOOENgUgd77BKuRv5r2KL7b0U3F9J6gUV_jJNCo,228
+mypythonwnywhere/types/base_request.py,sha256=tojwiFWkRcpZ74B7X1WsUfXSuVswSNaax5ym2kMSdXA,682
+mypythonwnywhere/types/request_method.py,sha256=7BgIU98tYLUrD-bZFJn6t1zIGDo-F7F0ypzk__JTBIo,674
+mypythonwnywhere/types/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypythonwnywhere/types/models/console.py,sha256=fGzLDrVxE6OuInt-J-0EA3yfuI6CAv7Pmuonlp-6Eyg,258
+mypythonwnywhere/types/requests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypythonwnywhere/types/requests/always_on_requests.py,sha256=CdRYq-V-Vfw1UsjvqVaitSPk9Er0AaMbhSDUaJJlKac,853
+mypythonwnywhere/types/requests/console_requests.py,sha256=Lv-7LRlpfde2t523BBfymCIr-AEkZmg9COF8KYp76XU,1032
+mypythonanywhere-0.0.2rc0.dist-info/LICENSE,sha256=hnHJrj7MnSykjN7u8zq7ZhRBHbdxE-pS-QzxLwX1Kyw,1072
+mypythonanywhere-0.0.2rc0.dist-info/METADATA,sha256=XZGSwW63bCzzmA_m5o-ugqRTmqwz0TUFQFeYiP1XTw0,595
+mypythonanywhere-0.0.2rc0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mypythonanywhere-0.0.2rc0.dist-info/top_level.txt,sha256=AWWafwuxIexguj7-gaL-IuMUbpEXdpHJ5GUg9YMMprc,17
+mypythonanywhere-0.0.2rc0.dist-info/RECORD,,
