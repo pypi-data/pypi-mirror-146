@@ -1,0 +1,17 @@
+qmcblip/__init__.py,sha256=9Vx1yO7KolCLleXZwRPdGOf3CbWJRAGjMkB3Z3yS0kw,197
+qmcblip/champ.py,sha256=ggAVCzLcb6yZcLnqJ-xXYjBcNTsE6qFDyYwXbjbXzX4,6005
+qmcblip/champio.py,sha256=NkalHZp7mRGeAcKoPpUwBGPgIjbpyRGpxuMiPp0O8S8,8494
+qmcblip/tools.py,sha256=XSUPFHZYlbMX1m8gQ-ACwSRSN3UI7rbnwawVuY6HtPg,2908
+qmcblip/flare/__init__.py,sha256=Zp8mr1DazFq3wd0h4uuDrW0t0kd4Rw1KNojTXe70mZs,257
+qmcblip/flare/otf.py,sha256=keFYUA8T4y_6s_qmu_zkr6eCJy8ezmqR4kJlVij2cT4,17969
+qmcblip/flare/quicksim.py,sha256=oSjGAXbfmwezXsx9XNxBA1QRM_qPiyh_caUxiPBWjyI,9360
+qmcblip/flare/utils.py,sha256=tFlPB_CqYhOyk0Ta5DcI27K37-EePZodiyp-gYSQ5nk,4166
+qmcblip/flare/verlet.py,sha256=mUXZtW3agcqOJJ2PRi64835N5uRsn2DgkEQy2jHV8gM,1092
+qmcblip/sgdml/__init__.py,sha256=sGTpi5eUPbbjiAxk0O7Cqhh4UjCjMKObUDKWKZONNqI,57
+qmcblip/sgdml/quicksim.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qmcblip/sgdml/utils.py,sha256=XM7f94U46ZT1O6ILHWCcKOCNHKwFzpuohwWK4NB1bZw,3463
+QMCblip-1.0.2.dist-info/LICENSE,sha256=iXx2FIkacnYVqtDjKDmxqCz_ynLTV4IlcCbZsn8qr58,10772
+QMCblip-1.0.2.dist-info/METADATA,sha256=5D81b0F-TueSTXTYgchSkJHXrWt0xiHel9RuL_TFVB8,1468
+QMCblip-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+QMCblip-1.0.2.dist-info/top_level.txt,sha256=ygv-Ass91_va4Lzz3I6G_UKd8LZbsf_dTBR7Zh_buco,8
+QMCblip-1.0.2.dist-info/RECORD,,
