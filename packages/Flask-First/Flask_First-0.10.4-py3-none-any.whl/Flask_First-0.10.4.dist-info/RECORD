@@ -1,0 +1,14 @@
+flask_first/__init__.py,sha256=vlkRFyfIFBKFLyAf8N9z5hKu844ttCdXu5YEgZ-uwxY,11297
+flask_first/exceptions.py,sha256=kKSYa2LjkVKCGs7qkYzd1lcXKclP2J0DPWkCa4AKxcQ,1967
+flask_first/schema_maker.py,sha256=Q3oOuKiSs_3Ht8wieeoxvaKyI9LSXTJZlihb6uaa1iA,2793
+flask_first/static/swagger_ui/favicon-16x16.png,sha256=ryStYE3Xs7zaj5dauXMHX0ovcKQIeUShL474tjo-B8I,665
+flask_first/static/swagger_ui/favicon-32x32.png,sha256=PtYS9B4FDKXnAAytbxy-fn2jn2X8qZwC6Z5lkQVuWDc,628
+flask_first/static/swagger_ui/swagger-ui-bundle.js,sha256=7_QKmG6TabMY_hWCl3EukmGtv4BX5NhnNAxduCh-Eys,1081656
+flask_first/static/swagger_ui/swagger-ui-standalone-preset.js,sha256=bhm8z5fHpi3ILl8Qh72G4fz5en7jZ99sd_iUS_E3mFA,321259
+flask_first/static/swagger_ui/swagger-ui.css,sha256=0RmGTlRrnR1XNy4pJpAPL2E_72WBorccdhkVyStMqhc,143859
+flask_first/templates/swagger_ui/index.html,sha256=7cx_pXF7iXyOQEhk_7hFAg4tBWXge-UfBn3phNPN324,1638
+Flask_First-0.10.4.dist-info/LICENSE,sha256=Vg5uEtQ6CKTB6R-BKvJZvMQ05dcw5tRVJcB_HTPb-fk,1084
+Flask_First-0.10.4.dist-info/METADATA,sha256=klPADlkBgFbI-rMY7PrZII4wXZ99Id-_lKwq3R0rsoc,3557
+Flask_First-0.10.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Flask_First-0.10.4.dist-info/top_level.txt,sha256=u7eR4JNb8eY_1s1gctuMfpgxz7d7fF-U2orj3T6EeF0,12
+Flask_First-0.10.4.dist-info/RECORD,,
