@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: image-scrapper-pk1308
+Version: 0.0.3
+Summary: Image scrapping from google
+Home-page: https://github.com/pk1308/image_scrapper
+Author: pk1308
+Author-email: princevkurien@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pk1308/image_scrapper/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# image_scrapper
+
+step 1
+
+pip install pymongo
+
+pip install pymongo[srv]
+
+pip install image-scrapper-pk1308
+
+
+step 2
+
+from imagescrapper.runner import imagescrapper
+
+import pymong
+
+step 3
+
+mongourl ="mongodb+srv://`<username>`:`<password>`@`<cluster-name>`.mongodb.net/myFirstDatabase"
+
+client = pymongo.MongoClient(mongourl)
+
+
+step4
+
+scrapper =imagescrapper(client)
+
+scrapper.search_and_download(search_term="Virat kholi",number_images=10)
+
+**Enjoy**
+
+Data saved to data/Virat kholi
+
+
+link to pip 
+
+
+pip install image-scrapper-pk1308
+
+
