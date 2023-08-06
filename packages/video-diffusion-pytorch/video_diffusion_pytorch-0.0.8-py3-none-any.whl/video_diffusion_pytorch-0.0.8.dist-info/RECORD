@@ -1,0 +1,8 @@
+video_diffusion_pytorch/__init__.py,sha256=dpYPVp_UV7JCNjrNYvY0OFoppUrGJLbTTW0Y-sq9lic,85
+video_diffusion_pytorch/text.py,sha256=nSW1e7399daq8oBOv0Zyi3qmSnY06X9tAwXVnWcvaoc,1922
+video_diffusion_pytorch/video_diffusion_pytorch.py,sha256=_w5ivUIQjzZ4_dP5jx-ekD3Fle9KhdDRScZ3u7KvuxQ,25197
+video_diffusion_pytorch-0.0.8.dist-info/LICENSE,sha256=xZDkKtpHE2TPCAeqKe1fjdpKernl1YW-d01j_1ltkAU,1066
+video_diffusion_pytorch-0.0.8.dist-info/METADATA,sha256=Dt-etcGzqwXC_QQpA00WM6QIJAEHn-r6gCC4oZhPq6E,781
+video_diffusion_pytorch-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+video_diffusion_pytorch-0.0.8.dist-info/top_level.txt,sha256=pyOdFfpJtHrxmGV2gPa9EdKzgzeTRsXQcVGq956jM8w,24
+video_diffusion_pytorch-0.0.8.dist-info/RECORD,,
