@@ -1,0 +1,12 @@
+_target_: nlhappy.datamodules.TextClassificationDataModule
+
+dataset: 
+max_length: 
+batch_size: 
+plm: chinese-roberta-wwm-ext
+is_multi_label: False
+num_workers: 2
+pin_memory: True
+data_dir: ${data_dir} 
+pretrained_dir: ${pretrained_dir}
+

@@ -1,0 +1,11 @@
+_target_: nlhappy.datamodules.SpanClassificationDataModule
+
+
+dataset: CMeEE
+max_length: 420
+batch_size: 10
+plm: chinese-roberta-wwm-ext
+pin_memory: True
+num_workers: 2
+data_dir: ${data_dir}
+pretrained_dir: ${pretrained_dir}
