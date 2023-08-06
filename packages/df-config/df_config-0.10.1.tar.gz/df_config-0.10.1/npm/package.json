@@ -1,0 +1,18 @@
+{
+  "name": "df_config",
+  "version": "0.1.0",
+  "license": "CECILL-B",
+  "description": "Javascript component of df_config",
+  "repository": "https://github.com/d9pouces/df_config",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build-dev": "./node_modules/.bin/webpack --mode development",
+    "build-prod": "./node_modules/.bin/webpack --mode production"
+  }
+}
