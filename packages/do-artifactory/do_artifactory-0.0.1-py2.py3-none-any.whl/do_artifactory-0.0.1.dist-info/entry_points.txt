@@ -1,0 +1,2 @@
+[console_scripts]
+do_artifactory = do_artifactory.do_artifactory:main

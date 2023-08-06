@@ -1,0 +1,155 @@
+# **do_artifactory**
+
+# Introduction
+"do_artifactory" is an Artifactory API that makes the common artifact operations really easy to do with just a few lines of code.
+
+# MAINTAINERS:
+	- Daniel Oberti (obertidaniel@gmail.com)
+
+# Install this package
+
+### Using a distribuible package:
+
+This project is deployed as a python package. 
+Once cloned we advice to install it with pip. 
+In order to do that the user needs to open a command prompt, go into the directory containing the project and execute the next command:
+
+```bash
+git clone <REPO>
+# creating the dist. package
+cd <REPO>
+python setup.py sdist
+
+# install the dist. package (located on folder "dist")
+pip install <PACKAGE.tar.gz>
+```
+
+### Using git + pip
+```bash
+git clone <REPO>
+pip install -e <PACKAGE>
+```
+
+### Using pypi
+
+#### How to - uploading to pypi
+```bash
+# install the required tools
+python -m pip install -U pip setuptools twine
+python setup.py bdist_wheel
+# (publicar en pypi)
+python -m twine upload dist/* --skip-existing
+```
+
+#### How to - install from pypi
+
+```bash
+# install the package anywhere:
+pip install <PACKAGE>
+```
+
+# Uninstall this package
+```bash
+pip uninstall <PACKAGE>
+```
+
+## Getting started
+
+# Usage:
+```bash
+# Set your Linux environment:
+setenv ARTIF_REPO <ARTIF_REPO>
+setenv ARTIF_USER <ARTIF_USER>
+setenv ARTIF_PASS <ARTIF_PASS> #(Recomandation: use a token, never the admin password)
+```
+
+# Importing it on your python script:
+```python
+from do_artifactory import DoArtifactory
+arti = DoArtifactory(config='config.yml')
+```
+
+# Methods and examples:
+
+### Upload files
+
+```python
+# upload "filename.txt" to an specific "target_path"
+arti.upload("filename.txt", target_path="arti_folder/example/")
+```
+
+### Download file/folder as a compressed file
+
+```python
+# Download "dirB" as "download.zip"
+arti.download(_path_source="dirA/dirB", _repo="project_A")
+
+# Download "file.txt" as "download.zip"
+arti.download(_path_source="dirA/dirB/file.txt", _repo="project_A")
+```
+
+### List releases
+Based on the idea you are using the next dir structure:
+```
+<REPOSITORY>/
+        release/
+            <VERSION1>/
+                <RELEASE-FILE1>
+                <RELEASE-FILE2>
+            <VERSION2>/
+                <RELEASE-FILE3>
+```
+
+```python
+# Get a list with the releases versions of "project_A"
+arti.list_releases(_repo="project_A")
+```
+
+### Download a release
+
+```python
+# Download the specific release "v0.0.1" from "project_A"
+arti.download_release(_repo="project_A", version="v0.0.1")
+
+# Download the latest release from "project_A"
+arti.download_release(_repo="project_A")
+```
+
+### Show file/s on an specific path and navigate a repository
+
+There are a list of methods that allow you to show the list of files into the "current_path"
+
+"current_path" starts as default on the root path ("."), but you can change it by using the next methods:
+```python
+# set the current path to another one
+arti.set_current_path(path="dir_A/dir_B")
+
+# get the current path
+arti.get_current_path()
+```
+
+Using the last two methods in combination with the next methods, it allows you to navigate the artifactory repositories and use some filters if needed.
+
+The method search, allows you to get an artifacts_list based on the "current_path", for example:
+```python
+# Get the artifacts (files + folders) from "project_A" on the "current_path"
+arti.search(_repo="project_A")
+
+# Get the artifacts (folders) from "project_A" on the "current_path"
+# _type options are: (file/folder/any)
+arti.search(_repo="project_A", _type='folder')
+
+# Get the artifacts (folders) from "project_A" on the "current_path", but showing only the coincidence with "DirB"
+arti.search(_name="DirB", _repo="project_A", _type='folder')
+
+# Get the list of fullpaths from the root
+arti.get_list_path(_repo="project_A", _folder='')
+
+# Get the list of fullpaths starting from "/dir_A/dir_B/"
+arti.get_list_path(_repo="project_A", _folder='/dir_A/dir_B/')
+
+```
+
+# References:
+- https://pypi.org/project/dohq-artifactory/
+- https://www.jfrog.com/confluence/display/JFROG/Artifactory+Query+Language/
