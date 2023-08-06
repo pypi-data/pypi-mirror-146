@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: umigap
+Version: 0.1.2
+Summary: umigap is an art-as-code tool for describing and managing 3D assets from autorigging to mocap in an indie game asset pipeline
+License: GPLv3
+Author: Luke Miller
+Author-email: dodgyville@gmail.com
+Requires-Python: >=3.7,<3.8
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: bvh (>=0.3,<0.4)
+Requires-Dist: dataclasses-json (>=0.5.7,<0.6.0)
+Requires-Dist: future-fstrings (>=1.2.0,<2.0.0)
+Requires-Dist: importlib (>=1.0.4,<2.0.0); python_version >= "3.8"
+Requires-Dist: importlib-metadata (>=4.11.3,<5.0.0); python_version >= "3.7" and python_version < "3.8"
+Requires-Dist: mathutils (>=2.81.2,<3.0.0)
+Requires-Dist: pygltflib (>=1.15.1,<2.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.21,<0.18.0)
+Requires-Dist: simple-term-menu (>=1.4.1,<2.0.0)
+Requires-Dist: typer (>=0.4.1,<0.5.0)
