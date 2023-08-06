@@ -1,0 +1,7 @@
+config_parser/__init__.py,sha256=HAvADsGg3mtVc5wlcBN0Jv78rjEqRej0vPLuaa_TNB0,2418
+config_parser/loader.py,sha256=BEZl8tdNPmB9IYK8PsZpyG9_UGOIyYv3HBsrPG2y3vc,5303
+config_parser/parser.py,sha256=l8T9KbHFvLegUP37w0z9FpK-GXnVSbceJbBcG4PyYYo,4608
+bored_config_parser-0.1.0.dist-info/LICENSE,sha256=jdzxgRqRou6PN-VWUUtHaU_UgaDthbWM1xZAGPyjRnE,1070
+bored_config_parser-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bored_config_parser-0.1.0.dist-info/METADATA,sha256=Vn77MoCsNckURv-gU5U6coMCvRIAsusw4tvAMTExsLI,1587
+bored_config_parser-0.1.0.dist-info/RECORD,,
