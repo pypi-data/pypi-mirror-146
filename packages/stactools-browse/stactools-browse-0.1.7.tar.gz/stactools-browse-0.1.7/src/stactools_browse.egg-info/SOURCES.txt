@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/stactools/browse/Dockerfile-node
+src/stactools/browse/Dockerfile-titiler
+src/stactools/browse/__init__.py
+src/stactools/browse/commands.py
+src/stactools/browse/docker-compose.yml.template
+src/stactools_browse.egg-info/PKG-INFO
+src/stactools_browse.egg-info/SOURCES.txt
+src/stactools_browse.egg-info/dependency_links.txt
+src/stactools_browse.egg-info/requires.txt
+src/stactools_browse.egg-info/top_level.txt
