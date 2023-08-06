@@ -1,0 +1,10 @@
+SPARQLWrapper>=1.8.5
+jinja2
+jsonschema>=3.2.0
+markdown
+mdx_smartypants
+pydot
+pyparsing==2.4.7
+pyshacl~=0.17.0
+pyyaml
+rdflib~=6.0.0
