@@ -1,0 +1,15 @@
+trytond/modules/nereid_payment_gateway/__init__.py,sha256=aGMsvrsb6RTR52SfyZ1jIRVu2rNM1VWKF7i1O_EbTHs,367
+trytond/modules/nereid_payment_gateway/party.py,sha256=s0mseUitEAW7kankeEUw98ooRJ_8-x0j-X7Mu03dqE0,5846
+trytond/modules/nereid_payment_gateway/tryton.cfg,sha256=YO519NxE5Xy4MxkOVckGSiU2ynsNScg6c30GIvrwltc,84
+trytond/modules/nereid_payment_gateway/website.py,sha256=Jif8otjTkjR8xGq1rZn6h8k7XfPelHvQ1rFW-xHipxg,1006
+trytond/modules/nereid_payment_gateway/website.xml,sha256=Pcbh-lFMRGBJJ185cCJXKa7G7kEyiD5MAdUMkc-O_U0,449
+trytond/modules/nereid_payment_gateway/locale/de.po,sha256=Gh2mtTlTuDlCjTZBTPPgpf8bAlpLzibd65wYswIvqck,2292
+trytond/modules/nereid_payment_gateway/tests/__init__.py,sha256=-morc9_5xGHx_-7AomtESdY96Nh_K_DJTnkR5chKwPA,318
+trytond/modules/nereid_payment_gateway/tests/test_nereid_payment_gateway.py,sha256=OFc_lckO8Ip7Qqqaf80LrsroUhptfe4c8YJO2xCgRAs,19111
+trytond/modules/nereid_payment_gateway/view/website_view.xml,sha256=xLxECGPwR0kzUYZbEfBLXWBLZ-jw8m7ueWhaxw_SHEs,860
+m9s_nereid_payment_gateway-6.0.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+m9s_nereid_payment_gateway-6.0.1.dist-info/METADATA,sha256=2LipqA8Pg1jOO9FqQNVyaxWKhU61U-ObLcCvc4NDy5Y,3567
+m9s_nereid_payment_gateway-6.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+m9s_nereid_payment_gateway-6.0.1.dist-info/entry_points.txt,sha256=Ds1_Es27RkmbZoMQyvnclpj8OOgyKYqnc4QJw-V3Ors,95
+m9s_nereid_payment_gateway-6.0.1.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+m9s_nereid_payment_gateway-6.0.1.dist-info/RECORD,,
