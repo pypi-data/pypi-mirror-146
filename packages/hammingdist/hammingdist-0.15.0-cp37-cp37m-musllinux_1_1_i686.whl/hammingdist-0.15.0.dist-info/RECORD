@@ -1,0 +1,9 @@
+hammingdist.cpython-37m-i386-linux-gnu.so,sha256=vlLQnOPzfHjhVG3TIy4_VJY57CvnBe1WxzUP4r4hSsk,290400
+hammingdist-0.15.0.dist-info/RECORD,,
+hammingdist-0.15.0.dist-info/METADATA,sha256=eqh5lKUgmhCSlICLoFq_5dJvXjEbZTSRfs6P9Z_SU78,3899
+hammingdist-0.15.0.dist-info/top_level.txt,sha256=c8e2Iar5CjaqtHMzFOOtpU6YfNco7QxokdAWoeQql3k,12
+hammingdist-0.15.0.dist-info/LICENSE.md,sha256=zzr0aw6Wm4kbiYfqyMbjG23ju3bk6uGItpH1SEAfIqQ,1053
+hammingdist-0.15.0.dist-info/WHEEL,sha256=Qij6yOX7pDoiGZWFfHOle2mljoAmb4RV4rtvx60og58,110
+hammingdist.libs/libgcc_s-8b50eaaa.so.1,sha256=aEf1qbEV-lDljbUGr6ql8FAfnxyJlKTeEsHNdrBlAHM,101648
+hammingdist.libs/libgomp-41890ef0.so.1.0.0,sha256=v1S9wI3pI7LI5wKB6AvV6AdAUscM_zZ95LWxXvmoAN8,195208
+hammingdist.libs/libstdc++-8baf04f9.so.6.0.28,sha256=7dHa2sV5CgWXjdC4QqxbCNsm-pN9kkmNNqxtn5AaAvs,2428960
