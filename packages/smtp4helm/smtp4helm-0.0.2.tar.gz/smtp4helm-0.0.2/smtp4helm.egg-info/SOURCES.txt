@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+smtp4helm/__init__.py
+smtp4helm/mail.py
+smtp4helm.egg-info/PKG-INFO
+smtp4helm.egg-info/SOURCES.txt
+smtp4helm.egg-info/dependency_links.txt
+smtp4helm.egg-info/requires.txt
+smtp4helm.egg-info/top_level.txt
