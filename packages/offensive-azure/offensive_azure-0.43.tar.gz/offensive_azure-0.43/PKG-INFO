@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: offensive-azure
+Version: 0.43
+Summary: Collection of tools for attacking Microsoft Cloud products
+Home-page: https://github.com/blacklanternsecurity.com/offensive-azure
+License: GPL-3.0
+Author: Cody Martin
+Author-email: debifrank00@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: dnspython (>=2.2.1,<3.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: uuid (>=1.30,<2.0)
+Project-URL: Repository, https://github.com/blacklanternsecurity.com/offensive-azure
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/28767257/160513484-cb70370c-9fce-48d1-84ec-8b9ea3cf8e5a.png">
+</p>
+
+Collection of offensive tools targeting Microsoft Azure written in Python to be platform agnostic. The current list of tools can be found below with a brief description of their functionality.
+
+- [`./Device_Code/device_code_easy_mode.py`](https://github.com/blacklanternsecurity/offensive-azure/tree/main/Device_Code)
+  - Generates a code to be entered by the target user
+  - Can be used for general token generation or during a phishing/social engineering campaign.
+- [`./Access_Tokens/token_juggle.py`](https://github.com/blacklanternsecurity/offensive-azure/tree/main/Access_Tokens)
+  - Takes in a refresh token in various ways and retrieves a new refresh token and an access token for the resource specified
+- [`./Outsider_Recon/outsider_recon.py`](https://github.com/blacklanternsecurity/offensive-azure/tree/main/Outsider_Recon)
+  - Takes in a domain and enumerates as much information as possible about the tenant without requiring authentication 
+- [`./User_Enum/user_enum.py`](https://github.com/blacklanternsecurity/offensive-azure/tree/main/User_Enum)
+  - Takes in a username or list of usernames and attempts to enumerate valid accounts using one of three methods
+  - Can also be used to perform a password spray
+

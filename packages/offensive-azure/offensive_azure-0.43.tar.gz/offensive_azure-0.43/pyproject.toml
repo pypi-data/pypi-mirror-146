@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "offensive_azure"
+version = "0.043"
+description = "Collection of tools for attacking Microsoft Cloud products"
+authors = ["Cody Martin <debifrank00@gmail.com>"]
+license = "GPL-3.0"
+repository = "https://github.com/blacklanternsecurity.com/offensive-azure"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dnspython = "^2.2.1"
+requests = "^2.27.1"
+colorama = "^0.4.4"
+uuid = "^1.30"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
