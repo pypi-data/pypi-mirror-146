@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "cli"
+version = "0.0.1"
+description = "AI Research library containing model architectures zoo and other code and tools used by AI Researchers in their daily work"
+authors = ["AI Technology <ai-technology-team@bendingspoons.com>"]
+license = "Proprietary"
+packages = [
+    { include = "." }
+]
+
+[[tool.poetry.source]]
+name = "bendingspoons"
+url = "https://bendingspoons.jfrog.io/bendingspoons/api/pypi/pypi/simple"
+default = true
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+cookiecutter = "^1.7.3"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+
+
+[build-system]
+requires = ["poetry-core @ git+https://github.com/python-poetry/poetry-core.git@master"]
+build-backend = "poetry.core.masonry.api"
+
+# Tools configs
+[tool.black]
+line-length = 100
+exclude = '''
+(
+    \.DS_Store |
+    \.githooks |
+    \.html$ |
+    \.idea |
+    \.json$ |
+    \.pyc$ |
+    \.sql$ |
+    \.vscode |
+    \.venv |
+    node_modules |
+    starters |
+)
+'''
+
+[tool.isort]
+line_length = 100
+profile = "black"
+
+[tool.pytest.ini_options]
+markers = ["datafiles: load datafiles"] # remove warning about datafiles plugin for pytest

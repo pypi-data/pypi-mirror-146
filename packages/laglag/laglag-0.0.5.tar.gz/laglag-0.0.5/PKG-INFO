@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: laglag
+Version: 0.0.5
+Summary: test
+Author: LAG
+Author-email: lucaactisgrosso@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: cli
+Requires-Dist: cli (>=0.0.1,<0.0.2); extra == "cli"

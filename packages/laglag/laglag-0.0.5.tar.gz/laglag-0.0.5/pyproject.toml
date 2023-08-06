@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "laglag"
+version = "0.0.5"
+description = "test"
+authors = ["LAG <lucaactisgrosso@gmail.com>"]
+packages = [
+    { include = "la_test/cli" }
+]
+
+[[tool.poetry.source]]
+name = "bendingspoons"
+url = "https://bendingspoons.jfrog.io/bendingspoons/api/pypi/pypi/simple"
+default = true
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+cli = { version = "^0.0.1", optional = true }
+
+[tool.poetry.extras]
+cli = ["cli"]
+
+[tool.poetry.dev-dependencies]
+cli = {path = "./la_test/cli", develop = false}
+
+
+[build-system]
+requires = ["poetry-core @ git+https://github.com/python-poetry/poetry-core.git@master"]
+build-backend = "poetry.core.masonry.api"
+
+# Tools configs
+[tool.black]
+line-length = 100
+exclude = '''
+(
+    \.DS_Store |
+    \.githooks |
+    \.html$ |
+    \.idea |
+    \.json$ |
+    \.pyc$ |
+    \.sql$ |
+    \.vscode |
+    \.venv |
+    node_modules |
+    starters |
+)
+'''
+
+[tool.isort]
+line_length = 100
+profile = "black"
+
+[tool.pytest.ini_options]
+markers = ["datafiles: load datafiles"] # remove warning about datafiles plugin for pytest
