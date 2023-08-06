@@ -1,0 +1,5 @@
+recursive-include model *.h5
+recursive-include images *.npy
+recursive-include databases *.csv
+include *.png
+include *.jpg
