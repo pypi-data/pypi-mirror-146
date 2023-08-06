@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/repeatbot/__init__.py
+src/repeatbot/common.py
+src/repeatbot/recorder.py
+src/repeatbot/repeater.py
+src/repeatbot.egg-info/PKG-INFO
+src/repeatbot.egg-info/SOURCES.txt
+src/repeatbot.egg-info/dependency_links.txt
+src/repeatbot.egg-info/top_level.txt

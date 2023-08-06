@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: repeatbot
+Version: 0.1
+Summary: Record, save and repeat mouse and keyboard inputs using pynput.
+Home-page: https://github.com/StroppaFR/repeatbot
+Author: Nicolas Stroppa
+Author-email: 34066091+StroppaFR@users.noreply.github.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/StroppaFR/repeatbot/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# repeatbot
+
+Python package to record, save and repeat mouse and keyboard inputs using pynput.
+
+
