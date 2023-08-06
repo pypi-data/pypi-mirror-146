@@ -1,0 +1,8 @@
+README.md
+setup.py
+ShittyPackage/__init__.py
+ShittyPackage/src.py
+shittypackage.egg-info/PKG-INFO
+shittypackage.egg-info/SOURCES.txt
+shittypackage.egg-info/dependency_links.txt
+shittypackage.egg-info/top_level.txt
