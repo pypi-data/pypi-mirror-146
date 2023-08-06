@@ -1,0 +1,11 @@
+malbook/__init__.py,sha256=exdIPjJTgXRfqDj4pYMKiFa2_dkZgTtvSxbXsBwwJPM,70
+malbook/__main__.py,sha256=FHvUujbAS0c5TLgsOQAnH_ZzTiNVy0NxXadrWeAthCE,5768
+malbook/environment.py,sha256=KE2d8kO7aiOQiP88dGXFyS_dZfUtq_-gY3_4oDgqAbs,10121
+malbook/errors.py,sha256=Si37Bq0pmc9Cz71ZTpcJxJHDSeqeoVcW3F-Ty0QBSPc,471
+malbook/framework.py,sha256=D6EvaZSv2RZv3CWNIDfgFeDV0WG3fHN_aMQVnHGw6sI,9513
+malbook-1.0.0.dist-info/LICENSE,sha256=Ldl2UhtuuPczVQ8_RbBnaAihrNW7W3hvwhj5K6_St6c,1069
+malbook-1.0.0.dist-info/METADATA,sha256=rdHFfGAjdxVUlR9EC_Vw_Xb_k07OOjTUaKlc6wUeHgM,521
+malbook-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+malbook-1.0.0.dist-info/entry_points.txt,sha256=2JSKoGZaMuduFDBYPOH6Mt_OT4hrR_QnUp8beNjNjN8,51
+malbook-1.0.0.dist-info/top_level.txt,sha256=2foLosZPY5tiw8AsSFVDikO4MwrI1o_aJoMUrk3pAyo,8
+malbook-1.0.0.dist-info/RECORD,,
