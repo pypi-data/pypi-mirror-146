@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: streamlit-bridge
+Version: 1.0.1
+Summary: A hidden streamlit component that allows client side (javascript) to trigger events on the server side (python) and vice versa
+Home-page: https://github.com/binh-vu/streamlit-bridge
+License: MIT
+Author: Binh Vu
+Author-email: binh@toan2.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: orjson (>=3.0.0,<4.0.0)
+Requires-Dist: streamlit (>=0.63)
