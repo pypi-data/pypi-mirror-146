@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: image-processing2
+Version: 0.0.1
+Summary: My short description
+Home-page: https://github.com/Davi-dev-C/package-template
+Author: Davi H.
+Author-email: davi.henrique.lima01@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package package_name is used to:
+	Processing:
+		- Histogram matching 
+		- Structural similarity
+		- Resize image
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install image_processing2
+```
+
+## Usage
+
+```python
+from image_processing2.module_name import file_name
+file_name.my_function()
+```
+
+## Author
+Davi h.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
