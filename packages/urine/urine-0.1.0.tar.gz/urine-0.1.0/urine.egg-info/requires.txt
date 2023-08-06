@@ -1,0 +1,15 @@
+
+[dev]
+pytest>=7.0.0
+pytest-cov>=3.0.0
+flake8>=4.0.1
+isort>=5.10.1
+tox>=3.25.0
+
+[lint]
+flake8>=4.0.1
+isort>=5.10.1
+
+[test]
+pytest>=7.0.0
+pytest-cov>=3.0.0
