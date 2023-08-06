@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+src/social_apis.egg-info/PKG-INFO
+src/social_apis.egg-info/SOURCES.txt
+src/social_apis.egg-info/dependency_links.txt
+src/social_apis.egg-info/not-zip-safe
+src/social_apis.egg-info/top_level.txt
