@@ -1,0 +1,358 @@
+.gitignore
+CHANGELOG.md
+LICENSE
+README.md
+requirements.txt
+setup.py
+.github/workflows/publish-release.yml
+.github/workflows/test.yml
+GF_glyphsets_WIP/README.md
+GF_glyphsets_WIP/Arabic/GF-arabic-core.nam
+GF_glyphsets_WIP/Arabic/GF-arabic-plus.nam
+GF_glyphsets_WIP/Arabic/README.md
+GF_glyphsets_WIP/Cyrillic/GF-cyrillic-historical_unique-glyphs.nam
+GF_glyphsets_WIP/Cyrillic/GF-cyrillic-plus-locl_unique-glyphs.nam
+GF_glyphsets_WIP/Cyrillic/GF-cyrillic-plus_unique-glyphs.nam
+GF_glyphsets_WIP/Cyrillic/GF-cyrillic-pro_unique-glyphs.nam
+GF_glyphsets_WIP/Cyrillic/filter lists/nice names/historical_unique-glyphs.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/nice names/plus-locl_unique-glyphs.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/nice names/plus-locl_unique-glyphs_italic.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/nice names/plus-locl_unique-glyphs_roman.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/nice names/plus_unique-glyphs.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/nice names/plus_unique-glyphs_core.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/nice names/plus_unique-glyphs_smallcaps.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/nice names/pro_unique-glyphs.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/nice names/pro_unique-glyphs_smallcaps.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/uni names/historical_unique-glyphs.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/uni names/plus-locl_unique-glyphs.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/uni names/plus-locl_unique-glyphs_italic.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/uni names/plus-locl_unique-glyphs_roman.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/uni names/plus_unique-glyphs.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/uni names/plus_unique-glyphs_core.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/uni names/plus_unique-glyphs_smallcaps.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/uni names/pro_unique-glyphs.txt
+GF_glyphsets_WIP/Cyrillic/filter lists/uni names/pro_unique-glyphs_smallcaps.txt
+GF_glyphsets_WIP/Greek/GF-greek-ancient-musical-symbols.nam
+GF_glyphsets_WIP/Greek/GF-greek-archaic.nam
+GF_glyphsets_WIP/Greek/GF-greek-coptic.nam
+GF_glyphsets_WIP/Greek/GF-greek-core.nam
+GF_glyphsets_WIP/Greek/GF-greek-expert.nam
+GF_glyphsets_WIP/Greek/GF-greek-plus.nam
+GF_glyphsets_WIP/Greek/GF-greek-pro.nam
+GF_glyphsets_WIP/Greek/README.md
+GF_glyphsets_WIP/Greek/filter lists/nice names/ancient-musical-symbols.txt
+GF_glyphsets_WIP/Greek/filter lists/nice names/archaic.txt
+GF_glyphsets_WIP/Greek/filter lists/nice names/coptic.txt
+GF_glyphsets_WIP/Greek/filter lists/nice names/core.txt
+GF_glyphsets_WIP/Greek/filter lists/nice names/expert.txt
+GF_glyphsets_WIP/Greek/filter lists/nice names/plus.txt
+GF_glyphsets_WIP/Greek/filter lists/nice names/pro.txt
+GF_glyphsets_WIP/Greek/filter lists/uni names/ancient-musical-symbols.txt
+GF_glyphsets_WIP/Greek/filter lists/uni names/archaic.txt
+GF_glyphsets_WIP/Greek/filter lists/uni names/coptic.txt
+GF_glyphsets_WIP/Greek/filter lists/uni names/core.txt
+GF_glyphsets_WIP/Greek/filter lists/uni names/expert.txt
+GF_glyphsets_WIP/Greek/filter lists/uni names/plus.txt
+GF_glyphsets_WIP/Greek/filter lists/uni names/pro.txt
+GF_glyphsets_WIP/Latin/.DS_Store
+GF_glyphsets_WIP/Latin/README.md
+GF_glyphsets_WIP/Latin/latin-IPA/GFLatinIPA.glyphs
+GF_glyphsets_WIP/Latin/latin-african/GFLatinAfrican-Regular.ttf
+GF_glyphsets_WIP/Latin/latin-african/GFLatinAfrican.glyphs
+GF_glyphsets_WIP/Latin/latin-core/.DS_Store
+GF_glyphsets_WIP/Latin/latin-core/GFLatinCore-Regular.ttf
+GF_glyphsets_WIP/Latin/latin-core/GFLatinCore.glyphs
+GF_glyphsets_WIP/Latin/latin-core/GFLatinCore.nam
+GF_glyphsets_WIP/Latin/latin-core/filter-list/.DS_Store
+GF_glyphsets_WIP/Latin/latin-core/filter-list/nice-names/GFLatinCore.txt
+GF_glyphsets_WIP/Latin/latin-core/filter-list/prod-names/GFLatinCore.txt
+GF_glyphsets_WIP/Latin/latin-kernel/GFLatinKernel-Regular.ttf
+GF_glyphsets_WIP/Latin/latin-kernel/GFLatinKernel.glyphs
+GF_glyphsets_WIP/Latin/latin-kernel/filter-lists/prod-names/kernel_unique-glyphs.txt
+GF_glyphsets_WIP/Latin/latin-minorities/GFLatinMinorities.glyphs
+GF_glyphsets_WIP/Latin/latin-plus/GFLatinPlus-Regular.ttf
+GF_glyphsets_WIP/Latin/latin-plus/GFLatinPlus.glyphs
+GF_glyphsets_WIP/Latin/latin-plus/filter-lists/nice-names/GFLatinPlus.txt
+GF_glyphsets_WIP/Latin/latin-plus/filter-lists/prod-names/GFLatinPlus.txt
+GF_glyphsets_WIP/Latin/latin-vietnamese/GFLatinVietnamese-Regular.ttf
+GF_glyphsets_WIP/Latin/latin-vietnamese/GFLatinVietnamese.glyphs
+GF_glyphsets_WIP/Latin/latin-vietnamese/README.md
+GF_glyphsets_WIP/Latin/latin-vietnamese/filter-lists/nice-names/GFLatinVietnamese.txt
+GF_glyphsets_WIP/Latin/latin-vietnamese/filter-lists/prod-names/GFLatinVietnamese.txt
+GF_glyphsets_WIP/Latin/latin-vietnamese/img/VIT_accents.jpg
+GF_glyphsets_WIP/Latin/latin-vietnamese/img/VIT_glyphs.jpg
+GF_glyphsets_WIP/Latin/latin-vietnamese/img/locl.png
+Lib/glyphsets/__init__.py
+Lib/glyphsets/__main__.py
+Lib/glyphsets/_version.py
+Lib/glyphsets/codepoints.py
+Lib/glyphsets/data.json
+Lib/glyphsets/subsets.py
+Lib/glyphsets.egg-info/PKG-INFO
+Lib/glyphsets.egg-info/SOURCES.txt
+Lib/glyphsets.egg-info/dependency_links.txt
+Lib/glyphsets.egg-info/entry_points.txt
+Lib/glyphsets.egg-info/not-zip-safe
+Lib/glyphsets.egg-info/requires.txt
+Lib/glyphsets.egg-info/top_level.txt
+Lib/glyphsets/encodings/README.md
+Lib/glyphsets/encodings/adlam_unique-glyphs.nam
+Lib/glyphsets/encodings/ahom_unique-glyphs.nam
+Lib/glyphsets/encodings/anatolian-hieroglyphs_unique-glyphs.nam
+Lib/glyphsets/encodings/arabic_unique-glyphs.nam
+Lib/glyphsets/encodings/armenian_unique-glyphs.nam
+Lib/glyphsets/encodings/avestan_unique-glyphs.nam
+Lib/glyphsets/encodings/balinese_unique-glyphs.nam
+Lib/glyphsets/encodings/bamum_unique-glyphs.nam
+Lib/glyphsets/encodings/bassa-vah_unique-glyphs.nam
+Lib/glyphsets/encodings/batak_unique-glyphs.nam
+Lib/glyphsets/encodings/bengali_unique-glyphs.nam
+Lib/glyphsets/encodings/bhaiksuki_unique-glyphs.nam
+Lib/glyphsets/encodings/brahmi_unique-glyphs.nam
+Lib/glyphsets/encodings/buginese_unique-glyphs.nam
+Lib/glyphsets/encodings/buhid_unique-glyphs.nam
+Lib/glyphsets/encodings/canadian-aboriginal_unique-glyphs.nam
+Lib/glyphsets/encodings/carian_unique-glyphs.nam
+Lib/glyphsets/encodings/caucasian-albanian_unique-glyphs.nam
+Lib/glyphsets/encodings/chakma_unique-glyphs.nam
+Lib/glyphsets/encodings/cham_unique-glyphs.nam
+Lib/glyphsets/encodings/cherokee_unique-glyphs.nam
+Lib/glyphsets/encodings/chinese-hongkong_unique-glyphs.nam
+Lib/glyphsets/encodings/chinese-simplified_unique-glyphs.nam
+Lib/glyphsets/encodings/chinese-traditional_unique-glyphs.nam
+Lib/glyphsets/encodings/coptic_unique-glyphs.nam
+Lib/glyphsets/encodings/cuneiform_unique-glyphs.nam
+Lib/glyphsets/encodings/cypriot_unique-glyphs.nam
+Lib/glyphsets/encodings/cyrillic-ext_unique-glyphs.nam
+Lib/glyphsets/encodings/cyrillic_unique-glyphs.nam
+Lib/glyphsets/encodings/deseret_unique-glyphs.nam
+Lib/glyphsets/encodings/devanagari_unique-glyphs.nam
+Lib/glyphsets/encodings/dogra_unique-glyphs.nam
+Lib/glyphsets/encodings/duployan_unique-glyphs.nam
+Lib/glyphsets/encodings/egyptian-hieroglyphs_unique-glyphs.nam
+Lib/glyphsets/encodings/elbasan_unique-glyphs.nam
+Lib/glyphsets/encodings/elymaic_unique-glyphs.nam
+Lib/glyphsets/encodings/ethiopic_unique-glyphs.nam
+Lib/glyphsets/encodings/georgian_unique-glyphs.nam
+Lib/glyphsets/encodings/glagolitic_unique-glyphs.nam
+Lib/glyphsets/encodings/gothic_unique-glyphs.nam
+Lib/glyphsets/encodings/grantha_unique-glyphs.nam
+Lib/glyphsets/encodings/greek-ext_unique-glyphs.nam
+Lib/glyphsets/encodings/greek_unique-glyphs.nam
+Lib/glyphsets/encodings/gujarati_unique-glyphs.nam
+Lib/glyphsets/encodings/gunjala-gondi_unique-glyphs.nam
+Lib/glyphsets/encodings/gurmukhi_unique-glyphs.nam
+Lib/glyphsets/encodings/hanifi-rohingya_unique-glyphs.nam
+Lib/glyphsets/encodings/hanunoo_unique-glyphs.nam
+Lib/glyphsets/encodings/hatran_unique-glyphs.nam
+Lib/glyphsets/encodings/hebrew_unique-glyphs.nam
+Lib/glyphsets/encodings/imperial-aramaic_unique-glyphs.nam
+Lib/glyphsets/encodings/indic-siyaq-numbers_unique-glyphs.nam
+Lib/glyphsets/encodings/inscriptional-pahlavi_unique-glyphs.nam
+Lib/glyphsets/encodings/inscriptional-parthian_unique-glyphs.nam
+Lib/glyphsets/encodings/japanese_unique-glyphs.nam
+Lib/glyphsets/encodings/javanese_unique-glyphs.nam
+Lib/glyphsets/encodings/kaithi_unique-glyphs.nam
+Lib/glyphsets/encodings/kannada_unique-glyphs.nam
+Lib/glyphsets/encodings/kayah-li_unique-glyphs.nam
+Lib/glyphsets/encodings/kharoshthi_unique-glyphs.nam
+Lib/glyphsets/encodings/khmer_unique-glyphs.nam
+Lib/glyphsets/encodings/khojki_unique-glyphs.nam
+Lib/glyphsets/encodings/khudawadi_unique-glyphs.nam
+Lib/glyphsets/encodings/korean_unique-glyphs.nam
+Lib/glyphsets/encodings/lao_unique-glyphs.nam
+Lib/glyphsets/encodings/latin-ext_unique-glyphs.nam
+Lib/glyphsets/encodings/latin_unique-glyphs.nam
+Lib/glyphsets/encodings/lepcha_unique-glyphs.nam
+Lib/glyphsets/encodings/limbu_unique-glyphs.nam
+Lib/glyphsets/encodings/linear-a_unique-glyphs.nam
+Lib/glyphsets/encodings/linear-b_unique-glyphs.nam
+Lib/glyphsets/encodings/lisu_unique-glyphs.nam
+Lib/glyphsets/encodings/lycian_unique-glyphs.nam
+Lib/glyphsets/encodings/lydian_unique-glyphs.nam
+Lib/glyphsets/encodings/mahajani_unique-glyphs.nam
+Lib/glyphsets/encodings/malayalam_unique-glyphs.nam
+Lib/glyphsets/encodings/mandaic_unique-glyphs.nam
+Lib/glyphsets/encodings/manichaean_unique-glyphs.nam
+Lib/glyphsets/encodings/marchen_unique-glyphs.nam
+Lib/glyphsets/encodings/masaram-gondi_unique-glyphs.nam
+Lib/glyphsets/encodings/math.nam
+Lib/glyphsets/encodings/math_unique-glyphs.nam
+Lib/glyphsets/encodings/mayan-numerals_unique-glyphs.nam
+Lib/glyphsets/encodings/medefaidrin_unique-glyphs.nam
+Lib/glyphsets/encodings/meetei-mayek_unique-glyphs.nam
+Lib/glyphsets/encodings/mende-kikakui_unique-glyphs.nam
+Lib/glyphsets/encodings/meroitic_unique-glyphs.nam
+Lib/glyphsets/encodings/miao_unique-glyphs.nam
+Lib/glyphsets/encodings/modi_unique-glyphs.nam
+Lib/glyphsets/encodings/mongolian_unique-glyphs.nam
+Lib/glyphsets/encodings/mro_unique-glyphs.nam
+Lib/glyphsets/encodings/multani_unique-glyphs.nam
+Lib/glyphsets/encodings/music_unique-glyphs.nam
+Lib/glyphsets/encodings/myanmar_unique-glyphs.nam
+Lib/glyphsets/encodings/nabataean_unique-glyphs.nam
+Lib/glyphsets/encodings/new-tai-lue_unique-glyphs.nam
+Lib/glyphsets/encodings/newa_unique-glyphs.nam
+Lib/glyphsets/encodings/nko_unique-glyphs.nam
+Lib/glyphsets/encodings/nushu_unique-glyphs.nam
+Lib/glyphsets/encodings/nyiakeng-puachue-hmong_unique-glyphs.nam
+Lib/glyphsets/encodings/ogham_unique-glyphs.nam
+Lib/glyphsets/encodings/ol-chiki_unique-glyphs.nam
+Lib/glyphsets/encodings/old-hungarian_unique-glyphs.nam
+Lib/glyphsets/encodings/old-italic_unique-glyphs.nam
+Lib/glyphsets/encodings/old-north-arabian_unique-glyphs.nam
+Lib/glyphsets/encodings/old-permic_unique-glyphs.nam
+Lib/glyphsets/encodings/old-persian_unique-glyphs.nam
+Lib/glyphsets/encodings/old-sogdian_unique-glyphs.nam
+Lib/glyphsets/encodings/old-south-arabian_unique-glyphs.nam
+Lib/glyphsets/encodings/old-turkic_unique-glyphs.nam
+Lib/glyphsets/encodings/oriya_unique-glyphs.nam
+Lib/glyphsets/encodings/osage_unique-glyphs.nam
+Lib/glyphsets/encodings/osmanya_unique-glyphs.nam
+Lib/glyphsets/encodings/pahawh-hmong_unique-glyphs.nam
+Lib/glyphsets/encodings/palmyrene_unique-glyphs.nam
+Lib/glyphsets/encodings/pau-cin-hau_unique-glyphs.nam
+Lib/glyphsets/encodings/phags-pa_unique-glyphs.nam
+Lib/glyphsets/encodings/phoenician_unique-glyphs.nam
+Lib/glyphsets/encodings/psalter-pahlavi_unique-glyphs.nam
+Lib/glyphsets/encodings/rejang_unique-glyphs.nam
+Lib/glyphsets/encodings/runic_unique-glyphs.nam
+Lib/glyphsets/encodings/samaritan_unique-glyphs.nam
+Lib/glyphsets/encodings/saurashtra_unique-glyphs.nam
+Lib/glyphsets/encodings/sharada_unique-glyphs.nam
+Lib/glyphsets/encodings/shavian_unique-glyphs.nam
+Lib/glyphsets/encodings/siddham_unique-glyphs.nam
+Lib/glyphsets/encodings/sinhala_unique-glyphs.nam
+Lib/glyphsets/encodings/sogdian_unique-glyphs.nam
+Lib/glyphsets/encodings/sora-sompeng_unique-glyphs.nam
+Lib/glyphsets/encodings/soyombo_unique-glyphs.nam
+Lib/glyphsets/encodings/sundanese_unique-glyphs.nam
+Lib/glyphsets/encodings/syloti-nagri_unique-glyphs.nam
+Lib/glyphsets/encodings/symbols_unique-glyphs.nam
+Lib/glyphsets/encodings/syriac_unique-glyphs.nam
+Lib/glyphsets/encodings/tagalog_unique-glyphs.nam
+Lib/glyphsets/encodings/tagbanwa_unique-glyphs.nam
+Lib/glyphsets/encodings/tai-le_unique-glyphs.nam
+Lib/glyphsets/encodings/tai-tham_unique-glyphs.nam
+Lib/glyphsets/encodings/tai-viet_unique-glyphs.nam
+Lib/glyphsets/encodings/takri_unique-glyphs.nam
+Lib/glyphsets/encodings/tamil-supplement_unique-glyphs.nam
+Lib/glyphsets/encodings/tamil_unique-glyphs.nam
+Lib/glyphsets/encodings/tangut_unique-glyphs.nam
+Lib/glyphsets/encodings/telugu_unique-glyphs.nam
+Lib/glyphsets/encodings/thaana_unique-glyphs.nam
+Lib/glyphsets/encodings/thai_unique-glyphs.nam
+Lib/glyphsets/encodings/tibetan_unique-glyphs.nam
+Lib/glyphsets/encodings/tifinagh_unique-glyphs.nam
+Lib/glyphsets/encodings/tirhuta_unique-glyphs.nam
+Lib/glyphsets/encodings/ugaritic_unique-glyphs.nam
+Lib/glyphsets/encodings/vai_unique-glyphs.nam
+Lib/glyphsets/encodings/vietnamese_unique-glyphs.nam
+Lib/glyphsets/encodings/wancho_unique-glyphs.nam
+Lib/glyphsets/encodings/warang-citi_unique-glyphs.nam
+Lib/glyphsets/encodings/wgl-latin.enc
+Lib/glyphsets/encodings/yezidi_unique-glyphs.nam
+Lib/glyphsets/encodings/yi_unique-glyphs.nam
+Lib/glyphsets/encodings/zanabazar-square_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/GF-latin-core_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/GF-latin-expert_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/GF-latin-global_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/GF-latin-plus_optional-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/GF-latin-plus_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/GF-latin-pro_optional-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/GF-latin-pro_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/README.md
+Lib/glyphsets/encodings/GF Glyph Sets/RECOMMENDED.md
+Lib/glyphsets/encodings/GF Glyph Sets/TROUBLESHOOTING.md
+Lib/glyphsets/encodings/GF Glyph Sets/Arabic/GF-arabic-core.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Arabic/GF-arabic-plus.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Arabic/README.md
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/GF-cyrillic-historical_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/GF-cyrillic-plus-locl_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/GF-cyrillic-plus_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/GF-cyrillic-pro_unique-glyphs.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/nice names/historical_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/nice names/plus-locl_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/nice names/plus-locl_unique-glyphs_italic.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/nice names/plus-locl_unique-glyphs_roman.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/nice names/plus_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/nice names/plus_unique-glyphs_core.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/nice names/plus_unique-glyphs_smallcaps.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/nice names/pro_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/nice names/pro_unique-glyphs_smallcaps.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/uni names/historical_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/uni names/plus-locl_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/uni names/plus-locl_unique-glyphs_italic.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/uni names/plus-locl_unique-glyphs_roman.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/uni names/plus_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/uni names/plus_unique-glyphs_core.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/uni names/plus_unique-glyphs_smallcaps.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/uni names/pro_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Cyrillic/filter lists/uni names/pro_unique-glyphs_smallcaps.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/GF-greek-ancient-musical-symbols.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/GF-greek-archaic.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/GF-greek-coptic.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/GF-greek-core.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/GF-greek-expert.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/GF-greek-plus.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/GF-greek-pro.nam
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/README.md
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/nice names/ancient-musical-symbols.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/nice names/archaic.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/nice names/coptic.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/nice names/core.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/nice names/expert.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/nice names/plus.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/nice names/pro.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/uni names/ancient-musical-symbols.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/uni names/archaic.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/uni names/coptic.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/uni names/core.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/uni names/expert.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/uni names/plus.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Greek/filter lists/uni names/pro.txt
+Lib/glyphsets/encodings/GF Glyph Sets/Vietnamese/README.md
+Lib/glyphsets/encodings/GF Glyph Sets/Vietnamese/img/VIT_accents.jpg
+Lib/glyphsets/encodings/GF Glyph Sets/Vietnamese/img/VIT_glyphs.jpg
+Lib/glyphsets/encodings/GF Glyph Sets/Vietnamese/img/locl.png
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/README.md
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/plus_optional-glyphs_case-accents.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/plus_unique-glyphs_vietnamese-all.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/plus_unique-glyphs_vietnamese-unique.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/pro_optional-glyphs_case-punctuation.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/nice names/core_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/nice names/expert_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/nice names/plus_optional-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/nice names/plus_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/nice names/pro_optional-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/nice names/pro_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/uni names/core_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/uni names/expert_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/uni names/plus_optional-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/uni names/plus_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/uni names/pro_optional-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/filter lists/uni names/pro_unique-glyphs.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/EXPERT_composites_207.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/EXPERT_drawn_62.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/EXPERT_either_4.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/PLUS_composites_360.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/PLUS_drawn_215.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/PLUS_drawn_216.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/PLUS_either_19.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/PRO_composites_116.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/PRO_drawn_26.txt
+Lib/glyphsets/encodings/GF Glyph Sets/glyphTypeSorting/PRO_either_4.txt
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/README.md
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/Glyphs/CustomFilter.plist
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/Glyphs/Info/GlyphData.xml
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/img/Directory.png
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/img/ListFilters.png
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/img/PoiretOne-locl.png
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/img/ecircumflexacute.jpg
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/img/fix-1.png
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/img/fix-2.png
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/img/fix-3.png
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/img/list-filter-1.png
+Lib/glyphsets/encodings/GF Glyph Sets/tutorials/img/list-filter.png
+tests/testglyphdata.py
+tests/data/MavenPro[wght].ttf
