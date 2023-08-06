@@ -1,0 +1,16 @@
+spoton_generator/__init__.py,sha256=dIBuIC5V1wxfSwBKWiH5yXcMmjk60zLKh4Gl35SaVI4,388
+spoton_generator/__main__.py,sha256=TwKpmpId3QhLjLoFTYvMJ12X6DC6QFdrS-AMmM-PrMo,1934
+spoton_generator/datagenerator.py,sha256=jqFetylKgG-WQkem1M16JJdwygcQ7gyfmcNevGjyprk,5495
+spoton_generator/factor.py,sha256=aNDT80wqIXcClaujw3seTrTiIvDzf-m62sIKmERWTDk,1144
+spoton_generator/group.py,sha256=6YoBBtZUB-TfTzISLu9cpWHCZca24fSguEqq6uJ72jA,1569
+spoton_generator/logger.py,sha256=jjWRLvQFcmhbbzOTESjS3N_sggGfbbG6eRfNSVjINS0,183
+spoton_generator/pattern.py,sha256=xtvIsvvONsQS_H9MzDqFCpxEuNH08xT2RpaKgD8o8W8,1073
+spoton_generator/persona.py,sha256=MZGSyS2PRHpgJeKXwFmfidXC3tMzq3d8NnN8hi-FZUg,1349
+spoton_generator/question.py,sha256=qMx_p3DAOqDZm8kiQq4Rp5tqfSG7EI-FG0aNOl3ZUic,399
+spoton_generator/theme.py,sha256=D6IFRshMbUavu6hWNGMs0rJLlP_CDJmobbMTKMF6mek,500
+spoton_generator/themerating.py,sha256=KLXk7dzs2KzGpDuIa5Z2HwZDdsHVH1iBczRMvzRvDvc,1552
+spoton_generator-0.1.3.data/scripts/spoton_generator,sha256=TBVbuq56fj5EIC4mPUSZi-ioQL3S2gxSIlJn7vAWnqg,25
+spoton_generator-0.1.3.dist-info/METADATA,sha256=tPbJmkGMH47YPl6-NUfA0nEPAaJEjq89_e9MV9IXDPo,6802
+spoton_generator-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spoton_generator-0.1.3.dist-info/top_level.txt,sha256=CItBgDlpAZ0VtlMiKWLeSCLoGzPrectn8is0uYGbU2I,17
+spoton_generator-0.1.3.dist-info/RECORD,,
