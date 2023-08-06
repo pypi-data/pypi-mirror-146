@@ -1,0 +1,9 @@
+attrtables/__init__.py,sha256=pUuALZs4NPgD3IR0kFW5-GNqAW4mTv5xUab_0Bo9-ZM,178
+attrtables/attribute_definition.py,sha256=JFHFb7dLuOoxU5d5IMv7nN98dtoF44zG-Qf-LNPlFT0,700
+attrtables/attribute_value_mixin.py,sha256=-wMSwMMOVXIKNlGVHsZouGzLivkWdiZQLS9kB-rJhu8,803
+attrtables/attribute_value_tables.py,sha256=BGcQfuqPF7V2mvUvJJw2als5woXF-u-4v--6_OMgQ5A,29576
+attrtables-1.1.1.dist-info/LICENSE.txt,sha256=7fymJsLO3obkZWNWTZGtEaeS6TnrLrwQmil7MhJmdZY,1077
+attrtables-1.1.1.dist-info/METADATA,sha256=yKk_A-J_UlaJ3yjVCV0GDPf-E7Q1wr5kZgTSANCJP74,2368
+attrtables-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+attrtables-1.1.1.dist-info/top_level.txt,sha256=GM_iOL8CKwZ7SX_p2QmA7aK10R89r89DDmIj-LgIVVA,11
+attrtables-1.1.1.dist-info/RECORD,,
