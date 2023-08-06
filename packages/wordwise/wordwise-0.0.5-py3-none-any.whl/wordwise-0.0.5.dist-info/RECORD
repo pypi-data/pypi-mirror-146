@@ -1,0 +1,9 @@
+wordwise/__init__.py,sha256=LyCkUhk2ch-jIIulDtM5F-G-rUN1hEmbYAz1cJ620sc,50
+wordwise/__version__.py,sha256=NLbymOiKxxP3U7jEcQQX0yizNeEChdSH8Me9tVL0BaA,18
+wordwise/core.py,sha256=O0Md_hGRBysxgCkSttlj6ZlMJsC-89zsCvjw4yvJqd4,3470
+wordwise/utils.py,sha256=T0KjpPurUhQ6V9-aWMdrouNNF7Xyc3aUEAzr2IeO24E,892
+wordwise-0.0.5.dist-info/LICENSE,sha256=RobrqNZajVXPVgSdHYck7ypVb-fi_K_bES3VNBW7dyo,1086
+wordwise-0.0.5.dist-info/METADATA,sha256=Zx6LhU0BL3Xvwsgbb6WSJVhMbhNs753sdBB8eWzeMzQ,4943
+wordwise-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wordwise-0.0.5.dist-info/top_level.txt,sha256=9r1kWRpJdKmq2KfmNZm-sRTKxRO4KGVZDr5wCumsttI,9
+wordwise-0.0.5.dist-info/RECORD,,
