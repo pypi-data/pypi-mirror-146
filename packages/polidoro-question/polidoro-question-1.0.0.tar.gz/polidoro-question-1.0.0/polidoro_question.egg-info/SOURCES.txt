@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+polidoro_question/__init__.py
+polidoro_question/question.py
+polidoro_question.egg-info/PKG-INFO
+polidoro_question.egg-info/SOURCES.txt
+polidoro_question.egg-info/dependency_links.txt
+polidoro_question.egg-info/not-zip-safe
+polidoro_question.egg-info/requires.txt
+polidoro_question.egg-info/top_level.txt
