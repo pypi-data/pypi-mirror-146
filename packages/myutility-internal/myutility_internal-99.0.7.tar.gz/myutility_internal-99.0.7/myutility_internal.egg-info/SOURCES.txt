@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+__init__.py
+setup.py
+test_myutil.py
+advcalc/__init__.py
+advcalc/addnumbers.py
+myutility_internal.egg-info/PKG-INFO
+myutility_internal.egg-info/SOURCES.txt
+myutility_internal.egg-info/dependency_links.txt
+myutility_internal.egg-info/requires.txt
+myutility_internal.egg-info/top_level.txt
