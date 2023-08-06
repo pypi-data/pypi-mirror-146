@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/hbschr_sampleproject.egg-info/PKG-INFO
+src/hbschr_sampleproject.egg-info/SOURCES.txt
+src/hbschr_sampleproject.egg-info/dependency_links.txt
+src/hbschr_sampleproject.egg-info/entry_points.txt
+src/hbschr_sampleproject.egg-info/requires.txt
+src/hbschr_sampleproject.egg-info/top_level.txt
+src/sample/__init__.py
+src/sample/package_data.dat
+src/sample/simple.py
