@@ -1,0 +1,15 @@
+pictor/__init__.py,sha256=ABs8-f_YohTSBbVgtGYwICWAY8MBkNzJTEtgVh_Uu9o,919
+pictor/tkutils/__init__.py,sha256=Oajvg_1x2RWGbPW4gFn5gY2lLjvPGWV_ZOQjrdoU18k,691
+pictor/tkutils/misc.py,sha256=4Chn-J5FfU70YtMDzoiY9VMQhHx4vsuWIGXgqEfd7_o,1054
+pictor/tkutils/simple_dialogs.py,sha256=otFt6YUqL4JWd7cIJ6MildBSvsjYAw5datcaRU6zW-c,2382
+pictor/vinci/__init__.py,sha256=E5CR38Je8ge-cZifzTQwh0ZIad1Kb9VBYUe_yg6zX7s,845
+pictor/vinci/board.py,sha256=MrFoNsh3IrbnejrfgedNmAljYpcIBc_mJTsDzQMWe_I,19845
+pictor/vinci/events.py,sha256=vYok6GuCqNOLNJ_nPfa8KfuaeiVY__6p8ZhanivoYTw,3025
+pictor/vinci/mind.py,sha256=cOazbuj_sl7Jo3zAU-VdmeeQbwiRoQ7ZEDuWrdmUSWw,3239
+pictor/vinci/vinci.py,sha256=YNJToU8pgvxgrKGEFf2yz_UlUSOJypR1k0rsKWq-XG0,4393
+pictor/vinci/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pictor-1.0.0.dev1.dist-info/LICENSE,sha256=zL7S0y9Hc0f-FOWdWC9L58QK57L5PSLFIpQO6CnX3l0,11563
+pictor-1.0.0.dev1.dist-info/METADATA,sha256=ubYqh7YrqwAu8e254tbrTOZ50iW6exrRJGOWXon4u-U,796
+pictor-1.0.0.dev1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pictor-1.0.0.dev1.dist-info/top_level.txt,sha256=iuhOdjZ-wj711IAet9ufcRFx7T_tG37bLAaNtMAdJng,7
+pictor-1.0.0.dev1.dist-info/RECORD,,
