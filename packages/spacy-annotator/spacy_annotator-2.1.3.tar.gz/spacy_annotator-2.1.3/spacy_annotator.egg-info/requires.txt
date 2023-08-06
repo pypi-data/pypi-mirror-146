@@ -1,0 +1,4 @@
+ipython
+ipywidgets>=7.5.1
+pandas
+spacy
