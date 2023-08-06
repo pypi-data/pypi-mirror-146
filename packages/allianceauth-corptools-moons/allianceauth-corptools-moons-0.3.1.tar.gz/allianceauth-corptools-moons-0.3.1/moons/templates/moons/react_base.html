@@ -1,0 +1,116 @@
+{% extends 'allianceauth/base.html' %}
+{% load i18n %}
+{% block page_title %}{% trans "Moons!" %}{% endblock %}
+{% block extra_css %}
+<style type="text/css">
+    .lds-ripple,
+    .lds-ripple div {
+      box-sizing: border-box;
+    }
+    .lds-ripple {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+    .lds-ripple div {
+      position: absolute;
+      border: 4px solid currentColor;
+      opacity: 1;
+      border-radius: 50%;
+      animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    .lds-ripple div:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+    @keyframes lds-ripple {
+      0% {
+        top: 36px;
+        left: 36px;
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+      }
+      100% {
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+      }
+    }
+    .lds-size{
+        margin: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+{% endblock %}
+{% block extra_javascript %}
+<script type="text/javascript">
+    var BASE_URL = '/static/moons/';
+
+    function loadCss (cssFiles) {
+        cssFiles.forEach(function (css) {
+            $('<link>')
+                .appendTo('body')
+                .attr({
+                    type: 'text/css',
+                    rel: 'stylesheet',
+                    href: css,
+                });
+        });
+    }
+
+    function loadNextScript (scripts) {
+        if (!scripts.length) { return; }
+
+        var script = scripts.shift();
+        $.ajax(script, {
+            dataType: 'script',
+            success: function () { loadNextScript(scripts) },
+        })
+    }
+
+    $.ajax(BASE_URL + 'asset-manifest.json', {
+        dataType: "json",
+        success : function (data, textStatus, jqXHR) {
+
+            if (data && data.entrypoints && data.entrypoints.length > 0) {
+                var scripts =
+                    data.entrypoints
+                        .filter(function (resource) {
+                            return resource.match(/.+\.js$/)
+                        })
+                        .map(function (script) {
+                            return BASE_URL + script;
+                        });
+                var cssFiles =
+                    data.entrypoints
+                        .filter(function (ressource) {
+                            return ressource.match(/.+\.css$/)
+                        })
+                        .map(function (file) {
+                            return BASE_URL + file;
+                        });
+
+                loadCss(cssFiles);
+                loadNextScript(scripts);
+            }
+        },
+        error: function () {
+            console.log('unable to load react app, manifest file not accessible or corrupted');
+        }
+    })
+
+</script>
+{% endblock extra_javascript %}
+
+{% block content %}
+<div id="root">
+    <div class="lds-size">
+        <div id="lds" class="text-center lds-ripple" style="margin-top: auto;"><div></div><div></div></div>
+    </div>
+</div>
+{% endblock content %}
