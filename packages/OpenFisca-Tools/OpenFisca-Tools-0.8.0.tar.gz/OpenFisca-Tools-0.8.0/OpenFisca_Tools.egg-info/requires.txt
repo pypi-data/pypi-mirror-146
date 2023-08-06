@@ -1,0 +1,10 @@
+OpenFisca-Core
+microdf_python
+numpy
+pandas
+wheel
+h5py
+
+[test]
+OpenFisca-US>=0.35.0
+OpenFisca-UK>=0.12.0
