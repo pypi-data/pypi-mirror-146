@@ -1,0 +1,13 @@
+nekton/__init__.py,sha256=m6kyaNpwBcP1XYcqrelX2oS3PJuOnElOcRdBa9pEb8c,22
+nekton/base.py,sha256=TZEoMCLRg5hYZAdiLlrN_TekPDi8R9rdNTnsvTOCHpw,1148
+nekton/bins/dcm2nii,sha256=KG_28KRxxdfXLEJlTJ3Be4cEjmmIALHXQ2KAFjTxYFg,530816
+nekton/dcm2nii.py,sha256=XNI3PA3mmecBuT_PXAoR7u5fW8ht7BBY0b9D3VuQffY,5238
+nekton/nii2dcm.py,sha256=WgH6VKtxTffq9lcoP7SaszsXB5v2zVLQmRkQmqwfq5U,9492
+nekton/utils/bin.py,sha256=4ObewOP42cDUZLfDLjKAKd41F8bKFvHD4A9JvbJWBs4,735
+nekton/utils/dicom.py,sha256=TZYaoHA-ejtlbThpQojKdxr5-xWvwTjKx1LkkPc8KTY,397
+nekton/utils/fileops.py,sha256=2yk5vHg1tOah7rlYRY-nX6HFm6zSdK0_HboVjdpvGxw,717
+nekton/utils/json_helpers.py,sha256=6Cqj7Hm1dzq3saJh5QWEvU2_x5dtrL9sf7A3ACK6mFk,2494
+nekton-0.2.2.dist-info/LICENSE,sha256=2N_DIKnyCuPbvQ3DyHgwt-4lJcA7Say9zK_8Wo5D8VI,1068
+nekton-0.2.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+nekton-0.2.2.dist-info/METADATA,sha256=tEQHlEpdxk_NIImu8ZBjGoVvcT0uALZykRK_Q5et3vo,4959
+nekton-0.2.2.dist-info/RECORD,,
