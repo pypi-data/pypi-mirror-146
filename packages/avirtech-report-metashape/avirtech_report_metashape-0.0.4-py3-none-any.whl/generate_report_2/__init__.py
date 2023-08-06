@@ -1,0 +1,1 @@
+from generate_report_2.generate_report_2 import generate_report_2
