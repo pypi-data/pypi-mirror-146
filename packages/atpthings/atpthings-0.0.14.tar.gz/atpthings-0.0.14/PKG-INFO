@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: atpthings
+Version: 0.0.14
+Summary: ATP-things python package
+Home-page: https://github.com/atp-things/pkg-python-util
+Author: andrazpolak
+Author-email: andrazpolak@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/atp-things/pkg-python-util/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
