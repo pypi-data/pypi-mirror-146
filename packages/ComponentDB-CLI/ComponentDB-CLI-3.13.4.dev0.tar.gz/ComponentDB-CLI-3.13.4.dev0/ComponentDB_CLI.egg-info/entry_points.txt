@@ -1,0 +1,4 @@
+[console_scripts]
+cdb-cli = cdbCli.service.cli.CDBclick:main
+click-python-client-test = CdbApiFactory:run_command
+
