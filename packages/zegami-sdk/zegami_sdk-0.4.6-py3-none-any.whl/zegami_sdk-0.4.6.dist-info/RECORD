@@ -1,0 +1,17 @@
+zegami_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zegami_sdk/_annotation_methods.py,sha256=wFD1YZFNYRYZoFYxngfvwzdOtDBE-2yC3WWbnHWCk_E,5237
+zegami_sdk/annotation.py,sha256=qfiWCW-sqSUCMAR6-SRozXQtf8mO0SqEl6nugdgTXs8,13618
+zegami_sdk/client.py,sha256=aO3Bf88fk2OdKuvHO2JU35j4W6PZlBaBquuik0mSapQ,4904
+zegami_sdk/collection.py,sha256=wHbhc3kfxE9kbEEP8gz70TcukWX3T-4BA7Un8iA4_PA,45514
+zegami_sdk/helper.py,sha256=mbSPKnUdRpVzIdcqH4Bd55Cy4vcCbidhgavwSK0OBlg,788
+zegami_sdk/nodes.py,sha256=PhdYX86hRt-eltuNYs3xdEz5GftyT-fFzN3uaMgIdeo,3011
+zegami_sdk/source.py,sha256=DPOo80tNLVRICr9pAokDhbDnQ-e9y8-dC8eZ3wGCCI0,13662
+zegami_sdk/stats.py,sha256=SjKdGwX3rGU43HOnuU3VfpEaHKL7NKAosX4cN8Lslck,3893
+zegami_sdk/test.py,sha256=ahaRqWu57rVLkB5usb6KtI7qu2sFh62aq-HFTRQ49ss,2970
+zegami_sdk/util.py,sha256=EG8hAYJyTXsQv3ZIypXa4wywd9Hwu6g9evMee1vRD-s,6965
+zegami_sdk/workspace.py,sha256=amqb0NJXIGPCyohOLq6e-VKiTPin3MeV_NEPGqRWbp8,10026
+zegami_sdk-0.4.6.dist-info/LICENSE.md,sha256=ydNHj8c6EzyvebM2jSovoHz5tvE4m1ayEeYDkTO8Sws,11344
+zegami_sdk-0.4.6.dist-info/METADATA,sha256=dcDZoOVlOOdFgV_oMB5YjQ8LtUxLixGk3p7cj5lXZyI,5745
+zegami_sdk-0.4.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zegami_sdk-0.4.6.dist-info/top_level.txt,sha256=12IxJUPqSfONcxie8L9OCpTq6sb3daexduZCYKTedFM,11
+zegami_sdk-0.4.6.dist-info/RECORD,,
