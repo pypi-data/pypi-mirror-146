@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cspyce
+Version: 2.0.3
+Summary: Low-level SWIG interface to the CSPICE library
+Home-page: UNKNOWN
+Author: Mark Showalter/PDS Ring-Moon Systems Node
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: numpy
+
+UNKNOWN
+
