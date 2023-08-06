@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: netneural
+Version: 0.0.1
+Summary: Neural Network package
+Home-page: UNKNOWN
+Author: fachter (Felix)
+License: UNKNOWN
+Keywords: python,neural network,deep learning,nn,machine learning,neural net
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: matplotlib
+Requires-Dist: jupyter
+Requires-Dist: tqdm
+Requires-Dist: python-mnist
+Requires-Dist: seaborn
+
+A package that allows to create a neural network, and train and predict with it. It was developed in a university project and mainly used for gesture detection
+
