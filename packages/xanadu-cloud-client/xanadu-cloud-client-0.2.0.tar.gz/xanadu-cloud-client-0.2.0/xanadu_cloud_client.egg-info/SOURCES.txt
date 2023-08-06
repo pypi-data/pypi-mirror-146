@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.py
+xanadu_cloud_client.egg-info/PKG-INFO
+xanadu_cloud_client.egg-info/SOURCES.txt
+xanadu_cloud_client.egg-info/dependency_links.txt
+xanadu_cloud_client.egg-info/entry_points.txt
+xanadu_cloud_client.egg-info/requires.txt
+xanadu_cloud_client.egg-info/top_level.txt
+xcc/__init__.py
+xcc/_version.py
+xcc/commands.py
+xcc/connection.py
+xcc/device.py
+xcc/job.py
+xcc/settings.py
+xcc/util.py
