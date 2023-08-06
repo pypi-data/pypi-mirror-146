@@ -1,0 +1,11 @@
+duplremover/__init__.py,sha256=5mDFgSgWdEMKh4HpS8axqVnZyp3ZFKPR6k4j8fq4e1o,21
+duplremover/duplicate_remover.py,sha256=iLi59Gh4RyGsBql6zBbjOqxeLbFTvDOjEws-B9AJlVc,18331
+duplremover/multi_workers.py,sha256=jxF1k57K8UOiMrgUFipDYwGmTzIvGHzuG7fru4p-cMY,3685
+duplremover/resourse_and_gears.py,sha256=jQL4ay6-jrbGDAOLOAuJF8a9qxm0In-lSj9KBgzmuuY,3185
+duplremover/set_logger.py,sha256=c0xTHcTUEpYHcg1CCBNRtmlDobGt13bSyPcCe-_XbHI,570
+dupremover-0.0.6.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+dupremover-0.0.6.dist-info/METADATA,sha256=MsciOE1Ncn4uZRgt9mxxsMz7h6ecEaYOATnuUaJHg2E,8741
+dupremover-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dupremover-0.0.6.dist-info/entry_points.txt,sha256=uE0eP20u6KtNEHEidE1olfE0LGd2LacoT6X_OnXJ2Vk,70
+dupremover-0.0.6.dist-info/top_level.txt,sha256=kG0RdE3t43Ny7gKm3qrxwHxYDzKGx40RNYHLF4Z2MQo,12
+dupremover-0.0.6.dist-info/RECORD,,
