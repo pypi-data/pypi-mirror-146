@@ -1,0 +1,4 @@
+include licsber/mail/notice_template.html
+include licsber/wisedu/models/inference.pdiparams
+include licsber/wisedu/models/inference.pdmodel
+include licsber/drive/quark/ila.pdf.json
