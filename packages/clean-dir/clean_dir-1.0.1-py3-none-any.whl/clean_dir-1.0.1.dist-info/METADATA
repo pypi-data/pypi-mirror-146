@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: clean-dir
+Version: 1.0.1
+Summary: Cleans your dirty dictatory
+Home-page: https://pypi.org/project/clean_dir
+Author: MahdiHosseini
+Author-email: mahdih2.mhh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: loguru
+
+If your folder is cluttered, this package will help you clean it.
+
