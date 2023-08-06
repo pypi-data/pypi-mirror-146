@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: snoopy-bv
+Version: 1.3.1
+Summary: DR C++/Python library
+Home-page: https://gitlab.com/bv-dr/Snoopy
+Author: Research Department BV M&O
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: droppy-bv
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: numpy (<1.21,>=1.15)
+Requires-Dist: pandas (>=0.25)
+Requires-Dist: scipy (>=1.4)
+Requires-Dist: xarray
+
+[![Build Status](https://gitlab.com/bv-dr/Snoopy/badges/master/pipeline.svg?branch=master)](https://gitlab.com/bv-dr/Snoopy/badges/master/pipeline.svg)
+
+# Snoopy library
+
+Documentation and tutorials : **https://bv-dr.gitlab.io/Snoopy/**
+
+
+Snoopy is an open source library for marine applications. Among other things, it contains the following sub-packages
+
+
+- Spectral : Routines for spectral analysis of sea-keeping results
+	+ Wave spectra (Jonswap, Ochihubble...)
+	+ Response spectrum
+	+ 2nd order response spectrum
+
+- TimeDomain
+	+ Wave kinematic model (Linear, wheeler stretching, 2nd order)
+	+ Reconstruction of seakeeping results in time domain (1st and 2nd order)
+	+ Convolution for wave radiation in time domain (from added-mass).
+
+- Fatigue
+	+ Rainflow counting
+	+ Spectral fatigue
+
+- Meshing
+
+
+## How to install from pre-compiled library
+
+
+Pre-compiled wheel package can be installed with : 
+
+> pip install snoopy-bv --no-deps
+
+or, to upgrade (as version number is not always changed) : 
+
+> pip install snoopy-bv --force-reinstall
+
+
+In case conda is used, it is recommended to install dependencies first, using conda:   
+
+> conda install --file requirements.txt
+
+
+
+## How to build from sources
+
+* Create a build folder, for instance "build"
+
+* Run cmake
+
+go in "build" directory and run :
+
+> cmake .. -G"CodeBlocks - MinGW Makefiles"
+
+*  Compile
+
+> mingw32-make.exe -j10
+
+
+### How to use in develop mode
+
+Python should know how to find the compiled pyd (or .so on linux). Two solutions : 
+* Add the folder containing the .pyd to the PYTHONPATH
+* Add the folder containng the .pyd in the SNOOPY_PYD environement variable
+
+
+To install in "developer mode" (use current sources, do not copy in python environment) :
+
+> pip install -e C:\path_to_snoopy_location
+
+
+### How to install 
+
+to install in python environment :
+
+> pip install pathToRootfolder
+
+
+### How to package
+
+* The folder containing the .pyd should be in the SNOOPY_PYD environement variable
+
+> python setup.py bdist_wheel
+
+
+## How to install on Linux (tested with Ubuntu 20.04 with bash terminal)
+
+- clone in the folder snoopy_dev (using snoopy as name may cause problems)
+
+> git clone https://mar-gitlab.bureauveritas.com/applications/dr/snoopy.git snoopy_dev
+
+- compile the code in a build directory
+
+> cd snoopy_dev/Snoopy  
+> mkdir build  
+> cd build  
+> cmake ..  
+> make -j 10  
+
+- install the package (first export the variable SNOOPY_PYD to the path to the compiled libraries)
+
+> cd ../..  
+> export SNOOPY_PYD=./build/lib  
+> pip install .   
+
+
+To install in develop mode:   
+> pip install -e .
+
+
+## Dev notes: 
+
+### Commit message
+
+* [FUN] : New feature
+* [ENH] : Enhancement of existing code
+* [BUG] : Bug correction, [BBUG] for really BIG BUG (with consequences in case of use...)
+* [QLT] : Quality (Comments, removal of dead code...)
+* [FIX] : Correction of compiling issue
+* [DAT] : Data added or modified
+* [DOC] : Document added or modified
+* [TEST] : Test added or modified
+* [INI] : Initial commit.
+
+The subpackage should be mentioned after this Flag. For instance : 
+
+[ENH] TimeDomain : Performance optimization of ReconstructionRaoLocal
+
+
