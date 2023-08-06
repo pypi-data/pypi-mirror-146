@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ehelply-batcher"
+version = "1.4.4"
+description = ""
+authors = ["Shawn Clake <shawn.clake@gmail.com>"]
+readme = "readme.md"
+homepage = "https://ehelply.com"
+
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+typer = "^0.3.2"
+pytest-cov = "^2.10.1"
+pytest-asyncio = "^0.15.1"
+ehelply-logger = "^0.0.8"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
