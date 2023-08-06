@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vaeda
+Version: 0.0.1
+Summary: A computational tool for annotating doublets in scRNAseq data.
+Home-page: https://github.com/kostkalab/vaeda
+Author: Hannah Schriever
+Author-email: hcs31@pitt.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: scipy
+Requires-Dist: pathlib
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: random
+Requires-Dist: sklearn
+Requires-Dist: kneed
+Requires-Dist: scanpy
+Requires-Dist: anndata
+Requires-Dist: math
+
+# vaeda
+
+
