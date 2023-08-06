@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+ovcfg/__init__.py
+ovcfg/ovcfg.py
+ovcfg.egg-info/PKG-INFO
+ovcfg.egg-info/SOURCES.txt
+ovcfg.egg-info/dependency_links.txt
+ovcfg.egg-info/top_level.txt
