@@ -1,0 +1,16 @@
+.gitignore
+README.md
+setup.cfg
+setup.py
+versioneer.py
+dqdatasdk/__init__.py
+dqdatasdk/_version.py
+dqdatasdk/client.py
+dqdatasdk/connections.py
+dqdatasdk/dqcertificate.py
+dqdatasdk.egg-info/PKG-INFO
+dqdatasdk.egg-info/SOURCES.txt
+dqdatasdk.egg-info/dependency_links.txt
+dqdatasdk.egg-info/not-zip-safe
+dqdatasdk.egg-info/requires.txt
+dqdatasdk.egg-info/top_level.txt

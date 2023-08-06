@@ -1,0 +1,1 @@
+为点宽定制的rqdatasdk客户端，去除ricequant有关的错误提示以及函数描述。
