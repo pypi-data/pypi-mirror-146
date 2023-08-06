@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nhanes-dl
+Version: 0.0.1
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pandas (>="1.4.2")
+
+UNKNOWN
+
