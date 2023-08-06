@@ -1,0 +1,1 @@
+from firebrick.tests.test import *
