@@ -1,0 +1,8 @@
+numpy
+opencv-python
+openslide-python
+matplotlib
+scikit-learn
+probreg
+pillow
+scipy
