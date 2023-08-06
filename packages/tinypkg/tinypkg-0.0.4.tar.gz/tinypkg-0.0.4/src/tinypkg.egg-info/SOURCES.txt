@@ -1,0 +1,17 @@
+.gitignore
+CHANGELOG.md
+LICENSE.txt
+README.md
+pyproject.toml
+.github/workflows/pub.yml
+.github/workflows/test.yml
+.github/workflows/testpub.yml
+src/tinypkg/__init__.py
+src/tinypkg/_version.py
+src/tinypkg/hi.py
+src/tinypkg.egg-info/PKG-INFO
+src/tinypkg.egg-info/SOURCES.txt
+src/tinypkg.egg-info/dependency_links.txt
+src/tinypkg.egg-info/requires.txt
+src/tinypkg.egg-info/top_level.txt
+tests/test_import.py
