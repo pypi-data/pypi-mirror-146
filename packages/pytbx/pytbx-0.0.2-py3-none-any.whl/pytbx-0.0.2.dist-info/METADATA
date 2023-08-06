@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pytbx
+Version: 0.0.2
+Summary: A toolbox for my engineering projects.
+Home-page: https://gitlab.com/t11c/pytbx/tree/main/
+Author: t11c
+Author-email: t11c@cvt-engineering.de
+License: Apache Software License 2.0
+Keywords: engineering
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+
+# pytbx
+> A collection of useful tools for my engineering projects
+
+
+Docs: https://t11c.gitlab.io/pytbx
+
+Made this with [nbdev](https://nbdev.fast.ai) from [fast.ai](https://www.fast.ai). As <code>nbdev</code> is designed for github, I used the template from [Thomas Capelle](https://gitlab.com/tcapelle/nbdev_template) to make it work on  gitlab.
+
+
+## Install
+Simply install it with pip:
+
+`pip install pytbx`
+
+## How to use
+... muss noch
+
+## Setup Dev environment
+
+### Requirements
+  * pipenv
+  * jupyter lab installed
+  * jekyll installed (to view the docs)
+
+
+### set up
+
+clone repo
+
+    git clone https://gitlab.com/t11c/pytbx
+
+install python environment with pipenv
+
+    pipenv install --dev
+
+register ipykernel
+
+    pipenv run python -m ipykernel install --user --name=pytbx
+
+install git-hooks
+
+    pipenv run nbdev_install_git_hooks
+
+
