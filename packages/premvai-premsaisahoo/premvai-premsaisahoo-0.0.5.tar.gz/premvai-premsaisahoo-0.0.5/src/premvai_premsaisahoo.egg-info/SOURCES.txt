@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/premvai/__init__.py
+src/premvai/perceptron.py
+src/premvai_premsaisahoo.egg-info/PKG-INFO
+src/premvai_premsaisahoo.egg-info/SOURCES.txt
+src/premvai_premsaisahoo.egg-info/dependency_links.txt
+src/premvai_premsaisahoo.egg-info/requires.txt
+src/premvai_premsaisahoo.egg-info/top_level.txt
