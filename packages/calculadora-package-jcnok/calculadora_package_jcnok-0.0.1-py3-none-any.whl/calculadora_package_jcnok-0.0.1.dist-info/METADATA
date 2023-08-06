@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: calculadora-package-jcnok
+Version: 0.0.1
+Summary: Meu primeiro pacote
+Home-page: https://github.com/Jcnok/myfirst_package.git
+Author: Julio Okuda
+Author-email: julio.okuda@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
+
+# calculadora
+
+Description. 
+The package calculadora is used to:
+	- soma, subtração, divisão e multiplicação
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install calculadora
+
+```bash
+pip install calculadora-package-jcnok
+```
+
+## Author
+Julio OKuda
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
