@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: td-connect
+Version: 0.1.2
+Summary: Authentication manager for TD Ameritrade REST APIs.
+Author: Dan Kelleher
+Author-email: dan@danklabs.org
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: fsspec[gcs] (>=2021.11.1,<2022.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: ready-logger (>=0.1.0,<0.2.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: websockets (>=10.1,<11.0)
