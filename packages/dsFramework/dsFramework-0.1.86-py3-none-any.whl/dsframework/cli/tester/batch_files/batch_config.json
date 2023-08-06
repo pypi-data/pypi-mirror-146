@@ -1,0 +1,51 @@
+{
+    "environment": "ds-airflow-1-dev",
+    "log_level": "warning",
+    "bucket_name": "us-east1-ds-airflow-1-dev-f63d7361-bucket",
+    "project_id": "dozi-data-science-research-1",
+    "region": "us-east1",
+    "template_id": "{name-your-service}-template",
+    "project_name": "{name-your-service}",
+    "unique_iteration_id": "",
+    "unique_template_id": "",
+    "specific_jobs_to_run": [],
+    "cluster_duration_sec": 3600,
+    "cluster_conf": {
+        "managed_cluster": {
+            "cluster_name": "{name-your-service}-cluster",
+            "config": {
+                "gce_cluster_config": {
+                    "zone_uri": "us-east1-b",
+                    "metadata": {
+                        "PIP_PACKAGES": ""
+                    },
+                    "tags": [
+                        "{name-your-service}-cluster"
+                    ]
+                },
+                "initialization_actions": [
+                    {"executable_file": "gs://dataproc-initialization-actions/python/pip-install.sh"}
+                ],
+                "master_config": {
+                    "machine_type_uri": "",
+                    "disk_config": {
+                        "boot_disk_size_gb": 500
+                    }
+                },
+                "worker_config": {
+                    "machine_type_uri": "",
+                    "num_instances": 2,
+                    "disk_config": {
+                        "boot_disk_size_gb": 500
+                    }
+                },
+                "autoscaling_config": {
+                    "policy_uri": ""
+                },
+                "software_config": {
+                    "image_version": ""
+                }
+            }
+        }
+    }
+}
