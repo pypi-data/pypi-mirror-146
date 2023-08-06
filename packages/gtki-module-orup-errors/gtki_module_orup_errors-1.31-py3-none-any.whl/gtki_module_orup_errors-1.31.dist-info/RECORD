@@ -1,0 +1,17 @@
+orup_errors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orup_errors/all_errors.py,sha256=3Y7shQk5EsUdz48wX43IOBqBQY7yVcpi3FNobRK80yM,13286
+orup_errors/check_funcs.py,sha256=cpDZnmIYUPfg24vR_qabu-ZulbSC3jXsilMqaw-nwE0,3914
+orup_errors/general_functions.py,sha256=zVRK6cmFPN_RIB2AgmmqJbsKNNzodFJEvEd5YQ2iGEI,2462
+orup_errors/main.py,sha256=LcMxnrke34BcGvleMfiEzpWbowmZVKz3oAcke3tac14,2303
+orup_errors/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orup_errors/tests/all_errors_test.py,sha256=Lxq5C6Ka5XaHPOVMCQdMSuZT3l07TaJuoGP5l4ZJU_0,1545
+orup_errors/tests/args_test.py,sha256=rz64Iv4D8nPuDlATAHuO_4wFRS20b71gYsIyotaw1pI,744
+orup_errors/tests/check_funcs_test.py,sha256=m5e0kAHg5AcEi2VfRLBEslCAKfFDs8ARWb8emZ_j1Pk,288
+orup_errors/tests/draw_win_test.py,sha256=dsrfPhbnArm08IukF_zypmUFYOw1wjHD_5qYHYjk-88,1385
+orup_errors/tests/general_functions_test.py,sha256=CHoOqcw6k2qLUfgHnGA4TTgACt25jIZNDkF0UnKRtlQ,1300
+orup_errors/tests/orup_errors_operator_test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gtki_module_orup_errors-1.31.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+gtki_module_orup_errors-1.31.dist-info/METADATA,sha256=SPZwvpyVxG4a9VIRFetnnbDURqsKGR33P3WOlPNfQiw,208
+gtki_module_orup_errors-1.31.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gtki_module_orup_errors-1.31.dist-info/top_level.txt,sha256=WzasBtx2xqnJAQK3vavyWJNr2nwUAPObo6jw7F1FFko,12
+gtki_module_orup_errors-1.31.dist-info/RECORD,,
