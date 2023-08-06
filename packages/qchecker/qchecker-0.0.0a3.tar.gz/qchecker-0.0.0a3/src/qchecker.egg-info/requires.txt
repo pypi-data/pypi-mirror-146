@@ -1,0 +1,9 @@
+tomli~=2.0.1
+pylint~=2.12.2
+flake8~=4.0.1
+flake8-json~=21.7.0
+libcst~=0.4.1
+
+[testing]
+pytest>=6.0
+pytest-cov>=2.0
