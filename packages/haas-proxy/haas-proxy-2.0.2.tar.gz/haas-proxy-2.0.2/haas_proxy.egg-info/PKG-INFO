@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: haas-proxy
+Version: 2.0.2
+Summary: Honeypot proxy is tool for redirectiong SSH session from local computer to server of HaaS with additional information.
+Home-page: https://haas.nic.cz
+Author: CZ.NIC Labs
+Author-email: haas@nic.cz
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+
