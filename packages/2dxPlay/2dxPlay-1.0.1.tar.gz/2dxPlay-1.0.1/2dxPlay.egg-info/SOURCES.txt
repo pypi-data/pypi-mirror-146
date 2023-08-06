@@ -1,0 +1,11 @@
+README.md
+setup.py
+2dxPlay.egg-info/PKG-INFO
+2dxPlay.egg-info/SOURCES.txt
+2dxPlay.egg-info/dependency_links.txt
+2dxPlay.egg-info/entry_points.txt
+2dxPlay.egg-info/requires.txt
+2dxPlay.egg-info/top_level.txt
+twodxPlay/__init__.py
+twodxPlay/main.py
+twodxPlay/twodx.py
