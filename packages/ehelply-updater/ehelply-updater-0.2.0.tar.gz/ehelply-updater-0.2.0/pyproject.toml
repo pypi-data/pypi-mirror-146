@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ehelply-updater"
+version = "0.2.0"
+description = ""
+authors = ["Shawn Clake <shawn.clake@gmail.com>"]
+readme = "readme.md"
+homepage = "https://ehelply.com"
+
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+wheel = "^0.37.1"
+requests = "^2.27.1"
+python-slugify = "^6.1.1"
+pydantic = "^1.9.0"
+ehelply-logger = "^0.0.8"
+click = "^8.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
