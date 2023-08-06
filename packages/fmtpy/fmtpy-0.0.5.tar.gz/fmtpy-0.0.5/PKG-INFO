@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: fmtpy
+Version: 0.0.5
+Summary: Formats python files with properly sorted import statemnts
+Author-email: Alyetama <56323389+Alyetama@users.noreply.github.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests~=2.27.1
+Requires-Dist: beautifulsoup4~=4.10.0
+Requires-Dist: rich~=10.11.0
+Requires-Dist: yapf~=0.32.0
+Project-URL: Home, https://github.comm/Alyetama/fmtspy
+
+# fmtpy
+
+Uses [yapf](https://github.com/google/yapf) and [autoflake](https://github.com/PyCQA/autoflake) to format python files, but with properly sorted import statements.
+
+## Requirements
+
+- [Python>=3.6](https://www.python.org/downloads/)
+
+## Installation
+
+```
+pip install fmtpy
+```
+
+## Usage
+
+```
+usage: fmtpy [-h] [-s {pep8,google,yapf,facebook}] [-i] [-o] [-n] [-k]
+             files [files ...]
+
+positional arguments:
+  files                 files to format
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s {pep8,google,yapf,facebook}, --style {pep8,google,yapf,facebook}
+                        Formatting style
+  -i, --in-place        Make changes in-place
+  -o, --only-imports    Only return sorted import statements
+  -n, --show-line-numbers
+                        Render a column for line numbers
+  -k, --keep-external-unused-imports
+                        Keep the import statement of external unused modules
+```
+
+## Examples
+
+[![Examples](static/examples.gif)](https://asciinema.org/a/QwXWTTnU95Fw2YFihSWVVvR8F)
+
