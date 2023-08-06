@@ -1,0 +1,5 @@
+[console_scripts]
+witaker-clipboard-server = witaker.clipboardserver:clipboard_server_cli_main
+
+[gui_scripts]
+witaker-clipboard-server-gui = witaker.clipboardserver.gui:clipboard_server_gui_main
