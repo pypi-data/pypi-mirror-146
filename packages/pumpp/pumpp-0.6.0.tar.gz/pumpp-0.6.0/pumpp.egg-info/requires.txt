@@ -1,0 +1,17 @@
+librosa>=0.8.0
+jams>=0.3
+scikit-learn>=1.0
+mir_eval>=0.5
+
+[docs]
+numpydoc
+sphinx
+
+[keras]
+keras>=2.6
+
+[tests]
+pytest
+pytest-cov
+keras>=2.6
+tensorflow>=2.0
