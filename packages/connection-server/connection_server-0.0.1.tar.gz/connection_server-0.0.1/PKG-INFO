@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: connection_server
+Version: 0.0.1
+Summary: My short description
+Home-page: https://github.com/Konstructa/my-package-python
+Author: milena_limoeiro
+Author-email: elenprojects7@gmail.com
+License: UNKNOWN
+Description: # connction_server
+        
+        Description. 
+        The package connction_server is used to:
+        	- 
+        	-
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install connction_server
+        
+        ```bash
+        pip install connction_server
+        ```
+        
+        ## Usage
+        
+        ```python
+        from connction_server import connect_tcp
+        connect_tcp.createConnectionTCP()
+        ```
+        
+        
+        ```python
+        from connction_server import connect_udp
+        connect_udp.createConnectionUDP()
+        ```
+        
+        ## Author
+        Milena Limoeiro
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
