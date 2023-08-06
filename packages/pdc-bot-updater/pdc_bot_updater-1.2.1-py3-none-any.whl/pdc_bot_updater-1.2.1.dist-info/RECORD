@@ -1,0 +1,7 @@
+pdc_bot_updater/client/updater.py,sha256=6EX98OwvyVwaP9gN-bOmD7Y1ZX06jHZXPR3auOfOqzM,3061
+pdc_bot_updater/core/meta.py,sha256=K_hfugJ2cYGb5PmZsUBaz8AWt-BsC2BPcJmcB-AQetc,124
+pdc_bot_updater/publisher/publish.py,sha256=PmWcfeqo0R8SaSP4ZULLr2SZY1TB2YlC6zYotRgWPkk,1890
+pdc_bot_updater-1.2.1.dist-info/LICENSE,sha256=ckwlp9Yp3G9sDTmnrKiuuvQmRjmTnb71v6Oxk22MJeo,1085
+pdc_bot_updater-1.2.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pdc_bot_updater-1.2.1.dist-info/METADATA,sha256=hJUNrZC5pyMgZoxn4xIG8s3Zjb5uk2eHmfm8TBDlY1M,637
+pdc_bot_updater-1.2.1.dist-info/RECORD,,
