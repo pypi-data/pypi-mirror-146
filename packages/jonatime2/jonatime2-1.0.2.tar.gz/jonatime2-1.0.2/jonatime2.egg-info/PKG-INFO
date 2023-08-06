@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jonatime2
+Version: 1.0.2
+Summary: A small example package
+Home-page: https://github.com/jonathanqwq/
+Author: Jonathan Shi
+Author-email: 2841306779@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# jonatime
+
+This is a simple test package. You can use
+[jonathanqwq](https://github.com/jonathanqwq/)
+to write your content.
+
