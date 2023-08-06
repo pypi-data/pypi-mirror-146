@@ -1,0 +1,2 @@
+[console_scripts]
+firelight = firelight.firelight:main
