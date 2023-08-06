@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/kabbes_user_profile.egg-info/PKG-INFO
+src/kabbes_user_profile.egg-info/SOURCES.txt
+src/kabbes_user_profile.egg-info/dependency_links.txt
+src/kabbes_user_profile.egg-info/requires.txt
+src/kabbes_user_profile.egg-info/top_level.txt
+src/user_profile/ProfileParent.py
+src/user_profile/__init__.py
+src/user_profile/__main__.py
+src/user_profile/profile_import.py
+src/user_profile/user_profile.py
+src/user_profile/Templates/DefaultProfile.py
+src/user_profile/Users/james.py
