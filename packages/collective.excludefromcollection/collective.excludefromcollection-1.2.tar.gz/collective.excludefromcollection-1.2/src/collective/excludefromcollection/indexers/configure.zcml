@@ -1,0 +1,10 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="collective.excludefromcollection">
+
+ <!-- -*- extra stuff goes here -*- -->
+
+  <include file="exclude_from_collection.zcml" />
+
+
+</configure>
