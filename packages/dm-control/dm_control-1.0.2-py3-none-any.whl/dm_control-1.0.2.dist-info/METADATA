@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dm-control
+Version: 1.0.2
+Summary: Continuous control environments and MuJoCo Python bindings.
+Author: DeepMind
+License: Apache License, Version 2.0
+Keywords: machine learning control physics MuJoCo AI
+Platform: UNKNOWN
+Requires-Python: >=3.7, <=3.10
+Requires-Dist: absl-py (>=0.7.0)
+Requires-Dist: dm-env
+Requires-Dist: dm-tree (!=0.1.2)
+Requires-Dist: future
+Requires-Dist: glfw
+Requires-Dist: labmaze
+Requires-Dist: lxml
+Requires-Dist: mujoco (>=2.1.5)
+Requires-Dist: numpy (>=1.9.0)
+Requires-Dist: protobuf (>=3.15.6)
+Requires-Dist: pyopengl (>=3.1.4)
+Requires-Dist: pyparsing (<3.0.0)
+Requires-Dist: requests
+Requires-Dist: setuptools (!=50.0.0)
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Provides-Extra: hdf5
+Requires-Dist: h5py ; extra == 'hdf5'
+
+UNKNOWN
+
