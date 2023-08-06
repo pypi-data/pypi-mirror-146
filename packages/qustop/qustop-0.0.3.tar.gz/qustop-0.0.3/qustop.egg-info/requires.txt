@@ -1,0 +1,7 @@
+cvx
+cvxpy
+numpy
+picos
+scipy
+scikit-image
+toqito
