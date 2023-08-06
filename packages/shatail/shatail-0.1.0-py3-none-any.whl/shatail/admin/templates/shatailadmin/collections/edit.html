@@ -1,0 +1,12 @@
+{% extends "shatailadmin/generic/edit.html" %}
+{% load shatailadmin_tags %}
+
+{% block before_form %}
+    {% include "shatailadmin/collections/_privacy_switch.html" with collection=object collection_perms=collection_perms only %}
+{% endblock %}
+
+{% block extra_js %}
+    {{ block.super }}
+    <script src="{% versioned_static 'shatailadmin/js/modal-workflow.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/privacy-switch.js' %}"></script>
+{% endblock %}

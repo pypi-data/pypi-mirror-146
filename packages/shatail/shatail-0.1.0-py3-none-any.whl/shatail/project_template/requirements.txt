@@ -1,0 +1,2 @@
+Django>=4.0,<4.1
+shatail==3.0a0

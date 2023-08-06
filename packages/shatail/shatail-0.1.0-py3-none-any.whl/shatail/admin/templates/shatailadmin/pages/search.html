@@ -1,0 +1,29 @@
+{% extends "shatailadmin/base.html" %}
+{% load shatailadmin_tags i18n %}
+{% block titletag %}{% trans 'Search' %}{% endblock %}
+{% block extra_js %}
+    {{ block.super }}
+
+    <script>
+        window.headerSearch = {
+            url: "{% url 'shatailadmin_pages:search' %}",
+            termInput: "#id_q",
+            targetOutput: "#page-results"
+        }
+    </script>
+    <script>
+        window.shatailConfig.BULK_ACTION_ITEM_TYPE = 'PAGE';
+    </script>
+    <script defer src="{% versioned_static 'shatailadmin/js/bulk-actions.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    {% trans "Search" as search_str %}
+    {% include "shatailadmin/shared/header.html" with title=search_str search_url="shatailadmin_pages:search" icon="search" %}
+
+    <div id="page-results">
+        {% include "shatailadmin/pages/search_results.html" %}
+    </div>
+    {% trans "Select all pages in listing" as select_all_text %}
+    {% include 'shatailadmin/bulk_actions/footer.html' with app_label='shatailcore' model_name='page' objects=pages select_all_obj_text=select_all_text %}
+{% endblock %}

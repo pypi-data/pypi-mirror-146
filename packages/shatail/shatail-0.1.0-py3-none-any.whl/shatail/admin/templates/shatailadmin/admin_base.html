@@ -1,0 +1,64 @@
+{% extends "shatailadmin/skeleton.html" %}
+{% load i18n shatailadmin_tags %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% versioned_static 'shatailadmin/css/vendor/jquery-ui/jquery-ui-1.10.3.verdant.css' %}" />
+    <link rel="stylesheet" href="{% versioned_static 'shatailadmin/css/vendor/jquery.tagit.css' %}">
+    <link rel="stylesheet" href="{% versioned_static 'shatailadmin/css/core.css' %}" type="text/css" />
+
+    {% hook_output 'insert_global_admin_css' %}
+
+    {% block extra_css %}{% endblock %}
+{% endblock %}
+
+{% block branding_favicon %}
+    <link rel="shortcut icon" href="{% versioned_static 'shatailadmin/images/favicon.ico' %}" />
+{% endblock %}
+
+{% block js %}
+    <script>
+        (function(document, window) {
+            window.shatailConfig = window.shatailConfig || {};
+            shatailConfig.ADMIN_API = {
+                PAGES: '{% url "shatailadmin_api:pages:listing" %}',
+                DOCUMENTS: '{% url "shatailadmin_api:documents:listing" %}',
+                IMAGES: '{% url "shatailadmin_api:images:listing" %}',
+                {# // Use this to add an extra query string on all API requests. #}
+                {# // Example value: '&order=-id' #}
+                EXTRA_CHILDREN_PARAMETERS: '',
+            };
+
+            {% i18n_enabled as i18n_enabled %}
+            {% locales as locales %}
+            shatailConfig.I18N_ENABLED = {% if i18n_enabled %}true{% else %}false{% endif %};
+            shatailConfig.LOCALES = {{ locales|safe }};
+
+            {% if locale %}
+                shatailConfig.ACTIVE_CONTENT_LOCALE = '{{ locale.language_code }}'
+            {% endif %}
+
+            shatailConfig.STRINGS = {% js_translation_strings %};
+
+            shatailConfig.ADMIN_URLS = {
+                PAGES: '{% url "shatailadmin_explore_root" %}'
+            };
+        })(document, window);
+    </script>
+    <script src="{% versioned_static 'shatailadmin/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/vendor/jquery-ui-1.12.1.min.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/vendor/jquery.datetimepicker.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/vendor/jquery.autosize.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/vendor/bootstrap-transition.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/vendor/bootstrap-modal.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/vendor/tag-it.js' %}"></script>
+    <script src="{% url 'shatailadmin_javascript_catalog' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/core.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/vendor.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/shatailadmin.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/telepath/telepath.js' %}"></script>
+    <script src="{% versioned_static 'shatailadmin/js/sidebar.js' %}"></script>
+
+    {% hook_output 'insert_global_admin_js' %}
+
+    {% block extra_js %}{% endblock %}
+{% endblock %}

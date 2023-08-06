@@ -1,0 +1,5 @@
+{% load shatailcore_tags shatailadmin_tags %}
+
+<div data-upgrade data-shatail-version="{% shatail_version %}" class="panel nice-padding panel-upgrade-notification" style="display:none">
+    <div class="help-block help-warning">{% icon name='warning' %}Shatail upgrade available. Your version: <strong>{% shatail_version %}</strong>. New version: <strong data-upgrade-version></strong>. <a data-upgrade-link href="">Read the release notes.</a></div>
+</div>

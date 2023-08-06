@@ -1,0 +1,36 @@
+{% extends "shatailadmin/pages/listing/_list.html" %} {% load i18n shatailadmin_tags %} {# Page listing include, customised for 'explore' mode #} {% block parent_page_title %} {% include "shatailadmin/pages/listing/_parent_page_title_explore.html" %}
+{% endblock %} {% block post_parent_page_headers %} {% if parent_page %} {% if parent_page.is_root %}
+<tr>
+    <td colspan="6">
+        <div class="help-block help-info">
+            {% icon name='help' %} {% if perms.shatailcore.add_site %} {% url 'shatailsites:index' as shatailsites_index_url %}
+            <p>
+                {% blocktrans trimmed %} The root level is where you can add new sites to your Shatail installation. Pages created here will not be accessible at any URL until they are associated with a site. {% endblocktrans %} {% if shatailsites_index_url %}
+                <a href="{{ shatailsites_index_url }}">{% trans "Configure a site now." %}</a> {% endif %}
+            </p>
+            <p>
+                {% blocktrans trimmed %} If you just want to add pages to an existing site, create them as children of the homepage instead. {% endblocktrans %}
+            </p>
+            {% else %} {% blocktrans trimmed %} Pages created here will not be accessible at any URL. To add pages to an existing site, create them as children of the homepage. {% endblocktrans %} {% endif %}
+        </div>
+    </td>
+</tr>
+{# get_url_parts will return None is the page has no site #} {% elif not parent_page.get_url_parts %}
+<tr>
+    <td colspan="6">
+        <div class="help-block help-warning">
+            {% icon name='warning' %} {% if perms.shatailcore.add_site %} {% url 'shatailsites:index' as shatailsites_index_url %} {% blocktrans trimmed %} There is no site set up for this location. Pages created here will not be accessible at any URL until a site
+            is associated with this location. {% endblocktrans %} {% if shatailsites_index_url %}
+            <a href="{{ shatailsites_index_url }}">{% trans "Configure a site now." %}</a> {% endif %} {% else %} {% blocktrans trimmed %} There is no site record for this location. Pages created here will not be accessible at any URL. {% endblocktrans
+            %} {% endif %}
+        </div>
+    </td>
+</tr>
+{% endif %} {% endif %} {% include "shatailadmin/pages/listing/_table_headers_explore.html" %} {% endblock %} {% block page_title %} {% include "shatailadmin/pages/listing/_page_title_explore.html" %} {% endblock %} {% block page_navigation %} {% include
+"shatailadmin/pages/listing/_navigation_explore.html" %} {% endblock %} {% block no_results %} {% url 'shatailadmin_pages:add_subpage' parent_page.id as add_page_url%}
+<tr>
+    <td colspan="3" class="no-results-message">
+        <p>{% trans "No pages have been created at this location." %}{% if parent_page and parent_page_perms.can_add_subpage %} {% blocktrans trimmed %}Why not <a href="{{ add_page_url }}">create one</a>?{% endblocktrans %}{% endif %}</p>
+    </td>
+</tr>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% load i18n shatailadmin_tags %} {% include "shatailadmin/shared/header.html" with title=action_verbose icon="clipboard-list" %}
+
+<div class="nice-padding">
+    {% include "shatailadmin/shared/non_field_errors.html" %}
+
+    <form action="{{ submit_url }}" method="POST" novalidate>
+        {% csrf_token %}
+        <ul class="fields">
+            {% include 'shatailadmin/shared/form_as_ul.html' %}
+            <li><button type="submit" class="button button-longrunning">{% icon name="spinner" %}{{ action_verbose }}</button></li>
+        </ul>
+    </form>
+</div>

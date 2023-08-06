@@ -1,0 +1,9 @@
+{% extends "shatailadmin/userbar/item_base.html" %} {% load i18n shatailadmin_tags %} {% block item_content %}
+<form action="{% url 'shatailadmin_pages:approve_moderation' self.revision.id %}" target="_parent" method="post">
+    {% csrf_token %}
+    <button type="submit" value="{% trans 'Approve' %}" class="button" role="menuitem">
+            {% icon name="tick" class_name="shatail-action-icon" %}
+            {% trans 'Approve' %}
+        </button>
+</form>
+{% endblock %}

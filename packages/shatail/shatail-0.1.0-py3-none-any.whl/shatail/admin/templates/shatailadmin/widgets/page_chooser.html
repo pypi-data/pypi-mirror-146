@@ -1,0 +1,6 @@
+{% extends "shatailadmin/widgets/chooser.html" %}
+{% load shatailadmin_tags %}
+
+{% block unchosen_icon %}{% icon name="doc-empty-inverse" %}{% endblock unchosen_icon %}
+{% block chosen_icon %}{% icon name="doc-empty-inverse" %}{% endblock chosen_icon %}
+{% block chooser_attributes %}data-chooser-url="{% url "shatailadmin_choose_page" %}"{% endblock %}

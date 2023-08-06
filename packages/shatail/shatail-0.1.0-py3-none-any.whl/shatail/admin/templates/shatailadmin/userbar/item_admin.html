@@ -1,0 +1,5 @@
+{% extends "shatailadmin/userbar/item_base.html" %} {% load i18n shatailadmin_tags %} {% block item_content %}
+<a href="{% url 'shatailadmin_home' %}" target="_parent" class="shatail-userbar-link" role="menuitem">
+        {% icon name="shatail-icon" class_name="shatail-action-icon" %}
+        {% trans 'Go to Shatail admin' %}
+    </a> {% endblock %}

@@ -1,0 +1,9 @@
+{% load i18n shatailadmin_tags %}
+
+{% if workflow_states %}
+    {% include "shatailadmin/pages/workflow_history/list.html" %}
+
+    {% include "shatailadmin/shared/pagination_nav.html" with items=workflow_states linkurl="shatailadmin_pages:workflow_history" %}
+{% else %}
+    <p>{% blocktrans trimmed %}This page hasn't been submitted for moderation yet{% endblocktrans %}</p>
+{% endif %}
