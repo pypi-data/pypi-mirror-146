@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.9.0b6
+--------
+
+* Fix date parsing on embedded Python (Domoticz)
