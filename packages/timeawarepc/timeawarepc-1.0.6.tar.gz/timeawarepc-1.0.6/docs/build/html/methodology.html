@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methodology &mdash; timeawarepc 2022 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installguide.html" />
+    <link rel="prev" title="About TimeAwarePC" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> timeawarepc
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">About TimeAwarePC</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Methodology</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#time-aware-pc-algorithm">Time-Aware PC Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pc-algorithm">PC Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#granger-causality">Granger Causality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comparison-of-methodologies">Comparison of Methodologies</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installguide.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeawarepc.html">timeawarepc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">timeawarepc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Methodology</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/methodology.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="methodology">
+<h1>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">¶</a></h1>
+<section id="time-aware-pc-algorithm">
+<h2>Time-Aware PC Algorithm<a class="headerlink" href="#time-aware-pc-algorithm" title="Permalink to this headline">¶</a></h2>
+<p>TPC estimates the Causal Functional Connectivity (CFC) from time series observations. <span id="id1">[<a class="reference internal" href="references.html#id3" title="Rahul Biswas and Eli Shlizerman. Statistical perspective on functional and causal neural connectomics: the time-aware pc algorithm. arXiv preprint arXiv:2204.04845, 2022.">1</a>, <a class="reference internal" href="references.html#id4" title="Rahul Biswas and Eli Shlizerman. Statistical perspective on functional and causal neural connectomics: a comparative study. Frontiers in Systems Neuroscience, 2022. doi:10.3389/fnsys.2022.817962.">2</a>]</span>.</p>
+<a class="reference internal image-reference" href="_images/TPC_Schematic.png"><img alt="_images/TPC_Schematic.png" class="align-center" src="_images/TPC_Schematic.png" style="width: 500px;" /></a>
+</section>
+<section id="pc-algorithm">
+<h2>PC Algorithm<a class="headerlink" href="#pc-algorithm" title="Permalink to this headline">¶</a></h2>
+<p>PC is an algorithm for causal inference based on Directed Probabilistic Graphical Modeling (DPGM), which is suited for static data, i.e., independent and identically distributed observations. <span id="id2">[<a class="reference internal" href="references.html#id4" title="Rahul Biswas and Eli Shlizerman. Statistical perspective on functional and causal neural connectomics: a comparative study. Frontiers in Systems Neuroscience, 2022. doi:10.3389/fnsys.2022.817962.">2</a>, <a class="reference internal" href="references.html#id5" title="Markus Kalisch and Peter Bühlmann. Estimating high-dimensional directed acyclic graphs with the pc-algorithm. Journal of Machine Learning Research, 8(Mar):613–636, 2007.">3</a>]</span>.</p>
+</section>
+<section id="granger-causality">
+<h2>Granger Causality<a class="headerlink" href="#granger-causality" title="Permalink to this headline">¶</a></h2>
+<p>Granger causality (GC) is a statistical methodology for determining whether one time series is useful in predicting another <span id="id3">[<a class="reference internal" href="references.html#id4" title="Rahul Biswas and Eli Shlizerman. Statistical perspective on functional and causal neural connectomics: a comparative study. Frontiers in Systems Neuroscience, 2022. doi:10.3389/fnsys.2022.817962.">2</a>, <a class="reference internal" href="references.html#id6" title="Clive WJ Granger. Investigating causal relations by econometric models and cross-spectral methods. Econometrica: journal of the Econometric Society, pages 424–438, 1969.">4</a>]</span>.</p>
+</section>
+<section id="comparison-of-methodologies">
+<h2>Comparison of Methodologies<a class="headerlink" href="#comparison-of-methodologies" title="Permalink to this headline">¶</a></h2>
+<p>The following summary compares over multiple criteria and shows the advantages of TPC.</p>
+<a class="reference internal image-reference" href="_images/tablesummary.png"><img alt="_images/tablesummary.png" class="align-center" src="_images/tablesummary.png" style="width: 500px;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intro.html" class="btn btn-neutral float-left" title="About TimeAwarePC" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installguide.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Rahul Biswas.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
