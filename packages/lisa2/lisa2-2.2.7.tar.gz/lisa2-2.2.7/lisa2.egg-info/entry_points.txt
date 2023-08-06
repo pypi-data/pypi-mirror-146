@@ -1,0 +1,2 @@
+[console_scripts]
+lisa = lisa.cli.cli:main

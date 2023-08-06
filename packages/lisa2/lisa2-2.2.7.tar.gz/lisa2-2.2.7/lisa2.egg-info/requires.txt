@@ -1,0 +1,5 @@
+numpy<2,>=1.17
+scipy<2,>=1.4
+h5py>=2
+scikit-learn<1,>=0.22
+pyBigWig<1,>=0.3
