@@ -1,0 +1,6 @@
+dimp>=0.11.6
+dkd>=0.11.6
+mkm>=0.11.6
+pycryptodome
+base58
+ecdsa
