@@ -1,0 +1,15 @@
+ramkit/__init__.py,sha256=ma2Vig6DxlVCE4EhRkdp4eCT2zjDLMtZGwubeFNKDmI,239
+ramkit/baseline.py,sha256=pbSbDi9D-ZrG3Nhb-seHqR_VWsJarG66z-wQmpBGqcY,2129
+ramkit/curvefitting.py,sha256=H19ytFUKvnE37dZxfkFVHIRvud0n3ku-J1auIbgCFhw,2466
+ramkit/filters.py,sha256=Xm8Yl8AOSx3S2PiSPcJcTyKc_Bb16b_iakBx_pQ1P1U,819
+ramkit/functions.py,sha256=7MeYXqNrSTrcIS_oW62NALCs4TZubJ_dWLXE8iC7yVM,2945
+ramkit/mlregressor.py,sha256=pSgg_ZNb1KxZuXnUn0FZ5Tv2nJNgaBrfc26m9A2UA1E,320
+ramkit/normalization.py,sha256=Pu5ExiToiDVCyFD0TMxJMGZIvJU80WM1vg1sf1G2gP4,276
+ramkit/peakseeking.py,sha256=FO69t9d1CrpDJF8SbgQMfGAUhCibbnI459t5ywjKleY,275
+ramkit/spectranization.py,sha256=qLRdLZJ1y7U4ChrFSehnQ1YKgHjaZbNxd90SB2LH3f0,1841
+ramkit/static/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ramkit-0.1.0.dist-info/LICENSE,sha256=x4XzjZkfmLv8BgNT3huWpllJu00LgeTkv6pLnE7RbVA,1069
+ramkit-0.1.0.dist-info/METADATA,sha256=A3yKfA9Rh61TP5gAeQKMVtsoX40DY4hUPZ-PL3IW20g,1158
+ramkit-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ramkit-0.1.0.dist-info/top_level.txt,sha256=xhJ9YVBfFZ3rk4-MPo86mGSG8C7qIOkNSXvkKGog3_0,7
+ramkit-0.1.0.dist-info/RECORD,,

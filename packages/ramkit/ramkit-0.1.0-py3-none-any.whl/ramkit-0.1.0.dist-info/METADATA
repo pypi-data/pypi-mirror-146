@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ramkit
+Version: 0.1.0
+Summary: An analysis kernel for raman spectrum.
+Home-page: https://github.com/niemingzhao/ramkit
+Author: Nie Mingzhao
+Author-email: 1432440963@qq.com
+License: MIT
+Download-URL: https://github.com/niemingzhao/ramkit/archive/master.zip
+Keywords: raman spectrum spectroscopy algorithm
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: sympy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+
+# ramkit
+
+An analysis kernel for raman spectrum.
+
+## Start
+
+```cmd
+python -m venv venv
+venv\Scripts\activate.bat (cmd.exe)
+venv\Scripts\Activate.ps1 (PowerShell)
+source venv/bin/activate (bash/zsh)
+pip install -r requirements.txt
+...
+deactivate
+```
+
+
