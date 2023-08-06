@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+ssl_metrics_github_issue_spoilage/__init__.py
+ssl_metrics_github_issue_spoilage/args.py
+ssl_metrics_github_issue_spoilage/graph.py
+ssl_metrics_github_issue_spoilage/main.py
+ssl_metrics_github_issue_spoilage/version.py
+ssl_metrics_github_issue_spoilage.egg-info/PKG-INFO
+ssl_metrics_github_issue_spoilage.egg-info/SOURCES.txt
+ssl_metrics_github_issue_spoilage.egg-info/dependency_links.txt
+ssl_metrics_github_issue_spoilage.egg-info/entry_points.txt
+ssl_metrics_github_issue_spoilage.egg-info/requires.txt
+ssl_metrics_github_issue_spoilage.egg-info/top_level.txt
