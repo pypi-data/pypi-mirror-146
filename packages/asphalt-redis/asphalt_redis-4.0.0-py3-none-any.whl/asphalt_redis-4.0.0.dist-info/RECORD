@@ -1,0 +1,9 @@
+asphalt/redis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asphalt/redis/component.py,sha256=KJnQgkgj94lTNHgjLSIWHDzSnD6WyrDlN46Ej9WS3rY,1815
+asphalt/redis/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asphalt_redis-4.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+asphalt_redis-4.0.0.dist-info/METADATA,sha256=SjflQz13VeID7ZRhal8WJd0n3eH3ZLJRfwVLnA6bJwY,2387
+asphalt_redis-4.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+asphalt_redis-4.0.0.dist-info/entry_points.txt,sha256=qQP57e1BJ2oy2OtUlTUUCyscEGmI65o__EOOeG5WVUE,68
+asphalt_redis-4.0.0.dist-info/top_level.txt,sha256=R-2hwgwPRuCBIBZvElxlXTU7XZdVGgdOGf_8pMfkK1w,8
+asphalt_redis-4.0.0.dist-info/RECORD,,
