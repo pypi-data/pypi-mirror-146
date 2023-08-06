@@ -1,0 +1,9 @@
+feature_extractor/FeatureExtractor.py,sha256=3Zwkij7K9LIConZ_f4emg6cLL2_5jrBsNt-LB4Wxids,1694
+feature_extractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_classifier/ImageClassifier.py,sha256=E8TJRdE7qtk83ByE8ydMh4fFr_AotHWEfXfst5Mfzk4,2581
+image_classifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_feature_extractor-0.0.2.dist-info/LICENSE,sha256=KGJVKtCiQua_fcqy5AMRMhvnyYiK3VTmTZP5_cGHtwM,1070
+image_feature_extractor-0.0.2.dist-info/METADATA,sha256=6z7YkrFon2SxY6dK6GOkdEIF71KKgT5aAJZwtRswAGM,611
+image_feature_extractor-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+image_feature_extractor-0.0.2.dist-info/top_level.txt,sha256=i2aOfGCFcAWFyuoQikzwlnk-0V06y9DS49IKGhJKc6M,35
+image_feature_extractor-0.0.2.dist-info/RECORD,,
