@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+""" Company: MobioVN
+    Date created: {#DATE_CREATED#}
+"""
+from mobio.sdks.base.apis.check_service import checking_service_mod
+
+from src.apis import app
+
+v1_0_prefix = '/api/v1.0'
+
+app.register_blueprint(checking_service_mod, url_prefix=v1_0_prefix)

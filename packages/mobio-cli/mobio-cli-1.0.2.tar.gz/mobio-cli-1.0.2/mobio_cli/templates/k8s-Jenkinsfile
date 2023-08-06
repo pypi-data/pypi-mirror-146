@@ -1,0 +1,61 @@
+def branch = "${env.BRANCH_NAME}"
+def tag = env.BRANCH_NAME.toUpperCase()
+tag = "${tag}-${env.BUILD_NUMBER}"
+
+def service = "{#PROJECT_NAME_KEBAB_LOWERCASE#}" // edit bằng tên module (đây là tên image sau khi được build) không chứa "_"
+
+def imageDeploy = "docker-registry.mobio.vn/${service}"
+def tagToDeploy = "${imageDeploy}:${tag}"
+def tagToDeployLatest = "${imageDeploy}:latest"
+
+def imageDeployRelease = "registry.mobio.vn/${service}"
+def tagToDeployRelease = "${imageDeployRelease}:${tag}"
+
+pipeline {
+  agent any
+
+  stages {
+    stage('Checkout + Build image') {
+      steps {
+        script {
+          if (env.BRANCH_NAME.toUpperCase() == "DEVELOP") {
+              sh ("docker build -t ${tagToDeploy} -t ${tagToDeployLatest} .")
+              sh ("docker push ${tagToDeploy}")
+              sh ("docker push ${tagToDeployLatest}")
+
+          } else if (env.BRANCH_NAME.toUpperCase() == "MASTER") {
+              // commit tag
+              sh("git tag ${tag}")
+              sh("git push --tags")
+              // build release
+              sh ("docker build -t ${tagToDeployRelease} -f Dockerfile-release .")
+              sh ("docker push ${tagToDeployRelease}")
+          }
+        }
+      }
+    }
+
+    stage ('Run') {
+      steps {
+        script {
+          if (env.BRANCH_NAME.toUpperCase() == "DEVELOP") {
+            // apply các file yaml
+            sh ("find ./yaml -name '*.yaml' -type f -exec sed -i 's#{image}#${tagToDeploy}#g' {} ';' -exec kubectl -n mobio apply -f {} ';'")
+            def is_used = true
+            def unused_pods = [
+            ]
+            if (is_used == false) {
+              echo "Khong su dung"
+              sh ("find ./yaml -name '*.yaml' -type f -exec kubectl scale --replicas=0 -f {} -n mobio ';'")
+            }
+            else {
+              for(file in unused_pods) {
+                sh (script: "kubectl scale --replicas=0 -f ./yaml/${file} -n mobio")
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

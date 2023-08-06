@@ -1,0 +1,3 @@
+[console_scripts]
+mobio-cli = mobio_cli.__main__:main
+

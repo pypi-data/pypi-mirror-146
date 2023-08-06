@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mobio-cli
+Version: 1.0.2
+Summary: Command line create Mobio's projects
+Home-page: UNKNOWN
+Author: MOBIO
+Author-email: contact@mobio.vn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# <h2 id="title">Tool generate Mobio Python Project</h2>
+
+# Copyright: MobioVN
+
+# <h2 id="version">Version</h2>
+Phiên bản hiện tại `1.0.1`
+
+# Cài đặt:
+`pip3 install mobio-cli`
+
+# Sử dụng:
+`mobio-cli`
+

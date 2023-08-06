@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+class SECTION:
+    LOGGING = 'logging_mode'
+    LANG = 'lang'
+
+
+class LANG:
+    KEYS = 'keys'
+    DEFAULT = 'default'
+    CUSTOM_ERROR = 'custom_error'
+    BAD_REQUEST = 'bad_request'
+    UNAUTHORIZED = 'unauthorized'
+    NOT_ALLOWED = 'not_allowed'
+    NOT_FOUND = 'not_found'
+    INTERNAL_SERVER_ERROR = 'internal_server_error'
+    VALIDATE_ERROR = 'validate_error'
+    LANG_ERROR = 'lang_error'
+    MUST_NOT_EMPTY = 'must_not_empty'
+    NOT_EXIST = 'not_exist'
+    ALREADY_EXIST = 'already_exist'
+    MESSAGE_SUCCESS = 'message_success'

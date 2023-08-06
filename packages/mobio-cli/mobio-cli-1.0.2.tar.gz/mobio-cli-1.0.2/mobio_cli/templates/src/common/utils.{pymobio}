@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import hashlib
+
+from flask import request
+from datetime import datetime
+
+
+def get_request_id():
+    url = request.url
+    request_time = datetime.utcnow()
+    identify = url + str(request_time)
+    identify = identify.encode('utf-8')
+    return hashlib.md5(identify).hexdigest()

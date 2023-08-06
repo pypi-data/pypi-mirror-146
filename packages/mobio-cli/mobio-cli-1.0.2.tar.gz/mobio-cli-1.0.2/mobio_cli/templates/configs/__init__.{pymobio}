@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import os
+
+from mobio.sdks.base.configs import ApplicationConfig
+
+
+class {#PROJECT_NAME_CAMEL#}ApplicationConfig(ApplicationConfig):
+    NAME = '{#PROJECT_NAME_CAMEL#}'
+    WORKING_DIR = str(os.environ.get("{#PROJECT_NAME_SNAKE_UPPERCASE#}_HOME"))
+
+    RESOURCE_DIR = os.path.join(WORKING_DIR, 'resources')
+
+    CONFIG_DIR = os.path.join(RESOURCE_DIR, 'configs')
+    ApplicationConfig.CONFIG_FILE_PATH = os.path.join(CONFIG_DIR, '{#PROJECT_NAME_SNAKE_LOWERCASE#}.conf')
+    ApplicationConfig.LOG_CONFIG_FILE_PATH = os.path.join(CONFIG_DIR, 'logging.conf')
+    ApplicationConfig.LOG_FILE_PATH = os.path.join(ApplicationConfig.APPLICATION_LOGS_DIR)
+    
+    LANG_DIR = os.path.join(RESOURCE_DIR, 'lang')
+
+    {#PROJECT_NAME_SNAKE_UPPERCASE#}_FOLDER_NAME = os.environ.get('{#PROJECT_NAME_SNAKE_UPPERCASE#}_FOLDER_NAME')
+
+    ADMIN_HOST = os.environ.get("ADMIN_HOST", '')
+
+
+class RedisConfig:
+    REDIS_URI = os.environ.get('REDIS_URI', 'redis://redis-server:6379/0')
+
+class LoggingConfig:
+    K8S = bool(int(os.environ.get('K8S', '0')))
