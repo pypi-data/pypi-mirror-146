@@ -1,0 +1,62 @@
+{
+    "Maximum_Snow_Extent": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "spatial_resolution": 500
+            }
+        ],
+        "classification:classes": [
+            {
+                "value": 0,
+                "description": "missing data"
+            },
+            {
+                "value": 1,
+                "description": "no decision"
+            },
+            {
+                "value": 11,
+                "description": "night"
+            },
+            {
+                "value": 25,
+                "description": "no snow"
+            },
+            {
+                "value": 37,
+                "description": "lake"
+            },
+            {
+                "value": 39,
+                "description": "ocean"
+            },
+            {
+                "value": 50,
+                "description": "cloud"
+            },
+            {
+                "value": 100,
+                "description": "lake ice"
+            },
+            {
+                "value": 200,
+                "description": "snow"
+            },
+            {
+                "value": 254,
+                "description": "detector saturated"
+            }
+        ],
+        "title": "Maximum snow extent over the 8-day period."
+    },
+    "Eight_Day_Snow_Cover": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "spatial_resolution": 500
+            }
+        ],
+        "title": "Snow chronology bit flags for each day in the eight-day observation period."
+    }
+}

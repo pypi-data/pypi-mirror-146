@@ -1,0 +1,87 @@
+{
+    "links": [
+        {
+            "rel": "help",
+            "href": "https://lpdaac.usgs.gov/documents/972/MOD17_User_Guide_V61.pdf",
+            "title": "MOD17 User Guide"
+        },
+        {
+            "rel": "describedby",
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD17A2H",
+            "title": "MOD17A2H file specification"
+        },
+        {
+            "rel": "describedby",
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD17A2H",
+            "title": "MYD17A2H file specification"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MOD17A2H.061",
+            "title": "LP DAAC - MOD17A2H"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MYD17A2H.061",
+            "title": "LP DAAC - MYD17A2H"
+        },
+        {
+            "rel": "license",
+            "href": "https://lpdaac.usgs.gov/data/data-citation-and-policies/",
+            "title": "LP DAAC - Data Citation and Policies"
+        }
+    ],
+    "title": "MODIS Gross Primary Productivity 8-Day",
+    "description": "The Version 6.1 Gross Primary Productivity (GPP) product is a cumulative 8-day composite of values with 500 meter (m) pixel size based on the radiation use efficiency concept that can be potentially used as inputs to data models to calculate terrestrial energy, carbon, water cycle processes, and biogeochemistry of vegetation. The Moderate Resolution Imaging Spectroradiometer (MODIS) data product includes information about GPP and Net Photosynthesis (PSN). The PSN band values are the GPP less the Maintenance Respiration (MR). The data product also contains a PSN Quality Control (QC) layer. The quality layer contains quality information for both the GPP and the PSN.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "producer",
+                "licensor",
+                "processor",
+                "host"
+            ],
+            "url": "https://lpdaac.usgs.gov/"
+        }
+    ],
+    "keywords": [
+        "NASA",
+        "MODIS",
+        "Satellite",
+        "Vegetation",
+        "Global",
+        "MOD17A2H",
+        "MYD17A2H"
+    ],
+    "sci:publications": [
+        {
+            "doi": "10.5067/MODIS/MOD17A2H.061",
+            "citation": "Running, S., Mu, Q., &amp; Zhao, M. (2021). <i>MODIS/Terra Gross Primary Productivity 8-Day L4 Global 500m SIN Grid V061</i> [Data set]. NASA EOSDIS Land Processes DAAC. https://doi.org/10.5067/MODIS/MOD17A2H.061"
+        },
+        {
+            "doi": "10.5067/MODIS/MYD17A2H.061",
+            "citation": "Running, S., Mu, Q., &amp; Zhao, M. (2021). <i>MODIS/Aqua Gross Primary Productivity 8-Day L4 Global 500m SIN Grid V061</i> [Data set]. NASA EOSDIS Land Processes DAAC. https://doi.org/10.5067/MODIS/MYD17A2H.061"
+        }
+    ]
+}

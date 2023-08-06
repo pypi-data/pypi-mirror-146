@@ -1,0 +1,87 @@
+{
+    "links": [
+        {
+            "rel": "help",
+            "href": "https://lpdaac.usgs.gov/documents/715/MOD11_User_Guide_V61.pdf",
+            "title": "MOD11 User Guide"
+        },
+        {
+            "rel": "describedby",
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD11A2",
+            "title": "MOD11A2 file specification"
+        },
+        {
+            "rel": "describedby",
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD11A2",
+            "title": "MYD11A2 file specification"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MOD11A2.061",
+            "title": "LP DAAC - MOD11A2"
+        },
+        {
+            "rel": "cite-as",
+            "href": "https://doi.org/10.5067/MODIS/MYD11A2.061",
+            "title": "LP DAAC - MYD11A2"
+        },
+        {
+            "rel": "license",
+            "href": "https://lpdaac.usgs.gov/data/data-citation-and-policies/",
+            "title": "LP DAAC - Data Citation and Policies"
+        }
+    ],
+    "title": "MODIS Land Surface Temperature/Emissivity 8-Day",
+    "description": "The Moderate Resolution Imaging Spectroradiometer (MODIS) Land Surface Temperature/Emissivity 8-Day Version 6.1 product provides an average 8-day per-pixel Land Surface Temperature and Emissivity (LST&E) with a 1 kilometer (km) spatial resolution in a 1,200 by 1,200 km grid. Each pixel value in the MOD11A2 is a simple average of all the corresponding MOD11A1 LST pixels collected within that 8-day period. The 8-day compositing period was chosen because twice that period is the exact ground track repeat period of the Terra and Aqua platforms. Provided along with the daytime and nighttime surface temperature bands are associated quality control assessments, observation times, view zenith angles, and clear-sky coverages along with bands 31 and 32 emissivities from land cover types.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "producer",
+                "licensor",
+                "processor",
+                "host"
+            ],
+            "url": "https://lpdaac.usgs.gov/"
+        }
+    ],
+    "keywords": [
+        "NASA",
+        "MODIS",
+        "Satellite",
+        "Global",
+        "Temperature",
+        "MOD11A2",
+        "MYD11A2"
+    ],
+    "sci:publications": [
+        {
+            "doi": "10.5067/MODIS/MOD11A2.061",
+            "citation": "Wan, Z., Hook, S., &amp; Hulley, G. (2021). <i>MODIS/Terra Land Surface Temperature/Emissivity 8-Day L3 Global 1km SIN Grid V061</i> [Data set]. NASA EOSDIS Land Processes DAAC. https://doi.org/10.5067/MODIS/MOD11A2.061"
+        },
+        {
+            "doi": "10.5067/MODIS/MYD11A2.061",
+            "citation": "Wan, Z., Hook, S., &amp; Hulley, G. (2021). <i>MODIS/Aqua Land Surface Temperature/Emissivity 8-Day L3 Global 1km SIN Grid V061</i> [Data set]. NASA EOSDIS Land Processes DAAC. https://doi.org/10.5067/MODIS/MYD11A2.061"
+        }
+    ]
+}
