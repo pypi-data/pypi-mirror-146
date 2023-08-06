@@ -1,0 +1,2 @@
+[console_scripts]
+pixel-artist = pixel_artist.__main__:main
