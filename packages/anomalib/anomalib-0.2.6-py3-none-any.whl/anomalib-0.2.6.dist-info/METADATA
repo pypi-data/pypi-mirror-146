@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: anomalib
+Version: 0.2.6
+Summary: anomalib - Anomaly Detection Library
+Home-page: 
+Author: Intel OpenVINO
+Author-email: help@openvino.intel.com
+License: Copyright (c) Intel - All Rights Reserved. Licensed under the Apache License, Version 2.0 (the "License")See LICENSE file for more details.
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: albumentations (>=1.1.0)
+Requires-Dist: einops (>=0.3.2)
+Requires-Dist: kornia (>=0.5.6)
+Requires-Dist: omegaconf (>=2.1.1)
+Requires-Dist: opencv-python (>=4.5.3.56)
+Requires-Dist: pandas (>=1.1.0)
+Requires-Dist: pytorch-lightning (>=1.6.0)
+Requires-Dist: torchvision (>=0.9.1)
+Requires-Dist: torchtext (>=0.9.1)
+Requires-Dist: wandb (==0.12.9)
+Requires-Dist: matplotlib (>=3.4.3)
+Provides-Extra: dev
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flaky ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.15.0) ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: tox (>=3.24.3) ; extra == 'dev'
+Requires-Dist: types-PyYAML ; extra == 'dev'
+Requires-Dist: types-setuptools ; extra == 'dev'
+Requires-Dist: furo (==2021.7.31b41) ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: sphinx (>=4.1.2) ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: sphinxemoji (==0.1.8) ; extra == 'dev'
+Provides-Extra: full
+Requires-Dist: black (==22.3.0) ; extra == 'full'
+Requires-Dist: coverage ; extra == 'full'
+Requires-Dist: flake8 ; extra == 'full'
+Requires-Dist: flaky ; extra == 'full'
+Requires-Dist: isort (==5.10.1) ; extra == 'full'
+Requires-Dist: mypy ; extra == 'full'
+Requires-Dist: pytest ; extra == 'full'
+Requires-Dist: pylint ; extra == 'full'
+Requires-Dist: pre-commit (>=2.15.0) ; extra == 'full'
+Requires-Dist: setuptools ; extra == 'full'
+Requires-Dist: tox (>=3.24.3) ; extra == 'full'
+Requires-Dist: types-PyYAML ; extra == 'full'
+Requires-Dist: types-setuptools ; extra == 'full'
+Requires-Dist: furo (==2021.7.31b41) ; extra == 'full'
+Requires-Dist: myst-parser ; extra == 'full'
+Requires-Dist: sphinx (>=4.1.2) ; extra == 'full'
+Requires-Dist: sphinx-autoapi ; extra == 'full'
+Requires-Dist: sphinxemoji (==0.1.8) ; extra == 'full'
+Requires-Dist: defusedxml (==0.7.1) ; extra == 'full'
+Requires-Dist: requests (==2.26.0) ; extra == 'full'
+Requires-Dist: networkx (~=2.5) ; extra == 'full'
+Requires-Dist: nncf (==2.1.0) ; extra == 'full'
+Requires-Dist: onnx (==1.10.1) ; extra == 'full'
+Requires-Dist: openvino-dev (==2021.4.2) ; extra == 'full'
+Provides-Extra: openvino
+Requires-Dist: defusedxml (==0.7.1) ; extra == 'openvino'
+Requires-Dist: requests (==2.26.0) ; extra == 'openvino'
+Requires-Dist: networkx (~=2.5) ; extra == 'openvino'
+Requires-Dist: nncf (==2.1.0) ; extra == 'openvino'
+Requires-Dist: onnx (==1.10.1) ; extra == 'openvino'
+Requires-Dist: openvino-dev (==2021.4.2) ; extra == 'openvino'
+
+UNKNOWN
+
