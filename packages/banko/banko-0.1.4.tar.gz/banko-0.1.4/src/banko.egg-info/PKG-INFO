@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: banko
+Version: 0.1.4
+Summary: Library for generating banko plates
+Home-page: https://github.com/skipperkongen/banko
+Author: Pimin Konstantin Kefaloukos
+Author-email: skipperkongen@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/skipperkongen/banko/archive/refs/tags/v0.1.4.tar.gz
+Description: # Banko
+        
+        A small pure Python library for randomly generating Banko-plader (Danish), also known as Bingo plates in the UK.
+        
+        Dependencies:
+        
+        - Python 3
+        
+        How to install:
+        
+        ```bash
+        pip install banko
+        ```
+        
+        Usage:
+        
+        ```python
+        from banko.algorithms import Algorithm2
+        from banko.render import render_ascii
+        
+        algo = Algorithm2()
+        rows = algo.generate(seed=42)
+        print(render_ascii(rows))
+        ```
+        
+        Output:
+        
+        ```
+        1    21 30          73 80
+             22    41    66 74 82
+          18 28    43 58       86
+        ```
+        
+        ## Future work
+        
+        Generate pretty images from array.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
