@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+makerpy/__init__.py
+makerpy.egg-info/PKG-INFO
+makerpy.egg-info/SOURCES.txt
+makerpy.egg-info/dependency_links.txt
+makerpy.egg-info/requires.txt
+makerpy.egg-info/top_level.txt
