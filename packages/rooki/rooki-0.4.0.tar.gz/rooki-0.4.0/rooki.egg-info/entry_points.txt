@@ -1,0 +1,2 @@
+[console_scripts]
+rooki = rooki.cli:main
