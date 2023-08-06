@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: pyluna-common
+Version: 0.1.2
+Summary: Transformation functions and services for multi-modal oncology data
+Home-page: https://componcmsk.org/msk-mind/
+Author: msk-mind
+Author-email: CompOncBST@mskcc.org
+License: Apache License version 2.0
+Project-URL: Bug Tracker, https://github.com/msk-mind/luna/issues
+Keywords: radiology,pathology,clinical
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: dask
+Requires-Dist: distributed
+Requires-Dist: bokeh (>=2.1.1)
+Requires-Dist: click
+Requires-Dist: decorator (<5.0,>=4.3)
+Requires-Dist: filehash
+Requires-Dist: joblib
+Requires-Dist: minio
+Requires-Dist: neo4j
+Requires-Dist: numpy (>=1.9.0)
+Requires-Dist: pandas (>=1.1.0)
+Requires-Dist: pyarrow (>=3.0.0)
+Requires-Dist: pyspark (==3.1.2)
+Requires-Dist: scikit-image
+Requires-Dist: itk
+Requires-Dist: opencv-python
+Requires-Dist: tornado (>=6.0.4)
+Requires-Dist: PyYAML (>=5.4)
+Requires-Dist: jsonpath-ng (>=1.5.2)
+Requires-Dist: yamale (>=3.0.4)
+Requires-Dist: pyradiomics
+Requires-Dist: flask-restx
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: Pillow (>=8.1.1)
+Requires-Dist: deltalake (>=0.2.1)
+Requires-Dist: dirhash
+Requires-Dist: log4mongo
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-runner ; extra == 'dev'
+Requires-Dist: testfixtures ; extra == 'dev'
+Requires-Dist: requests-mock ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: wheel (>=0.22) ; extra == 'dev'
+Requires-Dist: pyinstaller (>=4.0) ; extra == 'dev'
+Requires-Dist: poetry ; extra == 'dev'
+Requires-Dist: python-semantic-release ; extra == 'dev'
+Requires-Dist: m2r2 ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+
+# pyluna-common
+Transformation functions and services for multi-modal oncology data
+
+## Documentation
+
+See https://pyluna.readthedocs.io
+
+## PyPi
+
+See https://pypi.org/project/pyluna/
+
+
