@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/QRCG.egg-info/PKG-INFO
+src/QRCG.egg-info/SOURCES.txt
+src/QRCG.egg-info/dependency_links.txt
+src/QRCG.egg-info/top_level.txt
