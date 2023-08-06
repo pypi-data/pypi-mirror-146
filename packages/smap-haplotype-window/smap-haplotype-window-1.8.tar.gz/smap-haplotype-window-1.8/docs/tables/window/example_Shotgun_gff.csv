@@ -1,0 +1,10 @@
+Chr1,SMAP,CRISPR_border_up,1,10,.,\+,.,NAME=Chr1_window_1
+Chr1,SMAP,CRISPR_border_down,61,70,.,\+,.,NAME=Chr1_window_1
+Chr1,SMAP,CRISPR_border_up,21,30,.,\+,.,NAME=Chr1_window_2
+Chr1,SMAP,CRISPR_border_down,81,90,.,\+,.,NAME=Chr1_window_2
+Chr1,SMAP,CRISPR_border_up,41,50,.,\+,.,NAME=Chr1_window_3
+Chr1,SMAP,CRISPR_border_down,101,110,.,\+,.,NAME=Chr1_window_3
+Chr2,SMAP,CRISPR_border_up,61,70,.,\+,.,NAME=Chr2_window_1
+Chr2,SMAP,CRISPR_border_down,121,130,.,\+,.,NAME=Chr2_window_1
+Chr2,SMAP,CRISPR_border_up,81,90,.,\+,.,NAME=Chr2_window_2
+Chr2,SMAP,CRISPR_border_down,141,150,.,\+,.,NAME=Chr2_window_2
