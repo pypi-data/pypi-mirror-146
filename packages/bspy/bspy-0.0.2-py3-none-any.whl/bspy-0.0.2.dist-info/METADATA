@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: bspy
+Version: 0.0.2
+Summary: Library for manipulating and rendering non-uniform b-splines
+Home-page: http://github.com/ericbrec/bspy
+Author: Eric Brechner
+Author-email: ericbrec@msn.com
+License: MIT
+Project-URL: Bug Tracker, http://github.com/ericbrec/bspy/issues
+Keywords: opengl,bspline,b-spline,nub,tkinter
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bspy
+Under construction. 
+
+Library for manipulating and rendering non-uniform b-splines.
+
+Package should work but public documentation is not yet published and significant features are still under development and testing.
+
+Internal documentation can be found [here](https://github.com/ericbrec/bspy/tree/main/docs).
+
