@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: costngn-cli
+Version: 0.0.1
+Summary: A CLI to interact with several cloud services providers
+Home-page: https://github.com/infrangn/costngn-cli-dev
+Author: Pedro Tibiletti
+Author-email: pedro.tibiletti@gmail.com
+License: MIT
+Keywords: geeksforgeeks gfg article python package vibhu4agarwal
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: setuptools
+Requires-Dist: argparse
+
+Sample Package made for a demo       of its making for the GeeksforGeeks Article.
+
+
