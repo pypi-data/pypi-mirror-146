@@ -1,0 +1,14 @@
+jinja2
+requests
+colorama
+dotty-dict
+typing-extensions
+
+[test]
+black
+flake8
+coverage
+pytest
+pytest-cov
+twine>=1.5.0
+wheel
