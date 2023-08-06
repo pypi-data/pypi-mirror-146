@@ -1,0 +1,17 @@
+<section class="resume-section" id="experience">
+    <div class="resume-section-content">
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">{{ instance.Job }}</h3>
+                <div class="subheading mb-3"><a href="{{ instance.website }}">{{ instance.company }}</a></div>
+                {{ instance.description|safe }}
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">{{ instance.start_date }}</span></div>
+            {% if instance.active_post %}
+                <div class="flex-shrink-0"><span class="text-primary">- Until now</span></div>
+            {% else %}
+                <div class="flex-shrink-0"><span class="text-primary">- Until {{ instance.end_date }}</span></div>
+            {% endif %}
+        </div>
+    </div>
+</section>
