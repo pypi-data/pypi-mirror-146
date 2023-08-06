@@ -1,0 +1,14 @@
+seqiolib/__init__.py,sha256=YkzWB0IJdHdfm9P7OypnTaRc8mICRZJNJkdP62DO6Ns,306
+seqiolib/encoder.py,sha256=FZxqePyb73QEnITCxgsZiYecaDdF7XdbHuSS65hNKms,2554
+seqiolib/seqiolib.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+seqiolib/sequence.py,sha256=jPmL_mERw4amDEsfaCvxi8V4nq-oAmbyEpmb9CCU1ic,9406
+seqiolib/sequence.py~44e6a16e35f68fdbf47cf51b43c55c2b185689d5,sha256=sFj3sG7sDlO1A_hZwBGNiMWP7IyXw3RThzq32zW3AkQ,8906
+seqiolib/utils/__init__.py,sha256=ZBB49mHrNF3MD8o22xwEVF3laOtUHK6J2KZelnVbY8M,565
+seqiolib/utils/io.py,sha256=C-GNdCtRB-bE1p570wveDLK6WjOOiPXH25lWIP8f4rY,5720
+seqiolib/utils/utils.py,sha256=hUkef52nJslpbfZWas0SeqHo2cLL_B59vHwz_piLhl4,655
+seqiolib-0.2.4.dist-info/AUTHORS.rst,sha256=-XIGYRaElwYkM63XfcadBbqr8-WwYkz5tPZb82Kt97w,162
+seqiolib-0.2.4.dist-info/LICENSE,sha256=boO5gFJLmSpaYR53u6UKc_RRb4CJl0Bw9nD3aeMggaw,1071
+seqiolib-0.2.4.dist-info/METADATA,sha256=-_VIwOKh34gK6EgtCMy8JTxRtP3gnpCiVZAUlFLEn50,2210
+seqiolib-0.2.4.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+seqiolib-0.2.4.dist-info/top_level.txt,sha256=a-Bce-aF6c_siOGUoVTs-RMQpN1iOaiOhMZTBj-OjQU,9
+seqiolib-0.2.4.dist-info/RECORD,,
