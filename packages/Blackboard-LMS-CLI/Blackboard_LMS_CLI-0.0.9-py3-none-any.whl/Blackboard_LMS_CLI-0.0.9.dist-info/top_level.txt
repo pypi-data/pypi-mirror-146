@@ -1,0 +1,3 @@
+bbcli
+shell-completion
+tests
