@@ -1,0 +1,8 @@
+README.md
+setup.py
+avirtech_report_metashape.egg-info/PKG-INFO
+avirtech_report_metashape.egg-info/SOURCES.txt
+avirtech_report_metashape.egg-info/dependency_links.txt
+avirtech_report_metashape.egg-info/top_level.txt
+generate_report_2/__init__.py
+generate_report_2/generate_report_2.py
