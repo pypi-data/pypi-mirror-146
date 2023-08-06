@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ricktheroll
+Version: 1.0.0
+Summary: A package that rick rolls people
+Home-page: UNKNOWN
+Author: Anas (Anas Kattan)
+Author-email: <anas@hacktype.tk>
+License: UNKNOWN
+Keywords: python,rick,roll,rickastley,anas,lol
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# Rick Roll Package
+
+A package that has a function to rick roll people
+
+# Installation
+
+``` npm i ricklolroll ```
+
+# Usage
+To rick roll someone , do ```rickroll()```
+
+# Contact
+[Contact the creator (me)](mailto:anas@hacktype.tk)
+
