@@ -1,0 +1,12 @@
+color_detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+color_detection/detect.py,sha256=IZSyMMe2jTuGAcSspSBnMUgfvrXXmCmPjmZ323jBvO0,2588
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/detect_color.py,sha256=kRMLLlX3joR4Z0jXqjJDIsmn-HM5c-zpjNcI0dJCmZ0,1036
+examples/dominant_color.py,sha256=kTfHhwx7VoLMs06VH90lzHxmWGnM-G-cVjLFyPkzIU8,447
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_color_detection.py,sha256=I0Q7wR8YphZQsITSMBTgyjPl3H6UZfLOh5UTW2jF5Bc,783
+color_detection_jdla-0.0.3.dist-info/LICENSE,sha256=SWWpnxpdsqUaF9iW3ruAXCdsQ75eUl97m_Y-1TMqlzY,1091
+color_detection_jdla-0.0.3.dist-info/METADATA,sha256=HotdESzdOjrAZYRcR1d_HbzlOoNrNiwgRUlY_97FCl0,1395
+color_detection_jdla-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+color_detection_jdla-0.0.3.dist-info/top_level.txt,sha256=wG6I4KM8HpQ1VOx31kgcCPhaEPNocqCJr76Dc_IspGg,30
+color_detection_jdla-0.0.3.dist-info/RECORD,,
