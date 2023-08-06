@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: netbox-gateways
+Version: 0.2
+Summary: Manage simple prefix default gateways
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: setuptools-git
+
+UNKNOWN
+
