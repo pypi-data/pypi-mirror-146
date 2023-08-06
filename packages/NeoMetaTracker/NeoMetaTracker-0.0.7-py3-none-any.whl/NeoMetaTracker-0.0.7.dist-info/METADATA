@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: NeoMetaTracker
+Version: 0.0.7
+Summary: Track and visualize changes in a Neo4j database schema
+Home-page: https://git.connect.dzd-ev.de/dzdpythonmodules/neo4j-meta-logger
+Author: Tim Bleimehl
+Author-email: tim.bleimehl@helmholtz-muenchen.de
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: py2neo
+Requires-Dist: DZDUtils
+
+# neo4j-meta-logger
+
+A python module to log and track your neo4j graph schema transformations.
+
+`call db.schema.visualization` + ⏲️ a time machine + some helpful 🔧 tools and 📈 statistics
+
+Works fast with neo4j graphs of any size 💪
+
+Maintainer: Tim Bleimehl  
+Status: Pre-alpha
+
+
+# Example
+
+Lets create a sample graph with python and Neo4J
+
+```python
+
+import py2neo
+from NeoMetaTracker import NeoMetaTracker
+
+g = py2neo.Graph(name="test_graph")
+
+g.run(
+    "CREATE p = (:Human{name:'Amina Okujewa'})-[:LIVES_ON]->(:World {name: 'Earth'})"
+)
+g.run(
+    "CREATE p = (:Cat{name:'Grumpy Cat'})-[:LIVES_ON]->(:World {name: 'Internet'})"
+)
+g.run(
+    "MATCH (wI:World{name:'Internet'}),(wE:World{name:'Earth'}) CREATE (wI)-[:EXISTS_ON]->(wE)"
+)
+```
+
+Our graph looks like this:
+
+!["docs/01_test_base_graph.png"](docs/01_test_base_graph.png)
+
+and the schema will look like this:
+
+!["docs/03_schema.png"](docs/03_schema.png)
+
+Lets capture the current status to analyse the changes later.
+
+```python
+meta_logger = NeoMetaTracker(test_graph)
+meta_logger.capture()
+```
+
+Now lets do some changes to our Graphs content
+
+```python
+g.run(
+    "MATCH (wI:World{name:'Internet'}),(wE:World{name:'Earth'}) CREATE (as:Human{name:'Aaron Swartz'})-[:LIVES_ON]->(wI), (as)-[:LIVES_ON]->(wE)"
+)
+```
+
+Our graph now looks like this
+
+!["docs/docs/02_graph_extended.png"](docs/02_graph_extended.png)
+
+The schema still looks the same. We wont be able to recognize changes without any help:
+
+`call db.schema.visualization`
+
+!["docs/03_schema.png"](docs/03_schema.png)
+
+Here come `NeoMetaTracker` for the rescue
+
+Lets do another capture to compare the changes we did:
+
+```python
+meta_logger.capture()
+```
+
+Now we can analyze the changes in the graph:
+
+
+```python
+meta_logger.get_numeric_last_changes()
+```
+
+This outputs: 
+
+```
+{'labels': {'Human': 1}, 'relations': {'LIVES_ON': 2}}
+```
+
+We can see we created one new Node with the Label `Human` and 2 new relations named `LIVES_ON`.  
+This allready can be a valuable meta information, but wait there is more...
+
+Lets visualize the schema changes in another graph.
+
+```python
+changes_subgraph = meta_logger.get_schemagraph_last_changes()
+schema_g = py2neo.Graph(name="test_graph")
+schema_g.merge(changes_subgraph)
+```
+
+Now we only see the part of our schema that changed:
+
+!["docs/04_schema_changes.png"](docs/04_schema_changes.png)
+
+We can also recall any old state of our schema on any point in time where we did a `capture`  
+
+```python
+meta_logger.capture_points[0].schema
+```
+
+This will return a `py2neo.Subgraph` of the schema from the beginning of our script. Same as `call db.schema.visualization` but with a timemachine :) 
+
+
