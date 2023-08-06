@@ -1,0 +1,5 @@
+"""
+URLs for events.
+"""
+
+urlpatterns = []
