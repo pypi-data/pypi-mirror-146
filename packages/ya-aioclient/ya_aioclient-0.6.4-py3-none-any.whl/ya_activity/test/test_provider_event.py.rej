@@ -1,0 +1,29 @@
+***************
+*** 34,49 ****
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_activity.models.provider_event.ProviderEvent()  # noqa: E501
+!         if include_optional :
+!             return ProviderEvent(
+!                 event_type = '0', 
+!                 activity_id = '0'
+!             )
+!         else :
+!             return ProviderEvent(
+!                 event_type = '0',
+!                 activity_id = '0',
+!         )
+  
+      def testProviderEvent(self):
+          """Test ProviderEvent"""
+--- 32,41 ----
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_activity.models.provider_event.ProviderEvent()  # noqa: E501
+!         if include_optional:
+!             return ProviderEvent(event_type="0", activity_id="0")
+!         else:
+!             return ProviderEvent(event_type="0", activity_id="0",)
+  
+      def testProviderEvent(self):
+          """Test ProviderEvent"""

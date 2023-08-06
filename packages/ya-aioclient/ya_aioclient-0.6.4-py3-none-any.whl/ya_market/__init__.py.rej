@@ -1,0 +1,10 @@
+***************
+*** 47,50 ****
+  from ya_market.models.proposal_all_of import ProposalAllOf
+  from ya_market.models.proposal_event import ProposalEvent
+  from ya_market.models.proposal_event_all_of import ProposalEventAllOf
+- 
+--- 45,47 ----
+  from ya_market.models.proposal_all_of import ProposalAllOf
+  from ya_market.models.proposal_event import ProposalEvent
+  from ya_market.models.proposal_event_all_of import ProposalEventAllOf

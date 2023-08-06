@@ -1,0 +1,27 @@
+***************
+*** 34,47 ****
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_market.models.demand_all_of.DemandAllOf()  # noqa: E501
+!         if include_optional :
+!             return DemandAllOf(
+!                 demand_id = '0', 
+!                 requestor_id = '0'
+!             )
+!         else :
+!             return DemandAllOf(
+!         )
+  
+      def testDemandAllOf(self):
+          """Test DemandAllOf"""
+--- 32,41 ----
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_market.models.demand_all_of.DemandAllOf()  # noqa: E501
+!         if include_optional:
+!             return DemandAllOf(demand_id="0", requestor_id="0")
+!         else:
+!             return DemandAllOf()
+  
+      def testDemandAllOf(self):
+          """Test DemandAllOf"""

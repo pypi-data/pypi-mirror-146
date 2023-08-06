@@ -1,0 +1,50 @@
+***************
+*** 33,52 ****
+                              and the value is json key in definition.
+      """
+      openapi_types = {
+!         'properties': 'object',
+!         'constraints': 'str',
+!         'demand_id': 'str',
+!         'requestor_id': 'str'
+      }
+  
+      attribute_map = {
+!         'properties': 'properties',
+!         'constraints': 'constraints',
+!         'demand_id': 'demandId',
+!         'requestor_id': 'requestorId'
+      }
+  
+!     def __init__(self, properties=None, constraints=None, demand_id=None, requestor_id=None, local_vars_configuration=None):  # noqa: E501
+          """Demand - a model defined in OpenAPI"""  # noqa: E501
+          if local_vars_configuration is None:
+              local_vars_configuration = Configuration()
+--- 32,58 ----
+                              and the value is json key in definition.
+      """
+      openapi_types = {
+!         "properties": "object",
+!         "constraints": "str",
+!         "demand_id": "str",
+!         "requestor_id": "str",
+      }
+  
+      attribute_map = {
+!         "properties": "properties",
+!         "constraints": "constraints",
+!         "demand_id": "demandId",
+!         "requestor_id": "requestorId",
+      }
+  
+!     def __init__(
+!         self,
+!         properties=None,
+!         constraints=None,
+!         demand_id=None,
+!         requestor_id=None,
+!         local_vars_configuration=None,
+!     ):  # noqa: E501
+          """Demand - a model defined in OpenAPI"""  # noqa: E501
+          if local_vars_configuration is None:
+              local_vars_configuration = Configuration()

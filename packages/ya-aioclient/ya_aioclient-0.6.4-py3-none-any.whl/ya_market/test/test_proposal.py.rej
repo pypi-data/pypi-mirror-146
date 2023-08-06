@@ -1,0 +1,34 @@
+***************
+*** 35,41 ****
+          # model = ya_market.models.proposal.Proposal()  # noqa: E501
+          if include_optional:
+              return Proposal(
+!                 properties=None,
+                  constraints="0",
+                  proposal_id="0",
+                  issuer_id="0",
+--- 35,41 ----
+          # model = ya_market.models.proposal.Proposal()  # noqa: E501
+          if include_optional:
+              return Proposal(
+!                 properties={},
+                  constraints="0",
+                  proposal_id="0",
+                  issuer_id="0",
+***************
+*** 43,49 ****
+                  prev_proposal_id="0",
+              )
+          else:
+!             return Proposal(properties=None, constraints="0",)
+  
+      def testProposal(self):
+          """Test Proposal"""
+--- 43,49 ----
+                  prev_proposal_id="0",
+              )
+          else:
+!             return Proposal(properties={}, constraints="0",)
+  
+      def testProposal(self):
+          """Test Proposal"""

@@ -1,0 +1,96 @@
+***************
+*** 33,52 ****
+                              and the value is json key in definition.
+      """
+      openapi_types = {
+!         'invoice_id': 'str',
+!         'timestamp': 'datetime',
+!         'details': 'object',
+!         'event_type': 'EventType'
+      }
+  
+      attribute_map = {
+!         'invoice_id': 'invoiceId',
+!         'timestamp': 'timestamp',
+!         'details': 'details',
+!         'event_type': 'eventType'
+      }
+  
+!     def __init__(self, invoice_id=None, timestamp=None, details=None, event_type=None, local_vars_configuration=None):  # noqa: E501
+          """InvoiceEvent - a model defined in OpenAPI"""  # noqa: E501
+          if local_vars_configuration is None:
+              local_vars_configuration = Configuration()
+--- 32,58 ----
+                              and the value is json key in definition.
+      """
+      openapi_types = {
+!         "invoice_id": "str",
+!         "timestamp": "datetime",
+!         "details": "object",
+!         "event_type": "EventType",
+      }
+  
+      attribute_map = {
+!         "invoice_id": "invoiceId",
+!         "timestamp": "timestamp",
+!         "details": "details",
+!         "event_type": "eventType",
+      }
+  
+!     def __init__(
+!         self,
+!         invoice_id=None,
+!         timestamp=None,
+!         details=None,
+!         event_type=None,
+!         local_vars_configuration=None,
+!     ):  # noqa: E501
+          """InvoiceEvent - a model defined in OpenAPI"""  # noqa: E501
+          if local_vars_configuration is None:
+              local_vars_configuration = Configuration()
+***************
+*** 82,89 ****
+          :param invoice_id: The invoice_id of this InvoiceEvent.  # noqa: E501
+          :type: str
+          """
+!         if self.local_vars_configuration.client_side_validation and invoice_id is None:  # noqa: E501
+!             raise ValueError("Invalid value for `invoice_id`, must not be `None`")  # noqa: E501
+  
+          self._invoice_id = invoice_id
+  
+--- 88,99 ----
+          :param invoice_id: The invoice_id of this InvoiceEvent.  # noqa: E501
+          :type: str
+          """
+!         if (
+!             self.local_vars_configuration.client_side_validation and invoice_id is None
+!         ):  # noqa: E501
+!             raise ValueError(
+!                 "Invalid value for `invoice_id`, must not be `None`"
+!             )  # noqa: E501
+  
+          self._invoice_id = invoice_id
+  
+***************
+*** 105,112 ****
+          :param timestamp: The timestamp of this InvoiceEvent.  # noqa: E501
+          :type: datetime
+          """
+!         if self.local_vars_configuration.client_side_validation and timestamp is None:  # noqa: E501
+!             raise ValueError("Invalid value for `timestamp`, must not be `None`")  # noqa: E501
+  
+          self._timestamp = timestamp
+  
+--- 115,126 ----
+          :param timestamp: The timestamp of this InvoiceEvent.  # noqa: E501
+          :type: datetime
+          """
+!         if (
+!             self.local_vars_configuration.client_side_validation and timestamp is None
+!         ):  # noqa: E501
+!             raise ValueError(
+!                 "Invalid value for `timestamp`, must not be `None`"
+!             )  # noqa: E501
+  
+          self._timestamp = timestamp
+  

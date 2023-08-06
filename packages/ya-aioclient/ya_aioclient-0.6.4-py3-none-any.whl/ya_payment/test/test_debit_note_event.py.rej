@@ -1,0 +1,45 @@
+***************
+*** 34,52 ****
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_payment.models.debit_note_event.DebitNoteEvent()  # noqa: E501
+!         if include_optional :
+              return DebitNoteEvent(
+!                 debit_note_id = '0', 
+!                 timestamp = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+!                 details = None, 
+!                 event_type = 'RECEIVED'
+              )
+!         else :
+              return DebitNoteEvent(
+!                 debit_note_id = '0',
+!                 timestamp = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+!                 event_type = 'RECEIVED',
+!         )
+  
+      def testDebitNoteEvent(self):
+          """Test DebitNoteEvent"""
+--- 33,55 ----
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_payment.models.debit_note_event.DebitNoteEvent()  # noqa: E501
+!         if include_optional:
+              return DebitNoteEvent(
+!                 debit_note_id="0",
+!                 timestamp=datetime.datetime.strptime(
+!                     "2013-10-20 19:20:30.00", "%Y-%m-%d %H:%M:%S.%f"
+!                 ),
+!                 details=None,
+!                 event_type="RECEIVED",
+              )
+!         else:
+              return DebitNoteEvent(
+!                 debit_note_id="0",
+!                 timestamp=datetime.datetime.strptime(
+!                     "2013-10-20 19:20:30.00", "%Y-%m-%d %H:%M:%S.%f"
+!                 ),
+!                 event_type="RECEIVED",
+!             )
+  
+      def testDebitNoteEvent(self):
+          """Test DebitNoteEvent"""

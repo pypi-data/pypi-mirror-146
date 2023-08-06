@@ -1,0 +1,1420 @@
+***************
+*** 89,124 ****
+  
+          local_var_params = locals()
+  
+!         all_params = [
+!             'agreement_id'
+!         ]
+          all_params.extend(
+              [
+!                 'async_req',
+!                 '_return_http_data_only',
+!                 '_preload_content',
+!                 '_request_timeout'
+              ]
+          )
+  
+!         for key, val in six.iteritems(local_var_params['kwargs']):
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method cancel_agreement" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params['kwargs']
+          # verify the required parameter 'agreement_id' is set
+!         if self.api_client.client_side_validation and ('agreement_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['agreement_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `agreement_id` when calling `cancel_agreement`")  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if 'agreement_id' in local_var_params:
+!             path_params['agreementId'] = local_var_params['agreement_id']  # noqa: E501
+  
+          query_params = []
+  
+--- 82,119 ----
+  
+          local_var_params = locals()
+  
+!         all_params = ["agreement_id"]
+          all_params.extend(
+              [
+!                 "async_req",
+!                 "_return_http_data_only",
+!                 "_preload_content",
+!                 "_request_timeout",
+              ]
+          )
+  
+!         for key, val in local_var_params["kwargs"].items():
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method cancel_agreement" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params["kwargs"]
+          # verify the required parameter 'agreement_id' is set
+!         if self.api_client.client_side_validation and (
+!             "agreement_id" not in local_var_params
+!             or local_var_params["agreement_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `agreement_id` when calling `cancel_agreement`"
+!             )  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if "agreement_id" in local_var_params:
+!             path_params["agreementId"] = local_var_params["agreement_id"]  # noqa: E501
+  
+          query_params = []
+  
+***************
+*** 129,142 ****
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params['Accept'] = self.api_client.select_header_accept(
+!             ['application/json'])  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ['app_key']  # noqa: E501
+  
+          return self.api_client.call_api(
+!             '/agreements/{agreementId}', 'DELETE',
+              path_params,
+              query_params,
+              header_params,
+--- 124,139 ----
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params["Accept"] = self.api_client.select_header_accept(
+!             ["application/json"]
+!         )  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ["app_key"]  # noqa: E501
+  
+          return self.api_client.call_api(
+!             "/agreements/{agreementId}",
+!             "DELETE",
+              path_params,
+              query_params,
+              header_params,
+***************
+*** 346,393 ****
+  
+          local_var_params = locals()
+  
+!         all_params = [
+!             'subscription_id',
+!             'timeout',
+!             'max_events'
+!         ]
+          all_params.extend(
+              [
+!                 'async_req',
+!                 '_return_http_data_only',
+!                 '_preload_content',
+!                 '_request_timeout'
+              ]
+          )
+  
+!         for key, val in six.iteritems(local_var_params['kwargs']):
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method collect_offers" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params['kwargs']
+          # verify the required parameter 'subscription_id' is set
+!         if self.api_client.client_side_validation and ('subscription_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['subscription_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `subscription_id` when calling `collect_offers`")  # noqa: E501
+! 
+!         if self.api_client.client_side_validation and 'timeout' in local_var_params and local_var_params['timeout'] < 0.0:  # noqa: E501
+!             raise ApiValueError("Invalid value for parameter `timeout` when calling `collect_offers`, must be a value greater than or equal to `0.0`")  # noqa: E501
+!         if self.api_client.client_side_validation and 'max_events' in local_var_params and local_var_params['max_events'] < 0:  # noqa: E501
+!             raise ApiValueError("Invalid value for parameter `max_events` when calling `collect_offers`, must be a value greater than or equal to `0`")  # noqa: E501
+          collection_formats = {}
+  
+          path_params = {}
+!         if 'subscription_id' in local_var_params:
+!             path_params['subscriptionId'] = local_var_params['subscription_id']  # noqa: E501
+  
+          query_params = []
+!         if 'timeout' in local_var_params and local_var_params['timeout'] is not None:  # noqa: E501
+!             query_params.append(('timeout', local_var_params['timeout']))  # noqa: E501
+!         if 'max_events' in local_var_params and local_var_params['max_events'] is not None:  # noqa: E501
+!             query_params.append(('maxEvents', local_var_params['max_events']))  # noqa: E501
+  
+          header_params = {}
+  
+--- 348,416 ----
+  
+          local_var_params = locals()
+  
+!         all_params = ["subscription_id", "timeout", "max_events"]
+          all_params.extend(
+              [
+!                 "async_req",
+!                 "_return_http_data_only",
+!                 "_preload_content",
+!                 "_request_timeout",
+              ]
+          )
+  
+!         for key, val in local_var_params["kwargs"].items():
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method collect_offers" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params["kwargs"]
+          # verify the required parameter 'subscription_id' is set
+!         if self.api_client.client_side_validation and (
+!             "subscription_id" not in local_var_params
+!             or local_var_params["subscription_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `subscription_id` when calling `collect_offers`"
+!             )  # noqa: E501
+! 
+!         if (
+!             self.api_client.client_side_validation
+!             and "timeout" in local_var_params
+!             and local_var_params["timeout"] < 0.0
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Invalid value for parameter `timeout` when calling `collect_offers`, must be a value greater than or equal to `0.0`"
+!             )  # noqa: E501
+!         if (
+!             self.api_client.client_side_validation
+!             and "max_events" in local_var_params
+!             and local_var_params["max_events"] < 0
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Invalid value for parameter `max_events` when calling `collect_offers`, must be a value greater than or equal to `0`"
+!             )  # noqa: E501
+          collection_formats = {}
+  
+          path_params = {}
+!         if "subscription_id" in local_var_params:
+!             path_params["subscriptionId"] = local_var_params[
+!                 "subscription_id"
+!             ]  # noqa: E501
+  
+          query_params = []
+!         if (
+!             "timeout" in local_var_params and local_var_params["timeout"] is not None
+!         ):  # noqa: E501
+!             query_params.append(("timeout", local_var_params["timeout"]))  # noqa: E501
+!         if (
+!             "max_events" in local_var_params
+!             and local_var_params["max_events"] is not None
+!         ):  # noqa: E501
+!             query_params.append(
+!                 ("maxEvents", local_var_params["max_events"])
+!             )  # noqa: E501
+  
+          header_params = {}
+  
+***************
+*** 396,422 ****
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params['Accept'] = self.api_client.select_header_accept(
+!             ['application/json4', 'application/json'])  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ['app_key']  # noqa: E501
+  
+          return self.api_client.call_api(
+!             '/demands/{subscriptionId}/events', 'GET',
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type='list[ProposalEvent]',  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get('async_req'),
+!             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+!             _preload_content=local_var_params.get('_preload_content', True),
+!             _request_timeout=local_var_params.get('_request_timeout'),
+!             collection_formats=collection_formats)
+  
+      def confirm_agreement(self, agreement_id, **kwargs):  # noqa: E501
+          """Sends Agreement draft to the Provider.  # noqa: E501
+--- 419,450 ----
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params["Accept"] = self.api_client.select_header_accept(
+!             ["application/json4", "application/json"]
+!         )  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ["app_key"]  # noqa: E501
+  
+          return self.api_client.call_api(
+!             "/demands/{subscriptionId}/events",
+!             "GET",
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type="list[ProposalEvent]",  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get("async_req"),
+!             _return_http_data_only=local_var_params.get(
+!                 "_return_http_data_only"
+!             ),  # noqa: E501
+!             _preload_content=local_var_params.get("_preload_content", True),
+!             _request_timeout=local_var_params.get("_request_timeout"),
+!             collection_formats=collection_formats,
+!         )
+  
+      def confirm_agreement(self, agreement_id, **kwargs):  # noqa: E501
+          """Sends Agreement draft to the Provider.  # noqa: E501
+***************
+*** 473,508 ****
+  
+          local_var_params = locals()
+  
+!         all_params = [
+!             'agreement_id'
+!         ]
+          all_params.extend(
+              [
+!                 'async_req',
+!                 '_return_http_data_only',
+!                 '_preload_content',
+!                 '_request_timeout'
+              ]
+          )
+  
+!         for key, val in six.iteritems(local_var_params['kwargs']):
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method confirm_agreement" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params['kwargs']
+          # verify the required parameter 'agreement_id' is set
+!         if self.api_client.client_side_validation and ('agreement_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['agreement_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `agreement_id` when calling `confirm_agreement`")  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if 'agreement_id' in local_var_params:
+!             path_params['agreementId'] = local_var_params['agreement_id']  # noqa: E501
+  
+          query_params = []
+  
+--- 503,540 ----
+  
+          local_var_params = locals()
+  
+!         all_params = ["agreement_id"]
+          all_params.extend(
+              [
+!                 "async_req",
+!                 "_return_http_data_only",
+!                 "_preload_content",
+!                 "_request_timeout",
+              ]
+          )
+  
+!         for key, val in local_var_params["kwargs"].items():
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method confirm_agreement" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params["kwargs"]
+          # verify the required parameter 'agreement_id' is set
+!         if self.api_client.client_side_validation and (
+!             "agreement_id" not in local_var_params
+!             or local_var_params["agreement_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `agreement_id` when calling `confirm_agreement`"
+!             )  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if "agreement_id" in local_var_params:
+!             path_params["agreementId"] = local_var_params["agreement_id"]  # noqa: E501
+  
+          query_params = []
+  
+***************
+*** 533,545 ****
+              files=local_var_files,
+              response_type=None,  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get('async_req'),
+!             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+!             _preload_content=local_var_params.get('_preload_content', True),
+!             _request_timeout=local_var_params.get('_request_timeout'),
+!             collection_formats=collection_formats)
+  
+!     def counter_proposal_demand(self, subscription_id, proposal_id, proposal, **kwargs):  # noqa: E501
+          """Responds with a bespoke Demand to received Offer.  # noqa: E501
+  
+          Creates and sends a modified version of original Demand (a counter-proposal) adjusted to previously received Proposal (ie. Offer). Changes Proposal state to `Draft`. Returns created Proposal id.   # noqa: E501
+--- 567,584 ----
+              files=local_var_files,
+              response_type=None,  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get("async_req"),
+!             _return_http_data_only=local_var_params.get(
+!                 "_return_http_data_only"
+!             ),  # noqa: E501
+!             _preload_content=local_var_params.get("_preload_content", True),
+!             _request_timeout=local_var_params.get("_request_timeout"),
+!             collection_formats=collection_formats,
+!         )
+  
+!     def counter_proposal_demand(
+!         self, subscription_id, proposal_id, proposal, **kwargs
+!     ):  # noqa: E501
+          """Responds with a bespoke Demand to received Offer.  # noqa: E501
+  
+          Creates and sends a modified version of original Demand (a counter-proposal) adjusted to previously received Proposal (ie. Offer). Changes Proposal state to `Draft`. Returns created Proposal id.   # noqa: E501
+***************
+*** 563,572 ****
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs['_return_http_data_only'] = True
+!         return self.counter_proposal_demand_with_http_info(subscription_id, proposal_id, proposal, **kwargs)  # noqa: E501
+! 
+!     def counter_proposal_demand_with_http_info(self, subscription_id, proposal_id, proposal, **kwargs):  # noqa: E501
+          """Responds with a bespoke Demand to received Offer.  # noqa: E501
+  
+          Creates and sends a modified version of original Demand (a counter-proposal) adjusted to previously received Proposal (ie. Offer). Changes Proposal state to `Draft`. Returns created Proposal id.   # noqa: E501
+--- 602,615 ----
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs["_return_http_data_only"] = True
+!         return self.counter_proposal_demand_with_http_info(
+!             subscription_id, proposal_id, proposal, **kwargs
+!         )  # noqa: E501
+! 
+!     def counter_proposal_demand_with_http_info(
+!         self, subscription_id, proposal_id, proposal, **kwargs
+!     ):  # noqa: E501
+          """Responds with a bespoke Demand to received Offer.  # noqa: E501
+  
+          Creates and sends a modified version of original Demand (a counter-proposal) adjusted to previously received Proposal (ie. Offer). Changes Proposal state to `Draft`. Returns created Proposal id.   # noqa: E501
+***************
+*** 595,642 ****
+  
+          local_var_params = locals()
+  
+!         all_params = [
+!             'subscription_id',
+!             'proposal_id',
+!             'proposal'
+!         ]
+          all_params.extend(
+              [
+!                 'async_req',
+!                 '_return_http_data_only',
+!                 '_preload_content',
+!                 '_request_timeout'
+              ]
+          )
+  
+!         for key, val in six.iteritems(local_var_params['kwargs']):
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method counter_proposal_demand" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params['kwargs']
+          # verify the required parameter 'subscription_id' is set
+!         if self.api_client.client_side_validation and ('subscription_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['subscription_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `subscription_id` when calling `counter_proposal_demand`")  # noqa: E501
+          # verify the required parameter 'proposal_id' is set
+!         if self.api_client.client_side_validation and ('proposal_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['proposal_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `proposal_id` when calling `counter_proposal_demand`")  # noqa: E501
+          # verify the required parameter 'proposal' is set
+!         if self.api_client.client_side_validation and ('proposal' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['proposal'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `proposal` when calling `counter_proposal_demand`")  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if 'subscription_id' in local_var_params:
+!             path_params['subscriptionId'] = local_var_params['subscription_id']  # noqa: E501
+!         if 'proposal_id' in local_var_params:
+!             path_params['proposalId'] = local_var_params['proposal_id']  # noqa: E501
+  
+          query_params = []
+  
+--- 638,695 ----
+  
+          local_var_params = locals()
+  
+!         all_params = ["subscription_id", "proposal_id", "proposal"]
+          all_params.extend(
+              [
+!                 "async_req",
+!                 "_return_http_data_only",
+!                 "_preload_content",
+!                 "_request_timeout",
+              ]
+          )
+  
+!         for key, val in local_var_params["kwargs"].items():
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method counter_proposal_demand" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params["kwargs"]
+          # verify the required parameter 'subscription_id' is set
+!         if self.api_client.client_side_validation and (
+!             "subscription_id" not in local_var_params
+!             or local_var_params["subscription_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `subscription_id` when calling `counter_proposal_demand`"
+!             )  # noqa: E501
+          # verify the required parameter 'proposal_id' is set
+!         if self.api_client.client_side_validation and (
+!             "proposal_id" not in local_var_params
+!             or local_var_params["proposal_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `proposal_id` when calling `counter_proposal_demand`"
+!             )  # noqa: E501
+          # verify the required parameter 'proposal' is set
+!         if self.api_client.client_side_validation and (
+!             "proposal" not in local_var_params
+!             or local_var_params["proposal"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `proposal` when calling `counter_proposal_demand`"
+!             )  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if "subscription_id" in local_var_params:
+!             path_params["subscriptionId"] = local_var_params[
+!                 "subscription_id"
+!             ]  # noqa: E501
+!         if "proposal_id" in local_var_params:
+!             path_params["proposalId"] = local_var_params["proposal_id"]  # noqa: E501
+  
+          query_params = []
+  
+***************
+*** 646,679 ****
+          local_var_files = {}
+  
+          body_params = None
+!         if 'proposal' in local_var_params:
+!             body_params = local_var_params['proposal']
+          # HTTP header `Accept`
+!         header_params['Accept'] = self.api_client.select_header_accept(
+!             ['application/json'])  # noqa: E501
+  
+          # HTTP header `Content-Type`
+!         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+!             ['application/json'])  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ['app_key']  # noqa: E501
+  
+          return self.api_client.call_api(
+!             '/demands/{subscriptionId}/proposals/{proposalId}', 'POST',
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type='str',  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get('async_req'),
+!             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+!             _preload_content=local_var_params.get('_preload_content', True),
+!             _request_timeout=local_var_params.get('_request_timeout'),
+!             collection_formats=collection_formats)
+  
+      def create_agreement(self, agreement_proposal, **kwargs):  # noqa: E501
+          """Creates Agreement from selected Proposal.  # noqa: E501
+--- 699,740 ----
+          local_var_files = {}
+  
+          body_params = None
+!         if "proposal" in local_var_params:
+!             body_params = local_var_params["proposal"]
+          # HTTP header `Accept`
+!         header_params["Accept"] = self.api_client.select_header_accept(
+!             ["application/json"]
+!         )  # noqa: E501
+  
+          # HTTP header `Content-Type`
+!         header_params[
+!             "Content-Type"
+!         ] = self.api_client.select_header_content_type(  # noqa: E501
+!             ["application/json"]
+!         )  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ["app_key"]  # noqa: E501
+  
+          return self.api_client.call_api(
+!             "/demands/{subscriptionId}/proposals/{proposalId}",
+!             "POST",
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type="str",  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get("async_req"),
+!             _return_http_data_only=local_var_params.get(
+!                 "_return_http_data_only"
+!             ),  # noqa: E501
+!             _preload_content=local_var_params.get("_preload_content", True),
+!             _request_timeout=local_var_params.get("_request_timeout"),
+!             collection_formats=collection_formats,
+!         )
+  
+      def create_agreement(self, agreement_proposal, **kwargs):  # noqa: E501
+          """Creates Agreement from selected Proposal.  # noqa: E501
+***************
+*** 697,706 ****
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs['_return_http_data_only'] = True
+!         return self.create_agreement_with_http_info(agreement_proposal, **kwargs)  # noqa: E501
+! 
+!     def create_agreement_with_http_info(self, agreement_proposal, **kwargs):  # noqa: E501
+          """Creates Agreement from selected Proposal.  # noqa: E501
+  
+          Initiates the Agreement handshake phase.  Formulates an Agreement artifact from the Proposal indicated by the received Proposal Id.  The Approval Expiry Date is added to Agreement artifact and implies the effective timeout on the whole Agreement Confirmation sequence.  A successful call to `createAgreement` shall immediately be followed by a `confirmAgreement` and `waitForApproval` call in order to listen for responses from the Provider.  **Note**: Moves given Proposal to `Approved` state.   # noqa: E501
+--- 758,771 ----
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs["_return_http_data_only"] = True
+!         return self.create_agreement_with_http_info(
+!             agreement_proposal, **kwargs
+!         )  # noqa: E501
+! 
+!     def create_agreement_with_http_info(
+!         self, agreement_proposal, **kwargs
+!     ):  # noqa: E501
+          """Creates Agreement from selected Proposal.  # noqa: E501
+  
+          Initiates the Agreement handshake phase.  Formulates an Agreement artifact from the Proposal indicated by the received Proposal Id.  The Approval Expiry Date is added to Agreement artifact and implies the effective timeout on the whole Agreement Confirmation sequence.  A successful call to `createAgreement` shall immediately be followed by a `confirmAgreement` and `waitForApproval` call in order to listen for responses from the Provider.  **Note**: Moves given Proposal to `Approved` state.   # noqa: E501
+***************
+*** 1030,1039 ****
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs['_return_http_data_only'] = True
+!         return self.get_proposal_offer_with_http_info(subscription_id, proposal_id, **kwargs)  # noqa: E501
+! 
+!     def get_proposal_offer_with_http_info(self, subscription_id, proposal_id, **kwargs):  # noqa: E501
+          """Fetches Proposal (Offer) with given id.  # noqa: E501
+  
+          This method makes a synchronous HTTP request by default. To make an
+--- 1116,1129 ----
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs["_return_http_data_only"] = True
+!         return self.get_proposal_offer_with_http_info(
+!             subscription_id, proposal_id, **kwargs
+!         )  # noqa: E501
+! 
+!     def get_proposal_offer_with_http_info(
+!         self, subscription_id, proposal_id, **kwargs
+!     ):  # noqa: E501
+          """Fetches Proposal (Offer) with given id.  # noqa: E501
+  
+          This method makes a synchronous HTTP request by default. To make an
+***************
+*** 1107,1135 ****
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params['Accept'] = self.api_client.select_header_accept(
+!             ['application/json'])  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ['app_key']  # noqa: E501
+  
+          return self.api_client.call_api(
+!             '/demands/{subscriptionId}/proposals/{proposalId}', 'GET',
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type='Proposal',  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get('async_req'),
+!             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+!             _preload_content=local_var_params.get('_preload_content', True),
+!             _request_timeout=local_var_params.get('_request_timeout'),
+!             collection_formats=collection_formats)
+  
+!     def post_query_reply_demands(self, subscription_id, query_id, body, **kwargs):  # noqa: E501
+          """Handles dynamic property query.  # noqa: E501
+  
+          The Market Matching Mechanism, when resolving the match relation for the specific Demand-Offer pair, is to detect the “dynamic” properties required (via constraints) by the other side. At this point, it is able to query the issuing node for those properties and submit the other side’s requested properties as the context of the query.  **Note**: The property query responses may be submitted in “chunks”, ie. the responder may choose to resolve ‘quick’/lightweight’ properties faster and provide response sooner, while still working on more time-consuming properties in the background. Therefore the response contains both the resolved properties, as well as list of properties which responder knows still require resolution.  **Note**: This method must be implemented for Market API Capability Level 2.   # noqa: E501
+--- 1204,1239 ----
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params["Accept"] = self.api_client.select_header_accept(
+!             ["application/json"]
+!         )  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ["app_key"]  # noqa: E501
+  
+          return self.api_client.call_api(
+!             "/demands/{subscriptionId}/proposals/{proposalId}",
+!             "GET",
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type="Proposal",  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get("async_req"),
+!             _return_http_data_only=local_var_params.get(
+!                 "_return_http_data_only"
+!             ),  # noqa: E501
+!             _preload_content=local_var_params.get("_preload_content", True),
+!             _request_timeout=local_var_params.get("_request_timeout"),
+!             collection_formats=collection_formats,
+!         )
+  
+!     def post_query_reply_demands(
+!         self, subscription_id, query_id, body, **kwargs
+!     ):  # noqa: E501
+          """Handles dynamic property query.  # noqa: E501
+  
+          The Market Matching Mechanism, when resolving the match relation for the specific Demand-Offer pair, is to detect the “dynamic” properties required (via constraints) by the other side. At this point, it is able to query the issuing node for those properties and submit the other side’s requested properties as the context of the query.  **Note**: The property query responses may be submitted in “chunks”, ie. the responder may choose to resolve ‘quick’/lightweight’ properties faster and provide response sooner, while still working on more time-consuming properties in the background. Therefore the response contains both the resolved properties, as well as list of properties which responder knows still require resolution.  **Note**: This method must be implemented for Market API Capability Level 2.   # noqa: E501
+***************
+*** 1153,1162 ****
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs['_return_http_data_only'] = True
+!         return self.post_query_reply_demands_with_http_info(subscription_id, query_id, body, **kwargs)  # noqa: E501
+! 
+!     def post_query_reply_demands_with_http_info(self, subscription_id, query_id, body, **kwargs):  # noqa: E501
+          """Handles dynamic property query.  # noqa: E501
+  
+          The Market Matching Mechanism, when resolving the match relation for the specific Demand-Offer pair, is to detect the “dynamic” properties required (via constraints) by the other side. At this point, it is able to query the issuing node for those properties and submit the other side’s requested properties as the context of the query.  **Note**: The property query responses may be submitted in “chunks”, ie. the responder may choose to resolve ‘quick’/lightweight’ properties faster and provide response sooner, while still working on more time-consuming properties in the background. Therefore the response contains both the resolved properties, as well as list of properties which responder knows still require resolution.  **Note**: This method must be implemented for Market API Capability Level 2.   # noqa: E501
+--- 1257,1270 ----
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs["_return_http_data_only"] = True
+!         return self.post_query_reply_demands_with_http_info(
+!             subscription_id, query_id, body, **kwargs
+!         )  # noqa: E501
+! 
+!     def post_query_reply_demands_with_http_info(
+!         self, subscription_id, query_id, body, **kwargs
+!     ):  # noqa: E501
+          """Handles dynamic property query.  # noqa: E501
+  
+          The Market Matching Mechanism, when resolving the match relation for the specific Demand-Offer pair, is to detect the “dynamic” properties required (via constraints) by the other side. At this point, it is able to query the issuing node for those properties and submit the other side’s requested properties as the context of the query.  **Note**: The property query responses may be submitted in “chunks”, ie. the responder may choose to resolve ‘quick’/lightweight’ properties faster and provide response sooner, while still working on more time-consuming properties in the background. Therefore the response contains both the resolved properties, as well as list of properties which responder knows still require resolution.  **Note**: This method must be implemented for Market API Capability Level 2.   # noqa: E501
+***************
+*** 1185,1232 ****
+  
+          local_var_params = locals()
+  
+!         all_params = [
+!             'subscription_id',
+!             'query_id',
+!             'body'
+!         ]
+          all_params.extend(
+              [
+!                 'async_req',
+!                 '_return_http_data_only',
+!                 '_preload_content',
+!                 '_request_timeout'
+              ]
+          )
+  
+!         for key, val in six.iteritems(local_var_params['kwargs']):
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method post_query_reply_demands" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params['kwargs']
+          # verify the required parameter 'subscription_id' is set
+!         if self.api_client.client_side_validation and ('subscription_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['subscription_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `subscription_id` when calling `post_query_reply_demands`")  # noqa: E501
+          # verify the required parameter 'query_id' is set
+!         if self.api_client.client_side_validation and ('query_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['query_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `query_id` when calling `post_query_reply_demands`")  # noqa: E501
+          # verify the required parameter 'body' is set
+!         if self.api_client.client_side_validation and ('body' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['body'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `body` when calling `post_query_reply_demands`")  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if 'subscription_id' in local_var_params:
+!             path_params['subscriptionId'] = local_var_params['subscription_id']  # noqa: E501
+!         if 'query_id' in local_var_params:
+!             path_params['queryId'] = local_var_params['query_id']  # noqa: E501
+  
+          query_params = []
+  
+--- 1293,1350 ----
+  
+          local_var_params = locals()
+  
+!         all_params = ["subscription_id", "query_id", "body"]
+          all_params.extend(
+              [
+!                 "async_req",
+!                 "_return_http_data_only",
+!                 "_preload_content",
+!                 "_request_timeout",
+              ]
+          )
+  
+!         for key, val in local_var_params["kwargs"].items():
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method post_query_reply_demands" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params["kwargs"]
+          # verify the required parameter 'subscription_id' is set
+!         if self.api_client.client_side_validation and (
+!             "subscription_id" not in local_var_params
+!             or local_var_params["subscription_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `subscription_id` when calling `post_query_reply_demands`"
+!             )  # noqa: E501
+          # verify the required parameter 'query_id' is set
+!         if self.api_client.client_side_validation and (
+!             "query_id" not in local_var_params
+!             or local_var_params["query_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `query_id` when calling `post_query_reply_demands`"
+!             )  # noqa: E501
+          # verify the required parameter 'body' is set
+!         if self.api_client.client_side_validation and (
+!             "body" not in local_var_params
+!             or local_var_params["body"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `body` when calling `post_query_reply_demands`"
+!             )  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if "subscription_id" in local_var_params:
+!             path_params["subscriptionId"] = local_var_params[
+!                 "subscription_id"
+!             ]  # noqa: E501
+!         if "query_id" in local_var_params:
+!             path_params["queryId"] = local_var_params["query_id"]  # noqa: E501
+  
+          query_params = []
+  
+***************
+*** 1259,1271 ****
+              files=local_var_files,
+              response_type=None,  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get('async_req'),
+!             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+!             _preload_content=local_var_params.get('_preload_content', True),
+!             _request_timeout=local_var_params.get('_request_timeout'),
+!             collection_formats=collection_formats)
+  
+!     def reject_proposal_offer(self, subscription_id, proposal_id, **kwargs):  # noqa: E501
+          """Rejects Proposal (Offer).  # noqa: E501
+  
+          Effectively ends a Negotiation chain - it explicitly indicates that the sender will not create another counter-Proposal.   # noqa: E501
+--- 1382,1399 ----
+              files=local_var_files,
+              response_type=None,  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get("async_req"),
+!             _return_http_data_only=local_var_params.get(
+!                 "_return_http_data_only"
+!             ),  # noqa: E501
+!             _preload_content=local_var_params.get("_preload_content", True),
+!             _request_timeout=local_var_params.get("_request_timeout"),
+!             collection_formats=collection_formats,
+!         )
+  
+!     def reject_proposal_offer(
+!         self, subscription_id, proposal_id, **kwargs
+!     ):  # noqa: E501
+          """Rejects Proposal (Offer).  # noqa: E501
+  
+          Effectively ends a Negotiation chain - it explicitly indicates that the sender will not create another counter-Proposal.   # noqa: E501
+***************
+*** 1288,1297 ****
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs['_return_http_data_only'] = True
+!         return self.reject_proposal_offer_with_http_info(subscription_id, proposal_id, **kwargs)  # noqa: E501
+! 
+!     def reject_proposal_offer_with_http_info(self, subscription_id, proposal_id, **kwargs):  # noqa: E501
+          """Rejects Proposal (Offer).  # noqa: E501
+  
+          Effectively ends a Negotiation chain - it explicitly indicates that the sender will not create another counter-Proposal.   # noqa: E501
+--- 1416,1429 ----
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs["_return_http_data_only"] = True
+!         return self.reject_proposal_offer_with_http_info(
+!             subscription_id, proposal_id, **kwargs
+!         )  # noqa: E501
+! 
+!     def reject_proposal_offer_with_http_info(
+!         self, subscription_id, proposal_id, **kwargs
+!     ):  # noqa: E501
+          """Rejects Proposal (Offer).  # noqa: E501
+  
+          Effectively ends a Negotiation chain - it explicitly indicates that the sender will not create another counter-Proposal.   # noqa: E501
+***************
+*** 1319,1361 ****
+  
+          local_var_params = locals()
+  
+!         all_params = [
+!             'subscription_id',
+!             'proposal_id'
+!         ]
+          all_params.extend(
+              [
+!                 'async_req',
+!                 '_return_http_data_only',
+!                 '_preload_content',
+!                 '_request_timeout'
+              ]
+          )
+  
+!         for key, val in six.iteritems(local_var_params['kwargs']):
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method reject_proposal_offer" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params['kwargs']
+          # verify the required parameter 'subscription_id' is set
+!         if self.api_client.client_side_validation and ('subscription_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['subscription_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `subscription_id` when calling `reject_proposal_offer`")  # noqa: E501
+          # verify the required parameter 'proposal_id' is set
+!         if self.api_client.client_side_validation and ('proposal_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['proposal_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `proposal_id` when calling `reject_proposal_offer`")  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if 'subscription_id' in local_var_params:
+!             path_params['subscriptionId'] = local_var_params['subscription_id']  # noqa: E501
+!         if 'proposal_id' in local_var_params:
+!             path_params['proposalId'] = local_var_params['proposal_id']  # noqa: E501
+  
+          query_params = []
+  
+--- 1451,1500 ----
+  
+          local_var_params = locals()
+  
+!         all_params = ["subscription_id", "proposal_id"]
+          all_params.extend(
+              [
+!                 "async_req",
+!                 "_return_http_data_only",
+!                 "_preload_content",
+!                 "_request_timeout",
+              ]
+          )
+  
+!         for key, val in local_var_params["kwargs"].items():
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method reject_proposal_offer" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params["kwargs"]
+          # verify the required parameter 'subscription_id' is set
+!         if self.api_client.client_side_validation and (
+!             "subscription_id" not in local_var_params
+!             or local_var_params["subscription_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `subscription_id` when calling `reject_proposal_offer`"
+!             )  # noqa: E501
+          # verify the required parameter 'proposal_id' is set
+!         if self.api_client.client_side_validation and (
+!             "proposal_id" not in local_var_params
+!             or local_var_params["proposal_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `proposal_id` when calling `reject_proposal_offer`"
+!             )  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if "subscription_id" in local_var_params:
+!             path_params["subscriptionId"] = local_var_params[
+!                 "subscription_id"
+!             ]  # noqa: E501
+!         if "proposal_id" in local_var_params:
+!             path_params["proposalId"] = local_var_params["proposal_id"]  # noqa: E501
+  
+          query_params = []
+  
+***************
+*** 1366,1379 ****
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params['Accept'] = self.api_client.select_header_accept(
+!             ['application/json'])  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ['app_key']  # noqa: E501
+  
+          return self.api_client.call_api(
+!             '/demands/{subscriptionId}/proposals/{proposalId}', 'DELETE',
+              path_params,
+              query_params,
+              header_params,
+--- 1505,1520 ----
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params["Accept"] = self.api_client.select_header_accept(
+!             ["application/json"]
+!         )  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ["app_key"]  # noqa: E501
+  
+          return self.api_client.call_api(
+!             "/demands/{subscriptionId}/proposals/{proposalId}",
+!             "DELETE",
+              path_params,
+              query_params,
+              header_params,
+***************
+*** 1419,1425 ****
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs['_return_http_data_only'] = True
+          return self.subscribe_demand_with_http_info(demand, **kwargs)  # noqa: E501
+  
+      def subscribe_demand_with_http_info(self, demand, **kwargs):  # noqa: E501
+--- 1563,1569 ----
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs["_return_http_data_only"] = True
+          return self.subscribe_demand_with_http_info(demand, **kwargs)  # noqa: E501
+  
+      def subscribe_demand_with_http_info(self, demand, **kwargs):  # noqa: E501
+***************
+*** 1449,1478 ****
+  
+          local_var_params = locals()
+  
+!         all_params = [
+!             'demand'
+!         ]
+          all_params.extend(
+              [
+!                 'async_req',
+!                 '_return_http_data_only',
+!                 '_preload_content',
+!                 '_request_timeout'
+              ]
+          )
+  
+!         for key, val in six.iteritems(local_var_params['kwargs']):
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method subscribe_demand" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params['kwargs']
+          # verify the required parameter 'demand' is set
+!         if self.api_client.client_side_validation and ('demand' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['demand'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `demand` when calling `subscribe_demand`")  # noqa: E501
+  
+          collection_formats = {}
+  
+--- 1593,1624 ----
+  
+          local_var_params = locals()
+  
+!         all_params = ["demand"]
+          all_params.extend(
+              [
+!                 "async_req",
+!                 "_return_http_data_only",
+!                 "_preload_content",
+!                 "_request_timeout",
+              ]
+          )
+  
+!         for key, val in local_var_params["kwargs"].items():
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method subscribe_demand" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params["kwargs"]
+          # verify the required parameter 'demand' is set
+!         if self.api_client.client_side_validation and (
+!             "demand" not in local_var_params
+!             or local_var_params["demand"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `demand` when calling `subscribe_demand`"
+!             )  # noqa: E501
+  
+          collection_formats = {}
+  
+***************
+*** 1486,1519 ****
+          local_var_files = {}
+  
+          body_params = None
+!         if 'demand' in local_var_params:
+!             body_params = local_var_params['demand']
+          # HTTP header `Accept`
+!         header_params['Accept'] = self.api_client.select_header_accept(
+!             ['application/json'])  # noqa: E501
+  
+          # HTTP header `Content-Type`
+!         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+!             ['application/json'])  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ['app_key']  # noqa: E501
+  
+          return self.api_client.call_api(
+!             '/demands', 'POST',
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type='str',  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get('async_req'),
+!             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+!             _preload_content=local_var_params.get('_preload_content', True),
+!             _request_timeout=local_var_params.get('_request_timeout'),
+!             collection_formats=collection_formats)
+  
+      def terminate_agreement(self, agreement_id, **kwargs):  # noqa: E501
+          """Terminates approved Agreement.  # noqa: E501
+--- 1632,1673 ----
+          local_var_files = {}
+  
+          body_params = None
+!         if "demand" in local_var_params:
+!             body_params = local_var_params["demand"]
+          # HTTP header `Accept`
+!         header_params["Accept"] = self.api_client.select_header_accept(
+!             ["application/json"]
+!         )  # noqa: E501
+  
+          # HTTP header `Content-Type`
+!         header_params[
+!             "Content-Type"
+!         ] = self.api_client.select_header_content_type(  # noqa: E501
+!             ["application/json"]
+!         )  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ["app_key"]  # noqa: E501
+  
+          return self.api_client.call_api(
+!             "/demands",
+!             "POST",
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type="str",  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get("async_req"),
+!             _return_http_data_only=local_var_params.get(
+!                 "_return_http_data_only"
+!             ),  # noqa: E501
+!             _preload_content=local_var_params.get("_preload_content", True),
+!             _request_timeout=local_var_params.get("_request_timeout"),
+!             collection_formats=collection_formats,
+!         )
+  
+      def terminate_agreement(self, agreement_id, **kwargs):  # noqa: E501
+          """Terminates approved Agreement.  # noqa: E501
+***************
+*** 1567,1602 ****
+  
+          local_var_params = locals()
+  
+!         all_params = [
+!             'agreement_id'
+!         ]
+          all_params.extend(
+              [
+!                 'async_req',
+!                 '_return_http_data_only',
+!                 '_preload_content',
+!                 '_request_timeout'
+              ]
+          )
+  
+!         for key, val in six.iteritems(local_var_params['kwargs']):
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method terminate_agreement" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params['kwargs']
+          # verify the required parameter 'agreement_id' is set
+!         if self.api_client.client_side_validation and ('agreement_id' not in local_var_params or  # noqa: E501
+!                                                         local_var_params['agreement_id'] is None):  # noqa: E501
+!             raise ApiValueError("Missing the required parameter `agreement_id` when calling `terminate_agreement`")  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if 'agreement_id' in local_var_params:
+!             path_params['agreementId'] = local_var_params['agreement_id']  # noqa: E501
+  
+          query_params = []
+  
+--- 1723,1760 ----
+  
+          local_var_params = locals()
+  
+!         all_params = ["agreement_id"]
+          all_params.extend(
+              [
+!                 "async_req",
+!                 "_return_http_data_only",
+!                 "_preload_content",
+!                 "_request_timeout",
+              ]
+          )
+  
+!         for key, val in local_var_params["kwargs"].items():
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+                      " to method terminate_agreement" % key
+                  )
+              local_var_params[key] = val
+!         del local_var_params["kwargs"]
+          # verify the required parameter 'agreement_id' is set
+!         if self.api_client.client_side_validation and (
+!             "agreement_id" not in local_var_params
+!             or local_var_params["agreement_id"] is None  # noqa: E501
+!         ):  # noqa: E501
+!             raise ApiValueError(
+!                 "Missing the required parameter `agreement_id` when calling `terminate_agreement`"
+!             )  # noqa: E501
+  
+          collection_formats = {}
+  
+          path_params = {}
+!         if "agreement_id" in local_var_params:
+!             path_params["agreementId"] = local_var_params["agreement_id"]  # noqa: E501
+  
+          query_params = []
+  
+***************
+*** 1607,1620 ****
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params['Accept'] = self.api_client.select_header_accept(
+!             ['application/json'])  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ['app_key']  # noqa: E501
+  
+          return self.api_client.call_api(
+!             '/agreements/{agreementId}/terminate', 'POST',
+              path_params,
+              query_params,
+              header_params,
+--- 1765,1780 ----
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params["Accept"] = self.api_client.select_header_accept(
+!             ["application/json"]
+!         )  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ["app_key"]  # noqa: E501
+  
+          return self.api_client.call_api(
+!             "/agreements/{agreementId}/terminate",
+!             "POST",
+              path_params,
+              query_params,
+              header_params,
+***************
+*** 1660,1669 ****
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs['_return_http_data_only'] = True
+!         return self.unsubscribe_demand_with_http_info(subscription_id, **kwargs)  # noqa: E501
+! 
+!     def unsubscribe_demand_with_http_info(self, subscription_id, **kwargs):  # noqa: E501
+          """Stop subscription for previously published Demand.  # noqa: E501
+  
+          Stop receiving Proposals.  **Note**: this will terminate all pending `collectOffers` calls on this subscription. This implies, that client code should not `unsubscribeDemand` before it has received all expected/useful inputs from `collectOffers`.   # noqa: E501
+--- 1823,1836 ----
+                   If the method is called asynchronously,
+                   returns the request thread.
+          """
+!         kwargs["_return_http_data_only"] = True
+!         return self.unsubscribe_demand_with_http_info(
+!             subscription_id, **kwargs
+!         )  # noqa: E501
+! 
+!     def unsubscribe_demand_with_http_info(
+!         self, subscription_id, **kwargs
+!     ):  # noqa: E501
+          """Stop subscription for previously published Demand.  # noqa: E501
+  
+          Stop receiving Proposals.  **Note**: this will terminate all pending `collectOffers` calls on this subscription. This implies, that client code should not `unsubscribeDemand` before it has received all expected/useful inputs from `collectOffers`.   # noqa: E501
+***************
+*** 1851,1874 ****
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params['Accept'] = self.api_client.select_header_accept(
+!             ['application/json'])  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ['app_key']  # noqa: E501
+  
+          return self.api_client.call_api(
+!             '/agreements/{agreementId}/wait', 'POST',
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type='str',  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get('async_req'),
+!             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+!             _preload_content=local_var_params.get('_preload_content', True),
+!             _request_timeout=local_var_params.get('_request_timeout'),
+!             collection_formats=collection_formats)
+--- 2038,2066 ----
+  
+          body_params = None
+          # HTTP header `Accept`
+!         header_params["Accept"] = self.api_client.select_header_accept(
+!             ["application/json"]
+!         )  # noqa: E501
+  
+          # Authentication setting
+!         auth_settings = ["app_key"]  # noqa: E501
+  
+          return self.api_client.call_api(
+!             "/agreements/{agreementId}/wait",
+!             "POST",
+              path_params,
+              query_params,
+              header_params,
+              body=body_params,
+              post_params=form_params,
+              files=local_var_files,
+!             response_type="str",  # noqa: E501
+              auth_settings=auth_settings,
+!             async_req=local_var_params.get("async_req"),
+!             _return_http_data_only=local_var_params.get(
+!                 "_return_http_data_only"
+!             ),  # noqa: E501
+!             _preload_content=local_var_params.get("_preload_content", True),
+!             _request_timeout=local_var_params.get("_request_timeout"),
+!             collection_formats=collection_formats,
+!         )
