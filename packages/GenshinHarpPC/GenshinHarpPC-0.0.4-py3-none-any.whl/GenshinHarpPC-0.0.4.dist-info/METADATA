@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: GenshinHarpPC
+Version: 0.0.4
+Summary: just a simple test
+Home-page: UNKNOWN
+Author: qwq20003
+Author-email: ysh01298@126.com
+License: MIT License
+Keywords: Genshin,Harp
+Platform: any
+Requires-Dist: pypiwin32
+
+UNKNOWN
+
+
