@@ -1,0 +1,3 @@
+[console_scripts]
+oauth2cli = oauth2cli:main
+
