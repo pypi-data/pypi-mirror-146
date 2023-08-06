@@ -1,0 +1,12 @@
+quipucamayoc/__init__.py,sha256=4Hz-kSdEhHKUE70ft0Brh3dVVwvwCkaRPAZ8Te4K60c,455
+quipucamayoc/aws_extract_tables.py,sha256=Zom3U2AyMgkRIG6GKfhXPAii3ZOqrEw6Z_znu9sCwaU,15717
+quipucamayoc/aws_setup.py,sha256=GW1Svb6qKYQKamUzT1TB0CVBsgQOtDzDn81aI6t1mDQ,20417
+quipucamayoc/cli.py,sha256=13jasNcHkR6nIGhRm3PiAs1Y9zU49OHcm51NfN6u8JA,2090
+quipucamayoc/old_aws_extract_tables.py,sha256=YpSB-uai42DXQjg2KbXRN2wVD6Ow-WNye9VTip9MD5w,13188
+quipucamayoc/version.py,sha256=dKxBci9Nk1kzgU1G_-3ILIoptRuWz2EuhPdfgXbhyzw,51
+quipucamayoc-0.1.2.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+quipucamayoc-0.1.2.dist-info/METADATA,sha256=bh1sy3WMSglkOeA0sL0mVSbCV6F3sAb5RBRHtMy47v0,7436
+quipucamayoc-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quipucamayoc-0.1.2.dist-info/entry_points.txt,sha256=Zw6FrmipGLhLgkbevqP6QR07oYgUWMk7u5nUSSolL_o,43
+quipucamayoc-0.1.2.dist-info/top_level.txt,sha256=TSs4Y6LVAle5pYniDGPDV6v3C_d6dvo-CMPqri59fmc,13
+quipucamayoc-0.1.2.dist-info/RECORD,,
