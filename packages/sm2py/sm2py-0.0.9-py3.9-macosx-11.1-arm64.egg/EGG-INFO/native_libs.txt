@@ -1,0 +1,1 @@
+sm2py/curv.cpython-39-darwin.so
