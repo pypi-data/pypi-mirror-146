@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/nonlocalpooling/__init__.py
+src/nonlocalpooling/pool.py
+src/nonlocalpooling.egg-info/PKG-INFO
+src/nonlocalpooling.egg-info/SOURCES.txt
+src/nonlocalpooling.egg-info/dependency_links.txt
+src/nonlocalpooling.egg-info/top_level.txt

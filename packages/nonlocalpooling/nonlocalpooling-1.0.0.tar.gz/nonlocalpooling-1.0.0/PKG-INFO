@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nonlocalpooling
+Version: 1.0.0
+Summary: Global-Wise Pooling Layers for PyTorch
+Home-page: https://github.com/Dootmaan/NonLocalPooling
+Author: Hongyi Wang
+Author-email: whongyi@zju.edu.cn
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Dootmaan/NonLocalPooling/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Non-Local Pooling
+
+```
+from nonlocalpooling.pool import NonLocalPool2d, NonLocalPool3d
+```
+
+Non-Local Pooling can be used to substitue your original PyTorch pooling methods.
+
