@@ -1,0 +1,3 @@
+[console_scripts]
+fail2ban-importer=fail2ban_importer.__main__:cli
+
