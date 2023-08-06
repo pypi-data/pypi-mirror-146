@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "WxNimbus"
+version = "0.1.0"
+description = ""
+authors = ["Brianna Witherell"]
+packages = [
+    { include = 'nimbus' }, 
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+scipy = "^1.8.0"
+numpy = "^1.22.3"
+Pillow = "^9.0.1"
+PyAudio = "^0.2.11"
+pyrtlsdr = "^0.2.92"
+PySDL2 = "^0.9.11"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+black = "^22.1.0"
+pylint = "^2.12.2"
+pytest-cov = "^3.0.0"
+flake8 = "^4.0.1"
+Sphinx = "^4.5.0"
+
+[tool.poetry.scripts]
+nimbus = "nimbus.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
