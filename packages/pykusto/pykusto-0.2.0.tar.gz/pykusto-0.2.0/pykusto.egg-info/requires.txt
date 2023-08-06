@@ -1,0 +1,9 @@
+redo==2.0.4
+azure-kusto-data==3.1.0
+pandas<=1.2.4,>=0.25.0
+
+[test]
+pytest
+pytest-cov
+flake8
+typeguard
