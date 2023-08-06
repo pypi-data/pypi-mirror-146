@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+swc_api/__init__.py
+swc_api/swc_api.py
+swc_api/swc_token.py
+swc_api.egg-info/PKG-INFO
+swc_api.egg-info/SOURCES.txt
+swc_api.egg-info/dependency_links.txt
+swc_api.egg-info/requires.txt
+swc_api.egg-info/top_level.txt
