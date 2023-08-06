@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: deflefpy
+Version: 0.1.2
+Summary: A DEF/LEF (Library Exchange Format) file parser written in Python.
+Home-page: https://github.com/das-dias/deflefpy
+License: MIT
+Author: dasdias
+Author-email: das.dias6@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Project-URL: Repository, https://github.com/das-dias/deflefpy
