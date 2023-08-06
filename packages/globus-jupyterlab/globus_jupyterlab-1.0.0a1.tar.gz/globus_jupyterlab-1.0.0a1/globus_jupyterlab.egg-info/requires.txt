@@ -1,0 +1,2 @@
+jupyter_server<2,>=1.6
+globus_sdk>=3>4
