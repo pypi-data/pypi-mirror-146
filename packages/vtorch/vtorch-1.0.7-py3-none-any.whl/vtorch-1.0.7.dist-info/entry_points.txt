@@ -1,0 +1,3 @@
+[console_scripts]
+vtorch-agent = vtorch.agent.__init__:main
+
