@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: winaudio
+Version: 1.0.6
+Summary: Windows Audio API Bindings.
+Home-page: https://github.com/Pixelsuft/winaudio
+Author: Pixelsuft
+License: MIT
+Project-URL: Readme, https://github.com/Pixelsuft/winaudio/blob/main/README.MD
+Project-URL: Example, https://github.com/Pixelsuft/winaudio/blob/main/main.py
+Project-URL: Issue tracker, https://github.com/Pixelsuft/winaudio/issues
+Keywords: winaudio
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WinAudio
+Windows Audio API Bindings
+# Installation
+```shell
+python -m pip install winaudio
+```
+# Links
+[Github Project](https://github.com/Pixelsuft/winaudio) <br />
+[Example](https://github.com/Pixelsuft/winaudio/blob/main/main.py) <br />
+[README](https://github.com/Pixelsuft/winaudio/blob/main/README.MD) <br />
+[LICENSE](https://github.com/Pixelsuft/winaudio/blob/main/LICENSE) <br />
+[Issue Tracker](https://github.com/Pixelsuft/winaudio/issues)
+
+

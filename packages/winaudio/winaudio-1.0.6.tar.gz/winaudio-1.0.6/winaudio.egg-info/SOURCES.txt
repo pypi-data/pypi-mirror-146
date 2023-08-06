@@ -1,0 +1,17 @@
+LICENSE
+setup.py
+./winaudio/__init__.py
+./winaudio/ctypes_binds.py
+./winaudio/exceptions.py
+./winaudio/flags.py
+./winaudio/player.py
+./winaudio/simple_playsound.py
+./winaudio/sound_mci.py
+./winaudio/tools.py
+./winaudio/wave_tools.py
+./winaudio/win_check.py
+winaudio.egg-info/PKG-INFO
+winaudio.egg-info/SOURCES.txt
+winaudio.egg-info/dependency_links.txt
+winaudio.egg-info/not-zip-safe
+winaudio.egg-info/top_level.txt
