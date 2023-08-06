@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pyluna-common
+Version: 0.1.2
+Summary: Transformation functions and services for multi-modal oncology data
+Home-page: https://componcmsk.org/msk-mind/
+Author: msk-mind
+Author-email: CompOncBST@mskcc.org
+License: Apache License version 2.0
+Project-URL: Bug Tracker, https://github.com/msk-mind/luna/issues
+Keywords: radiology,pathology,clinical
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# pyluna-common
+Transformation functions and services for multi-modal oncology data
+
+## Documentation
+
+See https://pyluna.readthedocs.io
+
+## PyPi
+
+See https://pypi.org/project/pyluna/
+
+
