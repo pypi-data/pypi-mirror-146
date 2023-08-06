@@ -1,0 +1,15 @@
+itk/CleaverPython.py,sha256=u4yP5Og9xJmkZOkKXFmG_KXwKz8DhlIaiWpOeSApHwA,2614
+itk/_CleaverPython.pyd,sha256=FEr0WwPoOJ-cneuBFXviyNbUPvi-qofB8kfi4a3UbUM,1943040
+itk/__init_cleaver__.py,sha256=WBP4iC6-_TZiIuP7OCwgPY12NGipdrLtbHuPYduFwqU,1468
+itk/itkCleaverImageToMeshFilterPython.py,sha256=SoB8MILkLdd2kwwc3jm_c5tEvFRDBsvQEJUrqIUtRSE,121583
+itk/Configuration/CleaverConfig.py,sha256=g1mT3-Y8mpXmD-ZokQaFfL4kPaqjjMI0jhLsIs946O8,4359
+itk/Configuration/Cleaver_snake_case.py,sha256=wnLzTwVE6SVRUxGfcElgFQ-9hnT4gpQNfwytdhdmNPk,59
+itk_cleaver.libs/.load-order-itk_cleaver-1.1.0,sha256=xEED_EW8Vf_zCWJJr6TSrDWgujMkcujMSwNzmKJYT24,25
+itk_cleaver.libs/msvcp140.dll,sha256=7ZZU5NMKsDIBITHRWX7RtI1Qm48OZR9GNEhkChs4NdE,565640
+itk_cleaver.libs/tbb12.dll,sha256=TL90ToOp23W687n7SGrUtqgy_rklCL4hD9-sRFVvnWo,308736
+itk_cleaver-1.1.0.dist-info/DELVEWHEEL,sha256=tivIBCe9aBkr50navn8-1F3JrrAS4nubWRGV_DHFy6o,258
+itk_cleaver-1.1.0.dist-info/LICENSE,sha256=FPd43S5L0_1wjk6rB9-A5zZE9eFXJ_4JTGuTq3pP9bA,1124
+itk_cleaver-1.1.0.dist-info/METADATA,sha256=pP23T-OatXlMaKPAC-pPXO9R2EcQGPBZwsnALskj17M,1482
+itk_cleaver-1.1.0.dist-info/WHEEL,sha256=Q0XU0wWU08X7UCdvV4NHj4UuVyZgFMcYJEvGjALkXsI,95
+itk_cleaver-1.1.0.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_cleaver-1.1.0.dist-info/RECORD,,
