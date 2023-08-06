@@ -1,0 +1,4 @@
+[console_scripts]
+graph_property_price_register = property_price_register.bin.graph:main
+load_property_price_register = property_price_register.bin.load:main
+save_property_price_register = property_price_register.bin.save:main
