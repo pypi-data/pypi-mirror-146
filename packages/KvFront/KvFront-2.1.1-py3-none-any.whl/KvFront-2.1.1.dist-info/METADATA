@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: KvFront
+Version: 2.1.1
+Summary: KvFront is a gui tool for memcached & redis developed by GTK+3
+Home-page: https://sourceforge.net/projects/memcachedfront
+Author: Gavin W
+Author-email: qmongofront@live.com
+License: GPLv3
+Keywords: memcached,memcache,memcached GUI,memcached front,redis,redis GUI
+Platform: any
+Requires-Python: >=3.0
+Requires-Dist: configparser (>=3.5.0)
+Requires-Dist: python-memcached (>=1.58)
+Requires-Dist: redis-py-cluster (>=2.1.0)
+Requires-Dist: redis (<4.0.0,>=3.5.2)
+
+KvFront
+==============
+
+KvFront is a GTK+ 3.0 based Redis GUI and Memcached GUI .It is totally free and open source. KvFront features an easy-to -use and straightforward graphical user interface, allowing users to easily work with Redis and Memcached in Linux based GTK+ 3.0 desktop environment.
+
+Its highlights include the ability to manage Redis and Memcached. It supports the most of data structures of Redis and Memcached, as well as to view the status of Redis and Memcached instances. In additon, KvFront also provides the scan alility of Redis , which can scan all keys in Redis.
+
+
+Changelog
+==============
+
+V2.1.1(2022-04-14)
+
+    - UI improved.
+    - Fixed an installation bug by using source package.
+
+V2.1.0(2022-04-11)
+
+    - Added initial support for stream data structure of Redis.
+
+V2.0.1(2022-04-09)
+
+    - Fixed bug of wrong path of icon in About Dialog.
+
+V2.0.0(2022-03-29)
+
+    - Added support for Redis, including standalone and cluster.
+    - The project is renamed to KvFront.
+
+V1.1.0(2022-03-08)
+
+    - Made it run well on Ubuntu 20.04LTS.
+
+V1.0.2.1(2017-09-10)
+
+    - UI optimised under Adwaita theme.
+
+V1.0.2.0(2017-09-02)
+
+    - Added functionality to flush the memcached.
+
+V1.0.1.0(2017-07-04)
+
+    - added functionality to show the detail value of a key.
+    - showed the json string value with formatted json string.
+
+V1.0.0.0(2017-06-29)
+
+    - Added support for memcached.
+
+
