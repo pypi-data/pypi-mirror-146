@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: function-cooldowns
+Version: 0.0.0
+Summary: A simplistic decorator based approach to rate limiting function calls.
+Home-page: UNKNOWN
+Author: Skelmis
+Author-email: ethan@koldfusion.xyz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Function Cooldowns
+---
+
+A simplistic take to functional cooldowns. 
+
+See tests for usage examples.
+
