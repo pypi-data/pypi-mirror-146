@@ -1,0 +1,3 @@
+[console_scripts]
+image-analyzer = imageanalyzer.__main__:main_logic
+

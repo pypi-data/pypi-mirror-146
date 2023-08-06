@@ -1,0 +1,10 @@
+Pillow
+aiohttp
+asyncio
+bs4
+galeodes
+keras
+numpy
+opencv-python
+requests
+tensorflow
