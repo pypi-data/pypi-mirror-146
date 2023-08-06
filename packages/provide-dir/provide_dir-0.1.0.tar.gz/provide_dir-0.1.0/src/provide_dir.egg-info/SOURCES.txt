@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/provide_dir/__init__.py
+src/provide_dir/version.py
+src/provide_dir.egg-info/PKG-INFO
+src/provide_dir.egg-info/SOURCES.txt
+src/provide_dir.egg-info/dependency_links.txt
+src/provide_dir.egg-info/requires.txt
+src/provide_dir.egg-info/top_level.txt
