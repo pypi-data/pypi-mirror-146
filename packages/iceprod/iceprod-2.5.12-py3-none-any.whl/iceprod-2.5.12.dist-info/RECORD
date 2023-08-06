@@ -1,0 +1,14 @@
+iceprod/__init__.py,sha256=qKLHDh3C1Xa-VQt1EHjDt2pw3gH0SiJH9SaGqsLhKFs,626
+iceprod-2.5.12.data/scripts/basic_submit.py,sha256=FbU9N3PhbK3MIxGt1V4eFJDbIn5G-ZXufzPY2quQ09Y,9861
+iceprod-2.5.12.data/scripts/iceprod_add_site_to_master.py,sha256=2Z2nvUf0xTX__zTfwjVgrqvcP7maOeUOEvdWAnYZ0Js,1318
+iceprod-2.5.12.data/scripts/iceprod_debugger.py,sha256=LxQJZ5-vTD3IiN--52waD24Kn2aDJp0hlBA5BGtFUPg,1395
+iceprod-2.5.12.data/scripts/iceprod_gridftp_proxy.py,sha256=z_h2wuG9nwSTbTA5GqGgDlKx2zpQ85uqC8IBP6BvP90,1082
+iceprod-2.5.12.data/scripts/iceprod_join_pool.py,sha256=F6UnbEKbwWMrh2CtSsJgWQM-ShEgkl4PelIcPCSU8cQ,1317
+iceprod-2.5.12.data/scripts/iceprod_server.py,sha256=R0Vm2S9qr3ByrkWr4zlpaUtly_OJoZZM5BRCc7Y22LI,4823
+iceprod-2.5.12.data/scripts/iceprodsh,sha256=g9yw3iFBb1XV3Y9HOF4BcBhP_0oSloEzWZnbPt3eJL4,7133
+iceprod-2.5.12.data/scripts/loader.sh,sha256=SgJxwMJEgEaW0ravOfdYVwN0zltDzz57CW8EfknKZmg,3697
+iceprod-2.5.12.dist-info/LICENSE,sha256=BnYBMunRZKkqwMUH7KZHYUNO1ZjaCPxehwCLi2Mf2Oc,1078
+iceprod-2.5.12.dist-info/METADATA,sha256=DjRLkiZHzchf4OcbWzKxq0bPQbanUUFekbeauufJU30,3704
+iceprod-2.5.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+iceprod-2.5.12.dist-info/top_level.txt,sha256=goHs6OvB7Asn_8YyyVcou3doUE9JBNygYsAcy32_iCE,8
+iceprod-2.5.12.dist-info/RECORD,,
