@@ -1,0 +1,8 @@
+kupo/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+kupo/app.py,sha256=7nC9VeEvdzEy_EL2G0wxUAO9RHlHULHCUZmwwrxpjSE,12848
+kupo/kupo.css,sha256=nMX-wDJ1l8DzZ-FmDxHVbwjSivbela7i2LSqb7sx8S8,1226
+kupo/kupo_commands.md,sha256=eJuY3bx9ZlBEYCGwhVxXaAD5x25HwE_uhuySrbDZ7uk,489
+kupo-0.1.0a0.dist-info/entry_points.txt,sha256=r6TIJ2OJizpr3MVVEZe7c836kQnnB_5-kpXmIJBODkM,37
+kupo-0.1.0a0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+kupo-0.1.0a0.dist-info/METADATA,sha256=5jPh20gX0LtAE6X0lBmjdpgj9AodhTNP9bfliN8nDnY,323
+kupo-0.1.0a0.dist-info/RECORD,,
