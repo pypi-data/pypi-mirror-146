@@ -1,0 +1,10 @@
+pixiefairy/cli.py,sha256=37IYADgfRdRJer3p73bQqaobhRTnBF23Bw8dEAdobQE,2960
+pixiefairy/common.py,sha256=_5d-H85MSpriFjRKKC9yuCeEZPzDYD68dNqK5lWdiX4,871
+pixiefairy/config.py,sha256=i7nanngKy3QRRGQDq7842wJLjJuj3JawZAkxAhjgF_Q,2864
+pixiefairy/logic.py,sha256=oPJUIA-Hu1z9eN6TEIKVXn8mDDN2iPzh2I1fwXzIcZw,2332
+pixiefairy/server.py,sha256=r_NpZ4UH7tUk2GckRC4eyf-1HIVzMnZzLTXIGaYHFsY,1805
+pixiefairy/webapp.py,sha256=-6EmyxfMOvI2S8lJs4NjymgY-z2zqp_K-7QICB2HslA,1825
+pixiefairy-0.1.1.dist-info/entry_points.txt,sha256=XsE9jaYc1VhEnEOmmigxXyhquZUwjjIQ4FasvnyTStI,50
+pixiefairy-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pixiefairy-0.1.1.dist-info/METADATA,sha256=GJ9bcK6AJIbGM_W2cY37xx_FixPwVu_7JxTVYxNM6Mc,3726
+pixiefairy-0.1.1.dist-info/RECORD,,
