@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: coffee-dou-ui-py
+Version: 0.0.1
+Summary: 这是一个帮助ui转py的模块
+Home-page: https://mp.csdn.net/mp_blog/creation/editor/122833225
+Author: guiling
+Author-email: 1666285441@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://mp.csdn.net/mp_blog/creation/editor/122833225
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#这是一个帮助ui转py的模块
+
