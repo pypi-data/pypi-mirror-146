@@ -1,0 +1,10 @@
+trends/__init__.py,sha256=lqFYO5q1bUpLPDiTyLCjx_GzQfilmxQty7er3nw9Elg,27
+trends/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trends/tests/test_random_trends.py,sha256=N5cTmN9bWI4pzK3re_vpKTB1G6Jd4vB-tV5AWP2oXuo,2717
+trends/tests/test_trendlists.py,sha256=HebSHuqzaE5n3A6q18mTQzb-egL3FDrAV6GePWyE4qI,7817
+trends/tests/test_trends.py,sha256=hJEqyoAcMdGtXz6PkLvf-kuV-ZblwyA2ocWGjlhW2nM,3607
+trends/trends.py,sha256=i4lJ1sFWKA8LldCOmZe_PqV8DiPPzKb0xhQDctZxft4,11414
+trends-0.1.0.dist-info/LICENSE,sha256=b5_FzvSQeZCHo5FxtDoWIhMbU6P0wy4dMIMDKaX2XEA,1074
+trends-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+trends-0.1.0.dist-info/METADATA,sha256=2V-bxe5DnQyiE2_J9iSsNIJrgmoZrunvisnOgTNgtUI,6243
+trends-0.1.0.dist-info/RECORD,,

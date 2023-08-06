@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: trends
+Version: 0.1.0
+Summary: Generate and study quasi-monotonic sequences.
+Home-page: https://gitlab.com/jsh/trends
+License: MIT
+Keywords: trends
+Author: Jeffrey S. Haemer
+Author-email: jeffrey.haemer@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://gitlab.com/jsh/trends
+Description-Content-Type: text/markdown
+
+# Trends
+
+## Trends Are a Generalization of Monotonic Sequences.
+
+In a monotonically increasing sequence, every element is greater than the preceding element.
+Monotonically decreasing sequences are obvious analogues, so for brevity, I'll just use "monotonic" to mean steadily increasing or decreasing.
+
+Here's a different, but equivalent definition:
+
+If, for a sequence, **x_0, x_1, ..., x_n**,
+every element in the subsequence **x_0, ..., x_k** is less than the following elements, **x_k+1, ... x_n**,
+for all **0 < k < n**, then the sequence is monotonically increasing.
+
+Or, simpler, if you put your finger between any two sequence elements, everything to the left of your finger is less than everything to the right.
+
+A quasi-monotonic sequence, or trend, relaxes this restriction.
+
+If, when put your finger between any two sequence elements, the average of everything to the left of your finger is less than the average of everything to the right, we'll call that a trend.
+
+In other words, a monotonic sequence is also a trend
+but a trend doesn't have to be monotonic.
+
+For example, **0, 1, 4** is both monotonic and a trend.
+In contrast, **1, 0, 4** is not monotonic,
+yet it is a trend,
+because **mean(1) = 1 < mean(0, 4) = 2**,
+and **mean(1, 0) = 1/2 < mean(4) = 4**.
+
+By convention, just as single float is both a monotonically increasing and decreasing sequence, it's also both a rising and a falling trend.
+
+## Averages
+
+The easiest average to work with is the arithmetic mean,
+but for defining trends, any average will work that satisfies one condition:
+if S1 and S2 are sequences, and Average(S1) < Average(S2), then
+Average(S1) < Average(S1 + S2) < Average(S2)
+
+Geometric and harmonic means both satisfy this condition just as well as the arithmetic mean.  Modes do not. For example,
+
+	mode(1, 1, 2, 2, 2) =  2; mode(1, 1, 3, 3, 3) = 3
+
+but
+
+	mode(1, 1, 2, 2, 2 + 1, 1, 3, 3, 3) =
+	mode(1, 1, 1, 1, 2, 2, 2, 3, 3, 3) = 1
+
+Right now, the code hard-wires "average" to "arithmetic mean."
+Enhancing it, so the average to use could be specified in a config file, would be a useful upgrade.
+
+## Random numbers
+
+If you're a mathematician, you'd say something like, *"Two reals, independently chosen on a finite interval, are equal with Lebesgue measure zero."*
+This means that if you had a ***real*** random number generator, and generated a snotload of random floats, no two would ever be identical.
+
+In Python, `random()` returns floats in `[0, 1)` that are random enough, and have enough digits,
+that this module treats them like reals and pretends they'll never throw out duplicates,
+unless you use `random.seed(FIXED_SEED)` to force it to happen.
+
+The code nods to reality by throwing an exception if it notices a violation of this assumption.
+It hasn't yet.
+
+I'm assuming averages of two different random sequences of reals
+are probably also never the same (again *"...Lebesgue measure zero"*),
+but I would welcome a proof.
+
+## Representation
+
+If you tack two trends together, their combined average is a weighted average of the pair.
+For example, a rising trend with length **2** and mean **8.0**,
+followed by another rising trend with length **6** and mean **4.0**
+will combine to form a single, rising trend of length **6**
+and mean **(2*8.0 + 6*4.0)/8 = 40.0/8 = 5**.
+
+In fact, almost no operations with trends require storing
+the actual, **x_i** values that make up the trend;
+it's enough to keep track of the trend mean, trend length,
+and whether the trend is rising or falling.
+
+The current version of the package stores only mean and length as trend attributes.
+Trend direction is passed as an argument to trend methods that care.
+It would be useful
+to explore whether storing direction in the code object itself
+cleans up the code.
+
+## Properties
+
+Trends have some interesting properties, worth mentioning:
+
+- Every sequence of reals that's not a trend can be decomposed, uniquely, into maximum-length trends by merging adjacent trends whenever possible.
+- After decomposing a sequence, the means of the trends are monotonic:
+If you decompose the sequence, left-to-right, into increasing trends, their averages are monotonically decreasing. Decomposition into falling trends produces monotonically increasing averages.
+- Every sequence has exactly one circular permutation that's a single, increasing trend.
+
+These perhaps-not-intuitively-obvious properties
+are shown in Ehrenfeucht, *et al. (vide infra)*.
+
+## Development Environment
+
+I use `poetry` for environment and dependency management.
+The file `pyproject.toml` contains specifications.
+
+I use `pre-commit` to help minimize the number of bad commits I make.
+<https://pre-commit.com/> explains how to activate it.
+The `.pre-commit.yaml` file could probably use some work.
+
+`bin/pychecks` performs a suite of linting operations,
+including `isort` `black`, `flake8`, `mypy`, `pylint`, `bandit`, and `safety`.
+Every one of these is documented at <https://readthedocs.io> under *toolname*.readthedocs.io .
+except `safety`, which is documented at <https://pyup.io/safety>
+
+I welcome suggestions on what other checks I should add.
+
+`bin/pytests` does unit tests, code-coverage, and mutation testing.
+I use pytest for unit testing and code coverage,
+and mutmut for mutation testing.
+Both `pytest` and `mutmut` are also documented at <https://readthedocs.io>.
+
+I do argument parsing with `argparse`,
+but haven't yet figured out how to test its help messages.
+
+
+## Reference
+[Andrzej Ehrenfeucht, Jeffrey Haemer, and David Haussler Quasi-Monotonic Sequences: Theory, Algorithms and Applications. SIAM. J. on Algebraic and Discrete Methods 1987;8(3):410-429](https://scholar.colorado.edu/downloads/8049g581k)
+
