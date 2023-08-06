@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: tripleo-operator-ansible
+Version: 0.8.0
+Summary: Operator ansible assets for the TripleO project.
+Home-page: https://opendev.org/openstack/tripleo-ansible
+Author: OpenStack
+Author-email: openstack-discuss@lists.openstack.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Utilities
+
+tripleo-operator-ansible
+========================
+
+This repository contains an ansible collection of TripleO roles. This collection
+contains a set of roles providing an ansible interface for the TripleO cli actions.
+
+Documentation
+-------------
+Documentation can be viewed at https://docs.openstack.org/tripleo-operator-ansible/latest/
+
+
+
