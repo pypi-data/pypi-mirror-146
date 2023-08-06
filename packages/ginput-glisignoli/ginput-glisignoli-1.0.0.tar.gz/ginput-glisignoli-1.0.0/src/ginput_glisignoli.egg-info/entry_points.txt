@@ -1,0 +1,2 @@
+[console_scripts]
+ginput = ginput.command_line:main

@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.py
+src/ginput/__init__.py
+src/ginput/command_line.py
+src/ginput/ginput.py
+src/ginput/keycodes.py
+src/ginput_glisignoli.egg-info/PKG-INFO
+src/ginput_glisignoli.egg-info/SOURCES.txt
+src/ginput_glisignoli.egg-info/dependency_links.txt
+src/ginput_glisignoli.egg-info/entry_points.txt
+src/ginput_glisignoli.egg-info/not-zip-safe
+src/ginput_glisignoli.egg-info/requires.txt
+src/ginput_glisignoli.egg-info/top_level.txt
