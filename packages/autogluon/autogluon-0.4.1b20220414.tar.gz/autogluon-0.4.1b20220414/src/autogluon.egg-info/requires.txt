@@ -1,0 +1,5 @@
+autogluon.core[all]==0.4.1b20220414
+autogluon.features==0.4.1b20220414
+autogluon.tabular[all]==0.4.1b20220414
+autogluon.text==0.4.1b20220414
+autogluon.vision==0.4.1b20220414
