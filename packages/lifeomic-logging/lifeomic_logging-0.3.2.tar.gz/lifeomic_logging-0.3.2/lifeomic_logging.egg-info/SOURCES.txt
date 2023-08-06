@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+lifeomic_logging/__init__.py
+lifeomic_logging/logger.py
+lifeomic_logging/version.py
+lifeomic_logging.egg-info/PKG-INFO
+lifeomic_logging.egg-info/SOURCES.txt
+lifeomic_logging.egg-info/dependency_links.txt
+lifeomic_logging.egg-info/top_level.txt
