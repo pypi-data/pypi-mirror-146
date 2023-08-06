@@ -1,0 +1,2 @@
+[console_scripts]
+uturn-cli = uturn_cli.cli:commands
