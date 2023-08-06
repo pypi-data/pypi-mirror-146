@@ -1,0 +1,6 @@
+td_connect/.tdauth.json,sha256=f-QMSljai8_CqcwKXr5nqeptFyauXuCGp9QBaOpNz18,3202
+td_connect/__init__.py,sha256=hYW5iuY1IBxufnaBhKOdeJmFO8luR8rLuwPnOS6rIFc,37
+td_connect/tdauth.py,sha256=rKMzepKC2xAHD3ps9kTa7vgACzawJNZVf8fYqZALtyY,9277
+td_connect-0.1.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+td_connect-0.1.3.dist-info/METADATA,sha256=la2VdX0-Ma3FL9PyRMSBTXO-8xWZ52gxqhgqPWRGFjQ,611
+td_connect-0.1.3.dist-info/RECORD,,
