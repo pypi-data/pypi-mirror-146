@@ -1,0 +1,3 @@
+[console_scripts]
+pyperformance = pyperformance.cli:main
+
