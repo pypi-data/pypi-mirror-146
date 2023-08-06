@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: SamplePayments
+Version: 1.0.2
+Summary: Sample payment library
+Home-page: UNKNOWN
+Author: Sudharshan Shetty
+Author-email: sudharshan.ss@vavve.com
+License: MIT
+Keywords: Payments
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Sample Payment library.
+
+
+CHANGELOG
+=========
+
+1.0.0 (02/14/2022)
+------------------
+- First Release
+
