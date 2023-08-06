@@ -1,0 +1,9 @@
+README.md
+setup.py
+kuai/__init__.py
+kuai/kuaiIP.py
+kuaidailiProxy.egg-info/PKG-INFO
+kuaidailiProxy.egg-info/SOURCES.txt
+kuaidailiProxy.egg-info/dependency_links.txt
+kuaidailiProxy.egg-info/requires.txt
+kuaidailiProxy.egg-info/top_level.txt
