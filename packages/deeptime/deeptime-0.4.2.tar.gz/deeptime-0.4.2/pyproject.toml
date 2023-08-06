@@ -1,0 +1,53 @@
+[project]
+name = "deeptime"
+readme = "README.md"
+description = "Python library for analysis of time series data including dimensionality reduction, clustering, and Markov model estimation."
+keywords = [
+    "markov-model", "hidden-markov-model", "time-series-analysis", "covariance-estimation",
+    "koopman-operator", "coherent-set-detection"
+]
+authors = [
+    {name = 'Moritz Hoffmann', email = 'moritz.hoffmann@fu-berlin.de'},
+    {name = 'Martin Scherer'},
+    {name = 'Tim Hempel'},
+    {name = 'Andreas Mardt'},
+    {name = 'Maaike Galama'},
+    {name = 'Brian de Silva'},
+    {name = 'Brooke Husic'},
+    {name = 'Stefan Klus'},
+    {name = 'Hao Wu'},
+    {name = 'Nathan Kutz'},
+    {name = 'Steven Brunton'},
+    {name = 'Frank Noé'}
+]
+requires-python = ">= 3.7"
+dependencies = ['numpy', 'scipy', 'scikit-learn', 'threadpoolctl']
+dynamic = ['version']
+
+[project.urls]
+homepage = "https://deeptime-ml.github.io"
+repository = "https://github.com/deeptime-ml/deeptime"
+documentation = "https://deeptime-ml.github.io"
+download = "https://pypi.org/project/deeptime/#files"
+
+[project.optional-dependencies]
+deep-learning = ['pytorch']
+plotting = ['matplotlib', 'networkx']
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "scikit-build>=0.13",
+    "cython",
+    "pybind11>=2.9.0",
+    "numpy>=1.14",
+    "cmake>=3.22",
+    "toml",
+    "scipy",
+    "ninja; platform_system!='Windows'"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+filterwarnings = ["once", "ignore::UserWarning"]
