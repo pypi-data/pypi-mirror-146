@@ -1,0 +1,11 @@
+ssl_metrics_git_commits_loc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssl_metrics_git_commits_loc/args.py,sha256=CzLiAAgTZSuSHW4naJj3sxm9nhIFZacjiqqnXLSaYDI,3699
+ssl_metrics_git_commits_loc/graph.py,sha256=iMVkn7WVCJk0JvXi1SfUCjcys_hqQISCMEQQS6nC1Ck,1630
+ssl_metrics_git_commits_loc/main.py,sha256=utBhqpgZkRj2dFxiGYaz6P01OpeDKtw3voWIBSLzyM4,5059
+ssl_metrics_git_commits_loc/version.py,sha256=2WgTcHc77b_CE03Nuz7-RIW0fxSFe-Jh6l0UBYXHuxY,61
+ssl_metrics_git_commits_loc-0.10.dist-info/LICENSE,sha256=HfZeEdCZOlB4t1x4L1Li1jIBF7H2ks5zdfsNVw_ieoM,1539
+ssl_metrics_git_commits_loc-0.10.dist-info/METADATA,sha256=QzSq_USzCoGdyO6CvjS93VDYh2mIHY9ho9vYzpzmhng,6126
+ssl_metrics_git_commits_loc-0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ssl_metrics_git_commits_loc-0.10.dist-info/entry_points.txt,sha256=fy-KZ6BrrhNvyuA12X6v4uUXKnNft9eegPYgXelmw2k,169
+ssl_metrics_git_commits_loc-0.10.dist-info/top_level.txt,sha256=DIcXN2SdqTLdwoEcFUtzBJN8_hzUcAdH0EyQDBlUDL4,28
+ssl_metrics_git_commits_loc-0.10.dist-info/RECORD,,
