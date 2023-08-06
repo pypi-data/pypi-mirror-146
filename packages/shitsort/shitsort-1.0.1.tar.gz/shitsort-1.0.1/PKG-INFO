@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: shitsort
+Version: 1.0.1
+Summary: Really really bad sorting algorithms
+Home-page: https://github.com/sh6heer/shitty-sorting-algorithms
+Author: sh6heer
+Author-email: 
+License: GNU GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# **How to use**
+## functions:
+
+bogosort
+
+multibogosort
+
+
