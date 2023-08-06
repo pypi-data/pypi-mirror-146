@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: filatt-karjakak
+Version: 0.2.0rc1
+Summary: Change a file attributes for Windows
+Home-page: https://github.com/kakkarja/WinAtt
+Author: karjakak
+Author-email: kakkarja.github@gmail.com
+License: BSD3 License
+Platform: UNKNOWN
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# WinAtt [cli-environment]
+## Tool to change Windows' file attributes
+### [Development]
+
+## Installation
+```
+pip install filatt-karjakak
+```
+
+## Usage
+**Get file permission status**
+```
+% wattr -p path/file
+```
+> <em>To check file permission or change file permission? ["C" to check and "A" to change] c</em>
+
+**Change file permission**
+```
+% wattr -p path/file
+```
+> <em>To check file permission or change file permission? ["C" to check and "A" to change] a</em>
+
