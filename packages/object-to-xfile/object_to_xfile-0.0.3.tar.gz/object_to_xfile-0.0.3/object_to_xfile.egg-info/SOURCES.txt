@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+object_to_xfile/__init__.py
+object_to_xfile/xconvertor.py
+object_to_xfile.egg-info/PKG-INFO
+object_to_xfile.egg-info/SOURCES.txt
+object_to_xfile.egg-info/dependency_links.txt
+object_to_xfile.egg-info/requires.txt
+object_to_xfile.egg-info/top_level.txt
