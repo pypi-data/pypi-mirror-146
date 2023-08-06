@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: 2016-06-29 12:50+0900\n"
+"Last-Translator:   <anders@catalpa.io>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.7.2\n"
+
+msgid "logout"
+msgstr "ထွက်ပါ"
+
+msgid "Login"
+msgstr "ဝင်ပါ"
+
+msgid "aid transparency portal"
+msgstr "ပွင့်လင်းမြင်သာမှုရှိသောအကူအညီ"
+
+msgid "tracking international aid activities"
+msgstr "နိုင်ငံတကာအကူအညီဆိုင်ရာလုပ်ငန်းများလမ်းကြောင်း"
+
+#, fuzzy, python-format
+#| msgid "Log in to Openly"
+msgid "Log in to %(site)s"
+msgstr "ပွင့်ပွင့်လင်းလင်းဝင်ကြည့်ပါ"
+
+msgid "Let's start a conversation about aid transparency"
+msgstr "အကူအညီပွင့်လင်းမြင်သာမှုအကြောင်း ပြောကြရအောင်"
+
+msgid "Open information about international aid activities"
+msgstr "နိုင်ငံတကာအကူအညီအကြောင်းသတင်းကိုဖွင့်ပါ။"
+
+msgid "Why is open aid important?"
+msgstr "ပွင့်လင်းတဲ့အကူအညီတွေ ဘာကြောင့် အရေးကြီးလဲ။"
+
+msgid ""
+"Making aid transparent helps to ensure aid goes where it is most needed."
+msgstr ""
+"ပြင့္လင္းျမင္သာတဲ့အကူအညီမ်ားေပးျခင္းက အလုိအပ္ဆုံးေနရာေတြကုိ အကူအညီမ်ားေပးျဖစ္ဖုိ့ ေသခ်ာေအာင္ကူညီတယ္။"
+
+msgid "By ensuring open access to aid information"
+msgstr "ပွင့်လင်းတဲ့လက်ခံမှုက အကူအညီပေးဖို့ သေချာစေခြင်း"
+
+#, fuzzy
+#| msgid ""
+#| "a wider group of stakeholders are able to clearly see who is doing what "
+#| "and where? Access to better quality aid information also supports the "
+#| "equitable allocation of resources, both sectorally and geographically, "
+#| "ensuring that all Myanmar people can benefit."
+msgid ""
+"a wider group of stakeholders are able to clearly see who is doing what and "
+"where? Access to better quality aid information also supports the equitable "
+"allocation of resources, both sectorally and geographically, ensuring that "
+"all people can benefit."
+msgstr ""
+"အစုိးရအဖြဲ့သည္ ဘယ္သူကဘာကုိဘယ္ေနရာမွာလုပ္ေနလဲဆုိတာကုိရွင္းလင္းစြာသိနုိင္တယ္။ အကူအညီ မ်ားအရည္အေသြး "
+"ျပည့္ဝစြာဝင္လာျခင္းက က႑ဆုိင္ရာနွင့္ ပထဝီအေနအထားအရ ျမန္မာလူမ်ဳိးအားလုံး အက်ဳိးေက်းဇူးရနုိင္သည္ဆုိတာ "
+"ေသခ်ာေစျခင္းျဖင့္ သင့္ေလ်ာ္တဲ့ အင္အားေနရာကုိ ပံ့ပိုးပါသည္။"
+
+msgid "What are the results?"
+msgstr "ရလဒ်များဆိုတာဘာလဲ။"
+
+msgid "Aid transparency isn't just about numbers."
+msgstr "အကူအညီပွင့်လင်းမြင်သာမှုရှိခြင်းက  အရေအတွက်အကြောင်းသာလျင် မဟုတ်ပါ။"
+
+msgid "Results matter too."
+msgstr "ရလဒ်သည်လည်းပဲ"
+
+msgid ""
+"Open access to aid information means that people  are better able to see the "
+"impact that aid activities have in their communities. This also helps other "
+"countries learn what may work, or not work, in their country."
+msgstr ""
+"အကူအညီမ်ားကုိ ဝင္ခြင့္ေပးျခင္းက အကူအညီလုပ္ငန္းမ်ားဟာ သီးသန့္လူစုမ်ားထံမွာ ရွိတယ္ဆုိတဲ့ အက်ဳိး သက္ေရာက္မွုကုိ "
+"ျမင္ေစတယ္။ဒါက အျခားနုိင္ငံမ်ားကုိ သူတုိ့နုိင္ငံမွာ ဘာလုပ္သင့္တယ္၊ မလုပ္သင့္ဘူး ဆုိတာကုိ ေလ့လာရာမွာ ကူညီတယ္။"
+
+msgid "aid works better when we work together"
+msgstr "အတူတူအလုပ်လုပ်သောအခါ အကူအညီများ ပိုပေးလာသည်။"
+
+msgid "Software designed and developed by"
+msgstr "Software  ပုံစံထုတ်သူနှင့် တည်ထောင်သူ "
+
+msgid "Please sign in"
+msgstr "ကျေးဇူးပြုပြီး ဝင်ကြည့်ပါ။"
+
+msgid "Your username and password didn't match. Please try again."
+msgstr "မင်း ရဲ့ အသုံးပြုသူအမည် နှင့် စကားဝှက်က မမှန်ဘူး။ ထပ်ကြိုးစားပါဦး။"
+
+msgid "Sign in"
+msgstr "ဝင်ကြည့်ပါ။"
+
+msgid "Can't access your account?"
+msgstr "မင်းရဲ့ accountကို လက်မခံနိုင်ဘူးလား။"
+
+msgid "Reset your password."
+msgstr "မင်းရဲ့ စကားဝှက်ကို ပြန်ထည့်ပါ။"
+
+msgid "You have logged out."
+msgstr "မင်းထွက်ပြီးပြီ။"
+
+msgid "See you next time!"
+msgstr "နောက်မှတွေ့မယ်။"
+
+msgid "Password changed"
+msgstr "စကားဝှက် ပြောင်းသည်။"
+
+msgid "Change Password"
+msgstr "စကားဝှက် ပြောင်းပါ။"
+
+msgid "Log In"
+msgstr "ဝင်ပါ"
+
+msgid "Password reset successfully"
+msgstr "စကားဝှက်ပြန်ထည့်တာမှန်သွားပြီ။"
+
+msgid "Log in"
+msgstr "ဝင်ပါ"
+
+msgid "Submit"
+msgstr "တင်ပြပါ။"
+
+msgid "Password reset failed"
+msgstr "စကားဝှက်ပြန်ထည့်တာမှားတယ်။"
+
+msgid "Email Sent"
+msgstr "အီးမေးလ်ပို့ပြီးပြီ။"
+
+msgid "An email with password reset instructions has been sent."
+msgstr "စကားဝှက်ပြင်ပြီး အီးမေးလ်ပို့ပြီးပြီ။"
+
+#, python-format
+msgid ""
+"\n"
+"    Hi %(user)s,\n"
+"\n"
+"    You recently requested a link to reset your %(site_name)s password for "
+"the username %(user)s.\n"
+"    Please set a new password by following the link below:\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"\n"
+"    Thanks,\n"
+"    - The %(site_name)s Team.\n"
+msgstr ""
+
+msgid "Password Reset"
+msgstr "စကားဝှက်ပြန်ထည့်ပါ။"
+
+msgid ""
+"To reset your password please enter your email address below. We will send "
+"you an email with some instructions."
+msgstr ""
+"မင္းရဲ့ စကားဝွက္ အမွန္ထည့္ဖုိ့ ေအာက္ကမင္းရဲ့ အီးေမးလ္လိပ္စာကုိျပန္ဝင္ပါ။မင္းဆီကို ညြန္ျကားခ်က္အခ်ဳိ့နဲ့ "
+"အီးေမးလ္ပုိ့ထားတယ္။"
+
+msgid "Submit Request"
+msgstr "တောင်းဆိုချက်ကို တင်ပြပါ။"
+
+#~ msgid "Search"
+#~ msgstr "ရှာဖွေပါ။"
+
+#~ msgid "Aid Dashboard"
+#~ msgstr "အကူအညီဆိုင်ရာDashboard"
+
+#~ msgid "Aid by Location"
+#~ msgstr "နေရာဒေသအလိုက် အကူအညီ"
+
+#~ msgid "Aid by Ministry"
+#~ msgstr "ဝန်ကြီးဌာနအလိုက် အကူအညီ"
+
+#~ msgid "Aid by Sector"
+#~ msgstr "ကဏ္ဍအလိုက် အကူအညီ"
+
+#~ msgid "Aid by Donor"
+#~ msgstr "အလှူရှင်အလိုက် အကူအညီ"
+
+#~ msgid "Profile Page"
+#~ msgstr "ဆောင်းပါးစာမျက်နှာ"
+
+#~ msgid "Create Report"
+#~ msgstr "အစီရင်ခံစာကို ဖန်တီးပါ။"
+
+#, fuzzy
+#~| msgid "Query Builder"
+#~ msgid "Report Builder"
+#~ msgstr "စုံစမ်းမေးမြန်းပါ။"
+
+#~ msgid "Query Builder"
+#~ msgstr "စုံစမ်းမေးမြန်းပါ။"
+
+#, fuzzy
+#~| msgid "Add a new activity"
+#~ msgid "Add Activity"
+#~ msgstr "လုပ်ငန်းအသစ်ထည့်ပါ။"
+
+#, fuzzy
+#~| msgid "Hello"
+#~ msgid "Hello, "
+#~ msgstr "ဟဲလို"
+
+#~ msgid "Settings"
+#~ msgstr "ဆက်တင်"
+
+#~ msgid "Start tutorial"
+#~ msgstr "စာမေးပွဲကိုစတင်ပါ။"
+
+#~ msgid "Sign out"
+#~ msgstr "ထွက်ပါ။"
+
+#~ msgid "Public Page"
+#~ msgstr "အများပိုင်စာမျက်နှာ"
+
+#~ msgid "Activity Manager"
+#~ msgstr "လုပ်ငန်းစီစဉ်သူ"
+
+#~ msgid "Add a new activity"
+#~ msgstr "လုပ်ငန်းအသစ်ထည့်ပါ။"
+
+#~ msgid "Delete activity"
+#~ msgstr "လုပ်ငန်းကိုဖျက်ပါ။"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "အကူအညီဆိုင်ရာDashboardများ"
+
+#~ msgid "Aid By Location"
+#~ msgstr "နေရာဒေသအလိုက် အကူအညီ"
+
+#~ msgid "Aid By Ministry"
+#~ msgstr "ဝန်ကြီးဌာနအလိုက် အကူအညီ"
+
+#~ msgid "Aid By Sector"
+#~ msgstr "ကဏ္ဍအလိုက် အကူအညီ"
+
+#~ msgid "Aid By Donor"
+#~ msgstr "အလှူရှင်အလိုက် အကူအညီ"
+
+#~ msgid "Your Pages"
+#~ msgstr "မင်းရဲ့စာမျက်နှာများ"
+
+#~ msgid "Report Templates"
+#~ msgstr "အစီရင်ခံစာအစုအဝေး"

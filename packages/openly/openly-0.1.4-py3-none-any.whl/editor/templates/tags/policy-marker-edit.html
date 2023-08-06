@@ -1,0 +1,63 @@
+<policy-marker-edit>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <field-choice
+                classes={classes.policy_marker}
+                store={opts.store}
+                root_el="{path}"
+                path=".policy_marker"
+                fieldname="policy_marker"
+                choices="{get_relevant_choices('policy_marker')}"
+                select_placeholder="Add a policy marker..."
+                no_data_transform="1"
+                cannot_reselect_null="true"
+                formgroup=false>
+            </field-choice>
+        </div>
+        <div class="col-xs-4">
+            <field-dropdownselect
+                classes={classes.significance}
+                store={opts.store}
+                root_el="{path}"
+                path=".significance"
+                fieldname="significance"
+                cannot_reselect_null="true"
+                formgroup=false>
+            </field-dropdownselect>
+        </div>
+
+        <div if="{_.get(opts.store, opts.path).policy_marker.code != null}" class="col-xs-1" onclick="{delete_sector}">
+        <div if={_.get(opts.store, opts.path).policy_marker.code != null} class="" onclick="{delete_sector}">
+            <a class="remove_form_row" href="javascript:void(0)"> </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" if="{errors}">
+             <validation-error-list only_if_changed></validation-error-list>
+        </div>
+    </div>
+
+    {# <script> #}
+
+    var tag = this;
+    tag.mixin('SerializerMixin');
+    tag.mixin('SectorMixin');
+    tag.mixin('ValidationMixin');
+
+    tag.on('before-update', function (){
+        tag.parent_path = tag.parent.path;
+    });
+
+    tag.classes = {
+        policy_marker: {
+            label: 'hidden',
+            outer: 'col-xs-8'
+        },
+        significance: {
+            label: 'hidden',
+            outer: 'col-xs-4'
+        },
+    };
+
+</policy-marker-edit>

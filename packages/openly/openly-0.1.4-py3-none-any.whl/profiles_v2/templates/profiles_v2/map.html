@@ -1,0 +1,58 @@
+{% load i18n %}
+{% load leaflet_tags %}
+
+<!--// Main Map    -->
+
+{% leaflet_map "yourmap" callback="main_map_init" %}
+{% get_current_language as LANGUAGE_CODE %}
+
+<script>
+
+function main_map_init (map, options) {
+
+    // Only enable scrolling to zoom if the map has been clicked
+    map.scrollWheelZoom.disable();
+    map.on('click', function() {
+	if (map.scrollWheelZoom.enabled()) {
+	    map.scrollWheelZoom.disable();
+	}
+	else {
+	    map.scrollWheelZoom.enable();
+	}
+    });
+
+    var locations = new Object();
+    location_activities = {}
+    stores.organisation_activities_store[stores.organisation_activities_store.el].filter(function(a) { return a.activity_status.code == 2; }).forEach(function(activity) {
+	title = undefined
+	for (idx in activity.title_set) {
+	    title = activity.title_set[idx].title;
+	    if (activity.title_set[idx].language == "{{ LANGUAGE_CODE }}") break;
+	}
+
+	activity.locations.forEach(function(location) {
+	    location_district = choices.areas.ancestor_of_kind(Number(location.location.code), 2).id;
+	    locations[location_district] = true;
+	    if (title !== undefined) {
+		if (!(location_district in location_activities)) {
+		    location_activities[location_district] = new Set()
+		}
+		location_activities[location_district].add(title)
+	    }
+	});
+    });
+
+    var dataurl = '{% url "data" %}';
+    // Download GeoJSON via Ajax
+    $.getJSON(dataurl, {locations: Object.keys(locations)}, function (data) {
+	function onEachFeature(feature, layer) {
+        layer.bindPopup("<b>" + feature.properties.name + "</b><br><b>" + "{{ activity_plural|escape }}" + ": </b>" + Array.from(location_activities[feature.id]).sort().join(', '))
+	}
+
+        // Add GeoJSON layer
+	L.geoJson(data, {
+	    onEachFeature: onEachFeature,
+	}).addTo(map);
+    });
+}
+</script>

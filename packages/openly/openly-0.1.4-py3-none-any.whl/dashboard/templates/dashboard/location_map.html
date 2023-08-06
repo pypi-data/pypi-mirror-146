@@ -1,0 +1,242 @@
+
+    <!--// Main Map    -->
+    <div id="map"></div>
+
+    <script>
+    var scale;
+    var width = parseInt(d3.select('#map').style('width')),
+        mapRatio = 2,
+        height = width * mapRatio,
+        orig_width = width,
+        active;
+
+    var key = {% if st_current %}"townships"{% else %}"states"{% endif %};
+    var current_state = {% if st_current %}"{{st_current}}"{% else %}undefined{% endif %};
+    var current_state_center = {% if st_center %}[{{st_center.y}}, {{st_center.x}}]{% else %}undefined{% endif %};
+    var chloroClass = '';
+    if (width > 570) {
+        scale = 2.7;
+    }
+    else if (width <= 570 && width > 530) {
+        scale = 2.6;
+    }
+    else if (width <= 530 && width > 460) {
+        scale = 2;
+    }
+    else if (width <= 460 && width > 390) {
+        scale = 1.7;
+    }
+    else if (width <= 390 && width >= 350) {
+        scale = 1.59;
+    }
+    else if (width < 350 && width > 260) {
+        scale = 1.37;
+    }
+    else if (width <= 260){
+        scale = 1.1;
+    }
+
+    var projection = d3.geo.albers()
+        .center([0, 19.4])
+        .rotate([-96, 0])
+        .parallels([10, 30])
+        .translate([width / 2.2, height / 2.1])
+        .scale(( width / orig_width) * 1360 * scale);
+
+
+    var path = d3.geo.path()
+        .projection(projection);
+
+    var svg = d3.select("div#map").append("svg")
+            .style('width', width + 'px')
+            .style('height', height + 'px');
+
+    svg.append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .on("click", reset);
+
+    var g = svg.append("g");
+
+    var tooltip = d3.select("#map").append("div")
+        .attr("style", "display:none");
+
+    d3.json("/static/geo/{{ json_borders }}", function(error, areas) {
+        var codes = _(areas.objects[key].geometries).map('properties.pcode').value()
+        var map_values = _.filter(window.context_data.by.location_with_subareas, function(l){return _.includes(codes, l.code)})
+        var list_values = _.map(map_values, 'dollars')
+
+        function createClassesRange(){
+                var max = _.max(list_values);
+                var min = _.min(list_values);
+    
+                var rangeValues = ( ( max - min ) / 9 );
+                var rangeClasses = {};
+                var classCount = 2;
+                if ( rangeValues > 0 ) {
+                    for ( x = min; x <= max; x += rangeValues ) {
+                        rangeClasses['chloro_' + classCount++] = {
+                            ini: x,
+                            fin: x + rangeValues
+                        };
+                    }
+                }
+                return rangeClasses;
+            }
+    
+        var classRanges = createClassesRange();
+
+      g.selectAll("path")
+    //      .data(topojson.feature(us, us.objects[key]).features)
+            .data(topojson.feature(areas, areas.objects[key]).features)
+
+        .enter().append("path")
+          .attr("d", path)
+          .attr("class", function(d){
+                var class_name = "feature";
+                if (key === "states"){
+                    class_name += " state " + d.properties.pcode;
+                } else {
+                    class_name += " state "+ d.properties.state + " township" + d.properties.name;
+                    if (current_state){
+
+                        if ( isCurrentState( d.properties.state ) ) {
+                            class_name+=" current"
+                        } else {
+                            class_name = " noshow";
+                        }
+                    }
+
+                }
+
+                var currentAmount = _.get(window.all_states, d.properties.pcode + '_natural', 0);
+
+                if ( currentAmount === 0 ) {
+                    chloroClass = 'chloro_0';
+                } else {
+                    chloroClass = '';
+                    for ( var cClass in classRanges ) {
+                        if ( currentAmount >= classRanges[cClass].ini && currentAmount <= classRanges[cClass].fin ) {
+                            chloroClass = cClass;
+                        }
+                    }
+                }
+                class_name += ' ' + chloroClass;
+                return class_name
+              })
+
+          .on("click", {% if current_extent %}reset{% else %}click{% endif %})
+          .on("mouseenter", enter)
+          .on("mouseleave", leave);
+
+      g.append("path")
+          .datum(topojson.mesh(areas, areas.objects[key], function(a, b) { return a !== b; }))
+          .attr("class", "mesh")
+          .attr("d", path);
+
+    //
+    d3.select(window).on('resize', resize);
+
+    function resize() {
+        resize_window();
+        // adjust things when the window size changes
+        width = parseInt(d3.select('#map').style('width'));
+        //width = width - margin.left - margin.right;
+        height = width * mapRatio;
+
+        // update projection
+        projection
+            .translate([width / 2.2, height / 2.1])
+            .scale(( width / orig_width) * (1360 * scale));
+
+        // resize the map container
+        svg
+            .style('width', width + 'px')
+            .style('height', height + 'px');
+
+        // resize the map
+        svg.select('rect')
+            .attr('width', width + 'px')
+            .attr('height', height + 'px');
+
+        svg.selectAll('path').attr('d', path);
+    }
+    //
+    {% if current_extent %}
+        zoom_state();
+    {% endif %}
+    });
+
+    {% if current_extent %}
+    function zoom_state(){
+        var project_0 = projection([{{current_extent.0}}, {{current_extent.3}}]);
+        var project_1 = projection([{{current_extent.2}}, {{current_extent.1}}]);
+        var b = [project_0,project_1];
+        var transform = "translate(" + projection.translate() + ")"
+          + "scale(" + scale + ")"
+          + "translate(" + -(b[1][0] + b[0][0]) / 2 + "," + -(b[1][1] + b[0][1]) / 2 + ")";
+        g.transition().duration(10).attr("transform", transform);
+    }
+    {% endif %}
+
+
+    function click(d) {
+      if (active === d) return reset();
+      g.selectAll(".active").classed("active", false);
+      d3.select(this).classed("active", active = d);
+      var b = path.bounds(d);
+      var transform = "translate(" + projection.translate() + ")"
+          + "scale(" + scale + ")"
+          + "translate(" + -(b[1][0] + b[0][0]) / 2 + "," + -(b[1][1] + b[0][1]) / 2 + ")";
+      g.transition().duration(750).attr("transform", transform);
+      var base_url = "{% url 'aid_by_location' %}";
+      if (key === "states"){
+        if (d.properties.pcode !== current_state){
+            document.location = base_url + d.properties.pcode;
+        }else{
+            document.location = base_url;
+        }
+      }else{
+        document.location = base_url + d.properties.state;
+      }
+    }
+
+    function reset() {
+      g.selectAll(".active").classed("active", active = false);
+      g.transition().duration(750).attr("transform", "");
+      var base_url = "{% url 'aid_by_location' %}";
+      document.location = base_url;
+    }
+
+    function enter(d) {
+        var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
+
+        if ( key === "states" ) {
+            var country_name = d.properties.name + "<br>$"+ (window.all_states[d.properties.pcode] || 0);
+        } else {
+
+            if ( current_state )
+                if ( !isCurrentState( d.properties.state ) )
+                    return false;
+
+            var country_name = 'Township: '+d.properties.name + "<br>$"+ (window.all_states[d.properties.pcode] || 0);
+        }
+
+        tooltip
+          .attr("class", "tipsy tipsy-inner tipsy-s")
+          .attr("style", "left:"+(mouse[0]+30)+"px;top:"+mouse[1]+"px;position:absolute;visibility:visible;display:block;opacity:0.8")
+          .html(country_name)
+    }
+
+    function isCurrentState( state )
+    {
+        return state === current_state
+        || (state === "MMR015"  && "MMR014" === current_state)
+        || (state === "MMR016"  && "MMR014" === current_state)
+        || (state === "MMR008"  && "MMR007" === current_state)
+    }
+
+    function leave(d,i) {
+        tooltip.attr("style", "display:none")
+    }
+    </script>

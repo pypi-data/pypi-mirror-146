@@ -1,0 +1,137 @@
+{% load i18n %}
+
+<project-list-filter>
+    <div id="filter-container">
+        <form ref="filter_form">
+            <div class="blue-background">
+                <div class="search-filter-box container">
+                    <span id="activity-search-container" class="form-item">
+                        <label for="activity-name-filter" class="sr-only"> {% blocktrans %}Search {{activity_plural}}{% endblocktrans %} </label>
+                        <input class="search-wrapper search-activities form-control" id="activity-name-filter" ref="name_filter" type="search" onkeyup="{ update_search }" placeholder="{% blocktrans %}Search {{activity_plural}}{% endblocktrans %}"/>
+                    </span>
+                    <span id="show-filter-btn">
+                        <a class="help-text btn-default btn { showing_filters ? 'active' : ''}" onclick="{ show_or_hide_filters }">
+                            {% include 'activity_list/filters_icon.svg' %}
+                            {% trans 'Filters' %}
+                        </a>
+                    </span>
+                    <span id="download-button-container" class="hidden-xs">
+                        {% if user.is_staff or user.organisation and user.organisation.pk == 'PlanD' %}
+                        <a href="{% url 'export_with_unpublished_projects' %}" class="btn btn-default">
+                        {% else %}
+                        <a href="{% url 'export_projects' %}{filtered_activity_ids}" class="btn btn-default">
+                        {% endif %}
+                            {% include 'activity_list/download_icon.svg' %}
+                            {% trans "Download Projects" %}
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div show="{showing_filters}" class="bottom-bar-background">
+                <div class="filter-bar container">
+                    <div class="form-item col-sm-3 col-xs-12" each={ opts.store.filters } show={ visible }>
+                        <p class="side-bar-category">
+                            { name }
+                            <a class="filter-close pull-right" if="{ show_filter_toggles }" onclick="{ toggle_filter }"><i class="ion-close"></i></a>
+                        </p>
+                        <select ref={id} id="select2-for-{id}" class="form-control project-filter-option" name="{ id }" multiple placeholder="Add a filter" class="styled-select">
+                            <option each="{ option in options }" value="{ option.value }" selected="{ is_selected(id, option.value) }">{ option.display }</option>
+                        </select>
+                    </div>
+                    <div class="clear-filters col-sm-3 col-xs-12">
+                        <a class="help-text" onclick="{ clear }">{% trans 'Clear all' %}</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+
+        /* globals fireEvent, dashboard_translations */
+        var self = this;
+        self.show_filter_toggles = false;
+        self.helps = {};
+        self.showing_filters = false;
+        self.show_result = false;
+
+        self.on('updated', function () {
+            /* required for icheck to keep in sync */
+            $('#filter-select-content').iCheck('update');
+        });
+
+        self.on('mount', function () {
+            /* iCheck prettify */
+            $filter = $('#filter-select-content')
+            $filter.iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+                increaseArea: '20%' // optional
+            });
+            $filter.find('input').on('ifChanged', function (e) {
+                e.target.dispatchEvent(new Event('change'));
+            });
+
+            $(self.refs.filter_form).find('select').select2().on('change', function(e) {
+                var filter_id = e.target.attributes.ref.value;
+                if (e.val) self.opts.store.trigger('set_filters', filter_id, e.val);
+                else self.opts.store.trigger('set_filters', filter_id, []);
+            });
+
+            self.opts.store.on('filters_updated', function(){
+                // Update the link to fetch filtered activities
+                self.filtered_activity_ids = '?id='+_(self.opts.store.activities).filter({show: true}).map('id').join('&id=')
+                self.show_result = true;
+                self.update();
+                $(self.refs.filter_form).find('select').each(function (i, select){
+                    /* the id property of the filter */
+                    var filter_id = select.attributes.ref.value;
+                    /* find corresponding filter in the store */
+                    var selected = self.opts.store.get_selected(filter_id);
+                    /* update the select2 values */
+                    if (!_.isEqual($(select).val(), selected)){
+                        $(select).val(selected).trigger('change')
+                    }
+                })
+            })
+        });
+
+        self.show_or_hide_filters = function show_or_hide_filters() {
+            self.showing_filters = !self.showing_filters;
+            self.update()
+        };
+
+        self.show_all = function show_all() {
+            self.opts.store.trigger('show_all_filters');
+        };
+
+        self.clear = function clear() {
+            self.opts.store.trigger('clear_filters');
+            self.show_result = false;
+        };
+
+        self.is_selected = function is_selected(name, val) {
+            return self.opts.store.filters.some(function (f) { return f.name === name && _.indexOf((f['selected'] || []), val !== -1 ); });
+        };
+
+        self.toggle_filter = function toggle_filter(e) {
+            /* Trigger the store to hide or show the filter with the given ID */
+            self.opts.store.trigger('toggle_filter', e.item.id)
+        };
+
+        self.update_search = function(e) {
+            self.opts.store.trigger('search_text', _.lowerCase(e.target.value))
+            self.show_result = true;
+        };
+
+    </script>
+    <style>
+        #filter-container {
+            margin-top: 3.5rem;
+        }
+
+        .form-item {
+            border: none;
+            margin: 1rem 0;
+        }
+    </style>
+</project-list-filter>

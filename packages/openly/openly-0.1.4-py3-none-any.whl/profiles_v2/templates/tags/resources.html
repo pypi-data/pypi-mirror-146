@@ -1,0 +1,51 @@
+{% load i18n %}
+
+<resources>
+    <div class="row">
+        <div class="col-sm-8 col-xs-12">
+            {% blocktrans asvar helpcontent_resources %}These are this organisation's resources{% endblocktrans %}
+            <h2 id="resource-title" class="section-title">
+                {% trans 'Resources' %}
+                <a tabindex="0" role="button" class="ion-ios-help-outline dash-info hidden-print" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{{helpcontent_resources|escape}}"> </a>
+            </h2>
+        </div>
+    </div>
+
+    <div each={ resources } class="row">
+        <div class="col-sm-8 col-xs-12">
+            <div class="resource-list">
+                <h3 class="no-margin" style="margin-right:5px;">
+                    <a if={file_type} target="_blank" href="{ url }">{ title }</a>
+                    <a if={!file_type} target="_blank" href="{ buildExternalUrl(url) }">{ title }</a>
+                </h3>
+                <p class="small">
+                    <span if={ file_type }>
+                        <img width="15px" style="padding-bottom: 5px;" src="{ decodeFT(file_type) }"> - { file_size_calc(size) }<br>
+                    </span>
+                    <span if={ iso_date }><strong>{% trans 'Publish Date' %}:</strong> - { formatDate(iso_date) }; <br></span>
+                    <span if={ activity }><strong>{% trans 'Related Project' %}:</strong> { activity }; <br></span>
+                    <span if={ categories }><strong>{% trans 'Categories' %}: </strong>
+                        <span each={cat in categories}> { cat }; </span>
+                    </span>
+                </p>
+                <p>{ description }</p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" if={ resourceCount > 5 }>
+        <div class="col-sm-8 col-xs-12">
+            <p><a href="/en/resources">{% trans 'Find more Resources here.' %}</a></p>
+        </div>
+    </div>
+
+    <style scoped>
+        #resource-title {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+    </style>
+
+    {% include 'tags/resources.js' %}
+</resources>

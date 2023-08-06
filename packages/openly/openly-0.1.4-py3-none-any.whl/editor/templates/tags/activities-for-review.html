@@ -1,0 +1,93 @@
+{% load i18n %}
+
+{% include 'tags/sortable-header.html' %}
+
+<activities-for-review>
+    <div class="row" if="{!has_no_activities}">
+        <div id="filter-container">
+            <input class="form-control" placeholder='{% trans "Filter" %}' oninput="{filter_activities}">
+            <i class="ion-search"></i>
+        </div>
+    </div>
+    <div class="row" if="{!has_no_activities}">
+        <table id="activities-for-review-table" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        <sortable-header sort_key="pk"> {% trans "ID" %} </sortable-header>
+                    </th>
+                    <th>
+                        <sortable-header sort_key="title"> {% trans "Title" %} </sortable-header>
+                    </th>
+                    <th>
+                        <sortable-header sort_key="reporting_organisation"> {% trans "Reporting Organisation" %} </sortable-header>
+                    </th>
+                    <th>
+                        <sortable-header sort_key="date_submitted"> {% trans "Date submitted" %} </sortable-header>
+                    </th>
+                    <th>
+                        <sortable-header sort_key="endorsed"> {% trans "Endorsed" %} </sortable-header>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr each="{activity, index in activities}">
+                    <td>
+                        <a href="{activity.editor_link}"> {activity.pk} </a>
+                    </td>
+                    <td> {activity.title} </td>
+                    <td> {activity.reporting_organisation} </td>
+                    <td> {activity.date_submitted.calendar()} </td>
+                    <td>
+                        <span if="{activity.endorsed === true}" class="ion-checkmark"> </span>
+                        <span if="{activity.endorsed === false}" class="ion-close"> </span>
+                        <span if="{typeof activity.endorsed === 'string'}"> {activity.endorsed} </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p if="{has_no_activities}" class="text-center no-activities-text">
+        {% trans "You have no activities to review." %}
+    </p>
+
+    {# <script> #}
+        var tag = this;
+
+        tag.on('before-mount', function () {
+            tag.activities = window.activities;
+            if (tag.activities.length === 0) {
+                tag.has_no_activities = true;
+            }
+        });
+
+        tag.filter_activities = function (e) {
+            var search_input = _.trim(e.target.value).toUpperCase();
+            if (search_input.length > 0) {
+                tag.activities = _.filter(window.activities, function (activity) {
+                    return (activity.pk.toUpperCase().indexOf(search_input) > -1 ||
+                            activity.title.toUpperCase().indexOf(search_input) > -1 ||
+                            activity.reporting_organisation.toUpperCase().indexOf(search_input) > -1)
+                });
+            } else {
+                tag.activities = window.activities;
+            }
+            tag.update();
+        };
+
+        tag.sort = function (sort_key) {
+            // if the user clicks on a <th>, but not on the text, don't sort
+            var old_sort_key = tag.sort_key;
+            tag.sort_key = sort_key;
+
+            if (old_sort_key === tag.sort_key) {
+                tag.order = tag.order === 'desc' ? 'asc' : 'desc';
+            } else {
+                tag.order = 'asc';
+            }
+            tag.activities = _.orderBy(tag.activities, tag.sort_key, tag.order);
+            tag.update();
+        };
+    {# </script> #}
+
+</activities-for-review>

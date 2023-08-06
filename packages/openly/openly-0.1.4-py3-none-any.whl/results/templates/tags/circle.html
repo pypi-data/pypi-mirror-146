@@ -1,0 +1,13 @@
+{% block content %}
+<circle>
+    <div class="{ card-circle: true, positive: opts.ascending != undefined && is_positive, negative: opts.ascending != undefined && !is_positive }">
+        <virtual if="{ _.isEqual(opts.measure, 'Percentage') }">{ value }%</virtual>
+        <virtual if="{ _.isEqual(opts.measure, 'Unit') }">{ value }</virtual>
+    </div>
+
+    <span class="card-circle-year">{ year }</span>
+    <span class="card-circle-month">{ month }</span>
+
+{% include 'tags/circle.js' %}
+</circle>
+{% endblock %}

@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: 2019-05-28 20:15+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid "Advanced filter"
+msgstr "Продвинутый фильтр"
+
+msgid "Locations"
+msgstr "Локации"
+
+msgid "No results found."
+msgstr "Результатов не найдено."
+
+msgid "Participating Org"
+msgstr "Участвующая организация"
+
+msgid "Partners"
+msgstr "Партнеры"
+
+msgid "People"
+msgstr "Люди"
+
+msgid "Reporting Org"
+msgstr "Подотчетная организация"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Search Results"
+msgstr "Результаты поиска"
+
+msgid "Sector"
+msgstr "Сектор"
+
+msgid "Sectors"
+msgstr "Секторы"
+
+msgid "Set Filter"
+msgstr "Установить фильтр"
+
+msgid "see more results"
+msgstr "увидеть больше результатов"

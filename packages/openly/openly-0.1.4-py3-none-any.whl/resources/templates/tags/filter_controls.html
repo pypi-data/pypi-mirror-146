@@ -1,0 +1,65 @@
+{% load i18n %}
+
+<filter_controls class="{hidden: hide_filters}">
+    <div id="filter-search-wrapper" class="row">
+        <div class="col-lg-3 col-md-12 col-xs-12">
+            <div class="search-wrapper">
+                <input id="search-text" class="search-resources" type="search" placeholder="{% trans 'Search Files' %}" disabled="{true : disable_filters}">
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-12 col-xs-12">
+            <div class="row filters-wrapper">
+                    <div class="col-xs-1">
+                        <div id="filter-label" class="small">
+                            <strong>{% trans 'Filter' %}</strong>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <select id="type-filter" class="form-control filter-select" disabled="{true : disable_filters}">
+                            <option value="">{% trans 'Type' %}</option>
+                            <option>{% trans 'Office Document' %}</option>
+                            <option>{% trans 'PDF' %}</option>
+                            <option>{% trans 'Image / Photo' %}</option>
+                            <option>{% trans 'URL Link' %}</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-3">
+                        <select id="owner-filter" class="form-control filter-select" disabled="{true : disable_filters}">
+                            <option value="">{% trans 'Owner' %}</option>
+                            <option each={org in parent.organisations}>{org}</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-3">
+                        <select id="year-filter" class="form-control filter-select" disabled="{true : disable_filters}">
+                            <option value="">{% trans 'Year' %}</option>
+                            <option each={yr in parent.years}>{yr}</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-1">
+                        <div class="clear-button">
+                            <a id="clear-filters" onclick={clearFilters}>
+                                <img id="clear-filters-img" src="/static/img/cross.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    var tag = this;
+    tag.disable_filters = tag.parent.disable_filters;
+    tag.organisations = tag.parent.organisations;
+    tag.years = tag.parent.years;
+
+    tag.on('update', function() {
+        tag.disable_filters = tag.parent.disable_filters;
+    });
+
+    tag.clearFilters = function() {
+        $("#type-filter")[0].selectedIndex = 0;
+        $("#owner-filter")[0].selectedIndex = 0;
+        $("#year-filter")[0].selectedIndex = 0;
+    }
+
+</filter_controls>

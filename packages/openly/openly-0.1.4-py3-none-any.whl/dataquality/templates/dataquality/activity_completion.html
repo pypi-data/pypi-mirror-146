@@ -1,0 +1,36 @@
+{% extends 'base_site.html' %}
+
+{% load i18n %}
+{% load static  %}
+
+{% block content %}
+<div class="background">
+    <div class="container">
+        <div class="row" style="margin-left: 0px; margin-right:0px;">
+            <div class="col col-sm-12">
+                <h1>Activity Completion</h1>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>Pass</th>
+                            <th>Fail</th>
+                            <th>Percent</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>{%  for object in objects %}
+                        <tr>
+                                <td>{{ object.activity_id }}</td>
+                                <td>{{ object.passing }}</td>
+                                <td>{{ object.failing }}</td>
+                                <td>{{ object.percent }}</td>
+                        </tr>{%  endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

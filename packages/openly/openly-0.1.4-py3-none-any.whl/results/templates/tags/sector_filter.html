@@ -1,0 +1,11 @@
+{% block content %}
+<sector_filter>
+    <nav class="sector-filter">
+        <ul class="nav nav-justified">
+            <li each="{ sector in stores.results_store.choices.sectors }" onclick="{ set_active_sector }"><a class="{ inactive: localStorage.getItem('active_sector') != sector }" href="#dashboard/{ sector }">{ sector }</a></li>
+        </ul>
+    </nav>
+
+{% include 'tags/sector_filter.js' %}
+</sector_filter>
+{% endblock %}

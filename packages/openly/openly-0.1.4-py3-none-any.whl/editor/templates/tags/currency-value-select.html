@@ -1,0 +1,49 @@
+<currency-value-select>
+    <div class="input-group">
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="currency-flag-sm currency-flag currency-flag-{_.lowerCase(chosen ? chosen[0] : opts.display ? opts.display : defaultCurrency)}"></span>
+            {chosen ? chosen[0] : opts.display ? opts.display : 'Select currency'} 
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">Common currencies</li>
+            <li each={choice in common}><a onclick='{selectChoice}' href="#">
+                <span class="currency-flag-sm currency-flag currency-flag-{_.lowerCase(choice[0])}"></span>
+                {choice[0]} {choice[1]}</a></li>
+            <li class="dropdown-header">All currencies</li>
+            <li each={choice in currency}><a onclick='{selectChoice}' href="#">
+                <span class="currency-flag-sm currency-flag currency-flag-{_.lowerCase(choice[0])}"></span>
+                {choice[0]} {choice[1]}</a></li>
+        </ul>
+    </div>
+    <input type="text" class="form-control" value={opts.amount} placeholder={valuePlaceholder} onkeyup='{setAmount}' onchange='{setAmount}'>
+    </div>
+    <style>
+        button.dropdown-toggle {line-height: 22px;}
+        ul.dropdown-menu { max-height: 250px; overflow-y:scroll;}
+    </style>
+
+    var tag = this;
+    tag.common = choices.common_currency;
+    tag.currency = choices.currency;
+
+    tag.on('before-mount', function(){
+        tag.amount = tag.opts.amount;
+        tag.chosen = tag.opts.chosen;
+        tag.defaultCurrency = tag.opts.defaultCurrency || 'USD';
+        tag.placeholder = tag.opts.placeholder || 'Pick a currency';
+        tag.valuePlaceholder = tag.opts.valuePlaceholder || 'Amount';
+    })
+
+    tag.selectChoice = function(e){
+        e.preventDefault();
+        tag.chosen = e.item.choice;
+        /* And bubble up - just the currency code - to parent */
+        tag.parent.trigger('setCurrency', tag.chosen[0])
+    }
+
+    tag.setAmount = function(e){
+        tag.parent.trigger('setAmount', e.target.value)
+    }
+
+</currency-value-select>

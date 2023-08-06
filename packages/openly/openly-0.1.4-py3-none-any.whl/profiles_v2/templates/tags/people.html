@@ -1,0 +1,141 @@
+{% load i18n %}
+{% load static %}
+
+<people>
+    <virtual if={ opts.editor || all_people.length > 1 }>
+        <div class="page-break"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <section class="profile-section" id='people'>
+                        <h2 class="section-title">{% trans 'People' %} <a tabindex="0" role="button" class="ion-ios-help-outline dash-info hidden-print" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{{ _('These are some of this organisation&apos;s key team members.') }}"> </a>
+                            <virtual if={ opts.editor }>
+                                <button disabled={ add_disabled } class="btn btn-default btn-super-small hidden-print" type="button" data-toggle='modal' data-target='#person-modal' onclick={ add_person }>
+                                    <span aria-hidden="true" class="add-people">{% trans 'Add People' %}</span>
+                                </button>
+                            </virtual>
+                        </h2>
+                        <div class="js-grid sortable grid team-row col-xs-12 no-padding" ref='organisation_people_container'>
+                            <person each="{ people }" data="{ this }" if={ this.name }><yield from="person_fields"/></person>
+                        </div>
+                        <div class="text-center">
+                            <div class="team-button" if={ all_people.length > 5 }>
+                                <a class="expand-button hidden-print" onclick={ toggle_expand }><span aria-hidden="true">{ expanded ? "{% trans 'See less' %}" : "{% trans 'See more' %}" }</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </virtual>
+
+    <div class="modal fade" id="person-modal" tabindex="-1" role="dialog" aria-labelledby="person-modal">
+        <div class="modal-dialog modal-people-dimensions" role="document">
+    	    <div class="modal-content">
+    	        <div class="modal-header modal-header-style">
+    		    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    		    <h3 class="modal-title" id="person-modal-title">{ person_data.id ? "{% trans 'Edit Person' %}" : "{% trans 'Add A New Team Member' %}" }</h3>
+    	        </div>
+        	    <div class="modal-body no-padding-top">
+            		<div class="row">
+            		    <div class="col-xs-12">
+                            <h5 class="page-header">{% trans "Upload persons photo" %}</h5>
+            			    <div class="add_user_avatar">
+            			        <div class="profile" id="profile-avatar">
+            				        <form method="POST" id="person-photo" enctype="multipart/form-data" action="{% url 'upload' %}">
+                    				    <input type="hidden" name="class" value={ opts.upload_class }>
+                    				    <input type="hidden" ref="key" name="pk" value="{ person_data.id }">
+                    				    <input type="hidden" name="name" value="photo">
+                                        <div class="col-xs-4">
+        				                    <img id="person_photo" class="media-object img-circle person-profile-image" src={ person_data.photo ? person_data.photo : "{% static 'img/user_noprofile.svg' %}" } alt="{ person_data.name }" />
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <br>
+        			                        <p class="help-text">{% trans 'The photo has to be 120 x 120px, it has to be in jpg or png formats and not exceed the 200kb.' %}</p>
+                                            <button type="button" class="btn btn-small btn-default choose-image-display choose-person-photo">{% trans "Upload Photo" %}</button>
+            				                <input type="file" name="image" accept="image/*" class="hidden" class="upload-drag" onchange="{ handle_file_upload }">
+                                        </div>
+            				        </form>
+            			        </div>
+            			    </div>
+            		    </div>
+                    </div>
+                    <br>
+                    <h5 class="page-header">{% trans "Enter contact details" %}</h5>
+                    <div class="row">
+            		    <div class="col-xs-12">
+                			<div class="form-group">
+                			    <label class="control-label">{% trans 'Name' %}*</label>
+                			    <input class="form-control textarea" value={ person_data.name } placeholder="John Doe" onkeyup={ edit_name } onblur={ valid_name }>
+                			    <p class="validation-message" if={ name_validation_message != '' }>{ name_validation_message }</p>
+                			</div>
+                        </div>
+                    </div>
+                    <div class="row">
+            		    <div class="col-xs-12">
+                			<div class="form-group">
+                			    <label class="control-label">{% trans 'Position' %}</label>
+                			    <input class="form-control textarea" value={ person_data.position } placeholder="{{ _('Nutrition Specialist')|force_escape }}" onkeyup={ edit_position }>
+                			</div>
+                        </div>
+                    </div>
+                    <div class="row">
+            		    <div class="col-xs-12">
+                			<div class="form-group">
+                			    <label class="control-label">{% trans 'Email' %}</label>
+                			    <input class="form-control textarea" value={ person_data.email } placeholder="account@hostname" onkeyup={ edit_email } onblur={ valid_email }>
+                			    <p if={ email_validation_message != '' } class="validation-message">'{ email_validation_message }'</p>
+                			</div>
+                        </div>
+                    </div>
+                    <div class="row">
+            		    <div class="col-xs-12">
+                			<div class="form-group">
+                			    <label class="control-label">{% trans 'Phone number' %}</label>
+                			    <input class="form-control textarea" value={ person_data.phone_number } placeholder="+67077665544" onkeyup={ edit_phone_number } onblur={ valid_phone_number }>
+                			    <p class="validation-message" if={ phone_number_validation_message != '' }>'{ phone_number_validation_message }'</p>
+                			</div>
+                        </div>
+                    </div>
+            	</div><!-- end of modal-body -->
+
+        	    <div class="modal-footer">
+                    <a if={ person_data.name != "" } class="danger pull-left" data-dismiss="modal" onclick={ delete_person }>{% trans 'Delete contact' %}</a>
+        		    <button type="button" class="btn btn-default btn-large" data-dismiss="modal">{% trans 'Cancel' %}</button>
+        		    <button disabled={ !valid } ref="save_button" type="button" class="btn btn-primary btn-large" data-dismiss="modal" onclick={ save_person } onmouseover={ validate }>{% trans 'Save Contact' %}</button>
+        	    </div>
+    	    </div> <!-- end of modal content -->
+        </div>
+    </div>
+
+    {% include 'tags/people.js' %}
+    {% comment %} {% include 'tags/people_extensions.js' %} {% endcomment %}
+</people>
+
+<person>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 print-col">
+        <div class="card card-person">
+            <div>
+	            <virtual if={ parent.opts.editor }>
+                    <div class="grab-tool">
+                        <span class="icon-move move-tool hidden-print">
+                            <img src="{% static 'img/move.svg' %}" alt="move icon">
+                        </span>
+                        <button class="btn btn-default btn-super-small pull-right hidden-print" onclick={ edit_person }>
+                            Edit
+                        </button>
+                    </div>
+	            </virtual>
+                <img class="media-object img-circle person-profile-image" src={ photo ? photo : "{% static 'img/user_noprofile.jpg' %}" } alt="{ name }"/>
+            </div>
+            <div class="person-label">
+                <!--<yield/>-->
+        	    <virtual if={ name }><h3>{ name }</h3></virtual>
+        	    <virtual if={ position }><p>{ position }</p></virtual>
+        	    <virtual if={ phone_number && !hide_sensitive }><p>{ phone_number }</p></virtual>
+        	    <virtual if={ email && !hide_sensitive }><a href="mailto:{ email }">{ email }</a></virtual>
+            </div>
+        </div>
+    </div>
+    {% include 'tags/person.js' %}
+</person>

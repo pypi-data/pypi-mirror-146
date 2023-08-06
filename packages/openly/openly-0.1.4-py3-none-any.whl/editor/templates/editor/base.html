@@ -1,0 +1,31 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static  %}
+{% load tag_library %}
+
+{% block title %}
+{{ page_title }} | {{ site_name }}
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{% static 'js/route+tag.min.js' %}"></script>
+    <script type="text/javascript" src="{% url 'editor-javascript-catalog' %}"></script>
+    <script type="text/javascript" src="{% static 'js/accounting.min.js' %}"></script>
+    {% block editor_scripts %}
+    {% endblock %}
+{% endblock %}
+
+{% block style %}
+    <!-- editor base styles -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/select2-bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-datepicker.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ionicons.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}" />
+    {% block editor_style %}
+    {% endblock %}
+{% endblock %}
+
+{% block content %}
+    {% block local_scripts %}
+    {% endblock %}
+{% endblock %}

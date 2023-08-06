@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Activities"
+msgstr ""
+
+msgid "Change Banner"
+msgstr ""
+
+msgid "About Us"
+msgstr ""
+
+msgid "Locations"
+msgstr ""
+
+msgid ""
+"The map below shows where the activities for this organisation are currently "
+"implemented."
+msgstr ""
+
+msgid "Background"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "People"
+msgstr ""
+
+msgid "Our Activities"
+msgstr ""
+
+msgid "These are this organisation&apos;s activities."
+msgstr ""
+
+msgid "Upload banner image"
+msgstr ""
+
+msgid ""
+"Since your cover photo goes across the entire width of your profile, the "
+"image you pick should be at least 1500 pixels wide. The image should be "
+"formatted as a JPEG or PNG file."
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Choose Image"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Publish"
+msgstr ""
+
+msgid "Character count"
+msgstr ""
+
+msgid "of"
+msgstr ""
+
+msgid "Change Logo"
+msgstr ""
+
+msgid "Contact details"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "E-Mail"
+msgstr ""
+
+msgid "Website"
+msgstr ""
+
+msgid "Contact Information"
+msgstr ""
+
+msgid "Office Address"
+msgstr ""
+
+msgid "Office Number"
+msgstr ""
+
+msgid "Email Address"
+msgstr ""
+
+msgid "Social Network"
+msgstr ""
+
+msgid ""
+"For interactivity and display of your social networking please provide your "
+"organisation’s costumised links."
+msgstr ""
+
+msgid "Facebook Name"
+msgstr ""
+
+msgid " Optional"
+msgstr ""
+
+msgid "Twitter Handle"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Our People"
+msgstr ""
+
+msgid "These are some of this organisation&apos;s key team members."
+msgstr ""
+
+msgid "Add People"
+msgstr ""
+
+msgid "see less"
+msgstr ""
+
+msgid "see more"
+msgstr ""
+
+msgid "Edit Person"
+msgstr ""
+
+msgid "Add A New Team Member"
+msgstr ""
+
+msgid "Upload persons photo"
+msgstr ""
+
+msgid "Upload Photo"
+msgstr ""
+
+msgid ""
+"The photo has to be 120X120px, it has to be in jpg or png formats and not "
+"exceed the 200kb."
+msgstr ""
+
+msgid "Name -"
+msgstr ""
+
+msgid " Required Field"
+msgstr ""
+
+msgid "Position"
+msgstr ""
+
+msgid "Nutrition Specialist"
+msgstr ""
+
+msgid "Phone Number"
+msgstr ""
+
+msgid "Delete"
+msgstr ""

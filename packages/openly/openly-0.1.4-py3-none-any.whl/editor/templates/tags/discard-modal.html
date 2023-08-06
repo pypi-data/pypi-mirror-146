@@ -1,0 +1,99 @@
+{% load i18n %}
+<discard-modal>
+    <div class="modal fade in" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h3 class="modal-title modal-title-style">{% trans 'Do you want to discard your changes?' %}</h3>
+                </div>
+                <div class="modal-body">
+                    <p>{% trans 'You have unsaved changes on the current tab.' %}</p>
+                </div>
+                {% comment %} Please do not remove the data-bddtest tags. Selenium uses them for bdd testing {% endcomment %}
+                <div class="modal-footer">
+                    <button type="button" data-bddtest='return' class="btn btn-large btn-default" onclick="{ close }"> {% trans 'Return' %} </button>
+                    <button type="button" data-bddtest='discard' class="btn btn-large btn-danger" onclick="{ discard }">{% trans 'Discard changes' %}</button>
+                    <div if={save_disabled} class="tooltip-wrapper pull-right" data-title="There are validation errors.">
+                        <button type="button" data-bddtest='save' class="btn btn-large btn-primary disabled" onclick="{ save }" disabled>{% trans 'Save changes' %}</button>
+                    </div>
+                    <button if={!save_disabled} type="button" class="btn btn-large btn-primary pull-right" onclick="{ save }">{% trans 'Save changes' %}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {# <script> #}
+    var modal = this;
+
+    function activeTab() {
+        /*
+        This relies on a global variable to be set when the tag is navigated to
+        Hint: Possibly set in the TabMixin.init function
+        */
+        return _.get(window, 'current_tab.tab');
+    }
+    function toggle() { modal.opts.show = !modal.opts.show; modal.update() };
+    function tabFunction(functionName) {
+        /*
+        Invoke (ie run-if-exists) a function on the currently active tag
+        */
+        return _.invoke(activeTab(), functionName);
+    }
+    function goToNextTab() {
+        if (!_.has(modal, 'opts.route')){
+            console.warn('Modal called without route')
+        }
+        route(modal.opts.route);
+    }
+
+    function onUpdate() {
+        var t = activeTab();
+        var disable_on = [
+            _.invoke(modal, 'validate_with_children'),
+            _.invoke(t, 'validate'),
+            _.invoke(t, 'validate_with_children')
+        ];
+        var check_save_disabled = _.includes(disable_on, false);
+        if (check_save_disabled !== modal.save_disabled) { modal.update({ save_disabled: check_save_disabled }); }
+        $('.modal', modal.root).modal(modal.opts.show ? 'show' : 'hide');
+    }
+
+    modal.on('update', function(){onUpdate()});
+    modal.on('updated', function () {
+        if (modal.save_disabled) {
+            $('.tooltip-wrapper', modal.root).tooltip({ position: 'bottom' });
+        }
+    });
+
+    modal.close = function () {
+        toggle();
+        _.invoke(modal, 'opts.current_tag.tab.fn_validate._validate_loudly', modal.opts.current_tag.tab);
+        modal.opts.current_tag.tab.trigger('discard-modal-return');
+    };
+
+    modal.discard = function () {
+        tabFunction('discard');
+        toggle();
+        goToNextTab()
+    };
+
+    modal.save = function () {
+        var request = tabFunction('save');
+        toggle();
+        if (_.has(request, 'then')) {
+            /*
+            When the currently active tag returns a request-like object
+            wait for a success code then navigate to the next tag
+            */
+            request.then(function () { goToNextTab(); });
+        } else {
+            /*
+            Otherwise, assume that the tag didn't throw up over everything
+            and carry on
+            */
+            goToNextTab();
+        }
+    };
+</discard-modal>

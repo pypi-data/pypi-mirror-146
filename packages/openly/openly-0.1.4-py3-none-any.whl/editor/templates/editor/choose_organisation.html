@@ -1,0 +1,57 @@
+{% extends 'editor/base.html' %}
+{% load i18n %}
+{% load static  %}
+{% load widget_tweaks %}
+{% load humanize %}
+
+
+{% block editor_scripts %}
+    <script type="text/javascript" src="{% static 'select2/select2.min.js' %}"></script>
+{% endblock %}
+
+{% block editor_style %}
+    <link rel="stylesheet" type="text/css" href="{% static 'select2/select2.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+{% endblock %}
+
+
+{% block content %}
+    <form id="organisationForm">
+        <h4>
+            {% blocktrans %}Create an {{activity_singular}} for...{% endblocktrans %}
+        </h4>
+        <div class="row">
+            <div class="col-sm-4 ">
+                <label class="col-xs-3 col-sm-3 control-label">{% trans 'Reporting organisation' %}</label>
+            </div>
+        </div>
+        <div class="styled-select">
+            <select class="reporting-organisation-picker" name="organisationPicker" required>
+                {% for org in organisations %} {% if org.name %}
+                <option value="{{ org.code }}">{{ org.name }}</option>
+                {% endif %} {% endfor %}
+
+            </select>
+        </div>
+        <input type="submit" class="btn btn-default btn-lg" value="Next"/>
+    </form>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $(".reporting-organisation-picker").select2({
+        placeholder: "Select an organisation"
+    });
+});
+
+$("#organisationForm").submit(function(e){
+    e.preventDefault();
+    var org_id = $("select.reporting-organisation-picker").val();
+    var url = "{% url 'create_activity' 'XXXXX' %}".replace("XXXXX", org_id);
+    window.location.href = url;
+});
+</script>
+
+{% endblock %}
+
+

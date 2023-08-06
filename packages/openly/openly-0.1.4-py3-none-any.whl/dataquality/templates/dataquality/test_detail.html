@@ -1,0 +1,102 @@
+{% extends 'base_site.html' %}
+
+{% load i18n %}
+{% load static  %}
+{% load tag_library %}
+
+{% block title %}
+{{ page_title }} | {{ site_name }}
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block nav_right_dropdown %}
+{% endblock %}
+
+{% block content %}
+<div class="background">
+    <div class="container">
+        <h2>Data Quality Checks</h2>
+        <div class="o-form-box">
+            <div class="row" style="margin-left: 0px; margin-right:0px;">
+                <div class="col col-sm-12">
+                    <h5 class="page-header">{{ test.title }}</h5>
+
+                    {% if category == 'organisations' %}
+                    <div class="list-group">
+                        {%  for object in objects %}
+                        <a href="{% url 'donor_profile' object.pk %}" class="list-group-item">{% url 'donor_profile' object.pk %} ({{ object.pk }}) </a>
+                        {% endfor %}
+                    </div>{% endif %}
+
+                    {% if category == 'transaction' %}
+                    <table class="table">
+                        <thead>
+                            <th>
+                                Activity
+                            </th>
+                            <th>
+                                Reported By
+                            </th>
+                            <th>
+                                Value
+                            </th>
+                            <th>
+                                Type
+                            </th>
+                            <th>
+                                Date
+                            </th>
+                        </thead>
+                    
+                        <tbody>
+                            {% for object in objects %}
+                            <tr>
+                                <td><a href="{% url 'edit_activity' object.activity_id %}#finances">{{ object.activity.title|default:"No title" }} ({{ object.pk }})</a></td>
+                                <td>        
+                                    <a href="{% url 'donor_profile' object.activity.reporting_organisation_id %}">
+                                        {{ object.activity.reporting_organisation }} ({{object.activity.reporting_organisation.abbreviation}}) 
+                                    </a>
+                                </td>
+                                <td>{{object.currency_id}} {{object.value}}</td>
+                                <td>{{object.transaction_type_id}}</td>
+                                <td>{{object.transaction_date}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    
+                    </table>
+                    {% endif %}
+
+                    {% if category == 'persons' %}
+                    <div class="list-group">
+                        {%  for object in objects %}
+                        <a href="{% url 'donor_profile' object.organisation_profile.organisation_id %}" class="list-group-item">{% url 'donor_profile' object.organisation_profile.organisation_id %} ({{ object.pk }}) </a>
+                        {% endfor %}
+                    </div>{% endif %}
+                    
+
+                    {% if category == 'organisationprofile' %}
+                    <div class="list-group">
+                        {%  for object in objects %}
+                        <a href="{% url 'organisation_profile' iati_identifier=object.organisation_id %}" class="list-group-item">
+                                {{object.organisation}} </a>
+                        {% endfor %}
+                    </div>{% endif %}
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}

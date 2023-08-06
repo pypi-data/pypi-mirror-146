@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: 2017-05-15 12:20+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+msgid "logout"
+msgstr "Выход"
+
+msgid "Login"
+msgstr "Логин"
+
+msgid "aid transparency portal"
+msgstr "Портал транспарентности внешнего содействия"
+
+msgid "tracking international aid activities"
+msgstr "Отслеживание международной деятельности в сфере содействия"
+
+#, python-format
+msgid "Log in to %(site)s"
+msgstr "Логин %(site)s"
+
+msgid "Let's start a conversation about aid transparency"
+msgstr "Давайте начнем беседу о транспарентности внешнего содействия"
+
+msgid "Open information about international aid activities"
+msgstr "Открытая информация о деятельности в сфере международного содействия"
+
+msgid "Why is open aid important?"
+msgstr "Почему важна открытость содействия?"
+
+msgid ""
+"Making aid transparent helps to ensure aid goes where it is most needed."
+msgstr ""
+"Обеспечение транспарентности содействия обеспечивает, чтобы содействие "
+"направлялось туда, где это наиболее необходимо"
+
+msgid "By ensuring open access to aid information"
+msgstr "Обеспечивая открытый доступ к информации о внешнем содействии"
+
+msgid ""
+"a wider group of stakeholders are able to clearly see who is doing what and "
+"where? Access to better quality aid information also supports the equitable "
+"allocation of resources, both sectorally and geographically, ensuring that "
+"all people can benefit."
+msgstr ""
+"более крупная группа заинтересованных сторон могут четко увидеть, кто чем "
+"занимается и где.  Доступ к информации более высокого качества о внешнем "
+"содействии также поддерживает равномерное распределение ресурсов, как между "
+"отраслями, так и географически, обеспечивая, чтобы все население извлекало "
+"выгоду."
+
+msgid "What are the results?"
+msgstr "Какие результаты?"
+
+msgid "Aid transparency isn't just about numbers."
+msgstr "Транспарентность внешнего содействия касается не только цифр."
+
+msgid "Results matter too."
+msgstr "Результаты тоже имеют значение."
+
+msgid ""
+"Open access to aid information means that people  are better able to see the "
+"impact that aid activities have in their communities. This also helps other "
+"countries learn what may work, or not work, in their country."
+msgstr ""
+"Открытый доступ к информации о внешнем содействии означает, что люди смогут "
+"лучше увидеть воздействие деятельности по содействию в своих сообществах. "
+"Это также помогает другим странам узнавать, что может сработать или не "
+"сработать в их стране."
+
+msgid "aid works better when we work together"
+msgstr "содействие более эффективно, когда мы работаем сообща"
+
+msgid "Software designed and developed by"
+msgstr "Программное обеспечение спроектировано и разработано"
+
+msgid "Please sign in"
+msgstr "Пожалуйста, введите логин и пароль"
+
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+"Ваше имя пользователя и пароль не совпали. Пожалуйста, попробуйте еще раз"
+
+msgid "Sign in"
+msgstr "Войти"
+
+msgid "Can't access your account?"
+msgstr "Не можете получить доступ Вашей учетной записи?"
+
+msgid "Reset your password."
+msgstr "Введите новый пароль"
+
+msgid "You have logged out."
+msgstr "Вы вышли из системы."
+
+msgid "See you next time!"
+msgstr "До следующей встречи!"
+
+msgid "Password changed"
+msgstr "Пароль изменен"
+
+msgid "Change Password"
+msgstr "Изменить пароль"
+
+msgid "Log In"
+msgstr "Войти"
+
+msgid "Password reset successfully"
+msgstr "Пароль успешно изменен"
+
+msgid "Log in"
+msgstr "Войти"
+
+msgid "Submit"
+msgstr "Ввести"
+
+msgid "Password reset failed"
+msgstr "Изменение пароля безуспешно"
+
+msgid "Email Sent"
+msgstr "Сообщение электронной почты отправлено"
+
+msgid "An email with password reset instructions has been sent."
+msgstr ""
+"Отправлено сообщение электронной почты с инструкциями по изменению пароля"
+
+#, python-format
+msgid ""
+"\n"
+"    Hi %(user)s,\n"
+"\n"
+"    You recently requested a link to reset your %(site_name)s password for "
+"the username %(user)s.\n"
+"    Please set a new password by following the link below:\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"\n"
+"    Thanks,\n"
+"    - The %(site_name)s Team.\n"
+msgstr ""
+
+msgid "Password Reset"
+msgstr "Пароль изменен"
+
+msgid ""
+"To reset your password please enter your email address below. We will send "
+"you an email with some instructions."
+msgstr ""
+"Для изменения Вашего пароля, пожалуйста введите ниже Ваш адрес электронной "
+"почты.  Мы Вам отправим сообщение электронной почты с инструкциями"
+
+msgid "Submit Request"
+msgstr "Ввести запрос"
+
+#~ msgid "Search"
+#~ msgstr "Поиск"
+
+#~ msgid "Aid Dashboard"
+#~ msgstr "Приборная доска внешнего содействия"
+
+#~ msgid "Aid by Location"
+#~ msgstr "Внешнее содействие в разрезе месторасположения"
+
+#~ msgid "Aid by Ministry"
+#~ msgstr "Внешнее содействие в разрезе министерств"
+
+#~ msgid "Aid by Sector"
+#~ msgstr "Внешнее содействие в разрезе отраслей"
+
+#~ msgid "Aid by Donor"
+#~ msgstr "Внешнее содействие в разрезе доноров"
+
+#~ msgid "Profile Page"
+#~ msgstr "Профильная страница"
+
+#~ msgid "Create Report"
+#~ msgstr "Создать отчет"
+
+#~ msgid "Report Builder"
+#~ msgstr "Мастер-генератор отчетов"
+
+#~ msgid "Query Builder"
+#~ msgstr "Мастер-генератор запросов"
+
+#~ msgid "Add Activity"
+#~ msgstr "Добавить направление деятельности"
+
+#~ msgid "Hello"
+#~ msgstr "Привет"
+
+#~ msgid "Settings"
+#~ msgstr "Настройки"
+
+#~ msgid "Start tutorial"
+#~ msgstr "Запустить руководство"
+
+#~ msgid "Sign out"
+#~ msgstr "Выход"
+
+#~ msgid "Public Page"
+#~ msgstr "Публичная страница"
+
+#~ msgid "Activity Manager"
+#~ msgstr "Менеджер мероприятий"
+
+#~ msgid "Add a new activity"
+#~ msgstr "Добавить новое направление деятельности"
+
+#~ msgid "Delete activity"
+#~ msgstr "Удалить направление деятельности"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "Приборные доски в сфере внешнего содействия"
+
+#~ msgid "Aid By Location"
+#~ msgstr "Внешнее содействие в разрезе месторасположения"
+
+#~ msgid "Aid By Ministry"
+#~ msgstr "Внешнее содействие в разрезе министерств"
+
+#~ msgid "Aid By Sector"
+#~ msgstr "Внешнее содействие в разрезе отраслей"
+
+#~ msgid "Aid By Donor"
+#~ msgstr "Внешнее содействие в разрезе доноров"
+
+#~ msgid "Your Pages"
+#~ msgstr "Ваши страницы"

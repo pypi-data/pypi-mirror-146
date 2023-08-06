@@ -1,0 +1,62 @@
+{% load i18n %}
+{% load static %}
+
+<resources-list class="resources-list" id="resources-list-{ pk }">
+    <div id="table-list-wrapper" class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th><span style="margin-left: 20px;">{% trans 'Title' %}</span></th>
+                    <th>{% trans 'Date Created' %}</th>
+                    <th>{% trans 'Owner' %}</th>
+                    <th>{% trans 'Language' %}</th>
+                    {% comment %} <th>{% trans 'Size' %}</th> {% endcomment %}
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr each={ resources } onclick={ showResourceProfile }>
+                    <td>
+                        <span class="resource-img"><img class="file-type-icon" src="{ decodeFT(file_format) }"></span>
+                        <span class="resource-name">{ title || " - "}</span>
+                    </td>
+                    <td>{ formatDate(iso_date) }</td>
+                    <td>{ org_name || " - "}</td>
+                    <td>{ language }</td>
+                    {% comment %} <td>{ file_size_calc(file_size) }</td> {% endcomment %}
+                    <td><span class="row-arrow"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    var tag = this;
+
+    tag.formatDate = function(iso_date) {
+        if (iso_date) {
+            try {
+                return moment(iso_date).format('MMMM YYYY');
+            } catch {
+                return " - ";
+            }
+        } else {
+            return " - ";
+        }
+    }
+
+    tag.decodeFT = function(ff) {
+        return tag.parent.decodeFT(ff);
+    }
+
+    tag.file_size_calc = function(fs) {
+        return tag.parent.file_size_calc(fs);
+    }
+
+    tag.showResourceProfile = function(e) {
+        tag.parent.showResourceProfile(e);
+    }
+
+    tag.on('update', function() {
+        // update resources list
+    });
+</resources-list>

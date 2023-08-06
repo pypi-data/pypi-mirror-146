@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>tick box</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Approval-Process---Donor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Activity-Editor-Published---Donor-User" transform="translate(-360.000000, -242.000000)">
+            <g id="tick-box" transform="translate(360.000000, 242.000000)">
+                <circle id="Oval" fill="#2A9CF4" fill-rule="evenodd" cx="15" cy="15" r="15"></circle>
+                <polyline id="Stroke-385-Copy" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="8 15 13 20 23 10"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 12:42+0900\n"
+"PO-Revision-Date: 2017-03-28 18:24+0822\n"
+"Last-Translator: b'  <sean@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+msgid " hide"
+msgstr " subar"
+
+msgid "Activity Status"
+msgstr "Status Atividade"
+
+msgid "Clear filters"
+msgstr "Hamos filtru sira"
+
+msgid "Filter"
+msgstr "Filtru"
+
+msgid "Filter by location"
+msgstr "Filtru bazeia ba fatin"
+
+msgid "Filter partners"
+msgstr "Filtru Parseiru"
+
+msgid "Location"
+msgstr "Fatin"
+
+msgid "Partners"
+msgstr "Parseiru"
+
+msgid "Partners Page"
+msgstr "Pajina Parseiru Sira"
+
+msgid "Search Organisations"
+msgstr "Buka Organizasaun"
+
+msgid "Sector"
+msgstr "Seitor"
+
+msgid "show"
+msgstr "hatudu"
+
+#~ msgid "Filter by activity location in Timor-Leste."
+#~ msgstr "Filtru bazeia ba fatin iha Timor-Leste"
+
+#~ msgid "Filter by activity sector."
+#~ msgstr "Filtru bazeia ba seitor"
+
+#~ msgid "Filter by activity status."
+#~ msgstr "Filtru bazeia ba status atividade "
+
+#~ msgid "Non-Government Organisations"
+#~ msgstr "NGO"
+
+#~ msgid "clear"
+#~ msgstr "Hasai"
+
+#~ msgid "matches"
+#~ msgstr "Par"
+
+#~ msgid "show filters "
+#~ msgstr "Hatudu Filtru"

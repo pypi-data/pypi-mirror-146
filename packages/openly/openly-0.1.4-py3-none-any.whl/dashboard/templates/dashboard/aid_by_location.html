@@ -1,0 +1,145 @@
+{% extends 'dashboard/base.html' %}
+{% load i18n %}
+{% load humanize %}
+{% load tag_library %}
+
+{% block dashboard_style %}
+    <style>
+        rect {
+            fill: none;
+            pointer-events: all;
+        }
+
+        .feature {
+            fill: #9fa9ad;
+            cursor: pointer;
+        }
+        .feature.active {
+            fill: #ff9500;
+        }
+        .mesh {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 1px;
+            stroke-linejoin: round;
+        }
+        .noshow{
+            fill: #ebebee;
+        }
+
+        .feature.chloro_0{fill:#e1e8ef}
+        .feature.chloro_1{fill:#d6dfe9}
+        .feature.chloro_2{fill:#aabdd0}
+        .feature.chloro_3{fill:#94acc4}
+        .feature.chloro_4{fill:#7e9bb8}
+        .feature.chloro_5{fill:#698aac}
+        .feature.chloro_6{fill:#56799d}
+        .feature.chloro_7{fill:#4a6887}
+        .feature.chloro_8{fill:#44607c}
+        .feature.chloro_9{fill:#384f66}
+        .feature.chloro_10{fill:#2c3e50}
+        .feature.chloro_11{fill:#263645}
+    </style>
+{% endblock %}
+
+
+{% block nav_pulldown %}
+    <div class="btn-group sub-nav_pulldown">
+        <button type="button" class="btn btn-input dropdown-toggle drop-caret" data-toggle="dropdown">
+            {% if current_state %}{{ current_state.name }}{% elif top_level_location %}{{ top_level_location }}{%endif%} </button>
+
+        <ul class="dropdown-menu dropdown-menu-md" role="menu">
+            {% if current_state and top_level_location %}
+            <li><a href="{% url 'aid_by_location' %}">{{ top_level_location }}</a></li>{% endif%}
+            {% for state in states %}
+            <li><a href="{% url 'aid_by_location' state=state.adm1_code %}">{{ state.name }}</a></li>{% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+
+
+{% block local_content %}
+    <div class="container" id="location-dashboard">
+        <h1 class="CompareTitle">
+            {% trans "Aid by location" %}
+            <a id="commitChart" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="" data-content="This chart shows the total amount of development assistance committed by donor partners (including grants, loans, debt relief and other forms of assistance) for activities currently being implemented. This chart corresponds to the date filter above. Filters are also available." data-original-title=""></a>
+        </h1>
+        <p class="CompareSubtitle">
+            {% blocktrans with site=site_name|default:'Openly' %}
+            The reports allow us to export and disaggregate aid data reported to {{site}}
+            {% endblocktrans %}
+        </p>
+        {% include 'dashboard/location_dashboard_top.html' %}
+    </div>
+
+{% endblock %}
+
+{% block local_scripts %}
+    <!--Popover-->
+
+    <script>
+    $(function ()
+    {
+      $("#commitChart").popover({placement:'right'});
+      $("#commitLocation").popover({placement:'right'});
+      $("#tot_comm").popover({placement:'right'});
+      $("#tot_disb").popover({placement:'right'});
+      $("#per_exe").popover({placement:'left'});
+      $("#comit_stat").popover({placement:'top'});
+      $("#comm_min").popover({placement:'top'});
+      $("#tot_proj").popover({placement:'top'});
+      $("#don_comit").popover({placement:'top'});
+      $("#sec_comit").popover({placement:'left'});
+    });
+    </script>
+
+    <script>
+        window.all_states = {};
+        _.each(window.context_data.by.location_with_subareas, function (location) {
+                window.all_states[location.code] = accounting.compactFormatMoney(location.dollars, ' ');
+                window.all_states[location.code + '_natural'] = location.dollars;
+            }
+        );
+    </script>
+
+    <script>
+        window.chart_data = {
+            donuts: {
+                donut_commitment_ministry: mixdonut({by: 'ministry', money: true, property: 'dollars', currencysymbol: ' ', count: 5}),
+                donut_commitment_status: mixdonut({by: 'status', money: true, property: 'dollars', count: 20}),
+            },
+            horizontal_bars: {
+                sector_commitments: mixdonut({by: 'category', money: true, property: 'dollars', currencysymbol: ' ', count: 20}),
+                barchart_horizontal_donors_commitments: mixdonut({by:'donor', count:20, money:true, currencysymbol:' '})
+            }
+        };
+
+
+     $( function graphChartData(){
+        _(window.chart_data.donuts).each(function(data, id){
+            var height = 155;
+            var width = 200;
+            // var title = id === 'donut_activities_status' ? '{% trans "TOTAL" %}' : undefined;
+            draw_donut_into_div('#'+id, data, height, width)
+        });
+        _(window.chart_data.horizontal_bars).each(function(data, id){
+            var height=300;
+            var width=20;
+            draw_horizontal_bar_chart_into_div('#'+id, data, height, width)
+        });
+        
+        _(window.chart_data.bars).each(function(data, id){
+            var height = 400;
+            var width = $("#"+id).width();
+            var margin = {top: 10, right: 40, bottom: 100, left: 60};
+            var onclick = _.get(window, ['chart_data','click', id]);
+            var code = '';
+            {% if current_donor and 'code' in current_donor %}
+            code = id === 'donor_commitments' ? '{{current_donor.code}}' : '';
+            {% endif %}
+            draw_bar_chart_into_div('#'+id, data, width, 400, margin, onclick, code === '' ? undefined : code);
+        })
+    });
+    </script>
+
+{% endblock %}

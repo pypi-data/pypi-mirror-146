@@ -1,0 +1,508 @@
+{% load i18n %}
+
+<tab-iati-sync>
+    <div class="row equal-height">
+        <div class="col col-sm-10 col-sm-offset-1">
+            <tab-iati-sync-header></tab-iati-sync-header>
+        </div>
+    </div>
+    <div class="row equal-height" if={oipa_missing}>
+        <div class="col col-sm-10 col-sm-offset-1">
+            <iati-data-missing></iati-data-missing>
+        </div>
+    </div>
+    <div class="row equal-height" if={!oipa_missing}>
+        <div id="iatiAsyncFetchLoader" class="col col-sm-12" show={async_fetching}>
+            <div class="row">
+                <div class="col col-sm-10 col-sm-offset-5" style="padding-top: 20px;">
+                    <p class="help-text">{% trans 'Fetching IATI Data' %}</p>
+                    <p if="{xhrmessage}" class="help-text">{xhrmessage}</p>
+                </div>
+            </div>
+            <div class="row loader"></div>
+        </div>
+        <div class="col col-sm-10 col-sm-offset-1" show={!async_fetching}>
+            <form id="oipaActivityLinkForm" action="#" method="post">
+                <input type="hidden" name="aims-activity-id" value="{data.activity.id}">
+                <iati-sync-comparison-table></iati-sync-comparison-table>
+            </form>
+        </div>
+        <hr width="75%" style="margin-top: 40px; margin-bottom: 0px;">
+    </div>
+    <div class="row background-editor annoying-gap" show={!async_fetching}>&nbsp;</div>
+    <div class="row equal-height" show={!async_fetching}>
+        <hr width="75%" style="margin-top: 0px;">
+        <div class="col col-sm-10 col-sm-offset-1">
+            <iati-sync-history></iati-sync-history>
+        </div>
+    </div>
+    <style>
+        .loader {
+            margin: 0 0 50 0px;
+            top: inherit;
+        }
+        #iatiAsyncFetchLoader { padding-bottom: 50px; }
+        .annoying-gap {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            height: 10px;
+        }
+    </style>
+    var tag = this;
+
+    tag.store = stores.oipaStore;
+    tag.mixin('TabMixin');
+
+    function symSetDiff(setA, setB) {
+        var _difference = new Set(setA);
+        for (var elem of setB) {
+            if (_difference.has(elem)) { _difference.delete(elem); }
+            else { _difference.add(elem); }
+        }
+        return _difference;
+    }
+
+    tag.has_changed = function() {
+        window.data.iati_data.curr_sync_state = tag.store.curr_sync_state;
+        var _difference = symSetDiff(tag.store.curr_sync_state, tag.store.saved_sync_state);
+        if (_difference.size > 0) {
+            $.confirm({
+                type: 'orange',
+                theme: 'modern',
+                icon: 'glyphicon glyphicon-warning-sign',
+                columnClass: 'medium',
+                title: 'IATI Sync has unsaved changes!',
+                content: 'Navigating away discards all un-saved changes to IATI Sync settings. Are you sure you want to do that?',
+                buttons: {
+                    save: {
+                        btnClass: 'btn-success',
+                        action: function () {
+                            $.confirm({
+                                closeIcon: false,
+                                type: 'blue',
+                                theme: 'modern',
+                                columnClass: 'medium',
+                                title: 'Saving IATI Sync settings',
+                                content: function() {
+                                    var self = this;
+                                    var form_data = {};
+                                    Array.from(window.data.iati_data.curr_sync_state).forEach(function(data){ form_data[data] = '1'; });
+                                    form_data['aims-activity-id'] = data.iati_data.link_info.activity_id;
+                                    self.setContentAppend('<div>'+'{% trans "Saving changes to IATI Sync settings" %}'+'...</div>');
+                                    return $.ajax({
+                                        type: 'POST',
+                                        url: "{% url 'oipa_activity_link_update' %}",
+                                        data: form_data,
+                                        headers: { 'X-CSRFTOKEN': window.csrf_token }
+                                    }).done(function (res) {
+                                        
+                                        var makeSyncActivitiesRequest = function(job){
+                                            var url = "{% url 'oipa_sync_activities' %}" + res.activity_id + '?celerize';
+                                            var request;
+
+                                            if (job) { url = url + '?job=' + job};
+                                            request = $.ajax({
+                                                type: 'GET',
+                                                url: url
+                                            });
+
+                                            request.done(function(res){
+                                                if (request.status == 202){
+                                                    /* 2-second Loop on a "202:Accepted" return code */
+                                                    return setTimeout(function(){makeSyncActivitiesRequest(res.job)}, 2000); 
+                                                } else {
+                                                    $('#iatiSyncRunning').hide(300, function() {
+                                                        self.setContentAppend('<div><span class="glyphicon glyphicon-ok" style="color:green;"></span>'+" {% trans "IATI Sync completed." %}"+'</div>');
+                                                        self.buttons.close_success.show();
+                                                    });
+                                                }
+                                            });
+
+                                            request.fail(function (err) {
+                                                $('#iatiSyncRunning').hide(300, function() {
+                                                    self.setContentAppend('<div><span class="glyphicon glyphicon-remove" style="color:red;"></span>'+" {% trans "Error running IATI Sync." %}"+'</div>');
+                                                    self.buttons.close_fail.show();
+                                                });
+                                            });
+    
+                                            self.setContentAppend('<div><span class="glyphicon glyphicon-ok" style="color:green;"></span>'+" {% trans "IATI Sync settings updated." %}"+'</div>');
+                                            self.setContentAppend('<div>'+"{% trans "Full IATI Sync of data is running..." %}"+'</div>');
+                                            self.setContentAppend('<div id="iatiSyncRunning" style="height:100px;"><p class="loader" style="top:0px;"></p></div>');
+                                            makeSyncActivitiesRequest();
+                                        };
+
+                                    }).fail(function (err) {
+                                        $('#iatiSyncRunning').hide(300, function() {
+                                            self.setContentAppend('<div><span class="glyphicon glyphicon-remove" style="color:red;"></span>'+" {% trans "Error updating IATI Sync settings." %}"+'</div>');
+                                            self.buttons.close_fail.show();
+                                        });
+                                    });
+                                },
+                                buttons: {
+                                    close_success: {
+                                        text: "Refresh",
+                                        isHidden: true,
+                                        action: function() { window.location.reload(); }
+                                    },
+                                    close_fail: {
+                                        text: "Close",
+                                        isHidden: true,
+                                        action: function() { }
+                                    }
+                                }
+                            });
+                        }
+                    },
+                    discard: {
+                        btnClass: 'btn-default',
+                        action: function () { }
+                    }
+                }
+            });
+            return undefined;
+        }
+    }
+
+    tag.oipa_missing = data.iati_data.link_info.activity_id == "";
+    tag.async_fetching = true;
+    tag.openly_iati_id = data.activity.iati_identifier;
+    tag.update_iati_id = function() {
+        window.modals.update_iati_link.toggle();
+    }
+
+    tag.fields = [
+        {name: 'Budgets', selector: 'B'},
+        {name: 'Commitments', selector: 'C'},
+        {name: 'Outgoing Funds', selector: 'OF'},
+        {name: 'Incoming Funds', selector: 'IF'},
+    ];
+
+    function isEmpty(obj) {
+        return Object.keys(obj).length === 0 && obj.constructor === Object
+    }
+
+    function processTransactions(selector) {
+        if (selector == 'B') {
+            // filter for budgets
+            var filtered_objs = data.budgets;
+            var sum = _(filtered_objs).map('value').map(_.toNumber).sum();
+            var currency = (sum === 0) ? 'USD' : filtered_objs[0]['currency_id'];
+        } else {
+            // filter for transactions
+            var filtered_objs = [];
+            if (selector == 'OF') {
+                // filter for both disbursements and expenditures
+                var other_selectors = ['D', 'E'];
+                other_selectors.forEach(function(s) {
+                    filtered_objs.push.apply(filtered_objs, _.filter(data.transactions, function (t) { return t.transaction_type === s }));
+                });
+            } else {
+                // filter vanilla committments and incoming funds
+                var filtered_objs = _.filter(data.transactions, function(t){return t.transaction_type === selector});
+            }
+            var sum = _(filtered_objs).map('value').map(_.toNumber).sum();
+            var currency = (sum === 0) ? 'USD' : filtered_objs[0]['currency'];
+        }
+        return {
+            currency: currency,
+            total: sum
+        };
+    }
+
+    tag.on('mount', function() {
+        if (!tag.oipa_missing) {
+            tag.async_fetching = true;
+            // fetch IATI data from OIPA server
+            if (_.isNull(data.activity.iati_identifier)){
+                tag.oipa_missing = true;
+                tag.async_fetching = true;
+                return tag.update();
+            }
+            function updateRequest(){
+                var request_data = {
+                    'openly_id': document.getElementById('aims-activity-id').value,
+                    'iati_identifier': document.getElementById('oipa-iati-id').value,
+                    'celerize': 'True',
+                };
+                var xhr;
+                // Hopefully, we have a 'job id' if we did not get a success code
+                if (tag.job)(request_data.job = tag.job);
+                xhr = $.ajax({
+                    type: 'GET',
+                    url: "{% url 'oipa_activity_by_iati_identifier' %}",
+                    data: request_data,
+                    headers: { 'X-CSRFTOKEN': window.csrf_token }
+                }).done(function (res) {
+                    /*  
+                    Assert that this is type 200 OR type 202 AND has a "job" UUID in json
+                    Return type 202: Accepted indicated the server is still waiting for OIPA
+                    Exit and call updateRequest until we have a 200 
+                    */
+                    if (xhr.status == 202){ 
+                        tag.job = tag.job || res.job;
+                        if (res.info) { tag.update({xhrmessage:res.info}) };
+                        return setTimeout(function(){updateRequest()}, 2000); 
+                    }
+                    if (res['activity'] && res['transactions'] && res['validation_results']) {
+                        tag.oipa_missing = false;
+                        // set iati activity and transaction data from response
+                        data.iati_data.activity = res['activity'];
+                        data.iati_data.transactions = res['transactions'];
+                        data.iati_data.validation_results = res['validation_results'];
+
+                        // set tag shortcuts vars to IATI data elements
+                        tag.oipa_agg = data.iati_data.transactions;
+                        tag.oipa_link = data.iati_data.link_info;
+                        tag.oipa_validations = data.iati_data.validation_results;
+                        tag.oipa_missing = data.iati_data.activity.iati_id == "";
+                        tag.sync_history = data.iati_data.sync_records;
+                        tag.sync_history.forEach(function(r) {
+                            r.short_date = r.sync_datetime.substring(0, 10);
+                            r.all_zeros = ((r.b_added + r.if_added + r.c_added + r.of_added) == 0);
+                        });
+                        tag.sync_history = _.filter(tag.sync_history, function (r) { return r.all_zeros !== true; })
+
+                        if (tag.sync_history.length > 0) {
+                            tag.last_fetched = tag.sync_history[tag.sync_history.length-1].short_date;
+                            tag.got_history = true;
+                        } else {
+                            tag.last_fetched = false;
+                            tag.got_history = false;
+                        }
+
+                        if (!tag.oipa_missing) {
+                            tag.fields.forEach(function(f) {
+                                f.oipa_valid = tag.oipa_validations[f.selector];
+                                openly_transactions = processTransactions(f.selector);
+                                f.openly_curr = openly_transactions['currency'];
+                                f.openly_sum = openly_transactions['total'];
+                                f.oipa_sum = 0;
+                                f.oipa_curr = "USD";
+                                var oipa_trans = tag.oipa_agg[f.selector];
+                                if (oipa_trans != undefined && oipa_trans.length > 0) {
+                                    oipa_trans.forEach(function (i) {
+                                        f.oipa_sum += parseFloat(i.value);
+                                    });
+                                    if (f.selector == "B") { f.oipa_curr = oipa_trans[0]['currency_id']; }
+                                    else { f.oipa_curr = oipa_trans[0]['currency']; }
+                                }
+                                f.linked = (tag.oipa_link.oipa_fields.indexOf(f.selector) != -1);
+                            });
+                            tag.curr_states = tag.fields;
+                        }
+                        tag.async_fetching = false;
+                        tag.update();
+                    } else {
+                        tag.async_fetching = true;
+                        tag.oipa_missing = true;
+                        tag.update();
+                    }
+                }).fail(function(err) {
+                    tag.oipa_missing = true;
+                    tag.async_fetching = true;
+                    tag.update();
+                });
+            };
+            // Start the request cycle
+            updateRequest();
+        }
+    });
+</tab-iati-sync>
+
+
+<tab-iati-sync-header>
+    <h5 show={oipa_missing} class="page-header">{% trans 'Connect this activity to IATI Sync' %}</h5>
+    <h5 show={!oipa_missing} class="page-header">{% trans 'IATI Sync Settings' %}</h5>
+    <p class="help-text" show={oipa_missing}>
+        {% trans 'Setup IATI Sync to automatically import the financial transactions for this activity from your officially published IATI activity file found in the IATI Registry' %}
+         - <a href="https://www.iatiregistry.org/publisher" target="_blank" class="help-text">https://www.iatiregistry.org/publisher</a>).
+    </p>
+    <style>
+        .right {
+            float: right;
+            position: absolute;
+            right: 1px;
+            top: 26px;
+        }
+    </style>
+    var tag = this;
+    tag.oipa_missing = data.iati_data.link_info.activity_id == "";
+</tab-iati-sync-header>
+
+
+<iati-data-missing>
+    <div class="center-wrapper">
+        <button type="button" onclick='{parent.update_iati_id}' class="btn btn-large btn-default">{% trans 'Setup IATI Sync' %}</button>
+    </div>
+    var tag = this;
+</iati-data-missing>
+
+
+<iati-sync-comparison-table>
+    <table class="table micro-text">
+    <thead>
+        <tr>
+            <th></th>
+            <th>{% trans 'Locally Reported' %}</th>
+            <th>{% trans 'Reported to IATI' %}</th>
+            <th>{% trans 'Sync' %}</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr each={parent.fields}>
+            <!-- Transaction Type(s) -->
+            <td class="extra-top-pad"><strong>{ name }</strong></td>
+            <!-- OPENLY DATA -->
+            <td class="extra-top-pad">{ accounting.formatMoney(openly_sum, openly_curr + ' ', 0) }</td>
+            <!-- IATI DATA -->
+            <td class="extra-top-pad">{ accounting.formatMoney(data.iati_data.transactions[selector].clean_sum, data.iati_data.transactions[selector].currency + ' ', 0) }</td>
+            <!-- Sync Enabled -->
+            <td>
+                <input type="checkbox" onclick={update_sync_state} id="{selector}" name="{selector}" value={selector} checked={linked && data.iati_data.validation_results[selector]['verdict']} disabled={!data.iati_data.validation_results[selector]['verdict']}/>
+                <label for="{selector}"></label>
+            </td>
+            <td class="extra-top-pad">
+                <iati-validation-error if={!data.iati_data.validation_results[selector]['verdict']} selector={selector} error_msgs={data.iati_data.validation_results[selector]['evidence']}></iati-validation-error>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+
+    <div class="iati-btn-group save-iati-sync">
+        <div class="pull-right">
+            <button type="button" class="btn btn-default" onclick='{parent.update_iati_id}' >{% trans 'Edit/Remove IATI ID' %}</button>
+            <button type="button" class="btn btn-warning" onclick='{sync_delete_toggle}' if={ data.iati_data.link_info.oipa_fields.length >= 1 }  >{% trans 'Suspend IATI Sync' %}</button>
+            <button type="button" class="btn btn-primary" type="submit" onclick='{sync_update_toggle}' >
+                <span if={ data.iati_data.link_info.oipa_fields.length == 0 }>{% trans 'Initiate' %} </span>
+                <span if={ data.iati_data.link_info.oipa_fields.length >= 1 }>{% trans 'Update' %} </span>
+                {% trans 'IATI Sync' %}</button>
+        </div>
+    </div>
+
+    <style>
+        .table {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .micro-text { font-size: 85%; }
+        .extra-top-pad { padding-top: 30px !important; }
+        input[type=checkbox]{
+            height: 0px;
+            width: 0px;
+            visibility: hidden;
+        }
+        label {
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 48px;
+            height: 26px;
+            background: #6b8592;
+            display: block;
+            border-radius: 100px;
+            position: relative;
+        }
+        label:after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 5px;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 90px;
+            transition: 0.3s;
+        }
+        input:checked + label {
+            background: #6ee58e; /*#00bbff;*/
+        }
+        input:checked + label:after {
+            left: calc(100% - 5px);
+            transform: translateX(-100%);
+        }
+        label:active:after {
+            width: 15px;
+        }
+    </style>
+    var tag = this;
+
+    tag.sync_update_toggle = function(e) { window.modals.sync_update.toggle() };
+    tag.sync_delete_toggle = function(e) { window.modals.sync_delete.toggle() };
+    tag.parent.fields.forEach(function(f) {
+        $('.publish-popover-' + f.selector).mouseover(function(){ $('#publish-popover-' + f.selector).show(); });
+        $('#publish-popover-'+ f.selector +'-cancel').on('click', function(){ $('#publish-popover-' + f.selector).hide(); });
+    });
+    tag.update();
+
+    tag.on("mount", function(){
+        tag.update();
+    });
+
+    tag.update_sync_state = function(e) {
+        if (e.currentTarget.checked) { tag.parent.store.curr_sync_state.add(e.item.selector); }
+        else { tag.parent.store.curr_sync_state.delete(e.item.selector); }
+    }
+</iati-sync-comparison-table>
+
+
+<iati-sync-history>
+    <h5 class="page-header">{% trans 'IATI Sync History' %}</h5>
+    <span class="help-text right" if={parent.got_history}>{% trans 'Last Fetched' %} { parent.last_fetched }</span>
+    <table class="table micro-text">
+    <thead>
+        <tr if={!parent.got_history}>
+            <td colspan="3" class="centered">{% trans 'No sync history available.' %}</td>
+        </tr>
+        <tr if={parent.got_history}>
+            <th>{% trans 'Sync Date' %}</th>
+            <th>{% trans 'Budgets' %}</th>
+            <th>{% trans 'Commitments' %}</th>
+            <th>{% trans 'Outgoing Funds' %}</th>
+            <th>{% trans 'Incoming Funds' %}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr each={parent.sync_history}>
+            <td>{ short_date }</td>
+            <!-- budgets added -->
+            <td class="centered">{ b_added }</td>
+            <!-- commitments added -->
+            <td class="centered">{ c_added }</td>
+            <!-- outgoing funds added -->
+            <td class="centered">{ of_added }</td>
+            <!-- incoming funds added -->
+            <td class="centered">{ if_added }</td>
+        </tr>
+    </tbody>
+    </table>
+    <style>
+        .table { margin-top: 20px; }
+        .micro-text { font-size: 85%; }
+        .right {
+            float: right;
+            position: absolute;
+            right: 20px;
+            top: 35px;
+        }
+    </style>
+    var tag = this;
+</iati-sync-history>
+
+<iati-validation-error>
+    <span class="error publish-popover-{opts.selector}">{% trans 'Invalid IATI Data' %}</span>
+    <ul class="validation_error_list">
+        <li class="micro-text" each="{msg in opts.error_msgs}"> {msg} </li>
+    </ul>
+    var tag = this;
+    tag.update();
+    <style>
+        .micro-text { font-size: 75%; }
+        .validation_error_list { padding-top: 5px; }
+        ul {
+            padding-top: 5px;
+            padding-left: 15px;
+        }
+    </style>
+</iati-validation-error>
+
+{% include 'tags/finances/tab-iati-sync-modals.html' %}

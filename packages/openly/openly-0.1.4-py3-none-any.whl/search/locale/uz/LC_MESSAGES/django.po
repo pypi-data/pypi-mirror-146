@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: 2019-05-28 14:53+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid "Advanced filter"
+msgstr "Ilg'or filtr"
+
+msgid "Locations"
+msgstr "Manzillar"
+
+msgid "No results found."
+msgstr "Natija topilmadi"
+
+msgid "Participating Org"
+msgstr "Ishtirokchi tashkilot"
+
+msgid "Partners"
+msgstr "Sheriklar"
+
+msgid "People"
+msgstr "Odamlar"
+
+msgid "Reporting Org"
+msgstr "Hisobot beruvchi tashkilot"
+
+msgid "Search"
+msgstr "Izlash"
+
+msgid "Search Results"
+msgstr "Izlash natijalari"
+
+msgid "Sector"
+msgstr "Sektor"
+
+msgid "Sectors"
+msgstr "Sektorlar (Tarmoqlar)"
+
+msgid "Set Filter"
+msgstr "Filtrni o'rnatish"
+
+msgid "see more results"
+msgstr "ko'proq natijalarni ko'rish"

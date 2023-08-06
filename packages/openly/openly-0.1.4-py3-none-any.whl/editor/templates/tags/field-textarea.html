@@ -1,0 +1,19 @@
+<field-textarea>
+    <div if={classes} class="{classes.outer || classes.formgroup}">
+        <label if={!opts.hide_label} class={classes.label}>
+           { label }
+            <help-popover-field></help-popover-field>
+            <label-required-field></label-required-field>
+            <label-info-field></label-info-field>
+            <validation-error-list only_if_unchanged></validation-error-list>
+        </label>
+
+        <div class="">
+            <textarea class="form-control textarea" onchange={set} onkeyup={set} rows={opts.rows} value="{opts.value || data}" minHeight="{opts.minHeight}"></textarea>
+            <validation-error-list></validation-error-list>
+            <help-text/>
+        </div>
+    </div>
+
+{%  include "tags/field-textarea.js" %}
+</field-textarea>

@@ -1,0 +1,177 @@
+{% extends 'base_site.html' %}
+
+{% load i18n %}
+{% load static  %}
+{% load tag_library %}
+
+{% block title %}
+Data Quality Checks | {{ site_name }}
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block nav_right_dropdown %}
+{% endblock %}
+
+{% block content %}
+<div class="background">
+    <div class="container">
+        <h2>Data Quality Checks</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <table class="table table-bordered table-responsive table-white">
+                    <thead>
+                        <tr>
+                            <th><h3>Rule</h3></th>
+                            <th><h3>Entries which Fail</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr class="bg-info">
+                        <th colspan="2">Activity</th>
+                    </tr>
+                    {% for test in tests.activity.values %}
+                        <tr>
+                            <th>
+                                <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                                <a href="{% url 'dataquality_test_excel' category=test.category nickname=test.nickname %}"><img class="menu-icon-quality data-quality-excel" src="/static/img/spreadsheets.svg"></a>
+                            </th>
+                            <td>{{ test.count }}</td>
+                        </tr>
+                    {% endfor %}
+
+
+                    <tr class="bg-info">
+                        <th colspan="2">Activity Transactions</th>
+                    </tr>
+                    {% for test in tests.activity_transactions.values %}
+                    <tr>
+                        <th>
+                            <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                            <a href="{% url 'dataquality_test_excel' category=test.category nickname=test.nickname %}"><img
+                                    class="menu-icon-quality data-quality-excel" src="/static/img/spreadsheets.svg"></a>
+                        </th>
+                        <td>{{ test.count }}</td>
+                    </tr>
+                    {% endfor %}
+
+
+                    <tr class="bg-info">
+                        <th colspan="2">Locations</th>
+                    </tr>
+                    {% for test in tests.locations.values %}
+                    <tr>
+                        <th>
+                            <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                            <a href="{% url 'dataquality_test_excel' category=test.category nickname=test.nickname %}"><img
+                                    class="menu-icon-quality data-quality-excel" src="/static/img/spreadsheets.svg"></a>
+                        </th>
+                        <td>{{ test.count }}</td>
+                    </tr>
+                    {% endfor %}
+
+
+                    <tr class="bg-info">
+                        <th colspan="2">Activity Organisations</th>
+                    </tr>
+                    {% for test in tests.activity_organisations.values %}
+                        <tr>
+                            <th>
+                                <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                                <a href="{% url 'dataquality_test_excel' category=test.category nickname=test.nickname %}"><img class="menu-icon-quality data-quality-excel" src="/static/img/spreadsheets.svg"></a>
+                            </th>
+                            <td>{{ test.count }}</td>
+                        </tr>
+                    {% endfor %}
+
+
+                    <tr class="bg-info">
+                        <th colspan="2">Sectors and Coordination Bodies</th>
+                    </tr>
+                    {% for test in tests.sectors_and_coordination_bodies.values %}
+                        <tr>
+                            <th>
+                                <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                                <a href="{% url 'dataquality_test_excel' category=test.category nickname=test.nickname %}"><img class="menu-icon-quality data-quality-excel" src="/static/img/spreadsheets.svg"></a>
+                            </th>
+                            <td>{{ test.count }}</td>
+                        </tr>
+                    {% endfor %}
+
+
+                    <tr class="bg-info">
+                        <th colspan="2">Activity Profile</th>
+                    </tr>
+                    {% for test in tests.activityprofile.values %}
+                    <tr>
+                        <th>
+                            <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                            <a href="{% url 'dataquality_test_excel' category=test.category nickname=test.nickname %}"><img class="menu-icon-quality data-quality-excel" src="/static/img/spreadsheets.svg"></a>
+                        </th>
+                        <td>{{ test.count }}</td>
+                    </tr>
+                {% endfor %}
+                    <tr class="bg-info">
+                        <th colspan="2">Organisation</th>
+                    </tr>
+                    {% for test in tests.organisations.values %}
+                        <tr>
+                            <th>
+                                <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                                <!-- <a href="{% url 'dataquality_test_excel' category=test.category nickname=test.nickname %}"><img class="menu-icon-quality data-quality-excel" src="/static/img/spreadsheets.svg"></a> -->
+                            </th>
+                            <td>{{ test.count }}</td>
+                        </tr>
+                    {% endfor %}
+
+                    <tr class="bg-info">
+                            <th colspan="2">Organisation Profile</th>
+                        </tr>
+                    {% for test in tests.organisationprofile.values %}
+                        <tr>
+                            <th>
+                                <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                                <!-- <a href="{% url 'dataquality_test_excel' category=test.category nickname=test.nickname %}"><img class="menu-icon-quality data-quality-excel" src="/static/img/spreadsheets.svg"></a> -->
+                            </th>
+                            <td>{{ test.count }}</td>
+                        </tr>
+                    {% endfor %}
+
+                    <tr class="bg-info">
+                            <th colspan="2">Transactions</th>
+                        </tr>
+                    {% for test in tests.transaction.values %}
+                        <tr>
+                            <th>
+                                <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                                <a href="{% url 'transaction_dataquality_test_excel' nickname=test.nickname %}"><img class="menu-icon-quality data-quality-excel" src="/static/img/spreadsheets.svg"></a>
+                            </th>
+                            <td>{{ test.count }}</td>
+                        </tr>
+                    {% endfor %}
+
+                    {% for test in tests.persons.values %}
+                        <tr>
+                            <th>
+                                <a href="{% url 'dataquality_test' nickname=test.nickname category=test.category %}">{{ test.title }}</a>
+                            </th>
+                            <td>{{ test.count }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}

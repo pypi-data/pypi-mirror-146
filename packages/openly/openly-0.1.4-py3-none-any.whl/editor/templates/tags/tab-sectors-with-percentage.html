@@ -1,0 +1,269 @@
+{% load i18n %}
+{% load common_text %}
+{% trans "sector" as label_lower %}
+{% blocktrans asvar placeholder %}Add a {{label_lower}}...{% endblocktrans%}
+<tab-sectors id="sectors" class="tab-pane list-with-percentages">
+    <div>
+        <div class="form_header">
+            <h4>{% trans 'Sectors & Policy Markers' %}</h4>
+        </div>
+        <div class="form_body">
+            <!-- Sectors -->
+            <h5 class="page-header">{% trans 'Sectors' %}</h5>
+            <p class="help-block in-line-help">{% trans 'Sectors represent the purpose of the activity'%}. {% trans 'They must add up to 100%' %}.</p>
+            <div id="sectors-table" class="form-group">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <label class="control-label">
+                            {% trans 'Sector' %}
+                            <label-required-field required_to_publish_field="sector">
+                        </label>
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="control-label">
+                            {% trans 'Percent' %}
+                            <a class="form_help ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="" data-content="Please specify what percentage of the total budget is allocated to each sector. All percentages should add up to 100%."></a>
+                        </label>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="form-group" each="{sector, i in store.sectors}">
+                            <sector-edit
+                                store={parent.store}
+                                path="sectors[{i}]"
+                                sector="{sector}">
+                            </sector-edit>
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="clearfix"></div>
+                    <div class="col-xs-12">
+                        <validate-group store='{opts.store}' validate_sum='sectors,percentage,100' validator_exclude="sector.code,null"></validate-group>
+                        <validate-group store='{opts.store}' validate_number_not_in='sectors,percentage,0' validator_exclude="sector.code,null" validator_allow_empty></validate-group>
+                    </div>
+                </div>  <!-- end of row -->
+                <div class="add-line col-xs-12">
+                    <a id="add-sector-link" class="add_form_row" href="javascript:void(0)" data-group="sectors" onclick="{add_row}">{% trans 'Add another sector' %}</a>
+                </div>
+            </div> <!-- end of sectors -->
+            <!-- Coordination Bodies -->
+            <div class="form-group">
+                <h5 class="page-header">{% trans 'Coordination Bodies' %}</h5>
+                <p class="help-block in-line-help">{{ 'non_iati_sector_text'|common_text }}</p>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <label class="control-label">{{ 'non_iati_sector_title'|common_text }}</label>
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="control-label">
+                            {% trans 'Percent' %}
+                            <a class="form_help ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="" data-content="{% blocktrans with object='non_iati_sector_title'|common_text %}Please specify what percentage of the total budget is allocated to each {{object}}. All percentages should add up to 100%.{% endblocktrans %}"></a>
+                        </label>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="form-group" each="{sector, i in store.sector_working_groups}">
+                            <sector-working-group-edit
+                                store={parent.store}
+                                path="sector_working_groups[{i}]"
+                                sector="{sector}">
+                            </sector-working-group-edit>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-xs-12">
+                        <validate-group store='{opts.store}' validate_sum='sector_working_groups,percentage,100' validator_exclude="sector_working_group.code,null"></validate-group>
+                        <validate-group store='{opts.store}' validate_number_not_in='sector_working_groups,percentage,0' validator_exclude="sector_working_group.code,null" validator_allow_empty></validate-group>
+                    </div>
+                </div> <!-- end of row -->
+                <div class="add-line col-xs-12">
+                    <a class="add_form_row" href="javascript:void(0)" data-group="sector_working_groups" onclick="{add_row}">
+                        {% blocktrans with object='non_iati_sector_object'|common_text trimmed %}
+                            Add another {{object}}
+                        {% endblocktrans %}
+                    </a>
+                </div>
+            </div> <!--end of form group -->
+            <!-- Policy Markers -->
+            <div class="form-group">
+                <h5 class="page-header">{% trans 'Policy Markers' %}</h5>
+                <p class="help-block in-line-help">{% trans 'A policy or theme addressed by the activity. This element was designed for the reporting of OECD DAC CRS policy markers.' %}</p>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <label class="control-label">{% trans 'Policy Marker' %}</label>
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="control-label">
+                            {% trans 'Significance'%}
+                            <a class="form_help ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title=""
+                                data-content="This is an OECD DAC CRS code indicating the Significance of the Policy Marker for this activity."></a>
+                        </label>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="form-group" each="{policy_marker, i in store.policy_markers}">
+                            <policy-marker-edit
+        {#                        validate_significance="true"#}
+        {#                        validate_policy_marker="true"#}
+                                store={parent.store}
+                                path="policy_markers[{i}]"
+                                policy_marker="{policy_marker}">
+                            </policy-marker-edit>
+                        </div>
+                        <div class="clearfix"></div>
+                        <validate-group store='{opts.store}' validate_array_not_null="policy_markers" validation_array_fields="policy_marker.code significance.code"></validate-group>
+                        <div class="add-line">
+                            <a class="add_form_row" href="javascript:void(0)" data-group="policy_markers" onclick="{add_row}">{% trans 'Add another policy marker' %}</a>
+                        </div>
+                    </div> <!--end of col -->
+                </div>  <!--end of row -->
+            </div> <!--end of form group -->
+
+        </div> <!-- end of form -->
+    </div> <!-- end of div -->
+
+    <btn-group-editor id_save="save-sectors" id_next="next_sectors" use_parent_save></btn-group-editor>
+
+        var tag = this;
+        tag.mixin('SerializerMixin');
+        tag.mixin('ValidationMixin');
+        tag.mixin('TabMixin');
+
+        tag.save = function() {
+            /** Serialize the tags and send the serialized object to the activity update API.
+             */
+            var xhr;
+            var serialized_object = tag.serialize_object();
+            serialized_object['id'] = tag.store.activity_id;
+
+            window.banner_message.show('Saving', 'info');
+            xhr = tag.put(serialized_object, {'update_done': 'sectors_update_done'});
+            xhr.done(function () {
+                tag.validate();
+                tag.store.load_data(xhr.responseJSON);
+                updateAllTheThings();
+                window.banner_message.show('Saved', 'success');
+            });
+            xhr.fail(function () {
+                tag.update();
+                window.banner_message.show('Error while saving, please try again', 'danger');
+            });
+            return xhr;
+        };
+
+        tag.serialize_object = function() {
+            /** Return an object of serialized sectors ready to be sent to the API, like:
+             *
+             * {'sectors': [...], 'sector_working_groups': [...], 'policy_markers': [...]}
+             */
+            var serialized_sectors = {};
+            var store = tag.store;
+            var group_elements;
+            store.group_names.forEach(function(group_name) {
+                // remove the elements that have a null code
+                var foreign_key_name = group_name.slice(0, group_name.length - 1);  // strip the ending 's'
+                serialized_sectors[group_name] = _.clone(store[group_name]);
+                _.remove(serialized_sectors[group_name], function(element) {
+                    return !element[foreign_key_name].code;
+                });
+            });
+            return serialized_sectors;
+        }
+
+        tag.add_row = function (event) {
+            tag.store.add_row(event.target.dataset.group);
+            tag.store.trigger('path_updated', {store:tag.store, path: tag.path});
+            tag.update();
+        };
+
+        function updateAllTheThings(){
+            tag.update();
+            _.map(tag.list_child_tags(), function(t){t.update()})
+        }
+
+        tag.on('mount', function(){ tag.store.on('sectors_updated', updateAllTheThings)})
+        tag.on('unmount', function(){ tag.store.off('sectors_updated', updateAllTheThings)})
+
+
+        tag.discard = function(){
+            var store = tag.store;
+            store.load_data(stores.activityStore.activity);
+        }
+
+        tag.has_changed = function(){
+            function removeBlankCodes(arr){
+                return _.filter(arr, function(thingLikeSector){
+                    if (_.isNull(_.get(thingLikeSector, 'sector.code'))){return false};
+                    if (_.isNull(_.get(thingLikeSector, 'sector_working_group.code'))){return false};
+                    if (_.isNull(_.get(thingLikeSector, 'policy_marker.code'))){return false};
+                    return true
+                })
+            }
+            function equality(sectorSet, anotherSectorSet) {
+                return _.isEqual(removeBlankCodes(sectorSet), removeBlankCodes(anotherSectorSet))
+            }
+
+            var s = tag.store;
+            var i = tag.store._initial;
+            // Because we add empty rows we will filter them out before comparison
+            var unchanged = equality(s.sectors, i.sectors) && equality(s.policy_markers, i.policy_markers) && equality(s.sector_working_groups, i.sector_working_groups)
+            return !unchanged;
+        }
+
+
+</tab-sectors>
+
+<sector-edit>
+
+    <div class="row">
+        <field-choice
+            classes={classes.label_hidden}
+            path=".sector"
+            fieldname='dac_3s'
+            has_optgroup=1
+            select2=1
+            select2_opts="{select2_opts}"
+            choices="{get_relevant_choices('sector')}"
+            formgroup=false>
+        </field-choice>
+        <field-input
+            classes="{classes.percentage}"
+            path=".percentage"
+            fieldname="percentage"
+            input_type="number"
+            input_step="any"
+            input_max="100"
+            input_min="0"
+            formgroup=false>
+        </field-input>
+        
+        <div if="{!nullSectorCode()}" class="col-xs-1" onclick="{delete_sector}">
+            <a class="remove_form_row" href="javascript:void(0)"> </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" if="{errors}">
+            <span class="error-line">{errors}</span>
+        </div>
+    </div>
+
+{# <script> #}
+    var tag = this;
+    tag.mixin('SerializerMixin');
+    tag.mixin('SectorMixin');
+
+    tag.sectorCode = function(){return _.get(tag.store, opts.path).sector.code}
+    tag.nullSectorCode = function(){return _.isNull(tag.sectorCode()) }
+
+    tag.classes = {
+        label_hidden: {
+            label: 'hidden',
+            select: 'col-xs-8',
+        },
+        percentage: {
+            label: 'hidden',
+            input: 'col-xs-2',
+        },
+    };
+
+    tag.select2_opts = {'placeholder': 'Add a sector...'};
+    /* When a percentage changes, we want to validate and update the sector-tab */
+    tag.on('input_set', function(){tag.store.trigger('sectors_updated')})
+
+</sector-edit>

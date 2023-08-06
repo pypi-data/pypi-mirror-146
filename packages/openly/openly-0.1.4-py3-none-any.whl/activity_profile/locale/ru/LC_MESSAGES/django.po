@@ -1,0 +1,326 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-08 11:00+0900\n"
+"PO-Revision-Date: 2019-05-30 18:15+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#, fuzzy
+#| msgid "Location"
+msgid "Locations"
+msgstr "Локация (месторасположение) "
+
+#, fuzzy, python-format
+#| msgid "The map below shows where this activity is implemented."
+msgid ""
+"The map below shows where this %(activity_singular_lower)s is implemented."
+msgstr ""
+"Приведенная ниже карта показывает, где осуществлено данное направление "
+"деятельности"
+
+msgid "About"
+msgstr "О"
+
+msgid "Location"
+msgstr "Локация (месторасположение) "
+
+msgid "Finances"
+msgstr ""
+
+msgid "Documents"
+msgstr "Документы"
+
+msgid "Contacts"
+msgstr "Контакты"
+
+#, python-format
+msgid "Profile page for %(activity_title)s"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "Edit activity"
+msgid "Edit %(activity_singular)s"
+msgstr "Редактировать деятельность"
+
+msgid "Edit Banner"
+msgstr "Редактировать баннер"
+
+msgid "Add Banner"
+msgstr "Добавить баннер"
+
+msgid "Print"
+msgstr ""
+
+msgid "Status:"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "This is the main development area addressed by this activity."
+msgid ""
+"This is the main development area addressed by this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Это основная сфера развития, на которую нацелено данное направление "
+"деятельности."
+
+#, fuzzy, python-format
+#| msgid "These are the main development areas addressed by this activity."
+msgid ""
+"These are the main development areas addressed by this "
+"%(activity_singular_lower)s."
+msgstr "Это основные сферы развития, охватываемые данной деятельностью."
+
+#, python-format
+msgid "%(activity_singular)s Description"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "Activity Objective"
+msgid "%(activity_singular)s Objective"
+msgstr "Цель направления деятельности"
+
+msgid "Target Groups"
+msgstr "Целевые группы"
+
+msgid "Total Project Cost"
+msgstr ""
+
+#, fuzzy
+#| msgid "Implementing Partners"
+msgid "Implementing Government Agency"
+msgstr "Исполнительные партнеры"
+
+#, fuzzy, python-format
+#| msgid ""
+#| "This government entity is responsible for oversight or maintenance of "
+#| "this activity."
+msgid ""
+"This government entity is responsible for oversight or maintenance of this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Этот государственный орган несет ответственность за надзор или осуществление "
+"данной деятельности."
+
+#, fuzzy, python-format
+#| msgid ""
+#| "These government entities are responsible for oversight or maintenance of "
+#| "this activity."
+msgid ""
+"These government entities are responsible for oversight or maintenance of\n"
+"                these %(activity_plural_lower)s."
+msgstr ""
+"Эти государственные органы несутответственность за надзор или осуществление "
+"данной деятельности."
+
+msgid "Implementing Partners"
+msgstr "Исполнительные партнеры"
+
+#, fuzzy, python-format
+#| msgid ""
+#| "This organisation is principally responsible for delivering this activity."
+msgid ""
+"This organisation is principally responsible for delivering this "
+"%(activity_singular_lower)s."
+msgstr ""
+"Эта организация в первую очередь несут ответственность за выполнение этой "
+"деятельности."
+
+#, fuzzy, python-format
+#| msgid ""
+#| "These organisations are principally responsible for delivering this "
+#| "activity."
+msgid ""
+"These organisations are principally responsible for delivering\n"
+"                these %(activity_plural_lower)s."
+msgstr ""
+"Эти организации в первую очередь несут ответственность за выполнение этой "
+"деятельности."
+
+msgid "Government Partners"
+msgstr "Государственные партнеры"
+
+msgid "Donors"
+msgstr "Доноры"
+
+#, fuzzy, python-format
+#| msgid "This activity is funded by this donor."
+msgid "This %(activity_singular_lower)s is funded by this donor."
+msgstr "Данная деятельность финансируется этим донором."
+
+#, fuzzy, python-format
+#| msgid "This activity is funded by these donors."
+msgid "This %(activity_plural_lower)s is funded by these donors."
+msgstr "Данное направление деятельности финансируется этими донорами."
+
+msgid "Upload banner image"
+msgstr "Загрузить изображение баннера"
+
+#, fuzzy
+#| msgid ""
+#| "Since your cover photo goes across the entire width of your profile, the "
+#| "image you pick should be at least 1500 pixels wide. The image should be "
+#| "formatted as a JPEG or PNG file."
+msgid ""
+"Since your cover photo goes across the entire width of your profile, the "
+"image you pick should be at least <strong>1500 pixels wide</strong>. The "
+"image should be formatted as a <strong>JPEG</strong> or <strong>PNG</strong> "
+"file."
+msgstr ""
+"Так как Ваша фотография не покрывает по ширине Ваш профиль, выбранная Вами "
+"фотография должна быть не менее 1500 пикселей.  Фотография должна быть "
+"форматирована как  jpeg или png файл."
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Choose Image"
+msgstr "Выбрать изображение"
+
+msgid ""
+"The charts below present a financial overview of the assistance provided by "
+"the development partner."
+msgstr ""
+
+msgid "Total Commitment: "
+msgstr ""
+
+#, python-format
+msgid ""
+"Total committed budget for the duration of the %(activity_singular_lower)s. "
+"Calculated as the sum of all commitment transactions for this "
+"%(activity_singular_lower)s."
+msgstr ""
+
+msgid "Total Commitment USD: "
+msgstr ""
+
+msgid "Total Commitment above converted to US dollars."
+msgstr ""
+
+msgid "Finance Type(s): "
+msgstr ""
+
+msgid "Percent disbursed"
+msgstr ""
+
+msgid "Cumulative Commitments & Disbursements"
+msgstr ""
+
+#, python-format
+msgid ""
+"This chart shows the total cumulative assistance for all transactions "
+"associated with this %(activity_singular_lower)s."
+msgstr ""
+
+msgid "Transactions"
+msgstr ""
+
+#, python-format
+msgid ""
+"Transactions recording committed or actual funds flowing in or out of an aid "
+"%(activity_singular_lower)s"
+msgstr ""
+
+msgid "Aid Type"
+msgstr ""
+
+msgid "Finance Type"
+msgstr ""
+
+msgid "Provider"
+msgstr ""
+
+msgid "Receiver"
+msgstr ""
+
+msgid "Tied"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+#, python-format
+msgid " The %(activity_singular_lower)s aligns with the following strategies: "
+msgstr ""
+
+msgid "Contact Details"
+msgstr "Контактная информация"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Email"
+msgstr "Электронная почта"
+
+msgid "Website"
+msgstr "Веб-страница (вебсайт)"
+
+msgid "Address"
+msgstr "Адрес"
+
+msgid "see less"
+msgstr "Меньше"
+
+msgid "see more"
+msgstr "Больше"
+
+msgid "Show less"
+msgstr ""
+
+msgid "Show more"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid ""
+#| "These are the key documents and images related to this activity. Select a "
+#| "document title to download."
+msgid ""
+"These are the key documents and images related to this "
+"%(activity_singular_lower)s. Select a document title to download."
+msgstr ""
+"Это основные документы и изображения, связанные с данным направлением "
+"деятельности. Выберите название документа для скачивания."
+
+#~ msgid "Activity Locations"
+#~ msgstr "Локации (месторасположение) деятельности"
+
+#~ msgid ""
+#~ "Information below generally contains a description of the activity, as "
+#~ "well as activity objectives and target groups."
+#~ msgstr ""
+#~ "Информация ниже в целом содержит описание деятельности, а также цели "
+#~ "деятельности и целевые группы."
+
+#~ msgid "Key Activity Documents"
+#~ msgstr "Основные документы о деятельности"
+
+#~ msgid "Profile"
+#~ msgstr "Профиль"
+
+#~ msgid "These are some of this activity&apos;s key team members."
+#~ msgstr "Это основные члены команды по данному направлению деятельности."

@@ -1,0 +1,24 @@
+<field-modifiedspan>
+    <span>{formatted_data}<span if="{fieldstatus()=='validation'}">{validation_indicator}</span></span>
+
+{#    <script>#}
+    var tag = this;
+
+    tag.mixin('SerializerMixin');
+    tag.mixin('FormFieldMixin');
+
+    tag.validation_indicator = '';
+
+    tag.on('update', set_formatted_data);
+
+    function set_formatted_data () {
+        if (tag.opts.format === undefined) {
+            tag.formatted_data = tag.bystring(tag.path);
+        } else if (tag.opts.format == 'date') {
+            tag.formatted_data = moment(tag.bystring(tag.path)).format('D MMM YYYY')
+        } else if (tag.opts.format == 'currency' && tag.opts.format_currency_code){
+            tag.formatted_data = (Number(tag.data)).toLocaleString("en-US", {style: "currency", currency: tag.opts.format_currency_code, minimumFractionDigits: 2})
+        }
+    }
+{#    </script>#}
+</field-modifiedspan>

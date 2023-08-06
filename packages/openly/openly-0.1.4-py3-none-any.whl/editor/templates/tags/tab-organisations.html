@@ -1,0 +1,338 @@
+{% load i18n %}
+{% load ifsetting %}
+
+{% trans 'Select the donors providing Overseas Development Assistance (ODA) funds to this project.' as funding_help %}
+{% trans 'This is the government entity or development partner agency receiving funds from financing partner(s) for channeling to implementing partner(s).' as extending_partner_help %}
+
+<tab-organisations id="part_orgs" class="tab-pane">
+    <div class="form_header">
+        <h4>
+            {% ifsetting EDITOR_HAS_IGA %}
+                {% trans 'IGA & Donors' %}
+            {% else %} 
+                {% trans 'Participating Organisations' %}
+            {% endifsetting %}
+        <h4>
+    </div>
+
+    <div class="form_body">
+        {% ifsetting EDITOR_HAS_IGA %}
+        {% trans 'Select the Implementing Government Agency (IGA) responsible for this project.' as header_text %}
+        {% trans 'IGA' as help_text %}
+
+        <div id="section-iga">
+            <h5 class="page-header">{% trans 'IGA' %}</h5>
+            <div class="row">
+                <div class="col-xs-12">
+                    <help-text active helptext="{{header_text}}"/><br>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:5px;">
+                <div class="col-xs-12">
+                    <field-choice
+                    hide_label={true}
+                    formgroup=false
+                    store="{stores.activityStore}"
+                    choices={choices}
+                    path="[{iga_organisation_index()}].organisation"
+                    show_code=1
+                    select2_opts="{select2_opts_iga}"
+                    select2="1"
+                    has_optgroup="1"
+                >
+                </field-choice>
+                </div>
+            </div>
+        </div>
+        <style scoped>
+            #section-implementing, #section-extending, #section-accountable {display: none;}
+        </style>
+        {% endifsetting %}
+
+        <!-- Funding partners are only included where there is no separate "Finances" tab -->
+        <!-- Funding partners are called "Donors" with users -->
+        {% ifsetting EDITOR_HAS_FUNDING_ORGS %}
+        <div id="section-funding" if="{categories}">
+            <h5 class="page-header">{% trans 'Donors' %}</h5>
+            <help-text active helptext="{{funding_help}}"/>
+            <div if="{categories.Funding.length == 0}">
+                <div class="alert alert-info" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans 'There are no Donors' %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <label class="control-label">{% trans 'Donors' %}</label>
+                </div>
+            </div>
+
+            <virtual each='{organisation, index in data}'>
+                <virtual if='{organisation.role.code == "Funding"}'>
+                    <div class="row" style="margin-bottom:5px;">
+                        
+                        <div class="col-xs-11">
+                            <field-dropdownselect
+                            hide_label={true}
+                            formgroup=false
+                            store="{parent.store}"
+                            {% ifsetting EDITOR_HAS_IGA %}
+                            choice_fieldname="organisation_donors"
+                            {% else %} 
+                            choice_fieldname="organisation"
+                            {% endifsetting %}
+                            path="[{index}].organisation"
+                            select_name="{organisation.name}"
+                            disabled_choices="{disabled_choices.Funding}"
+                            show_code=1
+                            >
+                            </field-dropdownselect>
+                        </div>
+                        <div class="col-xs-1 remove_organisation"> 
+                            <a class="remove_form_row" onclick='{delete_organisation}' data-code='{organisation.organisation.code}'> </a> 
+                        </div>
+                    </div>
+                </virtual>
+            </virtual>
+           
+            <div class="row">
+                <div class="col-xs-12">
+                    <validate-group store="{stores.activityStore}" path='' validate_unique_in_array="organisation.code" validator_filter="role.code,Funding"></validate-group>
+                </div>
+            </div>
+
+            <div class="col-xs-12 add_form_row_container">
+                <a class="add_form_row add_partner_funding" onclick="{add_partner_funding}">
+                    <virtual if="{categories.Implementing.length == 0}"> {% trans 'Add a donor' %}</virtual>
+                    <virtual if="{categories.Implementing.length > 0}"> {% trans 'Add another donor' %}</virtual>
+                </a>
+            </div>
+        </div>
+        {% endifsetting %}
+
+        {% ifnotsetting EDITOR_HIDES_EXTENDING_ORGS %}
+        <div id="section-extending" if="{categories}">
+            <h5 class="page-header">{% trans 'Extending Partners' %}</h5>
+            <help-text helptext="{{extending_partner_help}}"></help-text> 
+            <div if="{categories.Extending.length == 0}">
+                <div class="alert alert-info" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans 'There are no extending partners' %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <label class="control-label">{% trans 'Extending Partners' %}</label>
+                </div>
+            </div>
+
+            <virtual each='{organisation, index in data}'>
+                <virtual if='{organisation.role.code == "Extending"}'>
+                    <div class="row" style="margin-bottom:5px;">
+                        
+                        <div class="col-xs-11">
+                            <field-dropdownselect
+                            hide_label={true}
+                            formgroup=false
+                            store="{parent.store}"
+                            choice_fieldname="organisation"
+                            path="[{index}].organisation"
+                            select_name="{organisation.name}"
+                            disabled_choices="{disabled_choices.Extending}"
+                            show_code=1
+                            >
+                            </field-dropdownselect>
+                        </div>
+                        <div class="col-xs-1 remove_organisation"> 
+                            <a class="remove_form_row" onclick='{delete_organisation}' data-code='{organisation.organisation.code}'> </a> 
+                        </div>
+                    </div>
+                </virtual>
+            </virtual>
+           
+            <div class="row">
+                <div class="col-xs-12">
+                    <validate-group store="{stores.activityStore}" path='' validate_unique_in_array="organisation.code" validator_filter="role.code,Extending"></validate-group>
+                </div>
+            </div>
+
+            <div class="col-xs-12 add_form_row_container">
+                <a class="add_form_row add_partner_extending" onclick="{add_partner_extending}">
+                    <virtual if="{categories.Extending.length == 0}"> {% trans 'Add an extending partner' %}</virtual>
+                    <virtual if="{categories.Extending.length > 0}"> {% trans 'Add another extending partner' %}</virtual>
+                </a>
+            </div>
+        </div>
+        {% endifnotsetting %}
+
+        <div id="section-implementing" if="{categories}">
+            <h5 class="page-header">{% trans 'Implementing Partners' %}</h5>
+            <p class="help-block in-line-help">{% trans 'The implementer of the activity is the organisation(s) which is/are principally responsible for delivering this activity.' %}</p>
+            <div if="{categories.Implementing.length == 0}">
+                <div class="alert alert-info" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans 'There are no implementing partners' %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <label class="control-label">{% trans 'Implementing Partners' %}</label>
+                </div>
+            </div>
+
+            <virtual each='{organisation, index in data}'>
+                <virtual if='{organisation.role.code == "Implementing"}'>
+                    <div class="row" style="margin-bottom:5px;">
+                        
+                        <div class="col-xs-11">
+                            <field-dropdownselect
+                            hide_label={true}
+                            formgroup=false
+                            store="{parent.store}"
+                            choice_fieldname="organisation"
+                            path="[{index}].organisation"
+                            select_name="{organisation.name}"
+                            disabled_choices="{disabled_choices.Implementing}"
+                            show_code=1
+                            >
+                            </field-dropdownselect>
+                        </div>
+                        <div class="col-xs-1 remove_organisation"> 
+                            <a class="remove_form_row" onclick='{delete_organisation}'> </a> 
+                        </div>
+                    </div>
+                </virtual>
+            </virtual>
+            
+            <div class="row">
+                <div class="col-xs-12">
+                    <validate-group store="{stores.activityStore}" path='' validate_unique_in_array="organisation.code" validator_filter="role.code,Implementing"></validate-group>
+                </div>
+            </div>
+
+            <div class="col-xs-12 add_form_row_container">
+                <a class="add_form_row add_partner_implementing" onclick="{add_partner_implementing}">
+                    <virtual if="{categories.Implementing.length == 0}"> {% trans 'Add an implementing partner' %}</virtual>
+                    <virtual if="{categories.Implementing.length > 0}"> {% trans 'Add another implementing partner' %}</virtual>
+                </a>
+            </div>
+        </div>
+
+        {% ifsetting ACCOUNTABLE_IS_GOVERNMENT %}
+
+        <div id="section-accountable-is-government" if="{categories}">
+                <h5 class="page-header">{% trans 'Government Partners' %}</h5>
+                <p class="help-block in-line-help">{% trans 'The government entity or entities responsible for oversight or maintenance of the activity. Often this will be the government entity with which a MoU or similar agreement is signed. In many cases, the MoU will be signed directly with the implementing partner.' %}</p>            
+                <div if="{categories.Accountable.length == 0}">
+                    <div class="alert alert-info" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans 'There are no government partners' %}
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <label class="control-label">{% trans 'Government Partners' %}</label>
+                </div>
+            </div>
+
+            <virtual each='{organisation, index in data}'>
+                <virtual if='{organisation.role.code == "Accountable"}'>
+                    <div class="row" style="margin-bottom:5px;">
+                        
+                        <div class="col-xs-11">
+                            <field-dropdownselect
+                            hide_label={true}
+                            formgroup=false
+                            store="{parent.store}"
+                            choice_fieldname="organisation"
+                            path="[{index}].organisation"
+                            select_name="{organisation.name}"
+                            disabled_choices="{disabled_choices.Accountable}"
+                            show_code=1
+                            >
+                            </field-dropdownselect>
+                        </div>
+                        <div class="col-xs-1 remove_organisation"> 
+                            <a class="remove_form_row" onclick='{delete_organisation}'> </a> 
+                        </div>
+                    </div>
+                </virtual>
+            </virtual>
+            
+            <div class="row">
+                <div class="col-xs-12">
+                    <validate-group store="{stores.activityStore}" path='' validate_unique_in_array="organisation.code" validator_filter="role.code,Accountable"></validate-group>
+                </div>
+            </div>
+
+            <div class="col-xs-12 add_form_row_container">
+                <a class="add_form_row add_partner_accountable" onclick="{add_partner_accountable}">
+                    <virtual if="{categories.Accountable.length == 0}"> {% trans 'Add a government partner' %}</virtual>
+                    <virtual if="{categories.Accountable.length > 0}"> {% trans 'Add another government partner' %}</virtual>
+                </a>
+            </div>
+        </div>
+
+        {% else %}
+
+        <div id="section-accountable" if="{categories}">
+            <h5 class="page-header">{% trans 'Accountable Partners' %}</h5>
+            <div if="{categories.Accountable.length == 0}">
+                <div class="alert alert-info" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span>{% trans 'There are no accountable partners' %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <label class="control-label">{% trans 'Accountable Partners' %}</label>
+                </div>
+            </div>
+
+            <virtual each='{organisation, index in data}'>
+                <virtual if='{organisation.role.code == "Accountable"}'>
+                    <div class="row" style="margin-bottom:5px;">
+                        
+                        <div class="col-xs-11">
+                            <field-dropdownselect
+                            hide_label={true}
+                            formgroup=false
+                            store="{parent.store}"
+                            choice_fieldname="organisation"
+                            path="[{index}].organisation"
+                            select_name="{organisation.name}"
+                            disabled_choices="{disabled_choices.Accountable}"
+                            show_code=1
+                            >
+                            </field-dropdownselect>
+                        </div>
+                        <div class="col-xs-1 remove_organisation"> 
+                            <a class="remove_form_row" onclick='{delete_organisation}'> </a> 
+                        </div>
+                    </div>
+                </virtual>
+            </virtual>
+            
+            <div class="row">
+                <div class="col-xs-12">
+                    <validate-group store="{stores.activityStore}" path='' validate_unique_in_array="organisation.code" validator_filter="role.code,Accountable"></validate-group>
+                </div>
+            </div>
+
+            <div class="col-xs-12 add_form_row_container">
+                <a class="add_form_row add_partner_accountable" onclick="{add_partner_accountable}">
+                    <virtual if="{categories.Accountable.length == 0}"> {% trans 'Add an accountable partner' %}</virtual>
+                    <virtual if="{categories.Accountable.length > 0}"> {% trans 'Add another accountable partner' %}</virtual>
+                </a>
+            </div>
+        </div>
+
+        {% endifsetting %}
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="save-group">
+        <btn-group-editor id_save="save-organisations" id_next="next-organisations" use_parent_save></btn-group-editor>
+    </div>
+    {%  include "tags/tab-organisations.js" %}
+</tab-organisations>

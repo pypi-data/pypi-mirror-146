@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-03 02:16+0000\n"
+"PO-Revision-Date: 2020-01-20 05:01+0000\n"
+"Last-Translator: b'  <josh@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid "Locations"
+msgstr ""
+
+#, python-format
+msgid "The map below shows where this %(activity_singular_lower)s is implemented."
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Location"
+msgstr "တည်နေရာ"
+
+msgid "Finances"
+msgstr "ငွေကြေ:ဆိုင်ရာ"
+
+msgid "Documents"
+msgstr "စာရွက်စာတမ်:များ"
+
+msgid "Contacts"
+msgstr "ဆက်သွယ်ရန်"
+
+#, python-format
+msgid "Profile page for %(activity_title)s"
+msgstr "%(activity_title)s ၏ ပရိုဖိုင် စာမျက်နှာ"
+
+#, python-format
+msgid "Edit %(activity_singular)s"
+msgstr "%(activity_singular)s ကို ပြုပြင်မည်။"
+
+msgid "Edit Banner"
+msgstr "နဖူးစည်းကို ပြုပြင်မည်။"
+
+msgid "Add Banner"
+msgstr "နဖူးစည်:တွင်ပုံထည့်မည်"
+
+msgid "Print"
+msgstr ""
+
+msgid "Status:"
+msgstr "အခြေအနေ"
+
+msgid "This means the project has no funding donor or developer company, or has not entered tender yet."
+msgstr ""
+
+#, python-format
+msgid "This is the main development area addressed by this %(activity_singular_lower)s."
+msgstr ""
+
+#, python-format
+msgid "These are the main development areas addressed by this %(activity_singular_lower)s."
+msgstr ""
+
+#, python-format
+msgid "%(activity_singular)s Description"
+msgstr ""
+
+#, fuzzy, python-format
+#| msgid "Edit %(activity_singular)s"
+msgid "%(activity_singular)s Expected Benefits"
+msgstr "%(activity_singular)s ကို ပြုပြင်မည်။"
+
+#, fuzzy, python-format
+#| msgid "Edit %(activity_singular)s"
+msgid "%(activity_singular)s Objectives"
+msgstr "%(activity_singular)s ကို ပြုပြင်မည်။"
+
+msgid "Target Groups"
+msgstr ""
+
+msgid "Total Project Cost"
+msgstr "စုစုပေါင်းစီမံကိန်းကုန်ကျငွေ"
+
+msgid "Estimated tender commencement date"
+msgstr ""
+
+msgid "Implementing Government Agency"
+msgstr "အကောင်အထည်ဖော်နေသော အစိုးရအဖွဲ့"
+
+#, python-format
+msgid "This government entity is responsible for oversight or maintenance of this %(activity_singular_lower)s."
+msgstr "ဤအစိုးရ အဖွဲ့သည် သက်ဆိုင်ရာ %(activity_singular_lower)s အတွက် ခြုံငုံသုံးသပ်ခြင်း နှင့် ထိန်းသိမ်းမှုတို့အတွက်တာဝန်ရှိသည် ဟုဆိုလိုသည်။"
+
+#, python-format
+msgid ""
+"These government entities are responsible for oversight or maintenance of\n"
+"                these %(activity_plural_lower)s."
+msgstr "ဤအစိုးရ အဖွဲ့သည် သက်ဆိုင်ရာ %(activity_plural_lower)s အတွက် ခြုံငုံသုံးသပ်ခြင်း နှင့် ထိန်းသိမ်းမှုတို့အတွက်တာဝန်ရှိသည် ဟုဆိုလိုသည်။"
+
+msgid "Implementing Partners"
+msgstr "အကောင်အထည်ဖော်သည့် မိတ်ဖက်အဖွဲ့အစည်းများ"
+
+#, python-format
+msgid "This organisation is principally responsible for delivering this %(activity_singular_lower)s."
+msgstr ""
+
+#, python-format
+msgid ""
+"These organisations are principally responsible for delivering\n"
+"                these %(activity_plural_lower)s."
+msgstr ""
+
+msgid "Government Partners"
+msgstr ""
+
+msgid "Donors"
+msgstr ""
+
+#, python-format
+msgid "A donor is a country or institution which provides funds for this %(activity_singular_lower)s."
+msgstr ""
+
+#, python-format
+msgid "This %(activity_plural_lower)s is funded by these donors."
+msgstr ""
+
+msgid "Upload banner image"
+msgstr "နဖူးစည်း ဓါတ်ပုံရွေးချယ်ရန်"
+
+msgid "Since your cover photo goes across the entire width of your profile, the image you pick should be at least <strong>1500 pixels wide</strong>. The image should be formatted as a <strong>JPEG</strong> or <strong>PNG</strong> file."
+msgstr "ဤနောက်ခံဓါတ်ပုံသည် သင့်ပရိုဖိုင် အလျားအတိုင်းကျယ်မည်ဖြစ်သောကြောင့် <strong> ၁၅၀၀ Pixels<strong> ရှိသော ဓါတ်ပုံကို ရွေးချယ်ပါ။"
+
+msgid "Close"
+msgstr "ပိတ်မည်"
+
+msgid "Choose Image"
+msgstr "ဓါတ်ပုံရွေးမည်"
+
+msgid "The charts below present a financial overview of the assistance provided by the development partner."
+msgstr ""
+
+msgid "Total Commitment: "
+msgstr ""
+
+#, python-format
+msgid "Total committed budget for the duration of the %(activity_singular_lower)s. Calculated as the sum of all commitment transactions for this %(activity_singular_lower)s."
+msgstr ""
+
+msgid "Total Commitment USD: "
+msgstr ""
+
+msgid "Total Commitment above converted to US dollars."
+msgstr ""
+
+msgid "Finance Type(s): "
+msgstr ""
+
+msgid "Percent disbursed"
+msgstr ""
+
+msgid "Cumulative Commitments & Disbursements"
+msgstr ""
+
+#, python-format
+msgid "This chart shows the total cumulative assistance for all transactions associated with this %(activity_singular_lower)s."
+msgstr ""
+
+msgid "Transactions"
+msgstr ""
+
+#, python-format
+msgid "Transactions recording committed or actual funds flowing in or out of an aid %(activity_singular_lower)s"
+msgstr ""
+
+msgid "Aid Type"
+msgstr ""
+
+msgid "Finance Type"
+msgstr ""
+
+msgid "Provider"
+msgstr ""
+
+msgid "Receiver"
+msgstr ""
+
+msgid "Tied"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+#, python-format
+msgid " The %(activity_singular_lower)s aligns with the following strategies: "
+msgstr ""
+
+msgid "Contact Details"
+msgstr "ဆက်သွယ်ရန် အသေးစိတ်"
+
+msgid "Phone"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Website"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "see less"
+msgstr ""
+
+msgid "see more"
+msgstr ""
+
+msgid "Show less"
+msgstr ""
+
+msgid "Show more"
+msgstr ""
+
+#, python-format
+msgid "These are the key documents and images related to this %(activity_singular_lower)s. Select a document title to download."
+msgstr ""

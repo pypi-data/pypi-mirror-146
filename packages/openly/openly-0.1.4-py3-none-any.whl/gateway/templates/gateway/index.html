@@ -1,0 +1,128 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static  %}
+{% load change_language %}
+
+{% block style %}
+    <link href="{% static 'css/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="jumbotron large_jumbo">
+        <div class="container-fluid">
+            <a class="navbar-brand logoIndex" href="/en/"></a><!-- branding for tablet & desktop-->
+
+           <!-- top nav settings-->
+           <ul class="nav nav-pills pull-right home_settings_nav hidden-xs">
+                {% get_available_languages as LANGUAGES %}
+                {% for language_code, language_name in LANGUAGES %}
+
+                    {% if language_code == LANGUAGE_CODE %}
+                        <li class="active">{{ language_name }}</li>
+                    {% else %}
+                        <li><a href="{% change_language language_code %}">{{ language_name }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if request.user.is_authenticated %}
+                    <li>
+                        <a class="btn btn-default btn-login" href="{% url 'auth_logout' %}">
+                        {% trans "logout" %}</a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a class="btn btn-default btn-login" href="{% url 'auth_login' %}">
+                        {% trans "Login" %}</a>
+                    </li>
+                {% endif %}
+            </ul>
+            <!-- Modal -->
+            <div class="modal" id="mob_menu" name="mob_menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal_nav">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><i class="ion-close"></i></span><span class="sr-only">Close</span></button>
+                        </div>
+                        <div class="modal-body modal_nav">
+                            <ul class="modal_nav_index animated fadeInDown">
+                                <ul class="list-inline text-center lang_tog_mobile">
+                                    {% get_available_languages as LANGUAGES %}
+                                    {% for language_code, language_name in LANGUAGES %}
+
+                                    {% if language_code == LANGUAGE_CODE %}
+                                    <li><a href="#" data-dismiss="modal">{{ language_name }}</a></li>
+                                    {% else %}
+                                    <li><a href="{% change_language language_code %}" class="first_lang_tog" data-dismiss="modal">{{ language_name }}</a></li>
+                                    {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner_block">
+                <p class="small">{% trans "aid transparency portal" %}</p>
+
+                <h1>{% trans "tracking international aid activities" %}</h1>
+
+		<a class="btn btn-primary btn-lg btn-block btn-home" href="{% url 'aid_by_location' %}">{% blocktrans with site=request.site %}Log in to {{ site }}{% endblocktrans %}</a>
+            </div>
+        </div>
+    </div>
+
+<!-- === ABOUT === -->
+
+    <div class="container">
+
+        <div class="row home_page_block">
+            <div class="col-md-12" id="about">
+                <p class="text-center"><i class="ion-ios7-chatboxes-outline"></i></p>
+                <h3 class="home_page">{% trans "Let's start a conversation about aid transparency" %}</h3>
+
+                <p class="home_page_sub">{% trans "Open information about international aid activities" %}</p>
+            </div>
+        </div>
+
+        <div class="row home_page_block">
+            <div class="col-md-4">
+                 <span class="icon_header"><i class="ion-ios7-bookmarks-outline"></i></span>
+
+                <h6>{% trans "Why is open aid important?" %}</h6>
+
+                <p class="home_txt">{% trans "Making aid transparent helps to ensure aid goes where it is most needed." %} <strong>{% trans "By ensuring open access to aid information" %}</strong> {% trans "a wider group of stakeholders are able to clearly see who is doing what and where? Access to better quality aid information also supports the equitable allocation of resources, both sectorally and geographically, ensuring that all people can benefit." %}</p>
+            </div>
+
+            <div class="col-md-4">
+                 <span class="icon_header"><i class="ion-ios7-people-outline"></i></span>
+
+                <h6>{% trans "What are the results?" %}</h6>
+
+                <p class="home_txt">{% trans "Aid transparency isn't just about numbers." %}<strong> {% trans "Results matter too." %}</strong> {% trans "Open access to aid information means that people  are better able to see the impact that aid activities have in their communities. This also helps other countries learn what may work, or not work, in their country." %}</p>
+            </div>
+        </div>
+    </div><!-- / end of container-->
+
+
+<!--  SMALL JUMBO -->
+
+<div class="jumbotron smaller_jumbo2">
+    <h2>{% trans "aid works better when we work together" %}</h2>
+</div>
+
+
+    <footer>
+        <div class="container">
+            <p>{% trans "Software designed and developed by" %} <a href="http://www.catalpa.io">Catalpa International Ltd</a></p>
+        </div><!-- /container -->
+    </footer>
+
+
+
+{% endblock %}

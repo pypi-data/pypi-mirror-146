@@ -1,0 +1,418 @@
+{% extends 'editor/base.html' %}
+{% load i18n %}
+{% load static  %}
+{% load ifsetting %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block editor_scripts %}
+<script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+<script type="text/javascript" src="{% static 'select2/select2.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'moment/moment.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lodash.flatten.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/accounting.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery-confirm.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/cleave.min.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/mixin-serializer.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mixin-validation.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/storemixin.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mixin-formfield.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mixin-restfunctions.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/SectorMixin.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/TabMixin.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/transaction-modal-mixin.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/IatiSyncModalMixin.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/NarrativeMixin.js' %}"></script>
+{% endblock %}
+
+{% block editor_style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/ionicons.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'select2/select2.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'select2/select2-bootstrap.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'currency-flags.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-confirm.min.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% comment %} 'Modals' work better when they are included at the top of html {% endcomment %}
+<discard-modal></discard-modal>
+<tab-transactions-add-commitment-modal></tab-transactions-add-commitment-modal>
+<tab-transactions-add-incoming-funds-modal></tab-transactions-add-incoming-funds-modal>
+<tab-transactions-add-transaction-modal></tab-transactions-add-transaction-modal>
+
+{% ifsetting OIPA_SYNC_ENABLED %}
+<tab-iati-sync-confirm-update-modal></tab-iati-sync-confirm-update-modal>
+<tab-iati-sync-confirm-delete-modal></tab-iati-sync-confirm-delete-modal>
+<tab-iati-sync-update-link-modal></tab-iati-sync-update-link-modal>
+{% endifsetting %}
+
+<confirm-delete-modal></confirm-delete-modal>
+{% include "editor/delete-activity-modal.html" %}
+<banner-message></banner-message>
+<div class="background editor-background">
+    <div class="container editor-container">
+        <div class="row">
+            <div class="col-xs-12 back-button">
+                <br>
+                <a href="{% url 'activity_manager' organisation_code %}"><i class="ion-android-arrow-back"></i> {% blocktrans %}{{activity_singular}} Manager{% endblocktrans %}</a>
+            </div>
+            <div class="col-xs-6"><h2 class="editor-title">{% blocktrans %}Edit {{activity_singular}}{% endblocktrans %}</h2><br></div>
+            <div class="col-xs-6 no-margin publish-row">
+                {% ifsetting ENDORSEMENT_ENABLED %}
+                <review-buttons> </review-buttons>
+                {% else %}
+                <publish-button> </publish-button>
+                {% endifsetting %}
+                <delete-button></delete-button>
+            </div>
+        </div>
+
+        <div class="row no-margin">
+            <div class="col-xs-3">
+                <form-navigation base_route=""></form-navigation>
+                <form-completion></form-completion>
+            </div>
+
+            <div class="col-xs-9">
+                <div class="o-form-box animated fadeInRight">
+                    <tab-container></tab-container>
+                </div>
+                <br />
+
+                <tag-formfunctions>
+                </tag-formfunctions>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if dird_finances is not None %}
+{{ dird_finances|json_script:'dird_finances' }}
+{% endif %}
+{% if dird_compliance is not None %}
+{{ dird_compliance|json_script:'dird_compliance' }}
+{% endif %}
+
+<script>
+
+    var choices = JSON.parse('{{ model_choices|escapejs }}');
+    var data = JSON.parse('{{ data|escapejs }}');
+    var templates = JSON.parse('{{ templates|escapejs }}');
+    var languages = JSON.parse("{{ languages|escapejs }}");
+
+    choices.required = function(fieldname){return choices.required_to_publish.indexOf(fieldname) != -1}
+
+    window.urls = window.urls || {};
+    window.csrf_token = '{{csrf_token}}';
+    window.page_language = '{{ LANGUAGE_CODE }}';
+    window.templates = templates;
+    window.stores = {};
+
+    {% include 'stores/activitystore.js' %}
+    {% include 'stores/contactsstore.js' %}
+    {% include 'stores/SectorStore.js' %}
+    {% include 'stores/LocationStore.js' %}
+
+    riot.mixin('SerializerMixin', SerializerMixin);
+    riot.mixin('TabMixin', TabMixin);
+    riot.mixin('SectorMixin', new SectorMixin());
+    riot.mixin('FormFieldMixin', FormFieldMixin);
+    riot.mixin('RiotRestMixin', RiotRestMixin);
+    riot.mixin('ValidationMixin', ValidationMixin);
+
+    // stores and choices are global objects
+
+    /* {% ifsetting EDITOR_HAS_FINANCIALS %} */
+    {% include 'stores/transactionstore.js' %}
+    {% include 'stores/budgetstore.js' %}
+    {% include 'stores/oipastore.js' %}
+    window.urls.update_transactions = "{% url 'activitytransactions-detail' pk='XXXXX' %}".replace('XXXXX', data.activity.id);
+
+    (function addFinancialStores(stores) {
+        _.extend(TransactionStore.prototype, StoreMixin);
+        _.extend(BudgetStore.prototype, StoreMixin);
+        _.extend(OipaStore.prototype, StoreMixin);
+
+        stores.transactionStore = new TransactionStore(_.orderBy(data.transactions, 'id', 'asc'), choices);
+        stores.budgetStore = new BudgetStore(_.orderBy(data.budgets, 'id', 'asc'), choices);
+        stores.oipaStore = new OipaStore(data.iati_data || {});
+
+        stores.transactionStore.template = templates.transaction;
+        stores.transactionStore.template.activity = {'id':data.activity.id};
+
+        RiotControl.addStore(stores.transactionStore);
+        RiotControl.addStore(stores.budgetStore);
+        RiotControl.addStore(stores.oipaStore);
+    })(window.stores = window.stores || {});
+    /* {% endifsetting %} */
+    window.urls.update_general = "{% url 'activity_update_general' 'XXXXX' %}".replace('XXXXX', data.activity.id),
+    (function addCommonStores(stores) {
+
+        _.extend(ActivityStore.prototype, StoreMixin);
+        _.extend(ContactsStore.prototype, StoreMixin);
+
+        stores.activityStore = new ActivityStore(data.activity, choices);
+        stores.sectorStore = new SectorStore(data.activity, choices);
+        stores.activityStore = new ActivityStore(data.activity, choices);
+        stores.locationStore = new LocationStore(data.activity, choices);
+        stores.contactsStore = new ContactsStore('contactinfo_set', data.contacts, choices);
+
+        stores.activityStore.languages = languages;
+        stores.activityStore.budget_template = templates.budget;
+        stores.activityStore.budget_template.activity = {'id':data.activity.id};
+        stores.activityStore.activityorganisation_template = {
+            name: undefined,
+            organisation: { code: undefined, },
+            role: { code: undefined, },
+        };
+
+        RiotControl.addStore(stores.activityStore);
+        RiotControl.addStore(stores.sectorStore);
+        RiotControl.addStore(stores.locationStore);
+
+    })(window.stores = window.stores || {});
+
+    /* {% ifsetting EDITOR_HAS_RESULTS %} */
+    {% include 'stores/resultsstore.js' %}
+    (function addResultsStore(stores) {
+        _.extend(ResultsStore.prototype, StoreMixin);
+        stores.resultsStore = new ResultsStore('results', data.results, choices);
+    })(window.stores = window.stores || {});
+    /* {% endifsetting %} */
+
+    /* {% ifsetting EDITOR_HAS_MSDP %} */
+    {% include 'stores/msdpstore.js' %}
+    (function addMSDPStore(stores) {
+        _.extend(MsdpStore.prototype, StoreMixin);
+        stores.msdpStore = new MsdpStore([], choices);
+    })(window.stores = window.stores || {});
+    /* {% endifsetting %} */
+
+    /* {% ifsetting EDITOR_HAS_LEGACY_RESULTS %} */
+    {% include 'stores/legacyresultsstore.js' %}
+    (function addLegacyResultsStore(stores) {
+        _.extend(ResultsStore.prototype, StoreMixin);
+        // Format newstyle results as oldstyle results
+        stores.resultsStore = new ResultsStore('results', data.results.result, {'result_type': data.results.resulttype});
+    })(window.stores = window.stores || {});
+    /* {% endifsetting %} */
+
+    /* {% ifsetting EDITOR_HAS_DOCUMENTS_TAB %} */
+    {% include 'stores/DocumentStore.js' %}
+    (function addDocumentStores(stores) {
+        var documents = JSON.parse('{{ documents|escapejs }}');
+        _.extend(DocumentStore.prototype, window.StoreMixin);
+        stores.documentStore = new DocumentStore(documents, choices);
+        RiotControl.addStore(stores.documentStore);
+    })(window.stores = window.stores || {});
+    /* {% endifsetting %} */
+
+    /* {% ifsetting ENDORSEMENT_ENABLED %} */
+    {% include 'stores/ReviewStore.js' %}
+    (function addReviewStore(stores) {
+        stores.reviewStore = new ReviewStore(JSON.parse('{{ endorsements|escapejs }}'));
+        RiotControl.addStore(stores.reviewStore);
+    })(window.stores = window.stores || {});
+    /* {% endifsetting %} */
+
+    // Project Stores {% comment %} 
+    // Additional project store overrides may be added with project_stores block
+    // {% endcomment %}
+    // {% block project_stores %}
+    // {% endblock %}
+
+</script>
+
+<script type="riot/tag">
+{% include 'tags/delete-button.html' %}
+</script>
+
+<script type="riot/tag">
+{% ifsetting ENDORSEMENT_ENABLED %}
+    {% include 'tags/review-buttons.html' %}
+{% else %}
+    {% include 'tags/publish-button.html' %}
+{% endifsetting %}
+</script>
+
+{# editor-wide tags #}
+<script type="riot/tag">
+{% include 'tags/form-navigation.html' %}
+{% include 'tags/discard-modal.html' %}
+{% include 'tags/confirm-delete-modal.html' %}
+{% include 'tags/tab-container.html' %}
+{% include 'tags/form-completion.html' %}
+{% include 'tags/tag-formfunctions.html' %}
+{% include 'tags/banner-message.html' %}
+{% include 'tags/btn-group-editor.html' %}
+{% include 'tags/cancel-save-group.html' %}
+</script>
+
+{# tabs #}
+{% block editor_tabs %}
+<script type="riot/tag">
+{% include editor_general_tab|default:'tags/tab-general.html' %}
+{% include 'tags/tab-sectors.html' %}
+{% include 'tags/tab-organisations.html' %}
+{% include 'tags/tab-locations.html' %}
+{% ifsetting EDITOR_HAS_RESULTS %}
+{% include 'tags/tab-results.html' %}
+{% endifsetting  %}
+{% ifsetting EDITOR_HAS_LEGACY_RESULTS %}
+{% include 'tags/tab-results.legacy.html' %}
+{% endifsetting  %}
+{% include 'tags/tab-contacts-app.html' %}
+</script>
+
+<script type="riot/tag">
+{% ifsetting USE_SIMPLE_LOCATIONS %}
+{% ifsetting EDITOR_USE_DROPDOWN_LOCATIONS %}
+{% include 'tags/tab-simplelocations-dropdowns.html' %}
+{% else %}
+{% include 'tags/tab-simplelocations.html' %}
+{% endifsetting %}
+{% else %}
+{% include 'tags/tab-locations.html' %}
+{% endifsetting %}
+</script>
+
+{% ifsetting ENDORSEMENT_ENABLED %}
+<script type="riot/tag">
+{% include 'tags/tab-review.html' %}
+</script>
+{% endifsetting  %}
+{% ifsetting EDITOR_HAS_DOCUMENTS_TAB %}
+<script type="riot/tag">
+{% include 'tags/tab-documents.html' %}
+</script>
+{% endifsetting  %}
+
+{% ifsetting EDITOR_HAS_MSDP %}
+{{ msdp.tags|json_script:"msdp_tags" }}
+{{ msdp.goals|json_script:"msdp_goals" }}
+<script type="riot/tag">
+{% include 'tags/tab-msdp.html' %}
+</script>
+{% endifsetting %}
+
+{% ifsetting EDITOR_HAS_FINANCIALS %}
+<script type="riot/tag">
+{% if editor_custom_finances_tab %}
+{# allow projects (e.g. Project Bank) to override the default Finances tabs used in Mohinga #}
+{% include editor_custom_finances_tab %}
+{% else %}
+{% include 'tags/finances/tab-budgets.html' %}
+{% include 'tags/finances/tab-transactions.html' %}
+{% include 'tags/finances/tab-defaultsettings.html' %}
+    {% ifsetting OIPA_SYNC_ENABLED %}
+        {% include 'tags/finances/tab-iati-sync.html' %}
+    {% endifsetting %}
+{% endif %}
+</script>
+{% endifsetting %}
+<script type="riot/tag">
+{% include 'tags/sector-working-group-edit.html' %}
+{% include 'tags/policy-marker-edit.html' %}
+{% include 'tags/location-edit.html' %}
+</script>
+{% endblock editor_tabs %}
+
+{# form fields #}
+<script type="riot/tag">
+{% include 'tags/field-dropdownselect.html' %}
+{% include 'tags/currency-value-select.html' %}
+{% include 'tags/field-modifiedspan.html' %}
+{% include 'tags/field-textarea.html' %}
+{% include 'tags/help-field.html' %}
+{% include 'tags/field-validate.html' %}
+{% include 'tags/field-choice.html' %}
+{% include 'tags/field-input.html' %}
+{% include 'tags/field-hidden.html' %}
+{% include 'tags/field-title.html' %}
+{% include 'tags/field-date.html' %}
+{% include 'tags/field-narrative.html' %}
+{% include 'tags/field-activity-narrative.html' %}
+{% include 'tags/field-upload.html' %}
+{% include 'tags/help-text.html' %}
+</script>
+
+<script>
+    /*
+    {# translated content assigned to template variables to escape for use in javascript #}
+    {% trans 'General' as general_title %}
+    {% trans 'Sectors' as sectors_title %}
+    {% trans 'Organisations' as partner_orgs_title %}
+    {% trans 'Locations' as locations_title %}
+    {% trans 'Finances' as finances_title %}
+    {% trans 'Results' as results_title %}
+    {% trans 'Contacts' as contacts_title %}
+    {% trans 'Documents & Images' as documents_title %}
+    {% trans 'IGA & Donors' as government_agency_title %}
+    {% trans 'MSDP Alignment' as msdp_title %}
+    */
+
+    {% comment %} 
+    The following IIFE initializes the Navigation side bar and mounts all relevant riot tags
+    {% endcomment %}
+    /* Project-specific initializer code may follow */ // {% block navigation %}
+    /* The content of this block is sourced from openly editor edit_data.html */
+    (function() {
+        var navigation = [
+            {name:'general', title:'{{ general_title|escapejs }}'},
+            /* {% ifnotsetting EDITOR_HIDE_SECTOR_TAB %} */
+            {name:'sectors', title:'{{ sectors_title|escapejs }}'},
+            /* {% endifnotsetting %} */
+            /* {% ifsetting EDITOR_HAS_MSDP %} */
+            {name:'msdp', title:'{{ msdp_title|escapejs }}'},
+            /* {% endifsetting %} */
+            /* {% ifsetting EDITOR_HAS_IGA %} */
+            {name:'part_orgs', title:'{{ government_agency_title|escapejs }}'},
+            /* {% else %} */
+            /* {% ifnotsetting EDITOR_HIDE_ORGS %} */
+            {name:'part_orgs', title:'{{ partner_orgs_title|escapejs }}'},
+            /* {% endifnotsetting %} */
+            /* {% endifsetting %} */
+            {name:'locations', title:'{{ locations_title|escapejs }}'},
+            /* {% ifsetting EDITOR_HAS_FINANCIALS %} */
+            {name:'finances', title:'{{ finances_title|escapejs }}'},
+            /* {% endifsetting %} */
+            /* {% ifsetting EDITOR_HAS_RESULTS %} */
+            {name:'results', title:'{{ results_title|escapejs }}'},
+            /* {% endifsetting %} */
+            /* {% ifsetting EDITOR_HAS_LEGACY_RESULTS %} */
+            {name:'results', title:'{{ results_title|escapejs }}'},
+            /* {% endifsetting %} */
+            {name:'contacts', title:'{{ contacts_title|escapejs }}'},
+            /* {% ifsetting EDITOR_HAS_DOCUMENTS_TAB %} */
+            {name:'documents', title:'{{ documents_title|escapejs }}'},
+            /* {% endifsetting %} */
+            /* {% ifsetting ENDORSEMENT_ENABLED %} */
+            {name:'review', title:'{{ review_title|escapejs }}'}
+            /* {% endifsetting %} */
+        ];
+
+        /* {% ifsetting ENDORSEMENT_ENABLED %} */
+        window.admin_organisation_name = '{{ admin_organisation_name|escapejs }}';
+        window.user_organisation_code =  '{{ user_organisation_code }}';
+        window.is_admin_or_superuser = ('{{ is_admin_or_superuser }}' === 'True');
+        riot.mount('review-buttons', {});
+        /* {% else %} */
+        riot.mount('publish-button', {});
+        /* {% endifsetting %} */
+
+        window.banner_message = riot.mount('banner-message')[0];
+        riot.mount('delete-button', {});
+        riot.mount('form-navigation', {list_items: navigation, project_name: "{{ project_name }}",});
+        riot.mount('form-completion', {store: stores.activityStore});
+        riot.mount('tab-hidden', {store: stores.activityStore});
+        riot.mount('tab-container');
+        riot.mount('discard-modal');
+        riot.mount('confirm-delete-modal');
+    })();
+    /* Project-specific initializer script */ // {% endblock navigation %}
+</script>
+
+{% endblock %}

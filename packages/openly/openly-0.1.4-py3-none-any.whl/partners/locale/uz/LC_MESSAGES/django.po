@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: 2019-06-02 14:05+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid " hide filters"
+msgstr "Filtrlarni berkitish"
+
+msgid "Activity Status"
+msgstr "Faoliyat holati"
+
+msgid "Filter"
+msgstr "Filtr"
+
+msgid "Filter by activity location in Timor-Leste."
+msgstr "Timor-Lestedagi faoliyatning joylashishi/hududiga qarab filtrlash"
+
+msgid "Filter by activity sector."
+msgstr "Faoliyat tarmog'i bo'yicha filtrlash"
+
+msgid "Filter by activity status."
+msgstr "Faoliyat holatiga ko'ra filtrlash"
+
+msgid "Filter by location"
+msgstr "Joylashishga ko'ra filtrlash"
+
+msgid "Governmental Organisations"
+msgstr "Davlat tashkilotlari"
+
+msgid "Location"
+msgstr "Joylashish"
+
+msgid "Look for partners"
+msgstr "Sheriklarni izlash"
+
+msgid "Non-Government Organisations"
+msgstr "Nodavlat tashkilotlari"
+
+msgid "Sector"
+msgstr "Tarmoq (sektor)"
+
+msgid "clear"
+msgstr "tozalash"
+
+msgid "matches"
+msgstr "Mos kelgan hollar"
+
+msgid "show filters "
+msgstr "Filtrlarni ko'rsatish"

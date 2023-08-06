@@ -1,0 +1,581 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-12 12:53+0900\n"
+"PO-Revision-Date: 2019-06-01 23:29+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid "?"
+msgstr "?"
+
+msgid "Activities for Review"
+msgstr "Ko'rib chiqish uchun faoliyat yo'nalishlari"
+
+msgid "Activity List"
+msgstr "Faoliyat yo'nalishlari ro'yxati"
+
+msgid "Activity Manager"
+msgstr "Faoliyat yo'nalishi menejeri"
+
+msgid "Actual End Date"
+msgstr "Amaldagi yakunlash kuni"
+
+msgid "Actual End date"
+msgstr "Amaldagi yakunlash kuni"
+
+msgid "Actual Start Date"
+msgstr "Amaldagi boshlanish kuni"
+
+msgid "Actual Start date"
+msgstr "Amaldagi boshlanish kuni"
+
+msgid "Add a Contact with all of the following attributes set: Name, Telephone, Email address."
+msgstr "Quyidagi barcha xossalar bilan aloqa uchun ma'lumotlarni kiriting: Ism, telefon, elektron pochta manzili"
+
+msgid "Add a Disbursement Transaction."
+msgstr "\"Mablag' ajratish tranzaktsiyasini qo'shing\""
+
+msgid "Add a Document."
+msgstr "Hujjatni qo'shing"
+
+msgid "Add a Location."
+msgstr "Joyni qo'shing"
+
+msgid "Add a Participating Organisation with role \"Accountable\"."
+msgstr "\"Hisobdor\" roli bilan ishtirokchi tashkilotni qo'shing."
+
+msgid "Add a Participating Organisation with role \"Extending\"."
+msgstr "Ishtirokchi tashkilotni \"uzaytiruvchi\" roli bilan qo'shing"
+
+#, fuzzy
+msgid "Add a Participating Organisation with role \"Funding\"."
+msgstr "Ishtirokchi tashkilotni \"uzaytiruvchi\" roli bilan qo'shing"
+
+msgid "Add a Participating Organisation with role \"Implementing\"."
+msgstr "\"Ijrochi\" roli bilan ishtirokchi tashkilotni qo'shing."
+
+msgid "Add a Transaction with a Provider Organisation."
+msgstr "Ta'minlovchi tashkilot bilan tranzaktsiyani qo'shing"
+
+msgid "Add a new Activity"
+msgstr "Yangi Faoliyat yo'nalishini qo'shish"
+
+msgid "Admin"
+msgstr "Admin"
+
+msgid "Admin access"
+msgstr "Administrator vakolatlari"
+
+msgid "Aid By Donor"
+msgstr "Tashqi ko'mak donorlar kesimida"
+
+msgid "Aid By Location"
+msgstr "Tashqi ko'mak joy kesimida"
+
+msgid "Aid By Ministry"
+msgstr "Tashqi ko'mak vazirliklar kesimida"
+
+msgid "Aid By Sector"
+msgstr "Tashqi ko'mak tarmoq kesimida"
+
+msgid "Aid Dashboard"
+msgstr "Tashqi ko'makka oid axborot paneli"
+
+msgid "Aid Dashboards"
+msgstr "Tashqi ko'makka oid axborot panellari (monitorlar)"
+
+msgid "Aid Type Categories"
+msgstr "Ko'mak turi toifalari"
+
+msgid "Aid by Donor"
+msgstr "Ko'mak donorlar kesimida"
+
+msgid "Aid by Location"
+msgstr "Tashqi ko'mak joy kesimida"
+
+msgid "Aid by Ministry"
+msgstr "Ko'mak vazirliklar kesimida"
+
+msgid "Aid by Sector"
+msgstr "Tashqi ko'mak tarmoq kesimida"
+
+msgid "Also, if you have set a date range or zoomed into Shan state or selected a specific organisation, clicking export will just give you that data"
+msgstr "Bundan tashqari, agar Siz xronologik muddatni belgilagan yoki Shan shtatiga e'tibor qaratgan yoki muayyan tashkilotni tanlagan bo'lsangiz, eksport qilishni bosish orqali ushbu ma'lumotlarni olasiz"
+
+msgid "Archived"
+msgstr "Arxivlashtirilgan"
+
+msgid "Base Currency"
+msgstr "Asos valyuta"
+
+msgid "Before using the data, we encourage all users to first contact the relevant development partners to ensure data is accurate."
+msgstr "Ma'lumotlardan foydalanishdan oldin, barcha foydalanuvchilar ma'lumotlarning aniqligini ta'minlash uchun avvalo tegishli rivojlanish bo'yicha hamkorlarga murojaat qilishni tavsiya etamiz."
+
+msgid "Blank"
+msgstr "Bo'sh"
+
+#, python-brace-format
+msgid "Changed the status from {from_status} to {to_status}"
+msgstr ""
+
+msgid "Click here to access the dashboards"
+msgstr "Axborot panellariga kirish uchun shu yerga bosing"
+
+msgid "Click on the blue activity number in the Activity List to visit the Activity Profile page and learn more."
+msgstr "Faoliyat ro'yxati sahifasini ochish va a batafsilroq ma'lumot olish uchun  Faoliyat ro'yxati ko'k faollik raqamini bosing "
+
+msgid "Collaboration Type"
+msgstr "Hamkorlik turi"
+
+msgid "Contact Email"
+msgstr "Aloqa uchun elektron pochta"
+
+msgid "Contact Name"
+msgstr "Aloqadagi shaxs"
+
+msgid "Contact Phone"
+msgstr "Aloqa uchun telefon"
+
+msgid "Coordination Bodies"
+msgstr "Muvofiqlashtiruvchi idoralar"
+
+msgid "Coordination Bodies are multi-stakeholder dialogue bodies responsible for ensuring that development priorities are identified, discussed and implemented in a co-ordinated and transparent manner."
+msgstr "Muvofiqlashtiruvchi idoralar rivojlanishning ustuvor yo'nalishlari belgilanishi, muhokama qilinishi va muvofiqlashtirilgan va oshkora tarzda amalga oshirilishi uchun mas'ul ko'p tomonlama muloqot muassasalaridir."
+
+msgid "Coordination Body"
+msgstr "Muvofiqlashtirish idorasi"
+
+msgid "Coordination Body Report"
+msgstr "Muvofiqlashtiruvchi idora hisoboti"
+
+msgid "Create Report"
+msgstr "Hisobot yaratish"
+
+msgid "Created this Activity"
+msgstr "Ushbu faoliyat yo'nalishini yaratdi"
+
+msgid "Data contained within Mohinga has been collected in partnership with Myanmar’s development partners as part of an ongoing process of collaboration and dialogue."
+msgstr "Mohingadagi ma'lumotlar Myanmaning rivojlanish bo'yicha hamkorlari bilan birgalikda doimiy hamkorlik va muloqot jarayoni doirasida to'plandi."
+
+msgid "Data from all of the activities below is used to calculate the figures that appear in the dashboard above."
+msgstr "Quyidagi barcha tadbirlardan olingan ma'lumot yuqoridagi monitorda ko'rsatilgan raqamlarni hisoblash uchun ishlatiladi"
+
+msgid "Date Created"
+msgstr "Yaratilgan kun"
+
+msgid "Default"
+msgstr "Belgilangan"
+
+msgid "Delete activity"
+msgstr "Faoliyat yo'nalishini o'chirish"
+
+msgid "Description"
+msgstr "Tavsif"
+
+msgid "Disclaimer"
+msgstr "Ogohlantirish"
+
+msgid "Draft"
+msgstr "Qoralama variant"
+
+msgid "Each development partner also has a dedicated profile page with information on all their activities"
+msgstr "Har bir rivojlanish sohasidagi sherik barcha o'z faoliyati haqida ma'lumot mavjud bo'lgan maxsus profil sahifasiga ega"
+
+#, python-brace-format
+msgid "Edited {tabname}"
+msgstr ""
+
+#, python-brace-format
+msgid "Endorsement {action} by {organisation}"
+msgstr ""
+
+msgid "Exchange Currency"
+msgstr "Ayirboshlash valyutasi"
+
+msgid "Exchange Rate"
+msgstr "Ayirboshlash kursi"
+
+msgid "Exporting data from Mohinga"
+msgstr "Mohinga (Plov)dan ma'lumotlarni eksport qilish"
+
+msgid "Extending"
+msgstr "Uzaytiruvchi"
+
+msgid "Filtering the dashboard by date"
+msgstr "Axborot panelini sana bo'yicha filtrlash"
+
+msgid "Financing"
+msgstr "Moliyalashtiruvchi"
+
+msgid "Fully"
+msgstr "To'liq"
+
+msgid "Hello, "
+msgstr "Salom"
+
+msgid "IATI XML"
+msgstr "IATI XML"
+
+msgid "Iati Codelist Sector"
+msgstr "Tarmoqning IATI ro'yxati bo'yicha kodi "
+
+msgid "If you need any further information"
+msgstr "Agar sizga qo'shimcha ma'lumotlar zarur bo'lsa"
+
+msgid "If you set end dates you must set at least one start date."
+msgstr "Agar siz yakunlanish sanalarini belgilasangiz, hech bo'lmaganda bitta boshlanish kunini belgilashingiz lozim."
+
+msgid "Implementing"
+msgstr "Ijrochi"
+
+msgid "Important dates"
+msgstr "Muhim sanalar"
+
+msgid "Last Modified"
+msgstr "Oxirgi marta o'zgartirilgan"
+
+msgid "Mohinga contains a lot of information. To find what you’re looking for try searching by development partner, activity or sector"
+msgstr "Mohingada juda ko'p ma'lumot mavjud. Siz qidirayotgan ma'lumotlarni topish uchun taraqqiyot sohasidagi hamkor, faoliyat yoki sektor orqali qidirishga harakat qiling"
+
+msgid "Mohinga is Myanmar's Aid Information Management System (AIMS)."
+msgstr ""
+
+msgid "Mohinga visualises aid flows to Myanmar via four interactive dashboards"
+msgstr "Mohinga, to'rt interaktiv axborot paneli orqali Myanmaga tashqi ko'mak oqımlarını ko'rsatadi"
+
+msgid "Multiple Donors"
+msgstr "Ko'p donorlar"
+
+msgid "National Sector"
+msgstr "Milliy sektor"
+
+msgid "Nationwide"
+msgstr "Mamlakat bo'ylab"
+
+msgid "None"
+msgstr "Hech qaysi"
+
+msgid "Not applicable"
+msgstr "Tegishli emas"
+
+msgid "Objective"
+msgstr "Vazifa"
+
+msgid "Partially"
+msgstr "Qisman"
+
+msgid "Partner Ministry"
+msgstr "Hamkor vazirlik"
+
+msgid "Password"
+msgstr "Parol"
+
+msgid "Personal info"
+msgstr "Shaxsiy ma'lumotlar"
+
+msgid "Planned End Date"
+msgstr "Rejalashtirilgan yakunlash kuni"
+
+msgid "Planned End date"
+msgstr "Rejalashtirilgan yakunlash kuni"
+
+msgid "Planned Start Date"
+msgstr "Rejalashtirilgan boshlanish kuni"
+
+msgid "Planned Start date"
+msgstr "Rejalashtirilgan boshlanish kuni"
+
+msgid "Profile Page"
+msgstr "Profil sahifasi"
+
+msgid "Profile pages"
+msgstr "Profil sahifalari"
+
+msgid "Public Page"
+msgstr "Jamoatchilik uchun sahifa"
+
+msgid "Published"
+msgstr "Chop etilgan"
+
+msgid "Query Builder"
+msgstr "Izlash ustasi"
+
+msgid "Raw passwords are not stored, so there is no way to see this user's password, but you can change the password using <a href=\"../password/\">this form</a>."
+msgstr "Xom (chala) parollar saqlanmaydi, shu sababli ushbu foydalanuvchining parolini ko'rishning xech iloji yo'q, lekin siz <a href=\"../password/\">this form</a> dan foydalanib, parolni o'zgartirishingiz mumkin."
+
+msgid "Report Builder"
+msgstr "Hisobot"
+
+msgid "Report Templates"
+msgstr "Hisobot shablonlari"
+
+msgid "Reporting Organisation"
+msgstr "Hisobot beruvchi tashkilot"
+
+msgid "Reports"
+msgstr "Hisobotlar"
+
+msgid "Search"
+msgstr "Izlash"
+
+msgid "Search within Mohinga"
+msgstr "Mohinga (Plov)da izlash"
+
+msgid "Sector"
+msgstr "Tarmoq"
+
+msgid "Sectors"
+msgstr "Tarmoqlar"
+
+msgid "Select a start and end date and then click the refresh button to set the filter"
+msgstr "Boshlash va tugash sanasini tanlang, so'ngra filtrni o'rnatish uchun yangilash tugmasini bosing"
+
+msgid "Set a Default Aid Type."
+msgstr "Asosiy ko'mak turini belgilang"
+
+msgid "Set a Default Currency."
+msgstr "Tayanch valyutani belgilang"
+
+msgid "Set a Default Flow Type."
+msgstr "Asosiy oqim turini belgilang"
+
+msgid "Set a Planned End Date."
+msgstr "Rejalashtirilgan yakunlash kunini belgilang"
+
+msgid "Set a Planned Start Date."
+msgstr "Rejalashtirilgan boshlanish kunini belgilang"
+
+msgid "Set an Actual End Date."
+msgstr "Amaldagi yakunlanish kunini belgilang"
+
+msgid "Set an Actual Start Date."
+msgstr "Amaldagi boshlanish kunini belgilang"
+
+msgid "Sign in"
+msgstr "Kirish"
+
+msgid "Sign out"
+msgstr "Chiqish"
+
+msgid "Software designed & developed by"
+msgstr "Dastur ta'minotining tuzuvchi va mualliflari"
+
+msgid "State/Region"
+msgstr "Viloyat / Hudud"
+
+msgid "Status"
+msgstr "Holat"
+
+msgid "That is it... for now"
+msgstr "Hozircha..bori shu"
+
+msgid "The Mohinga application allows development partners to report their assistance to Myanmar in a simple, common, comparable format."
+msgstr "Plov ilovasi rivojlanish bo'yicha hamkorlarga oddiy, keng tarqalgan, taqqoslanadigan formatda Oz'bekistonga ko'mak ko'rsatilishi haqida xabar beradi"
+
+msgid "The budget end date cannot be before the budget start date"
+msgstr "Byudjet yakunlanish kuni byudjet boshlanish kunidan avval bo'lishi mumkin emas"
+
+msgid "The date filter allows you to filter information presented on the dashboards between a specific time period"
+msgstr "Sana filtri nazorat panellarida ko'rsatilgan ma'lumotlarni muayyan vaqt oralig'ida filtrlash imkonini beradi"
+
+msgid "The export function will download the dashboard data to a .CSV file"
+msgstr "Eksport funktsiyasi ekrandagi ma'lumotlarni .csv faylga yuklab beradi"
+
+msgid "The reporting organisation has not been specified."
+msgstr "Hisobdor tashkilot aniq ko'rsatilmadi."
+
+msgid "These include advanced reporting tools and better integration with internationally available IATI aid data as well as other tools to help make the management of aid information simple, time efficient and even enjoyable. We will be in touch."
+msgstr "Bunga rivojlangan hisobot vositalari va xalqaro miqyosda mavjud bo'lgan IATI tizimidagi tashqi ko'makka oid ma'lumotlari bilan yaxshiroq integratsiyalashuv hamda yordamni boshqarish oddiy, vaqtni tejovchi va hatto qiziqarli bo'lishi uchun boshqa vositalar kiradi. Biz aloqada bo'lamiz."
+
+msgid "Title"
+msgstr "Nom"
+
+msgid "Total Commitment"
+msgstr "Umumiy va'da qilingan mablag'lar"
+
+msgid "Total Commitment USD"
+msgstr "AQSH dollarida umumiy va'da qilingan summa"
+
+msgid "Total Disbursement"
+msgstr "Umumiy ajratilgan mablag'lar"
+
+msgid "Total Disbursement USD"
+msgstr "AQSH dollarida umumiy ajratigan summa"
+
+msgid "Township"
+msgstr "Shaharcha"
+
+msgid "Transaction count"
+msgstr "Tranzaktsiyalar soni"
+
+msgid "Under review"
+msgstr "Ko'rib chiqilmoqda"
+
+msgid "Unknown"
+msgstr "Noma'lum"
+
+msgid "Unnamed"
+msgstr "Benom"
+
+#, python-brace-format
+msgid "User ID {user_id}"
+msgstr ""
+
+msgid "Visualise aid flows"
+msgstr "Ko'mak oqimlarini visual namoyish qilish"
+
+msgid "We are also working hard to bring new features and functions to Mohinga"
+msgstr "Bundan tashqari, Mohingaga  yangi xususiyatlar va funktsiyalarni qo'shish uchun ko'p mehnat qilmoqdamiz"
+
+msgid "Welcome to Mohinga"
+msgstr "Mohinga (Plov)ga xush kelibsiz"
+
+msgid "You can access their profile pages by searching for their name here"
+msgstr "Bu yerda ularning ismlarini qidirish orqali profil sahifalariga kirishingiz mumkin"
+
+msgid "Your Pages"
+msgstr "Sizning sahifalar"
+
+msgid "Your actual end date must be after your actual start date"
+msgstr "Sizning amaldagi yakunlanish kuningiz amaldagi boshlanish kunidan keyin bo'lishi shart."
+
+msgid "Your planned end date must be after your planned start date"
+msgstr "Siz rejalashtirgan yakunlanish kuni rejadagi boshlanish kunidan keyin bo'lishi shart"
+
+msgid "added"
+msgstr "qo'shildi"
+
+msgid "all subregions of "
+msgstr "barcha tumanlari"
+
+msgid "and they will provide you with some additional information about Mohinga."
+msgstr "va ular sizga Mohinga haqida qo'shimcha ma'lumot beradi"
+
+msgid "billion"
+msgstr "milliard"
+
+msgid "id"
+msgstr "ID"
+
+msgid "look for these help icons"
+msgstr "Ushbu yordam ikonalarini qidiring"
+
+msgid "million"
+msgstr "million"
+
+msgid "no description"
+msgstr "Tavsif yo'q"
+
+msgid "no title"
+msgstr "Nom yo'q"
+
+msgid "original"
+msgstr "original"
+
+msgid "pending"
+msgstr "shartli"
+
+msgid "removed"
+msgstr "o'chirildi"
+
+msgid "thousand"
+msgstr "ming"
+
+msgid "trillion"
+msgstr "Trillion"
+
+msgid "you can see aid by location, donor, sector or Ministry responsible"
+msgstr "Siz tashqi ko'makni manzil, donor, sektor yoki mas'ul vazirlik  kesimida ko'rishingiz mumkin"
+
+#, python-brace-format
+msgid "{1} in {0}"
+msgstr ""
+
+#~ msgid "Bonds"
+#~ msgstr "Obligatsiyalar"
+
+#~ msgid "Cancelled"
+#~ msgstr "Bekor qilingan"
+
+#~ msgid "Capital Subscriptions"
+#~ msgstr "Kapital obuna"
+
+#~ msgid "Completion"
+#~ msgstr "Yakunlash"
+
+#~ msgid "Debt Relief"
+#~ msgstr "Qarzdan kechish"
+
+#~ msgid "Default Aid Type"
+#~ msgstr "Belgilangan tashqi yordam turi"
+
+#~ msgid "Default Currency"
+#~ msgstr "Belgilangan valyuta"
+
+#~ msgid "Default Finance Type"
+#~ msgstr "Belgilangan moliya turi"
+
+#~ msgid "Default Flow Type"
+#~ msgstr "Belgilangan oqim turi"
+
+#~ msgid "Equity"
+#~ msgstr "O'z vositalari"
+
+#~ msgid "Export Credit"
+#~ msgstr "Eksport uchun kredit"
+
+#~ msgid "Grants"
+#~ msgstr "Grantlar"
+
+#~ msgid "Implementation"
+#~ msgstr "Ijro"
+
+#~ msgid "Interest Subsidies"
+#~ msgstr "Foiz stavkalariga subsidiya"
+
+#~ msgid "Investment"
+#~ msgstr "Investitsiya"
+
+#~ msgid "Loans"
+#~ msgstr "Zayomlar"
+
+#~ msgid "Other"
+#~ msgstr "Boshqa"
+
+#~ msgid "Pipeline/Identification"
+#~ msgstr "Tayyorlanayotgan/aniqlanayotgan"
+
+#~ msgid "Post-Completion"
+#~ msgstr "Yakunlangandan so'ng"
+
+#~ msgid "Remote Data"
+#~ msgstr "Distantsion ma'lumotlar"
+
+#~ msgid "Sector Working Group"
+#~ msgstr "Tarmoq ishchi guruhi"
+
+#, fuzzy
+#~ msgid "Sector Working Groups"
+#~ msgstr "Tarmoq ishchi guruhi"
+
+#~ msgid "Suspended"
+#~ msgstr "Vaqtincha to'xtatilgan"
+
+#~ msgid "Total Budget"
+#~ msgstr "Umumiy byudjet"
+
+#~ msgid "Total Budget USD"
+#~ msgstr "AQSH dollarida umumiy byudjet"

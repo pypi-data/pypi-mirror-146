@@ -1,0 +1,15 @@
+
+<tabs class='profile-navbar'>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 no-padding hidden-print">
+                <ul class="nav nav-justified menu-styling">
+                    <li class="active centered-menu-style" each={ tabs } data={ this }>
+                        <a href={ link } class="tabs-link">{ name }</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% include 'tags/tabs.js' %}
+</tabs>

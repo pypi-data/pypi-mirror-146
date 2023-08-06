@@ -1,0 +1,36 @@
+{% load i18n %}
+
+<sortable-header>
+    <a onclick="{ sort }">
+        <yield/>
+        <span class="{ unsorted: parent.sort_key != opts.sort_key, sorted_up: parent.sort_key == opts.sort_key && parent.order == 'asc', sorted_down: parent.sort_key == opts.sort_key && parent.order != 'asc' }"></span>
+    </a>
+
+    var tag = this;
+    tag.sort = function() {
+        tag.parent.sort(tag.opts.sort_key);
+    }
+
+</sortable-header>
+
+
+<store-sortable-header>
+    <a onclick="{ sort }">
+        <yield/>
+        <span class="{ klass }"></span>
+    </a>
+
+    var tag = this;
+    tag.klass = 'unsorted';
+    tag.sort = function() {
+        tag.opts.store.trigger('sort', tag.opts.sort_key)
+    }
+
+    tag.on('mount', function(){
+        tag.opts.store.on('objects_sorted', function update_class(key, order){
+            tag.klass = key === opts.sort_key ? order : 'unsorted'
+            tag.update();
+        })
+    })
+
+</store-sortable-header>

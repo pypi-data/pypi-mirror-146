@@ -1,0 +1,12 @@
+{% load i18n %}
+
+<cancel-save-group>
+
+    <div class="cancel-save-group pull-right">
+        <button class="btn btn-large btn-default" type="button" onclick="{cancel}">{%  trans 'Cancel' %}</button>
+        <button type="button" disabled="{saving}" class="btn btn-large btn-primary {disabled: saving || !save_enabled}"  onclick="{save}">{%  trans 'Save' %}</button>
+    </div>
+
+    {% include 'tags/cancel-save-group.js' %}
+
+</cancel-save-group>

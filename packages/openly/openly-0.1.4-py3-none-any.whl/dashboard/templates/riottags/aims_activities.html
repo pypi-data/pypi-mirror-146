@@ -1,0 +1,183 @@
+{% load i18n %}
+
+<aims_activities>
+    <div class="row">
+        <div class="col-sm-12">
+            <div ref="activity_columns" class="dropdown pull-right column-popover">
+                <a class="filter-column-select dropdown-toggle" type="button" id="activity_column_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    {% trans 'Edit columns' %}
+                    <i class="ion-chevron-down"></i>
+                </a>
+                <ul class="edit-columns-dropdown dropdown-menu dropdown-menu-right query-dropdown pointer-top pointer-top-right" aria-labelledby="activity_column_dropdown">
+                    <li each={ columns }>
+                        <div><input type=checkbox checked={ visible } onchange={ toggle_column } /> { title }</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="top-scroll" ref="topScroll">
+                <div></div>
+            </div>
+            <div ref="table" class="tableScroll">
+                <table class="table">
+                    <thead class="query-table-head">
+                        <tr>
+                            <th nowrap class="query-th-sortable link" data-is="query-th-sortable" sort="activities" sort_by="title">Title</th>
+                            <th nowrap each={ column in columns } if={ column.visible } class='{query-th-sortable: 1, link:!column.no_sort, align-right:1 }' data-is="query-th-sortable" no_sort="{column.no_sort}" sort="activities" sort_by="{column.attribute}">{ column.title }</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-cell" each={ activities.slice(activities_start, activities_end) }>
+                            <td class="fixed-width-300"><a target="view_activity" href={ activity_url(id) } align="left">{ title }</a></td>
+                            <td each={ columns } class={ _class } if={ visible } align="right">{ modifier ? modifier(parent[attribute]) : parent[attribute] }</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <pagination page_size={ page_size }></pagination>
+        </div>
+    </div>
+    <style>
+        ul.edit-columns-dropdown:before {
+            margin-left: -20px;
+        }
+        ul.edit-columns-dropdown {
+            min-width:330px;
+        }
+    </style>
+
+
+    <script>
+        /* globals accounting */
+        var self = this;
+        self.mixin('topScrollMixin')
+        function cash(a) { return accounting.compactFormatMoney(a);}
+
+        self.show_column_choice = false;
+        self.activities = [];
+        self.activities_start = 0;
+        self.activities_end = 9;
+        self.columns = [
+            { title: 'Reporting Organisation', visible: true, attribute: 'reporting', _class: 'fixed-width-300' },
+            { title: 'Locations', visible: true, attribute: 'location_display', _class: 'fixed-width-300', no_sort:true },
+            { title: 'Status', visible: true, attribute: 'status' },
+            { title: 'Data Entry Completeness', visible: true, attribute: 'completion', modifier: function(a) {return _.isUndefined(a) ? '?' : _.round(a * 100) + '%'} },
+            { title: 'OECD (DAC3) Sector', visible: true, attribute: 'sector_dac3_display', _class: 'fixed-width-300', no_sort:true },
+            { title: 'National Sector / SWG', visible: true, attribute: 'national_sectors_display', _class: 'fixed-width-300', no_sort:true },
+            { title: 'Partner Ministries', visible: false, attribute: 'accountable_display', _class: 'fixed-width-300', no_sort:true },
+            { title: 'Funding Organisations', visible: false, attribute: 'funding_display', _class: 'fixed-width-300', no_sort:true },
+            { title: 'Implementing Organisations', visible: false, attribute: 'implementing_display', _class: 'fixed-width-300', no_sort:true },
+            { title: 'Transactions', visible: true, attribute: 'transactions', modifier: function (a) { return a.length; } },
+            /* The following columns (leading underscore) are generated on changing filters */
+            { title: 'Transactions (filtered)', visible: true, attribute: '_filtered_transactions', modifier: function (a) { return a.length; } },
+            { title: 'Transactions Total Commitment', visible: true, attribute: '_transaction_commitment', modifier: cash },
+            { title: 'Transactions Total Disbursement', visible: true, attribute: '_transaction_disbursement', modifier: cash },
+            { title: 'Transactions Total Expenditure', visible: false, attribute: '_transaction_expenditure', modifier: cash },
+            { title: 'Transactions Total Other', visible: false, attribute: '_transaction_other', modifier: cash },
+            { title: 'Finance Type Categories', visible: false, attribute: '_financeCategoryTypes'},
+            { title: 'Activity Total Commitment', visible: true, attribute: 'commitment', modifier: cash },
+            { title: 'Activity Total Disbursement', visible: true, attribute: 'disbursement', modifier: cash },
+            { title: 'Activity Total Expenditure', visible: false, attribute: 'expenditure', modifier: cash },
+            { title: 'Activity Total Other', visible: false, attribute: 'other', modifier: cash },
+            { title: 'Activity Total Budget', visible: true, attribute: 'budget_total', modifier: cash },
+
+            { title: 'Activity IATI ID', visible: false, attribute: 'iati_identifier' },
+            { title: 'Activity Partner ID', visible: false, attribute: 'internal_identifier' },
+
+            { title: 'Activity IATI Sync', visible: false, attribute: 'iati_sync', modifier: function (a) { return a ? "True" : "False" } },
+
+            { title: 'Documents Uploaded', visible: false, attribute: 'docs_uploaded', modifier: function (a) { return a ? a : 0 } },
+            { title: 'MoU/RoD/LoA', visible: false, attribute: 'mou_docs', modifier: function (a) { return a ? "Yes" : "No" } },
+
+            { title: 'Planned start', visible: true, attribute: 'start_planned', _class: 'fixed-width-150' },
+            { title: 'Actual start', visible: true, attribute: 'start_actual', _class: 'fixed-width-150' },
+            { title: 'Planned end', visible: true, attribute: 'end_planned', _class: 'fixed-width-150' },
+            { title: 'Actual end', visible: true, attribute: 'end_actual', _class: 'fixed-width-150' },
+
+            { title: 'Date Modified', visible: false, attribute: 'date_modified', _class: 'fixed-width-150' },
+            { title: 'Date Created', visible: false, attribute: 'date_created', _class: 'fixed-width-150' },
+        ];
+
+        function toggle_column(e) {
+            e.item.visible = !e.item.visible;
+        }
+
+        self.activity_url_pattern = '{% url "activity_profile" "replaceme" %}';
+
+        function activity_url(id) {
+            return self.activity_url_pattern.replace('replaceme', id);
+        }
+
+        self.on('mount', function () {
+            RiotControl.trigger('request_filtered_activities');
+            $(self.refs.activity_columns).find('input').iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+                increaseArea: '20%' // optional
+            });
+            $(self.refs.activity_columns).find('input').on('ifChanged', function (e) {
+                e.target.dispatchEvent(new Event('change'));
+            });
+        });
+
+        RiotControl.on('filtered_activities', function (activities) {
+            self.activities = activities;
+            self.tags.pagination.update_count(activities.length);
+            RiotControl.trigger('activity_count', activities.length);
+        });
+
+        function paginate(first, last) {
+            self.activities_start = first;
+            self.activities_end = last;
+            self.update();
+        }
+
+        self.paginate = paginate;
+        self.activity_url = activity_url;
+        self.toggle_column = toggle_column;
+        self.sheet_name = 'Activities';
+
+        self.export_worksheet = function () {
+
+            var countCol = function(cell){
+                cell.v = _.size(cell.v);
+                cell.t = 'n';
+                return cell;
+                };
+            var money_format = { t: 'n', z: '[$$-409]#,##0;-[$$-409]#,##0' };
+            var date_format = { t: 'd', z: 'YYYY-MM-DD' };
+            var headers = _.concat([ 'id', 'title'], _.map(self.columns, 'attribute'));
+            var header_display = {};
+            function gettext_noop(text) { return text; }
+            _.each(self.columns, function (column) {
+                header_display[column.attribute] = gettext_noop(column.title);
+            });
+            header_display.title = gettext_noop('Title');
+            var rows = {};
+            _.each(['commitment', 'disbursement', 'expenditure', 'other', '_transaction_commitment', '_transaction_disbursement', '_transaction_expenditure', '_transaction_other', 'budget_total'], function (header) {
+                rows[header] = { format: money_format };
+            });
+            _.each(['start_planned', 'end_planned', 'start_actual', 'end_actual'], function (header) {
+                rows[header] = { format: date_format };
+            });
+
+            return {
+                data: querybuilder.filtered_activities,
+                rows: rows,
+                headers: headers,
+                header_display: header_display,
+                sheet_name: gettext_noop(self.sheet_name),
+                row_display: {
+                    transactions: countCol,
+                    _filtered_transactions: countCol,
+                    'id': function (cell, row_source, header) {
+                        cell.l = {Target: location.origin+activity_url(row_source.id), Tooltip: row_source.title};
+                        return cell;
+                    }
+                }
+            }
+        };
+
+    </script>
+</aims_activities>

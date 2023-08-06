@@ -1,0 +1,207 @@
+{% extends 'editor/base.html' %}
+{% load humanize %}
+{% load i18n %}
+{% load static  %}
+{% load tag_library %}
+{% load ifsetting %}
+
+
+{% block editor_scripts %}
+    <script type="text/javascript" src="{% static 'js/activity_manager.js' %}" defer></script>
+    <script type="text/javascript" src="{% static 'js/ajax_csrf.js' %}" defer></script>
+
+    {% comment %}
+    When select_locations and area_projects are set a
+    dropdown list for project location filtering is shown
+    {% endcomment %}
+
+    {% if select_locations and area_projects %}
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.3/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-theme@0.1.0-beta.10/dist/select2-bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.3/dist/js/select2.full.min.js"></script>
+
+    {% comment %}
+    JSON script is a type Dict[int, List[int]] where key is area id and value is list of project PK's
+    {% endcomment %}
+
+    {{area_projects|json_script:"areaprojects-data" }}
+
+    {% comment %}
+    This affects display of location dropdown. Therefore keeping inside the if statement.
+    When we're satisfied with style redesign this may be moved to project specific or openly css
+    Note that the 'level' corresponds to level property of simplelocations Area
+    {% endcomment %}
+
+    <style>
+    .select-area-level-1 {padding-left: 5px;}
+    .select-area-level-2 {padding-left: 10px;}
+    .select-area-level-3 {padding-left: 15px;}
+    .select-area-level-4 {padding-left: 20px;}
+    </style>
+    {% endif %}
+
+
+{% endblock %}
+
+{% block title %}
+{% blocktrans %}{{activity_singular}} Manager{% endblocktrans %} | {{ site_name }}
+{% endblock %}
+
+{% block editor_style %}
+
+{% endblock %}
+
+{% block subnavbar_buttons %}
+    <!-- {% if organisation|import_allowed %}
+    <button class="hidden-xs hidden-sm hidden-md btn btn-sm btn-default btn-grey pull-right" id="import-iati-btn"><i class="ion-android-download"></i> {% trans 'Import IATI' %}</button>
+    {% endif %} -->
+{% endblock subnavbar_buttons %}
+
+{% block content %}
+{% comment %} Modals work better when placed at the top of HTML {% endcomment %}
+<delete-list-modal></delete-list-modal>
+
+<div class="background">
+    <div class="iati_side_panel">
+        <!--==== IATI importer side panel ====-->
+        {% if organisation|import_allowed %}
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+
+            <div class="import_heading">
+                <button class="btn-importall btn" data-url="{% url 'import_activity_all' organisation.pk %}">{% trans "Import all" %}</button>
+                <h4 class="IATI_import">{% trans "Available for import" %}</h4>
+                <a id="hideImport" href="#" class="pull-right close_sidebar"><i class="ion-ios-close-empty"></i></a>
+            </div>
+
+            <div class="row" id="ajax_messages">
+            </div>
+
+            <div class="row">
+                <div class="col-xs-9 col-sm-9 col-sm-offset-2 hidden animated slideInRight" id="rightPanel">
+
+                    {% for activity in object_list %}
+                    {% if activity.openly_status == iati_xml_status %}
+                    {% if activity.iati_identifier not in local_iati_identifiers %}
+
+                    {% include 'editor/activity_card.html' %}
+
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
+
+                </div> <!--end of col-->
+            </div> <!--end of row-->
+        </nav>
+        {% endif %}
+    </div>
+
+    <div class="container activity-list-container">
+        <div class="row">
+            <!--=== LEFT SIDE PANEL ===-->
+            <div class="col-xs-12">
+                <h2 class="editor-title">
+                    {% blocktrans %}{{activity_singular}} Manager{% endblocktrans %}
+                    {% if title_extra %}
+                    - {{ title_extra }}
+                    {% endif %}
+                </h2>
+                <br>
+            </div>
+
+            <div class="col-xs-3 col-sm-3" id="leftPanel">
+                <div class="panel_card">
+                    <img class="img-square img_profile_editor" src="{% if organisation.profile.logo %} {{ organisation.profile.logo.url }} {% else %} {# Put organisation logo here #} {% endif %}" alt="" />
+                    <h4 class="text-center">
+                        <a href="{% url 'organisation_profile' organisation_code %}">{{ organisation.name }}</a>
+                    </h4>
+                    <hr />
+                    <ul class="list-unstyled editor_summary">
+                        <li><h3>{% trans 'Your Stats' %}</h3></li>
+                        {% if iati_sync_enabled %}
+                        <li><span class="editor_stats_block"><i class="ion-ios-checkmark-outline"></i></span>{% trans 'IATI Import Available' %}</li>
+                        {% endif %}
+                        <li><span class="editor_stats_block">{{ total_published }}</span>{% blocktrans %}Published {{activity_plural}}{% endblocktrans %}</li>
+                        <li><span class="editor_stats_block">{{ total_drafts }}</span>{% blocktrans %}Draft {{activity_plural}}{% endblocktrans %}</li>
+                        <li><span class="editor_stats_block">{{ total_transactions }}</span>{% trans 'Financial Transactions' %}</li>
+                        <li><span class="editor_stats_block">{{ budgets_count }}</span>{% blocktrans %}{{activity_singular}} Budgets{% endblocktrans %}</li>
+                        <li><span class="editor_stats_block">{{ implementing_ending_soon }}</span>{% blocktrans %}{{activity_plural}} Ending{% endblocktrans %} Q{{ next_quarter_int }}</li>
+                        <li><span class="editor_stats_block">{{ total_iati_linked }}</span>{% blocktrans %}IATI Linked {{activity_plural}}{% endblocktrans %}</li>
+                    </ul>
+                    <ul class="list-unstyled editor_summary">
+                        <li><h3>{% trans 'Data Entry Completion' %}</h3></li>
+                        <li><span class="editor_stats_block">{{ incomplete_activities }}</span>{% blocktrans %}Incomplete {{activity_plural_lower}}{% endblocktrans %}</li>
+                        <li><span class="editor_stats_block">{{ avg_completion | percentify }}</span>{% trans 'Average completion' %}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--=== CENTRE PANEL ===-->
+            <div class="col-xs-9 col-sm-9" id="centrePanel">
+                <div class="form_header activity_list_header">
+                    <h4>{{activity_plural}}</h4>
+                    <span class="act-list-search-form">
+                        <input id='act-list-search-title' class="search-nav" type="search" placeholder="{% blocktrans %}Filter {{activity_plural_lower}} by title{% endblocktrans %}">
+                        <select id='act-list-search-openly-status' class='form-control'>
+                            <option value="0">{% trans 'Filter draft/published' %}</option>
+                            <option value="draft">draft</option>
+                            <option value="published">published</option>
+                        </select>
+                        <select id='act-list-search-status' class='form-control'>
+                            <option value="0" selected>{% trans 'Filter status' %}</option>
+                            {% for status in activity_statuses %}
+                            <option value="{{status.code}}">{{status.name}}</option>
+                            {% endfor %}
+                        </select>
+                        
+                        {% if select_locations %}
+                        <select name="act-list-search-area" id="activity-area-select2" class="form-control">
+                            <option value='-'>All areas</option>
+                            {% for area in select_locations %}
+                            <option data-level="{{area.level}}" {% if area.pk in selected_areas %}selected{% endif%} value='{{area.pk}}'>
+                                {{area.name}}
+                            </option>
+                            {% endfor %}
+                        </select>
+                        {% endif %}
+
+                    </span>
+                    {% block add_activity_button %}
+                    <div class="btn-group pull-right">
+                        {% with org=organisation.code|default:None %}
+                        <a href="{% url 'create_activity' org %}" role="button" id="add_activity" class="btn btn-small btn-success">{% blocktrans %}Add {{activity_singular}}{% endblocktrans %}</a>
+                        {% endwith %}
+                    </div>
+                    {% endblock %}
+                </div>
+
+                <span id="activity-list-card-holder">
+                    <div class="none_msg help-text" style="padding-left: 40px; padding-top: 10px; display: none;">
+                        {% blocktrans %}No {{activity_plural}} Found{% endblocktrans %}
+                    </div>
+                    {% for activity in object_list %}
+                    {% if activity.openly_status != iati_xml_status %}
+
+                    {% include 'editor/activity_card.html' %}
+
+                    {% endif %}
+                    {% endfor %}
+                </span>
+            </div>
+        </div><!--end of row-->
+    </div>  <!--end of container-->
+</div> <!--end of background-->
+
+{# riot tags #}
+{% block riot_tags %}
+<script type="riot/tag">
+{% include 'tags/delete-list-modal.html' %}
+</script>
+{% endblock %}
+
+<script>
+(function() {
+    window.delete_list_modal = riot.mount('delete-list-modal')[0];
+})();
+</script>
+
+{% endblock content %}

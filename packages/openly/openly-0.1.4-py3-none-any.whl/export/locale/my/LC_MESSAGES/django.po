@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-28 14:20+0900\n"
+"PO-Revision-Date: 2016-06-28 18:41+0900\n"
+"Last-Translator:   <anders@catalpa.io>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.7.2\n"
+
+msgid "Donor Summary Report"
+msgstr "အလှူရှင်ဆိုင်ရာအကျဉ်းချုပ်အစီရင်ခံစာ"
+
+msgid "Sector Summary Report"
+msgstr "ကဏ္ဍဆိုင်ရာအကျဉ်းချုပ်အစီရင်ခံစာ"
+
+msgid "Development Partner Report"
+msgstr "ဖွုံ့ဖြိုးမှုမိတ်ဖက်ဆိုင်ရာအစီရင်ခံစာ"
+
+msgid "Sector Report"
+msgstr "ကဏ္ဍဆိုင်ရာ အစီရင်ခံစာ"
+
+msgid "Location Report"
+msgstr "နေရာအလိုက်အစီရင်ခံစာ"
+
+msgid "Annual Breakdown By Activity"
+msgstr "လုပ်ငန်းကို နှစ်အလိုက်ခွဲဝေခြင်း"
+
+msgid "Annual Breakdown By Development Partner"
+msgstr "ဖွံ့ဖြိုးမှုမိတ်ဖက်အလိုက်နှစ်စဉ်ခွဲဝေခြင်း"
+
+msgid "Annual Breakdown By State/Region"
+msgstr "ပြည်နယ်၊ တိုင်း အလိုက်နှစ်စဉ်ခွဲဝေခြင်း"
+
+msgid "Annual Breakdown By Township"
+msgstr "မြို့နယ် အလိုက်နှစ်စဉ်ခွဲဝေခြင်း"
+
+msgid "Annual Breakdown By Sector"
+msgstr "ကဏ္ဍ အလိုက်နှစ်စဉ်ခွဲဝေခြင်း"
+
+msgid "Quarterly Breakdown By Development Partner"
+msgstr "ဖွံ့ဖြိုးမှုမိတ်ဖက်အလိုက် သုံးလတစ်ကြိမ် ခွဲဝေခြင်း"
+
+msgid "Quarterly Breakdown By State/Region"
+msgstr "ပြည်နယ်၊ တိုင်း အလိုက် သုံးလတစ်ကြိမ် ခွဲဝေခြင်း"
+
+msgid "Quarterly Breakdown By Township"
+msgstr "မြို့နယ် အလိုက် သုံးလတစ်ကြိမ် ခွဲဝေခြင်း"
+
+msgid "Quarterly Breakdown By Sector"
+msgstr "ကဏ္ဍ အလိုက် သုံးလတစ်ကြိမ် ခွဲဝေခြင်း"
+
+msgid "Development Partner Profiles"
+msgstr "ဖွံ့ဖြိုးမှုမိတ်ဖက်ဆိုင်ရာဆောင်းပါး"
+
+msgid "Data Quality"
+msgstr ""
+
+#, fuzzy
+#| msgid "Activity Status"
+msgid "Activities Without Dates"
+msgstr "လုပ်ငန်းအခြေအနေ"
+
+msgid "Activities Absent From The Dashboard"
+msgstr ""
+
+msgid "Activities Without Transactions"
+msgstr ""
+
+msgid "Activities Without Commitments"
+msgstr ""
+
+#, fuzzy
+#| msgid "Activity Status"
+msgid "Activities Without Budgets"
+msgstr "လုပ်ငန်းအခြေအနေ"
+
+#, fuzzy
+#| msgid "Start Date"
+msgid "No Actual Start Date"
+msgstr "အစေန့"
+
+#, fuzzy
+#| msgid "End Date"
+msgid "No Actual End Date"
+msgstr "ပြီးဆုံးနေ့"
+
+#, fuzzy
+#| msgid "Start Date"
+msgid "No Planned Start Date"
+msgstr "အစေန့"
+
+msgid "No Planned End Date"
+msgstr ""
+
+msgid "Create Report"
+msgstr "အစီရင်ခံစာကို ဖန်တီးပါ။"
+
+#, python-format
+msgid ""
+"The reports allow us to export and disaggregate aid data reported to "
+"%(site_name)s."
+msgstr ""
+"မုန့္ဟင္းခါးတြင္တင္ျပထားေသာ အကူအညီ အစီရင္ခံစာမ်ားအား တင္ပုိ့ရန္နွင့္ခြဲထုတ္ရန္ ခြင့္ျပဳထားပါသည္။ "
+"%(site_name)s"
+
+msgid "Report Category"
+msgstr "အစီရင်ခံစာအမျိုးအစားများ"
+
+msgid "Start Date"
+msgstr "အစေန့"
+
+msgid "End Date"
+msgstr "ပြီးဆုံးနေ့"
+
+msgid "Development Partner"
+msgstr "ဖွံ့ဖြိုးမှုမိတ်ဖက်"
+
+msgid "Disaggregate by development partner."
+msgstr "ဖွံ့ဖြိုးမှုမိတ်ဖက်အလိုက် ကွာဟမှု"
+
+#, python-format
+msgid "Disaggregate by %(object)s"
+msgstr "ကဏ္ဍအလိုက် %(object)s"
+
+msgid "Sector"
+msgstr "ကဏ္ဍ"
+
+msgid "Disaggregate by sector."
+msgstr "ကဏ္ဍအလိုက် ကွာဟမှု"
+
+msgid "Location"
+msgstr "နေရာဒေသ"
+
+msgid "Disaggregate by location."
+msgstr "နေရာဒေသအလိုက် ကွာဟမှု"
+
+msgid "Activity Status"
+msgstr "လုပ်ငန်းအခြေအနေ"
+
+msgid "Finance Type"
+msgstr "ငွေကြေးအမျိုးအစား"
+
+msgid "Data Quality Type"
+msgstr ""
+
+msgid "Missing Dates"
+msgstr ""
+
+msgid ""
+" Example: select \"No Actual Start Date\" and \"No Actual End Date\" to get "
+"all\n"
+"                            activities that have either no actual start date "
+"or no actual end date. "
+msgstr ""
+
+#~ msgid "Sector Working Group"
+#~ msgstr "လုပ်ငန်းကဏ္ဍအဖွဲ့"
+
+#~ msgid "Disaggregate by sector working group."
+#~ msgstr "လုပ်ငန်းကဏ္ဍအဖွဲ့အလိုက် ကွာဟမှု"
+
+#~ msgid "Reports"
+#~ msgstr "အစီရင်ခံစာများ"
+
+#, fuzzy
+#~| msgid "Report Category"
+#~ msgid "Report Templates"
+#~ msgstr "အစီရင်ခံစာအမျိုးအစားများ"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "အကူအညီဆိုင်ရာ Dashboards"
+
+#~ msgid "Aid by Location"
+#~ msgstr "နေရာဒေသအလိုက်အကူအညီ"
+
+#~ msgid "Aid by Donor"
+#~ msgstr "အလှူရှင်အလိုက်အကူအည"
+
+#~ msgid "Aid by Sector"
+#~ msgstr "ကဏ္ဍအလိုက်အကူအညီ"
+
+#~ msgid "Aid by Ministry"
+#~ msgstr "ဝန်ကြီးဌာနအလိုက်အကူအညီ"
+
+#~ msgid "Your Pages"
+#~ msgstr "မင်းရဲ့စာမျက်နှာများ"
+
+#~ msgid "Profile Page"
+#~ msgstr "ဆောင်းပါးစာမျက်နှာ"
+
+#~ msgid "Activity Manager"
+#~ msgstr "လုပ်ငန်းစီစဉ်သူ"
+
+#~ msgid "Software designed & developed by"
+#~ msgstr "Software  ပုံစံထုတ်သူနှင့် တည်ထောင်သူ "
+
+#~ msgid "Select the main report category."
+#~ msgstr "အဓိက အစီရင်ခံစာအမျိုးအစားများကို ရွေးချယ်ပါ။"

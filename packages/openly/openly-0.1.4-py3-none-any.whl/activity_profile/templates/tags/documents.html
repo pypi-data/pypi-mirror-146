@@ -1,0 +1,38 @@
+{% load i18n %}
+{% load static %}
+
+
+<documents>
+    <div if={ has_documents } class="container">
+        <section id="documents_section">
+            <h2>{% trans 'Documents & Images' %} <a tabindex="0" role="button" class="ion-ios-help-outline dash-info hidden-print" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{% blocktrans %}These are the key documents and images related to this {{activity_singular_lower}}. Click on a document title to download.{% endblocktrans %}" aria-label="help documents"> </a></h2>
+            <div id="images-row" class="row">
+                <div each={ images } data={ this } class="col-sm-4 col-xs-12">
+                    <div class="image-container">
+                        <a if="{download_url}" href="{download_url}" target="_blank">
+                            <img class="document-preview" src="{ download_url }" alt="document preview"></img>
+                        </a>
+                    </div>
+                    <a href="{ missing ? '#' : download_url }" class="document-title" target="_blank">{ title }</a><br />
+                    <div class="help-text category" if={ category }>{ category }</div>
+                    <span if={ last_modified } class="help-text last-modified">{ last_modified }</span>
+                    <virtual if={ type }><span class="document-description size-and-type">{ type }</span></virtual>
+                    <virtual if={ size }><span class="document-description size-and-type">{ size }</span></virtual>
+                </div>
+            </div>
+            <div id="documents-row" class="row">
+                <div each={ documents } data={ this } class="col-xs-12 document-row-container">
+                    <img src={ icon } class="document-icon">
+                    <a href="{ missing ? '#' : download_url }" class="document-title" target="_blank" rel="noopener noreferrer">{ title }</a><br />
+                    <div class="help-text category" if={ category }>{ category }</div>
+                    <span if={ last_modified } class="help-text last-modified">{ last_modified }</span>
+                    <virtual if={ type }><span class="document-description size-and-type">{ type }</span></virtual>
+                    <virtual if={ size && size != '0 kb'}><span class="document-description size-and-type">{ size }</span></virtual>
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% include 'tags/documents.js' %}
+
+</documents>

@@ -1,0 +1,50 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static  %}
+{% load humanize %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>{% trans "Search Results" %}</h2>
+            <h4 class="search-results">{% trans "Results found by organisation" %}</h4>
+            {% if partners|length > 0 %}
+            {% for result in partners %}
+            <div class="list-group">
+                <a class="list-group-item" href="% url 'organisation_profile' iati_identifier=result.object.pk|urlencode:'' %}">
+                    <img src="{{ result.object.profile.logo.url }}"/>
+                    <span class="prj_result ">{{ result.object.name }}</span>
+                </a>
+            </div>
+            {% endfor %}
+            {% else %}
+                <p>{% trans 'No results found.' %}</p>
+            {% endif %}
+            {% if activities|length > 0 %}
+                <h4 class="search-results">{% trans "Results found by activities" %}</h4>
+                {% include page_template %}
+            {% endif %}
+        </div>
+
+    </div>
+</div><!-- end of container-->
+{% endblock %}
+
+{% block scripts %}
+
+<script src="{% static 'js/endless-pagination-jq3-fix.js' %}"></script>
+<script type="text/javascript">
+$( document ).ready(
+    function() {
+        $.endlessPaginate({
+            paginateOnScroll: true,
+            formSelector: '#searchTools form',
+            pageContainer: '.results-panel .results',
+            enableSorting: false,
+            paginateOnScrollMargin: 10
+        });
+    });
+</script>
+{% endblock %}

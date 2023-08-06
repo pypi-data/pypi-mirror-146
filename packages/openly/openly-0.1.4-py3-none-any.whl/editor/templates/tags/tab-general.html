@@ -1,0 +1,209 @@
+{% load i18n %}
+{% blocktrans asvar about_header %}About the {{activity_singular_lower}}{% endblocktrans %}
+{% blocktrans asvar label_partnerid %}{{activity_singular}} Partner ID{% endblocktrans %}
+{% blocktrans asvar helptext_partnerid %}A Partner ID is an optional reference used internally by an Organisation to refer to an {{activity_singular}}{% endblocktrans %}
+{% blocktrans asvar label_title %}{{activity_singular}} Title{% endblocktrans %}
+{% blocktrans asvar helptext_title %}The title should be a human readable name of the {{activity_singular_lower}}. Please ensure that acronyms are fully spelled out.{% endblocktrans %}
+{% blocktrans asvar label_description %}{{activity_singular}} Description{% endblocktrans %}
+{% blocktrans asvar helptext_description %}This explains what the {{activity_singular_lower}} is, it is longer than the title and contains more detail.{% endblocktrans %}
+{% blocktrans asvar label_objective %}{{activity_singular}} Objectives{% endblocktrans %}
+{% blocktrans asvar helptext_objective %}A detailed description of the {{activity_singular_lower}} objectives and its expected outcomes.{% endblocktrans %}
+{% blocktrans asvar label_targetgroups %}{{activity_singular}} Target Groups{% endblocktrans %}
+{% blocktrans asvar helptext_targetgroups %}Details of groups that are intended to benefit from the {{activity_singular_lower}}.{% endblocktrans %}
+{% blocktrans asvar label_collaborationtype %}Collaboration Type{% endblocktrans %}
+{% blocktrans asvar label_status %}{{activity_singular}} Status{% endblocktrans %}
+{% blocktrans asvar label_sector %}Sector{% endblocktrans %}
+
+
+
+{# Included for Project Bank #}
+{% blocktrans asvar expected_benefits %}{{activity_singular}} Expected Benefits{% endblocktrans %}
+{% blocktrans asvar helptext_expected_benefits %}A detailed description of the {{activity_singular_lower}} expected benefits.{% endblocktrans %}
+{% blocktrans asvar description %}Description{% endblocktrans %}
+
+{% load ifsetting %}
+
+<tab-general id="general" class="tab-pane in active">
+    <form>
+        <div class="form_header">
+            <h4>{ opts.header||'Tab header' }</h4>
+        </div>
+        <div class="form_body">
+            <h5 class="page-header" if="{ !pb && !dird }">{{about_header}}</h5>
+            <div class="row">
+                <div class="col-xs-12">
+                    {# Hidden fields for ID and IATI identifier#}
+                    <field-hidden path=".id" store={opts.store}></field-hidden>
+                    <field-hidden path=".iati_identifier" store={opts.store}></field-hidden>
+                    <field-hidden path=".reporting_organisation" store={opts.store}></field-hidden>
+                </div>
+            </div>
+            <div class="row" if="{ !pb && !dird }">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <field-input
+                            label="{{ label_partnerid|escape }}"
+                            store={opts.store}
+                            path=".internal_identifier"
+                            helptext="{{ helptext_partnerid|escape }}">
+                        </field-input>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <field-title name="title_field"
+                        title='{{ label_title|escape }}'
+                        required_to_publish_field='title'
+                        store={opts.store}
+                        path='.title_set'
+                        helptext='{{ helptext_title|escape }}.'
+                        minheight="40"
+                        fieldname='title'>
+                    </field-title>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <field-activity-narrative name="description_field"
+                        title='{{ label_description|escape }}'
+                        required_to_publish_field='description'
+                        store={opts.store}
+                        path='.descriptions'
+                        narrative_type=1
+            	        helptext="{{ helptext_description|escape }}"
+                        minheight="100"
+                        fieldname='description'>
+                    </field-activity-narrative>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <field-activity-narrative name="objectives_field"
+                        title='{ !pb ? "{{ label_objective|escape }}": "{{expected_benefits|escape }}" }'
+                        store={opts.store}
+                        path='.descriptions'
+                        narrative_type=2
+                        helptext='{ !pb ? "{{ helptext_objective|escape }}": "{{helptext_expected_benefits|escape }}" }'
+                        minheight="80"
+                        fieldname='objectives'>
+                    </field-activity-narrative>
+                </div>
+            </div>
+            <div class="row" if="{ dird }">
+                <div class="col-xs-12">
+                    <div class="control-label">
+                        <label>{{ label_sector }}</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    {% comment %} The hidden field here serves to tell the ActivityStore that, yes, we want the sectors saved fron here{% endcomment %}
+                    <field-hidden path=".sectors" store="{ opts.store }"></field-hidden>
+                    {% comment %} We bypass the usual Store  mechanics here for a simple one-sector use case {% endcomment %}
+                    <select class="form-control" onchange="{ setSector }">
+                        <option value="" selected="{ getSector() == null }">------</option>
+                        <option each="{ sector in opts.store.choices.sectors }" value="{ sector[0] }" selected="{ sector[0] == getSector() }">{ sector[1] }</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" if="{ !pb && !dird }">
+                <div class="col-xs-12">
+                    <field-activity-narrative name="target_groups_field"
+                        title='{{ label_targetgroups|escape }}'
+                        store={opts.store}
+                        path='.descriptions'
+                        narrative_type=3
+            	        helptext="{{ helptext_targetgroups|escape }}"
+                        minheight="60"
+                        fieldname='targetgroups'>
+                    </field-activity-narrative>
+                </div>
+            </div>
+
+            <div class="row"  if="{ !pb && !dird }">
+                <div class="col-xs-12">
+                    <div class="control-label">
+                        <label>{{ label_collaborationtype }}</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <field-dropdownselect
+                        choices={opts.store.choices.collaboration_type}
+                        store={opts.store}
+                        path=".collaboration_type"
+                        fieldname="collaboration_type"
+                        classes={classes.dropdown}
+                        hide_label=true
+                        label='{{ label_collaborationtype|escape }}'>
+                    </field-dropdownselect>
+                </div>
+            </div>
+            <div class="row" if="{ !dird }">
+                <div class="col-xs-12">
+                    <label class="control-label">{{ label_status }}&nbsp;<label-required-field required_to_publish_field="status"></label>
+                </div>
+                <div class="col-xs-6">
+                    <field-dropdownselect
+                        label='{{ label_status|escape }}'
+                        hide_label=true
+                        store={opts.store}
+                        path=".activity_status"
+                        required_to_publish_field='status'
+                        classes={classes.dropdown}
+                        fieldname='activity_status'>
+                    </field-dropdownselect>
+                </div>
+            </div>
+            {# This is the "standard" Mohinga activity dates #}
+            {% block general_tab_dates %}
+            <h5 class="page-header">{% trans 'Start and End dates' %}</h5>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <field-date store={opts.store} classes={classes.date} required_to_publish_field='start_date' label='{%  trans "Planned Start Date" %}' formgroup=false path="{dates.start_planned}" required_to_publish_field="start_date"></field-date>
+                    </div>
+                    <div class="col-xs-6">
+                        <field-date store={opts.store} classes={classes.date} required_to_publish_field='end_date' label='{% trans "Planned End Date" %}' formgroup=false  path="{dates.end_planned}"></field-date>
+                    </div>
+                    <div class="clearfix"></div>
+                    <validate-group store={opts.store} path='.activity_dates' validate_date_order="[0].iso_date [2].iso_date"></validate-group>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="help-block">
+                    {% blocktrans %}The date on which the {{activity_singular_lower}} is planned to start or end,
+                        for example the date of the first or last planned disbursement
+                        or when physical {{activity_singular_lower}} starts or ends.{% endblocktrans %}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <field-date store={opts.store} classes={classes.date} required_to_publish_field="start_date" label='{%  trans "Actual Start Date" %}' formgroup=false path="{dates.start_actual}" validate_past="true"></field-date>
+                    </div>
+                    <div class="col-xs-6">
+                        <field-date store={opts.store} classes={classes.date} label='{%  trans "Actual End Date" %}' formgroup=false path="{dates.end_actual}"  validate_past="true"></field-date>
+                    </div>
+                    <div class="clearfix"></div>
+                    <validate-group store={opts.store} path='' validate_date_order="{dates.start_actual} {dates.end_actual}"></validate-group>
+                </div>
+                <div class="clearfix"></div>
+                <div class="help-block">
+                    {% blocktrans %}The date on which the {{activity_singular_lower}} actually started or ended,
+                    for example the date of the first or last disbursement
+                    or when physical {{activity_singular_lower}} started or ended.{% endblocktrans %}
+                </div>
+            </div>
+            <p each="{data, index in opts.store.activity.activity_dates}"> <field-hidden store={stores.activityStore}  path=".activity_dates[{index}].type.code"></field-hidden></p>
+        {% endblock %}
+        </div>
+    </form>
+    <div class="clearfix"></div>
+    <div class="save-group">
+        <btn-group-editor id_save="save-general" id_next="next-general" only_save_parent></btn-group-editor>
+    </div>
+{% block tag_script %}
+ {%  include 'tags/tab-general.js' %}
+{% endblock tag_script %}
+</tab-general>

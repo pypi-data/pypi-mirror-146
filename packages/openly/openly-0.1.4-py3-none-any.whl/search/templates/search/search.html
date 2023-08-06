@@ -1,0 +1,38 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static  %}
+{% load humanize %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>{% trans "Search Results" %}</h2>
+                <h4 class="search-results">{% trans "Results found by organisation" %}</h4>
+                {% if partners|length > 0 %}
+                <div class="list-group">
+                    {% for result in partners %}
+                        {{ result.rendered_search | safe }}
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p>{% trans 'No results found.' %}</p>
+                {% endif %}
+
+                <h4 class="search-results">{% trans 'Results found by activity' %}</h4>
+                {% if activities|length > 0 %}
+                <div class="endless_content_wrapper">
+                    {% include page_template %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div><!-- end of container-->
+</div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'el-pagination/js/el-pagination.js' %}"></script>
+{% endblock %}

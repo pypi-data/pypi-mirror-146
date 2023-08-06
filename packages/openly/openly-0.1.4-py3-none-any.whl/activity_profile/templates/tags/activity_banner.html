@@ -1,0 +1,56 @@
+{% load i18n %}
+{% load static %}
+{% load to_class_name %}
+
+
+<activity_banner>
+
+
+<div if="{image_url}" class="banner ProfileBanner title-background" style="background-image: url('{ image_url }')">
+    <div class="container title-in-banner">
+        {% if activity_title_sup %}
+        <div class="activity-title-sup">
+            <span class="activity-title-sup-content">{{ activity_title_sup }}</span>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!--   Banner image modal -->
+<div class="modal fade" id="activity-banner-modal" tabindex="-1" role="dialog" aria-labelledby="Banner-Image" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="myModalLabel">{% trans 'Upload banner image' %}</h3>
+            </div>
+            <div class="modal-body">
+                <form method="POST" id="form-activity_banner" enctype="multipart/form-data" action="{% url 'upload' %}">
+                    <input type="hidden" name="class" value="{{ activity_profile|to_class_name }}">
+                    <input type="hidden" name="pk" value="{{ activity_profile.pk }}">
+                    <input type="hidden" name="name" value="banner_image">
+
+                    <p class="profileText">
+                        {% trans 'Since your cover photo goes across the entire width of your profile, the image you pick should be at least <strong>1500 pixels wide</strong>. The image should be formatted as a <strong>JPEG</strong> or <strong>PNG</strong> file.' %}
+                    </p>
+                    <br />
+                    <p id="profile-banner">
+                        <img class="activity-banner-preview" src="{% static 'img/banner-placeholder.jpg' %}" alt="" />
+                    </p>
+                    <div style="position: absolute; top: -9999px">
+                        <input type="file" name="image" accept="image/*" class="hidden" onchange="{handle_file_upload}">
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-large btn-default" data-dismiss="modal">{% trans 'Close' %}</button>
+                <button type="button" class="btn btn-large btn-primary choose-image-display" data-dismiss="modal">{% trans 'Choose Image' %}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'tags/activity_banner.js' %}
+
+</activity_banner>

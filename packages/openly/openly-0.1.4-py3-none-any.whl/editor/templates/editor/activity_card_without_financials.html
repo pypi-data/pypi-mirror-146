@@ -1,0 +1,93 @@
+{% load i18n %}
+{% load tag_library %}
+{% load humanize %}
+{% with status=activity.openly_status %}
+<div class="activity_card media draggable" data-pk="{{activity.pk }}">
+    <div class="media-left media-top card_icon_status {{ status }}">
+	<i class="ion-ios-list-outline"></i>
+    </div>
+    <div class="media-body">
+	<span class="activity_card_id">{{activity.id}}
+	{% if activity.internal_identifier %}
+		| Partner ID: {{activity.internal_identifier}}
+	{% endif %}
+	{% if iati_sync_enabled and activity.iati_identifier %}
+		| IATI ID: {{activity.iati_identifier}}
+	{% endif %}
+	</span>
+
+	<div class="activity_card_title">
+	    <span class="card_title" {% if status != iati_xml_status %} style="display:none"{% endif %}>
+		{{ activity.title }}
+	    </span>
+	    <a class="card_link" id="card_link" href="{% url 'edit_activity' activity.pk %}" {% if status == iati_xml_status %} style="display:none"{% endif %}>
+		{{ activity.title|default:_('Untitled') }}
+	    </a>
+	</div>
+	<div class="see_more_card">
+	    <a class="expand_card">{% trans "See More" %}<i class="ion-chevron-down"></i></a>
+	</div>
+	<div class="collapse collapse_card">
+	    <div class="activity_card_description">
+		{{ activity.general_description }}
+	    </div>
+	    <div class="row section_lines">
+		<div class="col-sm-2">
+		    <span class="card_subtitle">{% trans 'General' %}</span>
+		</div>
+		<div class="col-sm-5">
+		    <ul class="list-unstyled activity_card_expanded">
+			<li class="card_stats"><span class="sub-subtitle">{% trans 'Dates:' %} </span>{{ activity.start_planned }} to {{ activity.end_planned }}  </li>
+			<li class="card_stats"><span class="sub-subtitle">{% trans 'Implementing:' %} </span>{{ activity.implementing }}</li>
+			<li class="card_stats"><span class="sub-subtitle">{% trans 'Funding:' %} </span>{{ activity.funding }}</li>
+
+		    </ul>
+		</div>
+		<div class="col-sm-5">
+		    <ul class="list-unstyled activity_card_expanded">
+			<li class="card_stats"><span class="sub-subtitle">{% trans 'Reporting:' %} </span>{{ activity.reporting_organisation.abbreviation }}</li>
+			<li class="card_stats"><span class="sub-subtitle">{% trans 'Extending:' %} </span>{{ activity.extending }}</li>
+			<li class="card_stats"><span class="sub-subtitle">{% trans 'Results:' %} </span>{% if activity.results.count %} {{ activity.results.count }}{% else %}None{% endif %}</li>
+		    </ul>
+		</div>
+	    </div>
+	    <div class="row section_lines">
+		<div class="col-sm-2">
+		    <span class="card_subtitle">{% trans 'Sectors' %}</span>
+		</div>
+		<div class="col-sm-10">
+		    <ul class="list-unstyled activity_card_expanded">
+			<li class="card_stats">
+			{% for sector in activity.sector.all %}
+			<li>{{ sector }}</li>
+			{% endfor %}
+			</li>
+		    </ul>
+		</div>
+	    </div>
+	    <div class="row section_lines">
+		<div class="col-sm-2">
+		    <span class="card_subtitle">{% trans 'Location' %}</span>
+		</div>
+		<div class="col-sm-10">
+		    <ul class="list-unstyled activity_card_expanded">
+			<li class="card_stats">
+			{% for location in activity.location_set.all %}
+			<li>{{ location.name }}</li>
+			{% endfor %}
+			</li>
+		    </ul>
+		</div>
+	    </div> <!--end of row  -->
+	</div> <!--end of collapse-->
+
+	<ul class="list-inline activity_card_stats">
+	    <li><span class="dot-point-lg"></span>{{ activity.activity_status.name }}</li>
+	    {% if activity.date_modified %}
+	    <li><span class="dot-point-lg"></span>{% blocktrans with modified=activity.date_modified %}Updated {{ modified }}{% endblocktrans %}</span></li>
+	    {% endif %}
+	    <li><span class="dot-point-lg"></span>{{activity.completion | percentify }} {% trans 'Complete' %}</li>
+	</ul>
+    </div> <!--end of card-->
+</div>
+{% endwith %}

@@ -1,0 +1,123 @@
+{% load i18n %}
+{% blocktrans asvar delete_confirmation %} will be removed from this {{activity_singular_lower}} permanently{% endblocktrans %}
+<location-edit>
+
+    <div class="row">
+        <field-choice
+            classes={classes.label_hidden}
+            store={opts.store}
+            path=".location"
+            has_optgroup=1
+            select2=1
+            select2_opts="{select2_opts}"
+            choices="{location_choices}"
+            formgroup=false>
+        </field-choice>
+
+        <field-input
+            store="{opts.store}"
+            classes="{classes.percentage}"
+            path=".percentage"
+            fieldname="percentage"
+            input_type="number"
+            input_step="any"
+            input_max="100"
+            input_min="0"
+            formgroup=false>
+        </field-input>
+        <div class="col-xs-1" onclick="{delete_location}">
+            <a class="remove_form_row {disabled: parent.delete_is_disabled}" href="javascript:void(0)"> </a>
+        </div>
+    </div>
+
+    {#  <script> #}
+    var tag = this;
+    var store = tag.opts.store;
+    tag.mixin('SerializerMixin');
+    tag.mixin('SectorMixin');
+    tag.mixin('ValidationMixin');
+
+    tag.location = tag.opts.location;
+    tag.filter_location_choices = filter_location_choices;
+    tag.location_choices = tag.filter_location_choices();
+
+    tag.classes = {
+        label_hidden: {
+            label: 'hidden',
+            select: 'col-xs-8',
+        },
+        percentage: {
+            label: 'hidden',
+            input: 'col-xs-2',
+        },
+    };
+
+    tag.select2_opts = {'placeholder': 'Add a location...'};
+
+    tag.on('update', function() {
+        tag.location_choices = tag.filter_location_choices();
+    });
+
+    function filter_location_choices() {
+
+        var cloned_choices = [];
+
+        // get the locations present in other dropdowns
+        var location_ids_to_exclude = _.chain(store.locations).without(tag.opts.location).map(function(location) {
+            return location.location.code;
+        }).value();
+
+        // get a copy of choices.locations.
+        cloned_choices = _(store.choices.locations).map(_.clone).value();
+        cloned_choices.forEach(function(region) {
+            if (region.choices !== undefined) {
+                region.choices = _.clone(region.choices);
+            }
+        });
+
+        // remove existing locations from the choices
+        if (location_ids_to_exclude.indexOf(cloned_choices[0].value) > -1) {
+            // remove 'Nationwide'
+            cloned_choices = cloned_choices.splice(1, cloned_choices.length - 1);
+        }
+        cloned_choices.forEach(function(region) {
+            _.remove(region.choices, function(location_choice) {
+                return (location_ids_to_exclude.indexOf(location_choice.value) > -1);
+            })
+        });
+
+        return cloned_choices;
+    }
+
+    tag.delete_location = function() {
+        if (tag.parent.delete_is_disabled){ return };
+        tag.parent.update( { delete_is_disabled: true} );
+        var path = 'tag.store.locations[0].percentage';
+        var lcode = _.get(tag, 'location.location.code');
+        var locations = _.get(tag, 'store.locations');
+        var content = _.get(tag, 'location.location.name') + ' {{delete_confirmation|escape}}';
+        var search =  { location: { code: lcode } };
+
+        if (lcode === null) { return; }
+        if (locations === undefined){ return; }
+
+        function inner_delete_function() {
+            _.remove(locations, search);
+            var request = tag.parent.save();
+            request.done(function(){tag.parent.update( { delete_is_disabled: false} )})
+            tag.store.trigger('path_updated', {'store':tag.store, 'path': path});
+        }
+
+        if (!_.find(tag.store._initial.locations, search)) {
+            _.remove(locations, search);
+            tag.store.trigger('path_updated', {'store':tag.store, 'path': path});
+            return;
+        }
+
+        tag.store.trigger('confirm-delete', {
+            confirm: inner_delete_function,
+            content: content });
+    };
+    {# </script>#}
+
+</location-edit>

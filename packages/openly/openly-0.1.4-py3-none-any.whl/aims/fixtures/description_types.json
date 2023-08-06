@@ -1,0 +1,33 @@
+[   {
+    "fields": {
+    "description": "Long description of the activity with no particular structure",
+    "name": "General"
+    },
+    "model": "aims.descriptiontype",
+    "pk": 1
+    },
+    {
+    "fields": {
+        "description": "Objectives for the activity, for example from a logical framework",
+        "name": "Objectives"
+    },
+    "model": "aims.descriptiontype",
+    "pk": 2
+    },
+    {
+    "fields": {
+        "description": "Statement of groups targeted to benefit from the activity",
+        "name": "Target Groups"
+    },
+    "model": "aims.descriptiontype",
+    "pk": 3
+    },
+    {
+    "fields": {
+        "description": "For miscellaneous use. A further classification or breakdown may be included in the narrative",
+        "name": "Other"
+    },
+    "model": "aims.descriptiontype",
+    "pk": 4
+    }
+]

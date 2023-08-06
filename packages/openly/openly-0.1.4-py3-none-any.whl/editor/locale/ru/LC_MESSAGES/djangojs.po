@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-13 11:42+0900\n"
+"PO-Revision-Date: 2019-05-28 20:09+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid "Saving"
+msgstr "Сохранение"
+
+msgid "Required"
+msgstr "Требуется"
+
+msgid "There are validation errors on this tab."
+msgstr "Есть ошибки валидации в данной вкладке"
+
+msgid "This date is not valid"
+msgstr ""
+
+msgid "This date cannot be in the future."
+msgstr "Эта дата не может быть в будущем"
+
+msgid "This date cannot be in the past."
+msgstr "Эта дата не может быть в прошлом"
+
+msgid "Must be a number"
+msgstr "Должна быть цифра"
+
+msgid "Must be a number greater than zero"
+msgstr "Должна быть цифра, превышающая ноль"
+
+msgid "There is an invalid date"
+msgstr ""
+
+msgid "The start date must occur before the end date"
+msgstr "Дата начала должна быть раньше даты завершения"
+
+msgid "An end date must have a valid start date"
+msgstr "У даты завершения должна быть действительная дата начала"
+
+msgid "Percentages should add up to 100."
+msgstr "Сумма процентов должна равняться 100."
+
+msgid "These must be unique values"
+msgstr "Должны быть уникальные значения"
+
+msgid "Please choose a different file format"
+msgstr "Пожалуйста, выберите другой формат файла"
+
+msgid "Please choose a smaller file"
+msgstr "Пожалуйста, выберите файл поменьше"
+
+msgid "Saved"
+msgstr "Сохранено"
+
+msgid "Error while saving, please try again"
+msgstr "Ошибка при сохранении, пожалуйста, попробуйте еще раз"
+
+msgid "No file currently selected"
+msgstr ""
+
+msgid "success"
+msgstr ""
+
+msgid "Set the Start Date"
+msgstr ""
+
+msgid "Add a sector"
+msgstr ""
+
+msgid "Add a location"
+msgstr ""
+
+msgid "Add a transaction of type Commitment"
+msgstr ""
+
+msgid "Set the End Date"
+msgstr ""
+
+msgid "Sorry, you cant publish just yet."
+msgstr ""
+
+msgid "Total Project Cost should be 15 digits or less"
+msgstr ""
+
+#, fuzzy
+#| msgid "Saving the Sectors"
+msgid "Saving the Msdps"
+msgstr "Сохранение секторов"
+
+#, fuzzy
+#| msgid "Successfully saved the Sectors"
+msgid "Successfully saved the MSDP Alignment"
+msgstr "Секторы успешно сохранены"
+
+#, fuzzy
+#| msgid "Error while saving, please try again"
+msgid "Error while saving"
+msgstr "Ошибка при сохранении, пожалуйста, попробуйте еще раз"
+
+msgid "Region/State Governments"
+msgstr ""
+
+msgid "Error saving the Results, please try again"
+msgstr "Ошибка при сохранении Результатов, пожалуйста, попробуйте еще раз"
+
+msgid "Saving the Sectors"
+msgstr "Сохранение секторов"
+
+msgid "Successfully saved the Sectors"
+msgstr "Секторы успешно сохранены"
+
+msgid "Error saving the Sectors, please try again"
+msgstr "Ошибка при сохранении Секторов, пожалуйста, попробуйте еще раз"
+
+msgid "Saving the Locations"
+msgstr "Сохранение локаций"
+
+msgid "Successfully saved the Locations"
+msgstr "Успешно сохраненные локации"
+
+#~ msgid "Click to edit document"
+#~ msgstr "Кликните для редактирования документа"
+
+#~ msgid "Download document"
+#~ msgstr "Скачать документ"
+
+#~ msgid "Remove document"
+#~ msgstr "Удалить документ"
+
+#~ msgid "Saving the Activity"
+#~ msgstr "Сохранение деятельности"

@@ -1,0 +1,19 @@
+{% load ifsetting %}
+{# Hide the help text if "EDITOR_SHOW_HELPTEXT_ABOVE" is set #}
+<help-text>
+    <span if="{active}" class="help-block in-line-help">{content}</span>
+    var tag = this;
+    // {% ifsetting EDITOR_HIDE_HELPTEXT_BELOW %}
+    tag.active = false;
+    // {% else %}
+    tag.active = true;
+    // {% endifsetting %}
+    tag.on('mount', function(){
+        var active;
+        tag.content = tag.opts.helptext || tag.parent.opts.helptext;
+        active = (tag.active || ("active" in tag.opts && !!tag.content)); // Override the global editor setting, ie if  you put `<help-text active...`/> it should always show.
+        if (active != tag.active){
+            tag.update({active:active})
+        }
+    })
+</help-text>

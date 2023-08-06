@@ -1,0 +1,227 @@
+{% load i18n %}
+{% load common_text %}
+{% trans "This contact will be deleted permanently." as delete_message %}
+{% trans "Please add a name" as name_error %}
+
+<contacts-app>
+    <router>
+      <route path="contacts"><div class="form_body" data-is="contact-list"></div><btn-editor-next></btn-editor-next></route>
+      <route path="contacts/create"><div data-is="contact-edit"></div></route>
+      <route path="contacts/*"><div data-is="contact-edit"></div></route>
+    </router>
+    /* manually call 'exec' to initiate this nested router */
+    this.on('mount', function(){route.exec('')})
+</contacts-app>
+
+<contact-list>
+    <div class='row'>
+        <div class="col-xs-12 text-center" if="{!contacts.length}">
+            <br>
+            <img src="/static/img/Notebook.png" width="125">
+            <h3 class="no-objects-text">{% trans 'There are no contacts' %}</h3>
+            <p class="in-line-help">{% blocktrans %}The contacts should include key team members who support this {{activity_singular_lower}}{% endblocktrans %}
+            </p>
+        </div>
+        <div class="col-xs-12" if="{contacts.length}">
+            <table class="table table-editor">
+                <thead>
+                    <tr>
+                        <th class="min-width">{% trans 'Name' %}</th>
+                        <th class="min-width">{% trans 'Job Title' %}</th>
+                        <th class="min-width">{% trans 'Organisation' %}</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr each="{contact, index in contacts}" class="table-link">
+                        <td onclick={edit}>{contact.person_name}</a></td>
+                        <td onclick={edit}>{contact.job_title}</td>
+                        <td onclick={edit}>{contact.organisation}</td>
+                        <td>
+                            <a onclick="{delete_contact}" class="remove_form_row" data-contactindex="{index}"> </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    var tag = this;
+    tag.store = stores.contactsStore;
+    tag.edit = function(e){
+        route('contacts/'+e.item.contact.id);
+    }
+    tag.delete_contact = function(e){
+        function remove(){
+            _.remove(tag.store[tag.store.el], {id: e.item.contact.id});
+            tag.update();
+        }
+        function del() {
+            tag.store.save(tag, {method: 'DELETE', url:tag.store.api_urls.contact(e.item.contact.id)}).then(remove)
+        }
+        RiotControl.trigger('confirm-delete', { confirm: del, content: '{{ delete_message|escape }}' });
+    }
+    tag.on('before-mount', function(){tag.contacts = tag.store[tag.store.el];})
+    tag.validated = true;
+    tag.mixin('TabMixin');
+</contact-list>
+
+
+<contact-edit>
+    <div class='form_body'>
+        <div class='row'>
+            <div class="col-xs-12">
+                <a class="btn-back" onclick="{cancel}"><i class="ion-android-arrow-back"></i> {% trans 'back' %}</a>
+                <help-text active helptext='{{ "contact_edit_add_text" | common_text_optional }}'/>
+                <div class="row">
+
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">{% trans 'Person Name' %}</label>
+                            <div>
+                                <input ref='person_name' maxlength=100 value={contact.person_name} class="form-control textarea" type="text">
+                                <p class="help-block">{{'contact_edit_name'|common_text_optional}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label"> {% trans 'Job Title' %} </label>
+                            <div>
+                                <input ref='job_title' value={contact.job_title} maxlength=150 class="form-control textarea" type="text">
+                                <p class="help-block">{{'contact_edit_job_title'|common_text_optional}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">{% trans 'Organisation' %} </label>
+                            <div>
+                                <input ref='organisation' maxlength=200 value={contact.organisation} class="form-control textarea" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <label class="control-label">{% trans 'Contact Type' %} </label>
+
+                        <select ref='contact_type' class="form-control">
+                            <option value="">---</option>
+                            <option each='{choice in choices.contact_type}' value={choice[0]} selected='{choice[0]==contact.contact_type}'>{choice[1]}</option>
+                        </select>
+
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">{% trans 'Telephone' %}</label>
+                            <div>
+                                <input ref='telephone' value={contact.telephone} maxlength=100 class="form-control textarea" type="text">
+                                <p class="help-block">{{'contact_edit_phone'|common_text_optional}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label class="control-label">{% trans 'Email' %}</label>
+                            <div>
+                                <input ref='email' value={contact.email} class="form-control textarea" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+
+                        <div class="form-group">
+                            <label class="control-label">{% trans 'Website' %}</label>
+                            <div>
+                                <input ref='website' value={contact.website} maxlength=255 class="form-control textarea" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">{% trans 'Mailing Address' %}</label>
+                            <div>
+                                <textarea ref='mailing_address' value={contact.mailing_address} class="form-control textarea" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <cancel-save-group if="{current_edit == index}" validate_current_edit="parent"></cancel-save-group>
+
+    var tag = this;
+    var store = stores.contactsStore;
+    tag.contact = {};
+    tag.store = store;
+
+    function serialize(){return _(tag.refs).mapValues(function(k){return k.value}).value()}
+    function hasChanged(){return !_(tag.refs).every(function(v,k){
+        if (!tag.contact){return false}
+        return _.toString(tag.contact[k]) === _.toString(v.value)
+    })}
+    function cancel(){route('contacts')}
+    function save(){
+        var request;
+        var contact;
+
+        if (!hasChanged()){
+            cancel();
+            return;
+        }
+        contact = _.defaults(serialize(), tag.contact)
+        contact.activity = stores.activityStore.activity.id;
+        /* Ideally we could pick url up directly from the store. Results store does this a bit better */
+        var url = tag.store.api_urls.contact(contact.id);
+
+        /* Basic validation */
+        if (contact.person_name === ''){ return window.banner_message.show('{{name_error|escape}}', 'danger'); }
+
+        if (contact.id){
+            request = tag.store.save(tag, {data:contact, method:'PUT', url:url})
+        } else {
+            request = tag.store.save(tag, {data:contact, method:'POST', url:url})
+        }
+        request.done(function(response){
+            /* Successful "save" returns us to the list view */
+            var contact = _.find(store[store.el], {id:response.id});
+            if (!contact){
+                store[store.el].push(response)
+            } else {
+                _.assign(contact, response)
+            }
+            cancel()
+        })
+    }
+
+    tag.on('route', function(contact_id){
+        var contact = {};
+        if (contact_id === 'create'){
+            tag.update({contact: {}, contact_id:null})
+        } else {
+            contact = _.find(tag.store[tag.store.el], {id:_.toInteger(contact_id)}, {}) || {};
+            tag.update({contact: contact, contact_id:contact_id})
+        }
+    })
+
+    tag.cancel = cancel
+    tag.has_changed = hasChanged
+    tag.save = save
+    tag.mixin('TabMixin');
+
+</contact-edit>
+
+<tab-contacts id="contacts" class="tab-pane">
+    <div class="form_header"><h4>{% trans 'Contacts' %}</h4>
+
+        <a if='{location.hash == "#contacts"}' href="#contacts/create" class="btn btn-primary pull-right">{% trans 'Add a contact' %}</a>
+    </div>
+    <contacts-app></contacts-app>
+</tab-contacts>

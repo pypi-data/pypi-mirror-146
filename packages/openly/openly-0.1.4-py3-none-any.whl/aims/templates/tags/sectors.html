@@ -1,0 +1,41 @@
+{% load i18n %}
+{% load static %}
+
+<sectors>
+    <virtual if={ sectors && sectors.length > 0}>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>
+                    <span if={!opts.sector_categories}>{% trans 'Sectors' %}</span>
+                    <span if={opts.sector_categories}>{% trans 'Sector Categories' %}</span>
+                    <a tabindex="0" role="button" class="ion-ios-help-outline dash-info" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content={ sectors.length == 1 ? opts.singular_help_text : opts.plural_help_text } aria-label="help sector"> </a></h3>
+            	<div id='sectors-list'>
+                    {% comment %} Original sector setup (sans commitment total) {% endcomment %}
+            		<span if={!opts.sector_categories}>
+                        <div each={ sector in sectors } class="profile-list-element list-row-margin">
+                            <div class={ sector_class }>
+                                <div class="col-sm-1 col-xs-2 no-padding-left"><img class="sector-icon" alt="icon {name}" src={ sector.icon }/></div>
+                                <div class="col-sm-11 col-xs-10 sector-title no-padding">
+                                    { sector.name }
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    {% comment %} Sectors and commitment data {% endcomment %}
+                    <span if={opts.sector_categories}>
+                        <span class="show-only-print help-text">{% trans 'Total commitment by sector shown in USD.' %}</span>
+                        <div each={ sector in sectors } class="profile-list-element list-row-margin">
+                            <div class={ sector_class }>
+                                <div class="col-sm-1 col-xs-2 no-padding-left"><img class="sector-icon" src={ sector.icon }/></div>
+                                <div class="col-sm-11 col-xs-10 sector-title no-padding">
+                                    { sector.name } <span class="show-only-print">(${ sector.dollars })</span>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+            	</div>
+            </div>
+        </div>
+    </virtual>
+{% include 'tags/sectors.js' %}
+</sectors>

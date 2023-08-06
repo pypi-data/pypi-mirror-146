@@ -1,0 +1,113 @@
+{% load i18n %}
+
+<resource-profile class="resource-profile" id="resource-profile-{ id }">
+    <div class="container">
+        <div id="table-list-wrapper" class="row resource-profile-wrapper">
+            <div class="col-sm-8">
+                <div class="row">
+                    <h1 class="activity-title">
+                        <img class="file-type-icon" src="{ decodeFT(file_format) }">
+                        {gettext(title)}
+                    </h1>
+                </div>
+                <div id="prof-about-wrapper" class="row">
+                    <div class="section-block">
+                        <div class="prof-info-bar">
+                            <span class="right-spacing">
+                                <strong>{% trans 'Published' %}: </strong>
+                                { iso_date || ' - ' }
+                            </span>
+                            <span if="{ language }" class="right-spacing">
+                                <strong>{% trans 'Language' %}: </strong>
+                                { langDict[language] }
+                            </span>
+                            <span if='{ categories.length > 0 }' class="right-spacing">
+                                <span if='{ categories.length == 1 }'><strong>{% trans 'Category' %}: </strong></span>
+                                <span if='{ categories.length > 1 }'><strong>{% trans 'Categories' %}: </strong></span>
+                                <span each="{ category in categories }" class="cat-name">{ getCatName(category) }</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="section-block">
+                        <div if="{ org_name || activity }" class="no-padding">
+                            <h3>{% trans 'General Information' %}</h3>
+                            <p if="{ activity }" class="resource-related-project">
+                                {% trans 'Related Project' %}:
+                                <a href="/{languageCode}/profiles/activity/{ activity }"><strong>{ activity_name }</strong></a>
+                            </p>
+                            <p if='{ org_name && org_name != "Hamutuk" }' class="resource-uploader">
+                                {% trans 'Uploaded By' %}:
+                                <a href="/{languageCode}/profiles/organisation/{ organisation }"><strong>{ org_name }</strong></a>
+                            </p>
+                            <p if='{ org_name && org_name == "Hamutuk" }' class="resource-uploader">
+                                {% trans 'Uploaded By' %}: <strong>{ org_name }</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-block">
+                        <div if="{ narrative && narrative.length > 0 }" class="section-block">
+                            <div class="no-padding">
+                                <h3>{% trans 'Description' %}</h3>
+                                <p class="resource-description">{ getDescription(narrative) }</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="align-center">
+                    <a if="{ file_type }" id="download-file-btn" href="{url}" target="_blank"><button class="btn btn-small btn-primary">{% trans 'Download' %}</button></a>
+                    <a if="{ !file_type }" id="external-site-btn" href="{buildExternalUrl(url)}" target="_blank"><button class="btn btn-small btn-primary">{% trans 'Go to website' %}</button></a>
+                    <button if="{ file_type }" class="btn btn-small btn-default download-link" data-clipboard-text="{buildFileUrl(url)}" data-toggle="tooltip" data-placement="bottom" title="{% trans 'Copied to clipboard' %}!">
+                        {% trans 'Copy link' %}
+                    </button>
+                    <button if="{ !file_type }" class="btn btn-small btn-default download-link" data-clipboard-text="{buildExternalUrl(url)}" data-toggle="tooltip" data-placement="bottom" title="{% trans 'Copied to clipboard' %}!">
+                        {% trans 'Copy link' %}
+                    </button>
+                    {% comment %} {% if resource_add %}
+                    <button type="button" class="btn btn-small btn-default" data-toggle="modal" data-target="#resource-add-modal">Edit</button>
+                    {% endif %} {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    var tag = this;
+
+    tag.decodeFT = function(ff) {
+        return tag.parent.decodeFT(ff);
+    }
+
+    tag.getCatName = function(cat) {
+        var cat_lookup = tag.parent.categories.find(function(v) { return v.pk == cat; });
+        if (cat_lookup) { return gettext(cat_lookup.name); }
+        else { return gettext("Other"); }
+    }
+
+    tag.langDict = {
+        'en': gettext('English'),
+        'tm': gettext('Timorese'),
+    }
+
+    tag.getDescription = function(narr) {
+        var d = narr.find(function(n) {
+            if (n.lang == tag.language) { return gettext(n.description); }
+        });
+        if (d) { return d; }
+        else if (narr[0].description) {
+            return gettext(narr[0].description);
+        } else {
+            return "";
+        }
+    }
+
+    tag.buildExternalUrl = function(url) {
+        if (url.slice(0,4) == "http") { return url; }
+        else { return "http://" + url; }
+    }
+
+    tag.buildFileUrl = function(url) {
+        return window.location.host + url;
+    }
+
+</resource-profile>

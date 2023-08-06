@@ -1,0 +1,36 @@
+{% extends 'editor/base.html' %}
+{% load i18n %}
+{% load static  %}
+
+{% block editor_scripts %}
+    <script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'moment/moment.min.js' %}"></script>
+{% endblock %}
+
+{% block editor_style %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ionicons.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/review.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid review_container">
+    <div class="o-form-box">
+        <div class="form_header"> <h4>{% blocktrans %}{{activity_plural}} for Review{% endblocktrans %}</h4> </div>
+        <activities-for-review></activities-for-review>
+    </div>
+</div>
+
+<script type="riot/tag">
+    {% include 'tags/activities-for-review.html' %}
+</script>
+
+<script>
+    window.activities = JSON.parse('{{ activities|escapejs }}');
+    window.activities.forEach(function (activity) {
+        activity.date_submitted = moment(activity.date_submitted);
+        activity.editor_link = '{% url "edit_activity" pk="XXXXX" %}'.replace('XXXXX', activity.pk) + '#review';
+    })
+    riot.mount('activities-for-review');
+</script>
+{% endblock %}

@@ -1,0 +1,1 @@
+[{"model": "aims.resulttype", "pk": 1, "fields": {"name": "Output"}}, {"model": "aims.resulttype", "pk": 2, "fields": {"name": "Outcome"}}, {"model": "aims.resulttype", "pk": 3, "fields": {"name": "Impact"}}, {"model": "aims.resulttype", "pk": 9, "fields": {"name": "Other"}}]

@@ -1,0 +1,37 @@
+{% load i18n %}
+{% load static %}
+
+<raw>
+  <span></span>
+  this.root.innerHTML = opts.content
+</raw>
+
+<nav_search>
+    <form role="search" action="{% url 'nav_search' %}" id="search_form" ref="search_form">
+      <input class="search-nav" name="q" ref="nav_search" type="search" value={ nav_search_term } onkeyup={ nav_search_keyup } placeholder="{{ _('Search')|force_escape }}" autocomplete="off">
+    </form>
+    <div class="navSearchResults row" if={ partners.length + activities.length > 0 }>
+        <div class="col-xs-12 no-margin-padding">
+            <ul class="list-unstyled nav-search-results no-margin-padding">
+                <li><h4 class="suggestions-title">{% trans 'Partners' %}</h4></li>
+                <li class="results-item text-ellipsis" each={ partners } data={ this }>
+                    <raw content={html}></raw>
+                </li>
+                <li if={ partners.length == 0} class="no-results"><p>{% trans 'No results found' %}</p></li>
+                <li class="divider"></li>
+                <li><h4 class="suggestions-title" id="suggestions-activities-title">{% trans 'Activities' %}</h4></li>
+                <li each={ activities } class="results-item" data={ this }>
+                    <raw content={html}></raw>
+                </li>
+                <li if={ activities.length == 0} class="no-results"><p>{% trans 'No results found' %}</p></li>
+                <li class="divider"></li>
+                <li class="more-results" if={ data.activities.length > 3 || data.partners.length > 3}>
+                    <button class="btn btn-block btn-default" onclick={ submit_search } href="#">{% trans 'see all results' %}</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+  {% include 'tags/nav_search.js' %}
+
+</nav_search>

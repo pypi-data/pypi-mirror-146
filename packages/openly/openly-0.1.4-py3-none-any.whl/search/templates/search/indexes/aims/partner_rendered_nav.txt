@@ -1,0 +1,4 @@
+<img src="{{ object.logo }}"/>
+<a href="{{ object.profile_url }}">
+    <span class="prj_result ">{{ object.name }} ({{ object.abbreviation}})</span><br/>
+</a>

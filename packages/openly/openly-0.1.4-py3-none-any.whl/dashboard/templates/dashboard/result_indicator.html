@@ -1,0 +1,21 @@
+{% if indicator.title %}
+<p>{{ indicator.title }}</p>
+{% endif %}
+{% if indicator.description %}
+<p>{{ indicator.description }}</p>
+{% endif %}
+{% if indicator.comment %}
+<p>{{ indicator.comment }}</p>
+{% endif %}
+{% if indicator.baseline_year or indicator.baseline_value %}
+<p>Baseline - {{indicator.baseline_value }} - {{ indicator.baseline_year }}</p>
+{% if indicator.measure %}<p>{{ indicator.measure.name }}</p>{% endif %}
+{% if indicator.resultindicatorperiods %}
+<ul>
+{% for period in indicator.resultindicatorperiods %}
+    <li>
+        {% include 'dashboard/result_indicator_period.html' with period=period only %}
+    </li>
+{% endfor %}
+</ul>
+{% endif %}

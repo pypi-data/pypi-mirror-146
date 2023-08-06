@@ -1,0 +1,5 @@
+
+<a class="list-group-item" href="{{ object.profile_url }}">
+    <img src="{{ object.logo }}"/>
+    <span class="prj_result">{{ object.name }} ({{ object.abbreviation}})</span><br/>
+</a>

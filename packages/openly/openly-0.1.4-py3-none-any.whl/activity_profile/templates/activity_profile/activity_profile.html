@@ -1,0 +1,170 @@
+{% extends 'activity_profile/profile_base.html' %}
+{% load i18n %}
+{% load static %}
+{% load leaflet_tags %}
+{% load profiles_filters %}
+{% load ifsetting %}
+
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/readmore.min.js' %}"></script>
+{% ifsetting USE_SIMPLE_LOCATIONS %}{% else %}
+<script type="text/javascript" src="{% static 'js/topojson.v1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/charts-drawing.js' %}"></script>
+{% endifsetting %}
+{% leaflet_js %}
+{% endblock %}
+
+{% block style %}
+{{ block.super }}
+{% leaflet_css %}
+{% endblock %}
+
+{% block profile_content %}
+<div class="container-fluid">
+    <activity_banner></activity_banner>
+</div>
+{% block profile_tabs %}
+<div class="container">
+    <div class="hidden-xs">
+        <tabs></tabs>
+    </div>
+</div>
+{% endblock %}
+<div class="wrapper">
+{% block about %}
+<about_activity></about_activity>
+{% endblock %}
+
+{% block location %}
+{% if activity.location_set.count %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <section id="location_section">
+                <h2> {% trans 'Locations' %} <a tabindex="0" role="button" class="ion-ios-help-outline dash-info" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{% blocktrans %}The map below shows where this {{activity_singular_lower}} is implemented.{% endblocktrans %}" aria-label="help locations"> </a> </h2>
+
+                {% ifsetting ACTIVITY_PROFILE_SHOW_LOCATIONS_AS_TEXT %}
+                <locations-text locations="{ activity_object.locations }"></locations-text>
+                {% endifsetting %}
+
+                {% if not hide_map %}
+                {% ifsetting USE_SIMPLE_LOCATIONS %}
+                <activity_locations_map locations="{ activity_object.locations }"></activity_locations_map>
+                {% endifsetting %}
+                {% endif %}
+            </section>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block activity_financials %}
+{% if financial_data_exists %}
+    <script src="{% static 'js/profile_activity.js' %}"></script>
+    <activity_finances></activity_finances>
+{% endif %}
+{% endblock %}
+
+{% block activity_tags %}
+<activity-tags></activity-tags>
+{% endblock %}
+
+{% block contacts %}
+    <contacts></contacts>
+{% endblock %}
+
+{% block documents %}
+    <documents></documents>
+{% endblock %}
+
+</div> <!-- padding bottom wrapper -->
+{% endblock profile_content %}
+
+{% block local_scripts %}
+
+<script type="riot/tag">{% include 'tags/description_field.html' %}</script>
+<script type="riot/tag">{% include 'tags/tabs.html' %}</script>
+<script type="riot/tag">{% include 'tags/about_activity.html' %}</script>
+<script type="riot/tag">{% include 'tags/activity_banner.html' %}</script>
+<script type="riot/tag">{% include 'tags/sectors.html' %}</script>
+<script type="riot/tag">{% include 'tags/partners.html' %}</script>
+<script type="riot/tag">{% include 'tags/locations_text.html' %}</script>
+<script type="riot/tag">{% include 'tags/contacts.html' %}</script>
+<script type="riot/tag">{% include 'tags/documents.html' %}</script>
+<script type="riot/tag">{% include 'tags/activity_tags.html' %}</script>
+{% if not hide_map %}
+{% ifsetting USE_SIMPLE_LOCATIONS %}
+<script type="riot/tag">{% include 'tags/activity_locations_map.html' %}</script>
+{% endifsetting %}
+{% endif %}
+{% if financial_data_exists %}
+    <script type="riot/tag">{% include 'tags/activity_financials.html' %}</script>
+{% endif %}
+{% block riot_tags_extra %}
+{% endblock %}
+
+<script>
+    {% include 'tags/expand-mixin.js' %}
+    riot.mixin('ExpandMixin', ExpandMixin);
+
+    var activity_object = JSON.parse("{{ activity_object|escapejs }}");
+    var documents = JSON.parse("{{ documents|escapejs }}");
+    var contacts = JSON.parse("{{ contacts|escapejs }}");
+    var partners = JSON.parse("{{ partners|escapejs }}");
+    var map_config = JSON.parse("{{ map_config|escapejs }}");
+    var activity_tags = JSON.parse("{{ activity_tags|escapejs }}");
+
+    var areas = JSON.parse('{{ areas|escapejs }}');
+    areas.ancestor_of_kind = function(id, kind) {
+    area = areas[id]
+    while(area.kind > kind) {
+        area = areas[area.parent];
+    }
+    return area;
+    }
+
+    riot.mount('activity_banner', {upload_url: "{% url 'upload' %}", csrf_token: '{{ csrf_token }}'});
+    riot.mount('tabs', {
+    tabs: [
+        { name: "{% trans 'About' %}", link: '#about' },
+        { name: "{% trans 'Location' %}", link: '#location_section' },
+        { name: "{% trans 'Finances' %}", link: '#finances' },
+        { name: "{% trans 'Documents' %}", link: '#documents_section' },
+        { name: "{% trans 'Contacts' %}", link: '#contacts_section' },
+    ]
+    });
+    riot.mount('about_activity', {activity: activity_object, partners: partners,
+                                  organisation_profile: "{{ organisation_profile }}",
+                                  project_name: "{{ project_name }}"});
+    riot.mount('documents', {documents: documents});
+    riot.mount('contacts', {contacts: contacts});
+    riot.mount('activity-tags', {activity_tags: activity_tags});
+    riot.mount('activity_locations_map');
+    riot.mount('locations-text');
+
+    $(document).ready(function() {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+
+{% if financial_data_exists %}
+    <script type="text/javascript">
+        riot.mount('activity_finances', {
+            aid_type_categories_header: "{{ aid_type_categories_header }}",
+            aid_type_categories: "{{ aid_type_categories }}",
+            finance_types_list: "{{ finance_types_list }}",
+            percent_disbursed: "{{ percent_disbursed|safe|floatformat:2 }}",
+            total_commitment: "{{ total_commitment }}",
+            total_commitment_currency: activity_object.default_currency.code,
+            total_commitment_usd: "{{ total_commitment_usd }}",
+            transactions: JSON.parse("{{ transactions_json|safe|escapejs }}"),
+            transactions_by_month_year: JSON.parse({{ transactions_by_month_year|safe }}),
+            commitment_by_currency: {{pretty_commitment_by_currency|safe}},
+        });
+    </script>
+{% endif %}
+
+{% endblock %}

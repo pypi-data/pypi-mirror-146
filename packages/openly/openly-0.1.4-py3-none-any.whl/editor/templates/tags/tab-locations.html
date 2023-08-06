@@ -1,0 +1,105 @@
+{% load i18n %}
+{% blocktrans asvar help_percent %}Please add the percentage of total commitments or total {{activity_singular_lower}} budget dedicated to this location.{% endblocktrans %}
+{% trans 'Saving' as message_saving %}
+{% trans 'Saved' as message_saved %}
+{% trans 'Error saving the Locations.' as message_saving_error %}
+
+<tab-locations id="locations" class="tab-pane list-with-percentages">
+    <div class="form_header">
+        <h4>{% trans 'Locations' %}</h4>
+    </div>
+    <div class="form_body">
+        <div id="locations-table" class="form-group">
+            <p class="in-line-help col-xs-12">
+                {% trans 'Locations represent what regions are targeted. Percentages represent what share of the total commitment amount will flow to a particular region.' %}
+            </p>
+            <div class="row">
+                <div class="col-xs-8">
+                    <label class="control-label">
+                        {% trans 'Location' %} <label-required-field required_to_publish_field="location">
+                    </label>
+                </div>
+                <div class="col-xs-4">
+                    <label class="control-label">
+                        {% trans 'Percent' %}
+                        <a class="form_help ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="" data-content="{{ help_percent|escape }}"></a>
+                    </label>
+                </div>
+            </div>
+            <div>
+                <div class="form-block" each="{location, i in store.locations}">
+                    <location-edit
+                        store={parent.store}
+                        path="locations[{i}]"
+                        location="{location}">
+                    </location-edit>
+                </div>
+                <div class="clearfix"></div>
+                <validate-group store='{opts.store}' validate_sum='locations,percentage,100' validator_exclude="location.code,null"></validate-group>
+                <validate-group store='{opts.store}' validate_number_not_in='locations,percentage,0' validator_exclude="location.code,null"></validate-group>
+
+                <div class="add-line">
+                    <a id="add-location-link" class="add_form_row" href="javascript:void(0)" onclick="{add_location}">{% trans 'Add another location' %} </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <btn-group-editor id_save="save-locations" id_next="next-locations" use_parent_save></btn-group-editor>
+
+    {# <script> #}
+        /* global _ RiotControl */
+
+        var tag = this;
+        tag.mixin('SerializerMixin');
+        tag.mixin('TabMixin');
+        tag.mixin('ValidationMixin');
+
+        tag.save = function() {
+            /** Serialize the tags and send the serialized object to the activity update API.
+            */
+            var xhr;
+            var serialized_object = tag.serialize_object();
+            serialized_object['id'] = tag.store.activity_id;
+
+            window.banner_message.show('{{ message_saving|escape}}', 'info');
+            tag.update();
+            xhr = tag.put(serialized_object, {'update_done': 'locations_update_done'});
+            xhr.done(function(activity) {
+                window.banner_message.show('{{ message_saved|escape}}', 'success');
+                tag.update();
+                RiotControl.trigger('update_activity_completion', activity);
+            });
+            xhr.fail(function() {
+                window.banner_message.show('{{message_saving_error|escape}}', 'danger');
+            });
+            return xhr;
+        };
+
+        tag.serialize_object = function() {
+            var serialized_locations = {};
+            var store = tag.store;
+            // remove the elements that have a null code
+
+            serialized_locations.locations = _.clone(store.locations);
+            _.remove(serialized_locations.locations, function(location) {
+                return !location.location.code;
+            });
+            return serialized_locations;
+        };
+
+        tag.add_location = function() {
+            var path = 'tag.store.locations[0].percentage';
+            tag.store.add_empty_location();
+            tag.update();
+
+            tag.store.trigger('path_updated', {'store':tag.store, 'path': path});
+        };
+
+        tag.discard = function(){
+            this.store.locations = _.cloneDeep(this.store._initial.locations);
+        }
+
+    {# </script> #}
+</tab-locations>

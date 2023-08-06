@@ -1,0 +1,920 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 17:02+0900\n"
+"PO-Revision-Date: 2019-06-01 00:59+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid " You are about to <span class=\"bold\">approve and publish</span> the activity indicating that you are satisfied with the information provided. This will make the activity information publicly available and the information contained will appear in your reports. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">cancel</span> the review of this activity. This will revert the status of the activity to draft. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">endorse</span> the activity indicating that you are satisfied with the information provided. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">remove</span> your endorsement of the activity, indicating that the activity information is not sufficient. Please add a comment to explain your decision. "
+msgstr ""
+
+msgid " You are about to <span class=\"bold\">submit</span> this activity to be reviewed and approved by Government Partners prior to publication. Based on this activity, the following organisations will be notified: "
+msgstr ""
+
+msgid "A funding partner of the activity is an organisation which is at least partially responsible for funding this activity."
+msgstr "Финансирующий партнер по направлению деятельности - это организация, которая несет хотя бы частичную ответственность за финансирование этой деятельности"
+
+msgid "About Budgets"
+msgstr "О бюджетах"
+
+msgid "Accountable Partner"
+msgstr "Подотчетный партнер"
+
+msgid "Activities for Review"
+msgstr "Направления деятельности для обзора"
+
+msgid "Activity Budgets"
+msgstr "Бюджеты направлений деятельности"
+
+msgid "Activity Completion Rating"
+msgstr "Рейтинг завершенности деятельности"
+
+msgid "Activity Description"
+msgstr "Описание деятельности"
+
+msgid "Activity Endorsed by"
+msgstr "Направление деятельности одобрено"
+
+msgid "Activity ID"
+msgstr "Идентификационный № мероприятия"
+
+msgid "Activity List"
+msgstr "Список направлений деятельности"
+
+msgid "Activity Objectives"
+msgstr "Задачи деятельности"
+
+msgid "Activity Status"
+msgstr "Состояние деятельности"
+
+msgid "Activity Title"
+msgstr "Название деятельности"
+
+msgid "Activity log"
+msgstr "Журнал мероприятий"
+
+msgid "Actual End Date"
+msgstr "Фактическаядата завершения"
+
+msgid "Actual Start Date"
+msgstr "Фактическая дата начала"
+
+msgid "Add a budget"
+msgstr "Добавить бюджет"
+
+msgid "Add a comment"
+msgstr "Добавить комментарий"
+
+msgid "Add a commitment transaction"
+msgstr "Добавить транзакцию по обязательствам"
+
+msgid "Add a contact"
+msgstr "Добавить контакт"
+
+msgid "Add a government partner"
+msgstr "Добавить государственного партнера"
+
+msgid "Add a location"
+msgstr "Добавить месторасположение"
+
+msgid "Add a related location"
+msgstr "Добавить соответствующее месторасположение"
+
+msgid "Add a related sector"
+msgstr "Добавить смежный сектор"
+
+msgid "Add a result"
+msgstr "Добавить результат"
+
+msgid "Add a start date"
+msgstr "Добавить дату начала"
+
+msgid "Add a transaction"
+msgstr "Добавить транзакцию"
+
+msgid "Add a transaction of type 'Commitment'"
+msgstr "Добавить транзакцию типа \"Обязательство\""
+
+msgid "Add an accountable partner"
+msgstr "Добавить подотчетного партнера"
+
+msgid "Add an activity description"
+msgstr "Добавить описание  деятельности"
+
+msgid "Add an activity status"
+msgstr "Добавить состояние деятельности"
+
+msgid "Add an activity title"
+msgstr "Добавить название деятельности"
+
+msgid "Add an attachment"
+msgstr "Добавить приложение"
+
+#, fuzzy
+msgid "Add an extending partner"
+msgstr "Добавить Рефинансирующего партнера"
+
+msgid "Add an funding partner"
+msgstr "Добавить финансирующего партнера"
+
+msgid "Add an implementing partner"
+msgstr "Добавить исполнительного партнера"
+
+#, fuzzy, python-format
+msgid "Add another %(object)s"
+msgstr "Добавить смежный сектор"
+
+msgid "Add another accountable partner"
+msgstr "Добавить еще одного подотчетного партнера"
+
+msgid "Add another category"
+msgstr "Добавить еще одну категорию"
+
+#, fuzzy
+msgid "Add another extending partner"
+msgstr "Добавить еще одного Рефинансирующего партнера"
+
+msgid "Add another funding partner"
+msgstr "Добавить еще одного Партнера по финансированию"
+
+msgid "Add another government partner"
+msgstr "Добавить еще одного государственного партнера"
+
+msgid "Add another implementing partner"
+msgstr "Добавить еще одного Исполнительного Партнера"
+
+msgid "Add another sector"
+msgstr "Добавить еще один сектор"
+
+msgid "Additional data required"
+msgstr "Необходимые дополнительные данные"
+
+msgid "Aid Type"
+msgstr "Тип содействия"
+
+msgid "Amount"
+msgstr "Сумма"
+
+msgid "Approval & Comments"
+msgstr "Одобрение и комментарии"
+
+msgid "Approve &amp; Publish"
+msgstr "Tasdiqlash; Chop etish"
+
+#, fuzzy
+msgid "Approve &amp; Publish Activity"
+msgstr "Местная деятельность"
+
+msgid "Approved"
+msgstr "Одобрено"
+
+msgid "Approved and Published"
+msgstr "Одобрено и опубликовано"
+
+msgid "Are You Sure?"
+msgstr "Вы уверены?"
+
+msgid "Are you sure you want to delete this activity?"
+msgstr "Вы уверены, что хотите удалить эту деятельность?"
+
+msgid "Available for import"
+msgstr "Доступно для импорта"
+
+msgid "Average completion"
+msgstr "Средний показатель завершения"
+
+msgid "Browse"
+msgstr "Просматривать"
+
+msgid "Budget Status"
+msgstr "Состояние бюджета"
+
+msgid "Budget Type"
+msgstr "Тип бюджета"
+
+msgid "Budgets"
+msgstr "Бюджеты"
+
+msgid "Budgets represent the indicative or committed funding for each financial quarter or year over the lifetime of the activity. The reporting of budgets helps to provide predictability and assist with forward planning. The total budget for an activity should be reported as a commitment transaction."
+msgstr "Бюджеты представляют собой предварительный или утвержденный объем финансирования на каждый финансовый квартал или год за весь период деятельности.  Отчетность по бюджетам помогает в обеспечении предсказуемости и перспективном планировании.  Совокупный бюджет деятельности необходимо указать в отчетности в качестве обязательства."
+
+msgid "Budgets:"
+msgstr "Бюджеты:"
+
+msgid "Cancel"
+msgstr "Отменить"
+
+msgid "Cancel review"
+msgstr "Отменить обзор"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Change Activity Status"
+msgstr "Изменить состояние деятельности"
+
+msgid "Choose organisation"
+msgstr "Выбрать организацию"
+
+msgid "Click to endorse"
+msgstr "Кликните для одобрения"
+
+msgid "Click to remove endorsement"
+msgstr "Кликните для отмены одобрения"
+
+msgid "Collaboration Type"
+msgstr "Тип сотрудничества"
+
+msgid "Compare Activities"
+msgstr "Сравнить направления деятельности"
+
+msgid "Compare local activities with IATI "
+msgstr "Сравнение местной деятельности с IATI"
+
+msgid "Complete"
+msgstr "Завершено"
+
+msgid "Contact type"
+msgstr "Тип контакта"
+
+msgid "Contacts"
+msgstr "Контакты"
+
+msgid "Create an activity for..."
+msgstr "Создать направление деятельности.."
+
+msgid "Currency"
+msgstr "Валюта"
+
+msgid "Data Entry Completion"
+msgstr "Завершение ввода данных"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Date submitted"
+msgstr "Дата подачи"
+
+msgid "Dates:"
+msgstr "Даты:"
+
+msgid "Default Aid Type"
+msgstr "Тип содействия по умолчанию"
+
+msgid "Default Currency"
+msgstr "Валюта по умолчанию"
+
+msgid "Default Finance Type"
+msgstr "Тип финансирования по умолчанию"
+
+msgid "Default Flow Type"
+msgstr "Тип последовательности по умолчанию"
+
+msgid "Default Settings"
+msgstr "Настройки по умолчанию"
+
+msgid "Default Tied Status"
+msgstr "Привязанный статус по умолчанию"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Delete Activity"
+msgstr "Удалить деятельность"
+
+msgid "Delete Activity?"
+msgstr "Удалить деятельность?"
+
+msgid "Delete activity"
+msgstr "Удалить деятельность"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Details of groups that are intended to benefit from the activity."
+msgstr "Подробности о группах - бенефициарах деятельности"
+
+msgid "Disbursed:"
+msgstr "Выделено:"
+
+msgid "Disbursement Channel"
+msgstr "Канал обеспечения"
+
+msgid "Document Description"
+msgstr "Описание документа"
+
+msgid "Documents & Images"
+msgstr "Документы и изображения"
+
+msgid "Documents and images should include key supporting materials related to this activity."
+msgstr "Документы или изображения должны содержать основные вспомогательные материалы, связанные с данным направлением деятельности."
+
+msgid "Draft"
+msgstr "Рабочий вариант / черновик"
+
+msgid "Draft Activities"
+msgstr "Еще прорабатываемые направления деятельности"
+
+msgid "Edit Activity"
+msgstr "Редактировать деятельность"
+
+msgid "Edit a Document"
+msgstr "Редактировать документ"
+
+msgid "Email"
+msgstr "Электронная почта"
+
+msgid "End Date"
+msgstr "Дата завершения"
+
+msgid "Endorse Activity"
+msgstr "Одобрить деятельность"
+
+msgid "Endorsed"
+msgstr "Одобрено"
+
+msgid "Extending:"
+msgstr "Продление:"
+
+msgid "Filter"
+msgstr "Фильтр"
+
+msgid "Finance Type"
+msgstr "Тип финансирования"
+
+msgid "Finance Type:"
+msgstr "Тип финансирования"
+
+msgid "Finances"
+msgstr "Финансы"
+
+msgid "Financial Transactions"
+msgstr "Финансовые транзакции"
+
+msgid "Flow Type"
+msgstr "Тип ассигнования"
+
+msgid "Flow Type:"
+msgstr "Тип потока"
+
+msgid "Funding Partner"
+msgstr "Партнер по финансированию"
+
+msgid "Funding:"
+msgstr "Финансирование:"
+
+msgid "General"
+msgstr "Общее"
+
+msgid "General Information"
+msgstr "Общая информация"
+
+msgid "Government Partner"
+msgstr "Государственный партнер"
+
+msgid "How can I improve my rating?"
+msgstr "Как можно улучшить свой рейтинг?"
+
+msgid "ID"
+msgstr "Идентификация"
+
+msgid "Implementing Partner"
+msgstr "Исполнительный партнер"
+
+msgid "Implementing:"
+msgstr "Исполнение:"
+
+msgid "Import"
+msgstr "Импорт"
+
+msgid "Import IATI"
+msgstr "Импортировать IATI"
+
+msgid "Import all"
+msgstr "Импортировать все"
+
+msgid "Incompletely specified activities"
+msgstr "Не до конца уточненные направления деятельности"
+
+msgid "Job Title"
+msgstr "Название должности"
+
+msgid "Keep Local"
+msgstr "Сохранить местное"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Loading..."
+msgstr "Загружается..."
+
+msgid "Local Activities"
+msgstr "Местная деятельность"
+
+msgid "Location"
+msgstr "Месторасположение"
+
+msgid "Locations"
+msgstr "Месторасположения"
+
+msgid "Locations represent what regions are targeted. Percentages represent what share of the total commitment amount will flow to a particular region."
+msgstr "Месторасположения представляют целевые регионы.  В процентах указано, какой удельный вес общих обязательcтв будет направлен в конкретный регион."
+
+msgid "Locations represent where the activity takes place. For activities in Manufahi, add all relevant aldeias. For activities in other municipalities in Timor-Leste, add all relevant sub-districts. To select a location please type your location in the search bar."
+msgstr "Месторасположения означают те места, где осуществляется деятельности. Касательно мероприятий в Мануфахи, добавьте все соответствующие алдеи. Относительно деятельности в других муниципалитетах восточного Тимора, добавьте все соответствующие субрайоны.  Для выбора месторасположения, пожалуйста, введите название местности в строке Поиск."
+
+msgid "Mailing Address"
+msgstr "Почтовый адрес"
+
+msgid "Name"
+msgstr "Ф.И.О."
+
+msgid "Nationwide"
+msgstr "По всей стране"
+
+msgid "Next"
+msgstr "Далее"
+
+msgid "No Activity found matching the query"
+msgstr "Мероприятий / направлений деятельности, соответствующих запросу, не найдено"
+
+msgid "No, Don't Approve"
+msgstr "Нет, не утверждайте"
+
+msgid "No, Don't Cancel"
+msgstr "Yo'q, bekor qilmang"
+
+msgid "No, Don't Endorse"
+msgstr "Нет, не одобряйте"
+
+msgid "No, Don't Remove"
+msgstr "Нет, не удаляйте"
+
+msgid "Okay, got it"
+msgstr "Все, понял"
+
+msgid "Organisation"
+msgstr "Организация"
+
+msgid "Organisations"
+msgstr "Организации"
+
+msgid "Participating Organisations"
+msgstr "Участвующие организации"
+
+msgid "Pending"
+msgstr "Предстоящий"
+
+msgid "Person Name"
+msgstr "Ф.И.О. лица"
+
+msgid "Planned End Date"
+msgstr "Запланированная дата завершения"
+
+msgid "Planned Start Date"
+msgstr "Запланированная дата начала"
+
+#, python-format
+msgid "Please specify what percentage of the total budget is allocated to each %(object)s. All percentages should add up to 100%%."
+msgstr "Iltimos, har bir %(object)s uchun umumiy byudjetning necha foizi ajratilganini aniqlashtiring.   Barcha foizlar 100 foizga teng bo'lishi lozim."
+
+msgid "Post"
+msgstr "Постить"
+
+msgid "Profile"
+msgstr "Профиль"
+
+msgid "Provider"
+msgstr "Донор / провайдер"
+
+msgid "Provider Organisation"
+msgstr "Предоставляющая организация"
+
+msgid "Published"
+msgstr "Опубликовано"
+
+msgid "Published Activities"
+msgstr "Опубликованные направления деятельности"
+
+msgid "Receiver"
+msgstr "Получатель"
+
+msgid "Receiver Organisation"
+msgstr "Организация - получатель"
+
+msgid "Remove Endorsement"
+msgstr "Удалить одобрение"
+
+msgid "Reporting Organisation"
+msgstr "Отчитывающаяся организация"
+
+msgid "Reporting organisation"
+msgstr "Отчитывающаяся организация"
+
+msgid "Reporting:"
+msgstr "Отчетности"
+
+msgid "Required to publish"
+msgstr "Требуется опубликовать"
+
+msgid "Reset"
+msgstr "Перезагрузить"
+
+msgid "Restore Archived"
+msgstr "Восстановить архивированное"
+
+msgid "Result Description"
+msgstr "Описание результатов"
+
+msgid "Result Title"
+msgstr "Название результата"
+
+msgid "Result Type"
+msgstr "Тип результата"
+
+msgid "Results"
+msgstr "Результаты"
+
+msgid "Results:"
+msgstr "Результаты:"
+
+msgid "Return"
+msgstr "Возврат"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Save and Next"
+msgstr "Сохранить и далее"
+
+msgid "Save and Return"
+msgstr "Сохранить и вернуться"
+
+msgid "Sector"
+msgstr "Сектор"
+
+msgid "Sectors"
+msgstr "Отрасли"
+
+msgid "Sectors & Policy Markers"
+msgstr "Маркеры секторов и стратегий"
+
+msgid "Sectors represent the purpose of the activity. For more information and clarification, please refer to the OECD&#8216;s list of CRS purpose codes: http://www.oecd.org/dac/stats/purposecodessectorclassification.htm"
+msgstr "Отрасли, представляющие цель деятельности. За дополнительной информацией и разъяснениями, см. список целевых кодов CRS ОЭСР:  http://www.oecd.org/dac/stats/purposecodessectorclassification.htm"
+
+msgid "Sectors represent the purpose of the activity. To select a broad sector category as opposed to a subsector please select \"Sector name [unspecified]\"."
+msgstr "Отрасли представляют цель деятельности. Для выбора широкой категории сектора в отличии от подсектора, пожалуйста, выберите \"Название сектора (не уточнено)\""
+
+msgid "See More"
+msgstr "См. больше"
+
+msgid "Send back to Draft"
+msgstr "Вернуть в Черновики"
+
+msgid "Send back to Review"
+msgstr "Вернуть на пересмотр"
+
+msgid "Sending the activity back to Draft status will hide the activity from the public site and reports. It will also remove prior endorsements for the activity."
+msgstr "Отправка деятельности обратно в статус Черновик скрывает данную деятельность от общедоступного сайта и отчетов. Это также удалит предыдущие одобрения для деятельности"
+
+msgid "Sending the activity back to Review status will hide the activity from the public site and reports. It will also alert each party to review the activity. Please note that it does not remove prior endorsements"
+msgstr "Отправка действия обратно в статус «Рассмотрение» скрывает деятельность от общедоступного сайта и отчетов. Это также предупредит каждую сторону о необходимости пересмотреть направление деятельности. Обратите внимание, что это не удаляет предыдущие одобрения."
+
+msgid "Sorry, you cant publish just yet."
+msgstr "Извините, Вы пока не сможете опубликовать"
+
+msgid "Start Date"
+msgstr "Дата начала"
+
+msgid "Submit for review"
+msgstr "Представление для рассмотрения"
+
+msgid "Target Groups"
+msgstr "Целевые группы"
+
+msgid "Telephone"
+msgstr "Телефон"
+
+msgid "The IATI identifier will be created when this activity is saved"
+msgstr "Идентификатор IATI будет создан после сохранения данного мероприятия"
+
+msgid "The completion rating reflects the overall percentage of important fields completed within the data entry form."
+msgstr "Показатель завершения отражает общий процент важных направлений, заполненных в форме для ввода данных."
+
+msgid "The contacts should include key team members who support this activity."
+msgstr "Контакты должны включать основных членов команды, поддерживающих этот вид деятельности. "
+
+msgid "The currency value date"
+msgstr "Дата оценки валюты/обменного курса"
+
+msgid "The date of transaction"
+msgstr "Дата транзакции"
+
+msgid ""
+"The date on which the activity actually started or ended,\n"
+"                    for example the date of the first or last disbursement\n"
+"\t\t    or when physical activity started or ended."
+msgstr "Дата фактического начала или завершения деятельности, например, дата первого или последнего выделения средств или начала или завершения практической деятельности."
+
+msgid ""
+"The date on which the activity is planned to start or end,\n"
+"                    for example the date of the first or last planned disbursement\n"
+"\t\t    or when physical activity starts or ends."
+msgstr "Дата запланированного начала или завершения, например, дата первого или последнего запланированного выделения средств или  начала или завершения  физической деятельности."
+
+msgid "The end date cannot be before the start date"
+msgstr "Дата завершения не может быть раньше даты начала"
+
+msgid "The government entity or entities responsible for oversight or maintenance of the activity. Often this will be the government entity with which a MoU or similar agreement is signed. In many cases, the MoU will be signed directly with the implementing partner."
+msgstr "Государственный орган или учреждения, ответственные за контроль или осуществление деятельности. Зачастую это государственное учреждение, с которым подписан Меморандум о взаимопонимании (МВ) или аналогичное соглашение. Во многих случаях МВ подписывается непосредственно с Исполнительным партнером."
+
+msgid "The implementer of the activity is the organisation(s) which is/are principally responsible for delivering this activity."
+msgstr "Исполнитель направления деятельности - организация, которая в первую очередь несет ответственности за его выполнение."
+
+msgid "The objectives should include a detailed description of the activity and expected outcomes."
+msgstr "Цели должны включать подробное описание ожидаемых  результатов деятельности."
+
+msgid "The status explains whether the budget being reported is indicative or has been formally committed."
+msgstr "Данное состояние поясняет, в какой степени указываемый бюджет является предварительным или официально утвержденным."
+
+msgid "The title should be a human readable name of the project. Please ensure that acronyms are fully spelled out"
+msgstr "Название должно быть читабельным для человека названием проекта. Пожалуйста, убедитесь, что сокращения полностью расшифрованы"
+
+msgid "The type of finance (e.g. grant, loan, debt relief, etc). This the default value for all transactions in the activity report; it can be overridden by individual transactions."
+msgstr "Тип финансирования (н-р, грант, заем, списание долга и т.д).  Это значение по умолчанию по всем транзакциям в отчете о деятельности; это можно изменить в конкретных транзакциях."
+
+msgid "There are no accountable partners"
+msgstr "Подотчетные партнеры отсутствуют"
+
+msgid "There are no budgets"
+msgstr "Бюджеты отсутствуют"
+
+msgid "There are no contacts"
+msgstr "Контакты отсутствуют"
+
+msgid "There are no documents or images uploaded"
+msgstr "Документы или изображения отсутствуют"
+
+#, fuzzy
+msgid "There are no extending partners"
+msgstr "Транзакции отсутствуют"
+
+msgid "There are no funding partners"
+msgstr "Партнеры по финансированию отсутствуют"
+
+msgid "There are no government partners"
+msgstr "Государственные партнеры отсутствуют"
+
+msgid "There are no implementing partners"
+msgstr "Исполнительные партнеры отсутствуют"
+
+msgid "There are no results"
+msgstr "Результаты отсутствуют"
+
+msgid "There are no transactions"
+msgstr "Транзакции отсутствуют"
+
+msgid "This explains what the activity is, it is longer than the title and contains more detail"
+msgstr "Описание поясняет суть направления деятельности. Оно длиннее названия и содержит больше подробностей."
+
+msgid "This explains what the result is, it is longer than the title and contains more detail"
+msgstr "Это объясняет, что такое результат. Это длиннее, чем название и содержит больше подробностей"
+
+msgid "This is the date on which the transaction was made or (in the case of commitments) agreed."
+msgstr "Дата совершения или согласования (в случае обязательств) транзакции "
+
+msgid "This is the date we will use for determining the exchange rate for currency conversions."
+msgstr "Эту дату мы используем для определения обменного курса для конверсии валюты"
+
+msgid "This is the default currency for the activity, you can override this in an individual transaction."
+msgstr "Это валюта по умолчанию по данному виду деятельности, Вы можете это изменить в отдельной взятой транзакции"
+
+msgid "This is the government entity or development partner agency receiving funds from financing partner(s) for channeling to implementing partner(s)."
+msgstr "Это государственное учреждение или партнерское учреждение в области развития, получающее средств от финансирующего партнера(ов) для предоставления Исполнительному(ым) партнеру(ам)."
+
+msgid "Tied Status"
+msgstr "Привязанный статус"
+
+msgid "Title"
+msgstr "Название"
+
+msgid "To add endorsers for this activity, select government partners in the organisations tab."
+msgstr "Чтобы добавить подтверждающих сторон для этого действия, выберите государственных партнеров на вкладке организации"
+
+msgid "To be approved"
+msgstr "Предстоит утвердить"
+
+msgid "To be endorsed"
+msgstr "Предстоит одобрить"
+
+msgid "To change this list please change the organisations listed as accountable partners in the Organisations tab."
+msgstr "Чтобы изменить этот список, пожалуйста, смените организации, перечисленные в качестве ответственных партнеров на вкладке Организации"
+
+msgid "To make sure that you can publish your activity you need to add a commitment. The total budget for an activity should be reported as a commitment in the transaction element."
+msgstr "Вам необходимо указать сумму обязательств, чтобы Вы смогли опубликовать Вашу деятельность. Необходимо указать совокупный бюджет деятельности в качестве обязательства в транзакционном элементе."
+
+msgid "To publish you need to:"
+msgstr "Для опубликования требуется"
+
+msgid "Transaction Type"
+msgstr "Тип транзакции"
+
+msgid "Transactions"
+msgstr "Транзакции"
+
+msgid "Transactions:"
+msgstr "Транзакции"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Untitled"
+msgstr "Без названия"
+
+#, python-format
+msgid "Updated %(modified)s"
+msgstr "Обновлено %(modified)s"
+
+msgid "Upload a Document"
+msgstr "Загрузить документ"
+
+msgid "Upload document"
+msgstr "Загрузить документ"
+
+msgid "Value"
+msgstr "Стоимость"
+
+msgid "Value Date"
+msgstr "Дата оценки"
+
+msgid "View"
+msgstr "Вид"
+
+msgid "Website"
+msgstr "Вебсайт"
+
+msgid "Whether the aid is untied, tied, or partially tied."
+msgstr "Содействие не привязанное, привязанное или частично привязанное"
+
+msgid "Whether this is the original budget (prepared when the original commitment was made) or whether it has subsequently been revised."
+msgstr "Является ли это изначальным бюджетом (подготовленным, когда было принято первоначальное обязательство) или потом было пересмотрено."
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "Yes, Approve"
+msgstr "Да, утверждайте"
+
+msgid "Yes, Cancel"
+msgstr "Да, отменить"
+
+msgid "Yes, Endorse"
+msgstr "Да, Одобрить"
+
+msgid "Yes, Remove"
+msgstr "Да, удаляйте"
+
+msgid "Yes, send back to Draft"
+msgstr "Да, вернуть в Черновики"
+
+msgid "Yes, send back to Review"
+msgstr "Да, вернуть на доработку"
+
+msgid "You cannot publish this activity for review before you:"
+msgstr "Siz ushbu faoliyatni chop eta olmaysiz"
+
+msgid "You cannot submit this activity for review before you:"
+msgstr "Вы не можете отправить эту деятельность на рассмотрение прежде чем"
+
+msgid "You have no activities to review."
+msgstr "У Вас нет направлений деятельности для обзора."
+
+msgid "You may not edit this activity"
+msgstr "Вы не вправе редактировать эту деятельность"
+
+#, python-format
+msgid "You may replace the activity on the %(position_1)s with the %(status)s activity on the %(position_2)s"
+msgstr ""
+
+msgid "Your Stats"
+msgstr "Ваша статистика"
+
+msgid "all subregions of "
+msgstr "Все субрегионы"
+
+#, fuzzy, python-brace-format
+msgid "all subregions of {area}"
+msgstr "Все субрегионы"
+
+msgid "back"
+msgstr "Назад"
+
+msgid "left"
+msgstr "Слева"
+
+msgid "mandatory"
+msgstr "обязательно"
+
+msgid "no results"
+msgstr "Результаты отсутствуют"
+
+msgid "no transactions"
+msgstr "Нет транзакций"
+
+msgid "right"
+msgstr "Справа"
+
+#, fuzzy
+#~ msgid "Actions"
+#~ msgstr "Месторасположения"
+
+#~ msgid "Activities under review"
+#~ msgstr "Рассматриваемые направления деятельности"
+
+#, fuzzy
+#~ msgid "Activities you can endorse"
+#~ msgstr "Менеджер по направлению деятельности"
+
+#~ msgid "Activity Manager"
+#~ msgstr "Менеджер по направлению деятельности"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "Приборные доски по внешнему содействию"
+
+#~ msgid "Aid by Donor"
+#~ msgstr "Содействие в разрезе  доноров"
+
+#~ msgid "Aid by Location"
+#~ msgstr "Содействие в разрезе месторасположения"
+
+#~ msgid "Aid by Ministry"
+#~ msgstr "Содействие в разрезе министерств"
+
+#~ msgid "Aid by Sector"
+#~ msgstr "Содействие в разрезе отраслей"
+
+#~ msgid "Create Report"
+#~ msgstr "Создать отчет"
+
+#~ msgid "Endorsements"
+#~ msgstr "Одобрения"
+
+#~ msgid "FILTER BY ACTIVITY STATUS"
+#~ msgstr "Фильтровать по статусу деятельности"
+
+#~ msgid "FILTER BY ORGANISATION ROLE"
+#~ msgstr "Фильтровать по роли организации"
+
+#~ msgid "Finances & Budgets"
+#~ msgstr "Финансы и бюджеты"
+
+#, fuzzy
+#~ msgid "Partner organisation"
+#~ msgstr "Предоставляющая организация"
+
+#~ msgid "Reporting"
+#~ msgstr "Отчетность"
+
+#~ msgid "Reports"
+#~ msgstr "Отчеты"
+
+#~ msgid "Revert to draft status"
+#~ msgstr "Вернуть в предварительное состояние "
+
+#~ msgid "Sector Working Groups are multi-stakeholder dialogue bodies responsible for ensuring that development priorities are identified, discussed and implemented in a co-ordinated and transparent manner."
+#~ msgstr "Отраслевые рабочие группы - органы по диалогу с заинтересованными сторонами, ответственные за определение и обсуждение приоритетов в сфере развития, и реализацию в согласованной и транспарентной манере."
+
+#~ msgid "Software designed & developed by"
+#~ msgstr "Программное обеспечение разработано"
+
+#~ msgid "Submitted for review at"
+#~ msgstr "Представлено для рассмотрения"
+
+#~ msgid "Your Pages"
+#~ msgstr "Ваши страницы"
+
+#~ msgid "Your activities under review"
+#~ msgstr "Рассматриваемые направления Вашей деятельности"

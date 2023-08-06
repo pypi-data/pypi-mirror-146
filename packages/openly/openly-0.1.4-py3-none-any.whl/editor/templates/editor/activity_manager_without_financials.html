@@ -1,0 +1,59 @@
+{% extends 'editor/base.html' %}
+{% load humanize %}
+{% load i18n %}
+{% load static  %}
+{% load tag_library %}
+
+{% block editor_scripts %}
+<script type="text/javascript" src="{% static 'js/activity_manager.js' %}" defer></script>
+<script type="text/javascript" src="{% static 'js/ajax_csrf.js' %}" defer></script>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <div class="row">
+        <!--=== LEFT SIDE PANEL ===-->
+        <div class="col-xs-12"><h2>{% blocktrans %}{{activity_singular}} Manager{% endblocktrans %}</h2></div>
+        <div class="col-xs-3 leftPanel" id="leftPanel">
+            <div class="panel_card">
+                <img class="img-square img_profile_editor" src="{% if organisation.profile.logo %} {{ organisation.profile.logo.url }} {% else %} {% static 'img/logo_placeholder.svg' %} {% endif %}" alt="" />
+                <h4 class="text-center">{{ organisation.name }}</h4>
+                <hr />
+                <ul class="list-unstyled editor_summary">
+                    <li class="sidebarSubtitle">{% trans 'Your Stats' %}</li>
+                    {% if organisation|import_allowed %}
+                    <li><span class="editor_stats_block"><i class="ion-ios-checkmark-outline"></i></span>{% trans 'IATI Import Available' %}</li>
+                    {% endif %}
+
+                    <li><span class="editor_stats_block">{{ total_published }}</span>{% blocktrans %}Published {{activity_plural}}{% endblocktrans %}</li>
+                    <li><span class="editor_stats_block">{{ total_drafts }}</span>{% blocktrans %}Draft {{activity_plural}}{% endblocktrans %}</li>
+                </ul>
+                <ul class="list-unstyled editor_summary">
+                    <li class="sidebarSubtitle">{% trans 'Data Entry Completion' %}</li>
+                    <li><span class="editor_stats_block">{{ incomplete_activities }}</span>{% blocktrans %}Incomplete {{activity_plural_lower}}{% endblocktrans %}</li>
+                    <li><span class="editor_stats_block">{{ avg_completion | percentify }}</span>{% trans 'Average completion' %}</li>
+                </ul>
+                <hr />
+
+                <a class="btn btn-default btn-block" href={% url 'organisation_profile' organisation_code %}>{% trans 'Visit profile page' %}</a>
+            </div>
+        </div>
+
+        <!--=== CENTRE PANEL ===-->
+        <div class="col-xs-7" id="centrePanel">
+
+            {% for activity in object_list %}
+            {% if activity.openly_status != iati_xml_status %}
+
+            {% include 'editor/activity_card_without_financials.html' %}
+
+            {% endif %}
+            {% endfor %}
+
+        </div> <!--end of column-->
+
+    </div> <!--end of row-->
+</div> <!--end of container-->
+
+{% endblock content %}

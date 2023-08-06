@@ -1,0 +1,538 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-08 17:32+0900\n"
+"PO-Revision-Date: 2016-06-17 19:05+0900\n"
+"Last-Translator:   <anders@catalpa.io>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.7.2\n"
+
+msgid ""
+"You cannot access this page because you do not have appropriate access "
+"rights."
+msgstr ""
+
+msgid "Page Not Found"
+msgstr "စာမျက်နှာ ရှာမတွေ့ဘူး"
+
+msgid "Oops! An error has occurred"
+msgstr "အမှားတွေ့တယ်"
+
+msgid "Aid by Donor"
+msgstr "အလှူရှင်၏အကူအညီ"
+
+msgid "All Donors"
+msgstr "အလှူရှင်အားလုံး"
+
+msgid "Commitment by Donor"
+msgstr "အလှူရှင်၏ လျာထားငွေ"
+
+msgid ""
+"This chart shows the total amount of development assistance committed by "
+"development partners. This chart corresponds to the date filter above."
+msgstr ""
+"ဖြံ့ျဖိဳးမွဳမိတ္ဖက္မ်ားက ဖြံ့ျဖဳိးမွဳအတြက္ ေထာက္ပံ့ေသာ လ်ာထားေငြ အားလုံးကုိ ဇယားမွာ ျပထားတယ္။ဒီဇယားက "
+"အထက္မွာေရြးထားတဲ့ ေန့ကုိ ရည္ညြွန္းတယ္။"
+
+msgid ""
+"click on an individual chart bar below to filter the statistics by that "
+"specific donor"
+msgstr "အလှူရှင်တစ်ဦးချင်း၏ အကူအညီကို ရွေးရန် အောက်ပါ chart bar တခုစီကို click  ပါ။"
+
+msgid "Commitment by Aid Sector"
+msgstr "ကဏ္ဍအလိုက်အကူအညီ လျာထားငွေ"
+
+msgid ""
+"This chart shows the total amount of commitments from development partners "
+"by aid sector."
+msgstr "ကဏ္ဍအလိုက်ဖွံ့ဖြိုးမှုမိတ်ဖက်များ၏ အကူအညီ လျာထားငွေ အားလုံးကို ဇယားမှာ ပြထားတယ်။"
+
+msgid "Total Donors"
+msgstr "အလှူရှင်စုစုပေါင်း"
+
+msgid "This is the total number of development partners."
+msgstr "ဒါကတော့ ဖွံ့ဖြိုးမှုမိတ်ဖက် အရေအတွက်စုစုပေါင်း ဖြစ်ပါတယ်။"
+
+msgid "Total Commitment"
+msgstr "စုစုပေါင်း လျာထားငွေ"
+
+msgid "Total commitment"
+msgstr "စုစုပေါင်း လျာထားငွေ"
+
+msgid ""
+"This is the total amount of development assistance committed across all "
+"activities. This amount corresponds to the date filter."
+msgstr ""
+"လုပ္ေဆာင္ခ်က္အားလုံးအတြက္ ဖြ့ံျဖဳိးမွဳအကူအညီ လ်ာထားေငြ စုစုေပါင္းျဖစ္ပါတယ္။ ဒီပမာဏကေန့စြဲကုိစစ္ဖုိ့္ "
+"ရည္ညြွန္းပါတယ္။"
+
+msgid "Total Disbursements"
+msgstr "ရရှိပြီးပမာဏစုစုပေါင်း"
+
+msgid "Total disbursements"
+msgstr "ရရှိပြီးပမာဏစုစုပေါင်း"
+
+msgid ""
+"This is the total amount of development assistance disbursed. This amount "
+"corresponds to the date filter."
+msgstr "ရရှိပြီး ဖွံ့ဖြိုးမှုအကူအညီ စုစုပေါင်း ဖြစ်ပါတယ်။ ဒီပမာဏက နေ့စွဲကိုစစ်ဖို့ ရည်ညွှန်းပါတယ်။"
+
+msgid "Percent Disbursed"
+msgstr "ရရှိပြီး ရာခိုင်နှုန်း"
+
+msgid ""
+"This is the percentage total of development assistance disbursed. This "
+"percentage corresponds to the date filter."
+msgstr ""
+"ရရွိျပီး ဖြ့ံျဖဳိးမွဳအကူအညီ ရာခုိင္နွဳန္း  စုစုေပါင္း ျဖစ္ပါတယ္။ ဒီ ရာခုိင္နွဳန္းက ေန့စြဲကုိစစ္ဖုိ့ ရည္ညြွန္းပါတယ္။"
+
+msgid "Activities by Ministry"
+msgstr "ဝန်ကြီးဌာနအလိုက်လုပ်ငန်းများ"
+
+msgid ""
+"This chart shows the total number of activities associated with each "
+"relevant partner Ministry. This chart corresponds to the date filter."
+msgstr ""
+"သက္ဆုိင္ရာဝန္ျကီးဌာနအသီးသီးအလုိက္ လုပ္ငန္းမ်ားအားလုံးကုိ ဒီဇယားက ျပပါတယ္။ ဒီဇယားက ေန့စြဲကုိစစ္ဖုိ့ "
+"ရည္ညြွန္းပါတယ္။"
+
+msgid "Loans Vs Grants"
+msgstr "ချေးငွေနှင့်အကူအညီ"
+
+msgid "Loans vs Grants"
+msgstr "ချေးငွေနှင့်အကူအညီ"
+
+#, fuzzy
+#| msgid ""
+#| "This chart shows the total amount of commitments from development "
+#| "partners by aid sector."
+msgid ""
+"This chart shows the breakdown of commitment transactions between loans and "
+"grants."
+msgstr "ကဏ္ဍအလိုက်ဖွံ့ဖြိုးမှုမိတ်ဖက်များ၏ အကူအညီ လျာထားငွေ အားလုံးကို ဇယားမှာ ပြထားတယ်။"
+
+msgid "Activities by Status"
+msgstr "Status အလိုက် လုပ်ငန်းများ"
+
+msgid "Activities by status"
+msgstr "Status အလိုက် လုပ်ငန်းများ"
+
+msgid ""
+"This chart shows the total number of activities by status (i.e. pipeline, "
+"implementation, completed, post-completion). This chart corresponds to the "
+"date filter."
+msgstr ""
+"Status (ဆုိလုိသည္မွာ -လ်ာထားခ်က္၊ေဆာင္ရြက္ဆဲ၊ ေဆာင္ရြက္ျပီး၊လုံးဝျပီးဆုံးသည့္စီမံခ်က္)\n"
+"အလုိက္ လုပ္ငန္းမ်ား အားလုံးကုိ ဒီဇယားက ျပပါတယ္။  ဒီဇယားက ေန့စြဲကုိစစ္ဖုိ့ ရည္ညြွန္းပါတယ္။"
+
+msgid "Total"
+msgstr "စုစုပေါင်း"
+
+msgid "Aid by Location"
+msgstr "နေရာဒေသအလိုက်အကူအညီ"
+
+msgid "TOTAL"
+msgstr "စုစုပေါင်း"
+
+msgid "Aid by Ministry"
+msgstr "ဝန်ကြီးဌာနအလိုက် အကူအညီ"
+
+msgid "All Ministries"
+msgstr "ဝန်ကြီးဌာနအားလုံး"
+
+msgid "Number of Activities by Ministry"
+msgstr "ဝန်ကြီးဌာနအလိုက် အလုပ် အရေအတွက်"
+
+msgid "Number of Activities"
+msgstr "အလုပ် အရေအတွက်"
+
+msgid ""
+"This chart shows the total number of activities associated with each "
+"relevant Ministry."
+msgstr "သက်ဆိုင်ရာဝန်ကြီးဌာနအသီးသီးအလိုက် အလုပ် အရေအတွက် စုစုပေါင်းကို ဒီဇယားက ပြထားပါ တယ်။"
+
+msgid ""
+"click on an individual chart bar below to filter the statistics by Ministry"
+msgstr "ဝန်ကြီးဌာနအလိုက် စာရင်းများကိုစစ်ရန် အောက်ပါ  chart bar ကို နှိပ်ပါ။"
+
+msgid ""
+"This is the total amount of development assistance committed across all "
+"activities that have been linked to a partner Ministry. This number "
+"corresponds to the date filter."
+msgstr ""
+"မိတ္ဖက္ဝန္ျကီးဌာနနွင့္ ခ်ိတ္ဆက္ထားေသာ လုပ္ငန္းအေပါ္ ဖြံ့ျဖဳိးမွဳ အကူအညီ စုစုေပါင္းျဖစ္ပါတယ္။ ဒီအေရအတြက္က "
+"ေန့စြဲကုိစစ္ဖုိ့ ရည္ညြွန္းပါတယ္။"
+
+msgid "Total Donors & Type"
+msgstr "စုစုပေါင်းအလှူရှင်များနှင့် အမျိုးအစား"
+
+msgid "Total donors & Type"
+msgstr "စုစုပေါင်းအလှူရှင်များနှင့် အမျိုးအစား"
+
+msgid ""
+"This is the total volume of development assistance committed across all "
+"activities by collaboration type."
+msgstr "ပူးပေါင်းဆောင်ရွက်မှု အမျိုးအစားအလိုက် လုပ်ငန်းအပေါ် ဖွံ့ဖြိုးမှု အကူအညီ စုစုပေါင်းဖြစ်ပါတယ်။"
+
+msgid "Largest Donor & projects"
+msgstr "အများဆုံးအလှူရှင်နှင့် စီမံချက်များ"
+
+msgid "Largest donor & projects"
+msgstr "အများဆုံးအလှူရှင်နှင့် စီမံချက်များ"
+
+msgid ""
+"This chart shows the total amount of development assistance committed by the "
+"largest five donors. This chart corresponds to the date filter."
+msgstr ""
+"အမ်ားဆုံးအလွဴရွင္ငါးဦးက လ်ာထားသည့္ဖြံ့ျဖဳိးမွဳ အကူအညီစုစုေပါင္းကုိ ဒီဇယားက ျပထားပါ တယ္။ဒီဇယားက "
+"ေန့စြဲကုိစစ္ဖုိ့ ရည္ညြွန္းပါတယ္။"
+
+msgid "Total Disbursed"
+msgstr "ပေးချေပြီးသောစုစုပေါင်း"
+
+msgid "Total disbursed"
+msgstr "ပေးချေပြီးသောစုစုပေါင်း"
+
+msgid ""
+"This is the total amount of development assistance disbursed. This number "
+"corresponds to the date filter."
+msgstr "ပေးချေပြီးသော ဖွံ့ဖြိုးမှု အကူအညီစုစုပေါင်းဖြစ်ပါတယ်။ ဒီအရေအတွက်က နေ့စွဲကိုစစ်ဖို့ ရည်ညွှန်းပါတယ်။"
+
+msgid "Projects"
+msgstr "စီမံချက်များ"
+
+msgid "Value"
+msgstr "တန်ဖိုး"
+
+msgid "Aid by Sector"
+msgstr "ကဏ္ဍအလိုက်အကူအညီ"
+
+msgid "All categories"
+msgstr "အမျိုးအစားအားလုံး"
+
+msgid "Commitment by Sector"
+msgstr "ကဏ္ဍအလိုက်လျာထားမှု"
+
+msgid "Commitment by sector"
+msgstr "ကဏ္ဍအလိုက် လျာထားမှု"
+
+msgid ""
+"This chart shows the total amount of commitments from development partners "
+"by DAC3 sector."
+msgstr "DAC3 ကဏ္ဍအလိုက်ဖွံ့ဖြိုးမှုမိတ်ဖက်များထံမှ လျာထားသည့် စုစုပေါင်းပမာဏကို ဒီဇယားက ပြထားပါ တယ်။"
+
+msgid ""
+"This is the total amount of development assistance committed. This amount "
+"corresponds to the date filter."
+msgstr "လျာထားသည့် ဖွံ့ဖြိုးမှု အကူအညီစုစုပေါင်းဖြစ်ပါတယ်။ ဒီပမာဏက နေ့စွဲကိုစစ်ဖို့ ရည်ညွှန်းပါတယ်။"
+
+msgid ""
+"This chart shows the total amount of development assistance committed by "
+"development partners. This chart corresponds to the date filter."
+msgstr ""
+"ဖြံ့ျဖဳိးမွဳမိတ္ဖက္မ်ားအလုိက္ လ်ာထားသည့္ စုစုေပါင္းပမာဏကုိ ဒီဇယားက ျပထားပါ တယ္။ ဒီဇယားက ေန့စြဲကုိစစ္ဖုိ့ "
+"ရည္ညြွန္းပါတယ္။"
+
+msgid "No Information Available"
+msgstr "အချက်အလက်မရနိုင်ပါ။"
+
+msgid "No Information"
+msgstr "အချက်အလက်မရှိ။"
+
+msgid "Available"
+msgstr "ရနိုင်သော"
+
+msgid "Dashboard Filter"
+msgstr "စစ်ရန်ပေါင်အဝန်း"
+
+msgid "Revert to default filters"
+msgstr "ပုံသေစစ်ဆေးမှုရရန်ပြန်ထားခြင်း"
+
+msgid "Finance Type Category"
+msgstr "ငွေကြေးထောက်ပံ့သည့်အမျိုးအစား"
+
+msgid "Activity Status"
+msgstr "အလုပ်အဆင့်"
+
+msgid "State"
+msgstr "အခြေအနေ(သို့) ပြည်နယ်"
+
+msgid "Sector"
+msgstr "ကဏ္ဍ"
+
+msgid "Ministry"
+msgstr "ဝန်ကြီးဌာန"
+
+msgid "Donor"
+msgstr "အလှူရှင်"
+
+msgid "Set Filter"
+msgstr "စစ္ပါ။"
+
+msgid "to"
+msgstr "ရန် (သို့) ဖို့"
+
+msgid "Clear current date filters, and sorts"
+msgstr "လက်ရှိ စစ်နေသော Dataကိုဖယ်ပြီး စီပါ"
+
+msgid "Activities List"
+msgstr "လုပ်ငန်းစာရင်းများ"
+
+msgid "The Activity List"
+msgstr "လုပ်ငန်းစာရင်းများ"
+
+msgid ""
+"The activities listed below are those used to calculate the above charts and "
+"graphics. These activities correspond to the date filter above."
+msgstr ""
+"အထက္ပါ charts and graphics မ်ားတြင္ သုံးေလ့ရွိေသာ လုပ္ငန္းစာရင္းမ်ားကုိ ေအာက္မွာျပထားတယ္။ "
+"ဒီလုပ္ငန္းမ်ားသည္ ေန့စြဲကုိစစ္ဖုိ့ ရည္ညြွန္းပါတယ္။"
+
+msgid "Activity"
+msgstr "လုပ်ငန်း"
+
+msgid "Title"
+msgstr "ခေါင်းစဉ်"
+
+msgid "Status"
+msgstr "အဆင့်၊ အခြေအနေ"
+
+msgid "Financing"
+msgstr "ငွေကြေးနှင့်ဆိုင်သော"
+
+msgid "Start"
+msgstr "အစ"
+
+msgid "End"
+msgstr "အဆုံး"
+
+msgid "Commitment by Location"
+msgstr "နေရာဒေသအလိုက်ဆောင်ရွက်မည့်အလုပ်"
+
+msgid "Commitment by location"
+msgstr "နေရာဒေသအလိုက်ဆောင်ရွက်မည့်အလုပ်"
+
+msgid ""
+"The map below shows the amount of development assistance committed by "
+"location for activities. The map corresponds to the date filter. Click on "
+"the map to zoom in"
+msgstr ""
+"ေနရာေဒသအလုိက္ ေဆာင္ရြက္မည့္ ဖြ့ံျဖဳိးမွဳအကူအညီမ်ားကုိ ေအာက္ပါေျမပုံတြင္ျပထားပါသည္။ ဒီေျမပုံက ေန့စြဲကုိစစ္ဖုိ့ "
+"ရည္ညြွန္းပါတယ္။ ေျမပုံကုိခ်ဲ့ျကည့္ရန္ နွိပ္ပါ။"
+
+msgid "Total Commitments"
+msgstr "ဆောင်ရွက်မည့်အလုပ် စုစုပေါင်း"
+
+msgid ""
+"This is the total amount of development assistance committed across all "
+"activities. This number corresponds to the date filter."
+msgstr ""
+"လုပ္ငန္းအလုိက္ ေဆာင္ရြက္မည့္ဖြ့ံျဖဳိးမွဳအကူအညီပမာဏအားလုံးေပါင္း ျဖစ္ပါတယ္။ဒီအေရအတြက္ဟာေန့စြဲကုိစစ္ဖုိ့ "
+"ရည္ညြွန္းပါတယ္။"
+
+msgid ""
+"This is the total amount of development assistance disbursed across all "
+"activities. This number corresponds to the date filter."
+msgstr "ရရှိပြီးဖွံ့ဖြိုးမှုအကူအညီပမာဏ အားလုံးပေါင်း ဖြစ်ပါတယ်။ဒီအရေအတွက်ဟာနေ့စွဲကိုစစ်ဖို့ ရည်ညွှန်းပါတယ်။"
+
+msgid ""
+"This is the percentage total of committed development assistance disbursed. "
+"This percentage corresponds to the date filter."
+msgstr ""
+"ေဆာင္ရြက္မည့္ဖြ့ံျဖဳိးမွဳအကူအညီမွ ရရွိျပီးပမာဏ၏စုစုေပါင္း ရာခုိင္နွဳန္း ျဖစ္ပါတယ္။ ဒီရာခုိင္နွဳန္းဟာ ေန့စြဲကုိစစ္ဖုိ့ "
+"ရည္ညြွန္းပါတယ္။"
+
+msgid "percent"
+msgstr "ရာခိုင်နှုန်း"
+
+msgid "Commitment by Status"
+msgstr "Statusအလိုက်ဆာင်ရွက်မည့်အလုပ်"
+
+msgid "Commitment by status"
+msgstr "Statusအလိုက် ဆာင်ရွက်မည့်အလုပ်"
+
+msgid ""
+"This chart shows the total volume of funds committed to activities by the "
+"activity status i.e pipeline, implementation, completed, post-completed. The "
+"chart also corresponds to the date filter."
+msgstr ""
+"အလုပ္အဆင့္ (ဆုိလုိသည္မွာ-လ်ာထားခ်က္ ၊ေဆာင္ရြက္ဆဲ၊  ေဆာင္ရြက္ျပီး၊လုံးဝျပီးဆုံးသည့္စီမံခ်က္)အလုိက္ "
+"ေဆာင္ရြက္မည့္ရံပုံေငြစုစုေပါင္းပမာဏကုိ ဒီဇယားကျပထားပါတယ္။ ဒီဇယားက ေန့စြဲကုိစစ္ဖုိ့ လည္း ရည္ညြွန္းပါတယ္။"
+
+msgid ""
+"This chart shows the total number of activities associated with each "
+"relevant Ministry. This chart corresponds to the date filter."
+msgstr ""
+"သက္ဆုိင္ရာဝန္ျကီးဌာနွင့္ ဆက္စပ္ေသာ လုပ္ငန္းစုစုေပါင္း အေရအတြက္ ကုိ ဒီဇယားက ျပထားပါ တယ္။ ဒီဇယားက "
+"ေန့စြဲကုိစစ္ဖုိ့ ရည္ညြွန္းပါတယ္။"
+
+msgid "Commitment by donor"
+msgstr "အလှူရှင်က ဆောင်ရွက်မည့်အလုပ်"
+
+msgid "Donor commitment"
+msgstr "အလှူရှင်က ဆောင်ရွက်မည့်အလုပ်"
+
+msgid ""
+"The bar chart below shows the total value of commitments by development "
+"partner. The chart also corresponds to the date filter."
+msgstr ""
+"ဖြံ့ျဖဳိးမွဳမိတ္ဖက္မ်ားအေနျဖင့္ လ်ာထားသည့္စုစုေပါင္းတန္ဖုိးကုိ ဒီဇယားက ျပထားပါ တယ္။ ဒီဇယားက ေန့စြဲကုိစစ္ဖုိ့ "
+"ရည္ညြွန္းပါတယ္။"
+
+msgid "Commitment by aid sector"
+msgstr "ကဏ္ဍအလိုက် အကူအညီလျာထားမှု"
+
+msgid ""
+"This chart shows the total amount of commitments from development partners "
+"by sector for activities."
+msgstr "အလုပ်အတွက် ကဏ္ဍအလိုက် ဖွံ့ဖြိုးမှုမိတ်ဖက်များထံမှ စုစုပေါင်းလျာထားသည့် ပမာဏကို ဒီဇယားက ပြထားပါ တယ်။"
+
+msgid "Edit columns"
+msgstr "အတိုင်ကို ပြင်ဆင်သည်။"
+
+msgid "Clear all filters"
+msgstr "filters များကို ဖြုတ်သည်။"
+
+msgid "Add a filter"
+msgstr "filters များကိုထည့်သည်။"
+
+msgid "Commitment"
+msgstr "လျာထားချက်"
+
+msgid ""
+"The total amounts of firm, written obligations from donors or providers to "
+"provide specified amounts of funds, under particular terms and conditions, "
+"for specific purposes, for the benefit of recipients."
+msgstr ""
+"လက္ခံသူမ်ားအက်ဳိးအတြက္ သီးသန့္ရည္ရြယ္ခ်က္မ်ားနွင့္ သီးသန့္စကားရပ္၊ အေျခအေနေအာက္မွ ရံပုံေငြအတိအက်နွင့္ ပံ့ပုိးရန္္ "
+"အလွဴရွင္မ်ား(သုိ့) ပံ့ပုိးေပးသူမ်ားထံမွခုိင္မာတဲ့ပမာဏကုိ တာဝန္အရ ေရးထားသည္။"
+
+msgid "Disbursement"
+msgstr "ရရှိမှု"
+
+msgid ""
+"The total amount of outgoing funds that placed at the disposal of recipient "
+"governments or organisations, or funds transferred between two separately "
+"reported activities."
+msgstr ""
+"လက္ခံသူအစုိးရမ်ား(သုိ့) အဖြဲ့အစည္းမ်ား၏ ဖယ္ရွားထားေသာစုစုေပါင္းရံပုံေငြ(သု့ိ)သီးျခားအစီရင္ခံသည့္ "
+"အဖြဲ့နွစ္ဖြဲ့ျကား လြွဲေျပာင္းလာေသာ ရံပုံေငြမ်ား"
+
+msgid "Expenditure"
+msgstr "အသုံးစရိတ်"
+
+msgid ""
+"The total amount of outgoing funds that are spent on goods and services."
+msgstr "ကုန်စည်နှင့် ဝန်ဆောင်မှုလုပ်ငန်းများအပေါ် အသုံးပြုသော ရံပုံငွေ၏စုစုပေါင်းပမာဏ"
+
+msgid "Other"
+msgstr "အခြား"
+
+msgid ""
+"All other types of transactions (Interest Repayment, Loan Repayment, "
+"Reimbursement, Purchase of Equity, Sale of Equity, Credit Guarantee, "
+"Incoming Commitment)"
+msgstr ""
+"လုပ္ငန္းပုံစံအမ်ဳိးမ်ဳိး၊ (အတုိးနွဳန္းေပးေခ်ျခင္း၊ ေခ်းေငြျပန္ဆပ္ျခင္း၊ ကုန္က်စရိတ္ျပန္ေပးျခင္း ၊"
+"ရွယ္ယာဝယ္ယူျခင္း၊ ရွယ္ယာေရာင္းျခင္း၊ အေျကြးအာမခံျခင္း၊ ကတိကဝတ္မ်ားရရွိျခင္း)"
+
+msgid "Show All"
+msgstr "အားလုံး ဖော်ပြသည်။"
+
+msgid "Show Pages"
+msgstr "စာမျက်နှာများ ဖော်ပြသည်။"
+
+msgid "Summary"
+msgstr "အကျဉ်းချုပ်"
+
+msgid "Activities"
+msgstr "လုပ်ငန်းများ"
+
+msgid "Transactions"
+msgstr "လုပ်ငန်းများ"
+
+msgid "Organisations"
+msgstr "အဖွဲ့အစည်း"
+
+msgid "No results found."
+msgstr "အဖြေမရှိပါ။"
+
+msgid "Search Results"
+msgstr "အဖြေရှာသည်။"
+
+msgid "Advanced filter"
+msgstr "ရှေ့ပြေး filters"
+
+msgid "Reporting Org"
+msgstr "အဖွဲ့အစည်းကို အစီရင်ခံသည်။"
+
+msgid "Participating Org"
+msgstr "အဖွဲ့အစည်းကို ပါဝင်ဆောင်ရွက်သည်။"
+
+msgid "Multiple Donors"
+msgstr "အလှူရှင်များစွာ"
+
+#, python-format
+msgid "Empty list and ``%(class_name)s.allow_empty`` is False."
+msgstr ""
+
+msgid "Aid By Sector"
+msgstr "ကဏ္ဍအလိုက်အကူအညီ"
+
+msgid "Aid By Location"
+msgstr "နေရာဒေသအလိုက် အကူအညီ"
+
+msgid "Aid By Ministry"
+msgstr "ဝန်ကြီးဌာနအလိုက် အကူအညီ"
+
+msgid "Aid By Donor"
+msgstr "အလှူရှင်အလိုက် အကူအညီ"
+
+#, fuzzy
+#| msgid "Search Results"
+msgid "Search"
+msgstr "အဖြေရှာသည်။"
+
+#~ msgid "This chart shows the total number of activities by aid finance type."
+#~ msgstr "ငွေကြေးအကူအညီ အမျိုးအစားအလိုက် စုစုပေါင်း အရေအတွက်ကို ဒီဇယားက ပြထားပါတယ်။"
+
+#~ msgid ""
+#~ "click on an individual chart bar below to filter the statistics by "
+#~ "specific sector"
+#~ msgstr "တိကျတဲ့ကဏ္ဍအလိုက် စာရင်းများကိုစစ်ရန် အောက်ပါ chart bar တစ်ခုစီကို နှိပ်ပါ။"
+
+#~ msgid "Software designed & developed by"
+#~ msgstr "Software ပုံစံထုတ်သူနှင့် တည်ထောင်သူ"
+
+#~ msgid "Reports"
+#~ msgstr "အစီရင်ခံစာများ"
+
+#~ msgid "Create Report"
+#~ msgstr "အစီရင်ခံစာပြုစုသည်။"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "အကူအညီ Dashboards"
+
+#~ msgid "Oops! Something must have gone wrong"
+#~ msgstr "ဟာ-တခုခုမှားေ နတယ်"
+
+#~ msgid "Print Page"
+#~ msgstr "Print ထုတ် စာမျက်နှာ"
+
+#~ msgid "Export Data"
+#~ msgstr "Data ပို့ခြင်း"
+
+#~ msgid "Total Budget"
+#~ msgstr "စုစုပေါင်းအသုံးစရိတ်"

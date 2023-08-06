@@ -1,0 +1,211 @@
+{% load i18n %}
+{% load static %}
+{% load common_text %}
+{% load ifsetting %}
+
+<activities>
+    <div>
+        {% if not financial_data_exists %}
+        <div class="row">
+            <div class="col-sm-8 col-xs-12">
+                {% blocktrans asvar helpcontent_activities %}These are this organisation's {{ activity_plural_lower }}{% endblocktrans %}
+                <h2 class="section-title">
+                    {{ activity_plural }}
+                    <a tabindex="0" role="button" class="ion-ios-help-outline dash-info hidden-print" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{{helpcontent_activities|escape}}"> </a>
+                </h2>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if financial_data_exists %}
+        <div class="row">
+            <div class="col-sm-8 col-xs-12">
+                {% blocktrans asvar helpcontent_activities %}These are this organisation's {{ activity_plural_lower }}{% endblocktrans %}
+                <h2 class="section-title">
+                    {{ activity_plural }}
+                    <a tabindex="0" role="button" class="ion-ios-help-outline dash-info hidden-print" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content="{{helpcontent_activities|escape}}"> </a>
+                    <button class="btn btn-default btn-small pull-right hidden-xs" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+                    {% trans 'Filter' %} {{ activity_plural }}
+                    </button>
+                </h2>
+            </div>
+        </div>
+
+        <div class="collapse" id="collapseFilter">
+            <div class="row" if={ !loading && store && store.choices }>
+                <div class="col-sm-8 filter-collapse">
+                    <h4>{% blocktrans %}Filter {{ activity_plural }}{% endblocktrans %}</h4>
+                    <form class="form">
+                        <div class="form-group col-xs-4 no-padding-left">
+                            <label for="activity-list-form-activity-status">{% blocktrans %}{{ activity_singular }} Status{% endblocktrans %}</label>
+                            <select id="activity-list-form-activity-status" class="form-control" name="status" onchange={onFilterChange} >
+                                <option>{% trans 'Any status' %}</option>
+                                <option ref="filterFormStatus" each={opt in store.choices.status} value="{opt.pk}" selected={_.includes(filters.status, opt.pk)}>{opt.name}</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-xs-4 no-padding-left">
+                            <label for="activity-list-form-order">{% trans 'Order By' %}</label>
+                            <select id="activity-list-form-order" class="form-control" name="orderBy" onchange={onFilterChange} >
+                                <option ref="orderBy" each={opt in orderBy} value="{opt.field}" selected={opt.field==filters.orderBy}>{opt.label}</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-xs-4 no-padding-left">
+                            <label for="activity-list-form-role">{% trans 'Role of Profile Organisation' %}*</label>
+                            <select id="activity-list-form-role" class="form-control" name="filterFormRole" onchange={onFilterChange} >
+                                <option ref="filterFormRole" selected={_.includes(filters.role, '__all__')} value="__all__">{% trans 'Any role' %}</option>
+                                <option ref="filterFormReporting" selected={_.includes(filters.organisation, opts.organisation)} value={opts.organisation}>{% trans 'Reporting' %}</option>
+                                <option ref="filterFormRole" each={opt in store.choices.role} if ="{opt.role}" value="{opt.role}" selected={_.includes(filters.role, opt.role)}>{opt.role}</option>
+                            </select>
+                            <label>*{opts.organisation_name}</label>
+                        </div>
+                        {% ifsetting OIPA_SYNC_ENABLED %}
+                        <div class="form-group col-xs-4 no-padding-left">
+                            <label for="activity-list-form-iati">{% trans 'IATI Sync Status' %}</label>
+                            <select id="activity-list-form-iati" class="form-control" name="filterFormIati" onchange={onFilterChange} >
+                                <option ref="filterFormIati" selected={_.includes(filters.iati_sync, '__all__')} value="__all__">{% trans 'Any' %}</option>
+                                <option ref="filterFormIati" selected={_.includes(filters.iati_sync, 'true')} value="synced">{% trans 'Synced' %}</option>
+                                <option ref="filterFormIati" selected={_.includes(filters.iati_sync, 'false')} value="notsynced">{% trans 'Not synced' %}</option>
+                            </select>
+                        </div>
+                        {% endifsetting %}
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if financial_data_exists %}
+        <div class="row" if={byStatusCountLabels}>
+            <div class="col-sm-8 activity-stats">
+                <div class="col-sm-4 no-padding-left">
+                    <p>{% trans 'Implementing' %}</p>
+                    <p class="big_count text-left">{_.get(byStatusCountLabels, "Implementation", 0)}</p>
+                </div>
+                <div class="col-sm-4 no-padding-left">
+                    <p>{% trans 'Pipeline/Identification' %}</p>
+                    <p class="big_count text-left">{_.get(byStatusCountLabels, "Pipeline/identification", 0)}</p>
+                </div>
+                <div class="col-sm-4 no-padding-left">
+                    <p>{% trans 'Completed/Post-Completion' %}</p>
+                    <p class="big_count text-left">
+                        {_.get(byStatusCountLabels, "Completion", 0) + _.get(byStatusCountLabels, "Post-completion", 0)}
+                    </p>
+                </div>
+
+                <div if={ loading } class="spinner">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" if={ !activities || activities.length == 0}>
+            <div class="col-sm-offset-1 col-sm-10">
+                <p><strong>{% blocktrans %}No {{activity_plural_lower}} to show{% endblocktrans %}</strong></p>
+            </div>
+        </div>
+        {% endif %}
+
+        <div each={ activity in activities } class="row organisation-activity-row" data={ activity }>
+            <div class="col-sm-8 col-xs-12">
+                <div class="activity-list">
+                    {% ifnotsetting ORG_PROFILE_SIMPLE_ACTIVITY_DISPLAY %}
+                    <p style="margin-top: 15px; margin-bottom: 0px; font-size: 12px" class="small help-block">
+                        <strong>{{ project_name }} {% trans 'ID' %}:</strong> { activity.pk }
+                        {% ifsetting OIPA_SYNC_ENABLED %}
+                        <span if={ activity.internal_identifier }> | <strong>{% trans 'Partner ID' %}:</strong> { activity.internal_identifier }</span>
+                        <span if={ activity.iati_identifier }> | <strong>{% trans 'IATI ID' %}:</strong> { activity.iati_identifier }</span> |
+                        <i if={ activity.iati_sync } class="ion-ios-checkmark-outline"></i>
+                        <span if={ activity.iati_sync } style="font-weight: bold;">{% trans 'IATI Synced' %}</span>
+                        <span if={ !activity.iati_sync }>{% trans 'Not IATI Synced' %}</span>
+                        {% endifsetting %}
+                    </p>
+                    {% endifnotsetting %}
+                    <h3 class="no-margin" style="margin-right:5px;"><a href={ activity.profile }>{ activity.title }</a>
+                        {% if editor %}<a href={ activity.edit } type="button" class="margin-left btn btn-default btn-super-small transparent hidden-print light">{% trans 'Edit' %}</a>
+                        {% endif %}
+                    </h3>
+                    {% ifnotsetting ORG_PROFILE_SIMPLE_ACTIVITY_DISPLAY %}
+                    <p class="small no-margin">
+                        <strong>{% trans 'Status' %}: </strong><span>{ activity.activity_status__name }</span> |
+                        <strong>{% trans 'Duration' %}: </strong> { activity.duration_start } - { activity.duration_end } |
+                        <strong>{% trans 'Role of organisation' %}: </strong><span>{ activity.role }</span> |
+                        <strong>{% trans 'Reported by' %}: </strong><span><a href={activity.reporting_org_url} class="anchor-activity-subdetails">{ activity.reporting_organisation__name }</a></span> |
+                        <virtual if={ activity.implementing_partners && activity.implementing_partners.length == 1 }>
+                        <strong>{% trans 'Implementing partner' %}: </strong><span>{ activity.implementing_partners[0] }</span> |
+                        </virtual>
+                        <virtual if={ activity.implementing_partners && activity.implementing_partners.length > 1 }>
+                        <strong>{% trans 'Implementing partners' %}: </strong><span>{ activity.implementing_partners.join(', ') }</span> |
+                        </virtual>
+                        <strong>{% trans 'Total commitment' %}: </strong>  { activity.commitment_total_display } |
+                        <strong>{% trans 'Data completion' %}: </strong>  { _.toInteger(activity.completion * 100) }%
+                    </p>
+                    {% endifnotsetting %}
+                    <p if={ activity.date_modified || activity.date_created } class="small no-margin">
+                        <span if={ activity.date_created }><strong>{% trans 'Date Created' %}: </strong> { activity.date_created } </span>
+                        <span if={ activity.date_modified && activity.date_created }>|</span>
+                        <span if={ activity.date_modified }><strong>{% trans 'Date Updated' %}: </strong> { activity.date_modified } </span>
+                    </p>
+                    <p class="small"><strong if={activity.sectors}>{% trans 'Sector' %}: </strong> { activity.sectors }</p>
+                    <p>{ activity.description }</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row hidden-print">
+            <div class="col-sm-8">
+                <div data-is="previous-next-pagination" pagination={pagination}></div>
+            </div>
+        </div>
+
+        <style scoped>
+            .margin-left { margin-left: 10px;}
+            .text-left { text-align: left!important; }
+            .light { color: #7a838b!important; }
+            strong { font-weight: 600; }
+        </style>
+    </div>
+
+    {% include 'tags/activities.js' %}
+</activities>
+
+<previous-next-pagination>
+    <div class="page-button-holder hidden-print">
+        <button class="btn btn-default page_tools" if={ pages > 1  && !pagination.showAll } onclick={ toggleShowAll }>
+            {% trans 'Show All' %}
+        </button>
+
+        <button class="btn btn-default page_tools" if={ pages > 1 && pagination.showAll } onclick={ toggleShowAll }>
+            {% trans 'Show Less' %}
+        </button>
+        <div class="centeredPrompt" show={!pagination.showAll && pagination.itemCount > pagination.pageSize}>
+            <nav>
+                <ul class="pager">
+                    <li class="previous"><a href="#" if={ pagination.page > 1 } onclick={ setPreviousPage }><i class="ion-ios-arrow-left"></i> Previous</a></li>
+                    <li class="page_count">{ pagination.page } of { pages }</li>
+                    <li class="next"><a href="#" if={ pagination.page < pages } onclick={ setNextPage }>Next <i class="ion-ios-arrow-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    var tag = this;
+    var defaults = {itemCount: 50, page: 1, pageSize: 10}
+    function onMountOrUpdate(){
+        tag.pagination = tag.opts.pagination || defaults;
+        tag.pages = _.ceil(tag.pagination.itemCount / tag.pagination.pageSize)
+    }
+    tag.on('before-mount', onMountOrUpdate)
+    tag.on('update', onMountOrUpdate)
+    tag.toggleShowAll = function(){tag.parent.trigger('paginationChangeSignal', {showAll: !tag.pagination.showAll})}
+    tag.setPage = function(e, page){e.preventDefault(); tag.parent.trigger('paginationChangeSignal', {page: page || _.get(e, 'item.page')}); return false}
+    tag.setNextPage = function(e){e.preventDefault(); return tag.setPage(e, tag.opts.pagination.page + 1)}
+    tag.setPreviousPage = function(e){e.preventDefault(); return tag.setPage(e, tag.opts.pagination.page - 1)}
+
+</previous-next-pagination>

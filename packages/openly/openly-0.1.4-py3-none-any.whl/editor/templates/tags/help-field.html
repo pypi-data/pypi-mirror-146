@@ -1,0 +1,61 @@
+{% load i18n %}
+{% load ifsetting %}
+<help-popover-field>
+    <a if="{active && content}"
+        class="ion-help-circled dash-info" rel="popover" data-trigger="hover"
+        data-container="body"
+        title="{title}"
+        data-content="{content}"
+        data-original-title="{title}">
+    </a><br if="{active && content}">
+    
+    var tag = this;
+    {# 'eager' tags will show the help_text content in the bubble. Otherwise, the parent tag's `help_popover_content`. #}
+    // {% ifsetting EDITOR_SHOW_HELPTEXT_ABOVE %}
+    var eager = true;
+    // {% else %}
+    var eager = false;
+    // {% endifsetting %}
+    tag.on('mount', function(){
+        tag.update({
+            active: eager || !_.isUndefined(tag.parent.opts.help_popover_content),
+            title: tag.opts.help_popover_title || tag.parent.opts.help_popover_title,
+            content: tag.parent.opts.help_popover_content || tag.parent.opts.helptext || tag.opts.helptext
+        })
+        tag.update();
+        tag.opts.popover = $('a', tag.root).popover();
+    })
+    <style>
+        help-popover-field {display: inline-block; margin-right: 5px;}
+        help-popover-field a.ion-help-circled.dash-info { margin-right: -5px; z-index: 1059;}
+
+    </style>
+</help-popover-field>
+
+<label-required-field>
+    <small show="{required}">{% trans 'Required to publish' %}</small>
+
+    /* "Required to Publish" marker */
+    var tag = this;
+    tag.on('before-mount', function(){
+        var nextTag = tag;
+        var rf;
+        var store = tag.store;
+
+        /*
+        Loop up the tree of parent tags searching for first ancestor with a "required_to_publish_field" option
+        */
+        do {
+            rf = nextTag.opts.required_to_publish_field;
+            store = nextTag.parent.store || store;
+            nextTag = nextTag.parent;
+        } while (nextTag.parent && !rf);
+        if (rf) {
+            tag.required = store.choices.required(rf); /* boolean: should this field be displayed as "required" or not? */
+        }
+    })
+</label-required-field>
+
+<label-info-field>
+    <small if='{parent.opts.label_info}'>{parent.opts.label_info}<br></small>
+</label-info-field>

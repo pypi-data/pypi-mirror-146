@@ -1,0 +1,26 @@
+{% load i18n %}
+{% blocktrans asvar activity_completion_rating %}{{activity_singular}} Completion Rating{% endblocktrans %}
+ {% blocktrans asvar activity_completion_rating_help %}Set the {{activity_singular}} Description{% endblocktrans %}
+<form-completion>
+    <div show="{completion_percentage > 0}" id="completion_panel">
+        <div class="progress_panel animated fadeInLeft">
+            <p>{{ activity_completion_rating }}</p>
+            <p><strong id="completion_percentage_display">{completion_percentage}%</strong> <a id="activity-completion-help" class="ion-help-circled dash-info" rel="popover" data-trigger="hover" data-container="body" title={{ activity_completion_rating|escape }}" data-content="{{ activity_completion_rating_help|escape }}"></a></p>
+            <div class="progress">
+                <div id="completion_progress" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{completion_percentage}" aria-valuemin="0" aria-valuemax="100" style="width: {completion_percentage}%;">
+                </div>
+            </div>
+            <div if="{tasks && tasks.length}">
+                <a role="button" data-toggle="collapse" href="#Tasklist" aria-expanded="false">{% trans "Improve my rating?" %}</a>
+            </div>
+            <div class="collapse" id="Tasklist">
+                <ul class="completion_issues">
+                    <li each="{task, i in tasks}">{ task }</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {% include "tags/form-completion.js" %}
+
+</form-completion>

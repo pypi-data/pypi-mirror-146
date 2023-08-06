@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: 2019-05-28 16:03+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid " hide filters"
+msgstr "Спрятать фильтры"
+
+msgid "Activity Status"
+msgstr "Состояние деятельности"
+
+msgid "Filter"
+msgstr "Фильтр"
+
+msgid "Filter by activity location in Timor-Leste."
+msgstr ""
+
+msgid "Filter by activity sector."
+msgstr "Фильтровать по направлению деятельности"
+
+msgid "Filter by activity status."
+msgstr "Фильтровать по состоянию деятельности"
+
+msgid "Filter by location"
+msgstr "Фильтровать по месторасположению"
+
+msgid "Governmental Organisations"
+msgstr "Государственные организации"
+
+msgid "Location"
+msgstr "Локация (местрорасположение)"
+
+msgid "Look for partners"
+msgstr "Поиск партнероа"
+
+msgid "Non-Government Organisations"
+msgstr "Негосударственные организации"
+
+msgid "Sector"
+msgstr "Сектор (отрасль)"
+
+msgid "clear"
+msgstr "Очистить"
+
+msgid "matches"
+msgstr "Соответствия"
+
+msgid "show filters "
+msgstr "Показать фильтры"

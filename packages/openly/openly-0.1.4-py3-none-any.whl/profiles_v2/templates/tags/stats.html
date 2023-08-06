@@ -1,0 +1,39 @@
+{% load i18n %}
+
+<stats>
+    <h5 class="sidebarSubtitle">
+        <span if={ loading }>
+            Loading...
+        </span>
+        <span if={ first_statistics_year }>
+            {% trans "statistics since " %} { first_statistics_year }
+        </span>
+        <span if={ !loading && !first_statistics_year }>
+            {% trans "no statistics" %}
+        </span>
+        <a id="statistics" class="ion-information-circled dash-info" rel="popover" data-trigger="hover" title="{% trans 'General statistics' %}" data-content="{% trans 'These statistics provide a quick overview of the assistance provided by this development partner.' %}" ></a>
+    </h5>
+
+    <ul class="list-unstyled">
+        <li>{% trans "Committed" %} <strong if={ total_commitments }>{ accounting.compactFormatMoney(total_commitments) }</strong> {% trans " to Myanmar" %}</li>
+        <li>{% trans "Disbursed" %} <strong if={ total_disbursements }>{ accounting.compactFormatMoney(total_disbursements) } </strong><span if={ percentage_dibursements_executed }>({ percentage_dibursements_executed }%)</span></li>
+        <li>{% trans "Associated with" %}<strong if={ num_activities }> { num_activities } </strong>{{ activity_plural_lower }}</li>
+    </ul>
+
+    <span class="stats_divider hidden-print"></span>
+    <h5 class="sidebarSubtitle">{% trans "Commitment by Sector" %}
+        <a id="sectors" class="ion-information-circled dash-info" rel="popover" data-trigger="hover" title="{% trans 'Commitment by sector' %}" data-content="{% trans 'These are the sectors that this development partner is supporting along with the total value committed.' %}"></a>
+    </h5>
+    <div if={ !commitment_by_category }>
+        Loading...
+    </div>
+    <div if={ commitment_by_category } id="sector_container">
+        <span each={ commitment_by_category }  class="sector_tag" title="{ name }">
+            <span class="sector_name">{ name }</span>
+            <span class="sector_value">${ pretty }</span>
+        </span>
+    </div>
+
+    {% include 'tags/stats.js' %}
+
+</stats>

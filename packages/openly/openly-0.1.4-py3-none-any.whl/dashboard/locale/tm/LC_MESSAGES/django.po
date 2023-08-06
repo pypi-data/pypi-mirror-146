@@ -1,0 +1,451 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 12:42+0900\n"
+"PO-Revision-Date: 2017-02-07 15:59+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+#, python-format
+msgid ""
+"\n"
+"                The reports allow us to export and disaggregate aid data reported to %(site)s\n"
+"                "
+msgstr ""
+
+#, python-format
+msgid ""
+"\n"
+"            The reports allow us to export and disaggregate aid data reported to %(site)s\n"
+"            "
+msgstr ""
+
+#, python-format
+msgid ""
+"\n"
+"        The reports allow us to export and disaggregate aid data reported to %(site)s\n"
+"        "
+msgstr ""
+
+msgid "Activities"
+msgstr ""
+
+msgid "Activities List"
+msgstr ""
+
+msgid "Activities by Ministry"
+msgstr "Atividade sira hosi Ministériu"
+
+msgid "Activity Status"
+msgstr "Estatutu Atividade"
+
+msgid "Add a filter"
+msgstr ""
+
+msgid "Aid Aggregation Summary"
+msgstr ""
+
+msgid "Aid By Donor"
+msgstr ""
+
+msgid "Aid By Location"
+msgstr ""
+
+msgid "Aid By Ministry"
+msgstr ""
+
+msgid "Aid By Sector"
+msgstr ""
+
+msgid "Aid Type Category"
+msgstr ""
+
+msgid "Aid by Donor"
+msgstr "Asistensia husi Doador"
+
+msgid "Aid by Ministry"
+msgstr ""
+
+msgid "Aid by Sector"
+msgstr ""
+
+#, fuzzy
+msgid "Aid by location"
+msgstr "Komitmentu hosi Fatin"
+
+msgid "All Donors"
+msgstr "Doador sira hotu"
+
+msgid "All Ministries"
+msgstr ""
+
+msgid "All categories"
+msgstr ""
+
+msgid "All other types of transactions (Interest Repayment, Loan Repayment, Reimbursement, Purchase of Equity, Sale of Equity, Credit Guarantee, Incoming Commitment)"
+msgstr ""
+
+msgid "Available"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
+
+msgid "Clear all"
+msgstr ""
+
+msgid "Clear current date filters, and sorts"
+msgstr ""
+
+msgid "Commitment"
+msgstr ""
+
+msgid "Commitment by Aid Sector"
+msgstr "Komitmentu husi Seitor Asistensia"
+
+msgid "Commitment by Donor"
+msgstr "Komitmentu hosi Doador"
+
+msgid "Commitment by Location"
+msgstr "Komitmentu hosi Fatin"
+
+#, fuzzy
+msgid "Commitment by Ministry"
+msgstr "Komitmentu hosi seitor"
+
+msgid "Commitment by Sector"
+msgstr ""
+
+msgid "Commitment by Status"
+msgstr "Komitmentu hosi Estatutu"
+
+msgid "Commitment by aid sector"
+msgstr "Komitmentu hosi seitor asitensia"
+
+msgid "Commitment by donor"
+msgstr "Komitmentu hosi doador"
+
+msgid "Commitment by location"
+msgstr "Komitmentu hosi Fatin"
+
+msgid "Commitment by sector"
+msgstr "Komitmentu hosi seitor"
+
+msgid "Commitment by status"
+msgstr "Komitmentu hosi estatutu"
+
+msgid "Dashboard Filter"
+msgstr ""
+
+msgid "Disbursement"
+msgstr ""
+
+msgid "Display by"
+msgstr ""
+
+msgid "Display results by"
+msgstr ""
+
+msgid "Donor"
+msgstr ""
+
+msgid "Donor commitment"
+msgstr "Doador nian komitmentu"
+
+msgid "Edit columns"
+msgstr ""
+
+#, python-format
+msgid "Empty list and ``%(class_name)s.allow_empty`` is False."
+msgstr ""
+
+msgid "End"
+msgstr ""
+
+msgid "Expenditure"
+msgstr ""
+
+msgid "Export"
+msgstr ""
+
+msgid "Export Activities"
+msgstr ""
+
+msgid "Export Data"
+msgstr ""
+
+msgid "Filter"
+msgstr ""
+
+msgid "Finance Type Category"
+msgstr ""
+
+msgid "Financial Year"
+msgstr ""
+
+msgid "Financial Years"
+msgstr ""
+
+msgid "Financing"
+msgstr ""
+
+msgid "Go"
+msgstr ""
+
+msgid "IATI ID"
+msgstr ""
+
+msgid "Largest Donor & projects"
+msgstr ""
+
+msgid "Largest donor & projects"
+msgstr ""
+
+msgid "Loans Vs Grants"
+msgstr "Empréstimu Vs Bolsa"
+
+msgid "Loans vs Grants"
+msgstr "Empréstimu Vs Bolsa"
+
+msgid "Long value"
+msgstr ""
+
+msgid "Ministry"
+msgstr ""
+
+msgid "Multiple Donors"
+msgstr ""
+
+msgid "No Information"
+msgstr ""
+
+msgid "No Information Available"
+msgstr ""
+
+msgid "Number of Activities"
+msgstr ""
+
+msgid "Oops! An error has occurred"
+msgstr "Oops! Akontese erru"
+
+msgid "Other"
+msgstr ""
+
+msgid "Page Not Found"
+msgstr "Pájina la hetan"
+
+msgid "Percent Disbursed"
+msgstr ""
+
+msgid "Print"
+msgstr ""
+
+msgid "Query Builder"
+msgstr ""
+
+msgid "Query Results"
+msgstr ""
+
+msgid "Revert to default filters"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Sector"
+msgstr ""
+
+msgid "Set Filter"
+msgstr ""
+
+msgid "Short value"
+msgstr ""
+
+msgid "Show All"
+msgstr ""
+
+msgid "Show Pages"
+msgstr ""
+
+msgid "Show all"
+msgstr ""
+
+msgid "Show by"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "Start tutorial"
+msgstr ""
+
+msgid "State"
+msgstr ""
+
+msgid "Status"
+msgstr "Estatutu"
+
+msgid "TOTAL"
+msgstr "TOTAL"
+
+msgid "The Activity List"
+msgstr ""
+
+msgid "The activities listed below are those used to calculate the above charts and graphics. These activities correspond to the date filter above."
+msgstr ""
+
+msgid "The bar chart below shows the total value of commitments by development partner. The chart also corresponds to the date filter."
+msgstr ""
+
+msgid "The map below shows the amount of development assistance committed by location for activities. The map corresponds to the date filter. Click on the map to zoom in"
+msgstr ""
+
+msgid "The total amount of outgoing funds that are spent on goods and services."
+msgstr ""
+
+msgid "The total amount of outgoing funds that placed at the disposal of recipient governments or organisations, or funds transferred between two separately reported activities."
+msgstr ""
+
+msgid "The total amounts of firm, written obligations from donors or providers to provide specified amounts of funds, under particular terms and conditions, for specific purposes, for the benefit of recipients."
+msgstr ""
+
+msgid "There are a lot of numbers to crunch"
+msgstr ""
+
+#, fuzzy
+msgid "This chart shows the breakdown of commitment transactions between loans and grants."
+msgstr "Gráfiku ida ne'e hatudu montante total ba komitmentu hosi parseiru dezenvolvimentu sira hosi seitor asistensia"
+
+msgid "This chart shows the total amount of commitments from development partners by DAC3 sector."
+msgstr ""
+
+msgid "This chart shows the total amount of commitments from development partners by aid sector."
+msgstr "Gráfiku ida ne'e hatudu montante total ba komitmentu hosi parseiru dezenvolvimentu sira hosi seitor asistensia"
+
+msgid "This chart shows the total amount of commitments from development partners by sector for activities."
+msgstr ""
+
+msgid "This chart shows the total amount of development assistance committed by development partners. This chart corresponds to the date filter above."
+msgstr "Gráfiku ida ne'e hatudu montante total hosi asistensia dezenvolvimentu ne'ebé komete hosi parseiru dezenvolvimentu sira. Gráfiku ne'e koresponde ho data filtru iha leten."
+
+msgid "This chart shows the total amount of development assistance committed by development partners. This chart corresponds to the date filter."
+msgstr ""
+
+msgid "This chart shows the total amount of development assistance committed by the largest five donors. This chart corresponds to the date filter."
+msgstr ""
+
+#, fuzzy
+msgid "This chart shows the total committed value of activities by status (i.e. pipeline, implementation, completed, or post-completion). This chart corresponds to the date filter."
+msgstr "Gráfiku ida ne'e hatudu númeru total hosi atividade sira hosi estatutu (i.e. iha planu, implementasaun, konkluzaun, pós-konkluzaun). Gráfiku ne'e koresponde ho data filtru."
+
+msgid "This chart shows the total number of activities associated with each relevant Ministry."
+msgstr ""
+
+msgid "This chart shows the total number of activities associated with each relevant Ministry. This chart corresponds to the date filter."
+msgstr ""
+
+msgid "This chart shows the total number of activities associated with each relevant partner Ministry. This chart corresponds to the date filter."
+msgstr "Gráfiku ida ne'e hatudu númeru total hosi atividade sira ne'ebé asosia ho kada Ministériu parseiru ne'ebé relevante. Gráfiku ne'e koresponde ho data filtru."
+
+#, fuzzy
+msgid "This chart shows the total number of activities by status (i.e. pipeline, implementation, completed, or post-completion). This chart corresponds to the date filter."
+msgstr "Gráfiku ida ne'e hatudu númeru total hosi atividade sira hosi estatutu (i.e. iha planu, implementasaun, konkluzaun, pós-konkluzaun). Gráfiku ne'e koresponde ho data filtru."
+
+msgid "This chart shows the total volume of funds committed to activities by the activity status i.e pipeline, implementation, completed, post-completed. The chart also corresponds to the date filter."
+msgstr "Gráfiku ida ne'e hatudu volume total hosi fundu komitmentu ba atividade sira hosi estatutu atividade nian (i.e. iha planu, implementasaun, konkluzaun, pós-konkluzaun). Gráfiku ne'e koresponde ho data filtru."
+
+msgid "This is the percentage total of development assistance disbursed. This percentage corresponds to the date filter."
+msgstr "Ida ne'e mak total persentajen hosi dezenbolsa asistensia dezenvolvimentu. Persentajen ida ne'e koresponde ho data filtru."
+
+msgid "This is the total amount of development assistance committed across all activities that have been linked to a partner Ministry. This number corresponds to the date filter."
+msgstr ""
+
+msgid "This is the total amount of development assistance committed across all activities. This amount corresponds to the date filter."
+msgstr ""
+
+msgid "This is the total amount of development assistance committed across all activities. This number corresponds to the date filter."
+msgstr ""
+
+msgid "This is the total amount of development assistance committed. This amount corresponds to the date filter."
+msgstr ""
+
+msgid "This is the total amount of development assistance disbursed across all activities. This number corresponds to the date filter."
+msgstr ""
+
+msgid "This is the total amount of development assistance disbursed. This amount corresponds to the date filter."
+msgstr ""
+
+msgid "This is the total amount of development assistance disbursed. This number corresponds to the date filter."
+msgstr ""
+
+msgid "This is the total number of development partners."
+msgstr ""
+
+msgid "This may take a few moments."
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Total Commitment"
+msgstr "Komitmentu Total"
+
+msgid "Total Commitments"
+msgstr "Komitmentu Total"
+
+msgid "Total Disbursed"
+msgstr ""
+
+msgid "Total Disbursements"
+msgstr ""
+
+msgid "Total Donors"
+msgstr ""
+
+msgid "Total commitment"
+msgstr "Komitmentu Total"
+
+msgid "Total disbursed"
+msgstr ""
+
+msgid "Total disbursements"
+msgstr ""
+
+msgid "Transactions"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+msgid "You cannot access this page because you do not have appropriate access rights."
+msgstr "Ita lebele asesu pájina ida ne'e tamba ita laiha direitu asesu ne'ebé apropriadu"
+
+msgid "click on an individual chart bar below to filter the statistics by Ministry"
+msgstr ""
+
+msgid "click on an individual chart bar below to filter the statistics by that specific donor"
+msgstr ""
+
+#~ msgid "Activities by Status"
+#~ msgstr "Atividade sira hosi Estatutu"
+
+#~ msgid "Activities by status"
+#~ msgstr "Atividade sira hosi Estatutu"
+
+#~ msgid "This chart shows the total number of activities by aid finance type."
+#~ msgstr "Gráfiku ida ne'e hatudu númeru total hosi atividade sira hosi tipu finansa asistensia."
+
+#~ msgid "Total"
+#~ msgstr "Total"

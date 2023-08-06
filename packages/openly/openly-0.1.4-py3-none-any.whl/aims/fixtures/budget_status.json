@@ -1,0 +1,17 @@
+[
+    {
+      "model": "aims.budgetstatus",
+      "pk": 1,
+      "fields": {
+        "name": "Indicative"
+      }
+    },
+    {
+      "model": "aims.budgetstatus",
+      "pk": 2,
+      "fields": {
+        "name": "Committed"
+      }
+    }
+    ]
+    

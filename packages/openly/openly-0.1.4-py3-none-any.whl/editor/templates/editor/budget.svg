@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="49px" viewBox="0 0 26 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Budget Icon</title>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="-Icon54---30x_Grid_set_1_Smart_Stroke" transform="translate(-637.000000, -1146.000000)" stroke="#000000">
+            <g id="Business" transform="translate(156.000000, 1092.000000)">
+                <g id="Group-48" transform="translate(486.000000, 60.000000)">
+                    <path d="M10.5,5.3296 C10.564,5.9836 11.433,6.5006 12.498,6.5006 C13.603,6.5006 14.5,5.9406 14.5,5.2506 C14.5,4.2316 12.851,4.0596 12.502,4.0006 C12.151,3.9406 10.5,3.7686 10.5,2.7486 C10.5,2.0586 11.396,1.4986 12.502,1.4986 C13.567,1.4986 14.435,2.0176 14.5,2.6686" id="Stroke-44"></path>
+                    <path d="M12.5,0.5 L12.5,7.5" id="Stroke-46"></path>
+                    <path d="M0.5,7.5 L6.5,7.5" id="Stroke-41"></path>
+                    <path d="M0.5,12.5 L16.5,12.5" id="Stroke-42"></path>
+                    <path d="M7.5,17.5 L16.5,17.5" id="Stroke-43"></path>
+                </g>
+                <g id="Group-541" transform="translate(481.000000, 55.000000)">
+                    <g id="Group-40" transform="translate(3.000000, 0.000000)">
+                        <path d="M0.5,20.5439382 L0.5,7.5 L7.5,0.5 L21.5,0.5 L21.5,29.5 L7.87353131,29.5 C8.58242213,28.5147946 9,27.3060396 9,26 C9,22.686 6.313,20 3,20 C2.10775665,20 1.26103529,20.1947008 0.5,20.5439382 Z" id="Combined-Shape"></path>
+                        <polyline id="Stroke-38" points="0.5 7.5 7.5 7.5 7.5 0.5"></polyline>
+                    </g>
+                    <path d="M12,26 C12,29.313 9.313,32 6,32 C2.686,32 0,29.313 0,26 C0,22.686 2.686,20 6,20 C9.313,20 12,22.686 12,26 L12,26 Z" id="Stroke-985"></path>
+                    <polyline id="Stroke-972" points="3 26 5 28 10 24"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

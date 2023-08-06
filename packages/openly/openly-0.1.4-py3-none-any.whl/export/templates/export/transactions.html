@@ -1,0 +1,15 @@
+<table>
+    <thead>{% for field in fields %}
+        <th>
+            {{field}}
+        </th> {% endfor %}
+    </thead> 
+    <tbody>
+        {% for transaction in transactions %}
+        <tr> {% for cell, data in transaction.items %}
+            <td>
+                {{data}}
+            </td> {% endfor %}
+        </tr> {% endfor %}
+    </tbody>
+</table>

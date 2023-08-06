@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-13 11:42+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Saving"
+msgstr ""
+
+msgid "Required"
+msgstr ""
+
+msgid "There are validation errors on this tab."
+msgstr ""
+
+msgid "This date is not valid"
+msgstr ""
+
+msgid "This date cannot be in the future."
+msgstr ""
+
+msgid "This date cannot be in the past."
+msgstr ""
+
+msgid "Must be a number"
+msgstr ""
+
+msgid "Must be a number greater than zero"
+msgstr ""
+
+msgid "There is an invalid date"
+msgstr ""
+
+msgid "The start date must occur before the end date"
+msgstr ""
+
+msgid "An end date must have a valid start date"
+msgstr ""
+
+msgid "Percentages should add up to 100."
+msgstr ""
+
+msgid "These must be unique values"
+msgstr ""
+
+msgid "Please choose a different file format"
+msgstr ""
+
+msgid "Please choose a smaller file"
+msgstr ""
+
+msgid "Saved"
+msgstr ""
+
+msgid "Error while saving, please try again"
+msgstr ""
+
+msgid "No file currently selected"
+msgstr ""
+
+msgid "success"
+msgstr ""
+
+msgid "Set the Start Date"
+msgstr ""
+
+msgid "Add a sector"
+msgstr ""
+
+msgid "Add a location"
+msgstr ""
+
+msgid "Add a transaction of type Commitment"
+msgstr ""
+
+msgid "Set the End Date"
+msgstr ""
+
+msgid "Sorry, you cant publish just yet."
+msgstr ""
+
+msgid "Total Project Cost should be 15 digits or less"
+msgstr ""
+
+msgid "Saving the Msdps"
+msgstr ""
+
+msgid "Successfully saved the MSDP Alignment"
+msgstr ""
+
+msgid "Error while saving"
+msgstr ""
+
+msgid "Region/State Governments"
+msgstr ""
+
+msgid "Error saving the Results, please try again"
+msgstr ""
+
+msgid "Saving the Sectors"
+msgstr ""
+
+msgid "Successfully saved the Sectors"
+msgstr ""
+
+msgid "Error saving the Sectors, please try again"
+msgstr ""
+
+msgid "Saving the Locations"
+msgstr ""
+
+msgid "Successfully saved the Locations"
+msgstr ""

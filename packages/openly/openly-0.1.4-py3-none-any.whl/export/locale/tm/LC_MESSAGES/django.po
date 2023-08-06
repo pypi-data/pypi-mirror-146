@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 12:42+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+" Example: select \"No Actual Start Date\" and \"No Actual End Date\" to get all\n"
+"                                        activities that have either no actual start date or no actual end date. "
+msgstr ""
+
+msgid "Activities Absent From The Dashboard"
+msgstr ""
+
+msgid "Activities Without Budgets"
+msgstr ""
+
+msgid "Activities Without Commitments"
+msgstr ""
+
+msgid "Activities Without Dates"
+msgstr ""
+
+msgid "Activities Without Transactions"
+msgstr ""
+
+msgid "Activity"
+msgstr ""
+
+msgid "Activity Status"
+msgstr ""
+
+msgid "Actual End date"
+msgstr ""
+
+msgid "Actual Start date"
+msgstr ""
+
+msgid "Aid Type"
+msgstr ""
+
+msgid "Aid Type Categories"
+msgstr ""
+
+msgid "Aid Type Category"
+msgstr ""
+
+msgid "Annual Breakdown By Activity"
+msgstr ""
+
+msgid "Annual Breakdown By Development Partner"
+msgstr ""
+
+msgid "Annual Breakdown By Sector"
+msgstr ""
+
+msgid "Annual Breakdown By State/Region"
+msgstr ""
+
+msgid "Annual Breakdown By Township"
+msgstr ""
+
+msgid "Collaboration Type"
+msgstr ""
+
+msgid "Create Report"
+msgstr ""
+
+msgid "Currency Name"
+msgstr ""
+
+msgid "Data Quality"
+msgstr ""
+
+msgid "Data Quality Type"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Development Partner"
+msgstr ""
+
+msgid "Development Partner Profiles"
+msgstr ""
+
+msgid "Development Partner Report"
+msgstr ""
+
+#, python-format
+msgid "Disaggregate by %(object)s"
+msgstr ""
+
+msgid "Disaggregate by development partner."
+msgstr ""
+
+msgid "Disaggregate by location."
+msgstr ""
+
+msgid "Disaggregate by sector."
+msgstr ""
+
+msgid "Donor Summary Report"
+msgstr ""
+
+msgid "End Date"
+msgstr ""
+
+msgid "Finance Type"
+msgstr ""
+
+msgid "Flow Type"
+msgstr ""
+
+msgid "IATI Activity Linked"
+msgstr ""
+
+msgid "ISO location code"
+msgstr ""
+
+msgid "Identifier"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Location Report"
+msgstr ""
+
+msgid "Missing Dates"
+msgstr ""
+
+msgid "No Actual End Date"
+msgstr ""
+
+msgid "No Actual Start Date"
+msgstr ""
+
+msgid "No Planned End Date"
+msgstr ""
+
+msgid "No Planned Start Date"
+msgstr ""
+
+msgid "Planned End date"
+msgstr ""
+
+msgid "Planned Start date"
+msgstr ""
+
+msgid "Provider Activity"
+msgstr ""
+
+msgid "Quarterly Breakdown By Development Partner"
+msgstr ""
+
+msgid "Quarterly Breakdown By Sector"
+msgstr ""
+
+msgid "Quarterly Breakdown By State/Region"
+msgstr ""
+
+msgid "Quarterly Breakdown By Township"
+msgstr ""
+
+msgid "Report Category"
+msgstr ""
+
+msgid "Reporting Organisation"
+msgstr ""
+
+msgid "Sector"
+msgstr ""
+
+msgid "Sector Report"
+msgstr ""
+
+msgid "Sector Summary Report"
+msgstr ""
+
+msgid "Start Date"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+#, python-format
+msgid "The reports allow us to export and disaggregate aid data reported to %(site_name)s."
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "USD Value"
+msgstr ""

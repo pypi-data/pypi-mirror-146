@@ -1,0 +1,43 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load tag_library %}
+{% load static  %}
+
+{% block meta %}
+<meta name="description" content="Organisation profile page for {{ organisation.name }}.">
+{% endblock %}
+
+{% block title %}
+{{ page_title }} | {{ site_name }}
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="{% static 'js/d3_v34.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/c3.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/Sortable.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/accounting.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/colorbrewer.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/medium-editor.min.js' %}"></script>
+{% if riot3 %}
+<script type="text/javascript" src="{% static 'riot3/riot+compiler.min.js' %}"></script>
+{% else %}
+<script type="text/javascript" src="{% static 'riot/riot+compiler.min.js' %}"></script>
+{% endif %}
+<script type="text/javascript" src="{% url 'profiles_v2-javascript-catalog' %}"></script>
+<script type="text/javascript" src="{% static 'js/FileUploadMixin.js' %}"></script>
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}" />
+{% endblock %}
+
+{% block content %}
+{% csrf_token %}
+{% block profile_content %}
+{% endblock %}
+
+{% block local_scripts %}
+{% endblock %}
+
+{% endblock %}

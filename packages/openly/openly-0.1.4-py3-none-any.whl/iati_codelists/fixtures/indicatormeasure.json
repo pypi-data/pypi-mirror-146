@@ -1,0 +1,18 @@
+[
+{
+  "model": "iati_codelists.indicatormeasure",
+  "pk": "1",
+  "fields": {
+    "name": "Unit",
+    "description": "The indicator is measured in units."
+  }
+},
+{
+  "model": "iati_codelists.indicatormeasure",
+  "pk": "2",
+  "fields": {
+    "name": "Percentage",
+    "description": "The indicator is measured in percentages"
+  }
+}
+]

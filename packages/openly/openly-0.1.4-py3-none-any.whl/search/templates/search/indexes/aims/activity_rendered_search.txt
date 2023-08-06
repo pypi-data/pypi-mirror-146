@@ -1,0 +1,21 @@
+{% if object.openly_status == 'draft' %}
+<a class="list-group-item" href="{% url 'edit_activity' object.pk|urlencode:'' %}">
+{% else %}
+<a class="list-group-item" href="{{ object.profile_url }}">
+{% endif %}
+    <span class="prj_nmbr">{{ object.status }}</span><br/>
+    <h3 class="search-result search-activity-title">{{ object.subquery_titles }}</h3>
+    <span class="help-text">
+        {{ object.id }}
+        {% if object.internal_identifier %} | Partner ID: {{ object.internal_identifier}}{% endif %}
+        {% if object.iati_identifier %} | IATI ID: {{ object.iati_identifier}}{% endif %}
+    </span>
+    {% if  object.subquery_sectors %}
+    <p class="search-result small">{{ object.subquery_sectors }}</p>
+    {% endif %}
+    <p class="search-result">{{ object.subquery_descriptions }}</p>
+    <p class="help-text">
+        Duration: {{ object.start_date }} - {{ object.end_date }} | Status: {{ object.activity_status.name | title }}</br>
+        Reporting: {{ object.reporting_organisation.name }}
+    </p>
+</a>

@@ -1,0 +1,49 @@
+<field-upload>
+    <div class="formgroup">
+        <div class="row">
+            <div class="col-xs-12">
+                <label if={!opts.hide_label}>
+                   { opts.label }<br if="{!opts.help_popover_content}">
+                    <help-popover-field></help-popover-field>
+                    <label-required-field></label-required-field>
+                    <label-info-field></label-info-field>
+                    <validation-error-list only_if_unchanged></validation-error-list>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <label if={opts.hide_label}></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <label class="{btn:1, btn-default:1, btn-file:1, disabled:opts.disabled}" hide="{state.show_progress_bar || opts.upload_disabled_message}">
+                    {opts.button_text} <input ref="upload" type="file" hidden="hidden" if='{!opts.disabled}' style="display:none" onchange="{fn.set}">
+                </label>
+                <span hide="{state.show_progress_bar}"> {file.display.name}</span>
+                <span class="progress" show="{state.show_progress_bar}">
+                  <span class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {state.progress}%;">
+                      <span>{state.progress} %</span>
+                  </span>
+                </span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-xs-12" if="{opts.helptext || !validated}">
+                <span  class="{help-block: 1, in-line-help:1}">{opts.helptext}</span>
+                <br if="{errors}"> <validation-error-list only_if_changed></validation-error-list>
+            </div>
+        </div>
+    </div>
+
+    {%  include "tags/field-upload.js" %}
+
+    <style>
+        field-upload .progress {height: 20px;}
+        field-upload .major {color: #a94442; }
+        field-upload label.btn {margin-right: 15px;}
+    </style>
+
+</field-upload>

@@ -1,0 +1,665 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-26 12:42+0900\n"
+"PO-Revision-Date: 2017-06-01 16:01+0822\n"
+"Last-Translator: b'  <sean@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+msgid "?"
+msgstr "?"
+
+msgid "About this indicator"
+msgstr ""
+
+msgid "Activities"
+msgstr ""
+
+msgid "Activities for Review"
+msgstr ""
+
+msgid "Activity"
+msgstr ""
+
+msgid "Activity List"
+msgstr ""
+
+msgid "Activity Manager"
+msgstr ""
+
+msgid "Actual End Date"
+msgstr "Data Ikus Atual"
+
+msgid "Actual End date"
+msgstr "Data Ikus Atual"
+
+msgid "Actual Start Date"
+msgstr "Data Hahu Atual"
+
+msgid "Actual Start date"
+msgstr "Data Hahu Atual"
+
+msgid "Add Activity"
+msgstr ""
+
+msgid "Add a Contact with all of the following attributes set: Name, Telephone, Email address."
+msgstr "Aumenta Kontaktu ida ho atributu sira tuir mai nee: Naran, Telefone, Enderesu Email."
+
+msgid "Add a Disbursement Transaction."
+msgstr "Aumenta Tranzasaun Pagamentu"
+
+msgid "Add a Document."
+msgstr "Aumenta Dokumentu ida."
+
+msgid "Add a Location."
+msgstr "Aumenta Fatin"
+
+msgid "Add a Participating Organisation with role \"Accountable\"."
+msgstr "Aumenta Organizasaun ne’ebé partisipa ho knaar “Responsável”"
+
+msgid "Add a Participating Organisation with role \"Extending\"."
+msgstr "Aumenta Organizasaun ne’ebé partisipa ho knaar “Estensaun”"
+
+msgid "Add a Participating Organisation with role \"Funding\"."
+msgstr "Aumenta Organizasaun ne’ebé partisipa ho knaar “Finansiamentu”"
+
+msgid "Add a Participating Organisation with role \"Implementing\"."
+msgstr "Aumenta Organizasaun ne’ebé partisipa ho knaar “Implementasaun”"
+
+msgid "Add a Transaction with a Provider Organisation."
+msgstr ""
+
+msgid "Admin"
+msgstr ""
+
+msgid "Admin access"
+msgstr ""
+
+msgid "Aid Dashboards"
+msgstr ""
+
+msgid "Aid Type Categories"
+msgstr ""
+
+msgid "Aid by Donor"
+msgstr ""
+
+#, fuzzy
+msgid "Aid by Location"
+msgstr "Aumenta Fatin"
+
+msgid "Aid by Ministry"
+msgstr ""
+
+#, fuzzy
+msgid "Aid by Sector"
+msgstr "Seitor"
+
+msgid "All"
+msgstr ""
+
+msgid "Also, if you have set a date range or zoomed into Shan state or selected a specific organisation, clicking export will just give you that data"
+msgstr ""
+
+msgid "Archived"
+msgstr "Arkivu"
+
+msgid "Back to Dashboard"
+msgstr ""
+
+msgid "Base Currency"
+msgstr "Moeda Baze"
+
+msgid "Before using the data, we encourage all users to first contact the relevant development partners to ensure data is accurate."
+msgstr ""
+
+msgid "Blank"
+msgstr "Mamuk"
+
+#, python-brace-format
+msgid "Changed the status from {from_status} to {to_status}"
+msgstr ""
+
+msgid "Click here to access the dashboards"
+msgstr ""
+
+msgid "Click on the blue activity number in the Activity List to visit the Activity Profile page and learn more."
+msgstr ""
+
+msgid "Collaboration Type"
+msgstr "Tipu Kolaborasaun"
+
+msgid "Contact Email"
+msgstr "Email kontaktu"
+
+msgid "Contact Name"
+msgstr "Naran Kontaktu"
+
+msgid "Contact Phone"
+msgstr "Telefone Kontaktu"
+
+msgid "Coordination Bodies"
+msgstr ""
+
+msgid "Coordination Bodies are multi-stakeholder dialogue bodies responsible for ensuring that development priorities are identified, discussed and implemented in a co-ordinated and transparent manner."
+msgstr ""
+
+#, fuzzy
+msgid "Coordination Body"
+msgstr "Tipu Kolaborasaun"
+
+msgid "Coordination Body Report"
+msgstr ""
+
+msgid "Created this Activity"
+msgstr ""
+
+msgid "Dashboards"
+msgstr ""
+
+msgid "Data Quality"
+msgstr ""
+
+msgid "Data contained within Mohinga has been collected in partnership with Myanmar’s development partners as part of an ongoing process of collaboration and dialogue."
+msgstr ""
+
+msgid "Data from all of the activities below is used to calculate the figures that appear in the dashboard above."
+msgstr ""
+
+msgid "Date Created"
+msgstr "Data Kria"
+
+msgid "Default"
+msgstr "Padraun"
+
+msgid "Delete Activity"
+msgstr ""
+
+msgid "Description"
+msgstr "Deskrisaun"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Draft"
+msgstr "Esbosu"
+
+msgid "Each development partner also has a dedicated profile page with information on all their activities"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+#, python-brace-format
+msgid "Edited {tabname}"
+msgstr ""
+
+#, python-brace-format
+msgid "Endorsement {action} by {organisation}"
+msgstr ""
+
+msgid "English"
+msgstr ""
+
+msgid "Exchange Currency"
+msgstr "Moeda Interkambiu"
+
+msgid "Exchange Rate"
+msgstr "Taxa Interkambiu"
+
+#, fuzzy
+msgid "Export Data"
+msgstr "Kréditu Esportasaun"
+
+msgid "Exporting data from Mohinga"
+msgstr ""
+
+msgid "Extending"
+msgstr "Estensaun"
+
+#, fuzzy
+msgid "Filtered Commitment USD"
+msgstr "Pagamentu Total USD"
+
+#, fuzzy
+msgid "Filtered Disbursement USD"
+msgstr "Pagamentu Total USD"
+
+#, fuzzy
+msgid "Filtered Transaction count"
+msgstr "Kontazen tranzasaun"
+
+msgid "Filtering the dashboard by date"
+msgstr ""
+
+#, fuzzy
+msgid "Finance Types"
+msgstr "Tipu Finansa Padraun"
+
+msgid "Financing"
+msgstr "Finansiamentu"
+
+msgid "Fully"
+msgstr ""
+
+msgid "Hello, "
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "IATI Identifer"
+msgstr ""
+
+#, fuzzy
+msgid "IATI Linked"
+msgstr "IATI XML"
+
+msgid "IATI Sync"
+msgstr ""
+
+msgid "IATI XML"
+msgstr "IATI XML"
+
+msgid "Iati Codelist Sector"
+msgstr ""
+
+msgid "If you need any further information"
+msgstr ""
+
+msgid "If you set end dates you must set at least one start date."
+msgstr "Se ita estabelese data ikus, ita tenke estabelese pelumenus data hahu ida"
+
+msgid "Implementing"
+msgstr "Implementa"
+
+msgid "Important dates"
+msgstr ""
+
+msgid "Indicators"
+msgstr ""
+
+msgid "Last Modified"
+msgstr "Modifikasaun ikus"
+
+msgid "Mohinga"
+msgstr ""
+
+msgid "Mohinga contains a lot of information. To find what you’re looking for try searching by development partner, activity or sector"
+msgstr ""
+
+msgid "Mohinga is Myanmar's Aid Information Management System (AIMS)."
+msgstr ""
+
+msgid "Mohinga visualises aid flows to Myanmar via four interactive dashboards"
+msgstr ""
+
+msgid "Multiple Donors"
+msgstr ""
+
+msgid "Myanmar"
+msgstr ""
+
+msgid "National Sector"
+msgstr ""
+
+msgid "Nationwide"
+msgstr "Nasaun laran tomak"
+
+msgid "None"
+msgstr ""
+
+msgid "Not applicable"
+msgstr ""
+
+msgid "Objective"
+msgstr "Objetivu"
+
+msgid "Partially"
+msgstr ""
+
+msgid "Partner Ministry"
+msgstr "Ministériu Parseiru"
+
+#, fuzzy
+msgid "Partners"
+msgstr "Ministériu Parseiru"
+
+msgid "Password"
+msgstr ""
+
+msgid "Personal info"
+msgstr ""
+
+msgid "Planned End Date"
+msgstr "Data Ikus Planu"
+
+msgid "Planned End date"
+msgstr "Data Ikus Planu"
+
+msgid "Planned Start Date"
+msgstr "Data hahu planu"
+
+msgid "Planned Start date"
+msgstr "Data hahu planu"
+
+msgid "Profile Page"
+msgstr ""
+
+msgid "Profile pages"
+msgstr ""
+
+msgid "Public Page"
+msgstr "Pajina Publika"
+
+msgid "Published"
+msgstr "Publika"
+
+msgid "Query Builder"
+msgstr ""
+
+msgid "Raw passwords are not stored, so there is no way to see this user's password, but you can change the password using <a href=\"../password/\">this form</a>."
+msgstr ""
+
+msgid "Report Builder"
+msgstr ""
+
+msgid "Report Templates"
+msgstr ""
+
+msgid "Reported by:"
+msgstr ""
+
+msgid "Reporting Organisation"
+msgstr "Organizasaun ne'ebé halo Relatóriu"
+
+msgid "Reports"
+msgstr ""
+
+msgid "Results Dashboard"
+msgstr ""
+
+#, fuzzy
+msgid "Results Page"
+msgstr "Pajina Publika"
+
+msgid "Search within Mohinga"
+msgstr ""
+
+msgid "Sector"
+msgstr "Seitor"
+
+msgid "Sector Categories"
+msgstr ""
+
+msgid "Sectors"
+msgstr "Seitor"
+
+msgid "See more"
+msgstr ""
+
+msgid "Select a start and end date and then click the refresh button to set the filter"
+msgstr ""
+
+msgid "Set a Default Aid Type."
+msgstr "Estabeles Tipu Asistensia Padraun"
+
+msgid "Set a Default Currency."
+msgstr "Estabelese Moeda Padraun"
+
+msgid "Set a Default Flow Type."
+msgstr "Estabele Tipu Fluxu Padraun"
+
+msgid "Set a Planned End Date."
+msgstr "Estabelese Data Ikus Planu"
+
+msgid "Set a Planned Start Date."
+msgstr "Estabelese Data Hahu Planu"
+
+msgid "Set an Actual End Date."
+msgstr "Estabelese Data Ikus Atual"
+
+msgid "Set an Actual Start Date."
+msgstr "Estabelese Data Hahu Atual"
+
+msgid "Sign in"
+msgstr ""
+
+msgid "Sign out"
+msgstr ""
+
+msgid "Software designed & developed by"
+msgstr ""
+
+msgid "State/Region"
+msgstr "Estadu/Rejiaun"
+
+msgid "Status"
+msgstr "Estatutu"
+
+msgid "That is it... for now"
+msgstr ""
+
+msgid "The Mohinga application allows development partners to report their assistance to Myanmar in a simple, common, comparable format."
+msgstr ""
+
+msgid "The budget end date cannot be before the budget start date"
+msgstr "Data ikus orsamentu labele antes data hahu orsamentu "
+
+msgid "The date filter allows you to filter information presented on the dashboards between a specific time period"
+msgstr ""
+
+msgid "The export function will download the dashboard data to a .CSV file"
+msgstr ""
+
+msgid "The reporting organisation has not been specified."
+msgstr "Organizasaun ne'ebé halo relatóriu sidauk espesifika"
+
+msgid "There are no indicators for the current sector"
+msgstr ""
+
+msgid "These include advanced reporting tools and better integration with internationally available IATI aid data as well as other tools to help make the management of aid information simple, time efficient and even enjoyable. We will be in touch."
+msgstr ""
+
+msgid "Title"
+msgstr "Titulu"
+
+#, fuzzy
+msgid "Total Commitment"
+msgstr "Pagamentu Total"
+
+#, fuzzy
+msgid "Total Commitment USD"
+msgstr "Pagamentu Total USD"
+
+msgid "Total Disbursement"
+msgstr "Pagamentu Total"
+
+msgid "Total Disbursement USD"
+msgstr "Pagamentu Total USD"
+
+#, fuzzy
+msgid "Total commitment by sector shown in USD."
+msgstr "Pagamentu Total USD"
+
+msgid "Township"
+msgstr "Munisipiu"
+
+msgid "Transaction count"
+msgstr "Kontazen tranzasaun"
+
+msgid "Under review"
+msgstr ""
+
+msgid "Unknown"
+msgstr "Deskoñesidu"
+
+msgid "Unnamed"
+msgstr "Laiha naran"
+
+msgid "Updated"
+msgstr ""
+
+#, python-brace-format
+msgid "User ID {user_id}"
+msgstr ""
+
+msgid "Visualise aid flows"
+msgstr ""
+
+msgid "We are also working hard to bring new features and functions to Mohinga"
+msgstr ""
+
+msgid "Welcome to Mohinga"
+msgstr ""
+
+msgid "You can access their profile pages by searching for their name here"
+msgstr ""
+
+msgid "Your Pages"
+msgstr ""
+
+msgid "Your actual end date must be after your actual start date"
+msgstr "Ita-nian data ikus atual tenke depois de data hahu atual"
+
+msgid "Your planned end date must be after your planned start date"
+msgstr "Ita-nian data ikus planu tenke depois de data hahu planu "
+
+msgid "added"
+msgstr ""
+
+msgid "all subregions of "
+msgstr "Sub rejiaun hotu-hotu husi"
+
+msgid "and they will provide you with some additional information about Mohinga."
+msgstr ""
+
+msgid "billion"
+msgstr "biliaun"
+
+msgid "id"
+msgstr "id"
+
+msgid "look for these help icons"
+msgstr ""
+
+msgid "million"
+msgstr "miliaun"
+
+msgid "no description"
+msgstr "laiha deskrisaun"
+
+msgid "no title"
+msgstr "laiha titulu"
+
+msgid "original"
+msgstr "Orijínal"
+
+msgid "pending"
+msgstr "Pendente"
+
+msgid "removed"
+msgstr ""
+
+msgid "thousand"
+msgstr "rihun"
+
+msgid "trillion"
+msgstr "triliaun"
+
+msgid "you can see aid by location, donor, sector or Ministry responsible"
+msgstr ""
+
+#, python-brace-format
+msgid "{1} in {0}"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Aid By Location"
+#~ msgstr "Aumenta Fatin"
+
+#, fuzzy
+#~ msgid "Aid By Sector"
+#~ msgstr "Seitor"
+
+#~ msgid "Bonds"
+#~ msgstr "Titulu Dívida"
+
+#~ msgid "Cancelled"
+#~ msgstr "Kansela"
+
+#~ msgid "Capital Subscriptions"
+#~ msgstr "Subskrisaun Kapitál"
+
+#~ msgid "Completion"
+#~ msgstr "Konkluzaun"
+
+#~ msgid "Debt Relief"
+#~ msgstr "Hatun Dívida "
+
+#~ msgid "Default Aid Type"
+#~ msgstr "Tipu Asistensia Padraun"
+
+#~ msgid "Default Currency"
+#~ msgstr "Moeda Padraun"
+
+#~ msgid "Default Flow Type"
+#~ msgstr "Tipu Fluxu Padraun"
+
+#~ msgid "Equity"
+#~ msgstr "Igualdade"
+
+#~ msgid "Grants"
+#~ msgstr "Bolsa"
+
+#~ msgid "Implementation"
+#~ msgstr "Implementasaun"
+
+#~ msgid "Interest Subsidies"
+#~ msgstr "Subsídiu Juru"
+
+#~ msgid "Investment"
+#~ msgstr "Investimentu"
+
+#~ msgid "Loans"
+#~ msgstr "Empréstimu"
+
+#~ msgid "Other"
+#~ msgstr "Seluk"
+
+#~ msgid "Pipeline/Identification"
+#~ msgstr "Iha planu/Identifikasaun"
+
+#~ msgid "Post-Completion"
+#~ msgstr "Pós-Konkluzaun"
+
+#~ msgid "Remote Data"
+#~ msgstr "Dadus Remotu"
+
+#~ msgid "Sector Working Group"
+#~ msgstr "Grupu Traballu Seitor"
+
+#, fuzzy
+#~ msgid "Sector Working Groups"
+#~ msgstr "Grupu Traballu Seitor"
+
+#~ msgid "Suspended"
+#~ msgstr "Suspende"
+
+#~ msgid "Total Budget"
+#~ msgstr "Orsamentu Total"
+
+#~ msgid "Total Budget USD"
+#~ msgstr "Orsamentu Total USD"

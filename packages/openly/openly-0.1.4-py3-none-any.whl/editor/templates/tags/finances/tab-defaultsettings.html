@@ -1,0 +1,140 @@
+{% load i18n %}
+{% trans "Budget Currency" as label_budget_currency %}
+{% blocktrans asvar helptext_budget_currency %}This is the currency for the {{activity_singular_lower}} budget.{% endblocktrans %}
+{% trans "Default Aid Type" as label_default_aidtype %}
+{% trans "Default Finance Type" as label_default_financetype %}
+{% blocktrans asvar helptext_default_financetype %}The type of finance (e.g. grant, loan, debt relief, etc). This the default value for all transactions in the {{activity_singular_lower}} report; it can be overridden by individual transactions.{% endblocktrans %}
+{% trans "Default Flow Type" as label_default_flowtype %}
+{% trans "Default Tied Status" as label_default_tiedstatus %}
+{% blocktrans asvar helptext_default_tiedstatus %}Whether the aid is untied, tied, or partially tied.{% endblocktrans %}
+
+<default-currency-warning>
+    <strong>{% trans 'Budget Currency Changed' %}</strong>
+    <p>{% blocktrans %}Please update the {{activity_singular}} budgets to match the {{activity_singular}} currency{% endblocktrans %}</p>
+</default-currency-warning>
+
+<tab-defaultsettings>
+    <div class="form_body">
+        <div class="row">
+            <div class="col-xs-10">
+                <div data-is='default-currency-warning' class="alert alert-warning" if='{opts.store.showDefaultCurrencyWarning}'></div>
+                <field-hidden store={opts.store} path="activity.id"></field-hidden>
+                <field-dropdownselect
+                    classes={classes.label_3}
+                    store={opts.store}
+                    path="activity.default_currency"
+                    fieldname="default_currency"
+                    choice_fieldname="currency"
+                    select2="1"
+                    label='{{label_budget_currency|escape}}'
+                    helptext='{{helptext_budget_currency|escape}}'
+                </field-dropdownselect>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10">
+                <field-dropdownselect
+                    classes={classes.label_3}
+                    store={opts.store}
+                    path="activity.default_aid_type"
+                    fieldname="default_aid_type"
+                    select2=false
+                    choice_fieldname="aid_type"
+                    label='{{ label_default_aidtype|escape }}'>
+                </field-dropdownselect>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10">
+                <field-dropdownselect
+                    classes={classes.label_3}
+                    store={opts.store}
+                    path="activity.default_finance_type"
+                    fieldname="default_finance_type"
+                    choice_fieldname="finance_type"
+                    select2="1"
+                    label='{{ label_default_financetype|escape }}'
+                    helptext='{{helptext_default_financetype|escape}}'>
+                </field-dropdownselect>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10">
+                <field-dropdownselect
+                    classes={classes.label_3}
+                    store={opts.store}
+                    path="activity.default_flow_type"
+                    fieldname="default_flow_type"
+                    choice_fieldname="flow_type"
+                    label='{{ label_default_flowtype|escape }}'
+                </field-dropdownselect>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10">
+                <field-dropdownselect
+                    classes={classes.label_3}
+                    store={opts.store}
+                    path="activity.default_tied_status"
+                    fieldname="default_tied_status"
+                    choice_fieldname="tied_status"
+                    label='{{ label_default_tiedstatus|escape }}'
+                    helptext='{{ helptext_default_tiedstatus|escape }}'>
+                </field-dropdownselect>
+            </div>
+        </div>
+    </div>
+
+    <btn-group-editor id_save="save-defaultsettings" id_next="next-finances" use_parent_save></btn-group-editor>
+
+    <style>
+    .save-defaultsettings {
+        margin-top: 10px;
+    }
+    </style>
+
+    <style media="screen">
+    .btn-group-editor {
+        width: 96.4%;
+    }
+    </style>
+
+
+    {# <script> #}
+        var tag = this;
+        tag.mixin('SerializerMixin');
+        tag.mixin('FormFieldMixin');
+        tag.mixin('ValidationMixin');
+        tag.mixin('TabMixin');
+
+        function reset_general_tag(e){
+            tag.store.trigger('reload_activity', stores.activityStore._initial);
+            tag.update();
+        }
+        tag.reset_general_tag = reset_general_tag;
+
+        tag.discard = reset_general_tag;
+
+        tag.classes = {
+            label_3: {label: 'control-label', dropdown: 'drop-caret', helptext:''}
+        };
+
+        tag.has_changed = function(){
+            /*
+            Iterate through the "absolute path" properties of child tags
+            and return true when we encounter the first which has changed
+            */
+            var has_changed = false;
+            var paths = _.compact(_.invokeMap(tag.list_child_tags(), 'absolute_path'));
+            _.each(paths, function(path){
+                if (has_changed) { return }
+                var initial = _.get(tag.store._initial, _.replace(path, 'activity.', ''));
+                var current = _.get(tag.store, path)
+                has_changed = !_.isEqual(initial, current);
+            })
+            return has_changed;
+        }
+
+    {# </script> #}
+
+</tab-defaultsettings>

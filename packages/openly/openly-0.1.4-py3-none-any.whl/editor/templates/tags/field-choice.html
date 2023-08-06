@@ -1,0 +1,35 @@
+<field-choice>
+
+    <div class="{classes.outer}">{ classes.outer }
+        <label if={!opts.hide_label} class={classes.label}>
+           { label }
+            <help-popover-field></help-popover-field>
+            <label-required-field></label-required-field>
+            <label-info-field></label-info-field>
+            <validation-error-list only_if_unchanged></validation-error-list>
+        </label>
+
+        <div class="{classes.select}">
+            <select if="{!opts.has_optgroup}" class="form-control select-without-optgroup" onchange='{change_select}'>
+                <option if="{!_.isUndefined(opts.select2)}"> </option>
+                <option if="{show_null()}" value=""> {placeholder} </option>
+                <option each="{choice in choices}" value="{ choice.value }" selected="{ choice.value == data.code }" >{ choice.text } </option>
+            </select>
+
+            <select if="{opts.has_optgroup}" class="form-control select-with-optgroup" onchange='{change_select}'>
+                <option if="{!_.isUndefined(opts.select2) && (data.code == '' || _.isNull(data.code) || _.isUndefined(data.code))}" selected="selected"> </option>
+                <option each="{solo_option in solo_options}" value="{ solo_option.value }" selected="{ solo_option.value == data.code }" >{ solo_option.text }</option>
+                <optgroup each="{category in categorized}" label="{category.text}">
+                    <option if="{data.code == _.toInteger(choice.value)}" each="{choice in category.choices}" value="{ choice.value }" selected="selected">{ choice.text }</option>
+                    <option if="{data.code != _.toInteger(choice.value)}" each="{choice in category.choices}" value="{ choice.value }" >{ choice.text }</option>
+                </optgroup>
+            </select>
+            <span if={!!opts.hide_label} class="drop-caret"></span>
+
+            <validation-error-list if="{!opts.hide_label}" only_if_unchanged></validation-error-list>
+            <validation-error-list only_if_changed></validation-error-list>
+        </div>
+    </div>
+
+    {%  include 'tags/field-choice.js' %}
+</field-choice>

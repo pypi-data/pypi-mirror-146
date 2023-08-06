@@ -1,0 +1,112 @@
+{% load i18n %}
+{% if project_name == 'project_bank' %}
+{% blocktrans asvar helptext %}Sectors represent the purpose of the {{activity_singular_lower}}.{% endblocktrans %}</a>
+{% else %}
+{% blocktrans asvar helptext %}Please select which sectors this {{activity_singular_lower}} is relevant to.{% endblocktrans %}
+{% endif %}
+
+{% trans "sector" as label_lower %}
+{% blocktrans asvar placeholder %}Add a {{label_lower}}...{% endblocktrans%}
+
+<tab-sectors id="sectors" class="tab-pane">
+
+    <div>
+        <div class="form_header"> <h4>{% trans 'Sectors' %}</h4> </div>
+        <div class="form_body">
+            <div id="sectors-table" class="row">
+                <div class="col-xs-12">
+                    <help-text active helptext="{{helptext}}"/>
+                </div>
+  
+                <div class="col-xs-12">
+                    <label class=control-label>
+                        {% trans 'Sector' %}
+                        <div>
+                            <label-required-field required_to_publish_field="sector"></label-required-field>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="col-xs-12 sector-row" each="{sector, i in store.sectors}">
+                    <sector-edit-no-percent
+                        store={parent.store}
+                        path="sectors[{i}]"
+                        sector="{sector}">
+                    </sector-edit-no-percent>
+                </div>
+                <div class="add-line col-xs-12">
+                    <a class="add_form_row" href="javascript:void(0)" data-group="sectors" onclick="{add_row}">{% trans 'Add another sector'%} </a>
+                </div>
+                        
+            </div>
+        </div>
+    </div>
+
+    <btn-group-editor id_save="save-sectors" id_next="next-sectors" use_parent_save>
+
+    <style>
+        .sector-row {
+            margin-bottom: 5px;
+        }
+    </style>
+
+    {% include 'tags/tab-sectors-no-percentage.js' %}
+
+</tab-sectors>
+
+<sector-edit-no-percent>
+
+    <div class="row">
+        <field-choice
+            classes={classes.label_hidden}
+            store={opts.store}
+            path=".sector"
+            fieldname='dac_3s'
+            has_optgroup=1
+            select2=1
+	        select2_opts="{select2_opts}"
+            choices="{get_relevant_choices('sector')}"
+            formgroup=false>
+        </field-choice>
+        <div class="col-xs-1" show='{show_delete()}' onclick="{delete_sector}">
+            <a class="remove_form_row" href="javascript:void(0)"> </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" if="{errors}">
+            <span class="error-line">{errors}</span>
+        </div>
+    </div>
+
+    <style>
+
+    ul.select2-results {
+        max-height: 400px;
+    }
+
+    </style>
+
+{#     <script>#}
+    var tag = this;
+    var store = tag.opts.store;
+    
+    tag.show_delete = function(){
+        /* show the "delete" if our sector has been set already */
+        return _.get(tag.store, tag.absolute_path()+'.sector.code')
+    }
+    
+    tag.mixin('SerializerMixin');
+    tag.mixin('SectorMixin');
+
+    tag.classes = {
+        label_hidden: {
+            label: 'hidden',
+            select: 'col-xs-11',
+        },
+    };
+
+tag.select2_opts = {'placeholder': '{{placeholder}}'};
+
+{#     </script>#}
+
+</sector-edit-no-percent>

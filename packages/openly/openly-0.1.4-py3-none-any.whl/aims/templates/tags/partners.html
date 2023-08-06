@@ -1,0 +1,23 @@
+{% load i18n %}
+{% load static %}
+
+<partners>
+    <virtual if={ participating_orgs && participating_orgs.length > 0 }>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3 if={opts.title}>{opts.title}
+                    <a if={opts.singular_help_text} tabindex="0" role="button" class="ion-ios-help-outline dash-info" data-container="body" data-trigger="focus" data-toggle="popover" data-placement="top" data-content={participating_orgs.length == 1 ? opts.singular_help_text : opts.plural_help_text} aria-label="help {opts.title}"> </a>
+                </h3>
+                <div class='partners-list'>
+                    <div each={ participating_orgs } data={ this } class="profile-list-element">
+                        <div class={ partner_class }>
+                            <a class="partner-link" if={ partners.hasOwnProperty(organisation.code) } href={ partners[organisation.code] }>{ name }</a>
+                            <p class="no-padding" if={ !partners.hasOwnProperty(organisation.code) }>{ name }</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </virtual>
+{% include 'tags/participating_orgs_filter.js' %}
+</partners>

@@ -1,0 +1,47 @@
+{% load i18n %}
+{% load static %}
+
+
+<contacts>
+<virtual if={ contacts && contacts.length > 0 }>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 id="contacts-title">{% trans 'Contact Details' %}</h2>
+                <section id="contacts_section">
+                    <div class="col-sm-4 no-padding" each={ contacts } data={ this }>
+                        <div if={ person_name } class="contact-name">{ person_name }</div>
+                        <div if={ job_title } class="contact-title">{ job_title }</div>
+                        <div if={ organisation } class="contact-organisation">{ organisation }</div>
+                        <div if={ telephone } class="contact-telephone">
+                            <span class="contact-label"> {% trans 'Phone' %}:</span>
+                            { telephone }
+                        </div>
+                        <div if={ email } class="contact-email">
+                            <span class="contact-label"> {% trans 'Email' %}:</span>
+                            <a href="mailto:{email}">{email}</a>
+                        </div>
+                        <div if={ website } class="contact-website">
+                            <span class="contact-label"> {% trans 'Website' %}:</span>
+                            <a href="{ website }" target="_blank" rel="noopener">{ website }</a>
+                        </div>
+                        <div if={ address } class="contact-address">
+                            <span class="contact-label"> {% trans 'Address' %}:</span>
+                            <pre style="pre-break-lines address-pre">{ address }</pre>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-offset-5 col-sm-2" if={ expanded || all_contacts.length > contacts.length }>
+                        <button type="button" class="expand-button-contacts align-center" onclick={ toggle_expand }>
+                            <span aria-hidden="true">{ expanded ? "{% trans 'see less' %}" : "{% trans 'see more' %}"}</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</virtual>
+
+{% include 'tags/contacts.js' %}
+
+</contacts>

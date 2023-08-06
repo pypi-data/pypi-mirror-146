@@ -1,0 +1,16 @@
+<h1>{{ result.title }}</h1>
+<p>{{ result.description }}</p>
+{% if result.type %}
+<p>{{ result.type.name }}</p>
+{% endif %}
+{% if result.aggregation_status %}
+<p>Aggregate</p>
+{% endif %}
+{% if result.resultindicators %}
+<h2>Indicators</h2>
+<ul>
+{% for indicator in result.resultindicators %}
+    <li>{% include 'dashboard/result_indicator.html' with indicator=indicator only %}
+{% endfor %}
+</ul>
+{% endif %}

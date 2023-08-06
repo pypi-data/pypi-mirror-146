@@ -1,0 +1,14 @@
+{% if object.openly_status == 'draft' %}
+<a href="{% url 'edit_activity' object.pk|urlencode:'' %}">
+{% else %}
+<a href={{ object.profile_url }}>
+{% endif %}
+    {{ object.subquery_titles }} ({{ object.id }}{% if object.internal_identifier %} | {{ object.internal_identifier}}{% endif %})
+    {% if  object.subquery_sectors %}
+    <p class="search-result small">{{ object.subquery_sectors }}</p>
+    {% endif %}
+    <p class="help-text">
+        Duration: {{ object.start_date }} - {{ object.end_date }} | Status: {{ object.activity_status.name | title }}</br>
+        Reporting: {{ object.reporting_organisation.name }}
+    </p>
+</a>

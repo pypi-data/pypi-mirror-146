@@ -1,0 +1,289 @@
+{% load i18n %}
+<add_edit_form>
+    <!-- Resource Add Modal -->
+    <div id="resource-add-modal" class="modal fade" role="dialog" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <form id="res-creation-form" action="#" method="POST">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="col-xs-10">
+                        <h5 class="modal-title">{% trans 'Add New Resource' %}</h5>
+                    </div>
+                    <div class="col-xs-1">
+                        <button id="modal-close-top" type="button" class="close" aria-label="Close" onClick="{closeAndClear}">x</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xs-12">
+                        <div class="row section">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label">{% trans 'Title' %} <span><small>{% trans 'Required'%}</span></small></label>
+                                    <div>
+                                        <input id="title" name="title" class="form-control" type="text" required>
+                                        <span class="title validation-error hidden">{% trans 'A Title is required' %}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col col-xs-12">
+                                            <label class="control-label">{% trans 'Language' %} <span><small>{% trans 'Required'%}</span></small></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-xs-12">
+                                            <select id="language" name="language" class="form-control" required>
+                                                <option value="en">English</option>
+                                                <option value="tm">Timorese</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <label class="control-label">{% trans 'Publish Date' %} <span><small>{% trans 'Required'%}</span></small></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <input id='iso_date' name="iso_date" class="form-control" type="date" value="{ moment(new Date()).format('YYYY-MM-DD') }" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col-xs-12">
+                                <label class="control-label">{% trans 'Upload Resource' %} <span><small>{% trans 'Required'%}</span></small>
+                                <br><small>{% blocktrans %}We currently support these formats: MS Office, Libre Office, Open Office, PDF, Images (png, jpg, gif){% endblocktrans %}</small>
+                                </label>
+                            </div>
+                            <div class="col-md-5 col-xs-12" id='uploads-file-box'>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <label class="btn btn-default btn-file"><small>{% trans 'Browse' %}</small>
+                                                <input id="file" name="file" ref="upload" type="file">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-xs-12" id='uploads-middle-box'>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <label class="control-label"><strong>--- {% trans 'OR' %} ---</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xs-12" id='uploads-url-box'>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <input id="url" name="url" class="form-control" type="text" placeholder="{% trans 'URL Link' %}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="file validation-error hidden">{% trans 'A File or a URL Link is required' %}</span>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col-xs-12 col-md-12">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col col-xs-12">
+                                            <label class="control-label">{% trans 'Description' %} <span><small>{% trans 'Optional' %}</span></small></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-xs-12">
+                                            <textarea id='narrative' name="narrative" class="form-control textarea" rows="4" style="height: 74px;"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <label class="control-label">{% trans 'Categories' %} <span><small>{% trans 'Optional' %}</span></small></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <select multiple id="categories" name="categories" class="form-control">
+                                                <option each={cat in categories} value="{ cat.pk }">{ cat.name }</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col col-xs-12">
+                                            <label class="control-label">{% trans 'Related Program' %} <span><small>{% trans 'Optional' %}</span></small></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-xs-12">
+                                            <select id="activity" name="activity" class="form-control">
+                                                <option value="">{% trans 'Not related' %}</option>
+                                                <option each={project in related_projects} value="{ project.pk }">{ project.title }</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <style scoped>
+                        .row.section { margin-bottom: 10px; }
+                    </style>
+                </div>
+                <div class="modal-footer">
+                    <button id="resource-upload-cancel" type="button" class="btn btn-secondary" onClick="{closeAndClear}">{% trans 'Cancel' %}</button>
+                    <button id="resource-upload-submit" type="submit" class="btn btn-primary" onClick="{submit_resource}">{% trans 'Submit' %}</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    var tag = this;
+
+    tag.requestResources = function() {
+        tag.parent.requestResources();
+    }
+
+    function buildFormDataFile(form) {
+        var formData = new FormData();
+        formData.append('_file', form.file.files[0]);
+        formData.append('_data', JSON.stringify(
+            {
+                "title": form.title.value.trim(),
+                "narrative": [{
+                    "description": form.narrative.value.trim(),
+                    "language": form.language.value
+                }],
+                "categories": $('#categories').val() ? $('#categories').val() : [],
+                "language": form.language.value,
+                "organisation": "{{ user_org_id }}",
+                "activity": form.activity.value,
+                "iso_date": moment(form.iso_date.value).format('YYYY-MM-DD'),
+                "url": form.url.value.trim(),
+                "types": [],
+            }
+        ));
+
+        return formData;
+    }
+
+    function buildFormDataURL(form) {
+        return JSON.stringify(
+            {
+                "title": form.title.value.trim(),
+                "narrative": [{
+                    "description": form.narrative.value.trim(),
+                    "language": form.language.value
+                }],
+                "categories": $('#categories').val() ? $('#categories').val() : [],
+                "language": form.language.value,
+                "organisation": "{{ user_org_id }}",
+                "activity": form.activity.value,
+                "iso_date": moment(form.iso_date.value).format('YYYY-MM-DD'),
+                "url": form.url.value.trim(),
+                "types": [],
+            }
+        );
+    }
+
+    function show_error_msg(target) {
+        $(target+'.validation-error').removeClass('hidden');
+    }
+
+    function validateForm() {
+        var inputs = document.forms["res-creation-form"].elements;
+        // hide existing error notices before checking
+        $('.validation-error:not(.hidden)').addClass('hidden');
+        if (inputs.title.value == "" || (inputs.url.value == '' && inputs.file.files.length == 0)) {
+            // missing one of the required fields...
+            // set individual fields with an error class
+            if (inputs.title.value == "") {
+                show_error_msg('.title');
+            }
+            if (inputs.url.value == '' && inputs.file.files.length == 0) {
+                show_error_msg('.url');
+                show_error_msg('.file');
+            }
+            // shake all visible validation error fields
+            $('.validation-error:not(.hidden)').shake();
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    tag.submit_resource = function(e) {
+        e.preventDefault();
+
+        if (validateForm()) {
+            var form = document.forms["res-creation-form"].elements;
+            if (form.file.files.length == 0) {
+                var xhr = $.ajax({
+                    type: 'POST',
+                    url: "/en/editor/documents/",
+                    data: buildFormDataURL(form),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    headers: { 'X-CSRFTOKEN': '{{csrf_token}}' },
+                }).done(function (res) {
+                    tag.parent.buildHeaders(res);
+                }).fail(function (err) {
+                    // log the error with Sentry??
+                }).always(function() {
+                    tag.closeAndClear();
+                });
+            } else {
+                var xhr = $.ajax({
+                    type: 'POST',
+                    url: "/en/editor/documents/",
+                    data: buildFormDataFile(form),
+                    cache: false,
+                    processData: false,
+                    contentType: false,
+                    headers: { 'X-CSRFTOKEN': '{{csrf_token}}' },
+                }).done(function (res) {
+                    tag.parent.buildHeaders(res);
+                }).fail(function (err) {
+                    // log the error with Sentry??
+                }).always(function() {
+                    tag.closeAndClear();
+                });
+            }
+        }
+    };
+
+    tag.closeAndClear = function() {
+        // close the modal
+        $('#resource-add-modal').modal("hide");
+        // clear the form
+        $('#res-creation-form')[0].reset();
+        // hide existing error notices before checking
+        $('.validation-error:not(.hidden)').addClass('hidden');
+    }
+
+</add_edit_form>

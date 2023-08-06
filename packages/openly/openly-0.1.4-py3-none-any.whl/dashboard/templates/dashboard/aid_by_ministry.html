@@ -1,0 +1,168 @@
+{% extends 'dashboard/base.html' %}
+{% load i18n %}
+{% load el_pagination_tags %}
+
+
+
+{% block dashboard_style %}
+    <style>
+        .bar.highlighted {
+            fill: #ff9500;
+            pointer-events: all;
+        }
+    </style>
+{% endblock %}
+
+
+{% block nav_pulldown %}
+    <div class="btn-group sub-nav_pulldown">
+        <button type="button" class="btn btn-input dropdown-toggle drop-caret dash_subnav" data-toggle="dropdown">
+            {% if current_ministry %} {{ current_ministry.name }}
+            {% else %} {% trans "All Ministries" %} {% endif %}
+        </button>
+        <ul class="dropdown-menu dash_subnav" role="menu">
+            <li><a href="{% url 'aid_by_ministry' %}">{% trans "All Ministries" %}</a></li>
+            {% for code, name in ministry_list %}
+            <li><a href="{% url 'aid_by_ministry' ministry=code %}">{{name}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+
+
+{% block local_content %}
+    <div class="container">
+            <h1 class="CompareTitle">
+                {% trans "Aid by Ministry" %}
+                <a id="commitChart" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="" data-content="This chart shows the total amount of development assistance committed by donor partners (including grants, loans, debt relief and other forms of assistance) for activities currently being implemented. This chart corresponds to the date filter above. Filters are also available." data-original-title=""></a>
+            </h1>
+
+            <p class="CompareSubtitle">
+                {% blocktrans with site=site_name|default:'Openly' %}
+                The reports allow us to export and disaggregate aid data reported to {{site}}
+                {% endblocktrans %}
+            </p>
+
+        <div class="row ministry_row_1">
+            <div class="col-sm-12 col-md-12">
+                <br />
+                 <br />
+                <h4 class="stats text-center">{% trans "Commitment by Ministry" %}
+                 <a id="commitChart" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Number of Activities' %}" data-content="{% trans 'This chart shows the total number of activities associated with each relevant Ministry.' %}" ></a>
+                </h4>
+                <p class="chart_instructions text-center">{% trans 'click on an individual chart bar below to filter the statistics by Ministry' %}</p>
+                <br />
+                <div id="ministry_commitments"></div>
+
+                <br />
+            </div>
+            <div class="col-xs-12">
+                <h5 class="stats align-center">{{count}} total activities</h5>
+            </div>
+        </div>
+        <div class="border_btm"></div>
+        <div class="row ministry_row_2">
+            <div class="col-sm-4 col-md-4">
+                <h3 class="stats align-center">{% trans "Total Commitment" %}
+                    <a id="tot_comit" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Total Commitment' %}" data-content="{% trans 'This is the total amount of development assistance committed across all activities that have been linked to a partner Ministry. This number corresponds to the date filter.' %}" ></a>
+                </h3>
+                <div class="count_block">
+                    <p class="big_count align-center"><span class="big_bucks">$</span>{{total_commitments.0 | floatformat:"2"}}<p class="count_suffix align-center">{{total_commitments.1}}</p></p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <h3 class="stats align-center">{% trans "Largest Donor & projects" %}
+                    <a id="lge_don" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Largest donor & projects' %}" data-content="{% trans 'This chart shows the total amount of development assistance committed by the largest five donors. This chart corresponds to the date filter.' %}" ></a>
+                </h3>
+                <div id="top_donors"></div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <h3 class="stats align-center">{% trans "Total Disbursed" %}
+                    <a id="tot_exe" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'Total disbursed' %}" data-content="{% trans 'This is the total amount of development assistance disbursed. This number corresponds to the date filter.' %}" ></a>
+                </h3>
+                <div class="count_block">
+                    <p class="big_count align-center"><span class="big_bucks">$</span>{{total_disbursements.0 | floatformat:"2"}}<p class="count_suffix">{{total_disbursements.1}}</p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block local_scripts %}
+
+    <!--Popover-->
+
+    <script>
+    $(function ()
+    {
+      $("#tot_comit").popover({placement:'top'});
+      $("#lge_don").popover({placement:'top'});
+      $("#tot_exe").popover({placement:'left'});
+      $("#commitChart").popover({placement:'right'});
+    });
+    d3.select(window).on('resize', resize_window);
+    </script>
+
+
+    <!--// Bar Graph - Ministry Commitment     -->
+
+    <script language="javascript">
+    /**
+     * On page load, populate the charts with data
+     */
+        // Uses the "mixdonut" function defined in this template's superclass to generate chart data
+
+        window.chart_data = {
+            horizontal_bars: {
+                top_donors: mixdonut({by:'donor', count:10, money:true, currencysymbol:' '})
+            },
+            bars: {
+                // donor_commitments: mixdonut({by:'donor', count:20, money:true, currencysymbol:' '}),
+                ministry_commitments: mixdonut({by:'ministry', count:20, money:true, currencysymbol:' '})
+            },
+            margins: {
+                ministry_commitments: {top: 10, right: 0, bottom: 30, left: 40}
+            },
+            click: {
+                ministry_commitments: function click_ministry(m){document.location = "{% url 'aid_by_ministry' %}"+m.code}
+            }
+
+        };
+
+        $(function graphChartData(){
+            (function ministry_commitment(){
+                    var data = _(window.chart_data.bars.ministry_commitments).clone().map(function(m){m.name = _.replace(m.name, 'Ministry of', '');});
+                    var width = $('#ministry_commitments').width();
+                    var height = 350;
+                    var text_above_x = true;
+                    var ministry = undefined; /* {% if current_ministry %} */
+                    ministry = "{{current_ministry.code}}"; /* {% endif %} */
+                    {% comment %} function ministry_tooltip() {
+                      var d = this.__data__;
+                      return _.template("${name}<br> ${count} ${projects} <br> ${dollars}")(
+                          {projects:"{% trans 'Projects' %}", name:d.name, count:d.count, dollars: accounting.compactFormatMoney (d.dollars)}
+                      );
+                    } {% endcomment %}
+                    function click(d) {
+                        if (d.code < 0){ return };
+                        document.location = "{% url 'aid_by_ministry' %}"+d.code;
+                    };
+                    // window.chart_data.bars.ministry_commitments = _(data).orderBy(['dollars'], ['desc']).value();
+                    draw_bar_chart_into_div("#ministry_commitments", window.chart_data.bars.ministry_commitments, width, height, window.chart_data.margins.ministry_commitments, click, ministry, undefined, text_above_x);
+            })();
+
+            (function donor_bars() {
+                // Top Donors and projects
+                var width = $("#top_donors").width();
+                var bar_height = 16.5;
+                function count_tooltip() {
+                      var d = this.__data__;
+                      return d.name + "{% trans 'Value' %}: "+ d.pretty;
+                    }
+                draw_horizontal_bar_chart_into_div("#top_donors", window.chart_data.horizontal_bars.top_donors, width, bar_height, count_tooltip);
+            })();
+
+    });
+    </script>
+{% endblock %}

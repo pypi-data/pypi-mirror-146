@@ -1,0 +1,198 @@
+{% load i18n %}
+{% load static %}
+
+<resources_interface>
+    <!-- Add & Edit Resources Modal Form -->
+    <add_edit_form></add_edit_form>
+
+    <!-- Resources Library -->
+    <div class="container">
+        <div class="row">
+            <h1 class="page-title">{% trans 'Resource Library' %}</h1>
+            {% if resource_add %}
+            <button id="add-resource-button" class="btn btn-primary" data-toggle="modal" data-target="#resource-add-modal">
+                {% trans 'Add new Resource' %}
+            </button>
+            {% endif %}
+        </div>
+        <div class="row">
+            <div id="interface-wrapper">
+                <!-- Filter and Search control bar -->
+                <!-- <filter_controls></filter_controls> -->
+                <!-- Breadcrumb links -->
+                <breadcrumbs></breadcrumbs>
+                <!-- Categories List -->
+                <categories-list></categories-list>
+                <!-- Resources Lists (one list per Category) -->
+                <resources-list each="{ headers }" hidden></resources-list>
+                <!-- Resource Profile -->
+                <resource-profile each="{ all_docs }" hidden></resource-profile>
+            </div>
+        </div>
+    </div>
+
+    var tag = this;
+    tag.headers = [];
+    tag.all_docs = [];
+    tag.organisations = [];
+    tag.years = [];
+    tag.categories = opts.categories;
+    tag.related_projects = opts.related_projects;
+    tag.breadcrumbCategory = null;
+    tag.breadcrumbResource = null;
+    tag.disable_filters = true;
+
+    tag.requestResources = function() {
+        $.ajax({
+            type: 'GET',
+            url: "/en/editor/documents/",
+            contentType: "application/json",
+            headers: { 'X-CSRFTOKEN': '{{csrf_token}}' },
+        }).done(function (res) {
+            tag.buildHeaders(res);
+        }).fail(function (err) {
+            // log the error with Sentry??
+            tag.buildHeaders(tag.default_resources);
+        }).always(function() {
+            tag.organisations = _.uniq(tag.all_docs.map(function(d){if (d.org_name != null){return d.org_name;}})).filter(function(d){ return d != null; });
+            tag.years = _.uniq(tag.all_docs.map(function(d){
+                var yr = moment(d.iso_date).format('YYYY');
+                if (yr){return yr;}
+            })).filter(function(d){ return d != "Invalid date"; });
+        });
+    }
+
+    tag.buildHeaders = function(resources) {
+        tag.all_docs = resources;
+        var headers = tag.categories;
+        var none_header = headers.find(function(v){return v.pk == "NONE";});
+        var header;
+        none_header.resources = [];
+        headers.forEach(function(header){header.resources = []});
+        resources.forEach(function(resource) {
+            if (resource.categories.length == 0 || !resource.categories) {
+                none_header.resources.push(resource);
+            } else {
+                resource.categories.forEach(function(cat) {
+                    header = headers.find(function(v){return v.pk == cat;})
+                    if (header) { header.resources.push(resource); }
+                    else { none_header.resources.push(resource); }
+                });
+            }
+        });
+        // sort the OTHER category items by ISO_DATE
+        none_header.resources = none_header.resources.sort(function(a, b) {return parseFloat(a.iso_date) - parseFloat(b.iso_date);});
+        tag.headers = headers.filter(function(item) { return item.resources; });
+        tag.update();
+    }
+
+    tag.icon_directory = {
+        // Microsoft Office formats
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document': '{% static "img/text_doc.svg" %}',
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': '{% static "img/spreadsheets.svg" %}',
+        'application/vnd.openxmlformats-officedocument.presentationml.presentation': '{% static "img/presentation.svg" %}',
+
+        // Old MS Office formats
+        'application/msword': '{% static "img/text_doc.svg" %}',
+        'application/vnd.ms-excel': '{% static "img/spreadsheets.svg" %}',
+        'application/excel': '{% static "img/spreadsheets.svg" %}',
+        'application/vnd.ms-powerpoint': '{% static "img/presentation.svg" %}',
+        'application/vnd.ms-project': '{% static "img/presentation.svg" %}',
+
+        // OpenOffice or LibreOffice
+        'application/vnd.oasis.opendocument.spreadsheet': '{% static "img/spreadsheets.svg" %}',
+        'application/vnd.oasis.opendocument.text': '{% static "img/text_doc.svg" %}',
+        'application/vnd.oasis.opendocument.presentation': '{% static "img/presentation.svg" %}',
+
+        // OpenOffice
+        'application/vnd.sun.xml.calc': '{% static "img/spreadsheets.svg" %}',
+        'application/vnd.sun.xml.impress': '{% static "img/presentation.svg" %}',
+        'application/vnd.sun.xml.writer': '{% static "img/text_doc.svg" %}',
+
+        // Images
+        'image/png': '{% static "img/images.svg" %}',
+        'image/jpeg': '{% static "img/images.svg" %}',
+        'image/gif': '{% static "img/images.svg" %}',
+
+        // PDF
+        'application/pdf': '{% static "img/pdf.svg" %}'
+    };
+
+    tag.decodeFT = function(file_format) {
+        if (file_format) {
+            var icon = tag.icon_directory[file_format];
+            if (icon) {
+                return icon;
+            } else {
+                return '{% static "img/url-icon.svg" %}'
+            }
+        } else {
+            return '{% static "img/url-icon.svg" %}';
+        }
+    }
+
+    tag.showResourcesList = function(e) {
+        // catch errors thrown when navigating from different part of interface
+        try {
+            tag.breadcrumbCategory = e.item.name;
+            tag.breadcrumbCategoryId = e.item.pk;
+            var target_pk = e.item.pk;
+        } catch {
+            tag.breadcrumbResource = null;
+            var target_pk = tag.breadcrumbCategoryId;
+        }
+
+        // activate filters inputs
+        tag.disable_filters = true; // false;
+        $("resource-profile").hide();
+        $("categories-list").hide();
+        $("#resources-list-" + target_pk).show();
+        tag.update();
+    }
+
+    tag.showResourceProfile = function(e) {
+        tag.breadcrumbResource = e.item.title.length < 30 ? e.item.title : e.item.title.slice(0,30)+"...";
+        tag.disable_filters = true;
+
+        $("categories-list").hide();
+        $("resources-list").hide();
+        $("#resource-profile-" + e.item.id).show();
+        tag.update();
+    }
+
+    tag.showCategoriesList = function() {
+        tag.breadcrumbCategory = null;
+        tag.breadcrumbCategoryId = null;
+        tag.breadcrumbResource = null;
+        tag.disable_filters = true;
+
+        $("resource-profile").hide();
+        $("resources-list").hide();
+        $("categories-list").show();
+        tag.update();
+    }
+
+    tag.file_size_calc = function(file_size) {
+        if (file_size) {
+            return (file_size / (1024 * 1024)).toFixed(2) + 'mb';
+        } else {
+            return ' - ';
+        }
+    }
+
+    tag.on('mount', function() {
+        tag.headers = tag.requestResources();
+    });
+
+    var clipboard = new ClipboardJS('.download-link');
+    $('.download-link').tooltip('disable');
+    clipboard.on('success', function(e) {
+        var shown = false;
+        $(e.trigger).tooltip('enable');
+        $(e.trigger).tooltip('show');
+        setTimeout(function(){
+            $(e.trigger).tooltip('hide');
+            $(e.trigger).tooltip('disable');
+        }, 3000);
+    });
+</resources_interface>

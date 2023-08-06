@@ -1,0 +1,69 @@
+{% load i18n %}
+{% load static  %}
+{% load ifsetting %}
+
+{% include 'tags/endorsements.html' %}
+
+<tab-review id="review">
+    <div class="form_header">
+        <h4>
+            {% ifnotapp dird_templates %} {% trans 'Approval & Comments' %}
+            {% else %} {% trans 'Comments' %}
+            {% endifnotapp %}
+        </h4>
+    </div>
+    <div class="form_body">
+        <div class="review-container">
+            <endorsements></endorsements>
+
+            <h5>{% blocktrans %}{{activity_singular}} log{% endblocktrans %}</h5>
+
+            <div class="row activity-log-row">
+                <div class="col-xs-1 icon-container">
+                    <span class="log-icon comment"></span>
+                </div>
+                <div class="col-xs-11">
+                    <div class="row">
+                        <textarea class="form-control" ref="comment" placeholder="{% trans 'Add a comment' %}" maxlength="2000">
+                        </textarea>
+                    </div>
+                    <div class="row comment-post-button">
+                        <a class="btn btn-primary pull-right {disabled: disable_post}" disabled="{disable_post}" onclick="{post_comment}"> {% trans 'Post' %} </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row activity-log-row log-container" each="{log, index in activity_logs}">
+                <div class="col-xs-1 icon-container">
+                    <span class="log-icon {log.type}"></span>
+                </div>
+                <div class="col-xs-11 log-message-col">
+                    <div class="row log-message {bold: log.type != 'comment'}">
+                        {log.message}
+                    </div>
+                    <div class="row log-metadata small">
+                        <div class="col xs-12">
+                            {log.author} - {moment(log.time_stamp).format('D MMM YYYY HH:mm')}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="show-more-logs-toggle" if="{store.activity_logs.length > 20}">
+                <a onclick="{toggle_show_more}">
+                    <span if="{!show_more_logs}"> show more logs </span>
+                    <span if="{show_more_logs}"> show less logs </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <btn-editor-next></btn-editor-next>
+
+    <style scoped>
+        .comment-post-button {margin-top: 4px;}
+        .log-message-col {margin-top: 10px;}
+    </style>
+
+    {% include 'tags/tab-review.js' %}
+</tab-review>

@@ -1,0 +1,33 @@
+{% load i18n %}
+    <div class="container">
+        <a id="activities" name="activities">&nbsp;</a>
+        <div class="table_data_section">
+            <h4 class="activity_table text-center">{% trans "Activities List" %}
+             <a id="activityTable" class="ion-ios-help-outline dash-info" rel="popover" data-trigger="hover" title="{% trans 'The Activity List' %}" data-content="{% trans 'The activities listed below are those used to calculate the above charts and graphics. These activities correspond to the date filter above.' %}" ></a>
+            </h4>
+            <div id="table_data">
+                <div class="panel-body">
+                    <div class="top-scroll" id="activity-top-scroll">
+                        <div></div>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="activity" class="table table-editor">
+                            <thead>
+                                <tr>
+                                    <th class="order" data-column="id">{{project_name}} ID</th>
+                                    <th class="order" data-column="iati_identifier">{% trans 'IATI ID' %}</th>
+                                    <th class="fixed-width-300">{% trans 'Title' %}</th>
+                                    <th class="fixed-width-300">{% trans 'Sector' %}</th>
+                                    <th>{% trans 'Status' %}</th>
+                                    <th class="no-wrap">{% trans 'Total Commitment' %}</th>
+                                    <th>{% trans 'Financing' %}</th>
+                                    <th class="order" data-column="start_planned">{% trans 'Start' %}</th>
+                                    <th class="order" data-column="end_planned">{% trans 'End' %}</th>                                </tr>
+                            </thead>
+                            {% include page_template %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

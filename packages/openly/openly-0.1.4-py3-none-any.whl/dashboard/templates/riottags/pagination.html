@@ -1,0 +1,107 @@
+{% load i18n %}
+
+<pagination>
+
+    <div>
+<!--        <div class="pull-left">
+            <button disabled={ page == 1 } onclick={ first }>
+                <span class="glyphicon glyphicon-fast-backward"></span>
+            </button>
+            <button disabled={ page == 1 } onclick={ previous }>
+                <span class="glyphicon glyphicon-step-backward"></span>
+            </button>
+        </div>-->
+
+        <button class="btn btn-default page_tools" if={ num_pages > 1  && !show_all } onclick={ all }>{% trans 'Show All' %}</button>
+        <button class="btn btn-default page_tools page_tools_bottom" if={ num_pages > 1 && show_all } onclick={ all }>{% trans 'Show Pages' %}</button>
+        <div if={ !show_all } class="centeredPrompt">
+        <nav>
+          <ul class="pager">
+            <li class="previous"><a href="#" if={ page > 1 } onclick={ previous }><i class="ion-ios-arrow-left"></i> Back</a></li>
+            <li class="page_count">{ page } of { num_pages }</li>
+            <li class="next"><a href="#" if={ page < num_pages } onclick={ next }>Next <i class="ion-ios-arrow-right"></i></a></li>
+          </ul>
+        </nav>
+        </div>
+
+      <!--  <span>
+            Page <input style="width:80px;" size=3 type=number max={ num_pages } step=1 min=1 value={ page } onchange={ goto }/> of { num_pages }
+            Showing <input style="width:80px;" size=3 type=number max={ count } step=1 min=1 value={ page_size } onchange={ update_pagesize }/> per page
+        </span>
+
+        <div class="pull-right">
+            <button enabled={ page < num_pages } onclick={ next }>
+                <span class="glyphicon glyphicon-step-forward"></span>
+            </button>
+            <button enabled={ page < num_pages } onclick={ last }>
+                <span class="glyphicon glyphicon-fast-forward"></span>
+            </button>
+        </div>-->
+    </div>
+
+    var self = this
+    self.page_size = parseInt(opts.pagesize) || 10
+    self.page = 1
+    self.num_pages = 5
+    self.count = 0
+    self.show_all = false
+
+    update_count(new_count)
+    {
+        self.count = new_count
+        self.num_pages = 1 + Math.floor(self.count / self.page_size)
+        self.page = 1
+        self.paginate()
+    }
+
+    update_pagesize(e){
+        var new_size = parseInt(e.target.value)
+        if (new_size > 0)
+        {
+            self.page_size = new_size
+            self.num_pages = 1 + Math.floor(self.count / self.page_size)
+            self.page = 1
+        }
+    }
+
+    goto(e) {
+        self.page = parseInt(e.target.value)
+    }
+
+    first(e){
+        self.page = 1
+        self.paginate()
+    }
+    last(e){
+        self.page = self.num_pages
+        self.paginate()
+    }
+    next(e){
+        if(self.page<self.num_pages) {
+            self.page += 1
+            self.paginate()
+        }
+    }
+    previous(e){
+        if(self.page>1) {
+            self.page -= 1
+            self.paginate()
+        }
+    }
+
+    all(){
+        self.show_all = !self.show_all
+        if(self.show_all){
+            self.parent.paginate(0,self.count)
+        }else{
+            self.page = 1
+            self.paginate()
+        }
+    }
+
+    paginate(){
+        var first = (self.page - 1) * self.page_size
+        var last = (self.page * self.page_size)
+        self.parent.paginate(first, last)
+    }
+</pagination>

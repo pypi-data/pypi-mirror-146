@@ -1,0 +1,53 @@
+{% load i18n %}
+{% load ifsetting %}
+
+<tab-container-no-financials>
+    <editor-no-financials-routes></editor-no-financials-routes>
+</tab-container-no-financials>
+
+<editor-no-financials-routes>
+
+    <router>
+        <route path="general"><div data-is="tab-general" validate_banner validation_banner_initial="{stores.activityStore.activity.openly_status === 'blank' ? 'false' : 'true'}" store="{stores.activityStore}" path='activity' header='{% trans "General Information" %}'></div></route>
+        <route path="sectors"><div data-is="tab-sectors-no-financials" validate_banner store="{stores.sectorStore}"></div></route>
+        <route path="part_orgs"><div data-is="tab-organisations" validate_banner show_extending={ false } show_funding={ true } route="part_orgs" store={stores.activityStore} path="activity.participating_organisations"></div></route>
+        <route path="locations"><div data-is="tab-locations-no-financials" validate_banner store={stores.locationStore}></div></route>
+        <route path="results.."><div data-is="tab-results" validate_banner store={stores.resultsStore} path="results"></div></route>
+        <route path="contacts"><div data-is="tab-contacts" validate_banner store={stores.contactsStore} path="contactinfo_set"></div></route>
+        <route path="documents"><div data-is="tab-documents" validate_banner store={stores.documentStore} path={stores.documentStore.el}></div></route>{% ifsetting ENDORSEMENT_ENABLED %}
+        <route path="review"><div data-is="tab-review" store="{stores.reviewStore}"></div></route>{% endifsetting %}
+    </router>
+
+    var tag = this;
+    function getRoutes(){
+        /* returns a list of all the possible routes for this tag */
+        return  _.map(tag.tags.router.tags.route, 'opts.path');
+    }
+    function excludeEditor(routes){
+        /* exclude "editor" routes which are not really directly addressable */
+        var exported_routes = _.reject(routes, function(r){return _.includes(r, '*')});
+        /* Sometimes we have a situation such as 'results..', when this occurs we need to route to 'results' not 'results..' */
+        exported_routes = _.map(exported_routes, function(r){
+            if (r.substring(r.length-2) === '..'){
+                return r.substring(0, r.length-2)
+            }
+            return r;
+        })
+        return exported_routes;
+    }
+
+    tag.on('mount', function(){
+        (function setGlobalRoutes(w){
+            w.routeToTag = {
+                next: function(){
+                    var routes = excludeEditor(getRoutes());
+                    var currentPage = _.replace(location.hash, '#', '');
+                    var currentRouteIndex = _.indexOf(routes, currentPage);
+                    var routeTo = routes[currentRouteIndex+1] || routes[0];
+                    route(routeTo);
+                }
+            }
+        })(window);
+    })
+
+</editor-no-financials-routes>

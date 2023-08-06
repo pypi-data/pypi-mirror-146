@@ -1,0 +1,90 @@
+{% load i18n %}
+{% trans "The end date cannot be before the start date" as date_error %}
+<field-daterange>
+
+    <div class="form-group {has-error: from_field_error|| to_field_error && !validated}">
+        <label class="col-xs-3 col-sm-3 control-label">
+            <i class="ion-record publish_warning" data-field-key="dates"></i>
+            { from_label }
+            <required-field if={from_field_required}></required-field>
+        </label>
+        <div class="col-sm-2">
+            <input class="form-control textarea c-input input-date from-field" type="text" name="input_from_field" value="{ from_field }" onchange="{datechange}">
+            <span  if={ from_field_error } class="help-block has-error">{ from_field_error }</span>
+
+        </div>
+
+        <label class="col-sm-2 control-label">
+            { to_label }
+            <required-field if={to_field_required}></required-field>
+        </label>
+        <div class="col-sm-2">
+            <input class="form-control textarea c-input input-date to-field" type="text" name="input_to_field" value="{ to_field }" onchange="{datechange}">
+            <span  if={ to_field_error } class="help-block has-error">{ to_field_error }</span>
+        </div>
+    </div>
+
+
+    <field-metadata meta="{opts.meta}"></field-metadata>
+    <style>
+
+    </style>
+
+    {# <script> #}
+    var tag = this;
+    tag.mixin('SerializerMixin');
+
+    tag.datechange = datechange
+    tag.validate = validate
+
+    tag.datepicker_opts = $.extend( {
+            orientation: "top left",
+            startView: 1,
+            autoclose: true,
+            format: 'yyyy-mm-dd'
+        }, opts.datepicker_opts)
+
+    tag.on('mount', function(){
+        $('.input-date', tag.root).datepicker(tag.datepicker_opts)
+    })
+
+    tag.on('update', function(){
+
+        // default opts
+        tag.from_label = opts.from_label || 'Start Date'
+        tag.from_field = tag.data[parseInt(opts.from_dateindex)][opts.field_name]
+
+        tag.to_label = opts.to_label || 'End Date'
+        tag.to_field = tag.data[parseInt(opts.to_dateindex)][opts.field_name]
+
+        tag.from_field_required = opts.from_field_required || false
+        tag.to_field_required = opts.to_field_required || false
+    })
+
+    function datechange(e){
+        if (e.currentTarget.name == 'input_from_field'){
+            var path = "activity.activity_dates["+parseInt(opts.from_dateindex)+"]."+opts.field_name}
+        else if (e.currentTarget.name == 'input_to_field'){
+            var path = "activity.activity_dates["+parseInt(opts.to_dateindex)+"]."+opts.field_name}
+        tag.bystring(path, {data:e.currentTarget.value})
+    }
+
+    function validate(e){
+        if (tag['input_from_field'].value == '{from_field}'){return true}
+        if (tag['input_to_field'].value == '{from_field}'){return true}
+        if (tag['input_to_field'].value == '') {return true}
+        if (tag['input_from_field'].value == '') {return true}
+
+        var from_date = moment(tag['input_from_field'].value)
+        var to_date = moment(tag['input_to_field'].value)
+
+        if (to_date.isBefore(from_date)){
+            tag.to_field_error = '{{ date_error|escape }}';
+            return false}
+        if (to_date.isAfter(from_date)){
+            tag.to_field_error = undefined
+            return true}
+    }
+    {# </script> #}
+
+</field-daterange>

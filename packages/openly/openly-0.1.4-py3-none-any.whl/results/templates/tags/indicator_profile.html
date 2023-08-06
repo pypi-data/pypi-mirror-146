@@ -1,0 +1,20 @@
+{% load i18n %}
+
+<indicator-profile>
+    <a class="back-to-dashboard" href="#dashboard/{ localStorage.getItem('active_sector') }">
+        <i class="ion-android-arrow-back"></i>
+        {% trans 'Back to Dashboard' %}
+    </a>
+
+    <span class="reported-by">
+        {% trans 'Reported by:' %}
+        <a href="{ organisation_link }">{ indicator.organisation }</a>
+    </span>
+
+    <div class="dashboard_cards_container">
+        <dashboard_card hide_more_button="1"></dashboard_card>
+        <indicator-profile-description></indicator-profile-description>
+    </div>
+
+{% include 'tags/indicator_profile.js' %}
+</indicator-profile>

@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-13 11:42+0900\n"
+"PO-Revision-Date: 2018-10-12 17:08+0822\n"
+"Last-Translator: b'Admin de Jesus <onorio@catalpa.io>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid "Saving"
+msgstr "Rai hela"
+
+msgid "Required"
+msgstr "Rekere"
+
+msgid "There are validation errors on this tab."
+msgstr "Iha erru validasaun ho tab ne'e "
+
+msgid "This date is not valid"
+msgstr ""
+
+msgid "This date cannot be in the future."
+msgstr "Data ne'e labele mosu iha futuru"
+
+msgid "This date cannot be in the past."
+msgstr "Data ne'e labele mosu iha pasadu"
+
+msgid "Must be a number"
+msgstr "Tenke ho numeru ida"
+
+msgid "Must be a number greater than zero"
+msgstr "Tenke ho numero ida ne'ebé bo'ot liu zero "
+
+msgid "There is an invalid date"
+msgstr ""
+
+msgid "The start date must occur before the end date"
+msgstr "Data komesa nian tenke implementa antes data final"
+
+msgid "An end date must have a valid start date"
+msgstr "Data final tenke iha data komesa ne'ebé válidu"
+
+msgid "Percentages should add up to 100."
+msgstr "persentajen tenke to'o 100"
+
+msgid "These must be unique values"
+msgstr "Hirak ne'e tenke ho valores úniku"
+
+msgid "Please choose a different file format"
+msgstr "Favor hili formatu arkivu diferente  "
+
+msgid "Please choose a smaller file"
+msgstr "Favor hili arkivu kiik"
+
+msgid "Saved"
+msgstr "Rai ona"
+
+msgid "Error while saving, please try again"
+msgstr "Iha erru wainhira rai rezultadu, favor koko fila fali"
+
+msgid "No file currently selected"
+msgstr "Laiha file ne'ebe agora dau-daun hili"
+
+msgid "success"
+msgstr "Sucessu"
+
+#, fuzzy
+#| msgid "Set the Planned or Actual Start Date"
+msgid "Set the Start Date"
+msgstr "Defini Data Planu ou Data Atual Hahu"
+
+msgid "Add a sector"
+msgstr "Aumenta Seitor"
+
+msgid "Add a location"
+msgstr "Aumenta Fatin"
+
+msgid "Add a transaction of type Commitment"
+msgstr "Aumenta transaksaun ba tipu Komprimissu"
+
+msgid "Set the End Date"
+msgstr ""
+
+msgid "Sorry, you cant publish just yet."
+msgstr "Diskulpa, ita seidauk bele atu publika"
+
+msgid "Total Project Cost should be 15 digits or less"
+msgstr ""
+
+#, fuzzy
+#| msgid "Saving the Sectors"
+msgid "Saving the Msdps"
+msgstr "Rai setór sira"
+
+#, fuzzy
+#| msgid "Successfully saved the Sectors"
+msgid "Successfully saved the MSDP Alignment"
+msgstr "Rai ona setór sira ho susesu"
+
+#, fuzzy
+#| msgid "Error while saving, please try again"
+msgid "Error while saving"
+msgstr "Iha erru wainhira rai rezultadu, favor koko fila fali"
+
+msgid "Region/State Governments"
+msgstr ""
+
+msgid "Error saving the Results, please try again"
+msgstr "Iha erru wainhira rai rezultadu sira, favor koko fila fali"
+
+msgid "Saving the Sectors"
+msgstr "Rai setór sira"
+
+msgid "Successfully saved the Sectors"
+msgstr "Rai ona setór sira ho susesu"
+
+msgid "Error saving the Sectors, please try again"
+msgstr "Iha erru wainhira rai setór sira, favor koko fila fali"
+
+msgid "Saving the Locations"
+msgstr "Rai fatin sira"
+
+msgid "Successfully saved the Locations"
+msgstr "Rai ona fatin sira ho sucessu"
+
+#~ msgid "Set the Activity Description"
+#~ msgstr "Defini Deskrisaun Atividade"
+
+#~ msgid "Set the Activity Status"
+#~ msgstr "Defini Estatus Atividade"
+
+#~ msgid "Set the Activity Title"
+#~ msgstr "Defini Titulu Atividade"
+
+#~ msgid "Successfully published the Activity"
+#~ msgstr "Atividade Publika ona ho sucessu"
+
+#~ msgid "Successfully set the Activity to draft"
+#~ msgstr "Defini atividade ba ezbosu ho sucessu"
+
+#~ msgid ""
+#~ "Please ensure the document is under 15mb and is one of the following "
+#~ "supported formats - .jpeg, .png, .gif, .pdf, MS Office file types, and "
+#~ "OpenOffice file types."
+#~ msgstr ""
+#~ "Favor asegura katak dokumentu ne'e la bo'ot liu 15mb no tipu dokumentu "
+#~ "hanesan tuir mai - .jpeg, .png, .gif, .pdf, tipu MS office no tipu "
+#~ "OpenOffice. "

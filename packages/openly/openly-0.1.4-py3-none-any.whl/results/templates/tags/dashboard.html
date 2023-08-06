@@ -1,0 +1,17 @@
+{% load i18n %}
+
+<dashboard>
+    <h1 class="results-title">{ active_sector } {% trans 'Indicators' %}</h1>
+    
+    <p if="{ filtered_indicators == 0 }">{% trans 'There are no indicators for the current sector' %}</p>
+
+    <div class="dashboard_cards_container">
+        <dashboard_card each="{ indicator in indicators }" indicator="{ indicator }"></dashboard_card>
+    </div>
+
+    <style>
+        a.inactive {color: gray}
+    </style>
+
+{% include 'tags/dashboard.js' %}
+</dashboard>

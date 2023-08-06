@@ -1,0 +1,115 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static  %}
+
+{% block title %}
+{% trans 'Query Builder' %} | {{ site_name }}
+{% endblock %}
+
+{% block style %}
+    <!-- dashboard base styles -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ionicons.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/square/blue.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'select2/select2.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'select2/select2-bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-datepicker.min.css' %}" />
+{% endblock style %}
+
+{% block content %}
+    <query_builder></query_builder>
+{% endblock content %}
+
+{% block footer %}
+    {{ block.super }}
+
+    <script src="{% url 'riot' 'query_builder' %}" type="riot/tag"></script>
+    <script src="{% url 'riot' 'aims_filter' %}" type="riot/tag"></script>
+    <script src="{% url 'riot' 'aims_stats' %}" type="riot/tag"></script>
+    <script src="{% url 'riot' 'aims_aggregation' %}" type="riot/tag"></script>
+    <script src="{% url 'riot' 'aims_activities' %}" type="riot/tag"></script>
+    <script src="{% url 'riot' 'aims_transactions' %}" type="riot/tag"></script>
+    <script src="{% url 'riot' 'pagination' %}" type="riot/tag"></script>
+    <script type="text/javascript" src="{% static 'js/icheck.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/accounting.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/accounting.compactformat.js' %}"></script>
+    <script type="text/javascript" src="{% static 'querybuilder/query_builder.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/moment-with-locales.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'select2/select2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'sheetjs/xlsx.full.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'sheetjs/FileSaver.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ajax_csrf.js' %}"></script>
+
+    <script>
+        var topScrollMixin = {
+            init:function(){
+                /* Scroll sync between a fake top scrollbar and the wide table */
+                this.on("updated", function(){
+                    var self = this;
+                    /*
+                    Implement this by adding refs
+                    <div class="top-scroll" ref="topScroll">
+                        <div></div>
+                    </div>
+                    <div ref="table" class="tableScroll">
+                        <table></table>
+                    </div>
+                    */
+                    function scrollTriggers(scrolltop, scrolltable){
+                        // Sync the widths of child elements
+                        var scrolltop_div = scrolltop.children().first() // This ought to be a div with at least 1px height
+                        var scrolltable_table = scrolltable.children().first() // This ought to be a table
+                        scrolltop_div.width(scrolltable_table.width()) /* Keep the widths the same */
+
+                        // Apply triggers, if not yet applied
+                        if (self.scroll_triggers_applied){ return } /* Apply triggers if not yet applied */
+                            scrolltop.on('scroll', function(){scrolltable.scrollLeft(scrolltop.scrollLeft());});
+                            scrolltable.on('scroll', function(){scrolltop.scrollLeft(scrolltable.scrollLeft());});
+                            self.scroll_triggers_applied = true
+                    };
+                    var scrolltop = $(this.refs.topScroll)
+                    var scrolltable = $(this.refs.table)
+                    if (scrolltop.length && scrolltable.length){ scrollTriggers(scrolltop, scrolltable);}
+                });
+            }
+        }
+        riot.mixin('topScrollMixin', topScrollMixin)
+    </script>
+
+    <script>
+        var inDateFmt = 'MMM YYYY';
+        (function(filters){
+            filters.fy_end_month = parseInt('{{ fy_end_month }}');
+            filters.start_date = moment('{{ start_date }}', inDateFmt).date('1');
+            filters.end_date = moment('{{ end_date }}', inDateFmt).add(1, 'months').date(0)
+            }
+        )(window.openly_filters = window.openly_filters || {});
+
+        (function set_globals(w){
+            w.GLOBALS = w.GLOBALS || {};
+            w.GLOBALS.project_name = '{{project_name}}';
+            // set max/min dates for use in selecting all activities in QB
+            w.GLOBALS.min_date = "{{ min_date_iso }}";
+            w.GLOBALS.max_date = "{{ max_date_iso }}";
+        })(window);
+
+        // translations available
+        {% include 'dashboard/translations.js' %}
+
+        {% get_current_language as LANGUAGE_CODE %}
+        <!-- Current language: {{ LANGUAGE_CODE }} -->
+        accounting.settings.currency.precision = 0;   // decimal places
+
+        // Create a store instance.
+        var querybuilder = new QueryBuilder('{% url "querydata" %}');
+
+        // Register the store in central dispatch and mount.
+        RiotControl.addStore(querybuilder);
+        RiotControl.on('query_builder_fetch', function(){querybuilder.trigger('fetch')})
+
+        riot.mount('*');
+    </script>
+
+{% endblock %}

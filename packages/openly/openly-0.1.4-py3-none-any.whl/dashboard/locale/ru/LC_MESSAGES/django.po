@@ -1,0 +1,419 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-08 17:32+0900\n"
+"PO-Revision-Date: 2017-04-18 21:22+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+msgid "Activities"
+msgstr "Направления деятельности"
+
+msgid "Activities List"
+msgstr "Список мероприятий / направлений деятельности"
+
+msgid "Activities by Ministry"
+msgstr "Направления деятельности в разрезе ведомств"
+
+msgid "Activities by Status"
+msgstr "Направления деятельности по состоянию"
+
+msgid "Activities by status"
+msgstr "Направления деятельности по состоянию"
+
+msgid "Activity"
+msgstr "Направление деятельности"
+
+msgid "Activity Status"
+msgstr "Состояние мероприятия/направления деятельности"
+
+msgid "Add a filter"
+msgstr "Добавить фильтр"
+
+msgid "Advanced filter"
+msgstr "Продвинутый фильтр"
+
+msgid "Aid By Donor"
+msgstr "Содействие в разрезе донора"
+
+msgid "Aid By Location"
+msgstr "Содействие в разрезе местности"
+
+msgid "Aid By Ministry"
+msgstr "Содействие в разрезе ведомств"
+
+msgid "Aid By Sector"
+msgstr "Содействие в разрезе отраслей"
+
+msgid "Aid by Donor"
+msgstr "Содействие в разрезе доноров"
+
+msgid "Aid by Location"
+msgstr "Содействие в разрезе местности"
+
+msgid "Aid by Ministry"
+msgstr "Содействие в разрезе ведомства"
+
+msgid "Aid by Sector"
+msgstr "Содействие в разрезе сектора"
+
+msgid "All Donors"
+msgstr "Все доноры"
+
+msgid "All Ministries"
+msgstr "Все министерства"
+
+msgid "All categories"
+msgstr "Все категории"
+
+msgid "All other types of transactions (Interest Repayment, Loan Repayment, Reimbursement, Purchase of Equity, Sale of Equity, Credit Guarantee, Incoming Commitment)"
+msgstr "Все остальные типы транзакций (выплата процентов, возврат кредита, .. приобретение собственных средств, продажа .., кредитная гарантия,"
+
+msgid "Available"
+msgstr "Доступно"
+
+msgid "Clear all filters"
+msgstr "Очистить все фильтры"
+
+msgid "Clear current date filters, and sorts"
+msgstr "Очистить текущие хронологические фильтры и т.д."
+
+msgid "Commitment"
+msgstr "Обязательство"
+
+msgid "Commitment by Aid Sector"
+msgstr "Обязательства по сектору содействия"
+
+msgid "Commitment by Donor"
+msgstr "Обязательства в разрезе доноров"
+
+msgid "Commitment by Location"
+msgstr "Обязательства в разрезе месторасположения"
+
+msgid "Commitment by Sector"
+msgstr "Обязательства в разрезе сектора"
+
+msgid "Commitment by Status"
+msgstr "Обязательство по состоянию"
+
+msgid "Commitment by aid sector"
+msgstr "Обязательство по сектору содействия"
+
+msgid "Commitment by donor"
+msgstr "Обязательство в разрезе донора"
+
+msgid "Commitment by location"
+msgstr "Обязательства в разрезе месторасположения"
+
+msgid "Commitment by sector"
+msgstr "Обязательство по сектору"
+
+msgid "Commitment by status"
+msgstr "Обязательство по состоянию"
+
+msgid "Dashboard Filter"
+msgstr "Фильтр \"приборной панели\""
+
+msgid "Disbursement"
+msgstr "Выплата"
+
+msgid "Donor"
+msgstr "Донор"
+
+msgid "Donor commitment"
+msgstr "Обязательство донора"
+
+msgid "Edit columns"
+msgstr "Редактировать столбцы"
+
+#, python-format
+msgid "Empty list and ``%(class_name)s.allow_empty`` is False."
+msgstr "Пустой список и  ``%(class_name)s.allow_empty`` неверно"
+
+msgid "End"
+msgstr "Завершение"
+
+msgid "Expenditure"
+msgstr "Расход"
+
+msgid "Finance Type Category"
+msgstr "Категория типа финансирования"
+
+msgid "Financing"
+msgstr "Финансирование"
+
+msgid "Largest Donor & projects"
+msgstr "Крупнейшие доноры и проекты"
+
+msgid "Largest donor & projects"
+msgstr "Крупнейший донор и проекты"
+
+msgid "Loans Vs Grants"
+msgstr "Займы и гранты"
+
+msgid "Loans vs Grants"
+msgstr "Займы и гранты"
+
+msgid "Ministry"
+msgstr "Министерство"
+
+msgid "Multiple Donors"
+msgstr "Несколько доноров"
+
+msgid "No Information"
+msgstr "Информация отсутствует"
+
+msgid "No Information Available"
+msgstr "Нет доступной информации"
+
+msgid "No results found."
+msgstr "Результатов не найдено"
+
+msgid "Number of Activities"
+msgstr "Количество мероприятий / направлений деятельности"
+
+msgid "Number of Activities by Ministry"
+msgstr "Количество мероприятий в разрезе министерств"
+
+msgid "Oops! An error has occurred"
+msgstr "Ой! Произошла ошибка!"
+
+msgid "Organisations"
+msgstr "Организации"
+
+msgid "Other"
+msgstr "Иное"
+
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+msgid "Participating Org"
+msgstr "Участвующая организация"
+
+msgid "Percent Disbursed"
+msgstr "Процент выплат"
+
+msgid "Projects"
+msgstr "Проекты"
+
+msgid "Reporting Org"
+msgstr "Отчитывающаяся организация"
+
+msgid "Revert to default filters"
+msgstr "Обратиться к фильтрам по умолчанию"
+
+#, fuzzy
+msgid "Search"
+msgstr "Результаты поиска"
+
+msgid "Search Results"
+msgstr "Результаты поиска"
+
+msgid "Sector"
+msgstr "Сектор"
+
+msgid "Set Filter"
+msgstr "Установленный фильтр"
+
+msgid "Show All"
+msgstr "Показать все"
+
+msgid "Show Pages"
+msgstr "Показать страницы"
+
+msgid "Start"
+msgstr "Начало"
+
+msgid "State"
+msgstr "Регион / область"
+
+msgid "Status"
+msgstr "Состояние / статус"
+
+msgid "Summary"
+msgstr "Общее"
+
+msgid "TOTAL"
+msgstr "ИТОГО"
+
+msgid "The Activity List"
+msgstr "Список мероприятий / направлений деятельности"
+
+msgid "The activities listed below are those used to calculate the above charts and graphics. These activities correspond to the date filter above."
+msgstr "Перечисленные ниже мероприятия используются для расчетов диаграмм и графиков выше. Эти мероприятия соответствуют приведенному выше хронологическому фильтру."
+
+msgid "The bar chart below shows the total value of commitments by development partner. The chart also corresponds to the date filter."
+msgstr "В диаграмме ниже представлена общая сумма обязательств партнеров в сфере развития. Диаграмма также соответствует хронологическому фильтру."
+
+msgid "The map below shows the amount of development assistance committed by location for activities. The map corresponds to the date filter. Click on the map to zoom in"
+msgstr "Приведенная ниже карта указывает на объем содействия в сфере развития, планируемый для выделения на конкретном месте "
+
+msgid "The total amount of outgoing funds that are spent on goods and services."
+msgstr "Общая сумма исходящих средств, потраченных на товары и услуги"
+
+msgid "The total amount of outgoing funds that placed at the disposal of recipient governments or organisations, or funds transferred between two separately reported activities."
+msgstr "Общая сумма исходящих средств, предоставленных распоряжению бенефициариев - правительств или организаций или средства передаваемые между двумя разными по отчетности мероприятиями."
+
+msgid "The total amounts of firm, written obligations from donors or providers to provide specified amounts of funds, under particular terms and conditions, for specific purposes, for the benefit of recipients."
+msgstr "Общая сумма твердых, письменных обязательств доноров или источников о предоставлении конкретных сумм по определенным условиям на конкретные цели во благо бенефициаров."
+
+#, fuzzy
+msgid "This chart shows the breakdown of commitment transactions between loans and grants."
+msgstr "Данный график показывает общую сумму содействия, которую партнеры в сфере развития обязались предоставить в разрезе сектора содействия"
+
+msgid "This chart shows the total amount of commitments from development partners by DAC3 sector."
+msgstr "Эта диаграмма показывает общую сумму обязательств, взятых партнерами в сфере развития по сектору DAC3."
+
+msgid "This chart shows the total amount of commitments from development partners by aid sector."
+msgstr "Данный график показывает общую сумму содействия, которую партнеры в сфере развития обязались предоставить в разрезе сектора содействия"
+
+msgid "This chart shows the total amount of commitments from development partners by sector for activities."
+msgstr "Данная диаграмма показывает Вам общую сумму обязательств партнеров в сфере развития в разрезе секторов по направлениям деятельности"
+
+msgid "This chart shows the total amount of development assistance committed by development partners. This chart corresponds to the date filter above."
+msgstr "Данный график показывает общую сумму содействия, которую партнеры в сфере развития обязались предоставить.  Данный график соответствует приведенному выше хронологическому фильтру."
+
+msgid "This chart shows the total amount of development assistance committed by development partners. This chart corresponds to the date filter."
+msgstr "Эта диаграмма показывает общую сумму обязательств, взятых партнерами в сфере развития. Эта диаграмма соответствует хронологическому фильтру."
+
+msgid "This chart shows the total amount of development assistance committed by the largest five donors. This chart corresponds to the date filter."
+msgstr "Данная цифра соответствует хронологическому фильтру."
+
+msgid "This chart shows the total number of activities associated with each relevant Ministry."
+msgstr "Эта диаграмма показывает общее число направлений деятельности, связанных с каждым ведомством."
+
+msgid "This chart shows the total number of activities associated with each relevant Ministry. This chart corresponds to the date filter."
+msgstr "Данная диаграмма показывает общее число направлений деятельности в разрезе каждого соответствующего министерства. Данная диаграмма также соответствует хронологическому фильтру."
+
+msgid "This chart shows the total number of activities associated with each relevant partner Ministry. This chart corresponds to the date filter."
+msgstr "Данный график указывает на общее число мероприятий, связанных с каждым партнерским вдеомством.  Данный график соответствует хронологическому фильтру."
+
+msgid "This chart shows the total number of activities by status (i.e. pipeline, implementation, completed, post-completion). This chart corresponds to the date filter."
+msgstr "Данный график показывает общее число нНаправлений деятельности по состоянию (н-р, в проработке, реализуется, завершено,  после завершения).Данный график соответствует хронологическому фильтру."
+
+msgid "This chart shows the total volume of funds committed to activities by the activity status i.e pipeline, implementation, completed, post-completed. The chart also corresponds to the date filter."
+msgstr "Данная диаграмма показывает общую сумму средств предусмотренную по направлениям деятельности в разрезе состояния, т.е. в проработке, реализации, завершено, после завершения. Данная диаграмма соответствует хронологическому фильтру"
+
+msgid "This is the percentage total of committed development assistance disbursed. This percentage corresponds to the date filter."
+msgstr "Это процент выплат из общей суммы содействия в целях развития согласно обязательствам. Данный процент соответствует хронологическому фильтру."
+
+msgid "This is the percentage total of development assistance disbursed. This percentage corresponds to the date filter."
+msgstr "Это процент выплат из общей суммы содействия в целях развития. Данный процент соответствует хронологическому фильтру."
+
+msgid "This is the total amount of development assistance committed across all activities that have been linked to a partner Ministry. This number corresponds to the date filter."
+msgstr "Это общая сумма содействия в сфере развития, предусмотренного в рамках всех мероприятий, вовлекающих министерства - партнера."
+
+msgid "This is the total amount of development assistance committed across all activities. This amount corresponds to the date filter."
+msgstr "Это общая сумма содействия в сфере развития согласно обязательствам во всех направлениях деятельности. Данная сумма соответствует хронологическому фильтру."
+
+msgid "This is the total amount of development assistance committed across all activities. This number corresponds to the date filter."
+msgstr "Это общая сумма содействия в сфере развития согласно обязательствам по всем направлениям деятельности.  Данная цифра соответствует хронологическому фильтру."
+
+msgid "This is the total amount of development assistance committed. This amount corresponds to the date filter."
+msgstr "Это общая сумма содействия в целях развития согласно обязательствам."
+
+msgid "This is the total amount of development assistance disbursed across all activities. This number corresponds to the date filter."
+msgstr "Это общая сумма содействия в целях развития выплаченная по всем направлениям деятельности. Данное число соответствует хронологическому фильтру"
+
+msgid "This is the total amount of development assistance disbursed. This amount corresponds to the date filter."
+msgstr "Это общая сумма освоенной содействия в целях развития. Данная сумма соответствует хронологическому фильтру."
+
+msgid "This is the total amount of development assistance disbursed. This number corresponds to the date filter."
+msgstr "Это общая сумма выделенной содействия в сфере развития.  Данная цифра соответствует хр"
+
+msgid "This is the total number of development partners."
+msgstr "Это общее число партнеров в сфере развития"
+
+msgid "This is the total volume of development assistance committed across all activities by collaboration type."
+msgstr "Это общая сумма содействия в целях развития согласно обязательствам по всем направлениям деятельности в разрезе типа сотрудничества."
+
+msgid "Title"
+msgstr "Название"
+
+msgid "Total"
+msgstr "Итого"
+
+msgid "Total Commitment"
+msgstr "Общая сумма обязательств"
+
+msgid "Total Commitments"
+msgstr "Общая сумма обязательств"
+
+msgid "Total Disbursed"
+msgstr "Итого выделено"
+
+msgid "Total Disbursements"
+msgstr "Общая сумма выплат"
+
+msgid "Total Donors"
+msgstr "Общее число доноров"
+
+msgid "Total Donors & Type"
+msgstr "Общее число и тип доноров"
+
+msgid "Total commitment"
+msgstr "Общая сумма обязательств"
+
+msgid "Total disbursed"
+msgstr "Итого выделено"
+
+msgid "Total disbursements"
+msgstr "Общая сумма выплат"
+
+msgid "Total donors & Type"
+msgstr "Общее число и тип доноров"
+
+msgid "Transactions"
+msgstr "Транзакции"
+
+msgid "Value"
+msgstr "Стоимость"
+
+msgid "You cannot access this page because you do not have appropriate access rights."
+msgstr "Вы не можете открыть эту страницу, так как не имеете соответствующих прав доступа"
+
+msgid "click on an individual chart bar below to filter the statistics by Ministry"
+msgstr "нажмите на отдельную диаграмму снизу для фильтрования статистических данных по Министерствам"
+
+msgid "click on an individual chart bar below to filter the statistics by that specific donor"
+msgstr " Нажмите мышкой на индивидуальную строку диаграммы для фильтрования статистики в разрезе конкретного донора"
+
+msgid "percent"
+msgstr "процент"
+
+msgid "to"
+msgstr "к"
+
+#~ msgid "Aid Dashboards"
+#~ msgstr "\"Приборные панели\" по содействию "
+
+#~ msgid "Create Report"
+#~ msgstr "Создать отчет"
+
+#~ msgid "Reports"
+#~ msgstr "Отчеты"
+
+#~ msgid "Software designed & developed by"
+#~ msgstr "Программное обеспечение разработано"
+
+#~ msgid "This chart shows the total number of activities by aid finance type."
+#~ msgstr "Данный график демонстрирует общее число направлений деятельности по типу финансирования"
+
+#~ msgid "Total Budget"
+#~ msgstr "Совокупный бюджет"
+
+#~ msgid "click on an individual chart bar below to filter the statistics by specific sector"
+#~ msgstr "нажмите мышкой на отдельный столбец диаграммы, чтобы фильтровать статистику по конкретной отрасли"

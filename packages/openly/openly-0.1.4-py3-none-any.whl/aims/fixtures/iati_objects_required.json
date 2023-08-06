@@ -1,0 +1,1216 @@
+[
+    {
+        "model": "aims.currency",
+        "pk": "USD",
+        "fields": {
+            "name": "US Dollar",
+            "language": "en"
+        }
+    },
+    {
+        "model": "aims.language",
+        "pk": "en",
+        "fields": {
+            "name": "English"
+        }
+    },
+    {
+        "model": "aims.language",
+        "pk": "my",
+        "fields": {
+            "name": "Burmese"
+        }
+    },
+    {
+        "model": "aims.language",
+        "pk": "tm",
+        "fields": {
+            "name": "Tetum"
+        }
+    },
+    {
+        "model": "aims.language",
+        "pk": "ru",
+        "fields": {
+            "name": "Russian"
+        }
+    },
+    {
+        "model": "aims.language",
+        "pk": "uz",
+        "fields": {
+            "name": "Uzbek"
+        }
+    },
+    {
+        "fields": {
+            "description": "Long description of the activity with no particular structure",
+            "name": "General"
+        },
+        "model": "aims.descriptiontype",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "description": "Objectives for the activity, for example from a logical framework",
+            "name": "Objectives"
+        },
+        "model": "aims.descriptiontype",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "description": "Statement of groups targeted to benefit from the activity",
+            "name": "Target Groups"
+        },
+        "model": "aims.descriptiontype",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "description": "For miscellaneous use. A further classification or breakdown may be included in the narrative",
+            "name": "Other"
+        },
+        "model": "aims.descriptiontype",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "description": "The government agency, civil society or private sector institution which is accountable for the implementation of the activity.",
+            "name": "Accountable"
+        },
+        "model": "aims.organisationrole",
+        "pk": "Accountable"
+    },
+    {
+        "fields": {
+            "description": "The government entity (central, state or local government agency or department), or agency within an institution, financing the activity from its own budget",
+            "name": "Extending"
+        },
+        "model": "aims.organisationrole",
+        "pk": "Extending"
+    },
+    {
+        "fields": {
+            "description": "The country or institution which provides the funds.",
+            "name": "Funding"
+        },
+        "model": "aims.organisationrole",
+        "pk": "Funding"
+    },
+    {
+        "fields": {
+            "description": "The intermediary between the extending agency and the ultimate beneficiary. Also known as executing agency or channel of delivery. They can be public sector, non-governmental agencies (NGOs), Public-Private partnerships, or multilateral institutions",
+            "name": "Implementing"
+        },
+        "model": "aims.organisationrole",
+        "pk": "Implementing"
+    },
+    {
+        "fields": {
+            "category": "A",
+            "description": "a primary administrative division of a country, such as a state in the United States",
+            "name": "first-order administrative division"
+        },
+        "model": "aims.locationtype",
+        "pk": "ADM1"
+    },
+    {
+        "fields": {
+            "category": "A",
+            "description": "a subdivision of a first-order administrative division",
+            "name": "second-order administrative division"
+        },
+        "model": "aims.locationtype",
+        "pk": "ADM2"
+    },
+    {
+        "fields": {
+            "category": "A",
+            "description": "an administrative division of a political entity, undifferentiated as to administrative level",
+            "name": "administrative division"
+        },
+        "model": "aims.locationtype",
+        "pk": "ADMD"
+    },
+    {
+        "fields": {
+            "name": "Administrative Region"
+        },
+        "model": "aims.geographiclocationclass",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "Populated Place"
+        },
+        "model": "aims.geographiclocationclass",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "Structure"
+        },
+        "model": "aims.geographiclocationclass",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "Other Topographical Feature"
+        },
+        "model": "aims.geographiclocationclass",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "AidData"
+        },
+        "model": "aims.vocabulary",
+        "pk": "ADT"
+    },
+    {
+        "fields": {
+            "name": "Classification of the Functions of Government (UN)"
+        },
+        "model": "aims.vocabulary",
+        "pk": "COFOG"
+    },
+    {
+        "fields": {
+            "name": "OECD Development Assistance Committee"
+        },
+        "model": "aims.vocabulary",
+        "pk": "DAC"
+    },
+    {
+        "fields": {
+            "name": "OECD Development Assistance Committee 3 digit codes"
+        },
+        "model": "aims.vocabulary",
+        "pk": "DAC-3"
+    },
+    {
+        "fields": {
+            "name": "International Organization for Standardization"
+        },
+        "model": "aims.vocabulary",
+        "pk": "ISO"
+    },
+    {
+        "fields": {
+            "name": "Statistical classification of economic activities in the European Community"
+        },
+        "model": "aims.vocabulary",
+        "pk": "NACE"
+    },
+    {
+        "fields": {
+            "name": "National Taxonomy for Exempt Entities (USA)"
+        },
+        "model": "aims.vocabulary",
+        "pk": "NTEE"
+    },
+    {
+        "fields": {
+            "name": "Reporting Organisation (i.e. maintained by the organisation referred to in the <reporting-org> element."
+        },
+        "model": "aims.vocabulary",
+        "pk": "RO"
+    },
+    {
+        "fields": {
+            "name": "Reporting Organisation (2) - where reporting organisations have more than one vocabulary that they wish to reference"
+        },
+        "model": "aims.vocabulary",
+        "pk": "RO2"
+    },
+    {
+        "fields": {
+            "name": "World Bank"
+        },
+        "model": "aims.vocabulary",
+        "pk": "WB"
+    },
+    {
+        "fields": {
+            "language": "en",
+            "name": "Pipeline/identification",
+            "order": 1
+        },
+        "model": "aims.activitystatus",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "language": "en",
+            "name": "Implementation",
+            "order": 2
+        },
+        "model": "aims.activitystatus",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "language": "en",
+            "name": "Completion",
+            "order": 3
+        },
+        "model": "aims.activitystatus",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "language": "en",
+            "name": "Post-completion",
+            "order": 4
+        },
+        "model": "aims.activitystatus",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "language": "en",
+            "name": "Cancelled",
+            "order": 5
+        },
+        "model": "aims.activitystatus",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "language": "en",
+            "name": "Suspended",
+            "order": 6
+        },
+        "model": "aims.activitystatus",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "Administrative Region"
+        },
+        "model": "aims.locationtypecategory",
+        "pk": "A"
+    },
+    {
+        "fields": {
+            "name": "Hydrographic"
+        },
+        "model": "aims.locationtypecategory",
+        "pk": "H"
+    },
+    {
+        "fields": {
+            "name": "Area"
+        },
+        "model": "aims.locationtypecategory",
+        "pk": "L"
+    },
+    {
+        "fields": {
+            "name": "Populated Place"
+        },
+        "model": "aims.locationtypecategory",
+        "pk": "P"
+    },
+    {
+        "fields": {
+            "name": "Streets/Highways/Roads"
+        },
+        "model": "aims.locationtypecategory",
+        "pk": "R"
+    },
+    {
+        "fields": {
+            "name": "Spot Features"
+        },
+        "model": "aims.locationtypecategory",
+        "pk": "S"
+    },
+    {
+        "fields": {
+            "name": "Hypsographic"
+        },
+        "model": "aims.locationtypecategory",
+        "pk": "T"
+    },
+    {
+        "fields": {
+            "name": "Undersea"
+        },
+        "model": "aims.locationtypecategory",
+        "pk": "U"
+    },
+    {
+        "fields": {
+            "name": "Vegetation"
+        },
+        "model": "aims.locationtypecategory",
+        "pk": "V"
+    },
+    {
+        "fields": {
+            "name": "GRANT",
+            "description": "Transfers in cash or in kind for which no legal debt is incurred by the recipient."
+        },
+        "model": "aims.financetypecategory",
+        "pk": 100
+    },
+    {
+        "fields": {
+            "name": "INTEREST SUBSIDY",
+            "description": "Subsidies to soften the terms of private export credits, or loans or credits by the banking sector."
+        },
+        "model": "aims.financetypecategory",
+        "pk": 200
+    },
+    {
+        "fields": {
+            "name": "CAPITAL SUBSCRIPTION",
+            "description": "Payments to multilateral agencies in the form of notes and similar instruments, unconditionally cashable at sight by the recipient institutions."
+        },
+        "model": "aims.financetypecategory",
+        "pk": 300
+    },
+    {
+        "fields": {
+            "name": "LOAN",
+            "description": "Transfers in cash or in kind for which the recipient incurs legal debt."
+        },
+        "model": "aims.financetypecategory",
+        "pk": 400
+    },
+    {
+        "fields": {
+            "name": "EXPORT CREDIT",
+            "description": "Official or private loans which are primarily export-facilitating in purpose. They are usually tied to a specific export from the extending country and not represented by a negotiable instrument."
+        },
+        "model": "aims.financetypecategory",
+        "pk": 450
+    },
+    {
+        "fields": {
+            "name": "EQUITY",
+            "description": "Investment in a country on the DAC List of ODA Recipients that is not made to acquire a lasting interest in an enterprise."
+        },
+        "model": "aims.financetypecategory",
+        "pk": 500
+    },
+    {
+        "fields": {
+            "name": "DEBT RELIEF",
+            "description": "Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+        },
+        "model": "aims.financetypecategory",
+        "pk": 600
+    },
+    {
+        "fields": {
+            "name": "INVESTMENT",
+            "description": "Investment made by a private entity resident in a reporting country to acquire or add to a lasting interest(1) in an enterprise in a country on the DAC List of ODA Recipients."
+        },
+        "model": "aims.financetypecategory",
+        "pk": 700
+    },
+    {
+        "fields": {
+            "name": "BONDS",
+            "description": "Acquisition of bonds issued by developing countries."
+        },
+        "model": "aims.financetypecategory",
+        "pk": 800
+    },
+    {
+        "fields": {
+            "name": "OTHER SECURITIES/CLAIMS",
+            "description": ""
+        },
+        "model": "aims.financetypecategory",
+        "pk": 900
+    },
+    {
+        "model": "aims.collaborationtype",
+        "pk": 1,
+        "fields": {
+            "name": "Bilateral",
+            "description": "Bilateral transactions are those undertaken by a donor, excluding core contributions to other organisations (codes 2 and 3 below). It includes transactions channelled through other organisations.",
+            "language": "en"
+        }
+    },
+    {
+        "model": "aims.collaborationtype",
+        "pk": 2,
+        "fields": {
+            "name": "Multilateral",
+            "description": "Multilateral contributions are those made to a recipient institution which: \n    i. conducts all or part of its activities in favour of development; \n    ii. is an international agency, institution or organisation whose members are governments, or a fund managed autonomously by such an agency; and \n    iii. pools contributions so that they lose their identity and become an integral part of its financial assets.",
+            "language": "en"
+        }
+    },
+    {
+        "model": "aims.collaborationtype",
+        "pk": 3,
+        "fields": {
+            "name": "Bilateral, core contributions to NGOs and other private bodies / PPPs",
+            "description": "Bilateral funds paid over to national and international non-governmental organisations (NGOs), Public Private Partnerships (PPPs), or other private bodies for use at their discretion.",
+            "language": "en"
+        }
+    },
+    {
+        "model": "aims.collaborationtype",
+        "pk": 4,
+        "fields": {
+            "name": "Multilateral outflows",
+            "description": "Aid activities financed from the multilateral institutions' regular budgets.",
+            "language": "en"
+        }
+    },
+    {
+        "model": "aims.collaborationtype",
+        "pk": 6,
+        "fields": {
+            "name": "Private sector outflow",
+            "description": "",
+            "language": "en"
+        }
+    },
+    {
+        "model": "aims.collaborationtype",
+        "pk": 7,
+        "fields": {
+            "name": "Bilateral, ex-post reporting on NGOs' activities funded through core contributions",
+            "description": "",
+            "language": "en"
+        }
+    },
+    {
+        "model": "aims.disbursementchannel",
+        "pk": 1,
+        "fields": {
+            "name": "Money is disbursed through central Ministry of Finance or Treasury"
+        }
+    },
+    {
+        "model": "aims.disbursementchannel",
+        "pk": 2,
+        "fields": {
+            "name": "Money is disbursed directly to the implementing institution and managed through a separate bank account"
+        }
+    },
+    {
+        "model": "aims.disbursementchannel",
+        "pk": 3,
+        "fields": {
+            "name": "Aid in kind: Donors utilise third party agencies, e.g. NGOs or management companies"
+        }
+    },
+    {
+        "model": "aims.disbursementchannel",
+        "pk": 4,
+        "fields": {
+            "name": "Aid in kind: Donors manage funds themselves"
+        }
+    },
+    {
+        "model": "aims.aidtypecategory",
+        "pk": "A",
+        "fields": {
+            "name": "Budget support",
+            "description": "For contributions under this category, the donor relinquishes the exclusive control of its funds by sharing the responsibility with the recipient."
+        }
+    },
+    {
+        "model": "aims.aidtypecategory",
+        "pk": "B",
+        "fields": {
+            "name": "Core contributions and pooled programmes and funds",
+            "description": "For contributions under this category, the donor relinquishes the exclusive control of its funds by sharing the responsibility with other stakeholders (other donors, NGOs, multilateral institutions, Public Private Partnerships). The category covers both core contributions (B01 and B02), and pooled contributions with a specific earmarking (B03 and B04)."
+        }
+    },
+    {
+        "model": "aims.aidtypecategory",
+        "pk": "C",
+        "fields": {
+            "name": "Project-type interventions",
+            "description": "N.B. Within this category, members able to do so are requested to report the aggregate amount used for financing donor experts/consultants on Table DAC11. Where the activity consists solely of experts\u2019 costs, report under category D. A project is a set of inputs, activities and outputs, agreed with the partner country*, to reach specific objectives/outcomes within a defined time frame, with a defined budget and a defined geographical area. Projects can vary significantly in terms of objectives, complexity, amounts involved and duration. There are smaller projects that might involve modest financial resources and last only a few months, whereas large projects might involve more significant amounts, entail successive phases and last for many years. A large project with a number of different components is sometimes referred to as a programme, but should nevertheless be recorded here."
+        }
+    },
+    {
+        "model": "aims.aidtypecategory",
+        "pk": "D",
+        "fields": {
+            "name": "Experts and other technical assistance",
+            "description": "This category covers the provision, outside projects as described in category C, of know-how in the form of personnel, training and research."
+        }
+    },
+    {
+        "model": "aims.aidtypecategory",
+        "pk": "E",
+        "fields": {
+            "name": "Scholarships and student costs in donor countries",
+            "description": ""
+        }
+    },
+    {
+        "model": "aims.aidtypecategory",
+        "pk": "F",
+        "fields": {
+            "name": "Debt relief",
+            "description": ""
+        }
+    },
+    {
+        "model": "aims.aidtypecategory",
+        "pk": "G",
+        "fields": {
+            "name": "Administrative costs not included elsewhere",
+            "description": ""
+        }
+    },
+    {
+        "model": "aims.aidtypecategory",
+        "pk": "H",
+        "fields": {
+            "name": "Other in-donor expenditures",
+            "description": "Groups a number of contributions that do not give rise to a cross-border flow."
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "A01",
+        "fields": {
+            "name": "General budget support",
+            "description": "Funds are paid over to NGOs (local, national and international) for use at the latter\u2019s discretion, and contribute to programmes and activities which NGOs have developed themselves, and which they implement on their own authority and responsibility. Core contributions to PPPs, funds paid over to foundations (e.g. philanthropic foundations), and contributions to research institutes (public and private) are also recorded here. Annex 2 of the DAC Directives provides a list of INGOs, PPPs and networks core contributions to which may be reported under B01. This list is not exclusive.",
+            "category": "A"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "A02",
+        "fields": {
+            "name": "Sector budget support",
+            "description": "Sector budget support, like general budget support, is a financial contribution to a recipient government\u2019s budget. However, in sector budget support, the dialogue between donors and partner governments focuses on sector-specific concerns, rather than on overall policy and budget priorities.",
+            "category": "A"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "B01",
+        "fields": {
+            "name": "Core support to NGOs, other private bodies, PPPs and research institutes",
+            "description": "Funds are paid over to NGOs (local, national and international) for use at the latter's discretion, and contribute to programmes and activities which NGOs have developed themselves, and which they implement on their own authority and responsibility. Core contributions to PPPs, funds paid over to foundations (e.g. philanthropic foundations), and contributions to research institutes (public and private) are also recorded here. Annex 2 of the DAC Directives provides a list of INGOs, PPPs and networks core contributions to which may be reported under B01. This list is not exclusive.",
+            "category": "B"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "B02",
+        "fields": {
+            "name": "Core contributions to multilateral institutions",
+            "description": "These funds are classified as multilateral ODA (all other categories fall under bilateral ODA). The recipient multilateral institution pools contributions so that they lose their identity and become an integral part of its financial assets. See Annex 2 of the DAC Directives for a comprehensive list of agencies core contributions to which may be reported under B02 (Section I. Multilateral institutions).",
+            "category": "B"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "B03",
+        "fields": {
+            "name": "Contributions to specific-purpose programmes and funds managed by international organisations (multilateral, INGO)",
+            "description": "In addition to their core-funded operations, international organisations set up and raise funds for specific programmes and funds with clearly identified sectoral, thematic or geographical focus. Donors' bilateral contributions to such programmes and funds are recorded here, e.g. \"UNICEF girls' education\", \"Education For All Fast Track Initiative\", various trust funds, including for reconstruction (e.g. Afghanistan Reconstruction Trust Fund).",
+            "category": "B"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "B04",
+        "fields": {
+            "name": "Basket funds/pooled funding",
+            "description": "The donor contributes funds to an autonomous account, managed jointly with other donors and/or the recipient. The account will have specific purposes, modes of disbursement and accountability mechanisms, and a limited time frame. Basket funds are characterised by common project documents, common funding contracts and common reporting/audit procedures with all donors. Donors' contributions to funds managed autonomously by international organisations are recorded under B03.",
+            "category": "B"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "C01",
+        "fields": {
+            "name": "Project-type interventions",
+            "description": "A project is a set of inputs, activities and outputs, agreed with the partner country*, to reach specific objectives/outcomes within a defined time frame, with a defined budget and a defined geographical area. Projects can vary significantly in terms of objectives, complexity, amounts involved and duration. There are smaller projects that might involve modest financial resources and last only a few months, whereas large projects might involve more significant amounts, entail successive phases and last for many years. A large project with a number of different components is sometimes referred to as a programme, but should nevertheless be recorded here. Feasibility studies, appraisals and evaluations are included (whether designed as part of projects/programmes or dedicated funding arrangements). Aid channelled through NGOs or multilaterals is also recorded here. This includes payments for NGOs and multilaterals to implement donors\u2019 projects and programmes, and funding of specified NGOs projects. By contrast, core funding of NGOs and multilaterals as well as contributions to specific-purpose funds managed by international organisations are recorded under B. * In the cases of equity investments, humanitarian aid or aid channelled through NGOs, projects are recorded here even if there was no direct agreement between the donor and the partner country.",
+            "category": "C"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "D01",
+        "fields": {
+            "name": "Donor country personnel",
+            "description": "Experts, consultants, teachers, academics, researchers, volunteers and contributions to public and private bodies for sending experts to developing countries.",
+            "category": "D"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "D02",
+        "fields": {
+            "name": "Other technical assistance",
+            "description": "Provision, outside projects as described in category C01, of technical assistance in recipient countries (excluding technical assistance performed by donor experts reported under D01, and scholarships/training in donor country reported under E01). This includes training and research; language training; south-south studies; research studies; collaborative research between donor and recipient universities and organisations); local scholarships; development-oriented social and cultural programmes. This category also covers ad hoc contributions such as conferences, seminars and workshops, exchange visits, publications, etc.",
+            "category": "D"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "E01",
+        "fields": {
+            "name": "Scholarships/training in donor country",
+            "description": "Financial aid awards for individual students and contributions to trainees.",
+            "category": "E"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "E02",
+        "fields": {
+            "name": "Imputed student costs",
+            "description": "Indirect (\"imputed\") costs of tuition in donor countries.",
+            "category": "E"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "F01",
+        "fields": {
+            "name": "Debt relief",
+            "description": "Groups all actions relating to debt (forgiveness, conversions, swaps, buy-backs, rescheduling, refinancing).",
+            "category": "F"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "G01",
+        "fields": {
+            "name": "Administrative costs not included elsewhere",
+            "description": "Administrative costs of development assistance programmes not already included under other ODA items as an integral part of the costs of delivering or implementing the aid provided. This category covers situation analyses and auditing activities. As regards the salaries component of administrative costs, it relates to in-house agency staff and contractors only; costs associated with donor experts/consultants are to be reported under category C or D01.",
+            "category": "G"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "H01",
+        "fields": {
+            "name": "Development awareness",
+            "description": "Funding of activities designed to increase public support, i.e. awareness in the donor country of development co-operation efforts, needs and issues.",
+            "category": "H"
+        }
+    },
+    {
+        "model": "aims.aidtype",
+        "pk": "H02",
+        "fields": {
+            "name": "Refugees in donor countries",
+            "description": "Official sector expenditures for the sustenance of refugees in donor countries during the first twelve months of their stay.",
+            "category": "H"
+        }
+    },
+    {
+        "model": "aims.flowtype",
+        "pk": 10,
+        "fields": {
+            "name": "ODA",
+            "description": "Official Development Assistance"
+        }
+    },
+    {
+        "model": "aims.flowtype",
+        "pk": 20,
+        "fields": {
+            "name": "OOF",
+            "description": "Other Official Flows"
+        }
+    },
+    {
+        "model": "aims.flowtype",
+        "pk": 30,
+        "fields": {
+            "name": "Private grants",
+            "description": "made by NGOs and other civil society organisations (e.e. philantropic foundations) based in the reporting DAC country"
+        }
+    },
+    {
+        "model": "aims.flowtype",
+        "pk": 35,
+        "fields": {
+            "name": "Private market",
+            "description": "Private market"
+        }
+    },
+    {
+        "model": "aims.flowtype",
+        "pk": 40,
+        "fields": {
+            "name": "Non flow",
+            "description": "e.g. GNI"
+        }
+    },
+    {
+        "model": "aims.flowtype",
+        "pk": 50,
+        "fields": {
+            "name": "Other flows",
+            "description": "e.g. non-ODA component of peacebuilding operations)"
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "C",
+        "fields": {
+            "name": "Commitment",
+            "description": "A firm written obligation by the donor to provide resources of a specified amount under specified financial terms and conditions and for specified purposes for the benefit of the recipient"
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "CG",
+        "fields": {
+            "name": "Credit Guarantee",
+            "description": "A commitment made by a funding organisation to underwrite a loan or line of credit entered into by a third party."
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "D",
+        "fields": {
+            "name": "Disbursement",
+            "description": "The amount placed at the disposal of a recipient country or agency (in the case of internal development-related expenditures, the outlay of funds)"
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "E",
+        "fields": {
+            "name": "Expenditure",
+            "description": "The outlay by the implementing agency on goods and services for the activity"
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "IF",
+        "fields": {
+            "name": "Incoming Funds",
+            "description": "Funds received (whether from an external source or through internal accounting) for specific use on this activity."
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "IR",
+        "fields": {
+            "name": "Interest Repayment",
+            "description": "The actual amount of interest repaid, including fees."
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "LR",
+        "fields": {
+            "name": "Loan Repayment",
+            "description": "The actual amount of principal (amortisation) repaid, including any arrears."
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "QP",
+        "fields": {
+            "name": "Purchase of Equity",
+            "description": "The use of an activity's funds to purchase equity in a business."
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "QS",
+        "fields": {
+            "name": "Sale of Equity",
+            "description": "The flow of funds into an activity from the sale of equity."
+        }
+    },
+    {
+        "model": "aims.transactiontype",
+        "pk": "R",
+        "fields": {
+            "name": "Reimbursement",
+            "description": "A disbursement that covers funds already spent by the recipient, as agreed in the terms of the loan or grant."
+        }
+    },
+    {
+        "model": "aims.tiedstatus",
+        "pk": 3,
+        "fields": {
+            "name": "Partially tied",
+            "description": "Official Development Assistance for which the associated goods and services must be procured in the donor country or among a restricted group of other countries, which must however include substantially all aid recipient countries."
+        }
+    },
+    {
+        "model": "aims.tiedstatus",
+        "pk": 4,
+        "fields": {
+            "name": "Tied",
+            "description": "Official grants or loans where procurement of the goods or services involved is limited to the donor country or to a group of countries which does not include substantially all aid recipient countries."
+        }
+    },
+    {
+        "model": "aims.tiedstatus",
+        "pk": 5,
+        "fields": {
+            "name": "Untied",
+            "description": "Untied aid is defined as loans and grants whose proceeds are fully and freely available to finance procurement from all OECD countries and substantially all developing countries."
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 110,
+        "fields": {
+            "name": "Aid grant excluding debt reorganisation",
+            "category": 100
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 111,
+        "fields": {
+            "name": "Subsidies to national private investors",
+            "category": 100
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 210,
+        "fields": {
+            "name": "Interest subsidy grant in AF",
+            "category": 200
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 211,
+        "fields": {
+            "name": "Interest subsidy to national private exporters",
+            "category": 200
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 310,
+        "fields": {
+            "name": "Deposit basis",
+            "category": 300
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 311,
+        "fields": {
+            "name": "Encashment basis",
+            "category": 300
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 410,
+        "fields": {
+            "name": "Aid loan excluding debt reorganisation",
+            "category": 400
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 411,
+        "fields": {
+            "name": "Investment-related loan to developing countries",
+            "category": 400
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 412,
+        "fields": {
+            "name": "Loan in a joint venture with the recipient",
+            "category": 400
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 413,
+        "fields": {
+            "name": "Loan to national private investor",
+            "category": 400
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 414,
+        "fields": {
+            "name": "Loan to national private exporter",
+            "category": 400
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 451,
+        "fields": {
+            "name": "Non-banks guaranteed export credits",
+            "category": 450
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 452,
+        "fields": {
+            "name": "Non-banks non-guaranteed portions of guaranteed export credits",
+            "category": 450
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 453,
+        "fields": {
+            "name": "Bank export credits",
+            "category": 450
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 510,
+        "fields": {
+            "name": "Acquisition of equity as part of a joint venture with the recipient",
+            "category": 500
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 511,
+        "fields": {
+            "name": "Acquisition of equity not part of joint venture in developing countries",
+            "category": 500
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 512,
+        "fields": {
+            "name": "Other acquisition of equity",
+            "category": 500
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 610,
+        "fields": {
+            "name": "Debt forgiveness: ODA claims (P)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 611,
+        "fields": {
+            "name": "Debt forgiveness: ODA claims (I)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 612,
+        "fields": {
+            "name": "Debt forgiveness: OOF claims (P)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 613,
+        "fields": {
+            "name": "Debt forgiveness: OOF claims (I)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 614,
+        "fields": {
+            "name": "Debt forgiveness: Private claims (P)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 615,
+        "fields": {
+            "name": "Debt forgiveness: Private claims (I)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 616,
+        "fields": {
+            "name": "Debt forgiveness: OOF claims (DSR)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 617,
+        "fields": {
+            "name": "Debt forgiveness: Private claims (DSR)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 618,
+        "fields": {
+            "name": "Debt forgiveness: Other",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 620,
+        "fields": {
+            "name": "Debt rescheduling: ODA claims (P)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 621,
+        "fields": {
+            "name": "Debt rescheduling: ODA claims (I)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 622,
+        "fields": {
+            "name": "Debt rescheduling: OOF claims (P)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 623,
+        "fields": {
+            "name": "Debt rescheduling: OOF claims (I)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 624,
+        "fields": {
+            "name": "Debt rescheduling: Private claims (P)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 625,
+        "fields": {
+            "name": "Debt rescheduling: Private claims (I)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 626,
+        "fields": {
+            "name": "Debt rescheduling: OOF claims (DSR)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 627,
+        "fields": {
+            "name": "Debt rescheduling: Private claims (DSR)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 630,
+        "fields": {
+            "name": "Debt rescheduling: OOF claim (DSR - original loan principal)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 631,
+        "fields": {
+            "name": "Debt rescheduling: OOF claim (DSR - original loan interest)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 632,
+        "fields": {
+            "name": "Debt rescheduling: Private claim (DSR - original loan principal)",
+            "category": 600
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 710,
+        "fields": {
+            "name": "Foreign direct investment",
+            "category": 700
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 711,
+        "fields": {
+            "name": "Other foreign direct investment, including reinvested earnings",
+            "category": 700
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 810,
+        "fields": {
+            "name": "Bank bonds",
+            "category": 800
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 811,
+        "fields": {
+            "name": "Non-bank bonds",
+            "category": 800
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 910,
+        "fields": {
+            "name": "Other bank securities/claims",
+            "category": 900
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 911,
+        "fields": {
+            "name": "Other non-bank securities/claims",
+            "category": 900
+        }
+    },
+    {
+        "model": "aims.financetype",
+        "pk": 912,
+        "fields": {
+            "name": "Securities and other instruments issued by multilateral agencies",
+            "category": 900
+        }
+    }
+]

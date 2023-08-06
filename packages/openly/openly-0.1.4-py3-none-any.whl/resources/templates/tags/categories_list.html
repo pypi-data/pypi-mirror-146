@@ -1,0 +1,29 @@
+{% load i18n %}
+
+<categories-list>
+    <div id="table-list-wrapper" class="row">
+        <table class="table table-hover">
+            <tbody>
+                <tr if={ resources.length } each={ headers } onclick={ showResourcesList }>
+                    <td>
+                        <img class="folder-icon" src="/static/img/folder.svg">
+                        <span class="category-name"><strong>{ gettext(name) }</strong></span>
+                        <span class="category-item-count help-text">{ resources.length } items</span>
+                    </td>
+                    <td><i class="row-arrow"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    var tag = this;
+    tag.headers = tag.parent.headers;
+
+    tag.showResourcesList = function(e) {
+        tag.parent.showResourcesList(e);
+    }
+
+    tag.on('update', function(){
+        tag.headers = tag.parent.headers;
+    });
+</categories-list>

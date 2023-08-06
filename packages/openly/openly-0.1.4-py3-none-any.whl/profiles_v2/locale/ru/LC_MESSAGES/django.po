@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-02 12:25+0900\n"
+"PO-Revision-Date: 2019-06-01 02:50+0822\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+msgid " Optional"
+msgstr "Факультативно"
+
+msgid " Required Field"
+msgstr "Необходимое поле"
+
+msgid "About"
+msgstr "О"
+
+msgid "About Us"
+msgstr "О нас"
+
+msgid "Activities"
+msgstr "Направления деятельности"
+
+msgid "Add A New Team Member"
+msgstr "Добавить нового члена команды"
+
+msgid "Add People"
+msgstr "Добавить людей"
+
+msgid "Background"
+msgstr "Общая информация"
+
+msgid "Cancel"
+msgstr "Отменить"
+
+msgid "Change Banner"
+msgstr "Сменить баннер"
+
+msgid "Change Logo"
+msgstr "Сменить логотип"
+
+msgid "Character count"
+msgstr "Количество знаков"
+
+msgid "Choose Image"
+msgstr "Выбрать изображение"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Contact Information"
+msgstr "Контактная информация"
+
+msgid "Contact details"
+msgstr "Контактная информация"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "E-Mail"
+msgstr "Электронная почта"
+
+msgid "Edit Person"
+msgstr "Редактировать это лицо"
+
+msgid "Email Address"
+msgstr "Адрес эл.почты"
+
+msgid "Facebook Name"
+msgstr "Имя на Фейсбуке"
+
+msgid "For interactivity and display of your social networking please provide your organisation’s costumised links."
+msgstr "Для интерактивности и демонстрации вашей социальной сети, пожалуйста, предоставьте ссылки Вашей организации"
+
+msgid "Locations"
+msgstr "Локации (месторасположения)"
+
+msgid "Name -"
+msgstr "Имя"
+
+msgid "Nutrition Specialist"
+msgstr "Специалист по питанию"
+
+msgid "Office Address"
+msgstr "Адрес офиса"
+
+msgid "Office Number"
+msgstr "Рабочий телефон"
+
+msgid "Our Activities"
+msgstr "Наша деятельность"
+
+msgid "Our People"
+msgstr "Наши люди"
+
+msgid "People"
+msgstr "Люди"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+msgid "Position"
+msgstr "Должность"
+
+msgid "Publish"
+msgstr "Опубликовать"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Since your cover photo goes across the entire width of your profile, the image you pick should be at least 1500 pixels wide. The image should be formatted as a JPEG or PNG file."
+msgstr "Поскольку фотография на обложке проходит по всей ширине вашего профиля, выбранное вами изображение должно иметь ширину не менее 1500 пикселей. Изображение должно быть отформатировано в формате JPEG или PNG"
+
+msgid "Social Network"
+msgstr "Социальные сети"
+
+msgid "The map below shows where the activities for this organisation are currently implemented."
+msgstr "Приведенная ниже карта показывает, где реализуется деятельность данной организации."
+
+msgid "The photo has to be 120X120px, it has to be in jpg or png formats and not exceed the 200kb."
+msgstr "Фотография должна быть размером 120X120 пикселей, она должна быть в формате jpg или png и не превышать 200 КБ."
+
+msgid "These are some of this organisation&apos;s key team members."
+msgstr "Это некоторые из основных сотрудников /членов команды этой организации"
+
+msgid "These are this organisation&apos;s activities."
+msgstr "Это - направления деятельности данной организации"
+
+msgid "Twitter Handle"
+msgstr ""
+
+msgid "Upload Photo"
+msgstr "Загрузить фото"
+
+msgid "Upload banner image"
+msgstr "Загрузить изображение баннера"
+
+msgid "Upload persons photo"
+msgstr "Загрузить фото человека"
+
+msgid "Website"
+msgstr "Веб-страница (Вебсайт)"
+
+msgid "of"
+msgstr ""
+
+msgid "see less"
+msgstr "Открыть меньше"
+
+msgid "see more"
+msgstr "Открыть больше"

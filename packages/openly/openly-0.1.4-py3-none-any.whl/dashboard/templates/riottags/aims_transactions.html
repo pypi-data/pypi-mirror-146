@@ -1,0 +1,151 @@
+{% load i18n %}
+
+<aims_transactions >
+    <div class="row">
+        <div class="col-sm-12">
+            <div ref="transaction_columns" class="dropdown pull-right column-popover">
+                <a class="filter-column-select dropdown-toggle" type="button" id="transaction_column_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    {% trans 'Edit columns' %}
+                    <i class="ion-chevron-down"></i>
+                </a>
+                <ul class="edit-columns-dropdown dropdown-menu dropdown-menu-right query-dropdown pointer-top pointer-top-right" aria-labelledby="transaction_column_dropdown">
+                    <li each="{ columns }">
+                        <div><input type=checkbox checked="{ visible }" onchange="{ toggle_column }" /> { title }</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="top-scroll" ref="topScroll">
+                <div></div>
+            </div>
+            <div ref="table" class="tableScroll">
+                <table class="table">
+                    <thead class="query-table-head">
+                        <tr>
+                            <th nowrap class="query-th-sortable link align-left" data-is="query-th-sortable" sort="transactions" sort_by="provider">Provider</th>
+                            <th nowrap class="{query-th-sortable:1, link:!column.no_sort, align-right:1}" each={ column in columns } if={ column.visible } data-is="query-th-sortable" no_sort="{column.no_sort}" sort="transactions" sort_by="{column.attribute}">{ column.title }</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-cell" each="{ transactions.slice(transactions_start,transactions_end) }">
+                            <td class="query-fixed-column" align="left">{ provider }</td>
+                            <td each="{ columns }" if="{ visible }" class="{ query-fixed-column: fixed_width}" align="right">
+                                <a if="{link}" href="{link(parent[attribute])}">{ modifier ? modifier(parent[attribute]) : parent[attribute] }</a>
+                                <virtual if="{!link}">{ modifier ? modifier(parent[attribute]) : parent[attribute] }</virtual>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <pagination page_size={ page_size }></pagination>
+        </div>
+    </div>
+    <style>
+        ul.edit-columns-dropdown:before {
+            margin-left: -20px;
+        }
+    </style>
+    <script type="text/javascript">
+        /* globals querybuilder, accounting */
+        var self = this;
+        self.mixin('topScrollMixin');
+        self.show_column_choice = false;
+        self.page_size = 10;
+        self.transactions_start = 0;
+        self.transactions_end = 9;
+        self.transactions = [];
+        self.columns = [
+            { title: 'Activity', visible: true, attribute: 'activity', no_sort:true, link: function(activity) {return self.activity_url_pattern.replace('replaceme', activity.id) }, modifier: function (activity) { return activity.title } },
+
+            { title: 'Activity IATI ID', visible: false, attribute: 'activity_iati_identifier' },
+            { title: 'Activity ' + window.GLOBALS.project_name + ' ID', visible: false, attribute: 'activity_id' },
+            { title: 'Activity Partner ID', visible: false, attribute: 'activity_internal_identifier' },
+
+            { title: 'Receiver', visible: true, attribute: 'receiver' },
+            { title: 'Type', visible: true, attribute: 'transaction_type' },
+            { title: 'Transaction Date', visible: true, attribute: 'transaction_date', modifier: function (a) { return moment(a).format('DD MMM YYYY')} },
+            { title: 'Finance Type', visible: false, attribute: 'finance_type', fixed_width: true },
+            { title: 'Finance Category', visible: true, attribute: 'finance_category' },
+            { title: 'Aid Type', visible: false, attribute: 'aid_type', fixed_width: true },
+            { title: 'Aid Type Category', visible: true, attribute: 'aid_type_category', fixed_width: true },
+            { title: 'Amount', visible: true, attribute: 'usd_value', modifier: function (a) { return accounting.compactFormatMoney(a); } },
+            { title: 'Financial Year', visible: true, attribute: 'financial_year' }
+        ];
+        self.activity_url_pattern = '{% url "activity_profile" "replaceme" %}';
+
+        self.toggle_show_column_choice = function () {
+            self.show_column_choice = !self.show_column_choice;
+        };
+
+        self.toggle_column = function (e) {
+            e.item.visible = !e.item.visible;
+        };
+
+        self.on('mount', function () {
+            RiotControl.trigger('request_filtered_transactions');
+            $(self.refs.transaction_columns).find('input').iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+                increaseArea: '20%' // optional
+            });
+            $(self.refs.transaction_columns).find('input').on('ifChanged', function (e) {
+                e.target.dispatchEvent(new Event('change'));
+            });
+        });
+
+        RiotControl.on('filtered_transactions', function (transactions) {
+            self.transactions = transactions;
+            self.tags.pagination.update_count(transactions.length);
+            RiotControl.trigger('transaction_count', transactions.length);
+        });
+
+        self.paginate = function (first, last) {
+            self.transactions_start = first;
+            self.transactions_end = last;
+            self.update();
+        };
+
+        self.export_worksheet = function () {
+
+            var money_format = { t: 'n', z: '[$$-409]#,##0;-[$$-409]#,##0' };
+            var headers = _.concat(['provider', 'activity_id'], _.map(self.columns, 'attribute'));
+            var header_display = {activity_id : 'Activity ID'};
+            var rows = {};
+
+            function activity_url(id) { return self.activity_url_pattern.replace('replaceme', id); }
+            function gettext_noop(text) { return text; }
+            function activity_id_cell(cell, transaction){
+                cell.l = {Target: location.origin+activity_url(transaction.activity.id), Tooltip: transaction.title};
+                cell.v = transaction.activity.id;
+                return cell;
+            }
+            function activity_cell(cell, transaction){
+                cell.v = transaction.activity.title;
+                return cell;
+            }
+
+            _.each(self.columns, function (column) {
+                header_display[column.attribute] = gettext_noop(column.title);
+            });
+
+            rows.usd_value = { format: money_format };
+
+            // Set the header text and format for the transaction date
+            header_display.transaction_date = gettext_noop('Transaction Date');
+            rows.transaction_date = {format: { t: 'd', z: 'YYYY-MM-DD' }};
+
+            return {
+                data: querybuilder.filtered_transactions,
+                rows: rows,
+                headers: headers,
+                header_display: header_display,
+                sheet_name: gettext_noop('Transactions'),
+                row_display: {
+                    activity_id: activity_id_cell,
+                    activity: activity_cell
+                }
+            };
+        };
+    </script>
+</aims_transactions>

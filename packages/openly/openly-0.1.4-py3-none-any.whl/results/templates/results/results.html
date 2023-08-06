@@ -1,0 +1,71 @@
+{% extends 'base_site.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+{% if page_title %}| {{ page_title }} {% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" src="{% static 'js/moment-with-locales.min.js' %}"></script>
+{% comment %} <script type="text/javascript" src="{% static 'js/ploty-basic-1.31.2.min.js' %}"></script> {% endcomment %}
+{% comment %} <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script> {% endcomment %}
+<script type="text/javascript" src="{% static 'js/plotly-latest.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/storemixin.js' %}"></script>
+{% endblock %}
+
+{% block style %}
+{{block.super}}
+<link type="text/css" rel="stylesheet" href="{% static 'css/results.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <app></app>
+        </div>
+    </div>
+</div>
+
+{% block stores %}
+<script>
+    {% include 'stores/resultsstore.js' %}
+
+    _.extend(ResultsStore.prototype, StoreMixin);
+
+    (function(stores) {
+        var data = JSON.parse('{{ data|escapejs }}');
+        stores.results_store = new ResultsStore('results', data.results, data.choices);
+        RiotControl.addStore(stores.results_store);
+        if (localStorage.getItem('active_sector') == null) localStorage.setItem('active_sector', stores.results_store.choices.sectors[0]);
+    })(window.stores = window.stores || {});
+</script>
+{% endblock %}
+
+{% block local_scripts %}
+<script type="riot/tag">
+    {% include 'tags/dashboard.html' %}
+    {% include 'tags/dashboard_card.html' %}
+    {% include 'tags/circle.html' %}
+    {% include 'tags/indicator_profile.html' %}
+    {% include 'tags/sector_filter.html' %}
+    {% include 'tags/indicator_profile_description.html' %}
+
+    <app>
+        <router>
+            <sector_filter></sector_filter>
+            <route path=""><dashboard></dashboard></route>
+            <route path="dashboard"><dashboard></dashboard></route>
+            <route path="dashboard/*"><dashboard></dashboard></route>
+            <route path="indicator/*"><indicator-profile></indicator-profile></route>
+        </router>
+    </app>
+
+    riot.mount('app');
+
+</script>
+{% endblock %}
+
+{% endblock %}

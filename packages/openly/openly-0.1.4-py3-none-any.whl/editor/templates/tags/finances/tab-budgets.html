@@ -1,0 +1,510 @@
+{% load i18n %}
+{% load ifsetting %}
+
+<no-budgets-indicator>
+    <div class="col col-sm-11 col-sm-offset-1">
+        <iati-sync-locked-budgets if={iati_budgets_disabled}></iati-sync-locked-budgets>
+        <h4 class="no-objects-text">{% trans 'There are no budgets' %}</h4>
+    </div>
+    {% ifsetting OIPA_SYNC_ENABLED %}
+    tag.iati_budgets_disabled = (data.iati_data.link_info.oipa_fields.indexOf("B") != -1);
+    {% endifsetting %}
+</no-budgets-indicator>
+
+
+<budget-total-commitment>
+    <input value={toFixed(total)} ref="total" placeholder="0.00" disabled=true/>
+    var tag = this;
+    tag.toFixed = function(value){
+        if (!value){return ''}
+        return tag.focus ?  parseFloat(value).toFixed(2) : value.toLocaleString('en-US',{useGrouping:true, minimumFractionDigits:2})
+    }
+    function getTotal() { return _.sumBy(tag.parent.budgets, 'value'); }
+    function setTotal() { tag.total = tag.formatMoney(getTotal()); }
+    tag.formatMoney = function(value, currency_id){return tag.focus ? value : stores.budgetStore.formatMoney(value, currency_id)}
+    tag.shouldUpdate = function (data) { return !data ? false : tag.refs.total.value !== data.total || data.disabled !== tag.disabled; };
+    tag.setBudgets = function () { tag.update({ total: tag.formatMoney(getTotal()) }); };
+    tag.on('before-mount', setTotal);
+    tag.on('before-update', setTotal);
+</budget-total-commitment>
+
+
+<budget-quarterly-input>
+    <span class="budget-editor">
+        <input class="micro-text" onclick={onclick} onfocus={onfocus} onblur={onblur} value={formatMoney(budget.value)} ref='quarterly' onchange="{onchange}" disabled={disabled || outOfRange || iati_budgets_disabled}/>
+        <div class="{form-group:1, has-warning: hasCurrencyWarning, has-feedback:1}">
+            <label if="{hasCurrencyWarning}" class="control-label" for="inputWarning2"><span class="micro-text">Converted from {currencyWarning}</span></label>
+        </div>
+    </span>
+    <style scoped>
+        .micro-text { font-size: 90%; }
+        .control-label { margin-top: 10px !important; }
+    </style>
+    var tag = this;
+    tag.focus = false;
+
+    {% ifsetting OIPA_SYNC_ENABLED %}
+    tag.iati_budgets_disabled = (data.iati_data.link_info.oipa_fields.indexOf("B") != -1);
+    {% else %}
+    tag.iati_budgets_disabled = false;
+    {% endifsetting %}
+
+    tag.onfocus = function(){ tag.update({focus: true})}
+    tag.onblur = function(){ tag.update({focus: false});}
+
+    tag.onclick = function(){
+        /* Added for testing, to trigger a 'change' event so selenium can see what happens */
+        var value = _.toNumber(tag.refs.quarterly.value);
+        var valid = _.isNumber(value);
+        if (value > 0 && valid){
+            tag.onchange()
+        }
+    }
+
+    function setInitial(){
+        tag.initial = _.clone(_(tag.opts.budgets).find({ quarter: tag.opts.quarter }));
+        if (!tag.initial){return}
+        tag.hasCurrencyWarning = _.has(tag.initial, 'currency_id') && tag.initial.currency_id !== stores.activityStore.activity.default_currency.code
+        if (tag.hasCurrencyWarning) {tag.currencyWarning = stores.budgetStore.formatMoney(tag.initial.value,  tag.initial.currency_id)}
+    }
+
+    function getTotal() {
+        var budget = _(tag.opts.budgets).find({ quarter: tag.opts.quarter });
+        if (budget) {
+            tag.budget = budget;
+            tag.outOfRange = false;
+            return budget.value;
+        }
+        tag.budget = {};
+        tag.outOfRange = true;
+        return null;
+    }
+
+    tag.showInput = function(){tag.update({})}
+
+    function setTotal() { tag.total = getTotal(); }
+    tag.shouldUpdate = function (data) { return !data ? false : tag.refs.quarterly.value !== data.total || data.disabled !== tag.disabled || data.focus != tag.focus; };
+    tag.setBudgets = function () { tag.update({ total: getTotal() }); };
+    tag.onchange = function () {
+        var value = _.toNumber(tag.refs.quarterly.value);
+        var valid = _.isNumber(value);
+        if (valid) {
+            tag.parent.trigger('setQuarterly', tag.opts, value);
+        }
+        tag.setBudgets();
+    };
+    tag.serializeAmounts = function () {
+        tag.update();
+        return {
+            quarter: tag.opts.quarter,
+            amount: stores.budgetStore.unformatMoney(tag.refs.quarterly.value)
+        };
+    };
+
+    tag.formatMoney = function(value, currency_id){return tag.focus ? value : stores.budgetStore.formatMoney(value, currency_id)}
+
+    tag.on('before-mount', setTotal);
+    tag.on('before-mount', setInitial);
+    tag.on('before-update', setTotal);
+    <style>
+    .dimmed {
+        position: relative;
+      }
+
+      .dimmed:after {
+        content: " ";
+        z-index: 10;
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+</budget-quarterly-input>
+
+
+<budget-annual-input>
+    <input type="{focus ? 'number' : 'text'}" ref='annual' value={toFixed(total)} onchange="{onchange}" disabled={disabled || iati_budgets_disabled}/>
+    var tag = this;
+    tag.focus = false;
+
+    {% ifsetting OIPA_SYNC_ENABLED %}
+    tag.iati_budgets_disabled = (data.iati_data.link_info.oipa_fields.indexOf("B") != -1);
+    {% else %}
+    tag.iati_budgets_disabled = false;
+    {% endifsetting %}
+
+    tag.toFixed = function(value){
+        if (!value) { return '' }
+        return tag.focus ?  parseFloat(value).toFixed(2) : value.toLocaleString('en-US',{useGrouping:true, minimumFractionDigits:2})
+    }
+
+    tag.onfocus = function(){tag.update({focus: true})}
+    tag.onblur = function(){tag.update({focus: false})}
+
+    function getTotal() {
+        return _(tag.opts.budgets).filter(function (t) { return Math.floor(t.quarter / 10) === tag.opts.year; }).sumBy('value');
+    }
+
+    function setTotal() {
+        tag.total = tag.formatMoney(getTotal());
+    }
+
+    tag.shouldUpdate = function (data) { return !data ? false : tag.refs.annual.value !== data.total; };
+
+    function setDisabled() { tag.disabled = true; }
+
+    tag.on('before-mount', setTotal);
+    tag.on('before-mount', setDisabled);
+    tag.on('before-update', setTotal);
+
+    tag.setBudgets = function () {
+        tag.update({ total: tag.formatMoney(getTotal()) });
+    };
+
+    tag.onchange = function () {
+        var value = _.toNumber(tag.refs.annual.value);
+        var valid = _.isNumber(value);
+        if (valid) {
+            tag.parent.trigger('setAnnual', tag.opts, value);
+        };
+        tag.setBudgets();
+    };
+
+    tag.formatMoney = function(value, currency_id){return tag.focus ? value : stores.budgetStore.formatMoney(value, currency_id)}
+</budget-annual-input>
+
+
+<budget-alert>
+    <button type="button" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="row equal-height">
+        <div class="col-xs-2 centered">
+            <img src="/static/img/Graph.png" width="125">
+        </div>
+        <div class="col-xs-10">
+            <p>{% blocktrans %}Providing budgets helps to improve aid predictability and supports better quality forward planning. Please provide a quarterly or annual budget breakdown for your {{activity_singular_lower}}.{% endblocktrans %}</p>
+        </div>
+    </div>
+</budget-alert>
+
+
+<budget-alert-mixed-currencies>
+    <button type="button" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="row equal-height">
+        <div class="col-xs-2 centered">
+            {% include "editor/budget.svg" %}
+        </div>
+        <div class="col-xs-10 no-padding">
+            <p>{% blocktrans %}There are multiple currencies being used for this {{activity_singular_lower}} and its Budgets. On Save, all currencies will be saved in {stores.activityStore.activity.default_currency.name}.{% endblocktrans %}</p>
+        </div>
+    </div>
+</budget-alert-mixed-currencies>
+
+
+<budget-table>
+    <div>
+        <h5 class="page-header">{% trans 'Add Budget Breakdown' %}</h5>
+        <iati-sync-locked-budgets if={iati_budgets_disabled}></iati-sync-locked-budgets>
+        <p> {% blocktrans %}{{activity_singular}} currency{% endblocktrans %}<strong> {stores.activityStore.activity.default_currency.name}</strong></p>
+        <div class="help-block">{% blocktrans %}Providing budgets helps to improve aid predictability and supports better quality forward planning. Please provide a quarterly or annual budget breakdown for your {{activity_singular_lower}}. You can change the default currency in the default settings tab{% endblocktrans %}</div>
+    </div>
+
+    <div class="col-xs-6 col-xs-push-3 col-md-6 col-md-push-3 budget-toggle" show={!iati_budgets_disabled}>
+        <div class="btn-group btn-group-justified" role="group">
+            <div class="btn-group" role="group"><button class="{btn:1, btn-large:1, btn-default:1, active: budget_toggle == 'Quarterly', budget_quarterly_button:1}" onclick="{toggleQuarterlyInputs}">Quarterly</button></div>
+            <div class="btn-group" role="group"><button class="{btn:1, btn-large:1, btn-default:1, active: budget_toggle == 'Annual', budget_annual_button:1}" onclick="{toggleAnnualInputs}">Annual</button></div>
+        </div>
+    </div>
+    <div>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th class="budget-years">{% comment %} Year {% endcomment %}</th>
+                    <th class="budget-months"><span class="pull-right">Jan - Mar</span></th>
+                    <th class="budget-months"><span class="pull-right">Apr - Jun</span></th>
+                    <th class="budget-months"><span class="pull-right">Jul - Sept</span></th>
+                    <th class="budget-months"><span class="pull-right">Oct - Dec</span></th>
+                    <th>{% comment %} Divider {% endcomment %}</th>
+                    <th class="budget-title"><span class="pull-right">{% trans 'Annual Total' %}</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr each="{year in years}">
+                    <td class="budget-months budget-label"><span class="pull-right">{year}</span></td>
+                    <td each="{q in quarters}"><budget-quarterly-input quarter={year*10+q} budgets={budgets}></budget-quarterly-input></td>
+                    <td>{% comment %} Divider {% endcomment %}</td>
+                    <td><budget-annual-input year={year} budgets={budgets}></budget-annual-input></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="budget-months budget-label" colspan="{quarters.length + 2}"><span class="pull-right">{% trans 'Total' %}</span></td>
+                    <td class="budget-total"><budget-total-commitment budgets={budgets}></budget-total-commitment></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <style>
+        input {border: 1px solid #d3d5d8; text-align:right;}
+        input[disabled] {
+            background-color: #f2f5f7;
+            cursor: not-allowed;
+        }
+        .budget-label { padding-top: 15px; }
+    </style>
+
+    var tag = this;
+    tag.mixin('SerializerMixin');
+    tag.mixin('ValidationMixin');
+    tag.quarters = [1, 2, 3, 4];
+
+    {% ifsetting OIPA_SYNC_ENABLED %}
+    tag.iati_budgets_disabled = (data.iati_data.link_info.oipa_fields.indexOf("B") != -1);
+    {% else %}
+    tag.iati_budgets_disabled = false;
+    {% endifsetting %}
+
+    function setActivityPeriods() {
+        var dates = _.map(stores.activityStore.activity.activity_dates, 'iso_date');
+        var quarter_range;
+        function getPeriod(d) {
+            var date;
+            function splitDate(_d) { return _.map(_.split(_d, '-'), _.toNumber); }
+            date = splitDate(d);
+            return (date[0] * 10) + _.ceil(date[1] / 3);
+        }
+        quarter_range =  _.map(dates, getPeriod);
+        /* Append the min, max budget dates so that we're not hiding budgets */
+        _.extend(quarter_range, _.map(stores.budgetStore.budgets, 'quarter'))
+        return [_.min(quarter_range), _.max(quarter_range)]
+    }
+
+    function quartersBetweenPeriods(periods) {
+        var current = periods[0];
+        var quarters = [{ quarter: current }];
+        while (current < periods[1]) {
+            current = current % 10 >= 4 ? ((current + 10) - (current % 10)) + 1 : current + 1;
+            quarters.push({ quarter: current });
+        }
+        return quarters;
+    }
+
+    function arrayTags(child_tag_id){
+        var childTags = tag.tags[child_tag_id];
+        if (_.isUndefined(childTags)) { return []};
+        return _.isArray(childTags) ? childTags : [childTags];
+    }
+
+    function getQuarterTags() { return arrayTags('budget-quarterly-input'); }
+    function getAnnualTags() { return arrayTags('budget-annual-input'); }
+    function getTotalCommitTag() { return arrayTags('budget-total-commitment'); }
+    function setDisabled(childTag) { childTag.update({ disabled: true }); }
+    function setEnabled(childTag) { childTag.update({ disabled: false }); }
+
+    tag.toggleQuarterlyInputs = function () {
+        tag.update({ budget_toggle: 'Quarterly' });
+        _(getQuarterTags()).each(setEnabled);
+        _(getAnnualTags()).each(setDisabled);
+    };
+
+    tag.toggleAnnualInputs = function () {
+        tag.update({ budget_toggle: 'Annual' });
+        _(getQuarterTags()).each(setDisabled);
+        _(getAnnualTags()).each(setEnabled);
+    };
+
+    tag.serializeAmounts = function () { return _.invokeMap(getQuarterTags(), 'serializeAmounts'); };
+
+    refreshData = function(){
+        var data = _.cloneDeep(tag.store[tag.store.el]);
+        var activityPeriods = setActivityPeriods();
+        tag.budgets = quartersBetweenPeriods(activityPeriods);
+        _.each(tag.budgets, function (period) {
+            var periodWithData = _.find(data, { quarter: period.quarter });
+            if (periodWithData) { period.value = periodWithData.value; period.currency_id = periodWithData.currency_id;}
+        });
+        tag.years = _.range(_.floor(activityPeriods[0] / 10), (_.floor(activityPeriods[1] / 10) + 1));
+        tag.toggleQuarterlyInputs();
+        tag.update();
+        _.each(getAnnualTags(), function (childTag) { childTag.setBudgets(); });
+        _.each(getQuarterTags(), function (childTag) { childTag.setBudgets(); });
+        _.each(getTotalCommitTag(), function (childTag) { childTag.setBudgets(); });
+    }
+
+    /* commented for editor highlighting - content is required - django templates in translations for us in Javascript
+     *
+     * {% trans "Budgets default currency is not set" as budget_currency_warning_title %}
+     * {% trans "A default Budget Currency setting is required in order to view and edit budgets." as budget_currency_warning_content %}
+     * {% trans "Set Budget Currency" as budget_currency_warning_button %}
+    */
+    tag.on('before-mount', refreshData)
+    tag.on('mount', function(){
+        tag.store.on('budgets_restored', refreshData)
+        stores.activityStore.on('activity_restored', refreshData)
+        if (!tag.store.getActivity().default_currency.code) {
+            $.confirm({
+                type: 'orange',
+                theme: 'modern',
+                icon: 'glyphicon glyphicon-warning-sign',
+                columnClass: 'medium',
+                title: '{{budget_currency_warning_title|escape}}',
+                content: '{{budget_currency_warning_content|escape}}',
+                buttons: {
+                    setDefault: {
+                        btnClass: 'btn-success',
+                        text: '{{budget_currency_warning_button|escape}}',
+                        action: function(){
+                            window.location.hash = '#finances/general';
+                        }
+                    }
+                }
+            });
+        }
+    })
+
+    tag.on('before-update', function () {
+        tag.total = _.sumBy(tag.budgets, 'value');
+    });
+
+    tag.on('setQuarterly', function (opts, value) {
+        var filter = { quarter: opts.quarter };
+        var budget = _.find(tag.budgets, filter);
+        if (_.isUndefined(budget)) {
+            tag.budgets.push(filter);
+            budget = _.find(tag.budgets, filter);
+        }
+
+        budget.value = value;
+        _.each(getAnnualTags(), function (childTag) { childTag.setBudgets(); });
+        _.each(getTotalCommitTag(), function (childTag) { childTag.setBudgets(); });
+    });
+
+    tag.on('setAnnual', function (opts, value) {
+        var quarters = _.filter(tag.budgets, function (budget) { return Math.floor(budget.quarter / 10) === opts.year; });
+        _.each(quarters, function (q) {
+            q.value = value / quarters.length;
+        });
+
+        _.each(getQuarterTags(), function (childTag) {
+            if (Math.floor(childTag.opts.quarter / 10) === opts.year) {
+                childTag.setBudgets();
+            }
+        });
+        _.each(getTotalCommitTag(), function (childTag) { childTag.setBudgets(); });
+    });
+</budget-table>
+
+<tab-budgets>
+    <div data-is='no-budgets-indicator' class="no-budgets-indicator" if="{data && data.length == 0}"></div>
+    <div data-is="budget-alert-mixed-currencies" if={currenciesMixed && !iati_block_saving} class="alert alert-warning alert-dismissible" role="alert"></div>
+    <div class="alert alert-warning" data-is="budgets-not-quarterly-alert" if={'{{ budgets_are_quarterly }}' == 'False'}>
+        <div class="row equal-height">
+            <div class="col-xs-12">
+                <p>{% blocktrans %}Budgets haven't been fitted yet to quarters. You can't save them.{% endblocktrans %}</p>
+            </div>
+        </div>
+    </div>
+    <div data-is="budget-table" show={'{{ budgets_are_quarterly }}' == 'True'} class="form_body"></div>
+
+    <div class="btn-group-editor save-budget" show={'{{ budgets_are_quarterly }}' == 'True'} >
+        <div class="pull-right">
+            <a id="next-budgets" class="btn btn-large btn-default" onclick="{ next }">{% trans "Next" %}</a>
+            <a show={!iati_block_saving} id="save-next-budgets"class="btn btn-large btn-primary" onclick="{ save }">{% trans "Save" %}</a>
+        </div>
+    </div>
+
+    var tag = this;
+    tag.store = stores.budgetStore;
+
+    tag.mixin('SerializerMixin');
+    tag.mixin('TabMixin');
+    tag.mixin('ValidationMixin');
+
+    {% ifsetting OIPA_SYNC_ENABLED %}
+    tag.iati_block_saving = (data.iati_data.link_info.oipa_fields.indexOf("B") != -1);
+    {% else %}
+    tag.iati_block_saving = false;
+    {% endifsetting %}
+
+    tag.on('before-mount', function(){
+        function updateMixedCurrenciesAlert(){
+            var currencies = _(tag.store.budgets).map('currency_id').uniq().value()
+            if (currencies.length === 0 ){
+                tag.currenciesMixed = false
+            } else if (currencies.length > 1 || currencies[0] !== stores.activityStore.activity.default_currency.code){
+                tag.currenciesMixed = true
+            } else {
+                tag.currenciesMixed = false
+            }
+        }
+        updateMixedCurrenciesAlert()
+        stores.activityStore.on('activity_updated', updateMixedCurrenciesAlert)
+    })
+
+    function serializeAmounts() {
+        var table = tag.tags['budget-table'];
+        var amounts = _.invoke(table, 'serializeAmounts');
+
+        _.each(amounts, function(amount){
+
+            amount.value = _.toNumber(_.replace(amount.amount, ',', ''));
+            _.unset(amount, 'amount');
+            if (!_.isNumber( amount.value)){amount.value = 0};
+        });
+        amounts = _.filter(amounts, function(a){return a.value !== 0})
+        return amounts;
+        // tag.update({ amounts: amounts });
+        tag.store.save(tag, { url: tag.store.urls.create(), method: 'POST', data: amounts });
+    }
+
+    tag.save = function(){
+        var budgets_are_quarterly = '{{ budgets_are_quarterly }}';
+        if (tag.has_changed() && budgets_are_quarterly === 'True' ){
+            return tag.store.save(tag, { url: tag.store.urls.create(), method: 'POST', data: serializeAmounts() });
+        } else if (budgets_are_quarterly === 'False'){
+            window.banner_message.show('Current budgets are not quarterly. Cannot save', 'error');
+        } else {
+            window.banner_message.show(_.get(tag.store, 'messages.no_changes', 'No changes to save'), 'success');
+        }
+    }
+
+    tag.has_changed = function(){
+        // If IATI sync is enabled for budgets do NOT allow saving.
+        if (tag.iati_block_saving) { return false; }
+        if ('{{ budgets_are_quarterly }}' === 'False') {return false}
+        if (tag.tags['budget-table']) {
+            var amounts = _.filter(tag.tags['budget-table'].budgets, function(b){return _.isNumber(b.value)})
+            var existing_budgets = _(tag.store.budgets).map(function(i){return _.pick(i, ['value', 'quarter'])}).value()
+            amounts = _.map(amounts, function(i){return _.pick(i, ['value', 'quarter'])})
+            return !_.isEqual(_.sortBy(amounts, 'quarter'), _.sortBy(existing_budgets, 'quarter'))
+        } else {
+            return false;
+        }
+    }
+</tab-budgets>
+
+
+<iati-sync-locked-budgets>
+    <span class="right-locked">
+        <img id="lock-img" src="/static/img/lock.svg">
+        &nbsp;{% trans 'IATI Sync active' %}
+    </span>
+    <style>
+        .right-locked {
+            float: right;
+            position: absolute;
+            top: 193px;
+            right: 75px;
+            font-size: 14px;
+            color: grey;
+        }
+
+        #lock-img {
+            width: 15px;
+            padding-bottom: 5px;
+        }
+    </style>
+</iati-sync-locked-budgets>
