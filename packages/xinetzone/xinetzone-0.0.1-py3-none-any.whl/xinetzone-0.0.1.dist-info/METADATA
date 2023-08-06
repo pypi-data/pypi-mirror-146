@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: xinetzone
+Version: 0.0.1
+Summary: Sphinx demo.
+Author-email: xinetzone <735613050@qq.com>
+Maintainer-email: xinetzone <735613050@qq.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Dist: d2py
+Requires-Dist: pydata_sphinx_theme
+Requires-Dist: pytest-cov ; extra == "coverage"
+Requires-Dist: codecov ; extra == "coverage"
+Requires-Dist: xinetzone[test] ; extra == "coverage"
+Requires-Dist: pyyaml ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: xinetzone[coverage] ; extra == "dev"
+Requires-Dist: myst-nb ; extra == "doc"
+Requires-Dist: pytest-regressions ; extra == "doc"
+Requires-Dist: sphinxext-rediraffe ; extra == "doc"
+Requires-Dist: sphinx-copybutton ; extra == "doc"
+Requires-Dist: sphinx-intl ; extra == "doc"
+Requires-Dist: ablog ; extra == "doc"
+Requires-Dist: sphinx-thebe ; extra == "doc"
+Requires-Dist: sphinx-comments ; extra == "doc"
+Requires-Dist: plotly ; extra == "doc"
+Requires-Dist: pandas ; extra == "doc"
+Requires-Dist: matplotlib ; extra == "doc"
+Requires-Dist: sphinx-inline-tabs ; extra == "doc"
+Requires-Dist: sphinx-panels ; extra == "doc"
+Requires-Dist: sphinxcontrib-bibtex ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: xinetzone[doc] ; extra == "test"
+Project-URL: Home, https://github.com/xinetzone/xinetzone.github.io
+Provides-Extra: coverage
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# 上善若水
+
+[![Gitter](https://badges.gitter.im/xinetzone/blogs.svg)](https://gitter.im/xinetzone/blogs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![GitHub issues](https://img.shields.io/github/issues/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/blob/main/LICENSE) ![repo size](https://img.shields.io/github/repo-size/xinetzone/xinetzone.github.io.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/watchers)
+
+网页版本：[xinetzone](http://xinetzone.github.io)。
+
