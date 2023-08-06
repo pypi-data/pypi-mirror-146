@@ -1,0 +1,69 @@
+#+TITLE: lickport_array_interface_python
+#+AUTHOR: Peter Polidoro
+#+EMAIL: peter@polidoro.io
+
+* Package Information
+  - Name :: lickport_array_interface_python
+  - Version :: 0.6.0
+  - License :: BSD
+  - URL :: https://github.com/janelia-pypi/lickport_array_interface_python
+  - Author :: Peter Polidoro
+  - Email :: peter@polidoro.io
+
+    This Python package (lickport_array_interface)
+
+* Example Usage
+
+#+BEGIN_SRC python
+
+from lickport_array_interface import LickportArrayInterface
+dev = LickportArrayInterface() # Try to automatically detect port
+dev = LickportArrayInterface(port='/dev/ttyACM0') # Linux specific port
+dev = LickportArrayInterface(port='/dev/tty.usbmodem262471') # Mac OS X specific port
+dev = LickportArrayInterface(port='COM3') # Windows specific port
+dev.start_acquiring_data()
+dev.start_saving_data()
+dev.stop_saving_data()
+dev.stop_acquiring_data()
+
+#+END_SRC
+
+* Installation
+
+[[https://github.com/janelia-pypi/python_setup]]
+
+** Linux and Mac OS X
+
+#+BEGIN_SRC sh
+
+python3 -m venv ~/venvs/lickport_array_interface
+source ~/venvs/lickport_array_interface/bin/activate
+pip install lickport_array_interface
+
+#+END_SRC
+
+** Windows
+
+#+BEGIN_SRC sh
+
+python3 -m venv C:\venvs\lickport_array_interface
+C:\venvs\lickport_array_interface\Scripts\activate
+pip install lickport_array_interface
+
+#+END_SRC
+
+* Development
+
+** Guix
+
+#+BEGIN_SRC sh
+
+guix time-machine -C channels.scm -- shell --pure -D -f guix.scm
+python3 setup.py sdist bdist_wheel
+twine upload dist/*
+git add --all
+git clean -xdf
+exit
+
+#+END_SRC
+
