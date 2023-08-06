@@ -1,0 +1,6 @@
+antlr4-python3-runtime~=4.9.3
+chardet
+jsonasobj>=1.2.1
+pyjsg>=0.11.10
+rdflib-shim
+shexjsg>=0.8.1
