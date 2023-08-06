@@ -1,0 +1,10 @@
+pynada/__init__.py,sha256=W6SvsqSK7_I1VQfYvrVCJTfIUZJpXlFEtBiEZ8Ygnlo,146
+pynada/commons.py,sha256=77SrM78cyTZ9djEDyCSHdA5-3D9ZX90by7xZulJ2l78,4852
+pynada/create_and_import.py,sha256=AJzSmTTZauoHglhnrX4MNdH5tknGZurbULxRCTFSNuk,28852
+pynada/manage_and_update.py,sha256=5FncSXPVGJRb0cTSZNx_hYpwCiRg06M09uXD-VNV7-M,26760
+pynada/search_and_browse.py,sha256=RLcAyZE15Tu192FmuQaGXu1E3Yg2dJQxIy_-R8S5YDU,9227
+pynada/utils.py,sha256=2GydQOCAd7PrMVApwfc3OVf9ekLupcithgvZJq7WUhg,1036
+pynada-0.0.34.dist-info/METADATA,sha256=VeLBMPJ9QieAkbzliGKeo3BXlfs1bT3L4Rc2IA16Sok,810
+pynada-0.0.34.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pynada-0.0.34.dist-info/top_level.txt,sha256=GoQ8BvQ1TnmYcnl4GM7bY8slFyxUb9hGgUx667PYT4c,7
+pynada-0.0.34.dist-info/RECORD,,
