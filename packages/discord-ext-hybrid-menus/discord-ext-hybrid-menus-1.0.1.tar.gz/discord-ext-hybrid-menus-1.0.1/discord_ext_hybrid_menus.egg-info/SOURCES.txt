@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+discord/ext/menus/__init__.py
+discord_ext_hybrid_menus.egg-info/PKG-INFO
+discord_ext_hybrid_menus.egg-info/SOURCES.txt
+discord_ext_hybrid_menus.egg-info/dependency_links.txt
+discord_ext_hybrid_menus.egg-info/top_level.txt
