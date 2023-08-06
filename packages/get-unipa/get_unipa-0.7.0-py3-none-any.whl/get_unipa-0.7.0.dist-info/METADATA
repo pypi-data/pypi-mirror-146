@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: get-unipa
+Version: 0.7.0
+Summary: Library for get various information about UNIVERSAL PASSPORT.
+Home-page: https://github.com/book000/get-unipa
+Author: Tomachi
+Author-email: tomachi@tomacheese.com
+Maintainer: Tomachi
+Maintainer-email: tomachi@tomacheese.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: html5lib
+
+# get-unipa
+
+test
+
+
