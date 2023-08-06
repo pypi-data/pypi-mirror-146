@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+lyceanem/LyceanEM.egg-info/PKG-INFO
+lyceanem/LyceanEM.egg-info/SOURCES.txt
+lyceanem/LyceanEM.egg-info/dependency_links.txt
+lyceanem/LyceanEM.egg-info/requires.txt
+lyceanem/LyceanEM.egg-info/top_level.txt

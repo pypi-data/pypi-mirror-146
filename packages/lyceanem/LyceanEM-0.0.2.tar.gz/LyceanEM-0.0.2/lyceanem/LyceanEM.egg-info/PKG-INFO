@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: LyceanEM
+Version: 0.0.2
+Summary: LyceanEM is a Python library for modelling electromagnetic propagation for sensors and communications. You can find the documentation at https://lyceanem-python.readthedocs.io/en/latest/
+Home-page: https://lyceanem-python.readthedocs.io/en/latest/
+Author: Timothy Pelham
+Author-email: t.g.pelham@bristol.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
