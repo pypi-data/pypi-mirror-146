@@ -1,0 +1,10 @@
+dnaio>=0.7.1
+xopen>=1.1
+
+[dev]
+Cython
+pytest
+pytest-timeout
+pytest-mock
+sphinx
+sphinx_issues
