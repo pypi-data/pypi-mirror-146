@@ -1,0 +1,9 @@
+complex_number/__init__.py,sha256=rWLGY1hB_wi1yvjMM7hIFnOgonnOHb29DHq5yNYx-Hw,99
+complex_number/complex_number.py,sha256=owrYlJq2fAlbT0aThO7503rWBuQparN1Rp4t1slRSx8,16342
+tests/__init__.py,sha256=V7q5yHzGE6TOjsdQNQrJjfBzGWz2Aysm6gOiSmA31nk,209
+tests/test_complex_number.py,sha256=KKzpFGe1KbI79hEMyRT49NggtHI64HgdV46MfFJ6Oso,9949
+complex_number-0.1.0.dist-info/LICENSE,sha256=jeexqwcY5D4KDacTGVKMdoGUXTWzE8LcG7y60O_nJIM,1075
+complex_number-0.1.0.dist-info/METADATA,sha256=VmjZKPPYmgbaq1SvZ4rAwqyxULt53AJgz5A6IND3f-U,587
+complex_number-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+complex_number-0.1.0.dist-info/top_level.txt,sha256=RmCN4pff5Kl1chov-FZS6hUjInGXoB4g2-NYJXQGbyM,21
+complex_number-0.1.0.dist-info/RECORD,,
