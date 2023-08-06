@@ -1,0 +1,10 @@
+hbschr_sampleproject-0.0.1.data/data/my_data/data_file,sha256=c_VVzitOL1ic5fsmCuY5vyRbIagDqLuYNM5PeOzgPew,15
+sample/__init__.py,sha256=eJUhUcyOxh8swfmDZgrUugpBVnbIWSkbZxcmwT5GmDw,111
+sample/package_data.dat,sha256=wkPS17wxfOMRlCSNvxJW1sHxlnsvQt7AO11YKTljHqs,18
+sample/simple.py,sha256=jQxgMu2wujV5-EV7SIHDYnIfEhmJAzxyn2XKqYliCB0,43
+hbschr_sampleproject-0.0.1.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+hbschr_sampleproject-0.0.1.dist-info/METADATA,sha256=t0Dkg1wZxKoCB8aWxTL_VWmmy0pMUu6WLeiXcCxjz8U,3135
+hbschr_sampleproject-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hbschr_sampleproject-0.0.1.dist-info/entry_points.txt,sha256=xPp6vFitqG85D-kOcIEWjIZmvD2l53YiMbrwjZFpjZw,39
+hbschr_sampleproject-0.0.1.dist-info/top_level.txt,sha256=qvn_SI4HZ9peodVhGOb2WhbFYzsM78H6CJvTqxgQYT0,7
+hbschr_sampleproject-0.0.1.dist-info/RECORD,,
