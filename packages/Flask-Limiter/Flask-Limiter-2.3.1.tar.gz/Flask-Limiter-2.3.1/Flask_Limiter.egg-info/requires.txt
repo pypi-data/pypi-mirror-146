@@ -1,0 +1,11 @@
+limits>=2.3
+Flask>=2
+
+[memcached]
+limits[memcached]
+
+[mongodb]
+limits[mongodb]
+
+[redis]
+limits[redis]
