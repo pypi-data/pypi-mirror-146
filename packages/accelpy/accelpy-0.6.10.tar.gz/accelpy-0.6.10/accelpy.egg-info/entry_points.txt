@@ -1,0 +1,3 @@
+[console_scripts]
+accelpy = accelpy.command:main
+
