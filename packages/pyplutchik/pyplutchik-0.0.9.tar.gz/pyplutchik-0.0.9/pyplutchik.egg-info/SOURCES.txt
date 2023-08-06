@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+pyplutchik/__init__.py
+pyplutchik/pyplutchik.py
+pyplutchik.egg-info/PKG-INFO
+pyplutchik.egg-info/SOURCES.txt
+pyplutchik.egg-info/dependency_links.txt
+pyplutchik.egg-info/requires.txt
+pyplutchik.egg-info/top_level.txt
