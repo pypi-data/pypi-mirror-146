@@ -1,0 +1,5 @@
+trio>=0.20.0
+attrs>=21.4.0
+multidict>=4.7.6
+yarl>=1.6.3
+typing_extensions>=4.1.1
