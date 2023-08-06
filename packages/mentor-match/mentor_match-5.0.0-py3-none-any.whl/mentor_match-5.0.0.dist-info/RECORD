@@ -1,0 +1,14 @@
+matching/__init__.py,sha256=CpK8IH_dCUAwg9tqv7zm9FxbBFkxCnED1JUiRe7cftU,22
+matching/__main__.py,sha256=hsJU2r4VXni78Swo8N28GcR1zIGH9AvyrjB64YRLqiM,860
+matching/factory.py,sha256=8NsbHQNAdfaE7HtfD665i9FqwZlpug0j6tC7kMYTrRc,958
+matching/match.py,sha256=_daaf9SBv9XLk3wtR27tcowAOOAk6631Fk1p0PoxHeg,2496
+matching/mentee.py,sha256=EDyjT8J1Tr8_wqmyaW1Wc-CpCrHWa5mImqhgCM5agls,988
+matching/mentor.py,sha256=hobAdkuUV9tf2FTg3n0kA4LsSe9aLuM-gJEeH25Pk8g,441
+matching/person.py,sha256=IYjPrjlxfV6m8E3j9-r8o_yg1Er3SdgOgTx0P1NNkLg,2471
+matching/process.py,sha256=RuLpWCcU1x-mxeaj6043mNiMlmfSQnqk-xbJedfZ84Y,5887
+matching/rules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matching/rules/rule.py,sha256=SFFjbOKjcFqpC6GUyHk66O7CKeimCkuLVFKGR4aMh_s,3036
+mentor_match-5.0.0.dist-info/METADATA,sha256=2YVi2Ac9yyysriE5S2tIq2Fr8ylrhLs1__Nf44V31pg,2738
+mentor_match-5.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mentor_match-5.0.0.dist-info/top_level.txt,sha256=DjFSCoxUQSj9DMt4NBRkG8367AOVIao_IjA6T65LsmM,24
+mentor_match-5.0.0.dist-info/RECORD,,
