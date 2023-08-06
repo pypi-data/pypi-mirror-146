@@ -1,0 +1,6 @@
+plico>=0.19
+pysilico>=0.19
+numpy
+psutil
+six
+rebin
