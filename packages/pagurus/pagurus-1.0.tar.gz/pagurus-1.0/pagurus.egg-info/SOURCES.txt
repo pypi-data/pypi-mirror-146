@@ -1,0 +1,10 @@
+LICENSE
+README.md
+basic_read_file.py
+setup.py
+bin/pagurus
+pagurus.egg-info/PKG-INFO
+pagurus.egg-info/SOURCES.txt
+pagurus.egg-info/dependency_links.txt
+pagurus.egg-info/requires.txt
+pagurus.egg-info/top_level.txt
