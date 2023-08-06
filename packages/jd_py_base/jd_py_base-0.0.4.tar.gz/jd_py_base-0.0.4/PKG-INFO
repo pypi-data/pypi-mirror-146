@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: jd_py_base
+Version: 0.0.4
+Summary: all_common_func
+Home-page: UNKNOWN
+Author: zhangyf
+Author-email: zhangyf@jindefund.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: win_amd64
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.5
