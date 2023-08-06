@@ -1,0 +1,11 @@
+README.md
+setup.py
+calculadoralohmz/__init__.py
+calculadoralohmz/divisao.py
+calculadoralohmz/multiplicacao.py
+calculadoralohmz/soma.py
+calculadoralohmz/subtracao.py
+calculadoralohmz.egg-info/PKG-INFO
+calculadoralohmz.egg-info/SOURCES.txt
+calculadoralohmz.egg-info/dependency_links.txt
+calculadoralohmz.egg-info/top_level.txt
