@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: teddy-portal-gun
+Version: 0.2.0
+Summary: 
+Author: Teddy Xinyuan Chen
+Author-email: 45612704+tddschn@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: typer[all] (<0.4.0)
+Description-Content-Type: text/markdown
+
+# `teddy-portal-gun`
+
+Awesome Portal Gun
+
+**Usage**:
+
+```console
+$ teddy-portal-gun [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--install-completion`: Install completion for the current shell.
+* `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `load`: Load the portal gun
+* `shoot`: Shoot the portal gun
+
+## `teddy-portal-gun load`
+
+Load the portal gun
+
+**Usage**:
+
+```console
+$ teddy-portal-gun load [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+## `teddy-portal-gun shoot`
+
+Shoot the portal gun
+
+**Usage**:
+
+```console
+$ teddy-portal-gun shoot [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+

@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "teddy-portal-gun"
+version = "0.2.0"
+description = ""
+authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+teddy-portal-gun = "teddy_portal_gun.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {version = "<0.4.0", extras = ["all"]}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+yapf = "^0.32.0"
+typer-cli = "^0.0.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
