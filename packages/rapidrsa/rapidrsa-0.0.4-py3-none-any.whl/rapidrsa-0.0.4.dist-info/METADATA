@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: rapidrsa
+Version: 0.0.4
+Summary: Simpler to use implementation of the pycryptodome RSA algorithm
+Home-page: https://github.com/JustScott/RapidRSA
+Author: JustScott
+Author-email: <justscottmail@protonmail.com>
+License: MIT
+Project-URL: Bug Reports, https://github.com/JustScott/RapidRSA/issues
+Keywords: python,encryption,decryption,cryptography
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Security :: Cryptography
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome
+
+# RapidRSA
+Simpler to use implementation of the pycryptodome RSA algorithm
+
+
