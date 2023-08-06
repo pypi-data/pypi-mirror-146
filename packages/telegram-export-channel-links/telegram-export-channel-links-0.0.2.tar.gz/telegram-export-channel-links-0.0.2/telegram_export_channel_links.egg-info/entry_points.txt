@@ -1,0 +1,3 @@
+[console_scripts]
+telegram-export-channel-links = telegram_export_channel_links:main
+
