@@ -1,0 +1,23 @@
+***************
+*** 36,43 ****
+              return AgreementEventAllOf(
+                  agreement=ya_market.models.agreement.Agreement(
+                      agreement_id="0",
+!                     demand=None,
+!                     offer=None,
+                      valid_to=datetime.datetime.strptime(
+                          "2013-10-20 19:20:30.00", "%Y-%m-%d %H:%M:%S.%f"
+                      ),
+--- 38,49 ----
+              return AgreementEventAllOf(
+                  agreement=ya_market.models.agreement.Agreement(
+                      agreement_id="0",
+!                     demand=Demand(
+!                         properties={}, constraints="0", demand_id="0", requestor_id="0"
+!                     ),
+!                     offer=Offer(
+!                         properties={}, constraints="0", offer_id="0", provider_id="0"
+!                     ),
+                      valid_to=datetime.datetime.strptime(
+                          "2013-10-20 19:20:30.00", "%Y-%m-%d %H:%M:%S.%f"
+                      ),

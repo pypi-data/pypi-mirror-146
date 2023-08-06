@@ -1,0 +1,23 @@
+***************
+*** 35,44 ****
+          # model = ya_market.models.offer.Offer()  # noqa: E501
+          if include_optional:
+              return Offer(
+!                 properties=None, constraints="0", offer_id="0", provider_id="0"
+              )
+          else:
+!             return Offer(properties=None, constraints="0",)
+  
+      def testOffer(self):
+          """Test Offer"""
+--- 35,44 ----
+          # model = ya_market.models.offer.Offer()  # noqa: E501
+          if include_optional:
+              return Offer(
+!                 properties={}, constraints="0", offer_id="0", provider_id="0"
+              )
+          else:
+!             return Offer(properties={}, constraints="0",)
+  
+      def testOffer(self):
+          """Test Offer"""

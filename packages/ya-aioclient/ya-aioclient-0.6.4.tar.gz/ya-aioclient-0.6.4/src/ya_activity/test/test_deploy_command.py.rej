@@ -1,0 +1,25 @@
+***************
+*** 36,46 ****
+          # model = ya_activity.models.deploy_command.DeployCommand()  # noqa: E501
+          if include_optional :
+              return DeployCommand(
+!                 deploy = None
+              )
+          else :
+              return DeployCommand(
+!                 deploy = None,
+          )
+  
+      def testDeployCommand(self):
+--- 36,46 ----
+          # model = ya_activity.models.deploy_command.DeployCommand()  # noqa: E501
+          if include_optional :
+              return DeployCommand(
+!                 deploy = dict()
+              )
+          else :
+              return DeployCommand(
+!                 deploy = dict(),
+          )
+  
+      def testDeployCommand(self):

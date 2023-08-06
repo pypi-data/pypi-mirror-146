@@ -1,0 +1,31 @@
+***************
+*** 34,51 ****
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_activity.models.exe_script_command_state.ExeScriptCommandState()  # noqa: E501
+!         if include_optional :
+!             return ExeScriptCommandState(
+!                 command = '0', 
+!                 progress = '0', 
+!                 params = [
+!                     '0'
+!                     ]
+!             )
+!         else :
+!             return ExeScriptCommandState(
+!                 command = '0',
+!         )
+  
+      def testExeScriptCommandState(self):
+          """Test ExeScriptCommandState"""
+--- 34,43 ----
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_activity.models.exe_script_command_state.ExeScriptCommandState()  # noqa: E501
+!         if include_optional:
+!             return ExeScriptCommandState(command="0", progress="0", params=["0"])
+!         else:
+!             return ExeScriptCommandState(command="0",)
+  
+      def testExeScriptCommandState(self):
+          """Test ExeScriptCommandState"""

@@ -1,0 +1,25 @@
+***************
+*** 32,44 ****
+        attribute_map (dict): The key is attribute name
+                              and the value is json key in definition.
+      """
+!     openapi_types = {
+!         'agreement_id': 'str'
+!     }
+! 
+!     attribute_map = {
+!         'agreement_id': 'agreementId'
+!     }
+  
+      def __init__(self, agreement_id=None, local_vars_configuration=None):  # noqa: E501
+          """CreateActivityAllOf - a model defined in OpenAPI"""  # noqa: E501
+--- 31,39 ----
+        attribute_map (dict): The key is attribute name
+                              and the value is json key in definition.
+      """
+!     openapi_types = {"agreement_id": "str"}
+! 
+!     attribute_map = {"agreement_id": "agreementId"}
+  
+      def __init__(self, agreement_id=None, local_vars_configuration=None):  # noqa: E501
+          """CreateActivityAllOf - a model defined in OpenAPI"""  # noqa: E501

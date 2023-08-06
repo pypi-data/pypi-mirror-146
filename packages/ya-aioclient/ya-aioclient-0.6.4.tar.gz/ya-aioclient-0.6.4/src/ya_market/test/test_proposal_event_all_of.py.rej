@@ -1,0 +1,26 @@
+***************
+*** 34,46 ****
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_market.models.proposal_event_all_of.ProposalEventAllOf()  # noqa: E501
+!         if include_optional :
+!             return ProposalEventAllOf(
+!                 proposal = null
+!             )
+!         else :
+!             return ProposalEventAllOf(
+!         )
+  
+      def testProposalEventAllOf(self):
+          """Test ProposalEventAllOf"""
+--- 33,42 ----
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_market.models.proposal_event_all_of.ProposalEventAllOf()  # noqa: E501
+!         if include_optional:
+!             return ProposalEventAllOf(proposal=None)
+!         else:
+!             return ProposalEventAllOf()
+  
+      def testProposalEventAllOf(self):
+          """Test ProposalEventAllOf"""

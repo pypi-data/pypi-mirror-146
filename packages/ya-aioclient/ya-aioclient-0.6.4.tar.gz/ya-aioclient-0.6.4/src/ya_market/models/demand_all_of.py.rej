@@ -1,0 +1,33 @@
+***************
+*** 32,48 ****
+        attribute_map (dict): The key is attribute name
+                              and the value is json key in definition.
+      """
+!     openapi_types = {
+!         'demand_id': 'str',
+!         'requestor_id': 'str'
+!     }
+! 
+!     attribute_map = {
+!         'demand_id': 'demandId',
+!         'requestor_id': 'requestorId'
+!     }
+  
+!     def __init__(self, demand_id=None, requestor_id=None, local_vars_configuration=None):  # noqa: E501
+          """DemandAllOf - a model defined in OpenAPI"""  # noqa: E501
+          if local_vars_configuration is None:
+              local_vars_configuration = Configuration()
+--- 31,43 ----
+        attribute_map (dict): The key is attribute name
+                              and the value is json key in definition.
+      """
+!     openapi_types = {"demand_id": "str", "requestor_id": "str"}
+  
+!     attribute_map = {"demand_id": "demandId", "requestor_id": "requestorId"}
+! 
+!     def __init__(
+!         self, demand_id=None, requestor_id=None, local_vars_configuration=None
+!     ):  # noqa: E501
+          """DemandAllOf - a model defined in OpenAPI"""  # noqa: E501
+          if local_vars_configuration is None:
+              local_vars_configuration = Configuration()

@@ -1,0 +1,17 @@
+***************
+*** 2702,2708 ****
+              ]
+          )
+  
+!         for key, val in six.iteritems(local_var_params['kwargs']):
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"
+--- 2702,2708 ----
+              ]
+          )
+  
+!         for key, val in local_var_params['kwargs'].items():
+              if key not in all_params:
+                  raise ApiTypeError(
+                      "Got an unexpected keyword argument '%s'"

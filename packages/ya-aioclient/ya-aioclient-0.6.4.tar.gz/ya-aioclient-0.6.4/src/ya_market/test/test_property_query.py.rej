@@ -1,0 +1,32 @@
+***************
+*** 34,50 ****
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_market.models.property_query.PropertyQuery()  # noqa: E501
+!         if include_optional :
+              return PropertyQuery(
+!                 issuer_properties = None, 
+!                 query_id = '0', 
+!                 queried_properties = [
+!                     '0'
+!                     ]
+              )
+!         else :
+!             return PropertyQuery(
+!         )
+  
+      def testPropertyQuery(self):
+          """Test PropertyQuery"""
+--- 33,44 ----
+              params are included, when True both required and
+              optional params are included """
+          # model = ya_market.models.property_query.PropertyQuery()  # noqa: E501
+!         if include_optional:
+              return PropertyQuery(
+!                 issuer_properties=None, query_id="0", queried_properties=["0"]
+              )
+!         else:
+!             return PropertyQuery()
+  
+      def testPropertyQuery(self):
+          """Test PropertyQuery"""
