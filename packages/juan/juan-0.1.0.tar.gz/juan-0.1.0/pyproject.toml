@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "juan"
+version = "0.1.0"
+description = "Generate .gitignore files from the command line"
+readme = "./README.md"
+authors = ["Juan Olvera <juan@jolvera.dev>"]
+
+[tool.poetry.scripts]
+"juan" = "juan:main"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+appdirs = "^1.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.3.0"
+pylint = "^2.13.5"
+pyinstaller = "^4.10"
+poetry2setup = "^1.0.0"
+stdeb = "^0.10.0"
+
+[build-system]
+requires = ["setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
