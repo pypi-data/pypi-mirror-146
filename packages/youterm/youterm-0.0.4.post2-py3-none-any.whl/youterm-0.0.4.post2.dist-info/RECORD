@@ -1,0 +1,12 @@
+youterm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+youterm/__main__.py,sha256=OwDwWGm584rKG_HYidYOBcvqjwIajx19GJe9lrbuT4o,4400
+youterm/colorizer.py,sha256=nvw4e48Y1nCctsM2cQVv4UDI_AzHdl6SQ-Ed42UpoVU,1957
+youterm/date.py,sha256=RHFbFypWGtyfN44fvHXOguWsvIQYquc6cN5xp4_IG5s,1113
+youterm/text.py,sha256=qaEu96skmsFtYr2a48cV-9_73Wu8H15K4EVJGsGHb9w,1439
+youterm/yt.py,sha256=cT16_Rddy8kVgCe2QfZqeSUD0FZdgSWe7G-viaUF4Ok,2535
+youterm-0.0.4.post2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+youterm-0.0.4.post2.dist-info/METADATA,sha256=l438IKrjauSjLxqm9IGyTqxc9TdOJ8wG7Hn6pw-TJW0,2395
+youterm-0.0.4.post2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+youterm-0.0.4.post2.dist-info/entry_points.txt,sha256=sin6Ehtm5FVvNowakanfx9grNyt5x-wKa2yBbnlVU1U,50
+youterm-0.0.4.post2.dist-info/top_level.txt,sha256=xFgsEuJ8gYJH_m84_p0SDMpHrNMozzsV7U57xAeC5qg,8
+youterm-0.0.4.post2.dist-info/RECORD,,
