@@ -1,0 +1,6 @@
+toml
+pyvisa
+bitstring
+opencv-python
+pywin32
+pymeasure
