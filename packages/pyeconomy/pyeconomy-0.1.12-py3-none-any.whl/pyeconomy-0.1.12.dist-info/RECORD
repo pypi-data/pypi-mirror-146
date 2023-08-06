@@ -1,0 +1,9 @@
+pyeconomy/__init__.py,sha256=AJ64qPq_0oS-tQ9NEf8KkqkEZwiq-jexhxpcAZ-HGJo,3987
+pyeconomy/errors.py,sha256=aH4DlKq-MgD4jbaZReUoHmHh420UDx_LyFbgQRWYv0Y,2181
+pyeconomy/json_data.py,sha256=WlqrLpzztnwS1vDGkTPqBaRMADXA4c6LlcWXx8RYU6E,2455
+pyeconomy/types/user.py,sha256=CV8UG_BFgp4J6lSWhu0NXW8Yx45wDLkPB5wnjlDLmec,2031
+pyeconomy-0.1.12.dist-info/LICENSE,sha256=MQ9h46Oy2LjsC8ivpmHq826kGDv3gCsEEFxVDVH4npM,1084
+pyeconomy-0.1.12.dist-info/METADATA,sha256=7HiG2yAaz_kZGFm34Q9bAeIrMmHSHptCnfB4tI27RJU,2161
+pyeconomy-0.1.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyeconomy-0.1.12.dist-info/top_level.txt,sha256=Alss8sHWm_tVTioynVabxcwnbLaWG4Tg-3nhMXnLinE,10
+pyeconomy-0.1.12.dist-info/RECORD,,
