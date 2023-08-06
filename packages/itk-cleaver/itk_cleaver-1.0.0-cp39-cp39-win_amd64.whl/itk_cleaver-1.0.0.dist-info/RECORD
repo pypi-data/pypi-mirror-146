@@ -1,0 +1,10 @@
+itk/CleaverPython.py,sha256=u4yP5Og9xJmkZOkKXFmG_KXwKz8DhlIaiWpOeSApHwA,2614
+itk/_CleaverPython.pyd,sha256=iur3nLBLN_G6YCYWFS2qJRVERrdwEzcR_WZ3Y7ORqRw,1886208
+itk/itkCleaverImageToMeshFilterPython.py,sha256=Nu5I8Z99yWxhXLzQHzsB65RKlOBQFGWeNabp2LkWRz8,121583
+itk/Configuration/CleaverConfig.py,sha256=YAnYrEhphMXlgJ0eoFGMhcOXr7axu3Ri0Lh6djrVOcU,4345
+itk/Configuration/Cleaver_snake_case.py,sha256=wnLzTwVE6SVRUxGfcElgFQ-9hnT4gpQNfwytdhdmNPk,59
+itk_cleaver-1.0.0.dist-info/LICENSE,sha256=FPd43S5L0_1wjk6rB9-A5zZE9eFXJ_4JTGuTq3pP9bA,1124
+itk_cleaver-1.0.0.dist-info/METADATA,sha256=AkoN5P8HdRfNnm1o2e6mrv8h8f7Rz3ZXc4XHULzNptE,1487
+itk_cleaver-1.0.0.dist-info/WHEEL,sha256=agPHDgQgdU8NSWIKgA1v7gpVJM51Mj4k7QPUWbVb89Y,93
+itk_cleaver-1.0.0.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_cleaver-1.0.0.dist-info/RECORD,,
