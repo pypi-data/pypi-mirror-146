@@ -1,0 +1,11 @@
+dockersh/__init__.py,sha256=ABrCvhZvGFciyReTMUkKcz-dQpmGqQyr80iE3LE_eGM,138
+dockersh/commands.py,sha256=yyU3yahOw4PzscC9v15dlEOpJlGGv2x-aS8Ofdq8Cvs,68727
+dockersh/completer.py,sha256=aKSWRbhiBXSMoaCK6wrooISI9o5b84Ftr4rnVX1fx_A,1202
+dockersh/main.py,sha256=019hiBQGf4vLo6QGacZXEZSPzo0rCr9WMAwq9v6Eiq4,1108
+dockersh-0.0.2.dist-info/AUTHORS.rst,sha256=KrRvP_DtzLrDtFBfwjwG1fYMEojwRqFi5Ld3DgRzCf8,168
+dockersh-0.0.2.dist-info/LICENSE,sha256=P0rDHWIlESdFZB1l53wwzuPNblDFq36fMXJpAvQTQ34,1074
+dockersh-0.0.2.dist-info/METADATA,sha256=nlGfWZrC0F7PoxKxVQJbSdlO-G79N5sEtsX2KKWKEzY,797
+dockersh-0.0.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+dockersh-0.0.2.dist-info/entry_points.txt,sha256=Mp1y1KsarhxueNYvmmKfiqGEbhmpX9ubIm2Aew1GZkk,79
+dockersh-0.0.2.dist-info/top_level.txt,sha256=izuKR9blRfcBCnNciuorfygdRZL0gZbRIneGabyQAnY,9
+dockersh-0.0.2.dist-info/RECORD,,
