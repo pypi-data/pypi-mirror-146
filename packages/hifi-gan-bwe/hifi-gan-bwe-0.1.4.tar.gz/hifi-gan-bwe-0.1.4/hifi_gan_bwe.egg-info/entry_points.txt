@@ -1,0 +1,7 @@
+[console_scripts]
+hifi_clone = hifi_gan_bwe.scripts.clone:main
+hifi_export = hifi_gan_bwe.scripts.export:main
+hifi_gan_bwe = hifi_gan_bwe.scripts.synth:main
+hifi_synth = hifi_gan_bwe.scripts.synth:main
+hifi_train = hifi_gan_bwe.scripts.train:main
+
