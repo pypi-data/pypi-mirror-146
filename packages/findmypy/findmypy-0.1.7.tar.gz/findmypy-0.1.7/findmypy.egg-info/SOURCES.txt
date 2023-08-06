@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+findmypy/AppleCA.pem
+findmypy/__init__.py
+findmypy/base.py
+findmypy/exceptions.py
+findmypy.egg-info/PKG-INFO
+findmypy.egg-info/SOURCES.txt
+findmypy.egg-info/dependency_links.txt
+findmypy.egg-info/top_level.txt
