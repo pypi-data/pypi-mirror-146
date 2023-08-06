@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pdc-bot-updater
+Version: 1.2.2
+Summary: pdc shipment aplication bot
+Author: kampretcode
+Author-email: manorder123@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: google-cloud-storage (>=2.2.1,<3.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: tqdm (>=4.64.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# pdc_updater
+implementasi auto updater dengan memakai cloud storage google
+
+### set environtment
+set GOOGLE_APPLICATION_CREDENTIALS=credentials.json
+
+
+# Example
+### Publising Aplication
+```
+from pdc_bot_updater.publisher.publish import configure_client, AppArchiver
+
+bucket_id = 'artifact'
+folder_app = 'aplikasi_bot'
+
+configure_client(bucket_id)
+
+
+archiver = AppArchiver(folder_app)
+archiver.get_meta()
+archiver.upload_archive(f'dist/aplication.zip', version='1.0.0')
+```
+
+### Updating App
+```
+from pdc_bot_updater.client.updater import Updater
+
+bucket_id = 'artifact'
+folder_app = 'aplikasi_bot'
+
+updater = Updater(folder_app, bucket_id)
+updater.check_update()
+updater.detach_process(['application.exe'])
+
+```
+
+
+
