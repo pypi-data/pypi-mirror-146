@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+alice_ai/__init__.py
+alice_ai/console.py
+alice_ai/main.py
+alice_ai.egg-info/PKG-INFO
+alice_ai.egg-info/SOURCES.txt
+alice_ai.egg-info/dependency_links.txt
+alice_ai.egg-info/entry_points.txt
+alice_ai.egg-info/requires.txt
+alice_ai.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+aliceai = alice_ai.console:startConsole
