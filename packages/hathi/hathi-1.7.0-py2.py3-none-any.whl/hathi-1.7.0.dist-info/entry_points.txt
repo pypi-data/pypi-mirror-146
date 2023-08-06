@@ -1,0 +1,3 @@
+[console_scripts]
+hathi=hathi.__main__:main
+
