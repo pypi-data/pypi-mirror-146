@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: filedir
+Version: 0.0.1
+Summary: Filedir is a python module to work with files and directories.
+Home-page: UNKNOWN
+Author: Dlurak
+License: UNKNOWN
+Description: # Filedir
+        
+        Filedir is a python module to work with files and directories.
+        
+        [TOC]
+        
+        
+        
+        ## File
+        
+        This is a class to work with files. You can define an instance with
+        
+        ```python
+        File('full or relative path to your file')
+        ```
+        
+        If the path doesn't exist it will raise a *FileNotFoundError* if the path points to a directory or to a symbolic link it will also raise a *FileNotFoundError* 
+        
+        ### Basic data
+        
+        To get the Basic data of the file call the variable that is in the table descriped.
+        
+        | Variable name       | data                                                         |
+        | ------------------- | ------------------------------------------------------------ |
+        | File.fullpath       | Get the full path of the file.                               |
+        | File.name           | Get the name of the file(e.g. *README.md*)                   |
+        | File.basename       | Get the name of the file without the file extension(e.g. *README*) |
+        | File.ext            | Get the extension of the file(e.g. *.md*)                    |
+        | File.dir            | Get the directory where the file is in                       |
+        | File.size_b         | Get the size of the file in byte                             |
+        | File.size_kb        | Get the size of the file in kilo byte. You can replace the kb with the following abbreviations: *b*, *kb*, *mb*, *gb*, *tb*, *pb*, *eb*, *zb*, *yb* |
+        | File.size_preffered | Get the size of the file in the preffered size. It's a string countaining the size + the unit(e.g. 100kb) |
+        | File.is_readable    | A boolean that shows if the file is readable, also works for: *is_writable*, *is_executable*, *is_hidden* |
+        
+        ### Methods
+        
+        There are various methods on the file object, all of which are explained in more detail in the table below.
+        
+        | Method name            | description                                                  |
+        | ---------------------- | ------------------------------------------------------------ |
+        | File.move(destination) | To move the file you can run this the destination parameter must be a string or a Directory object. |
+        |                        |                                                              |
+        |                        |                                                              |
+        |                        |                                                              |
+        |                        |                                                              |
+        |                        |                                                              |
+        |                        |                                                              |
+        |                        |                                                              |
+        |                        |                                                              |
+        
+        
+Keywords: python,files,directorys,folders,sorting
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown

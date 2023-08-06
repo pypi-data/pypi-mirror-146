@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+filedir/__init__.py
+filedir/main.py
+filedir.egg-info/PKG-INFO
+filedir.egg-info/SOURCES.txt
+filedir.egg-info/dependency_links.txt
+filedir.egg-info/top_level.txt
