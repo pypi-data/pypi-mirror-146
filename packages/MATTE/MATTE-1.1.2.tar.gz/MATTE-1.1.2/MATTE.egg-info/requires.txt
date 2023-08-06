@@ -1,0 +1,11 @@
+sklearn
+numpy
+biopython
+tqdm
+pandas
+scipy
+statsmodels
+matplotlib
+seaborn
+joblib
+dill
