@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+ezp.egg-info/PKG-INFO
+ezp.egg-info/SOURCES.txt
+ezp.egg-info/dependency_links.txt
+ezp.egg-info/top_level.txt
