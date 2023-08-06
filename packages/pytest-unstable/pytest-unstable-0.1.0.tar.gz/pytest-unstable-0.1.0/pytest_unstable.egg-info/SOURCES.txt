@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_unstable.py
+setup.py
+pytest_unstable.egg-info/PKG-INFO
+pytest_unstable.egg-info/SOURCES.txt
+pytest_unstable.egg-info/dependency_links.txt
+pytest_unstable.egg-info/entry_points.txt
+pytest_unstable.egg-info/requires.txt
+pytest_unstable.egg-info/top_level.txt

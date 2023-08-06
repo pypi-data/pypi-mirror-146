@@ -1,0 +1,3 @@
+[pytest11]
+unstable = pytest_unstable
+
