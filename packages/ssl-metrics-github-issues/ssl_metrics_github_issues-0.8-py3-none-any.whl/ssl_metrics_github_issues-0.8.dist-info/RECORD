@@ -1,0 +1,13 @@
+ssl_metrics_github_issues/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssl_metrics_github_issues/args.py,sha256=2BI2Oh3I6AnIBPjWjGhQ4XeMBBKh4rSR9MPwZYyExdM,5218
+ssl_metrics_github_issues/bugzilla.py,sha256=bDBtm3Ob57Hs9Mwbt0IYDhvjthdTcR0ERRRFUFGHOU4,839
+ssl_metrics_github_issues/github.py,sha256=f3Ib3Ym_EjiFjTp0RMWG8kSONkoiwxcc43NGkGChB3I,2499
+ssl_metrics_github_issues/gitlab.py,sha256=Lebn9pfrw1Q7Ul18m7QsQilGxosGAM7k-MTNoMGgRZY,2302
+ssl_metrics_github_issues/graph.py,sha256=ZShxNHzCVIH-AhoQ62M66q5SYJQxjsboNpB-wfbX7Ew,1581
+ssl_metrics_github_issues/version.py,sha256=7-O1tcvOs2SD1oa4UJ-DO7PMUkc78k1D_iCzAbca52M,60
+ssl_metrics_github_issues-0.8.dist-info/LICENSE,sha256=HfZeEdCZOlB4t1x4L1Li1jIBF7H2ks5zdfsNVw_ieoM,1539
+ssl_metrics_github_issues-0.8.dist-info/METADATA,sha256=56SEc8C9ovxmdHI-TJEPiLUtAK_0x5_wavshc-4U5zk,5690
+ssl_metrics_github_issues-0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ssl_metrics_github_issues-0.8.dist-info/entry_points.txt,sha256=OZn0BIoMWveF176HRDH1c8f7lt01VaYRthBk5hiTMWk,315
+ssl_metrics_github_issues-0.8.dist-info/top_level.txt,sha256=37xm0RfxpAOZPJHJoSIs6S6OXUcF2fxPn51-uCk5Sq8,26
+ssl_metrics_github_issues-0.8.dist-info/RECORD,,
