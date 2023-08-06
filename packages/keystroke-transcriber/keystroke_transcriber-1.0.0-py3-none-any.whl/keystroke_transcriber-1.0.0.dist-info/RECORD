@@ -1,0 +1,13 @@
+keystroke_transcriber/__init__.py,sha256=YVkMT9iBfG9-8cdcq5_t7ztVeiEksL6nWHQ6U8btyio,143
+keystroke_transcriber/__main__.py,sha256=qURuBDE0IGagqK5zazLHLPYmNypS1nv7_mmmOCb62_g,7278
+keystroke_transcriber/constants.py,sha256=Nt-aek3_riSmm3Jk8xSGO9kKR6Ib7WkC8F-Sol5R0SU,4229
+keystroke_transcriber/output_writer.py,sha256=ACelEJO55-3ImwFVxS3U9zGyVSGgONZbXWIEvUtNV9U,1835
+keystroke_transcriber/recorder.py,sha256=ONi6Qrs5lKgGlJLl59ZBhISXdK8glLvX0wji480IbEM,1459
+keystroke_transcriber/utils.py,sha256=YosXbIwawRZlAskDGD9e-_CQpIef7E6RBqNzlFSBkR8,1090
+keystroke_transcriber/output_writers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keystroke_transcriber/output_writers/digispark.py,sha256=Qm1SaThiDiPmyktDwJroV0wr0AdVvMFA6jvGUY7onvg,5985
+keystroke_transcriber-1.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+keystroke_transcriber-1.0.0.dist-info/METADATA,sha256=zd8DPPez-aHV6PuFVlCLdeFkX-IfGEDWzmDR7DslcBA,8536
+keystroke_transcriber-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+keystroke_transcriber-1.0.0.dist-info/top_level.txt,sha256=KNeuI1sqHsqxbJICI22bz5XwyntOZGRz68Tw79gdoW8,22
+keystroke_transcriber-1.0.0.dist-info/RECORD,,
