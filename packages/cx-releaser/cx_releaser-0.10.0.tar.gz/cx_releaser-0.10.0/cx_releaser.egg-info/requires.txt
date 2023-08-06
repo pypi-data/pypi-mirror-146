@@ -1,0 +1,4 @@
+boto3==1.20.47
+docker==5.0.3
+PyYaml==6.0
+semantic-version==2.9.0
