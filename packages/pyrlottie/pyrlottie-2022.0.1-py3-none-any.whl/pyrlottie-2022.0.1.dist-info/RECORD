@@ -1,0 +1,13 @@
+pyrlottie/__init__.py,sha256=M_9eTWbC0EC8QjeOnSPXvqqZp86ZBB0x_dEyHwPcU58,15603
+pyrlottie/build_steps_gif2webp.md,sha256=ux_lnTQbJGaVWh4t7ob4Ol77Q19TUQtWdqXzeGmi88A,2363
+pyrlottie/build_steps_rlottie.md,sha256=H3ShFN-l8tXjDLaJ-dguMJ1ig7DJKGIQgrXZZG_eFow,2357
+pyrlottie/linux_aarch64/gif2webp,sha256=YrYyWaBE262bpFufASICUzH4HoEaH-wvMv6qmqUCONQ,735888
+pyrlottie/linux_aarch64/lottie2gif,sha256=z5kCcvApP3rGfLIxPP8I6ViBA5UujwUzPo5_Jv50gb4,342288
+pyrlottie/linux_x86_64/gif2webp,sha256=wgGlTkeO8R7x28Hwmi3xWtD4Att8_Ph4aojEBO-F-iQ,1552040
+pyrlottie/linux_x86_64/lottie2gif,sha256=zsrrwouXUYH1CQyP1Q8wipeCSnqFPGecqA0HXTuWOdE,1583792
+pyrlottie/windows_amd64/gif2webp.exe,sha256=uD5f7Z8GMyVFh5PDUkJDwjNeQmtA81YlbSVXqv-Z1rg,732160
+pyrlottie/windows_amd64/lottie2gif.exe,sha256=z3-qqHt7YVKmrzxQQnVT0p-0wZ7mW9h5sw-68ZujXtw,3227648
+pyrlottie-2022.0.1.dist-info/LICENSE.md,sha256=QTHKN2X5ExucEuYGhgKL7s-jBGX9w0OvWUjCea5Us4g,1190
+pyrlottie-2022.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pyrlottie-2022.0.1.dist-info/METADATA,sha256=4RIfMZ-6Zy3rS8122ZoqOkShNI13vpfTRrKPyx1FivM,9612
+pyrlottie-2022.0.1.dist-info/RECORD,,
