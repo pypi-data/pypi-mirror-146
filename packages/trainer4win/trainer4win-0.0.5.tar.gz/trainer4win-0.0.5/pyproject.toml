@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "Trainer-Win"
+version = "0.0.5"
+description = "General purpose model trainer for PyTorch that is more flexible than it should be, by 🐸Coqui."
+authors = ["Eren Gölge <egolge@coqui.ai>", "bitnom <14287229+bitnom@users.noreply.github.com>"]
+license = "Apache2"
+documentation = "https://github.com/coqui-ai/Trainer/"
+repository = "https://github.com/coqui-ai/Trainer"
+classifiers = [
+    "Environment :: Console",
+    "Natural Language :: English",
+    # How mature is this project? Common values are
+    #   3 - Alpha, 4 - Beta, 5 - Production/Stable
+    "Development Status :: 3 - Alpha",
+    # Indicate who your project is intended for
+    "Intended Audience :: Developers",
+    # Pick your license as you wish
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    # Specify the Python versions you support here. In particular, ensure
+    # that you indicate whether you support Python 2, Python 3 or both.
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.urls]
+"Tracker" = "https://github.com/coqui-ai/Trainer/issues"
+"Discussions" = "https://github.com/coqui-ai/Trainer/discussions"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9"
+torch = ">=1.7"
+coqpit = "*"
+fsspec = "*"
+tensorboardX = "*"
+soundfile = "*"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[flake8]
+max-line-length=120
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
