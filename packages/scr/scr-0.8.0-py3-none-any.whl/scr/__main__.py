@@ -1,0 +1,2 @@
+import scr
+scr.main()

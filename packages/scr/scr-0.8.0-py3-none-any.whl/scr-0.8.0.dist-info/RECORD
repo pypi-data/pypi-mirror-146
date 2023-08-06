@@ -1,0 +1,11 @@
+scr/__init__.py,sha256=tSmS3V9RykfIv4OoGwF2BEnOunNrFCzRZ9jQvdGqhrY,19
+scr/__main__.py,sha256=n3bWDKniE4kqD6W4-ZD6lZ8FCpZmfqiyNKcoAiqymvs,22
+scr/scr.py,sha256=EPS0sez3jWvAsntNNwbJAe1cTXhhoXmVPXIGDz3i12A,180573
+scr/selenium_drivers/chromedriver,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scr/selenium_drivers/geckodriver,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scr-0.8.0.dist-info/LICENSE,sha256=vNM25bS_UzB0Zi-AZ-r88-L8H18XH4MAu_4s7aPe_hU,1074
+scr-0.8.0.dist-info/METADATA,sha256=x7LxCPXZDr9R36OKGENB_aA0CQxzVCL1xrqQdSQZGBA,13150
+scr-0.8.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scr-0.8.0.dist-info/entry_points.txt,sha256=_pt2EPrzlx3OH5GvYPIVsovUMi0kJVfT6rqP1j1hvoY,33
+scr-0.8.0.dist-info/top_level.txt,sha256=afGRs4UMYawG7tTEOM7n_QpJZ07uXzeBo6z-z5HVlvU,4
+scr-0.8.0.dist-info/RECORD,,
