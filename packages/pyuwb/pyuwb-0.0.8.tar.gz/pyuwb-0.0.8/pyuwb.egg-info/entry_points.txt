@@ -1,0 +1,7 @@
+[console_scripts]
+pyuwb = pyuwb:console_cmd
+pyuwb_qt = pyuwb:gui_cmd
+
+[gui_scripts]
+pyuwb_qt = pyuwb:gui_cmd
+
