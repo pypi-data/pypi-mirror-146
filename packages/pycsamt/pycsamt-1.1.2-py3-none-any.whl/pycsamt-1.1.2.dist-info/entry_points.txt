@@ -1,0 +1,26 @@
+[console_scripts]
+avg2edi = pycsamt.cli.avg2edi:main
+corrected_edi = pycsamt.gui.corrected_edi:main
+correctedi = pycsamt.cli.correctedi:main
+fitforward = pycsamt.cli.fitforward:main
+j2edi = pycsamt.cli.j2edi:main
+misfit2d = pycsamt.cli.misfit2d:main
+myconfigfile = pycsamt.cli.myconfigfile:main
+nm = pycsamt.cli.nm:main
+occam2d_build_in = pycsamt.gui.oc2d_bdin:main
+occambuildinputs = pycsamt.cli.occambuildinputs:main
+penetration1d = pycsamt.cli.penetration1d:main
+penetration2d = pycsamt.cli.penetration2d:main
+plot_model_oc2d = pycsamt.gui.p_moc2d:main
+plot_pseudolog = pycsamt.gui.p2log:main
+pseudocrossresistivityandphase = pycsamt.cli.pseudocrossresistivityandphase:main
+pseudostratigraphic = pycsamt.cli.pseudostratigraphic:main
+rewriteedi = pycsamt.cli.rewriteedi:main
+rms = pycsamt.cli.rms:main
+staticshift = pycsamt.cli.staticshift:main
+write_avg2edi = pycsamt.gui.wa2edi:main
+write_avg2j = pycsamt.gui.wa2j:main
+write_drillhole = pycsamt.gui.cmake_dh:main
+write_occam2golden= pycsamt.gui.gs2f:mainwrite_iter2dat = pycsamt.gui.wi2d:main
+write_occam2oasis = pycsamt.gui.oas2f:main
+
