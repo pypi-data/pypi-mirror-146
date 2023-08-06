@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: heatmapanimation
+Version: 0.0.2
+Summary: Generate heatmap animation with given data and geojson
+Home-page: https://github.com/zhushaohz/heatmapanimation
+Author: zhushaohz
+Author-email: zhushaohz@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/zhushaohz/heatmap-animation/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: urllib3
+Requires-Dist: imageio
+Requires-Dist: ffmpeg
+Requires-Dist: ffmpeg-python
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Provides-Extra: ffmpeg
+Requires-Dist: ffmpeg (>=5.0) ; extra == 'ffmpeg'
+
+# heatmapanimation
+
+Python package for generating heatmap animation with given data and geojson.
+
+<p align='center'>
+<b>English</b> | <a href="https://github.com/zhushaohz/heatmapanimation/master/README.zh-CN.md">简体中文</a>
+</p>
+
+## Introduction
+
+## Install
+
+## Usage
+
+## License
+
+
+
