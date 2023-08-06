@@ -1,0 +1,12 @@
+Pillow>=6.0.0
+awesometkinter>=2021.6.4
+certifi
+packaging
+plyer
+pycurl
+pystray
+youtube_dl
+yt_dlp
+
+[:platform_system == "Linux"]
+distro
