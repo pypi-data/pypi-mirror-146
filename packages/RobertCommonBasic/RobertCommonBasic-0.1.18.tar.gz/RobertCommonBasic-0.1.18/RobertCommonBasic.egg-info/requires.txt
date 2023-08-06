@@ -1,0 +1,12 @@
+bson
+Jinja2
+MarkupSafe
+numpy
+pandas
+psutil
+pycryptodome
+pycryptodomex
+python-dateutil
+pytz
+simpleeval
+six
