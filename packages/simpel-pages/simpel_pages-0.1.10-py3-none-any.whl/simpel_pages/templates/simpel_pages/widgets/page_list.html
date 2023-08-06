@@ -1,0 +1,21 @@
+{% load i18n %}
+<section class="card-body">
+  <h4>{{ title }}</h4>
+  <div>
+    <ul class="list-unstyled">
+      {% for page in pages %}
+        <li class="mb-2">
+          <div class="small">{{ page.created_at|date:"d M Y" }}</div>
+          <a class="d-flex" title="{{ page.title }}" href="{{ page.get_absolute_url }}"><strong>{{ page.title|title|truncatechars:50 }}</strong></a>
+          {% comment %} {% if page.seo_description %}
+            <div class="small">
+              {{ page.seo_description|safe|truncatechars:60 }}
+            </div>
+          {% endif %} {% endcomment %}
+        </li>
+      {% empty %}
+        {% trans "No results!" %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

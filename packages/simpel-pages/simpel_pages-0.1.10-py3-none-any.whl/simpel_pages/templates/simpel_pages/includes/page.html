@@ -1,0 +1,52 @@
+{% load i18n thumbnail %}
+
+<article class="card border-0 mb-3">
+  {% if page.thumbnail %}
+    <a href="{{ page.get_absolute_url }}" title="{{ page.title }}">
+      {% thumbnail page.thumbnail 640x360 crop as thumb %}
+      <img class="card-img-top img-fluid" width="{{ thumb.width }}" height="{{ thumb.height }}" src="{{ thumb.url }}" alt="{{ page.title }}">
+    </a>
+  {% endif %}
+  <div class="card-body">
+    <div class="post-meta small d-flex">
+      <div class="flex-fill">
+        <div class="d-flex align-items-center mb-3">
+          <span class="overflow-hidden me-3">
+            <img class="avatar rounded-circle" width="48" height="48" src="{{ page.owner.avatar }}">
+          </span>
+          <div class="d-flex mb-0">
+            <div class="me-auto">
+              <div class="fw-bold">
+                {% if page.owner.get_absolute_url %}
+                  <a href="{{ page.owner.get_absolute_url }}" target="_new">
+                {% endif %}
+                {% firstof page.owner.get_full_name page.owner.username  %}
+                {% if page.owner.get_absolute_url %}</a>{% endif %}
+              </div>
+              {{ page.created_at|date:"d M Y" }}
+              {% if page.category %}
+                {% trans "in" %} <a href="{% url 'serve_category' slug=page.category.slug %}">{{ page.category|title }}</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        {{ page.visitor_count }} {% trans "Views" %}
+      </div>
+    </div>
+    <h2 class="h4"><a href="{{ page.get_absolute_url }}" title="{{ page.title }}">{{ page.title|truncatechars:45|title }}</a></h2>
+    {% if page.seo_description %}
+      <div class="mb-2">
+        {{ page.seo_description|truncatechars:90|safe }}
+      </div>
+    {% endif %}
+    {% if page.tags.count %}
+      <div class="small d-flex">
+        {% for tag in page.tags.all %}
+          <a class="small d-inline-block py-1 px-2 bg-light border me-2" href="{{ tag.get_absolute_url }}">{{ tag|title }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>

@@ -1,0 +1,38 @@
+{% extends 'simpel_pages/base.html' %}
+{% load i18n pages_tags pages_widget_tags %}
+
+{% block breadcrumb-items %}
+  {% for item in object.get_ancestors %}
+    <li class="breadcrumb-item">
+      <a href="{{ item.get_absolute_url }}">{{ item.title|truncatechars:60 }}</a>
+    </li>
+  {% endfor %}
+  <li class="breadcrumb-item active" aria-current="page">{{ object|truncatechars:60 }}</li>
+{% endblock breadcrumb-items %}
+
+{% block main_content %}
+<h1>{{ object.title }}</h1>
+{% if object.content %}
+  <div>{{ object.content|safe }}</div>
+{% endif %}
+{% if object.parent %}
+  <div class="py-2"><strong>{% trans "Back to" %}</strong>: <a href="{{ object.parent.get_absolute_url }}">{{ object.parent.title }}</a></div>
+{% endif %}
+<div class="my-3"></div>
+<div>
+  {% if object_list.count %}
+    <div class="row">
+      {% for page in object_list %}
+        <div class="col-lg-6">
+          {% include 'simpel_pages/includes/page.html' with page=page %}
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% include 'simpel_pages/includes/no_results.html' %}
+  {% endif %}
+  {% if is_paginated %}
+    {% include 'simpel_pages/includes/pagination.html' %}
+  {% endif %}
+</div>
+{% endblock %}

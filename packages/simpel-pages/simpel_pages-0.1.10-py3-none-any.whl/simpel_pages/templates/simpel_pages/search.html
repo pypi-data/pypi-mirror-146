@@ -1,0 +1,39 @@
+{% extends 'simpel_pages/base.html' %}
+{% load i18n pages_tags pages_widget_tags %}
+
+{% block breadcrumb-items %}
+  <li class="breadcrumb-item"><a href="{% current_homepage %}">{% trans "Home" %}</a></li>
+  <li class="breadcrumb-item"><a href="{% url 'serve_tag' %}">{% trans "Search" %}</a></li>
+  {% if query %}
+    <li class="breadcrumb-item active" aria-current="page">{{ query }}</li>
+  {% endif %}
+{% endblock breadcrumb-items %}
+
+{% block main_content %}
+    
+    <form method="get" action="{% url 'serve_search' %}">
+      <div class="input-group">
+        <input class="form-control" type="search" name="q" id="searchInput" value="{{ query }}" placeholder="{% trans "Search Something ..." %}">
+        <input class="btn btn-primary" type="submit" value="Search">
+      </div>
+    </form>
+    
+    {% if query %}
+      <h1>{% trans "Search Results for" %} "{{ query }}"</h1>
+
+      {% for result in page.object_list %}
+          {% include 'simpel_pages/includes/page_list.html' with page=result.object %}
+      {% empty %}
+          <div>{% trans "No results found!" %}</div>
+      {% endfor %}
+      {% if page.has_previous or page.has_next %}
+          <div>
+            {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+            |
+            {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+          </div>
+      {% endif %}
+    {% else %}
+      {% recent_pages "Recent Pages" number=4 template_name='simpel_pages/widgets/page_related.html' %}
+    {% endif %}
+{% endblock %}

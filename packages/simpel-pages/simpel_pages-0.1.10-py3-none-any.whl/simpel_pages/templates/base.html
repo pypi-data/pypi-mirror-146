@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block head_tags %}
+  {% include 'includes/meta.html' %}
+{% endblock head_tags %}
+
+{% block main_css %}
+  <link rel="stylesheet" href="{% static 'simpel_pages/css/main.bundle.css' %}">  
+{% endblock %}
+
+{% block main_js %}
+  <script src="{% static 'simpel_pages/js/runtime.js' %}"></script> 
+  <script src="{% static 'simpel_pages/js/shared.js' %}"></script> 
+  <script src="{% static 'simpel_pages/js/main.js' %}"></script> 
+{% endblock main_js %}

@@ -1,0 +1,6 @@
+<article class="mb-3">
+  <h2 class="h5"><a href="{{ page.get_absolute_url }}">{{ page.title|truncatechars:120 }}</a></h2>
+  {% if page.content %}
+    <div class="small">{{ page.content|safe|truncatechars:180 }}</div>
+  {% endif %}
+</article>
