@@ -1,0 +1,11 @@
+m5py/__init__.py,sha256=7cPzh0zCmDdhsBvo5pmWfvMF6BQxBtKM_EmClppXKoU,834
+m5py/_version.py,sha256=YNd1dEdZGzG2MvXfaTQdmMYCLOQm-rV09_xmC5Hxu5Y,142
+m5py/export.py,sha256=tEHZC56MDtGF_c3u3W36746M9Q_cF7a-xoL8gZpcVBI,13599
+m5py/linreg_utils.py,sha256=pHVGm_Z-KCHdg_Tfs-5gBohPqFlCPwYCzZZ50q6zGw0,7273
+m5py/main.py,sha256=yIbGDcZ2iHyEim_5ugP4LpKpND8CNuDZ-wqSNd6hewg,70794
+m5py/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+m5py-0.3.0.dist-info/LICENSE,sha256=dM7712VAmm5GcgkIsUaoWmIY6l5_Tqi8d8U6Xx35Ctc,1558
+m5py-0.3.0.dist-info/METADATA,sha256=l3ZZN9dJKwdTBZY3ooNXJ5WEir8WkxzniBfq59-W30k,2797
+m5py-0.3.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+m5py-0.3.0.dist-info/top_level.txt,sha256=xgeJBBO8fZwIwgprBf5bE2pfOqb09Y0WU9XugBAEDnI,5
+m5py-0.3.0.dist-info/RECORD,,
