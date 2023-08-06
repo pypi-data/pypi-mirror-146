@@ -1,0 +1,9 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+src/mypackage/__init__.py
+src/mypackage/main.py
+src/stiko.egg-info/PKG-INFO
+src/stiko.egg-info/SOURCES.txt
+src/stiko.egg-info/dependency_links.txt
+src/stiko.egg-info/top_level.txt
