@@ -1,0 +1,9 @@
+aardwolfgui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aardwolfgui/_version.py,sha256=eEGS7IhwHXhCG5PV01ODbIvZrpQZjFKuPUbcxuVMa-Y,135
+aardwolfgui/aardpclient.py,sha256=CUg_ODYHTzlw6-5BTq-kjppV9SCDZ3jXumkG9cdY6Xc,15848
+aardwolfgui/aardpclient_simple.py,sha256=ugj91mCi6c_XXuuef9fYcxSVVDLDpf9dJQY0X9uK-lI,6056
+aardwolfgui-0.0.1.dist-info/METADATA,sha256=LjAoMxM0bBGSRuYMh0IKkIenokQ9DsFvCGOkrwSVr80,473
+aardwolfgui-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aardwolfgui-0.0.1.dist-info/entry_points.txt,sha256=FK5sIbMAK9-dCxzj58B0XpX4Z2sJqKmFLMXFCMDgK7w,62
+aardwolfgui-0.0.1.dist-info/top_level.txt,sha256=maQrN572faSrFqhzs7Y6ReOkWo_y-4Qgxf-FQcqbps4,12
+aardwolfgui-0.0.1.dist-info/RECORD,,
