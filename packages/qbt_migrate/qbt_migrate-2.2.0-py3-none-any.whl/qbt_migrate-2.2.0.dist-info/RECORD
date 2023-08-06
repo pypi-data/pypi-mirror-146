@@ -1,0 +1,9 @@
+qbt_migrate/__init__.py,sha256=oPO-1b1hSfCVycVWkWTr2K9C4D8xM1kaxoRyEozFQwU,371
+qbt_migrate/classes.py,sha256=vsj2nV3WssbEc4LxdcF9PcWAq1Z0WVQa0bjYq0vM0nE,9670
+qbt_migrate/cli.py,sha256=GbBOWcm2_6as2zbjfy4KUoFVkNQ5lVePctffrPUzH9o,3665
+qbt_migrate/methods.py,sha256=u1tVX08sjUBhOCQen5hU3MvFuN1ygxtRf3roFfwxMyo,1868
+qbt_migrate-2.2.0.dist-info/entry_points.txt,sha256=YLltvGcof099CUJdnupI6WQ0sEbLeEeK5A7KButEl5Y,52
+qbt_migrate-2.2.0.dist-info/LICENSE.md,sha256=8bNFZLrFS2MZ78ZIhZJfaF0kDUOfwXanoQpyOkoPBz0,1079
+qbt_migrate-2.2.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+qbt_migrate-2.2.0.dist-info/METADATA,sha256=GkeMwlXovf4_V6xiOm-QF2huAPQYl9jGiftfKJlzYX0,7167
+qbt_migrate-2.2.0.dist-info/RECORD,,
