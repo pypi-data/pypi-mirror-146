@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/hastebiny/__init__.py
+src/hastebiny/hb.py
+src/hastebiny.egg-info/PKG-INFO
+src/hastebiny.egg-info/SOURCES.txt
+src/hastebiny.egg-info/dependency_links.txt
+src/hastebiny.egg-info/top_level.txt
