@@ -1,0 +1,5 @@
+include src/kkba/feapder_air_spider_template.tmpl
+include src/kkba/scrapy_template.tmpl
+include src/kkba/README.md.tmpl
+include src/kkba/VERSION
+include src/kkba/LICENSE
