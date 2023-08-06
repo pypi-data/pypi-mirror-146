@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: python-todo-comments
+Version: 0.2.2
+Summary: A cli that will search for and parse TODO comments in a directory's python modules.
+License: MIT
+Author: Tylor Dodge
+Author-email: tdodge@nexamp.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
