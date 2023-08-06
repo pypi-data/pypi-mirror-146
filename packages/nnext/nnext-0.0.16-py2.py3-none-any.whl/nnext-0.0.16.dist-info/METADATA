@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: nnext
+Version: 0.0.16
+Summary: Python client library for the NNext. A ⚡ blazingly fast, 🔍 nearest-neighbors vector search engine for building delightful ML apps
+Home-page: https://nnext.ai
+Author: NNext, co
+Author-email: team@nnext.ai
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: grpcio (>=1.44.0) ; python_version >= "3.6"
+Requires-Dist: protobuf (>=3.20.0) ; python_version >= "3.6"
+
+
+Here's our logo (hover to see the title text):
+
+Inline-style: 
+
+.. image:: https://nnext.io/_next/static/image/src/common/assets/image/appModern/logo-color.2658edf06bcc58c34d55ea41eaef7a2b.png
+   :target: https://nnext.io/_next/static/image/src/common/assets/image/appModern/logo-color.2658edf06bcc58c34d55ea41eaef7a2b.png
+   :alt: alt text
+
+
+About
+-----
+
+NNext is a
+
+
+* ⚡ blazingly fast
+* 📖 source-available `[Elastic License 2.0] <https://www.elastic.co/licensing/elastic-license>`_
+* 🔍 nearest-neighbors vector search engine
+
+Quick Start
+-----------
+
+Here's a quick example showcasing how you can create an index, insert vectors/documents and search it on NNext.
+
+Let's begin by starting the NNext server via Docker:
+
+.. code-block::
+
+   docker run -p 6040:6040 -v/tmp/data:/data nnext/nnext:latest --data-dir /data --api-key=Hu52dwsas2AdxdE
+
+We have a `API Client <#api-clients>`_ in python only, but let's use it for this example.
+
+Install the Python client for NNext:
+
+.. code-block::
+
+   pip install nnext
+
+We can now initialize the client and create a ``movies`` index:
+
+.. code-block:: python
+
+   import nnext
+   from nnext import _and, _eq, _gte, _in
+
+   nnclient = nnext.Client({
+     'api_key': 'Hu52dwsas2AdxdE',
+     'nodes': [{
+       'host': 'localhost',
+       'port': '6040'
+     }],
+     'connection_timeout_seconds': 2
+   })
+
+
