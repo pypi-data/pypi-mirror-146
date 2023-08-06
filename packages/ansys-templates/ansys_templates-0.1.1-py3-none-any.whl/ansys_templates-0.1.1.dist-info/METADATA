@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ansys-templates
+Version: 0.1.1
+Summary: Creates Python projects according to PyAnsys guidelines
+Author-email: "ANSYS, Inc." <pyansys.support@ansys.com>
+Maintainer-email: PyAnsys developers <pyansys.maintainers@ansys.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: importlib-metadata >=4.0
+Requires-Dist: click>=7.0,<8.0.0
+Requires-Dist: ansys-cookiecutter
+Requires-Dist: isort>=5.10.1
+Project-URL: Source, https://github.com/pyansys/pyansys-template
+
+Welcome to Ansys Templates
+==========================
+
+The ``ansys-templates`` repository holds a collection of useful templates compliant
+with PyAnsys guidelines. It also provides the ``ansys-templates`` command line tool
+for interactively generating new projects based on previous templates.
+
+The main advantages of using this tool are:
+
+- Building process is fully interactive. There is no need to manually modify files.
+- Output of the project can easily be customized during the rendering process.
+- Generated projects are compliant with `PyAnsys Developer's Guidelines`_.
+
+.. _PyAnsys Developer's Guidelines: https://dev.docs.pyansys.com/
+
+For information on using this tool, see the `Ansys Templates Documentation`_.
+
+.. _Ansys Templates Documentation: https://templates.pyansys.com/ 
+
