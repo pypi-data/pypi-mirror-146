@@ -1,0 +1,3 @@
+[console_scripts]
+vault-pki-agent=vault_pki_agent.main:run
+
