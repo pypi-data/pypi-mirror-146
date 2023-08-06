@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+_init_.py
+setup.py
+test_myutil.py
+src/myutil.py
+src/myutility_internal.egg-info/PKG-INFO
+src/myutility_internal.egg-info/SOURCES.txt
+src/myutility_internal.egg-info/dependency_links.txt
+src/myutility_internal.egg-info/requires.txt
+src/myutility_internal.egg-info/top_level.txt
