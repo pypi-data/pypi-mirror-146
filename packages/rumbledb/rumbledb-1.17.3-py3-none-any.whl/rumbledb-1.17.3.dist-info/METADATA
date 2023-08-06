@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rumbledb
+Version: 1.17.3
+Summary: Jupyter extensions to use RumbleDB in notebooks, in server mode or through Apache Livy.
+Home-page: https://www.rumbledb.org/
+Author: Ghislain Fourny
+Author-email: ghislain.fourny@inf.ethz.ch
+License: Apache License 2.0
+Keywords: rumble jsoniq rumbledb json IPython jupyter
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: jupyter
+
+Jupyter extensions to use RumbleDB in notebooks, in server mode or through Apache Livy.
+
