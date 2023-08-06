@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ontoxref
+Version: 1.0.0
+Summary: Find mappings (or cross-references) between terms from ontologies and coding standards
+Home-page: https://github.com/protegeteam/ontoxref-tool
+Author: Josef Hardi
+Author-email: josef.hardi@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/protegeteam/ontoxref-tool/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lmdbm (==0.0.5)
+
+# ontoxref for Python 3.x
+
+Find mappings (or cross-references) between terms from ontologies and coding standards
+
+## Prerequisite
+
+The client module requires Python 3.x
+
+## Install
+
+```
+pip install ontoxref
+```
+
+## Example code
+
+```python
+from ontoxref.backend import ConnectionManager
+
+con_mngr = ConnectionManager.init("/path/to/xref-all.json")
+con = con_mngr.get_connection()
+service = con.get_service("XrefService")
+
+# Find ICD10CM code for 'EFO:0000095'"
+service.find_xref("EFO:0000095", "ICD10CM")
+
+# Find DOID code for 'MONDO:0004948'"
+service.find_xref("MONDO:0004948", "DOID")
+```
+
