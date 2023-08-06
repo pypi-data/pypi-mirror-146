@@ -1,0 +1,13 @@
+README.md
+setup.py
+easywsl/__init__.py
+easywsl/__main__.py
+easywsl/forward.py
+easywsl/utils.py
+easywsl/wsl.py
+easywsl.egg-info/PKG-INFO
+easywsl.egg-info/SOURCES.txt
+easywsl.egg-info/dependency_links.txt
+easywsl.egg-info/entry_points.txt
+easywsl.egg-info/requires.txt
+easywsl.egg-info/top_level.txt
