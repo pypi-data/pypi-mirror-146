@@ -1,0 +1,3 @@
+[console_scripts]
+aiscan = aiscan.__main__:main
+
