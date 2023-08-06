@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.9.0b7
+--------
+
+* Increase all timeouts to 10s
