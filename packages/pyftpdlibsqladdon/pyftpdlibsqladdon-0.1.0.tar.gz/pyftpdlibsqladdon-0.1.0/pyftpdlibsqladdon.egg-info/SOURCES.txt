@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pyftpdlibsqladdon/__init__.py
+pyftpdlibsqladdon/client.py
+pyftpdlibsqladdon/dummysqlauthorizer.py
+pyftpdlibsqladdon.egg-info/PKG-INFO
+pyftpdlibsqladdon.egg-info/SOURCES.txt
+pyftpdlibsqladdon.egg-info/dependency_links.txt
+pyftpdlibsqladdon.egg-info/requires.txt
+pyftpdlibsqladdon.egg-info/top_level.txt
+test/test_client.py
+test/test_dummysqlauthorizer.py
