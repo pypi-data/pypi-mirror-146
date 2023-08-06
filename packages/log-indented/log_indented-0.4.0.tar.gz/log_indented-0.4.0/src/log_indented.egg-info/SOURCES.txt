@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/log_indented/__init__.py
+src/log_indented/log_indented.py
+src/log_indented/log_indented_test.py
+src/log_indented.egg-info/PKG-INFO
+src/log_indented.egg-info/SOURCES.txt
+src/log_indented.egg-info/dependency_links.txt
+src/log_indented.egg-info/top_level.txt
