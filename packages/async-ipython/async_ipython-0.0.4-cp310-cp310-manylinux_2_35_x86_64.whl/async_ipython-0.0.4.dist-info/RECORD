@@ -1,0 +1,8 @@
+aipython/__init__.py,sha256=cS6BomajajwbTm7pjzlCnYS59kS9nVroiQ2zaNCQ25w,43
+aipython/__main__.py,sha256=O_b_Gj0iInvWZkUyoqFsmtq52X-mQvEpWH_XAoZG--0,78
+aipython/base.py,sha256=09WLak3Jj1dt5tVI8Wjoees9YHrh9MqSbTWG6GcOQhw,3884
+async_ipython-0.0.4.dist-info/entry_points.txt,sha256=YZKDVvnKzMdj1s6q8k08x3h2z2ORjt5IWT2xuowIZCo,50
+async_ipython-0.0.4.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+async_ipython-0.0.4.dist-info/WHEEL,sha256=A32-AnITah9vVYPDN6GDlBmZ1pgH0amueaBkGdcRMwQ,105
+async_ipython-0.0.4.dist-info/METADATA,sha256=XAR92jJKPBRgDuKVYNCTy4yIfDkUGwvIQworAdLhXdA,983
+async_ipython-0.0.4.dist-info/RECORD,,
