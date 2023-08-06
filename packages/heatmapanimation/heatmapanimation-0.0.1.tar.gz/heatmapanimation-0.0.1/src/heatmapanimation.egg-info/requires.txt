@@ -1,0 +1,14 @@
+geopandas
+matplotlib
+pandas
+requests
+urllib3
+imageio
+mpl_toolkits
+ffmpeg
+ffmpeg-python
+setuptools
+wheel
+
+[ffmpeg]
+ffmpeg>=5.0
