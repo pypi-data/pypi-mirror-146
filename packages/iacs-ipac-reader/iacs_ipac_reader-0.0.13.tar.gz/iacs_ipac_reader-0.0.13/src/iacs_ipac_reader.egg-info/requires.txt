@@ -1,0 +1,9 @@
+h5py>=3.5.0
+napari>=0.4.12
+napari_plugin_engine>=0.2.0
+numpy>=1.21.4
+opencv_contrib_python_headless>=4.4.0.46
+openpyxl>=3.0.9
+sklearn>=0.0
+PyQt5==5.12.3
+pandas>=1.4.0
