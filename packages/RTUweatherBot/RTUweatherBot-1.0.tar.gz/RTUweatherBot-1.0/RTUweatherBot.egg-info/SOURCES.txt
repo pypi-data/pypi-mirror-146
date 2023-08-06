@@ -1,0 +1,6 @@
+README.md
+setup.py
+RTUweatherBot.egg-info/PKG-INFO
+RTUweatherBot.egg-info/SOURCES.txt
+RTUweatherBot.egg-info/dependency_links.txt
+RTUweatherBot.egg-info/top_level.txt
