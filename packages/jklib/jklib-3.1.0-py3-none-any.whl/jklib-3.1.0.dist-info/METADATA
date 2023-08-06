@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: jklib
+Version: 3.1.0
+Summary: Package with utility functions on many different subjects
+Home-page: https://github.com/Jordan-Kowal/jklib
+Author: Jordan Kowal
+Author-email: kowaljordan@gmail.com
+License: MIT
+Download-URL: https://github.com/Jordan-Kowal/jklib/archive/v3.1.0.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# jklib
+
+## Description
+My personal python library containing my frequently used code snippets I've accumulated over the years
+
+The snippets are split into folders/categories:
+- `db`: Database and object storage management
+- `django`: Web development around **Django** and **Django Rest Framework** 
+- `dtsci`: Data-science, mostly revolving around **Numpy** and **Pandas**
+- `std`: Utility functions often unrelated to 3rd party packages, usually built around the standard library
+- `web`: Web scrapping and web browsing, mostly around **requests**, **selenium**, and the likes
+
+## Pre-commit hooks
+The project uses `pre-commit` hooks to keep a consistent file structure
+
+As such, if you want to make some changes while using the pre-commit hooks:
+- Install the necessary libraries: `pip install mypy isort black flake8`
+- Use them (through your IDE) to automatically format/check your files
+- Install pre-commit: `pip install pre-commit`
+- Setup pre-commit by running `pre-commit install`
+
+
