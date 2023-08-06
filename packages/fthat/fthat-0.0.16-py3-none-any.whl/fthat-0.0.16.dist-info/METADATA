@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: fthat
+Version: 0.0.16
+Summary: fthat Python library
+Home-page: https://gitlab.com/kraeml/py-fthat
+Author: Michael Schaar
+Author-email: kraeml@sesamestreet.franken.de
+License: UNKNOWN
+Project-URL: Documentation, https://fthat.readthedocs.io/
+Project-URL: Source Code, https://gitlab.com/kraeml/py-fthat
+Project-URL: Bug Tracker, https://gitlab.com/kraeml/py-fthat/-/issues
+Project-URL: Issue Tracker, https://gitlab.com/kraeml/py-fthat/-/issues
+Keywords: fischertechnik raspberrypi gpiozero gpio pigpio
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: gpiozero
+Requires-Dist: pigpio
+
+# py-fthat
+
+Python client to communicate with a fthat on a raspberry pi.
+
+See <https://tx-pi.de/de/hat/>
+
+It uses the ``gpiozerro`` library.
+
+
