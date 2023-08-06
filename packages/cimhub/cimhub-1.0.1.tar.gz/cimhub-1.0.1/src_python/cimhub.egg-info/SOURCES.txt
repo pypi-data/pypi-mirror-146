@@ -1,0 +1,10 @@
+README.md
+license.md
+setup.cfg
+setup.py
+src_python/cimhub.egg-info/PKG-INFO
+src_python/cimhub.egg-info/SOURCES.txt
+src_python/cimhub.egg-info/dependency_links.txt
+src_python/cimhub.egg-info/not-zip-safe
+src_python/cimhub.egg-info/requires.txt
+src_python/cimhub.egg-info/top_level.txt
