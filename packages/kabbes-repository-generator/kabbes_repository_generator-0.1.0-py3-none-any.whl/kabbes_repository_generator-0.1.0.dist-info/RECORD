@@ -1,0 +1,9 @@
+repository_generator/BaseRepository.py,sha256=oHcOMEaQj4e9UU5GTAOADuSwaORYDE1b5IoLCTgtwYE,3063
+repository_generator/__init__.py,sha256=TSsjCCfe4wUiKIxThnxRaJX7aKubi8QdmuEvz2tcyIU,343
+repository_generator/__main__.py,sha256=7PN7SgTscHEoN32qEkZlcyZ9BUM2YYx_o_JGbMFk2Fo,111
+repository_generator/repository_generator.py,sha256=ilXxjrj1D1sWiZOkAIjoPfc0U-baVQg69NnQAm4R344,657
+kabbes_repository_generator-0.1.0.dist-info/LICENSE,sha256=WPIb6l8rI8XZdKZSiOOw7_bKuta8GH0TK2Vvvk_FRGY,1069
+kabbes_repository_generator-0.1.0.dist-info/METADATA,sha256=XtTRoFtdm9uRVJE0__RqRhpe6ECLNJgmbmMSFYqXTgc,906
+kabbes_repository_generator-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kabbes_repository_generator-0.1.0.dist-info/top_level.txt,sha256=dHGiWPg3cXVKjJ-dUqkrnQEYTFkXd5xVjE_li0gf8HQ,21
+kabbes_repository_generator-0.1.0.dist-info/RECORD,,
