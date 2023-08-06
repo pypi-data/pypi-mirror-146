@@ -1,0 +1,11 @@
+amk/kakashi/__init__.py,sha256=NydDbfAKCmrQQcXUprpsN-CxSysv7jeL0ahG_SzKPHU,137
+amk/kakashi/arg_parse.py,sha256=XlAod9LKcWcH_gKHwxMvsU-b8SNL8kFeeKlvfpsfUkM,1507
+amk/kakashi/consts.py,sha256=EjGsmR5xfOHlsUqnR5yaoup0RNcumoXtvfDaKCiqZgQ,1257
+amk/kakashi/kakashi.py,sha256=RldRYnn4vz-2_5Ear8hlAxZaQyPh6t3VuJMQ0gAjWb0,3014
+amk/kakashi/logger.py,sha256=dYXi22UP7G3SGdpSPvR4iG0NMzWODpOzTn2nHdLuh2E,3527
+amk.kakashi-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+amk.kakashi-1.0.0.dist-info/METADATA,sha256=JcjJLX43d8izwi2ZJEC2MXXWh23eFNIdZRyUJbvEdL0,2042
+amk.kakashi-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+amk.kakashi-1.0.0.dist-info/entry_points.txt,sha256=xHXRuUHf8Oxw2Bdhcpj3i6CzMQbCeW3lArPenyGhWAM,103
+amk.kakashi-1.0.0.dist-info/top_level.txt,sha256=ONl-vKKsWLIMtcW4-zMiFLDRQNy0xLSMLpDh679A3jY,4
+amk.kakashi-1.0.0.dist-info/RECORD,,
