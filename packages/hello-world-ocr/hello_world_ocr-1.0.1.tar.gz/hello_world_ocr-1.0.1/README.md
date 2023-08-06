@@ -1,0 +1,21 @@
+Hello world program to test uploading a package to PyPi.
+
+This package contains a simple program that runs OCR on an input image.
+The OCR is powered by pytesseract which works well for structured text such as webpages or book scans.  
+It does not do well with unstructured text images such as words on a t-shirt or text on x-ray scans.
+
+``` 
+pip install hello-world-ocr
+```
+
+Once the package has been installed, bring up your python interpreter and run the following commands which will 
+1) import the ocr module, and 
+2) print out the text scanned from the image using ocr.scan()
+
+``` python
+import ocr
+
+# Assuming you have an image in your current directory called article.png
+image = "article.png"
+print(ocr.scan(image))
+```

@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/hello_world_ocr.egg-info/PKG-INFO
+src/hello_world_ocr.egg-info/SOURCES.txt
+src/hello_world_ocr.egg-info/dependency_links.txt
+src/hello_world_ocr.egg-info/requires.txt
+src/hello_world_ocr.egg-info/top_level.txt
+src/ocr/__init__.py
+src/ocr/__main__.py
+src/ocr/ocr.py
