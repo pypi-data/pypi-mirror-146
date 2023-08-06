@@ -1,0 +1,2 @@
+[console_scripts]
+depht_gui = app.__main__:main
