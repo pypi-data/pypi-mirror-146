@@ -1,0 +1,29 @@
+Metadata-Version: 1.2
+Name: radical.analytics
+Version: 1.14.0
+Summary: Profiling library for RADICAL-Cybertools
+Home-page: https://www.github.com/radical-cybertools/radical.analytics/
+Author: RADICAL Group at Rutgers University
+Author-email: radical@rutgers.edu
+Maintainer: The RADICAL Development Team
+Maintainer-email: radical@rutgers.edu
+License: MIT
+Project-URL: Documentation, https://radicalanalytics.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/radical-cybertools/radical.analytics/
+Project-URL: Issues, https://github.com/radical-cybertools/radical.analytics/issues
+Description: UNKNOWN
+Keywords: radical analytics
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
