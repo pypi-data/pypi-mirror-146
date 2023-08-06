@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/cricket_package/__init__.py
+src/cricket_package/cricket.py
+src/hand_cricket.egg-info/PKG-INFO
+src/hand_cricket.egg-info/SOURCES.txt
+src/hand_cricket.egg-info/dependency_links.txt
+src/hand_cricket.egg-info/top_level.txt
