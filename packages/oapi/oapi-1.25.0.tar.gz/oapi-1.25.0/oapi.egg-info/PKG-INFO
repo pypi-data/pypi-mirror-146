@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: oapi
+Version: 1.25.0
+Summary: An SDK for parsing OpenAPI (Swagger) 2.0 - 3.0 specifications
+Home-page: https://github.com/enorganic/oapi
+Author-email: david@belais.me
+License: MIT
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# oapi
+
+
