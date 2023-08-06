@@ -1,0 +1,18 @@
+-c requirements.txt
+-c requirements-test.txt
+
+twine
+wheel
+black
+flake8
+pip-tools
+pylint
+pylint-flask
+pylint-flask-sqlalchemy
+tox
+bump2version
+pipdeptree
+mypy
+sqlalchemy-stubs
+liccheck
+safety
