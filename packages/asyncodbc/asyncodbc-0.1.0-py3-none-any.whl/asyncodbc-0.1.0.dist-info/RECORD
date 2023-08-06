@@ -1,0 +1,17 @@
+aioodbc/__init__.py,sha256=WK3FpbHgmQAbbK6pJa1XRqgNzbM0y9YnbLpr-oogv8k,773
+aioodbc/connection.py,sha256=6_N4_5SOE8CYRBsF8pmkKlMGXc2ClWx0Lp0mm_kXL18,8643
+aioodbc/cursor.py,sha256=W17MHpU0M4HRM4YocgENXvSfZ6KG4jWxh8hdgBlcmNI,12133
+aioodbc/log.py,sha256=gOTMPe1LE4urpIZRnnREgBoj1qw18inTNqQHqWr36NI,124
+aioodbc/pool.py,sha256=gwT4bflriVMMWtaUGNCwMCl-aO_tNwTX9Q-WVa_K-8k,5855
+aioodbc/utils.py,sha256=IMFAQ82PPClbZ-ZVJ58OwH5TQs8HPbj-Jvk_TBjzZz8,2797
+asyncodbc/__init__.py,sha256=lxxDnFqM8pmnekpSdhV3vdr37OTd54TZ686o6HzrVlU,773
+asyncodbc/connection.py,sha256=6_N4_5SOE8CYRBsF8pmkKlMGXc2ClWx0Lp0mm_kXL18,8643
+asyncodbc/cursor.py,sha256=W17MHpU0M4HRM4YocgENXvSfZ6KG4jWxh8hdgBlcmNI,12133
+asyncodbc/log.py,sha256=gOTMPe1LE4urpIZRnnREgBoj1qw18inTNqQHqWr36NI,124
+asyncodbc/pool.py,sha256=stSg_yo65MZBFFR-pYQtyzNddWqlPLJ_jncpJCQFJVE,5692
+asyncodbc/utils.py,sha256=IMFAQ82PPClbZ-ZVJ58OwH5TQs8HPbj-Jvk_TBjzZz8,2797
+asyncodbc-0.1.0.dist-info/LICENSE,sha256=Nd6vo1V-lDYsEmuCDJBV8SvfyYmHcCC5FwgoqZczKMQ,11316
+asyncodbc-0.1.0.dist-info/METADATA,sha256=5DpgOsxk7-OtFhl44C-Npce3cVuqAXc41bTKFa7GCEY,7422
+asyncodbc-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+asyncodbc-0.1.0.dist-info/top_level.txt,sha256=cY5AHFL_zIN5QmONy05A-RSN44LbKfOre3J5Ut0jLqA,10
+asyncodbc-0.1.0.dist-info/RECORD,,
