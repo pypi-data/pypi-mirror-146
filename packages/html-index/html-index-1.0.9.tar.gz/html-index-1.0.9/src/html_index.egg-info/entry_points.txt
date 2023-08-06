@@ -1,0 +1,3 @@
+[console_scripts]
+index = html_index.index:main
+
