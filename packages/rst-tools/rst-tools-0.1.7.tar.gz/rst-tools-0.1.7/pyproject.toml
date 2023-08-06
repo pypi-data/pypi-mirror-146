@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rst-tools"
+version = "0.1.7"
+description = "Rough sets implementation for Python"
+authors = ["Rofilde Hasudungan <rofilde@gmail.com>"]
+readme = "README.md"
+repository="https://github.com/rhsitorus/rst-tools"
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pandas = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
