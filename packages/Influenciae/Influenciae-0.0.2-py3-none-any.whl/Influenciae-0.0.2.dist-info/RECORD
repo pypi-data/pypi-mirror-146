@@ -1,0 +1,16 @@
+deel/influenciae/__init__.py,sha256=hvMHOSrK2KLG5PqIAiIilHXOnFST1ECNJFatHGNp5nE,521
+deel/influenciae/common/__init__.py,sha256=2NBCJ5TZYAbX--DKwDEmgck4zQ3VDPnJ5HFxhwe019Q,610
+deel/influenciae/common/compute_hessian_block.py,sha256=6dW16043V3K3adOGmcCZhH_kxECabuWnNycmGr_Enn4,4213
+deel/influenciae/common/conjugate_gradients.py,sha256=fI80ruT0kCtgZO6RTAP7DgjdNFwfVfXGzjHbwHwCyi8,2866
+deel/influenciae/common/model_wrappers.py,sha256=USZx0q986rlo7UDzdDJ6snZvnZ-T9Z3F5uH70wJb95Q,8328
+deel/influenciae/common/tf_operations.py,sha256=cUE4lJtAD9unqzn-ASOCiJ3eAHv_5KiA1DbBBQ72SOM,2292
+deel/influenciae/influence/__init__.py,sha256=NYHCt9Hnv5HJGk4eayCTzPjUpjAvyrODJhVGkrIGnHg,345
+deel/influenciae/influence/first_order_influence_calculator.py,sha256=yTO97bJC1vJmEJuKxu4vVu1yjIwO38ddWFjRSqFhI40,7236
+deel/influenciae/influence/influence_calculator.py,sha256=vJko8b6_e-7ceszhT063V3gpOH9bEPWuSZve-mH11DY,8934
+deel/influenciae/influence/inverse_hessian_vector_product.py,sha256=5n1Z-DMAUiGuBQ6F7HmiGgmUXc0RiqBwM55u6eoA0DY,18142
+deel/influenciae/types/__init__.py,sha256=E-TtLmORnZuKP6J6y7s_IPqg2K6vhIQngKNDiT4Cyao,405
+Influenciae-0.0.2.dist-info/LICENSE,sha256=XLSX9BBXpgXo2StX1um3jnIkbqi_Z9KMzBBznx-wJdY,1285
+Influenciae-0.0.2.dist-info/METADATA,sha256=glXk2411i7kFYvXe7IcnzeRuRh9zBZMRh0cnhVA8B_Y,1399
+Influenciae-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Influenciae-0.0.2.dist-info/top_level.txt,sha256=NvSeSUezst024_q94CgNNVYChYiRTXNTtmyNpY3sC7M,5
+Influenciae-0.0.2.dist-info/RECORD,,
