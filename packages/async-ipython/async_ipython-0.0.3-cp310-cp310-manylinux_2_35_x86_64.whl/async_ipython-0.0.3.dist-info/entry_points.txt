@@ -1,0 +1,3 @@
+[console_scripts]
+aipython=aipython.__main__:run
+
