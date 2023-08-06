@@ -1,0 +1,9 @@
+sqlalchemy
+
+[testing]
+pytest>=4.6.0
+pylint>=2.0
+black
+isort
+mypy
+sqlalchemy-stubs

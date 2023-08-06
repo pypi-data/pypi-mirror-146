@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.0.3
+-----
+
+* Add custom PyToSQLException (#1)
