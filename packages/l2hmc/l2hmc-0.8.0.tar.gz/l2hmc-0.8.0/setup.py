@@ -1,0 +1,107 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+package_dir = \
+{'': 'src'}
+
+packages = \
+['l2hmc',
+ 'l2hmc.distributions',
+ 'l2hmc.distributions.pytorch',
+ 'l2hmc.distributions.tensorflow',
+ 'l2hmc.dynamics',
+ 'l2hmc.dynamics.pytorch',
+ 'l2hmc.dynamics.tensorflow',
+ 'l2hmc.group',
+ 'l2hmc.group.pytorch',
+ 'l2hmc.group.tensorflow',
+ 'l2hmc.lattice',
+ 'l2hmc.lattice.su3',
+ 'l2hmc.lattice.su3.numpy',
+ 'l2hmc.lattice.su3.pytorch',
+ 'l2hmc.lattice.su3.tensorflow',
+ 'l2hmc.lattice.u1.numpy',
+ 'l2hmc.lattice.u1.pytorch',
+ 'l2hmc.lattice.u1.tensorflow',
+ 'l2hmc.learning_rate.tensorflow',
+ 'l2hmc.loss',
+ 'l2hmc.loss.pytorch',
+ 'l2hmc.loss.tensorflow',
+ 'l2hmc.network',
+ 'l2hmc.network.jax',
+ 'l2hmc.network.pytorch',
+ 'l2hmc.network.tensorflow',
+ 'l2hmc.notebooks',
+ 'l2hmc.scripts',
+ 'l2hmc.scripts.pytorch',
+ 'l2hmc.scripts.tensorflow',
+ 'l2hmc.trackers',
+ 'l2hmc.trackers.pytorch',
+ 'l2hmc.trackers.tensorflow',
+ 'l2hmc.trainers',
+ 'l2hmc.trainers.pytorch',
+ 'l2hmc.trainers.tensorflow',
+ 'l2hmc.utils',
+ 'l2hmc.utils.pytorch',
+ 'l2hmc.utils.tensorflow']
+
+package_data = \
+{'': ['*'],
+ 'l2hmc': ['bin/*',
+           'conf/*',
+           'conf/accelerate/cpu/*',
+           'conf/accelerate/gpu/*',
+           'conf/annealing_schedule/*',
+           'conf/conv/*',
+           'conf/dynamics/*',
+           'conf/learning_rate/*',
+           'conf/logdir/*',
+           'conf/loss/*',
+           'conf/mode/*',
+           'conf/net_weights/*',
+           'conf/network/*',
+           'conf/steps/*',
+           'conf/sweeps/*']}
+
+install_requires = \
+['accelerate>=0.6.2,<0.7.0',
+ 'arviz>=0.12.0,<0.13.0',
+ 'bokeh>=2.4.2,<3.0.0',
+ 'celerite>=0.4.2,<0.5.0',
+ 'h5py>=3.6.0,<4.0.0',
+ 'horovod>=0.24.2,<0.25.0',
+ 'hydra-colorlog>=1.1.0,<2.0.0',
+ 'hydra-core>=1.1.1,<2.0.0',
+ 'ipython>=8.2.0,<9.0.0',
+ 'joblib>=1.1.0,<2.0.0',
+ 'matplotlib>=3.5.1,<4.0.0',
+ 'matplotx>=0.3.6,<0.4.0',
+ 'mpi4py>=3.1.3,<4.0.0',
+ 'nodejs>=0.1.1,<0.2.0',
+ 'numpy>=1.22.3,<2.0.0',
+ 'rich>=12.1.0,<13.0.0',
+ 'seaborn>=0.11.2,<0.12.0',
+ 'tensorflow>=2.8.0,<3.0.0',
+ 'torch>=1.11.0,<2.0.0',
+ 'wandb>=0.12.11,<0.13.0',
+ 'xarray>=2022.3.0,<2023.0.0']
+
+setup_kwargs = {
+    'name': 'l2hmc',
+    'version': '0.8.0',
+    'description': 'L2HMC algorithm for sampling in Lattice QCD',
+    'long_description': '<div align="center">\n    \n  <h1> <tt>l2hmc</tt>-qcd </h1>\n  <a href="https://pytorch.org/get-started/locally/"><img alt="pyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a> <a href="https://hydra.cc"><img alt="hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a> <a href="https://www.tensorflow.org"><img alt="tensorflow" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?&logo=TensorFlow&logoColor=white"></a> \n  <br>\n  <a href="https://arxiv.org/abs/2112.01582"><img alt="arxiv" src="http://img.shields.io/badge/arXiv-2112.01582-B31B1B.svg"></a> <a href="https://arxiv.org/abs/2105.03418"><img alt="arxiv" src="http://img.shields.io/badge/arXiv-2105.03418-B31B1B.svg"></a> \n  <br>\n  <a href="https://github.com/saforem2/l2hmc-qcd/"><img alt="l2hmc-qcd" src="https://img.shields.io/badge/-l2hmc--qcd-252525?style=flat&logo=github&labelColor=gray"></a> <a href="https://www.codefactor.io/repository/github/saforem2/l2hmc-qcd"><img alt="codefactor" src="https://www.codefactor.io/repository/github/saforem2/l2hmc-qcd/badge"></a>\n  <br>\n</div>\n\n<!---![](assets/image.svg)--->\n\n<!--- # l2hmc-qcd  [![CodeFactor](https://www.codefactor.io/repository/github/saforem2/l2hmc-qcd/badge)](https://www.codefactor.io/repository/github/saforem2/l2hmc-qcd)--->\n\n<!---![hits](https://hitcounter.pythonanywhere.com/nocount/tag.svg?url=https://github.com/saforem2/l2hmc-qcd)--->\n\n<!---![HitCount] (http://hits.dwyl.com/saforem2/l2hmc-qcd.svg)--->\n\n\n## 📊 [Slides](https://www.bit.ly/l2hmc-ect2021)\n  - [**Accelerated Sampling Techniques for Lattice Gauge Theory**](https://saforem2.github.io/l2hmc-dwq25/#/) @ [BNL & RBRC: DWQ @ 25](https://indico.bnl.gov/event/13576/), December 2021\n  - [**Training Topological Samplers for Lattice Gauge Theory**](https://bit.ly/l2hmc-ect2021) from the [*Machine Learning for High Energy Physics, on and off the Lattice*](https://indico.ectstar.eu/event/77/) @ ect* Trento (09/30/2021)\n\n ## 📒 [Example Notebook](./l2hmc-qcd/notebooks/l2hmc-qcd.ipynb)\n\n- [x]   Accepted to the [Deep Learning for Simulation (SimDL) Workshop](https://simdl.github.io/overview/) at **ICLR 2021**\n  - 📚 : [arXiv:2105.03418](https://arxiv.org/abs/2105.03418)  \n  - 📊 : [poster](https://www.bit.ly/l2hmc_poster)\n---\n\n## Overview\n\nThe L2HMC algorithm aims to improve upon [HMC](https://en.wikipedia.org/wiki/Hamiltonian_Monte_Carlo) by optimizing a carefully chosen loss function which is designed to minimize autocorrelations within the Markov Chain, thereby improving the efficiency of the sampler.\n\nThis work is based on the original implementation: [brain-research/l2hmc/](https://github.com/brain-research/l2hmc).\n\nA detailed description of the L2HMC algorithm can be found in the paper:\n\n[*Generalizing Hamiltonian Monte Carlo with Neural Network*](https://arxiv.org/abs/1711.09268)\n\nby [Daniel Levy](http://ai.stanford.edu/~danilevy), [Matt D. Hoffman](http://matthewdhoffman.com/) and [Jascha Sohl-Dickstein](sohldickstein.com).\n\nBroadly, given an *analytically* described target distribution, π(x), L2HMC provides a *statistically exact* sampler that:\n\n- Quickly converges to the target distribution (fast ***burn-in***).\n- Quickly produces uncorrelated samples (fast ***mixing***).\n- Is able to efficiently mix between energy levels.\n- Is capable of traversing low-density zones to mix between modes (often difficult for generic HMC).\n\n\n## L2HMC for LatticeQCD\n\n**Goal:** Use L2HMC to **efficiently** generate _gauge configurations_ for calculating observables in lattice QCD.\n\nA detailed description of the (ongoing) work to apply this algorithm to simulations in lattice QCD (specifically, a 2D U(1) lattice gauge theory model) can be found in [`doc/main.pdf`](doc/main.pdf).\n\n<div align="center">\n <img src="assets/l2hmc_poster.jpeg" alt="l2hmc-qcd poster"/>\n</div>\n\n## Organization\n\n### Dynamics / Network\n\nThe base class for the augmented L2HMC leapfrog integrator is implemented in the [`BaseDynamics`](l2hmc-qcd/dynamics/base_dynamics.py) (a `tf.keras.Model` object).\n\nThe [`GaugeDynamics`](l2hmc-qcd/dynamics/gauge_dynamics.py) is a subclass of `BaseDynamics` containing modifications for the 2D U(1) pure gauge theory.\n\nThe network is defined in [` l2hmc-qcd/network/functional_net.py`](l2hmc-qcd/network/functional_net.py).\n\n\n#### Network Architecture\n\nAn illustration of the `leapfrog layer` updating `(x, v) --> (x\', v\')` can be seen below.\n\n<div align="center">\n <img src="assets/lflayer.png" alt="leapfrog layer" width=800/>\n</div>\n<!---The network takes as input the position `x`, momentum `v` and and outputs the quantities `sx, tx, qx`, which are then used in the augmented Hamiltonian dynamics to update `x`.--->\n\n<!---Similarly, the network used for updating the momentum variable `v` has an identical architecture, taking as inputs the position `x`, the gradient of the potential, `dUdX`, and the same fictitious time `t`, and outputs the quantities `sv, tv, qv` which are then used to update `v`.--->\n\n<!---**Note:** In the image above, the quantities `x\', v\'\'` represent the outputs of a Dense layer followed by a `ReLu` nonlinearity.--->\n\n### Lattice\n\nLattice code can be found in [`lattice.py`](l2hmc-qcd/lattice/lattice.py), specifically the `GaugeLattice` object that provides the base structure on which our target distribution exists.\n\nAdditionally, the `GaugeLattice` object implements a variety of methods for calculating physical observables such as the average plaquette, ɸₚ, and the topological charge Q,\n\n### Training\n\nThe training loop is implemented in [`l2hmc-qcd/utils/training_utils.py `](l2hmc-qcd/utils/training_utils.py).\n\nTo train the sampler on a 2D U(1) gauge model using the parameters specified in [` bin/train_configs.json`](bin/train_configs.json):\n\n```bash\n$ python3 /path/to/l2hmc-qcd/l2hmc-qcd/train.py --json_file=/path/to/l2hmc-qcd/bin/train_configs.json\n```\n\nOr via the [` bin/train.sh `](bin/train.sh) script provided in [` bin/ `](bin/).\n\n## Features\n\n- **Distributed training**\n  (via [`horovod`](https://github.com/horovod/horovod)): If `horovod` is installed, the model can be trained across multiple GPUs (or CPUs) by:\n\n  ```bash\n  #!/bin/bash\n  \n  TRAINER=/path/to/l2hmc-qcd/l2hmc-qcd/train.py\n  JSON_FILE=/path/to/l2hmc-qcd/bin/train_configs.json\n  \n  horovodrun -np ${PROCS} python3 ${TRAINER} --json_file=${JSON_FILE}\n  ```\n\n## Contact\n---\n***Code author:*** Sam Foreman\n\n***Pull requests and issues should be directed to:*** [saforem2](http://github.com/saforem2)\n\n## Citation\n\nIf you use this code or found this work interesting, please cite our work along with the original paper:\n\n```bibtex\n@misc{foreman2021deep,\n      title={Deep Learning Hamiltonian Monte Carlo}, \n      author={Sam Foreman and Xiao-Yong Jin and James C. Osborn},\n      year={2021},\n      eprint={2105.03418},\n      archivePrefix={arXiv},\n      primaryClass={hep-lat}\n}\n```\n\n```bibtex\n@article{levy2017generalizing,\n  title={Generalizing Hamiltonian Monte Carlo with Neural Networks},\n  author={Levy, Daniel and Hoffman, Matthew D. and Sohl-Dickstein, Jascha},\n  journal={arXiv preprint arXiv:1711.09268},\n  year={2017}\n}\n```\n\n## Acknowledgement\n\n<!---<div align="center">\n <img src="assets/anl.png" alt="Argonne National Laboratory Icon" width=500/>\n</div>!--->\nThis research used resources of the Argonne Leadership Computing Facility, which is a DOE Office of Science User Facility supported under contract DE_AC02-06CH11357.  This work describes objective technical results and analysis. Any subjective views or opinions that might be expressed in the work do not necessarily represent the views of the U.S. DOE or the United States\nGovernment. Declaration of Interests - None.\n\n[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsaforem2%2Fl2hmc-qcd&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)\n\n\n[![Stargazers over time](https://starchart.cc/saforem2/l2hmc-qcd.svg)](https://starchart.cc/saforem2/l2hmc-qcd)\n',
+    'author': 'Sam Foreman',
+    'author_email': 'saforem2@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/saforem2/l2hmc-qcd',
+    'package_dir': package_dir,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.10,<3.11',
+}
+
+
+setup(**setup_kwargs)
