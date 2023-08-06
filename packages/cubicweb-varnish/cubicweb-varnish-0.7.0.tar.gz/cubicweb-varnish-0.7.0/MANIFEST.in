@@ -1,0 +1,14 @@
+include setup.py
+include README.rst
+recursive-include cubicweb_varnish *.py
+recursive-include cubicweb_varnish/data *.gif *.png *.ico *.css *.js
+recursive-include cubicweb_varnish/i18n *.po
+recursive-include test *.py
+recursive-include test/data bootstrap_cubes *.py
+include tox.ini
+include __pkginfo__.py
+exclude .yamllint
+exclude .cube-doctor.yml
+exclude .gitlab-ci.yml
+exclude .gitlab-ci-extended.yml
+exclude CHANGELOG.md
