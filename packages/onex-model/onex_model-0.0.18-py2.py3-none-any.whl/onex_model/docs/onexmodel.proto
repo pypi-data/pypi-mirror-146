@@ -1,0 +1,1245 @@
+// ONEx Data Models 0.0.1
+// License: MIT
+
+syntax = "proto3";
+
+package onexmodel;
+
+option go_package = "github.com/open-network-experiments/onexgomodel/onexmodel";
+
+import "google/protobuf/descriptor.proto";
+import "google/protobuf/empty.proto";
+
+message OpenApiMsgOpt {
+  string description = 10;
+}
+extend google.protobuf.MessageOptions {
+  optional OpenApiMsgOpt msg_meta = 60001;
+}
+
+message OpenApiFldOpt {
+  string default = 10;
+  string description = 20;
+}
+extend google.protobuf.FieldOptions {
+  optional OpenApiFldOpt fld_meta = 60002;
+}
+
+message OpenApiSvcOpt {
+  string description = 10;
+}
+extend google.protobuf.ServiceOptions {
+  optional OpenApiSvcOpt svc_meta = 60003;
+}
+
+message OpenApiRpcOpt {
+  string description = 10;
+}
+extend google.protobuf.MethodOptions {
+  optional OpenApiRpcOpt rpc_meta = 60004;
+}
+
+message GlobalNamedObject {
+  option (msg_meta).description = "Description missing in models";
+
+  optional string name = 1 [
+    (fld_meta).description = "Unique identifier for an object"
+  ];
+}
+
+message ErrorDetails {
+  option (msg_meta).description = "Description missing in models";
+
+  repeated ErrorItem errors = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message WarningDetails {
+  option (msg_meta).description = "Description missing in models";
+
+  repeated ErrorItem warnings = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ErrorItem {
+  option (msg_meta).description = "Description missing in models";
+
+  optional string message = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional int32 code = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional string detail = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message Config {
+  option (msg_meta).description = "The resources that define a fabric configuration.";
+
+  repeated Host hosts = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional Fabric fabric = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional Dataflow dataflow = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional Chaos chaos = 4 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional Insights insights = 5 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message Host {
+  option (msg_meta).description = "Description missing in models";
+
+  string name = 1 [
+    (fld_meta).description = "The name, uniquely identifying the host"
+  ];
+
+  string address = 2 [
+    (fld_meta).description = "The test address of the host"
+  ];
+
+  optional int32 prefix = 3 [
+    (fld_meta).default = "24",
+    (fld_meta).description = "The prefix of the host"
+  ];
+}
+
+message Fabric {
+  option (msg_meta).description = "Description missing in models";
+
+  message Choice {
+    enum Enum {
+      unspecified = 0;
+      clos = 1;
+    }
+  }
+  optional Choice.Enum choice = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional FabricClos clos = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  repeated FabricQosProfile qos_profiles = 3 [
+    (fld_meta).description = "A list of Quality of Service (QoS) profiles"
+  ];
+
+  repeated FabricL1SettingsProfile layer1_profiles = 4 [
+    (fld_meta).description = "A list of Layer 1 settings profiles"
+  ];
+}
+
+message FabricClos {
+  option (msg_meta).description = "An emulation of a multistage switch topology. When folded, results in a topology with (up to) 3 tiers identified as \nspine, pod and tor tier.";
+
+  optional FabricSpine spine = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  repeated FabricPod pods = 2 [
+    (fld_meta).description = "The pods in the topology."
+  ];
+
+  repeated SwitchHostLink host_links = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  repeated FabricPodProfile pod_profiles = 4 [
+    (fld_meta).description = "A list of pod profiles"
+  ];
+
+  repeated FabricTorProfile tor_profiles = 5 [
+    (fld_meta).description = "A list of ToR switch profiles"
+  ];
+
+  optional int32 parallel_fabric_count = 6 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "Number of parallel fabrics (aka fabric colors). Spine and pod switches \nare fully meshed within a fabric"
+  ];
+}
+
+message FabricSpine {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 count = 1 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "The number of spines to be created with each spine sharing the same\ndownlink_ecmp_mode and qos_profile_name properties."
+  ];
+
+  message DownlinkEcmpMode {
+    enum Enum {
+      unspecified = 0;
+      random_spray = 1;
+      hash_3_tuple = 2;
+      hash_5_tuple = 3;
+    }
+  }
+  optional DownlinkEcmpMode.Enum downlink_ecmp_mode = 2 [
+    (fld_meta).description = "The algorithm for packet distribution over ECMP links.\n- random_spray randomly puts each packet on an ECMP member links \n- hash_3_tuple is a 3 tuple hash of ipv4 src, dst, protocol\n- hash_5_tuple is static_hash_ipv4_l4 but a different resulting RTAG7 hash mode"
+  ];
+
+  optional string qos_profile_name = 3 [
+    (fld_meta).description = "The name of a qos profile shared by the spines.\n\nx-constraint:\n- #/components/schemas/QosProfile/properties/name\n"
+  ];
+}
+
+message FabricPod {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 count = 1 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "The number of pods that will share the same profile"
+  ];
+
+  optional string pod_profile_name = 2 [
+    (fld_meta).description = "The pod profile associated with the pod(s).\n\nx-constraint:\n- #/components/schemas/PodProfile/properties/name\n"
+  ];
+}
+
+message FabricPodProfile {
+  option (msg_meta).description = "Description missing in models";
+
+  optional string name = 1 [
+    (fld_meta).description = "Uniquely identifies a pod profile"
+  ];
+
+  optional FabricPodSwitch pod_switch = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  repeated FabricTor tors = 3 [
+    (fld_meta).description = "The ToRs in the pod"
+  ];
+
+  optional string pod_to_spine_oversubscription = 4 [
+    (fld_meta).description = "Oversubscription ratio of the pod switches"
+  ];
+}
+
+message FabricPodSwitch {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 count = 1 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  message UplinkEcmpMode {
+    enum Enum {
+      unspecified = 0;
+      random_spray = 1;
+      hash_3_tuple = 2;
+      hash_5_tuple = 3;
+    }
+  }
+  optional UplinkEcmpMode.Enum uplink_ecmp_mode = 2 [
+    (fld_meta).description = "The algorithm for packet distribution over ECMP links.\n- random_spray randomly puts each packet on an ECMP member links \n- hash_3_tuple is a 3 tuple hash of ipv4 src, dst, protocol\n- hash_5_tuple is static_hash_ipv4_l4 but a different resulting RTAG7 hash mode"
+  ];
+
+  message DownlinkEcmpMode {
+    enum Enum {
+      unspecified = 0;
+      random_spray = 1;
+      hash_3_tuple = 2;
+      hash_5_tuple = 3;
+    }
+  }
+  optional DownlinkEcmpMode.Enum downlink_ecmp_mode = 3 [
+    (fld_meta).description = "The algorithm for packet distribution over ECMP links.\n- random_spray randomly puts each packet on an ECMP member links \n- hash_3_tuple is a 3 tuple hash of ipv4 src, dst, protocol\n- hash_5_tuple is static_hash_ipv4_l4 but a different resulting RTAG7 hash mode"
+  ];
+
+  optional string qos_profile_name = 4 [
+    (fld_meta).description = "The name of a qos profile associated with the switches in this pod.\n\nx-constraint:\n- #/components/schemas/QosProfile/properties/name\n"
+  ];
+}
+
+message FabricTor {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 count = 1 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "number of ToR switches that will share the same profile"
+  ];
+
+  optional string tor_profile_name = 2 [
+    (fld_meta).description = "The names of ToR profiles associated with the ToR switch(es)\n\nx-constraint:\n- #/components/schemas/TorProfile/properties/name\n"
+  ];
+}
+
+message FabricTorProfile {
+  option (msg_meta).description = "Description missing in models";
+
+  optional string name = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  message TorMode {
+    enum Enum {
+      unspecified = 0;
+      layer2 = 1;
+      layer3 = 2;
+    }
+  }
+  optional TorMode.Enum tor_mode = 2 [
+    (fld_meta).description = "ToR switch mode"
+  ];
+
+  message UplinkEcmpMode {
+    enum Enum {
+      unspecified = 0;
+      random_spray = 1;
+      hash_3_tuple = 2;
+      hash_5_tuple = 3;
+    }
+  }
+  optional UplinkEcmpMode.Enum uplink_ecmp_mode = 3 [
+    (fld_meta).description = "The algorithm for packet distribution over ECMP links.\n- random_spray randomly puts each packet on an ECMP member links \n- hash_3_tuple is a 3 tuple hash of ipv4 src, dst, protocol\n- hash_5_tuple is static_hash_ipv4_l4 but a different resulting RTAG7 hash mode"
+  ];
+
+  optional string qos_profile_name = 4 [
+    (fld_meta).description = "The name of a qos profile associated with the ToR switch(es)\n\nx-constraint:\n- #/components/schemas/QosProfile/properties/name\n"
+  ];
+
+  optional string tor_to_pod_oversubscription = 5 [
+    (fld_meta).description = "The oversubscription ratio of the ToR switch(es)"
+  ];
+}
+
+message FabricQosProfile {
+  option (msg_meta).description = "Description missing in models";
+
+  string name = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional FabricQosProfileIngressAdmission ingress_admission = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional FabricQosProfileScheduler scheduler = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional FabricQosProfilePacketClassification packet_classification = 4 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional FabricQosProfileWred wred = 5 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message FabricQosProfileIngressAdmission {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 reserved_buffer_bytes = 1 [
+    (fld_meta).default = "0",
+    (fld_meta).description = "Buffer space (in bytes) reserved for each port that this Qos profile applies to"
+  ];
+
+  optional int32 shared_buffer_bytes = 2 [
+    (fld_meta).default = "0",
+    (fld_meta).description = "Amount of shared buffer space (in bytes) available"
+  ];
+
+  repeated string priority_list = 3 [
+    (fld_meta).description = "List of priorities for which the buffer sizes should be applied"
+  ];
+}
+
+message FabricQosProfileScheduler {
+  option (msg_meta).description = "Description missing in models";
+
+  message SchedulerMode {
+    enum Enum {
+      unspecified = 0;
+      strict_priority = 1;
+      weighted_round_robin = 2;
+    }
+  }
+  optional SchedulerMode.Enum scheduler_mode = 1 [
+    (fld_meta).description = "The queue scheduling discipline "
+  ];
+
+  repeated int32 weight_list = 2 [
+    (fld_meta).description = "A list of egress queue weights for weighted round robin scheduler mode"
+  ];
+}
+
+message FabricQosProfilePacketClassification {
+  option (msg_meta).description = "Description missing in models";
+
+  optional FabricQosProfilePacketClassificationMap map_dscp_to_traffic_class = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional FabricQosProfilePacketClassificationMap map_traffic_class_to_queue = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message FabricQosProfilePacketClassificationMap {
+  option (msg_meta).description = "Description missing in models";
+}
+
+message FabricQosProfileWred {
+  option (msg_meta).description = "WRED (weighted random early detection) configuration";
+
+  repeated string queue_list = 1 [
+    (fld_meta).description = "List of queues for which WRED is enabled"
+  ];
+
+  optional bool ecn_marking_enabled = 2 [
+    (fld_meta).default = "False",
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional int32 min_threshold_bytes = 3 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "Egress queue threshold beyond which packets will be droppes or marked"
+  ];
+
+  optional int32 max_threshold_bytes = 4 [
+    (fld_meta).default = "2",
+    (fld_meta).description = "Egress queue threshold beyond which packets will be droppes or marked"
+  ];
+
+  optional int32 max_probability_percent = 5 [
+    (fld_meta).default = "100",
+    (fld_meta).description = "Probability of dropping/marking packets at max threshold"
+  ];
+}
+
+message FabricL1SettingsProfile {
+  option (msg_meta).description = "Description missing in models";
+
+  optional string name = 1 [
+    (fld_meta).description = "Uniquely identifies a layer 1 settings profile"
+  ];
+
+  message LinkSpeed {
+    enum Enum {
+      unspecified = 0;
+      speed_100_gbps = 1;
+      speed_200_gbps = 2;
+      speed_50_gbps = 3;
+    }
+  }
+  optional LinkSpeed.Enum link_speed = 2 [
+    (fld_meta).default = "LinkSpeed.Enum.speed_100_gbps",
+    (fld_meta).description = "Link speed"
+  ];
+
+  optional FabricL1SettingsProfileAutonegotiation autonegotiation = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message FabricL1SettingsProfileAutonegotiation {
+  option (msg_meta).description = "Description missing in models";
+
+  message Choice {
+    enum Enum {
+      unspecified = 0;
+      enabled = 1;
+      disabled = 2;
+    }
+  }
+  optional Choice.Enum choice = 1 [
+    (fld_meta).default = "Choice.Enum.enabled",
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional FabricL1SettingsProfileAutonegotiationEnabled enabled = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional FabricL1SettingsProfileAutonegotiationDisabled disabled = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message FabricL1SettingsProfileAutonegotiationEnabled {
+  option (msg_meta).description = "Description missing in models";
+
+  optional bool advertise_fec = 1 [
+    (fld_meta).default = "True",
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message FabricL1SettingsProfileAutonegotiationDisabled {
+  option (msg_meta).description = "Description missing in models";
+
+  message FecMode {
+    enum Enum {
+      unspecified = 0;
+      reed_solomon = 1;
+      firecode = 2;
+      kp4 = 3;
+    }
+  }
+  optional FecMode.Enum fec_mode = 1 [
+    (fld_meta).default = "FecMode.Enum.reed_solomon",
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message SwitchHostLink {
+  option (msg_meta).description = "The ingress point of a host which is the index of a spine, pod or tor switch.";
+
+  string host_name = 1 [
+    (fld_meta).description = "TBD\n\nx-constraint:\n- #components/schemas/Host/properties/name\n"
+  ];
+
+  message HostType {
+    enum Enum {
+      unspecified = 0;
+      external = 1;
+      internal_traffic_sink = 2;
+    }
+  }
+  optional HostType.Enum host_type = 2 [
+    (fld_meta).default = "HostType.Enum.external",
+    (fld_meta).description = "Optional host type, if fabric is rendered on physical box.\n- external for hosts/servers physically connected to front panel ports\n- internal_traffic_sink for an emulated server that acts as a traffic sink (i.e. packets sent to its IP address will be routed through the emulated fabric)"
+  ];
+
+  optional int32 front_panel_port = 3 [
+    (fld_meta).description = "Optional front panel port number, if fabric is rendered on physical box"
+  ];
+
+  optional string l1_profile_name = 4 [
+    (fld_meta).description = "The layer 1 settings profile associated with the host/front panel port.\n\nx-constraint:\n- #/components/schemas/Fabric.L1SettingsProfile/properties/name\n"
+  ];
+
+  message Choice {
+    enum Enum {
+      unspecified = 0;
+      spine = 1;
+      pod = 2;
+      tor = 3;
+    }
+  }
+  optional Choice.Enum choice = 5 [
+    (fld_meta).default = "Choice.Enum.tor",
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional int32 spine = 6 [
+    (fld_meta).description = "One based index of the spine switch based on the number of spines \nconfigured in the clos topology."
+  ];
+
+  optional SwitchHostLinkSwitchRef pod = 7 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional SwitchHostLinkSwitchRef tor = 8 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message SwitchHostLinkSwitchRef {
+  option (msg_meta).description = "Location of the switch based on pod and switch index";
+
+  optional int32 pod_index = 1 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "One-based index of the pod based on the number of pods in the fabric"
+  ];
+
+  optional int32 switch_index = 2 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "One-based index of the pod or ToR switch in the indicated pod"
+  ];
+}
+
+message Dataflow {
+  option (msg_meta).description = "Description missing in models";
+
+  repeated DataflowHostManagement host_management = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  repeated DataflowWorkloadItem workload = 2 [
+    (fld_meta).description = "The workload items making up the dataflow"
+  ];
+
+  repeated DataflowFlowProfile flow_profiles = 3 [
+    (fld_meta).description = "foo"
+  ];
+}
+
+message DataflowFlowProfile {
+  option (msg_meta).description = "Description missing in models";
+
+  string name = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  int32 data_size = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  message L2ProtocolChoice {
+    enum Enum {
+      unspecified = 0;
+      ethernet = 1;
+    }
+  }
+  optional L2ProtocolChoice.Enum l2_protocol_choice = 3 [
+    (fld_meta).description = "layer2 protocol selection"
+  ];
+
+  optional DataflowFlowProfileEthernet ethernet = 4 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  message L4ProtocolChoice {
+    enum Enum {
+      unspecified = 0;
+      tcp = 1;
+      udp = 2;
+    }
+  }
+  optional L4ProtocolChoice.Enum l4_protocol_choice = 5 [
+    (fld_meta).description = "layer4 protocol selection"
+  ];
+
+  optional DataflowFlowProfileIp ip = 6 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional DataflowFlowProfileTcp tcp = 7 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional DataflowFlowProfileUdp udp = 8 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message DataflowFlowProfileEthernet {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 mtu = 1 [
+    (fld_meta).default = "1500",
+    (fld_meta).description = "Maximum Transmission Unit"
+  ];
+}
+
+message DataflowFlowProfileIp {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 dscp = 1 [
+    (fld_meta).description = "differentiated services code point"
+  ];
+}
+
+message DataflowFlowProfileTcp {
+  option (msg_meta).description = "Description missing in models";
+
+  message CongestionAlgorithm {
+    enum Enum {
+      unspecified = 0;
+      bbr = 1;
+      dctcp = 2;
+      cubic = 3;
+      reno = 4;
+    }
+  }
+  optional CongestionAlgorithm.Enum congestion_algorithm = 1 [
+    (fld_meta).default = "CongestionAlgorithm.Enum.cubic",
+    (fld_meta).description = "The TCP congestion algorithm:\nbbr - Bottleneck Bandwidth and Round-trip propagation time\ndctcp - Data center TCP\ncubic - cubic window increase function\nreno - TCP New Reno"
+  ];
+
+  optional int32 initcwnd = 2 [
+    (fld_meta).description = "initial congestion window"
+  ];
+
+  optional int32 send_buf = 3 [
+    (fld_meta).description = "send buffer size"
+  ];
+
+  optional int32 receive_buf = 4 [
+    (fld_meta).description = "receive buffer size"
+  ];
+
+  optional int32 delayed_ack = 5 [
+    (fld_meta).description = "delayed acknowledgment"
+  ];
+
+  optional bool selective_ack = 6 [
+    (fld_meta).description = "selective acknowledgment"
+  ];
+
+  optional int32 min_rto = 7 [
+    (fld_meta).description = "minimum retransmission timeout"
+  ];
+
+  optional int32 mss = 8 [
+    (fld_meta).default = "1500",
+    (fld_meta).description = "Maximum Segment Size"
+  ];
+
+  optional bool ecn = 9 [
+    (fld_meta).description = "early congestion notification"
+  ];
+
+  optional bool enable_timestamp = 10 [
+    (fld_meta).description = "enable tcp timestamping"
+  ];
+
+  optional L4PortRange destination_port = 11 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional L4PortRange source_port = 12 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message L4PortRange {
+  option (msg_meta).description = "Layer4 protocol source or destination port values";
+
+  message Choice {
+    enum Enum {
+      unspecified = 0;
+      single_value = 1;
+      range = 2;
+    }
+  }
+  optional Choice.Enum choice = 1 [
+    (fld_meta).description = "None"
+  ];
+
+  optional L4PortRangeSingleValue single_value = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional L4PortRangeRange range = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message L4PortRangeSingleValue {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 value = 1 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message L4PortRangeRange {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 start_value = 1 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional int32 increment = 2 [
+    (fld_meta).default = "1",
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message DataflowFlowProfileUdp {
+  option (msg_meta).description = "Description missing in models";
+}
+
+message DataflowWorkloadItem {
+  option (msg_meta).description = "Description missing in models";
+
+  string name = 1 [
+    (fld_meta).description = "uniquely identifies the workload item"
+  ];
+
+  message Choice {
+    enum Enum {
+      unspecified = 0;
+      scatter = 1;
+      gather = 2;
+      all_reduce = 3;
+      loop = 4;
+      compute = 5;
+      broadcast = 6;
+      all_to_all = 7;
+    }
+  }
+  Choice.Enum choice = 2 [
+    (fld_meta).description = "The type of workflow item"
+  ];
+
+  optional DataflowScatterWorkload scatter = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional DataflowGatherWorkload gather = 4 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional DataflowLoopWorkload loop = 5 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional DataflowComputeWorkload compute = 6 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional DataflowAllReduceWorkload all_reduce = 7 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional DataflowBroadcastWorkload broadcast = 8 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional DataflowAlltoallWorkload all_to_all = 9 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message DataflowScatterWorkload {
+  option (msg_meta).description = "Description missing in models";
+
+  repeated string sources = 1 [
+    (fld_meta).description = "list of host names, indicating the originator of the data"
+  ];
+
+  repeated string destinations = 2 [
+    (fld_meta).description = "list of host names, indicating the destination of the data"
+  ];
+
+  optional string flow_profile_name = 3 [
+    (fld_meta).description = "flow profile reference"
+  ];
+}
+
+message DataflowBroadcastWorkload {
+  option (msg_meta).description = "Description missing in models";
+
+  repeated string sources = 1 [
+    (fld_meta).description = "list of host names, indicating the originator of the data"
+  ];
+
+  repeated string destinations = 2 [
+    (fld_meta).description = "list of host names, indicating the destination of the data"
+  ];
+
+  optional string flow_profile_name = 3 [
+    (fld_meta).description = "flow profile reference"
+  ];
+}
+
+message DataflowGatherWorkload {
+  option (msg_meta).description = "Description missing in models";
+
+  repeated string sources = 1 [
+    (fld_meta).description = "list of host names, indicating the originator of the data"
+  ];
+
+  repeated string destinations = 2 [
+    (fld_meta).description = "list of host names, indicating the destination of the data"
+  ];
+
+  optional string flow_profile_name = 3 [
+    (fld_meta).description = "flow profile reference"
+  ];
+}
+
+message DataflowAllReduceWorkload {
+  option (msg_meta).description = "Description missing in models";
+
+  repeated string nodes = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional string flow_profile_name = 2 [
+    (fld_meta).description = "flow profile reference"
+  ];
+
+  message Type {
+    enum Enum {
+      unspecified = 0;
+      ring = 1;
+      tree = 2;
+      butterfly = 3;
+    }
+  }
+  optional Type.Enum type = 3 [
+    (fld_meta).default = "Type.Enum.ring",
+    (fld_meta).description = "type of all reduce"
+  ];
+}
+
+message DataflowAlltoallWorkload {
+  option (msg_meta).description = "creates full-mesh flows between all nodes";
+
+  repeated string nodes = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional string flow_profile_name = 2 [
+    (fld_meta).description = "flow profile reference"
+  ];
+}
+
+message DataflowComputeWorkload {
+  option (msg_meta).description = "Description missing in models";
+
+  repeated string nodes = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  message Choice {
+    enum Enum {
+      unspecified = 0;
+      simulated = 1;
+    }
+  }
+  optional Choice.Enum choice = 2 [
+    (fld_meta).description = "type of compute"
+  ];
+
+  optional DataflowSimulatedComputeWorkload simulated = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message DataflowSimulatedComputeWorkload {
+  option (msg_meta).description = "Description missing in models";
+
+  optional float duration = 1 [
+    (fld_meta).description = "duration of the simulated compute workload in seconds"
+  ];
+}
+
+message DataflowLoopWorkload {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 iterations = 1 [
+    (fld_meta).description = "number of iterations in the loop"
+  ];
+
+  repeated DataflowWorkloadItem children = 2 [
+    (fld_meta).description = "list of workload items that are executed in this loop"
+  ];
+}
+
+message DataflowHostManagement {
+  option (msg_meta).description = "auxillary host information needed to run dataflow experiments";
+
+  string host_name = 1 [
+    (fld_meta).description = "TBD\n\nx-constraint:\n- #components/schemas/Host/properties/name\n"
+  ];
+
+  optional int32 nic_rx_buffer = 2 [
+    (fld_meta).description = "RX buffer size in bytes"
+  ];
+
+  optional int32 nic_tx_buffer = 3 [
+    (fld_meta).description = "TX buffer size in bytes"
+  ];
+
+  optional int32 nic_speed = 4 [
+    (fld_meta).description = "configured link speed Mbps (e.g. 100000 for 100G)"
+  ];
+
+  optional string management_address = 5 [
+    (fld_meta).description = "Hostname or address of management interface of a server running dataflow traffic"
+  ];
+
+  optional string nic_name = 6 [
+    (fld_meta).description = "unique idenfier for the network interface card (nic), e.g. eth1"
+  ];
+}
+
+message Chaos {
+  option (msg_meta).description = "Configuration of chaos experiments";
+
+  optional ChaosBackgroundTraffic background_traffic = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional ChaosDropFrames drop_frames = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ChaosBackgroundTraffic {
+  option (msg_meta).description = "Description missing in models";
+
+  repeated ChaosBackgroundTrafficFlow flows = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ChaosBackgroundTrafficFlow {
+  option (msg_meta).description = "Description missing in models";
+
+  optional string name = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional ChaosBackgroundTrafficFlowEntryPoint fabric_entry_point = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  message Choice {
+    enum Enum {
+      unspecified = 0;
+      stateless = 1;
+    }
+  }
+  optional Choice.Enum choice = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  repeated ChaosBackgroundTrafficFlowStateless stateless = 4 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ChaosBackgroundTrafficFlowEntryPoint {
+  option (msg_meta).description = "Description missing in models";
+
+  message Choice {
+    enum Enum {
+      unspecified = 0;
+      switch_reference = 1;
+      front_panel_port = 2;
+    }
+  }
+  optional Choice.Enum choice = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional ChaosBackgroundTrafficFlowEntryPointSwitchReference switch_reference = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional ChaosBackgroundTrafficFlowEntryPointFrontPanelPort front_panel_port = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ChaosBackgroundTrafficFlowEntryPointSwitchReference {
+  option (msg_meta).description = "Description missing in models";
+
+  message Choice {
+    enum Enum {
+      unspecified = 0;
+      spine = 1;
+      pod = 2;
+      tor = 3;
+    }
+  }
+  optional Choice.Enum choice = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional ChaosBackgroundTrafficFlowEntryPointSwitchReferenceSpine spine = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional ChaosBackgroundTrafficFlowEntryPointSwitchReferencePodSwitchReference pod = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional ChaosBackgroundTrafficFlowEntryPointSwitchReferencePodSwitchReference tor = 4 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ChaosBackgroundTrafficFlowEntryPointSwitchReferenceSpine {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 switch_index = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ChaosBackgroundTrafficFlowEntryPointSwitchReferencePodSwitchReference {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 pod_index = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional int32 switch_index = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ChaosBackgroundTrafficFlowEntryPointFrontPanelPort {
+  option (msg_meta).description = "Description missing in models";
+
+  optional int32 front_panel_port = 1 [
+    (fld_meta).description = "Front panel port number (if fabric is emulated on a device with front panel ports)"
+  ];
+}
+
+message ChaosBackgroundTrafficFlowStateless {
+  option (msg_meta).description = "Description missing in models";
+
+  optional string name = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional int32 rate = 2 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  message RateUnit {
+    enum Enum {
+      unspecified = 0;
+      bps = 1;
+      kbps = 2;
+      mbps = 3;
+      gbps = 4;
+    }
+  }
+  optional RateUnit.Enum rate_unit = 3 [
+    (fld_meta).description = "Description missing in models"
+  ];
+
+  optional ChaosBackgroundTrafficFlowStatelessPacket packet = 4 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ChaosBackgroundTrafficFlowStatelessPacket {
+  option (msg_meta).description = "Description missing in models";
+
+  optional string src_address = 1 [
+    (fld_meta).description = "source IP address"
+  ];
+
+  optional string dst_address = 2 [
+    (fld_meta).description = "destination IP address"
+  ];
+
+  optional int32 src_port = 3 [
+    (fld_meta).default = "1024",
+    (fld_meta).description = "Layer 4 source port"
+  ];
+
+  optional int32 dst_port = 4 [
+    (fld_meta).default = "1024",
+    (fld_meta).description = "Layer 4 destination port"
+  ];
+
+  optional int32 size = 5 [
+    (fld_meta).default = "1000",
+    (fld_meta).description = "total packet size"
+  ];
+
+  message L4Protocol {
+    enum Enum {
+      unspecified = 0;
+      tcp = 1;
+      udp = 2;
+    }
+  }
+  optional L4Protocol.Enum l4_protocol = 6 [
+    (fld_meta).description = "Layer 4 transport protocol"
+  ];
+}
+
+message ChaosDropFrames {
+  option (msg_meta).description = "Configures the percentage of time during a 1 second period during which frames are dropped on selected links";
+
+  repeated ChaosDropFramesConfig configs = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message ChaosDropFramesConfig {
+  option (msg_meta).description = "Configures the percentage of time during a 1 second period during which frames are dropped on a link";
+
+  optional string name = 1 [
+    (fld_meta).description = "Uniquely identifies a config entry"
+  ];
+
+  optional string link = 2 [
+    (fld_meta).description = "Emulated link name, e.g. Link S.1/2"
+  ];
+
+  message Type {
+    enum Enum {
+      unspecified = 0;
+      percentage_time = 1;
+      min_time = 2;
+    }
+  }
+  optional Type.Enum type = 3 [
+    (fld_meta).description = "Means to express the interval in which frames are dropped, either as a percentage or min possible time"
+  ];
+
+  optional float percentage = 4 [
+    (fld_meta).description = "Percentage value, ignored if type is min_time"
+  ];
+}
+
+message Insights {
+  option (msg_meta).description = "Configuration of insights providing methods";
+
+  optional InsightsPortMirroring port_mirroring = 1 [
+    (fld_meta).description = "Description missing in models"
+  ];
+}
+
+message InsightsPortMirroring {
+  option (msg_meta).description = "Description missing in models";
+}
+
+message InsightsPortMirroringConfig {
+  option (msg_meta).description = "Description missing in models";
+
+  optional string name = 1 [
+    (fld_meta).description = "Uniquely identifies a config entry"
+  ];
+
+  optional string ingress_port_name = 2 [
+    (fld_meta).description = "Emulated port name, e.g. Spine Switch 1 Port 1"
+  ];
+
+  optional string mirror_port = 3 [
+    (fld_meta).description = "Front panel port number of an external host, e.g. 32"
+  ];
+}
+
+message SetConfigRequest {
+  Config config = 1;
+}
+message SetConfigResponse {
+  optional ErrorDetails status_code_400 = 1;
+  optional ErrorDetails status_code_500 = 2;
+  optional WarningDetails status_code_200 = 3;
+}
+
+
+service Openapi {
+  option (svc_meta).description = "Description missing in models";
+
+  rpc SetConfig(SetConfigRequest) returns (SetConfigResponse) {
+    option (rpc_meta).description = "unused";
+  }
+}
