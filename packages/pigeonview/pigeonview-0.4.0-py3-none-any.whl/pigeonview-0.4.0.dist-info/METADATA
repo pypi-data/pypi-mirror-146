@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pigeonview
+Version: 0.4.0
+Summary: Data monitoring
+Home-page: https://github.com/bhky/pigeonview
+Author: attr: pigeonview.__author__
+Author-email: xtorch501@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.0.0)
+Requires-Dist: notebook (>=6.4.0)
+Requires-Dist: pandas (>=1.4.0)
+Requires-Dist: psycopg2-binary (>=2.9.0)
+
+# pigeon-view
+
