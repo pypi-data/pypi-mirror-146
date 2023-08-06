@@ -1,0 +1,21 @@
+setuptools==59.5.0
+sphinx>=3.2.1
+torch>=1.10
+pytorch-lightning>=1.5.10
+umap-learn[parametric_umap]>=0.5.2
+tensorflow>=2.6.0
+keras
+iprogress
+ipywidgets
+tqdm
+matplotlib
+numpy
+fbm
+scipy
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+pytest
+pytest-cov
