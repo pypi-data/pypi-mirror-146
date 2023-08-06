@@ -1,0 +1,3 @@
+[console_scripts]
+sebastes = sebastes.__main__:main
+
