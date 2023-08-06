@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+inkscape_svg_layer_extractor/__init__.py
+inkscape_svg_layer_extractor/__main__.py
+inkscape_svg_layer_extractor/inkscape_svg_layer_extractor.py
+inkscape_svg_layer_extractor.egg-info/PKG-INFO
+inkscape_svg_layer_extractor.egg-info/SOURCES.txt
+inkscape_svg_layer_extractor.egg-info/dependency_links.txt
+inkscape_svg_layer_extractor.egg-info/top_level.txt
