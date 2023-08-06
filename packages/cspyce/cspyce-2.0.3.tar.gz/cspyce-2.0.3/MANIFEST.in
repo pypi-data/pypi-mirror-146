@@ -1,0 +1,3 @@
+include cspyce/swig/*.c
+exclude cspyce/swig/*.i
+include get_spice.py
