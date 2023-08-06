@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dnacompiler
+Version: 0.0.5
+Summary: DNA Compiler uses constrain programming to facilitate genetic design.
+Home-page: UNKNOWN
+Author: Isaac Guerreiro
+Author-email: <isaacguerreirocom@gmail.com>
+License: UNKNOWN
+Description: Gather your library, define your genetic design constrains and requirements and DNA Compiler will create the sequence for you.
+Keywords: python
+Platform: UNKNOWN
