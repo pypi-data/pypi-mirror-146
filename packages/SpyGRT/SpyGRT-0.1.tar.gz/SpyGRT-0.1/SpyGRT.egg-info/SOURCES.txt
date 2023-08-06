@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+SpyGRT.egg-info/PKG-INFO
+SpyGRT.egg-info/SOURCES.txt
+SpyGRT.egg-info/dependency_links.txt
+SpyGRT.egg-info/requires.txt
+SpyGRT.egg-info/top_level.txt
+spygrt/__init__.py
+spygrt/calibration.py
+spygrt/stream.py
+spygrt/tracker.py
