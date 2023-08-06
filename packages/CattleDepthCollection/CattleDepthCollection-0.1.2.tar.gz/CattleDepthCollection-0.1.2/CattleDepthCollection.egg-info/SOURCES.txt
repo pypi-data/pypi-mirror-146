@@ -1,0 +1,6 @@
+README.md
+setup.py
+CattleDepthCollection.egg-info/PKG-INFO
+CattleDepthCollection.egg-info/SOURCES.txt
+CattleDepthCollection.egg-info/dependency_links.txt
+CattleDepthCollection.egg-info/top_level.txt
