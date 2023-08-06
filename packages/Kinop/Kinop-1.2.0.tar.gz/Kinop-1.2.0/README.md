@@ -1,0 +1,10 @@
+# Cringe
+```
+pip install kinop
+```
+
+
+
+
+
+
