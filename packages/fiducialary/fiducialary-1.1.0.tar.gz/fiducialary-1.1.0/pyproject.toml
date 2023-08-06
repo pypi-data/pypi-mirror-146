@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fiducialary"
+version = "1.1.0"
+description = "Generate unique circular fiducial markers for use in vision systems such as photogrammetry."
+authors = ["Luke Miller <dodgyville@gmail.com>"]
+license = "LGPLv3+"
+homepage = "https://gitlab.com/dodgyville/fiducialary"
+repository = "https://gitlab.com/dodgyville/fiducialary"
+readme = "README.md"
+include = [
+    "LICENSE",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typer = "^0.4.1"
+pycairo = "^1.21.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
