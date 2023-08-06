@@ -1,0 +1,12 @@
+wordlepy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wordlepy/frequency_list.xlsx,sha256=Y19DqbdBseA_73BH69eVAgrlOj5sIPzJ1uGwlxKT--A,222150
+wordlepy/wordle_class.py,sha256=l8H5IiioShvye3LyLVXo1A0JYpkQ_bMBOWJhmWw_dN0,9811
+wordlepy/wordle_solutions.txt,sha256=1Ni472PX9cpQlLsPz209HpjuUNqsdLfPQUVpKRq4Zd8,316
+wordlepy/wordle_utils.py,sha256=Lo_L1QHeA9BKznUOSgK5ybXtZKd0HDFem6DE4XRt808,3466
+wordlepy/wordlebot.py,sha256=cbKhZc_LSQbuwIkK8YhipsvVlLlxumdKKCtiiZJs6EI,9797
+wordlepy/words_alpha.txt,sha256=7HJwa3cMo7cMHWHcf1M8xWwJSBkEojUAsKJNW2rtnTM,3864799
+wordlepy-1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+wordlepy-1.5.dist-info/METADATA,sha256=uHH_JM2pLde6d_-7R5OBJdRRArfZ_u0_ks4STZvWdN0,789
+wordlepy-1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wordlepy-1.5.dist-info/top_level.txt,sha256=8EcNJVm35DzwQOVJLJUUmUHPCK0BCGrH5Szy5g9E-jI,9
+wordlepy-1.5.dist-info/RECORD,,
