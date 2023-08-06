@@ -1,0 +1,10 @@
+tdm_loader/__init__.py,sha256=RnMjfHwUXq5LfaEKGRTeWyg7GiOgYszewervblI1sG0,424
+tdm_loader/tdm_loader.py,sha256=2DcR27U1IihmxEfummkNn0iqf_FALx_OvtGh3a_JZA4,19309
+tdm_loader/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tdm_loader/tests/test_non_zip_tdm.py,sha256=5ZjoLthLwsTBUaI2SjuiWy6SIB4JVbaQLLGl_eyNxXQ,10366
+tdm_loader/tests/test_zip_tdm.py,sha256=IGBXIRIiA-3erddEtlld0iTsVJBCeC5__DVMwvmtmlI,2123
+tdm_loader-1.2.4.dist-info/LICENSE.txt,sha256=YXk5Rov9hm65Kavb-aJq3BWFx57kloB3DPSAj-dkM_I,1285
+tdm_loader-1.2.4.dist-info/METADATA,sha256=_R7qdJuTAyP_WMe5oGG3jolnaG4poyKTDhUy8jIU8Gc,2248
+tdm_loader-1.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tdm_loader-1.2.4.dist-info/top_level.txt,sha256=VKYBzJQnHZEDFTXsipR5NDrVTiC_gdxU2eVce9KRYAI,11
+tdm_loader-1.2.4.dist-info/RECORD,,
