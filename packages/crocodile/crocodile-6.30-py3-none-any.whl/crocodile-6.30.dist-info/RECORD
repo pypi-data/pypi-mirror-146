@@ -1,0 +1,17 @@
+crocodile/__init__.py,sha256=hMEaivLPZCeNYmbnJtyaEi0iw5KMMnBC6Zzns6OIlPg,261
+crocodile/core.py,sha256=2Dx_N2dC5N6g0L6Mm_2G3wu-80cOTPA-kGimX7O-ht0,22312
+crocodile/croshell.py,sha256=miFUUdxfH4qse4auO0n1QV_1HMCeyP3bIiJ2gb209lY,856
+crocodile/database.py,sha256=nbQzuV29vCDz_Qtw9o5huLdxXfXhmxSr8m69CB4Bsq8,5113
+crocodile/deeplearning.py,sha256=wxCVLA5Q8pVQTwQXzqXHlkhTdRWV5SP3B2LxmIPZojU,33119
+crocodile/deeplearning_torch.py,sha256=1KcbMUNJ9CymEH2ex9oY8t0Wx1JPyC6_t4QBk2BzTB0,10307
+crocodile/environment.py,sha256=a8GgNEaSMJakpiCbhqDFpbGX5KFd1Hhy8ZQEHLx5Gtk,9628
+crocodile/file_management.py,sha256=eICAHT991elVy5J6AV7W2yLAuUQ3u8ZYUpz6pLHcTg4,42326
+crocodile/matplotlib_management.py,sha256=kd7jagtR0HSbeoI4xP3BJygEOksBV5KSw6_RmeHxeLw,42847
+crocodile/meta.py,sha256=PoW4frdoijOCvc1Mhjj2hJ3T3CUeOU-LwJjFj9o7NOs,33074
+crocodile/plotly_management.py,sha256=iADYDakhwMhQ2nTTPrLHKsYnm3UaDS4bBr0d7-hvh8A,3322
+crocodile/run.py,sha256=Myi8XgvWpb2lVIuwnAejQxRigkcX6tcvSC6_-PswWnc,3914
+crocodile/toolbox.py,sha256=iZ6A3WrV_h5-3vBj6DcdVvvc_jC_J9qN3rOhYMF0upQ,2655
+crocodile-6.30.dist-info/METADATA,sha256=saTgQX5irdcEfgUW62FsizE0dZD9GLWGak_2_rTmtvQ,5981
+crocodile-6.30.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+crocodile-6.30.dist-info/top_level.txt,sha256=875PUP18h7q1jvZImY88Qwt38MeA1K-p_3ky8b4lJuA,76
+crocodile-6.30.dist-info/RECORD,,
