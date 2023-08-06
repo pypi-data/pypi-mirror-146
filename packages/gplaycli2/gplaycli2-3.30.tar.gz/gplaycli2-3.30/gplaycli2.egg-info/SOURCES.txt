@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+gplaycli.conf
+setup.py
+gplaycli2/__init__.py
+gplaycli2/__main__.py
+gplaycli2/gplaycli.py
+gplaycli2/hooks.py
+gplaycli2/util.py
+gplaycli2.egg-info/PKG-INFO
+gplaycli2.egg-info/SOURCES.txt
+gplaycli2.egg-info/dependency_links.txt
+gplaycli2.egg-info/entry_points.txt
+gplaycli2.egg-info/requires.txt
+gplaycli2.egg-info/top_level.txt
