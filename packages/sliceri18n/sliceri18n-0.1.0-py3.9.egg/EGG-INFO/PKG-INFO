@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sliceri18n
+Version: 0.1.0
+Summary: A .py file string extractor
+Home-page: https://github.com/Slicer/sliceri18n.git
+Author: Allen Institute for Artificial Intelligence
+Author-email: contact@allenai.org
+License: Apache
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# sliceri18n
+Python package that contains tools for internationalization of applications that use Python and Qt
+
+
