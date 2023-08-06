@@ -1,0 +1,3 @@
+[console_scripts]
+decaf2many = decaf2many.cli:main
+
