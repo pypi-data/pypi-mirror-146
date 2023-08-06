@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: n2d2
+Version: 1.0.0
+Summary:  Neural Network Design & Deployment with Python
+Home-page: https://github.com/CEA-LIST/N2D2
+Author: N2D2 Team
+Author-email: n2d2-contact@cea.fr
+License: CECILL-2.1
+Project-URL: Bug Tracker, https://github.com/CEA-LIST/N2D2/issues
+Project-URL: Documentation, https://cea-list.github.io/N2D2-docs/
+Project-URL: Source Code, https://github.com/CEA-LIST/N2D2
+Keywords: n2d2,machine,learning
+Platform: Linux
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+N2D2 is a Python package to use the N2D2 engine with a Python interface.
+
+
