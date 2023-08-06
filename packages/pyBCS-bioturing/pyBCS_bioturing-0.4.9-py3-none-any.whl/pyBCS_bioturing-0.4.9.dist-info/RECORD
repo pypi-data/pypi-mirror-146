@@ -1,0 +1,10 @@
+pyBCS/__init__.py,sha256=UbM3tR71RBfHSvndFknmH082Om4DVgJtwWPU-GEfm4Y,326
+pyBCS/dsp.py,sha256=Mm5ldhq8WfMIpjJifgFwdHfujCQ7cOu5jb4kOUjIEdQ,6534
+pyBCS/light_transpose.py,sha256=M0E-cdMzUwu6ZQdsIWhgSfIKs-aqiIKttQffDNmaKDg,5691
+pyBCS/scanpy2bcs.py,sha256=N38pbQRuS_x-zWhL4fmy2vtL3s9eB5P4Lh7mt5owNn4,59161
+pyBCS/version.py,sha256=k8oUvdjK4T0LdBz8tWTAFXW0UVsH6V9IhT_DA45eORk,418
+pyBCS_bioturing-0.4.9.dist-info/LICENSE,sha256=2sh1rjB2TV6IFhmiIcG-KabZGe9rTZkuaMEydPk5MdM,1054
+pyBCS_bioturing-0.4.9.dist-info/METADATA,sha256=OPAvSQhX_Gz-MVuycdcyaQNTlDWLr2O9h2ZcTfrrykg,3323
+pyBCS_bioturing-0.4.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyBCS_bioturing-0.4.9.dist-info/top_level.txt,sha256=doz_d7Cz7PKQTJQkr6kGk4NU4QWRQfOUbjVQPWnKwpk,6
+pyBCS_bioturing-0.4.9.dist-info/RECORD,,
