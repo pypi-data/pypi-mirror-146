@@ -1,0 +1,7 @@
+DependencyConfusion.py
+README.md
+setup.py
+DependencyConfusion.egg-info/PKG-INFO
+DependencyConfusion.egg-info/SOURCES.txt
+DependencyConfusion.egg-info/dependency_links.txt
+DependencyConfusion.egg-info/top_level.txt
