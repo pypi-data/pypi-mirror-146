@@ -1,0 +1,23 @@
+---
+- hosts: undercloud
+  vars:
+    metadata:
+      name: Verify heat-manage purge_deleted is enabled in crontab
+      description: |
+        Without a purge_deleted crontab enabled, the
+        heat database can grow very large. This validation checks that
+        the purge_deleted crontab has been set up.
+      groups:
+        - pre-upgrade
+        - pre-update
+        - pre-deployment
+      categories:
+        - orchestration
+        - os
+        - system
+        - cron
+      products:
+        - tripleo
+    cron_check: "heat-manage purge_deleted"
+  roles:
+    - undercloud_heat_purge_deleted
