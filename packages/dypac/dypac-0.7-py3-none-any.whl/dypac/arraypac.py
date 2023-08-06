@@ -1,0 +1,338 @@
+"""ND Array Parcel Aggregation with Clustering (arraypac)."""
+
+# Authors: Pierre Bellec
+# License: BSD 3 clause
+import warnings
+
+from scipy.sparse import vstack
+import numpy as np
+
+from sklearn.utils import check_random_state
+from sklearn.preprocessing import StandardScaler
+import dypac.bascpp as bpp
+from dypac.embeddings import Embedding
+
+
+def _sanitize_arrays(arrays):
+    """Check that provided arrays are in the correct format."""
+    if type(arrays) is not np.ndarray:
+        raise ValueError("`arrays` should be a numpy array.")
+
+    if len(arrays.shape) < 2:
+        raise ValueError("`arrays` size should have at least two axis")
+
+    return arrays
+
+
+class ArrayPAC:
+    """
+    Perform Stable Dynamic Cluster Analysis on arrays.
+
+    Parameters
+    ----------
+    n_clusters: int, optional
+        Number of clusters to extract per time window
+
+    n_states_batch: int, optional
+        Number of states to extract per batch.
+        If set to None, same as n_states
+
+    n_states: int, optional
+        Number of expected dynamic states
+
+    n_replications: int, optional
+        Number of replications of cluster analysis in each batch
+
+    n_batch: int, optional
+        Number of batches to run through consensus clustering.
+        If n_batch<=1, consensus clustering will be applied
+        to all replications in one pass. Processing with batch will
+        reduce dramatically the compute time, but will change slightly
+        the results.
+
+    n_init: int, optional
+        Number of initializations for k-means
+
+    subsample_size: int, optional
+        Number of time points in a subsample
+
+    max_iter: int, optional
+        Max number of iterations for k-means
+
+    threshold_sim: float (0 <= . <= 1), optional
+        Minimal acceptable average dice in a state
+
+    embedding_method: string, optional
+        The type of embedding.
+        'ols' ordinary least-squares - based on numpy pinv
+        'lasso' lasso regression (l1 regularization)
+            based on sklearn.linear_model.Lasso
+        'ridge' Ridge regression (l2 regularization)
+            based on sklearn.linear_model.Ridge
+
+    random_state: int or RandomState, optional
+        Pseudo number generator state used for random sampling.
+
+    standardize: boolean, optional
+        If standardize is True, the values of each image are centered and normed:
+        their mean is put to 0 and their variance to 1 across examples
+
+    verbose: integer, optional
+        Indicate the level of verbosity. By default, print progress.
+
+    kwargs: dict, optional
+        keyword arguments passed to the embedding method, e.g. Lasso.
+        Note: 'fit_intercept' is forced to False in Lasso and cannot be
+        changed. Use `add_constant` instead.
+
+    """
+
+    def __init__(
+        self,
+        n_clusters=10,
+        n_states=3,
+        n_states_batch=None,
+        n_replications=40,
+        n_batch=1,
+        n_init=30,
+        n_init_aggregation=100,
+        subsample_size=1,
+        max_iter=30,
+        threshold_sim=0.3,
+        embedding_method="ridge",
+        random_state=None,
+        standardize=True,
+        verbose=1,
+        **kwargs
+    ):
+        """Set up default attributes for the class."""
+        self.n_clusters = n_clusters
+        self.n_states = n_states
+        self.n_states_batch = n_states_batch
+        self.n_batch = n_batch
+        self.n_replications = n_replications
+        self.n_init = n_init
+        self.n_init_aggregation = n_init_aggregation
+        self.subsample_size = subsample_size
+        self.max_iter = max_iter
+        self.threshold_sim = threshold_sim
+        self.embedding_method = embedding_method
+        self.random_state = random_state
+        self.standardize = standardize
+        self.verbose = verbose
+        self.kwargs = kwargs
+
+    def _check_components_(self):
+        """Check for presence of estimated components."""
+        if not hasattr(self, "components_"):
+            raise ValueError(
+                "Object has no components_ attribute. "
+                "This is probably because fit has not "
+                "been called."
+            )
+
+    def _check_n_batch_(self, arrays):
+        # Check that number of batches is reasonable
+        if self.n_batch > arrays.shape[0]:
+            warnings.warn(
+                "{0} batches were requested, but only {1} datasets available. Using {2} batches instead.".format(
+                    self.n_batch, arrays.shape[0], arrays.shape[0]
+                )
+            )
+            self.n_batch = arrays.shape[0]
+
+    def fit(self, arrays, confounds=None):
+        """
+        Compute the parcels across images.
+
+        Parameters
+        ----------
+        arrays: ndarray with a series of images.
+            arrays size should be n_samp * n_x * n_y * n_channels
+
+        Returns
+        -------
+        self: object
+            Returns the instance itself. Contains attributes listed
+            at the object level.
+        """
+        arrays = _sanitize_arrays(arrays)
+        self.arrays_shape_ = arrays.shape
+
+        # Control random number generation
+        self.random_state = check_random_state(self.random_state)
+        self._check_n_batch_(arrays)
+
+        # mask_and_reduce step
+        if self.n_batch > 1:
+            stab_maps, dwell_time = self._mask_and_reduce_batch(arrays)
+        else:
+            stab_maps, dwell_time = self._mask_and_reduce(arrays)
+
+        # Return components
+        self.components_ = stab_maps
+        self.dwell_time_ = dwell_time
+
+        # Create embedding
+        self.embedding = Embedding(
+            stab_maps.todense(),
+            add_constant=True,
+            method=self.embedding_method,
+            **self.kwargs
+        )
+
+        return self
+
+    def _mask_and_reduce_batch(self, arrays, confounds=None):
+        """Iterate bascpp on batches of arrays."""
+        stab_maps_list = []
+        dwell_time_list = []
+        for bb in range(self.n_batch):
+            slice_batch = slice(bb, arrays.shape[0], self.n_batch)
+            if self.verbose:
+                print("[{0}] Processing batch {1}".format(self.__class__.__name__, bb))
+            stab_maps, dwell_time = self._mask_and_reduce(arrays[slice_batch])
+            stab_maps_list.append(stab_maps)
+            dwell_time_list.append(dwell_time)
+
+        stab_maps_cons, dwell_time_cons = bpp.consensus_batch(
+            stab_maps_list,
+            dwell_time_list,
+            self.n_replications,
+            self.n_states,
+            self.max_iter,
+            self.n_init_aggregation,
+            self.random_state,
+            self.verbose,
+        )
+
+        return stab_maps_cons, dwell_time_cons
+
+    def _mask_and_reduce(self, arrays, confounds=None):
+        """
+        Cluster aggregation on a list of images.
+
+        Returns
+        -------
+        stab_maps: ndarray
+            stability maps of each state.
+
+        dwell_time: ndarray
+            dwell time of each state.
+        """
+        this_data = self._load_arrays(arrays, standardize=self.standardize)
+        if self.n_states_batch is None:
+            n_states = self.n_states
+        else:
+            n_states = self.n_states_batch
+
+        onehot = bpp.replicate_clusters(
+            this_data,
+            subsample_size=self.subsample_size,
+            n_clusters=self.n_clusters,
+            n_replications=self.n_replications,
+            max_iter=self.max_iter,
+            n_init=self.n_init,
+            random_state=self.random_state,
+            verbose=self.verbose,
+        )
+
+        # find the states
+        states = bpp.find_states(
+            onehot,
+            n_states=n_states,
+            max_iter=self.max_iter,
+            threshold_sim=self.threshold_sim,
+            random_state=self.random_state,
+            n_init=self.n_init_aggregation,
+            verbose=self.verbose,
+        )
+
+        # Generate the stability maps
+        stab_maps, dwell_time = bpp.stab_maps(
+            onehot, states, self.n_replications, self.n_states
+        )
+
+        return stab_maps, dwell_time
+
+    def _load_arrays(self, array, standardize):
+        """
+        Load a series of arrays in the right format for ArrayPac.
+        """
+        shape_features = [array.shape[0], np.prod(array.shape[1:])]
+        array_r = array.reshape(shape_features).transpose()
+
+        if standardize:
+            array_r = StandardScaler().fit_transform(array_r)
+
+        return array_r
+
+    def _mat2arrays(self, mat):
+        """
+        Reshape a matrix of features into a ndarray
+        """
+        shape_array = list(self.arrays_shape_)
+        shape_array[0] = mat.shape[0]
+        arrays = np.reshape(mat, shape_array)
+        return arrays
+
+    def _check_size_array(self, arrays):
+        if not np.array_equal(arrays.shape[1:], self.arrays_shape_[1:]):
+            raise ValueError("provided images do not match the size of training data.")
+
+    def transform(self, arrays):
+        """
+        Transform an image in embedding coefficients.
+
+        Parameters
+        ----------
+        arrays: ndarray with a series of images.
+            arrays size should be n_samp * n_x * n_y * n_channels
+
+        Returns
+        -------
+        weights : numpy array of shape [n_samp, n_states + 1]
+            The image after projection in the parcellation space.
+            Note that the first coefficient corresponds to the intercept,
+            and not one of the parcels.
+        """
+        self._check_components_()
+        self._check_size_array(arrays)
+        tseries = self._load_arrays(arrays, standardize=False).transpose()
+        return self.embedding.transform(tseries)
+
+    def inverse_transform(self, weights):
+        """
+        Transform component weights as a 4D dataset.
+
+        Parameters
+        ----------
+        weights : numpy array of shape [n_samples, n_states + 1]
+            The fMRI tseries after projection in the parcellation
+            space. Note that the first coefficient corresponds to the intercept,
+            and not one of the parcels.
+
+        Returns
+        -------
+        array : ndarray with a series of images with shape n_samp * n_x * n_y * n_channels
+        """
+        self._check_components_()
+        # add a check on the size of the embedding coefficients
+        return self._mat2arrays(self.embedding.inverse_transform(weights))
+
+    def compress(self, arrays):
+        """
+        Provide the approximation of an image after projection in parcellation space.
+
+        Parameters
+        ----------
+        arrays: ndarray with a series of images.
+            arrays size should be n_samp * n_x * n_y * n_channels
+
+        Returns
+        -------
+        array_c : ndarray.
+            The images corresponding to the input, compressed in the parcel space.
+        """
+        self._check_components_()
+        return self.inverse_transform(self.transform(arrays))
