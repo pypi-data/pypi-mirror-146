@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pychs
+Version: 0.2.2
+Summary: Python Wrapper for Canadian Hydrographic Service (CHS) Water Level System API
+Home-page: https://github.com/RonSchofield/pychs
+Author: Ron Schofield
+Author-email: ronschofield@eastlink.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# pychs
+Python wrapper for Canadian Hydrographic Service (CHS) Water Level Web Services
+
