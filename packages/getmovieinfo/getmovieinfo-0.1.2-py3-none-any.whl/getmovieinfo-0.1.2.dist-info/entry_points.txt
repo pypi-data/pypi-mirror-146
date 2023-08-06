@@ -1,0 +1,3 @@
+[console_scripts]
+MovieInfo=getmovieinfo.MovieInfo:main
+

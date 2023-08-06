@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: getmovieinfo
+Version: 0.1.2
+Summary: Package to search specific video or keyword on a set of av websites
+Home-page: https://github.com/crvideo/MovieInfo
+License: MIT
+Keywords: movie,scaper,torrent scaper
+Author: crvidoeVR
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: jsons (>=1.6.1,<2.0.0)
+Requires-Dist: lxml (>=4.8.0,<5.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: selenium (>=4.1.3,<5.0.0)
+Project-URL: Repository, https://github.com/crvideo/MovieInfo
+Description-Content-Type: text/markdown
+
+# Raincoat
+
+MovieInfo is a tool to search specific number or keyword from a set of av and get information of videos and output json. This json is use for a discord bot or automation torrent download.
+
+### Installation
+
+`pip install getmovieinfo
+
+### Requirements
+
+- python = "^3.7"
+- selenium = "^4.1.3"
+- requests = "^2.27.1"
+- lxml = "^4.8.0"
+- argparse = "^1.4.0"
+- jsons = "^1.6.1"
+- secrets
+
+
+### Usage
+
+`MovieInfo --number SSIS-356
+
+`MovieInfo --keyword 涼森れむ
+
+#### Parameters
+
+- --number
+  - Specify a video number
+- --keyword
+  - SPecify a keyword
+- --cache_dir
+  - specify a dir to store the result json
+
+
+# License
+
+This project is licensed under the MIT License
+
