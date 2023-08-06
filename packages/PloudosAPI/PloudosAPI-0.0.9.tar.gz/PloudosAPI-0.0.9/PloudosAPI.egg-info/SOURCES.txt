@@ -1,0 +1,8 @@
+README.rst
+setup.py
+PloudosAPI/__init__.py
+PloudosAPI.egg-info/PKG-INFO
+PloudosAPI.egg-info/SOURCES.txt
+PloudosAPI.egg-info/dependency_links.txt
+PloudosAPI.egg-info/requires.txt
+PloudosAPI.egg-info/top_level.txt
