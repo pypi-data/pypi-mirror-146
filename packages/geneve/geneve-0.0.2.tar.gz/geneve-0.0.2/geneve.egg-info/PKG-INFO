@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: geneve
+Version: 0.0.2
+Summary: Generate source events using languages and schemas
+Home-page: https://github.com/elastic/geneve
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.8.0
+License-File: LICENSE.txt
+
+UNKNOWN
+
