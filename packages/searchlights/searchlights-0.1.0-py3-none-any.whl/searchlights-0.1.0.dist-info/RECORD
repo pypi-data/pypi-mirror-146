@@ -1,0 +1,14 @@
+searchlights/__init__.py,sha256=8tXzcavZRj-HR4eIi9LYRK9uggswq3MQpyjexqFu2LQ,3737
+searchlights/data/mask_fsaverage5_lh.npy,sha256=3EAik10CbzjZs1o0qMrw_kdhqwwGesXqJPmCPrr30xk,10370
+searchlights/data/mask_fsaverage5_rh.npy,sha256=MYJ2jfql7zPMip-RyImUg6UES_fesDKc5Ql_q6mwzbY,10370
+searchlights/data/mask_fsaverage6_lh.npy,sha256=LINQIb-KbX04h5N66AIaqq4ldKT42ah8buLX6pCTeo0,41090
+searchlights/data/mask_fsaverage6_rh.npy,sha256=ZQbRIoc8kRt-kSekbannPyeYnOaCkHDlFVXhaFBAqwk,41090
+searchlights/data/mask_fsaverage_lh.npy,sha256=5SoOhdKyQazyJ8iOD7LTJAS55qEomqWZ78S73_nC4GU,163970
+searchlights/data/mask_fsaverage_rh.npy,sha256=TmvvtZTE8XDdrQHe0Rwtjd_BZOUHk9yi7AwY5Qqs70k,163970
+searchlights/data/sls_fsaverage_lh_20mm_icoorder5.npz,sha256=c02kAQZI-RookbfG33-bzjyx9HZ03gfZHLaQpukdzPU,16720772
+searchlights/data/sls_fsaverage_rh_20mm_icoorder5.npz,sha256=3dmIkvTsoRF0NXmS5mwlexDHO2i46r1lb7tyyW6jWVw,16999592
+searchlights-0.1.0.dist-info/LICENSE.txt,sha256=RDy4KGuiETJNTVtmy6zSZQGqyXjjXtiD54zAX6VHLuA,1513
+searchlights-0.1.0.dist-info/METADATA,sha256=nICJelF-hEImlRAjoGmBEHkvpIwUHgY_HbnRQCfy9s8,2040
+searchlights-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+searchlights-0.1.0.dist-info/top_level.txt,sha256=7EdoSoM1wGhB95Hykm2NfGjWG_79_honNFxCOzi0zo8,13
+searchlights-0.1.0.dist-info/RECORD,,
