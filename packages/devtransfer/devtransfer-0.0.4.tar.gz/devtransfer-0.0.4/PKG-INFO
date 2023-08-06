@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: devtransfer
+Version: 0.0.4
+Summary: Temporary, large file transfer for developers
+Home-page: https://github.DevTransferApp.com/devtransfer/devtransfer/tree/main/
+Author: Justin Mitchel
+Author-email: DevTransferApp@gmail.com
+License: Apache Software License 2.0
+Description: # devtransfer
+        
+        Temporary, large file transfers for developers
+        
+Keywords: file transfer,large files,sharing files
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev

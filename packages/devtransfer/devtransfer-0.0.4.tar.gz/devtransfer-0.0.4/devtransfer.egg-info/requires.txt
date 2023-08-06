@@ -1,0 +1,8 @@
+pip
+packaging
+cryptography
+fire
+requests
+rich
+
+[dev]
