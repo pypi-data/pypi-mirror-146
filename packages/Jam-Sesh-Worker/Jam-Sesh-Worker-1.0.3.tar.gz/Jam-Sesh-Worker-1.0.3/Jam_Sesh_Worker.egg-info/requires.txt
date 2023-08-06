@@ -1,0 +1,7 @@
+amqp
+celery
+psycopg2-binary
+SQLAlchemy
+requests
+python-dotenv
+APScheduler
