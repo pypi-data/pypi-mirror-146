@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+setup.cfg
+setup.py
+versioneer.py
+aemcmc/__init__.py
+aemcmc/_version.py
+aemcmc/dists.py
+aemcmc/gibbs.py
+aemcmc.egg-info/PKG-INFO
+aemcmc.egg-info/SOURCES.txt
+aemcmc.egg-info/dependency_links.txt
+aemcmc.egg-info/not-zip-safe
+aemcmc.egg-info/requires.txt
+aemcmc.egg-info/top_level.txt
