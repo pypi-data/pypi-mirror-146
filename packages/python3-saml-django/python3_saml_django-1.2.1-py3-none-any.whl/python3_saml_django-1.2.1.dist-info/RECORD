@@ -1,0 +1,11 @@
+django_saml/__init__.py,sha256=XU1USJbdcubGJYWwlKZh2cFjwP1xxokUDjfpTJGNJoY,57
+django_saml/apps.py,sha256=X5B8I8ZEAJi8dO0omZEk86Ke9f_HGqTsS-vnK_r3dHw,2749
+django_saml/backends.py,sha256=SLjdAW-KHKpa194bK_nb1yLDpC-QuWSFEg_TvAYpWps,2383
+django_saml/settings.py,sha256=erx7HHYGnjfnSsgIlw6M0SG4EW0TIrm4pg0dEeRN60E,1052
+django_saml/urls.py,sha256=LgT3bvCGvOU9JU_ex5rCfiMYjZbntzMUL7Inrh5_oIE,383
+django_saml/views.py,sha256=abnTDvRQi8kdmh6Q_jNqvt_jSlszbY2hxhYcvtervAc,6363
+python3_saml_django-1.2.1.dist-info/LICENSE,sha256=IpZ2HwZaQbRAsGFhMiO1UsDzBVGY5ZUd7a-UR0D294A,1068
+python3_saml_django-1.2.1.dist-info/METADATA,sha256=AdbMAfgSPo88IL-dmCZ_8kIoCieInhUpWfLLfgfwlTE,8966
+python3_saml_django-1.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python3_saml_django-1.2.1.dist-info/top_level.txt,sha256=4u_uKK5SMsf4yNcXGRCNEZ_sYLbcZMZtIt3BITfBkOM,12
+python3_saml_django-1.2.1.dist-info/RECORD,,
