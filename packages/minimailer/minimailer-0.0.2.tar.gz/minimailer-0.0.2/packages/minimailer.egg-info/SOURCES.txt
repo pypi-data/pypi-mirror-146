@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+packages/minimailer/__init__.py
+packages/minimailer/app.py
+packages/minimailer/csv.py
+packages/minimailer.egg-info/PKG-INFO
+packages/minimailer.egg-info/SOURCES.txt
+packages/minimailer.egg-info/dependency_links.txt
+packages/minimailer.egg-info/entry_points.txt
+packages/minimailer.egg-info/requires.txt
+packages/minimailer.egg-info/top_level.txt
