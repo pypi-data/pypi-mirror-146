@@ -1,0 +1,10 @@
+notifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notifier/__main__.py,sha256=AJ8fZzkYFtK2_iWd3SkhcLFpKuBEGzLgD_duveoBnDo,1151
+notifier/gpu_monitor.py,sha256=RUfXUdptZfawvCuEMkzzStMrRT0z6wwxVIEeGIYRisM,3706
+notifier/telegram.py,sha256=vAL2dP4BsXXIskN7PJmIE7g3ghi-UeZpoJ363amuKro,2880
+gpu_overseer-0.0.8.dist-info/METADATA,sha256=UzvGzmLFwwSR8K0qhfnWSwXTWwfX5f0Aa-MPwhkgXTg,1998
+gpu_overseer-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gpu_overseer-0.0.8.dist-info/dependency_links.txt,sha256=8ri1PtzPcQvnJ9EsFzOx2aZaKI72g93ZEmp-1XgteVc,34
+gpu_overseer-0.0.8.dist-info/entry_points.txt,sha256=LFkLsuGrouurHU3wN9VpJRibQdq9H-kZ0ldmTACxxGU,52
+gpu_overseer-0.0.8.dist-info/top_level.txt,sha256=rEjihPRFfOZHRCUHynthusyL1KJLXMy1Y2aKM-D-VYs,9
+gpu_overseer-0.0.8.dist-info/RECORD,,
