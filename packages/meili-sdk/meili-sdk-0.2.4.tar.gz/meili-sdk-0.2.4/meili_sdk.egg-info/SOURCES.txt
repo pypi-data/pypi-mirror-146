@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+meili_sdk/__init__.py
+meili_sdk/exceptions.py
+meili_sdk/site.py
+meili_sdk/version.py
+meili_sdk.egg-info/PKG-INFO
+meili_sdk.egg-info/SOURCES.txt
+meili_sdk.egg-info/dependency_links.txt
+meili_sdk.egg-info/requires.txt
+meili_sdk.egg-info/top_level.txt
