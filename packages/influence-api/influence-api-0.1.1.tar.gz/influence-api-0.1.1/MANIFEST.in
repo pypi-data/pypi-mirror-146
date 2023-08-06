@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include influence_api *.py
+exclude influence_api/tests.py
+recursive-exclude influence_api/tests *.*

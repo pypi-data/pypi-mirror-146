@@ -1,0 +1,15 @@
+*.log
+*.tmp
+*.bak
+*.old
+__pycache__
+dist/
+build/
+*.egg-info/
+.cache
+.coverage
+coverage.xml
+.tox
+annotations.json
+node_modules
+.eggs/
