@@ -1,0 +1,17 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "jupyterlab_mutableai",
+  "description": "jupyterlab_mutableai settings.",
+  "jupyter.lab.menus": {
+    "context": [
+      {
+        "command": "context_menu:open",
+        "selector": ".jp-DirListing-item[data-file-type=\"notebook\"]",
+        "rank": 0
+      }
+    ]
+  },
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
