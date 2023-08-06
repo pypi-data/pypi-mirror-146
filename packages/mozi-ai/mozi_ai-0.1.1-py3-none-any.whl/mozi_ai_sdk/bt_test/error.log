@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:/Users/Administrator/Desktop/moziai - 副本/mozi_ai_sdk/bt_test/main_versus.py", line 80, in <module>
+    main()
+  File "C:/Users/Administrator/Desktop/moziai - 副本/mozi_ai_sdk/bt_test/main_versus.py", line 76, in main
+    run(env)
+  File "C:/Users/Administrator/Desktop/moziai - 副本/mozi_ai_sdk/bt_test/main_versus.py", line 41, in run
+    env.scenario = env.reset()
+  File "C:\Users\Administrator\Desktop\moziai - 副本\mozi_ai_sdk\base_env.py", line 74, in reset
+    self.mozi_server.init_situation(self.scenario, self.app_mode)
+  File "C:\Users\Administrator\Desktop\moziai - 副本\mozi_simu_sdk\mozi_server.py", line 406, in init_situation
+    b_init_success = scenario.situation.init_situation(self, scenario, app_mode)
+AttributeError: 'NoneType' object has no attribute 'situation'
