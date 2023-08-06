@@ -1,0 +1,14 @@
+pysenti/__init__.py,sha256=Al5wniHxi5X5IUyfQcDxP6vfZUDfrFvKJe0dqQdh7yY,2042
+pysenti/original/SentiStrength.jar,sha256=ZQBgTBXziGfj79YUejqZdoWvPOVL-QsF2KG-HMy9lt0,6582524
+pysenti/original/data/BoosterWordList.txt,sha256=vC8Jz5_ol0guZsGT5VhrchaMSRRzcKNCw31DGxBjnVc,557
+pysenti/original/data/EmoticonLookupTable.txt,sha256=6QnZaYYIBhw9waUh6nPSJwGD5_QVY5cWArVJOeLM240,843
+pysenti/original/data/EmotionLookupTable.txt,sha256=xd4-ug_vHJyaFQ1zWr_q6nn9F-JbUWJfGorPYNC0Pf4,70946
+pysenti/original/data/EnglishWordList.txt,sha256=v18g4l39yi48pNqcsGQOL7WdtKwdHiOlo0CuSzUtt9Y,600880
+pysenti/original/data/IdiomLookupTable.txt,sha256=yb2T1pHRQMLu6Ix0tWU9U4EQsWv4R0OuM1lafTb-2mo,123
+pysenti/original/data/NegatingWordList.txt,sha256=jmnIM0ejW1Ls-DwFaen6XVirxPm45OYiiBLmlY5bIj4,123
+pysenti/original/data/QuestionWords.txt,sha256=xKY0ssSUL44KqW82KZk5J0VYKpbWj4Wk4L0v4-R4iss,53
+pysenti/original/data/SlangLookupTable.txt,sha256=ROOMTabIHecQNqTH9mCc_2J-K7b_pOTXw0N6-9z9GBM,1885
+PySentiStrength-1.0.1.dist-info/METADATA,sha256=GU2Ax_kfauX9WDFBkavO6Tn-JGsmKw1rpZ6mjfDu-IY,1887
+PySentiStrength-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PySentiStrength-1.0.1.dist-info/top_level.txt,sha256=8wR1TM5OmWrci6kBiafN-wJ4lYeLhR-MTjN_pE1-BAk,8
+PySentiStrength-1.0.1.dist-info/RECORD,,
