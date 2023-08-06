@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+makerpy/__init__.py
+makerpy/test.py
+makerpy.egg-info/PKG-INFO
+makerpy.egg-info/SOURCES.txt
+makerpy.egg-info/dependency_links.txt
+makerpy.egg-info/requires.txt
+makerpy.egg-info/top_level.txt
+makerpy/libaries/ARIAL.TTF
+makerpy/libaries/pygameClass.py
+makerpy/libaries/variables/var.py
+makerpy/libaries/variables/variables.json

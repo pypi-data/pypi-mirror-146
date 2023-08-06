@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: makerpy
+Version: 0.0.1.2
+Summary: A python libary that makes the hard things easy.
+Home-page: UNKNOWN
+Author: Rocko Visser
+Author-email: rockodagamer@gmail.com
+License: MIT
+Keywords: app development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a tool that helps you to make hard things easy.
+
