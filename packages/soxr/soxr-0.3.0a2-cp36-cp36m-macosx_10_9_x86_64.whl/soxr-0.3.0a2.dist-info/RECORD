@@ -1,0 +1,14 @@
+soxr/__init__.pxd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soxr/__init__.py,sha256=CdJp-nY0I5RgsIajocV_2NQxSDyeNEJQUmf05J4AOiY,5241
+soxr/csoxr.pxd,sha256=idrtRzEHxzxHv5djCNuvyGgHU9sZShebl8Q0WqeemQY,2020
+soxr/cysoxr.c,sha256=OJkmvH6D-Bo3OpWTn4Db7fVT3ah8d6YKjI2WZo9eVnc,1413108
+soxr/cysoxr.cpython-36m-darwin.so,sha256=Ab83mzGYpSLHkumo3nsQF2zOoY7DsZmTJYa5GzPPKdM,505976
+soxr/cysoxr.pyx,sha256=QE39PMncomud5isclh9CQkFfwEMXUAXqwDR8jcZZbYA,6595
+soxr/soxr-config.h,sha256=v37avwRpkz2I68XmLgIeDXS_kLUsya6pw8jSckgCW1E,490
+soxr/version.py,sha256=D6WBzqpXEue6yVS2Nz5MAU5A3UluffB7PFSYmuxXEL4,144
+soxr-0.3.0a2.dist-info/COPYING.LGPL,sha256=8vEYuQKewYcblTY57MRmUbL8e2LilebPPvKsTJoFizM,26432
+soxr-0.3.0a2.dist-info/LICENSE.txt,sha256=bL9eARpBC1jznczL6XGxYhNLf46wfuoYApM53aB6bS8,3775
+soxr-0.3.0a2.dist-info/METADATA,sha256=1rEVJFmTqHUKOzcU_E-tiYhVAd5-DeeklBLCH1NjAfA,4780
+soxr-0.3.0a2.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+soxr-0.3.0a2.dist-info/top_level.txt,sha256=hKgwfQsbwN5KovL0oYn-hpTVQIIyWMxYyGNzZqs_w-o,5
+soxr-0.3.0a2.dist-info/RECORD,,
