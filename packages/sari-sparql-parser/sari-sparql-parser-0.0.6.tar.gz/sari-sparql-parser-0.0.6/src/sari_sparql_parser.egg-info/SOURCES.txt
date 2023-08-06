@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/sariSparqlParser/__init__.py
+src/sari_sparql_parser.egg-info/PKG-INFO
+src/sari_sparql_parser.egg-info/SOURCES.txt
+src/sari_sparql_parser.egg-info/dependency_links.txt
+src/sari_sparql_parser.egg-info/requires.txt
+src/sari_sparql_parser.egg-info/top_level.txt
