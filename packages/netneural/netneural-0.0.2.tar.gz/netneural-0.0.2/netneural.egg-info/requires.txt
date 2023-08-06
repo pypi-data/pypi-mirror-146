@@ -1,0 +1,8 @@
+numpy
+pandas
+pyyaml
+matplotlib
+jupyter
+tqdm
+python-mnist
+seaborn
