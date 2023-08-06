@@ -1,0 +1,9 @@
+fastgrouper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastgrouper/_core.py,sha256=DV3asprEFuNy7lMwL4b4lOCVGq0XIs7iYXi7ph-KNcI,820
+fastgrouper/arr.py,sha256=rIAS3s5o-zqSMaDFNlUUnmV1K_CKxrCYSB5LFw6Y4yQ,514
+fastgrouper/li.py,sha256=A7WYXGeo0qNL37r-OZjxZZxT6asPlzo5qZHoiT5UGd8,327
+fastgrouper-0.1.0.dist-info/LICENSE,sha256=LgrgRzEHqNJX9asEL7y44Q1e_m-A34MbZYcXx1DnS1k,1520
+fastgrouper-0.1.0.dist-info/METADATA,sha256=msW1LgeOEP4TKcp7SZapXT-uzYwnGqKACycTjJHtnxA,702
+fastgrouper-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastgrouper-0.1.0.dist-info/top_level.txt,sha256=lIw4i46v7T9dYAWHxo23yXXOaZf_nNeEa3ISP1GfNgA,12
+fastgrouper-0.1.0.dist-info/RECORD,,
