@@ -1,0 +1,10 @@
+ginput/__init__.py,sha256=d3uXQgcIuEqimOqhtjlyWs45tD_bvJbC70_zz5Chg54,3
+ginput/command_line.py,sha256=NmaH2V7-whDo5F2Lj6ogmZBB17IFr0mfgryLWE6Oe0M,1619
+ginput/ginput.py,sha256=bPT52hxq3QJn9_lhnOYZ04Nv5eYsY7ujOy6TgObxISA,2527
+ginput/keycodes.py,sha256=kQxyLrSt54LdbSGLlaTe_6tV2UeFr7aWgYMzuBYKS34,6304
+ginput_glisignoli-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ginput_glisignoli-1.0.0.dist-info/METADATA,sha256=CmvQhqLqbPu-HKTrtiN9IsBHRIs5LohYXYiM71hjzsQ,1535
+ginput_glisignoli-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ginput_glisignoli-1.0.0.dist-info/entry_points.txt,sha256=pTqQMyfhgBQVKUTnqnXnQ58vUeHp47aA4spOOMKP5so,52
+ginput_glisignoli-1.0.0.dist-info/top_level.txt,sha256=x1g3C8soxUetTcfl66lCa794Ieemq1FkLMM-q4qOK2E,7
+ginput_glisignoli-1.0.0.dist-info/RECORD,,

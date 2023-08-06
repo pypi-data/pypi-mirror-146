@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ginput-glisignoli
+Version: 1.0.0
+Summary: Send keystrokes to a virtual keyboard
+Home-page: https://github.com/glisignpli/python-ginput
+Author: Gino Lisignoli
+Author-email: glisignoli@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/glisignoli/python-ginput/issues
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: libevdev (==0.10)
+Requires-Dist: pyperclip (==1.8.2)
+Provides-Extra: dev
+Requires-Dist: autopep8 ; extra == 'dev'
+
+# GInput
+
+This is just a simple (and dirty) python script that will take input from a string, piped stdin or clipboard and send it to a virtual keyboard using libevdev
+
+## Installation
+```
+python setup.py install
+```
+
+## Usage
+```
+usage: ginput [-h] [-s STRING] [-c]
+
+Type a string to virtual input device
+
+options:
+  -h, --help            show this help message and exit
+  -s STRING, --string STRING
+                        The string to send to the virtual input device
+  -c, --clipboard       Use contents of the clipboard
+```
+
+## Examples
+Type contents of clipboard:
+`ginput -c`
+
+Type contents of string:
+`ginput -s "foo"`
+
+Type contents of piped input (stdin):
+`echo "foo" | ginput`
+
+
