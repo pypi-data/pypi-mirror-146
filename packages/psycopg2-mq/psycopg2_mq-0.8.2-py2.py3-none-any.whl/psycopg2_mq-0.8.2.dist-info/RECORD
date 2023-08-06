@@ -1,0 +1,11 @@
+psycopg2_mq/__init__.py,sha256=LcYzY8nZBvI5_7KcZ1xg1WnsqQ0jztDNgHKq1ExpthM,146
+psycopg2_mq/model.py,sha256=kIG46jfc8ZevxQN1EkfMBCjWsjH1GtsdKUvmrlb7y2c,5002
+psycopg2_mq/source.py,sha256=Qana0sXvlB2ucAGs8t8pLTRJ7ay7t1GJWuh9TMivDLE,10826
+psycopg2_mq/trigger.py,sha256=WoofrFYFTZ_ega6WhfC-tIBU38-ZmohNZJPlaRvyxqs,476
+psycopg2_mq/util.py,sha256=a-An4eQ-EYigDN6cB7OUYZ9N4dXAw59GzoqRxtBQ5tw,2302
+psycopg2_mq/worker.py,sha256=12jKyHaRJxylw_7XJ2Tl_iPWF0RZ07SqiTMAK9l8xIg,28603
+psycopg2_mq-0.8.2.dist-info/LICENSE.txt,sha256=WxU0GEGHvFFR86cM2QU2XzFguRWhJkYp4uxmGFNnNgQ,1060
+psycopg2_mq-0.8.2.dist-info/METADATA,sha256=3nrdljkLMjAhX5Cr6Pmo6kGHPyRIYN6-m6foQPMmAMY,13313
+psycopg2_mq-0.8.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+psycopg2_mq-0.8.2.dist-info/top_level.txt,sha256=Pa3Kl7g6ltN3mAbafimfhl1-SgO6ptyln4c3JggbAA0,12
+psycopg2_mq-0.8.2.dist-info/RECORD,,
