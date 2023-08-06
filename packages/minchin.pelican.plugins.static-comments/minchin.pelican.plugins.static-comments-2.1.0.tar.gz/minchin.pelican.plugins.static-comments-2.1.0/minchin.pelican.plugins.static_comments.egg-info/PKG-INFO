@@ -1,0 +1,308 @@
+Metadata-Version: 2.1
+Name: minchin.pelican.plugins.static-comments
+Version: 2.1.0
+Summary: A Pelican plugin, which allows you to add static comments to your articles.
+Home-page: https://github.com/MinchinWeb/minchin.pelican.plugins.static_comments
+Author: William Minchin
+Author-email: w_minchin@hotmail.com
+License: GPLv3+
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Environment :: Console
+Classifier: Framework :: Pelican :: Plugins
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+Provides-Extra: build
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: blogger
+Provides-Extra: all
+License-File: LICENSE.txt
+License-File: COPYING
+
+Pelican Static Comment System
+=============================
+
+Pelican Static Comment System allows you to add static comments to your
+articles.
+
+.. image:: https://img.shields.io/pypi/v/minchin.pelican.plugins.static-comments.svg?style=flat
+    :target: https://pypi.python.org/pypi/minchin.pelican.plugins.static-comments/
+    :alt: PyPI version number
+
+.. image:: https://img.shields.io/badge/-Changelog-success
+   :target: https://github.com/MinchinWeb/minchin.pelican.plugins.static-comments/blob/master/CHANGELOG.rst
+   :alt: Changelog
+
+.. image:: https://img.shields.io/pypi/pyversions/minchin.pelican.plugins.static-comments?style=flat
+    :target: https://pypi.python.org/pypi/minchin.pelican.plugins.static-comments/
+    :alt: Supported Python version
+
+.. image:: https://img.shields.io/pypi/l/minchin.pelican.plugins.static-comments.svg?style=flat&color=green
+    :target: https://github.com/MinchinWeb/minchin.pelican.plugins.static-comments/blob/master/LICENSE.txt
+    :alt: License
+
+.. image:: https://img.shields.io/pypi/dm/minchin.pelican.plugins.static-comments.svg?style=flat
+    :target: https://pypi.python.org/pypi/minchin.pelican.plugins.static-comments/
+    :alt: Download Count
+
+Comments are received via email (i.e. you don't need to maintain a server to
+receive comments). Comments are stored in files in formats that can be
+processed by Pelican (e.g., Markdown, reStructuredText). Each comment resides
+in its own file.
+
+Features
+--------
+
+-  Static comments for each article
+-  Replies to comments
+-  Avatars and `Identicons <https://en.wikipedia.org/wiki/Identicon>`__
+-  Comment Atom feed for each article
+-  Easily style-able via themes
+-  Python 3 support
+
+See it in action here:
+`bernhard.scheirle.de <http://bernhard.scheirle.de/posts/2014/March/29/static-comments-via-email/>`__
+
++-------------------+-----------------------------+-----------------------------------------------+
+| Author            | Website                     | Github                                        |
++===================+=============================+===============================================+
+| Bernhard Scheirle | http://bernhard.scheirle.de | https://github.com/Scheirle                   |
++-------------------+-----------------------------+-----------------------------------------------+
+| William Minchin   | https://blog.minchin.ca     | https://github.com/MinchinWeb/blog.minchin.ca |
++-------------------+-----------------------------+-----------------------------------------------+
+
+Instructions
+------------
+
+-  `Quickstart Guide <doc/quickstart.md>`__
+-  `Installation and basic usage <doc/installation.md>`__
+-  `Import existing comments <doc/import.md>`__
+-  `Avatars and identicons <doc/avatars.md>`__
+-  `Comment Atom feed <doc/feed.md>`__
+-  `[Developer] How to do a release <doc/how-to-release.md>`__
+
+PyPi
+------------
+The Pelican Comment System is now also in the Python Package Index and can
+easily installed via:
+
+::
+
+    pip install minchin.pelican.plugins.static-comments
+
+
+Requirements
+------------
+
+Pelican 3.4 or newer is required.
+
+To create identicons, the Python Image Library is needed. Therefore you either
+need PIL **or** Pillow (recommended). If you install the plugin from pip,
+Pillow will automatically be installed.
+
+**Install Pillow manually via:**
+
+::
+
+    pip install Pillow
+
+If you don't want avatars or identicons, this plugin works fine without
+PIL/Pillow. You will, however, see a warning that identicons are deactivated
+(as expected).
+
+Change Log
+----------
+
+The change log can be found in the `CHANGELOG.rst <https://github.com/MinchinWeb/minchin.pelican.plugins.static_comments/CHANGELOG.rst>`__
+file.
+
+
+Change Log
+==========
+
+All notable changes to this project will be documented in this file.
+This project adheres to `Semantic Versioning <http://semver.org/>`__.
+
+2.1.0 - 2022-04-10
+------------------
+\
+
+Fixed
+~~~~~
+
+- generating slugs should now work across Pelican 3.7, 4.0-4.2, and 4.5+. The
+  slugs should also match "old" versions (pre 2.0.0) of the plugin as well. Use
+  the form `replyto: 1md` (no period for file extension start).
+
+Added
+~~~~~
+
+- add prefix ("[Static Comments]") to all logging messages
+
+2.0.0 - 2022-04-08
+------------------
+\
+
+Fixed
+~~~~~
+
+- [**This is no longer the case with v2.1.0**.] the `replyto` field now takes the
+  whole filename, rather than "eating" the dot in filenames. E.g. old:
+  `replyto: 1md`; new: `replyto: 1.md`. You will need to update any comments
+  that contain this field. If you don't update, a warning will appear when
+  you generate your site.
+
+Added
+~~~~~
+
+- automatically activates on Pelican 4.5+. If automatic loading isn't working,
+  refer to the installation instructions for my `autoloader
+  <https://github.com/MinchinWeb/minchin.pelican.plugins.autoloader>`__ plugin.
+- Blogger comment exporter script is now available on the commandline as
+  `blogger-comment-export`
+
+Changes
+~~~~~~~
+
+- move GitHub repo to `MinchinWeb/minchin.pelican.plugins.static-comments
+  <https://github.com/MinchinWeb/minchin.pelican.plugins.static-comments>`__
+- plugin name, as listed in `PLUGINS` in `pelicanconf.py`, is now
+  `minchin.pelican.plugin.static_comments`. Generally, though, the entry can be
+  completely removed and instead rely on the auto-loading of plugins provided
+  by Pelican 4.5+.
+
+Unresolved
+~~~~~~~~~~
+
+- documentation may (in places) still need to be updated
+
+
+1.4.0 - 2017-02-20
+------------------
+\
+
+Added
+~~~~~
+
+-  add ``setup.py`` to allow posting plugin to PyPI `PR
+   #862 <https://github.com/getpelican/pelican-plugins/pull/862>`__
+
+1.3.0 - 2017-01-10
+------------------
+\
+
+Added
+~~~~~
+
+-  add
+   `blogger\_comment\_export.py <import/blogger_comment_export.py>`__
+   script to export comments from Blogger XML export and `associated
+   documentation <docs/import.md>`__ `PR
+   #835 <https://github.com/getpelican/pelican-plugins/pull/835>`__
+
+1.2.2 - 2016-12-19
+------------------
+\
+
+Fixed
+~~~~~
+
+-  Correct jQuery expression in cancelReply method `PR
+   #820 <https://github.com/getpelican/pelican-plugins/pull/820>`__
+
+1.2.1 - 2016-09-22
+------------------
+\
+
+Fixed
+~~~~~
+
+-  Add support for the autoreload mode of pelican `PR
+   #782 <https://github.com/getpelican/pelican-plugins/pull/782>`__
+   `Fixes
+   pelican#1949 <https://github.com/getpelican/pelican/issues/1949>`__
+
+1.2.0 - 2016-05-23
+------------------
+\
+
+Fixed - Documentation
+~~~~~~~~~~~~~~~~~~~~~
+
+-  Correct template path `PR
+   #713 <https://github.com/getpelican/pelican-plugins/pull/713>`__
+
+Added - Documentation
+~~~~~~~~~~~~~~~~~~~~~
+
+-  Adds Quickstart guide + default theme `PR
+   #686 <https://github.com/getpelican/pelican-plugins/pull/686>`__
+
+Fixed
+~~~~~
+
+-  Fix mailto link: use '' instead of '' `PR
+   #720 <https://github.com/getpelican/pelican-plugins/pull/720>`__
+-  Fix comparison of offset-naive and offset-aware datetimes `PR
+   #722 <https://github.com/getpelican/pelican-plugins/pull/722>`__
+
+Added
+~~~~~
+
+-  Logs a warning if the parent of a comment can not be found `PR
+   #715 <https://github.com/getpelican/pelican-plugins/pull/715>`__
+
+1.1.0 - 2016-02-18
+------------------
+\
+
+Fixed - Documentation
+~~~~~~~~~~~~~~~~~~~~~
+
+-  Updated old URLs `PR
+   #677 <https://github.com/getpelican/pelican-plugins/pull/677>`__
+
+Changed
+~~~~~~~
+
+-  Main logic runs a bit earlier (allows other plugins to access
+   comments earlier) `PR
+   #677 <https://github.com/getpelican/pelican-plugins/pull/677>`__
+-  The writer to generate the feeds can now be exchanged (via a normal
+   pelican writer plugin) `PR
+   #677 <https://github.com/getpelican/pelican-plugins/pull/677>`__
+
+1.0.1 - 2015-10-04
+------------------
+\
+
+Fixed - Documentation
+~~~~~~~~~~~~~~~~~~~~~
+
+-  Add commas indicating tuple (``PELICAN_COMMENT_SYSTEM_AUTHORS``) `PR
+   #579 <https://github.com/getpelican/pelican-plugins/pull/579>`__
+
+1.0.0 - 2014-11-05
+------------------
+\
+
+Added
+~~~~~
+
+-  Basic static comments
+-  Atom Feeds
+-  Replies to comments
+-  Avatars and identicons
+
+This change log uses `Keep a CHANGELOG <http://keepachangelog.com/>`__
+as a template.
+
+
