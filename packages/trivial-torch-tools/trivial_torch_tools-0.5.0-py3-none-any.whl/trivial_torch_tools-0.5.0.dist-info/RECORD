@@ -1,0 +1,12 @@
+trivial_torch_tools/__init__.py,sha256=8KaCuM5rcS85wgLpbc3p4iMSrkHZqe6zt6G6hg4DVzk,38
+trivial_torch_tools/core.py,sha256=7jzBUhOPpLKiNK0yRAH5N0tSXrXg3gmK-1HCbERveb4,4740
+trivial_torch_tools/generics.py,sha256=CKihqoPLckFkGFn8L-tXLNlt8tc4Lre0h3TDIz_G17g,8851
+trivial_torch_tools/image.py,sha256=c4nwYeSajdyYidG0OtrPoMSY8kEX45hI5Fo3RZv_jac,1328
+trivial_torch_tools/main.py,sha256=ZHY69PFvm2JgnIj5JXsAykrRvDG6uBTlOiZ3JmwLDJ0,1014
+trivial_torch_tools/misc.py,sha256=_aGok5h2gPivxwA5AnS1Ify9_SWsGbQJIv2H7hKdt8Y,1958
+trivial_torch_tools/model.py,sha256=KksFcCfT4GqpQFF9G1okUzlFqB2fS-ra5JE5pDq34BI,8943
+trivial_torch_tools/one_hots.py,sha256=qQqSJ7f-lcjCauayPNjexf62-KwopFA7raLX1MfD_z0,1765
+trivial_torch_tools-0.5.0.dist-info/METADATA,sha256=MlBpTlbYqaWY19gIqhu3beth_d84_WZYe-EDmNILBO0,3147
+trivial_torch_tools-0.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+trivial_torch_tools-0.5.0.dist-info/top_level.txt,sha256=d9QgpDeNkv0kWop04gVROJqqKUEyW7Zqz4D7CRLqqLI,20
+trivial_torch_tools-0.5.0.dist-info/RECORD,,
