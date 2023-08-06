@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: stat3255demo
+Version: 0.1.0
+Summary: Demo Python library for STAT 3255
+Home-page: UNKNOWN
+Author: Anthony Zeimbekakis
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+
+UNKNOWN
+
+
