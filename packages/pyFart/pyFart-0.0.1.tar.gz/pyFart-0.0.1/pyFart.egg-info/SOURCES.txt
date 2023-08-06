@@ -1,0 +1,8 @@
+setup.py
+pyFart/__init__.py
+pyFart/easterEgg.py
+pyFart/fart.py
+pyFart.egg-info/PKG-INFO
+pyFart.egg-info/SOURCES.txt
+pyFart.egg-info/dependency_links.txt
+pyFart.egg-info/top_level.txt

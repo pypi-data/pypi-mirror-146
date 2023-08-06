@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pyFart
+Version: 0.0.1
+Summary: prints a funny line to the console
+Home-page: UNKNOWN
+Author: Brendan Corcoran
+Author-email: brendan.j.corcoran@gmail.com
+License: UNKNOWN
+Description: a python package which prints a line related to farts to the console an amount of times desired by the user
+Keywords: python,fart
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
