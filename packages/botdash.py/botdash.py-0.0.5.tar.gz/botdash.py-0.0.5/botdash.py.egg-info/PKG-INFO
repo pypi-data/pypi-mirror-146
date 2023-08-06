@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: botdash.py
+Version: 0.0.5
+Summary: API wrapper for botdash.pro
+Home-page: https://github.com/jetnox/botdash-py
+Author: Jetnox
+Author-email: seer@jetblaze.org
+License: MIT
+Download-URL: https://github.com/jetnox/botdash-py/tarball/master
+Keywords: botdash,discord,bot
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BotDash.py
+
+https://botdash.pro
+
+---
+
+## Get started
+
+```py
+from botdash import Client
+
+dash = Client(
+    token="TOKEN_HERE",
+    return_value=False, # Set to true
+    debug=False # Use this for debugging
+)
+val = dash.get("GUILD_ID_HERE", "DATABASE_ID_HERE").value # REMOVE .value if "return_value" is True
+
+print(val)
+```
+
