@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rubika-lib
+Version: 1.0.0
+Summary: This is an unofficial library for deploying robots on Rubika accounts
+Home-page: https://github.com/snipe4kill/rubika/
+Author: Shayan Heidari
+Author-email: snipe4kill.tg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+docs are ready at telegram https://t.me/rubika_library
+

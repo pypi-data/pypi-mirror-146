@@ -1,0 +1,6 @@
+jdatetime
+pytz
+pycryptodome
+requests
+tqdm
+urllib3
