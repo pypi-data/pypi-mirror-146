@@ -1,0 +1,13 @@
+kabbes_smart_documentation
+kabbes_aws_connections
+kabbes_database_connections
+kabbes_aws_credentials
+kabbes_pypi_builder
+kabbes_repository_generator
+kabbes_user_profile
+kabbes_ml_pipeline
+kabbes_dir_ops
+kabbes_nanoid
+kabbes_parent_class
+kabbes_analytics_packages
+kabbes_py_starter
