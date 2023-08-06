@@ -1,0 +1,7 @@
+setup.py
+CameraSimulator/__init__.py
+CameraSimulator.egg-info/PKG-INFO
+CameraSimulator.egg-info/SOURCES.txt
+CameraSimulator.egg-info/dependency_links.txt
+CameraSimulator.egg-info/requires.txt
+CameraSimulator.egg-info/top_level.txt
