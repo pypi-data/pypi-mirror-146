@@ -1,0 +1,5 @@
+einops==0.4
+equinox>=0.4
+jax>=0.3.4
+jaxlib>=0.1
+numpy
