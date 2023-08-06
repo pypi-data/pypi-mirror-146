@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nerdvision-serverless
+Version: 1.3.4
+Summary: The NerdVision Python agent for live debugging, dynamic logging and data monitoring.
+Home-page: https://nerd.vision
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: https://www.nerd.vision/legal/agent-license
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Dist: certifi (==2019.9.11)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: urllib3 (==1.25.6)
+
+To use this please view the docs at https://docs.nerd.vision/python/configuration/
+
+
