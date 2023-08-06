@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: finx_ib_reports
+Version: 0.0.6
+Summary: IBKR report data via ib_insync
+Home-page: https://github.com/westonplatter/finx-ib-reports
+Author: westonplatter
+Author-email: westonplatter+finx@gmail.com
+License: BSD-3
+Project-URL: Issue Tracker, https://github.com/westonplatter/finx-ib-reports/issues
+Project-URL: Source Code, https://github.com/westonplatter/finx-ib-reports
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Finx IB Reports
+Python package to fetch reports from IB.
+
+## Example
+Example `.env` file,
+```
+IB_JSON='{"accounts": [{"name": "account1", "flex_token": "123", "weekly": 890}]}'
+
+PORTFOLIOS_DISCORD_WEBHOOK_URL=https://discord_url
+```
+
+Example python,
+```
+from finx_ib_reports.download_trades import execute_discord_for_accounts
+execute_discord_for_accounts(report_name="weekly", cache=False, file_name=".env")
+```
+
+And checkout the reports in `data`.
+
+
+## License
+BSD-3. See LICENSE file.
+
+
