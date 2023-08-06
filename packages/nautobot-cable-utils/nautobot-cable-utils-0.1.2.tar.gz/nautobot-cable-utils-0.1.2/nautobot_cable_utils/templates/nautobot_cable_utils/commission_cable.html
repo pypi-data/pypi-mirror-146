@@ -1,0 +1,30 @@
+{% extends 'generic/object_edit.html' %}
+{% load form_helpers %}
+
+{% block javascript %}
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        $('.nautobot-select2-static').select2('open');
+        $('.select2-search__field')[0].focus();
+      });
+    </script>
+{% endblock %}
+
+{% block title %}
+  Commission Cable
+{% endblock %}
+
+{% block form %}
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Commission Cable #{{cable.pk}}</strong></div>
+      <div class="panel-body">
+        {% render_field form.template %}
+        {{ form.cable }}
+      </div>
+    </div>
+{% endblock %}
+
+{% block buttons %}
+    <button type="submit" name="_create" class="btn btn-primary">Create</button>
+    <a href="{{ return_url }}" class="btn btn-default">Cancel</a>
+{% endblock %}
