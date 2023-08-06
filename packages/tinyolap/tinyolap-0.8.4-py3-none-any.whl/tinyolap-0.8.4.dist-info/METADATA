@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: tinyolap
+Version: 0.8.4
+Summary: TinyOlap: A multi-dimensional in-memory OLAP database in plain Python 3.
+Home-page: http://github.com/zeutschler/tinyolap/
+Author: Thomas Zeutschler
+Author-email: margins.roadmap_0t@icloud.com
+License: MIT License
+Project-URL: Homepage, https://tinyolap.com
+Project-URL: Documentation, https://tinyolap.com/docs
+Project-URL: GitHub, https://github.com/Zeutschler/tinyolap
+Keywords: database,olap,molap,planning,simulation,forecasting,multidimensional,cube,business rules,calculation
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: cryptography
+Requires-Dist: sqlparse
+Requires-Dist: enum-tools
+
+
+TinyOlap is a minimal in-process in-memory multi-dimensional database with numerical aggregations 
+and calculations in mind. First a multi-dimensional data model needs to be defined, consisting of 
+cubes, dimensions, members, hierarchies etc. Afterwards additional calculation logic can be added 
+through arbitrary Python code. Data access is cell-based or range-based. A minimal support for SQL 
+in also provided. All calculations will be executed on the fly. Optionally, persistence is provided
+through SQLite. TinyOlap is a byproduct of a research project, intended to mimic the behavior and 
+capabilities of real-world MOLAP databases (e.g. IBM TM/1, SAP HANA or Jedox PALO) but with a super 
+minimal footprint. TinyOlap is best suited for interactive planning, forecasting, simulation and 
+general multidimensional numerical problems.          
+
+
