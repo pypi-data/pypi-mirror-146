@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pywatchdog/__init__.py
+pywatchdog/__main__.py
+pywatchdog/ioctl.py
+pywatchdog/watchdog.py
+pywatchdog.egg-info/PKG-INFO
+pywatchdog.egg-info/SOURCES.txt
+pywatchdog.egg-info/dependency_links.txt
+pywatchdog.egg-info/entry_points.txt
+pywatchdog.egg-info/top_level.txt
