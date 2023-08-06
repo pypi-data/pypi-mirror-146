@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: multi-freq-ldpy
+Version: 0.1.0
+Summary: Multiple Frequency Estimation Under Local Differential Privacy in Python
+Home-page: https://github.com/hharcolezi/multi-freq-ldpy
+Author: Héber H. Arcolezi
+Author-email: hh.arcolezi@gmail.com
+License: MIT
+Keywords: local-differential-privacy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python
+
+Installation.
+This package can be easily installed with pip:
+pip install multi-freq-ldpy
+
+Requirements:
+numpy 
+numba
+
+
