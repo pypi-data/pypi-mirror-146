@@ -1,0 +1,11 @@
+astropy
+cbor2
+imageio
+numpy
+matplotlib
+pillow
+scikit-image
+sharedmem
+tqdm
+click
+mapbox_vector_tile
