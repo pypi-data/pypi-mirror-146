@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: mrcsmooth
+Version: 0.2
+Summary: Downsample cryo-EM densities
+Home-page: https://gitlab.com/cblau/mrcsmooth
+Author: Christian Blau
+Author-email: cblau.mail@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/cblau/mrcsmooth/issues
+Keywords: molecular dynamics,GROMACS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: COPYING
+Requires-Dist: argparse
+Requires-Dist: mrcfile
+Requires-Dist: rich
+Requires-Dist: scipy
+
+# mrcsmooth
+
+Downsample a density.
+
+## Installing and running
+
+Install the latest release from the python package manager
+
+```bash
+pip3 install mrcsmooth
+```
+
+Then run it
+
+```bash
+mrcsmooth
+```
+
+## Author
+
+Christian Blau
+
+
