@@ -1,0 +1,17 @@
+iree/tools/tf/__init__.py,sha256=Dwy1ihrAYImCIeq7VVYVbELGK-NMWgF4j5YhtMcitSg,542
+iree/tools/tf/iree-import-tf,sha256=zDw5w3MDFxdXjXh4O3_T3Nqc50DFnWiOnVr_SmVS0_E,196756800
+iree/tools/tf/scripts/iree_import_tf/__main__.py,sha256=fSAyN2FU8tFrjXsoabew3JIDO9pjiaRUrlFhlZjTEzo,476
+iree/tf/support/module_utils_test.py,sha256=jm_UUP-zTcGzeB8ibxWETe1HT82T2j-Ep3q6sjRMxoI,2984
+iree/tf/support/trace_utils.py,sha256=fdNIMKaOwUrPdnKmULTOkZQiEJ7Qm2Y_UxfGGAfeI-I,15457
+iree/tf/support/tf_utils_test.py,sha256=Jk6TU6Pfollsl-YWa7UEfyWAuG-l7xnN0bKhZp4aQOI,3019
+iree/tf/support/tf_utils.py,sha256=0oF5oA0xDxvAP8qdtBNdFPFoqv7Ibindhrh4tsqHFjw,10127
+iree/tf/support/module_utils.py,sha256=h-Q1fosbi2SsTD8L5sdJ3odJPUq8fvbZUuiE4-TNrV8,37935
+iree/tf/support/trace_utils_test.py,sha256=y3bcW664-TF8r36mktbVLGr3qq4CCqpD0WM_A6LEeIg,5043
+iree/tf/support/__init__.py,sha256=TNHoFYRvrpNlNcAvRLRtZNG4D2LMy0qFmelw_qGm9N4,217
+iree/tf/support/tf_test_utils_test.py,sha256=_1dtEOy3qXtNl22Mr7fkl27WRHzN9NsDao7nriRL_fA,2575
+iree/tf/support/tf_test_utils.py,sha256=F1LvqRBkMXi2EUnESGu57WthQhwnMpDqbRjjb1eklN0,25804
+iree_tools_tf-20220415.108.dist-info/RECORD,,
+iree_tools_tf-20220415.108.dist-info/METADATA,sha256=2faBXgvneK0DIvbwWIpZWEAt7f2eSFlmtRXPbDQfT7o,501
+iree_tools_tf-20220415.108.dist-info/WHEEL,sha256=V2KjM8jRkjCA0T3Qq1khvRiuI5gyLMwf7zYUWcXbs_4,146
+iree_tools_tf-20220415.108.dist-info/entry_points.txt,sha256=UfbZLCQaU3IH-wmhICtBHWgJ3q1mN3VV88wqGrnLSKY,86
+iree_tools_tf-20220415.108.dist-info/top_level.txt,sha256=VvWqv7BW1mOstqkVvB0lVU_q6KrPy9ABEHayFLvGDAw,5
