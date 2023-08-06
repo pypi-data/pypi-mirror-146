@@ -1,0 +1,54 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-04-11 13:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.excludefromcollection\n"
+
+#: collective/excludefromcollection/behaviors/exclude_from_collection.py:32
+msgid "Exclude from Collection"
+msgstr ""
+
+#: collective/excludefromcollection/profiles/default/registry/main.xml
+msgid "Excluded from Collection"
+msgstr ""
+
+#: collective/excludefromcollection/profiles/default/registry/main.xml
+msgid "Filters objects which have exclude_from_collection enabled"
+msgstr ""
+
+#: collective/excludefromcollection/behaviors/exclude_from_collection.py:35
+msgid "If this is enabled, one can filter out this object in a collection by using \"Exclude from Collection: False\""
+msgstr ""
+
+#: collective/excludefromcollection/configure.zcml:27
+msgid "Installs the collective.excludefromcollection add-on."
+msgstr ""
+
+#: collective/excludefromcollection/profiles/default/registry/main.xml
+msgid "Metadata"
+msgstr ""
+
+#: collective/excludefromcollection/configure.zcml:36
+msgid "Uninstalls the collective.excludefromcollection add-on."
+msgstr ""
+
+#: collective/excludefromcollection/configure.zcml:27
+msgid "collective.excludefromcollection"
+msgstr ""
+
+#: collective/excludefromcollection/configure.zcml:36
+msgid "collective.excludefromcollection (uninstall)"
+msgstr ""

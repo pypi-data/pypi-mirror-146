@@ -1,0 +1,5 @@
+================================
+collective.excludefromcollection
+================================
+
+User documentation

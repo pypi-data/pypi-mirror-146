@@ -1,0 +1,22 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="plone">
+
+    <include package="plone.behavior" file="meta.zcml"/>
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <plone:behavior
+        name="collective.excludefromcollection.exclude_from_collection"
+        title="ExcludeFromCollection"
+        description="Conditionally eclude objects from a Collection."
+        provides=".exclude_from_collection.IExcludeFromCollection"
+        factory=".exclude_from_collection.ExcludeFromCollection"
+        marker=".exclude_from_collection.IExcludeFromCollectionMarker"
+        />
+
+
+</configure>
