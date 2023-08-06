@@ -1,0 +1,10 @@
+_klimits.cpython-36m-i386-linux-gnu.so,sha256=fSfumVAagoZFPtpt_qHOEf7XJhbZrdbSJTJstLx2fSQ,2785828
+klimits.libs/libgomp-2716b9e4.so.1.0.0,sha256=YAjX69EB8kRSeoeBFWS1bkLcR0TmwjQn-4lZte_ult0,97188
+klimits/__init__.py,sha256=ztlQAnCWdIW8WQlrYGwuLzVD63Zh-gxPTF4v7OEZAwQ,1785
+klimits/trajectory_plotter.py,sha256=jVyl0TrZ9kqg62c2p-aasVl3DeUKGuQfmcYobtfjDLM,13589
+klimits/test_trajectory_generation.py,sha256=eAvj3F7osAdXmyOYc5J5f71vMFyZJYwytyEuolXUbuo,15292
+klimits-1.1.2.dist-info/RECORD,,
+klimits-1.1.2.dist-info/LICENSE,sha256=QpsKyR86eMyilQ3v-Fiw7NRBe8i-nBARMkB2WEZ1f14,1069
+klimits-1.1.2.dist-info/METADATA,sha256=RH6oThnt84mhYL8NCsTeyCrbOlQBnSnL3izsO7S5-Xg,4284
+klimits-1.1.2.dist-info/top_level.txt,sha256=zcNnwYtfC2fb1V09GLe74lkKrFNVVsrnEIMt_6lwkM0,17
+klimits-1.1.2.dist-info/WHEEL,sha256=u427YwvrQ6GxVFeEJIozm-l29aK3BQ2fEgTGmlAIyH0,110
