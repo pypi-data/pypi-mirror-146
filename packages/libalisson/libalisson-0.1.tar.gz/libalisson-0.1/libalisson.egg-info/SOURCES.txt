@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+libalisson/__init__.py
+libalisson/github_api.py
+libalisson.egg-info/PKG-INFO
+libalisson.egg-info/SOURCES.txt
+libalisson.egg-info/dependency_links.txt
+libalisson.egg-info/not-zip-safe
+libalisson.egg-info/requires.txt
+libalisson.egg-info/top_level.txt
