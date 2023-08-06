@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: frinx_conductor_workers
+Version: 1.0.6
+Summary: Conductor python client workers
+Home-page: https://github.com/FRINXio/uniflow-micros
+Author: Frinx
+Author-email: info@frinx.io
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: conductor
+Platform: UNKNOWN
