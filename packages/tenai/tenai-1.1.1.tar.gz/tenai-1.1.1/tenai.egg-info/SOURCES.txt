@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+tenai/__init__.py
+tenai/core.py
+tenai.egg-info/PKG-INFO
+tenai.egg-info/SOURCES.txt
+tenai.egg-info/dependency_links.txt
+tenai.egg-info/entry_points.txt
+tenai.egg-info/requires.txt
+tenai.egg-info/top_level.txt
