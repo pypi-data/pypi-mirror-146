@@ -1,0 +1,10 @@
+README.md
+setup.py
+orpl/Demotivator.py
+orpl/Quote.py
+orpl/__init__.py
+orpl.egg-info/PKG-INFO
+orpl.egg-info/SOURCES.txt
+orpl.egg-info/dependency_links.txt
+orpl.egg-info/requires.txt
+orpl.egg-info/top_level.txt
