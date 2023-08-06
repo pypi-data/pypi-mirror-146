@@ -1,0 +1,3 @@
+[console_scripts]
+pcc=poetry_cookiecutter.cli:main
+
