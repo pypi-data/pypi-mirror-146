@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+hifi_gan_bwe/__init__.py
+hifi_gan_bwe/criteria.py
+hifi_gan_bwe/datasets.py
+hifi_gan_bwe/metrics.py
+hifi_gan_bwe/models.py
+hifi_gan_bwe.egg-info/PKG-INFO
+hifi_gan_bwe.egg-info/SOURCES.txt
+hifi_gan_bwe.egg-info/dependency_links.txt
+hifi_gan_bwe.egg-info/entry_points.txt
+hifi_gan_bwe.egg-info/requires.txt
+hifi_gan_bwe.egg-info/top_level.txt

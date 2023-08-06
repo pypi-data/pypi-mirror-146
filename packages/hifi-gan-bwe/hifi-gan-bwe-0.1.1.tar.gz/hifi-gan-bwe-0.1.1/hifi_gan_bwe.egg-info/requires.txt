@@ -1,0 +1,8 @@
+audioread
+matplotlib
+numpy
+soundfile
+torch
+torchaudio
+tqdm
+wandb
