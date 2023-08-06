@@ -1,0 +1,11 @@
+cleanplots/__init__.py,sha256=fQvj4KvDCNlR5d5Rl4zIx3E4en1Tyv-RQaG6aWMmCgc,56
+cleanplots/_version.py,sha256=wie7U0jiiRQh4KXsOSrk1rP-Kt1uikd0bgnfaehORC4,72
+cleanplots/cleanplots.py,sha256=ecnR9jMnMHXytUp5JLVoPpzjYeJRfO8VGphOd3QeB3U,5317
+prettyplots/__init__.py,sha256=-Jv-QzVvMlwBYAhSO65p-LZ_0N3B87LHQMzJvux2rdw,59
+prettyplots/_version.py,sha256=wie7U0jiiRQh4KXsOSrk1rP-Kt1uikd0bgnfaehORC4,72
+prettyplots/prettyplots.py,sha256=ecnR9jMnMHXytUp5JLVoPpzjYeJRfO8VGphOd3QeB3U,5317
+cleanplots-0.1.0.dist-info/LICENSE,sha256=THt6dI93Ml2KmCgtS51Vz1FmMB4WLEdR8wP39V1QUjg,1521
+cleanplots-0.1.0.dist-info/METADATA,sha256=uczox71LqePhlvvS9CkfUr3CRkmyLwRfJNyEU8yEE-0,671
+cleanplots-0.1.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+cleanplots-0.1.0.dist-info/top_level.txt,sha256=hac-MrfkFdCvgKIMSLeHyvWFq9wbq0Is1BW6O4lCEjw,11
+cleanplots-0.1.0.dist-info/RECORD,,
