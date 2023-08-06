@@ -1,0 +1,13 @@
+ddg_scraper/__init__.py,sha256=N842My6O7H44j9v3uRZyNQ5SIAlaT1ilshpvzCrB2iQ,1221
+ddg_scraper/core.py,sha256=Y_xUkssECVKnpRgx7j_wTwRjqNK0_dIhF8YSxec65Zg,224
+ddg_scraper/http.py,sha256=uPhXQHX17YhIBJ_mrSRFJgK9hXs3Ara5Drt30B3el68,1531
+ddg_scraper/parser.py,sha256=AVRLnZ8fQI_OpaztffvWJ1QQ0ijy1oadP9J6wlGpW0Y,1613
+ddg_scraper/scraper.py,sha256=Uv4O4f0I0QybT1hYRC9XXRMpd6OUTUEA63SOxP1YfZQ,914
+ddg_scraper/structs.py,sha256=Emam7SNgGqLL__d_5V9rUEO1v3I3sjSPdUnxXbqtHwQ,550
+ddg_scraper/abc/__init__.py,sha256=ozQANCsgr_i5W2D76yV_LBqC5NlF241s-yWrzBEP74w,33
+ddg_scraper/abc/coroutine_handler.py,sha256=8zHdeA_p8emd86FAt8rX4fe4sm7wzXdqi2xWSvgaPq4,646
+ddg_scraper-2.0.1.dist-info/LICENSE,sha256=pIxsFeCbVQhXcGiBvb5awOepbzzTX8N7vbYlenO2ItA,1092
+ddg_scraper-2.0.1.dist-info/METADATA,sha256=WIGO1iYusrk-LIaar6H_BMhlKz-YO3mZq6SBMFTcDRc,1921
+ddg_scraper-2.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ddg_scraper-2.0.1.dist-info/top_level.txt,sha256=gIlpRrqH-YDuW5V0-46TgbGYb3VuQRloV0W7nYoyMgk,12
+ddg_scraper-2.0.1.dist-info/RECORD,,
