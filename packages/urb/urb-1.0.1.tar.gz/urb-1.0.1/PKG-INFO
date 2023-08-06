@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: urb
+Version: 1.0.1
+Summary: a command line dictionary and wrapper for various dictionary APIs
+Home-page: https://github.com/addyett/urb
+Author: addyett
+Author-email: g.aditya2048@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# urb
+
+a commanline tool to search the urban dictionary from the convinience of your terminal
+
+
