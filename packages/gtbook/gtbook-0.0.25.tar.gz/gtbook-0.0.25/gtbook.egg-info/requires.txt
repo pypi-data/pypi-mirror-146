@@ -1,0 +1,7 @@
+pip
+packaging
+gtsam==4.2a6
+plotly
+requests
+
+[dev]
