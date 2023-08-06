@@ -1,0 +1,14 @@
+docker
+click
+pyyaml
+importlib-resources
+
+[extended]
+gym
+wandb
+
+[rllib]
+ray[rllib]
+torch
+gym
+wandb
