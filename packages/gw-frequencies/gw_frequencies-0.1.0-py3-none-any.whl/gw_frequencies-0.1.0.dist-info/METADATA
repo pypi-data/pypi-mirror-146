@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gw-frequencies
+Version: 0.1.0
+Summary: A convenience package to make reduced frequency arrays for the representation of gravitational waveforms.
+Author: jacopok
+Author-email: jacopok@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.20,<2.0)
