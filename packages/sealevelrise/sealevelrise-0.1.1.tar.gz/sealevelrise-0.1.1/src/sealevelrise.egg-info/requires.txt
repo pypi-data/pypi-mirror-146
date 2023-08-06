@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+pathlib
+
+[dev]
+pytest
+pytest-cov
+flake8
+jupyter
+black
+wheel
