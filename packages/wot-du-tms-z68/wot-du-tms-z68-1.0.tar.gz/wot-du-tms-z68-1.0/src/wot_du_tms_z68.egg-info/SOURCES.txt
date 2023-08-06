@@ -1,0 +1,10 @@
+setup.py
+src/app/__init__.py
+src/app/ammo.py
+src/app/armour.py
+src/app/gun.py
+src/app/tank.py
+src/wot_du_tms_z68.egg-info/PKG-INFO
+src/wot_du_tms_z68.egg-info/SOURCES.txt
+src/wot_du_tms_z68.egg-info/dependency_links.txt
+src/wot_du_tms_z68.egg-info/top_level.txt
