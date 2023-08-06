@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: directbank
+Version: 0.0.9
+Summary: 
+Home-page: https://github.com/kizyanov/directbank
+License: MIT
+Keywords: directbank
+Author: Toony
+Author-email: kizyanov@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: xsdata (==22.4)
+Project-URL: Repository, https://github.com/kizyanov/directbank
+Description-Content-Type: text/markdown
+
+# directbank
+### Test
