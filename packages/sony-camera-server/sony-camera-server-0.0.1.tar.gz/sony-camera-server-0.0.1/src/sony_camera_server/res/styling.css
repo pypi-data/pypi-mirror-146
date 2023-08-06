@@ -1,0 +1,91 @@
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+select.camera-setting {
+    width: 150px;
+}
+
+input {
+    width: 100px;
+}
+
+/* .left { */
+/*     width: 20%; */
+/* } */
+
+/* .middle { */
+/*     width: 50%; */
+/* } */
+
+/* .right { */
+/*     width: 30%; */
+/* } */
+
+h4 {
+    display: inline;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+.action {
+    display: block;
+}
+
+#camera-logging-area {
+    overflow-x: auto;
+    overflow-y: scroll;
+    margin-right: 20px;
+}
+#camera-status {
+    overflow-x: auto;
+    overflow-y: scroll;
+    margin-right: 20px;
+}
+
+/* Remove default bullets */
+ul, #filetree {
+    list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#filetree {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+    display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+    display: block;
+}
