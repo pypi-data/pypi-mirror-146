@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fluffy-server
+Version: 1.33.3
+Summary: UNKNOWN
+Author: Chris Kuehl
+Author-email: ckuehl@ckuehl.me
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: guesslang
+License-File: LICENSE
+
+UNKNOWN
+

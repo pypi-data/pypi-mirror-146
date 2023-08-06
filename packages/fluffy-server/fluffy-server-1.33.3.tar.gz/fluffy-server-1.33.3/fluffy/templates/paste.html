@@ -1,0 +1,71 @@
+{% set page_name = 'paste' %}
+{% extends 'layouts/text.html' %}
+
+{#
+    Terminal output gets its own preferred theme setting, since many people
+    seem to prefer a dark background for terminal output, but a light
+    background for regular code.
+#}
+{% if highlighter.is_terminal_output %}
+    {% set preferredStyleVar = 'preferredStyleTerminal' %}
+    {% set defaultStyle = 'monokai' %}
+{% else %}
+    {% set preferredStyleVar = 'preferredStyle' %}
+    {% set defaultStyle = 'default' %}
+{% endif %}
+{% block highlight_class %}highlight-{{defaultStyle}}{% endblock %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{{asset_url('pygments.css')}}" />
+{% endblock %}
+
+{% block info %}
+    {{num_lines(text)}} {{'line'|pluralize(num_lines(text))}} of {{highlighter.name}}
+{% endblock %}
+
+{% block highlight_start %}
+    <script>
+        var preferredStyleVar = {{preferredStyleVar|tojson}};
+    </script>
+    {{inline_js('paste-inline-start.js')}}
+{% endblock %}
+
+{% block text %}
+    <div class="line-numbers">
+        {% for i in range(1, num_lines(text) + 1) %}
+            <a id="LL{{i}}">{{i}}</a>
+        {% endfor %}
+    </div>
+    <div class="text" contenteditable="true" spellcheck="false">
+        {{highlighter.highlight(text)|safe}}
+    </div>
+{% endblock %}
+
+{% block extra_toolbar %}
+    <select id="style">
+        {% for category, styles in styles.items()|sort %}
+            <optgroup label="{{category}}">
+                {% for style in styles %}
+                    <option
+                      value="{{style.name}}"
+                      {% if style.name == defaultStyle %}
+                          selected="selected"
+                      {% endif %}
+                    >{{style.name}}</option>
+                {% endfor %}
+            </optgroup>
+        {% endfor %}
+    </select>
+
+    <script>
+        if (preferredStyle !== null) {
+            document.getElementById('style').value = preferredStyle;
+        }
+    </script>
+{% endblock %}
+
+{% block inline_js %}
+    <!-- TODO: can we factor out jQuery? -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    {{inline_js('paste-inline.js')}}
+{% endblock %}
