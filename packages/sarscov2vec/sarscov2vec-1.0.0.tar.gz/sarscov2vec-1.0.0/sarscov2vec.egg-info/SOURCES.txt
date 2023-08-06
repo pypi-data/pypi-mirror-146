@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pytest.ini
+requirements.txt
+setup.cfg
+setup.py
+sarscov2vec.egg-info/PKG-INFO
+sarscov2vec.egg-info/SOURCES.txt
+sarscov2vec.egg-info/dependency_links.txt
+sarscov2vec.egg-info/requires.txt
+sarscov2vec.egg-info/top_level.txt
+tools/__init__.py
+tools/sarscov2vec.py
