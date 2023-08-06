@@ -1,0 +1,258 @@
+,EXERCISE,Beginner,Intermediated,Experienced,Stength,Hypertrophy,Endurance,MaxReps,Equipment,Muscle Group
+0,Assisted Pull-Ups,1,0,0,0,1,1,0,Assisted Pull-Up Machine,Back
+1,Close-Grip Lat Pulldown,1,0,0,0,1,1,0,Lat Pulldown Machine,Back
+2,Inverted Pull-Up,1,0,0,0,0,1,0,Suspension Trainer,Back
+3,Lat Pulldown,1,0,0,0,1,1,0,Lat Pulldown Machine,Back
+4,Pull-Up,1,0,0,0,0,2,1,Pullup Bar,Back
+5,Reverse-Grip Lat Pullown,1,0,0,0,1,1,0,Lat Pulldown Machine,Back
+6,Reverse-Grip Pull-Up,1,0,0,0,1,0,0,Pullup Bar,Back
+7,V-Bar Pull-Up,1,0,0,0,1,0,0,Pullup Bar,Back
+8,Wide-Grip Lat Pulldown,1,0,0,0,1,1,0,Lat Pulldown Machine,Back
+9,Bent-Over Alternating Dumbbell Row,1,0,0,0,1,1,0,Dumbells,Back
+10,Bent-Over Barbell Row,1,0,0,1,1,1,0,Barbell,Back
+11,Bent-Over Dumbbell Row,1,0,0,0,1,1,0,Dumbells,Back
+12,Bent-Over Hammer Dumbbell Row,1,0,0,0,1,1,0,Dumbells,Back
+13,Bent-Over Long Barbell Row,0,1,0,0,1,1,0,Barbell,Back
+14,Bent-Over Reverse-Grip Barbell Row,1,0,0,0,1,1,0,Barbell,Back
+15,Bent-Over Single-Arm Long Barbell Row,0,1,0,0,1,1,0,Barbell,Back
+16,Machine Row,1,0,0,0,1,1,0,Machine Row Machine,Back
+17,One Arm Dumbbell Row,1,0,0,0,1,1,0,Dumbells,Back
+18,Reverse Incline Dumbbell Row,1,0,0,0,1,1,0,Dumbells,Back
+19,Rope Cable Row,1,0,0,0,1,1,0,,Back
+20,Seated Cable Row,1,0,0,0,0,0,0,Cable Row Machine,Back
+21,Wide-Grip Seated Cable Row,1,0,0,0,1,1,0,Cable Row Machine,Back
+22,Single-Arm Cable Row,1,0,0,0,1,1,0,,Back
+23,Single-Arm Lat Pulldown,1,0,0,0,1,1,0,Lat Pulldown Machine,Back
+24,V-Grip Standing Cable Row,1,0,0,0,1,1,0,,Back
+25,Standing Single-Arm Cable Row,1,0,0,0,1,1,0,,Back
+26,Alternating Dumbbell Curl,1,0,0,0,1,1,0,Dumbells,Biceps
+27,Alternating Hammer Curl,1,0,0,0,1,1,0,Dumbells,Biceps
+28,Barbell Curl,1,0,0,0,1,1,0,Barbell,Biceps
+29,Bicep Curl,1,0,0,0,1,1,0,Dumbells,Biceps
+30,Bicep Curl 21s,1,0,0,0,2,0,0,Dumbells,Biceps
+31,Cable Curl,1,0,0,0,1,1,0,Cable Machine,Biceps
+32,Concentration Dumbbell Curl,1,0,0,0,1,1,0,Flat Bench,Biceps
+33,Cross Body Hammer Curl,1,0,0,0,1,1,0,Dumbells,Biceps
+34,Spider Curl,1,0,0,0,1,1,0,Incline Bench,Biceps
+35,EZ-Bar Curl,1,0,0,0,1,1,0,Ez-Bar,Biceps
+36,Hammer Curl,1,0,0,0,1,1,0,Dumbells,Biceps
+37,Incline Alternating Dumbbell Curl,1,0,0,0,1,1,0,Incline Bench,Biceps
+38,Incline Alternating Hammer Curl,1,0,0,0,1,1,0,Incline Bench,Biceps
+39,Incline Dumbbell Curl,1,0,0,0,1,1,0,Incline Bench,Biceps
+40,Incline Hammer Curl,1,0,0,0,1,1,0,Incline Bench,Biceps
+41,Kneeling Cable Curl,1,0,0,0,1,1,0,Cable Machine,Biceps
+42,Lying Cable Curl,1,0,0,0,1,1,0,Cable Row Machine,Biceps
+43,Single-Arm Cable Curl,1,0,0,0,1,1,0,Cable Machine,Biceps
+44,Lying High Cable Curl,1,0,0,0,1,1,0,Cable Machine,Biceps
+45,Machine Curl,1,0,0,0,1,1,0,Bicep Curl Machine,Biceps
+46,Overhead Double Biceps Cable Curl,1,0,0,0,1,1,0,Cable Crossover Machine,Biceps
+47,Overhead Rope Cable Curl,1,0,0,0,1,1,0,Cable Machine,Biceps
+48,Preacher Barbell Curl,1,0,0,0,1,1,0,Preacher Bench,Biceps
+49,Preacher Cable Curl,0,1,0,0,1,1,0,Lat Pulldown Machine,Biceps
+50,Preacher Dumbbell Curl,1,0,0,0,1,1,0,Preacher Bench,Biceps
+51,Preacher EZ-Bar Curl,1,0,0,0,1,1,0,Preacher Bench,Biceps
+52,Preacher Hammer Dumbbell Curl,1,0,0,0,1,1,0,Preacher Bench,Biceps
+53,Preacher Single-Arm Dumbbell Curl,1,0,0,0,1,1,0,Preacher Bench,Biceps
+54,Reverse EZ-Bar Curl,1,0,0,0,1,1,0,Ez-Bar,Biceps
+55,Rope Cable Curl,1,0,0,0,1,1,0,Cable Machine,Biceps
+56,Seated Alternating Curl,1,0,0,0,1,1,0,Dumbells,Biceps
+57,Seated Alternating Hammer Curl,1,0,0,0,1,1,0,Dumbells,Biceps
+58,Seated Dumbbell Curl,1,0,0,0,1,1,0,Dumbells,Biceps
+59,Seated Hammer Curl,1,0,0,0,1,1,0,Dumbells,Biceps
+60,Single-Arm Barbell Curl,0,0,1,0,1,1,0,Barbell,Biceps
+61,Reverse Barbell Curl,1,0,0,0,1,1,0,Barbell,Biceps
+62,Reverse Dumbell Curls,1,0,0,0,1,1,0,Dumbells,Biceps
+63,Barbell Standing Calf Raise,1,0,0,0,1,1,0,Barbell,Calves
+64,Calf Press,1,0,0,0,1,1,0,Leg Press Machine,Calves
+65,Barbell Seated Calf Raise,0,1,0,0,1,1,0,Flat Bench,Calves
+66,Dumbell Standing Calf Raise,1,0,0,0,1,1,0,Dumbells,Calves
+67,Dumbbell Seated Calf Raise,1,0,0,0,1,1,0,Flat Bench,Calves
+68,Single-Leg Calf Press,1,0,0,0,1,1,0,Leg Press Machine,Calves
+69,Single-Leg Dumbbell Calf Raise,1,0,0,0,1,1,0,Dumbells,Calves
+70,Smith Machine Standing Calf Raise,1,0,0,0,1,1,0,Smith Machine,Calves
+71,Smith Machine Seated Calf Raise,1,0,0,0,1,1,0,Smith Machine,Calves
+72,Seated Calf Raise Machine,1,0,0,0,1,1,0,Seated Calf Machine,Calves
+73,Standing Calf Raise Machine,1,0,0,0,1,1,0,Standing Calf Machine,Calves
+74,Single-Leg Seated Calf Raise Machine,1,0,0,0,1,1,0,Seated Calf Machine,Calves
+75,Sing-Leg Standing Calf Raise Machine,1,0,0,0,1,1,0,Standing Calf Machine,Calves
+76,Single-Leg Standing Smith Maching Calf Raise,1,0,0,0,1,1,0,Smith Machine,Calves
+77,Single-Leg Seated Smith Machine Calf Raise,1,0,0,0,1,1,0,Smith Machine,Calves
+78,Alternating Dumbbell Bench Press,1,0,0,0,1,1,0,Flat Bench,Chest
+79,Barbell Bench Press,1,0,0,1,1,0,0,Flat Bench,Chest
+80,Chest Press Machine,1,0,0,0,1,1,0,Chest Press Machine,Chest
+81,Decline Dumbbell Bench Press,1,0,0,0,1,1,0,Decline Bench,Chest
+82,Decline Smith Machine Bench Press,1,0,0,0,1,1,0,Smith Machine,Chest
+83,Dumbbell Bench Press,1,0,0,0,1,1,0,Flat Bench,Chest
+84,Dumbbell Push-Up,1,0,0,0,0,2,1,,Chest
+85,Elevated Push-Up,1,0,0,0,0,2,1,,Chest
+86,Weighted Wide-Grip Push-Up,0,0,1,0,1,1,0,Weight Plates,Chest
+87,Incline Alternating Dumbbell Bench Press,1,0,0,0,1,1,0,Incline Bench,Chest
+88,Incline Barbell Bench Press,1,0,0,0,1,1,0,Incline Bench,Chest
+89,Weighted Dumbell Push-Up,0,0,1,0,1,1,0,Weight Plates,Chest
+90,Incline Dumbbell Bench Press,1,0,0,0,1,1,0,Incline Bench,Chest
+91,Incline Hammer Dumbbell Bench Press,1,0,0,0,1,1,0,Incline Bench,Chest
+92,Incline Single-Arm Dumbbell Bench Press,1,0,0,0,1,1,0,Incline Bench,Chest
+93,Incline Smith Machine Bench Press,1,0,0,0,1,1,0,Smith Machine,Chest
+94,Incline Twisting Dumbbell Bench Press,1,0,0,0,1,1,0,Incline Bench,Chest
+95,Kneeling Push-Up,1,0,0,0,0,2,1,,Chest
+96,Single-Arm Machine Chest Press,1,0,0,0,1,1,0,Chest Press Machine,Chest
+97,Alternating Machine Chest Press,1,0,0,0,1,1,0,Chest Press Machine,Chest
+98,Medicine Ball Crossover Push-Up,1,0,0,0,1,2,1,Medicine Ball,Chest
+99,Push-Up,1,0,0,0,0,2,1,,Chest
+100,Single-Arm Dumbbell Bench Press,1,0,0,0,1,1,0,Flat Bench,Chest
+101,Smith Machine Bench Press,1,0,0,1,1,1,0,Smith Machine,Chest
+102,Twisting Dumbbell Bench Press,1,0,0,0,1,1,0,Flat Bench,Chest
+103,Wide-Grip Push-Up,1,0,0,0,0,2,1,,Chest
+104,Cable Crossover,1,0,0,0,1,1,0,Cable Crossover Machine,Biceps
+105,Cable Fly,1,0,0,0,1,1,0,Cable Crossover Machine,Chest
+106,Decline Dumbbell Fly,1,0,0,0,1,1,0,Decline Bench,Chest
+107,Dumbbell Fly,1,0,0,0,1,1,0,Flat Bench,Chest
+108,High Cable Crossover,1,0,0,0,1,1,0,Cable Crossover Machine,Chest
+109,Incline Cable Fly,0,1,0,0,1,1,0,Cable Crossover Machine,Chest
+110,Incline Dumbbell Fly,1,0,0,0,1,1,0,Incline Bench,Chest
+111,Incline Twisting Dumbbell Fly,0,1,0,0,1,1,0,Incline Bench,Chest
+112,Low Cable Crossover,1,0,0,0,1,1,0,Cable Crossover Machine,Chest
+113,Pec Deck Fly,1,0,0,0,1,1,0,Pec Fly Machine,Chest
+114,Single-Arm Pec Deck Fly,1,0,0,0,1,1,0,Pec Fly Machine,Chest
+115,Weighted Push-Up,0,1,0,0,1,1,0,Weight Plates,Chest
+116,Hammer Dumbell Flat Bench Press,1,0,0,0,1,1,0,Flat Bench,Chest
+117,Single-Arm Hammer Dumbell Flat Bench Press,1,0,0,0,1,1,0,Flat Bench,Chest
+118,Alternating Dumbell Decline Bench Press,1,0,0,0,1,1,0,Decline Bench,Chest
+119,Single-Arm Decline Dumbell Bench Bress,1,0,0,0,1,1,0,Decline Bench,Chest
+120,Alternating Hammer Dumbell Flat Bench Press,1,0,0,0,1,1,0,Flat Bench,Chest
+121,Alternating Hammer Dumbell Decline Bench Press,1,0,0,0,1,1,0,Decline Bench,Chest
+122,Single-Arm Hammer Dumbell Decline Bench Press,1,0,0,0,1,1,0,Decline Bench,Chest
+123,Single-Arm Twisting Incline Bench Press,1,0,0,0,1,1,0,Incline Bench,Chest
+124,Alternating Twisting Incline Bench Press,1,0,0,0,1,1,0,Incline Bench,Chest
+125,Single-Arm Twisting Flat Bench Press,1,0,0,0,1,1,0,Flat Bench,Chest
+126,Alternating Twisting Flat Bench Press,1,0,0,0,1,1,0,Flat Bench,Chest
+127,Single-Arm Twisting Decline Bench Press,1,0,0,0,1,1,0,Decline Bench,Chest
+128,Alternating Twisting Decline Bench Press,1,0,0,0,1,1,0,Decline Bench,Chest
+129,Barbell Curl 21s,0,1,0,0,1,1,0,Barbell,Biceps
+130,Ez-Bar Curl 21s,1,0,0,0,1,1,0,Ez-Bar,Biceps
+131,Barbell Single-Leg Hip Thrust,0,0,1,0,1,1,0,Flat Bench,Hamstrings
+132,Elevated Barbell Hip Thrust,1,0,0,0,1,1,0,Flat Bench,Hamstrings
+133,Elevated Barbell Single-Leg Hip Thrust,0,1,0,0,1,1,0,Flat Bench,Hamstrings
+134,Barbell Hip Thrust,1,0,0,0,1,1,0,Flat Bench,Hamstrings
+135,Sumo-Deadlift,1,0,0,1,1,0,0,Barbell,Hamstrings
+136,Romanian Deadlift,1,0,0,1,1,0,0,Barbell,Hamstrings
+137,Lying Dumbell Leg Curl,1,0,0,0,1,1,0,Dumbells,Hamstrings
+138,Lying Alternating Leg Curl Machine,1,0,0,0,1,1,0,Lying Leg Curl Machine,Hamstrings
+139,Lying Leg Curl Machine,1,0,0,0,1,1,0,Lying Leg Curl Machine,Hamstrings
+140,Lying Single-Leg Curl Machine,1,0,0,0,1,1,0,Lying Leg Curl Machine,Hamstrings
+141,Seated Leg Curl Machine,1,0,0,0,1,1,0,Seated Leg Curl Machine,Hamstrings
+142,Single-Leg Dumbell Deadlift,1,0,0,0,1,1,0,Dumbells,Hamstrings
+143,Dumbell Hip Thrust,1,0,0,0,1,1,0,Flat Bench,Hamstrings
+144,Dumbell Single-Leg Hip Thrust,1,0,0,0,1,1,0,Flat Bench,Hamstrings
+145,Dumbell Elevated Hip Thrust,1,0,0,0,1,1,0,Flat Bench,Hamstrings
+146,Dumbell Single-Leg Elevated Hip Thrust,1,0,0,0,1,1,0,Flat Bench,Hamstrings
+147,Seated Alteranate Leg Curl Machine,1,0,0,0,1,1,0,Seated Leg Curl Machine,Hamstrings
+148,Seated Single-Leg Leg Curl Machine,1,0,0,0,1,1,0,Seated Leg Curl Machine,Hamstrings
+149,Barbell Diagonal Lunge,1,0,0,0,1,1,0,Barbell,Quads
+150,Barbell Hack Squat,1,0,0,0,1,1,0,Barbell,Quads
+151,Barbell Lunge,1,0,0,0,1,1,0,Barbell,Quads
+152,Barbell Reverse Lunge,1,0,0,0,1,1,0,Barbell,Quads
+153,Barbell Side Lunge,1,0,0,0,1,1,0,Barbell,Quads
+154,Barbell Split Squat,1,0,0,0,1,1,0,Barbell,Quads
+155,Barbell Squat,1,0,0,1,1,0,0,Barbell,Quads
+156,Barbell Step-Up,1,0,0,0,1,1,0,Barbell,Quads
+157,Barbell Walking Lunge,1,0,0,0,1,1,0,Barbell,Quads
+158,Dumbbell Diagonal Lunge,1,0,0,0,1,1,0,Dumbells,Quads
+159,Dumbbell Lunge,1,0,0,0,1,1,0,Dumbells,Quads
+160,Dumbbell Reverse Lunge,1,0,0,0,1,1,0,Dumbells,Quads
+161,Dumbbell Side Lunge,1,0,0,0,1,1,0,Dumbells,Quads
+162,Dumbbell Split Squat,1,0,0,0,1,1,0,Dumbells,Quads
+163,Dumbbell Squat,1,0,0,0,1,1,0,Dumbells,Quads
+164,Dumbbell Step-Up,1,0,0,0,1,1,0,Plyo Box,Quads
+165,Dumbbell Walking Lunge,1,0,0,0,1,1,0,Dumbells,Quads
+166,Lateral Barbell Squat,1,0,0,0,1,1,0,Barbell,Quads
+167,Lateral Barbell Step-Up,1,0,0,0,1,1,0,Plyo Box,Quads
+168,Dumbell Lateral Squat,1,0,0,0,1,1,0,Dumbells,Quads
+169,Leg Press Machine,1,0,0,0,1,1,0,Leg Press Machine,Quads
+170,Lying Machine Squat,1,0,0,0,1,1,0,Lying Squat Machine,Quads
+171,Machine Hack Squat,1,0,0,0,1,1,0,Hack Squat Machine,Quads
+172,Single-Arm Barbell Side Squat,0,1,0,0,1,1,0,Barbell,Quads
+173,Single-Arm Dumbbell Side Squat,1,0,0,0,1,1,0,Dumbells,Quads
+174,Single-Leg Barbell Squat,1,0,0,0,1,1,0,Barbell,Quads
+175,Single-Leg Barbell Box Squat,1,0,0,0,1,1,0,Flat Bench,Quads
+176,Single-Leg Dumbbell Box Squat,1,0,0,0,1,1,0,Flat Bench,Quads
+177,Single-Leg Dumbbell Squat,1,0,0,0,1,1,0,Dumbells,Quads
+178,Single-Leg Squat,0,0,1,0,0,2,1,,Quads
+179,Smith Machine Squat,1,0,0,1,1,1,0,Smith Machine,Quads
+180,Alternating Leg Extension Machine,1,0,0,0,1,1,0,Leg Extension Machine,Quads
+181,Leg Extension Machine,1,0,0,0,1,1,0,Leg Extension Machine,Quads
+182,Single-Leg Extension Machine,1,0,0,0,1,1,0,Leg Extension Machine,Quads
+183,Smith Machine Sumo Deadlift,1,0,0,1,1,1,0,Smith Machine,Hamstrings
+184,Smith Machine Deadlft,1,0,0,1,1,0,0,Smith Machine,Hamstrings
+185,Weighted Back Raise,1,0,0,0,1,1,0,Hyperextension Bench,Back
+186,Arnold Dumbbell Press,1,0,0,0,1,1,0,Dumbells,Deltoids
+187,Barbell Shoulder Press,1,0,0,1,1,0,0,Barbell,Deltoids
+188,Dumbbell Alternating Shoulder Press,1,0,0,0,1,1,0,Dumbells,Deltoids
+189,Dumbbell Front Raise,1,0,0,0,1,1,0,Dumbells,Deltoids
+190,Dumbbell Shoulder Press,1,0,0,0,1,1,0,Dumbells,Deltoids
+191,Dumbbell Twisting Shoulder Press,1,0,0,0,1,1,0,Dumbells,Deltoids
+192,Machine Shoulder Press,1,0,0,0,1,1,0,Shoulder Press Machine,Deltoids
+193,Seated Dumbbell Lateral Raise,1,0,0,0,1,1,0,Flat Bench,Deltoids
+194,Single-Arm Dumbbell Shoulder Press,1,0,0,0,1,1,0,Dumbells,Deltoids
+195,Smith Machine Shoulder Press,1,0,0,0,1,1,0,Smith Machine,Deltoids
+196,Barbell Front Raise,1,0,0,0,1,1,0,Barbell,Deltoids
+197,Bent-Over Cable Rear Delt Raise,1,0,0,0,1,1,0,Cable Machine,Deltoids
+198,Bent-Over Dumbbell Rear Delt Raise,1,0,0,0,1,1,0,Dumbells,Deltoids
+199,Cable Front Raise,1,0,0,0,1,1,0,,Deltoids
+200,Cable Lateral Raise,1,0,0,0,1,1,0,,Deltoids
+201,Dumbbell Lateral Raise,1,0,0,0,1,1,0,Dumbells,Deltoids
+202,Front Plate Raise,1,0,0,0,1,1,0,Weight Plates,Deltoids
+203,Kneeling Single-Arm Cable Rear Delt Raise,1,0,0,0,1,1,0,Cable Machine,Deltoids
+204,Lying Dumbbell External Rotation,1,0,0,0,1,1,0,Dumbells,Deltoids
+205,Lying Dumbbell Rear Delt Raise,1,0,0,0,1,1,0,Dumbells,Deltoids
+206,Lying Single-Arm Dumbbell Rear Delt Raise,1,0,0,0,1,1,0,Dumbells,Deltoids
+207,Pec Deck Rear Delt Extensions,1,0,0,0,1,1,0,Pec Fly Machine,Deltoids
+208,Reverse Incline Dumbbell Rear Delt Raise,1,0,0,0,1,1,0,Dumbells,Deltoids
+209,Seated Dumbbell Rear Delt Raise,1,0,0,0,1,1,0,Flat Bench,Deltoids
+210,Single-Arm Cable Lateral Raise,1,0,0,0,1,1,0,Cable Machine,Deltoids
+211,Cable External Rotation,1,0,0,0,1,1,0,Cable Machine,Deltoids
+212,Alternating Pec Dec Fly,1,0,0,0,1,1,0,Pec Fly Machine,Chest
+213,Close-Grip Bench Press,1,0,0,0,1,1,0,Dip Bar,Triceps
+214,Forward Lean Dips,1,0,0,0,0,2,1,Dip Bar,Triceps
+215,Assisted Dips,1,0,0,0,0,2,1,Assisted Dip Machine,Triceps
+216,Bench Dips,1,0,0,0,0,2,1,Dip Bar,Triceps
+217,Weighted Dips,0,1,0,1,1,1,0,Dip Bar,Triceps
+218,Dips,1,0,0,0,0,2,1,Dip Bar,Triceps
+219,Machine Dips,1,0,0,0,1,1,0,Dip Machine,Triceps
+220,Decline Dumbbell Triceps Extension,1,0,0,0,1,1,0,Decline Bench,Triceps
+221,Decline EZ-Bar Tricep Extension,1,0,0,0,1,1,0,Decline Bench,Triceps
+222,Decline Single Dumbbell Triceps Extension,1,0,0,0,1,1,0,Decline Bench,Triceps
+223,Decline Single-Arm Dumbbell Triceps Extension,1,0,0,0,1,1,0,Decline Bench,Triceps
+224,Dumbbell Kickback,1,0,0,0,1,1,0,Dumbells,Triceps
+225,Incline EZ-Bar Tricep Extension,1,0,0,0,1,1,0,Incline Bench,Triceps
+226,Kneeling Cable Triceps Extension,1,0,0,0,1,1,0,Cable Machine,Triceps
+227,Leaning Overhead Tricep Extension,1,0,0,0,1,1,0,Cable Machine,Triceps
+228,Low Cable Triceps Extension,1,0,0,0,1,1,0,Cable Machine,Triceps
+229,Lying Cable Triceps Extension,1,0,0,0,1,1,0,Flat Bench,Triceps
+230,Lying EZ-Bar Triceps Extension,1,0,0,0,1,1,0,Flat Bench,Triceps
+231,Lying Overhead EZ-Bar Tricep Extension,1,0,0,0,1,1,0,Flat Bench,Triceps
+232,Lying Reverse EZ-Bar Triceps Extension,1,0,0,0,1,1,0,Flat Bench,Triceps
+233,Lying Alternate Dumbbell Triceps Extension,1,0,0,0,1,1,0,Flat Bench,Triceps
+234,Lying Single-Arm Dumbbell Triceps Extension,1,0,0,0,1,1,0,Flat Bench,Triceps
+235,Lying Dumbell Tricep Extensions,1,0,0,0,1,1,0,Flat Bench,Triceps
+236,Overhead Dumbbell Triceps Extension,1,0,0,0,1,1,0,Dumbells,Triceps
+237,Overhead EZ-Bar Triceps Extension,1,0,0,0,1,1,0,Ez-Bar,Triceps
+238,Overhead Rope Cable Tricep Extension,1,0,0,0,1,1,0,Cable Machine,Triceps
+239,Overhead Single Dumbbell Tricep Extension,1,0,0,0,1,1,0,Dumbells,Triceps
+240,Overhead Single-Arm Cable Tricep Extension,1,0,0,0,1,1,0,Cable Machine,Triceps
+241,Overhead Single-Arm Dumbbell Tricep Extension,1,0,0,0,1,1,0,Dumbells,Triceps
+242,Reverse-Grip Tricep Pushdown,1,0,0,0,1,1,0,Cable Machine,Triceps
+243,Rope Triceps Pushdown,1,0,0,0,1,1,0,Cable Machine,Triceps
+244,Single-Arm Triceps Pushdown,1,0,0,0,1,1,0,Cable Machine,Triceps
+245,Tricep Extension Machine,1,0,0,0,1,1,0,Tricep Extension Machine,Triceps
+246,Tricep Pushdown,1,0,0,0,1,1,0,Cable Machine,Triceps
+247,Diamond Push-Ups,1,0,0,0,0,2,1,,Triceps
+248,V-Bar Tricep Pushdown,1,0,0,0,1,1,0,Cable Machine,Triceps
+249,Elevated Barbell Calf Raise,1,0,0,0,1,1,0,Plyo Box,Calves
+250,Elevated Single-Leg Barbell Calf Raise,1,0,0,0,1,1,0,Plyo Box,Calves
+251,Elevated Dumbell Calf Raise,1,0,0,0,1,1,0,Plyo Box,Calves
+252,Elevated Single-Leg Dumbell Calf Raise,1,0,0,0,1,1,0,Plyo Box,Calves
+253,Elevated Smith Machine Calf Raise,1,0,0,0,1,1,0,Smith Machine,Calves
+254,Elevated Single Leg Smith Machine Calf Raise,1,0,0,0,1,1,0,Smith Machine,Calves
+255,Close-Grip Smith Machine Bench Press,1,0,0,0,1,1,0,Smith Machine,Triceps
+256,Weighted Pull-Ups,0,1,0,1,1,0,0,Pullup Bar,Back
