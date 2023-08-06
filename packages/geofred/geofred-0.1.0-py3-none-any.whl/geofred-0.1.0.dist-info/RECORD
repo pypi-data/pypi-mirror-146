@@ -1,0 +1,13 @@
+geofred/__init__.py,sha256=3IHPFSOSwzGWHWX9mrg0mF8jrybbPprwWPPbVSfy_x0,101
+geofred/geofred.py,sha256=vRkYCLfJZOEG36tzD30eqh_CVQ7gx8I6gDN-w4PUCRQ,2361
+geofred/utils.py,sha256=ftQIqHzkSH9aamsm0nTgsul2bKHGt3b5yJhG8zJkMcU,7674
+geofred/storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geofred/storage/location_lookup.csv,sha256=69lQeFk0epzg19QpRMrVEr3__sT0g0JFYmW33yERPas,6622736
+geofred/storage/location_lookup.py,sha256=qvgoylJoZ20ZquMiybN_z9JW8xGHjtDQdY-x7AVqZ14,602
+geofred/storage/state.csv,sha256=Tshur8o2qD6T3faRXIubhbgMpt-2Dx9dlsNZwdap4YM,687
+geofred/storage/state.py,sha256=Y9niDIiNiFIwn9fFQ0LvXR1JyRPBwxSoR-sxQAM2P4E,552
+geofred-0.1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+geofred-0.1.0.dist-info/METADATA,sha256=WOsrHh0CPGJKdEnhyjVidvjqTos4EeMeUYsqnTVkETk,504
+geofred-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+geofred-0.1.0.dist-info/top_level.txt,sha256=qOZvWy2dd2xcLi-4SUcnsAhJ5FGEiaKpFhVfU6V9gN4,8
+geofred-0.1.0.dist-info/RECORD,,
