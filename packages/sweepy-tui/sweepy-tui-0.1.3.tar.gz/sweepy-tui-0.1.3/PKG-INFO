@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: sweepy-tui
+Version: 0.1.3
+Summary: Command-line Minesweeper clone
+Home-page: https://benwinston.us
+Author: Ben Winston
+Author-email: ben@benwinston.us
+License: UNKNOWN
+Project-URL: Source, https://git.rawtext.club/mryouse/sweepy
+Keywords: minesweeper,game,tui,cli
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+
+# sweepy
+
+minesweeper in python with curses
+
+## features
+ - save/resume game
+ - 2 size boards
+ - ~x~ pReTtYcOlOrS ~x~
+
+## coming soon?
+ - custom boards
+ - local multiplayer
+ - scoring?
+
+## ouija?
+you can use the game board logic in other things too! i hope to eventually
+remove it from this repo completely. you can find the latest version in [this
+repo](https://git.rawtext.club/mryouse/ouija).
+
+

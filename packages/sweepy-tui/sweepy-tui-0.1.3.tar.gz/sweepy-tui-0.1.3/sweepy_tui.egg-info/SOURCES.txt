@@ -1,0 +1,11 @@
+README.md
+setup.py
+sweepy/__init__.py
+sweepy/logic.py
+sweepy/ouija.py
+sweepy/sweepy.py
+sweepy_tui.egg-info/PKG-INFO
+sweepy_tui.egg-info/SOURCES.txt
+sweepy_tui.egg-info/dependency_links.txt
+sweepy_tui.egg-info/entry_points.txt
+sweepy_tui.egg-info/top_level.txt
