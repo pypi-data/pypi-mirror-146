@@ -1,0 +1,8 @@
+geode_parameterization/Geode-Parameterization_surface.dll,sha256=tpIL7LrqueZmXGkg3cvIpPWNu2Cmr9alh9YVdy1QsYI,2071552
+geode_parameterization/__init__.py,sha256=kKeipkS-b2_PXw6pmCEtaQCYYQ2M34I1qG57L5mmP1Y,99
+geode_parameterization/geode_parameterization_py_surface.cp310-win_amd64.pyd,sha256=Q8C85UsvEJYH5cH44O05wP3izuh3qHCN8iHNDECYY1E,118272
+geode_parameterization/surface.py,sha256=B1jigQ2a8SS_jRTGjgj6VdXU4n5fMqIfA9hMn2CWI9M,168
+Geode_Parameterization-1.9.0.dist-info/METADATA,sha256=AiHMYu-VlZRouAzVaAyzS3GAcSleNCYm6OSb52g71Ds,2303
+Geode_Parameterization-1.9.0.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+Geode_Parameterization-1.9.0.dist-info/top_level.txt,sha256=QA1nLQxvP0tjgneyQANx5tIuKU569p2G0NPcEp7I8Ms,23
+Geode_Parameterization-1.9.0.dist-info/RECORD,,
