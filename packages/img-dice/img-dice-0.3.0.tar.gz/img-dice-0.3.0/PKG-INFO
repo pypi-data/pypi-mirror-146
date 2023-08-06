@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: img-dice
+Version: 0.3.0
+Summary: Dice tif images into smaller sections using a shapefile of polygons
+Home-page: https://github.com/tayden/img-dice-py
+License: MIT
+Author: Taylor Denouden
+Author-email: taylor.denouden@hakai.org
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PySide2 (>=5.15.2,<6.0.0)
+Requires-Dist: fire (>=0.4.0,<0.5.0)
+Requires-Dist: pyshp (>=2.2.0,<3.0.0)
+Requires-Dist: rasterio (>=1.2.10,<2.0.0)
+Project-URL: Repository, https://github.com/tayden/img-dice-py
