@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+manyapi/__init__.py
+manyapi/anonfiles.py
+manyapi/discord.py
+manyapi/randomword.py
+manyapi/youtube.py
+manyapi.egg-info/PKG-INFO
+manyapi.egg-info/SOURCES.txt
+manyapi.egg-info/dependency_links.txt
+manyapi.egg-info/requires.txt
+manyapi.egg-info/top_level.txt
