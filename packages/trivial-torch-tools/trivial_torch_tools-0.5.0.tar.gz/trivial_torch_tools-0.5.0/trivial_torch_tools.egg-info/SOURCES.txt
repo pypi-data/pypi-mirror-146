@@ -1,0 +1,14 @@
+setup.py
+trivial_torch_tools/__init__.py
+trivial_torch_tools/core.py
+trivial_torch_tools/generics.py
+trivial_torch_tools/image.py
+trivial_torch_tools/main.py
+trivial_torch_tools/misc.py
+trivial_torch_tools/model.py
+trivial_torch_tools/one_hots.py
+trivial_torch_tools.egg-info/PKG-INFO
+trivial_torch_tools.egg-info/SOURCES.txt
+trivial_torch_tools.egg-info/dependency_links.txt
+trivial_torch_tools.egg-info/requires.txt
+trivial_torch_tools.egg-info/top_level.txt
