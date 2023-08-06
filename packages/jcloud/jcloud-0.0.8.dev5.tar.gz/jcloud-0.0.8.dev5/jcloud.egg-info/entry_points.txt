@@ -1,0 +1,4 @@
+[console_scripts]
+jc = jcloud:main
+jcloud = jcloud:main
+
