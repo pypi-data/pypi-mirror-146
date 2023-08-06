@@ -1,0 +1,7 @@
+include gitignore
+recursive-include dist *.gz
+recursive-include dist *.whl
+recursive-include src *.py
+recursive-include src *.pyc
+recursive-include tests *.py
+recursive-include tests *.pyc
