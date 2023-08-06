@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ComplexExtension
+Version: 1.0.1
+Summary: Extension for working with complex numeric
+Home-page: https://github.com/vyacheslavparkhomenko/Complex-Extension.git
+Author: VVP
+Author-email: vyacheslav.parkhomenko@gmail.com
+License: MIT Lisence
+Platform: UNKNOWN
+License-File: LICENSE
+
+Library for working with complex numbers in polar form
+
