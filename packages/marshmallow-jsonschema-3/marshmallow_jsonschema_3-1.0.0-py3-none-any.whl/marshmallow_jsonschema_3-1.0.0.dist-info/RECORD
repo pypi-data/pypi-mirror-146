@@ -1,0 +1,11 @@
+marshmallow_jsonschema_3/__init__.py,sha256=v9_y-pMunC6o4Yqk7SZdXLXwLdNPOVKSCbX6yBT-PCo,258
+marshmallow_jsonschema_3/base.py,sha256=RnI6NiHZzxPVJxjkiCVj_eeY9KYr5Gx7Z2D7wx1e62k,12998
+marshmallow_jsonschema_3/exceptions.py,sha256=I47zrdLpOt-Prk0dskL867Du9JkTxbaiHbi-2UpwF4M,49
+marshmallow_jsonschema_3/validation.py,sha256=hn0jO24NRzWS9YoZ3M3gqtri9cmx4RcrluvOGEbfOp0,6787
+marshmallow_jsonschema_3/extensions/__init__.py,sha256=pxHSlWz2G-PcRLBBsm1Q_Lvcqw69iXfKH-_ETVWGP-w,112
+marshmallow_jsonschema_3/extensions/react_jsonschema_form.py,sha256=KpNpwqWQKNgwq5kaN6PFKRe6CTZdDcwgkzx01WkcTIQ,1871
+marshmallow_jsonschema_3-1.0.0.dist-info/LICENSE,sha256=Zyp2WxflX7LS49BoJiAI95HhrVLjAmqLrk_OvnQsxNg,1083
+marshmallow_jsonschema_3-1.0.0.dist-info/METADATA,sha256=TtxdB5hLCNlV9zxZgKe7A9WAlr4ZFOX9TbpmHzfEP7c,2823
+marshmallow_jsonschema_3-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+marshmallow_jsonschema_3-1.0.0.dist-info/top_level.txt,sha256=iDslVu7wXilA8j72o5FR9KOwHvHdFaIHkwmJXBL9pQ4,25
+marshmallow_jsonschema_3-1.0.0.dist-info/RECORD,,
