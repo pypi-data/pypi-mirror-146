@@ -1,0 +1,2 @@
+[napari.plugin]
+napari-animated-gif-io = napari_animated_gif_io

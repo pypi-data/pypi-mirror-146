@@ -1,0 +1,1 @@
+napari_animated_gif_io
