@@ -1,0 +1,10 @@
+setup.py
+src/com/__init__.py
+src/com/yootk/__init__.py
+src/com/yootk/info/__init__.py
+src/com/yootk/info/information.py
+src/com/yootk/info/message.py
+src/fffyyds_message.egg-info/PKG-INFO
+src/fffyyds_message.egg-info/SOURCES.txt
+src/fffyyds_message.egg-info/dependency_links.txt
+src/fffyyds_message.egg-info/top_level.txt
