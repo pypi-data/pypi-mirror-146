@@ -1,0 +1,4 @@
+krita/Fake_PyKrita_for_Krita_v_5.1.0_prealpha.egg-info/PKG-INFO
+krita/Fake_PyKrita_for_Krita_v_5.1.0_prealpha.egg-info/SOURCES.txt
+krita/Fake_PyKrita_for_Krita_v_5.1.0_prealpha.egg-info/dependency_links.txt
+krita/Fake_PyKrita_for_Krita_v_5.1.0_prealpha.egg-info/top_level.txt
