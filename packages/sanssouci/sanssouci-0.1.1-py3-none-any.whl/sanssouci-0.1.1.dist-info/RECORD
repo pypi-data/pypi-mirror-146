@@ -1,0 +1,11 @@
+sanssouci/__init__.py,sha256=Oj0_c6qOufhysswxvAfUij7eYH-9JXvs2Sg-a_nwAro,512
+sanssouci/lambda_calibration.py,sha256=dHixfAdBytVb2zo8HJgnSysebaMuupk435tjNaVB2pM,8951
+sanssouci/post_hoc_bounds.py,sha256=-AMl3b5DXAQYP8IDi-bvK9RF2CK7YnL8HQ8qQ5JZj0E,8994
+sanssouci/reference_families.py,sha256=cBx8UukeCJP2xyb8O5iBzEsIznhCsHH_O9Pb63J3LBU,1832
+sanssouci/row_welch.py,sha256=gtHxmeX82wtNLZ6BqGqbr7TYgnuxvv1w5qO1xQAyH0s,5095
+sanssouci/version.py,sha256=TWY2HHBr7soKzDojVTmRRRQj8LWtiK2CcaOJolf0kU0,23
+sanssouci-0.1.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+sanssouci-0.1.1.dist-info/METADATA,sha256=FmjJERgax7WxCuppTV6DRbp-upC0ZuthHXhZSkZj_cw,2313
+sanssouci-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sanssouci-0.1.1.dist-info/top_level.txt,sha256=clJN6Ed1_UM31fJYRgQ3xs7jfo9Rm5-o-E5LVvDdfGk,10
+sanssouci-0.1.1.dist-info/RECORD,,
