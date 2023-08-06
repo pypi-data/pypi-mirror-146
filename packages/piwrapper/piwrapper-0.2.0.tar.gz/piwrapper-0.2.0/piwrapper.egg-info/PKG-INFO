@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: piwrapper
+Version: 0.2.0
+Summary: Python connector access OSISOFT PI server via PI Web API.
+Home-page: https://github.com/joshylchen/piwrapper
+Author: Josh Chen
+Author-email: jcpythonlib@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.0
+License-File: LICENSE
+
+piwrapper
+=========
+
+.. image:: https://img.shields.io/pypi/v/piwrapper.svg
+    :target: https://pypi.python.org/pypi/piwrapper
+    :alt: Latest PyPI version
+
+.. image:: https://travis-ci.org/kragniz/cookiecutter-pypackage-minimal.png
+   :target: https://travis-ci.org/kragniz/cookiecutter-pypackage-minimal
+   :alt: Latest Travis CI build status
+
+Python connector access OSISOFT PI server via PI Web API.
+
+Usage
+-----
+
+Installation
+------------
+
+Requirements
+^^^^^^^^^^^^
+
+Compatibility
+-------------
+
+Licence
+-------
+
+Authors
+-------
+
+`piwrapper` was written by `Josh Chen <jcpythonlib@gmail.com>`_.
+
+
