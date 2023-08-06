@@ -1,0 +1,5 @@
+nltk==3.6.5
+scikit-learn==1.0
+sentencepiece==0.1.96
+torch==1.10
+transformers==4.11.3
