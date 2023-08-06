@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+osparcAPIcontrol/__init__.py
+osparcAPIcontrol/controller.py
+osparcAPIcontrol.egg-info/PKG-INFO
+osparcAPIcontrol.egg-info/SOURCES.txt
+osparcAPIcontrol.egg-info/dependency_links.txt
+osparcAPIcontrol.egg-info/requires.txt
+osparcAPIcontrol.egg-info/top_level.txt
