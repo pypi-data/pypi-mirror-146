@@ -1,0 +1,13 @@
+embrace/__init__.py,sha256=qZWzDTEjEs4jrZPgHIapmiBWXGrO5_YXbDGeQQfC05c,804
+embrace/exceptions.py,sha256=mzckviv-v4qVKJS_An5t-Y_ZoWwYR8CePNh3OgsIFLw,1938
+embrace/module.py,sha256=OQRDBL3zASa_6HvKW5o2bcW-cvgQVo8RK1LsQ5gAw6g,9487
+embrace/parsing.py,sha256=t9N4RvQ8iHllEVpZDe6Pq0cwSrVWoEzl84J8UzSb3EY,8459
+embrace/pool.py,sha256=YrBbhL_6BdOe7F6kwJPiLoM3Xlkg3oY-zCOlvkh-XV0,6244
+embrace/poolvalidators.py,sha256=9Ca9bLWUVlQKqbfQSvj4Mnxbp9Xrr3nVplCLzIBINSg,1897
+embrace/query.py,sha256=dI4fy90CLESsDSPjGmUuZ2fCYZBJQCnU1pFaspjl1gs,28304
+embrace/util.py,sha256=2ApRATiw7gRrEooALV8-xPTR_uotGySaYyobeuLSPJ4,3682
+embrace-4.1.0.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+embrace-4.1.0.dist-info/METADATA,sha256=bDHDYDrAcO2b5knIKK2fis3X0gZBuKLDFYoo-Q0Df-c,12574
+embrace-4.1.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+embrace-4.1.0.dist-info/top_level.txt,sha256=qiWOeTftFsBIwQXc9i_FxJDiWIcJFxUHOgws27MFVas,8
+embrace-4.1.0.dist-info/RECORD,,
