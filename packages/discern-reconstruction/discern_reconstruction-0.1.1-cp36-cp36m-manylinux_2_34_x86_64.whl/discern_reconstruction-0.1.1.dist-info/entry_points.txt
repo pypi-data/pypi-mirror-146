@@ -1,0 +1,4 @@
+[console_scripts]
+discern=discern.__main__:main
+merge_parameter=discern._scripts.merge_parameters:main
+
