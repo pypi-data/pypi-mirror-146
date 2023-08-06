@@ -1,0 +1,17 @@
+setup.py
+ovos_PHAL_plugin_analog_input_devices/__init__.py
+ovos_PHAL_plugin_analog_input_devices/analog.py
+ovos_PHAL_plugin_analog_input_devices.egg-info/PKG-INFO
+ovos_PHAL_plugin_analog_input_devices.egg-info/SOURCES.txt
+ovos_PHAL_plugin_analog_input_devices.egg-info/dependency_links.txt
+ovos_PHAL_plugin_analog_input_devices.egg-info/entry_points.txt
+ovos_PHAL_plugin_analog_input_devices.egg-info/requires.txt
+ovos_PHAL_plugin_analog_input_devices.egg-info/top_level.txt
+ovos_PHAL_plugin_analog_input_devices.egg-info/zip-safe
+ovos_PHAL_plugin_analog_input_devices/res/camera.png
+ovos_PHAL_plugin_analog_input_devices/res/cassette.png
+ovos_PHAL_plugin_analog_input_devices/res/hdmi.png
+ovos_PHAL_plugin_analog_input_devices/res/mic.png
+ovos_PHAL_plugin_analog_input_devices/res/pseye.png
+ovos_PHAL_plugin_analog_input_devices/res/rca.png
+ovos_PHAL_plugin_analog_input_devices/res/soundcard.png

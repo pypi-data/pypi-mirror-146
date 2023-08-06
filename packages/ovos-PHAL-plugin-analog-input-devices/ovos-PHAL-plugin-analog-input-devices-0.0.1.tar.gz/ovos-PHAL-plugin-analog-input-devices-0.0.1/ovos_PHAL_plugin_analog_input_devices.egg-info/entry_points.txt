@@ -1,0 +1,2 @@
+[ovos.plugin.phal]
+ovos-PHAL-plugin-analog-input-devices = ovos_PHAL_plugin_analog_input_devices:AnalogInputDevicesPlugin
