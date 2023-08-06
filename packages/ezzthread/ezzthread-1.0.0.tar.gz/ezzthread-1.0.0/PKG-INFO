@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ezzthread
+Version: 1.0.0
+Summary: Small decorator library for launching threads
+Home-page: https://github.com/BarsTiger/thread
+Author: BarsTiger
+License: MIT
+Keywords: threading,thread,decorator,crossplatform
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# ezzthread
+Smallest library that every project needs!
+
+It just... Runs your function in new thread with decorator!
+
+```bash
+pip install ezzthread
+```
+
+# Use
+```python
+from ezzthread import threaded
+
+@threaded
+def func():
+    print("Printed from new thread!")
+func()
+```
+
+
+

@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+ezzthread.py
+setup.py
+ezzthread.egg-info/PKG-INFO
+ezzthread.egg-info/SOURCES.txt
+ezzthread.egg-info/dependency_links.txt
+ezzthread.egg-info/top_level.txt
