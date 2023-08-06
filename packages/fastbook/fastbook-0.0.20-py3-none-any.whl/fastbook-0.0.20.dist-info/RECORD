@@ -1,0 +1,10 @@
+fastbook/__init__.py,sha256=B9AQlWbGg5qOSjPGAnHDg_w2U8FBNyKr9AuhW662jX8,3906
+fastbook/_nbdev.py,sha256=tJ3ZIvRbRbUQOINPzrrSSGQwrHjc-KFYsRRlq5fble0,265
+fastbook/images/cat.jpg,sha256=zWA2B5_vZMXGkWpK7NejlQREehZK-o-CFm-SjO4VbQQ,8417
+fastbook/images/grizzly.jpg,sha256=LxLtaA3KelzNDpyVIjZcc3ShVMaf-isZ8ycj9FSZ8aw,697626
+fastbook-0.0.20.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastbook-0.0.20.dist-info/METADATA,sha256=5r5aZ7VEbiF12dSDQWq4nz4CtizByb_Cr23dM2Ref5g,13628
+fastbook-0.0.20.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastbook-0.0.20.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+fastbook-0.0.20.dist-info/top_level.txt,sha256=OZ5SBSnBzfT7OxfZ_zyizSPj_pjx2apUR3KsXapQOmQ,9
+fastbook-0.0.20.dist-info/RECORD,,
