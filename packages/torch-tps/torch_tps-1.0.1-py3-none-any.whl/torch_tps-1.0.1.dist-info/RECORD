@@ -1,0 +1,8 @@
+torch_tps/__init__.py,sha256=lucKl_V0r904RuMA53NnZP7EhH2p5OX1RSOkOu6nWlA,100
+torch_tps/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_tps/thin_plate_spline.py,sha256=fL8FPSQRzAxR5CE05pdEIBi1Saug--MvGkZVZ-yApCc,5059
+torch_tps-1.0.1.dist-info/LICENSE,sha256=mTZcRcQZEJ2Wbp_A0P1mCeetemSOdyl043X0DbupM10,1068
+torch_tps-1.0.1.dist-info/METADATA,sha256=c7oay98H_nyExLqk0vmq6fM-ARDWN8zcIb0HPMFDFkY,1469
+torch_tps-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+torch_tps-1.0.1.dist-info/top_level.txt,sha256=TEbERql7b4j0gyRPbqdjKcfyfhNslNTRFRE2vpwM-Pw,10
+torch_tps-1.0.1.dist-info/RECORD,,
