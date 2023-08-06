@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tf2xgb
+Version: 0.1.0
+Summary: XGBoost Regression with TensorFlow Pooling and Loss
+Home-page: https://github.com/petrkaderabek/tf2xgb
+License: MIT License
+Keywords: tensorflow,xgboost,pooling
+Platform: UNKNOWN
+Provides-Extra: tests
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tf2xgb/__init__.py
+tf2xgb/_version.py
+tf2xgb/tf2xgb.py
+tf2xgb/utils.py
+tf2xgb.egg-info/PKG-INFO
+tf2xgb.egg-info/SOURCES.txt
+tf2xgb.egg-info/dependency_links.txt
+tf2xgb.egg-info/requires.txt
+tf2xgb.egg-info/top_level.txt

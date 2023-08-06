@@ -1,0 +1,9 @@
+numpy
+matplotlib
+pandas
+sklearn
+xgboost
+tensorflow
+
+[tests]
+pytest
