@@ -1,0 +1,10 @@
+myst-parser>=0.15.0
+jinja2>=3.0
+pyyaml>=5.4
+livereload>=2.6
+click>=8
+rich>=10.9
+
+[jupyter]
+nbformat
+nbconvert
