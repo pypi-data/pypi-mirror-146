@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+aropha/__init__.py
+aropha/arduino.py
+aropha/util.py
+aropha.egg-info/PKG-INFO
+aropha.egg-info/SOURCES.txt
+aropha.egg-info/dependency_links.txt
+aropha.egg-info/top_level.txt
