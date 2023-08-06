@@ -1,0 +1,8 @@
+README.md
+setup.py
+npP2NVM.egg-info/PKG-INFO
+npP2NVM.egg-info/SOURCES.txt
+npP2NVM.egg-info/dependency_links.txt
+npP2NVM.egg-info/requires.txt
+npP2NVM.egg-info/top_level.txt
+npp2nvm/__init__.py
