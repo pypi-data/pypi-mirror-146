@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: djangocms-education
+Version: 1.6.0
+Summary: Adds a Plugin for embedding your Resume to your website.
+Home-page: https://github.com/crydotsnake/djangocms-education
+Author: Simon Krull
+Author-email: simon@django-cms.org
+Maintainer: Simon Krull
+Maintainer-email: simon@django-cms.org
+License: BSD-3-Clause
+Platform: UNKNOWN
+License-File: LICENSE
+
+######################
+djangoCMS Education
+######################
+
+djangoCMS Education is a simple plugin for embedding your Resume in your website.
+
+============
+Installation
+============
+
+
+``pip install djangocms-education``
+
+
+Add ``djangocms_education`` to your ``INSTALLED_APPS``
+
+Run ``python manage.py migrate djangocms_education``
+
+
