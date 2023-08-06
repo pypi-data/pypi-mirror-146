@@ -1,0 +1,12 @@
+[console_scripts]
+count-dir = licsber.shell.dir_ops:count_dir
+empty-dir = licsber.shell.dir_ops:empty_dir
+flatten-dir = licsber.shell.dir_ops:flatten_dir
+licsber = licsber.shell.hello:licsber
+memobird = licsber.shell.memobird:memobird
+mi-merge = licsber.shell.mi_camera_merge:merge_dirs
+rename = licsber.shell.dir_ops:rename
+save-115-dir = licsber.shell.cloud_drive:save_115_dir
+sct = licsber.shell.server_chan:sct
+thumb = licsber.shell.thumb_gen:thumb_from_dir
+
