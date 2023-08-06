@@ -1,0 +1,64 @@
+[dependencies]
+env_logger = "0.9"
+libm = "0.2"
+log = "0.4"
+ndarray-linalg = "0.14"
+ndarray-npy = "0.8"
+ndarray-rand = "0.14"
+ndarray-stats = "0.5"
+nlopt = "0.5.3"
+rand_isaac = "0.3"
+thiserror = "1"
+
+[dependencies.egobox-doe]
+path = "../egobox-doe"
+version = "0.2.1"
+
+[dependencies.egobox-gp]
+path = "../egobox-gp"
+version = "0.2.1"
+
+[dependencies.egobox-moe]
+path = "../egobox-moe"
+version = "0.2.1"
+
+[dependencies.finitediff]
+features = ["ndarray"]
+version = "0.1"
+
+[dependencies.linfa]
+default-features = false
+version = "0.5.1"
+
+[dependencies.linfa-pls]
+default-features = false
+version = "0.5.1"
+
+[dependencies.ndarray]
+features = ["rayon", "approx", "blas"]
+version = "0.15"
+
+[dependencies.rawpointer]
+version = "0.2"
+
+[dev-dependencies]
+approx = "0.4"
+argmin_testfunctions = "0.1"
+criterion = "0.3"
+serde_json = "1"
+serial_test = "0.6.0"
+
+[dev-dependencies.linfa-datasets]
+features = ["linnerud"]
+version = "0.5.1"
+
+[package]
+authors = ["Rémi Lafage <remi.lafage@onera.fr>"]
+categories = ["algorithms", "mathematics", "science"]
+description = "A library for efficient global optimization"
+edition = "2018"
+keywords = ["machine-learning", "bayesian", "optimization"]
+license = "Apache-2.0"
+name = "egobox-ego"
+repository = "https://github.com/relf/egobox"
+version = "0.2.1"

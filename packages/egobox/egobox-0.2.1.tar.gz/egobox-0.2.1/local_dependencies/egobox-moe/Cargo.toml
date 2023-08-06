@@ -1,0 +1,56 @@
+[dependencies]
+bitflags = "1.3"
+env_logger = "0.9"
+log = "0.4"
+ndarray-linalg = "0.14"
+ndarray-npy = "0.8"
+ndarray-rand = "0.14"
+ndarray-stats = "0.5"
+paste = "1.0"
+rand_isaac = "0.3"
+serde = "1"
+serde_json = "1.0.73"
+thiserror = "1"
+
+[dependencies.egobox-doe]
+path = "../egobox-doe"
+version = "0.2.1"
+
+[dependencies.egobox-gp]
+path = "../egobox-gp"
+version = "0.2.1"
+
+[dependencies.linfa]
+default-features = false
+version = "0.5.1"
+
+[dependencies.linfa-clustering]
+default-features = false
+version = "0.5.1"
+
+[dependencies.linfa-pls]
+default-features = false
+version = "0.5.1"
+
+[dependencies.ndarray]
+features = ["rayon", "approx", "blas"]
+version = "0.15"
+
+[dev-dependencies]
+approx = "0.4"
+criterion = "0.3"
+csv = "1.1"
+ndarray-csv = "0.5"
+ndarray-npy = "0.8"
+serde_json = "1"
+
+[package]
+authors = ["Rémi Lafage <remi.lafage@onera.fr>"]
+categories = ["algorithms", "mathematics", "science"]
+description = "A library for mixture of expert gaussian processes"
+edition = "2018"
+keywords = ["machine-learning", "mixture", "clustering", "surrogate", "gaussian-process"]
+license = "Apache-2.0"
+name = "egobox-moe"
+repository = "https://github.com/relf/egobox"
+version = "0.2.1"

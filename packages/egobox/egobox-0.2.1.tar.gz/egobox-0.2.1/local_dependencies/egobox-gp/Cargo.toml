@@ -1,0 +1,56 @@
+[[bench]]
+harness = false
+name = "gp"
+
+[dependencies]
+cobyla = "0.1.2"
+ndarray-linalg = "0.14"
+ndarray-npy = "0.8"
+ndarray-rand = "0.14"
+ndarray-stats = "0.5"
+ndarray_einsum_beta = "0.7"
+nlopt = "0.5.3"
+num-traits = "0.2"
+paste = "1.0"
+rand_isaac = "0.3"
+thiserror = "1"
+
+[dependencies.egobox-doe]
+path = "../egobox-doe"
+version = "0.2.1"
+
+[dependencies.linfa]
+default-features = false
+version = "0.5.1"
+
+[dependencies.linfa-pls]
+default-features = false
+version = "0.5.1"
+
+[dependencies.ndarray]
+features = ["rayon", "approx", "serde"]
+version = "0.15"
+
+[dependencies.serde]
+features = ["derive"]
+version = "1"
+
+[dev-dependencies]
+approx = "0.4"
+argmin_testfunctions = "0.1"
+criterion = "0.3"
+serde_json = "1"
+
+[features]
+default = []
+
+[package]
+authors = ["Rémi Lafage <remi.lafage@onera.fr>"]
+categories = ["algorithms", "mathematics", "science"]
+description = "A library for gaussian process modeling"
+edition = "2018"
+keywords = ["machine-learning", "gaussian-process", "kriging", "surrogate"]
+license = "Apache-2.0"
+name = "egobox-gp"
+repository = "https://github.com/relf/egobox"
+version = "0.2.1"

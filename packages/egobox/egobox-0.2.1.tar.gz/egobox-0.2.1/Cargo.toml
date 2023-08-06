@@ -1,0 +1,90 @@
+[dependencies]
+anyhow = "=1.0.48"
+env_logger = "0.9"
+libm = "0.2"
+log = "0.4"
+ndarray-linalg = "0.14"
+ndarray-npy = "0.8"
+ndarray-rand = "0.14"
+ndarray-stats = "0.5"
+nlopt = "0.5.3"
+numpy = "0.15.0"
+pyo3-log = "0.5.0"
+rand_isaac = "0.3"
+
+[dependencies.egobox-doe]
+path = "local_dependencies/egobox-doe"
+version = "0.2.1"
+
+[dependencies.egobox-ego]
+path = "local_dependencies/egobox-ego"
+version = "0.2.1"
+
+[dependencies.egobox-gp]
+path = "local_dependencies/egobox-gp"
+version = "0.2.1"
+
+[dependencies.egobox-moe]
+path = "local_dependencies/egobox-moe"
+version = "0.2.1"
+
+[dependencies.finitediff]
+features = ["ndarray"]
+version = "0.1"
+
+[dependencies.linfa]
+default-features = false
+version = "0.5.1"
+
+[dependencies.linfa-pls]
+default-features = false
+version = "0.5.1"
+
+[dependencies.ndarray]
+features = ["rayon", "approx", "blas"]
+version = "0.15"
+
+[dependencies.pyo3]
+features = ["extension-module"]
+version = "0.15.1"
+
+[dev-dependencies]
+approx = "0.4"
+argmin_testfunctions = "0.1"
+criterion = "0.3"
+serde_json = "1"
+
+[dev-dependencies.linfa-datasets]
+features = ["linnerud"]
+version = "0.5.1"
+
+[features]
+default = []
+intel-mkl-static = ["linfa/intel-mkl-static"]
+intel-mkl-system = ["linfa/intel-mkl-system"]
+netlib-static = ["linfa/netlib-static"]
+netlib-system = ["linfa/netlib-system"]
+openblas-static = ["linfa/openblas-static"]
+openblas-system = ["linfa/openblas-system"]
+serde = ["linfa/serde"]
+
+[lib]
+crate-type = ["cdylib"]
+name = "egobox"
+
+[package]
+authors = ["Rémi Lafage <remi.lafage@onera.fr>"]
+categories = ["algorithms", "mathematics", "science"]
+description = "A toolbox for efficient global optimization"
+edition = "2018"
+exclude = [".github/"]
+keywords = ["machine-learning", "doe", "gaussian-process", "mixture-of-experts", "optimization"]
+license = "Apache-2.0"
+name = "egobox"
+repository = "https://github.com/relf/egobox"
+version = "0.2.1"
+[package.metadata.maturin]
+python-source = "python"
+
+[workspace]
+members = ["doe", "gp", "moe", "ego"]
