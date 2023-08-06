@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: buffered-pipe
+Version: 0.1.0
+Summary: Buffered pipe through shared memory.
+Home-page: https://github.com/klae01/buffered_pipe
+Author: klae01
+Author-email: tspt2479@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# buffered_pipe
+Buffered pipe through shared memory.
+
+## core features
+- `Pipe`: alias for `Generic_Pipe`
+- `Generic_Pipe`: free-length data, bytes or picklable
+- `Static_Pipe`: fixed length data, only bytes supported
+
+## install
+--------------------
+```shell
+pip install buffered-pipe
+```
+
+## usage
+--------------------
+
+- Generic_Pipe
+```python
+import multiprocessing
+import threading
+
+from buffered_pipe import Generic_Pipe
+
+
+def foo(barrier, pipe_send):
+    pipe_send.register()
+    barrier.wait()
+    pipe_send.send("Hello, world!")
+
+
+def bar(barrier, pipe_recv):
+    pipe_recv.register()
+    barrier.wait()
+    print(pipe_recv.recv())
+
+
+if __name__ == "__main__":
+    barrier = multiprocessing.Barrier(3)
+    pipe_recv, pipe_send = Generic_Pipe(
+        buffer_size=2048, duplex=False
+    )
+    P = multiprocessing.Process(target=foo, args=(barrier, pipe_send))
+    T = threading.Thread(target=bar, args=(barrier, pipe_recv))
+    P.start()
+    T.start()
+    barrier.wait()
+    P.join()
+    T.join()
+```
+
+- Static_Pipe
+```python
+import multiprocessing
+import threading
+
+from buffered_pipe import Static_Pipe
+
+
+def foo(barrier, pipe_send):
+    pipe_send.register()
+    barrier.wait()
+    ret_string = "Hello, world!"
+    ret_string = ret_string + " " * (32 - len(ret_string))
+    ret_string = ret_string.encode()
+    pipe_send.send(ret_string)
+
+
+def bar(barrier, pipe_recv):
+    pipe_recv.register()
+    barrier.wait()
+    ret_string = pipe_recv.recv()
+    print(ret_string.decode())
+
+
+if __name__ == "__main__":
+    barrier = multiprocessing.Barrier(3)
+    pipe_recv, pipe_send = Static_Pipe(object_size=32, object_count=16, duplex=False)
+    P = multiprocessing.Process(target=foo, args=(barrier, pipe_send))
+    T = threading.Thread(target=bar, args=(barrier, pipe_recv))
+    P.start()
+    T.start()
+    barrier.wait()
+    P.join()
+    T.join()
+```
+
+- When you create a `process` or `thread`, call `register` of `Pipe`
+- The `buffer_size` of `Generic_Pipe` is in `bytes`.
+- The `object_size` of `Static_Pipe` is in `bytes`.
+- `object_count` in `Static_Pipe` is the maximum number of objects placed in the buffer.
+- `duplex` is equivalent to `multiprocessing.Pipe`.
+
+
+## tests
+--------------
+```shell
+> benchmark_result.txt
+for f in benchmarks/*.py; do python3 "$f" &>> benchmark_result.txt; done
+> test_result.txt
+for f in tests/*.py; do python3 "$f" &>> test_result.txt; done
+```
+
