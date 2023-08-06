@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: nnext
+Version: 0.0.6
+Summary: Python client library for the NNext. A ⚡ blazingly fast, 🔍 nearest-neighbors vector search engine for building delightful ML apps
+Home-page: https://nnext.ai
+Author: NNext, co
+Author-email: team@nnext.ai
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: grpcio (>=1.44.0) ; python_version >= "3.6"
+Requires-Dist: protobuf (>=3.20.0) ; python_version >= "3.6"
+
+![](https://github.com/your_username/your_repository/raw/master/images/img2.png)
+
+
+NNext is a
+
+️• ⚡️ blazingly fast
+
+• 📖 source-available [Elastic License 2.0]
+
+• 🔍 nearest-neighbors vector search engine
+
+
