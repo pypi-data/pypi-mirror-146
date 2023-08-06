@@ -1,0 +1,12 @@
+scratchcloud/__init__.py,sha256=NNHBTmpCCqexZdgRloUEjAP6Ymkf6iJylXWG_E9Kr5g,60
+scratchcloud/client.py,sha256=G_72xXkzcbVcUMSZrpab7rH-M0MhtwgsiCeBDOOGpQk,24792
+scratchcloud/errors.py,sha256=nHMRZispVRf8GJYJxr-SqIRa8SgNQRgpyAq9bxR-mbg,1054
+scratchcloud/ext/__init__.py,sha256=HB11tgvpy9IzIqZdu_LGMQoaGrZt3_dieMFlhopYoUs,107
+scratchcloud/ext/api.py,sha256=moPd9QPUskTzo0FzuD4RC2vwQ9ovPpfuuqxaTos9rtE,20551
+scratchcloud/ext/codecs.py,sha256=uaZnzzADsB8EmVYGCTwt135RcPuyRUus9dqodgMl2kE,3342
+scratchcloud/ext/utils.py,sha256=Dj3KPCRMc0qwbWdYnudLKieBaY9TsKH4N3dd1GFTi60,7420
+scratchcloud-1.0.0.dist-info/LICENSE,sha256=2_w5b0xsYgHNYtSinXFycTuQsUhADvaadAevJLMJ3Do,1062
+scratchcloud-1.0.0.dist-info/METADATA,sha256=15MV4gmlu0lJbZEJUownE8M7A57t8YoH7tBL-uJe1gs,1961
+scratchcloud-1.0.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+scratchcloud-1.0.0.dist-info/top_level.txt,sha256=QJr2BtKWIIMal-5Z7tF6e5LQfB4EbthxTI7NdaONDzQ,13
+scratchcloud-1.0.0.dist-info/RECORD,,
