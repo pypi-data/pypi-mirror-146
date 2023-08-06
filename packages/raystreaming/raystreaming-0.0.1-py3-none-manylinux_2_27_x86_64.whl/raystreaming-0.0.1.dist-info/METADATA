@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: raystreaming
+Version: 0.0.1
+Summary: streaming module
+Author: Ray Streaming Team
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: msgpack (>=0.6.2)
+
+UNKNOWN
+
