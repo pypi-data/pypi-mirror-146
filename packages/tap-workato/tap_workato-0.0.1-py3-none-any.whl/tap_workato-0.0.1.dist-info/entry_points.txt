@@ -1,0 +1,3 @@
+[console_scripts]
+tap-workato=tap_workato.tap:TapWorkato.cli
+
