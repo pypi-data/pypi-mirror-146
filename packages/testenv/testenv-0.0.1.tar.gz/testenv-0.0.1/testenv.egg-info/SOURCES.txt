@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+requirements.txt
+setup.py
+room/__init__.py
+room/commands.py
+room/download.py
+room/run.py
+testenv.egg-info/PKG-INFO
+testenv.egg-info/SOURCES.txt
+testenv.egg-info/dependency_links.txt
+testenv.egg-info/top_level.txt
