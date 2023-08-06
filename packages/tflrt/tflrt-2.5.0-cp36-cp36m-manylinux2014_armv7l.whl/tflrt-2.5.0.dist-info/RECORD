@@ -1,0 +1,9 @@
+tflite_runtime-2.5.0.data/purelib/tflite_runtime/__init__.py,sha256=cd6AUq8Ce7I6DDvd8GalJFcQZN01BaZ-_BdOjJnBVzA,83
+tflite_runtime-2.5.0.data/purelib/tflite_runtime/_pywrap_tensorflow_interpreter_wrapper.cpython-36m-arm-linux-gnueabihf.so,sha256=kEj1ADRecF0dj6gRQOeJb9BVrZ5cUIfLNJs18nJQdmw,2436400
+tflite_runtime-2.5.0.data/purelib/tflite_runtime/interpreter.py,sha256=eL2Amfcg9gqLHWmHB5aMeN7FWz1e0Xt-aKEDYKy8S3g,22831
+tflrt-2.5.0.dist-info/DESCRIPTION.rst,sha256=Zgo6oXwd2CJ8e-ajOmhYQ9PrH_HflqBlaJIPAPPLHfk,246
+tflrt-2.5.0.dist-info/METADATA,sha256=OZKvHbtv5mw1y37eQiR8LLWAoF0TmY2tkF9li9Yob7c,1438
+tflrt-2.5.0.dist-info/RECORD,,
+tflrt-2.5.0.dist-info/WHEEL,sha256=_8v0gUmb_Qx5HEYq8mAXZt2oVDlzSZspNSDSgUMYKYc,104
+tflrt-2.5.0.dist-info/metadata.json,sha256=RvPWcUIOUfZ2hSkQDKFfXpYUx9HpVJBsVrJYDouPdAA,1306
+tflrt-2.5.0.dist-info/top_level.txt,sha256=uNbSt_JkE5qb43UeqR4Wx6_Y6A5613g6gtS49welF08,15
