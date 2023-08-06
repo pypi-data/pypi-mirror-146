@@ -1,0 +1,4 @@
+fontTools
+requests
+pycryptodome
+pysodium
