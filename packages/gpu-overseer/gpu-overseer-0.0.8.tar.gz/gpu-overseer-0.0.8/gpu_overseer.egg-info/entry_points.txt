@@ -1,0 +1,2 @@
+[console_scripts]
+overseer = notifier.__main__:main

@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gpu-overseer
+Version: 0.0.8
+Summary: Telegram notifier for GPU availability status.
+Home-page: https://github.com/ViktorooReps/overseer
+Download-URL: https://github.com/ViktorooReps/overseer/archive/0.0.1.tar.gz
+Author: Viktor Scherbakov
+Author-email: viktoroo.sch@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Command-line utility for notifying changes in GPU memory utilization via Telegram bot
+
+### Why would you need this
+* to be notified when your GPU-intensive processes die or go up
+* to be notified when GPUs become available on a server
+
+### Setup
+1. Set up your bot following instructions [here](https://core.telegram.org/bots#6-botfather), get your api token for it.
+2. Start a dialog with your bot on an account that you would like to get notifications to. **IMPORTANT**: you need to send any message to your bot (this is due to the Telegram bot API limitations) 
+3. Install `overseer`: `pip install gpu-overseer`
+4. Start monitoring your GPUs: `TELEGRAM_API_TOKEN=<your API token> TELEGRAM_API_URL=<relevant bot API URL> overseer monitor`
+
+You should instantly get a notification with a current GPU utilization status.
+
+### Troubleshooting
+1. If you do not get any notifications, try `overseer notify <any_message>` - this will send your message to all chat ids known to bot. In case you do not get this message either, try messaging your bot once again just like during [setup](https://github.com/ViktorooReps/overseer#setup).
+2. In case you move your notifier to a new machine or in any other way change its location, the notifier may forget all chat ids, and you will have to message it once again.
+
