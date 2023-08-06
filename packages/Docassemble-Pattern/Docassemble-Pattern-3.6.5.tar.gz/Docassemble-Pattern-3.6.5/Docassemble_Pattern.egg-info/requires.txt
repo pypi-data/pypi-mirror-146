@@ -1,0 +1,4 @@
+future
+nltk
+numpy
+scipy
