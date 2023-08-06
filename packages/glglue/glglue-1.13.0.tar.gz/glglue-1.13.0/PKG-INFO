@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: glglue
+Version: 1.13.0
+Summary: The glue code which mediates between OpenGL and some GUI
+Home-page: https://ousttrue.github.io/glglue/
+Author: ousttrue
+Author-email: ousttrue@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# glglue
+
+The glue code which mediates between OpenGL and some GUI.
+GUI イベント(resize, mouse, keyboard, repaint) を OpenGL に橋渡しする。
+
+```                           
+GUI                         OpenGL controller
++--------+                   +------------+
+| win32  |--window resize--->| Update     |
+| glut   |--mouse input----->| Update     |
+| sdl    |--keyboard input-->| Update     |
+| pyside6|                   |            |
+|     etc|--repaint--------->| Draw       |
++--------+                   +------------+
+```
+
+And OpenGL utilities.
+
+## Requirements
+
+* Python 3.10
+
+## Site
+
+* <https://ousttrue.github.io/glglue/>
+* <https://pypi.python.org/pypi/glglue/>
+
+

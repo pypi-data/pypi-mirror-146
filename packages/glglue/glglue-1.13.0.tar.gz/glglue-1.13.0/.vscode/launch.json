@@ -1,0 +1,59 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "glut_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/freeglut_sample.py",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "PATH": "${env:PATH};${workspaceFolder}\\bin",
+                "PYTHONPATH": "${workspaceFolder}/src"
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "glfw_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/glfw_sample.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+        {
+            "name": "pysdl2_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/pysdl2_sample.py",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "PYSDL2_DLL_PATH": "${workspaceFolder}\\bin",
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "pyside6_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/pyside6_sample.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+        {
+            "name": "wgl_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/wgl_sample.py",
+            "cwd": "${workspaceRoot}",
+        },
+    ]
+}
