@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+dj_sqs_usermanager.egg-info/PKG-INFO
+dj_sqs_usermanager.egg-info/SOURCES.txt
+dj_sqs_usermanager.egg-info/dependency_links.txt
+dj_sqs_usermanager.egg-info/requires.txt
+dj_sqs_usermanager.egg-info/top_level.txt
+sqs_usermanager/__init__.py
+sqs_usermanager/api.py
+sqs_usermanager/apps.py
+sqs_usermanager/settings.py
+sqs_usermanager/urls.py
+sqs_usermanager/views.py
