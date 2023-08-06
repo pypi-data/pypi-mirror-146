@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+xmlasdict/__init__.py
+xmlasdict/__main__.py
+xmlasdict/__version__.py
+xmlasdict/exceptions.py
+xmlasdict/parser.py
+xmlasdict/wrapper.py
+xmlasdict.egg-info/PKG-INFO
+xmlasdict.egg-info/SOURCES.txt
+xmlasdict.egg-info/dependency_links.txt
+xmlasdict.egg-info/entry_points.txt
+xmlasdict.egg-info/requires.txt
+xmlasdict.egg-info/top_level.txt

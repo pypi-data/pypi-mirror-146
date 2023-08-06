@@ -1,0 +1,8 @@
+
+[dev]
+Sphinx
+flake8
+pytest
+python-dotenv
+pyyaml
+build
