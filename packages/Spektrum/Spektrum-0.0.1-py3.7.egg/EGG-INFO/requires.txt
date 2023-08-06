@@ -1,0 +1,4 @@
+colored
+docopt
+pike>=0.1.0
+coverage
