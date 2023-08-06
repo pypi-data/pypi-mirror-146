@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+fodMC/__init__.py
+fodMC/version.py
+fodMC.egg-info/PKG-INFO
+fodMC.egg-info/SOURCES.txt
+fodMC.egg-info/dependency_links.txt
+fodMC.egg-info/not-zip-safe
+fodMC.egg-info/top_level.txt
+fodMC/lib/__init__.py
+fodMC/lib/fodmc.f90
+fodMC/pyfodmc/__init__.py
+fodMC/pyfodmc/clean.py
+fodMC/pyfodmc/mol2fodmc.py
+fodMC/pyfodmc/pyfodmc.py
