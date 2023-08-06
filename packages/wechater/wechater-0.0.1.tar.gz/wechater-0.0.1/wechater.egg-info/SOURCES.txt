@@ -1,0 +1,5 @@
+setup.py
+wechater.egg-info/PKG-INFO
+wechater.egg-info/SOURCES.txt
+wechater.egg-info/dependency_links.txt
+wechater.egg-info/top_level.txt
