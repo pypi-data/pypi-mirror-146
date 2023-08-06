@@ -1,0 +1,2 @@
+recursive-include alphaui/templates *
+include alphaui/version.txt
