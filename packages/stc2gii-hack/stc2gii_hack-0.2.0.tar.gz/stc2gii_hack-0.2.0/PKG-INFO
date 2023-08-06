@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: stc2gii-hack
+Version: 0.2.0
+Summary: 
+Author: Joshua Teves
+Author-email: joshua.teves@nih.gov
+Requires-Python: >=3.8,<=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: mne (==1.0)
+Requires-Dist: nibabel (>=3.2.2,<4.0.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
