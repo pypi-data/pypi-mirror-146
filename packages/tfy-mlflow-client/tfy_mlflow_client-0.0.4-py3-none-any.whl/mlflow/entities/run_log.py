@@ -1,0 +1,78 @@
+from operator import xor
+
+from mlflow.entities._mlflow_object import _MLflowObject
+from mlflow.exceptions import MlflowException
+from mlflow.protos.databricks_pb2 import INVALID_PARAMETER_VALUE
+from mlflow.protos.service_pb2 import RunLog as ProtoRunLog
+
+
+class RunLog(_MLflowObject):
+    """
+    Run Log object.
+    """
+
+    def __init__(self, key, timestamp, step, log_type, artifact_path=None, value=None):
+        if not xor(bool(artifact_path), bool(value)):
+            raise MlflowException(
+                "either artifact_path or value should be empty. "
+                f"artifact_path={artifact_path}, value={value}",
+                INVALID_PARAMETER_VALUE,
+            )
+
+        self._key = key
+        self._value = value
+        self._timestamp = timestamp
+        self._step = step
+        self._log_type = log_type
+        self._artifact_path = artifact_path
+
+    @property
+    def key(self):
+        """String key corresponding to the metric name."""
+        return self._key
+
+    @property
+    def value(self):
+        """Float value of the metric."""
+        return self._value
+
+    @property
+    def timestamp(self):
+        """Metric timestamp as an integer (milliseconds since the Unix epoch)."""
+        return self._timestamp
+
+    @property
+    def step(self):
+        """Integer metric step (x-coordinate)."""
+        return self._step
+
+    @property
+    def log_type(self):
+        """type of non scalar metric to log"""
+        return self._log_type
+
+    @property
+    def artifact_path(self):
+        """artifact_path of non scalar metric (can be none)"""
+        return self._artifact_path
+
+    def to_proto(self):
+        run_log = ProtoRunLog()
+        run_log.key = self.key
+        run_log.timestamp = self.timestamp
+        run_log.step = self.step
+        run_log.log_type = self.log_type
+        run_log.artifact_path = self.artifact_path or ""
+        run_log.value = self.value or ""
+        return run_log
+
+    @classmethod
+    def from_proto(cls, proto):
+        return cls(
+            key=proto.key,
+            timestamp=proto.timestamp,
+            step=proto.step,
+            log_type=proto.log_type,
+            artifact_path=proto.artifact_path,
+            value=proto.value,
+        )
