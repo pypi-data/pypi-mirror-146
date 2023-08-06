@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/heaserver/folderawss3/__init__.py
+src/heaserver/folderawss3/service.py
+src/heaserver/folderawss3/wstl/all.json
+src/heaserver_folders_aws_s3.egg-info/PKG-INFO
+src/heaserver_folders_aws_s3.egg-info/SOURCES.txt
+src/heaserver_folders_aws_s3.egg-info/dependency_links.txt
+src/heaserver_folders_aws_s3.egg-info/entry_points.txt
+src/heaserver_folders_aws_s3.egg-info/requires.txt
+src/heaserver_folders_aws_s3.egg-info/top_level.txt
+tests/heaserver/folderawss3test/__init__.py
+tests/heaserver/folderawss3test/foldertestcase.py
+tests/heaserver/folderawss3test/test_items_all.py
