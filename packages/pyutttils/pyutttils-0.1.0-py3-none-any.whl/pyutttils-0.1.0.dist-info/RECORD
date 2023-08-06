@@ -1,0 +1,13 @@
+pyutttils/Member.py,sha256=ajYsr-jpDCl2zxXc28YLuNtIpQPzS30cjC_87PXQzqo,2510
+pyutttils/Semester.py,sha256=3uxh8hUbV5pGc-DLbpdLCro1fD1At0YjOXr-2hq_jp0,3331
+pyutttils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyutttils/utils.py,sha256=pjRO3owdK3ZG3P3orgim0T90xfCakQTT4KqGTNd9_mg,390
+pyutttils/utt_auth.py,sha256=sXhsm3jR2L08GNjasPVTgYk1vywmU_vSGQB6gm2K8Iw,4460
+tests/TestMember.py,sha256=yAlSQMGQv3w9W2V0LSe2hKtbCOxJ2gDLeHL5Z04vRiU,253
+tests/TestSemester.py,sha256=_Q9mThJVneeCgja01dZWW3rZclm78p_cfpFrgAdF5ME,2518
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyutttils-0.1.0.dist-info/LICENCE.txt,sha256=ZuNAT5qOC7z09JTrfG7Ue5lR_n8qEnVssXwH0v8p6ew,1071
+pyutttils-0.1.0.dist-info/METADATA,sha256=D4EatgfdWaEtgEFa5yQvoNQ_lSBxVv_jNw11WEAfk-g,1324
+pyutttils-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyutttils-0.1.0.dist-info/top_level.txt,sha256=ENSX2t3TrAx42nmJbuJ8qMZF3dJupno4EghYS2RY4eU,16
+pyutttils-0.1.0.dist-info/RECORD,,
