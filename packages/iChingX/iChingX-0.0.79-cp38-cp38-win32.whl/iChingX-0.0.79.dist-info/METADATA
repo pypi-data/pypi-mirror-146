@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: iChingX
+Version: 0.0.79
+Summary: iChingX是一套通用的发开工具套件，类似Django，但iChingX不限于Web开发，也可用于桌面开发。
+Home-page: https://github.com/oneincloud/iChingX
+Author: Alex<alex@one-in-cloud.com>
+Author-email: Alex<alex@one-in-cloud.com>
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: psutil
+Requires-Dist: python-dotenv
+Requires-Dist: zerorpc
+Requires-Dist: python-dateutil
+Requires-Dist: dateparser
+Requires-Dist: loguru
+Requires-Dist: click
+
+UNKNOWN
+

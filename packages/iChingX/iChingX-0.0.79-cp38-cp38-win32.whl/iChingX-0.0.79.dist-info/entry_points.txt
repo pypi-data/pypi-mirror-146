@@ -1,0 +1,2 @@
+[console_scripts]
+iching = iChingX.bin.iching:main
