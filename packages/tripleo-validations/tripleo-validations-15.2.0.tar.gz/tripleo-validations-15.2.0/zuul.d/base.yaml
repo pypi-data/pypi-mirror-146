@@ -1,0 +1,39 @@
+---
+- job:
+    description: Base tripleo-validations job
+    name: tripleo-validations-centos-8-base
+    nodeset: centos-8-stream
+    parent: base
+    success-url: "reports.html"
+    failure-url: "reports.html"
+    pre-run:
+      - tests/prepare-test-host.yml
+      - ci/playbooks/pre.yml
+    run:
+      - ci/playbooks/run.yml
+    timeout: 1800
+    voting: true
+
+- job:
+    name: tripleo-ci-centos-9-standalone-tv-validation
+    parent: tripleo-ci-centos-9-standalone
+    vars:
+      featureset: '052'
+      validate_services: true
+      enable_validation: true
+      validation_component: validation
+
+- job:
+    name: tripleo-validations-coverchange
+    nodeset: centos-8-stream
+    parent: base
+    run: ci/playbooks/coverchange.yaml
+    timeout: 1600
+    voting: false
+    required-projects:
+      - openstack/validations-libs
+      - openstack/tripleo-validations
+    files:
+      - ^tripleo_validations/.*
+      - ^library/.*
+      - ^lookup_plugins/.*
