@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/chilean_ci/__init__.py
+src/chilean_ci/chilean_ci.py
+src/chilean_ci.egg-info/PKG-INFO
+src/chilean_ci.egg-info/SOURCES.txt
+src/chilean_ci.egg-info/dependency_links.txt
+src/chilean_ci.egg-info/top_level.txt
