@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ytclips-merge
+Version: 0.1.1
+Summary: Produce a concatenated video of clips that mentions a word from a youtube channel
+Home-page: https://github.com/kinslersi/yt-concate
+Author: kinslersi
+Author-email: shockteeth@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: moviepy
+Requires-Dist: urllib3
+Requires-Dist: youtube-transcript-api
+Requires-Dist: python-dotenv
+Requires-Dist: pytube
+Requires-Dist: requests
+
+
+# yt-concate
+it's essential to add a .env file in this project which storge api_key
+api_key=<...>
+
