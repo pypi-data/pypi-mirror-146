@@ -1,0 +1,12 @@
+README.md
+setup.py
+bb2parse/BloodBowlMatch.py
+bb2parse/BloodBowlSeason.py
+bb2parse/__init__.py
+bb2parse/example.py
+bb2parse/parse.py
+bb2parse.egg-info/PKG-INFO
+bb2parse.egg-info/SOURCES.txt
+bb2parse.egg-info/dependency_links.txt
+bb2parse.egg-info/requires.txt
+bb2parse.egg-info/top_level.txt
