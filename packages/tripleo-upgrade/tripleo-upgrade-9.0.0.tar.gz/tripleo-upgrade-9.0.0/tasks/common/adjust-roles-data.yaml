@@ -1,0 +1,172 @@
+---
+- name: add OsloMessagingRpc and OsloMessagingNotify services
+  replace:
+    path: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::RabbitMQ$)'
+    replace: '\1\2\1- {{ item }}'
+  loop:
+    - "OS::TripleO::Services::OsloMessagingRpc"
+    - "OS::TripleO::Services::OsloMessagingNotify"
+
+- name: drop RabbiMQ service
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::RabbitMQ$)'
+    replace: ''
+
+- name: Replace Docker for Podman service
+  replace:
+    path: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::Docker$)'
+    replace: '\1- OS::TripleO::Services::Podman'
+
+- name: Replace NovaPlacement for PlacementApi service
+  replace:
+    path: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::NovaPlacement$)'
+    replace: '\1- OS::TripleO::Services::PlacementApi'
+
+- name: drop Congress service
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::Congress$)'
+    replace: ''
+
+- name: Replace Fluentd for Rsyslog service
+  replace:
+    path: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::Fluentd$)'
+    replace: '\1- OS::TripleO::Services::Rsyslog'
+
+- name: Replace SensuClient for Collectd service
+  replace:
+    path: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::SensuClient$)'
+    replace: '\1- OS::TripleO::Services::Collectd'
+
+
+- name: add ContainerImagePrepare service
+  replace:
+    path: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::HAproxy$)'
+    replace: '\1\2\1- OS::TripleO::Services::ContainerImagePrepare'
+
+- name: add BootParams service
+  replace:
+    path: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::AuditD$)'
+    replace: '\1\2\1- OS::TripleO::Services::BootParams'
+
+- name: drop deprecated telemetry services
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::{{ item }}$)'
+    replace: ''
+  loop:
+    - CeilometerApi
+    - CeilometerCollector
+    - CeilometerExpirer
+
+- name: drop MongDB service
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::MongoDb$)'
+    replace: ''
+
+- name: drop GlanceRegistry service
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::GlanceRegistry$)'
+    replace: ''
+
+- name: drop NovaConsoleAuth service
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::NovaConsoleauth$)'
+    replace: ''
+
+- name: drop OpenDaylight services
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::{{ item }}$)'
+    replace: ''
+  loop:
+    - OpenDaylightOvs
+    - OpenDaylightApi
+
+- name: drop NeutronLBaas services
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::{{ item }}$)'
+    replace: ''
+  loop:
+    - NeutronLbaasv2Agent
+    - NeutronLbaasv2Api
+
+- name: drop Tacker service
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::Tacker$)'
+    replace: ''
+
+- name: drop Panko service
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::PankoApi$)'
+    replace: ''
+
+- name: drop Ntp service
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::Ntp$)'
+    replace: ''
+
+- name: drop Skydive services
+  replace:
+    dest: "{{ roles_data }}"
+    regexp: '(\s+)(- OS::TripleO::Services::{{ item }}$)'
+    replace: ''
+  loop:
+    - SkydiveAgent
+    - SkydiveAnalyzer
+
+# By default we have update_serial either unset at all for OSP13 and OSP14 or
+# we have it set where Pacemaker enabled nodes, CephOSD nodes and Networkers
+# have it set to 1. This is mostly defensive precaution and we do allow running
+# in parallel for CephOSD and Networkers for production systems that did enough
+# testing on preprod or can take small outage. We should also parallelize it in
+# CI as we just waste time here.
+
+- name: Read the existing roles data file
+  slurp:
+    src: "{{ roles_data }}"
+  register: _roles_data_slurp
+
+- name: Transform the roles data file update_serial values
+  vars:
+    old_roles_data: "{{ _roles_data_slurp['content'] | b64decode | from_yaml }}"
+  when: "'OS::TripleO::Services::Pacemaker' in old_roles_data | json_query('[].ServicesDefault[]')"
+  block:
+    - name: Backup original roles data file
+      copy:
+        src: "{{ roles_data }}"
+        dest: "{{ roles_data | regex_replace('.yaml$') }}.original.yaml"
+        remote_src: true
+        force: false
+
+    - name: Write new roles data file with revised update_serial
+      copy:
+        content: >-
+          {%- set new_data = [] %}
+          {%- for data_item in old_roles_data %}
+          {%-   if 'ServiceDefault' in data_item %}
+          {%-     if 'OS::TripleO::Services::Pacemaker' in data_item['ServicesDefault'] %}
+          {%-       set _ = data_item.update({'update_serial': 1}) %}
+          {%-     else %}
+          {%-       set _ = data_item.update({'update_serial': 25}) %}
+          {%-     endif %}
+          {%-   endif %}
+          {%-   set _ = new_data.append(data_item) %}
+          {%- endfor %}
+          {{- new_data | to_nice_yaml(indent=2) }}
+        dest: "{{ roles_data }}"

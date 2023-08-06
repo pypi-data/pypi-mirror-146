@@ -1,0 +1,20 @@
+---
+- name: run Ceph minor update
+  shell: |
+    set -o pipefail
+    ./ceph-update-run.sh 2>&1 {{ timestamper_cmd }} >> \
+      ceph-update-run.log
+  args:
+    chdir: "{{ working_dir }}"
+    executable: /usr/bin/bash
+  ignore_errors: true
+  register: ceph_update_status
+
+- block:
+    - name: print Ceph update failures
+      command: tail {{ working_dir }}/ceph-update-run.log
+
+    - name: fail Ceph update
+      fail:
+        msg: Ceph minor update failed
+  when: ceph_update_status is failed

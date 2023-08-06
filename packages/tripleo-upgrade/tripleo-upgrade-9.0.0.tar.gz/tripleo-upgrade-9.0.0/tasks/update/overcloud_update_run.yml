@@ -1,0 +1,14 @@
+---
+- name: Are we running in parallel or serially ?
+  debug:
+    msg: "{{ (overcloud_batch_update|bool) | ternary('Running in parallel', 'Running serially') }}"
+
+- name: generate roles list from inventory file
+  import_tasks: ../common/load_roles_from_inventory.yaml
+  when: not oc_roles
+
+- name: Run update.
+  vars:
+    oc_current_role: "{{ item }}"
+  include_tasks: overcloud_update_run_role.yml
+  loop: "{{ oc_roles|default(['all'])|batch((overcloud_batch_update|bool) | ternary(100, 1))|list }}"
