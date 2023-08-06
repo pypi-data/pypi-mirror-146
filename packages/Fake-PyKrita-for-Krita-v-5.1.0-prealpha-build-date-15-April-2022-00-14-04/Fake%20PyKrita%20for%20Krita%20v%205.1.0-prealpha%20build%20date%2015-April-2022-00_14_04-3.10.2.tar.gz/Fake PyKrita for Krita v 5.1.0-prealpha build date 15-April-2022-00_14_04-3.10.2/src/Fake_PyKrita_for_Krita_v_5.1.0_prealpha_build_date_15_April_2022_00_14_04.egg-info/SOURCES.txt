@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/Fake_PyKrita_for_Krita_v_5.1.0_prealpha_build_date_15_April_2022_00_14_04.egg-info/PKG-INFO
+src/Fake_PyKrita_for_Krita_v_5.1.0_prealpha_build_date_15_April_2022_00_14_04.egg-info/SOURCES.txt
+src/Fake_PyKrita_for_Krita_v_5.1.0_prealpha_build_date_15_April_2022_00_14_04.egg-info/dependency_links.txt
+src/Fake_PyKrita_for_Krita_v_5.1.0_prealpha_build_date_15_April_2022_00_14_04.egg-info/top_level.txt
+src/krita/__init__.py
