@@ -1,0 +1,13 @@
+ztfidr/__init__.py,sha256=ot0Gs5I4XeAM4J2P3ybEuTvTsVOT_4FT4g7do4Lzh14,72
+ztfidr/io.py,sha256=LuzJ4bZFd3di5BYIptFsLdtMEQbaosX_Ps5a9-fpg98,7361
+ztfidr/lightcurve.py,sha256=L8iLveqeGPO_9b8iLCPAqKcJtxMf6Eb_OdmeD021mMI,18909
+ztfidr/salt2.py,sha256=joWaAZ7VDp0tIV8iEuZs-3lLjCpkbd6hbHAJwe3cVYA,1893
+ztfidr/sample.py,sha256=b5ttv6a281fed_NB-nJ5IFgAdUKN51Dt5dRMC-L9P5I,17130
+ztfidr/spectroscopy.py,sha256=FbpOq9ih3dTRa3xMSjesENXUrILMQihwYhhhqn2mMaY,14176
+ztfidr/target.py,sha256=2WNtmCoik_A9XswkBr_6ClbL6mV1xauUvZjFlJbUBG0,9255
+ztfidr/utils.py,sha256=Yud0--ToZiGFiJucNAWcAv4h_i7FuCP6rdg6cXq_nZ4,1443
+ztfidr-0.4.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ztfidr-0.4.6.dist-info/METADATA,sha256=Ycye0UVcppED36gQVtuShvaj3mYlh4Car8j1VGMsnkM,279
+ztfidr-0.4.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ztfidr-0.4.6.dist-info/top_level.txt,sha256=54jhWBdbpp7_PGJ_6-UnryOuBYdHlzDMUxLp6vWpsbY,7
+ztfidr-0.4.6.dist-info/RECORD,,
