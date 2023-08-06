@@ -1,0 +1,5 @@
+numpy>=1.19
+pandas
+xarray
+netCDF4
+packaging
