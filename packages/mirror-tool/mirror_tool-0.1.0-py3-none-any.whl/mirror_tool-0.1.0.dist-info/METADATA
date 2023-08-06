@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mirror-tool
+Version: 0.1.0
+Summary: A tool for managing git mirrors.
+License: GPLv3
+Author: Rohan McGovern
+Author-email: rohan@mcgovern.id.au
+Requires-Python: >=3.9
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ruamel.yaml (>=0.17.21)
