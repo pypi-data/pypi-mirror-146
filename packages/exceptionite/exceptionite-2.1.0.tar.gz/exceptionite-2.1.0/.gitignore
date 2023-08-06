@@ -1,0 +1,10 @@
+venv
+**/__pycache__/*
+.vscode
+package.db
+.env
+dist/*
+src/exceptionite.egg-info
+build/
+node_modules/
+**/mix-manifest.json
