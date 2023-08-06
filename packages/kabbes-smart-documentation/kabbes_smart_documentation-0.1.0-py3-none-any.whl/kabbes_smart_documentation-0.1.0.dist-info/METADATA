@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: kabbes-smart-documentation
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://pypi.org/project/kabbes_smart_documentation
+Author: James Kabbes
+Author-email: james.kabbes@gmail.com
+License: UNKNOWN
+Project-URL: GitHub, https://github.com/jameskabbes/smart_documentation
+Project-URL: Documentation, https://jameskabbes.github.io/smart_documentation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kabbes-py-starter
+Requires-Dist: kabbes-parent-class
+Requires-Dist: kabbes-dir-ops
+Requires-Dist: kabbes-repository-generator
+Requires-Dist: kabbes-pypi-builder
+
+[GitHub Pages](https://jameskabbes.github.io/smart_documentation)
+
+# smart_documentation
+
+
+
