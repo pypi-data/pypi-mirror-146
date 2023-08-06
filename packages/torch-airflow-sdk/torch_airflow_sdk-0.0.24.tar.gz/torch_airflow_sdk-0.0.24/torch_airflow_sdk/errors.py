@@ -1,0 +1,2 @@
+class FlowSnowflakeOperatorException(Exception):
+    pass
