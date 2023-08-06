@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/conspiracies/HeadWordExtractionComponent.py
+src/conspiracies/__init__.py
+src/conspiracies/about.py
+src/conspiracies/download.py
+src/conspiracies.egg-info/PKG-INFO
+src/conspiracies.egg-info/SOURCES.txt
+src/conspiracies.egg-info/dependency_links.txt
+src/conspiracies.egg-info/not-zip-safe
+src/conspiracies.egg-info/requires.txt
+src/conspiracies.egg-info/top_level.txt
+src/conspiracies/coref/CoreferenceComponent.py
+src/conspiracies/coref/CoreferenceModel.py
+src/conspiracies/coref/__init__.py
