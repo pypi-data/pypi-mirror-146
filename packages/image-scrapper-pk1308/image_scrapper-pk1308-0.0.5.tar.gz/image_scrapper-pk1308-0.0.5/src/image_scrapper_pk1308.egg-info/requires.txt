@@ -1,0 +1,4 @@
+selenium
+pymongo
+webdriver_manager
+requests
