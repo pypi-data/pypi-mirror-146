@@ -1,0 +1,13 @@
+servicepytan/__init__.py,sha256=WmRyonT_hBaRIs7CsLtK92BvdftQpFKbFJ4_Y7WVC1c,909
+servicepytan/auth.py,sha256=7v_9l0P2N3esO1FfZ_xXnkIdsRwamXV6aoIOKCI8tDk,2873
+servicepytan/data.py,sha256=942kea3rRQ6c29LY5IB-CBV_jt0GzAQc8i_D1BGOdFM,3521
+servicepytan/dates.py,sha256=JHs-Y1oFPwA1XQwBXe8pOSAY1kcYNDH2yMj95N7ifN4,1878
+servicepytan/requests.py,sha256=tgfsu123ahBV-oeMILELMMIMWi_C0iY485G2Fpm2pg8,3633
+servicepytan/utils.py,sha256=PHK926mks1rWW8KjmNpuu7P34Ot0qViY4Yc0K6M9Z5A,3279
+servicepytan-0.1.0.dist-info/AUTHORS.rst,sha256=CZTNtStea8VWibUYZmfNXvoseA4GogT1mHPAxHTmruQ,174
+servicepytan-0.1.0.dist-info/LICENSE,sha256=RwnobTJY3f7Rky0N2h04brQDqu1KTXyUBVvpfT226g0,1094
+servicepytan-0.1.0.dist-info/METADATA,sha256=B5hEj3wlmS4K7IgvaYTRTE-JaDVJaqttEAxiBIKtVg8,1867
+servicepytan-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+servicepytan-0.1.0.dist-info/entry_points.txt,sha256=qlvYQW2ZBSdlO6BufLI2rkchaclz8oFKSYaTUqtOsb8,56
+servicepytan-0.1.0.dist-info/top_level.txt,sha256=c7ibcQwWzyPBjFleXZTaNHcOSyuDOo8iCgoj_zrXTkA,13
+servicepytan-0.1.0.dist-info/RECORD,,
