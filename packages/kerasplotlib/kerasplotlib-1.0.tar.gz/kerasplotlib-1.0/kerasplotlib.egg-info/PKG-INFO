@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: kerasplotlib
+Version: 1.0
+Summary: Kerasplotlib is a visualization library for Keras
+Home-page: http://mikkokotila.com
+Author: Mikko Kotila
+Author-email: mailme@mikkokotila.com
+Maintainer: Mikko Kotila
+Maintainer-email: mailme@mikkokotila.com
+License: MIT
+Download-URL: https://github.com/autonomio/kerasplotlib
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+
+Kerasplotlib provides a useful interface for Keras users that meet
+many common visualization needs related with training and evaluating
+deep learning models.
+
+

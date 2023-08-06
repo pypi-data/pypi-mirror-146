@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kerasplotlib/__init__.py
+kerasplotlib/text.py
+kerasplotlib/traininglog.py
+kerasplotlib.egg-info/PKG-INFO
+kerasplotlib.egg-info/SOURCES.txt
+kerasplotlib.egg-info/dependency_links.txt
+kerasplotlib.egg-info/requires.txt
+kerasplotlib.egg-info/top_level.txt
