@@ -1,0 +1,15 @@
+a.out
+*.o
+*.ol
+*.os
+*~
+*.swp
+*.a
+*.so.*
+
+cscope.*
+
+.build
+
+subprojects/*
+!subprojects/*.wrap
