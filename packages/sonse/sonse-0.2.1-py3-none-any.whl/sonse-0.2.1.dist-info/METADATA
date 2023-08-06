@@ -1,0 +1,214 @@
+Metadata-Version: 2.1
+Name: sonse
+Version: 0.2.1
+Summary: Stephen's Obsessive Note-Storage Engine.
+Home-page: UNKNOWN
+Author: Stephen Malone
+Author-email: mail@sonse.org
+License: UNKNOWN
+Project-URL: Changelog, https://github.com/rattlerake/sonse/blob/master/changes.md
+Project-URL: License, https://github.com/rattlerake/sonse/blob/master/license.md
+Project-URL: Repository, https://github.com/rattlerake/sonse
+Project-URL: Issues, https://github.com/rattlerake/sonse/issues
+Keywords: notes note-taking cli
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Office/Business :: News/Diary
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=8.1)
+
+Sonse
+=====
+
+[![](https://img.shields.io/github/workflow/status/rattlerake/sonse/Run%20Tests)][repo]
+[![](https://img.shields.io/pypi/v/sonse)][pypi]
+[![](https://img.shields.io/pypi/pyversions/sonse)][pypi]
+[![](https://img.shields.io/pypi/l/sonse)][lcns]
+[![](https://img.shields.io/github/issues/rattlerake/sonse)][bugs]
+
+**Sonse** (*Stephen's Obsessive Note-Storage Engine*, pronounced *son·see*) is a command-line note management application. It allows you to create, edit and maintain your plaintext notes while keeping them archived in a single human-readable zip file.
+
+If you've got a bunch of loose text files lying around and you'd like to keep them organised, Sonse is for you. It'll keep them safe, sorted and sensible, forever.
+
+> **Note:** Sonse is designed primarily for Linux and Linux-based operating systems; in particular it uses several Linux defaults and environment variables for its basic functions. Mac OS should work (please tell me if it doesn't), but Windows is unsupported at this time.
+
+Installation
+------------
+
+Sonse requires [Python 3.10][p310] and a few dependencies. You can install it one of two ways:
+
+### PyPi Package
+
+You can get the official [PyPi package][pypi] with pip:
+
+```text
+$ pip install sonse
+$ sonse --help
+```
+
+This will install Sonse with a `sonse` executable you can run directly. Nice and easy.
+
+### Source Code
+
+You can also clone the [Git repository][repo] and run the source code yourself, if you're interesting in tinkering with the code:
+
+```text
+$ git clone https://github.com/rattlerake/sonse.git
+$ cd sonse
+$ pip install -r requirements.txt
+$ python -m sonse --help
+```
+
+You'll need to install [the dependencies][reqs] and run Sonse from the Python module, or create an alias for it.
+
+Setup
+-----
+
+### Archives
+
+Sonse stores notes at `$HOME/.config/sonse/sonse.zip`. If it can't find a valid archive, it will create one at that location.
+
+The archive is a single standard zip file containing notes ending in `.txt`. Each file is formatted in UTF-8 and has a lowercase name, like this:
+
+```sh
+sonse.zip/
+- alpha.txt    # Name: "alpha"
+- bravo.txt    # Name: "bravo"
+- test-123.txt # Name: "test-123"
+```
+
+These names are used in commands and are always rendered as lowercase without punctuation, excluding hyphens and underscores. If you try to create a note called `FOO_BAR`, Sonse will interpret it as `foo_bar`.
+
+### Shell Completion
+
+Sonse uses [Click][clck] for its interface, which has optional support for shell auto-completions. I highly recommend [enabling this functionality][comp] if you have a shell that supports it. (Sonse will work fine without it, but it's nice to have.)
+
+Commands
+--------
+
+### `create NAME`
+
+Create a new note in your archive.
+
+- `-e --edit`: Edit the note after creation.
+
+```sh
+$ sonse create alpha
+# Creates "alpha" as an empty note in your archive.
+
+$ sonse create bravo --edit
+# Creates "bravo" and opens it in your default text editor.
+```
+
+### `delete NAME`
+
+Delete an existing note from your archive.
+
+- `-f --force`: Bypass the confirmation prompt.
+
+```sh
+$ sonse delete alpha
+Are you sure you want to delete 'alpha'? [y/N]: y
+# Deletes "alpha" from your archive.
+
+$ sonse delete alpha --force
+# Deletes "alpha" without a confirmation prompt.
+```
+
+### `edit NAME`
+
+Open an existing note in your default text editor.
+
+```sh
+$ sonse edit alpha
+# Opens "alpha" in your default text editor.
+```
+
+### `export NAME FILE`
+
+Copy an existing note to a file on-disk.
+
+```sh
+$ sonse export alpha ~/some-file.txt
+# Copies "alpha" to the file "~/some-file.txt".
+```
+
+### `import NAME FILE`
+
+Copy a file on-disk to a new or existing note.
+
+- `-e --edit`: Edit the note after importing.
+
+```sh
+$ sonse import alpha ~/some-file.txt
+# Copies the file "~/some-file.txt" to "alpha".
+
+$ sonse import alpha ~/some-file.txt --edit
+# Copies to "alpha" and opens it in your default text editor.
+```
+
+### `list GLOB`
+
+Print a list of all existing notes, or notes matching a [glob pattern][glob].
+
+- `-r --reverse`: Reverse sorting order.
+- `-s --sort`: Sort by `name` or `size`.
+
+```text
+$ sonse list
+alpha
+bravo
+charlie
+
+$ sonse list a*
+alpha
+
+$ sonse list --sort=name --reverse
+charlie
+bravo
+alpha
+```
+
+### `move ORIG DEST`
+
+Rename an existing note to a new name.
+
+```sh
+$ sonse move alpha bravo
+# Renames "alpha" to "delta" in your archive.
+```
+
+### `read NAME`
+
+Print the contents of an existing note.
+
+```text
+$ sonse read alpha
+This is an example note.
+```
+
+Contribution
+------------
+
+If you find any bugs or have any suggestions, please add them to the [issue tracker][bugs] with as much detail as possible. Thank you!
+
+[bugs]: https://github.com/rattlerake/sonse/issues
+[clck]: https://click.palletsprojects.com/
+[comp]: https://click.palletsprojects.com/en/8.1.x/shell-completion/
+[glob]: https://en.wikipedia.org/wiki/Glob_(programming)
+[lcns]: https://github.com/rattlerake/sonse/blob/master/license.md
+[p310]: https://www.python.org/downloads/release/python-3100/
+[pypi]: https://pypi.org/project/sonse/
+[pyte]: https://docs.pytest.org
+[repo]: https://github.com/rattlerake/sonse
+[reqs]: https://github.com/rattlerake/sonse/blob/master/requirements.txt
+
+
