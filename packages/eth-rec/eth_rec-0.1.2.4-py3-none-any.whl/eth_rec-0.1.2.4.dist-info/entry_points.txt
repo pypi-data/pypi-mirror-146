@@ -1,0 +1,3 @@
+[console_scripts]
+eth-rec=eth_rec.eth_rec:main
+
