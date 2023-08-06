@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: technobabble
+Version: 1.0.0
+Summary: Technobabble will own your soul
+Home-page: UNKNOWN
+Author: Giorgio Vilardo
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Technobabble
+
+`technobabble` is a fake Python library to let me test setup.py shenanigans.
+
+## Usage
+
+```python
+from technobabble import Babbler
+
+Babbler.spout()  # normal meme
+Babbler.spout_softly()  # whispered lowercase meme
+```
+
+
