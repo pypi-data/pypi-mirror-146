@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+longtrends/__init__.py
+longtrends.egg-info/PKG-INFO
+longtrends.egg-info/SOURCES.txt
+longtrends.egg-info/dependency_links.txt
+longtrends.egg-info/not-zip-safe
+longtrends.egg-info/requires.txt
+longtrends.egg-info/top_level.txt
