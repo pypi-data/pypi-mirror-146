@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: PEMFileGenerator
+Version: 0.0.3
+Summary: This package will help to generate SSH PEM File for access server
+Home-page: https://github.com/vubon/PEMFileGenerator
+Author: Vubon Roy
+Author-email: vubon.roy@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/vubon/PEMFileGenerator/blob/master/docs/GUIDE.md
+Platform: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fabric
+
+## PEM File Generator
+
+Basically this library will help user to generate SSH PEM file for access remote server and disable password login to
+remote server. But If user want to keep password login option enable.It can be also available
+
+## Example
+
+```python
+"""
+Generate SSH PEM File Example
+"""
+from PEMFileGenerator.ssh_pem import Generate
+
+# Password login disable
+gen = Generate(ip="192.168.56.15", user="vagrant", password="vagrant")
+try:
+    gen.run()
+except Exception as err:
+    print(err)
+
+# Password login enable
+gen1 = Generate(ip="192.168.56.15", user="vagrant", password="vagrant", password_auth_disable=False)
+try:
+    gen1.run()
+except Exception as err:
+    print(err)
+
+```
+
+To learn more [Documentation](https://github.com/vubon/PEMFileGenerator/blob/main/docs/GUIDE.md).
+
+## Changelog
+
+See [Changelog](CHANGELOG.md)
+
+## License
+
+MIT
+
+
+## Changelog
+All notable changes to this project will be documented in this file. <br/>
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
