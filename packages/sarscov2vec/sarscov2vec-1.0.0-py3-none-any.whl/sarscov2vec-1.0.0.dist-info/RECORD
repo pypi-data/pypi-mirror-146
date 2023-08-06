@@ -1,0 +1,7 @@
+tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tools/sarscov2vec.py,sha256=QFwJEjsV8w09HOSoNJZyEabuy-cjXiZsng6Tc5f4VbA,3632
+sarscov2vec-1.0.0.dist-info/LICENSE,sha256=4fGbfB82orWFPUqDlrbOd6JbteSE622INfjfeSOdR2k,1089
+sarscov2vec-1.0.0.dist-info/METADATA,sha256=avbdVVZBJT5_hE0nXvX1JvRsUm1J3u01tcDO2O5jP3Q,8082
+sarscov2vec-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sarscov2vec-1.0.0.dist-info/top_level.txt,sha256=Ib4ZA2MPBpiT0tC-0qt5RcP9g42gLddRbx9PiYGa-Fc,6
+sarscov2vec-1.0.0.dist-info/RECORD,,
