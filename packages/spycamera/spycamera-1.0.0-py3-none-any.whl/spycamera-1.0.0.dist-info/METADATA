@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: spycamera
+Version: 1.0.0
+Summary: A small package to record and save a webcamclip
+Home-page: https://github.com/Official-BReep/spycamera
+Author: BReep
+Author-email: breep655@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Official-BReep/spycamera/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Spycamera
+
+Spycamera is a small package to record and save a webcamclip. You can download it from
+[Github](https://github.com/Official-BReep/spycam)
+too.
+
+##Installation
+Install Opencv:
+```
+pip install opencv-python
+```
+
+Install spycamera
+```
+pip install spycamera==1.0.0
+```
+Create a python file
+
+Import Package:
+```
+from spycam import record
+```
+
+Write Line:
+```
+record.webcam(duration_in_seconds, filepath, <False>)
+```
+
+Example 1:
+```
+from spycam import record
+
+record.webcam(10, "video.avi", False)
+
+
+> 10 seconds video as video.avi in Project folder without Output
+```
+
+Example 2:
+```
+from spycam import record
+import os
+
+os.mkdir("video") #Create a folder called video in your Projects folder
+record.webcam(30, "./video/video.avi") # 30 seconds Video called video.avi in created video folder
+```
+
+
+
