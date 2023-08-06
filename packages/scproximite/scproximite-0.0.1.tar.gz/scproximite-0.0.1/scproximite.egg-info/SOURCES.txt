@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+scproximite/__init__.py
+scproximite/funcs.py
+scproximite.egg-info/PKG-INFO
+scproximite.egg-info/SOURCES.txt
+scproximite.egg-info/dependency_links.txt
+scproximite.egg-info/entry_points.txt
+scproximite.egg-info/requires.txt
+scproximite.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+pandas
+numpy
+tensorflow
+stats
+seaborn
+matplotlib
+sklearn
+jupyterlab
+scanpy==1.8.2
+sciviso
+scikit_posthocs
+torch
+genieclust
+natsort
+leidenalg
