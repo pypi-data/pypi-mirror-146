@@ -1,0 +1,4 @@
+matplotlib>=3.0.0
+notebook>=6.4.0
+pandas>=1.4.0
+psycopg2-binary>=2.9.0
