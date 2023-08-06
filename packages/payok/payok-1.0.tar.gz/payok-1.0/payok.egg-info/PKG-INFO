@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: payok
+Version: 1.0
+Summary: Python payok.io API Client
+Home-page: https://github.com/6d33a40765b20c6/payok
+Author: except
+Author-email: 994b3d@gmail.com
+License: MIT LICENSE
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Python payok.io API Client by except
+Python payok.io API Client by except 
+Doc: https://payok.io/cabinet/documentation/doc_main.php
+## Install
+```
+pip install payok
+```
+## Example
+```
+from  payok import payok_api
+
+
+balance = payok_api.getBalance(
+    123,
+    'API_KEY'
+)
+print(balance)
+```
+
+
+## License
+
+MIT
+
+
+
