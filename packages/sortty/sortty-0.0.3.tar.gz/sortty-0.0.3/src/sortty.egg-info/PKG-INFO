@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sortty
+Version: 0.0.3
+Summary: Simple combination of advanced sorters
+Home-page: https://github.com/yytrofimov/Sortty
+Author-email: yytrofimov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Sortty - simple combination of advanced sorters
+
+The main benefit is the function ```get_multi_sorted```. It makes it easy to sort a sequence by several criteria at the
+same time. All sorting parameters can always be set manually, but they can also be determined automatically.
+
+Attention! For **simple sorting**, for example, from minimum to maximum sorter usage **will be redundant and slow**, for
+such situations write 1 line of code using the standard library:) Or rewrite this method in MinSorter class...
+
+

@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/sortty.py
+src/sortty.egg-info/PKG-INFO
+src/sortty.egg-info/SOURCES.txt
+src/sortty.egg-info/dependency_links.txt
+src/sortty.egg-info/top_level.txt
