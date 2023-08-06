@@ -1,0 +1,12 @@
+click>=8
+rich>=12
+
+[tests]
+mypy>=0.942
+pytest>=7.1
+pytest-cov>=3
+pytest-mypy>=0.9
+types-click>=7
+
+[tests:python_version < "3.8"]
+importlib-metadata
