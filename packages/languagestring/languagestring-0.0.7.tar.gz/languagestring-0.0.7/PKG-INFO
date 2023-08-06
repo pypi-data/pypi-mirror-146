@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: languagestring
+Version: 0.0.7
+Summary: Get all language characters for some european languages
+Home-page: https://github.com/MattWaller/languagestring
+Author: Matt Waller
+Author-email: mattghwaller@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MattWaller/languagestring/issues
+Description: # languagestring
+        
+        
+        <strong> To use: </strong>
+        
+        <p> from languagestring import languagestring </p>
+        <p>ls = languagestring()</p>
+        <p> # get czech characters </p>
+        <p>ls.language_string('cz',case='lowercase')</p>
+        <p>'áčďéěíňóřšťúůýž'</p>
+        
+        
+        <strong>Working Languages: </strong>
+        <p> {
+        	"se" : "swedish",
+        	"fr" : "french",
+        	"de" : "german",
+        	"nl" : "dutch",
+        	"es" : "spanish",
+        	"pt" : "portuguese",
+        	"pl" : "polish",
+        	"cz" : "czech",
+        	"it" : "italian"
+        }</p>
+        
+        <strong> Methods:</strong>
+        <p><strong>`language_string`</strong> - returns a string of the language characters.</p>
+        <p><strong>`language_array`</strong> - returns a list of the language characters.</p>
+        <p><strong>`alt_codes`</strong> - returns a list of the language alt codes.</p>
+        <p><strong>`description`</strong> - returns a list of the language description.</p>
+        
+        <strong>Arguments:</strong>
+        <p>`case` is defaulted to all which returns lowercase, uppercase, and other characters.</p>
+        <p>`language` is the two letter iso that is the working language.</p>
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
