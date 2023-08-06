@@ -1,0 +1,8 @@
+python-dateutil
+SQLAlchemy>1.4
+transaction
+zope.sqlalchemy
+
+[testing]
+pytest
+pytest-cov
