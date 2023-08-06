@@ -1,0 +1,75 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+    "setuptools_scm>=6.2",
+    "wheel",
+    "cmake>=3.18",
+    "pybind11~=2.6.1",
+    "ninja; sys_platform != 'win32'",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quicktex"
+description = "A fast block compression library for python"
+readme = "README.md"
+authors = [{ name = "Andrew Cassidy", email = "drewcassidy@me.com" }]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: C++",
+]
+
+requires-python = ">=3.7"
+dependencies = ["Pillow", "click"]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+tests = ["parameterized"]
+docs = ["sphinx", "myst-parser", "sphinx-rtd-theme"]
+stubs = ["pybind11-stubgen"]
+
+[project.urls]
+Source = "https://github.com/drewcassidy/quicktex"
+Changelog = "https://github.com/drewcassidy/quicktex/blob/main/CHANGELOG.md"
+
+[project.scripts]
+quicktex = "quicktex.__main__:main"
+
+[tool.setuptools]
+zip-safe = false
+packages = { find = { include = ["quicktex*"] } } # only include quicktex and not tests
+package-data = { '*' = ['py.typed', '*.pyi'] } # include stubs
+package-dir = { '' = '.' } # without this line, C++ source files get included in the bdist
+
+[tool.setuptools_scm]
+
+[tool.cibuildwheel]
+build = "cp*" # only build wheels for cpython.
+build-frontend = "build"
+test-command = "cd {project} && python -m unittest --verbose"
+test-extras = ["tests"]
+
+[tool.cibuildwheel.macos]
+archs = ["x86_64", "universal2"] # build fat binaries, or x86-64 for python 3.7
+skip = ["cp{38,39,31*}-macosx_x86_64"] # skip x86-only builds where fat binaries are supported
+
+[tool.cibuildwheel.windows]
+archs = ["auto64"] # arm64 windows builds not yet supported
+test-command = "cd /d {project} && python -m unittest --verbose" # windows why is this flag required
+
+[tool.cibuildwheel.linux]
+skip = ["cp37-musllinux*", "*musllinux_aarch64*"] # skip targets without available Pillow wheels
+manylinux-x86_64-image = "manylinux2014"
+manylinux-aarch64-image = "manylinux2014"

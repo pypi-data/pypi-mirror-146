@@ -1,0 +1,13 @@
+Pillow
+click
+
+[docs]
+sphinx
+myst-parser
+sphinx-rtd-theme
+
+[stubs]
+pybind11-stubgen
+
+[tests]
+parameterized

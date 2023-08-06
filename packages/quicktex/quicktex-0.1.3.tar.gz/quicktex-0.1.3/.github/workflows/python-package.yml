@@ -1,0 +1,138 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python Package
+
+on: [ push, pull_request ]
+
+jobs:
+  build-sdist:
+    name: Build SDist
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v3.1.2
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install flake8
+          python -m pip install setuptools twine build
+
+      - name: Lint with flake8
+        run: |
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+      - name: Build SDist
+        run: python -m build --sdist
+
+      - name: Check metadata
+        run: python -m twine check dist/*
+
+      - name: Upload SDist
+        uses: actions/upload-artifact@v3
+        with:
+          path: dist/*.tar.gz
+
+  build-wheels:
+    name: Build Wheels on ${{ matrix.os }} ${{ matrix.arch[0] }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ macos-11, windows-latest, ubuntu-latest ]
+        arch: [ ['x86', 'x86_64', 'AMD64', 'x86_64' ] ] #[suffix, mac, windows, linux] arch names
+        include:
+          - os: ubuntu-latest
+            arch: [ 'ARM', 'arm64', 'ARM64', 'aarch64' ]
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install libomp
+        if: runner.os == 'macOS'
+        # openMP isnt part of core apple clang for some reason?
+        # libomp is in homebrew, which works for end users but its not a fat binary
+        # so we have to install it manually
+        # compiled dylibs courtesy of https://mac.r-project.org/openmp/ and mirrored on my own server
+        run: |
+          wget https://pileof.rocks/openmp-13.0.0-darwin21-Release.tar.gz
+          sudo tar fvxz openmp-*.tar.gz -C /
+
+      - name: Install QEMU
+        # install QEMU if building for arm linux
+        uses: docker/setup-qemu-action@v1
+        if: runner.os == 'linux' && matrix.arch[3] == 'aarch64'
+        with:
+          platforms: arm64
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.4.0
+        env:
+          MACOSX_DEPLOYMENT_TARGET: "10.15"
+          CIBW_ARCHS_LINUX: ${{ matrix.arch[3] }}
+
+      - name: Upload Wheels
+        uses: actions/upload-artifact@v3
+        with:
+          path: ./wheelhouse/*.whl
+
+  publish:
+    name: Publish to PyPI and Github
+    needs: [ build-wheels, build-sdist ]
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3 # just need the changelog
+
+      - name: Set up Python
+        uses: actions/setup-python@v3.1.2
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install yaclog
+
+      - name: Get version name and body
+        run: |
+          echo "VERSION_TILE=Version $(yaclog show -n)" >> $GITHUB_ENV
+          echo "$(yaclog show -mb)" >> RELEASE.md
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: artifact
+          path: dist
+
+      - name: List artifacts
+        run: ls -l dist
+
+      - name: Publish to Test PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}
+
+      - name: Publish to Github
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist/*
+          name: ${{ env.VERSION_TITLE }}
+          body_path: RELEASE.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
