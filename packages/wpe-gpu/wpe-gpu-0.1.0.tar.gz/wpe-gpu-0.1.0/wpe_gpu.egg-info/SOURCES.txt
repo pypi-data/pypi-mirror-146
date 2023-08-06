@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+wpe/__init__.py
+wpe/wpe.py
+wpe_gpu.egg-info/PKG-INFO
+wpe_gpu.egg-info/SOURCES.txt
+wpe_gpu.egg-info/dependency_links.txt
+wpe_gpu.egg-info/top_level.txt
