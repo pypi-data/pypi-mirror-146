@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: DRSpy
+Version: 0.9
+Summary: Data loader for DRS4-psi
+Home-page: https://github.com/aszadzinski/scripts-and-notes/tree/master/python/DRS4-PSI
+Author: aszadzinski
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: click
+Requires: pandas
+Requires: matplotlib
+Requires: scipy
