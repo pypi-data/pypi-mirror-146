@@ -1,0 +1,12 @@
+app/__init__.py,sha256=M_pSqC4ab0l6Bi4Ix38-hwLPQtrVnPJn8WV58u1JVzo,82
+app/main_task.py,sha256=nUfekjbr-zTadJFFnnwWjBdFB-G70iCRaQqO4gU2A6c,257
+app/sub_task_1/__init__.py,sha256=FO9HZrmZhtivfdk2pLIz9ueHdotxqWqyE6khb8NgdN0,38
+app/sub_task_1/helpers.py,sha256=kQe4hYR4hh818f7ROit7Z-w5tTBaHA82on7N_bfwHJE,158
+app/sub_task_1/sub_task_1.py,sha256=44l5_PNlnM74FiFXTO5yM4VJIW2jAx5aOKb7_85yHuc,243
+app/sub_task_2/__init__.py,sha256=GfSD8L1KuIj1O-61YJQxwa8lmZzpCByRqMZ3Fw8MShQ,30
+app/sub_task_2/helpers.py,sha256=MRavwaRhqs4OkkupST1p1DCp30jr8uNu6h__t6EYE0Q,148
+app/sub_task_2/sub_task_2.py,sha256=q9AcNbCULUd2ygD-aQyAwXew_490jnVt6YzGOHEcc9k,240
+magnifi_base_template-0.0.1.dist-info/METADATA,sha256=FKk9HJZnCxZN47VlEpCpzHfQ3r27kerVKYsNPUAYjtM,589
+magnifi_base_template-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+magnifi_base_template-0.0.1.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+magnifi_base_template-0.0.1.dist-info/RECORD,,
