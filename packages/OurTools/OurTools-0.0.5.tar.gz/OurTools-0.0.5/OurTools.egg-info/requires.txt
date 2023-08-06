@@ -1,0 +1,2 @@
+numpy
+line_profiler
