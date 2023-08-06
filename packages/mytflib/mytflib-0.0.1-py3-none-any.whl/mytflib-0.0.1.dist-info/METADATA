@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mytflib
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/johnypark/mytflib
+Author: John Park
+Author-email: parkjohnyc@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: tensorflow-addons
+
+
+My Tensorflow Library is collection of codes for a more fluent tensorflow usage. 
+
+It consist of four main parts. 
+ - 1. DataLoader
+ - 2. Learining rate searcher and scheduler 
+ - 3. TFrecord writer
+ - 4. Custom trainer - Gradient accumulation, Class re-weighting.
+
+
+
