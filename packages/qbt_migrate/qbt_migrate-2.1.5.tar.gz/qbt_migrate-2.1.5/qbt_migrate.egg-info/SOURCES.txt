@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+qbt_migrate/__init__.py
+qbt_migrate/classes.py
+qbt_migrate/cli.py
+qbt_migrate/methods.py
+qbt_migrate.egg-info/PKG-INFO
+qbt_migrate.egg-info/SOURCES.txt
+qbt_migrate.egg-info/dependency_links.txt
+qbt_migrate.egg-info/entry_points.txt
+qbt_migrate.egg-info/requires.txt
+qbt_migrate.egg-info/top_level.txt
+tests/__init__.py
+tests/test_classes.py
+tests/test_methods.py
