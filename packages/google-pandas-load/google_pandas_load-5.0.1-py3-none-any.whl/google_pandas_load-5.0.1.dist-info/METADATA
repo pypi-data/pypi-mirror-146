@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: google-pandas-load
+Version: 5.0.1
+Summary: Wrapper for transferring data from A to B, where A and B are distinct and chosen between BigQuery, Storage, a local directory and pandas.
+Home-page: UNKNOWN
+Author: Augustin Barillec
+Author-email: augustin.barillec@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://google-pandas-load.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/augustin-barillec/google-pandas-load
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: google-cloud-bigquery (==3.*)
+Requires-Dist: google-cloud-storage (==2.*)
+Requires-Dist: pandas (==1.*)
+
+google-pandas-load
+==================
+
+.. image:: https://img.shields.io/pypi/v/google-pandas-load
+    :target: https://pypi.org/project/google-pandas-load/
+
+.. image:: https://img.shields.io/pypi/l/google-pandas-load.svg
+    :target: https://pypi.org/project/google-pandas-load/
+
+.. image:: https://img.shields.io/pypi/pyversions/google-pandas-load.svg
+    :target: https://pypi.org/project/google-pandas-load/
+
+.. image:: https://codecov.io/gh/augustin-barillec/google-pandas-load/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/augustin-barillec/google-pandas-load
+
+.. image:: https://pepy.tech/badge/google-pandas-load
+    :target: https://pepy.tech/project/google-pandas-load
+
+Wrapper for transferring data from A to B, where A and B are distinct
+and chosen between BigQuery, Storage, a local directory and pandas.
+
+Documentation is available at https://google-pandas-load.readthedocs.io/en/latest/.
+
+
