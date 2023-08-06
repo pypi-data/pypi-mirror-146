@@ -1,0 +1,12 @@
+README.md
+__init__.py
+argfmt.py
+pyproject.toml
+pysde.py
+setup.cfg
+pysde2json.egg-info/PKG-INFO
+pysde2json.egg-info/SOURCES.txt
+pysde2json.egg-info/dependency_links.txt
+pysde2json.egg-info/entry_points.txt
+pysde2json.egg-info/requires.txt
+pysde2json.egg-info/top_level.txt
