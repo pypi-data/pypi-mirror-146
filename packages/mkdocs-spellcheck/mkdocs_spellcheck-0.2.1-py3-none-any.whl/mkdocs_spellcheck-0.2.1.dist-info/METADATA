@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: mkdocs-spellcheck
+Version: 0.2.1
+Summary: A spell checker plugin for MkDocs.
+License: UNKNOWN
+Author-email: Timothée Mazzucotelli <pawamoy@pm.me>
+Requires-Python: >=3.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: symspellpy>=6.7.6
+Project-URL: Changelog, https://pawamoy.github.io/mkdocs-spellcheck/changelog
+Project-URL: Discussions, https://github.com/pawamoy/mkdocs-spellcheck/discussions
+Project-URL: Documentation, https://pawamoy.github.io/mkdocs-spellcheck
+Project-URL: Funding, https://github.com/sponsors/pawamoy
+Project-URL: Gitter, https://gitter.im/mkdocs-spellcheck/community
+Project-URL: Homepage, https://pawamoy.github.io/mkdocs-spellcheck
+Project-URL: Issues, https://github.com/pawamoy/mkdocs-spellcheck/issues
+Project-URL: Repository, https://github.com/pawamoy/mkdocs-spellcheck
+Description-Content-Type: text/markdown
+
+# MkDocs SpellCheck
+
+[![ci](https://github.com/pawamoy/mkdocs-spellcheck/workflows/ci/badge.svg)](https://github.com/pawamoy/mkdocs-spellcheck/actions?query=workflow%3Aci)
+[![documentation](https://img.shields.io/badge/docs-mkdocs%20material-blue.svg?style=flat)](https://pawamoy.github.io/mkdocs-spellcheck/)
+[![pypi version](https://img.shields.io/pypi/v/mkdocs-spellcheck.svg)](https://pypi.org/project/mkdocs-spellcheck/)
+[![gitpod](https://img.shields.io/badge/gitpod-workspace-blue.svg?style=flat)](https://gitpod.io/#https://github.com/pawamoy/mkdocs-spellcheck)
+[![gitter](https://badges.gitter.im/join%20chat.svg)](https://gitter.im/mkdocs-spellcheck/community)
+
+A spell checker plugin for MkDocs.
+
+## Installation
+
+```bash
+pip install mkdocs-spellcheck
+```
+
+## Usage
+
+```yaml
+# mkdocs.yml
+plugins:
+- search
+- spellcheck:
+    # known_words can also be a list of words
+    known_words: known_words.txt
+
+    # ignore words in <code> tags
+    ignore_code: yes
+
+    # minimum length of words to consider
+    min_length: 2
+
+    # maximum number of capital letters in a word
+    max_capital: 1
+
+    # keep unicode characters
+    allow_unicode: no
+
+    # skip files entirely
+    skip_files:
+    - credits.md
+    - coverage.md
+```
+
