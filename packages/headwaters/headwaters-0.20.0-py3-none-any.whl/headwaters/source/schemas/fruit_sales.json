@@ -1,0 +1,142 @@
+{
+    "data": {
+        "products": [
+            {
+                "item_name": "apples",
+                "item_price": 3.99,
+                "sku": 12345,
+                "counter": 1
+            },
+            {
+                "item_name": "bananas",
+                "item_price": 1.99,
+                "sku": 23456,
+                "counter": 2
+            },
+            {
+                "item_name": "cherries",
+                "item_price": 3.50,
+                "sku": 34567,
+                "counter": 3
+            },
+            {
+                "item_name": "damsons",
+                "item_price": 1.20,
+                "sku": 45678,
+                "counter": 4
+            },
+            {
+                "item_name": "elderberries",
+                "item_price": 5.00,
+                "sku": 56789,
+                "counter": 5
+            }
+        ],
+        "customers": [
+            {
+                "cust_id": 98765,
+                "cust_name": "Ben"
+            },
+            {
+                "cust_id": 87654,
+                "cust_name": "Becky"
+            },
+            {
+                "cust_id": 76543,
+                "cust_name": "Grace"
+            },
+            {
+                "cust_id": 65432,
+                "cust_name": "Harris"
+            }
+        ],
+        "shops": [
+            {
+                "shop_id": 1,
+                "address": "1 High Street",
+                "has_fridges": true
+            },
+            {
+                "shop_id": 2,
+                "address": "506 St John's Road",
+                "has_fridges": true
+            },
+            {
+                "shop_id": 3,
+                "address": "19 Achison Drive",
+                "has_fridges": false
+            }
+        ]
+    },
+    "frequency": {
+        "base_freq": 60000
+    },
+    "errors": {
+        "value_errors": true,
+        "value_error_prob": 0.2,
+        "key_errors": false,
+        "key_error_prob": 0.2
+    },
+    "schema": {
+        "products": {
+            "existing": true,
+            "select_method": "rand_choice",
+            "select_quantity": "many",
+            "choose_keys": [],
+            "flatten": false,
+            "value_errors": [
+                "type"
+            ]
+        },
+        "customers": {
+            "existing": true,
+            "select_method": "rand_choice",
+            "select_quantity": 1,
+            "choose_keys": [],
+            "flatten": true,
+            "value_errors": [
+                "type"
+            ]
+        },
+        "shops": {
+            "existing": true,
+            "select_method": "rand_choice",
+            "select_quantity": 1,
+            "choose_keys": [],
+            "flatten": false,
+            "value_errors": []
+        },
+        "volume_sold": {
+            "existing": false,
+            "create_method": "rand",
+            "create_type": "int",
+            "create_volume": 1,
+            "insert_into": [
+                "products"
+            ],
+            "int_min": 1,
+            "value_errors": []
+        },
+        "timestamp": {
+            "existing": false,
+            "create_method": "rand",
+            "create_type": "int",
+            "insert_into": [],
+            "create_volume": 1,
+            "int_min": -10000000,
+            "int_max": 12345000,
+            "value_errors": []
+        },
+        "counter": {
+            "existing": false,
+            "build_from": "products.counter",
+            "create_method": "decr",
+            "create_type": "int",
+            "insert_into": [
+            ],
+            "create_volume": 1,
+            "decr_by": 1,
+            "value_errors": []
+        }
+    }
+}
