@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ncache-professional-client
+Version: 5.3.0
+Summary: NCache Professional Python Client Package.
+Author: Alachisoft
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+License-File: LICENSE
+
+This is a python client for using NCache Professional.
+
+NCache is a open Source in-memory distributed cache. NCache is an extremely fast and linearly scalable distributed cache that caches application data and reduces expensive database trips. Use NCache removes performance bottlenecks related to your data storage and databases and scales your python applications to extreme transaction processing (XTP).
+
+(https://www.alachisoft.com/)
+
