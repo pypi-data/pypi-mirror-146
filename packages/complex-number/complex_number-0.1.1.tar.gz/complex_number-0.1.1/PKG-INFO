@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: complex_number
+Version: 0.1.1
+Summary: This is a simple complex number python package.
+Home-page: https://github.com/Enzo1603/ComplexNumber
+Author: Enzo Baraldi
+License: MIT
+Keywords: python,python 3.10,complex number,complex numbers
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ComplexNumber
+
+This is a simple complex number python package.
+You can take a look at the source code [here](https://github.com/Enzo1603/ComplexNumber).
+
+
