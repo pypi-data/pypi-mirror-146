@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "fmtpy"
+authors = [{name = "Alyetama", email = "56323389+Alyetama@users.noreply.github.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "requests~=2.27.1",
+    "beautifulsoup4~=4.10.0",
+    "rich~=10.11.0",
+    "yapf~=0.32.0"
+]
+
+[project.urls]
+Home = "https://github.comm/Alyetama/fmtspy"
+
+[project.scripts]
+fmtpy = "fmtpy:cli.main"
