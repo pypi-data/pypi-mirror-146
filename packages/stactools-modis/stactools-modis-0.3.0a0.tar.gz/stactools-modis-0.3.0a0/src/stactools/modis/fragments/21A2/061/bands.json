@@ -1,0 +1,114 @@
+{
+    "LST_Day_1KM": {
+        "raster:bands": [
+            {
+                "data_type": "uint16",
+                "unit": "Kelvin",
+                "scale": 0.02,
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Day Land Surface Temperature"
+    },
+    "QC_Day": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Day Quality Control"
+    },
+    "View_Angle_Day": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "unit": "Degree",
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Day view zenith angle"
+    },
+    "View_Time_Day": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "unit": "Hours",
+                "scale": 0.1,
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Day Time of Observation"
+    },
+    "LST_Night_1KM": {
+        "raster:bands": [
+            {
+                "data_type": "uint16",
+                "unit": "Kelvin",
+                "scale": 0.02,
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Night Land Surface Temperature"
+    },
+    "QC_Night": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Night Quality Control"
+    },
+    "View_Angle_Night": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "unit": "Degree",
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Night view zenith angle"
+    },
+    "View_Time_Night": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "unit": "Hours",
+                "scale": 0.1,
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Night Time of Observation"
+    },
+    "Emis_29": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "scale": 0.002,
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Average Day/Night Band 29 emissivity"
+    },
+    "Emis_31": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "scale": 0.002,
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Average Day/Night Band 31 emissivity"
+    },
+    "Emis_32": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "scale": 0.002,
+                "spatial_resolution": 1000
+            }
+        ],
+        "title": "Average Day/Night Band 32 emissivity"
+    }
+}

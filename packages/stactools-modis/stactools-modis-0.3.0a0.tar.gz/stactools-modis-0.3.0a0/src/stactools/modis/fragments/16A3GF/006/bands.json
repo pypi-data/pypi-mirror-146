@@ -1,0 +1,17 @@
+{
+    "ET_500m": {
+        "title": "Total of Evapotranspiration"
+    },
+    "LE_500m": {
+        "title": "Average of Latent Heat Flux"
+    },
+    "PET_500m": {
+        "title": "Total Potential Evapotranspiration"
+    },
+    "PLE_500m": {
+        "title": "Average of Potential Latent Heat Flux"
+    },
+    "ET_QC_500m": {
+        "title": "Evapotranspiration Quality Assessment"
+    }
+}

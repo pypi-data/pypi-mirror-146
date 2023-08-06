@@ -1,0 +1,6 @@
+stactools>=0.3.0
+click!=8.1.0
+py-multihash>=2.0.1
+
+[s3]
+stactools[s3]
