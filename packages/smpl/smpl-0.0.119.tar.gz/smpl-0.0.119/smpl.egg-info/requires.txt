@@ -1,0 +1,7 @@
+uncertainties
+numpy
+matplotlib
+scipy
+sympy
+tqdm
+pandas
