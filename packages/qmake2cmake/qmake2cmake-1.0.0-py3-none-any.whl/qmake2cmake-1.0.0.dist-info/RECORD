@@ -1,0 +1,15 @@
+qmake2cmake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qmake2cmake/condition_simplifier.py,sha256=NbD4yfT9MvMAAvj-gGGqZErRO0J7H1RVa3ihkEpoW14,9189
+qmake2cmake/condition_simplifier_cache.py,sha256=eIW_C7Dhs3Qwb-0-7wx_eU-qlKVA3ttwv3bfYduLDNQ,6333
+qmake2cmake/helper.py,sha256=VviINgn1DVVT1fA88jjN0B4TYtQRQcc_nV2CODFaI0E,36504
+qmake2cmake/pro2cmake.py,sha256=iBf78VUQM_sWg__b5uIAhZvyjBXEu6x7wpbiU-CU89Y,183835
+qmake2cmake/pro_conversion_rate.py,sha256=LFKSBiBZDXtknSTONanWtnpw4MJsnWwIiN8T7k6lpIU,8152
+qmake2cmake/qmake_parser.py,sha256=cByNXg1QYBYBS9MQwJfCZZJ30YTqEvURUaQmT_4NaI0,17593
+qmake2cmake/run_pro2cmake.py,sha256=iMxbQKVxf9_uqdHyvfT723eXWJ_ZxL__O1ZBjTs3DEI,11940
+qmake2cmake/special_case_helper.py,sha256=Cw_qypu0b3Junv2Y5g5nnCDd5ILLeRJrZ3Ag6PSkMWw,16254
+qmake2cmake-1.0.0.dist-info/LICENSE.GPL3,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+qmake2cmake-1.0.0.dist-info/METADATA,sha256=8ovBAfowfiwraKLdW_HvM1sOnf789N29wOyM85ASqY0,5193
+qmake2cmake-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qmake2cmake-1.0.0.dist-info/entry_points.txt,sha256=-iVi_N3a11eWILJSFMjEsmx4-Jp4tKrFsRIUUUX7lEw,108
+qmake2cmake-1.0.0.dist-info/top_level.txt,sha256=nV2YJPtqCbVXl3uHvFMdJxPrr2XXnAJNkafWDG6f-Ow,12
+qmake2cmake-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+qmake2cmake = qmake2cmake.pro2cmake:main
+qmake2cmake_all = qmake2cmake.run_pro2cmake:main
