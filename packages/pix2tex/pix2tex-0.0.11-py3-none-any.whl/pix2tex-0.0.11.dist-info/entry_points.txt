@@ -1,0 +1,3 @@
+[console_scripts]
+pix2tex_cli = pix2tex.cli:main
+pix2tex_gui = pix2tex.gui:main
