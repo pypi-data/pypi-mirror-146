@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "sparkle-hypothesis"
+version = "1.4.0"
+description = "Use the power of hypothesis property based testing in PySpark tests"
+authors = ["Machiel Keizer Groeneveld <machielg@gmail.com>"]
+license = "GPL-3.0-or-later"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Environment :: Console",
+    "Framework :: Hypothesis",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Software Development :: Testing"
+]
+readme = "README.md"
+repository = "https://github.com/machielg/sparkle-hypothesis/"
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4"
+sparkle-test = "^1.2.0"
+#sparkle-session = "^1.2.1"
+hypothesis = "^6.42.2"
+
+[tool.poetry.dev-dependencies]
+pyspark = "^3.2.1"
+pytest = "^7.1.1"
+sparkle-test = "1.2.0"
+sparkle-session = "1.3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
