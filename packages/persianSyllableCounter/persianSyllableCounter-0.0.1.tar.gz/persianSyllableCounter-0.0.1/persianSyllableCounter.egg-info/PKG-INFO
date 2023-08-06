@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: persianSyllableCounter
+Version: 0.0.1
+Summary: A package used for counting syllables in persian texts
+Home-page: https://github.com/salsina/Persian-syllable-counter
+Author: Sina Salimian
+Author-email: sina99.sn@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# persian-syllable-counter
+
+This library can count the syllables of persian text or words by converting the persian text to finglish format ( a slang used for writing persian words in english by their phonetics)
+
+
