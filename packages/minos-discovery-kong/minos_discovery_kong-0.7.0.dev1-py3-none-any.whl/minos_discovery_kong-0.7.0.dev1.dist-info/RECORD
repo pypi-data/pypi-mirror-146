@@ -1,0 +1,12 @@
+AUTHORS.md,sha256=frwXBfZsyQZ8-khR_hKY9LSogglUndPy94fVFl4A_9g,294
+HISTORY.md,sha256=__hpclHzvdssRb0aicm6bOqbZZKkheOytPnnzH4D29E,58
+LICENSE,sha256=LX-nFUH8DKs2Qa2-10DhVFli8bkYpyHZrRvC-qN3kYY,1066
+minos/plugins/kong/__init__.py,sha256=R-ZmG5WkIrBQxs06TRRd6ASB06jNhE4T4k-QcfPeyuM,228
+minos/plugins/kong/client.py,sha256=mi-ajvsLes3yHCwgNVF_MzcrCE73d8TEXl_PLhCORLA,5357
+minos/plugins/kong/discovery.py,sha256=Wyh5mwLVRkfMFbfkHGarS02GqSyCwkQCQO0hd0Zriyc,4737
+minos/plugins/kong/middleware.py,sha256=AEBWT6pLuX4fDYkxs-lx4pyfA23FHX7PUWQ_hhvVIv0,1011
+minos/plugins/kong/utils.py,sha256=kzMl3HnEW2Ae_DNLwujxgaIHyCRJpGWAFzvXUXpuNHA,582
+minos_discovery_kong-0.7.0.dev1.dist-info/LICENSE,sha256=LX-nFUH8DKs2Qa2-10DhVFli8bkYpyHZrRvC-qN3kYY,1066
+minos_discovery_kong-0.7.0.dev1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+minos_discovery_kong-0.7.0.dev1.dist-info/METADATA,sha256=OUXN1Z8j3fnH89R2Ld223bvrGW8JR1FTYAAczdYMmX8,8635
+minos_discovery_kong-0.7.0.dev1.dist-info/RECORD,,
