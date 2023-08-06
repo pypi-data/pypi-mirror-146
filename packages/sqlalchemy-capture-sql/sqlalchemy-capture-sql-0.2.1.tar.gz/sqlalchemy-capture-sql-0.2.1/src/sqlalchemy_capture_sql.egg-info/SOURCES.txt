@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/sqlalchemy_capture_sql/__init__.py
+src/sqlalchemy_capture_sql/base.py
+src/sqlalchemy_capture_sql.egg-info/PKG-INFO
+src/sqlalchemy_capture_sql.egg-info/SOURCES.txt
+src/sqlalchemy_capture_sql.egg-info/dependency_links.txt
+src/sqlalchemy_capture_sql.egg-info/top_level.txt
