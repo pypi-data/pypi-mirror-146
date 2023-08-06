@@ -1,0 +1,13 @@
+geoenrich/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geoenrich/biodiv.py,sha256=X32VgUv0spP5BQvQpNpj75xMepXn3X01wcZvcKsqWRk,8328
+geoenrich/credentials_example.py,sha256=NoC9qQn4A5NmxCetpP-ty5MqA0v4dfsHmn_Aow9e7Fg,712
+geoenrich/enrichment.py,sha256=xVwdIHxrLqu-i0prSmlU4piGzJtHWvJ10-tfL9e2G-k,27256
+geoenrich/satellite.py,sha256=SaQJQ7iVKrqBnJ5bJ8ZMi13QIl7-oWryfm-K5zixOeA,10931
+geoenrich/tutorial.ipynb,sha256=lt3hs8tJkq5p6LOpJoN4IfYMg37VzEP9fgg2SK-V4KM,197826
+geoenrich/data/AcDigitifera.zip,sha256=KWsTLl9Vim2Z9-XLLzfO_BkhKkqUDyPM1di44pIEbaY,354142
+geoenrich/data/catalog.csv,sha256=30QlRBD0duuMKSNGVah2hFS7deyzF_my5jMM7WUU9mU,4506
+geoenrich-0.2.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+geoenrich-0.2.dist-info/METADATA,sha256=ZFUrei_byCXLcQQoXEHAuhsm83mcw0quOl1yo5pF0Pk,4065
+geoenrich-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+geoenrich-0.2.dist-info/top_level.txt,sha256=Bbll24Hb9vItLfkfRgU7v8I5n97krBVzxe4dnTWmePc,10
+geoenrich-0.2.dist-info/RECORD,,
