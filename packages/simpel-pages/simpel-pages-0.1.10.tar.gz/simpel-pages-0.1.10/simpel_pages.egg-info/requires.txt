@@ -1,0 +1,14 @@
+django<4.0,>=3.2.8
+django-tinymce
+django-filer
+django-mptt
+django-taggit
+django-nested-admin
+django-haystack
+simpel-themes
+simpel-settings
+simpel-hookup
+simpel-atomics
+easy-thumbnails
+whoosh
+requests

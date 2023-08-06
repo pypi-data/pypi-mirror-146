@@ -1,0 +1,24 @@
+{% load i18n pages_tags %}
+
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <li class="nav-item"><a class="nav-link px-3" href="{% current_homepage %}">{% trans "Home" %}</a></li>
+  {% if menu_items %}
+    {% for item in menu_items %}
+      <li class="nav-item {% if item.has_submenu %}dropdown{% endif %}">
+        <a href="{{ item.get_absolute_url }}" 
+            {% if not item.has_submenu %}
+              class="nav-link px-3"
+            {% else %}
+              class="nav-link px-3 dropdown-toggle" data-bs-toggle="dropdown"
+            {% endif %}
+          >{{ item.title }}</a>
+        {% if item.has_submenu %}
+          <ul class="dropdown-menu fade-up">
+            {% for child in item.get_submenu %}
+              <li><a class="dropdown-item" href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+    {% endfor %}
+  {% endif %}
+</ul>

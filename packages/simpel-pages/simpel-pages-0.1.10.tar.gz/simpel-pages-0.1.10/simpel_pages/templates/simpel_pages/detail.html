@@ -1,0 +1,68 @@
+{% extends 'simpel_pages/base.html' %}
+{% load i18n pages_tags pages_widget_tags thumbnail %}
+
+{% block breadcrumb-items %}
+  {% for item in object.get_ancestors %}
+    <li class="breadcrumb-item">
+      <a href="{{ item.get_absolute_url }}">{{ item.title|truncatechars:60 }}</a>
+    </li>
+  {% endfor %}
+  <li class="breadcrumb-item active" aria-current="page">{{ object|truncatechars:60 }}</li>
+{% endblock breadcrumb-items %}
+
+{% block main_content %}
+<article class="article">
+  <h1 class="post-title">{{ object.title }}</h1>
+  <div class="post-meta mb-3">
+    <span>
+    {% trans "Posted on" %}
+    {{ object.created_at }}
+    {% if object.category %}
+      {% trans "in" %} <a href="{% url 'serve_category' slug=object.category.slug %}">{{ object.category|title }}</a>
+    {% endif %}
+    </span>
+  </div>
+  {% if object.thumbnail %}
+    <div class="mb-3">
+      {% thumbnail object.thumbnail 960x540 crop as thumb %}
+      <img class="img-fluid" width="{{ thumb.width }}" height="{{ thumb.height }}" src="{{ thumb.url }}" alt="">
+    </div>
+  {% endif %}
+  {% if object.content %}
+    <div class="post-body">
+      {{ object.content|safe }}
+    </div>
+  {% endif %}
+  {% if object.tags.count %}
+    <div>
+      <strong>{% trans "Tags" %}:</strong>
+      {% for tag in object.tags.all %}
+        <a href="{% url 'serve_tag' slug=tag.slug %}">{{ tag|title }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if object.readers.count %}
+    <div>
+      <strong>{% trans "Readers" %}:</strong>
+      {% for reader in object.readers.all %}
+        <a href="#">{{ reader.get_full_name|title }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>
+<div class="my-3"></div>
+{% related_pages "Related Pages" object number=4 template_name='simpel_pages/widgets/page_related.html' %}
+{% if object.parent %}
+  <div>
+    <strong>{% trans "Back to" %}</strong>:
+    <a href="{{ object.parent.get_absolute_url }}">{{ object.parent.title }}</a>
+  </div>
+{% endif %}
+{% endblock %}
+
+{% block sidebar_content %}
+  {% recent_pages "Recent" %}
+  {% popular_pages "Popular" %}
+  {% category_list "Category" %}
+  {% tags_list "Tags" %}
+{% endblock %}

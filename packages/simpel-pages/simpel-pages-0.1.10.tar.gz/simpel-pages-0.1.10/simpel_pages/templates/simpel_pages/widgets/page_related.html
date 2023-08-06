@@ -1,0 +1,17 @@
+{% load i18n %}
+<section>
+  <h4 class="mb-3">{{ title }}</h4>
+  <div>
+    {% if pages.count %}
+      <div class="row">
+        {% for page in pages %}
+          <div class="col-lg-6">
+            {% include 'simpel_pages/includes/page.html' with page=page %}
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      {% include 'simpel_pages/includes/no_results.html' %}
+    {% endif %}
+  </div>
+</section>

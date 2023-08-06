@@ -1,0 +1,38 @@
+{% extends 'simpel_pages/base.html' %}
+{% load i18n pages_tags pages_widget_tags thumbnail %}
+
+{% block breadcrumb-items %}
+  <li class="breadcrumb-item"><a href="{% current_homepage %}">{% trans "Home" %}</a></li>
+  <li class="breadcrumb-item active" aria-current="page">{% trans "Category" %}</li>
+{% endblock breadcrumb-items %}
+
+{% block main_content %}
+  <h1 class="mb-3">{% trans "Categories" %}</h1>
+  <div>
+    {% if object_list.count %}
+      <div class="row">
+        {% for item in object_list %}
+          <article class="card border-0 col-lg-4">
+            {% if item.thumbnail %}
+              <a href="{{ item.get_absolute_url }}" title="{{ item }}">
+                {% thumbnail item.thumbnail 736x420 crop as thumb %}
+                <img class="card-img-top img-fluid" width="{{ thumb.width }}" height="{{ thumb.height }}" src="{{ thumb.url }}" alt="{{ page.title }}">
+              </a>
+            {% endif %}
+            <div class="card-body">
+              <h2 class="h4"><a href="{{ item.get_absolute_url }}">{{ item|title }}</a></h2>
+              {% if item.description %}
+                <div class="small">{{ item.description|safe|truncatechars:60 }}</div>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      {% include 'simpel_pages/includes/no_results.html' %}
+    {% endif %}
+    {% if is_paginated %}
+      {% include 'simpel_pages/includes/pagination.html' %}
+    {% endif %}
+  </div>
+{% endblock main_content %}

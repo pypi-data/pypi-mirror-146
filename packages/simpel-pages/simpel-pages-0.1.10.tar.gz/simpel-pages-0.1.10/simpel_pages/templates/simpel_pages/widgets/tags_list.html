@@ -1,0 +1,15 @@
+{% load i18n %}
+<section class="card-body">
+  <h4>{% trans "Tags" %}</h4>
+  <div>
+    {% if tags.count %}
+      <ul>
+        {% for tag in tags %}
+          <li><a href="{{ tag.get_absolute_url }}">{{ tag.name|title }} ({{ tag.tagged_pages.count }})</a></li>  
+        {% endfor %}
+      </ul>
+    {% else %}
+      {% trans "No results!" %}
+    {% endif %}
+  </div>
+</section>

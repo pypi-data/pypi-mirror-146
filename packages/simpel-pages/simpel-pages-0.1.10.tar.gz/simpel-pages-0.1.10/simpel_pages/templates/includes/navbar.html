@@ -1,0 +1,16 @@
+{% load i18n pages_tags %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="{% current_homepage %}">{% current_site as site %}{{ site.name }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      {% pagemenu %}
+      <form class="d-flex mb-0" method="GET" action="{% url 'serve_search' %}">
+        <input name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
