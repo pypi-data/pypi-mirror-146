@@ -1,0 +1,9 @@
+_klimits.cpython-37m-darwin.so,sha256=eOZ-H8rEBTNv02IhPnIwABnGtFHTzRfTDNA8eeq8MoA,815520
+klimits/__init__.py,sha256=ztlQAnCWdIW8WQlrYGwuLzVD63Zh-gxPTF4v7OEZAwQ,1785
+klimits/test_trajectory_generation.py,sha256=eAvj3F7osAdXmyOYc5J5f71vMFyZJYwytyEuolXUbuo,15292
+klimits/trajectory_plotter.py,sha256=jVyl0TrZ9kqg62c2p-aasVl3DeUKGuQfmcYobtfjDLM,13589
+klimits-1.1.2.dist-info/LICENSE,sha256=QpsKyR86eMyilQ3v-Fiw7NRBe8i-nBARMkB2WEZ1f14,1069
+klimits-1.1.2.dist-info/METADATA,sha256=RH6oThnt84mhYL8NCsTeyCrbOlQBnSnL3izsO7S5-Xg,4284
+klimits-1.1.2.dist-info/WHEEL,sha256=t-yJnV7ncEuoOkGIUUhH14bb9iMbJ4DANdZCkJ-k_2s,110
+klimits-1.1.2.dist-info/top_level.txt,sha256=zcNnwYtfC2fb1V09GLe74lkKrFNVVsrnEIMt_6lwkM0,17
+klimits-1.1.2.dist-info/RECORD,,
