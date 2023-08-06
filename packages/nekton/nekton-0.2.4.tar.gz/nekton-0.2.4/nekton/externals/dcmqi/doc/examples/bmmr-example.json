@@ -1,0 +1,42 @@
+{
+  "@schema": "https://raw.githubusercontent.com/qiicr/dcmqi/master/doc/schemas/seg-schema.json#",
+
+  "ContentCreatorName": "Reader1",
+  "ClinicalTrialSeriesID": "Session1",
+  "ClinicalTrialTimePointID": "1",
+  "ClinicalTrialCoordinatingCenterName": "UCSF",
+  "SeriesDescription": "Segmentation",
+  "SeriesNumber": "300",
+  "InstanceNumber": "1",
+
+  "segmentAttributes": [
+    [
+      {
+        "labelID": 1,
+        "SegmentAlgorithmType": "SEMIAUTOMATIC",
+        "SegmentAlgorithmName": "Pre-contrast manual VOI",
+        "SegmentDescription": "Breast segmentation",
+        "SegmentedPropertyCategoryCodeSequence": {
+          "CodeValue": "123037004",
+          "CodingSchemeDesignator": "SCT",
+          "CodeMeaning": "Anatomical Structure"
+        },
+        "SegmentedPropertyTypeCodeSequence": {
+          "CodeValue": "76752008",
+          "CodingSchemeDesignator": "SCT",
+          "CodeMeaning": "Breast"
+        },
+        "SegmentedPropertyTypeModifierCodeSequence": {
+          "CodeValue": "51440002",
+          "CodingSchemeDesignator": "SCT",
+          "CodeMeaning": "Right and left"
+        },
+        "recommendedDisplayRGBValue": [
+          252,
+          226,
+          234
+        ]
+      }
+    ]
+  ]
+}
