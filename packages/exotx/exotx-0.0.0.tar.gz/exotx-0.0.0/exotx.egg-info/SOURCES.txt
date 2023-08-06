@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+exotx/__init__.py
+exotx.egg-info/PKG-INFO
+exotx.egg-info/SOURCES.txt
+exotx.egg-info/dependency_links.txt
+exotx.egg-info/top_level.txt
