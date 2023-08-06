@@ -1,0 +1,3 @@
+[poetry.application.plugin]
+poetry-audit-plugin=poetry_audit_plugin.plugin:AuditApplicationPlugin
+
