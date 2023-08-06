@@ -1,0 +1,12 @@
+winerp/__init__.py,sha256=TKklL0El2szmInqnyUpCennOfkmsgTlvGjqreS-g498,56
+winerp/__main__.py,sha256=pvuKcO4quuV3JsCSUl7NTRrDattB9NCZKY9w3UtcmjU,866
+winerp/client.py,sha256=t2wn27RyISss6_hueVHkYzWxCQGLebXmZtZfJa_7FpM,16657
+winerp/server.py,sha256=irrgawn8seFLmrpEIFwwPc1-yRQfxY-5SVdyD5sIsgc,8278
+winerp/lib/errors.py,sha256=Y_uVectV9MsyZaahduktTIGUhKRxzoCC2z9rO3_RjP8,802
+winerp/lib/message.py,sha256=XENIDd7GadbQw69J9qJdiM-aSTJx7r3a2Jl-MEMseMo,2417
+winerp/lib/payload.py,sha256=H2_bn5IvHyhR7dVYTlTieSklzILefdVivTtpP_9hSoQ,3388
+winerp-1.1.2.dist-info/METADATA,sha256=MxKwxNyJ0Qnw5oe0ZzQpsm7w_Pm9ZXcP4BuNACmgO5U,2967
+winerp-1.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+winerp-1.1.2.dist-info/entry_points.txt,sha256=9NvkI5peGpzNNyGjOywD28xqC5J2EJ0s-Bee0o0hrVU,48
+winerp-1.1.2.dist-info/top_level.txt,sha256=RM3BO128_lKhi-SSevDEhcz0rL5RANCit3fnl2JRYW0,7
+winerp-1.1.2.dist-info/RECORD,,
