@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: behavioral-signals-swagger-client-3
+Version: 3.10.8
+Summary: Oliver API
+Home-page: UNKNOWN
+Author-email: api@behavioralsignals.com
+License: UNKNOWN
+Keywords: Swagger,Oliver API
+Platform: UNKNOWN
+Requires-Dist: certifi (>=2017.4.17)
+Requires-Dist: python-dateutil (>=2.1)
+Requires-Dist: six (>=1.10)
+Requires-Dist: urllib3 (>=1.23)
+
+    Oliver API service  # noqa: E501
+    
+
