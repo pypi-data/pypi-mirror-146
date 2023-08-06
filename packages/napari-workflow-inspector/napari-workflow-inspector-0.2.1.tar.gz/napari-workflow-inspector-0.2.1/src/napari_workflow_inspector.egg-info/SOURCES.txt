@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/napari_workflow_inspector/__init__.py
+src/napari_workflow_inspector/_dock_widget.py
+src/napari_workflow_inspector.egg-info/PKG-INFO
+src/napari_workflow_inspector.egg-info/SOURCES.txt
+src/napari_workflow_inspector.egg-info/dependency_links.txt
+src/napari_workflow_inspector.egg-info/entry_points.txt
+src/napari_workflow_inspector.egg-info/requires.txt
+src/napari_workflow_inspector.egg-info/top_level.txt
+src/napari_workflow_inspector/_tests/__init__.py
+src/napari_workflow_inspector/_tests/test_dock_widget.py
