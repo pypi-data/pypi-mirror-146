@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+getBCE/Main.py
+getBCE/Reader.py
+getBCE/Utils.py
+getBCE/__init__.py
+getBCE.egg-info/PKG-INFO
+getBCE.egg-info/SOURCES.txt
+getBCE.egg-info/dependency_links.txt
+getBCE.egg-info/requires.txt
+getBCE.egg-info/top_level.txt
