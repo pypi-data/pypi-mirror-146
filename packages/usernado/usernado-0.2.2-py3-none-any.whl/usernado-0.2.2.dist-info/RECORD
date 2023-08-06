@@ -1,0 +1,14 @@
+LICENSE.txt,sha256=jG2zQEdRNt88EgHUWPpXVWmOrOduUQRx7MnYV9YIPaw,11359
+README.md,sha256=2s2rCgczRLiQT23cpGcvmm_fUwwAufM2p-9dOO8UjHw,3186
+usernado/__init__.py,sha256=kpLy7IHn2mh6Ru4Lio2Bwi-5UuxDJyymUznkzUrUnbo,214
+usernado/errors.py,sha256=v-uefDoDWTq2o2mAJy-L165k8akSmI1ZFRGQKlbCZmw,380
+usernado/helpers.py,sha256=lkxvh4lQEE9AGrLXP1bcqx9KL19WHhV95gf5lbtwqeM,1874
+usernado/torntriplets/__init__.py,sha256=CZPbhLI7er1HDUEpAdEOupPCrhxstXKv0XIJqHKPoDw,159
+usernado/torntriplets/api.py,sha256=iFHWBbosxUsvy1wuOfTgSvLhwLi_5iB1Lag1jS7qtxY,1554
+usernado/torntriplets/base.py,sha256=TPjdZg5BavyU9gxD98QGk1JRYA16Bg5PXVcwVIqHI4I,252
+usernado/torntriplets/web.py,sha256=oZOg7tSp1OphVxzOz8IkYF0XZbPk0iPpI_PNnbQR8QU,9114
+usernado/torntriplets/websocket.py,sha256=6VYBehTDeWzzxK5rx6Ig5q-VhHNNJ6CfgapIaohFs2w,1126
+usernado-0.2.2.dist-info/LICENSE.txt,sha256=jG2zQEdRNt88EgHUWPpXVWmOrOduUQRx7MnYV9YIPaw,11359
+usernado-0.2.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+usernado-0.2.2.dist-info/METADATA,sha256=BMmfOdoCHHMWc1iAsZGdsvvO1cldDpr2IlDR5mf8BYw,4443
+usernado-0.2.2.dist-info/RECORD,,
