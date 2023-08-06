@@ -1,0 +1,2 @@
+[console_scripts]
+salsa = salsa.scripts.main:main
