@@ -1,0 +1,2 @@
+[console_scripts]
+juni = juniper.cli:main
