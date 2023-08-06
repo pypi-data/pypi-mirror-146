@@ -1,0 +1,10 @@
+cmagick/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmagick/cmagick.py,sha256=oQrH7zUUr6-FhWuHSvbakTFM_M5NxGKCc3ONFbvzCgA,781
+cmagick/cmagick_test.py,sha256=3Chrw9Xxz7FgfYyoWFGnDFZo_JNonwllpnQe64Iu80Y,1363
+cmagick/main.py,sha256=dpXp8jxi36dxSCYcAQseCzglkyqsZzIa2gdDv1azHgI,281
+cmagick-0.1.1.dist-info/LICENSE.txt,sha256=p2bWoNufRX9g1SNTGMhW8DriSnFNGSD_R9XUhJl0hPs,1068
+cmagick-0.1.1.dist-info/METADATA,sha256=w-Yr_lzJmsai5z9Zgy67Fy-WkMtdqEx3kV31evIZ6tw,1740
+cmagick-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cmagick-0.1.1.dist-info/entry_points.txt,sha256=c705NMYiYEmvjr69LVPqSBEqM4gW2ezlvESjKQSoI5Q,46
+cmagick-0.1.1.dist-info/top_level.txt,sha256=o5niBtOAHEJHUj8ztvj1TjKEIAdPLlWKDAZoEq59rQQ,8
+cmagick-0.1.1.dist-info/RECORD,,
