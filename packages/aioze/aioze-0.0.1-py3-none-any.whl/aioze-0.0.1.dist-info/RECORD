@@ -1,0 +1,14 @@
+aioze/__init__.py,sha256=DxliUKaZMGHS6KaOD5YBrhQxUbq_tjZUr5KsWjYCFRQ,166
+aioze/access.py,sha256=3UXOW9ls43X7lx6hCdJyq-wyFqAMj0rQU_nX0CmS1G0,4421
+aioze/ozeapiclient.py,sha256=dMJvdBzaZIRJurhPe6uJ84MwVmW1GfNj4-TWJ_v74WI,1979
+aioze/api/__init__.py,sha256=57uOTy9TY5InOvs-UjtdcBrNOOesw6NXTeIOE9AdK-0,257
+aioze/api/event.py,sha256=vU6lm3h5154DhR_e-U8Cjpj-SW9miRDYvgKUpmlAmE4,1650
+aioze/api/homework.py,sha256=kUUMb610kvTrc78K2o6f6vICe4-zWvAvax9tlwEqSlo,1783
+aioze/api/information.py,sha256=9oE4khbwL8h9psZ6a3FxqYzZAVZhipcXwGELlebgfuM,1112
+aioze/api/notification.py,sha256=uow_AR3CuJI30FKoNV_EAprMGEhvEjiDMKELfXcGhqE,1626
+aioze/api/punishment.py,sha256=vS9S3N5zIoVv0nfJYFvdEy9NJdyBtmGb6ovVe8Wr5Us,1660
+aioze-0.0.1.dist-info/LICENSE.txt,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+aioze-0.0.1.dist-info/METADATA,sha256=N-tt5oVy2fODvsyelrNK5nrDgyqmlIP_Jvnvl3jRtSE,445
+aioze-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aioze-0.0.1.dist-info/top_level.txt,sha256=u4hkdh0Rk49yKnL4fgKVr-83MOqD7xtgjDgDTV0Ro0g,6
+aioze-0.0.1.dist-info/RECORD,,
