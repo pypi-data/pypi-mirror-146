@@ -1,0 +1,14 @@
+axisem3dshapes/__init__.py,sha256=h1JrBd3qIHBlo7gmGizdR7zhOS-urgUBswBTqy2ZfYQ,71
+axisem3dshapes/cylinder.py,sha256=VnYyoGEzKCzU6au8B7j6pTvNEhR_c7JPRtBxw-OMFvU,4450
+axisem3dshapes/ellipsoid.py,sha256=WvbejJROV2Wx7ynqYFvJFFnhx6yDk5ihnOemfGbndBs,3107
+axisem3dshapes/global.py,sha256=Bp1hecDMD9xQ3j7XqEAmIMURjm8RtPx3GH1v7U6CR5U,8730
+axisem3dshapes/injector.py,sha256=OMvUuSytvDES8ECcrzy1JU6k-uJ-HwIKYmSw-9pYeMI,9065
+axisem3dshapes/model.py,sha256=B3edkKCrrwrhYUBN_WUEwcftWFO-85Ipy0TOR3C0-1s,6119
+axisem3dshapes/object.py,sha256=_3cQd8wrNOCDPY_M5etgtW99WIqqxZ9B_v8pZIPdMfk,5873
+axisem3dshapes/slab.py,sha256=rHLeybeftXjUbGYos1c7Q-XpNq-sVH9GVbOMw8NOAJ8,2814
+axisem3dshapes/sphere.py,sha256=NLcXJUgWQvpeXHOMosc75sXuA6ftz2POa6_-9roAKqo,2627
+axisem3Dshapes-1.0.3.dist-info/LICENSE,sha256=n80T3DwRMFjzaU6sNjIqI-Kl-zi8JouK2wS4lC4s1HQ,1066
+axisem3Dshapes-1.0.3.dist-info/METADATA,sha256=2Iznq_4ZnIGb3M2c96CGiBR6sOUR5UE9C45mfG9bohY,2229
+axisem3Dshapes-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+axisem3Dshapes-1.0.3.dist-info/top_level.txt,sha256=e_0pnzJcUipW9bqayEZQGkeWGn1gHO1hyhwLe-XRFhQ,15
+axisem3Dshapes-1.0.3.dist-info/RECORD,,
