@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sws_webstuff
+Version: 0.0.4
+Summary: Some small things for Web Related stuff
+Home-page: https://github.com/Aurvandill137/sws_webstuff
+Author: Ole Hannemann
+Author-email: cerberus885@gmail.com
+License: MIT
+Description: # 1. Info
+        
+        This Project contains some functions and classes which are referenced in multiple of my python api projects.
+        if you want to use them too feel free to do so
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
