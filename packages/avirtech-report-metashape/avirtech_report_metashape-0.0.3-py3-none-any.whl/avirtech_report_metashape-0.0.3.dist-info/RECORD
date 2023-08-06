@@ -1,0 +1,10 @@
+copy_camera_accuracy/__init__.py,sha256=N2EHfBIBs0prXBeG6v-SR2vaAbPZ2fCQstjTVsFHrFY,69
+copy_camera_accuracy/camera_acc_copy.py,sha256=v9qprI6sL-KGaPWui1G9XenUjEth7dB8zBN_I49Kn00,708
+generate_report_1/__init__.py,sha256=fPOGR2SiFg-s24SoQOPUeUDIcDC0WV2LgU2OipKReMA,17
+generate_report_1/generate_report_1.py,sha256=-OBR1TVYan0-UPyIDhxoyFSrQhewGNW3ilZiz-k0qX0,1756
+generate_report_2/__init__.py,sha256=GQQfTy3Vxf-z1372BB7w9-NlWkiHIF6iO8ENUe3Pex8,65
+generate_report_2/generate_report_2.py,sha256=t63blc9lfoSGPFTVQm0Vz9gP7mRFcSrAqTJPFIdBTac,946
+avirtech_report_metashape-0.0.3.dist-info/METADATA,sha256=fdiN9gJaGVHObWUUX-XXe-vOO6JP5_b20wCmQK5notk,923
+avirtech_report_metashape-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+avirtech_report_metashape-0.0.3.dist-info/top_level.txt,sha256=zNxIIyFjzWquvW2F9komwbAbOpAOmaCzC1uZJB4O02M,57
+avirtech_report_metashape-0.0.3.dist-info/RECORD,,
