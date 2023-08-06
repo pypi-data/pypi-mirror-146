@@ -1,0 +1,2 @@
+[console_scripts]
+guinstall = gui_scripter.cli:main
