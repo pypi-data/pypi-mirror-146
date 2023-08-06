@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: decision-title
+Version: 0.0.2
+Summary: Get & format case titles from cleaned Philippine Supreme Court decisions
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: citation-decision (>=0.0.3,<0.0.4)
+Requires-Dist: decision-title-vs-inre (>=0.0.1,<0.0.2)
