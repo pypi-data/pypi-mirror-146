@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: intra42api
+Version: 0.0.1
+Summary: 42Network API Wrapper
+Home-page: 
+Author: Nasroallah El Idrissi
+Author-email: nelidris@student.1337.ma
+License: MIT
+Keywords: API Wrapper,42Network
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENCE.txt
+Requires-Dist: requests
+
+Intra42Api
+=============
+
+|Banner|
+
+Intra42Api is an API wrapper.
+Supports searches for Users, Campuses and Projects.
+
+|Github| |License| |Package|
+
+Installation
+------------
+
+**NOTE**: Python 3.6 or higher is required.
+
+.. code:: python
+
+   # Windows
+   py -3.6 -m pip install intra42api
+
+   # Linux
+   python3.6 -m pip install intra42api
+
+Example
+-------
+
+.. code:: python
+
+	import intra42api
+
+	intra = intra42api.Intra42()
+
+
+	intra.setToken('MY_AWESOME_UID', 'MY_AWESOME_SECRET')
+
+
+	user = intra.getUser('ID_OR_LOGIN')
+
+	print(f"""
+		Login: {user['login']}
+		Email: {user['email']}
+		Full Name: {user['displayname']}
+		Correction Points: {user['correction_point']}
+		url: {user['url']}
+	""")
+
+.. |Banner| image:: https://raw.githubusercontent.com/NorsHiden/Intra42Api-wrapper_module/master/apiwrapper.png
+   :target: https://github.com/NorsHiden/Intra42Api-wrapper_module
+.. |Github| image:: https://img.shields.io/github/forks/NorsHiden/Intra42Api-wrapper_module?style=plastic
+   :target: https://github.com/NorsHiden/Intra42Api-wrapper_module
+.. |License| image:: https://img.shields.io/github/license/NorsHiden/Intra42Api-wrapper_module
+   :target: https://github.com/NorsHiden/Intra42Api-wrapper_module/blob/master/LICENCE.txt
+.. |Package| image:: https://img.shields.io/pypi/pyversions/31?style=flat-square
+   :target: https://pypi.org/project/intra42api
+
+Change Log
+==========
+
+0.0.1 (13/04/2022)
+-------------------
+- First Release
+
