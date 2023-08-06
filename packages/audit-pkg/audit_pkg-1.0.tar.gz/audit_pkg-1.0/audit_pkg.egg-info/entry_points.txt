@@ -1,0 +1,3 @@
+[console_scripts]
+audit_pkg = audit_pkg.__main__:main
+
