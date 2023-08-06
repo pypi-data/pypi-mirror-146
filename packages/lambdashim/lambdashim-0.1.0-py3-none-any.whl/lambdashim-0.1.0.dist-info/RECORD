@@ -1,0 +1,6 @@
+lambdashim/__init__.py,sha256=AO5fXTWFBkfTkJndoT4nNvt2KC03mU6R7psQ76sk990,63
+lambdashim/typing.py,sha256=Fh1zuFFy57wi4aGzRD4flE5MWOWCNwbxuGmcNImdiq8,1525
+lambdashim/wsgi.py,sha256=uEkQOppw4KUBqrpQlef4XgH3MQQlDwAcU6bo3SL5PM0,3144
+lambdashim-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+lambdashim-0.1.0.dist-info/METADATA,sha256=65pmhOKRMPEHBnJZ7cIqsqNdlqqeR7dJcLTO1epc13w,424
+lambdashim-0.1.0.dist-info/RECORD,,
