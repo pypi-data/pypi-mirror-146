@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: SparkSchemafy
+Version: 0.0.1
+Summary: Formats spark schema output into a schema definition
+Home-page: https://github.com/MichaelShoemaker/schemafy
+Author: Michael Shoemaker
+Author-email: mikeshoemaker2000@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyspark
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+## Usage
+
+formatSchema(spark.createDataFrame(<your pandas dataframe>).schema)
+
