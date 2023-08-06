@@ -1,0 +1,3 @@
+spoton-soozaccess
+matplotlib
+numpy
