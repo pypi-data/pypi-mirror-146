@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: goodreads-reader
+Version: 0.1.5
+Summary: Library from fetching Goodreads data
+Author: Rifath Rashid
+Author-email: rashid.rifath@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Goodreads Reader
+A smalls scraper for getting Goodreads data
+
+### Installation
+```
+pip install goodreads-reader
+```
+
+### Get started
+How to read all books for a user:
+
+```Python
+from goodreads_reader import Reader
+
+R = Reader(1)
+R.get_books_list()
+
+
+
