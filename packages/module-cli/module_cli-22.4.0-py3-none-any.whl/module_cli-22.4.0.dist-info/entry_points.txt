@@ -1,0 +1,3 @@
+[console_scripts]
+module-cli=module_cli:cli
+
