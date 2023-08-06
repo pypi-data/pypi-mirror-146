@@ -1,0 +1,10 @@
+assertio/__init__.py,sha256=QnglFQnsavx2tB72QooAUXSu2aS6oV9Q3QpRKIEYvwg,98
+assertio/config.py,sha256=sIZnMlTVx4sGRR6uCNUuLwtn4PsYa5Tkj5MX2FZ7E5g,1759
+assertio/decorators.py,sha256=mKGcPOHr__wq4LNV7Y9p5aWa8SlNXNLmWcHRcDTLWW8,797
+assertio/request.py,sha256=OdWHFosghWvqyA2rUayMb2dytr4wpyaEFcW71k0lfm8,3757
+assertio/runner.py,sha256=XsV5PvASxkWf25ItSia6sWrZSWihI5TxFysKzKJIyoo,278
+assertio-1.1.9.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+assertio-1.1.9.dist-info/METADATA,sha256=hnFtH1wGYKzP7aTU4Kq1ZIwyVOO2KkFQ9oEuiXvipHQ,714
+assertio-1.1.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+assertio-1.1.9.dist-info/top_level.txt,sha256=PmvYpYD3sbqMd4wXhHkEZXHt_hyynEYZEFUC4RgREvM,9
+assertio-1.1.9.dist-info/RECORD,,

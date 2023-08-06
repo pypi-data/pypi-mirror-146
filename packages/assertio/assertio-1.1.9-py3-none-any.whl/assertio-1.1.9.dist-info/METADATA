@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: assertio
+Version: 1.1.9
+Summary: A pseudo-functional API Testing library.
+Home-page: https://github.com/aldorvv/assertio
+Author: Aldo Vázquez
+Author-email: aldorvv@icloud.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/aldorvv/assertio/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+Requires-Dist: pydash
+Requires-Dist: pytruth
+Requires-Dist: pyyaml
+Requires-Dist: requests
+
+# Assertio
+
+Pseudo-functional Python api testing framework.
+
