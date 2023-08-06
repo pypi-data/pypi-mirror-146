@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "bedrockz"
+version = "0.2.0"
+description = ""
+authors = ["Kevin H. <kevin@autoworkz.org>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Jinja2 = "^3.1.1"
+inflection = "^0.5.1"
+retworkx = { extras = ["all"], version = "^0.11.0" }
+networkx = "^2.8"
+xxhash = "^3.0.0"
+cytoolz = "^0.11.2"
+pydantic = "^1.9.0"
+matplotlib = "^3.5.1"
+loguru = "^0.6.0"
+maya = "^0.6.1"
+orjson = "^3.6.7"
+questionary = "^1.10.0"
+typer = { extras = ["all"], version = "^0.4.1" }
+fs = "^2.4.15"
+blue = "^0.8.0"
+addict = "^2.4.0"
+anyio = { extras = ["all"], version = "^3.5.0" }
+python-box = { version = "6.0.0", extras = ["ruamel.yaml", "toml", "msgpack"] }
+diskcache = "^5.4.0"
+forbiddenfruit = "^0.1.4"
+auto-all = "^1.4.1"
+yapf = "^0.32.0"
+
+[tool.poetry.scripts]
+brockz = "bedrockz.cli:app"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.942"
+yapf = "^0.32.0"
+pytest = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
