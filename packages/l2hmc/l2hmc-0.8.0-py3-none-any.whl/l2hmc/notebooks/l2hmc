@@ -1,0 +1,340 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "a372c1ca",
+   "metadata": {
+    "execute": {
+     "shell": {
+      "execute_reply": "2022-04-14T16:40:12.129552+00:00"
+     }
+    },
+    "iopub": {
+     "execute_input": "2022-04-14T16:40:11.433384+00:00",
+     "status": {
+      "busy": "2022-04-14T16:40:11.433085+00:00",
+      "idle": "2022-04-14T16:40:12.130127+00:00"
+     }
+    }
+   },
+   "outputs": [],
+   "source": [
+    "%load_ext autoreload\n",
+    "%autoreload 2\n",
+    "%matplotlib inline"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "4777392f",
+   "metadata": {
+    "execute": {
+     "shell": {
+      "execute_reply": "2022-04-14T16:40:43.761756+00:00"
+     }
+    },
+    "iopub": {
+     "execute_input": "2022-04-14T16:40:39.536666+00:00",
+     "status": {
+      "busy": "2022-04-14T16:40:39.536447+00:00",
+      "idle": "2022-04-14T16:40:43.762414+00:00"
+     }
+    }
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "2022-04-14 11:40:43.198729: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA\n",
+      "To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.\n"
+     ]
+    }
+   ],
+   "source": [
+    "from l2hmc.scripts.tensorflow.main import main as main_tf\n",
+    "from l2hmc.scripts.pytorch.main import main as main_pt"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "6a21fa7f",
+   "metadata": {
+    "execute": {
+     "shell": {
+      "execute_reply": "2022-04-14T16:49:16.032831+00:00"
+     }
+    },
+    "iopub": {
+     "execute_input": "2022-04-14T16:49:15.986225+00:00",
+     "status": {
+      "busy": "2022-04-14T16:49:15.986017+00:00",
+      "idle": "2022-04-14T16:49:16.033552+00:00"
+     }
+    }
+   },
+   "outputs": [],
+   "source": [
+    "from pathlib import Path\n",
+    "from omegaconf import DictConfig\n",
+    "from l2hmc.configs import CONF_DIR\n",
+    "import yaml\n",
+    "\n",
+    "def load_cfg():\n",
+    "    with open(Path(CONF_DIR).joinpath('config.yaml').as_posix(), 'r') as f:\n",
+    "        cfg = f.read()\n",
+    "    return yaml.safe_load_all(cfg)\n",
+    "    #return yaml.full_load_all(\n",
+    "    #    Path(CONF_DIR).joinpath('config.yaml').as_posix()\n",
+    "    #)\n",
+    "  \n",
+    "\n",
+    "cfg = load_cfg()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "fd57cc0d",
+   "metadata": {
+    "execute": {
+     "shell": {
+      "execute_reply": "2022-04-14T16:49:25.765728+00:00"
+     }
+    },
+    "iopub": {
+     "execute_input": "2022-04-14T16:49:25.647068+00:00",
+     "status": {
+      "busy": "2022-04-14T16:49:25.646405+00:00"
+     }
+    }
+   },
+   "outputs": [
+    {
+     "ename": "ValidationError",
+     "evalue": "Unsupported value type: <generator object load_all at 0x1768f5f50>\n    full_key: \n    object_type=None",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mValidationError\u001b[0m                           Traceback (most recent call last)",
+      "Input \u001b[0;32mIn [14]\u001b[0m, in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0m cfg \u001b[38;5;241m=\u001b[39m \u001b[43mDictConfig\u001b[49m\u001b[43m(\u001b[49m\u001b[43mcfg\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;28mprint\u001b[39m(cfg)\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:113\u001b[0m, in \u001b[0;36mDictConfig.__init__\u001b[0;34m(self, content, key, parent, ref_type, key_type, element_type, is_optional, flags)\u001b[0m\n\u001b[1;32m    111\u001b[0m         \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_set_value(content, flags\u001b[38;5;241m=\u001b[39mflags)\n\u001b[1;32m    112\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m ex:\n\u001b[0;32m--> 113\u001b[0m     \u001b[43mformat_and_raise\u001b[49m\u001b[43m(\u001b[49m\u001b[43mnode\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mNone\u001b[39;49;00m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mkey\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mkey\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mvalue\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mNone\u001b[39;49;00m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mcause\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mex\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mmsg\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43mstr\u001b[39;49m\u001b[43m(\u001b[49m\u001b[43mex\u001b[49m\u001b[43m)\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/_utils.py:818\u001b[0m, in \u001b[0;36mformat_and_raise\u001b[0;34m(node, key, value, msg, cause, type_override)\u001b[0m\n\u001b[1;32m    815\u001b[0m     ex\u001b[38;5;241m.\u001b[39mref_type \u001b[38;5;241m=\u001b[39m ref_type\n\u001b[1;32m    816\u001b[0m     ex\u001b[38;5;241m.\u001b[39mref_type_str \u001b[38;5;241m=\u001b[39m ref_type_str\n\u001b[0;32m--> 818\u001b[0m \u001b[43m_raise\u001b[49m\u001b[43m(\u001b[49m\u001b[43mex\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mcause\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/_utils.py:716\u001b[0m, in \u001b[0;36m_raise\u001b[0;34m(ex, cause)\u001b[0m\n\u001b[1;32m    714\u001b[0m \u001b[38;5;28;01melse\u001b[39;00m:\n\u001b[1;32m    715\u001b[0m     ex\u001b[38;5;241m.\u001b[39m__cause__ \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;01mNone\u001b[39;00m\n\u001b[0;32m--> 716\u001b[0m \u001b[38;5;28;01mraise\u001b[39;00m ex\u001b[38;5;241m.\u001b[39mwith_traceback(sys\u001b[38;5;241m.\u001b[39mexc_info()[\u001b[38;5;241m2\u001b[39m])\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:111\u001b[0m, in \u001b[0;36mDictConfig.__init__\u001b[0;34m(self, content, key, parent, ref_type, key_type, element_type, is_optional, flags)\u001b[0m\n\u001b[1;32m    109\u001b[0m             metadata\u001b[38;5;241m.\u001b[39mkey_type \u001b[38;5;241m=\u001b[39m key_type\n\u001b[1;32m    110\u001b[0m             \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m\u001b[38;5;18m__dict__\u001b[39m[\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m_metadata\u001b[39m\u001b[38;5;124m\"\u001b[39m] \u001b[38;5;241m=\u001b[39m metadata\n\u001b[0;32m--> 111\u001b[0m         \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_set_value\u001b[49m\u001b[43m(\u001b[49m\u001b[43mcontent\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mflags\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mflags\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m    112\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m ex:\n\u001b[1;32m    113\u001b[0m     format_and_raise(node\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m, key\u001b[38;5;241m=\u001b[39mkey, value\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m, cause\u001b[38;5;241m=\u001b[39mex, msg\u001b[38;5;241m=\u001b[39m\u001b[38;5;28mstr\u001b[39m(ex))\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:638\u001b[0m, in \u001b[0;36mDictConfig._set_value\u001b[0;34m(self, value, flags)\u001b[0m\n\u001b[1;32m    636\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[1;32m    637\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m\u001b[38;5;18m__dict__\u001b[39m[\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m_content\u001b[39m\u001b[38;5;124m\"\u001b[39m] \u001b[38;5;241m=\u001b[39m previous_content\n\u001b[0;32m--> 638\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m e\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:635\u001b[0m, in \u001b[0;36mDictConfig._set_value\u001b[0;34m(self, value, flags)\u001b[0m\n\u001b[1;32m    633\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[1;32m    634\u001b[0m     previous_content \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m\u001b[38;5;18m__dict__\u001b[39m[\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m_content\u001b[39m\u001b[38;5;124m\"\u001b[39m]\n\u001b[0;32m--> 635\u001b[0m     \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_set_value_impl\u001b[49m\u001b[43m(\u001b[49m\u001b[43mvalue\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mflags\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m    636\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[1;32m    637\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m\u001b[38;5;18m__dict__\u001b[39m[\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m_content\u001b[39m\u001b[38;5;124m\"\u001b[39m] \u001b[38;5;241m=\u001b[39m previous_content\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:685\u001b[0m, in \u001b[0;36mDictConfig._set_value_impl\u001b[0;34m(self, value, flags)\u001b[0m\n\u001b[1;32m    683\u001b[0m \u001b[38;5;28;01melse\u001b[39;00m:  \u001b[38;5;66;03m# pragma: no cover\u001b[39;00m\n\u001b[1;32m    684\u001b[0m     msg \u001b[38;5;241m=\u001b[39m \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mUnsupported value type: \u001b[39m\u001b[38;5;132;01m{\u001b[39;00mvalue\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m--> 685\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m ValidationError(msg)\n",
+      "\u001b[0;31mValidationError\u001b[0m: Unsupported value type: <generator object load_all at 0x1768f5f50>\n    full_key: \n    object_type=None"
+     ]
+    }
+   ],
+   "source": [
+    "cfg = DictConfig(cfg)\n",
+    "print(cfg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "c23b35df",
+   "metadata": {
+    "execute": {
+     "shell": {
+      "execute_reply": "2022-04-14T16:48:11.679360+00:00"
+     }
+    },
+    "iopub": {
+     "execute_input": "2022-04-14T16:48:11.633746+00:00",
+     "status": {
+      "busy": "2022-04-14T16:48:11.633531+00:00",
+      "idle": "2022-04-14T16:48:11.679968+00:00"
+     }
+    }
+   },
+   "outputs": [],
+   "source": [
+    "cfg = DictConfig(cfg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "752e2738",
+   "metadata": {
+    "execute": {
+     "shell": {
+      "execute_reply": "2022-04-14T16:48:30.165215+00:00"
+     }
+    },
+    "iopub": {
+     "execute_input": "2022-04-14T16:48:30.113588+00:00",
+     "status": {
+      "busy": "2022-04-14T16:48:30.113369+00:00",
+      "idle": "2022-04-14T16:48:30.165738+00:00"
+     }
+    }
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'_target_: l2hmc.configs.ExperimentConfig\n",
+       "\n",
+       "# --------------------------------------------------------------------------------------------\n",
+       "framework: ???                        # ML framework to use: one of 'pytorch', 'tensorflow'\n",
+       "profile: false                        # Flag for profiling in pytorch\n",
+       "precision: 'float32'                  # Default floating point precision\n",
+       "width: 235                            # Setting controlling terminal width for printing\n",
+       "eps_hmc: 0.1181                       # Reasonable default value, determined from sweep\n",
+       "compile: True                         # Compile network in tensorflow? (True by default)\n",
+       "nchains:  128                         # Number of chains to use when evaluating model\n",
+       "# --------------------------------------------------------------------------------------------\n",
+       "# pretty print config at the start\n",
+       "# of the run using Rich library\n",
+       "# print_config: True\n",
+       "# -----------------------------------\n",
+       "# disable python warnings\n",
+       "# if they annoy you\n",
+       "ignore_warnings: True\n",
+       "# -----------------------------------\n",
+       "# seed for random number generators\n",
+       "# in pytorch, numpy and python.random\n",
+       "# seed: null\n",
+       "# -----------------------------------\n",
+       "# name of the run, should be used\n",
+       "# along with experiment mode\n",
+       "name: null\n",
+       "# --------------------------------------------------------------------------------------------\n",
+       "# DEFAULTS\n",
+       "# --------------------------------------------------------------------------------------------\n",
+       "defaults:\n",
+       "  - _self_\n",
+       "  # ------------------------------------------------------------------------------------------\n",
+       "  - steps: default.yaml               # Defines num_era, num_epoch, num_test, etc.\n",
+       "  - dynamics: default.yaml            # Defines gauge group, nleapfrog, lattice volume, etc.\n",
+       "  - wandb: default.yaml               # Weights & Biases config\n",
+       "  - logdir: default.yaml              # Defines where to run experiment using info from cfg\n",
+       "  - loss: default.yaml                # Defines weights of various terms in loss function\n",
+       "  - network: default.yaml             # Defines network architecture, activation fns, etc.\n",
+       "  - conv: default.yaml                # Defines arch of Conv block to prepend to xnetwork\n",
+       "  - net_weights: default.yaml         # Weights for controlling rel contribution of net fns\n",
+       "  - learning_rate: default.yaml       # Defines initial lr, optimizer type, lr schedule, etc.\n",
+       "  - annealing_schedule: default.yaml  # Defines annealing schedule to use for training\n",
+       "  # ------------------------------------------------------------------------------------------\n",
+       "  # modes are special collections of config options for different purposes, e.g. debugging\n",
+       "  - mode: default.yaml\n",
+       "  # - mode: default.yaml\n",
+       "\n",
+       "  # experiment configs allow for version control of specific configurations\n",
+       "  # for example, use them to store best hyperparameters for each model configuration\n",
+       "  - experiment: null\n",
+       "\n",
+       "  # - hydra/run: default.yaml\n",
+       "\n",
+       "  # - optional local: default.yaml\n",
+       "  - override hydra/hydra_logging: colorlog\n",
+       "  - override hydra/job_logging: colorlog\n",
+       "\n",
+       "  # - override hydra/launcher: joblib\n",
+       "\n",
+       "  # https://hydra.cc/docs/tutorials/basic/running_your_app/logging/\n",
+       "  # use this to set level of only chosen command line loggers to 'DEBUG'\n",
+       "  # verbose: [src.train, src.utils]\n",
+       "\n",
+       "# --------------------------------------------------------------------------------------------\n",
+       "# IGNORE\n",
+       "# --------------------------------------------------------------------------------------------\n",
+       "# hydra:\n",
+       "#   job_logging:\n",
+       "#     version: 1\n",
+       "\n",
+       "# path to original working directory\n",
+       "# hydra hijacks working directory by changing it to the new log directory\n",
+       "# so it's useful to have this path as a special variable\n",
+       "# https://hydra.cc/docs/next/tutorials/basic/running_your_app/working_directory\n",
+       "# work_dir: ${hydra:runtime.cwd}\n",
+       "\n",
+       "# path to folder with data\n",
+       "# data_dir: ${work_dir}/data/\n",
+       "'"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cfg"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "a8993527",
+   "metadata": {
+    "execute": {
+     "shell": {
+      "execute_reply": "2022-04-14T16:48:19.632194+00:00"
+     }
+    },
+    "iopub": {
+     "execute_input": "2022-04-14T16:48:19.376551+00:00",
+     "status": {
+      "busy": "2022-04-14T16:48:19.376352+00:00"
+     }
+    }
+   },
+   "outputs": [
+    {
+     "ename": "AttributeError",
+     "evalue": "'str' object has no attribute 'get'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:351\u001b[0m, in \u001b[0;36mDictConfig.__getattr__\u001b[0;34m(self, key)\u001b[0m\n\u001b[1;32m    350\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[0;32m--> 351\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_get_impl\u001b[49m\u001b[43m(\u001b[49m\u001b[43mkey\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mkey\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mdefault_value\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43m_DEFAULT_MARKER_\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m    352\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m ConfigKeyError \u001b[38;5;28;01mas\u001b[39;00m e:\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:438\u001b[0m, in \u001b[0;36mDictConfig._get_impl\u001b[0;34m(self, key, default_value)\u001b[0m\n\u001b[1;32m    437\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[0;32m--> 438\u001b[0m     node \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_get_node\u001b[49m\u001b[43m(\u001b[49m\u001b[43mkey\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mkey\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mthrow_on_missing_key\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mTrue\u001b[39;49;00m\u001b[43m)\u001b[49m\n\u001b[1;32m    439\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m (ConfigAttributeError, ConfigKeyError):\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:467\u001b[0m, in \u001b[0;36mDictConfig._get_node\u001b[0;34m(self, key, validate_access, throw_on_missing_value, throw_on_missing_key)\u001b[0m\n\u001b[1;32m    465\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_validate_get(key)\n\u001b[0;32m--> 467\u001b[0m value: Optional[Node] \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[38;5;18;43m__dict__\u001b[39;49m\u001b[43m[\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43m_content\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m]\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget\u001b[49m(key)\n\u001b[1;32m    468\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m value \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+      "\u001b[0;31mAttributeError\u001b[0m: 'str' object has no attribute 'get'",
+      "\nDuring handling of the above exception, another exception occurred:\n",
+      "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "Input \u001b[0;32mIn [11]\u001b[0m, in \u001b[0;36m<cell line: 3>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01ml2hmc\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mscripts\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mtensorflow\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mmain\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m main \u001b[38;5;28;01mas\u001b[39;00m main_tf\n\u001b[1;32m      2\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01momegaconf\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m DictConfig\n\u001b[0;32m----> 3\u001b[0m \u001b[43mmain_tf\u001b[49m\u001b[43m(\u001b[49m\u001b[43mcfg\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/src/l2hmc/scripts/tensorflow/main.py:120\u001b[0m, in \u001b[0;36mmain\u001b[0;34m(cfg)\u001b[0m\n\u001b[1;32m    116\u001b[0m outputs \u001b[38;5;241m=\u001b[39m {}\n\u001b[1;32m    117\u001b[0m \u001b[38;5;66;03m# -----------------------------\u001b[39;00m\n\u001b[1;32m    118\u001b[0m \u001b[38;5;66;03m# Create experiment from cfg\u001b[39;00m\n\u001b[1;32m    119\u001b[0m \u001b[38;5;66;03m# -----------------------------\u001b[39;00m\n\u001b[0;32m--> 120\u001b[0m nchains \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mmax\u001b[39m((\u001b[38;5;241m1\u001b[39m, \u001b[43mcfg\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mdynamics\u001b[49m\u001b[38;5;241m.\u001b[39mnchains \u001b[38;5;241m/\u001b[39m\u001b[38;5;241m/\u001b[39m \u001b[38;5;241m4\u001b[39m))\n\u001b[1;32m    121\u001b[0m cfg\u001b[38;5;241m.\u001b[39mupdate({\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mnchains\u001b[39m\u001b[38;5;124m'\u001b[39m: nchains})\n\u001b[1;32m    122\u001b[0m experiment \u001b[38;5;241m=\u001b[39m Experiment(cfg)\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:357\u001b[0m, in \u001b[0;36mDictConfig.__getattr__\u001b[0;34m(self, key)\u001b[0m\n\u001b[1;32m    353\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_format_and_raise(\n\u001b[1;32m    354\u001b[0m         key\u001b[38;5;241m=\u001b[39mkey, value\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mNone\u001b[39;00m, cause\u001b[38;5;241m=\u001b[39me, type_override\u001b[38;5;241m=\u001b[39mConfigAttributeError\n\u001b[1;32m    355\u001b[0m     )\n\u001b[1;32m    356\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m--> 357\u001b[0m     \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_format_and_raise\u001b[49m\u001b[43m(\u001b[49m\u001b[43mkey\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mkey\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mvalue\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mNone\u001b[39;49;00m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mcause\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43me\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/base.py:190\u001b[0m, in \u001b[0;36mNode._format_and_raise\u001b[0;34m(self, key, value, cause, type_override)\u001b[0m\n\u001b[1;32m    187\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21m_format_and_raise\u001b[39m(\n\u001b[1;32m    188\u001b[0m     \u001b[38;5;28mself\u001b[39m, key: Any, value: Any, cause: \u001b[38;5;167;01mException\u001b[39;00m, type_override: Any \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;01mNone\u001b[39;00m\n\u001b[1;32m    189\u001b[0m ) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[0;32m--> 190\u001b[0m     \u001b[43mformat_and_raise\u001b[49m\u001b[43m(\u001b[49m\n\u001b[1;32m    191\u001b[0m \u001b[43m        \u001b[49m\u001b[43mnode\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\n\u001b[1;32m    192\u001b[0m \u001b[43m        \u001b[49m\u001b[43mkey\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mkey\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    193\u001b[0m \u001b[43m        \u001b[49m\u001b[43mvalue\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mvalue\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    194\u001b[0m \u001b[43m        \u001b[49m\u001b[43mmsg\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43mstr\u001b[39;49m\u001b[43m(\u001b[49m\u001b[43mcause\u001b[49m\u001b[43m)\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    195\u001b[0m \u001b[43m        \u001b[49m\u001b[43mcause\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mcause\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    196\u001b[0m \u001b[43m        \u001b[49m\u001b[43mtype_override\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mtype_override\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    197\u001b[0m \u001b[43m    \u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m    198\u001b[0m     \u001b[38;5;28;01massert\u001b[39;00m \u001b[38;5;28;01mFalse\u001b[39;00m\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/_utils.py:753\u001b[0m, in \u001b[0;36mformat_and_raise\u001b[0;34m(node, key, value, msg, cause, type_override)\u001b[0m\n\u001b[1;32m    751\u001b[0m \u001b[38;5;28;01melse\u001b[39;00m:\n\u001b[1;32m    752\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m key \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m \u001b[38;5;129;01mand\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m node\u001b[38;5;241m.\u001b[39m_is_none():\n\u001b[0;32m--> 753\u001b[0m         child_node \u001b[38;5;241m=\u001b[39m \u001b[43mnode\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_get_node\u001b[49m\u001b[43m(\u001b[49m\u001b[43mkey\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mvalidate_access\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mFalse\u001b[39;49;00m\u001b[43m)\u001b[49m\n\u001b[1;32m    755\u001b[0m     \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[1;32m    756\u001b[0m         full_key \u001b[38;5;241m=\u001b[39m node\u001b[38;5;241m.\u001b[39m_get_full_key(key\u001b[38;5;241m=\u001b[39mkey)\n",
+      "File \u001b[0;32m~/projects/l2hmc-qcd/.venv/lib/python3.10/site-packages/omegaconf/dictconfig.py:467\u001b[0m, in \u001b[0;36mDictConfig._get_node\u001b[0;34m(self, key, validate_access, throw_on_missing_value, throw_on_missing_key)\u001b[0m\n\u001b[1;32m    464\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m validate_access:\n\u001b[1;32m    465\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_validate_get(key)\n\u001b[0;32m--> 467\u001b[0m value: Optional[Node] \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[38;5;18;43m__dict__\u001b[39;49m\u001b[43m[\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43m_content\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m]\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget\u001b[49m(key)\n\u001b[1;32m    468\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m value \u001b[38;5;129;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n\u001b[1;32m    469\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m throw_on_missing_key:\n",
+      "\u001b[0;31mAttributeError\u001b[0m: 'str' object has no attribute 'get'"
+     ]
+    }
+   ],
+   "source": [
+    "from l2hmc.scripts.tensorflow.main import main as main_tf\n",
+    "from omegaconf import DictConfig\n",
+    "main_tf(cfg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9fb1cfe3",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
