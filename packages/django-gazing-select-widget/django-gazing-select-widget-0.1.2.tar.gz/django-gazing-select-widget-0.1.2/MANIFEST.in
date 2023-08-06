@@ -1,0 +1,8 @@
+include MANIFEST.in
+include README.md
+include requirements.txt
+graft django_gazing_select_widget
+exclude django_gazing_select_widget_demo
+exclude django_gazing_select_widget_example
+global-exclude __pycache__
+global-exclude *.py[co]
