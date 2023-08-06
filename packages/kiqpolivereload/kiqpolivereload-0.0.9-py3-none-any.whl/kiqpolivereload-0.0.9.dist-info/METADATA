@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: kiqpolivereload
+Version: 0.0.9
+Summary: Python live reload server build as part of kiqpo
+Home-page: https://github.com/kiqpo
+Author: kiqpo
+Author-email: shajin.sha10@gmail.com
+License: MTI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment :: Mozilla
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tornado
+
+ # KiqpoLiveServer
+ ### Python live reload server build as part of [kiqpo]('https://github.com/kiqpo').
+
+ ### Contributing
+
+Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our [CODE OF CONDUCT](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+
+
+
+
+### Versioning
+
+This project is developed by [lepture](https://github.com/lepture) and letter kiqpo redesigned for our use using the [Semantic Versioning specification](https://semver.org). For the versions available, see the [releases on this repository](https://github.com/kiqpo/kiqpoliveserver).
+
+---
+
+### Change log
+
+See the [CHANGELOG](CHANGELOG.md) file for details.
+
+---
+
+### Authors
+#### First Developed
+* [**Lepture**](https://github.com/lepture) - Author
+#### Lead Developers
+* [**Shajin**](https://github.com/shajin-sha) - *Redesign*
+
+#### Thanks
+* [Lepture](https://github.com/lepture)
+
+See the list of [contributors](https://github.com/kiqpo/kiqpoliveserver/graphs/contributors) who participated in this project.
+
+---
+
+### License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
+
+---
+
+### Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspirations:
+	* [LiveReload](https://github.com/lepture/python-livereload)
+
+

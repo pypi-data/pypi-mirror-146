@@ -1,0 +1,10 @@
+kiqpoliveserver/__init__.py,sha256=fw-kcmcVrIDMCZbEITdEjiB_epusYwXSAMJudIeSIwU,158
+kiqpoliveserver/cli.py,sha256=qrcmvSjO5I6c70xutkasa88Vw1hLopz61gH6ZP9EvQM,1442
+kiqpoliveserver/handlers.py,sha256=pZuFF550ZacPjAYL9yBd37ZxyQRRLHMK0dPsmCK7clA,6743
+kiqpoliveserver/server.py,sha256=RXm0h6n2TKZlQ3hK6r6Nn4TSer6uCbwIOwfjReSbLt4,13076
+kiqpoliveserver/watcher.py,sha256=nIqDK4yQxBIyZPyxPzMdw1vXCB_XoHgulMP5Wb2rkoA,7544
+kiqpolivereload-0.0.9.dist-info/LICENSE,sha256=Aur8aYg_5E6N97tGk07CVl_JH-dAJbFmL2MqRXMRlhc,1081
+kiqpolivereload-0.0.9.dist-info/METADATA,sha256=tEDzPBjwWM3O5LQF9pKdll5bi-xFvQbGGQIdR5WaVgY,2618
+kiqpolivereload-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kiqpolivereload-0.0.9.dist-info/top_level.txt,sha256=-9A4PwR_7QGvIw8b5VrQpn_ik4ARzYkiCbFbMa4541A,16
+kiqpolivereload-0.0.9.dist-info/RECORD,,
