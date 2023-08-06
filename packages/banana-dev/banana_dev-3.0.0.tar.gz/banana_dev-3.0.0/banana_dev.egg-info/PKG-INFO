@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: banana-dev
+Version: 3.0.0
+Summary: The banana package is a python client to interact with your machine learning models hosted on Banana
+Home-page: https://www.banana.dev
+Author: Erik Dunteman
+Author-email: erik@banana.dev
+License: MIT
+Description: # Banana Python SDK
+        
+        ### Getting Started
+        
+        Install via pip
+        `pip3 install banana-dev`
+        
+        Get your API Key
+        - [Sign in / log in here](https://app.banana.dev)
+        
+        Run:
+        ```python
+        import banana_dev as banana
+        
+        api_key = "YOUR_API_KEY"
+        model_key = "YOUR_MODEL_KEY"
+        model_parameters = {
+            # a json specific to your model. For example:
+            "a": 1,
+            "b": 2
+        }
+        
+        out = banana.run(api_key, model_key, model_parameters)
+        print(out)
+        ```
+        
+        Return type:
+        ```python
+        {
+            {
+                "id": "12345678-1234-1234-1234-123456789012", 
+                "message": "success", 
+                "created": 1649712752, 
+                "apiVersion": "26 Nov 2021", 
+                "modelOutputs": [
+                    {
+                        # a json specific to your model. In this example, the sum of "a" and "b" from the above model_parameters
+                        "sum": 3, 
+                    }
+                ]
+            }
+        }
+        ```
+        
+        Parse the server output:
+        ```python
+        model_out = out["modelOutputs"][0]
+        ```
+Keywords: Banana client,API wrapper,Banana,SDK
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
