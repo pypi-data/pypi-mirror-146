@@ -1,0 +1,11 @@
+build
+docutils
+pygments
+requests
+setuptools
+wheel
+
+[test]
+pytest
+pytest-cov
+setuptools>=60
