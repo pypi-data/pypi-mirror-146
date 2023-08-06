@@ -1,0 +1,28 @@
+# apps-infrastructure-python
+
+## Description:
+
+### dto
+- ActionResponseDetails - Response details returns from the action execution.
+- ExecutionContext - all params available for execution.
+- ParamDetails - param name and value object.
+
+### proxy
+- bigid_proxy - Object for working with BigID. Ctor gets ExecutionContext.
+
+### routes
+- router - The routing entrance to our app. It contains 5 routes:
+    1. /logs - GET request. Returns the logs from the app.
+    2. /manifest - GET request. Return the Manifest file of the app.
+    3. /execute - POST request. With the relevant parameters, it executes a command in the app.
+    4. /assets/icon - GET request. Return the icon stream.
+    5. /assets/sideBarIcon - GET request. Return the side bar icon stream.
+
+### services
+- base_execution_service - Executes the actions in the app. The actions implementation object inherits from this.
+- base_logo_service - Handle app icons.
+- logs_service -  Handle console and file logging. The execution services uses it.
+- manifest_service - the custom manifest file which you created.
+
+### types
+- enums - Includes TaskStatus and IconType enums
