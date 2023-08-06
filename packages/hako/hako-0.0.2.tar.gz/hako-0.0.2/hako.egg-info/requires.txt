@@ -1,0 +1,5 @@
+click>=8.1.2
+rich>=12.2.0
+requests>=2.22.0
+cryptography>=36.0.2
+pick>=1.2.0
