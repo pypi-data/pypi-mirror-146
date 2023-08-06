@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: djangocms-education
+Version: 1.4.0
+Summary: Adds Add Plugin for your Education and Experiences.
+Home-page: https://github.com/crydotsnake/djangocms-education
+Author: Simon Krull
+Author-email: simon@django-cms.org
+Maintainer: Simon Krull
+Maintainer-email: simon@django-cms.org
+License: BSD-3-Clause
+Platform: UNKNOWN
+License-File: LICENSE
+
+######################
+DjangoCMS Education
+######################
+
+DjangoCMS Education is a simple plugin for embedding your CV in your website.
+
+============
+Installation
+============
+
+.. code-block::
+
+       -e git+https://github.com/crydotsnake/djangocms-education.git#egg=djangocms-education
+
+
+Add ``djangocms_education`` to your ``INSTALLED_APPS``
+
+
+
