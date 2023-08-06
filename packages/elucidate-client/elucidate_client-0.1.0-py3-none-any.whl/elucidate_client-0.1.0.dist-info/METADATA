@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: elucidate-client
+Version: 0.1.0
+Summary: Python client to interact with an elicidate server
+Home-page: https://github.com/knaw-huc/elucidate-python-client
+License: MIT
+Author: Bram Buitendijk
+Author-email: bram.buitendijk@di.huc.knaw.nl
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/knaw-huc/elucidate-python-client/issues
+Project-URL: Repository, https://github.com/knaw-huc/elucidate-python-client
+Description-Content-Type: text/markdown
+
+## elucidate-client
+
+[![GitHub Actions](https://github.com/knaw-huc/elucidate-python-client/workflows/tests/badge.svg)](https://github.com/knaw-huc/elucidate-python-client/actions)
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Documentation Status](https://readthedocs.org/projects/elucidate-python-client/badge/?version=latest)](https://elucidate-python-client.readthedocs.io/en/latest/?badge=latest)
+![PyPI](https://img.shields.io/pypi/v/elucidate-client)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/eluciate-client)
+
+A Python client for accessing an [elucidate](https://github.com/knaw-huc/elucidate) server (knaw-huc fork)
+
+## installing
+
+### using poetry
+
+```commandline
+poetry add elucidate-client
+```
+
+### using pip
+
+```commandline
+pip install elucidate-client
+```
+
+# documentation
+
+See [USAGE](https://elucidate-python-client.readthedocs.io/en/latest/)
+and [the notebooks](https://github.com/knaw-huc/elucidate-python-client/tree/main/notebooks)
+
+----
+
+[USAGE](https://elucidate-python-client.readthedocs.io/en/latest/) |
+[CONTRIBUTING](CONTRIBUTING.md) |
+[LICENSE](LICENSE)
+

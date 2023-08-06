@@ -1,0 +1,9 @@
+elucidate/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+elucidate/client.py,sha256=PR8Qa4dBI_SC6zsxAMxP8Cg5RaJub38HDqAq_Rn6buk,35913
+elucidate/model.py,sha256=zsuf9ULFraP0mRIY4pcqxzn8Mgiu5zxsEorAlAfuiLo,2648
+elucidate/tools.py,sha256=HU0ZvXsTsWr2A1qvO8Bg80NbNDJDMpWTNo7yfcS8Nfo,564
+elucidate_client-0.1.0.dist-info/entry_points.txt,sha256=5Q_hKc6KVT9-6B5gPcuJWKJUDGmlg2vZGQUTAc41V4o,50
+elucidate_client-0.1.0.dist-info/LICENSE,sha256=eSrDMlL2-3lELb8ZmczT8p4h9wY_6pMfJ6DvKy-E7qc,1064
+elucidate_client-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+elucidate_client-0.1.0.dist-info/METADATA,sha256=mo47H4WKGA8dKJGcsrbqpYrHuqWmcgnzSOB4QDRQQco,2215
+elucidate_client-0.1.0.dist-info/RECORD,,
