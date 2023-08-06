@@ -1,0 +1,33 @@
+import logging
+
+#
+# General
+
+DER_ENABLED_INTEGRATIONS = (
+    "datadog",
+    "sentry"
+)
+
+DER_INCLUDE_REQUEST_TAGS = True  # Include end user information as span tags
+
+#
+# Logging
+DER_LOGGING_LEVEL = logging.ERROR
+
+# DataDog Logging
+DER_SETUP_DATADOG_LOGGING = True
+DER_DATADOG_LOGGING_LEVEL = None
+DER_DATADOG_LOGGING_FILE = None
+DER_DATADOG_LOGGING_TO_CONSOLE = False
+
+# Sentry Logging
+DER_SENTRY_LOGGING_LEVEL = None
+
+
+SENTRY_TRACES_SAMPLE_RATE = 0.0
+BASE_URL = "localhost"
+CODEBUILD_BUILD_NUMBER = "0.0"
+SEND_FULL_REQUEST_TO_SENTRY = False
+SENTRY_LOG_LEVEL = logging.ERROR
+SENTRY_EVENT_LEVEL = logging.ERROR
+SENTRY_INTEGRATIONS = []
