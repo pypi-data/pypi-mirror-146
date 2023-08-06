@@ -1,0 +1,16 @@
+pydts/__init__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+pydts/base_fitters.py,sha256=tUONvX-XysKpXvF9renH0ZQkRJ5H9gKR5ASpNvaPw8I,12885
+pydts/config.py,sha256=iaS2mqOFACzxhl070p8tnkM9qTbVnzOzv39UaHPKL6c,179
+pydts/datasets/LOS_simulated_data.csv,sha256=2eEjxsnk1cASw-rcPdVONLvxKpeBu5zcrPk0THVYWdo,1034355
+pydts/datasets/old_LOS_simulated_data.csv,sha256=EV6cnySWnGTxwLnTcnYh9TetAtUCuoKUTYsJAbBs6xU,1050852
+pydts/examples_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydts/examples_utils/datasets.py,sha256=AWfY8WXFl7eK9fLVktwtCatfm8pabLgZpUF1JoU1xSU,286
+pydts/examples_utils/generate_simulations_data.py,sha256=bSHCKVfR1r1byYmSIOgbwG6Vtp0dz1dm9hO0C5K3GWI,10409
+pydts/examples_utils/plots.py,sha256=kSP9NmbEu9JIFBcQlBIGVNtFxjlDlFwrNg-Vmi_ClTc,24944
+pydts/examples_utils/simulations_data_config.py,sha256=NewCXI-2qpe57lvIbwW4zFuLpm9Ia5eIJV2UkZYNUAo,1712
+pydts/fitters.py,sha256=6cK8Q0h7Paf0yoEOWmgfeJEmLY2S2UezBth32plIph8,28756
+pydts/utils.py,sha256=6WirWREHD2Sg5BnjqCYxZWb7omzIWT0Wctv3tiekf34,6520
+pydts-0.3.0.dist-info/LICENSE,sha256=azfUUwjVQXMExkQL6dKmb2F2meP_6qzisE5QsUUqr9s,1098
+pydts-0.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pydts-0.3.0.dist-info/METADATA,sha256=UNUq0bB6Gn8QXlEJd4EQ7EB-haLYHLSjPmlRBVYVitI,2752
+pydts-0.3.0.dist-info/RECORD,,
