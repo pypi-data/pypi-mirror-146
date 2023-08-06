@@ -1,0 +1,4 @@
+pyads>=3.3.9
+PyQt5>=5.15
+pyqtconsole>=1.2.2
+pyqtgraph>=0.12.3
