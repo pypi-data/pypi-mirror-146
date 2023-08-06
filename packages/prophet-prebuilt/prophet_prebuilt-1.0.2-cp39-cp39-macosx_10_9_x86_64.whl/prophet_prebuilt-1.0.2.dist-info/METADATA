@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: prophet-prebuilt
+Version: 1.0.2
+Summary: Facebook Prophet with pre-built wheels for Linux, Mac, Windows
+Home-page: https://github.com/freddyaboulton/prophet
+Author: Freddy A. Boulton
+Author-email: alfonsoboulton@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Cython (>=0.22)
+Requires-Dist: cmdstanpy (==0.9.77)
+Requires-Dist: numpy (>=1.15.4)
+Requires-Dist: pandas (>=1.0.4)
+Requires-Dist: matplotlib (>=2.0.0)
+Requires-Dist: LunarCalendar (>=0.0.9)
+Requires-Dist: convertdate (>=2.1.2)
+Requires-Dist: holidays (>=0.11.3.1)
+Requires-Dist: setuptools (>=42)
+Requires-Dist: setuptools-git (>=1.2)
+Requires-Dist: python-dateutil (>=2.8.0)
+Requires-Dist: tqdm (>=4.36.1)
+Requires-Dist: wheel (>=0.37.0)
+
+# Prophet-prebuilt
+
+A fork of Facebook's prophet model that comes with pre-built wheels for Linux, MacOS, Windows. Nothing fancy here, I just forked `main` that has this PR: https://github.com/facebook/prophet/pull/2010#issuecomment-1081934109 and added a step to publish to PyPi. Hopefully, this fork is no longer needed with the official release of Prophet version 1.1. 
+
+I also removed the pystan requirement and will only install CMDSTAN and use CMDSTAN backend. Other than that, there are no modifications to the source code.
+
+## Installation
+
+```shell
+pip install prophet-prebuilt
+```
+
+### Example usage
+
+For more information, consult the offical Prophet page: https://github.com/facebook/prophet
+
+```python
+  >>> from prophet import Prophet
+  >>> m = Prophet()
+  >>> m.fit(df)  # df is a pandas.DataFrame with 'y' and 'ds' columns
+  >>> future = m.make_future_dataframe(periods=365)
+  >>> m.predict(future)
+  ```
+
+
