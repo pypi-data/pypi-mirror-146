@@ -1,0 +1,17 @@
+fbnsdkutilities/__init__.py,sha256=pZH728KMNnHoBAgezsSg3nkZoKPs_WD2YuBVPNP6M6s,895
+fbnsdkutilities/__version__.py,sha256=wOJN3HxAgnSon5vWYU3Txm2UZ_7tBHDKXUKZIH-mXX8,22
+fbnsdkutilities/tcp/__init__.py,sha256=-d31a--VH580zoud77abjRggWarYHS_oKAzmsA-EM94,104
+fbnsdkutilities/tcp/tcp_keep_alive_probes.py,sha256=CHITOSs0lEncuVX7yuox89m0He8sDuEltjATR7PuuIg,5253
+fbnsdkutilities/utilities/__init__.py,sha256=VLiPJKmeEINwX7cGt8OPA9qOqD0hR8k7hdzVVggqdWc,574
+fbnsdkutilities/utilities/api_client_builder.py,sha256=mM9mrWW0EO-C2JzTGLo8u4wdOz1qLpWcvjU8fruq4iw,6406
+fbnsdkutilities/utilities/api_client_factory.py,sha256=3dBbCVzFwUxFxhlgUFAPTPkBEJG-DYrM5lofm6nX62o,5398
+fbnsdkutilities/utilities/api_client_factory_base.py,sha256=G1IuTK6nNvk1-2_WWIWRgDrbKKwFsAgrhTbDc7IaFSc,5402
+fbnsdkutilities/utilities/api_configuration.py,sha256=C_hkc_Kntewp46Ss4IlgW8S--her09UeM5a7S3xTy8s,2843
+fbnsdkutilities/utilities/api_configuration_loader.py,sha256=7uuihthpz4vMDGplnLhBmziE3McOCnsju2G_2DhLdwQ,3555
+fbnsdkutilities/utilities/proxy_config.py,sha256=RlX1EyvghiT2jMwuSUw_mmAJKQ1phqv-fUwzxL3l394,1725
+fbnsdkutilities/utilities/refreshing_token.py,sha256=sxnA-kMgbxRgKvzi-xpwJJEBpYIvKjVajpiZj3R8nw8,9626
+fbnsdkutilities/utilities/retry.py,sha256=LS4-n880loHDINJayy0DubTTYj8638daSbVV4QRFzF0,1242
+finbourne_sdk_utilities-0.0.8.dist-info/METADATA,sha256=XBZb6-9FQSmclwdcqZTEK3U8OmNK3LT89C-oyzg7c6s,356
+finbourne_sdk_utilities-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+finbourne_sdk_utilities-0.0.8.dist-info/top_level.txt,sha256=MpWYOZhF8UCh7n0GDFDyjfXpnoEWsIYPVM2qbhZLqzA,16
+finbourne_sdk_utilities-0.0.8.dist-info/RECORD,,
