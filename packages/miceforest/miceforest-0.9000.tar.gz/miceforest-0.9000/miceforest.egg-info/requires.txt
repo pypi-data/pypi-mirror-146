@@ -1,0 +1,12 @@
+lightgbm
+numpy
+
+[Default_MM]
+scipy>=1.6.0
+
+[Plotting]
+seaborn>=0.11.0
+matplotlib>=3.3.0
+
+[Testing]
+pandas
