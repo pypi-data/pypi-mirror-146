@@ -1,0 +1,3 @@
+[console_scripts]
+convert-shp-to-csv=convert_shp_to_csv.main:main
+

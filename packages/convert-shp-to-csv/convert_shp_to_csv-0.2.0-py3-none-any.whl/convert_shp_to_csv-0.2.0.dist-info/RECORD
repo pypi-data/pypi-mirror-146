@@ -1,0 +1,6 @@
+convert_shp_to_csv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+convert_shp_to_csv/main.py,sha256=ISVw6NF4ciJnDp9sYY9yk0imrRn0bwlCISUDTd-VohA,3010
+convert_shp_to_csv-0.2.0.dist-info/entry_points.txt,sha256=rtFbFdVfSnWtON4TiDF7luWP5b5Mcsvtn3cGBPZMihM,67
+convert_shp_to_csv-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+convert_shp_to_csv-0.2.0.dist-info/METADATA,sha256=lrSdDfIbSlEl9CZhhqZnKns3x7VerdHWwssEuOaIVvE,2136
+convert_shp_to_csv-0.2.0.dist-info/RECORD,,
