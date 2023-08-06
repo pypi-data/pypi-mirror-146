@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: stray
+Version: 0.0.9
+Summary: Stray SDK
+Home-page: https://github.com/StrayRobots/stray
+Author: Stray Robots
+Author-email: hello@strayrobots.io
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/StrayRobots/stray/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: trimesh
+Requires-Dist: scipy
+Requires-Dist: pillow
+Requires-Dist: scikit-video
+Requires-Dist: scikit-spatial
+Requires-Dist: pycocotools
+Requires-Dist: open3d
+Requires-Dist: opencv-python
+Requires-Dist: pytorch-lightning
+Requires-Dist: click
+Requires-Dist: tqdm
+
+# Stray
+This package includes examples and source code for building computer vision solutions using the Stray tools.
+
+<a target="_blank" href="https://stray-data.nyc3.digitaloceanspaces.com/tutorials/pick_video.mp4" title="Picking with RoboDK"><img src="https://stray-data.nyc3.digitaloceanspaces.com/tutorials/pick_cover.png" alt="Picking with RoboDK" /></a>
+<p align = "center">
+  A pick and place example built with the Stray tools and RoboDK. See the <a href="https://stray.readthedocs.io/en/latest/tutorials/robodk.html">tutorial</a> for more details.
+</p>
+
+
