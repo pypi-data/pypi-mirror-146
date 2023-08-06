@@ -1,0 +1,8 @@
+setup.py
+set_django_env/__init__.py
+set_django_env/set_django_env.py
+set_django_env.egg-info/PKG-INFO
+set_django_env.egg-info/SOURCES.txt
+set_django_env.egg-info/dependency_links.txt
+set_django_env.egg-info/requires.txt
+set_django_env.egg-info/top_level.txt
