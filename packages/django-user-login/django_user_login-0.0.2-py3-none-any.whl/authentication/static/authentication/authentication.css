@@ -1,0 +1,17 @@
+.errormessage, .requirement {
+    color: red;
+}
+
+.hover {
+    text-decoration: none;
+    color: white;
+}
+
+.hover:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,15 @@
+authentication/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+authentication/apps.py,sha256=JnoIRYCPu4tvrjXYlJBXGZZrtJQdR45lkqJKUiegHSg,160
+authentication/urls.py,sha256=sRZ0WJ5KCXhh4F32jtIsoFl_ONo37SVIats3_2kmwVQ,772
+authentication/util.py,sha256=TZkKj9CCtF_QeRtrpKlN6_PRmsXI4PJ8KW077KiDE5k,1934
+authentication/views.py,sha256=B-tcHcONUrB6XYCS3qpePJUJY6Yb2wkvJ86HMxdw6uo,11134
+authentication/static/authentication/authentication.css,sha256=i0H3zxU3jsd_YXXKIbOkaQwYa5HE9wOZOXviOcB1MFc,258
+authentication/static/authentication/authentication.js,sha256=tKw8xaYXqW8_S2iGFMdb1l3x5daL_ApCUHe4V8TLgw8,15828
+authentication/templates/authentication/homepage.html,sha256=JA1WAZTqlwAn4kBq-PVp_Tv_z8a_ZMJm7M8yeQvxAhs,1904
+authentication/templates/authentication/login.html,sha256=UhdbF7JPc39D-D5Q5dlp3yMa3pq-gluAxJeE_BvwOEY,1825
+authentication/templates/authentication/modals.html,sha256=dAb0xG-uq5Izqj54UBRYHAE0Myhq3DLDPHFKLt_HQo0,19526
+django_user_login-0.0.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+django_user_login-0.0.2.dist-info/METADATA,sha256=N1-6TGtV1njwhunAtkMWblqPNi-5RnBwQo5KmrSQ9hw,3621
+django_user_login-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_user_login-0.0.2.dist-info/top_level.txt,sha256=VXISBSpQIrEFW1wlnq3UihPHmjYCFTAMV1PReHDUpis,15
+django_user_login-0.0.2.dist-info/RECORD,,
