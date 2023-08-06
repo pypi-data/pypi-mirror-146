@@ -1,0 +1,13 @@
+README.md
+setup.py
+CHIPy8.egg-info/PKG-INFO
+CHIPy8.egg-info/SOURCES.txt
+CHIPy8.egg-info/dependency_links.txt
+CHIPy8.egg-info/requires.txt
+CHIPy8.egg-info/top_level.txt
+bin/chipy8
+chipy8/Chip8.py
+chipy8/Interface.py
+chipy8/__init__.py
+chipy8/config.py
+chipy8/run.py
