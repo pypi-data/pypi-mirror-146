@@ -1,0 +1,11 @@
+sariFieldDefinitionsGenerator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sariFieldDefinitionsGenerator/generator.py,sha256=NhiSRJ0Qy76WnL9kfj6yUysr-je9qk3NW6O-esELqds,2003
+sariFieldDefinitionsGenerator/templates/json.handlebars,sha256=uqbofeSR8U3zAViJg-1XRWiG5lp0OHEkSvk2c4jl-zo,1525
+sariFieldDefinitionsGenerator/templates/metaphacts.handlebars,sha256=pAfzW0RU_F3oN9VeDj-XiILXqCu3QCreqxW2voJd70k,3758
+sariFieldDefinitionsGenerator/templates/researchspace.handlebars,sha256=NgrQSBymFoyfruTxQp5gL03GxbdEaqBvKmvJbUJTZmM,3774
+sariFieldDefinitionsGenerator/templates/universal.handlebars,sha256=LtgZlNswBeqz7lSgDYIqtMREpoR-iAnJ5Nb3qyVRl0k,5089
+sari_field_definitions_generator-0.2.16.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+sari_field_definitions_generator-0.2.16.dist-info/METADATA,sha256=L8sLUK4YcJpHmgaScYfsg2Jbcv-WYFjtTqYr-2uiIYY,1926
+sari_field_definitions_generator-0.2.16.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+sari_field_definitions_generator-0.2.16.dist-info/top_level.txt,sha256=g-kj9CGxMgZozmETXYVhksZpjdFc3JbwexDJf66dC98,30
+sari_field_definitions_generator-0.2.16.dist-info/RECORD,,
