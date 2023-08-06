@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lawsql-trees
+Version: 0.0.2
+Summary: Pull and format statute / codification data (tree structures) from local path to raw yaml files.
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: citation-decision (>=0.0.1,<0.0.2)
+Requires-Dist: lawsql-tree-unit (>=0.0.1,<0.0.2)
+Requires-Dist: sqlite-utils (>=3.25,<4.0)
+Requires-Dist: statute-matcher (>=0.0.1,<0.0.2)
