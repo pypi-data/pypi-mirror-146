@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: gcal-sync
+Version: 0.2.1
+Summary: A python library for syncing Google Calendar to local storage for use in Home Assistant
+Author: Allen Porter
+Author-email: allen.porter@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gcal-sync
+A python library for syncing Google Calendar to local storage for use in Home Assistant
+
+## Development Environment
+
+```bash
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip3 install -r requirements.txt
+
+# Run tests
+$ py.test
+
+# Run tests with code coverage
+$ py.test --cov-report=term-missing --cov=gcal_sync
+```
+
+
