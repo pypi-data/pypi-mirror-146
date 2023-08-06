@@ -1,0 +1,4 @@
+[console_scripts]
+host-efi-vars = virt.firmware.host:main
+virt-fw-dump = virt.firmware.dump:main
+virt-fw-vars = virt.firmware.vars:main
