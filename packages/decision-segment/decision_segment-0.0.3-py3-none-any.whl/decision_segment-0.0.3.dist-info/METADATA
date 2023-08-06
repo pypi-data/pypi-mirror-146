@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: decision-segment
+Version: 0.0.3
+Summary: Separates decision segments
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: citation-decision (>=0.0.3,<0.0.4)
+Requires-Dist: decision-footnote (>=0.0.1,<0.0.2)
+Requires-Dist: decision-section (>=0.0.1,<0.0.2)
+Requires-Dist: decision-title (>=0.0.2,<0.0.3)
+Requires-Dist: statute-matcher (>=0.0.1,<0.0.2)
