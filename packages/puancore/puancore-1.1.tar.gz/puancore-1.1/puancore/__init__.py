@@ -1,0 +1,1 @@
+from puancore.uFuncs.npufunc import *

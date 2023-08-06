@@ -1,0 +1,9 @@
+setup.py
+puancore/__init__.py
+puancore.egg-info/PKG-INFO
+puancore.egg-info/SOURCES.txt
+puancore.egg-info/dependency_links.txt
+puancore.egg-info/requires.txt
+puancore.egg-info/top_level.txt
+puancore/uFuncs/__init__.py
+puancore/uFuncs/competition_ranking.c
