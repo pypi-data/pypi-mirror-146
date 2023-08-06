@@ -1,0 +1,11 @@
+AUTHORS.md,sha256=frwXBfZsyQZ8-khR_hKY9LSogglUndPy94fVFl4A_9g,294
+HISTORY.md,sha256=vNIYd_WqxXCDC37xr_0B-FTj1USA-xyu0_Kbfj_WMzg,345
+LICENSE,sha256=LX-nFUH8DKs2Qa2-10DhVFli8bkYpyHZrRvC-qN3kYY,1066
+minos/plugins/rabbitmq/__init__.py,sha256=guGjYplpNMmJNZt45nf60N2zRPCqgy-rELMHRG4CMvE,386
+minos/plugins/rabbitmq/common.py,sha256=u1jz1nnXAFWt3NIHvV_wjIfllR8aoJijF5J04OZUoV0,772
+minos/plugins/rabbitmq/publisher.py,sha256=yuwZT8xQmExT7d5-T3sBL8ifqyB4G2ADT91kCwId0fw,1845
+minos/plugins/rabbitmq/subscriber.py,sha256=0J5ry9V5D1TIPnl_XQbllJ-cfIbL_0mMZDNw9DVHe_0,3032
+minos_broker_rabbitmq-0.7.0.dev1.dist-info/LICENSE,sha256=LX-nFUH8DKs2Qa2-10DhVFli8bkYpyHZrRvC-qN3kYY,1066
+minos_broker_rabbitmq-0.7.0.dev1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+minos_broker_rabbitmq-0.7.0.dev1.dist-info/METADATA,sha256=5trxTEzKVelMftrKSTtcV_5htBPzESyATcZ7gasUyBc,3587
+minos_broker_rabbitmq-0.7.0.dev1.dist-info/RECORD,,
