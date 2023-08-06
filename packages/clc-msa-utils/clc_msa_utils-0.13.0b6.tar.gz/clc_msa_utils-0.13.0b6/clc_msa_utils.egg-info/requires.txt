@@ -1,0 +1,4 @@
+python-etcd
+consul_kv
+pika>=1.2.0
+json_log_formatter
