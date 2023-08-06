@@ -1,0 +1,8 @@
+ptlibs>=0.0.6
+ptthreads
+requests
+treelib
+tldextract
+idna
+appdirs
+filelock
