@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+libpythonpro/__init__.py
+libpythonpro/github_api.py
+libpythonproolvleo.egg-info/PKG-INFO
+libpythonproolvleo.egg-info/SOURCES.txt
+libpythonproolvleo.egg-info/dependency_links.txt
+libpythonproolvleo.egg-info/not-zip-safe
+libpythonproolvleo.egg-info/requires.txt
+libpythonproolvleo.egg-info/top_level.txt
