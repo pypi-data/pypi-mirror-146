@@ -1,0 +1,6 @@
+
+[:platform_system == "Windows"]
+platform==unsupported
+
+[:python_version < "3.3"]
+subprocess32
