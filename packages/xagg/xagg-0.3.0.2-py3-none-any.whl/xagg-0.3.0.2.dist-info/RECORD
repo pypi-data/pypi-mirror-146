@@ -1,0 +1,12 @@
+xagg/__init__.py,sha256=89jOrtPN6cKyntvNEvDYDwsBEI0pJUpSfUqecOOGmRc,347
+xagg/_version.py,sha256=OYVqZwtPEoUDMerMUbov7YIQtNq5aiOhhJjI4v7BuRE,44
+xagg/aux.py,sha256=qgzPEPAJF_oSfl56OvNJBW9kA4WtpfZxA9hgJni6zyQ,15827
+xagg/classes.py,sha256=PWaROfc0U5swsNQRr4HcvzZCGsy8HyS_D83CGfp39UQ,3435
+xagg/core.py,sha256=P8afNpJ2fIcSKzGoSBm791ZCsOIveFRY6er9aGtt7_k,29895
+xagg/export.py,sha256=SeHUfUWgF1706ZAcUN2pGKxU_GtN4Y9v0R-bqCfp7yc,11550
+xagg/wrappers.py,sha256=rtFv4bqNhNv2oX3SEtZjOCF2nqZtVqCWos7QgyaOcoE,3408
+xagg-0.3.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+xagg-0.3.0.2.dist-info/METADATA,sha256=Ov8mMQ5GcZ92dvyVEw5LAm5k2ByJTCHwl3KcEoGhtVs,6937
+xagg-0.3.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xagg-0.3.0.2.dist-info/top_level.txt,sha256=bHcTGLYxojRi-wZpTtdi4qahsgzF804LsVjXUZBD4io,5
+xagg-0.3.0.2.dist-info/RECORD,,
