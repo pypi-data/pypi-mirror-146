@@ -1,0 +1,49 @@
+# HOWTO: https://pre-commit.com/#usage
+# pip3 install pre-commit
+# pre-commit install -t pre-commit -t pre-push
+
+repos:
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v2.32.0
+    hooks:
+      - id: pyupgrade
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.6.2
+    hooks:
+      - id: prettier
+        exclude: tests/data/.+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-ast
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/PyCQA/flake8
+    rev: 4.0.1
+    hooks:
+      - id: flake8
+        exclude: examples
+        args:
+          - --max-line-length=100
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.942
+    hooks:
+      - id: mypy
+        exclude: examples
+        args: [--no-strict-optional, --ignore-missing-imports]
+        additional_dependencies: [types-click, types-requests, types-PyYAML]
+  - repo: https://github.com/packit/pre-commit-hooks
+    rev: 3bf9afc5ede12a4ee26e9451f306edf255749396
+    hooks:
+      - id: check-rebase
+        args:
+          - https://github.com/packit/requre.git
+        stages: [manual, push]

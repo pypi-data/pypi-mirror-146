@@ -1,0 +1,8 @@
+click
+GitPython
+pytest
+PyYAML
+requests
+
+[testing]
+pytest
