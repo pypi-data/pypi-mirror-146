@@ -1,0 +1,4 @@
+[console_scripts]
+poxy = poxy.main:_run
+poxyblog = poxy.main:_make_blog_post
+
