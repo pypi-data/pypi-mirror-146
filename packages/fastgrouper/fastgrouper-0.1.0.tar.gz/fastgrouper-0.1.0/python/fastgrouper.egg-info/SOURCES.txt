@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+python/fastgrouper/__init__.py
+python/fastgrouper/_core.py
+python/fastgrouper/arr.py
+python/fastgrouper/li.py
+python/fastgrouper.egg-info/PKG-INFO
+python/fastgrouper.egg-info/SOURCES.txt
+python/fastgrouper.egg-info/dependency_links.txt
+python/fastgrouper.egg-info/requires.txt
+python/fastgrouper.egg-info/top_level.txt
