@@ -1,0 +1,14 @@
+python-dotenv
+fhir.resources
+requests
+pandas
+requests-oauthlib
+pendulum
+orjson
+pyyaml
+xmltodict
+pydantic
+networkx
+
+[csv]
+pandas
