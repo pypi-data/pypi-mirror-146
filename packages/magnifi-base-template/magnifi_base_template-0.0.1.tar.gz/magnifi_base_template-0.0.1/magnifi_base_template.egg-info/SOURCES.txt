@@ -1,0 +1,14 @@
+README.md
+setup.py
+app/__init__.py
+app/main_task.py
+app/sub_task_1/__init__.py
+app/sub_task_1/helpers.py
+app/sub_task_1/sub_task_1.py
+app/sub_task_2/__init__.py
+app/sub_task_2/helpers.py
+app/sub_task_2/sub_task_2.py
+magnifi_base_template.egg-info/PKG-INFO
+magnifi_base_template.egg-info/SOURCES.txt
+magnifi_base_template.egg-info/dependency_links.txt
+magnifi_base_template.egg-info/top_level.txt
