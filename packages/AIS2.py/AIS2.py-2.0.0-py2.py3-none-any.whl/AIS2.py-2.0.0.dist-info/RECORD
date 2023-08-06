@@ -1,0 +1,10 @@
+AIS/__init__.py,sha256=CrYsThOpMomzLPm2Js_nto3QA1FB1gD-DKOonqBjMlM,466
+AIS/ais.py,sha256=6BtKArOx_R4JF5dV62Q6ZqDt5hYQv6Y9v3u55G7dwV4,5027
+AIS/exceptions.py,sha256=zItXQA5pAI2JEATZS8EHSpLB_yWy1pH2Eoj2zxLjeug,883
+AIS/pdf.py,sha256=n2vYD4ZwG897HSJCKoJRPTtdovfCpoaFTYIDd_U7fOU,2313
+AIS2.py-2.0.0.dist-info/AUTHORS.rst,sha256=g7bRxZWi76pE5vqpJEYLvzmCYBc-L2MecKyo8cBtUII,178
+AIS2.py-2.0.0.dist-info/LICENSE,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+AIS2.py-2.0.0.dist-info/METADATA,sha256=yI0EDUeURP7m08PUBtROnNL6hrfwekqUu4tTI3AIdVQ,3899
+AIS2.py-2.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+AIS2.py-2.0.0.dist-info/top_level.txt,sha256=TpCGo1n_2TqHse5tXeX0FIN1aWlADV2LepGRdAPD0io,4
+AIS2.py-2.0.0.dist-info/RECORD,,
