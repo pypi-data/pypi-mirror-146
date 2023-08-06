@@ -1,0 +1,10 @@
+metagen/__init__.py,sha256=glfiA-45HQrRxd2hZZ1T1OoGzQeuiXt9oNJjTLqd5WI,258
+metagen/base.py,sha256=cSMIjA8iXRHwDCnAQ4ZXLrxjvgFhwv4T0_Nt75mYlDs,5680
+metagen/elements.py,sha256=a8v3OKz24V9zbV-sRZK369_N0k3C_DeuLiw2w8qQCeQ,12315
+metagen/presets.py,sha256=oVTX_FjrOn878K8yggEJ3UxoxngTK-ndJNwhVBNfDtM,751
+metagen/register.py,sha256=5WLd_8R5zlucmBUFe-zdJSCqst05zkgrQ1cp1TMSsPg,2503
+metagen/utils.py,sha256=PIuKxW2HgmM8JZKphq9AbpxjTXXhMg07ujWs0xg43qs,1247
+ptrmetagen-1.0.4.dist-info/METADATA,sha256=-WdaRUQNjRuarxYuro9YNFY31DKeawPIdAXX2JeRq1g,1709
+ptrmetagen-1.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ptrmetagen-1.0.4.dist-info/top_level.txt,sha256=GgaFbNho65Gs7kKFBXKzmHqotvmixr4y4hXE-3tSDKM,8
+ptrmetagen-1.0.4.dist-info/RECORD,,
