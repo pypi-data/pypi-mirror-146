@@ -1,0 +1,9 @@
+captif_cpx/__init__.py,sha256=Myupfp18EVZacE4Tp7qYqYpimE8TWJJr-zQjrBwIJiA,20
+captif_cpx/logging.py,sha256=zzS6gAbzFc02Vtc9kRUC7qAd_QsXC7ZUD0rHtITgG_I,399
+captif_cpx/structures/__init__.py,sha256=zzepfZLEkwVfuhWlO14EUV739zePD3rC25pHhYWP9nc,131
+captif_cpx/structures/gps.py,sha256=smXhTSUFaHHAwblErLJAknlPrOO7HP0zQ-zrlsxXvVs,452
+captif_cpx/structures/slowdata.py,sha256=g3z46pklhM6ewWf6myO8Al4WFiK7dDv2Vbjpi204bOI,657
+captif_cpx-0.2.dist-info/LICENSE,sha256=2BV-u6DP-H6XuUOLvbPDM7TEmBB7h0nwjATj6aXSdJw,1084
+captif_cpx-0.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+captif_cpx-0.2.dist-info/METADATA,sha256=n0jSc3I82YzVIsd6mncGL4x6cxuKfBNL2xagHteKzt8,1402
+captif_cpx-0.2.dist-info/RECORD,,
