@@ -1,0 +1,16 @@
+fer_pytorch/VERSION,sha256=WYVJhIUxBN9cNT4vaBoV_HkkdC-aLkaMKa8kjc5FzgM,6
+fer_pytorch/__init__.py,sha256=4qW--fmA34jhYlWJ9LgAFyQNgg1a8z3tRCaC7xFITrc,171
+fer_pytorch/augmentations.py,sha256=9lMzvPibnWh_I7phHtWTkFEif4av0hUpiLVod60_avI,1118
+fer_pytorch/fer.py,sha256=eltVF7YXYnaBLzpopZjXvx_qY278OpitsqgmdZhoFdk,16092
+fer_pytorch/model.py,sha256=KzFfhaSM7IU7kdjRnDai1qqoGrKWpiLXFmRRRAP_vBw,655
+fer_pytorch/pre_trained_models.py,sha256=_VTc8TBYhtQBpvV7zk7jqxumUNjsJyZaZd5QYTZtbbU,795
+fer_pytorch/run_trainer.py,sha256=g2ZRdqpucL_iAaBRZbbUbTnjMqMC6dT4ttHqUFrAHAI,3306
+fer_pytorch/train.py,sha256=C2voaIC33kN-g8t3OueEK8yzd3dT0sVxl-2l-0sPEls,2790
+fer_pytorch/train_test_dataset.py,sha256=7nH9pbC0w19O6fEzMQHNpnxwHBnsFo5DR1mqiTz8sqo,1430
+fer_pytorch/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fer_pytorch/utils/utils.py,sha256=-LDToRyywhVwGHwpUuY5CVuMMSA-kNZ4Hgv15c6ovBk,1839
+fer_pytorch-1.0.0.dist-info/LICENSE.md,sha256=OkI_z14u48tnfzV-Xag5sKdSfjWcUIr4h2z1DpranpA,1068
+fer_pytorch-1.0.0.dist-info/METADATA,sha256=o-n7ktCbYrjDdN3jPoW_KACGTWtxIUZYXyWYiVyyyU4,6557
+fer_pytorch-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fer_pytorch-1.0.0.dist-info/top_level.txt,sha256=FHXgdem16h5wvg-hFLVozOIDF6z3sEBYSd3hMg5vQEI,12
+fer_pytorch-1.0.0.dist-info/RECORD,,
