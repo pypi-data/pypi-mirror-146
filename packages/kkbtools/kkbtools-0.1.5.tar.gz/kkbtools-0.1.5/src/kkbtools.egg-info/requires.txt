@@ -1,0 +1,10 @@
+feapder
+oss2
+requests
+pandas
+pymongo
+PyMySQL
+python_dateutil
+tqdm
+urllib3
+XlsxWriter
