@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: yni
+Version: 0.0.2
+Summary: A parser for the yni config file.
+Home-page: https://github.com/FrostiiWeeb/yni
+License: MPL-2.0
+Keywords: yni,config,parser
+Author: Alex Hutz
+Author-email: frostiiweeb@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/FrostiiWeeb/yni
+Description-Content-Type: text/markdown
+
+# yni
+
+A parser for the yni config file.
+
+## Example
+
+test.py
+
+```py
+from yni import Yni
+
+parser = Yni.from_file('example.yni') # here we parse from a file
+
+parser['foo']['bar'] # get the value of the key "bar" from the header "foo", returns "spam"
+# or
+parser.foo.bar # returns "spam"
+```
+
+## Example 2
+
+test_2.py
+
+```py
+from yni import Yni
+
+ string = """#foo
+ [
+     bar: spam
+ ]"""
+
+parser = Yni.from_string(string) # here we parse from a string
+
+parser['foo']['bar'] # get the value of the key "bar" from the header "foo", returns "spam"
+# or
+parser.foo.bar # returns "spam"
+```
+
+## yni file structure
+
+example.yni
+
+```yni
+#foo
+[
+    bar: spam
+]
+```
+
