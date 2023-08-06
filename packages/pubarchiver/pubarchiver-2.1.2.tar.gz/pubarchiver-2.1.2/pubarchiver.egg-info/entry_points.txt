@@ -1,0 +1,3 @@
+[console_scripts]
+pubarchiver = pubarchiver.__main__:console_scripts_main
+
