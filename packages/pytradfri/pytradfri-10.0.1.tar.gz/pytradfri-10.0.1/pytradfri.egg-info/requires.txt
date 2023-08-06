@@ -1,0 +1,5 @@
+pydantic
+
+[async]
+aiocoap==0.4.3
+DTLSSocket==0.1.12
