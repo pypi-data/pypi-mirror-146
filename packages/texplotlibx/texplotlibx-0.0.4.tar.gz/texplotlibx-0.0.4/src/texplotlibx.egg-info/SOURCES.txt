@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/texplotlib/__init__.py
+src/texplotlib/attribute.py
+src/texplotlib/curve.py
+src/texplotlib/figure.py
+src/texplotlib/label.py
+src/texplotlib/legend.py
+src/texplotlib/logmodes.py
+src/texplotlib/strutils.py
+src/texplotlibx.egg-info/PKG-INFO
+src/texplotlibx.egg-info/SOURCES.txt
+src/texplotlibx.egg-info/dependency_links.txt
+src/texplotlibx.egg-info/top_level.txt
