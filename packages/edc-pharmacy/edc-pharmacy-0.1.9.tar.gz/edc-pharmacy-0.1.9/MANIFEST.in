@@ -1,0 +1,7 @@
+include AUTHORS CHANGES LICENSE VERSION
+include MANIFEST.in
+include *.rst
+include *.txt
+recursive-include edc_pharmacy/templates *
+recursive-include edc_pharmacy/static *
+recursive-include label_templates *
