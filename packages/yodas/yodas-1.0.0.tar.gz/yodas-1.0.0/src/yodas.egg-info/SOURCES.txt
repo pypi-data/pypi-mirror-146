@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/yoda-json/__init__.py
+src/yoda-json/yoda-json.py
+src/yoda-menu/__init__.py
+src/yoda-menu/yoda-menu.py
+src/yodas.egg-info/PKG-INFO
+src/yodas.egg-info/SOURCES.txt
+src/yodas.egg-info/dependency_links.txt
+src/yodas.egg-info/top_level.txt
