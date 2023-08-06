@@ -1,0 +1,3 @@
+[console_scripts]
+rostam = rostam_pack.__main__:main
+
