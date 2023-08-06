@@ -1,0 +1,13 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+vbs.egg-info/SOURCES.txt
+vbs.egg-info/dependency_links.txt
+vbs.egg-info/top_level.txt
+vbscript/__init__.py
+vbscript/var.txt
+vbscript.egg-info/PKG-INFO
+vbscript.egg-info/SOURCES.txt
+vbscript.egg-info/dependency_links.txt
+vbscript.egg-info/top_level.txt
