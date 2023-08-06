@@ -1,0 +1,10 @@
+bait/__init__.py,sha256=025pkUFHNrpBKZw-nFWXNiI0mAqaSe7tH8N5y1Hb5sE,91
+bait/bait.py,sha256=-UJQbFKWKasPOEayW2_R9e7Du8Hq-CZtwQEdYqA52cA,27228
+bait/bait_customtests.py,sha256=pLwyLC9Sq8nChYUu3zB2SI92VVdkqHgn22WV6P3qQ1s,9553
+bait/bait_errors.py,sha256=44w-du1G7aeeYNszEeVs3kL7eWeyRVIaSTZdKu2SCIc,1194
+bait/bait_plot.py,sha256=iNEfyraVpyP6NURBtNXNZqGbbS8Dp-WIp-RNLUNHYtc,11199
+bait-2.5.9.dist-info/LICENSE.md,sha256=xh8S2nza1Sa9y-1HpMCmA-YNu_2vi2aTPNCI6RMsMD8,32472
+bait-2.5.9.dist-info/METADATA,sha256=sdcy2Mg6pE_Pv63nH1FYmiom_txPssaJCpWl6jUNaM8,2000
+bait-2.5.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bait-2.5.9.dist-info/top_level.txt,sha256=MTqnbU4si0aRtB0kMq3ODaxepsYuUgjoNIf54d3tC0s,5
+bait-2.5.9.dist-info/RECORD,,
