@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fast-explain
+Version: 0.0.5
+Summary: Fit Fast, Explain Fast
+Home-page: https://github.com/felixzhu17/FastExplain
+Author: Felix Zhu
+Author-email: zhu.felix@outlook.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: interpret
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: plotly-express
+Requires-Dist: xgboost
+Requires-Dist: statsmodels
+Requires-Dist: shap
+Requires-Dist: numpy (==1.21)
+Requires-Dist: pytest
+Requires-Dist: hyperopt
+
+# FastExplain
+0.0.5
+
+Fit Fast, Explain Fast
+
+
