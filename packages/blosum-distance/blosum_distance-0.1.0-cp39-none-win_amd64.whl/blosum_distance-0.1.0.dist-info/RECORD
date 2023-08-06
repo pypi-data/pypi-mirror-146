@@ -1,0 +1,5 @@
+blosum_distance-0.1.0.dist-info/METADATA,sha256=-47mBEKcrHgf4v84ItfvUc5vZAc0vOKOqmWLhXDlcl4,264
+blosum_distance-0.1.0.dist-info/WHEEL,sha256=eYF6dcUEPeSSPYZICcKZYjGYVnadHWeFkfxyB0e2vmY,96
+blosum_distance/__init__.py,sha256=cBqv5erZmFiXGN9TDcPxL9TOP7F5suzDpF8qnYyLf8M,66
+blosum_distance/blosum_distance.cp39-win_amd64.pyd,sha256=F396JE-AK1Hhwa1Cka2gONTtvPcVpYtPz3kB6Rrxu-I,229376
+blosum_distance-0.1.0.dist-info/RECORD,,
