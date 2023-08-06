@@ -1,0 +1,17 @@
+transformers
+einops
+unidecode
+ftfy
+emoji
+pillow
+jax
+flax
+wandb
+
+[dev]
+tqdm
+optax
+braceexpand
+datasets[streaming]
+black[jupyter]
+isort
