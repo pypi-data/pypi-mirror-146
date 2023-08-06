@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: HaveFun
+Version: 1.0.3
+Summary: A useful toolkit of many common functions for general purpose in Computer Vision, Remote Sensing and SLAM.
+Home-page: https://github.com/zhaoxuhui/HaveFun
+Author: zhaoxuhui
+Author-email: zhaoxuhui@whu.edu.cn
+License: MIT
+Keywords: ComputerVision RemoteSensing SLAM Image Video SatelliteVideo
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Requires-Dist: opencv-python (>=3.1.0)
+Requires-Dist: numpy (>=1.10)
+Requires-Dist: scipy (>=1.1.0)
+
+A useful toolkit of many common functions for general purpose in Computer Vision, Remote Sensing and SLAM.
+
+IMPORTANT Dependencies:
+
+* OpenCV
+* Numpy
+* SciPy
+
+It is the updated and reorganized version of previous projects:
+
+* RSToolkit. https://pypi.org/project/RStoolkit
+* functionModule. https://github.com/zhaoxuhui/functionModule
+
+If you have any problem installing and using this package, feel free to connect me via email.
+
+E-mail:zhaoxuhui@whu.edu.cn
+
+Have fun!
+
