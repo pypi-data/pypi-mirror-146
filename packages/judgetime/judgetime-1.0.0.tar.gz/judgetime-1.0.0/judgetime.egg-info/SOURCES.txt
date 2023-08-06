@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+judgetime/__init__.py
+judgetime/__version__.py
+judgetime/core.py
+judgetime.egg-info/PKG-INFO
+judgetime.egg-info/SOURCES.txt
+judgetime.egg-info/dependency_links.txt
+judgetime.egg-info/top_level.txt
