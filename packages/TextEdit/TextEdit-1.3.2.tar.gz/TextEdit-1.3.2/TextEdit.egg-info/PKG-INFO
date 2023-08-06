@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: TextEdit
+Version: 1.3.2
+Summary: A small module for to display the letters at the sequence.
+Home-page: https://github.com/C0rent1Perdry/TextEdit-1.3.1
+Author: Corentin Perdry
+Author-email: corentin.perdry@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/C0rent1Perdry/TextEdit-1.3.1/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A small module for to display the letters at the sequence.  
+
+New Releases
+-------------
+There are just two new fonction : defileInput ans defileInputSound. 
+
+Installation
+------------
+For windows, you must install the folder TextEdit in C:\Users\your_account\AppData\Local\python\python-version\Lib\  
+For Linux, you must install the folder TextEdit in /usr/local/lib/python/dist-packages/  
+So, you import TextEdit for Linux with
+        
+        pip3 TextEdit  
+        
+And, for Windows you import with
+        
+        py -m pip install TextEdit
+        
+You must have pygame for use the fonction defileSound and defileInputSound.  
+You can install it with this commend for Linux :  
+        
+        pip3 install pygame
+        
+And, for Windows :
+        
+        py -m pip install pygame
+        
+Importation and use
+===================
+Once you've installed, you can really quickly verified that it works with just this:  
+        
+        >>> import TextEdit
+        >>> TextEdit.defile ("Hello world")
+        
+The TextEdit module contain for the moment 4 fonction : defile ; defileInput ; defileSound ; defileInputSound.
+It does not requires argument.  
+You can put as many arguments as you want.  
+example :  
+        
+        TextEdit.defile ("Hello world",a,"Goodbye world")
+        
+Copyright
+-----------
+This software is Copyright © 2022 Corentin Perdry <corentin.perdry@gmail.com>  
+
+See the bundled LICENSE file for more information.
+
+
