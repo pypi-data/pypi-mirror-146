@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "poetry-opeco17-test-plugin"
+version = "1.0.1"
+description = ""
+authors = ["opeco17 <opeco17@gmail.com>"]
+readme = "README.md"
+packages = [{include = "poetry_opeco17_test_plugin"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+poetry = "^1.2.0b1dev0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy  = "^0.942"
+flake8 = "^4.0.0"
+black = "^22.3.0"
+isort = "^5.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+poetry-audit-plugin = "poetry_opeco17_test_plugin.plugin:TestApplicationPlugin"
