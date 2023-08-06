@@ -1,0 +1,5 @@
+depthai-sdk
+depthai
+opencv-python
+paho-mqtt
+paho-socket

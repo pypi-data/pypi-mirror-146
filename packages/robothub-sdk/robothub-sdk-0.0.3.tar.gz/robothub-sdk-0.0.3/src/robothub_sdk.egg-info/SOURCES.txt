@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/robothub_sdk/__init__.py
+src/robothub_sdk.egg-info/PKG-INFO
+src/robothub_sdk.egg-info/SOURCES.txt
+src/robothub_sdk.egg-info/dependency_links.txt
+src/robothub_sdk.egg-info/requires.txt
+src/robothub_sdk.egg-info/top_level.txt

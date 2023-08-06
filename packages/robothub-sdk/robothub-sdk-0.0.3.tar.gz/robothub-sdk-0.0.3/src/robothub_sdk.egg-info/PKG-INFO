@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: robothub-sdk
+Version: 0.0.3
+Summary: RobotHub SDK is a Python package allowing to communicate with RobotHub platform
+Home-page: https://www.luxonis.com/
+Author: Luxonis
+Author-email: support@luxonis.com
+License: UNKNOWN
+Project-URL: Documentation, https://docs.luxonis.com/projects/robothub/en/latest/
+Description: # RobotHub SDK
+        
+        RobotHub SDK is a Python package allowing to communicate with RobotHub platform
+        
+        ## Installation
+        
+        To install this package, run the following command in your terminal window
+        
+        ```
+        $ python3 -m pip install robothub-sdk
+        ```
+        
+        > :warning: **If you're using Raspberry Pi**, providing a Pi Wheels extra package url can significantly speed up the installation process by providing prebuilt binaries for OpenCV
+        > ```
+        > $ pip install --extra-index-url https://www.piwheels.org/simple/ depthai-sdk
+        > ```
+        
+        ## Usage
+        
+        TBD
+        
+        
+        ## API
+        
+        TBD
+        
+Keywords: robothub sdk depthai robot hub connect agent
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
