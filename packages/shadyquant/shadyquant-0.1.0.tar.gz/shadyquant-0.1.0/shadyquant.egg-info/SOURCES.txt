@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+shadyquant.egg-info/PKG-INFO
+shadyquant.egg-info/SOURCES.txt
+shadyquant.egg-info/dependency_links.txt
+shadyquant.egg-info/requires.txt
+shadyquant.egg-info/top_level.txt
+sq/__init__.py
+sq/version.py
