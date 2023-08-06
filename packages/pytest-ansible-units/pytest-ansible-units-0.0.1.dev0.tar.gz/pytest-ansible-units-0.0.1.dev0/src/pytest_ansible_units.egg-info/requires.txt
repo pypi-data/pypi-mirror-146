@@ -1,0 +1,9 @@
+ansible-core
+pytest
+pyyaml
+
+[test]
+darglint
+flake8-docstrings
+pre-commit
+pytest-cov
