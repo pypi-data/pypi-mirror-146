@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "rsacore"
+version = "1.0.1"
+description = "A simple RSA library for python with built-in AES, which allows you to exchange encrypted data with an unlimited size.  Examples at https://github.com/DarkestStream69/RSACore"
+authors = ["TheMade4427"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+rsa = "^4.8"
+pycryptodome = "^3.14.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
