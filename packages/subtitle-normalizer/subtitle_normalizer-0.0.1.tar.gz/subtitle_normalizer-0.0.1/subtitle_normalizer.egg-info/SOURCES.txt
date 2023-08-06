@@ -1,0 +1,6 @@
+README.md
+setup.py
+subtitle_normalizer.egg-info/PKG-INFO
+subtitle_normalizer.egg-info/SOURCES.txt
+subtitle_normalizer.egg-info/dependency_links.txt
+subtitle_normalizer.egg-info/top_level.txt
