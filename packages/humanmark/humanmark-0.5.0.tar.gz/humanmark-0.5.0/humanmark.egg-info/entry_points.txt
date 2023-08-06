@@ -1,0 +1,10 @@
+[console_scripts]
+humanmark = humanmark.cli:cli
+
+[humanmark.backends]
+markdown_it = humanmark.backends.markdown_it:MarkdownItBackend
+
+[humanmark.renderers]
+json = humanmark.render.json:JSONRenderer
+markdown = humanmark.render.markdown:MarkdownRenderer
+txt = humanmark.render.txt:TXTRenderer
