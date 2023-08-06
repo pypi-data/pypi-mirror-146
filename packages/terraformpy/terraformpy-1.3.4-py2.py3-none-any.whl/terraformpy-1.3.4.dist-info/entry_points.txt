@@ -1,0 +1,2 @@
+[console_scripts]
+terraformpy = terraformpy.cli:main
