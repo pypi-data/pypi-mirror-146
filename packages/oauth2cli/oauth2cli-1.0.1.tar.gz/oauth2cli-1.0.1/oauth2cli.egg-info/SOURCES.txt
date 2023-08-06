@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+oauth2cli/__init__.py
+oauth2cli.egg-info/PKG-INFO
+oauth2cli.egg-info/SOURCES.txt
+oauth2cli.egg-info/dependency_links.txt
+oauth2cli.egg-info/entry_points.txt
+oauth2cli.egg-info/top_level.txt

@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: oauth2cli
+Version: 1.0.1
+Summary: Generic OAuth 2.0 command-line utility to retrieve access tokens. Uses Python standard library!
+Home-page: https://github.com/aerohstudios/oauth2cli
+Author: Shiv Deepak Muddada
+Author-email: shiv@aeroh.org
+License: Apache Software License (http://www.apache.org/licenses/LICENSE-2.0)
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Classifier: Topic :: Software Development
+Requires-Python: >=3.0
+License-File: LICENSE
+
+oauth2cli
+================
+
+Generic OAuth 2.0 command-line utility to retrieve access tokens.
+
+About
+-----
+
+`oauth2cli` is a developer productivity tool. It's helpful when juggling across multiple tech stacks and you need an OAuth `access_token` to make an API call, but you don't have a quick way to generate the `access_token`. Moreover, `oauth2cli` uses standard python library and doesn't have any external dependencies.
+
+Installation, usage instructions, and examples are available on the `Github repo`_.
+
+.. _Github repo: https://github.com/aerohstudios/oauth2cli
+
+
