@@ -1,0 +1,12 @@
+---
+source: tests/integration_test.rs
+expression: output_lines
+
+---
+- "STDOUT:"
+- ""
+- ""
+- "STDERR:"
+- "error:        Failed to find provided file: 'blahblahblah'"
+- "caused_by:             No such file or directory (os error 2)"
+
