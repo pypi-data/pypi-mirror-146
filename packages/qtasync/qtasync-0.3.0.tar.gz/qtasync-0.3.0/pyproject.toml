@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "qtasync"
+version = "0.3.0"
+description = ""
+authors = ["Brian Cefali <brian@atakama.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+PySide6 = {version = "^6.2.2", optional = true}
+PySide2 = {version = "5.15.2", optional = true}
+PyQt5 = {version = "^5.15.6", optional = true}
+PyQt6 = {version = "^6.2.2", optional = true}
+PyQt5-stubs = {version = "^5.15.2", optional = true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+coverage = "^5.3"
+pre-commit = "^2.9"
+flake8 = "^3.7.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.extras]
+PySide2 = ["PySide2"]
+PySide6 = ["PySide6"]
+PyQt5 = ["PyQt5", "PyQt5-stubs"]
+PyQt6 = ["PyQt6"]
