@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: fw_heudiconv
+Version: 0.4.3
+Summary: Use heudiconv-like heuristics for BIDS curation on flywheel
+Home-page: https://github.com/PennBBL/fw_heudiconv
+Author: Tinashe M. Tapera, Matt Cieslak, Harsha Kethineni
+Author-email: tinashemtapera@gmail.com
+Maintainer: Matt Cieslak, Tinashe M. Tapera
+Maintainer-email: Matthew.Cieslak@pennmedicine.upenn.edu
+License: 3-clause BSD
+Description: ====================================================================
+        =======
+        FlywheelTools: Software for HeuDiConv-Style BIDS Curation On Flywheel
+        =====================================================================
+        
+        .. image:: https://readthedocs.org/projects/fw-heudiconv/badge/?version=latest
+          :target: http://fw-heudiconv.readthedocs.io/en/latest/?badge=latest
+          :alt: Documentation Status
+        
+        .. image:: https://circleci.com/gh/PennLINC/fw-heudiconv.svg?style=shield
+          :target: https://circleci.com/gh/PennLINC/fw-heudiconv
+        
+        .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4752798.svg?style=shield
+          :target: https://zenodo.org/record/4752798#.YJwSt5NKg8N
+        
+        
+        ``FlywheelTools`` is a suite of software tools for curating your data into BIDS on Flywheel. It's comprised of 2 parts:
+        
+        ``fw-heudiconv``, which is a Python-based tool kit for curating BIDS data on the
+        Flywheel platform, and ``flaudit``, which is a Flywheel project auditor.
+        
+        Full documentation at `readthedocs <http://fw-heudiconv.readthedocs.io/en/latest>`_
+        
+        License: BSD-3
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: datalad
+Provides-Extra: doc
+Provides-Extra: docs
+Provides-Extra: duecredit
+Provides-Extra: resmon
+Provides-Extra: sentry
+Provides-Extra: tests
+Provides-Extra: all
