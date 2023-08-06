@@ -1,0 +1,10 @@
+LICENSE
+README.md
+ninja_parser.py
+pyproject.toml
+setup.py
+NinjaParser.egg-info/PKG-INFO
+NinjaParser.egg-info/SOURCES.txt
+NinjaParser.egg-info/dependency_links.txt
+NinjaParser.egg-info/entry_points.txt
+NinjaParser.egg-info/top_level.txt
