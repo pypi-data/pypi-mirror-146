@@ -1,0 +1,10 @@
+certifi==2019.9.11
+chardet==3.0.4
+grpcio~=1.23
+grpcio-tools~=1.23
+idna==2.8
+nerdvision-grpc-api>=2.0.0
+protobuf~=3.9
+requests==2.22.0
+six==1.12.0
+urllib3==1.25.6
