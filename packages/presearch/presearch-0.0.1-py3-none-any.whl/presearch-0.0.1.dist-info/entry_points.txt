@@ -1,0 +1,2 @@
+[console_scripts]
+presearch = presearch:__main__.main

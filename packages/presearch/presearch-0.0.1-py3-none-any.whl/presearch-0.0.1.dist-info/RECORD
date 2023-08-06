@@ -1,0 +1,13 @@
+presearch/__init__.py,sha256=cseiCrPFuVPpXXbd3DRu7nsXkXDt4FZ-PhlY-vZ466o,101
+presearch/__main__.py,sha256=MMTuanDL-yPSu4mGJYzMJHeMobENEp8yxZNdjiXJBgA,1203
+presearch/constraints.py,sha256=qWFB5rNL0r0WamT2wm_G71WwZow1e45rxgsWMM55bck,1005
+presearch/crawler.py,sha256=D40E6fav0ziK7-L9eoYLEAkJy2yNPme92o9XurNu7WM,1511
+presearch/presearch.py,sha256=zNIoH9MOmm1f-rQnOg2c3LlZ34ZaNg7PgniUT2eh1Lk,454
+presearch/query.py,sha256=x8JGCFBfuacbgow6OwoaEoo_7ceLeMHDpMCo6Gt9Luo,4515
+presearch/tree.py,sha256=QXWAHWlazGAJVFWyyHnEQufEL0sTesudgZEgqQYIbS8,3950
+presearch-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+presearch-0.0.1.dist-info/METADATA,sha256=uiplGONOxpLDHcTpidwY2ZP4JxtE8resOWgzfGBAg5o,3239
+presearch-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+presearch-0.0.1.dist-info/entry_points.txt,sha256=0y-J4Xlxw5jV7yXS7orQcnAOOHIUu5NL-4PKLphcNJ4,54
+presearch-0.0.1.dist-info/top_level.txt,sha256=puZ2sp7CI6f8m1xZQ7gWWRAVfMI37cy8pJEFnGjaTtw,10
+presearch-0.0.1.dist-info/RECORD,,
