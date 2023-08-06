@@ -1,0 +1,12 @@
+hyfetch/__init__.py,sha256=VXtobn4gliTrKLqoxBqzvTTDlX7k5oaSkAO57eaJXnU,122
+hyfetch/color_util.py,sha256=cJckYhr3jytUkt4tzAGBddWldAMq3hfUH9NoTGmCk9E,3893
+hyfetch/main.py,sha256=yuZfJ8HQlyF2AO6h4MzNFmS_hu7yH0p4w8GUtLFLOG8,4657
+hyfetch/neofetch_util.py,sha256=PrgJQgv7yOOxoG4Tonb1bZRbhQ9IXArfUA1TojnT31U,1405
+hyfetch/presets.py,sha256=5hA2PQoJInOIK6qHaiuEs8JW36dqSZX115LrT2iTjz8,6461
+hyfetch/scripts/neofetch_mod.sh,sha256=08Z1geD7QLLvnNDmJcZXJqJWSZOm4dlsLoUdMmZ0Wjo,377182
+HyFetch-1.0.4.dist-info/LICENSE.md,sha256=LUamRdAfCw-VH8poEnF73JKa6iEKIEzUko82D2XXFMA,1083
+HyFetch-1.0.4.dist-info/METADATA,sha256=PEdqvPHTZZ4x5SR7ZRSs0LafegotoUcBeG9KJ6_8F2k,4508
+HyFetch-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+HyFetch-1.0.4.dist-info/entry_points.txt,sha256=G2c_lJ1pI3px_64klbi6jMfr5MKcVRGD3pZXELr5MuQ,46
+HyFetch-1.0.4.dist-info/top_level.txt,sha256=6RLwDBocM0pxwxY7UHmZdAgOM0cfD2NDqWtWVnSIpzY,8
+HyFetch-1.0.4.dist-info/RECORD,,
