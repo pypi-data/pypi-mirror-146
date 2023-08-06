@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lamda-recorder
+Version: 0.2.2
+Summary: recorder for machine learning
+Home-page: https://github.com/pypa/sampleproject
+Author: Haoyuan He
+Author-email: hehy@lamda.nju.edu.cn
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
