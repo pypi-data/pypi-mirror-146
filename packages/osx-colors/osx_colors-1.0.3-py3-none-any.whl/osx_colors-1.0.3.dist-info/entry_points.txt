@@ -1,0 +1,2 @@
+[console_scripts]
+osx-colors = src.__main__:main
