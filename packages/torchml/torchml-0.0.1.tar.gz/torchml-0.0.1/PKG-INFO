@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: torchml
+Version: 0.0.1
+Summary: Classical ML on top of PyTorch
+Home-page: https://learnables.github.com/torchml
+Author: Seb Arnold
+Author-email: smr.arnold@gmail.com
+License: License :: OSI Approved :: Apache Software License
+Download-URL: https://github.com/learnables/torchml/archive/0.0.1.zip
+Description: # mypackage
+        
+        --------------------------------------------------------------------------------
+        
+        ![Test Status](https://github.com/seba-1511/mypackage/workflows/Testing/badge.svg?branch=master)
+        
+        Template to start new PyPI packages
+        
+        To get started, grep and replace for `mypackage` everywhere.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
