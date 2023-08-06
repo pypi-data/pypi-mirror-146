@@ -1,0 +1,5 @@
+include README.md
+recursive-include cding *
+global-exclude __pycache__
+global-exclude tmp
+global-exclude *.py[co]
