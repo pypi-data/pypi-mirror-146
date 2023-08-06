@@ -1,0 +1,14 @@
+<ul>
+    {%- for toc_item in page.toc %}
+    <li class="">
+        <a class="reference internal {% if toc_item.active %}aclick{% endif %}" href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+    </li>
+        <ul>
+        {%- for toc_item in toc_item.children %}
+        <li>
+            <a class="reference internal {% if toc_item.active %}scroll-current{% endif %}" href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+        </li>
+        {%- endfor %}
+        </ul>
+    {%- endfor %}
+</ul>

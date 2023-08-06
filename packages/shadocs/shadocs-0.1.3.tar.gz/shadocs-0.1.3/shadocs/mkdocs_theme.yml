@@ -1,0 +1,12 @@
+# Config options for 'readthedocs' theme
+
+static_templates:
+    - 404.html
+
+highlightjs: true
+collapse_by_default: false
+include_search_page: true
+search_index_only: false
+hljs_languages:
+    - yaml
+    - django

@@ -1,0 +1,52 @@
+.aclick {
+    color: #ff2121;
+}
+
+.nolist {
+    list-style: none;
+}
+
+#mkdocs-search-query:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#mkdocs-search-query {
+    font-family: "Song", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #343838;
+    height: 45px;
+}
+
+.breadcrumbs {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.breadcrumbs li {
+    float: left;
+    list-style-type: none;
+}
+
+.breadcrumbs-link {
+    color: #fff;
+    font-size: 700;
+    text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+    color: #ff2121;
+    font-size: 800;
+}
+
+code,
+kbd,
+pre,
+samp {
+    background: #fff5f5;
+    padding: 1px 8px;
+    border-radius: 5px;
+}

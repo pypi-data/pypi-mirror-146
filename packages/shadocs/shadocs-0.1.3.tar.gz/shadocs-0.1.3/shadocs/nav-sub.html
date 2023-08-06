@@ -1,0 +1,14 @@
+{%- if not nav_item.children %}
+<li class="toctree-l2 {% if nav_item.active %} current-page{% endif %}">
+    <a href="{{ nav_item.url|url }}" class="reference internal{% if nav_item.active %} current{% endif %}">{{ nav_item.title }}</a>
+</li>
+{%- else %}
+  <li class="toctree-l2 {% if nav_item.active %} current-page{% endif %}">
+    <a href="#" class="reference internal{% if nav_item.active %} current{% endif %}">{{ nav_item.title }}</a>
+    <ul class="current">
+        {%- for nav_item in nav_item.children %}
+            {% include "nav-sub.html" %}
+        {%- endfor %}
+    </ul>
+  </li>
+{%- endif %}

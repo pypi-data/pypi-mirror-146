@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    {%- block site_meta %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% if page and page.is_homepage %}
+    <meta name="description" content="{{ config.site_description }}">{% endif %} {% if config.site_author %}
+    <meta name="author" content="{{ config.site_author }}">{% endif %} {% if config.site_favicon %}
+    <link rel="shortcut icon" href="{{ config.site_favicon|url }}"> {% else %}
+    <link rel="shortcut icon" href="{{ 'img/favicon.ico'|url }}">{% endif %} {%- endblock %} {%- block htmltitle %}
+    <title>{% if page and page.title and not page.is_hompage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    {%- endblock %} {%- block styles %}
+    <!-- <link rel="stylesheet" href="{{ 'css/theme.css'|url }}" type="text/css" />
+    <link rel="stylesheet" href="{{ 'css/theme_extra.css'|url }}" type="text/css" /> -->
+    <!-- 添加的样式 -->
+    <link href="{{ 'css/shadocs.css'|url }}" rel="stylesheet">
+    <link href="{{ 'css/shaphinx.css'|url }}" rel="stylesheet">
+    <link href="{{ 'css/shaphinx-extensions.css'|url }}" rel="stylesheet"> {%- if config.theme.highlightjs %}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"> {%- endif %} {%- for path in config['extra_css'] %}
+    <link href="{{ path|url }}" rel="stylesheet"> {%- endfor %} {%- endblock %} {%- block libs %} {% if page %}
+    <script>
+        // Current page data
+        var mkdocs_page_name = {
+            {
+                page.title | tojson | safe
+            }
+        };
+        var mkdocs_page_input_path = {
+            {
+                page.file.src_path | string | tojson | safe
+            }
+        };
+        var mkdocs_page_url = {
+            {
+                page.abs_url | tojson | safe
+            }
+        };
+    </script>
+    {% endif %}
+    <script src="{{ 'js/jquery-2.1.1.min.js'|url }}" defer></script>
+    <script src="{{ 'js/jquery.slimscroll.min.js'|url }}" defer></script>
+    <script src="{{ 'js/modernizr-2.8.3.min.js'|url }}" defer></script>
+    {%- if config.theme.highlightjs %}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    {%- for lang in config.theme.hljs_languages %}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{lang}}.min.js"></script>
+    {%- endfor %}
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    {%- endif %} {%- endblock %} {%- block extrahead %} {% endblock %} {%- block analytics %} {% if config.google_analytics %}
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+        ga('send', 'pageview');
+    </script>
+    {% endif %} {%- endblock %}
+</head>
+
+<body {% if page and page.is_homepage %} class="homepage" {% endif %} role="document">
+    {% include "partials/icons.html" %}
+
+    <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+    <input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+    <label class="overlay sidebar-overlay" for="__navigation"></label>
+    <label class="overlay toc-overlay" for="__toc"></label> {% if theme_announcement -%}
+    <div class="announcement">
+        <aside class="announcement-content">
+            {% block announcement %} {{ theme_announcement }} {% endblock announcement %}
+        </aside>
+    </div>
+    {%- endif %}
+
+    <div class="page">
+        <header class="mobile-header">
+            <div class="header-left">
+                <label class="nav-overlay-icon" for="__navigation">
+                <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+            </label>
+            </div>
+            <div class="header-center">
+                {%- block site_name %}
+                <a href="{{ nav.homepage.url|url }}"><img src="../img/logo.png">
+                    <div class="brand">{{ config.site_name }} 文档</div>
+                </a> {%- endblock %}
+            </div>
+            <div class="header-right">
+                <label class="toc-overlay-icon toc-header-icon" for="__toc">
+                <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            </label>
+            </div>
+        </header>
+
+        <aside class="sidebar-drawer">
+            <div class="sidebar-container">
+                {% block left_sidebar %}
+                <div class="sidebar-sticky">
+                    {% include "sidebar/brand.html" %}
+                    <!-- {% include "sidebar/search.html" %} -->
+                    {%- block search_button %} {% if 'search' in config['plugins'] %}{% include "searchbox.html" %}{% endif %} {%- endblock %} {% include "sidebar/scroll-start.html" %} {% include "sidebar/navigation.html" %} {% include "sidebar/ethical-ads.html" %} {% include
+                    "sidebar/scroll-end.html" %}
+                </div>
+                {% endblock left_sidebar %}
+            </div>
+            {% include "breadcrumbs.html" %}
+        </aside>
+
+        <main class="main">
+            <div class="content">
+                <article role="main">
+                    <label class="toc-overlay-icon toc-content-icon{% if shaphinx_hide_toc %} no-toc{% endif %}" for="__toc">
+                <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+                </label> {% block content %} {{page.content}} {% endblock %}
+                </article>
+
+
+                <footer>
+                    {% block footer %}
+                    <div class="related-pages">
+                        {%- block next_prev %} {%- if page and (page.next_page or page.previous_page) and not config.theme.disable_nav_previous_next %}
+                        <li class="nolist{% if not page.previous_page %} disabled{% endif %}">
+                            <a class="prev-page" rel="prev" {% if page.previous_page %}href="{{ page.previous_page.url|url }}" {% endif %}>
+                                <svg><use href="#svg-arrow-right"></use></svg>
+                                <div class="page-info">
+                                    <div class="context">
+                                        <span>前一页</span>
+                                    </div>
+                                    <div class="title">{{ page.previous_page.title }}</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nolist{% if not page.next_page %} disabled{% endif %} ">
+                            <a class="next-page" rel="next" {% if page.next_page %}href="{{ page.next_page.url|url }}" {% endif %}>
+                                <div class="page-info">
+                                    <div class="context">
+                                        <span>下一页</span>
+                                    </div>
+                                    <div class="title">{{ page.next_page.title }}</div>
+                                </div>
+                                <svg><use href="#svg-arrow-right"></use></svg>
+                            </a>
+                        </li>
+                        {%- endif %} {%- endblock %}
+                    </div>
+
+                    <div class="related-information">
+                        {% if not config.theme.disable_footer %} {% if not config.theme.disable_footer_except_revision %}
+                        <p>{% if config.copyright %}
+                            <small>{{ config.copyright }}</small><br> {% endif %}
+                            <small>文档使用 <a href="http://www.mkdocs.org/">MkDocs</a>构建。采用的主题为<a href="http://llango.com">llango</a>创建<a href="http://github.com/llango/shadocs">Shadocs</a>。</small>
+                        </p>
+                        {% endif %} {% if page and page.meta.revision_date %} {% if config.theme.disable_footer_except_revision %}
+                        <hr>{% else %}<br>{% endif %}
+                        <small>修改时间: {{ page.meta.revision_date }}</small> {% endif %} {% endif %}
+                    </div>
+                    {% endblock footer %}
+                </footer>
+            </div>
+
+            <aside class="toc-drawer{% if shaphinx_hide_toc %} no-toc{% endif %}">
+                {% block right_sidebar %} {% if not shaphinx_hide_toc %}
+                <div class="toc-sticky toc-scroll">
+                    <div class="toc-title-container">
+                        <span class="toc-title">
+                    内容
+                </span>
+                    </div>
+                    <div class="toc-tree-container">
+                        <div class="toc-tree">
+                            <div class="col-md-3">{% include "toc.html" %}</div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %} {% endblock right_sidebar %}
+            </aside>
+        </main>
+    </div>
+    <!-- {% include "versions.html" %} -->
+
+    {%- block scripts %}
+    <script>
+        var base_url = '{{ base_url }}';
+    </script>
+    <script src="{{ 'js/theme.js'|url }}" defer></script>
+    <script src="{{ 'js/gumshoe.js'|url }}" defer></script>
+    <script src="{{ 'js/main.js'|url }}" defer></script>
+    {%- for path in config['extra_javascript'] %}
+    <script src="{{ path|url }}" defer></script>
+    {%- endfor %} {%- endblock %}
+</body>
+
+</html>
+{% if page and page.is_homepage %}
+<!--
+MkDocs version : {{ mkdocs_version }}
+Build Date UTC : {{ build_date_utc }}
+-->
+{% endif %}

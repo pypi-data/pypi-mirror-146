@@ -1,0 +1,22 @@
+<div class="sidebar-tree">
+  <ul class="current">
+    {% for nav_item in nav %}
+    {% if nav_item.children %}
+        <li class="toctree-l1 has-children">
+            <a href="#" class="current reference internal">{{ nav_item.title }}</a>
+            <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox">
+            <label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label>
+            <ul>
+            {% for nav_item in nav_item.children %}
+                {% include "nav-sub.html" %}
+            {% endfor %}
+            </ul>
+        </li>
+    {% else %}
+        <li class="toctree-l1{% if nav_item.active %} current-page{% endif %}">
+            <a class="reference internal" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+        </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
