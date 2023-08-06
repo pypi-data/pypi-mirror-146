@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container mt-5">
+        {% include 'forms/register.html' %}
+    </div>
+    {% if message != None %}
+        {% include 'components/toast.html' %}
+    {% endif %}
+
+{% endblock  %}
