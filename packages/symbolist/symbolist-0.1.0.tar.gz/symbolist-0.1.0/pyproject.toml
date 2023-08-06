@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "symbolist"
+version = "0.1.0"
+description = "A list of railway symbols"
+authors = ["DGEX Solutions <contact@dgexsol.fr>"]
+license = "Proprietary"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rectpack = "^0.2.2"
+svgwrite = "^1.4.2"
+CairoSVG = "^2.5.2"
+Pillow = "^9.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+black = "^22.1.0"
+pyproject-flake8 = "^0.0.1-alpha.2"
+coverage = "^6.3.1"
+flake8-formatter-junit-xml = "^0.0.6"
+pre-commit = "^2.17.0"
+
+[[tool.poetry.source]]
+name = "osrdata-pypi"
+url = "https://gitlab.com/api/v4/groups/8419749/-/packages/pypi/simple"
+secondary = true
+
+[[tool.poetry.source]]
+name = "project-pypi"
+url = "https://gitlab.com/api/v4/projects/35267930/packages/pypi"
+secondary = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-v -s"
+python_files = ["tests.py", "test_*.py"]
+junit_family = "xunit2"
+
+[tool.coverage.run]
+omit = [
+    ".*",
+]
+
+[tool.coverage.report]
+fail_under = 75
+
+[tool.flake8]
+max-line-length = 120
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

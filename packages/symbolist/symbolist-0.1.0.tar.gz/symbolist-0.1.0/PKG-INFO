@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: symbolist
+Version: 0.1.0
+Summary: A list of railway symbols
+License: Proprietary
+Author: DGEX Solutions
+Author-email: contact@dgexsol.fr
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: CairoSVG (>=2.5.2,<3.0.0)
+Requires-Dist: Pillow (>=9.1.0,<10.0.0)
+Requires-Dist: rectpack (>=0.2.2,<0.3.0)
+Requires-Dist: svgwrite (>=1.4.2,<2.0.0)
