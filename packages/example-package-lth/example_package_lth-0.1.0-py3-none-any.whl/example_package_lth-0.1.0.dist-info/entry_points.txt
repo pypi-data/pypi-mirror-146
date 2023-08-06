@@ -1,0 +1,3 @@
+[console_scripts]
+example-package-lth=example_package_lth.console:main
+
