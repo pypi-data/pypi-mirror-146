@@ -1,0 +1,10 @@
+mars_clock/Ls_utils.py,sha256=oB1nAxKAT3kv5c5US5jWGXcxkDihxHC43eUvLmTQ7gk,8985
+mars_clock/__init__.py,sha256=8dt6ilXpZ0bolcQzlWzHnKzKqUP1MYvDWDNujagceuM,228
+mars_clock/mission_sols.py,sha256=sBjavUbeFc4YjFqHUP1FAX-OFaH-03xLmEVU8KdMqK8,4574
+tests/__init__.py,sha256=38pdDhEZk2RiT5kga2DPbhTYeDHdsCXNaEr7HH1-k20,208
+tests/test_mars_clock.py,sha256=-j6u6XPBqhXMPT9P6muPO2rOkV3Dryi9NI01qVzoEq4,1419
+mars_clock-0.2.dist-info/LICENSE,sha256=mOWZpkH4qDq_J7ordd43WPHYwKJJpQtWYnT90pceBJs,1086
+mars_clock-0.2.dist-info/METADATA,sha256=pYjQSGfwG-DQN9gopibmYoI8KsNHOzigBwAkNUxaVdM,1163
+mars_clock-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mars_clock-0.2.dist-info/top_level.txt,sha256=LuXuWANH04CDw_WncymdeXWYOJz7W2DvaTxSgV938Yg,17
+mars_clock-0.2.dist-info/RECORD,,
