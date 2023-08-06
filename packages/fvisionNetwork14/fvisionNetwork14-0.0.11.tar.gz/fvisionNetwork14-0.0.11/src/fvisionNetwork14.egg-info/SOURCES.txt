@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/fvisionNetwork14/__init__.py
+src/fvisionNetwork14/fvNet14.py
+src/fvisionNetwork14/image_pre_processing.py
+src/fvisionNetwork14/plot_model_acuracy.py
+src/fvisionNetwork14/plot_model_loss.py
+src/fvisionNetwork14.egg-info/PKG-INFO
+src/fvisionNetwork14.egg-info/SOURCES.txt
+src/fvisionNetwork14.egg-info/dependency_links.txt
+src/fvisionNetwork14.egg-info/requires.txt
+src/fvisionNetwork14.egg-info/top_level.txt

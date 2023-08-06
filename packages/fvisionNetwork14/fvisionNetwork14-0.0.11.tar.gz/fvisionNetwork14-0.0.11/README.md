@@ -1,0 +1,66 @@
+[![fvisionNetwork14][fvisionNetwork14-image]][fvisionNetwork14-url]
+[![license][license-image]][license-url]
+# fvisionNetwork14
+ > "fvisionNetwork14" is a CNN model for image classification that can categorize "n" classes. It has been tuned to have less codes than other models with higher code complexity. The model can categorize with improved accuracy with just a few lines of code. The dataset can be immediately fed into the model using an image pre-processing module that has been built into the package. Two graphical modules are given for plotting model accuracy and loss by providing model history as input.
+
+## Installation
+
+```pip install fvisionNetwork14```
+
+## Released version
+version: 0.0.11
+
+<!DOCTYPE html>
+<h2> Modules:</h2>
+  <li>fvNet14</li>
+  <li>image_preprocessing</li>
+  <li>plot_accuracy</li>
+  <li>plot_loss</li>  
+</ul>
+<h2> Pre-requisites:</h2>
+    <li>tensorflow</li>
+<h2> Dependancy modules:</h2>
+    <li>numpy</li>
+    <li>matplotlib</li>
+
+
+## How to use?
+
+> Directory Structure
+
+![](img/project_dir2.PNG)
+
+### image_preprocessing
+
+    image_pre_processing.image_preprocessing(dataset_path, image_height = 50, image_width = 50)
+
+### Splitting train and test data using "image_array" and "class_label" from image_preprocessing module
+
+    X_train,x_test,Y_train,y_test = train_test_split(image_pre_processing.image_preprocessing.image_array,image_pre_processing.image_preprocessing.class_label,test_size=0.2,random_state=45)
+
+### fvNet14
+
+    deomo_model = fvNet14.fvNet14(image_height = 50, image_width = 50, color_channel = 3, output_layer = 10)
+    deomo_model.compile(loss= 'categorical_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
+    history = deomo_model.fit(xtrain,ytrain,epochs=50,validation_data=(xtest,ytest))
+
+## plot_accuracy
+
+    plot_model_acuracy.plot_accuracy(history, height = 10, width = 10)
+
+## plot_loss
+
+    plot_model_loss.plot_loss(history, height = 10, width = 10)
+
+## License
+
+© 2022 Kalyan Mohanty
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
+
+[fvisionNetwork14-image]: https://img.shields.io/pypi/v/fvisionNetwork14?style=plastic
+[fvisionNetwork14-url]: https://pypi.org/project/fvisionNetwork14/
+
+[license-image]: https://img.shields.io/github/license/KalyanMohanty/fvisionNetwork14
+[license-url]:https://github.com/KalyanMohanty/fvisionNetwork14/blob/main/LICENSE
