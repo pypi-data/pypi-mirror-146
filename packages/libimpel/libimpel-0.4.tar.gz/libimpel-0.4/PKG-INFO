@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: libimpel
+Version: 0.4
+Summary: Python bindings for libimpel
+Home-page: https://github.com/igaw/libimpel
+Author: Daniel Wagner
+Author-email: dwagner@suse.de
+License: GPL-2.0-only
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Description:
+
+no have
