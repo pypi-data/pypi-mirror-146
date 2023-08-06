@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+pictor/__init__.py
+pictor.egg-info/PKG-INFO
+pictor.egg-info/SOURCES.txt
+pictor.egg-info/dependency_links.txt
+pictor.egg-info/top_level.txt
+pictor/tkutils/__init__.py
+pictor/tkutils/misc.py
+pictor/tkutils/simple_dialogs.py
+pictor/vinci/__init__.py
+pictor/vinci/board.py
+pictor/vinci/events.py
+pictor/vinci/mind.py
+pictor/vinci/vinci.py
+pictor/vinci/plugins/__init__.py
