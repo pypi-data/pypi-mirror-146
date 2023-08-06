@@ -1,0 +1,9 @@
+labelbigquery/__init__.py,sha256=K9yAVwWk9Nf47IBPJxbLD5mB82RNUKBpP06CnPK8R4o,180
+labelbigquery/fetch_and_write_rows.py,sha256=2jN5tCSx8T9O4hnKkXbN3hOxx2a9b9pIHPMhHtnyJOE,929
+labelbigquery/load_data_to_big_query.py,sha256=KmalzHu8_HdM4RstY7LpQ9LJKTg-mmgJm1s8hmXN_Qs,1016
+labelbigquery/make_dataset_and_data_rows.py,sha256=3QAiayn45Ro_YcIAQ6oFihjG-FWKpnZkcnNb4IMLsi4,489
+labelbigquery-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+labelbigquery-0.1.0.dist-info/METADATA,sha256=WLLor4xFpdOmMJy3rDE1kICQNevJgyXzz0Ee3qwooU0,4771
+labelbigquery-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+labelbigquery-0.1.0.dist-info/top_level.txt,sha256=FvS8IzKpXkRADAG9e9-wF5sqZNLX4Avs64sD8NeW6FA,14
+labelbigquery-0.1.0.dist-info/RECORD,,
