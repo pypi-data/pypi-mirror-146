@@ -1,0 +1,10 @@
+README.md
+setup.py
+scenera.node.egg-info/PKG-INFO
+scenera.node.egg-info/SOURCES.txt
+scenera.node.egg-info/dependency_links.txt
+scenera.node.egg-info/requires.txt
+scenera.node.egg-info/top_level.txt
+scenera/node/__init__.py
+scenera/node/scenemark.py
+scenera/node/spec.py
