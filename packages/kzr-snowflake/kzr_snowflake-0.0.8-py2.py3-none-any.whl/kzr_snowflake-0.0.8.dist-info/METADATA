@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: kzr-snowflake
+Version: 0.0.8
+Summary: Snowflake helper library
+Home-page: https://github.com/kzraryan-mu/kzr_snowflake
+Author: Md Kamruz Zaman Rana
+Author-email: mrkfw@mail.missouri.edu
+License: GNU General Public License v3
+Keywords: kzr_snowflake
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click (>=7.0)
+Requires-Dist: bump2version (==0.5.11)
+Requires-Dist: watchdog (==0.9.0)
+Requires-Dist: flake8 (==3.7.8)
+Requires-Dist: tox (==3.14.0)
+Requires-Dist: coverage (==4.5.4)
+Requires-Dist: Sphinx (==1.8.5)
+Requires-Dist: twine (==1.14.0)
+Requires-Dist: Click (==7.1.2)
+Requires-Dist: asn1crypto (==1.4.0)
+Requires-Dist: wheel (==0.33.6)
+Requires-Dist: azure-common (==1.1.27)
+Requires-Dist: azure-core (==1.17.0)
+Requires-Dist: azure-storage-blob (==12.8.1)
+Requires-Dist: boto3 (==1.18.30)
+Requires-Dist: botocore (==1.21.30)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: cffi (==1.14.6)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: charset-normalizer (==2.0.4)
+Requires-Dist: cryptography (==3.4.8)
+Requires-Dist: idna (==3.2)
+Requires-Dist: isodate (==0.6.0)
+Requires-Dist: pycryptodomex (==3.10.1)
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: pyOpenSSL (==20.0.1)
+Requires-Dist: msrest (==0.6.21)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: oauthlib (==3.1.1)
+Requires-Dist: requests-oauthlib (==1.3.0)
+Requires-Dist: oscrypto (==1.2.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: pyarrow (==5.0.0)
+Requires-Dist: PyJWT (==2.1.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: snowflake-connector-python (==2.6.2)
+Requires-Dist: s3transfer (==0.5.0)
+Requires-Dist: snowflake-sqlalchemy (==1.3.3)
+Requires-Dist: SQLAlchemy (==1.4.29)
+Requires-Dist: urllib3 (==1.26.6)
+
+=============
+kzr_snowflake
+=============
+
+
+.. image:: https://img.shields.io/pypi/v/kzr_snowflake.svg
+        :target: https://pypi.python.org/pypi/kzr_snowflake
+
+.. image:: https://img.shields.io/travis/kzraryan-mu/kzr_snowflake.svg
+        :target: https://travis-ci.com/kzraryan-mu/kzr_snowflake
+
+.. image:: https://readthedocs.org/projects/kzr-snowflake/badge/?version=latest
+        :target: https://kzr-snowflake.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Snowflake helper library
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://kzr-snowflake.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.1 (2022-01-07)
+------------------
+
+* First release on PyPI.
+
+
