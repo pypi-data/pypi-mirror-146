@@ -1,0 +1,3 @@
+[console_scripts]
+locutus = asimov.locutus:cli
+olivaw = asimov.olivaw:olivaw
