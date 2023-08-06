@@ -1,0 +1,5 @@
+file-io-utilities>=0.0.1.27
+pyspark-utilities>=0.0.19
+bda-service-utils>=0.0.1.28
+kafka-python>=2.0.2
+pyarrow>=6.0.0
