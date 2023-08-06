@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dash_auth0_oauth/Auth0_auth.py
+dash_auth0_oauth/__init__.py
+dash_auth0_oauth/auth.py
+dash_auth0_oauth.egg-info/PKG-INFO
+dash_auth0_oauth.egg-info/SOURCES.txt
+dash_auth0_oauth.egg-info/dependency_links.txt
+dash_auth0_oauth.egg-info/requires.txt
+dash_auth0_oauth.egg-info/top_level.txt
+test_scripts/test.py

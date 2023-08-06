@@ -1,0 +1,4 @@
+dash>=2.1.0
+Flask>=2.0.2
+authlib>=0.15.5
+requests>=2.27.1
