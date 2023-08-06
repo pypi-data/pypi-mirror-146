@@ -1,0 +1,2 @@
+pytorch_ligntning
+transformers>=4.13.0
