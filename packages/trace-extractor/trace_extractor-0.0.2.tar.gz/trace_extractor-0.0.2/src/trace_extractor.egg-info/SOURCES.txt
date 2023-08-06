@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/trace_extractor/__init__.py
+src/trace_extractor/__main__.py
+src/trace_extractor/data_extract.py
+src/trace_extractor/data_transform.py
+src/trace_extractor/entry_point.py
+src/trace_extractor/input_file_sanitizing.py
+src/trace_extractor/logger.py
+src/trace_extractor.egg-info/PKG-INFO
+src/trace_extractor.egg-info/SOURCES.txt
+src/trace_extractor.egg-info/dependency_links.txt
+src/trace_extractor.egg-info/entry_points.txt
+src/trace_extractor.egg-info/top_level.txt

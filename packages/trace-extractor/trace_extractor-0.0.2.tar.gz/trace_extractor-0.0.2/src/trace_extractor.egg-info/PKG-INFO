@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: trace-extractor
+Version: 0.0.2
+Summary: MPEG-4 Trace extractor for ns-3
+Home-page: https://github.com/FtZPetruska/trace_extractor
+Author: Pierre Wendling
+Author-email: pierre.wendling.4@gmail.com
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/FtZPetruska/trace_extractor
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Trace Extractor
+
+A wrapper around ffprobe that takes MPEG-4 files and outputs video traces in a format readable by [ns-3](https://gitlab.com/nsnam/ns-3-dev)'s UdpTraceClient application.
+
+## Dependencies
+
+You need to have [ffmpeg](https://ffmpeg.org/)'s `ffprobe` present in your `PATH`. Alternatively, you can use a custom `ffprobe` with the `--ffprobe-path` argument:
+
+```
+python3 -m trace_extractor --ffprobe-path /path/to/ffprobe
+```
+
+## Installation
+
+`trace_extractor` can be installed via `pip`:
+
+```
+pip install trace-extractor
+```
+
+## Usage
+
+Running the command without arguments will scan the `input` folder in the current directory for mp4 files, process each of them and write the results in an `output` folder in the current directory.
+
+```
+python3 -m trace_extractor
+```
+
+Input files can also be manually specified as positional arguments, note that the `input` folder will still be scanned.
+
+```
+python3 -m trace_extractor file1.mp4 file2.mp4 ...
+```
+
+You can specify a custom input directory:
+
+```
+python3 -m trace_extractor -i path/to/input/directory
+```
+
+You can turn off scanning of input directories altogether by specifying `--disable-input-dir`:
+
+```
+python3 -m trace_extractor --disable-input-dir file1.mp4
+```
+
+## Example
+
+An example video is present in the input folder, it is a recording of id Software's 1993 DOOM's DEMO1 demo played back on the [prboom-plus](https://github.com/coelckers/prboom-plus) source port.
+
+
