@@ -1,0 +1,9 @@
+pysproto/__init__.py,sha256=5FTwN7ciHi0wQz7l-zbPymSwqVlvRCgRgHr_V6cDtlU,176
+pysproto/_sproto.c,sha256=ZeaxMU8x8ozXEnB2G_fH3pxKdAXaoSiZRNOzc2bEnO8,1045643
+pysproto/_sproto.cp310-win_amd64.pyd,sha256=_WM_cs7ACXZcit4RSWq8S24Q6zsWF6618uA6jdMzoIA,160768
+pysproto/sprotodump.py,sha256=1wFnH0-AJwWr9ZbTwFTInL8PA_JfVcTbjMnvwEjtOmg,7638
+pysproto/sprotoparser.py,sha256=HsDUet4qPx4A7KnfLOKJLTPtelezwQgurbgksfVOi1s,7032
+sproto-0.1.0rc1.dist-info/METADATA,sha256=GL5c7zI7bZHYqhy_BieY2wuGDf-0bVxPjbqtv0gCV90,2940
+sproto-0.1.0rc1.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+sproto-0.1.0rc1.dist-info/top_level.txt,sha256=_GEEjVYVzI4RZ19OnPRDf9ClXJg0v9Mfm2glT8R_Fn4,9
+sproto-0.1.0rc1.dist-info/RECORD,,
