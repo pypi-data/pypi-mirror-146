@@ -1,0 +1,11 @@
+eth-brownie
+tqdm
+
+[dev]
+black
+moonworm>=0.1.9
+
+[distribute]
+setuptools
+twine
+wheel
