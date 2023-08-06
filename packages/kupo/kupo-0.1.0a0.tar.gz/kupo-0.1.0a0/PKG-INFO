@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kupo
+Version: 0.1.0a0
+Summary: 
+Author: Darren Burns
+Author-email: darrenb900@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: rich (>=12.2.0,<13.0.0)
+Requires-Dist: textual (>=0.1.0,<0.2.0)
