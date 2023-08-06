@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: camkes-deps
+Version: 0.7.2
+Summary: Metapackage for downloading build dependencies for CAmkES
+Home-page: https://docs.sel4.systems/CAmkES/
+Author: TrustworthySystems
+Author-email: pypi@trustworthy.systems
+License: BSD2
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+The CAmkES tool has many python dependencies.  This package depends on them all
+so that installing this package will pull in all the necessary packages.
+
+This package is maintained as part of https://github.com/seL4/camkes-tool.git, 
+in directory https://github.com/seL4/camkes-tool/tree/master/tools/python-deps
+
+
