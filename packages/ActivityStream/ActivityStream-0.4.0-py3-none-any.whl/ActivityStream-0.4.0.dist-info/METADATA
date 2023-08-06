@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ActivityStream
+Version: 0.4.0
+Summary: UNKNOWN
+Home-page: http://sf.net/p/activitystream
+License: Apache License, http://www.apache.org/licenses/LICENSE-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Requires-Dist: pymongo (>=2.8)
+
+UNKNOWN
+
+
