@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/kabbes_repository_generator.egg-info/PKG-INFO
+src/kabbes_repository_generator.egg-info/SOURCES.txt
+src/kabbes_repository_generator.egg-info/dependency_links.txt
+src/kabbes_repository_generator.egg-info/requires.txt
+src/kabbes_repository_generator.egg-info/top_level.txt
+src/repository_generator/BaseRepository.py
+src/repository_generator/__init__.py
+src/repository_generator/__main__.py
+src/repository_generator/repository_generator.py
