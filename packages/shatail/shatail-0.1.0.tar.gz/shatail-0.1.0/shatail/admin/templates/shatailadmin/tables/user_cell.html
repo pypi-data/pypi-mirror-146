@@ -1,0 +1,3 @@
+<td {% if column.classname %}class="{{ column.classname }}" {% endif %}>
+    {% if display_name %} {% include "shatailadmin/shared/user_avatar.html" with user=value username=display_name %} {% endif %}
+</td>

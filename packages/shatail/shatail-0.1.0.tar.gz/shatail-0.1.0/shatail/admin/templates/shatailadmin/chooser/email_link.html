@@ -1,0 +1,13 @@
+{% load i18n shatailadmin_tags %} {% trans "Add an email link" as email_str %} {% include "shatailadmin/shared/header.html" with title=email_str %}
+
+<div class="nice-padding">
+    {% include 'shatailadmin/chooser/_link_types.html' with current='email' %}
+
+    <form action="{% url 'shatailadmin_choose_page_email_link' %}{% querystring %}" method="post" novalidate>
+        {% csrf_token %}
+        <ul class="fields">
+            {% for field in form %} {% include "shatailadmin/shared/field_as_li.html" %} {% endfor %}
+            <li><input type="submit" value="{% trans 'Insert link' %}" class="button" /></li>
+        </ul>
+    </form>
+</div>

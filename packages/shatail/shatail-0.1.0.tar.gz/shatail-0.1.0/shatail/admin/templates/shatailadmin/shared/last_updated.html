@@ -1,0 +1,4 @@
+{% load i18n shatailadmin_tags %} {% if last_updated %}
+<span title="{{ last_updated }}" data-shatail-tooltip="{{ last_updated }}" {% if classname %}class="{{ classname }}" {% endif %}>
+        {% if since_text %}{{ since_text }}{% endif %} {% timesince_last_update last_updated time_prefix=time_prefix %}
+    </span> {% endif %}

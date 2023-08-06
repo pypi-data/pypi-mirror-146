@@ -1,0 +1,17 @@
+{% extends "shatailadmin/base.html" %} {% load i18n %} {% block titletag %}{% trans "groups" %}{% endblock %} {% block extra_js %} {{ block.super }}
+<script>
+    window.headerSearch = {
+        url: "{% url 'shatailusers_groups:index' %}",
+        termInput: "#id_q",
+        targetOutput: "#group-results"
+    }
+</script>
+{% endblock %} {% block content %} {% trans "groups" as groups_str %} {% trans "Add a group" as add_a_group_str %} {% url "shatailusers_groups:add" as add_link %} {% include "shatailadmin/shared/header.html" with title=groups_str action_url=add_link action_text=add_a_group_str
+icon="group" search_url="shatailusers_groups:index" %}
+
+<div class="nice-padding">
+    <div id="group-results" class="groups">
+        {% include "shatailusers/groups/results.html" %}
+    </div>
+</div>
+{% endblock %}

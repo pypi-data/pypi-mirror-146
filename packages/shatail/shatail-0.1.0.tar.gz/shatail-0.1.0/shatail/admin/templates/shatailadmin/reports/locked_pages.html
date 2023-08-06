@@ -1,0 +1,9 @@
+{% extends 'shatailadmin/reports/base_page_report.html' %}
+{% load i18n %}
+{% block listing %}
+    {% include "shatailadmin/reports/listing/_list_unlock.html" %}
+{% endblock %}
+
+{% block no_results %}
+    <p>{% trans "No locked pages found." %}</p>
+{% endblock %}

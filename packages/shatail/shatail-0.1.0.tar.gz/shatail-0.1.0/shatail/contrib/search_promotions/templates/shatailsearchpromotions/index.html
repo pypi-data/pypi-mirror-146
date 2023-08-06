@@ -1,0 +1,17 @@
+{% extends "shatailadmin/base.html" %} {% load i18n %} {% block titletag %}{% trans "Search Terms" %}{% endblock %} {% block extra_js %} {{ block.super }}
+<script>
+    window.headerSearch = {
+        url: "{% url 'shatailsearchpromotions:index' %}",
+        termInput: "#id_q",
+        targetOutput: "#editorspicks-results"
+    }
+</script>
+{% endblock %} {% block content %} {% trans "Promoted search results" as sp_title_str %} {% trans "Add new promoted result" as sp_text_str %} {% url "shatailsearchpromotions:add" as add_link %} {% include "shatailadmin/shared/header.html" with title=sp_title_str
+action_url=add_link icon="pick" action_text=sp_text_str search_url="shatailsearchpromotions:index" %}
+
+<div class="nice-padding">
+    <div id="editorspicks-results" class="redirects">
+        {% include "shatailsearchpromotions/results.html" %}
+    </div>
+</div>
+{% endblock %}

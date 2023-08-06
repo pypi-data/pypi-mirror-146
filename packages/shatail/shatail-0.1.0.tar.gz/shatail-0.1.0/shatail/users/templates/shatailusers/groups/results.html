@@ -1,0 +1,5 @@
+{% load i18n shatailadmin_tags %} {% if groups %} {% component table %} {% include "shatailadmin/shared/pagination_nav.html" with items=page_obj linkurl="shatailusers_groups:index" %} {% elif is_searching %}
+<p role="alert">{% blocktrans trimmed with query=search_form.q.value %}Sorry, no groups match "{{ query }}"{% endblocktrans %}</p>
+{% else %} {% url 'shatailusers_groups:add' as shatailusers_create_group_url %}
+<p>{% blocktrans trimmed %}There are no groups configured. Why not <a href="{{ shatailusers_create_group_url }}">add some</a>?{% endblocktrans %}</p>
+{% endif %}

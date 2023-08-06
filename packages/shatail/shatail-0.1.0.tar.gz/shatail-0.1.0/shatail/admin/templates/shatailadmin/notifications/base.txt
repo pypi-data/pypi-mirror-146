@@ -1,0 +1,11 @@
+{% load shatailadmin_tags i18n %}
+{% base_url_setting as base_url %}
+
+{% block greeting %}
+{% blocktrans trimmed with username=user.get_short_name|default:user.get_username %}Hello {{ username }},{% endblocktrans %}
+{% endblock %}
+{% block content %}
+{% endblock %}
+{% block preferences %}
+{% trans "Edit your notification preferences here:" %} {{ base_url }}{% url 'shatailadmin_account' %}#notifications
+{% endblock %}

@@ -1,0 +1,7 @@
+from shatail.admin.widgets import Button
+
+
+class UserListingButton(Button):
+    def __init__(self, label, url, classes=set(), **kwargs):
+        classes = {"button", "button-small", "button-secondary"} | set(classes)
+        super().__init__(label, url, classes=classes, **kwargs)

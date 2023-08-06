@@ -1,0 +1,13 @@
+{% load i18n shatailadmin_tags %}
+<section id="tab-upload" class="w-tabs__panel" role="tabpanel" hidden aria-labelledby="tab-label-upload">
+    {% include "shatailadmin/shared/non_field_errors.html" with form=form %}
+    <form class="document-upload" action="{% url 'shataildocs:chooser_upload' %}" method="POST" enctype="multipart/form-data" novalidate>
+        {% csrf_token %}
+        <ul class="fields">
+            {% for field in form %} {% if field.is_hidden %} {{ field }} {% else %} {% include "shatailadmin/shared/field_as_li.html" with field=field %} {% endif %} {% endfor %}
+            <li>
+                <button type="submit" class="button button-longrunning" data-clicked-text="{% trans 'Uploading…' %}">{% icon name="spinner" %}<em>{% trans 'Upload' %}</em></button>
+            </li>
+        </ul>
+    </form>
+</section>

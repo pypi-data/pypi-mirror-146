@@ -1,0 +1,32 @@
+{% load shatailadmin_tags %}
+
+{% comment %}
+    JavaScript declarations to be included on the 'create page' and 'edit page' views
+{% endcomment %}
+
+{% allow_unicode_slugs as unicode_slugs_enabled %}
+<script>
+    window.chooserUrls = {
+        'pageChooser': '{% url "shatailadmin_choose_page" %}',
+        'externalLinkChooser': '{% url "shatailadmin_choose_page_external_link" %}',
+        'emailLinkChooser': '{% url "shatailadmin_choose_page_email_link" %}',
+        'phoneLinkChooser': '{% url "shatailadmin_choose_page_phone_link" %}',
+        'anchorLinkChooser': '{% url "shatailadmin_choose_page_anchor_link" %}',
+    };
+    window.unicodeSlugsEnabled = {% if unicode_slugs_enabled %}true{% else %}false{% endif %};
+</script>
+
+<script src="{% versioned_static 'shatailadmin/js/collapsible.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/comments.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/vendor/rangy-core.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/vendor/mousetrap.min.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/expanding-formset.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/modal-workflow.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/page-editor.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/vendor/xregexp.min.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/vendor/urlify.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/workflow-action.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/workflow-status.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/lock-unlock-action.js' %}"></script>
+<script src="{% versioned_static 'shatailadmin/js/vendor/bootstrap-tooltip.js' %}"></script>
+{% hook_output 'insert_editor_js' %}

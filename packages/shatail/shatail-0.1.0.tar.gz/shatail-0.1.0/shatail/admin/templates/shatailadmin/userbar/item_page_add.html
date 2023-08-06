@@ -1,0 +1,5 @@
+{% extends "shatailadmin/userbar/item_base.html" %} {% load i18n shatailadmin_tags %} {% block item_content %}
+<a href="{% url 'shatailadmin_pages:add_subpage' self.page.id %}" target="_parent" role="menuitem">
+        {% icon name="plus" class_name="shatail-action-icon" %}
+        {% trans 'Add a child page' %}
+    </a> {% endblock %}
