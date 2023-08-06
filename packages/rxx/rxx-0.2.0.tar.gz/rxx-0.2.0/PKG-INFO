@@ -1,0 +1,50 @@
+Metadata-Version: 1.2
+Name: rxx
+Version: 0.2.0
+Summary: ReactiveX extensions
+Home-page: https://github.com/maki-nage/rxx.git
+Author: Romain Picard
+Author-email: romain.picard@oakbits.com
+License: MIT
+Project-URL: Documentation, https://www.makinage.org/doc/rxx/latest/index.html
+Description: 
+        =======================
+        ReactiveX eXtensions
+        =======================
+        
+        .. image:: https://img.shields.io/pypi/v/rxx.svg
+            :target: https://pypi.org/project/rxx/
+            :alt: PyPI
+        
+        .. image:: https://github.com/maki-nage/rxx/actions/workflows/ci.yml/badge.svg
+            :target: https://github.com/maki-nage/rxx/actions/workflows/ci.yml
+            :alt: Github WorkFlows
+        
+        .. image:: https://coveralls.io/repos/github/maki-nage/rxx/badge.svg?branch=master
+            :target: https://coveralls.io/github/maki-nage/rxx?branch=master
+            :alt: Code Coverage
+        
+        .. image:: https://readthedocs.org/projects/rxx/badge/?version=latest
+            :target: https://rxx.readthedocs.io/en/latest/?badge=latest
+            :alt: Documentation
+        
+        
+        Additional ReactiveX operators.
+        
+        Get Started
+        ============
+        
+        Installation
+        =============
+        
+        Rxx is available on PyPi and can be installed with pip:
+        
+        .. code:: console
+        
+            python3 -m pip install rxx
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
