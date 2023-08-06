@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: yaml-override
+Version: 0.0.1
+Summary: A YAML pre-processor to override one or more YAML files with the values.
+Home-page: https://github.com/intelliguy/yaml-override
+Author: Sungil Im
+Author-email: usnexp@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/intelliguy/yaml-override/issues
+Project-URL: Source, https://github.com/intelliguy/yaml-override/
+Keywords: yaml,merge,override
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# yaml-override
+override values on the base yaml using a override yamls
+
+
