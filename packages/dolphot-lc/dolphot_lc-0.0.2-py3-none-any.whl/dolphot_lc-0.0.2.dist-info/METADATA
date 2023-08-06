@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dolphot-lc
+Version: 0.0.2
+Summary: An HST analysis package that uses Dolphot to create lightcurves
+Home-page: https://github.com/patkel/dolphot_lc
+Author: Patrick Kelly, Thomas Procter
+Author-email: plkelly@umn.edu, proct073@umn.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/patkel/dolphot_lc/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+UNKNOWN
+
