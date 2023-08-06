@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fthat
+Version: 0.0.14
+Summary: ft-hat Python library
+Home-page: https://gitlab.com/kraeml/py-fthat
+Author: Michael Schaar
+Author-email: kraeml@sesamestreet.franken.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/kraeml/py-fthat/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# py-fthat
+
+Python client to communicate with a fthat on a raspberry pi.
+
+See <https://tx-pi.de/de/hat/>
+
+It uses the ``gpiozerro`` library.
+
+
