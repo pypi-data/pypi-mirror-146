@@ -1,0 +1,13 @@
+extinfo/.cli.py.swm,sha256=R7loQ_aiwgXxYgxA6Eu8TY94FO8tfj7m_cy2Z2Bsrb8,12288
+extinfo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extinfo/cli.py,sha256=zAXzOrSxvSDAw3Md32cifST8IXDAeEgtgvzYuviH-24,1554
+extinfo/exceptions.py,sha256=tdaLY2y-iCK3JvJUQd_VVsNNxsxEmfgav-gLLHJpioE,95
+extinfo/extractors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extinfo/extractors/fileinfo_com.py,sha256=s1a9ZPgEv6e5vMyWiDqCTmKqBcGlhWKutMYRon--j0k,600
+extinfo/extractors/filesuffix_com.py,sha256=Waq721gnAPo5WQw4nKwPOMcQt2y76DoWzhbbVfGU0gM,1166
+extinfo/utils.py,sha256=VU71rxbKZeoUAuEDBstArDgYx0fTGfMdjKExOLRL5zk,846
+extinfo-0.0.5.dist-info/entry_points.txt,sha256=OIvUCf_HXO_G7XaFi_Ucaq8yJd-WEgpGn3Oxe4r3780,43
+extinfo-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+extinfo-0.0.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+extinfo-0.0.5.dist-info/METADATA,sha256=-YKX6CnnphPvx-Ji9-ZwPdXFeA3SwjFD3zv56XeWdU0,3972
+extinfo-0.0.5.dist-info/RECORD,,
