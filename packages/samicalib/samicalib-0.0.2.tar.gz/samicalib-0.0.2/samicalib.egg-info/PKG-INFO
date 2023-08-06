@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: samicalib
+Version: 0.0.2
+Summary: gets you a samica
+Home-page: UNKNOWN
+Author: Antek Meco
+Author-email: nik000@protonmail.com
+License: MIT
+Keywords: samica
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+what a nice library i wonder what it does
+
