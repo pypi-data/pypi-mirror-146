@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sliceri18n/__init__.py
+sliceri18n/py.typed
+sliceri18n/version.py
+sliceri18n.egg-info/PKG-INFO
+sliceri18n.egg-info/SOURCES.txt
+sliceri18n.egg-info/dependency_links.txt
+sliceri18n.egg-info/requires.txt
+sliceri18n.egg-info/top_level.txt
