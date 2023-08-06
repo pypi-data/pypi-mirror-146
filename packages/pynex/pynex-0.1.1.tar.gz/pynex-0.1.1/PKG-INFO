@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pynex
+Version: 0.1.1
+Summary: PyGame-based GUI Library.
+Home-page: https://github.com/Pixelsuft/pynex
+Author: Pixelsuft
+License: MIT
+Project-URL: Readme, https://github.com/Pixelsuft/pynex/blob/main/README.MD
+Project-URL: Example, https://github.com/Pixelsuft/pynex/blob/main/main.py
+Project-URL: Issue tracker, https://github.com/Pixelsuft/pynex/issues
+Keywords: pynex
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# [pynex](https://github.com/Pixelsuft/pynex/)
+PyGame based GUI Library
+## Screenshots
+[![Screenshot1](https://user-images.githubusercontent.com/68371847/162572356-c4fe6ab7-d1b7-40e4-b563-53872776b5bb.png)](https://github.com/Pixelsuft/pynex)
+## Install
+On Windows:
+```sh
+python -m pip install pynex
+```
+On Linux:
+```sh
+python3 -m pip install pynex
+```
+## Links
+[Readme](https://github.com/Pixelsuft/pynex/blob/main/README.MD) <br />
+[Example](https://github.com/Pixelsuft/pynex/blob/main/main.py) <br />
+[Issue tracker](https://github.com/Pixelsuft/pynex/issues)
+
+
