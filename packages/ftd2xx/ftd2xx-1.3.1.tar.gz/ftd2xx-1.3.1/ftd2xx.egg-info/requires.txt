@@ -1,0 +1,9 @@
+
+[:platform_system == "Windows"]
+pywin32
+
+[:python_version < "3.8"]
+typing_extensions
+
+[aio]
+async_timeout
