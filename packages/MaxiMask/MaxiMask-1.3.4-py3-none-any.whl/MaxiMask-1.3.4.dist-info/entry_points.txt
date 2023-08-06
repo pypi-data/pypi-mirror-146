@@ -1,0 +1,4 @@
+[console_scripts]
+maximask = maximask_and_maxitrack.scripts.maximask:main
+maxitrack = maximask_and_maxitrack.scripts.maxitrack:main
+
