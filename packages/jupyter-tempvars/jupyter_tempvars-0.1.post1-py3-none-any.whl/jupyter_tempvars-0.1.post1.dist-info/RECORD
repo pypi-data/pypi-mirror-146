@@ -1,0 +1,12 @@
+jupyter_tempvars/__init__.py,sha256=xwNWcXOcAfQV0igmQUoav-sIeFVunwHQqYC6D3XbFYc,844
+jupyter_tempvars/__main__.py,sha256=aYYeylyRnWXlR49Jlna-xG9TPm7KL3gLeqp3ppxPcLM,643
+jupyter_tempvars/cli.py,sha256=IVPw2-Hr1ihLl_OipfUvPBszJQOznfAb3OQXqYdZrvU,1710
+jupyter_tempvars/version.py,sha256=BJ4uG1P63dESI3SY9PF6iC0mt_rv4AIhL9tnF3_l63U,531
+jupyter_tempvars/extension/jupyter_tempvars.js,sha256=WJ8Z4WK9Jm51LsyK84Mq_jxMcukNu1X_BTj1ucsE-rM,5324
+jupyter_tempvars/extension/jupyter_tempvars.yml,sha256=ddzzrWyc3b2iRM3sQGgM6bJLDn5ph5cZFxvuNg6rOug,503
+jupyter_tempvars-0.1.post1.dist-info/LICENSE.txt,sha256=QaJ4VeuUo2DlK_PepxBrVW1U9MMm2HywAw5bq0uwy_c,1068
+jupyter_tempvars-0.1.post1.dist-info/METADATA,sha256=cVHvZ63ISg64E7-Vlwr69uyqbF3VsjDpP-qQ6pujZEg,12384
+jupyter_tempvars-0.1.post1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jupyter_tempvars-0.1.post1.dist-info/entry_points.txt,sha256=WVorIXG0invV1vUEd-TNjBpxJGrFuLo0XKCq30lcLjw,63
+jupyter_tempvars-0.1.post1.dist-info/top_level.txt,sha256=LKBgOuPb4UV7CHcIgnhse5QBxar1ohF9BhgSg4pp4Mg,17
+jupyter_tempvars-0.1.post1.dist-info/RECORD,,
