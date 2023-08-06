@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-exiv2
+Version: 0.11.0
+Summary: python-exiv2 is now exiv2
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# python-exiv2 is now exiv2
+
+This package has been renamed. Use `pip install exiv2` instead.
+
+New package: https://pypi.org/project/exiv2/
+
+

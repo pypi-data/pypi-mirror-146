@@ -1,0 +1,7 @@
+README.md
+setup.py
+python_exiv2.egg-info/PKG-INFO
+python_exiv2.egg-info/SOURCES.txt
+python_exiv2.egg-info/dependency_links.txt
+python_exiv2.egg-info/requires.txt
+python_exiv2.egg-info/top_level.txt
