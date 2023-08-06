@@ -1,0 +1,11 @@
+liste_iniziativa_medica/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liste_iniziativa_medica/__main__.py,sha256=LWQqEONWACYBZPsFd4pBNgA4jvjJdAXsTPlx-Ay2lEE,58
+liste_iniziativa_medica/gui.py,sha256=Hd9DnmmBUmv_xuTaMla3Vmt6bqey9dYskf0y1zKdQEs,5219
+liste_iniziativa_medica/helpers.py,sha256=ZJObyB5Ccwejg3_eN78KVkKxWgb_UGfLWr0gbFx3o4Q,2016
+liste_iniziativa_medica/list.py,sha256=4p7d-r43SS-mbWmuNQfS38fcgdrfo7C-QSVFNZ1Cm8I,13764
+liste_iniziativa_medica-0.0.6.dist-info/LICENSE,sha256=ajxCpFG1ZxRGDKhOE45GyYsTpVBwzw4xagnZYh2Uooc,1086
+liste_iniziativa_medica-0.0.6.dist-info/METADATA,sha256=3XkJq5X81SD-jifpHy5nn9ECQ55wIYHM3Rng4xxIq_I,635
+liste_iniziativa_medica-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+liste_iniziativa_medica-0.0.6.dist-info/entry_points.txt,sha256=c9FfqRirrJiLZ6TpobyPUkofX4C74boAIrO561dSiCg,52
+liste_iniziativa_medica-0.0.6.dist-info/top_level.txt,sha256=N-tij5cYi7bNtW4Va9TZn5Is6ywm9I6t0sbH-ie4y94,24
+liste_iniziativa_medica-0.0.6.dist-info/RECORD,,
