@@ -1,0 +1,14 @@
+opencv-python
+opencv-contrib-python
+onnx
+onnxruntime
+pip
+gdown
+PyYAML
+simplejson
+vidgear==0.1.9
+pyzmq
+filterpy==1.4.5
+paho-mqtt
+requests
+mmh3
