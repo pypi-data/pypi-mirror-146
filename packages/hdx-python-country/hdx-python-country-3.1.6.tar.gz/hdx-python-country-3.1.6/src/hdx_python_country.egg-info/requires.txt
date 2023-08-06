@@ -1,0 +1,4 @@
+hdx-python-utilities>=3.2.0
+libhxl>=4.24.1
+pyphonetics
+exchangerates
