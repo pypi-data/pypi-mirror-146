@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+amazeing123/src/amazeing123.egg-info/PKG-INFO
+amazeing123/src/amazeing123.egg-info/SOURCES.txt
+amazeing123/src/amazeing123.egg-info/dependency_links.txt
+amazeing123/src/amazeing123.egg-info/top_level.txt
+amazeing123/src/amazeing123.py
+amazeing123/src/amazeing123.egg-info/SOURCES.txt
