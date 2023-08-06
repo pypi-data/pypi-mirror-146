@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: korexo-profile
+Version: 0.5
+Summary: Read KorEXO sonde profile CSV files
+Home-page: https://gitlab.com/dew-waterscience/korexo_profile
+Author: DEW Water Science (Kent Inverarity)
+Author-email: kent.inverarity@sa.gov.au
+License: All rights reserved
+Keywords: science
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: lasio
+
+# korexo_profile
+
+Read KorEXO sonde profile CSV files.
+
+Source code is at https://gitlab.com/dew-waterscience/korexo_profile
+
+Documentation is at https://dew-waterscience.gitlab.io/korexo_profile
+
+
+
