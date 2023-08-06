@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+waifus.egg-info/PKG-INFO
+waifus.egg-info/SOURCES.txt
+waifus.egg-info/dependency_links.txt
+waifus.egg-info/requires.txt
+waifus.egg-info/top_level.txt
