@@ -1,0 +1,9 @@
+RPA/Dialogs/__init__.py,sha256=1oHUNotB8UtZiYcIIPzyyMlNnl-b65zq3WcPjFPMd4c,58
+RPA/Dialogs/dialog.py,sha256=AvWWpdwscuy2tK6ta9RLWQ-3mcnUK8fNx_Paj8Qjh6w,6281
+RPA/Dialogs/dialog_types.py,sha256=qsl2nhn3uXINkXV1qZHwaVValSaCH4dtfb31PsaLJcs,425
+RPA/Dialogs/library.py,sha256=xMFhJuwiGl_HKY3qkmOXIZ4t3vgyZ3RK8v44F69nggI,40724
+RPA/Dialogs/utils.py,sha256=9jGL_S3yPrz7_u2CuoNinv4e2RquA4E9YH6Ega7mv8M,1829
+rpaframework_dialogs-1.1.1.dist-info/LICENSE,sha256=PjT5Pz2KtuQshio3J4Sr34dEfvQV_MFCSqRhJ1PCUdY,11560
+rpaframework_dialogs-1.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+rpaframework_dialogs-1.1.1.dist-info/METADATA,sha256=1AKXJ0_LpJXZpxhz19k0qGpvigCrBRwKqv9UwY2MGaM,1158
+rpaframework_dialogs-1.1.1.dist-info/RECORD,,
