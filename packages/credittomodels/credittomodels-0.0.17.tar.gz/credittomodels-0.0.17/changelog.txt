@@ -1,0 +1,22 @@
+Changelog
+=========
+
+0.0.0  Basic models for 'Creditto' project and config added
+0.0.1 Changed internal imports
+0.0.2 General fixes
+0.0.3 Fixes in package setup
+0.0.4 More fixes in package setup
+0.0.5 Matching Bid in OFFER model - '0' by default instead of 'NULL'
+0.0.6 New property added to OFFER model - final_interest
+0.0.7 New property added to MATCH model - final_interest
+0.0.8 Adding google protobuf support for Bid message type - compiled proto, serializing and deserializng methods
+0.0.9 Adding error handling for failed Bid desiarilizing
+0.0.10 Adding protobuf support for Offer and Match message types - compiled proto, serializing and deserializng methods
+0.0.11 Minor fix in Match model - 'monthly payment' values is '-1' by default (instead of NULL)
+0.0.12 Offer, Bid and Match ID's data type is now int64 - required to store long UUID's
+0.0.13 Added handling for invalid user input - preventing from Gateway to crash on serialization errors
+0.0.14 Added a method that can be used to calculate MONTHLY loan payments basing on loan sum, interest and duration
+0.0.15 Added 'sum' property to the Match model and Proto
+0.0.16 Updated methods responsible for matches serialization and deserialization - added the 'sum' property
+0.0.17 Added objects for ORM mapping
+
