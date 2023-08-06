@@ -1,0 +1,18 @@
+AllowUsers default
+
+PubkeyAuthentication yes
+PasswordAuthentication yes
+ChallengeResponseAuthentication no
+
+AllowTcpForwarding remote
+PermitTunnel no
+GatewayPorts clientspecified
+PermitRootLogin no
+
+X11Forwarding no
+PrintMotd no
+
+AcceptEnv LANG LC_*
+Subsystem	sftp	/usr/lib/openssh/sftp-server
+
+LogLevel INFO
