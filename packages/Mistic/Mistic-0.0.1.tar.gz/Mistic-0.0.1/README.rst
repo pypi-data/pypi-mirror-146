@@ -1,0 +1,78 @@
+Mistic: image tSNE visualizer
+=============================
+
+This is a Python tool using the Bokeh library to view multiple multiplex
+images simultaneously. The code has been tested on 7-panel Vectra TIFF,
+32- & 64-panel CODEX TIFF, 16-panel CODEX QPTIFF and 44-panel t-CyCIF
+TIFF images.
+
+Mistic’s GUI with user inputs is shown below:
+
+![](https://github.com/MathOnco/Mistic/raw/main/fig_readme/Figure_2.jpg)
+
+
+**Figure description:** A sample Mistic GUI with user inputs is shown.
+**A.** User-input panel where imaging technique choice, stack montage
+option or markers can be selected, images borders can be added, new or
+pre-defined image display coordinates can be chosen, and a theme for the
+canvases can be selected. **B.** Static canvas showing the image t-SNE
+colored and arranged as per user inputs. **C.** Live canvas showing the
+corresponding t-SNE scatter plot where each image is represented as a
+dot. The live canvas has tabs for displaying additional information per
+image. Metadata for each image can be obtained by hovering over each
+dot.
+
+Features of Mistic
+------------------
+
+-  Two canvases:
+
+   -  still canvas with the image tSNE rendering
+   -  live canvases with tSNE scatter plots for image metadata rendering
+
+-  Dropdown option to select the imaging technique: Vectra, t-CyCIF, or
+   CODEX
+-  Option to choose between Stack montage view or multiple multiplexed
+   images by selecting the markers to be visualised at once
+-  Option to place a border around each image based on image metadata
+-  Option to use a pre-defined tSNE or generate a new set of tSNE
+   co-ordinates
+-  Option to shuffle images with the tSNE co-ordinates
+-  Option to render multiple tSNE scatter plots based on image metadata
+-  Hover functionality available on the tSNE scatter plot to get more
+   information of each image
+-  Save, zoom, etc each of the Bokeh canvases
+
+Requirements
+------------
+
+-  Python >= 3.6 
+
+   -  Install Python from here: https://www.python.org/downloads/
+
+
+
+Additional information
+----------------------
+
+-  For instructions on how to run Mistic on the t-CyCIF data, please
+   check:
+   https://mistic-rtd.readthedocs.io/en/latest/vignette_example_tcycif.html
+
+-  For instructions on how to run Mistic on the toy data from our NSCLC
+   Vectra FoVs, please
+   check:https://mistic-rtd.readthedocs.io/en/latest/vignette_example_vectra.html
+
+-  Paper on bioRxiv:
+   https://www.biorxiv.org/content/10.1101/2021.10.08.463728v1
+
+-  Documentation: https://mistic-rtd.readthedocs.io
+
+-  Code has been published at Zenodo:
+   https://doi.org/10.5281/zenodo.5912169 
+
+-  Toy data is published here: https://doi.org/10.5281/zenodo.6131933
+
+-  Mistic is highlighted on Bokeh’s user showcase: http://bokeh.org/
+
+
