@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+"""
+Module estimartor_template.py
+--------------------------------------------
+A template for rendering estimators from a parsed output of the C5.0 decision tree; 
+"""
+import pandas as pd
+import numpy as np
+
+
+class {{ estimator_name }}(object):
+    
+    def predict(self, X):
+        {% for node in tree %}
+        {{ '    ' * node.node_level }}if X['{{ node.feature_name }}'] {{ node.operator }} {{ node.value }}:
+        {%- if node.is_terminal %}
+            {{ '    ' * node.node_level }}return '{{ node.label }}'
+        {% elif node.has_subtree_call %}
+            {{ '    ' * node.node_level }}return self.{{ node.subtree_name }}(X)
+
+        {% endif %}
+        {%- endfor %}
+    
+    {% for sub_tree in sub_trees %}
+    def {{ sub_tree.name }}(self, X):
+        {% for node in sub_tree.nodes %}
+        {{ '    ' * node.node_level }}if X['{{ node.feature_name }}'] {{ node.operator }} {{ node.value }}:
+        {%- if node.is_terminal %}
+            {{ '    ' * node.node_level }}return '{{ node.label }}'
+        {% elif node.has_subtree_call %}
+            {{ '    ' * node.node_level }}return self.{{ node.subtree_name }}(X)
+
+        {% endif %}
+        {%- endfor %}
+    {%- endfor %}
+    
+    def batch_predict(self, X: pd.DataFrame):
+        {% for rule in rules -%}
+        X.loc[X.eval("{{ rule }}"), 'prediction'] = '{{ labels[loop.index0] }}'
+        {% endfor -%}
+        
+        preds = X.pop('prediction')
+        return preds
+

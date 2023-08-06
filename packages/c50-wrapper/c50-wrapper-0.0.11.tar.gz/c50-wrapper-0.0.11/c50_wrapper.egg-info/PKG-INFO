@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: c50-wrapper
+Version: 0.0.11
+Summary: A python wrapper fot the C5.0 algorithm that works on linux applications; With the wrapper developers can train decision tree models in pure python and pandas;
+Author: Luis Felipe Muller
+Author-email: luisfmuller@gmail.com
+License: UNKNOWN
+Keywords: Decision Tree,C5.0,Machine Learning
+Platform: UNKNOWN
+
+UNKNOWN
+

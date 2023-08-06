@@ -1,0 +1,99 @@
+# -*- coding: utf-8 -*-
+"""
+Module estimartor_template.py
+--------------------------------------------
+A template for rendering estimators from a parsed output of the C5.0 decision tree; 
+"""
+import pandas as pd
+import numpy as np
+
+
+class {{ estimator_name }}(object):
+    {% for rule in rule_set.rules %}
+    def rule_{{ rule.rule_number }}(self, X):
+        {%- for condition in rule.conditions %}
+        {{ '    ' * loop.index0 }}if X['{{ condition.feature_name }}'] {{ condition.operator }} {{ condition.value }}:
+        {%- endfor %}
+        {{ '    ' * rule.conditions.__len__() }}return '{{ rule.label }}', {{ rule.confidence }}
+
+        return '{{ rule.label }}', 0.
+    {% endfor %}
+
+
+    def predict(self, X):
+        
+        label_map = {
+            {%- for label in rule_set.labels %}
+            '{{ label }}': {{ loop.index0 }},
+            {%- endfor %}
+        }
+
+        idx_map = {
+            {%- for label in rule_set.labels %}
+            {{ loop.index0 }}: '{{ label }}',
+            {%- endfor %}
+        }
+
+        scores = np.zeros(shape={{ rule_set.labels.__len__() }}, dtype=np.float32)
+        {% for rule in rule_set.rules %}
+        label, confidence = self.rule_{{ rule.rule_number }}(X)
+        scores[label_map[label]] += confidence
+
+        {% endfor %}
+        scores = scores / scores.sum()
+
+        arg_max = scores.argmax()
+
+        # if sample has not activated any rule
+        # then return the default label
+        if scores[arg_max] == 0.:
+            return '{{ rule_set.default }}'
+        
+        return idx_map[arg_max]
+
+    def batch_predict(self, X: pd.DataFrame):
+
+        labels_df = pd.DataFrame(
+            data={
+                {% for label in rule_set.labels -%}
+                    '{{ label }}': np.zeros(shape=len(X)),
+                {% endfor %}
+            },
+            dtype=np.float32
+        )
+
+        {% for rule in rule_set.rules -%}
+        labels_df.loc[:, '{{ rule.label }}'] += X.eval("
+        {%- for condition in rule.conditions -%}
+        `{{ condition.feature_name }}` {{ condition.operator }} {{ condition.value }} {{ '& ' if not loop.last }}
+        {%- endfor -%}
+        ") * {{ rule.confidence }} 
+        
+        {% endfor %}
+
+        labels_df = labels_df.div(labels_df.sum(axis=1), axis=0)
+        max_df = labels_df.max(axis=1) 
+        labels_df.loc[:, 'prediction'] = labels_df.idxmax(axis=1)
+        labels_df.loc[max_df == 0., 'prediction'] = '{{ rule_set.default }}'
+
+        preds = labels_df.pop('prediction')
+        return preds
+    
+    @property
+    def rules(self):
+
+        rules = [
+        {% for rule in rule_set.rules -%}
+            [
+                "{%- for condition in rule.conditions -%}
+                `{{ condition.feature_name }}` {{ condition.operator }} {{ condition.value }} {{ '& ' if not loop.last }}
+                {%- endfor %}",
+                '{{ rule.label }}',
+                {{ rule.confidence }}
+            ],
+
+        {% endfor %}
+        ]
+
+        return rules
+
