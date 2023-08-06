@@ -1,0 +1,17 @@
+koreanbots/__init__.py,sha256=tZMdbGGWCJruNCwcOQfbjoABKVrQdp6qMo_pAp7fXwo,557
+koreanbots/abc.py,sha256=w0SZpIozrU03d2qtGmpRVnsGF8bEfIz_KXQReeFuYpI,579
+koreanbots/client.py,sha256=5cHwPGAAn2DSIkzJ1he6bGJ3h8d40QGnvY_rjg08vco,5875
+koreanbots/decorator.py,sha256=qWWBwHGUJ_6dFD_uK7A9SaQDTpuk59ybIA9XgxIftz0,1738
+koreanbots/errors.py,sha256=DrpNRVPVgWefVL8CSXxPhVDiOuiKfr4AXzujuO0U4hU,802
+koreanbots/http.py,sha256=5cei5gAH8tYtsQ1F7EGNd9as3B8hv7WTPHRV90Wfdjk,9084
+koreanbots/model.py,sha256=44uLVgk0BgeIfCQwgxMm9ggXVYtBMRCNM3dfz39lggQ,16354
+koreanbots/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+koreanbots/typing.py,sha256=AaVim2MKa8ViqjgXcWMegKN8gqifWc-A_SNO-l55IGU,802
+koreanbots/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koreanbots/integrations/dico.py,sha256=MfBI2roMxFz161DUHOrFUfILAaCrGjUyJxecCE4jw7I,2853
+koreanbots/integrations/discord.py,sha256=ILoM9eOckR1WhVtaaIr0bbKu8BHLmxpIu6cCX72jpkQ,2126
+koreanbots-2.1.0.dist-info/LICENSE,sha256=R3KnCSHSLeli7m43yAe9U91Z87PvdMbUH4nfhEosI1U,1071
+koreanbots-2.1.0.dist-info/METADATA,sha256=2om3h3ZmSnIqCWFOriuvWCseoK3Y6ZUjKrdahJFpmx8,1347
+koreanbots-2.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+koreanbots-2.1.0.dist-info/top_level.txt,sha256=KJD9zAUhdhM8kCaAgm_ItQNCMIRwJ6-p8CutHjALyw8,11
+koreanbots-2.1.0.dist-info/RECORD,,
