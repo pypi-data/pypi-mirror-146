@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "deflefpy"
+version = "0.1.2"
+description = "A DEF/LEF (Library Exchange Format) file parser written in Python."
+authors = ["dasdias <das.dias6@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/das-dias/deflefpy"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+loguru = "^0.6.0"
+numpy = "^1.22.3"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[packages]
+include = "**/*.py"
+
