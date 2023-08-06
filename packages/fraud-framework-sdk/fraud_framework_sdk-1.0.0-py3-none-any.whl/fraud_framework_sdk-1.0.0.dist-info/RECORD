@@ -1,0 +1,10 @@
+fraud_framework_sdk/__init__.py,sha256=nGbdAVlZMk19A-yIgCivvcNtBAx07vdTW7ztI2MsKtU,54
+fraud_framework_sdk/client.py,sha256=KQHu4E07GXuMR3wk5SWTPDVindL3fDdVIBXYF9EMi40,7158
+fraud_framework_sdk/errors.py,sha256=SSLadbgMCv_XRRHJNchakVXXSr0DdaicJfLytzWS5nw,968
+fraud_framework_sdk/internal_utils.py,sha256=B9vJNVBXT2R5PEXP6a0NhkB-8-XZjPsFTFRBvl95nPA,1402
+fraud_framework_sdk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fraud_framework_sdk/response.py,sha256=7wU4R_aCsAC8rYKjADMp5Dmt-kfXm7fscR-INlwxwIU,1164
+fraud_framework_sdk-1.0.0.dist-info/LICENSE,sha256=1Q50yDCw7kN74mKvwIu1lPVoCRO8o0BsHxrjJFgyDgc,1601
+fraud_framework_sdk-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fraud_framework_sdk-1.0.0.dist-info/METADATA,sha256=W6-qOfyH2bqA0JSSGXl1_-suyLfFFGn1PVLdnzl-LSY,515
+fraud_framework_sdk-1.0.0.dist-info/RECORD,,
