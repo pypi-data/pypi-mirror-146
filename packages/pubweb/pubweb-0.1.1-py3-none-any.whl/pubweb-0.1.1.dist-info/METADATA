@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pubweb
+Version: 0.1.1
+Summary: CLI tool for interacting with the PubWeb platform
+Home-page: https://github.com/FredHutch/PubWeb-client
+Author: Fred Hutch
+Author-email: viz@fredhutch.org
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click (<8.1,>=8.0)
+Requires-Dist: boto3 (<1.30,>=1.20)
+Requires-Dist: questionary (==1.10.0)
+Requires-Dist: gql[requests] (==3.0.0)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: pycognito (==2022.1.0)
+Requires-Dist: tqdm (==4.62.3)
+
+UNKNOWN
+
