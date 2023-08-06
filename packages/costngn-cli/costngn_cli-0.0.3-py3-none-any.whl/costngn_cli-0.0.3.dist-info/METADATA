@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: costngn-cli
+Version: 0.0.3
+Summary: A CLI to interact with several cloud services providers
+Home-page: https://github.com/infrangn/costngn-cli-dev
+Author: Pedro Tibiletti
+Author-email: pedro.tibiletti@gmail.com
+License: MIT
+Keywords: costngn-cli  python package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+Requires-Dist: typer
+
+Sample Package made for a demo of Retrieving AWS Data.
+
