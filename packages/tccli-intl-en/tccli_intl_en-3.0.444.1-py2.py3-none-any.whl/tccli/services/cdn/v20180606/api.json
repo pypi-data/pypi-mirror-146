@@ -1,0 +1,194 @@
+{
+  "actions": {
+    "CreateScdnFailedLogTask": {
+      "document": "This API is used to recreate a failed event log task.",
+      "input": "CreateScdnFailedLogTaskRequest",
+      "name": "Recreates an event log task",
+      "output": "CreateScdnFailedLogTaskResponse"
+    },
+    "PurgePathCache": {
+      "document": "This API is used to submit multiple directory purge tasks, which are carried out according to the acceleration region of the domain names.\nBy default, a maximum of 100 directories can be purged per day for acceleration regions either within or outside the Chinese mainland, and up to 500 tasks can be submitted at a time.",
+      "input": "PurgePathCacheRequest",
+      "name": "Purges directories",
+      "output": "PurgePathCacheResponse"
+    },
+    "PushUrlsCache": {
+      "document": "This API is used to cache specified URL resources to CDN nodes. You can specify acceleration regions for the prefetch.\nBy default, a maximum of 1000 URLs can be prefetched per day for regions either within or outside the Chinese mainland, and up to 500 tasks can be submitted at a time. Note that resources prefetched outside the Chinese mainland will be cached to CDN nodes outside the Chinese mainland and the traffic generated will incur costs.",
+      "input": "PushUrlsCacheRequest",
+      "name": "Prefetches URLs",
+      "output": "PushUrlsCacheResponse"
+    }
+  },
+  "metadata": {
+    "apiVersion": "2018-06-06",
+    "serviceNameCN": "内容分发网络",
+    "serviceShortName": "cdn"
+  },
+  "objects": {
+    "CreateScdnFailedLogTaskRequest": {
+      "document": "CreateScdnFailedLogTask request structure.",
+      "members": [
+        {
+          "default": "",
+          "document": "ID of the failed task to retry",
+          "example": "1111",
+          "member": "string",
+          "name": "TaskId",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "default": "",
+          "document": "Region. Valid values: `mainland` and `overseas`.",
+          "example": "mainland",
+          "member": "string",
+          "name": "Area",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "type": "object"
+    },
+    "CreateScdnFailedLogTaskResponse": {
+      "document": "CreateScdnFailedLogTask response structure.",
+      "members": [
+        {
+          "document": "Creation result. \n0: Creation succeeded",
+          "example": "0",
+          "member": "string",
+          "name": "Result",
+          "required": true,
+          "type": "string",
+          "value_allowed_null": false
+        },
+        {
+          "document": "The unique request ID, which is returned for each request. RequestId is required for locating a problem.",
+          "member": "string",
+          "name": "RequestId",
+          "type": "string"
+        }
+      ],
+      "type": "object"
+    },
+    "PurgePathCacheRequest": {
+      "document": "PurgePathCache request structure.",
+      "members": [
+        {
+          "default": "",
+          "document": "List of directories. The protocol header such as \"http://\" or \"https://\" needs to be included.",
+          "member": "string",
+          "name": "Paths",
+          "required": true,
+          "type": "list"
+        },
+        {
+          "default": "",
+          "document": "Purge type:\n`flush`: purges updated resources\n`delete`: purges all resources",
+          "member": "string",
+          "name": "FlushType",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "default": "",
+          "document": "Whether to encode Chinese characters before purge.",
+          "member": "bool",
+          "name": "UrlEncode",
+          "required": false,
+          "type": "bool"
+        }
+      ],
+      "type": "object"
+    },
+    "PurgePathCacheResponse": {
+      "document": "PurgePathCache response structure.",
+      "members": [
+        {
+          "document": "Purge task ID. Directories submitted in one request share a task ID.",
+          "member": "string",
+          "name": "TaskId",
+          "type": "string",
+          "value_allowed_null": false
+        },
+        {
+          "document": "The unique request ID, which is returned for each request. RequestId is required for locating a problem.",
+          "member": "string",
+          "name": "RequestId",
+          "type": "string"
+        }
+      ],
+      "type": "object"
+    },
+    "PushUrlsCacheRequest": {
+      "document": "PushUrlsCache request structure.",
+      "members": [
+        {
+          "default": "",
+          "document": "List of URLs. The protocol header such as \"http://\" or \"https://\" needs to be included.",
+          "example": "无",
+          "member": "string",
+          "name": "Urls",
+          "required": true,
+          "type": "list"
+        },
+        {
+          "default": "",
+          "document": "Specifies the User-Agent header of an HTTP prefetch request when it is forwarded to the origin server\nDefault value: `TencentCdn`",
+          "example": "TencentCdn",
+          "member": "string",
+          "name": "UserAgent",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "default": "",
+          "document": "Destination region for the prefetch\n`mainland`: prefetches resources to nodes within Mainland China\n`overseas`: prefetches resources to nodes outside Mainland China\n`global`: prefetches resources to global nodes\nDefault value: `mainland`. You can prefetch a URL to nodes in a region provided that CDN service has been enabled for the domain name in the URL in the region.",
+          "example": "mainland",
+          "member": "string",
+          "name": "Area",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "default": "",
+          "document": "If this parameter is `middle` or left empty, prefetch will be performed onto the intermediate node.\nNote: resources prefetched outside the Chinese mainland will be cached to CDN nodes outside the Chinese mainland and the traffic generated will incur costs.",
+          "example": "middle",
+          "member": "string",
+          "name": "Layer",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "default": "",
+          "document": "Whether to recursively resolve the M3U8 index file and prefetch the TS shards in it.\nNotes:\n1. This feature requires that the M3U8 index file can be directly requested and obtained.\n2. In the M3U8 index file, currently only the TS shards at the first to the third level can be recursively resolved.\n3. Prefetching the TS shards obtained through recursive resolution consumes the daily prefetch quota. If the usage exceeds the quota, the feature will be disabled and TS shards will not be prefetched.",
+          "example": "false",
+          "member": "bool",
+          "name": "ParseM3U8",
+          "required": false,
+          "type": "bool"
+        }
+      ],
+      "type": "object"
+    },
+    "PushUrlsCacheResponse": {
+      "document": "PushUrlsCache response structure.",
+      "members": [
+        {
+          "document": "ID of the submitted task",
+          "member": "string",
+          "name": "TaskId",
+          "type": "string",
+          "value_allowed_null": false
+        },
+        {
+          "document": "The unique request ID, which is returned for each request. RequestId is required for locating a problem.",
+          "member": "string",
+          "name": "RequestId",
+          "type": "string"
+        }
+      ],
+      "type": "object"
+    }
+  },
+  "version": "1.0"
+}
