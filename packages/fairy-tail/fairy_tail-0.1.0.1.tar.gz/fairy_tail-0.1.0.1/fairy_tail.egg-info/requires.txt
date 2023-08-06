@@ -1,0 +1,6 @@
+flask
+kazoo
+pydantic
+cached_property
+pymysql
+DBUtils
