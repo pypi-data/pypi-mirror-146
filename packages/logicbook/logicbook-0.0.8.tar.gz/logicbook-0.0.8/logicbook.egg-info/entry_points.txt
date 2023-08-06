@@ -1,0 +1,3 @@
+[console_scripts]
+logicbook = logicbook.cli.root:main
+
