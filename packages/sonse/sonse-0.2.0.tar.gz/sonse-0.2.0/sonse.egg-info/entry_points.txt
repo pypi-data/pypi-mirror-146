@@ -1,0 +1,2 @@
+[console_scripts]
+sonse = sonse.__main__:group.main
