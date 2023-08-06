@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: docplates
+Version: 0.0.1
+Summary: Docplates is a PDF document templater which uses Jinja2 and LaTeX/WeasyPrint backends to create documents.
+Keywords: documentation,templating,pdf
+Author-email: Nigel Kukard <nkukard@LBSD.net>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Documentation
+Requires-Dist: ezplugins
+Requires-Dist: jinja2
+Requires-Dist: pikepdf
+Requires-Dist: PyYAML
+Requires-Dist: setuptools
+Requires-Dist: pydyf ; extra == "full"
+Requires-Dist: weasyprint ; extra == "full"
+Requires-Dist: pydyf ; extra == "html"
+Requires-Dist: weasyprint ; extra == "html"
+Project-URL: Documentation, https://software.pages.oscdev.io/docplates/docplates
+Project-URL: Homepage, https://gitlab.oscdev.io/software/docplates/docplates
+Project-URL: Issue Tracker, https://gitlab.oscdev.io/software/docplates/docplates/-/issues
+Project-URL: Source Code, https://gitlab.oscdev.io/software/docplates/docplates
+Provides-Extra: full
+Provides-Extra: html
+
+[![pipeline status](https://gitlab.oscdev.io/software/docplates/docplates/badges/main/pipeline.svg)](https://gitlab.oscdev.io/software/docplates/docplates/commits/main)
+[![coverage report](https://gitlab.oscdev.io/software/docplates/docplates/badges/main/coverage.svg)](https://gitlab.oscdev.io/software/docplates/docplates/commits/main)
+
+# Docplates
+
+Docplates is a PDF document templater which uses Jinja2 and LaTeX/WeasyPrint backends to create documents.
+
+
+# Installing
+
+Docplates can be simply installed by running:
+
+    pip install docplates
+
+Or if you prefer the development branch, one could use:
+
+    pip install git+https://gitlab.oscdev.io/software/docplates/docplates.git
+
+Alternatively if you prefer installing from a checked out git repository:
+
+    pip install .
+
+Lastly, you could also build it and install the wheel...
+
+    tox -e build
+    pip install dist/docplates-*.whl
+
+
+# Documentation
+
+  * [Docplates Documentation](https://software.pages.oscdev.io/docplates/docplates)
+  * [Contributing](https://gitlab.oscdev.io/oscdev/contributing/-/blob/master/README.md)
+
+# Support
+
+  * [Issue Tracker](https://gitlab.oscdev.io/software/docplates/docplates/-/issues)
+
+
+# License
+
+Docplates is licensed under the [GNU GPL v3 License](LICENSE).
+

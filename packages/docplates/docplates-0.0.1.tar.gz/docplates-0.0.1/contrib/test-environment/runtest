@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd /root/docplates
+echo "PYTHONPATH: $PYTHONPATH"
+echo "RUNNING: tox"
+
+export PYTHONPATH
+
+ls -la
+
+nice tox
+

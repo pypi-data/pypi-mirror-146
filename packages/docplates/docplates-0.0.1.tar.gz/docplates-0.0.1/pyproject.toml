@@ -1,0 +1,87 @@
+[build-system]
+#build-backend = "poetry.core.masonry.api"
+#requires = ["poetry-core", "setuptools"]
+requires = ["flit_core"]
+build-backend = "flit_core.buildapi"
+
+
+[project]
+name = "docplates"
+description = "Docplates is a PDF document templater which uses Jinja2 and LaTeX/WeasyPrint backends to create documents."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Nigel Kukard", email = "nkukard@LBSD.net" }
+]
+keywords = ["documentation", "templating", "pdf"]
+classifiers=[
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Documentation",
+]
+dynamic = ["version"]
+dependencies = [
+    "ezplugins",
+    "jinja2",
+    "pikepdf",
+    "PyYAML",
+    "setuptools",
+]
+
+[project.optional-dependencies]
+full = [
+    "pydyf",
+    "weasyprint",
+]
+html = [
+    "pydyf",
+    "weasyprint",
+]
+
+
+[project.scripts]
+docplates = "docplates:cmdline.main"
+
+
+[project.urls]
+Homepage = "https://gitlab.oscdev.io/software/docplates/docplates"
+"Issue Tracker" = "https://gitlab.oscdev.io/software/docplates/docplates/-/issues"
+"Source Code" = "https://gitlab.oscdev.io/software/docplates/docplates"
+Documentation = "https://software.pages.oscdev.io/docplates/docplates"
+
+
+[tox]
+isolated_build = true
+
+
+[tool.poetry]
+name = "docplates"
+#version = "x.x.x"
+description = "Docplates is a PDF document templater which uses Jinja2 and LaTeX/WeasyPrint backends to create documents."
+authors = ["Nigel Kukard <nkukard@LBSD.net>"]
+packages = [
+    { include = "docplates" }
+]
+
+
+[tool.black]
+line-length = 132
+
+
+[tool.isort]
+line_length = 120
+profile = "black"
+
+
+[tool.mypy]
+ignore_missing_imports = true
+strict = true
+
+
+[tool.pylint.message_control]
+max-line-length = 132
+disable = "R0801"
