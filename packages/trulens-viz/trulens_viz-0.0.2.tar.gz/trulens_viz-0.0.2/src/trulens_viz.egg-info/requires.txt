@@ -1,0 +1,6 @@
+domonic>=0.9.10
+matplotlib>=3.5.1
+numpy>=1.22.3
+
+[test]
+nose2>=0.9.2
