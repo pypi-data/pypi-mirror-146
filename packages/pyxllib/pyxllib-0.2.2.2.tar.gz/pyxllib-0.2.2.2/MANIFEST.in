@@ -1,0 +1,4 @@
+include README.md
+include requirements.txt
+include pyxlpr/ppocr/tools/infer/*.py
+include pyxlpr/ppocr/utils/*.txt
