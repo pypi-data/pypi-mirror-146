@@ -1,0 +1,6 @@
+pandas
+ratelimit
+cachetools
+requests
+
+[dev]
