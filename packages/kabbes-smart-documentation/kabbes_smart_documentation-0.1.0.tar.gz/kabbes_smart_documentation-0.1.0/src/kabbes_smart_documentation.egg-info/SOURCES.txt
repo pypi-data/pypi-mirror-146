@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/kabbes_smart_documentation.egg-info/PKG-INFO
+src/kabbes_smart_documentation.egg-info/SOURCES.txt
+src/kabbes_smart_documentation.egg-info/dependency_links.txt
+src/kabbes_smart_documentation.egg-info/requires.txt
+src/kabbes_smart_documentation.egg-info/top_level.txt
+src/smart_documentation/BaseDocumentation.py
+src/smart_documentation/__init__.py
+src/smart_documentation/__main__.py
+src/smart_documentation/html_support.py
+src/smart_documentation/markdown_support.py
+src/smart_documentation/smart_documentation.py
