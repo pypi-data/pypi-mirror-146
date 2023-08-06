@@ -1,0 +1,9 @@
+README.md
+setup.py
+bayesian_models_loggi/__init__.py
+bayesian_models_loggi/beta.py
+bayesian_models_loggi.egg-info/PKG-INFO
+bayesian_models_loggi.egg-info/SOURCES.txt
+bayesian_models_loggi.egg-info/dependency_links.txt
+bayesian_models_loggi.egg-info/requires.txt
+bayesian_models_loggi.egg-info/top_level.txt
