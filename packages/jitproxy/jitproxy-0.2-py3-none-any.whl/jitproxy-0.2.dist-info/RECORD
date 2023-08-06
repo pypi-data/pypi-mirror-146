@@ -1,0 +1,7 @@
+jitproxy/__init__.py,sha256=6Vc_SiSnhUKd-nTSFspjR1ChWbae75BXtmJI2D-Oo9E,100
+jitproxy/aio.py,sha256=7v5TUji-umjBCDyDXyswtEr8ykGlVelXUn8ColYSRx8,2303
+jitproxy/standard.py,sha256=hOvydIXItdsNmbCr6pFXLKd7eh2wjI2QXJJcn7pXd5k,4232
+jitproxy-0.2.dist-info/LICENSE,sha256=QtPAraXxCvWVT_F_9mHYFBbXP1QpXKtFFjs8AwPcW-o,1078
+jitproxy-0.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+jitproxy-0.2.dist-info/METADATA,sha256=b9BFAypnIkovZdSkP7dOaukWI19G9zs-4aKi7gxZo28,592
+jitproxy-0.2.dist-info/RECORD,,
