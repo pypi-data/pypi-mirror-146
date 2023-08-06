@@ -1,0 +1,3 @@
+[console_scripts]
+vim-client-diff = vim_client.cli:cli_diff
+vim-client-edit = vim_client.cli:cli_edit
