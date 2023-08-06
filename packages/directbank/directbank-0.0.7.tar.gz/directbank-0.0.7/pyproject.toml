@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "directbank"
+version = "0.0.7"
+description = ""
+authors = ["Toony <kizyanov@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/kizyanov/directbank"
+repository = "https://github.com/kizyanov/directbank"
+keywords = ["directbank"]
+classifiers = [
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    "LICENSE",
+]
+packages = [
+    { include = "models"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+xsdata = "22.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
