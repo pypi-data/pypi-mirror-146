@@ -1,0 +1,89 @@
+[tool.poetry]
+authors = ["Piotr Gredowski <piotrgredowski@gmail.com>"]
+classifiers = [
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+]
+description = ""
+homepage = "https://github.com/piotrgredowski/table2sql"
+license = "MIT"
+name = "table2sql"
+readme = "README.md"
+version = "1.0.1"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/piotrgredowski/table2sql/issues"
+
+[tool.poetry.dependencies]
+click = "^8.0.1"
+openpyxl = "^3.0.7"
+python = ">=3.6.2,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+rope = "^0.19.0"
+toml = "^0.10.2"
+pytest = "^6.2.4"
+
+[tool.poetry.group.docs.dependencies]
+Pygments = "^2.10.0"
+mkdocs = "^1.2.2"
+mkdocs-click = {version = "^0.4.0", python = ">3.6,<4.0"}
+mkdocs-material = "^7.2.6"
+mkdocstrings = "^0.15.2"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.0"
+black = "^21.7b0"
+flake8 = "^3.9.2"
+flake8-debugger = "^4.0.0"
+importlib-metadata = {version = "^4.8.1", python = "<3.8"}
+ipdb = "^0.13.9"
+isort = "^5.9.3"
+pre-commit = "^2.14.0"
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+pytest-mock = "^3.6.1"
+
+[tool.poetry.scripts]
+table2sql = "table2sql.cli:table2sql"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.2.0a2"]
+
+[tool.black]
+exclude = '''
+
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \venv
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+include = '\.pyi?$'
+line-length = 100
+target-version = ['py38']
+
+[tool.isort]
+include_trailing_comma = true
+line_length = 100
+multi_line_output = 3
+
+[tool.pyright]
+exclude = ['**/.eggs', '**/venv', '**/.venv']
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --cov=table2sql --cov-branch --cov-report=xml --cov-report=html --junitxml=junit.xml"
