@@ -1,0 +1,16 @@
+databeaver/__init__.py,sha256=D_cN641B8I9koE0yWZXxhNGcduwR9pZiH6nm0jWiCRA,153
+databeaver/data/configSample.ini,sha256=D-3iwo6vJvvnnNj9JLJrzQhfqeDvV-IAz-wHA9NDslw,2998
+databeaver/data/configSample.json,sha256=YeJb4Ez5opW6fU63ESjSAGVr8RjZgzIpBoE-3C89fPQ,62
+databeaver/data/configSample.toml,sha256=Hn6MeuvqHewHdIUOBH7jDbRPontdjln-uEKL3RErHj4,3195
+databeaver/lib/DataBeaver.py,sha256=lViSHTLIZCw71eKCN2CzDJLCMvgZ6DuldIEyuEkTy4E,17328
+databeaver/lib/MySQL.py,sha256=k_Ia9V3qN4h0VE1Vq3CF3689uhQ-nKi3YadIAt_QkLI,15486
+databeaver/lib/Object.py,sha256=HlscH7fVwMwAT5c5L-JHrxpsN1uK5tHk4grcqljvoko,3485
+databeaver/lib/PostgreSQL.py,sha256=BG8_mAiH6LA8oct9KcMFWNQt62x9_zYOnQS6P_RLJlM,15760
+databeaver/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databeaver/lib/constants.py,sha256=oVX-b-7gllAxBx5p6poZ-iD3uQhgnzjlF9lilDCYYNg,1735
+databeaver-0.0.22.data/scripts/beaver,sha256=7BEUWd_xHJ2WqKHvNylbDpY7UagkmWehmx7V33ZYuUY,1729
+databeaver-0.0.22.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+databeaver-0.0.22.dist-info/METADATA,sha256=Z8v1HtBjH6Vz4lIDFEyNaSAuFyVCfXK0_zMWJwt1hHc,2735
+databeaver-0.0.22.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+databeaver-0.0.22.dist-info/top_level.txt,sha256=7wSuffP33zcVCvgfdcCYVcT3G3DjU03Ce6HQhAhnKFk,11
+databeaver-0.0.22.dist-info/RECORD,,
