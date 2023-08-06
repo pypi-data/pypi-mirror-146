@@ -1,0 +1,10 @@
+mini_scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mini_scripts/datetime.py,sha256=TSUV0WJ8xiRM2hzPVVcuE0TV-3qMcWx10WBZ8bE_hLE,1592
+mini_scripts/files.py,sha256=VC53ZK9wPTdh_4e_5Z46VEcwKXCPy82OGPPEt81zK1c,1279
+mini_scripts/parsers.py,sha256=-TnSOGAgo9qFzRBZMt88VF5uR8NHbuHEqd9NbTZSDx0,1226
+mini_scripts/text.py,sha256=oCStFiLO6HqE8TU8EctQtyM3FZNcRm5ZMEmpOK_MxMY,3857
+mini_scripts/versions.py,sha256=oMsTl3y7_F1TgiNqpJwKuSS72uwVVmkd68Sq493dDgg,916
+mini_scripts/vk.py,sha256=pOqmfUYE6VbrCuLftfxtDm0eQIfouo6w5pGKeCj86OQ,2997
+mini_scripts-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+mini_scripts-0.1.0.dist-info/METADATA,sha256=cssi19OWmODTEQO1TDlJy57Z784l5M-x0wRC82suuZQ,373
+mini_scripts-0.1.0.dist-info/RECORD,,
