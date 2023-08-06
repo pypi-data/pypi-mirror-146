@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+sog4onnx/__init__.py
+sog4onnx/__main__.py
+sog4onnx/onnx_operation_generator.py
+sog4onnx.egg-info/PKG-INFO
+sog4onnx.egg-info/SOURCES.txt
+sog4onnx.egg-info/dependency_links.txt
+sog4onnx.egg-info/entry_points.txt
+sog4onnx.egg-info/top_level.txt
