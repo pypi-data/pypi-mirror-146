@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: hastebiny
+Version: 0.0.6
+Summary: An unofficial hastebin module.
+Home-page: https://github.com/NYPDK/hastebiny
+Author: BQJ
+Author-email: hawkafreeman@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/NYPDK/hastebiny/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hastebiny
+An unofficial hastebin module.
+
+`pip install hastebiny`
+
+This is a simpe module that allows you to create and recieve hastebins. There are two functions `send` and `get`. Using the `send` function, you can send data (text) to hastebins server and store it there, the function will return a key to access this data.
+The `get` function will return the data (text) attributed to a key.
+
+```py
+# Example code
+from hastbiny import hb
+
+key = hb.send("My hastebin content :)")
+print(key)
+print(hb.get(key))
+```
+
