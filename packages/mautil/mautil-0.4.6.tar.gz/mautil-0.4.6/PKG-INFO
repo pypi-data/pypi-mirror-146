@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mautil
+Version: 0.4.6
+Summary: deep learning training framework for pytorch
+Home-page: https://github.com/world2vec/mautil
+Author: Tom Ma
+Author-email: 40295257@qq.com
+License: MIT
+Keywords: deep learning framework,pytorch
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
