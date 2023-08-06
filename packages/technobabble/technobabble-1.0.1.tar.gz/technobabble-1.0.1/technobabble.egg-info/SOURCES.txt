@@ -1,0 +1,8 @@
+README.md
+setup.py
+technobabble/Babbler.py
+technobabble/__init__.py
+technobabble.egg-info/PKG-INFO
+technobabble.egg-info/SOURCES.txt
+technobabble.egg-info/dependency_links.txt
+technobabble.egg-info/top_level.txt
