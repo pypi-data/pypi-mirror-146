@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+thingdl/__init__.py
+thingdl/thingiverse_downloader.py
+thingdl.egg-info/PKG-INFO
+thingdl.egg-info/SOURCES.txt
+thingdl.egg-info/dependency_links.txt
+thingdl.egg-info/entry_points.txt
+thingdl.egg-info/requires.txt
+thingdl.egg-info/top_level.txt
