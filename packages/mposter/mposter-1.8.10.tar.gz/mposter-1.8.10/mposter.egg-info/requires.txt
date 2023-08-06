@@ -1,0 +1,10 @@
+confluent_kafka==1.3.0
+hvac
+loguru
+pydantic
+pyyml
+requests
+setuptools
+slackclient
+user_agent
+zeep~=4.0.0
