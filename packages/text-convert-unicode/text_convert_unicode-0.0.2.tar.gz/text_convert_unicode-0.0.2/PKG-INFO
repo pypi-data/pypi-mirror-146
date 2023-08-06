@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: text_convert_unicode
+Version: 0.0.2
+Summary: text_convert_unicode
+Home-page: https://github.com/DaniloTomassoni/Text_Convert_Unicode
+Author: Danilo Tomassoni
+Author-email: danilothomassoni@gmail.com
+License: MIT
+Platform: Windows
+Platform: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Function tcu show detailsshow reverse details
+
