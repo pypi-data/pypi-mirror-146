@@ -1,0 +1,220 @@
+Metadata-Version: 2.1
+Name: tackle-box
+Version: 0.3.0a0
+Summary: Tackle box is a declarative DSL for building modular workflows and code generators. Tool is plugins based and can easily be extended by writing additional hooks or importing external providers creating a web of interoperable CLIs.
+Home-page: https://github.com/robcxyz/tackle-box
+Author: Rob Cannon
+Author-email: robc.io.opensource@gmail.com
+License: BSD
+Keywords: cookiecutter,tackle,tackle-box,tacklebox,tackle box,Python,projects,project templates,Jinja2,skeleton,scaffolding,project directory,package,packaging,kubernetes
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2 (>3.0.0)
+Requires-Dist: pydantic (>=1.8.0)
+Requires-Dist: PyInquirer (>=1.0.3)
+Requires-Dist: ruamel.yaml (>=0.17.0)
+Provides-Extra: all
+Requires-Dist: requests ; extra == 'all'
+Requires-Dist: GitPython ; extra == 'all'
+Requires-Dist: rich ; extra == 'all'
+Requires-Dist: pytest-mock ; extra == 'all'
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: toml (>=0.10.0) ; extra == 'all'
+Requires-Dist: tox ; extra == 'all'
+Requires-Dist: freezegun ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: kubernetes ; extra == 'all'
+Requires-Dist: pytest-asyncio ; extra == 'all'
+Requires-Dist: ptyprocess ; extra == 'all'
+Provides-Extra: console
+Requires-Dist: rich ; extra == 'console'
+Provides-Extra: dev
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: freezegun ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: ptyprocess ; extra == 'dev'
+Provides-Extra: git
+Requires-Dist: GitPython ; extra == 'git'
+Provides-Extra: kubernetes
+Requires-Dist: kubernetes ; extra == 'kubernetes'
+Provides-Extra: toml
+Requires-Dist: toml (>=0.10.0) ; extra == 'toml'
+Provides-Extra: web
+Requires-Dist: requests ; extra == 'web'
+
+# Tackle
+
+[![pypi](https://img.shields.io/pypi/v/tackle-box.svg)](https://pypi.python.org/pypi/tackle-box)
+[![python](https://img.shields.io/pypi/pyversions/tackle-box.svg)](https://pypi.python.org/pypi/tackle-box)
+[![codecov](https://codecov.io/gh/robcxyz/tackle-box/branch/main/graphs/badge.svg?branch=main)](https://codecov.io/github/robcxyz/tackle-box?branch=main)
+[![main-tests](https://github.com/robcxyz/tackle-box/actions/workflows/main.yml/badge.svg)](https://github.com/robcxyz/tackle-box/actions)
+
+* [Documentation](https://robcxyz.github.io/tackle-box) (WIP)
+* [PyPI](https://pypi.org/project/tackle-box/)
+* [BSD License](LICENSE)
+
+Tackle box is a language for making modular declarative CLIs. It can make any yaml/json configuration file dynamic/callable with turing complete flow control common to any general purpose programming language.
+
+> Warning: Language is in it's early phases and only now considered stable enough to use. It may never reach 1.x version as, if it gets enough stars, it will be converted to a spec and re-written in another language (ie give it a star if you'd like to see that).
+
+- Install
+- Use Cases
+- Hello world
+- Advanced Topics
+- Contributing
+
+### Install
+
+Note: tackle can install dependencies on its own. Check [docs]() for advanced installation methods to isolate tackle from your system python.
+
+```shell
+python -m venv env
+pip install tackle-box
+```
+
+### Use Cases
+
+- [Modular code generation]() - wip
+- [Kubernetes management]() - wip
+- [Declarative toolchains]() - wip
+- [Declarative utilities]() - wip
+
+### Hello worlds
+
+To call tackle, create a yaml file and run `tackle hello-world.yaml`.
+
+Use the [print]() hook.
+```yaml
+hw->: print Hello world!
+```
+
+Using [jinja templating](), hooks can be called in [four different ways]().
+```yaml
+words: Hello world!
+expanded:
+  ->: print
+  objects: "{{words}}"
+compact->: print {{words}}
+jinja_extension->: "{{ print(words) }}"
+jinja_filter->: "{{ words | print }}"
+```
+
+Interactive example with [prompt]() hooks.
+```yaml
+name->: input
+target:
+  ->: select Say hi to who?
+  choices:
+    - world
+    - universe
+hello->: print My name is {{name}}. Hello {{target}}!
+```
+
+Hooks can have for [loops](), [conditionals](), and [other base methods]().
+```yaml
+words:
+  - Hello
+  - cruel
+  - world!
+expanded:
+  ->: print {{item}}
+  for: words
+  if: item != 'cruel'
+compact->: print {{item}} --for words --if "item != 'cruel'"
+```
+
+Hooks can be [written in python]().
+```python
+from tackle import BaseHook
+
+class Greeter(BaseHook):
+    hook_type: str = "greeter"
+    target: str
+    args: list = ['target']
+    def exec(self):
+        print(f"Hello {self.target}")
+```
+
+Or new hooks can be [declaratively created]() with tackle.
+```yaml
+greeter<-:
+  help: A thing that says hi!
+  target: str
+  args:
+    - target
+  exec:
+    hi->: print Hello {{target}}
+```
+
+And both can be called in the same way.
+```yaml
+hello: world!
+compact->: greeter {{hello}}
+expanded:
+  ->: greeter
+  target: "{{hello}}"
+jinja_extension->: "{{ greeter(hello) }}"
+jinja_filter->: "{{ hello | greeter }}"
+```
+
+Or can be imported / called remotely.
+```yaml
+local-call->: tackle hello-world.yaml
+remote-call->: tackle robcxyz/tackle-hello-world
+# Or
+import-hello_>: import robcxyz/tackle-hello-world
+call->: greeter world!
+```
+
+Creating a web of declarative CLIs.
+
+### Topics
+
+- Writing Tackle Files
+- Creating Providers
+- Blocks and Flow Control
+- Memory Management
+- Declarative CLIs
+- Declarative Hooks
+- Special Variables
+
+### Roadmap
+
+- Declarative hook inheritance
+- Declarative schemas
+- Declarative methods
+- Cached providers
+- State management
+
+### Code of Conduct
+
+Everyone interacting in the tackle-box project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow the [PyPA Code of Conduct](https://www.pypa.io/en/latest/code-of-conduct/).
+
+## Credit
+
+Special thanks to the [cookiecutter](https://github.com/cookiecutter/cookiecutter) community for laying the basis for this project.
+
+
