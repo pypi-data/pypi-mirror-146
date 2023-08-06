@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cana-asteroids
+Version: 0.2.1
+Summary: Codes for ANalysis of Asteroids
+Home-page: https://github.com/depra/cana
+Author: M. De Pra, J. Carvano, D. Morate,
+            J. Licandro, N. Pinilla-Alonso
+Author-email: mariondepra@gmail.com
+Maintainer: M. De Pra
+Maintainer-email: mariondepra@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: matplotlib
+Requires-Dist: dataclasses
+Requires-Dist: numba
+Requires-Dist: dask[complete]
+
+UNKNOWN
+
