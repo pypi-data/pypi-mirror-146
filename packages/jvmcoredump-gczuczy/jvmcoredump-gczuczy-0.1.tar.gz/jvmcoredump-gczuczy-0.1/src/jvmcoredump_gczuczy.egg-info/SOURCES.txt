@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/jvmcoredump_gczuczy.egg-info/PKG-INFO
+src/jvmcoredump_gczuczy.egg-info/SOURCES.txt
+src/jvmcoredump_gczuczy.egg-info/dependency_links.txt
+src/jvmcoredump_gczuczy.egg-info/entry_points.txt
+src/jvmcoredump_gczuczy.egg-info/requires.txt
+src/jvmcoredump_gczuczy.egg-info/top_level.txt
