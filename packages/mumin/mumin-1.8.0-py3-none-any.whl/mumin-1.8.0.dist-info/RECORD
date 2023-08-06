@@ -1,0 +1,14 @@
+mumin/__init__.py,sha256=DQ31et1dKDBsdVEv3vXaZsjNHDb-vq4t_qb0INcSZrc,808
+mumin/article.py,sha256=8ady8ANnyeYkQCfUquBu18kjmvnZ9t9gjNfgN_7Sanw,2168
+mumin/data_extractor.py,sha256=adR-Y0IxyOSwCD688lRTN3t_CYdB6qMuTl9qmmmw-MM,47955
+mumin/dataset.py,sha256=577Jxi-tEvifaB-aMUQcSO6BH_3jlkCE1AE0gxiKaJk,43580
+mumin/dgl.py,sha256=3M-saSDyBOX4Tj18nwtqBONoVfmbdsJl7ePlvGwA08U,13635
+mumin/embedder.py,sha256=8l0sPoPoclV3qX51Qyy5ux8g8lJRVvuHLLp54EUv-Ec,14607
+mumin/id_updator.py,sha256=BDts49yZSXCDdcLO7Ls4P6nKlDNCec5uMJQFojbEHfo,12175
+mumin/image.py,sha256=np285pldlPZPe6WtcELqFt0o2SazhEukSuz2uAPJHaw,1464
+mumin/twitter.py,sha256=gcKCxBEGEX8A2ZMeFxC08vz1Qc797mU7H-hbKaHzgc4,9885
+mumin-1.8.0.dist-info/LICENSE,sha256=3oE1zIl18MWKxvXP5l0iLwpvM1r1Yzl23stJ7-Zxhvw,1064
+mumin-1.8.0.dist-info/METADATA,sha256=04vr6VYMOkd8x4PDVMJpvH2yP1XojmvTx67HYlmaTQg,5391
+mumin-1.8.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mumin-1.8.0.dist-info/top_level.txt,sha256=fFrz5J5xfeyXN_PXrU949F6J6MOLSuTaUfyt6JLDs9k,6
+mumin-1.8.0.dist-info/RECORD,,
