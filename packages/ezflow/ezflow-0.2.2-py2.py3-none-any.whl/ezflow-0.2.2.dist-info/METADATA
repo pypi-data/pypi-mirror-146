@@ -1,0 +1,234 @@
+Metadata-Version: 2.1
+Name: ezflow
+Version: 0.2.2
+Summary: A PyTorch library for optical flow estimation using neural networks
+Home-page: https://github.com/neu-vig/ezflow
+Author: Neelay Shah
+Author-email: shahnh19@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/neu-vig/ezflow
+Keywords: optical flow,pytorch,machine learning,deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: absl-py (==0.13.0)
+Requires-Dist: alabaster (==0.7.12)
+Requires-Dist: antlr4-python3-runtime (==4.8)
+Requires-Dist: appdirs (==1.4.4)
+Requires-Dist: argh (==0.26.2)
+Requires-Dist: arrow (==0.13.1)
+Requires-Dist: attrs
+Requires-Dist: Babel (==2.9.1)
+Requires-Dist: backports.entry-points-selectable (==1.1.0)
+Requires-Dist: binaryornot (==0.4.4)
+Requires-Dist: black (==21.7b0)
+Requires-Dist: bleach (==3.3.0)
+Requires-Dist: brotlipy (==0.7.0)
+Requires-Dist: bump2version (==0.5.11)
+Requires-Dist: cachetools (==4.2.2)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: cffi (==1.14.6)
+Requires-Dist: cfgv (==3.3.0)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: charset-normalizer (==2.0.1)
+Requires-Dist: click (==8.0.1)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: coverage (==5.5)
+Requires-Dist: cryptography (==3.4.8)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: distlib (==0.3.2)
+Requires-Dist: dnspython (==1.16.0)
+Requires-Dist: docopt (==0.6.2)
+Requires-Dist: docutils (==0.17.1)
+Requires-Dist: easydict (==1.9)
+Requires-Dist: entrypoints (==0.3)
+Requires-Dist: fett (==0.3.2)
+Requires-Dist: filelock (==3.0.12)
+Requires-Dist: flake8 (==3.9.2)
+Requires-Dist: fvcore (==0.1.5.post20210915)
+Requires-Dist: grpcio (==1.39.0)
+Requires-Dist: identify (==2.2.13)
+Requires-Dist: idna (==3.2)
+Requires-Dist: imagesize (==1.2.0)
+Requires-Dist: iniconfig (==1.1.1)
+Requires-Dist: iopath (==0.1.9)
+Requires-Dist: Jinja2 (==3.0.1)
+Requires-Dist: jinja2-time (==0.2.0)
+Requires-Dist: kiwisolver
+Requires-Dist: Markdown (==3.3.4)
+Requires-Dist: MarkupSafe (==2.0.1)
+Requires-Dist: matplotlib
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: mkl-fft (==1.3.0)
+Requires-Dist: mkl-random
+Requires-Dist: mkl-service
+Requires-Dist: mypy-extensions (==0.4.3)
+Requires-Dist: networkx (==2.6.2)
+Requires-Dist: nodeenv (==1.6.0)
+Requires-Dist: numpy
+Requires-Dist: oauthlib (==3.1.1)
+Requires-Dist: olefile (==0.46)
+Requires-Dist: omegaconf
+Requires-Dist: opencv-python (==4.5.3.56)
+Requires-Dist: packaging (==21.0)
+Requires-Dist: pathspec (==0.9.0)
+Requires-Dist: pathtools (==0.1.2)
+Requires-Dist: Pillow
+Requires-Dist: pkginfo (==1.7.1)
+Requires-Dist: platformdirs (==2.0.0)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: portalocker
+Requires-Dist: poyo (==0.5.0)
+Requires-Dist: pre-commit (==2.14.0)
+Requires-Dist: protobuf (==3.17.3)
+Requires-Dist: py (==1.10.0)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: pycodestyle (==2.7.0)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: pyflakes (==2.3.1)
+Requires-Dist: Pygments (==2.9.0)
+Requires-Dist: pymongo (==3.11.4)
+Requires-Dist: pyOpenSSL (==20.0.1)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: PySocks (==1.7.1)
+Requires-Dist: pytest (==6.2.4)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: python-jsonrpc-server (==0.3.4)
+Requires-Dist: python-slugify (==5.0.2)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: readme-renderer (==29.0)
+Requires-Dist: regex
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: requests-oauthlib (==1.3.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rsa (==4.7.2)
+Requires-Dist: scipy (==1.7.0)
+Requires-Dist: six
+Requires-Dist: snooty-lextudio (==1.11.1.dev0)
+Requires-Dist: snowballstemmer (==2.1.0)
+Requires-Dist: tabulate (==0.8.9)
+Requires-Dist: tensorboard (==2.6.0)
+Requires-Dist: tensorboard-data-server (==0.6.1)
+Requires-Dist: tensorboard-plugin-wit (==1.8.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: text-unidecode (==1.3)
+Requires-Dist: toml
+Requires-Dist: tomli (==1.2.1)
+Requires-Dist: torch (>=1.9.0)
+Requires-Dist: torchmetrics (>=0.5.0)
+Requires-Dist: torchvision (>=0.10.0)
+Requires-Dist: tornado
+Requires-Dist: tox (==3.14.0)
+Requires-Dist: tqdm
+Requires-Dist: twine (==1.14.0)
+Requires-Dist: typed-ast
+Requires-Dist: typing-extensions
+Requires-Dist: ujson (==1.35)
+Requires-Dist: Unidecode (==1.3.2)
+Requires-Dist: urllib3 (==1.26.6)
+Requires-Dist: virtualenv (==20.5.0)
+Requires-Dist: watchdog (==1.0.2)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: Werkzeug (==2.0.1)
+Requires-Dist: whichcraft (==0.6.1)
+Requires-Dist: yacs (==0.1.8)
+Requires-Dist: zipp
+
+<p align="center">
+    <br>
+    <img src="./docs/assets/logo.png" height="60" width="60"/>
+    <br>
+</p>
+
+<h1 align="center">EzFlow</h1>
+<h3 align="center">A modular PyTorch library for optical flow estimation using neural networks</h3>
+
+<div align='center'>
+
+[![Tests](https://github.com/neu-vig/ezflow/actions/workflows/package-test.yml/badge.svg)](https://github.com/neu-vig/ezflow/actions/workflows/package-test.yml)
+[![Docs](https://readthedocs.org/projects/ezflow/badge/?version=latest)](https://ezflow.readthedocs.io/en/latest/?badge=latest)
+[![Downloads](https://pepy.tech/badge/ezflow)](https://pepy.tech/project/ezflow)
+
+<!-- [![Code style](https://github.com/neu-vig/ezflow/actions/workflows/linting.yml/badge.svg)](https://github.com/neu-vig/ezflow/actions/workflows/linting.yml) -->
+<!-- [![Code coverage](https://github.com/neu-vig/ezflow/actions/workflows/codecov.yml/badge.svg)](https://github.com/neu-vig/ezflow/actions/workflows/codecov.yml) -->
+
+**[Documentation](https://ezflow.readthedocs.io/en/latest/)** | **[Tutorials](https://ezflow.readthedocs.io/en/latest/tutorials/index.html)**
+
+</div>
+
+
+## Installation
+
+### From source (recommended)
+
+```shell
+
+git clone https://github.com/neu-vig/ezflow
+cd ezflow/
+python setup.py install
+
+```
+
+### From PyPI
+
+```shell
+
+pip install ezflow
+
+```
+
+### Models supported
+
+- [x] [DICL](https://arxiv.org/abs/2010.14851)
+- [x] [FlowNetS](https://arxiv.org/abs/1504.06852)
+- [x] [FlowNetC](https://arxiv.org/abs/1504.06852)
+- [x] [PWCNet](https://arxiv.org/abs/1709.02371)
+- [x] [RAFT](https://arxiv.org/abs/2003.12039)
+- [x] [VCN](https://papers.nips.cc/paper/2019/hash/bbf94b34eb32268ada57a3be5062fe7d-Abstract.html)
+
+### Datasets supported
+
+- [x] [AutoFlow](https://autoflow-google.github.io/)
+- [x] [FlyingChairs](https://lmb.informatik.uni-freiburg.de/resources/datasets/FlyingChairs.en.html#flyingchairs)
+- [x] [HD1K](http://hci-benchmark.iwr.uni-heidelberg.de/)
+- [x] [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow)
+- [x] [MPI Sintel](http://sintel.is.tue.mpg.de/)
+- [x] [SceneFlow Monkaa](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html)
+- [x] [SceneFlow Driving](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html)
+- [x] [SceneFlow FlyingThings3D](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html)
+- [x] [SceneFlow FlyingThings3D subset](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html)
+
+### References
+
+- [RAFT](https://github.com/princeton-vl/RAFT)
+- [DICL-Flow](https://github.com/jytime/DICL-Flow)
+- [PWC-Net](https://github.com/NVlabs/PWC-Net)
+- [FlowNetPytorch](https://github.com/ClementPinard/FlowNetPytorch)
+- [VCN](https://github.com/gengshan-y/VCN)
+- [detectron2](https://github.com/facebookresearch/detectron2)
+- [CorrelationLayer](https://github.com/oblime/CorrelationLayer)
+- [ptflow](https://github.com/hmorimitsu/ptlflow)
+
+
+<br>
+
+<footer>
+<a target="_blank" href="https://icons8.com/icon/3Nj3FNnz36Id/pixels">Pixels</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</footer>
+
+
+
+
+
