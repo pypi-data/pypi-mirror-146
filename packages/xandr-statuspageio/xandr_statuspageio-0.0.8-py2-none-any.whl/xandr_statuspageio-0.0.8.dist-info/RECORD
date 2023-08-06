@@ -1,0 +1,11 @@
+statuspageio/__init__.py,sha256=OvYomaNc79i78VZSL_FN9O-mXRa7kV8Q5FWTFnURhu4,864
+statuspageio/client.py,sha256=-LAe42-bCihWryQLds9QvuFPxKW_Vf0bJ_cPN6eEw70,3060
+statuspageio/configuration.py,sha256=dPioEFkyls9sJ5hGVRm0zddk_dyVkLtOQk0lumvYwdk,2582
+statuspageio/errors.py,sha256=6hMk6SwVM7Yr_OIEb5sJE_y6owSXrwt9hqLbUc_XPf8,2334
+statuspageio/http_client.py,sha256=qcjaoC71e_tATNHbwpGBKCq8IZPJxGssiqHjtzxxECs,8601
+statuspageio/services.py,sha256=sVeDDHKy_CKdXBM7ipc8_0wRSsJH8yCEMuAs1NPR_uk,22938
+statuspageio/version.py,sha256=OUT6TtMK44bXfY1v6nn1N-4rWJk7EG5Qn9YHr0-PA1o,50
+xandr_statuspageio-0.0.8.dist-info/METADATA,sha256=J_j3aPwfi5D294aEZOayg8dF0plPb--vONDZb36bgX8,4076
+xandr_statuspageio-0.0.8.dist-info/WHEEL,sha256=1VPi6hfNQaRRNuEdK_3dv9o8COtLGnHWJghhj4CQ28k,92
+xandr_statuspageio-0.0.8.dist-info/top_level.txt,sha256=xCKXwxzjlhxIpQkhrRVY71BiOSMrHIL6V6gUXvtVSFc,13
+xandr_statuspageio-0.0.8.dist-info/RECORD,,
