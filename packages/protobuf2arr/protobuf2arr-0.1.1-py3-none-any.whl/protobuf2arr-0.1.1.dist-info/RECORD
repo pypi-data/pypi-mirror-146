@@ -1,0 +1,10 @@
+protobuf2arr/__init__.py,sha256=-ZHnR9xAJ87nhzBIeh1IFtSxp-kF3CPQLcF38yLeeV8,63
+protobuf2arr/flights.proto,sha256=BIGxHuFlyL_4zDVmaliEF_zdLxRC9JZx1gZby8Csfzk,2755
+protobuf2arr/flights_pb2.py,sha256=q4TOBRdF6LoYQucBrn7FIEywSoA3QfOQw2ae1T3AhWE,7522
+protobuf2arr/nullable.proto,sha256=AWKSRo7HHfLYGWi3CJKrCgGG7k7kyAh8SxYFftWbsxE,172
+protobuf2arr/serializer.py,sha256=36P8wiyWW_IahnvpzYRRWd_kNAKYaoMNEQPb_ysu4Yg,4325
+protobuf2arr/taskqueue_pb2.py,sha256=y6Bc-jx3YHJOUK09cNL02KXUTv3S_IghGW91tz_x4xk,2335
+protobuf2arr-0.1.1.dist-info/LICENSE,sha256=FWQTGZM0xcxl93PSk0sdhIq2sJj4c2B1g6KY_w6nDwo,1089
+protobuf2arr-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+protobuf2arr-0.1.1.dist-info/METADATA,sha256=Ad0rCL6pEcja1PBL4SZMwXr-nj3cOHYffWm2cwbM33E,6025
+protobuf2arr-0.1.1.dist-info/RECORD,,

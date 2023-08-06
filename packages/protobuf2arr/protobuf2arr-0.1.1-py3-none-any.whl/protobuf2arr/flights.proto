@@ -1,0 +1,122 @@
+syntax = "proto3";
+
+package protoGoogleFlights;
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.FieldOptions {
+    optional bool nullable = 50027;
+}
+
+message RequestWrapper {
+    string payload = 2;
+}
+
+enum FlightClass {
+    FLIGHT_CLASS_UNSPECIFIED = 0;
+    FLIGHT_CLASS_ECONOMY = 1;
+    FLIGHT_CLASS_PREMIUM_ECONOMY = 2;
+    FLIGHT_CLASS_BUSINESS = 3;
+    FLIGHT_CLASS_FIRST = 4;
+}
+
+enum FlightOnly {
+    FLIGHT_ONLY_UNSPECIFIED = 0;
+    FLIGHT_ONLY_YES = 1;
+}
+
+enum Stops {
+    STOPS_ANY = 0;
+    STOPS_NON_STOP = 1;
+    STOPS_ONE_OR_LESS = 2;
+    STOPS_TWO_OR_LESS = 3;
+}
+
+message FlightEstimate {
+    FlightEstimateOne one = 1;
+    MapBounds bounds = 2;
+    Settings settings = 4;
+    int32 six = 6;
+    bool eight = 8;
+    bool ten = 10;
+    repeated int32 elevens = 11;
+
+    message FlightEstimateOne {
+        int32 one = 1  [(nullable) = true];
+        int32 two = 2  [(nullable) = true];
+    }
+
+    message Settings {
+        int32 three = 3;
+
+        FlightClass flight_class = 6; // 1 = economy, 2 = premium economy 
+        Passengers passengers = 7;
+        optional PriceBounds price_bounds = 8;
+        Bags bags = 11;
+        InOutBoundSettings inout_bound_settings = 14;
+
+
+        FlightOnly flights_only = 26; // 1 = flights only 
+
+        message DateParams {
+            int32 one = 1; // 0
+            int32 two = 2; // 3 = 2 weeks,
+        }
+
+        message Bags {
+            int32 carry_on_bags = 1;
+            int32 two = 2;
+        }
+    }
+
+    message InOutBoundSettings {
+        FlightSettings outbound = 1;
+        FlightSettings inbound = 2;
+
+        message FlightSettings {
+            message Inner1 {
+                message Inner1_1 {
+                    message Inner1_1_1 {
+                        string airport = 1;
+                        int32 two = 2;
+                    }
+
+                    Inner1_1_1 one = 1;
+                }
+
+                Inner1_1 one = 1;
+            }
+            Inner1 airport = 1;
+            Stops stops = 4;
+
+            string date = 7;
+            Duration duration = 8;
+
+            message Duration {
+                int32 max_flight_duration = 1;
+            }
+        }
+    }
+
+    message Passengers {
+        int32 adults = 1;
+        int32 children = 2;
+        int32 infants_on_lap = 3;
+        int32 infants_in_seat = 4;
+    }
+
+    message PriceBounds {
+        int32 low = 1 [(nullable) = true];
+        int32 high = 2;
+    }
+
+    message MapBounds {
+        Coordintate top_left = 1;
+        Coordintate bottom_right = 2;
+    }
+
+    message Coordintate {
+        double latitude = 1;
+        double longitude = 2;
+    }
+}
