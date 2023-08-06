@@ -1,0 +1,9 @@
+README.md
+setup.py
+rangel/__init__.py
+rangel/collection.py
+rangel.egg-info/PKG-INFO
+rangel.egg-info/SOURCES.txt
+rangel.egg-info/dependency_links.txt
+rangel.egg-info/requires.txt
+rangel.egg-info/top_level.txt

@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: rangel
+Version: 0.0.4
+Summary: Range data manipulations and operations
+Home-page: UNKNOWN
+Author: Tariq Shihadah
+Author-email: <tariq.shihadah@gmail.com>
+License: UNKNOWN
+Description: Module featuring RangeCollection object class for the management of range data and optimized performance of various simple and complex range operations, including range and point overlays, equitable and score-based separation of overlapping ranges, generation of random range data, and range data comparisons among others.
+        
+        Release Notes
+        -------------
+        0.0.4
+        - Added snapping to set_centers and __init__ methods
+        - Added squeeze parameter to intersecting method
+        - Various bug fixes, performance improvements
+        
+        0.0.3
+        - Initial updated merging features
+        - Various bug fixes, performance improvements
+        
+        0.0.2
+        - Various bug fixes, performance improvements
+        
+        0.0.1
+        - Initial release
+        
+Keywords: python,range,numeric,interval
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
