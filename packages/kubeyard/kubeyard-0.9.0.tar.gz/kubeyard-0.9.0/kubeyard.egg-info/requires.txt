@@ -1,0 +1,9 @@
+cached-property
+click
+colorlog
+jinja2
+kubepy>=1.14.0
+pyYAML
+pyfiglet
+sh
+termcolor
