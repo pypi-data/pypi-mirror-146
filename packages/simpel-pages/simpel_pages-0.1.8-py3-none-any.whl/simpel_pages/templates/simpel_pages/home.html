@@ -1,0 +1,9 @@
+{% extends 'simpel_pages/base.html' %}
+{% load pages_block_tags %}
+
+{% block content %}
+  <h1 style="align:center;">{{ object.title }}</h1>
+  {% for block in object.blocks.all %}
+    {% render_block block %}
+  {% endfor %}
+{% endblock content %}
