@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applying a discrete-time, non-stationary nucleotide model &#8212; cogent3 2021.5.7a documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Applying a time-reversible nucleotide model" href="evo-tr-nuc-model.html" />
+    <link rel="prev" title="Reconstructing ancestral states" href="evo-ancestral-states.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Applying a discrete-time, non-stationary nucleotide model</a><ul>
+<li><a class="reference internal" href="#get-a-tree-with-branch-lengths-as-paralinear">Get a tree with branch lengths as paralinear</a></li>
+<li><a class="reference internal" href="#getting-parameter-estimates">Getting parameter estimates</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="evo-ancestral-states.html" title="Previous Chapter: Reconstructing ancestral states"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Reconstructin...</span>
+    </a>
+  </li>
+  <li>
+    <a href="evo-tr-nuc-model.html" title="Next Chapter: Applying a time-reversible nucleotide model"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Applying a ti... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="section" id="applying-a-discrete-time-non-stationary-nucleotide-model">
+<h1>Applying a discrete-time, non-stationary nucleotide model<a class="headerlink" href="#applying-a-discrete-time-non-stationary-nucleotide-model" title="Permalink to this headline">¶</a></h1>
+<p>We fit a discrete-time Markov nucleotide model. This corresponds to a Barry and Hartigan 1987 model.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3.app</span> <span class="kn">import</span> <span class="n">io</span><span class="p">,</span> <span class="n">evo</span>
+
+<span class="n">loader</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">load_aligned</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s2">&quot;fasta&quot;</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">loader</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">evo</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="s2">&quot;BH&quot;</span><span class="p">,</span> <span class="n">tree</span><span class="o">=</span><span class="s2">&quot;data/primate_brca1.tree&quot;</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">BH</span>
+</caption>
+<thead class="head_cell">
+<th>key</th><th>lnL</th><th>nfp</th><th>DLC</th><th>unique_Q</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">'BH'</span></td><td><span class="c3col_right">-6941.4684</span></td><td><span class="c3col_right">135</span></td><td><span class="c3col_left">True</span></td><td><span class="c3col_left">True</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<p><strong>NOTE:</strong> DLC stands for diagonal largest in column and the value is a
+check on the identifiability of the model. <code class="docutils literal notranslate"><span class="pre">unique_Q</span></code> is not
+applicable to a discrete-time model and so remains as <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<p>Looking at the likelihood function, you will</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>BH</h4>
+<p>log-likelihood = -6941.4684</p>
+<p>number of free parameters = 135</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge motif motif2 params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>motif</th><th>motif2</th><th>psubs</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_right">0.8751</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_left">C</span></td><td><span class="c3col_right">0.0649</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_left">A</span></td><td><span class="c3col_right">0.0409</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_right">0.0192</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">C</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_right">0.1126</span></td></tr>
+<tr class="ellipsis"><td><span class="c3col_left">...</span></td><td><span class="c3col_left">...</span></td><td><span class="c3col_left">...</span></td><td><span class="c3col_right">...</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">A</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_right">0.0055</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_right">0.0000</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_left">C</span></td><td><span class="c3col_right">0.0011</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_left">A</span></td><td><span class="c3col_right">0.0039</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_right">0.9950</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.3774</span></td><td><span class="c3col_right">0.1763</span></td><td><span class="c3col_right">0.2058</span></td><td><span class="c3col_right">0.2404</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<div class="section" id="get-a-tree-with-branch-lengths-as-paralinear">
+<h2>Get a tree with branch lengths as paralinear<a class="headerlink" href="#get-a-tree-with-branch-lengths-as-paralinear" title="Permalink to this headline">¶</a></h2>
+<p>This is the only possible length metric for a discrete-time process.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tree</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">tree</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">get_figure</span><span class="p">()</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">scale_bar</span> <span class="o">=</span> <span class="s2">&quot;top right&quot;</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</div>
+<div class="section" id="getting-parameter-estimates">
+<h2>Getting parameter estimates<a class="headerlink" href="#getting-parameter-estimates" title="Permalink to this headline">¶</a></h2>
+<p>For a discrete-time model, aside from the root motif probabilities, everything is edge specific. But note that the <code class="docutils literal notranslate"><span class="pre">tabular_result</span></code> has different keys from the continuous-time case, as demonstrated below.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tabulator</span> <span class="o">=</span> <span class="n">evo</span><span class="o">.</span><span class="n">tabulate_stats</span><span class="p">()</span>
+<span class="n">stats</span> <span class="o">=</span> <span class="n">tabulator</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="n">stats</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>2x tabular_result(&#39;edge motif motif2 params&#39;: Table, &#39;motif params&#39;: Table)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">stats</span><span class="p">[</span><span class="s2">&quot;edge motif motif2 params&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">edge motif motif2 params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>motif</th><th>motif2</th><th>psubs</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_right">0.8751</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_left">C</span></td><td><span class="c3col_right">0.0649</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_left">A</span></td><td><span class="c3col_right">0.0409</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_right">0.0192</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">C</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_right">0.1126</span></td></tr>
+<tr class="ellipsis"><td><span class="c3col_left">...</span></td><td><span class="c3col_left">...</span></td><td><span class="c3col_left">...</span></td><td><span class="c3col_right">...</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">A</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_right">0.0055</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_left">T</span></td><td><span class="c3col_right">0.0000</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_left">C</span></td><td><span class="c3col_right">0.0011</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_left">A</span></td><td><span class="c3col_right">0.0039</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_left">G</span></td><td><span class="c3col_right">0.9950</span></td></tr>
+</tbody>
+</table>
+<p>Top 5 and bottom 5 rows from
+176 rows x 4 columns</p>
+</div></div></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2021, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+************************
+It's all about sequences
+************************
+
+Genomic analysis is, naturally, focussed on manipulation and interrogation of biological sequences. You might be dealing with a single sequence, or a collection of sequences. You might want to sample regions of sequences that are annotated using meta-data from a public database. You might have collections of sequences that are related, but not aligned. You might have sequences that are aligned, but unrelated. The number of possible permutations is enormous. ``cogent3`` provides capabilities to handle these permutations. In this document, I describe the main objects concerned with sequences, their basic properties and relationships to each other and the motivation behind them.
+
