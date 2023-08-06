@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: deploymentPackageTesting
+Version: 1.0.3
+Summary: simple package for testing purposes
+Author: Heorhii Yehiazarian
+Author-email: heorhii.yehiazarian@nextnano.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.18)
+
+UNKNOWN
+
