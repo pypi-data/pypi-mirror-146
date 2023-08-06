@@ -1,0 +1,2 @@
+[console_scripts]
+webxp = webxp.main:main
