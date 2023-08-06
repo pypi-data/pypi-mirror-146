@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/eip/__init__.py
+src/eip.egg-info/PKG-INFO
+src/eip.egg-info/SOURCES.txt
+src/eip.egg-info/dependency_links.txt
+src/eip.egg-info/top_level.txt
+src/eip/example/__init__.py
+src/eip/example/custom_sklearn.py
