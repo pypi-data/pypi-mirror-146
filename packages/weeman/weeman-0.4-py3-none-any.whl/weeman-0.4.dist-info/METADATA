@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: weeman
+Version: 0.4
+Summary: Create powerful HTTP server on Termux
+Home-page: https://github.com/Bhai4You/
+Author: Parixit Sutariya
+Author-email: parixit1337@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<!--
+https://pypi.org/project/bulltools/
+-->
+
+[![](https://img.shields.io/pypi/pyversions/readme-generator.svg?longCache=True)](https://pypi.org/project/readme-generator/)
+
+#### Installation
+```bash
+$ pip install weeman
+```
+
+#### Features
++   **`weeman`**, ** Powerful HTTP server for Termux**
+
+
+#### How it works
+```
+$ pip install weeman
+$ weeman
+```
+
+#### Usage
+```
+$ weeman [-h|i|v|a|r]
+
+options :-
+-h : print help
+-i : install
+-v : version
+-a : about us
+-r : remove
+
+
+Created by Parixit Sutariya
+Github : github.com/Bhai4You
+Blogspot : https://bhai4you.blogspot.com
+
+```
+
+<p align="center">
+    <a href="https://github.com/Bhai4You">Github</a>
+</p>
+
+
