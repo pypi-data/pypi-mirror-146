@@ -1,0 +1,4 @@
+[console_scripts]
+fpie = fpie.cli:main
+fpie-gui = fpie.gui:main
+
