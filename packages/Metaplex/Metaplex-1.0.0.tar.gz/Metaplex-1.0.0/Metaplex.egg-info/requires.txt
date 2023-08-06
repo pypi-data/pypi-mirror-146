@@ -1,0 +1,5 @@
+numpy
+pandas
+cutadapt
+biom-format
+biopython
