@@ -1,0 +1,14 @@
+blobfile/VERSION,sha256=l2TdJ7h02m6gMYnTBUwLjNPXbDz8oEjbvL6SbYac2dI,5
+blobfile/__init__.py,sha256=4pgz4HHcfOmVnFzXZNouxg1_1byzIt5JTTQ3tunteig,1890
+blobfile/_azure.py,sha256=wP6QraUxtVmiUaSoNVYeTF2bQLWlisHvUUYC2Q0BJAA,59508
+blobfile/_common.py,sha256=fNlsM_zjT8VGnxCbFtHEM7PT3r7x19d5_zysS5vrISg,40892
+blobfile/_context.py,sha256=L8Payp2oGlKRll4C4bH2oqjw-PnKe7d_pp0HSIXxPE0,60443
+blobfile/_gcp.py,sha256=s_WxEMIo-9ypCMLJsX0LEQN945sP9L1EMvmqtGINGb4,27672
+blobfile/_ops.py,sha256=91rlCuJVY5Bt7Yr1_oJnNzze6irBNteQRu7-UV8wn9k,13862
+blobfile/_ops_test.py,sha256=odCv4TOhXbYowVjp3Ccv-5L_Pd51AyllN2bfP_t3-9Y,55150
+blobfile/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blobfile-1.2.9.dist-info/LICENSE,sha256=FHo3YUVhJ7y4raLDRyijAdAazTFpRqrX1gXDqc435vI,1233
+blobfile-1.2.9.dist-info/METADATA,sha256=0lx3_ddG8kR3PyS52lz04qyUQxpBGtDLgYAbJBN1auo,14303
+blobfile-1.2.9.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+blobfile-1.2.9.dist-info/top_level.txt,sha256=BsixHWRC2Vk13oMQM4HUfWAfrjXllowAwpGFz0w6MrM,9
+blobfile-1.2.9.dist-info/RECORD,,
