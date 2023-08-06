@@ -1,0 +1,3 @@
+[console_scripts]
+dlg_casacore_components = dlg_casacore_components.__main__:main
+
