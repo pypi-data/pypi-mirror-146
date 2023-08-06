@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: aedir
+Version: 1.4.11
+Summary: AE-DIR library
+Home-page: https://ae-dir.com/python.html
+Author: Michael Stroeder
+Author-email: michael@stroeder.com
+Maintainer: Michael Stroeder
+Maintainer-email: michael@stroeder.com
+License: Apache-2.0
+Download-URL: https://pypi.org/project/aedir/#files
+Project-URL: Code, https://code.stroeder.com/AE-DIR/python-aedir
+Project-URL: Issue tracker, https://code.stroeder.com/AE-DIR/python-aedir/issues
+Keywords: LDAP,LDAPv3,OpenLDAP,AE-DIR,Æ-DIR
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: mail
+Provides-Extra: test
+License-File: LICENSE
+
+python-aedir - Python module for Æ-DIR
+======================================
+
+This module package contains:
+
+  1. wrapper class *AEDirObject* based on ldap0.ReconnectLDAPObject
+  2. several utility functions
+  3. boiler-plate code for tool processes
+
+Notes:
+
+  * This module is only useful for [Æ-DIR](https://ae-dir.com).
+  * Only works with Python 3.6 or newer!
+
+

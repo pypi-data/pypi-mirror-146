@@ -1,0 +1,8 @@
+ldap0>=1.2.7
+setuptools
+
+[mail]
+mailutil>=0.4.0
+
+[test]
+Jinja2

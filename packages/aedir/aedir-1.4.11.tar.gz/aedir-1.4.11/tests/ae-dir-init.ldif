@@ -1,0 +1,1114 @@
+dn: ou=ae-dir
+aeGidNumberMax: 59999
+aeGidNumberMin: 30000
+aeStatus: 0
+aeTicketId: INIT-42
+aeUidNumberMax: 59999
+aeUidNumberMin: 30000
+description:: w4YtRElSIC0gQXV0aG9yaXplZCBFbnRpdGllcyBEaXJlY3Rvcnk=
+gidNumber: 30030
+objectClass: aeRoot
+objectClass: aePosixIdRanges
+ou: ae-dir
+
+dn: cn=ae,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+cn: ae
+description:: w4YtRElSIG1hbmFnZW1lbnQ=
+objectClass: namedObject
+objectClass: aeObject
+objectClass: aeZone
+
+dn: cn=ae-tag-init,cn=ae,ou=ae-dir
+aeStatus: 0
+cn: ae-tag-init
+description: tag for all entries created during initial load
+objectClass: namedObject
+objectClass: aeTag
+
+dn: cn=people,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+aeZoneAdmins: cn=people-zone-admins,cn=people,ou=ae-dir
+aeZoneAuditors: cn=people-zone-auditors,cn=people,ou=ae-dir
+cn: people
+description: Zone for people and department entries
+objectClass: namedObject
+objectClass: aeObject
+objectClass: aeZone
+
+dn: cn=people-zone-admins,cn=people,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: people-zone-admins
+description: Group members are zone admins who can manage zone 'people'
+gidNumber: 30020
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=people-zone-auditors,cn=people,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: people-zone-auditors
+description: Group members are zone auditors who can read zone 'people'
+gidNumber: 30021
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: departmentNumber=0,cn=people,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+departmentNumber: 0
+displayName: - (0)
+objectClass: organizationalUnit
+objectClass: aeDept
+objectClass: aeObject
+ou: -
+
+dn: departmentNumber=42,cn=people,ou=ae-dir
+aeStatus: 0
+departmentNumber: 42
+displayName: IAM-Tester (42)
+objectClass: organizationalUnit
+objectClass: aeDept
+objectClass: aeObject
+ou: IAM-Tester
+
+dn: cn=no-location,cn=people,ou=ae-dir
+aeNotBefore: 20170421195755Z
+aeStatus: 0
+cn: no-location
+displayName: no-location
+objectClass: locality
+objectClass: aeLocation
+objectClass: aeObject
+
+dn: cn=test-lab,cn=people,ou=ae-dir
+aeNotBefore: 20170421191515Z
+aeStatus: 0
+cn: test-lab
+displayName: test-lab
+objectClass: locality
+objectClass: aeLocation
+objectClass: aeObject
+
+dn: uniqueIdentifier=INIT-PERSON-ID-42,cn=people,ou=ae-dir
+aeDept: departmentNumber=42,cn=people,ou=ae-dir
+aeLocation: cn=test-lab,cn=people,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn:: TWljaGFlbCBTdHLDtmRlcg==
+departmentNumber: 42
+displayName:: TWljaGFlbCBTdHLDtmRlciAvIElBTS1UZXN0ZXI=
+givenName: Michael
+mail: michael@stroeder.com
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: aePerson
+objectClass: aeObject
+ou: IAM-Tester
+sn:: U3Ryw7ZkZXI=
+uniqueIdentifier: INIT-PERSON-ID-42
+
+dn: uniqueIdentifier=web2ldap-1489425020.31,cn=people,ou=ae-dir
+aeDept: departmentNumber=0,cn=people,ou=ae-dir
+aeLocation: cn=test-lab,cn=people,ou=ae-dir
+aeNotBefore: 20170313171020Z
+aeStatus: 0
+c: AQ
+cn: Anna Blume
+departmentNumber: 0
+displayName: Anna Blume / -
+employeeNumber: 3784238
+givenName: Anna
+mail: anna.blume@example.com
+manager: uniqueIdentifier=INIT-PERSON-ID-42,cn=people,ou=ae-dir
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: aePerson
+objectClass: aeObject
+objectClass: msPerson
+ou: -
+sn: Blume
+uniqueIdentifier: web2ldap-1489425020.31
+
+dn: cn=pub,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: pub
+description: Public default entries
+objectClass: namedObject
+objectClass: aeObject
+objectClass: aeZone
+
+dn: cn=sudo-defaults,cn=pub,ou=ae-dir
+cn: sudo-defaults
+description: SUDO global defaults
+objectClass: top
+objectClass: sudoRole
+sudoHost: ALL
+sudoOption: env_reset
+sudoUser: ALL
+
+dn: cn=dua-profile,cn=pub,ou=ae-dir
+authenticationMethod: tls:simple;SASL/EXTERNAL
+bindTimeLimit: 10
+cn: dua-profile
+credentialLevel: proxy
+defaultSearchBase: ou=ae-dir
+defaultSearchScope: sub
+defaultServerList: ae-dir-deb-c1.virtnet1.stroeder.local ae-dir-deb-c2.virtn
+ et1.stroeder.local
+dereferenceAliases: FALSE
+followReferrals: FALSE
+objectClass: top
+objectClass: DUAConfigProfile
+profileTTL: 864000
+searchTimeLimit: 10
+serviceAuthenticationMethod: pam_ldap:tls:simple
+serviceSearchDescriptor: passwd:ou=ae-dir?sub
+serviceSearchDescriptor: shadow:ou=ae-dir?sub
+serviceSearchDescriptor: user_attr:ou=ae-dir?sub
+serviceSearchDescriptor: audit_user:ou=ae-dir?sub
+serviceSearchDescriptor: group:ou=ae-dir?sub
+
+dn: cn=pub-tag-no-welcome-yet,cn=pub,ou=ae-dir
+aeStatus: 0
+cn: pub-tag-no-welcome-yet
+description: tag indicates that welcome e-mail was not sent to user yet
+objectClass: namedObject
+objectClass: aeTag
+
+dn: cn=ae-uid-blacklist,cn=ae,ou=ae-dir
+cn: ae-uid-blacklist
+description: This entry contains a blacklist for 'uid' values
+objectClass: namedObject
+objectClass: uidObject
+objectClass: labeledURIObject
+uid: root
+uid: admin
+
+dn: cn=ppolicy-default,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+cn: ppolicy-default
+description: Unusable default password policy
+objectClass: aeObject
+objectClass: namedPolicy
+objectClass: aePolicy
+objectClass: pwdPolicy
+pwdAllowUserChange: FALSE
+pwdAttribute: userPassword
+pwdCheckQuality: 2
+pwdInHistory: 3
+pwdLockout: FALSE
+pwdMaxAge: 1
+pwdMinLength: 24
+pwdMustChange: FALSE
+
+dn: cn=ppolicy-sasl-external,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+cn: ppolicy-sasl-external
+description: Password policy for services which must use SASL/EXTERNAL
+objectClass: aeObject
+objectClass: namedPolicy
+objectClass: aePolicy
+objectClass: pwdPolicy
+pwdAllowUserChange: FALSE
+pwdAttribute: userPassword
+pwdCheckQuality: 2
+pwdInHistory: 3
+pwdLockout: FALSE
+pwdMaxAge: 1
+pwdMinLength: 24
+pwdMustChange: FALSE
+
+dn: cn=ppolicy-systems,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+cn: ppolicy-systems
+description: Password policy for hosts and system/service accounts (aeHost a
+ nd aeService)
+objectClass: aeObject
+objectClass: namedPolicy
+objectClass: aePolicy
+objectClass: pwdPolicy
+pwdAllowUserChange: FALSE
+pwdAttribute: userPassword
+pwdCheckQuality: 2
+pwdInHistory: 5
+pwdLockout: FALSE
+pwdMinLength: 24
+pwdMustChange: FALSE
+
+dn: cn=ppolicy-users,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+cn: ppolicy-users
+description: Password policy for personal user accounts (aeUser)
+objectClass: aeObject
+objectClass: namedPolicy
+objectClass: aePolicy
+objectClass: pwdPolicy
+pwdAllowUserChange: TRUE
+pwdAttribute: userPassword
+pwdCheckQuality: 2
+pwdExpireWarning: 864000
+pwdFailureCountInterval: 1800
+pwdGraceAuthNLimit: 0
+pwdInHistory: 30
+pwdLockout: TRUE
+pwdLockoutDuration: 20
+pwdMaxAge: 7776000
+pwdMaxFailure: 6
+pwdMinAge: 4
+pwdMinLength: 12
+pwdMustChange: FALSE
+pwdSafeModify: FALSE
+
+dn: cn=ppolicy-base-users,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+cn: ppolicy-base-users
+description: Password policy for primary personal user accounts (aeUser) in
+ zone base
+objectClass: aeObject
+objectClass: namedPolicy
+objectClass: aePolicy
+objectClass: pwdPolicy
+pwdAllowUserChange: TRUE
+pwdAttribute: userPassword
+pwdCheckQuality: 2
+pwdExpireWarning: 864000
+pwdFailureCountInterval: 1800
+pwdGraceAuthNLimit: 0
+pwdInHistory: 30
+pwdLockout: TRUE
+pwdLockoutDuration: 20
+pwdMaxAge: 7776000
+pwdMaxFailure: 6
+pwdMinAge: 900
+pwdMinLength: 10
+pwdMustChange: FALSE
+pwdSafeModify: FALSE
+
+dn: cn=ppolicy-otptokens,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+cn: ppolicy-otptokens
+description: Password policy for OTP enrollment
+objectClass: aeObject
+objectClass: namedPolicy
+objectClass: aePolicy
+objectClass: pwdPolicy
+pwdAllowUserChange: FALSE
+pwdAttribute: userPassword
+pwdCheckQuality: 1
+pwdExpireWarning: 300
+pwdFailureCountInterval: 10
+pwdGraceAuthNLimit: 0
+pwdInHistory: 10
+pwdLockout: TRUE
+pwdLockoutDuration: 20
+pwdMaxAge: 600
+pwdMaxFailure: 6
+pwdMinAge: 600
+pwdMinLength: 10
+pwdMustChange: FALSE
+pwdSafeModify: FALSE
+
+dn: cn=oath-policy-hotp-users,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+cn: oath-policy-hotp-users
+description: OATH/HOTP policy parameters for normal use
+oathHMACAlgorithm: 1.2.840.113549.2.7
+oathHOTPLookAhead: 15
+oathOTPLength: 8
+objectClass: namedObject
+objectClass: aeObject
+objectClass: namedPolicy
+objectClass: aePolicy
+objectClass: oathParams
+objectClass: oathHOTPParams
+
+dn: cn=oath-policy-resync-hotp-users,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTicketId: INIT-42
+cn: oath-policy-resync-hotp-users
+description: OATH/HOTP policy parameters for counter resync
+oathHMACAlgorithm: 1.2.840.113549.2.7
+oathHOTPLookAhead: 100
+oathOTPLength: 8
+objectClass: namedObject
+objectClass: aeObject
+objectClass: namedPolicy
+objectClass: aePolicy
+objectClass: oathParams
+objectClass: oathHOTPParams
+
+dn: uid=msin,cn=ae,ou=ae-dir
+aePerson: uniqueIdentifier=INIT-PERSON-ID-42,cn=people,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTag: pub-tag-no-welcome-yet
+aeTicketId: INIT-42
+cn:: TWljaGFlbCBTdHLDtmRlcg==
+description:: aW5pdGlhbCDDhi1ESVIgYWRtaW4=
+displayName:: TWljaGFlbCBTdHLDtmRlciAobXNpbi8zMDAwMCk=
+gidNumber: 30000
+givenName: Michael
+homeDirectory: /home/msin
+loginShell: /bin/bash
+mail: michael@stroeder.com
+objectClass: account
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: aeObject
+objectClass: aeUser
+objectClass: posixAccount
+objectClass: aeSSHAccount
+sn:: U3Ryw7ZkZXI=
+uid: msin
+uidNumber: 30000
+pwdPolicySubentry: cn=ppolicy-users,cn=ae,ou=ae-dir
+
+dn: cn=ae-admins,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-admins
+description:: R3JvdXAgbWVtYmVycyBjYW4gbWFuYWdlIGFsbCDDhi1ESVIgZW50cmllcw==
+gidNumber: 30001
+member: uid=msin,cn=ae,ou=ae-dir
+memberUid: msin
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=ae-auditors,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-auditors
+description:: R3JvdXAgbWVtYmVycyBjYW4gcmVhZCBhbGwgw4YtRElSIGVudHJpZXM=
+gidNumber: 30002
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=ae-all-zone-admins,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-all-zone-admins
+description: This group is updated to contain all zone admins
+gidNumber: 30003
+memberURL: ldap:///ou=ae-dir?member?sub?(&(objectClass=aeGroup)(aeStatus=0)(
+ cn=*-zone-admins)(!(cn=ae-all-zone-*)))
+objectClass: top
+objectClass: groupOfEntries
+objectClass: groupOfURLs
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=ae-all-zone-auditors,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-all-zone-auditors
+description: This group is updated to contain all zone auditors
+gidNumber: 30004
+memberURL: ldap:///ou=ae-dir?member?sub?(&(objectClass=aeGroup)(aeStatus=0)(
+ cn=*-zone-auditors)(!(cn=ae-all-zone-*)))
+objectClass: top
+objectClass: groupOfEntries
+objectClass: groupOfURLs
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=ae-sys-admins,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-sys-admins
+description: Members are system admins for AE-DIR servers
+gidNumber: 30005
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: uid=ae-dir-peoplesync,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: Personnel data sync process
+description: Personnel data sync process
+gidNumber: 999
+homeDirectory: /home/ae-dir-peoplesync
+loginShell: /bin/true
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: posixAccount
+objectClass: aeSSHAccount
+uid: ae-dir-peoplesync
+uidNumber: 999
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: uid=ae-dir-pwd,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: Password self-service application
+description: Password self-service application
+gidNumber: 998
+homeDirectory: /home/ae-dir-pwd
+loginShell: /bin/true
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: posixAccount
+objectClass: aeSSHAccount
+uid: ae-dir-pwd
+uidNumber: 998
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: uid=ae-dir-otpenroll,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: 2FA enrollment application
+description: 2FA enrollment application
+gidNumber: 997
+homeDirectory: /home/ae-dir-otpenroll
+loginShell: /bin/true
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: posixAccount
+objectClass: aeSSHAccount
+uid: ae-dir-otpenroll
+uidNumber: 997
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: uid=ae-dir-bind-proxy,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: OATH-LDAP bind proxy
+description: OATH-LDAP bind proxy
+gidNumber: 995
+homeDirectory: /home/ae-dir-bind-proxy
+loginShell: /bin/true
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: posixAccount
+objectClass: aeSSHAccount
+uid: ae-dir-bind-proxy
+uidNumber: 995
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: uid=ae-dir-otpverify,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: OATH-LDAP validator demon
+description: OATH-LDAP validator demon
+gidNumber: 996
+homeDirectory: /home/ae-dir-otpverify
+loginShell: /bin/true
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: posixAccount
+objectClass: aeSSHAccount
+uid: ae-dir-otpverify
+uidNumber: 996
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: cn=ae-login-proxies,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-login-proxies
+description: Members are central login components which are allowed to see a
+ ll users/groups and must determine login user/target relation themselves
+gidNumber: 30006
+member: uid=ae-dir-otpverify,cn=ae,ou=ae-dir
+member: uid=ae-dir-bind-proxy,cn=ae,ou=ae-dir
+member: uid=ae-dir-otpenroll,cn=ae,ou=ae-dir
+memberUid: ae-dir-otpverify
+memberUid: ae-dir-bind-proxy
+memberUid: ae-dir-otpenroll
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=ae-sudo-sys-admins,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-sudo-sys-admins
+description: su - root for AE-DIR system admins
+objectClass: top
+objectClass: sudoRole
+objectClass: aeObject
+objectClass: aeSudoRule
+sudoCommand: ALL
+sudoHost: ALL
+sudoRunAsUser: ALL
+sudoUser: %ae-sys-admins
+
+dn: cn=ae-dir-provider-hosts,cn=ae,ou=ae-dir
+aeLogStoreGroups: cn=ae-sys-admins,cn=ae,ou=ae-dir
+aeLoginGroups: cn=ae-sys-admins,cn=ae,ou=ae-dir
+aeSetupGroups: cn=ae-sys-admins,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+aeVisibleGroups: cn=ae-sys-admins,cn=ae,ou=ae-dir
+aeVisibleSudoers: cn=ae-sudo-sys-admins,cn=ae,ou=ae-dir
+cn: ae-dir-provider-hosts
+description: AE-DIR provider hosts
+objectClass: aeObject
+objectClass: aeSrvGroup
+
+dn: host=ae-dir-deb-p1.virtnet1.stroeder.local,cn=ae-dir-provider-hosts,cn=a
+ e,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-dir-deb-p1
+description: AE-DIR provider replica host for ae-dir-deb-p1.virtnet1.stroede
+ r.local
+host: ae-dir-deb-p1.virtnet1.stroeder.local
+objectClass: device
+objectClass: aeDevice
+objectClass: aeObject
+objectClass: aeHost
+objectClass: ldapPublicKey
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: cn=eth0,host=ae-dir-deb-p1.virtnet1.stroeder.local,cn=ae-dir-provider-ho
+ sts,cn=ae,ou=ae-dir
+aeFqdn: ae-dir-deb-p1.virtnet1.stroeder.local
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: eth0
+ipHostNumber: 10.54.1.31
+macAddress: 52:54:00:23:42:31
+objectClass: device
+objectClass: aeObject
+objectClass: aeDevice
+objectClass: aeNwDevice
+objectClass: ieee802Device
+objectClass: ipHost
+
+dn: uid=ae-dir-slapd_ae-dir-deb-p1,cn=ae,ou=ae-dir
+aeHost: host=ae-dir-deb-p1.virtnet1.stroeder.local,cn=ae-dir-provider-hosts,
+ cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-dir-slapd_ae-dir-deb-p1
+description: AE-DIR slapd provider ae-dir-deb-p1.virtnet1.stroeder.local run
+ ning on ae-dir-deb-p1.virtnet1.stroeder.local
+gidNumber: 30008
+homeDirectory: /home/ae-dir-slapd_ae-dir-deb-p1
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: pkiUser
+objectClass: posixAccount
+seeAlso: cn=ae-dir-deb-p1.virtnet1.stroeder.local,ou=ITO,o=stroeder.com,l=Ka
+ rlsruhe,st=Ba-Wue,c=DE
+uid: ae-dir-slapd_ae-dir-deb-p1
+uidNumber: 30008
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: host=ae-dir-deb-p2.virtnet1.stroeder.local,cn=ae-dir-provider-hosts,cn=a
+ e,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-dir-deb-p2
+description: AE-DIR provider replica host for ae-dir-deb-p2.virtnet1.stroede
+ r.local
+host: ae-dir-deb-p2.virtnet1.stroeder.local
+objectClass: device
+objectClass: aeDevice
+objectClass: aeObject
+objectClass: aeHost
+objectClass: ldapPublicKey
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: cn=eth0,host=ae-dir-deb-p2.virtnet1.stroeder.local,cn=ae-dir-provider-ho
+ sts,cn=ae,ou=ae-dir
+aeFqdn: ae-dir-deb-p2.virtnet1.stroeder.local
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: eth0
+ipHostNumber: 10.54.1.32
+macAddress: 52:54:00:23:42:32
+objectClass: device
+objectClass: aeObject
+objectClass: aeDevice
+objectClass: aeNwDevice
+objectClass: ieee802Device
+objectClass: ipHost
+
+dn: uid=ae-dir-slapd_ae-dir-deb-p2,cn=ae,ou=ae-dir
+aeHost: host=ae-dir-deb-p2.virtnet1.stroeder.local,cn=ae-dir-provider-hosts,
+ cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-dir-slapd_ae-dir-deb-p2
+description: AE-DIR slapd provider ae-dir-deb-p2.virtnet1.stroeder.local run
+ ning on ae-dir-deb-p2.virtnet1.stroeder.local
+gidNumber: 30009
+homeDirectory: /home/ae-dir-slapd_ae-dir-deb-p2
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: pkiUser
+objectClass: posixAccount
+seeAlso: cn=ae-dir-deb-p2.virtnet1.stroeder.local,ou=ITO,o=stroeder.com,l=Ka
+ rlsruhe,st=Ba-Wue,c=DE
+uid: ae-dir-slapd_ae-dir-deb-p2
+uidNumber: 30009
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: cn=ae-dir-consumer-hosts,cn=ae,ou=ae-dir
+aeLogStoreGroups: cn=ae-sys-admins,cn=ae,ou=ae-dir
+aeLoginGroups: cn=ae-sys-admins,cn=ae,ou=ae-dir
+aeSetupGroups: cn=ae-sys-admins,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+aeVisibleGroups: cn=ae-sys-admins,cn=ae,ou=ae-dir
+aeVisibleSudoers: cn=ae-sudo-sys-admins,cn=ae,ou=ae-dir
+cn: ae-dir-consumer-hosts
+description: AE-DIR consumer hosts
+objectClass: aeObject
+objectClass: aeSrvGroup
+
+dn: host=ae-dir-deb-c1.virtnet1.stroeder.local,cn=ae-dir-consumer-hosts,cn=a
+ e,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-dir-deb-c1
+description: AE-DIR provider replica host for ae-dir-deb-c1.virtnet1.stroede
+ r.local
+host: ae-dir-deb-c1.virtnet1.stroeder.local
+objectClass: device
+objectClass: aeDevice
+objectClass: aeObject
+objectClass: aeHost
+objectClass: ldapPublicKey
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: cn=eth0,host=ae-dir-deb-c1.virtnet1.stroeder.local,cn=ae-dir-consumer-ho
+ sts,cn=ae,ou=ae-dir
+aeFqdn: ae-dir-deb-c1.virtnet1.stroeder.local
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: eth0
+ipHostNumber: 10.54.1.33
+macAddress: 52:54:00:23:42:33
+objectClass: device
+objectClass: aeObject
+objectClass: aeDevice
+objectClass: aeNwDevice
+objectClass: ieee802Device
+objectClass: ipHost
+
+dn: uid=ae-dir-slapd_ae-dir-deb-c1,cn=ae,ou=ae-dir
+aeHost: host=ae-dir-deb-c1.virtnet1.stroeder.local,cn=ae-dir-consumer-hosts,
+ cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-dir-slapd_ae-dir-deb-c1
+description: AE-DIR slapd provider ae-dir-deb-c1.virtnet1.stroeder.local run
+ ning on ae-dir-deb-c1.virtnet1.stroeder.local
+gidNumber: 30010
+homeDirectory: /home/ae-dir-slapd_ae-dir-deb-c1
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: pkiUser
+objectClass: posixAccount
+seeAlso: cn=ae-dir-deb-c1.virtnet1.stroeder.local,ou=ITO,o=stroeder.com,l=Ka
+ rlsruhe,st=Ba-Wue,c=DE
+uid: ae-dir-slapd_ae-dir-deb-c1
+uidNumber: 30010
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: host=ae-dir-deb-c2.virtnet1.stroeder.local,cn=ae-dir-consumer-hosts,cn=a
+ e,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-dir-deb-c2
+description: AE-DIR provider replica host for ae-dir-deb-c2.virtnet1.stroede
+ r.local
+host: ae-dir-deb-c2.virtnet1.stroeder.local
+objectClass: device
+objectClass: aeDevice
+objectClass: aeObject
+objectClass: aeHost
+objectClass: ldapPublicKey
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: cn=eth0,host=ae-dir-deb-c2.virtnet1.stroeder.local,cn=ae-dir-consumer-ho
+ sts,cn=ae,ou=ae-dir
+aeFqdn: ae-dir-deb-c2.virtnet1.stroeder.local
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: eth0
+ipHostNumber: 10.54.1.34
+macAddress: 52:54:00:23:42:34
+objectClass: device
+objectClass: aeObject
+objectClass: aeDevice
+objectClass: aeNwDevice
+objectClass: ieee802Device
+objectClass: ipHost
+
+dn: uid=ae-dir-slapd_ae-dir-deb-c2,cn=ae,ou=ae-dir
+aeHost: host=ae-dir-deb-c2.virtnet1.stroeder.local,cn=ae-dir-consumer-hosts,
+ cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-dir-slapd_ae-dir-deb-c2
+description: AE-DIR slapd provider ae-dir-deb-c2.virtnet1.stroeder.local run
+ ning on ae-dir-deb-c2.virtnet1.stroeder.local
+gidNumber: 30011
+homeDirectory: /home/ae-dir-slapd_ae-dir-deb-c2
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: pkiUser
+objectClass: posixAccount
+seeAlso: cn=ae-dir-deb-c2.virtnet1.stroeder.local,ou=ITO,o=stroeder.com,l=Ka
+ rlsruhe,st=Ba-Wue,c=DE
+uid: ae-dir-slapd_ae-dir-deb-c2
+uidNumber: 30011
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: cn=ae-replicas,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-replicas
+description: Members of this group are AE-DIR replicas (providers and consum
+ ers)
+gidNumber: 30012
+member: uid=ae-dir-slapd_ae-dir-deb-p1,cn=ae,ou=ae-dir
+member: uid=ae-dir-slapd_ae-dir-deb-p2,cn=ae,ou=ae-dir
+member: uid=ae-dir-slapd_ae-dir-deb-c1,cn=ae,ou=ae-dir
+member: uid=ae-dir-slapd_ae-dir-deb-c2,cn=ae,ou=ae-dir
+memberUid: ae-dir-slapd_ae-dir-deb-p1
+memberUid: ae-dir-slapd_ae-dir-deb-p2
+memberUid: ae-dir-slapd_ae-dir-deb-c1
+memberUid: ae-dir-slapd_ae-dir-deb-c2
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=ae-providers,cn=ae,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: ae-providers
+description: Members of this group are AE-DIR provider replicas
+gidNumber: 30013
+member: uid=ae-dir-slapd_ae-dir-deb-p1,cn=ae,ou=ae-dir
+member: uid=ae-dir-slapd_ae-dir-deb-p2,cn=ae,ou=ae-dir
+memberUid: ae-dir-slapd_ae-dir-deb-p1
+memberUid: ae-dir-slapd_ae-dir-deb-p2
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=test,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+aeZoneAdmins: cn=test-zone-admins,cn=test,ou=ae-dir
+aeZoneAuditors: cn=test-zone-auditors,cn=test,ou=ae-dir
+cn: test
+description: Playground zone for weird tests
+objectClass: namedObject
+objectClass: aeObject
+objectClass: aeZone
+
+dn: uid=bccb,cn=test,ou=ae-dir
+aeNotBefore: 20170116212737Z
+aePerson: uniqueIdentifier=INIT-PERSON-ID-42,cn=people,ou=ae-dir
+aeStatus: 0
+aeTag: pub-tag-no-welcome-yet
+cn:: TWljaGFlbCBTdHLDtmRlcg==
+displayName:: TWljaGFlbCBTdHLDtmRlciAoYmNjYi8zMDAyMik=
+gidNumber: 30022
+givenName: Michael
+homeDirectory: /home/bccb
+loginShell: /bin/bash
+mail: michael@stroeder.com
+objectClass: account
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: aeObject
+objectClass: aeUser
+objectClass: posixAccount
+objectClass: aeSSHAccount
+sn:: U3Ryw7ZkZXI=
+uid: bccb
+uidNumber: 30022
+userPassword: Geheimer123456
+pwdPolicySubentry: cn=ppolicy-users,cn=ae,ou=ae-dir
+
+dn: uid=luua,cn=test,ou=ae-dir
+aeNotBefore: 20170116224426Z
+aePerson: uniqueIdentifier=INIT-PERSON-ID-42,cn=people,ou=ae-dir
+aeStatus: 0
+aeTag: pub-tag-no-welcome-yet
+cn:: TWljaGFlbCBTdHLDtmRlcg==
+displayName:: TWljaGFlbCBTdHLDtmRlciAobHV1YS8zMDAyNSk=
+gidNumber: 30025
+givenName: Michael
+homeDirectory: /home/luua
+loginShell: /bin/bash
+mail: michael@stroeder.com
+objectClass: account
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: aeObject
+objectClass: aeUser
+objectClass: posixAccount
+objectClass: aeSSHAccount
+sn:: U3Ryw7ZkZXI=
+uid: luua
+uidNumber: 30025
+pwdPolicySubentry: cn=ppolicy-users,cn=ae,ou=ae-dir
+
+dn: uid=wxrl,cn=test,ou=ae-dir
+aeNotBefore: 20170421193603Z
+aePerson: uniqueIdentifier=web2ldap-1489425020.31,cn=people,ou=ae-dir
+aeStatus: 0
+cn: Anna Blume
+displayName: Anna Blume (wxrl/30027)
+gidNumber: 30027
+givenName: Anna
+homeDirectory: /home/wxrl
+loginShell: /bin/bash
+mail: anna.blume@example.com
+objectClass: account
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: aeObject
+objectClass: aeUser
+objectClass: posixAccount
+objectClass: aeSSHAccount
+sn: Blume
+uid: wxrl
+uidNumber: 30027
+pwdPolicySubentry: cn=ppolicy-users,cn=ae,ou=ae-dir
+
+dn: uid=xkcd,cn=test,ou=ae-dir
+aeNotBefore: 20170421193603Z
+aePerson: uniqueIdentifier=web2ldap-1489425020.31,cn=people,ou=ae-dir
+aeStatus: 0
+cn: Anna Blume
+displayName: Anna Blume (xkcd/30027)
+gidNumber: 30028
+givenName: Anna
+homeDirectory: /home/xkcd
+loginShell: /bin/bash
+mail: anna.blume@example.com
+objectClass: account
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: aeObject
+objectClass: aeUser
+objectClass: posixAccount
+objectClass: aeSSHAccount
+sn: Blume
+uid: xkcd
+uidNumber: 30028
+pwdPolicySubentry: cn=ppolicy-users,cn=ae,ou=ae-dir
+
+dn: cn=test-zone-admins,cn=test,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: test-zone-admins
+description: Group members are zone admins who can manage zone 'test'
+gidNumber: 30016
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+member: uid=bccb,cn=test,ou=ae-dir
+memberUid: bccb
+
+dn: cn=test-zone-auditors,cn=test,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: test-zone-auditors
+description: Group members are zone auditors who can read zone 'test'
+gidNumber: 30017
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=test-login-users-1,cn=test,ou=ae-dir
+aeDept: departmentNumber=42,cn=people,ou=ae-dir
+aeLocation: cn=no-location,cn=people,ou=ae-dir
+aeLocation: cn=test-lab,cn=people,ou=ae-dir
+aeMemberZone: cn=test,ou=ae-dir
+aeNotBefore: 20170116213250Z
+aeStatus: 0
+cn: test-login-users-1
+description: Login users #1
+gidNumber: 30023
+member: uid=xkcd,cn=test,ou=ae-dir
+member: uid=wxrl,cn=test,ou=ae-dir
+memberUid: xkcd
+memberUid: wxrl
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=test-users-2,cn=test,ou=ae-dir
+aeMemberZone: cn=test,ou=ae-dir
+aeNotBefore: 20170116213310Z
+aeStatus: 0
+cn: test-users-2
+description: Test group #2
+gidNumber: 30024
+member: uid=bccb,cn=test,ou=ae-dir
+member: uid=luua,cn=test,ou=ae-dir
+memberUid: bccb
+memberUid: luua
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=test-admins-1,cn=test,ou=ae-dir
+aeDept: departmentNumber=42,cn=people,ou=ae-dir
+aeLocation: cn=no-location,cn=people,ou=ae-dir
+aeLocation: cn=test-lab,cn=people,ou=ae-dir
+aeMemberZone: cn=test,ou=ae-dir
+aeNotBefore: 20201218113000Z
+aeStatus: 0
+cn: test-admins-1
+description: Login users #1
+gidNumber: 30029
+member: uid=wxrl,cn=test,ou=ae-dir
+memberUid: wxrl
+objectClass: top
+objectClass: groupOfEntries
+objectClass: posixGroup
+objectClass: aeObject
+objectClass: aeGroup
+
+dn: cn=test-services-1,cn=test,ou=ae-dir
+aeNotBefore: 20170116213219Z
+aeStatus: 0
+aeSetupGroups: cn=test-admins-1,cn=test,ou=ae-dir
+aeVisibleGroups: cn=test-login-users-1,cn=test,ou=ae-dir
+aeLoginGroups: cn=test-login-users-1,cn=test,ou=ae-dir
+cn: test-services-1
+description: Test services #1
+objectClass: aeObject
+objectClass: aeSrvGroup
+
+dn: cn=test-services-2,cn=test,ou=ae-dir
+aeNotBefore: 20170116213219Z
+aeStatus: 0
+aeVisibleGroups: cn=test-users-2,cn=test,ou=ae-dir
+aeLoginGroups: cn=test-users-2,cn=test,ou=ae-dir
+cn: test-services-2
+description: Test services #2
+objectClass: aeObject
+objectClass: aeSrvGroup
+
+dn: host=foo.example.com,cn=test-services-1,cn=test,ou=ae-dir
+aeNotBefore: 20170116213536Z
+aeSrvGroup: cn=test-services-2,cn=test,ou=ae-dir
+aeStatus: 0
+cn: foo
+host: foo.example.com
+objectClass: device
+objectClass: aeDevice
+objectClass: aeObject
+objectClass: aeHost
+objectClass: ldapPublicKey
+pwdPolicySubentry: cn=ppolicy-systems,cn=ae,ou=ae-dir
+
+dn: uid=test-client,cn=test,ou=ae-dir
+aeStatus: 0
+aeTag: ae-tag-init
+aeTicketId: INIT-42
+cn: TLS client cert
+description: TLS client cert
+objectClass: account
+objectClass: aeObject
+objectClass: aeService
+objectClass: pkiUser
+uid: test-client
+pwdPolicySubentry: cn=ppolicy-sasl-external,cn=ae,ou=ae-dir
+seeAlso: cn=test-client,ou=example ou,o=example company
+
