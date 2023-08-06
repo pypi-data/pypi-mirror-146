@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+sphinxnotes/__init__.py
+sphinxnotes/lilypond/__init__.py
+sphinxnotes/lilypond/lilypond.py
+sphinxnotes_lilypond.egg-info/PKG-INFO
+sphinxnotes_lilypond.egg-info/SOURCES.txt
+sphinxnotes_lilypond.egg-info/dependency_links.txt
+sphinxnotes_lilypond.egg-info/namespace_packages.txt
+sphinxnotes_lilypond.egg-info/not-zip-safe
+sphinxnotes_lilypond.egg-info/requires.txt
+sphinxnotes_lilypond.egg-info/top_level.txt
