@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: wc-django-locales-collector
+Version: 0.1.0
+Summary: Django app that collect thirdparty translations into local folder.
+Home-page: UNKNOWN
+Author: WebCase
+Author-email: info@webcase.studio
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# WebCase locales collector
+
+Collects locales from any python third parties to some local folder. It's useful for a more easier local translations management.
+
+## Installation
+
+```sh
+pip install wc-django-locales-collector
+```
+
+In `settings.py`:
+
+```python
+
+INSTALLED_APPS += [
+  'wcd_locales_collector',
+]
+
+WCD_LOCALES_COLLECTOR = {
+  # List of modules for which locales will be collected.
+  'MODULES': [
+    # For example:
+    'rest_framework',
+  ],
+  # Path to save collected locales.
+  'PATH' = BASE_ROOT / 'exported_locale'
+}
+
+# All root options could also be provided as standalone ones(for overriding, etc.):
+WCD_LOCALES_COLLECTOR_PATH = BASE_ROOT / 'replaced_locale'
+
+# ...
+
+# Your static `LOCALE_PATHS` config should be wrapped by paths extender.
+# If it's not, then all exported locales will not be applied.
+from wcd_locales_collector.helpers import locale_paths_extender
+
+LOCALE_PATHS = locale_paths_extender(LOCALE_PATHS)
+
+# OR!
+# If you have some issues with that approach - you can extend `LOCALE_PATHS`
+# manually:
+from wcd_locales_collector.services import pathifier
+
+LOCALE_PATHS = LOCALE_PATHS + pathifier.get_modules_result_paths(
+  WCD_LOCALES_COLLECTOR['MODULES'], WCD_LOCALES_COLLECTOR_PATH
+)
+```
+
+## Usage
+
+```python
+python manage.py collectlocales
+```
+
+That's it. You have collected all locales from all provided apps into a separate folder.
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [0.1.0]
+Initial version.
+
+
