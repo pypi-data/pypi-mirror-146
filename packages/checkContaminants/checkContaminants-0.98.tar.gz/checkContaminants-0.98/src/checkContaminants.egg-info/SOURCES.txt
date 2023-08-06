@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/checkContaminants.egg-info/PKG-INFO
+src/checkContaminants.egg-info/SOURCES.txt
+src/checkContaminants.egg-info/dependency_links.txt
+src/checkContaminants.egg-info/entry_points.txt
+src/checkContaminants.egg-info/requires.txt
+src/checkContaminants.egg-info/top_level.txt
