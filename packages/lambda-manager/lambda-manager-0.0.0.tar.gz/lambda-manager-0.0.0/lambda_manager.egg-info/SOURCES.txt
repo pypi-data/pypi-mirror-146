@@ -1,0 +1,6 @@
+README.md
+lambda_manager.egg-info/PKG-INFO
+lambda_manager.egg-info/SOURCES.txt
+lambda_manager.egg-info/dependency_links.txt
+lambda_manager.egg-info/top_level.txt
+lambda_manager.egg-info/zip-safe
