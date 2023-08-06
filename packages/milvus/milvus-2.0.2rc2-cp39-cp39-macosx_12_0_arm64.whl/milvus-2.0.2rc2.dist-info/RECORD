@@ -1,0 +1,16 @@
+milvus-2.0.2rc2.data/purelib/milvus/__init__.py,sha256=4sRkakcsOeHP2FL765dlumAbwZ-fZpxTmtdEjOhaq_4,1659
+milvus-2.0.2rc2.data/purelib/milvus/preload.py,sha256=eGR_7RH8Wsya9RtfqvAaBEwsQsqfVK4wstIkfh5dAq8,137
+milvus-2.0.2rc2.data/purelib/milvus/bin/embd-milvus.h,sha256=vMqeURlepxy-sNENbb7weuSBgANpvkdRdh16UouDRE0,1595
+milvus-2.0.2rc2.data/purelib/milvus/bin/embd-milvus.so,sha256=CTbNT_6b7YlKnUla91JU3CK2VsmYVzC5tK7RUahE-08,137613730
+milvus-2.0.2rc2.data/purelib/milvus/configs/embedded-milvus.yaml,sha256=LEc0zUtwJGRtrNpeqyuU7uLwxNcTolHAY7J0Unp56x4,11877
+milvus-2.0.2rc2.data/purelib/milvus/lib/libfaiss.a,sha256=y6qAoJ9_60RJCJceEl1OAOJMWHmYjoxwwOkvuRljqwA,4789248
+milvus-2.0.2rc2.data/purelib/milvus/lib/libknowhere.dylib,sha256=Tl0p9cNpuw8nR_aZroyAuR9gxgNEkjfHPGV3NNIw5mY,3514352
+milvus-2.0.2rc2.data/purelib/milvus/lib/libmilvus_common.dylib,sha256=W1Q-ky7_Ocetg8t2F1mOHIisfqPH6pYGZ0EmuMci85w,97560
+milvus-2.0.2rc2.data/purelib/milvus/lib/libmilvus_index.dylib,sha256=z4ztvOwKF-atD0d-VIJTkJg6x6DhsDaj2bYjW_Smgcs,1883832
+milvus-2.0.2rc2.data/purelib/milvus/lib/libmilvus_indexbuilder.dylib,sha256=qQiE0f6p7sIpv1dF4FsQqfJR6Dpq-zCHNYWcMWeSq04,333696
+milvus-2.0.2rc2.data/purelib/milvus/lib/libmilvus_segcore.dylib,sha256=wx_WCBG1TKNu8bUC23OpYcOkBg4phzPCfS9W4EHSwZY,3008856
+milvus-2.0.2rc2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+milvus-2.0.2rc2.dist-info/METADATA,sha256=5bPNFPwbhdAcKdVCHiDsbvPXr9g59_4Ln61J6tWdKi4,560
+milvus-2.0.2rc2.dist-info/WHEEL,sha256=fLZVE2sWVfBI3pzbwmKR0Q0ugaWRmAjTxXtce6A8qKw,108
+milvus-2.0.2rc2.dist-info/top_level.txt,sha256=AA_ff9UwDdLoHlsv4RjdZorgQgIaugPvBK35QhdMGrc,7
+milvus-2.0.2rc2.dist-info/RECORD,,
