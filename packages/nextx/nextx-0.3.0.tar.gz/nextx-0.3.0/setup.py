@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['nextx',
+ 'nextx.dependencies',
+ 'nextx.domain',
+ 'nextx.exceptions',
+ 'nextx.interfaces',
+ 'nextx.pubsub',
+ 'nextx.repository']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['Inject>=4.3.1,<5.0.0',
+ 'aioredis>=2.0.1,<3.0.0',
+ 'beanie>=1.10.4,<2.0.0',
+ 'fastapi>=0.75.1,<0.76.0',
+ 'python-decouple>=3.6,<4.0',
+ 'python-jose>=3.3.0,<4.0.0',
+ 'uvicorn>=0.17.6,<0.18.0']
+
+setup_kwargs = {
+    'name': 'nextx',
+    'version': '0.3.0',
+    'description': 'A repository interface and a companion stub implementation of NoSQL MongoDb',
+    'long_description': None,
+    'author': 'adriangs1996',
+    'author_email': 'adriangonzalezsanchez1996@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
