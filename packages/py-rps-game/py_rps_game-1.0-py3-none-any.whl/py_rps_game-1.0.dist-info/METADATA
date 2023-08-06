@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: py-rps-game
+Version: 1.0
+Summary: A simple CLI based Rock-Paper-Scissors written in Python.
+Author: Patrick260
+Author-email: Patrick260@protonmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/Patrick260/rps-game
+Project-URL: Bug Reports, https://github.com/Patrick260/rps-game/issues
+Keywords: game,games
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## What's this?
+A simple CLI based Rock-Paper-Scissors written in Python.
+
+## How to play
+```pip install py-rps-game```
+
+## Dev Information's
+Python Interpreter: Python 3.10
+
