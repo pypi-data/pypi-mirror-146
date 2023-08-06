@@ -1,0 +1,71 @@
+from setuptools import setup, find_packages
+
+
+setup(
+    name='futuretone',
+    version='0.0.4',
+    author='Jay',
+    author_email='0jaybae0@gmail.com',
+    description='Integrates into Future Tone on the PS4',
+    url='https://github.com/Jay184/FT-Unofficial/tree/dev/api',
+    project_urls={
+        'Bug Tracker': 'https://github.com/Jay184/FT-Unofficial/labels/api',
+    },
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'Operating System :: OS Independent',
+    ],
+    package_dir={'': 'src'},
+    packages=find_packages(where='src'),
+    py_modules=['futuretone'],
+    include_package_data=True,
+    entry_points='''
+        [console_scripts]
+        futuretone=futuretone:app
+    ''',
+    install_requires=[
+        'click<8.1.0',
+        'aiohttp==3.8.1',
+        'aiosignal==1.2.0',
+        'async-timeout==4.0.2',
+        'attrs==21.4.0',
+        'bleach==4.1.0',
+        'build==0.7.0',
+        'certifi==2021.10.8',
+        'charset-normalizer==2.0.12',
+        'colorama==0.4.4',
+        'commonmark==0.9.1',
+        'docutils==0.18.1',
+        'frozenlist==1.3.0',
+        'idna==3.3',
+        'importlib-metadata==4.11.3',
+        'iso8601==1.0.2',
+        'keyring==23.5.0',
+        'multidict==6.0.2',
+        'packaging==21.3',
+        'pep517==0.12.0',
+        'pkginfo==1.8.2',
+        'pydantic==1.9.0',
+        'Pygments==2.11.2',
+        'pyparsing==3.0.7',
+        'pywin32-ctypes==0.2.0',
+        'readme-renderer==34.0',
+        'requests==2.27.1',
+        'requests-toolbelt==0.9.1',
+        'rfc3986==2.0.0',
+        'rich==12.0.1',
+        'six==1.16.0',
+        'tomli==2.0.1',
+        'twine==4.0.0',
+        'twitchio==2.2.0',
+        'typer==0.4.0',
+        'typing_extensions==4.1.1',
+        'urllib3==1.26.9',
+        'webencodings==0.5.1',
+        'yarl==1.7.2',
+        'zipp==3.7.0',
+        'construct==2.10.68',
+        'ps4debug>=0.1.3',  # Hey, I made this one! Check it out at "https://pypi.org/project/ps4debug/"
+    ],
+    python_requires='>=3.10'
+)

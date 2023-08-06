@@ -1,0 +1,14 @@
+pyproject.toml
+setup.py
+src/futuretone/__init__.py
+src/futuretone/cli.py
+src/futuretone/config.py
+src/futuretone/core.py
+src/futuretone/test.py
+src/futuretone/twitch.py
+src/futuretone.egg-info/PKG-INFO
+src/futuretone.egg-info/SOURCES.txt
+src/futuretone.egg-info/dependency_links.txt
+src/futuretone.egg-info/entry_points.txt
+src/futuretone.egg-info/requires.txt
+src/futuretone.egg-info/top_level.txt
