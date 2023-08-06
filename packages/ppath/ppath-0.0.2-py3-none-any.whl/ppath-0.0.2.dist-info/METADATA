@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ppath
+Version: 0.0.2
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: build ; extra == 'test'
+Requires-Dist: darling ; extra == 'test'
+Requires-Dist: ipython ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Requires-Dist: setuptools ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+Requires-Dist: wheel ; extra == 'test'
+
+UNKNOWN
+
