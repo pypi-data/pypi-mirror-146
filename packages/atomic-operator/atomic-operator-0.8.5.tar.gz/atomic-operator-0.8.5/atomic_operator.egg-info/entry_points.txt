@@ -1,0 +1,2 @@
+[console_scripts]
+atomic-operator = atomic_operator.__main__:main
