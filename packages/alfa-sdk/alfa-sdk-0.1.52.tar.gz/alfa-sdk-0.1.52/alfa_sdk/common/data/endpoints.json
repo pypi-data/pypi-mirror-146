@@ -1,0 +1,132 @@
+{
+  "public": {
+    "hostname": "{protocol}://{host}.{domain}",
+    "domain": {
+      "dev": "widgetbrain.io",
+      "test": "widgetbrain.io",
+      "prod": "widgetbrain.io"
+    },
+    "services": {
+      "core": {
+        "dev": "wb-core-development",
+        "test": "wb-core-test",
+        "prod": "wb-core"
+      },
+      "baas": {
+        "dev": "baas-development",
+        "test": "baas-test",
+        "prod": "baas"
+      },
+      "ais": {
+        "dev": "ais-dev",
+        "test": "ais-test",
+        "prod": "ais"
+      },
+      "release": {
+        "dev": "release-dev",
+        "test": "release-test",
+        "prod": "release"
+      },
+      "meta": {
+        "dev": "meta-dev",
+        "test": "meta-test",
+        "prod": "meta"
+      },
+      "data": {
+        "dev": "data-dev",
+        "test": "data-test",
+        "prod": "data"
+      },
+      "watch": {
+        "dev": "watch-dev",
+        "test": "watch-test",
+        "prod": "watch"
+      },
+      "logger": {
+        "dev": "wb-logger-development",
+        "test": "wb-logger-test",
+        "prod": "wb-logger"
+      },
+      "pythia": {
+        "dev": "pythia-dev",
+        "test": "pythia-test",
+        "prod": "pythia"
+      },
+      "pythia-ui": {
+        "dev": "pythia-ui-dev",
+        "test": "pythia-ui-test",
+        "prod": "pythia-ui"
+      },
+      "alfa-ui": {
+        "dev": "alfa-dev",
+        "test": "alfa-test",
+        "prod": "alfa"
+      }
+    }
+  },
+  "quinyx": {
+    "hostname": "{protocol}://{host}-{region}.{domain}",
+    "domain": {
+      "dev": "web-test.quinyx.com",
+      "test": "web-staging.quinyx.com",
+      "prod": "web.quinyx.com"
+    },
+    "services": {
+      "core": {
+        "dev": "alfa-core",
+        "test": "alfa-core",
+        "prod": "alfa-core"
+      },
+      "baas": {
+        "dev": "alfa-baas",
+        "test": "alfa-baas",
+        "prod": "alfa-baas"
+      },
+      "ais": {
+        "dev": "alfa-ais",
+        "test": "alfa-ais",
+        "prod": "alfa-ais"
+      },
+      "release": {
+        "dev": "alfa-release",
+        "test": "alfa-release",
+        "prod": "alfa-release"
+      },
+      "meta": {
+        "dev": "alfa-meta",
+        "test": "alfa-meta",
+        "prod": "alfa-meta"
+      },
+      "data": {
+        "dev": "alfa-data",
+        "test": "alfa-data",
+        "prod": "alfa-data"
+      },
+      "watch": {
+        "dev": "alfa-watch",
+        "test": "alfa-watch",
+        "prod": "alfa-watch"
+      },
+      "logger": {
+        "dev": "alfa-logger",
+        "test": "alfa-logger",
+        "prod": "alfa-logger"
+      },
+      "pythia": {
+        "dev": "alfa-pythia",
+        "test": "alfa-pythia",
+        "prod": "alfa-pythia"
+      },
+      "pythia-ui": {
+        "dev": "alfa-pythia-ui",
+        "test": "alfa-pythia-ui",
+        "prod": "alfa-pythia-ui"
+      },
+      "alfa-ui": {
+        "dev": "alfa-ui",
+        "test": "alfa-ui",
+        "prod": "alfa-ui"
+      }
+    }
+  }
+}
