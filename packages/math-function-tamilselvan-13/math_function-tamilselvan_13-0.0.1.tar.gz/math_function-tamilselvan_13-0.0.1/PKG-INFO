@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: math_function-tamilselvan_13
+Version: 0.0.1
+Summary: This package is used to make maths calculations.
+Home-page: https://github.com/metamil/math_function
+Author: Tamil Selvan
+Author-email: tamilselvanm2020ai@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/metamil/math_functionpu
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is the example project.
+

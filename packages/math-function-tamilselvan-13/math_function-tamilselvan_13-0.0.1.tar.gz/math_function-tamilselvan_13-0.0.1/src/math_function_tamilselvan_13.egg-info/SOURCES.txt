@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/math_function_tamilselvan_13.egg-info/PKG-INFO
+src/math_function_tamilselvan_13.egg-info/SOURCES.txt
+src/math_function_tamilselvan_13.egg-info/dependency_links.txt
+src/math_function_tamilselvan_13.egg-info/top_level.txt
+src/math_pack/__init__.py
+src/math_pack/math_fun.py
