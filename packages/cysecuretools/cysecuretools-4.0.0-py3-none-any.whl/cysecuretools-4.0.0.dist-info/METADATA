@@ -1,0 +1,190 @@
+Metadata-Version: 2.1
+Name: cysecuretools
+Version: 4.0.0
+Summary: Cypress secure tools for Python
+Home-page: https://github.com/cypresssemiconductorco/cysecuretools
+Author: Cypress Semiconductor
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Embedded Systems
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools (==59.6.0)
+Requires-Dist: psutil (==5.9.0)
+Requires-Dist: cryptography (==36.0.1)
+Requires-Dist: click (==8.0.4)
+Requires-Dist: intelhex (==2.3.0)
+Requires-Dist: python-jose (==3.3.0)
+Requires-Dist: jsonschema (<=4.4.0,>=4.0.0)
+Requires-Dist: pyocd (==0.32.3)
+Requires-Dist: cbor (==1.0.0)
+Requires-Dist: packaging (==21.3)
+
+This package contains security tools for creating keys, creating certificates, signing user applications, and provisioning Cypress MCUs.
+
+# Table of Contents
+- [Prerequisites](#prerequisites)
+- [Documentation](#documentation)
+- [Installing package](#installing-package)
+- [Supported devices](#supported-devices)
+- [Interface and Usage](#interface-and-usage)
+    - [PSoC 64](#psoc-64)
+    - [CYW20829](#cyw20829)
+- [Logging](#logging)
+- [Installing libusb driver](#installing-libusb-driver)
+- [Known issues](#known-issues)
+- [License and Contributions](#license-and-contributions)
+
+# Prerequisites
+* General
+  * Python 3.6 or later
+* For PSoC 64 devices
+  * [Installed the libusb driver](#installing-libusb-driver)
+  * Ensure the KitProg3 programming mode is **DAPLink**
+  * Ensure the power selection jumper is set to provide 2.5 V to the power supply pin related to eFuse power. This voltage level is required to blow eFuses
+* For CYW20829 devices
+  * [Installed Cypress OpenOCD](https://github.com/cypresssemiconductorco/openocd/releases)
+  * Ensure the KitProg3 programming mode is **CMSIS-DAP Bulk**
+  * Ensure the power selection jumper is set to provide 2.5 V to the power supply pin related to eFuse power. This voltage level is required to blow eFuses
+
+
+# Documentation
+* [PSoC64 Secure MCU Secure Boot SDK User Guide](https://www.cypress.com/documentation/software-and-drivers/psoc-64-secure-mcu-secure-boot-sdk-user-guide)
+* [Changelog](CHANGELOG.md)
+
+# Installing Package
+Invoke `pip install` from the command line:
+```bash
+$ pip install cysecuretools
+```
+
+
+# Supported devices
+Use `device-list` command for output of the supported devices list.
+```bash
+$ cysecuretools device-list
+```
+
+
+# Interface and Usage
+## PSoC 64
+See [README_PSOC64.md](docs/README_PSOC64.md)
+## CYW20829
+See [README_CYW20829.md](docs/README_CYW20829.md)
+
+
+# Logging
+Every time the tool is invoked, a new log file is created in the _logs_ directory of the project. By default, the console output has INFO logging severity. The log file contains the DEBUG logging severity.
+
+When using _pyOCD_ as a debugger, the log files contain messages sent by both tools - _CySecureTools_ and _pyOCD_. When using _OpenOCD_, the log files contain messages from the package only. For the _OpenOCD_ messages, the additional files are created (e.g. _openocd_1.log_).
+
+
+# Installing libusb driver
+
+**Windows**
+  - Download and unzip libusb-1.0.25.7z from https://github.com/libusb/libusb/releases/tag/v1.0.25.
+  - Run the following command to determine if a Python shell is executing in 32-bit or 64-bit mode on the OS: `python -c "import struct; print(struct.calcsize('P') * 8)"`
+  - Copy *libusb-1.0.dll* file into the Python root folder (in same folder with *python.exe*). Use the 64-bit version of DLL for the 64-bit Python (MinGW64 directory) and the 32-bit version of DLL for the 32-bit Python (MinGW32 directory).
+  - Ensure the Python path is located at the beginning of the Path environment variable.
+
+**Mac OS**
+  - Use [homebrew](https://brew.sh/) to install the driver from the terminal: `homebrew install libusb`.
+
+**Linux**
+  - Bundled with the system, no need for additional installation.
+
+
+# Known issues
+- During the installation of the package via _pip_ on Mac OS Big Sur, the following exception is raised:
+```
+  ...
+  distutils.errors.DistutilsError: Setup script exited with error: SandboxViolation:
+  mkdir('/private/var/root/Library/Caches/com.apple.python/private/tmp/easy_install-y8c1npmz', 511) {}
+
+  The package setup script has attempted to modify files on your system
+  that are not within the EasyInstall build area, and has been aborted.
+
+  This package cannot be safely installed by EasyInstall, and may not
+  support alternate installation locations even if you run its setup
+  script by hand.  Please inform the package's author and the EasyInstall
+  maintainers to find out if a fix or workaround is available.
+```
+_Solution:_ Upgrade the `pip` package running the following command from the terminal: `python3 -m pip install --upgrade pip`.
+
+# License and Contributions
+The software is provided under the Apache-2.0 license. Contributions to this project are accepted under the same license.
+This project contains code from other projects. The original license text is included in those source files.
+
+
+# Changelog
+All notable changes to this project will be documented in this file.
+
+## 4.0.0
+### Added
+- Support of CYW20829 devices
+- Support Python 3.10
+- Signing images with HSM
+
+### Changed
+- Separated PSoC 64 and CYW20829 devices CLI
+- Updated PSoC 64 CyBootloader for 512k and 2M:
+  - added "reset_after_failure" feature
+  - decreased boot time
+- Protect PSA API from NSPE in PSoC 64 2M-S0 policy
+- Prevent signing of already signed images
+- Change MCUboot image header padding to erase value
+- Use CyBootloader from the project directory if the project exists
+- Updated dependencies packages to the latest versions
+- Use pyocd 0.32.3
+
+## 3.1.1
+### Changed
+- Fixed installation failure on macOS Big Sur and Apple M1 chip
+- Fixed installation failure in Python 3.9
+
+## 3.1.0
+### Added
+- SCRATCH with Status Partition swap mode
+- Small image slots support in the external memory
+
+## 3.0.0
+### Added
+- Image SWAP using Status Partition
+
+### Changed
+- CyBootloader 2.0
+- Secure Flash Boot 4.0.2 support
+
+## 2.1.0
+### Added
+- Support PSoC64 1M
+- New command to read device die ID
+- Optionally add boot record to the signed image
+- New policy validators (address overlaps between images and bootloader, slots address alignment with the SMPU address limits, DAP closure, monotonic counter)
+- Log the device response JWT during the provisioning process
+
+### Changed
+- Fixed issue with using group private key
+- Use pyocd 0.27.3
+
+
+## 2.0.0
+### Added
+- Support PSoC64 2M, PSoC64 512K
+- Command line interface
+- Encrypted programming
+- Single-image and multi-image policy
+
+### Changed
+- Update provisioning according to new Secure Flash Boot functionality (update system calls, reprovisioning, encrypted image support)
+- New CyBootloaders (CY8CKIT-064B0S2-4343W, CY8CKIT-064S0S2-4343W, CY8CPROTO-064B0S3)
+- Use pyocd 0.27.0
+
