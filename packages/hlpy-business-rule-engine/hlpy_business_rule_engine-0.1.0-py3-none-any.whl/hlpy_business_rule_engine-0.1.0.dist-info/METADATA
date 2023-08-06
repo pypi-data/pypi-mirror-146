@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hlpy-business-rule-engine
+Version: 0.1.0
+Summary: The hlpy business rule engine.
+Home-page: https://github.com/hlpy-co/business-rule-engine
+Download-URL: https://github.com/hlpy-co/business-rule-engine/archive/0.1.0.tar.gz
+Author: hlpy
+Author-email: hlpy-IT@hlpy.co
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
