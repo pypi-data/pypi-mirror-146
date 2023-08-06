@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+oonidata/__init__.py
+oonidata/main.py
+oonidata/metrics.py
+oonidata/mytypes.py
+oonidata/normalize.py
+oonidata/s3feeder.py
+oonidata/utils.py
+oonidata.egg-info/PKG-INFO
+oonidata.egg-info/SOURCES.txt
+oonidata.egg-info/dependency_links.txt
+oonidata.egg-info/entry_points.txt
+oonidata.egg-info/not-zip-safe
+oonidata.egg-info/requires.txt
+oonidata.egg-info/top_level.txt
