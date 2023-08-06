@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/storagy/__init__.py
+src/storagy.egg-info/PKG-INFO
+src/storagy.egg-info/SOURCES.txt
+src/storagy.egg-info/dependency_links.txt
+src/storagy.egg-info/top_level.txt
