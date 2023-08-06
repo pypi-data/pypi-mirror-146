@@ -1,0 +1,7 @@
+setup.py
+src/x509creds/__init__.py
+src/x509creds.egg-info/PKG-INFO
+src/x509creds.egg-info/SOURCES.txt
+src/x509creds.egg-info/dependency_links.txt
+src/x509creds.egg-info/requires.txt
+src/x509creds.egg-info/top_level.txt
