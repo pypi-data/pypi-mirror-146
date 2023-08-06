@@ -1,0 +1,8 @@
+search_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+search_sdk/snowflake.py,sha256=kTGmedugU-ZgzGwshgbCLaCeqeF64Ym8wTUyOSEZBuE,2640
+search_sdk/table.py,sha256=TwBn1DAfKmAFAu0PJ84CNoGzofITgBasyR8bP2u2RcI,6405
+search_sdk/vector_util.py,sha256=yr3xlQ30gqYUHKMB_76PmUAaAIgveSqWFli37NR9U_4,155
+search_sdk-0.6.dist-info/METADATA,sha256=MIEhoDQyfbOAk8Swqv6fNICVv50QAjDEv0Q7wX1r04w,174
+search_sdk-0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+search_sdk-0.6.dist-info/top_level.txt,sha256=MQ3F8bxvoRAFifRP2mjtLJW96e8febn42EFGrppm7wQ,11
+search_sdk-0.6.dist-info/RECORD,,
