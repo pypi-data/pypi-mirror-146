@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/relazioni/__init__.py
+src/relazioni/associations.py
+src/relazioni.egg-info/PKG-INFO
+src/relazioni.egg-info/SOURCES.txt
+src/relazioni.egg-info/dependency_links.txt
+src/relazioni.egg-info/requires.txt
+src/relazioni.egg-info/top_level.txt
+src/utils/__init__.py
+src/utils/consistency.py
