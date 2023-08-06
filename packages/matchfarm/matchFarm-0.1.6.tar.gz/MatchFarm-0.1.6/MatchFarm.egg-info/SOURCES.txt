@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+MatchFarm.egg-info/PKG-INFO
+MatchFarm.egg-info/SOURCES.txt
+MatchFarm.egg-info/dependency_links.txt
+MatchFarm.egg-info/requires.txt
+MatchFarm.egg-info/top_level.txt
+matchFarm.egg-info/PKG-INFO
+matchFarm.egg-info/SOURCES.txt
+matchFarm.egg-info/dependency_links.txt
+matchFarm.egg-info/requires.txt
+matchFarm.egg-info/top_level.txt
