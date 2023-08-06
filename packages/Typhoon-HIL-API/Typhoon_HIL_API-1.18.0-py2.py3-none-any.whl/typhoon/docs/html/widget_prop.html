@@ -1,0 +1,2048 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Available Widget Properties &#8212; Typhoon API 2022.2 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="typhoon_api.html">Typhoon API 2022.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="typhoon_api.html">
+              <img class="logo" src="_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="typhoon_api.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Available Widget Properties</a><ul>
+<li><a class="reference internal" href="#common-properties">Common Properties</a></li>
+<li><a class="reference internal" href="#monitoring-widgets-common-properties">Monitoring Widgets Common Properties</a><ul>
+<li><a class="reference internal" href="#capture-scope-widget">Capture/Scope Widget</a><ul>
+<li><a class="reference internal" href="#the-list-of-properties-available-for-the-capture-state-of-the-capture-scope-widget">The list of properties available for the Capture state of the Capture/Scope Widget</a></li>
+<li><a class="reference internal" href="#the-list-of-properties-available-for-the-scope-state-of-the-capture-scope-widget">The list of properties available for the Scope state of the Capture/Scope Widget</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gauge-widget">Gauge Widget</a></li>
+<li><a class="reference internal" href="#digital-display-widget">Digital Display Widget</a></li>
+<li><a class="reference internal" href="#text-display-widget">Text Display Widget</a></li>
+<li><a class="reference internal" href="#led-widget">LED Widget</a></li>
+<li><a class="reference internal" href="#bar-graph-widget">Bar Graph Widget</a></li>
+<li><a class="reference internal" href="#pv-monitor-widget">PV Monitor Widget</a></li>
+<li><a class="reference internal" href="#trace-graph-widget">Trace Graph Widget</a></li>
+<li><a class="reference internal" href="#xy-graph-widget">XY Graph Widget</a></li>
+<li><a class="reference internal" href="#phasor-graph-widget">Phasor Graph Widget</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#action-widgets-common-properties">Action Widgets Common Properties</a><ul>
+<li><a class="reference internal" href="#macro-widget">Macro Widget</a></li>
+<li><a class="reference internal" href="#button-widget">Button Widget</a></li>
+<li><a class="reference internal" href="#text-box-widget">Text Box Widget</a></li>
+<li><a class="reference internal" href="#combo-box-widget">Combo Box Widget</a></li>
+<li><a class="reference internal" href="#check-box-widget">Check Box Widget</a></li>
+<li><a class="reference internal" href="#knob-widget">Knob Widget</a></li>
+<li><a class="reference internal" href="#slider-widget">Slider Widget</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#data-logging-widgets-common-properties">Data Logging Widgets Common Properties</a><ul>
+<li><a class="reference internal" href="#signal-data-logger-widget">Signal Data Logger Widget</a></li>
+<li><a class="reference internal" href="#stream-data-logger-widget">Stream Data Logger Widget</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#visual-widgets-common-properties">Visual Widgets Common Properties</a><ul>
+<li><a class="reference internal" href="#group-like-visual-widgets-common-properties">Group Like Visual Widgets Common Properties</a><ul>
+<li><a class="reference internal" href="#group-widget-properties">Group Widget Properties</a></li>
+<li><a class="reference internal" href="#sub-panel-widget-properties">Sub-Panel Widget Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#library-category-widget-properties">Library Category Widget Properties</a></li>
+<li><a class="reference internal" href="#text-note-widget-properties">Text Note Widget Properties</a></li>
+<li><a class="reference internal" href="#image-widget-properties">Image Widget Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#connection-widgets-common-properties">Connection Widgets Common Properties</a><ul>
+<li><a class="reference internal" href="#serial-widget-properties">Serial Widget Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#analysis-widgets-common-properties">Analysis Widgets Common Properties</a><ul>
+<li><a class="reference internal" href="#frequency-response-widget">Frequency Response Widget</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/widget_prop.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="available-widget-properties">
+<h1>Available Widget Properties<a class="headerlink" href="#available-widget-properties" title="Permalink to this headline">¶</a></h1>
+<p>The properties which are available depend on the type of widget which is being changed,
+as well as on the type of values that can be set for a particular property.</p>
+<p>Below you can find the available properties and their allowed values divided by the type
+and group of widgets.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A property name can be specified either by using predefined constants or by typing
+a property name.
+The List of all properties can be found in <code class="docutils literal notranslate"><span class="pre">typhoon.api.scada.const</span></code> module
+or listed in the section <a class="reference internal" href="scada_api.html#api-constants"><span class="std std-ref">SCADA API constants</span></a></p>
+</div>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typhoon.api.scada</span> <span class="kn">import</span> <span class="n">panel</span>
+<span class="kn">import</span> <span class="nn">typhoon.api.scada.const</span> <span class="k">as</span> <span class="nn">api_const</span>
+
+<span class="c1"># load a Panel file</span>
+<span class="n">panel</span><span class="o">.</span><span class="n">load_panel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\scada_file.cus&quot;</span><span class="p">)</span>
+
+<span class="c1"># get the handle of the widget whose properties you want to change</span>
+<span class="n">widget_handle</span> <span class="o">=</span> <span class="n">panel</span><span class="o">.</span><span class="n">get_widget_by_id</span><span class="p">(</span><span class="s2">&quot;e18c3fe582d011e9bac3e0d55e6b2045&quot;</span><span class="p">)</span>
+
+<span class="c1"># change the widget name by using the handle as a widget identifier</span>
+<span class="c1"># and specify the property by using property constants</span>
+<span class="n">panel</span><span class="o">.</span><span class="n">set_property_value</span><span class="p">(</span><span class="n">widget_handle</span><span class="p">,</span>
+                         <span class="n">api_const</span><span class="o">.</span><span class="n">PROP_NAME</span><span class="p">,</span>
+                         <span class="s2">&quot;New widget name&quot;</span><span class="p">)</span>
+
+<span class="c1"># get the widget name by using the handle as a widget identifier</span>
+<span class="n">widget_name</span> <span class="o">=</span> <span class="n">panel</span><span class="o">.</span><span class="n">get_property_value</span><span class="p">(</span><span class="n">widget_handle</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="common-properties">
+<h2>Common Properties<a class="headerlink" href="#common-properties" title="Permalink to this headline">¶</a></h2>
+<p>The list of properties available for all widgets.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_NAME</span></code> or “name”</td>
+<td>Set the Widget name.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_FQN</span></code> or “fully_qualified_name”</td>
+<td>Set the Widget fully qualified name.</td>
+<td><div class="first last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a read-only property and cannot be changed.</p>
+</div>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_LABEL</span></code> or “label”</td>
+<td>Set the text that will be used for the Widget label instead of current Widget name.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_USE_LABEL</span></code> or “use_label”</td>
+<td>Use different text then Widget name for the Widget label.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_DESCRIPTION</span></code> or “description”</td>
+<td>Set the Widget description.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_POSITION</span></code> or “position”</td>
+<td>Set the Widget position.</td>
+<td>list[x, y] where <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are integer numbers</td>
+<td>list[x, y]</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_SIZE</span></code> or “size”</td>
+<td>Set the Widget size.</td>
+<td>list[width, height] where <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> are integer numbers.</td>
+<td>list[width, height]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_APPEARANCE</span></code> or “appea.rance”</td>
+<td>Set the Widget appearance</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Raised” and “Flat”.</p>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_PANEL_INIT</span></code> or “panel_init_code”</td>
+<td>Set the Panel’s initialization code.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_PANEL_LOCK</span></code> or “panel_locked”</td>
+<td>Set the Panel lock status.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_PANEL_BG_COLOR</span></code> or “panel_bg_color”</td>
+<td>Set the background color of the Panel’s main canvas.</td>
+<td><p class="first">string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p>The color needs to be specified as a hex number in string representation.</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># red color</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#ff0000&quot;</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="monitoring-widgets-common-properties">
+<h2>Monitoring Widgets Common Properties<a class="headerlink" href="#monitoring-widgets-common-properties" title="Permalink to this headline">¶</a></h2>
+<p>The list of properties available for all Monitoring Widgets.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_SIGNALS</span></code> or “signals”</td>
+<td>Set the Monitoring Widget’s signal(s)</td>
+<td><ul class="first last">
+<li><p class="first">list[list[analog_signals], list[digital_signals]] - in case <code class="docutils literal notranslate"><span class="pre">Trace</span> <span class="pre">Graph</span></code> Widget is changed.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">([</span><span class="s2">&quot;an_sig_1&quot;</span><span class="p">,</span> <span class="s2">&quot;an_sig_2&quot;</span><span class="p">],</span>
+ <span class="p">[</span><span class="s2">&quot;di_sig_1&quot;</span><span class="p">,</span> <span class="s2">&quot;di_sig_2&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">list[analog_signals] - in case <code class="docutils literal notranslate"><span class="pre">XY</span> <span class="pre">Graph</span></code> Widget is changed.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s2">&quot;an_sig_1&quot;</span><span class="p">,</span> <span class="s2">&quot;an_sig_2&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">string value - in case any other Monitoring Widget is changed.</p>
+</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>list[list[analog_signals], list[digital_signals]] - in case <code class="docutils literal notranslate"><span class="pre">Trace</span> <span class="pre">Graph</span></code> Widget is changed.</li>
+<li>list[analog_signals] - in case <code class="docutils literal notranslate"><span class="pre">XY</span> <span class="pre">Graph</span></code> Widget is changed.</li>
+<li>string value - in case any other Monitoring Widget is changed.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_DATA_TYPE</span></code> or “data_type”</td>
+<td>Set the Monitoring Widget’s data source type.</td>
+<td><p class="first">string value</p>
+<p>Allowed values: “Analog signal” and “Expression”.</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some of Monitoring Widgets have different values allowed. Check the specific
+widget for more details.</p>
+</div>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_EXPRESSION</span></code> or “expression_code”</td>
+<td>Set the Monitoring Widget’s expression code.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_UPDATE_RATE</span></code> or “update_rate”</td>
+<td>Set the Monitoring Widget’s update rate.</td>
+<td><p class="first">integer value</p>
+<p class="last">Allowed values: 250, 500 and 1000.</p>
+</td>
+<td>integer value</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="capture-scope-widget">
+<h3>Capture/Scope Widget<a class="headerlink" href="#capture-scope-widget" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_LABEL</span></code> and <code class="docutils literal notranslate"><span class="pre">PROP_USE_LABEL</span></code> properties are not supported to be changed.</p>
+</div>
+<p>The list of common properties available for both Capture and Scope states
+of the Capture/Scope Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_STATE</span></code> or “state”</td>
+<td>Set the C/S Widget’s state</td>
+<td>string value, either “Capture” or “Scope”</td>
+<td>string value, either “Capture” or “Scope”</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="the-list-of-properties-available-for-the-capture-state-of-the-capture-scope-widget">
+<h4>The list of properties available for the Capture state of the Capture/Scope Widget<a class="headerlink" href="#the-list-of-properties-available-for-the-capture-state-of-the-capture-scope-widget" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_CAPTURE_BG</span></code> or “capture_background”</td>
+<td>Set the Capture Widget’s background color</td>
+<td>string value, either “black” or “white”</td>
+<td>string value, either “black” or “white”</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_CAPTURE_LEGEND</span></code> or “capture_legend”</td>
+<td>Set the Capture Widget’s legend visibility</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_CAPTURE_LAYOUT</span></code> or “capture_layout”</td>
+<td>Set the Capture Widget’s viewport layout</td>
+<td>string value, either “Grid” or “Vertical”</td>
+<td>string value, either “Grid” or “Vertical”</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_CAPTURE_SAMPLE_RATE</span></code> or “sample_rate”</td>
+<td>Set the sample rate of the Capture Widget’s currently active preset</td>
+<td>float or int value</td>
+<td>float value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_CAPTURE_TIME_INTERVAL</span></code> or “time_interval”</td>
+<td>Set the Capture Widget’s time interval</td>
+<td>float or int value</td>
+<td>float or int value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_CAPTURE_ANALOG_SIGNALS</span></code> or “capture_analog_signals”</td>
+<td>Set the analog signals of the Capture Widget’s currently active preset</td>
+<td><dl class="first last docutils">
+<dt>list[signal_1, signal_2, …], where:</dt>
+<dd><ul class="first simple">
+<li><code class="docutils literal notranslate"><span class="pre">signal</span></code> is a list[signal_name, signal_viewports]</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>MANDATORY</strong> - <code class="docutils literal notranslate"><span class="pre">signal_name</span></code> is a string value.</p>
+<p><strong>OPTIONAL</strong> - <code class="docutils literal notranslate"><span class="pre">signal_viewports</span></code> is a list of integer values ranging from 1 to 4, and only the first 4 unique elements will be used.</p>
+<blockquote class="last">
+<div><strong>NOTE</strong> - The default value is an empty list.</div></blockquote>
+</div>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;VDC1&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]],</span>
+    <span class="p">[</span><span class="s2">&quot;VDC2&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">4</span><span class="p">]],</span>
+    <span class="p">[</span><span class="s2">&quot;VDC3&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;VDC4&quot;</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td><dl class="first last docutils">
+<dt>list[signal_1, signal_2, …], where:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">signal</span></code> is a list[signal_name, signal_viewports</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_CAPTURE_DIGITAL_SIGNALS</span></code> or “capture_digital_signals”</td>
+<td>Set the digital signals of the Capture Widget’s currently active preset</td>
+<td><dl class="first last docutils">
+<dt>list[signal_1, signal_2, …], where:</dt>
+<dd><ul class="first simple">
+<li><code class="docutils literal notranslate"><span class="pre">signal</span></code> is a list[signal_name, signal_viewports]</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>MANDATORY</strong> - <code class="docutils literal notranslate"><span class="pre">signal_name</span></code> is a string value.</p>
+<p><strong>OPTIONAL</strong> - <code class="docutils literal notranslate"><span class="pre">signal_viewports</span></code> is a list of integer values ranging from 1 to 4, and only the first 4 unique elements will be used.</p>
+<blockquote class="last">
+<div><strong>NOTE</strong> - The default value is an empty list.</div></blockquote>
+</div>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;HIL0 digital signal 1&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]],</span>
+    <span class="p">[</span><span class="s2">&quot;HIL0 digital signal 2&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">4</span><span class="p">]],</span>
+    <span class="p">[</span><span class="s2">&quot;HIL0 digital signal 3&quot;</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td><dl class="first last docutils">
+<dt>list[signal_1, signal_2, …], where:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">signal</span></code> is a list[signal_name, signal_viewports]</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_CAPTURE_TRIGGER</span></code> or “capture_trigger”</td>
+<td>Set the trigger settings of the Capture Widget’s currently active preset</td>
+<td><dl class="first last docutils">
+<dt>list[trigger_type, trigger_source, edge, offset, first_trigger, threshold], where:</dt>
+<dd><ul class="first simple">
+<li><code class="docutils literal notranslate"><span class="pre">trigger_type</span></code> is a string value</li>
+</ul>
+<blockquote>
+<div>Allowed values: “Analog”, “Digital”, “User”</div></blockquote>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">trigger_source</span></code> is a string value, which is the name of the trigger signal</li>
+<li><code class="docutils literal notranslate"><span class="pre">edge</span></code> is a string value</li>
+</ul>
+<blockquote>
+<div>Allowed values: “Rising edge”, “Falling edge”</div></blockquote>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">offset</span></code> is an integer or float value</li>
+</ul>
+<blockquote>
+<div>Allowed values: between 0 and 100</div></blockquote>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">first_trigger</span></code> is a boolean value</li>
+<li><code class="docutils literal notranslate"><span class="pre">threshold</span></code> is an integer of float value</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Depending on the trigger type, different properties can be set</p>
+<table border="1" class="colwidths-auto last docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Trigger parameter</th>
+<th class="head">Analog</th>
+<th class="head">Digital</th>
+<th class="head">User</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>trigger_source</td>
+<td><strong>Y</strong>-M</td>
+<td><strong>Y</strong>-M</td>
+<td><strong>N</strong></td>
+</tr>
+<tr class="row-odd"><td>edge</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>N</strong></td>
+</tr>
+<tr class="row-even"><td>offset</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>Y</strong>-O</td>
+</tr>
+<tr class="row-odd"><td>use_first_trigger</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>N</strong></td>
+</tr>
+<tr class="row-even"><td>threshold</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>N</strong></td>
+<td><strong>N</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>M - mandatory, O - optional</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s2">&quot;Analog&quot;</span><span class="p">,</span> <span class="s2">&quot;VDC5&quot;</span><span class="p">,</span> <span class="s2">&quot;Falling edge&quot;</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">500</span><span class="p">],</span> <span class="ow">or</span>
+<span class="p">[</span><span class="s2">&quot;Digital&quot;</span><span class="p">,</span> <span class="s2">&quot;HIL0 digital signal 4&quot;</span><span class="p">,</span> <span class="s2">&quot;Falling edge&quot;</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span> <span class="ow">or</span>
+<span class="p">[</span><span class="s2">&quot;User&quot;</span><span class="p">,</span> <span class="mi">78</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td><p class="first">list[trigger_type, trigger_source, edge, offset, first_trigger, threshold]</p>
+<blockquote class="last">
+<div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Depending on the trigger type, different values will be returned</p>
+<table border="1" class="colwidths-auto last docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Trigger parameter</th>
+<th class="head">Analog</th>
+<th class="head">Digital</th>
+<th class="head">User</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>trigger_source</td>
+<td><strong>Y</strong></td>
+<td><strong>Y</strong></td>
+<td><strong>N</strong></td>
+</tr>
+<tr class="row-odd"><td>edge</td>
+<td><strong>Y</strong></td>
+<td><strong>Y</strong></td>
+<td><strong>N</strong></td>
+</tr>
+<tr class="row-even"><td>offset</td>
+<td><strong>Y</strong></td>
+<td><strong>Y</strong></td>
+<td><strong>Y</strong></td>
+</tr>
+<tr class="row-odd"><td>use_first_trigger</td>
+<td><strong>Y</strong></td>
+<td><strong>Y</strong></td>
+<td><strong>N</strong></td>
+</tr>
+<tr class="row-even"><td>threshold</td>
+<td><strong>Y</strong></td>
+<td><strong>N</strong></td>
+<td><strong>N</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="the-list-of-properties-available-for-the-scope-state-of-the-capture-scope-widget">
+<h4>The list of properties available for the Scope state of the Capture/Scope Widget<a class="headerlink" href="#the-list-of-properties-available-for-the-scope-state-of-the-capture-scope-widget" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_SCOPE_BG</span></code> or “scope_background”</td>
+<td>Set the Scope Widget’s background color</td>
+<td>string value, either “black” or “white”</td>
+<td>string value, either “black” or “white”</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_SCOPE_LEGEND</span></code> or “scope_legend”</td>
+<td>Set the Scope Widget’s legend visibility</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_SCOPE_LAYOUT</span></code> or “scope_layout”</td>
+<td>Set the Scope Widget’s viewport layout</td>
+<td>string value, either “Grid” or “Vertical”</td>
+<td>string value, either “Grid” or “Vertical”</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_SCOPE_TIME_BASE</span></code> or “time_base”</td>
+<td>Set the time base of Scope Widget’s currently active preset</td>
+<td>float value</td>
+<td>float value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_SCOPE_ANALOG_SIGNALS</span></code> or “scope_analog_signals”</td>
+<td>Set the analog signals of the Scope Widget’s currently active preset</td>
+<td><dl class="first last docutils">
+<dt>list[signal_1, signal_2, …], where:</dt>
+<dd><ul class="first simple">
+<li><code class="docutils literal notranslate"><span class="pre">signal</span></code> is a list[signal_name, signal_viewports, vertical_scale, vertical_offset, coupling]</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>MANDATORY</strong> - <code class="docutils literal notranslate"><span class="pre">signal_name</span></code> is a string value.</p>
+<p><strong>OPTIONAL</strong> - <code class="docutils literal notranslate"><span class="pre">signal_viewports</span></code> is a list of integer values ranging from 1 to 4, and only the first 4 unique elements will be used.</p>
+<blockquote>
+<div><strong>NOTE</strong> - The default value is an empty list.</div></blockquote>
+<p><strong>OPTIONAL</strong> - <code class="docutils literal notranslate"><span class="pre">vertical_scale</span></code> is a string value.</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Allowed values: “Auto”, “Auto Range”, “50m”, “100m”,</dt>
+<dd><blockquote class="first">
+<div>“200m”, “500m”, “1”, “2”, “5”, “10”,
+“20”, “50”, “100”, “200”, “500”, “1k”,
+“2k”, “5k”, “10k”, “20k”, “50k”, “100k”,
+“200k”, “500k”, “1M”</div></blockquote>
+<p><strong>NOTE</strong> - If the value is set to “Auto” or “Auto Range”, vertical offset and coupling settings <strong>will be ignored</strong>!</p>
+<p class="last"><strong>NOTE</strong> - The default value is “Auto”.</p>
+</dd>
+</dl>
+</div></blockquote>
+<p><strong>OPTIONAL</strong> - <code class="docutils literal notranslate"><span class="pre">vertical_offset</span></code> is an integer or float value, ranging between -4.5 and 4.5.</p>
+<blockquote>
+<div><strong>NOTE</strong> - The default value is 0.</div></blockquote>
+<p><strong>OPTIONAL</strong> - <code class="docutils literal notranslate"><span class="pre">coupling</span></code> is a boolean value.</p>
+<blockquote class="last">
+<div><strong>NOTE</strong> - The default value False.</div></blockquote>
+</div>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;const_0V&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Va1&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;2k&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;Va2&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="s2">&quot;2k&quot;</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td><dl class="first last docutils">
+<dt>list[signal_1, signal_2, …], where:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">signal</span></code> is a list[signal_name, signal_viewports, vertical_scale, vertical_offset, coupling]</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_SCOPE_DIGITAL_SIGNALS</span></code> or “scope_digital_signals”</td>
+<td>Set the digital signals of the Scope widget’s currently active preset</td>
+<td><dl class="first last docutils">
+<dt>list[signal_1, signal_2, …], where:</dt>
+<dd><ul class="first simple">
+<li><code class="docutils literal notranslate"><span class="pre">signal</span></code> is a list[signal_name, signal_viewports, vertical_offset]</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>MANDATORY</strong> - <code class="docutils literal notranslate"><span class="pre">signal_name</span></code> is a string value.</p>
+<p><strong>OPTIONAL</strong> - <code class="docutils literal notranslate"><span class="pre">signal_viewports</span></code> is a list of integer values ranging from 1 to 4, and only the first 4 unique elements will be used.</p>
+<blockquote>
+<div><strong>NOTE</strong> - The default value is an empty list.</div></blockquote>
+<p><strong>OPTIONAL</strong> - <code class="docutils literal notranslate"><span class="pre">vertical_offset</span></code> is an integer or float value, ranging between -4.5 and 4.5.</p>
+<blockquote class="last">
+<div><strong>NOTE</strong> - The default value is 0.</div></blockquote>
+</div>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">[</span><span class="s2">&quot;HIL0 digital input 1&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;HIL0 digital input 2&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">&quot;HIL0 digital input 3&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="mf">1.5</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td><dl class="first last docutils">
+<dt>list[signal_1, signal_2, …], where:</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">signal</span></code> is a list[signal_name, signal_viewports, vertical_offset]</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CS_SCOPE_TRIGGER</span></code> or “scope_trigger”</td>
+<td>Set the trigger settings of the Scope widget’s currently active preset</td>
+<td><dl class="first last docutils">
+<dt>list[trigger_type, trigger_source, edge, offset, threshold, trigger_mode], where:</dt>
+<dd><ul class="first simple">
+<li><code class="docutils literal notranslate"><span class="pre">trigger_type</span></code> is a string value</li>
+</ul>
+<blockquote>
+<div>Allowed values: “Analog”, “Digital”</div></blockquote>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">trigger_source</span></code> is a string value, which is the name of the trigger signal</li>
+<li><code class="docutils literal notranslate"><span class="pre">edge</span></code> is a string value</li>
+</ul>
+<blockquote>
+<div>Allowed values: “Rising edge”, “Falling edge”</div></blockquote>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">offset</span></code> is an integer or float value</li>
+</ul>
+<blockquote>
+<div>Allowed values: between 0 and 100</div></blockquote>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">threshold</span></code> is an integer of float value</li>
+<li><code class="docutils literal notranslate"><span class="pre">trigger_mode</span></code> is a string value</li>
+</ul>
+<blockquote>
+<div>Allowed values: “Auto”, “Normal”</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Depending on the trigger type, different properties can be set</p>
+<table border="1" class="colwidths-auto last docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Trigger parameter</th>
+<th class="head">Analog</th>
+<th class="head">Digital</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>trigger_source</td>
+<td><strong>Y</strong>-M</td>
+<td><strong>Y</strong>-M</td>
+</tr>
+<tr class="row-odd"><td>edge</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>Y</strong>-O</td>
+</tr>
+<tr class="row-even"><td>offset</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>Y</strong>-O</td>
+</tr>
+<tr class="row-odd"><td>threshold</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>N</strong></td>
+</tr>
+<tr class="row-even"><td>trigger_mode</td>
+<td><strong>Y</strong>-O</td>
+<td><strong>Y</strong>-O</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>M - mandatory, O - optional</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s2">&quot;Analog&quot;</span><span class="p">,</span> <span class="s2">&quot;VDC1&quot;</span><span class="p">],</span> <span class="ow">or</span>
+<span class="p">[</span><span class="s2">&quot;Analog&quot;</span><span class="p">,</span> <span class="s2">&quot;VDC2&quot;</span><span class="p">,</span> <span class="s2">&quot;Falling edge&quot;</span><span class="p">],</span> <span class="ow">or</span>
+<span class="p">[</span><span class="s2">&quot;Digital&quot;</span><span class="p">,</span> <span class="s2">&quot;HIL0 digital signal 1&quot;</span><span class="p">,</span> <span class="s2">&quot;Rising edge&quot;</span><span class="p">,</span> <span class="mi">70</span><span class="p">],</span> <span class="ow">or</span>
+<span class="p">[</span><span class="s2">&quot;Analog&quot;</span><span class="p">,</span> <span class="s2">&quot;VDC3&quot;</span><span class="p">,</span> <span class="s2">&quot;Rising edge&quot;</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">400</span><span class="p">],</span> <span class="ow">or</span>
+<span class="p">[</span><span class="s2">&quot;Analog&quot;</span><span class="p">,</span> <span class="s2">&quot;VDC4&quot;</span><span class="p">,</span> <span class="s2">&quot;Rising edge&quot;</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="s2">&quot;Normal&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td>list[trigger_type, trigger_source, edge, offset, threshold, trigger_mode]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="gauge-widget">
+<h3>Gauge Widget<a class="headerlink" href="#gauge-widget" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for the Gauge Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_DECIMALS</span></code> or “decimals”</td>
+<td>Set the Gauge’s number of decimals that will be shown.</td>
+<td>integer number</td>
+<td>integer number</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_RANGE</span></code> or “range”</td>
+<td>Set the Gauge Widget’s range.</td>
+<td>list[min, max] where <code class="docutils literal notranslate"><span class="pre">min</span></code> and <code class="docutils literal notranslate"><span class="pre">max</span></code> are integer or float numbers.</td>
+<td>list[min, max]</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_USE_COLOR_RANGE</span></code> or “use_color_range”</td>
+<td>Enable/disable warning and critical color ranges.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_WARNING_RANGE</span></code> or “warning_range”</td>
+<td>Set the Gauge Widget’s warning range.</td>
+<td>list[w1, w2, w3, w4] where <code class="docutils literal notranslate"><span class="pre">w1</span></code>, <code class="docutils literal notranslate"><span class="pre">w2</span></code>, <code class="docutils literal notranslate"><span class="pre">w3</span></code>, <code class="docutils literal notranslate"><span class="pre">w4</span></code> are integer or float
+numbers that represent <code class="docutils literal notranslate"><span class="pre">Warning</span> <span class="pre">range</span> <span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">Warning</span> <span class="pre">range</span> <span class="pre">2</span></code>.</td>
+<td>list[w1, w2, w3, w4]</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CRITICAL_RANGE</span></code> or “critical_range”</td>
+<td>Set the Gauge Widget’s critical range.</td>
+<td>list[c1, c2, c3, c4] where <code class="docutils literal notranslate"><span class="pre">c1</span></code>, <code class="docutils literal notranslate"><span class="pre">c2</span></code>, <code class="docutils literal notranslate"><span class="pre">c3</span></code>, <code class="docutils literal notranslate"><span class="pre">c4</span></code> are integer or float
+numbers that represent <code class="docutils literal notranslate"><span class="pre">Critical</span> <span class="pre">range</span> <span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">Critical</span> <span class="pre">range</span> <span class="pre">2</span></code>.</td>
+<td>list[c1, c2, c3, c4]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_UNIT</span></code> or “unit”</td>
+<td>Set the Gauge Widget’s unit.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_AUTO_UNIT</span></code> or “auto_unit_assign”</td>
+<td>Enable/disable the auto unit assign.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="digital-display-widget">
+<h3>Digital Display Widget<a class="headerlink" href="#digital-display-widget" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for the Digital Display Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_DECIMALS</span></code> or “decimals”</td>
+<td>Set the Digital Display’s number of decimals that will be shown.</td>
+<td>integer number</td>
+<td>integer number</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_USE_COLOR_RANGE</span></code> or “use_color_range”</td>
+<td>Enable/disable green, orange and red color ranges.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_GREEN_RANGE</span></code> or “green_range”</td>
+<td>Set the Digital Display’s green range.</td>
+<td>list[g1, g2, g3, g4] where <code class="docutils literal notranslate"><span class="pre">g1</span></code>, <code class="docutils literal notranslate"><span class="pre">g2</span></code>, <code class="docutils literal notranslate"><span class="pre">g3</span></code>, <code class="docutils literal notranslate"><span class="pre">g4</span></code> are integer or float
+numbers that represent <code class="docutils literal notranslate"><span class="pre">Green</span> <span class="pre">range</span> <span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">Green</span> <span class="pre">range</span> <span class="pre">2</span></code>.</td>
+<td>list[g1, g2, g3, g4]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_ORANGE_RANGE</span></code> or “orange_range”</td>
+<td>Set the Digital Display’s orange range</td>
+<td>list[o1, o2, o3, o4] where <code class="docutils literal notranslate"><span class="pre">o1</span></code>, <code class="docutils literal notranslate"><span class="pre">o2</span></code>, <code class="docutils literal notranslate"><span class="pre">o3</span></code>, <code class="docutils literal notranslate"><span class="pre">o4</span></code> are integer or float
+numbers that represent <code class="docutils literal notranslate"><span class="pre">Orange</span> <span class="pre">range</span> <span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">Orange</span> <span class="pre">range</span> <span class="pre">2</span></code>.</td>
+<td>list[o1, o2, o3, o4]</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_RED_RANGE</span></code> or “red_range”</td>
+<td>Set the Digital Display’s red range.</td>
+<td>list[r1, r2, r3, r4] where <code class="docutils literal notranslate"><span class="pre">r1</span></code>, <code class="docutils literal notranslate"><span class="pre">r2</span></code>, <code class="docutils literal notranslate"><span class="pre">r3</span></code>, <code class="docutils literal notranslate"><span class="pre">r4</span></code> are integer or float
+numbers that represent <code class="docutils literal notranslate"><span class="pre">Red</span> <span class="pre">range</span> <span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">Red</span> <span class="pre">range</span> <span class="pre">2</span></code>.</td>
+<td>list[r1, r2, r3, r4]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_UNIT</span></code> or “unit”</td>
+<td>Set the Digital Display’s unit.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_AUTO_UNIT</span></code> or “auto_unit_assign”</td>
+<td>Enable/disable the auto unit assign feature.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="text-display-widget">
+<h3>Text Display Widget<a class="headerlink" href="#text-display-widget" title="Permalink to this headline">¶</a></h3>
+<p>The Text Display Widget has only <a class="reference internal" href="#common-properties">Common Properties</a>  and <a class="reference internal" href="#monitoring-widgets-common-properties">Monitoring Widgets Common Properties</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_SIGNALS</span></code> and <code class="docutils literal notranslate"><span class="pre">PROP_DATA_TYPE</span></code> properties are not supported to be changed.</p>
+</div>
+</div>
+<div class="section" id="led-widget">
+<h3>LED Widget<a class="headerlink" href="#led-widget" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for the LED Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_LED_COLOR</span></code> or “led_color”</td>
+<td>Set the LED Widget’s color.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Red”, “Green”, “Blue” and “Yellow”.</p>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_DATA_TYPE</span></code> or “data_type”</td>
+<td>Set the LED Widget’s data source.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Digital signal” and “Expression”.</p>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="bar-graph-widget">
+<h3>Bar Graph Widget<a class="headerlink" href="#bar-graph-widget" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_SIGNALS</span></code>, <code class="docutils literal notranslate"><span class="pre">PROP_BG_COLOR</span></code>, <code class="docutils literal notranslate"><span class="pre">PROP_LABEL</span></code> and <code class="docutils literal notranslate"><span class="pre">PROP_USE_LABEL</span></code> properties are not supported to be changed.</p>
+</div>
+<p>The list of properties available for the Bar Graph Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_COLOR</span></code> or “bg_color”</td>
+<td>Set the Bar Graph’s background color.</td>
+<td><p class="first">string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p>The color needs to be specified as a hex number in string representation.</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># red color</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#ff0000&quot;</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_BARS_SETTINGS</span></code> or “bars_settings”</td>
+<td>Set the Bar Graph’s individual bar settings.</td>
+<td><dl class="first last docutils">
+<dt>list[bar_settings_1, bar_settings_2, …] where:</dt>
+<dd><ul class="first">
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">bar_settings</span></code> is a list[display_name, signal_name, unit, minimum_value,
+maximum_value, use_warning_critical, warning_value, critical_value] where:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">display_name</span></code> is a string value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">signal_name</span></code> is a string value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">unit</span></code> is a string value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">minimum_value</span></code> is an integer or float value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">maximum_value</span></code> is an integer or float value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">use_warning_critical</span></code> is a boolean value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">warning_value</span></code> is an integer or float value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">critical_value</span></code> is an integer or float value.</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">([</span><span class="s2">&quot;Bar_1&quot;</span><span class="p">,</span> <span class="s2">&quot;Sig1&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">90</span><span class="p">],</span>
+ <span class="p">[</span><span class="s2">&quot;Bar_2&quot;</span><span class="p">,</span> <span class="s2">&quot;Sig2&quot;</span><span class="p">,</span> <span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td>list(bar_settings_1, bar_settings_2, …)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="pv-monitor-widget">
+<h3>PV Monitor Widget<a class="headerlink" href="#pv-monitor-widget" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_DATA_TYPE</span></code>, <code class="docutils literal notranslate"><span class="pre">PROP_SIGNALS</span></code> and <code class="docutils literal notranslate"><span class="pre">PROP_EXPRESSION</span></code> properties are not
+supported to be changed.</p>
+</div>
+<p>The list of properties available for the PV Monitor Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_PV_PANEL</span></code> or “pv_panel”</td>
+<td>Set the PV panel name of the PV Monitor Widget</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_COLOR</span></code> or “bg_color”</td>
+<td>Set the PV Monitor’s background color.</td>
+<td><p class="first">string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p>The color needs to be specified as a hex number in string representation.</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># red color</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#ff0000&quot;</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="trace-graph-widget">
+<h3>Trace Graph Widget<a class="headerlink" href="#trace-graph-widget" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for the Trace Graph Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_X_TITLE_ENABLED</span></code> or “x_title_enabled”</td>
+<td>Enable/disable the Trace Graph’s x axis title.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_X_TITLE</span></code> or “x_title”</td>
+<td>Set the Trace Graph x axis’s title text.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_Y_TITLE_ENABLED</span></code> or “y_title_enabled”</td>
+<td>Enable/disable the Trace Graph’s y axis title.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_Y_TITLE</span></code> or “y_title”</td>
+<td>Set the Trace Graph y axis’s title text.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_Y_RANGE</span></code> or “y_range”</td>
+<td>Set the Trace Graph’s y axis range</td>
+<td>list[r1, r2] where <code class="docutils literal notranslate"><span class="pre">r1</span></code> and <code class="docutils literal notranslate"><span class="pre">r2</span></code> are integer or float numbers.</td>
+<td>list[r1, r2]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_TIME_WINDOW</span></code> or “time_window”</td>
+<td>Set the Trace Graph’s time window value</td>
+<td><p class="first">integer value</p>
+<dl class="last docutils">
+<dt>Allowed values:</dt>
+<dd><ul class="first last simple">
+<li>in case <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">type</span> <span class="pre">==</span> <span class="pre">Streaming</span></code> the timed window value must be in range [1, 100].</li>
+<li>in case <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">type</span> <span class="pre">==</span> <span class="pre">Signals</span></code>  the timed window value must be in range [10, 600].</li>
+</ul>
+</dd>
+</dl>
+</td>
+<td>integer value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_AUTO_SCALE_ENABLED</span></code> or “autoscale_enabled”</td>
+<td>Enable/disable the Trace Graph’s auto-scaling feature.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_LEGEND_ENABLED</span></code> or “legend_enabled”</td>
+<td>Enable/disable the Trace Graph’s legend.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_REF_CURVE_ENABLED</span></code> or  “ref_curves_enabled”</td>
+<td>Enable/disable the Trace Graph’s reference curves.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_REF_CURVE</span></code> or “ref_curves_code”</td>
+<td>Set the reference curves code for the Trace Graph</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_STREAMING_SIGNALS</span></code> or “streaming_signals”</td>
+<td>Set the Trace Graph’s streaming signals.</td>
+<td><dl class="first last docutils">
+<dt>list[an_str_signals, di_str_signals] where:</dt>
+<dd><ul class="first simple">
+<li><code class="docutils literal notranslate"><span class="pre">an_str_signals</span></code> is a list of Analog streaming signals names.</li>
+<li><code class="docutils literal notranslate"><span class="pre">di_str_signals</span></code> is a list of Digital streaming signals names.</li>
+</ul>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">([</span><span class="s2">&quot;Analog_str_sig1&quot;</span><span class="p">,</span> <span class="s2">&quot;Analog_str_sig2&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span>
+ <span class="p">[</span><span class="s2">&quot;Digital_str_sig1&quot;</span><span class="p">,</span> <span class="s2">&quot;Digital_str_sig2&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td>list[an_str_signals, di_str_signals]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_COLOR</span></code> or “bg_color”</td>
+<td>Set the Trace Graph’s background color.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “black” and “white”.</p>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_DATA_TYPE</span></code> or “data_type”</td>
+<td>Set the Trace Graph’s data source type.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Signals”, “Streaming” and “Expression”.</p>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="xy-graph-widget">
+<h3>XY Graph Widget<a class="headerlink" href="#xy-graph-widget" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for the XY Graph Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_X_RANGE</span></code> or “x_range”</td>
+<td>Set the XY Graph x axis’s range.</td>
+<td>list[r1, r2] where <code class="docutils literal notranslate"><span class="pre">r1</span></code> and <code class="docutils literal notranslate"><span class="pre">r2</span></code> are integer or float numbers.</td>
+<td>list[r1, r2]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_Y_RANGE</span></code> or “y_range”</td>
+<td>Set the XY Graph y axis’s range.</td>
+<td>list[r1, r2] where <code class="docutils literal notranslate"><span class="pre">r1</span></code> and <code class="docutils literal notranslate"><span class="pre">r2</span></code> are integer or float numbers.</td>
+<td>list[r1, r2]</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_X_AUTO_SCALE_ENABLED</span></code> or “x_axis_autoscale_enabled”</td>
+<td>Enable/disable the XY Graph x axis’s auto-scaling feature.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_Y_AUTO_SCALE_ENABLED</span></code> or “y_axis_autoscale_enabled”</td>
+<td>Enable/disable the XY Graph y axis’s auto-scaling feature.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_TIME_WINDOW</span></code> or “time_window”</td>
+<td>Set the XY Graph’s time window value.</td>
+<td><p class="first">integer value</p>
+<p class="last">Allowed values: timed window value must be in range [10, 600].</p>
+</td>
+<td>integer value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_REF_CURVE_ENABLED</span></code> or  “ref_curves_enabled”</td>
+<td>Enable/disable the XY Graph’s reference curves.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_REF_CURVE</span></code> or “ref_curves_code”</td>
+<td>Set the reference curves code of the XY Graph</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_COLOR</span></code> or “bg_color”</td>
+<td>Set the XY Graph’s background color.</td>
+<td><p class="first">string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p>The color needs to be specified as a hex number in string representation.</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># red color</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#ff0000&quot;</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_LINE_STYLE</span></code> or “line_style”</td>
+<td>Set the XY Graph’s line style.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Line (-)”, “Line Circle (-o)” or “Circle (o)”.</p>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="phasor-graph-widget">
+<h3>Phasor Graph Widget<a class="headerlink" href="#phasor-graph-widget" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_SIGNALS</span></code> property is not supported
+to be changed.</p>
+</div>
+<p>The list of properties available for the Phasor Graph Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_LEGEND_ENABLED</span></code> or “legend_enabled”</td>
+<td>Enable/disable the Phasor Graph’s legend.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_AUTO_SCALE_ENABLED</span></code> or “autoscale_enabled”</td>
+<td>Enable/disable the Phasor Graph’s auto-scaling feature.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_PLOT_RANGE</span></code> or “plot_range”</td>
+<td>Set the Phasor Graph range</td>
+<td>float number</td>
+<td>float number</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_COLOR</span></code> or “bg_color”</td>
+<td>Set the Phasor Graph’s background color.</td>
+<td><p class="first">string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p>The color needs to be specified as a hex number in string representation.</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># red color</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#ff0000&quot;</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_PHASORS_SETTINGS</span></code> or “phasors_settings”</td>
+<td>Set the Phasor Graph’s phasors settings.</td>
+<td><dl class="first last docutils">
+<dt>list[phasor_settings_1, phasor_settings_2, …] where:</dt>
+<dd><ul class="first simple">
+<li><dl class="first docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">phasor_settings</span></code> is a list[display_name, magnitude_signal, phase_signal] where:</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal notranslate"><span class="pre">display_name</span></code> is a string value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">magnitude_signal</span></code> is a string value.</li>
+<li><code class="docutils literal notranslate"><span class="pre">phase_signal</span></code> is a string value.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">([</span><span class="s2">&quot;Phasor_name_1&quot;</span><span class="p">,</span> <span class="s2">&quot;Magnitude_sig1&quot;</span><span class="p">,</span> <span class="s2">&quot;Phase_sig1&quot;</span><span class="p">],</span>
+ <span class="p">[</span><span class="s2">&quot;Phasor_name_2&quot;</span><span class="p">,</span> <span class="s2">&quot;Magnitude_sig2&quot;</span><span class="p">,</span> <span class="s2">&quot;Phase_sig2], ...)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td>list[phasor_settings_1, phasor_settings_2, …]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="action-widgets-common-properties">
+<h2>Action Widgets Common Properties<a class="headerlink" href="#action-widgets-common-properties" title="Permalink to this headline">¶</a></h2>
+<p>The list of properties available for all Action Widgets.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_START_ENABLED</span></code> or “on_start_enabled”</td>
+<td>Enable/disable the Action Widget’s On_Start handler.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_USE_ENABLED</span></code> or “on_use_enabled”</td>
+<td>Enable/disable the Action Widget’s On_Click handler.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_TIMER_ENABLED</span></code> or “on_timer_enabled”</td>
+<td>Enable/disable the Action Widget’s On_Timer handler.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_STOP_ENABLED</span></code> or “on_stop_enabled”</td>
+<td>Enable/disable the Action Widget’s On_Stop handler.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_START</span></code> or “on_start_code”</td>
+<td>Set the Action Widget On_Start’s handler code.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_USE</span></code> or “on_use_code”</td>
+<td>Set the Action Widget On_Click’s handler code.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_TIMER</span></code> or “on_timer_code”</td>
+<td>Set the Action Widget On_Timer’s handler code.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_STOP</span></code> or “on_stop_code”</td>
+<td>Set the Action Widget On_Stop’s handler code.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_START_SOURCE</span></code> or “on_start_code_source”</td>
+<td>Set the Action Widget On_Start’s code source.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Macro code” and “Custom code”.</p>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="macro-widget">
+<h3>Macro Widget<a class="headerlink" href="#macro-widget" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for the Macro Widget.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_ON_START_SOURCE</span></code> property is not supported to be changed.</p>
+</div>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_ON_TIMER_RATE</span></code> or “on_timer_rate”</td>
+<td>Set the Macro’s On_Timer update rate.</td>
+<td><p class="first">integer value</p>
+<p class="last">Allowed values: 250, 500 and 1000.</p>
+</td>
+<td>integer value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="button-widget">
+<h3>Button Widget<a class="headerlink" href="#button-widget" title="Permalink to this headline">¶</a></h3>
+<p>The Button Widget has only <a class="reference internal" href="#common-properties">Common Properties</a>  and <a class="reference internal" href="#action-widgets-common-properties">Action Widgets Common Properties</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_ON_USE_ENABLED</span></code>, <code class="docutils literal notranslate"><span class="pre">PROP_ON_TIMER_ENABLED</span></code> and <code class="docutils literal notranslate"><span class="pre">PROP_ON_TIMER</span></code> properties
+are not supported to be changed.</p>
+</div>
+</div>
+<div class="section" id="text-box-widget">
+<h3>Text Box Widget<a class="headerlink" href="#text-box-widget" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_ON_USE_ENABLED</span></code> property is not supported
+to be changed.</p>
+</div>
+<p>The list of properties available for the Text Box widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_UNIT</span></code> or “unit”</td>
+<td>Set the Text Box’s unit.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_VALUE_TYPE</span></code> or “value_type”“</td>
+<td>Set the Text Box’s value type.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “int”, “float” and “string”.</p>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_WIDGET_VALUE</span></code> or “widget_value”“</td>
+<td>Set the Text Box’s current value.</td>
+<td><p class="first">int, float or string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Depends of what type is set in <code class="docutils literal notranslate"><span class="pre">PROP_VALUE_TYPE</span></code>.</p>
+</div>
+</td>
+<td><p class="first">int, float or string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Depends of what type is set in <code class="docutils literal notranslate"><span class="pre">PROP_VALUE_TYPE</span></code>.</p>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_INPUT_WIDTH</span></code> or “input_width”</td>
+<td>Set the width of the Text Box’s input field.</td>
+<td>integer value</td>
+<td>integer value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="combo-box-widget">
+<h3>Combo Box Widget<a class="headerlink" href="#combo-box-widget" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_ON_USE_ENABLED</span></code> property is not supported
+to be changed.</p>
+</div>
+<p>The list of properties available for the Combo Box Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_COMBO_VALUES</span></code> or  “values”</td>
+<td>Set the Combo Box’s values.</td>
+<td>list[val1, val2,…] where <code class="docutils literal notranslate"><span class="pre">val</span></code> is a string value.</td>
+<td>list[val1, val2,…]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_WIDGET_VALUE</span></code> or “widget_value”“</td>
+<td>Set the Combo Box’s current selected value.</td>
+<td><p class="first">string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Only supported values are values specified in <code class="docutils literal notranslate"><span class="pre">PROP_COMBO_VALUES</span></code>.</p>
+</div>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="check-box-widget">
+<h3>Check Box Widget<a class="headerlink" href="#check-box-widget" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_ON_USE_ENABLED</span></code> property is not supported
+to be changed.</p>
+</div>
+<p>The list of properties available for the Check Box Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_WIDGET_VALUE</span></code> or “widget_value”“</td>
+<td>Set the Check Box’s current value.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="knob-widget">
+<h3>Knob Widget<a class="headerlink" href="#knob-widget" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_ON_USE_ENABLED</span></code> property is not supported
+to be changed.</p>
+</div>
+<p>The list of properties available for the Knob Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_RANGE</span></code> or “range”</td>
+<td>Set the Knob Widget’s range.</td>
+<td>list[min, max] where <code class="docutils literal notranslate"><span class="pre">min</span></code> and <code class="docutils literal notranslate"><span class="pre">max</span></code> are integer or float numbers.</td>
+<td>list[min, max]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_STEP</span></code> or “step”</td>
+<td>Set the Knob Widget’s step value.</td>
+<td>float value</td>
+<td>float value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_WIDGET_VALUE</span></code> or “widget_value”“</td>
+<td>Set the Knob Widget’s value.</td>
+<td>float value</td>
+<td>float value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="slider-widget">
+<h3>Slider Widget<a class="headerlink" href="#slider-widget" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_ON_USE_ENABLED</span></code> property is not supported
+to be changed.</p>
+</div>
+<p>The list of properties available for the Slider Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_RANGE</span></code> or “range”</td>
+<td>Set the Slider Widget’s range.</td>
+<td>list[min, max] where <code class="docutils literal notranslate"><span class="pre">min</span></code> and <code class="docutils literal notranslate"><span class="pre">max</span></code> are integer or float numbers.</td>
+<td>list[min, max]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_STEP</span></code> or “step”</td>
+<td>Set the Slider Widget’s step value.</td>
+<td>float value</td>
+<td>float value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_WIDGET_VALUE</span></code> or “widget_value”“</td>
+<td>Set the Slider Widget’s value.</td>
+<td>float value</td>
+<td>float value</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="data-logging-widgets-common-properties">
+<h2>Data Logging Widgets Common Properties<a class="headerlink" href="#data-logging-widgets-common-properties" title="Permalink to this headline">¶</a></h2>
+<p>The list of properties available for all Data Logging Widgets.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_USE_PANEL_DIR</span></code> or “use_panel_dir”</td>
+<td>Enable/disable usage of the Panel file directory as the default output directory for log
+data file.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_LOG_FILE_DIR</span></code> or “log_file_dir”</td>
+<td>Set the Data Logging Widget’s data log output directory.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_LOG_FILE</span></code> or “log_file”</td>
+<td>Set the Data Logging Widget log data file name.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_USE_SUFFIX</span></code> or “use_suffix”</td>
+<td>Enable/disable Data Logging Widget’s log data file name suffix.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_LOGGING_ON_START</span></code> or “start_logging_on_start”</td>
+<td>Enable/disable logging on the simulation start.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="signal-data-logger-widget">
+<h3>Signal Data Logger Widget<a class="headerlink" href="#signal-data-logger-widget" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for the Signal Data Logger Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_UPDATE_RATE</span></code> or “update_rate”</td>
+<td>Set the Signal Data Logger Widget’s update rate.</td>
+<td><p class="first">integer value</p>
+<p class="last">Allowed values: 250, 500, and 1000</p>
+</td>
+<td>integer value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_DATA_TYPE</span></code> or “data_type”</td>
+<td>Set Signal Data Logger Widget’s data type.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Signals” or “Expression”</p>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_EXPRESSION</span></code> or “expression_code”</td>
+<td>Set the Signal Data Logger Widget’s expression code.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_SIGNALS</span></code> or “signals”</td>
+<td>Set Signal Data Logger Widget analog/digital signals.</td>
+<td><p class="first">list[list[analog_signals], list[digital_signals]] where:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">analog_signals</span></code> is a list of Analog signals names.</li>
+<li><code class="docutils literal notranslate"><span class="pre">digital_signals</span></code> is a list of Digital signals names.</li>
+</ul>
+</div></blockquote>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">([</span><span class="s2">&quot;an_sig_1&quot;</span><span class="p">,</span> <span class="s2">&quot;an_sig_2&quot;</span><span class="p">],</span>
+ <span class="p">[</span><span class="s2">&quot;di_sig_1&quot;</span><span class="p">,</span> <span class="s2">&quot;di_sig_2&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</td>
+<td>list[list[analog_signals], list[digital_signals]]</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_USE_SLOWER_UPDATE_RATE</span></code> or “use_slower_update_rate”</td>
+<td>Enable/disable slower update rate.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_SLOWER_UPDATE_RATE</span></code> or “slower_update_rate”</td>
+<td>Set the Signal Data Logger Widgets’s slower update rate value.</td>
+<td>integer value</td>
+<td>integer value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_LOG_FILE_FORMAT</span></code> or “log_file_format”</td>
+<td>Set Signal Data Logger Widget’s log data file format</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “csv”, “mat” or “h5”</p>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="stream-data-logger-widget">
+<h3>Stream Data Logger Widget<a class="headerlink" href="#stream-data-logger-widget" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for the Stream Data Logger Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_STREAMING_SIGNALS</span></code> or “streaming_signals”</td>
+<td>Set the Stream Data Logger Widget’s analog/digital streaming signals.</td>
+<td><dl class="first last docutils">
+<dt>list[an_str_signals, di_str_signals] where:</dt>
+<dd><ul class="first simple">
+<li><code class="docutils literal notranslate"><span class="pre">an_str_signals</span></code> is a list of Analog streaming signals names.</li>
+<li><code class="docutils literal notranslate"><span class="pre">di_str_signals</span></code> is a list of Digital streaming signals names.</li>
+</ul>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">([</span><span class="s2">&quot;Analog_str_sig1&quot;</span><span class="p">,</span> <span class="s2">&quot;Analog_str_sig2&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span>
+ <span class="p">[</span><span class="s2">&quot;Digital_str_sig1&quot;</span><span class="p">,</span> <span class="s2">&quot;Digital_str_sig2&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</td>
+<td>list[an_str_signals, di_str_signals]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_LOG_FILE_FORMAT</span></code> or “log_file_format”</td>
+<td>Set the Signal Data Logger Widget’s log data file format.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “csv” or “h5”</p>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="visual-widgets-common-properties">
+<h2>Visual Widgets Common Properties<a class="headerlink" href="#visual-widgets-common-properties" title="Permalink to this headline">¶</a></h2>
+<p>Visual Widgets do not have any common properties except properties listed in
+the <a class="reference internal" href="#common-properties">Common Properties</a> section.</p>
+<div class="section" id="group-like-visual-widgets-common-properties">
+<h3>Group Like Visual Widgets Common Properties<a class="headerlink" href="#group-like-visual-widgets-common-properties" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for all Group-like Widgets.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_GROUP_NAMESPACE</span></code> or “group_namespace”</td>
+<td>Set the Group-like Widget’s namespace code.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_COLOR</span></code> or “bg_color”</td>
+<td>Set the Group-like Widget’s canvas background color.</td>
+<td><p class="first">string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p>The color needs to be specified as a hex number in string representation.</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># red color</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#ff0000&quot;</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_MODEL_COMP_TYPES</span></code> or “model_components_types”</td>
+<td><p class="first">Set the Schematic model component types that can be linked to the Library Widget.</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This property can only be changed for widgets located on the Library Panel and widgets that are Library Widgets candidates.</p>
+</div>
+</td>
+<td><p class="first">list value</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s2">&quot;Inductor&quot;</span><span class="p">,</span> <span class="s2">&quot;Voltage Source&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</td>
+<td>list value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_MODEL_COMP</span></code> or “model_component”</td>
+<td><p class="first">Set the Schematic model component that will be linked to Library Widget by specifying component fully qualified name</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This property can only be changed for Library widgets configured to be linked to Schematic Model components.</p>
+</div>
+</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="group-widget-properties">
+<h4>Group Widget Properties<a class="headerlink" href="#group-widget-properties" title="Permalink to this headline">¶</a></h4>
+<p>The list of properties available for the Group Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_COLLAPSED</span></code> or “collapsed”</td>
+<td>Set if the Group Widget is collapsed or not.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sub-panel-widget-properties">
+<h4>Sub-Panel Widget Properties<a class="headerlink" href="#sub-panel-widget-properties" title="Permalink to this headline">¶</a></h4>
+<p>The list of properties available for the Sub-Panel Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_USE_IMAGE</span></code> or “use_image”</td>
+<td>Enable/disable the Sub-Panel’s image.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_IMAGE</span></code> or “image”</td>
+<td>Set the Sub-Panel’s image.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_IMAGE_SCALING</span></code> or “image_scaling”</td>
+<td>Set the Sub-Panel’s image scaling.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Without scaling”, “Ignore aspect ratio” or “Keep aspect ratio”.</p>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_HTML_NAME</span></code> or “html_name”</td>
+<td><p class="first">Set the Sub-Panel’s HTML name (name that is displayed on Widget).</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This property is left for the compatibility purposes and may be deprecated in the future.
+Use <code class="docutils literal notranslate"><span class="pre">PROP_LABEL</span></code> instead.</p>
+</div>
+</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_NAME_POSITION</span></code> or “name_position”</td>
+<td>Set the Sub-Panel’s HTML name position.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Top” or “Bottom”.</p>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_SUB_PANEL_MODE</span></code> or “sub_panel_mode”</td>
+<td>Set the Sub-Panel’s working mode.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Embedded” or “Windowed”.</p>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="library-category-widget-properties">
+<h3>Library Category Widget Properties<a class="headerlink" href="#library-category-widget-properties" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_USE_IMAGE</span></code>, <code class="docutils literal notranslate"><span class="pre">PROP_IMAGE</span></code>, <code class="docutils literal notranslate"><span class="pre">PROP_IMAGE_SCALING</span></code>, <code class="docutils literal notranslate"><span class="pre">PROP_GROUP_NAMESPACE</span></code>, <code class="docutils literal notranslate"><span class="pre">PROP_NAME_POSITION</span></code>, <code class="docutils literal notranslate"><span class="pre">PROP_MODEL_COMP</span></code> and <code class="docutils literal notranslate"><span class="pre">PROP_MODEL_COMP_TYPES</span></code> properties are not supported to be changed.</p>
+</div>
+</div>
+<div class="section" id="text-note-widget-properties">
+<h3>Text Note Widget Properties<a class="headerlink" href="#text-note-widget-properties" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_LABEL</span></code> and <code class="docutils literal notranslate"><span class="pre">PROP_USE_LABEL</span></code> properties are not supported to be changed.</p>
+</div>
+<p>The list of properties available for the Text Note Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_TEXT</span></code> or “text”</td>
+<td>Set the Text Note’s text.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_COLOR</span></code> or “bg_color”</td>
+<td>Set the Text Note’s background color.</td>
+<td><p class="first">string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p>The color needs to be specified as a hex number in string representation.</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># red color</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#ff0000&quot;</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_TYPE</span></code> or “bg_type”</td>
+<td>Set the Text Note’s text.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Transparent” or “Filled”.</p>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="image-widget-properties">
+<h3>Image Widget Properties<a class="headerlink" href="#image-widget-properties" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_LABEL</span></code> and <code class="docutils literal notranslate"><span class="pre">PROP_USE_LABEL</span></code> properties are not supported to be changed.</p>
+</div>
+<p>The list of properties available for the Image Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_IMAGE</span></code> or “image”</td>
+<td>Set the Image Widget’s image that needs to be displayed.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_IMAGE_SCALING</span></code> or “image_scaling”</td>
+<td>Set the Image Widget’s image scaling.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Without scaling”, “Ignore aspect ratio” or “Keep aspect ratio”.</p>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_TYPE</span></code> or “bg_type”</td>
+<td>Set the Image Widget’s background type.</td>
+<td><p class="first">string value</p>
+<p class="last">Allowed values: “Transparent” or “Filled”.</p>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_BG_COLOR</span></code> or “bg_color”</td>
+<td>Set the Image Widget’s background color in case the <code class="docutils literal notranslate"><span class="pre">Filled</span></code> background type is selected.</td>
+<td><p class="first">string value</p>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p>The color needs to be specified as a hex number in string representation.</p>
+<p>Example:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># red color</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#ff0000&quot;</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td>string value</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_USE_AS_BG</span></code> or “use_as_bg”</td>
+<td>Set the Image Widget to be background below all other Widgets.</td>
+<td>boolean value</td>
+<td>boolean value</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="connection-widgets-common-properties">
+<h2>Connection Widgets Common Properties<a class="headerlink" href="#connection-widgets-common-properties" title="Permalink to this headline">¶</a></h2>
+<p>The list of properties available for all Connection Widgets.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_CONNECTION_IDENTIFIER</span></code> or “connection_identifier”</td>
+<td>Set the Connection Widget’s connection variable name.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="serial-widget-properties">
+<h3>Serial Widget Properties<a class="headerlink" href="#serial-widget-properties" title="Permalink to this headline">¶</a></h3>
+<p>The list of properties available for the Serial Widget.</p>
+<table border="1" class="colwidths-auto docutils align-left">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Property name</th>
+<th class="head">Description</th>
+<th class="head">set_property_value() set value</th>
+<th class="head">get_property_value() return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PROP_SERIAL_PORT_NAME</span></code> or “serial_port_name”</td>
+<td>Set the Serial Widget’s serial port name.</td>
+<td>string value</td>
+<td>string value</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PROP_SERIAL_PORT_SETTINGS</span></code> or “serial_port_settings</td>
+<td>Set the Serial Widget’s serial port settings.</td>
+<td><p class="first">list[baud_rate, stop_bits, parity, byte_size, timeout] where:</p>
+<blockquote class="last">
+<div><ul>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">baud_rate</span></code> is an integer number.</p>
+<p>Allowed values: 50, 75, 110, 134, 150, 200, 300, 600, 1200, 1800, 2400, 4800,
+9600, 19200, 38400, 57600, 115200, 230400, 460800, 500000,
+576000, 921600, 1000000, 1152000, 1500000, 2000000, 2500000,
+3000000, 3500000 and 4000000.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">stop_bits</span></code> is an integer or float number.</p>
+<p>Allowed values: 1, 1.5 or 2.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">parity</span></code> is a string value.</p>
+<p>Allowed values: ‘None’, ‘Even’, ‘Odd’, ‘Mark’, ‘Space’.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">byte_size</span></code> is an integer number.</p>
+<p>Allowed values: 5, 6, 7 or 8.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">timeout</span></code> is a float number.</p>
+</li>
+</ul>
+</div></blockquote>
+</td>
+<td>string value</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="analysis-widgets-common-properties">
+<h2>Analysis Widgets Common Properties<a class="headerlink" href="#analysis-widgets-common-properties" title="Permalink to this headline">¶</a></h2>
+<p>Analysis Widgets do not have any common properties except the properties listed in
+<a class="reference internal" href="#common-properties">Common Properties</a> section.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">PROP_LABEL</span></code> and <code class="docutils literal notranslate"><span class="pre">PROP_USE_LABEL</span></code> properties are not supported to be changed.</p>
+</div>
+<div class="section" id="frequency-response-widget">
+<h3>Frequency Response Widget<a class="headerlink" href="#frequency-response-widget" title="Permalink to this headline">¶</a></h3>
+<p>The Frequency Response widget currently has only the properties listed in
+the <a class="reference internal" href="#common-properties">Common Properties</a> section.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="typhoon_api.html">Typhoon API 2022.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Typhoon HIL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>4. Configuration Manager API &#8212; Typhoon API 2022.2 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. Modbus API" href="modbus_api.html" />
+    <link rel="prev" title="3. Schematic Editor API" href="schematic_api.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modbus_api.html" title="5. Modbus API"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="schematic_api.html" title="3. Schematic Editor API"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="typhoon_api.html">Typhoon API 2022.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="typhoon_api.html">
+              <img class="logo" src="_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="typhoon_api.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">4. Configuration Manager API</a><ul>
+<li><a class="reference internal" href="#example">4.1. Example</a><ul>
+<li><a class="reference internal" href="#api-references">4.1.1. API references</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="schematic_api.html"
+                        title="previous chapter">3. Schematic Editor API</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="modbus_api.html"
+                        title="next chapter">5. Modbus API</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/configuration_manager_api.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="configuration-manager-api">
+<h1>4. Configuration Manager API<a class="headerlink" href="#configuration-manager-api" title="Permalink to this headline">¶</a></h1>
+<p><strong>Module:</strong> <code class="docutils literal notranslate"><span class="pre">typhoon.api.configuration_manager</span></code></p>
+<p>The Configuration Manager API contains a set of functions to create new and
+manipulate existing project configurations.</p>
+<div class="section" id="example">
+<h2>4.1. Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>The following example demonstrates the entire functionality of the configuration
+manager API.</p>
+<p>In this example, a project is first loaded from an existing <em>.tcp</em> file. Then a
+configuration is loaded from an existing <em>.tcfg</em> file. With handles to these
+loaded items, the configuration is changed by selecting the possible options
+in the projects configuration. Once this is done, the project configuration can
+be generated.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># Demonstrate use of load_project function</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">typhoon.api.configuration_manager</span> <span class="kn">import</span> <span class="n">ConfigurationManagerAPI</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">join</span><span class="p">,</span> <span class="n">dirname</span><span class="p">,</span> <span class="n">realpath</span>
+
+<span class="c1"># Get path to the assets dir, which will hold all required files.</span>
+<span class="n">assets_path</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">dirname</span><span class="p">(</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)),</span> <span class="s2">&quot;assets&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">assets_path</span><span class="p">)</span>
+
+<span class="n">cfg_manager</span> <span class="o">=</span> <span class="n">ConfigurationManagerAPI</span><span class="p">()</span>
+<span class="n">project_handle</span> <span class="o">=</span> <span class="n">cfg_manager</span><span class="o">.</span><span class="n">load_project</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="n">assets_path</span><span class="p">,</span> <span class="s2">&quot;project-file.tcp&quot;</span><span class="p">))</span>
+
+<span class="c1">#</span>
+<span class="c1"># Load configuration from file and generate output using it.</span>
+<span class="c1">#</span>
+<span class="n">config1</span> <span class="o">=</span> <span class="n">cfg_manager</span><span class="o">.</span><span class="n">load_config</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="n">assets_path</span><span class="p">,</span> <span class="s2">&quot;config1.tcfg&quot;</span><span class="p">))</span>
+<span class="c1"># Generate output model based on configuration specified by &#39;config1&#39;.</span>
+<span class="n">generate_result</span> <span class="o">=</span> <span class="n">cfg_manager</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">project_handle</span><span class="p">,</span> <span class="n">config1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Output model is located in file: &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+    <span class="n">generate_result</span><span class="o">.</span><span class="n">generated_schematic_path</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1">#</span>
+<span class="c1"># Create another configuration from scratch (using API).</span>
+<span class="c1">#</span>
+<span class="n">config2</span> <span class="o">=</span> <span class="n">cfg_manager</span><span class="o">.</span><span class="n">create_config</span><span class="p">(</span><span class="s2">&quot;Config2&quot;</span><span class="p">)</span>
+<span class="n">cfg_manager</span><span class="o">.</span><span class="n">picks</span><span class="p">(</span><span class="n">config2</span><span class="p">,</span>
+                  <span class="p">[</span><span class="n">cfg_manager</span><span class="o">.</span><span class="n">make_pick</span><span class="p">(</span><span class="s2">&quot;Rectifier&quot;</span><span class="p">,</span> <span class="s2">&quot;Thyristor Rectifier&quot;</span><span class="p">),</span>
+                   <span class="n">cfg_manager</span><span class="o">.</span><span class="n">make_pick</span><span class="p">(</span><span class="s2">&quot;Motor&quot;</span><span class="p">,</span> <span class="s2">&quot;Induction machine squirrel&quot;</span><span class="p">,</span>
+                   <span class="p">{</span>
+                        <span class="s2">&quot;el_trq_out&quot;</span><span class="p">:</span> <span class="s2">&quot;True&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;mech_speed_out&quot;</span><span class="p">:</span> <span class="s2">&quot;True&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;load_src&quot;</span><span class="p">:</span> <span class="s2">&quot;Model&quot;</span>
+                   <span class="p">})])</span>
+<span class="c1"># Generate output model based on configuration specified by &#39;config2&#39;.</span>
+<span class="n">generate_result</span> <span class="o">=</span> <span class="n">cfg_manager</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">project_handle</span><span class="p">,</span> <span class="n">config2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Output model is located in file: &#39;</span><span class="si">{}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+    <span class="n">generate_result</span><span class="o">.</span><span class="n">generated_schematic_path</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Also, configuration created using API (in memory) can be saved for later use.</span>
+<span class="n">config3</span> <span class="o">=</span> <span class="n">cfg_manager</span><span class="o">.</span><span class="n">create_config</span><span class="p">(</span><span class="s2">&quot;Config3&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Created configuration named &#39;</span><span class="si">{0}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cfg_manager</span><span class="o">.</span><span class="n">get_name</span><span class="p">(</span><span class="n">config3</span><span class="p">)))</span>
+<span class="n">cfg_manager</span><span class="o">.</span><span class="n">picks</span><span class="p">(</span><span class="n">config3</span><span class="p">,</span> <span class="p">[</span><span class="n">cfg_manager</span><span class="o">.</span><span class="n">make_pick</span><span class="p">(</span><span class="s2">&quot;Rectifier&quot;</span><span class="p">,</span>
+                                                  <span class="s2">&quot;Thyristor Rectifier&quot;</span><span class="p">)])</span>
+<span class="n">cfg_manager</span><span class="o">.</span><span class="n">save_config</span><span class="p">(</span><span class="n">config3</span><span class="p">,</span> <span class="s2">&quot;config3.tcfg&quot;</span><span class="p">)</span>
+
+<span class="c1"># End.</span>
+</pre></div>
+</div>
+<p>Script output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>C:\t_sw\build\sw_build\exported_src\api\build\doc_build\api_doc\configuration_manager_api_examples\assets
+Output model is located in file: &#39;C:\t_sw\build\sw_build\exported_src\api\build\doc_build\api_doc\Config managment example project_Config 1.tse&#39;
+Output model is located in file: &#39;C:\t_sw\build\sw_build\exported_src\api\build\doc_build\api_doc\Config managment example project_Config2.tse&#39;
+Created configuration named &#39;Config3&#39;
+</pre></div>
+</div>
+<div class="section" id="api-references">
+<h3>4.1.1. <a class="reference internal" href="#api-references">API references</a><a class="headerlink" href="#api-references" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase">
+<em class="property">class </em><code class="descname">ConfigurationManagerAPIBase</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for Configuration Manager API (Application Programming Interface)</p>
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.create_config">
+<code class="descname">create_config</code><span class="sig-paren">(</span><em>config_name</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.create_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new configuration.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>config_name</strong> (<em>str</em>) – Configuration name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Handle to configuration object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.generate">
+<code class="descname">generate</code><span class="sig-paren">(</span><em>project_handle</em>, <em>config_handle</em>, <em>out_dir=''</em>, <em>file_name=''</em>, <em>standalone_model=True</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates the specified project using the specified configuration.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>project_handle</strong> – Project to generate.</li>
+<li><strong>config_handle</strong> – The configuration handle which is to be generated.</li>
+<li><strong>out_dir</strong> – Directory (absolute or relative) where to save the
+resulting .tse file</li>
+<li><strong>file_name</strong> – Name of the file where to save the resulting .tse file.
+Should only be the name of the file, and not contain any
+directory parts.</li>
+<li><strong>standalone_model</strong> (<em>bool</em>) – Specify should generated model be
+self-contained (independent from any user/custom libraries)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">GenerateResult object (which contains path to generated model).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><em>item_handle</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns name for item specified by <code class="docutils literal notranslate"><span class="pre">item_handle</span></code>.
+Item should have name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>item_handle</strong> (<em>ItemHandle</em>) – ItemHandle object.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Name as str.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>ConfigurationManagerAPIException if <code class="docutils literal notranslate"><span class="pre">item_handle</span></code> is invalid (</li>
+<li>wrong type or doesn’t have name)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.get_options">
+<code class="descname">get_options</code><span class="sig-paren">(</span><em>project_handle</em>, <em>variant_handle</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.get_options" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Returns a list of options specified by <code class="docutils literal notranslate"><span class="pre">variant_handle</span></code> and</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">project_handle</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>project_handle</strong> (<em>ItemHandle</em>) – ItemHandle object.</li>
+<li><strong>variant_handle</strong> (<em>ItemHandle</em>) – ItemHandle object that exists in project</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of option handles</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li>ConfigurationManagerAPIException if <code class="docutils literal notranslate"><span class="pre">project_handle</span></code> or</li>
+<li><code class="docutils literal notranslate"><span class="pre">variant_handle</span></code> is invalid.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.get_project_variants">
+<code class="descname">get_project_variants</code><span class="sig-paren">(</span><em>project_handle</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.get_project_variants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all variants for <code class="docutils literal notranslate"><span class="pre">project_handle</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>project_handle</strong> (<em>ItemHandle</em>) – ItemHandle object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">List of variants for project.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">ConfigurationManagerAPIException if <code class="docutils literal notranslate"><span class="pre">project_handle</span></code> is invalid.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.load_config">
+<code class="descname">load_config</code><span class="sig-paren">(</span><em>config_path</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.load_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads an existing configuration from the specified configuration file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>config_path</strong> (<em>str</em>) – Path to existing configuration file (.tcfg)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Handle to the loaded configuration.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.load_project">
+<code class="descname">load_project</code><span class="sig-paren">(</span><em>project_path</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.load_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads a project from the specified project file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>project_path</strong> (<em>str</em>) – Path to an existing project file (.tcp)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Handle to the loaded project.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.make_pick">
+<code class="descname">make_pick</code><span class="sig-paren">(</span><em>variant_name</em>, <em>option_name</em>, <em>option_configuration=None</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.make_pick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a pick object that can be used in conjunction with
+the picks method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>variant_name</strong> (<em>str</em>) – Name of the configuration variant
+(component placeholder) to be picked.</li>
+<li><strong>option_name</strong> (<em>str</em>) – Name of an existing option from the
+selected variant.</li>
+<li><strong>option_configuration</strong> (<em>dict</em>) – Dictionary of property names and
+values, which will be used to override option component
+property values.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Handle to a pick object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.picks">
+<code class="descname">picks</code><span class="sig-paren">(</span><em>config_handle</em>, <em>pick_handles</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.picks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert provided picks into a configuration specified by
+<code class="docutils literal notranslate"><span class="pre">config_handle.</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>config_handle</strong> (<em>ItemHandle</em>) – Handle to configuration object</li>
+<li><strong>pick_handles</strong> (<em>list</em>) – List of pick handles for substitution.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.save_config">
+<code class="descname">save_config</code><span class="sig-paren">(</span><em>config_handle</em>, <em>save_path</em><span class="sig-paren">)</span><a class="headerlink" href="#typhoon.api.configuration_manager.base.ConfigurationManagerAPIBase.save_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves an existing configuration to a file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>config_handle</strong> (<em>ItemHandle</em>) – Handle to the configuration to save.</li>
+<li><strong>save_path</strong> (<em>str</em>) – Path to directory/file where to save the
+configuration.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modbus_api.html" title="5. Modbus API"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="schematic_api.html" title="3. Schematic Editor API"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="typhoon_api.html">Typhoon API 2022.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Typhoon HIL.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.0.
+    </div>
+  </body>
+</html>
