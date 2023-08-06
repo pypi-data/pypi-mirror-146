@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nomanodf.egg-info/PKG-INFO
+nomanodf.egg-info/SOURCES.txt
+nomanodf.egg-info/dependency_links.txt
+nomanodf.egg-info/top_level.txt
+nomanpdf/__init__.py
+nomanpdf/pdf2image.py
+nomanpdf/pdf2text.py
