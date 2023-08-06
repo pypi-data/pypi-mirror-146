@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: frappymongoapibilling
+Version: 0.1.0
+Summary: MongoDB Store for the API Billing Backend
+Home-page: https://github.com/ilfrich/frappy-py-api-billing-store
+Author: Peter Ilfrich
+Author-email: das-peter@gmx.de
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: frappyapibilling
+Requires-Dist: pbu
+
+# Frappy Python Mongo Store for API Billing
+
+Python MongoDB Store Implementation for Tracking [API Billing](https://github.com/ilfrich/frappy-api-billing) Usage.
+
+## Usage
+
+```python
+from frappymongoapibilling import UsageStore
+from frappyapibilling import ApiBilling
+
+# create the store instance
+store = UsageStore(mongo_url="mongodb://localhost:27017", mongo_db="myDatabase", collection_name="apiUsage")
+
+# pass the store instance to the api billing constructor
+api_billing = ApiBilling(usage_store=store)
+```
+
+See [API Billing Usage](https://github.com/ilfrich/frappy-api-billing#usage) for details on how to use the module.
+
+
