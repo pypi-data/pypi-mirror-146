@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bdtree/__init__.py
+bdtree/condition.py
+bdtree/exceptions.py
+bdtree/node.py
+bdtree/rate.py
+bdtree/tree.py
+bdtree.egg-info/PKG-INFO
+bdtree.egg-info/SOURCES.txt
+bdtree.egg-info/dependency_links.txt
+bdtree.egg-info/top_level.txt
+bdtree/readers/__init__.py
+bdtree/readers/bdtree_json_reader.py
+bdtree/readers/bdtree_reader.py
