@@ -1,0 +1,9 @@
+README.md
+setup.py
+IPCrawl.egg-info/PKG-INFO
+IPCrawl.egg-info/SOURCES.txt
+IPCrawl.egg-info/dependency_links.txt
+IPCrawl.egg-info/requires.txt
+IPCrawl.egg-info/top_level.txt
+ipCrawl/IPCrawl.py
+ipCrawl/__init__.py
