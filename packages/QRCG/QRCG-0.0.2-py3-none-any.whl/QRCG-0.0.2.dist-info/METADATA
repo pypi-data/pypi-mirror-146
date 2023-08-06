@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: QRCG
+Version: 0.0.2
+Summary: Very basic library for QR code generator
+Home-page: https://github.com/JosephFrankFir/QR-code-generator
+Author: JosephFrankFir 
+Author-email: josephfir@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/JosephFrankFir/QR-code-generator/issues
+Keywords: QR code
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# QR-code-generator
+Very basic library for QR code generator
+
+
