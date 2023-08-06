@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: xontrib-mpl
+Version: 0.0.2
+Summary: Matplotlib hooks for xonsh, including the new 'mpl' alias that displays the current figure on the screen
+Home-page: https://github.com/xonsh/xontrib-mpl
+License: MIT
+Keywords: xontrib,xonsh
+Author: Noortheen Raa
+Author-email: jnoortheen@gmail.com
+Requires-Python: >=3.7
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Terminals
+Requires-Dist: xonsh (>=0.12)
+Project-URL: Code, https://github.com/xonsh/xontrib-mpl
+Project-URL: Documentation, https://github.com/xonsh/xontrib-mpl/blob/master/README.md
+Project-URL: Issue tracker, https://github.com/xonsh/xontrib-mpl/issues
+Project-URL: Repository, https://github.com/xonsh/xontrib-mpl
+Description-Content-Type: text/markdown
+
+<p align="center">
+Matplotlib hooks for xonsh, including the new 'mpl' alias that displays the current figure on the screen
+</p>
+
+<p align="center">  
+If you like the idea click ⭐ on the repo and <a href="https://twitter.com/intent/tweet?text=Nice%20xontrib%20for%20the%20xonsh%20shell!&url=https://github.com/xonsh/xontrib-mpl" target="_blank">tweet</a>.
+</p>
+
+
+## Installation
+
+To install use pip:
+
+```bash
+xpip install xontrib-mpl
+# or: xpip install -U git+https://github.com/xonsh/xontrib-mpl
+```
+
+## Usage
+
+```bash
+xontrib load mpl
+# TODO: what's next?
+```
+
+## Examples
+
+...
+
+## Known issues
+
+...
+
+## Releasing your package
+
+- Bump the version of your package.
+- Create a GitHub release (The release notes are automatically generated as a draft release after each push).
+- And publish with `poetry publish --build` or `twine`
+
+## Credits
+
+This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).
+
