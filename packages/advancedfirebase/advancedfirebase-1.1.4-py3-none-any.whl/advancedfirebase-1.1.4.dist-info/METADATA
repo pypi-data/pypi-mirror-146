@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: advancedfirebase
+Version: 1.1.4
+Summary: Advanced Firebase
+Home-page: UNKNOWN
+Author: Artem Lukashenko
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: firebase-admin
+
+# Advanced Firebase
+
+Advanced Firebase ia a library that adds more functional to standart firebase sdk.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Advanced Firebase.
+
+```bash
+pip install advancedfirebase
+```
+
+## MODULES
+### DB
+This module is only for use with Realtime Database.
+#### All functions:
+- Get
+- Getkey
+- Update
+- Set
+- Parse
+#### Example database*
+{  
+'fruits:{  
+⠀  
+⠀⠀⠀'apple':{  
+⠀⠀⠀⠀⠀⠀'color': 'red'  
+⠀⠀⠀⠀⠀⠀}   
+⠀  
+⠀⠀⠀'banana':{  
+⠀⠀⠀⠀⠀⠀'color': 'yellow'  
+⠀⠀⠀⠀⠀⠀}   
+⠀  
+⠀⠀⠀'kiwi':{  
+⠀⠀⠀⠀⠀⠀'color': 'green'  
+⠀⠀⠀⠀⠀⠀}  
+⠀  
+⠀⠀⠀}  
+}  
+###### *This is database that used in examples
+
+#### Project initialize
+```python
+from advancedfirebase import db
+
+db.init('url', 'credentials.json')
+```
+### Get
+Args: path
+```python
+out = db.get('/fruits/apple')
+print(out)
+```
+```bash
+OUTPUT:
+{'color': 'red'}
+```
+### Getkey
+Args: path, key
+```python
+out = db.getkey('/fruits/apple','color')
+print(out)
+```
+```bash
+OUTPUT:
+red
+```
+### Update
+Args: path, obj  
+```python
+object = {
+    'apple':{
+        'color':'green',
+        'size':'large'
+    }
+}
+db.update('/fruits/', object)
+``` 
+#### Result:
+{  
+'fruits:{  
+⠀  
+⠀⠀⠀'apple':{  
+⠀⠀⠀⠀⠀⠀'color': 'green',  
+⠀⠀⠀⠀⠀⠀'size': 'large'  
+⠀⠀⠀⠀⠀⠀}   
+⠀  
+⠀⠀⠀'banana':{  
+⠀⠀⠀⠀⠀⠀'color': 'yellow'  
+⠀⠀⠀⠀⠀⠀}   
+⠀  
+⠀⠀⠀'kiwi':{  
+⠀⠀⠀⠀⠀⠀'color': 'green'  
+⠀⠀⠀⠀⠀⠀}  
+⠀  
+⠀⠀⠀}  
+}  
+### Set
+```python
+object = {
+    'apple':{
+        'color':'green',
+        'size':'large'
+    }
+}
+db.set('/fruits/', object)
+```
+#### Result:
+{  
+'fruits:{  
+⠀  
+⠀⠀⠀'apple':{  
+⠀⠀⠀⠀⠀⠀'color': 'green',  
+⠀⠀⠀⠀⠀⠀'size': 'large'  
+⠀⠀⠀⠀⠀⠀}  
+
+⠀⠀⠀}  
+}  
+### Parse
+```python
+req = db.get('/fruits/apple')
+print(req)
+print(db.parse(req, 'color'))
+```
+```bash
+OUTPUT:
+
+{'color':'red'}
+red
+```
+
+
+
+##### Made by Artem Lukashenko
+###### v1.1.4
+
