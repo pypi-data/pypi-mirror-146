@@ -1,0 +1,9 @@
+quart_db/__init__.py,sha256=YysohMZtLPUSO4w_IFidR_Gvw1ubADMr5cXHmJQge68,155
+quart_db/_migration.py,sha256=LpHM8Ah6a14EXkWIaxFB4PPc5CFtKyC_P-zzyuP-08s,2946
+quart_db/connection.py,sha256=pck5OCNUO2V81vIwemgk94C6cDRY-67kNUvXj6g1vlE,6460
+quart_db/extension.py,sha256=cB6qlpkMzwfUTRb_r5baVAjyWP-5LRAGw9Wt1CWPwgs,7371
+quart_db/py.typed,sha256=sow9soTwP9T_gEAQSVh7Gb8855h04Nwmhs2We-JRgZM,7
+quart_db-0.2.0.dist-info/LICENSE,sha256=TCtnc_w8gG2iZD7vSIFKjgevrbGrIiNrLhAP-W4kqnk,1050
+quart_db-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+quart_db-0.2.0.dist-info/METADATA,sha256=v_uKaKw8YO1HiSFBwgxUmnDmRHuts-g99CBa30BwgLM,4044
+quart_db-0.2.0.dist-info/RECORD,,
