@@ -1,0 +1,6 @@
+requests>=2.27.1
+requests-cache>=0.9.3
+
+[test]
+pytest
+pytest-mock

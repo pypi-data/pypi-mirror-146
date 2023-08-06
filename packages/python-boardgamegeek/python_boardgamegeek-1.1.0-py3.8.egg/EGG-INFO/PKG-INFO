@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: python-boardgamegeek
+Version: 1.1.0
+Summary: A Python interface to boardgamegeek.com's API
+Home-page: https://github.com/mmonkey/boardgamegeek
+Author: CJ O'Hara
+Author-email: mmonkey@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# python-boardgamegeek
+
+`python-boardgamegeek` is a Python library which makes it easy to access data from 
+[BoardGameGeek](https://boardgamegeek.com/) using their 
+[official XML API](https://boardgamegeek.com/wiki/page/BGG_XML_API2).
+
+This is a fork of [lcosmin/boardgamegeek](https://github.com/lcosmin/boardgamegeek).
+
+## Installation
+
+```bash
+$ pip install --upgrade python-boardgamegeek
+```
+
+
+## Documentation
+
+Documentation is available at http://lcosmin.github.io/boardgamegeek
+
