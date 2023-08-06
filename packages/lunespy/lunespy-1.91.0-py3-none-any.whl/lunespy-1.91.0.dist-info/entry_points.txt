@@ -1,0 +1,4 @@
+[console_scripts]
+log=lunespy.utils:changelog
+test=lunespy.utils:parallel_test
+
