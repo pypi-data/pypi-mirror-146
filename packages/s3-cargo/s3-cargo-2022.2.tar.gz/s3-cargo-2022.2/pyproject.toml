@@ -1,0 +1,124 @@
+# Main package description
+[tool.poetry]
+name = "s3-cargo"
+version = "2022.2"
+description = "Manage your projects in S3 buckets."
+authors = [
+    "MONTANA Knowledge Management ltd. <info@distiller.dev>",
+    "Daniel Nagy <daniel.nagy@montana.hu>",
+    "Tamas Orosz <orosz.tamas@montana.hu>",
+    "Krisztian Gado <gado.krisztian@montana.hu>",
+    "Gergely Csanyi <csanyi.gergely@montana.hu>",
+    "Istvan Uveges <istavan.uveges@montana.hu>"
+]
+license = "AGPL"
+
+# Project dependencies only
+[tool.poetry.dependencies]
+python = ">=3.8, <3.10"
+PyYAML = "^6.0"
+pydantic = "^1.9.0"
+boto3 = "^1.20.49"
+pudb = {version = "^2022.1", optional = true}
+mkdocs = "^1.2.3"
+mkdocs-material = ">7.3"
+mkdocs-git-revision-date-plugin = "^0.3.1"
+mkdocstrings = ">0.16.0"
+pyunpack = "^0.2.2"
+patool = "^1.12"
+
+
+[tool.poetry.dev-dependencies]
+black = "*"
+coverage = "*"
+pre-commit = "*"
+pytest = "*"
+isort = "*"
+pyupgrade = "*"
+pylint = "*"
+
+[tool.poetry.extras]
+dev_tools = ["pudb"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+# DEVTOOLS CONFIG #
+
+#BLACK
+[tool.black]
+line-length = 80
+target-version = ['py39']
+# force-exclude = '''
+#   (
+#     test
+#   )
+# '''
+quiet = true
+
+
+# COVERAGE
+# https://coverage.readthedocs.io/en/6.1.1/config.html
+
+[tool.coverage.run]
+command_line = "-m py.test"
+source = ['s3_cargo']
+branch = true
+# omit = []
+
+[tool.coverage.report]
+sort = "cover"
+exclude_lines = [
+    'if __name__ == "__main__":',
+    'def __repr__',
+    'def __str',
+    '@(abc\.)?abstractmethod'
+]
+omit = ['test']
+
+
+
+# ISORT
+# https://pycqa.github.io/isort/docs/configuration/options.html
+
+[tool.isort]
+profile = "black"
+line_length = 80
+case_sensitive = true
+use_parentheses = false
+include_trailing_comma = true
+multi_line_output = 3
+force_grid_wrap = 0
+quiet = true
+skip = ["__init__.py"]
+
+[tool.pylint.MASTER]
+max-line-length = 120
+fail-under = 0.85
+ignore = ['LICENSE']
+ignore-paths = ['test']
+disable = [
+    "bad-continuation",
+    "duplicate-code",
+    "invalid-name",
+    "missing-docstring",
+    "too-few-public-methods",
+]
+
+# [too.pylint.message_control]
+# max-line-length = 80
+# disable = [
+#   "missing-docstring",
+#   "unused-argument",
+#   "no-value-for-parameter",
+#   "no-member",
+#   "no-else-return",
+#   "bad-whitespace",
+#   "bad-continuation",
+#   "line-too-long",
+#   "fixme",
+#   "protected-access",
+#   "too-few-public-methods",
+# ]
