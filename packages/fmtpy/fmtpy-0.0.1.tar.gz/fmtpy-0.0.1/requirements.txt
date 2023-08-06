@@ -1,0 +1,4 @@
+requests~=2.27.1
+beautifulsoup4~=4.10.0
+rich~=10.11.0
+yapf~=0.32.0
