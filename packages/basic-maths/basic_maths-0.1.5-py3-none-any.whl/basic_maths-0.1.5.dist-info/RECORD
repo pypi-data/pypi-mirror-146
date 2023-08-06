@@ -1,0 +1,12 @@
+basic_division/__init__.py,sha256=711MpDI6gIYYfUfYPJ9OdjWfHPEuOk4aGLCGweiBLho,45
+basic_division/division.py,sha256=c7RYsf7yGvmkaXCHRJSCMqn5YLwjO4Qpa_DopxjK8P4,540
+basic_multplication/__init__.py,sha256=8uLRtQ_58gdfOO_lNaUR0jJRX8j4Fp3uYSWIMH07C0Q,62
+basic_multplication/multiplication.py,sha256=G5kGNHotb4opNuE8GgYl5ntDm0qSHMsXWQbC9_9TFoA,598
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_division.py,sha256=AzM1lqh8KFvhTNvZZnHSeO9W_yZlDcoP0WD8xVHjd68,1254
+tests/basic_multiplication/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/basic_multiplication/test_multiplication.py,sha256=hmYNSDNN6T3HkQ9NzZrHjUzI2p0q-xOKkXr0SAdrhi0,1338
+basic_maths-0.1.5.dist-info/METADATA,sha256=gQvWrEAGdTZgUsGnOkt7laRu60RPAaJTPZR62zk2CiI,1107
+basic_maths-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+basic_maths-0.1.5.dist-info/top_level.txt,sha256=cF4-K-dBEX_fDSzb5WBV48b2nqbggTE93m92ahVOafw,41
+basic_maths-0.1.5.dist-info/RECORD,,
