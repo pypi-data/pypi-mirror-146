@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pynamodb-attributes
+Version: 0.3.2
+Summary: Common attributes for PynamoDB
+Home-page: https://www.github.com/lyft/pynamodb-attributes
+Maintainer: Lyft
+Maintainer-email: ikonstantinov@lyft.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+License-File: LICENSE
+
+UNKNOWN
+
