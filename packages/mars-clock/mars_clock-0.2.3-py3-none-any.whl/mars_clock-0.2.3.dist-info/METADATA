@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mars-clock
+Version: 0.2.3
+Summary: A package for determining Ls-values from mission sols
+Home-page: https://github.com/BoiseStatePlanetary/mars_clock
+Author: Brian Jackson
+Author-email: bjackson@boisestate.edu
+License: UNKNOWN
+Keywords: sample,setuptools,development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: astropy
+
+# mars_clock
+A package for converting mission sols to local and terrestrial times
+
+The calculations here are based on [Piqueux et al. (2015) Icarus 251,
+332](https://ui.adsabs.harvard.edu/abs/2015Icar..251..332P/abstract).
+
+
