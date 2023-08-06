@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: systrader
+Version: 1.0
+Summary: System trading for Quantylab
+Home-page: https://github.com/quantylab/systrader
+Author: Quantylab
+Author-email: quantylab@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: django
+Requires-Dist: pywinauto
+
+UNKNOWN
+
