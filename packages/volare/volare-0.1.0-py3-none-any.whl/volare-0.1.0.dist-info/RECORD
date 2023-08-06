@@ -1,0 +1,11 @@
+volare/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+volare/__main__.py,sha256=oZL8RsKU6Y-Cgf7qwWeQllnUhAmxcomy8YjeqEt4sEM,1201
+volare/build.py,sha256=7f5Ubh3vz-TvK_x0ERv0zdQhtXCyiFyc0mg3irqk3T4,15798
+volare/common.py,sha256=L-YNCpnq1giJQlIR9f7LbpEk4caFB8OuNBIhGEeobR4,5660
+volare/git_multi_clone.py,sha256=9opgdud6NXLzqwY39yxE3bzyMh2JR_haJja_NHwIHVs,7460
+volare/manage.py,sha256=GRW-2-wBF7zoRnbeWHePZ7GWkAPT0zQhwlFxQ0t-O4Y,9732
+volare-0.1.0.dist-info/METADATA,sha256=KSKnLNgy7X82m9PEMl1u_YVcuiUECVRSEpGnPcJ_Tvg,4742
+volare-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+volare-0.1.0.dist-info/entry_points.txt,sha256=6hkrDUhC43-iApyoBARQ4m4q1RU2G9z-T0NC07MqWAc,48
+volare-0.1.0.dist-info/top_level.txt,sha256=9Kl-oaMgohUJ-Ei6bhwcf64hqXPNdo2P18QU2AOYqjc,7
+volare-0.1.0.dist-info/RECORD,,
