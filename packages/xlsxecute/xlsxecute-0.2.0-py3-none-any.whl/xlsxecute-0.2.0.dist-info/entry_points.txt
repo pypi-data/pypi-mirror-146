@@ -1,0 +1,3 @@
+[console_scripts]
+xlsxecute=xlsxecute.command:main
+
