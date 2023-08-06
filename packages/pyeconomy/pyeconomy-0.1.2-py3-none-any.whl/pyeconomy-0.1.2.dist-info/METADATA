@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyeconomy
+Version: 0.1.2
+Summary: A simple to use economy module
+Home-page: https://github.com/konradsic/py-economy
+Author: konradsic (Konrad)
+Author-email: sicinskikonrad@gmail.com
+License: UNKNOWN
+Requires-Dist: discord
+Requires-Dist: typing
+
+
+# py-economy
+
