@@ -1,0 +1,14 @@
+minisignxml/__init__.py,sha256=TXOUMRAbuchALF_ndiLamCV8SQsQTFPXBzjzMAyy1nA,23
+minisignxml/config.py,sha256=JRy0tSkgAL3kHQ6S_dTxOWaW4TLXrg0QtFaWsqh2bCc,800
+minisignxml/errors.py,sha256=-znTGMlZ8OxrcyC1F2FrdaXiH1I5XabDXq5a_Kl0tcI,863
+minisignxml/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minisignxml/internal/constants.py,sha256=6MbBmRxWdbwNwp9cqLQLycSrjig8_Fofy6gpyUmBOWA,443
+minisignxml/internal/namespaces.py,sha256=J1CdOl0LaqZpxfOPHq8B7nTU7kSz_fqaP-dBGQw4QMQ,277
+minisignxml/internal/utils.py,sha256=8uAxss3VLckW9JnAe8uLy3AdE06pXFENIoCwrkbjiQE,3893
+minisignxml/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minisignxml/sign.py,sha256=g3IpcnTERZJRMJ8Rt9CE2kOnrnN8fQ11I5l7TcVrtC0,2429
+minisignxml/verify.py,sha256=PrT2hj8oLFSVKiLImTdlxyn_1NfcUneaKNC_8BpXwNs,4138
+minisignxml-22.4.dist-info/LICENSE,sha256=Obu8xLG6092b8OB7pAeEyYlq_UFheN2fFq_D3v8Fpz0,551
+minisignxml-22.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+minisignxml-22.4.dist-info/METADATA,sha256=iyqRalylVRKykzUSmwcg-cX8X1nIiD6XQErKSawoym0,5902
+minisignxml-22.4.dist-info/RECORD,,
