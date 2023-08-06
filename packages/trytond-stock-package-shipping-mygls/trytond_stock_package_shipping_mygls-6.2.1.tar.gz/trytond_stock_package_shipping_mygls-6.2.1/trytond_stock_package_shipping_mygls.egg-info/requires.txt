@@ -1,0 +1,7 @@
+zeep
+PyPDF2
+trytond_carrier<6.3,>=6.2
+trytond_stock<6.3,>=6.2
+trytond_stock_package<6.3,>=6.2
+trytond_stock_package_shipping<6.3,>=6.2
+trytond<6.3,>=6.2
