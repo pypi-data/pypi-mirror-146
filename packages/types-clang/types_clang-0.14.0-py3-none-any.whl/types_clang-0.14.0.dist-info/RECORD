@@ -1,0 +1,6 @@
+clang-stubs/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clang-stubs/cindex.pyi,sha256=d8Cs3luNrKDJBn5yY5B9YAUv4Nscuq83pH_NbEE0V04,27426
+clang-stubs/enumerations.pyi,sha256=SqsBfl-XI-SkTcbNXDrJpGVGYkmviCaxd96LdtAth3s,63
+types_clang-0.14.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+types_clang-0.14.0.dist-info/METADATA,sha256=kUC16Hu91_6C2sYPYMUr5yANTlVv4s1NQYkm2h6Rp7s,1892
+types_clang-0.14.0.dist-info/RECORD,,
