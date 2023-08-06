@@ -1,0 +1,8 @@
+MANIFEST.in
+readme.md
+setup.py
+Sigina_first_project.egg-info/PKG-INFO
+Sigina_first_project.egg-info/SOURCES.txt
+Sigina_first_project.egg-info/dependency_links.txt
+Sigina_first_project.egg-info/requires.txt
+Sigina_first_project.egg-info/top_level.txt
