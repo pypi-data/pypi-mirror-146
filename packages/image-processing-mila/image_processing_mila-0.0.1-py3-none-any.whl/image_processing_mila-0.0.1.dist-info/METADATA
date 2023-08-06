@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: image-processing-mila
+Version: 0.0.1
+Summary: Image Processing Package using Skimage
+Home-page: https://github.com/MSvitras
+Author: Milena S
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image (>=0.16.1)
+
+# image processing
+
+Description
+The package image_processing is used to:
+    Processing:
+    - Histogram matching
+    - Structural similary
+    - Resize Image
+Utils:
+    - Read image
+    - Save image
+    - Plot image
+    - Plot result
+    - Plot histogram
+
+# Installation
+
+Use the package manager [pip](http://pip.pypa.io/en/stable/) to install package_name
+
+'''bach
+pip install image_processing
+'''
+
+# Author
+Milena Svitras
+
+# Licence
+
