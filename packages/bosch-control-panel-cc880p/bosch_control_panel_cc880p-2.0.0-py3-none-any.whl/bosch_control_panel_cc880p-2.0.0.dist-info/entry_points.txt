@@ -1,0 +1,2 @@
+[console_scripts]
+control_panel = bosch.control_panel.cc880p.cli.cli:main
