@@ -1,0 +1,16 @@
+flammkuchen
+numpy
+
+[dev]
+pip
+bump2version
+wheel
+flake8
+coverage
+Sphinx
+twine
+black
+isort
+pytest
+pytest-runner
+pytest-cov
