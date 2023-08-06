@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: hoodat-vertex-components
+Version: 0.0.12
+Summary: Re-usable kfp components for hoodat
+License: MIT
+Author: Eugene Brown
+Author-email: efbbrown@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: kfp (>=1.8.12,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Hoodat Pipeline Components
+
+This repository provides an SDK and a set of components that perform
+tasks in hoodat.
+
+It is modelled after this repository of shared components for GCP:
+https://github.com/kubeflow/pipelines/tree/google-cloud-pipeline-components-1.0.1/components/google-cloud
+
+## To publish package to pypi:
+
+1. Update the version in `pyproject.toml`
+
+2. Run `poetry publish`:
+```
+poetry publish --build
+```
+
