@@ -1,0 +1,4 @@
+p {
+    color: red;
+}
+{% do export("export_test", "export_value") %}
