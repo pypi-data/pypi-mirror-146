@@ -1,0 +1,4 @@
+wikitextparser
+jinja2
+pylodstorage>=0.2.0
+py-3rdparty-mediawiki>=0.5.4
