@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+test/test_1.py
+test/test_2.py
+test/test_3.py
+type_enforced/__init__.py
+type_enforced/enforcer.py
+type_enforced.egg-info/PKG-INFO
+type_enforced.egg-info/SOURCES.txt
+type_enforced.egg-info/dependency_links.txt
+type_enforced.egg-info/top_level.txt
