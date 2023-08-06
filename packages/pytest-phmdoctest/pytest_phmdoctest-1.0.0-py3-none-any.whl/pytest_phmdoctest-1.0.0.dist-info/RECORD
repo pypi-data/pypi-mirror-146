@@ -1,0 +1,11 @@
+pytest_phmdoctest/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+pytest_phmdoctest/collectors.py,sha256=dQKMQNYmY8g5B-uDJCtBLbNopB8A-BA5ZL4dta7DkQ0,4613
+pytest_phmdoctest/docmod.py,sha256=gYJ_VgqnbCOkm-UhScpZOv8tszMafxSNeT3lwKJPUuM,5628
+pytest_phmdoctest/plugin.py,sha256=P4dsSRMIr5LAc4wXgHY11igO9lMqSCmiX8qomocq57Q,9805
+pytest_phmdoctest/settings.py,sha256=5Uisv6key1ZV9kKwDbKT3Z94rmxGHbGKJ1C1CpFN5bM,8427
+pytest_phmdoctest-1.0.0.dist-info/LICENSE.txt,sha256=kSW5r85CiuJrk_oWl0rUb9NVbfDz-ns6J-kRHws5sao,1073
+pytest_phmdoctest-1.0.0.dist-info/METADATA,sha256=mnNCHrwiPr4XL0LLleIHpucV6suZUEKLuM8BCdr-5T0,21847
+pytest_phmdoctest-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytest_phmdoctest-1.0.0.dist-info/entry_points.txt,sha256=tX37xwuulgIxK7FAc2AvzhqqSLT_1gHWvrZKec0lKy4,49
+pytest_phmdoctest-1.0.0.dist-info/top_level.txt,sha256=R5bXwoynayXVqYkG7k-SU5P1rmjABNAQd6JFbm2z8Rs,18
+pytest_phmdoctest-1.0.0.dist-info/RECORD,,
