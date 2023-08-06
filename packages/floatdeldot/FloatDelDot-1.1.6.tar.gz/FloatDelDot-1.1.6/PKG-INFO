@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: floatdeldot
+Version: 1.1.6
+Summary: This prorgamm delete dot in float (15.0 -> 15)
+Author: GleDVIn
+Author-email: gledvin.info@mail.ru
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
