@@ -1,0 +1,8 @@
+pyjerasure/__init__.py,sha256=7rMoFS8HOyB9OdduDkbaZS9rgeqsM7dhgOe9ec9obUI,4436
+pyjerasure/__version__.py,sha256=HnIY5IqHHqhF2BWYQcHotpDL5hY_mOK4R7gP4CD3f98,127
+pyjerasure/jerasure.cp39-win_amd64.pyd,sha256=aZV_M1KYSylIp51rE9FhJsrQdOvukC9-BUf5FSL7eCQ,188416
+pyjerasure-1.0.0b0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pyjerasure-1.0.0b0.dist-info/METADATA,sha256=NG8btNuLdMYnAtfXaBWHXqbt3efYa_OOJ3BRX_Rd7B0,2703
+pyjerasure-1.0.0b0.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+pyjerasure-1.0.0b0.dist-info/top_level.txt,sha256=25pBWSfDjENbgXpwYSqtZJI8v7Wr3V_7ySUuwmTa75A,11
+pyjerasure-1.0.0b0.dist-info/RECORD,,
