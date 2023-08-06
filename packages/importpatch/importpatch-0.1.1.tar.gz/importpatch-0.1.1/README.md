@@ -1,0 +1,1 @@
+Minimal python module that allowd injecting/modifying other packages/modules at the moment they are loaded.

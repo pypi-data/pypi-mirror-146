@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/importpatch.py
+src/importpatch.egg-info/PKG-INFO
+src/importpatch.egg-info/SOURCES.txt
+src/importpatch.egg-info/dependency_links.txt
+src/importpatch.egg-info/top_level.txt

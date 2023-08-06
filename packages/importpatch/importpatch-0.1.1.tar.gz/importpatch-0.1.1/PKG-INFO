@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: importpatch
+Version: 0.1.1
+Summary: Minimal python module that allowd injecting/modifying other packages/modules at the moment they are loaded.
+Home-page: https://github.com/jose-pr/importpatch
+Author: Jose A.
+Author-email: jose-pr@coqui.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Minimal python module that allowd injecting/modifying other packages/modules at the moment they are loaded.
+
