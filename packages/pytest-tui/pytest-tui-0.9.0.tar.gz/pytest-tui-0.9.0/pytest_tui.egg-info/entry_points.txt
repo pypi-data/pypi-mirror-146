@@ -1,0 +1,7 @@
+[console_scripts]
+tui1 = pytest_tui.tui_pytermtk:main
+tui2 = pytest_tui.tui_textual1:main
+tui3 = pytest_tui.tui_textual2:main
+
+[pytest11]
+pytest_tui = pytest_tui.plugin
