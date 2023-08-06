@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: protFeat
+Version: 1.0
+Summary: Installation of Package
+Home-page: https://github.com/gozsari/ProtFeat
+Author: Gokhan Ozsari
+Author-email: gozsari@ceng.metu.edu.tr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/gozsari/ProtFeat/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wget (==3.2)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: numpy (==1.21.2)
+
+readme
+
