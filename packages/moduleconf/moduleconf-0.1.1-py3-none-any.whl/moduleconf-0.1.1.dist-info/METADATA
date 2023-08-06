@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: moduleconf
+Version: 0.1.1
+Summary: A minimal module-specific configuration tool for fast experimenting
+Home-page: https://github.com/Yujia-Yan/moduleconf
+Author: Yujia Yan
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ModuleConf
+A minimal module-specific configuration tool for fast experimenting.
+
+
