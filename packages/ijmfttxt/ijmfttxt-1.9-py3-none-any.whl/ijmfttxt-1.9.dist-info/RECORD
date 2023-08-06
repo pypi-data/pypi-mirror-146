@@ -1,0 +1,15 @@
+ijmfttxt/__init__.py,sha256=nRAVXvd41sC_YgrdhoEPN5wIr8JMwpnNIn8r3LYgI_M,113
+ijmfttxt/apds.py,sha256=ACyaIofg5Pt-0cFiG_nWsIjj5DPIRDgf2Tx5HsKg-tk,12535
+ijmfttxt/clock.py,sha256=acyC6ggPL7byJCFBJF5BLxCA2w1ygYH_tWCblgCzOAw,1294
+ijmfttxt/color.py,sha256=hRXGAWhSIPkU01w7IZQHgC0LVf9N7PgLaaz228ibbQs,6694
+ijmfttxt/constants.py,sha256=WNb0FkgoobA2zv4Rx6i5FJnTKgn_qLqyuHLtEdSIZOM,3726
+ijmfttxt/errors.py,sha256=9nniCtJ7cxF9ya3P32D2VCgS0fKG1n7HXaR4ndhUoXM,2401
+ijmfttxt/keyboard.py,sha256=5HgpBPgUJkWrffJNQcfUIM_iKjjl7G-35z9JkwEMUlQ,3854
+ijmfttxt/txt.py,sha256=aa_z0Hn7r5pBuz-ecAA5ToZ2m6eoJaCKppT7VFSgAz4,4739
+ijmfttxt/ftrobopy/__init__.py,sha256=aPPHnOdn68CglhfCZw6cli4BoWs1biqlVJVY_89zLJ0,25
+ijmfttxt/ftrobopy/ftrobopy.py,sha256=0aNDr6yMyCIXG-Z-Bi-6sRPJ94U06EZZ4_DGO9oj9ds,121692
+ijmfttxt-1.9.dist-info/LICENSE,sha256=zUc-0wie3StGUt7Q1CioFZlc4GSTPRp1ODlLStSSsH8,1094
+ijmfttxt-1.9.dist-info/METADATA,sha256=GwTAOZUwMw321Vn5_ChEAhN26tDCJfvYVUcIsp8Bvvw,601
+ijmfttxt-1.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ijmfttxt-1.9.dist-info/top_level.txt,sha256=a399MZMB-vg3-JKSO4DeGkX4TgW6oV48gkpx-5U3j60,27
+ijmfttxt-1.9.dist-info/RECORD,,
