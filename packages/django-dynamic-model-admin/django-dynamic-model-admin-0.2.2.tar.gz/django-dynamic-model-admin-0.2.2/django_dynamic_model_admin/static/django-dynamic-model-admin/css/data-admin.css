@@ -1,0 +1,12 @@
+fieldset.cols2 .fieldBox {
+    margin-right: 0;
+    width: 50%;
+}
+fieldset.cols4 .fieldBox {
+    margin-right: 0;
+    width: 25%;
+}
+fieldset.cols4 .vTextField,
+fieldset.cols4 .vUUIDField {
+    width: 12em;
+}
