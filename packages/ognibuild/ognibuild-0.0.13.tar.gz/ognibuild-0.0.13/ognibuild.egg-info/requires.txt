@@ -1,0 +1,12 @@
+breezy>=3.2
+buildlog-consultant>=0.0.21
+requirements-parser
+
+[debian]
+debmutate
+python_apt
+python_debian
+
+[remote]
+breezy
+dulwich
