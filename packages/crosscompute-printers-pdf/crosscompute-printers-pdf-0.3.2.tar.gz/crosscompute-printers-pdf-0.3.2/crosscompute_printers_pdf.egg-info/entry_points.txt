@@ -1,0 +1,2 @@
+[crosscompute.printers]
+pdf = crosscompute_printers_pdf.PdfPrinter

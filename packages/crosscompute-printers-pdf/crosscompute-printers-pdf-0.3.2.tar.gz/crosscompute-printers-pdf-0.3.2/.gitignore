@@ -1,0 +1,23 @@
+# vim
+*.sw[op]
+*~
+# python
+*.egg*
+*.py[co]
+.cache
+.coverage
+.ipynb_checkpoints
+.pytest_cache
+.tox
+__pycache__
+build/
+dist/
+# node
+node_modules
+package-lock.json
+yarn.lock
+# transient
+*.log
+*.tmp
+*_data
+.DS_Store
