@@ -1,0 +1,10 @@
+python-dateutil
+
+[:python_version != "3.4"]
+defusedxml
+
+[:python_version == "3.4"]
+defusedxml<0.6
+
+[trytond]
+trytond<5.1,>=5.0
