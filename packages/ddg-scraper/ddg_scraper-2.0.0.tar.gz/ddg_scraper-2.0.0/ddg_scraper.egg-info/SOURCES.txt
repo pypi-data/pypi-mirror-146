@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ddg_scraper/__init__.py
+ddg_scraper/core.py
+ddg_scraper/http.py
+ddg_scraper/parser.py
+ddg_scraper/scraper.py
+ddg_scraper/structs.py
+ddg_scraper.egg-info/PKG-INFO
+ddg_scraper.egg-info/SOURCES.txt
+ddg_scraper.egg-info/dependency_links.txt
+ddg_scraper.egg-info/requires.txt
+ddg_scraper.egg-info/top_level.txt
+ddg_scraper/abc/__init__.py
+ddg_scraper/abc/coroutine_handler.py
