@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: court-scraper
+Version: 0.1.2
+Summary: Command-line tool for scraping data from U.S. county courts
+Home-page: https://github.com/biglocalnews/court-scraper
+Author: Serdar Tumgoren
+Author-email: zstumgoren@gmail.com
+License: ISC license
+Project-URL: Maintainer, https://github.com/biglocalnews
+Project-URL: Source, https://github.com/biglocalnews/court-scraper
+Project-URL: Tracker, https://github.com/biglocalnews/court-scraper/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+.. image:: https://img.shields.io/pypi/v/court-scraper.svg
+        :target: https://pypi.python.org/pypi/court-scraper
+        :alt: PyPI version badge
+
+.. image:: https://img.shields.io/pypi/pyversions/court-scraper.svg
+        :target: https://pypi.python.org/pypi/court-scraper
+        :alt: Python versions badge
+
+.. image:: https://github.com/biglocalnews/court-scraper/actions/workflows/tests.yaml/badge.svg?branch=master
+        :target: https://github.com/biglocalnews/court-scraper/actions/workflows/tests.yaml
+        :alt: GitHub Actions build status badge
+
+.. image:: https://readthedocs.org/projects/court-scraper/badge/?version=latest
+        :target: https://court-scraper.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://badges.gitter.im/court-scraper/general.svg
+        :target: https://gitter.im/court-scraper/general?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
+        :alt: Gitter badge
+
+
+Court Scraper
+-------------
+
+The `court-scraper` package provides a Python library and command-line
+tool that help search for and download case information from local court system
+websites in the United States. This library primarily focuses on supporting the ability
+to scrape county-level court data by case number and date range.
+
+* Documentation: http://court-scraper.readthedocs.io/en/latest/
+* GitHub: https://github.com/biglocalnews/court-scraper
+* PyPI: https://pypi.python.org/pypi/court-scraper
+* Gitter: https://gitter.im/court-scraper/general
+* Free and open source software: `Apache license`_
+
+.. _Apache license: https://github.com/biglocalnews/court-scraper/blob/master/LICENSE
+
+
+
