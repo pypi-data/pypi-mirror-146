@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: hightech-amazeing
+Version: 1.0.5
+Summary: Hightech A-maze-ing API
+Home-page: https://maze.hightechict.nl
+Author: HightechICT
+Author-email: subhi.hamidi@hightechict.nl
+License: UNKNOWN
+Keywords: Swagger,A-maze-ing API
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi (>=2017.4.17)
+Requires-Dist: python-dateutil (>=2.1)
+Requires-Dist: six (>=1.10)
+Requires-Dist: urllib3 (>=1.23)
+
+## Requirements.
+
+Python 2.7 and 3.4+
+
+## Installation & Usage
+
+### pip install
+
+```
+pip install hightech_amazeing
+```
+
+(you may need to run `pip` with root permission: `sudo pip install amazeing-client`)
+
+Then import the package:
+
+```python
+import hightech_amazeing 
+```
+
+### Setuptools
+
+Install via [Setuptools](http://pypi.python.org/pypi/setuptools).
+
+```sh
+python setup.py install --user
+```
+
+(or `sudo python setup.py install` to install the package for all users)
+
+Then import the package:
+
+```python
+import hightech_amazeing
+```
+
+## Getting Started
+
+Please follow the [installation procedure](#installation--usage) and then run the following:
+
+```python
+from __future__ import print_function
+import time
+import hightech_amazeing
+from hightech_amazeing.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: User token
+configuration = hightech_amazeing.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = hightech_amazeing.PlayerApi(hightech_amazeing.ApiClient(configuration))
+
+try:
+    # Forget your current progress.
+    api_response = api_instance.forget()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling MazeApi->collect_score: %s\n" % e)
+
+```
+
+## Documentation for API Endpoints
+
+All URIs are relative to *https://localhost*
+
+| Class                           | Method                                                                     | HTTP request                  | Description                              |
+|---------------------------------|----------------------------------------------------------------------------|-------------------------------|------------------------------------------|
+| *MazeApi*                       | [**collect_score**](docs/MazeApi.md#collect_score)                         | **                            |                                          |
+| POST** /api/maze/collectScore   | 💰 Collect score from your hand to your bag.                               |                               |                                          |
+| *MazeApi*                       | [**exit_maze**](docs/MazeApi.md#exit_maze)                                 | **POST** /api/maze/exit       | 🚪 Exit the maze.                        |
+| *MazeApi*                       | [**move**](docs/MazeApi.md#move)                                           | **POST** /api/maze/move       | Move in the supplied direction.          |
+| *MazeApi*                       | [**possible_actions**](docs/MazeApi.md#possible_actions)                   | **                            |                                          |
+| GET** /api/maze/possibleActions | 👀 Get the list of possible actions, from the tile where you are standing. |                               |                                          |
+| *MazeApi*                       | [**tag**](docs/MazeApi.md#tag)                                             | **                            |                                          |
+| POST** /api/maze/tag            | Tag the current tile with the given (non-negative) number                  |                               |                                          |
+| *MazesApi*                      | [**all**](docs/MazesApi.md#all)                                            | **GET** /api/mazes/all        | 📜 All the mazes that exist in the game. |
+| *MazesApi*                      | [**enter**](docs/MazesApi.md#enter)                                        | **POST** /api/mazes/enter     | 🌟 Enter a maze.                         |
+| *PlayerApi*                     | [**forget**](docs/PlayerApi.md#forget)                                     | **DELETE** /api/player/forget | 🙈 Forget your current progress.         |
+| *PlayerApi*                     | [**get**](docs/PlayerApi.md#get)                                           | **GET** /api/player           | 👤 Obtain information about yourself.    |
+| *PlayerApi*                     | [**register**](docs/PlayerApi.md#register)                                 | **POST** /api/player/register | 📝 Register yourself here.               |
+
+## Documentation For Models
+
+- [MazeInfo](docs/MazeInfo.md)
+- [MoveAction](docs/MoveAction.md)
+- [PlayerInfo](docs/PlayerInfo.md)
+- [PossibleActionsAndCurrentScore](docs/PossibleActionsAndCurrentScore.md)
+
+## Documentation For Authorization
+
+## User token
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
+
+## Author
+
+HighTechICT
+
+
+# amazeing-client
+
+This document describes the API of the A-maze-ing evening server. This API consists of three different endpoints, which
+are detailed below. - To register yourself as a player use the Player endpoint. - To get information about the available
+mazes and enter a specific maze use the Mazes endpoint. - To navigate a maze use the Maze endpoint.
+
+This Python package is automatically generated by the [Swagger Codegen](https://github.com/swagger-api/swagger-codegen)
+project:
+
+- API version: v2
+- Package version: 1.0.1
+- Build package: io.swagger.codegen.languages.PythonClientCodegen
+
