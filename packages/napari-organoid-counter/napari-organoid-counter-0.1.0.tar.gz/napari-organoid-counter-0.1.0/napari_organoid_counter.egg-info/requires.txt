@@ -1,0 +1,10 @@
+napari[all]==0.4.15
+napari-aicsimageio==0.6.1
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5

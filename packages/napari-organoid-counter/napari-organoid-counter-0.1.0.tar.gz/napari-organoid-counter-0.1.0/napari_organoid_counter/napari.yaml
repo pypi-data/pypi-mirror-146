@@ -1,0 +1,10 @@
+name: napari-organoid-counter
+display_name: napari OrganoidCounter
+contributions:
+  commands:
+    - id: napari-organoid-counter.OrganoidCounterWidget
+      python_name: napari_organoid_counter._widget:OrganoidCounterWidget
+      title: Make organoid counter widget
+  widgets:
+    - command: napari-organoid-counter.OrganoidCounterWidget
+      display_name: Organoid-Counter
