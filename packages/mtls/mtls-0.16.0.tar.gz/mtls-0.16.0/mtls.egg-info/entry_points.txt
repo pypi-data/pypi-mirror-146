@@ -1,0 +1,2 @@
+[console_scripts]
+mtls = mtls.cli:cli
