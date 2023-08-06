@@ -1,0 +1,18 @@
+###############################################################################
+###   arm
+###############################################################################
+variable nsilica 1.45
+variable Mloss 30u
+
+laser L0 P=1
+s l1 L0.p1 ITMlens.p1
+lens ITMlens f=34500
+s l2 ITMlens.p2 ITMAR.p1
+m ITMAR R=0 L=0 xbeta=&ITM.xbeta ybeta=&ITM.ybeta phi=&ITM.phi
+s ITMsub ITMAR.p2 ITM.p1 L=0.2 nr=&nsilica
+m ITM T=0.014 L=&Mloss R=1-&ITM.L-&ITM.T Rc=-1934
+s L ITM.p2 ETM.p1 L=3994
+m ETM T=5u L=&Mloss R=1-&ETM.L-&ETM.T Rc=2245
+s ETMsub ETM.p2 ETMAR.p1 L=0.2 nr=&nsilica
+m ETMAR 0 500u xbeta=&ETM.xbeta ybeta=&ETM.ybeta phi=&ETM.phi
+cav cavARM ITM.p2.o
