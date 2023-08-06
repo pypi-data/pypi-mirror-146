@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mp3get/__init__.py
+mp3get/__version__.py
+mp3get/core.py
+mp3get.egg-info/PKG-INFO
+mp3get.egg-info/SOURCES.txt
+mp3get.egg-info/dependency_links.txt
+mp3get.egg-info/requires.txt
+mp3get.egg-info/top_level.txt
