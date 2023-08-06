@@ -1,0 +1,19 @@
+pydantic
+requests
+rich
+
+[client]
+procrunner
+textual
+websocket-client
+
+[server]
+fastapi
+ispyb
+jinja2
+packaging
+uvicorn[standard]
+zocalo
+
+[server:python_version < "3.9"]
+importlib_resources
