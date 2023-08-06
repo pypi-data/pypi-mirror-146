@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sergiu-dyno
+Version: 0.2.0
+Summary: Prints a dinosaur
+Home-page: UNKNOWN
+Author: Matei Sergiu
+Author-email: mateisergiu777@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# This is my Dino-project
+
+## Usage:
+
+```python
+from sergiu_dyno import say_hello
+
+say_hello()
+# prints a dinosaur saying hello
+
+```
+
+
