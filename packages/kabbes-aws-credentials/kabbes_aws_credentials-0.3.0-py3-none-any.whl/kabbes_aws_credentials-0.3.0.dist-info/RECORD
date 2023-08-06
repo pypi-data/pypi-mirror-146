@@ -1,0 +1,9 @@
+aws_credentials/AWS_Creds.py,sha256=Ok7QIeOUPjPXrlPyUY3Tu2Q_ZOjom5jZCXuL6c5sbGM,7241
+aws_credentials/__init__.py,sha256=gOiZhVQO_y7YQuazM3llNFmriqqB8i08WI4OkV6dYJQ,646
+aws_credentials/__main__.py,sha256=ivPj_pUgRxTkri2XjGDBcjrg7IBQJjnNsM5b7pCd3lw,213
+aws_credentials/update.py,sha256=tyWoRQ2SEuX4hnMc0VN5f74UXaOxQtQGQiTwtQTQ8Xw,1084
+kabbes_aws_credentials-0.3.0.dist-info/LICENSE,sha256=WPIb6l8rI8XZdKZSiOOw7_bKuta8GH0TK2Vvvk_FRGY,1069
+kabbes_aws_credentials-0.3.0.dist-info/METADATA,sha256=6kMl3UG2_VQxitcjIhqkx9HGbDo_ZuU1n-cdKhhBIEY,950
+kabbes_aws_credentials-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kabbes_aws_credentials-0.3.0.dist-info/top_level.txt,sha256=wPIuXbxxolC_SKVFU2gyDHY2C_HW-c49044L5E5BkLc,16
+kabbes_aws_credentials-0.3.0.dist-info/RECORD,,
