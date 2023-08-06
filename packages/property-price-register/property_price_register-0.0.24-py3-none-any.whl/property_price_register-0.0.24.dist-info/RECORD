@@ -1,0 +1,17 @@
+property_price_register/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+property_price_register/constants.py,sha256=Iuz9Te_L7T7ifdH7xZ6XjVKZTWTHMxVhan4U0a2CIb0,515
+property_price_register/utils.py,sha256=bFCAEyV5StFpH2agpMeOgaKbuyJyXW817acd0TB-dPc,481
+property_price_register/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+property_price_register/bin/graph.py,sha256=1G421pVk046kqxtNVET9wxylGKE29bvomoHQeAlrIkk,3592
+property_price_register/bin/load.py,sha256=Qy2exykwEBK2nV3Vns1_dYYPoYRrmpGZ71QwMqVI9YM,291
+property_price_register/bin/merge_latest.py,sha256=Mx-hAU4LelpSvXjLXnH6d7fmcPmwQ_6wdt9-ky27Zrc,530
+property_price_register/bin/save.py,sha256=Tl9erCA0RjtitToMGAowQk8sCFiMMkmd8GI1GOVE95g,408
+property_price_register/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+property_price_register/models/sale.py,sha256=WReTVs3ssC246eTPzqCuqEppcgUca8k4p_uG8NyOnEQ,15570
+property_price_register/resources/PPR.csv.tar.gz,sha256=CHvg_1QuI5t9nRRclYSHxswbgYTX-O9NCYE1joOsQgI,31329608
+property_price_register-0.0.24.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+property_price_register-0.0.24.dist-info/METADATA,sha256=AFTRslx6s3mQBQNTEiMTuWJQBIG2W_S1MWo0QLWRBlw,426
+property_price_register-0.0.24.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+property_price_register-0.0.24.dist-info/entry_points.txt,sha256=9z-X7zdDWaZdMix0ZB1viEtF9G9qsepTATHgC4XrXjA,227
+property_price_register-0.0.24.dist-info/top_level.txt,sha256=5PgTIL8FldXH8JulHOF9Y44wutVv8UFOZ8m_IO8nV0w,24
+property_price_register-0.0.24.dist-info/RECORD,,
