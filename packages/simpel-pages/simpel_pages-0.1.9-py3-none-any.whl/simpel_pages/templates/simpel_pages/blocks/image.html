@@ -1,0 +1,10 @@
+<div id="{{ object.name }}-block-{{ object.id }}" class="page-block {{ object.name }}-block" {{ attrs }}>
+  {{ object.caption|safe }}
+  
+  {% if object.image.url %}
+    <a href="{{ object.image.url }}">
+      <img height="{{ object.thumb_height }}" width="{{ object.width.height }}" src="{{ object.image.url }}" alt="{{ object.name }}">
+    </a>
+  {% endif %}
+
+</div>
