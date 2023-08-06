@@ -1,0 +1,12 @@
+gplaycli2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gplaycli2/__main__.py,sha256=Tar9llUtP7AAUvZorvnnAZMBFbXNPJavmxvXLVKc63Y,69
+gplaycli2/gplaycli.py,sha256=ojHvQzcgvk03842e_e22Cr2hgbD_EFcxlPnkM7j1qJ4,23914
+gplaycli2/hooks.py,sha256=FkGGrz5hFnsWy4o2f1diYdX-O6PTTYoa1v-LRHVuyIQ,323
+gplaycli2/util.py,sha256=Np8AxozcK0cs56qnBZlRgZzD9BK-7MwmnpKWdmIX_0k,3365
+gplaycli2-3.30.data/data/etc/gplaycli/gplaycli.conf,sha256=tgSwf4Ee_F2DLxBYwtn3jpkSiveGRbfJD7KL_egy5j0,193
+gplaycli2-3.30.dist-info/LICENSE.md,sha256=Xnc7gU07KKse4JsZhYBcocdro1jrOu0DUlS2UoU421c,799
+gplaycli2-3.30.dist-info/METADATA,sha256=pW-twW-RJ970pUnKf0SBSg8SMOK4sF2O-0YRd2dId18,4629
+gplaycli2-3.30.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gplaycli2-3.30.dist-info/entry_points.txt,sha256=Wu9NKcery7nNpiyowxr-yYMhkUJSnGLvz795__knxJA,54
+gplaycli2-3.30.dist-info/top_level.txt,sha256=JZ8THCexwECRCDpAgaeGSlRl7z7CbkDDAdqQTSET36o,10
+gplaycli2-3.30.dist-info/RECORD,,
