@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: devtoys
+Version: 1.0.0
+Summary: DevToys for Linux
+Home-page: https://github.com/jakbin/DevToysLinux
+Author: Jak Bin
+Author-email: jakbin4747@gmail.com
+License: MIT License
+Keywords: devtoys,linux,devloper-tools
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DevToysLinux
+
+DevToys for linux
+
+ ![flask](https://img.shields.io/badge/python-3.6-green.svg)
+
