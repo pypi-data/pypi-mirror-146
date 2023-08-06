@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/banko.egg-info/PKG-INFO
+src/banko.egg-info/SOURCES.txt
+src/banko.egg-info/dependency_links.txt
+src/banko.egg-info/top_level.txt
