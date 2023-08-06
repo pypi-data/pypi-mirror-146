@@ -1,0 +1,9 @@
+numpy
+pypdb
+requests
+pandas
+requests_html
+bs4
+
+[dev]
+pytest
