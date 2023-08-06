@@ -1,0 +1,2 @@
+[console_scripts]
+discotool = discotool.discotool:main
