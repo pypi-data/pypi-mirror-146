@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+ro_diacritics/__init__.py
+ro_diacritics/diacritcs_train.py
+ro_diacritics/diacritics_dataset.py
+ro_diacritics/diacritics_inference.py
+ro_diacritics/diacritics_model.py
+ro_diacritics/diacritics_utils.py
+ro_diacritics.egg-info/PKG-INFO
+ro_diacritics.egg-info/SOURCES.txt
+ro_diacritics.egg-info/dependency_links.txt
+ro_diacritics.egg-info/not-zip-safe
+ro_diacritics.egg-info/requires.txt
+ro_diacritics.egg-info/top_level.txt
