@@ -1,0 +1,3 @@
+[console_scripts]
+c10=c10_tools.c10:CLI.main
+
