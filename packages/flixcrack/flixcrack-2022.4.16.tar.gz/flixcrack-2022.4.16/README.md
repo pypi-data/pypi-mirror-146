@@ -1,0 +1,90 @@
+
+<h1 align="center">
+  <br>
+  <a href="https://github.com/stefanodvx/flixcrack"><img src="https://github.com/stefanodvx/flixcrack/blob/main/logo.png?raw=true" alt="FlixCrack" height=100> 
+</a>
+  <p>Status: Working ✅</p>
+</h1>
+
+<h4 align="center">Python Netflix API Metadata & Downloader for Windows and Linux</h4>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#dependencies">Dependencies</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#community">Community</a>
+</p>
+
+<h1 align="center">
+  <a href="https://github.com/stefanodvx/flixcrack"><img src="https://github.com/stefanodvx/flixcrack/blob/main/screen.png?raw=true" alt="FlixCrack"></a>
+</h1>
+
+## Features
+### ❗ KEEP IN MIND THAT THIS LIBRARY IS STILL IN BETA
+
+* Get Metadata (title, year, episodes, seasons...) with Shakti API
+* Get medias (videos, audios, audio descriptions, subtitles...)
+* Decrypt Widevine DRM protected content
+* Automatically mux all your tracks
+* Nice pre-made format for file names
+* Very fast multi-connection downloads
+
+## Dependencies
+
+* <a href="https://ffmpeg.org/">FFmpeg</a>
+* <a href="https://github.com/aria2/aria2">aria2</a>
+* <a href="https://github.com/shaka-project/shaka-packager">Shaka Packager</a>
+* <a href="https://mkvtoolnix.download/">MKVToolNix</a>
+
+## How To Use
+
+First of all, install the library with:
+`pip install flixcrack` (by PyPi) or get always latest by
+`pip install git+https://github.com/stefanodvx/flixcrack@main` (you need Git installed for this)
+
+Extract your cookies.txt from Netflix using your browser (you can use <a href="https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid">Get cookies.txt</a>) and put it in your working folder. Then create a folder named "devices" and put your CDM in. Here's an example code, I'm downloading first episode of a series in 1080p with HIGH profile and AAC audio (English).
+
+You can extract a private L3 CDM very easily from an Android phone using <a href="https://github.com/wvdumper/dumper">this tool</a>.
+
+Working folder example:
+```bash
+│   cookies.txt
+│   main.py
+│
+└───devices
+    └───<device name>
+            device_client_id_blob
+            device_private_key
+```
+
+main.py:
+```python3
+from flixcrack import NetflixClient
+import asyncio
+
+client = NetflixClient(
+    email="", # Insert your email here
+    password="", # Insert your password here
+    device="", # Insert your CDM folder name here
+    quality=1080,
+    audio_language=["English"],
+    language="it-IT", # Metadata language
+    video_profile="high",
+    quiet=False
+)
+
+async def main():
+    for viewable in client.get_viewables(81470938, episode=1):
+        await viewable.download()
+asyncio.run(main())
+```
+
+## Community
+
+* <a href="https://t.me/+jwaFzZu6B-w1ZmQ8">Telegram Group</a>
+
+## Disclaimer
+
+* This library is for informational purposes only
+* Your Netflix account could get banned
+* Your CDM could get downgraded
