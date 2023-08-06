@@ -1,0 +1,337 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* changed to pbr
+* Restruc with RUNMEs -- Yonghos Review
+* upd README towards publishing of the module
+* Added a parser for Re
+* folder generator, np.int->int
+* fixed the explanation for the recomputing
+* upd req file
+* clean up and README
+* empty files to have the dir structure
+* for the plots
+* upds for the plots
+* maybe now
+* another para
+* now with loading the POD vecs
+* set some irrelevant parameters but to None
+* some case distinctions
+* upds
+* minor upds
+* script for quick check the lift drag curves
+* now with RE as parameter
+* file for plotting the curves
+* simulation testing
+* mrgd
+* variable fignum
+* better plots
+* need new dns version
+* upd gitig
+* fixed the script
+* mrgd
+* going to bring the sh script up to date
+* outsourced the architecture view by Sarvin
+* Update CNN\_pod\_check.py DAE\_model structure illustration save as pdf in shared folder in google drive
+* Update CNN\_pod\_check.py DAE\_model structure illustration and save as pdf in google drive "MPI Internship summer 2021/NetworkStructure"
+* post process
+* gix
+* improve performance by checking what LPV is needed
+* new ini data focus works
+* now also storing the computed ld data
+* can now comp the drag lift curves
+* Update start-cnn-pod-check.py
+* can now get the bc indices of the cylinder -- needed for the comp of drag/lift
+* so much update
+* nicer logging -- retrain still not quite right
+* nicer logging -- retrain still not quite right
+* outsourced computations of data strings
+* mrgd
+* bringing back the good log
+* trying the both loss
+* mrgd
+* naming consolidation
+* some more comment
+* now path from data dict
+* running but some paths still hard coded
+* fix modeldatapath
+* mrgd main
+* rename
+* now returning lists of errs
+* better handling of model paths
+* handling cvvecs too
+* improved data handling
+* fix
+* sims
+* more abs paths
+* now storing absolute paths for the mesh data
+* now paths to the arguments for better colab experience
+* fixes
+* python file to start the cnn pod training
+* missing module
+* plain python script to start the simus
+* rmd an artifact
+* now error check is right
+* so much changes
+* looks like working in principle but not accurately and seems to blow up
+* no more json to artifacts -- might get too large
+* gci fix
+* upd gci -- now checking the simu on changes
+* put the transpose to a lower level
+* debugging
+* put the transpose to a lower level
+* not quite working -- CNN not and POD either -- need check in the CNN\_POD\_check for the particular performance
+* rename
+* py and sh script for running and defing the simulation
+* channelsizes to script
+* upd did
+* shell script for starting the cnn pod check
+* now with channellist too
+* script works
+* looks like ok so far
+* rmd shift option -- outsourced plotting of featuremaps
+* log fix
+* more log
+* upd README
+* logging to the sim files
+* some cleanup some doc
+* upd tests/README
+* more logging
+* more logging
+* more log
+* more log more clean
+* fix naming
+* better log of exceptions
+* some code clean
+* switch to show or not show the feature maps
+* better logging
+* chngd ci
+* merged -- pip version 0.1.1
+* mrgd
+* logging and switching between targets
+* cnvctn still working -- gonna bring back the state
+* working but not quite reight
+* upd README
+* now simulation data in \`cached-data\` by default
+* upd gitig
+* better use dns v1.1.5 (better cache handling)
+* double cylinder simulation
+* rename
+* other way to save data -- rmd centered option
+* some cleanup -- looks ok -- next thing: tensorize it
+* extra file with routines for approximation checks
+* now the setup seems right
+* still not check done
+* checking
+* need to check the pod in the conv space
+* rmvd deprecated compute snapshots file
+* like working -- next check the POD in the dual space
+* need the correction of the bcs
+* tedious but some progress
+* some doc for the shell file
+* going on
+
+0.1.0
+-----
+
+* restructured the NSEDataSet class
+* data set for the convs
+* training working again
+* no errors but training not working -- need to recheck the loss etc
+* subclass works -- still some fixes
+* caching like working
+* now caching the pod comps and getting the shiftedvec convection as matrix
+* better wording
+* some doc for the function that interpolates to the rectangle grid
+* custom loss working
+* more relevant test
+* works well -- even with the pods
+* FEM loss function like working -- need include in training
+* checking
+* rename -- undid the pass of boundary information
+* starting in NSEDataSet
+* upd did, cleanup unit test file
+* seem to work with shifts -- also seed the rand in pytorch
+* unit test for the mpod
+* some docu and unit test for the (M)pod
+* explained some data flow -- where to shift
+* made \`CNN\_AE.py\` run again
+* shiftvec for the nse data loader
+* added the outsourced for training and testing
+* also improving the documentation
+* can now plot the feature maps
+* upds
+* upds
+* done with saving -- how to make use of it?
+* some cleaning
+* scaling done
+* mrgd
+* like running
+* fix
+* done but not working
+* added scaledata and namings
+* little change in interface
+* update "forward" method now "forward" returns 3 Values
+* Update CNN\_utils.py Change output of "forward" method to handle error :  "not enough values to unpack (expected 3, got 2)" in line 37
+* Update CNN\_utils.py Save the output of each layer when calling "encode" function from "DynamicConvAutoencoder" class
+* explain the data in the readme
+* could work now
+* fix ci
+* lil setup for testing
+* gci now with torch for the unit tests
+* unit tests pass
+* starting with unit tests
+* now without file reading
+* rename
+* upd did
+* some docu
+* CNN\_AE now works with the data loader
+* cleanup restruc
+* mvd fem data to the main module
+* coalesced data helpers
+* script to plot
+* ok results
+* runs like ok
+* outsrcd poderr
+* lil cleanup;
+* upd loc readme
+* trying
+* upd readme
+* now working in batches
+* maybe now
+* major error
+* version bump
+* trying checking
+* simple checks -- preparing for checking other inputs
+* good training results with permuting the data
+* outsourced the interpolation of vvec to the data channels
+* changes on google colab
+* another gitig
+* fixes
+* upd gitig
+* mjr update\ \* can use centered data for POD \* started a decod with a single linear layer
+* init py
+* rmd the ipynb again
+* the notebook for the setup
+* now also the POD LDPV error
+* can now check the simple pod error
+* tensorboard implementation
+* the file with checks
+* some more pod
+* functions to access the FEM utils
+* no more torch in the CI\
+* can now load the fem data too
+* mvd the file that compd the snapshots earlier
+* rmd deprecated file
+* new check file for cmp FEM data directly
+* lil cleaning
+* functionality to compare with FEM data
+* outsource the CNN def in to helpers -- trying/testing
+* upd did -- how Lee/C do the training
+* final fix -- didnt update the dns in pip
+* fix
+* fix
+* fix
+* fixes
+* fix ci
+* now caching the simu data
+* rmd the data for the quads
+* rmvd the quad-mats-part
+
+0.0.2
+-----
+
+* now an option to set the dimensions of the data
+* reduce
+* some improves
+* a number of fixes
+* gci trigger
+* now right stages?
+* fix
+* fix
+* another fix -- now checking pytorch too
+* too small the scale test
+* another file was missing
+* fixed the mesh path
+* for the ci check
+* added gci
+* added gci
+* upd checks
+* just 10 percent improvement with 400 data points
+* more data points better plotting
+* rmd the gci again
+* added gitlab ci file
+* rmvd the data file from the index; will use ever larger data sets
+
+0.0.1
+-----
+
+* training now works too
+* rename
+* now encode / decode like working
+* decoding like working too
+* decoding like working too
+* define the outputlayer size dynamically and a priori
+* now really the scripted setup;
+* scripted the CNN layer setup a bit
+* CNN\_AE encoder running
+* now 2D and some shortcuts
+* added the my did file
+* now two channels in the input tests
+* linting
+* mini CNN example running in \`test\_conv2d.py\` with the NSE data
+* a little test routine
+* upd gitig
+* upd loc readme
+* mv and upds
+* autoformat
+* upd gitignore
+* a file to explain the files
+* mrgd
+* my chng
+* CNN\_AE is the model
+* cnn AE working
+* CNN autoencoder structure done
+* working on CAE
+* working on CNN AE
+* and the data file -- just for testing
+* added everything (by Madita)
+* imshow works
+* now as a matrix: next plot it with imshow
+* can now recover the dolfin function from the data
+* upd gitignore
+* going fenics to provide data as matrix
+* cnn autoencoder added
+* working
+* some updates
+* Update README.md
+* more clean
+* some cleaning
+* what a bug -- now training seems to help
+* can now train the nn -- no real effect :/
+* relu for all layers
+* neural network for decoding/encoding
+* formatting
+* upd readme
+* upd resources
+* upd
+* python nn resources
+* POD red-order LPV like working
+* added warning to update \`nse\_quadratic\_mats\`
+* pod checks
+* upd readme
+* data script
+* installation
+* gitignore
+* for installing
+* convterm check
+* tests for convection
+* files for the pip module
+* now with the pip-e module
+* upds
+* rename
+* starting over;
+* start
