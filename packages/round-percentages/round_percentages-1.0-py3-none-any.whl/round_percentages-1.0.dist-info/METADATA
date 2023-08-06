@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: round-percentages
+Version: 1.0
+Summary: Round percentages that add up to 100, such that the rounded percentages also add up to 100 using the largest remainder method.
+Home-page: https://github.com/simondo92/round-percentages
+Author: Si Anderson-Dry
+Author-email: simondo15@gmail.com
+License: MIT
+Keywords: ROUND,PERCENTAGE
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Round-Percentages
+
+Round percentages that add up to 100, such that the rounded percentages also add up to 100 using the [largest remainder method](https://en.wikipedia.org/wiki/Largest_remainder_method).
+
+## Installation
+To install run
+```sh
+pip install round-percentages
+```
+
+## Example usage
+```
+import round_percentages
+round_percentages([13.626332, 47.989636, 9.596008, 28.788024])
+output: [14, 48, 9, 29]
+```
+
+
