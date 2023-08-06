@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: premvai-premsaisahoo
+Version: 0.0.6
+Summary: its a implimentation of perceptron
+Home-page: https://github.com/premsaisahoo/premvai
+Author: premsaisahoo
+Author-email: premsaisahoo@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/premsaisahoo/premvai/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# premsai
+
+pypi
+
+## Reference
+
+[official python documents](https://packaging.python.org/en/latest/)
+
+## github action
+
+[github official action](https://docs.github.com/en/actions)
+
+
