@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+driveutil/__init__.py
+driveutil.egg-info/PKG-INFO
+driveutil.egg-info/SOURCES.txt
+driveutil.egg-info/dependency_links.txt
+driveutil.egg-info/top_level.txt
