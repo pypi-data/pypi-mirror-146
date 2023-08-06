@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+round_percentages/__init__.py
+round_percentages/round_percentages.py
+round_percentages.egg-info/PKG-INFO
+round_percentages.egg-info/SOURCES.txt
+round_percentages.egg-info/dependency_links.txt
+round_percentages.egg-info/top_level.txt
