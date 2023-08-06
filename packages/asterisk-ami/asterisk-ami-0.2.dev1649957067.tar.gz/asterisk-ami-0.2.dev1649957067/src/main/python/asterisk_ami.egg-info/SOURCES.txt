@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+src/main/python/asterisk/__init__.py
+src/main/python/asterisk/ami/__init__.py
+src/main/python/asterisk/ami/action.py
+src/main/python/asterisk/ami/client.py
+src/main/python/asterisk/ami/event.py
+src/main/python/asterisk/ami/response.py
+src/main/python/asterisk/ami/utils.py
+src/main/python/asterisk_ami.egg-info/PKG-INFO
+src/main/python/asterisk_ami.egg-info/SOURCES.txt
+src/main/python/asterisk_ami.egg-info/dependency_links.txt
+src/main/python/asterisk_ami.egg-info/top_level.txt
