@@ -1,0 +1,30 @@
+[tool.black]
+skip-string-normalization = true
+
+[tool.poetry]
+name = "dsplot"
+version = "0.8.0"
+description = "Visualize Tree, Graph, and Matrix data structures with ease."
+authors = ["Bill <trantriducs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = [
+    "Data Structure",
+    "Tree",
+    "Graph",
+    "Matrix",
+    "Plot"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pygraphviz = "^1.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-cov = "*"
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
