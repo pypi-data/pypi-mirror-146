@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: itk_cucim
+Version: 0.0.1
+Summary: ITK Python filters accelerated with cuCIM.
+Author-email: Insight Software Consortium <matt.mccormick@kitware.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Project-URL: Home, https://github.com/InsightSoftwareConsortium/itk-cucim
+
+# itk-cucim
+
