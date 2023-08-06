@@ -1,0 +1,13 @@
+plot_server/__init__.py,sha256=d3TYUtwiQOoOC-xI0rrxM-N_pB9O1HwyVHF3V4vgDyA,31
+plot_server/__main__.py,sha256=a3tsElGCZWVC6Hs4AAtdcWiWhBvOnxZuzcbCWYObIfw,66
+plot_server/data_handlers.py,sha256=Q0heEHh5Ip-Lfvsd51HD63X8prQtabFT4AoFN7kMOtQ,2668
+plot_server/request_handler.py,sha256=DeO9a0WAzfcXnw1e99GwQ_Tm43ukQ-joYMsxsZmWqxk,5227
+plot_server/server_setup.py,sha256=2dTdLpNiAYcotXLzd_tYMLZFnxIiY--_JFVAd-VBcwI,1244
+plot_server/utils.py,sha256=A7IC5sUeXfMS-UMAKpu2G43jBU7Hs-ILmYVikKoYnBc,887
+plot_server/plotly/minimal.html,sha256=FSoXu4HVP4WuLoyc4G0dLQAxl7bgQ1WyxZUpcoe_atQ,11940
+http_plot_server-0.1.dist-info/LICENSE,sha256=kSWrJuKGOppI3aFmks7qdZtYx42pk2rJJkZmYUru_DM,1063
+http_plot_server-0.1.dist-info/METADATA,sha256=YWVfJJkUNtS2PIdC4j4jAxGaysG7vpZFdlol6OAzlj0,3547
+http_plot_server-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+http_plot_server-0.1.dist-info/entry_points.txt,sha256=7EdHk6Mi42Nju5PpNGxEFp93ZlGQQnp9DGFSM161nGg,62
+http_plot_server-0.1.dist-info/top_level.txt,sha256=v-_np80X4wKXPpiL3eErwSZehG_8toxoAv0m6s1h4As,12
+http_plot_server-0.1.dist-info/RECORD,,
