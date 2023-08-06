@@ -1,0 +1,8 @@
+preconstruct/__init__.py,sha256=VX1nZmQDvGBfFV4ge9nn2vF_GvPLlgrT4KuTXi6ZyOk,544
+preconstruct/basisfunctions.py,sha256=VqxAuVt4XJ7wIkzcHjG7nIFQibRsniWgsO59AXiA1oM,2210
+preconstruct/dataset.py,sha256=jOXZqA7a1EOC_U2vMdXLIwX2MrGfFukv0khhcb9CE68,15305
+preconstruct/sources.py,sha256=RD1Ejo8uXTrD89Hag9Ednk6K24pVmuzPWccteo1P5Y8,14890
+preconstruct-0.1.2.dist-info/METADATA,sha256=5F6S-Y2_pFRKEVCoNfMD3nWCTjmapPfgrK-6koRFbU8,372
+preconstruct-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+preconstruct-0.1.2.dist-info/top_level.txt,sha256=T4_KaENlLq8Hy-Bc3_QnIHBMl6KB1t3XmcouwRsUWhM,13
+preconstruct-0.1.2.dist-info/RECORD,,
