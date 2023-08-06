@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: objective-weighting
+Version: 0.0.3
+Summary: The Python 3 Library of Objective Weighting Techniques for MCDA methods.
+Home-page: https://github.com/energyinpython/objective-weighting
+Author: Aleksandra Bączkiewicz
+Author-email: aleksandra.baczkiewicz@phd.usz.edu.pl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# objective-weighting
+The Python 3 Library of Objective Weighting Techniques for MCDA methods.
+
+
