@@ -1,0 +1,2 @@
+[console_scripts]
+jvmcoredump = jvmcoredump.cli:main
