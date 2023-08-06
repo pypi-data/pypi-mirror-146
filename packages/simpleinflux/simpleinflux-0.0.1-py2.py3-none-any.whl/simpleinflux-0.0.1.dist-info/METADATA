@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: simpleinflux
+Version: 0.0.1
+Summary: simpleinflux - A simple frontend for InfluxDB 
+Author-email: Christoph Kattmann <christoph.kattmann@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/ckattmann/simpleinflux
+
+# simpleinflux
+A simple frontend for InfluxDB
+
