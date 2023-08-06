@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: stringoperations_subhra
+Version: 1.0.1
+Summary: Program to perform operations on string
+Home-page: UNKNOWN
+Author: Subhra Subudhi 
+Author-email: subhra.subudhi@yahoo.com
+License: MIT
+Description: # This is a package to perform some string operations
+        
+        ```bash
+        pip install stringoperations_subhra
+        ```
+        
+        # After installation
+        
+        #this package offers 5 functional services
+        
+        ```bash
+          1.length_str()
+          2.reverse_str()
+          3.find_str()
+          4.num_of_words()
+          5.num_of_vowels()
+        
+        ```
+        
+        # To import package
+        
+        ```python
+        import string_ops_subhra.str_ops
+        ```
+        
+        
+        
+        $@$ Copyright 2022 By Subhra Subudhi
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
