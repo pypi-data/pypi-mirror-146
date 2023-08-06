@@ -1,0 +1,3 @@
+[console_scripts]
+multi-key-graph = multikeygraph.main:main
+
