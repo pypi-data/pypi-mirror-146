@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-kitchen-sink"
+version = "0.0.0-alpha"
+
+authors = ["Ryan Munro <500774+munro@users.noreply.github.com>"]
+description = "Everything but the kitchen sink"
+documentation = "https://kitchen-sink.readthedocs.io/en/latest/"
+homepage = "https://github.com/munro/python-kitchen-sink"
+license = "MIT"
+packages = [{include = "kitchen_sink"}]
+readme = "README.md"
+repository = "https://github.com/munro/python-kitchen-sink"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
