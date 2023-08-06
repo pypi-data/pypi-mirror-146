@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: object_to_xfile
+Version: 0.0.1
+Summary: Generate csv,xlxs,excel,pdf and html file from python dictionary objects
+Home-page: UNKNOWN
+Author: Sachin Indoriya
+Author-email: sachinindoriya63@gmail.com
+License: UNKNOWN
+Description: A package that allows to create CSV, XML, PDF ,Excel and HTML file
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
