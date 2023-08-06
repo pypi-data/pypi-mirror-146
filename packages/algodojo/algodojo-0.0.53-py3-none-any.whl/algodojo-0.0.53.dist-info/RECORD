@@ -1,0 +1,17 @@
+algodojo/__init__.py,sha256=Fb9g87ZUyI4-iEAcWa7TEMU6sI3TCw1_vee8oMwAkDE,138
+algodojo/ib.cp310-win_amd64.pyd,sha256=A_rbDkbuBCE1Xz7opnxoG8JiA_qIa6K94tkEXl00ys4,184320
+algodojo/ib.cp36-win_amd64.pyd,sha256=Xpj91PrrYsG54mRRQXQnX6uAmrIw3DoeOnWY_bshkMY,199168
+algodojo/ib.cp37-win_amd64.pyd,sha256=c0vfif6sNI8vePoqoPNJdWBUFXT4Tv4-vPsVOEYlHJk,187904
+algodojo/ib.cp38-win_amd64.pyd,sha256=qCN7wPKuncXATrqQTgfYW6rfFqo-4u7lDOewUEWWbAM,183296
+algodojo/ib.cp39-win_amd64.pyd,sha256=Z3V6oc0eDQHV1hbn1xeEk4lDndLLsabWXysq1FBuySU,183808
+algodojo/base/__init__.py,sha256=42lldw3OOxZvKyVWulvTDs4pzix_ADySadOAgHKR6c8,30
+algodojo/base/auth.cp310-win_amd64.pyd,sha256=MDQ46dKdnxEsQHtRg8vbC7j2rjdPVGpzsMPdeniW4R4,34816
+algodojo/base/auth.cp36-win_amd64.pyd,sha256=DT3sAzPj5qe9wN7D5cxHWhxKp0RSidNu5NnTgbZ16kI,40960
+algodojo/base/auth.cp37-win_amd64.pyd,sha256=2j6Vlei4V_L_C5LTY1PSvMGdo091rWBCZgVP0k569y0,34816
+algodojo/base/auth.cp38-win_amd64.pyd,sha256=iXhAi1iqi4YeUx8hopElcf3VPLYVas5CiJ-dkn3VV7U,34816
+algodojo/base/auth.cp39-win_amd64.pyd,sha256=_DPa8TPQFkCOXr9A9Vp4YrXvsAtXWsktgkT7PcOJFr4,34816
+algodojo-0.0.53.dist-info/LICENSE.txt,sha256=Zny19H6w_WqlbzlJjtKC5Ct18Mx8Z6QMgvKNVmCmt8s,17
+algodojo-0.0.53.dist-info/METADATA,sha256=iQ90pboiClKNZLjVfPWm9jFYF2B9-fjlL5XLqYeZseA,956
+algodojo-0.0.53.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+algodojo-0.0.53.dist-info/top_level.txt,sha256=I0NGgmAOR4qnBOySlge9SMFyVvMNPFHFyKgpKaMq_BY,9
+algodojo-0.0.53.dist-info/RECORD,,
