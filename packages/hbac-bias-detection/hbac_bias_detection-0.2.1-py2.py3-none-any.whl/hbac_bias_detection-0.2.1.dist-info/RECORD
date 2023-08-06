@@ -1,0 +1,9 @@
+hbac_bias_detection/__init__.py,sha256=KP_ganp1g5-tZd4KiK_bG4_XEzulQpfZIkMw1ySbj2Y,66
+hbac_bias_detection/config.py,sha256=b2rWa58eY1tnNLX1tzKvhcNpXumlD8JbRnvXvTuc7R0,69
+hbac_bias_detection/hbac_bias_detection.py,sha256=jnLRcgyliK7WySHj7ZMK94WCI_-HixyGwxfE_cEEu6c,16141
+hbac_bias_detection/hbac_kmeans.py,sha256=ED7J35P_1ZQU_8t9as9miglHtQ6tAR4fCr-zGhX5PiY,4029
+hbac_bias_detection/hbac_utils.py,sha256=s7iLlLZKdq7_YxI06N6-9LBl-TVQJBKu-vt3yt8izdA,13000
+hbac_bias_detection-0.2.1.dist-info/METADATA,sha256=89oKUlvyKlk7r8QlUhEnvZrKTWjOHEYTtMpCjhie6MM,5094
+hbac_bias_detection-0.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+hbac_bias_detection-0.2.1.dist-info/top_level.txt,sha256=H74vQahJUm0j2c5ZRqr4Dr4yQLaYtSKmeLErc02kWN0,20
+hbac_bias_detection-0.2.1.dist-info/RECORD,,
