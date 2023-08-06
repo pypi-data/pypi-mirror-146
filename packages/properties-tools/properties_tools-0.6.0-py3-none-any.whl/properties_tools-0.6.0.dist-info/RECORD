@@ -1,0 +1,10 @@
+properties_tools/__init__.py,sha256=HGAgQ_K_CvaxqkTl3XiPSFws_9wK7tehU2yCqkEokYU,125
+properties_tools/color.py,sha256=hZ6qhy1JkjGN90vDH3UkB76NOSZUil9D6L2PmilWbyc,1180
+properties_tools/diff.py,sha256=9eov_cWKZXTOm1GbA-UV4XpIko-PC_iUwTNKd7n5weE,7683
+properties_tools/patch.py,sha256=lai_yr4ohXrOdDJ6USwllPHduEfBIp0uJeP9zvRsCHQ,7306
+properties_tools/utils.py,sha256=HLL_0fT-aUd38t8eR76g80mU5wHo0lbUZMSiTu_oz8g,3335
+properties_tools-0.6.0.dist-info/entry_points.txt,sha256=uwmospGn8oJtFK2VEFWCKN7SSTFEzBaTuj5l1MdDJ-k,105
+properties_tools-0.6.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+properties_tools-0.6.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+properties_tools-0.6.0.dist-info/METADATA,sha256=Suf2II5ZnQTo5v9HI8UShiMMjNwOzyQxO7MDGd4uu2E,8858
+properties_tools-0.6.0.dist-info/RECORD,,
