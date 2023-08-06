@@ -1,0 +1,9 @@
+sog4onnx/__init__.py,sha256=66lnptcO3dO9gDdgBmSL3cseC5AVXTOqLWcIliH5rlM,84
+sog4onnx/__main__.py,sha256=2RSCQ7d4lc6CwD-rlGn9UicPFg-P5du7ZD_yh-kuBEU,57
+sog4onnx/onnx_operation_generator.py,sha256=vDbgoGcHoRzFhf-nVAAm_1n1Vpmz7Ux7CTsyOH2kjD0,9219
+sog4onnx-1.0.5.dist-info/LICENSE,sha256=5v_Kxihy8i6mzHVl349ikSREaIdsl9YeUnX1KBDLD2w,1070
+sog4onnx-1.0.5.dist-info/METADATA,sha256=hAKzQqDSRciOwotVGqr1LYDxC3nfC0Xg8xyktjjAMdM,8914
+sog4onnx-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sog4onnx-1.0.5.dist-info/entry_points.txt,sha256=juDmz_AUrIwFaPQDd249oMdZXxHtkY7rf3hsSA9-zwQ,44
+sog4onnx-1.0.5.dist-info/top_level.txt,sha256=gAoCTC5tz-w4rHe722XKVBmBsNAuTcEfIAknjixTuOc,9
+sog4onnx-1.0.5.dist-info/RECORD,,
