@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: kafkaescli
+Version: 0.1.4
+Summary: A magical kafka command line interface.
+Home-page: https://github.com/jonykalavera/kafkaescli
+Author: Jony Kalavera
+Author-email: mr.jony@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: aiokafka (>=0.7.2,<0.8.0)
+Requires-Dist: fastapi (>=0.75.1,<0.76.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: pytest-cov (>=3.0.0,<4.0.0)
+Requires-Dist: result (>=0.7.0,<0.8.0)
+Requires-Dist: typer (>=0.4.1,<0.5.0)
+Requires-Dist: uvicorn (>=0.17.6,<0.18.0)
+Project-URL: Repository, https://github.com/jonykalavera/kafkaescli
+Description-Content-Type: text/markdown
+
+﻿
+![Kafkaescli](docs/images/kafkaescli-repository-open-graph-template.png)
+
+[![CircleCI](https://circleci.com/gh/jonykalavera/kafkaescli/tree/main.svg?style=svg)](https://circleci.com/gh/jonykalavera/kafkaescli/tree/main)
+
+# Install
+
+Install from [pypi](https://pypi.org/project/kafkaescli/)
+
+```sh
+pip install kafkaescli
+```
+
+# Usage
+
+```bash
+# consume from `hello`
+kafkaescli consume hello
+# consume from `hello` showing metadata
+kafkaescli consume hello --metadata
+# produce topic `hello`
+kafkaescli produce hello world
+# produce longer strings
+kafkaescli produce hello "world of kafka"
+# produce from stdin per line
+echo "hello world of kfk" | kafkaescli produce hello --stdin
+# produce to topic `world` form the output of a consumer of topic `hello`
+kafkaescli consume hello | kafkaescli produce world --stdin
+# produce `world` to `hello`, with middleware
+kafkaescli produce hello json --middleware examples.json.JSONMiddleware
+# consume from hello with middleware
+kafkaescli consume hello --middleware examples.json.JSONMiddleware
+# run the web api http://localhost:8000/docs
+kafkaescli runserver
+# POST consumed messages to WEBHOOK
+kafkaescli consume hello --metadata --webhook https://myendpoint.example.com
+# For more details see
+kafkaescli --help
+```
+
+# Contributions
+
+* [Jony Kalavera](https://github.com/jonykalavera)
+
+Pull-requests are welcome and will be processed on a best-effort basis.
+Follow the [contributing guide](CONTRIBUTING.md).
+
