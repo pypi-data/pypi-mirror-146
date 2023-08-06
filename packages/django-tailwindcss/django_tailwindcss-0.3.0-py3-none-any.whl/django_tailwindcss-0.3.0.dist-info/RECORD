@@ -1,0 +1,11 @@
+tailwindcss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tailwindcss/apps.py,sha256=Hjt4na-Bz8KuH-EzKEeGV8L_Ax092ILVmk2rCZBmPeI,347
+tailwindcss/signals.py,sha256=dCz_2BCEXCLwgSCkMu8lPS9NIXg_gSy8yieCGvPWjsM,125
+tailwindcss/tests.py,sha256=BGQiXwf11gVpvzMncSLV8PclR5CN6THksJ_w-fvK4Fc,255
+tailwindcss/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tailwindcss/templatetags/tailwindcss.py,sha256=bI6G5cCCbCTUiP9otfFf65DPJSdnRW160n2ejDL9sIo,1098
+django_tailwindcss-0.3.0.dist-info/LICENSE,sha256=fc5budytLPzjEpBJIrr7B51tjAaK-hPmuFliuQPMy30,1062
+django_tailwindcss-0.3.0.dist-info/METADATA,sha256=RNvEFlmc_Z4sSLLO3NnH0VoYAqnWFyviFIuVNjdiw_A,2433
+django_tailwindcss-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_tailwindcss-0.3.0.dist-info/top_level.txt,sha256=KnCWWIRaN89SPvNnet8Uhk1Z_T0vUVYBlJfKLk9f5ec,12
+django_tailwindcss-0.3.0.dist-info/RECORD,,
