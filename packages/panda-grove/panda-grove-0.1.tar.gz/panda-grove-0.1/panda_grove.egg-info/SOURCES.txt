@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+grove/__init__.py
+grove/grove.py
+panda_grove.egg-info/PKG-INFO
+panda_grove.egg-info/SOURCES.txt
+panda_grove.egg-info/dependency_links.txt
+panda_grove.egg-info/top_level.txt
+test/test_collection.py
+test/test_ops.py
