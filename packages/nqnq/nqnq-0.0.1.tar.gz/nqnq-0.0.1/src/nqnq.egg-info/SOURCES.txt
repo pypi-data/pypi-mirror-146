@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/nq/__init__.py
+src/nq/test.py
+src/nqnq.egg-info/PKG-INFO
+src/nqnq.egg-info/SOURCES.txt
+src/nqnq.egg-info/dependency_links.txt
+src/nqnq.egg-info/top_level.txt
