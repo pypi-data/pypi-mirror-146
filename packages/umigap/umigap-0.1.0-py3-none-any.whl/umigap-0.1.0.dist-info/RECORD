@@ -1,0 +1,8 @@
+umigap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umigap/blender.py,sha256=t1bfu-_iHe8t49JJAukbdads1BxpBqNEXx8UGcvPXs0,27887
+umigap/cli.py,sha256=DcLMbaI4EoyhGUnr_noIlMpm-XWGK1cwwgCIb-3EtRY,6166
+umigap/core.py,sha256=mi1DT-R2UVn6qJzk-P1Ik2Jwxj-6dR2bLmtdqjK30oA,4696
+umigap-0.1.0.dist-info/entry_points.txt,sha256=sxbgCRxCpQ5l8uCc69PDFa_0PG7zWJDpPYfWvZfd4gg,41
+umigap-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+umigap-0.1.0.dist-info/METADATA,sha256=1D5_u0nmql8xxYilsOpV094Ls2ainMrIJciS8lSMLUc,740
+umigap-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+umigap=umigap.cli:app
+
