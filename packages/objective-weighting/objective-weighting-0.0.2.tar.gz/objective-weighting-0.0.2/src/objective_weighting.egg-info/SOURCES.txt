@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/objective_weighting/__init__.py
+src/objective_weighting/additions.py
+src/objective_weighting/correlations.py
+src/objective_weighting/normalizations.py
+src/objective_weighting/weighting_methods.py
+src/objective_weighting.egg-info/PKG-INFO
+src/objective_weighting.egg-info/SOURCES.txt
+src/objective_weighting.egg-info/dependency_links.txt
+src/objective_weighting.egg-info/requires.txt
+src/objective_weighting.egg-info/top_level.txt
+src/objective_weighting/mcda_methods/__init__.py
+src/objective_weighting/mcda_methods/mcda_method.py
+src/objective_weighting/mcda_methods/vikor.py
