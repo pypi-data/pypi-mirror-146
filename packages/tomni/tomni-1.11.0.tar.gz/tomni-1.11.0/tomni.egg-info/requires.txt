@@ -1,0 +1,4 @@
+Numpy<2,>=1.18
+opencv-python-headless<5,>=4.3.0.38
+numpy_indexed<0.4,>=0.3.5
+scipy<2,>=1.4.1
