@@ -1,0 +1,7 @@
+gradient_metrics/__init__.py,sha256=EICG_eZn14TTVygskp89S-a8DsEm3SZ0Ls5f4LRLr7I,99
+gradient_metrics/general.py,sha256=Zfe0Wd2QUD0qrhGQ0XYI1eUn1kCDX8q-hT2z9raIeAs,3592
+gradient_metrics/metrics.py,sha256=c5vDXXPhCDmB605KxcJVNiqbuamkvdhE0flnRkdullE,16626
+gradient_metrics-0.2.0.dist-info/LICENSE,sha256=uiIMQk3g5wY797xrVpBVUPoQ2NBiAlXz6jhQdyEkzM8,1083
+gradient_metrics-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+gradient_metrics-0.2.0.dist-info/METADATA,sha256=2UuPOBwIBysqm9ZhoCk7PyUPftxW_obC2QfOU1tW4DY,2541
+gradient_metrics-0.2.0.dist-info/RECORD,,
