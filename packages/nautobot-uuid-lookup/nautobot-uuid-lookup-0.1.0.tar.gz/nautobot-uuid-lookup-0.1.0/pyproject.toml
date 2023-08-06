@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "nautobot-uuid-lookup"
+version = "0.1.0"
+description = "Plugin for nautobot to provide a single URL for all objects with an UUID"
+authors = ["Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools>=60.0.0"]
+build-backend = "poetry.core.masonry.api"

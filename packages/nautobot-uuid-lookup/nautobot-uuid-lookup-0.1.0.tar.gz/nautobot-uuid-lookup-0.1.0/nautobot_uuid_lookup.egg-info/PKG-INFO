@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nautobot-uuid-lookup
+Version: 0.1.0
+Summary: A Nautobot plugin for finding things by UUID
+Home-page: https://gitlab-ce.gwdg.de/gwdg-netz/nautobot-plugins/nautobot-uuid-lookup
+Author: Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen
+License: Apache-2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Nautobot UUID Lookup Plugin
+
+Simple to redirect existing UUIDs to the according object pages. Queries all nautobot `BaseModels`s. Fails if the models have no `get_absolute_url` method.
+
+Usage: `https://your-nautobot-instance.com/plugins/uuid/YOUR-UUID-HERE`
+
