@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pytosql
+Version: 0.0.3
+Summary: Converts python to sqlalchemy queries
+Author: David Sternlicht
+Author-email: dsternlicht@infinidat.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.*
+License-File: AUTHORS
+Requires-Dist: sqlalchemy
+Provides-Extra: testing
+Requires-Dist: pytest (>=4.6.0) ; extra == 'testing'
+Requires-Dist: pylint (>=2.0) ; extra == 'testing'
+Requires-Dist: black ; extra == 'testing'
+Requires-Dist: isort ; extra == 'testing'
+Requires-Dist: mypy ; extra == 'testing'
+Requires-Dist: sqlalchemy-stubs ; extra == 'testing'
+
+Converts python to sqlalchemy queries
+
