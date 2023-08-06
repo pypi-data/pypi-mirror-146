@@ -1,0 +1,6 @@
+# Automatically generated configuration for PyQt6.Qt3DLogic.
+
+sip-version = "6.6.0"
+sip-abi-version = "13.1"
+module-tags = ["Qt3D_6_3_0", "Qt_6_3_0", "macOS"]
+module-disabled-features = ["PyQt_OpenGL_ES2"]
