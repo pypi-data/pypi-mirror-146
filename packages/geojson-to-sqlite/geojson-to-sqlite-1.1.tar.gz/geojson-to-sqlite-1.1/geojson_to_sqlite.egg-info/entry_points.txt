@@ -1,0 +1,2 @@
+[console_scripts]
+geojson-to-sqlite = geojson_to_sqlite.cli:cli

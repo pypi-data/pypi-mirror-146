@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+geojson_to_sqlite/__init__.py
+geojson_to_sqlite/cli.py
+geojson_to_sqlite/utils.py
+geojson_to_sqlite.egg-info/PKG-INFO
+geojson_to_sqlite.egg-info/SOURCES.txt
+geojson_to_sqlite.egg-info/dependency_links.txt
+geojson_to_sqlite.egg-info/entry_points.txt
+geojson_to_sqlite.egg-info/requires.txt
+geojson_to_sqlite.egg-info/top_level.txt

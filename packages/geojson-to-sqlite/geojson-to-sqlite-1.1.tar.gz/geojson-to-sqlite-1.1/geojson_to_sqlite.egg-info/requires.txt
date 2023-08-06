@@ -1,0 +1,6 @@
+sqlite-utils>=3.23
+shapely
+
+[test]
+pytest
+dirty-equals
