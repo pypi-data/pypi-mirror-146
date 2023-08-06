@@ -1,0 +1,10 @@
+pywatchdog/__init__.py,sha256=f5xs3hLcst8HYD7ZZi2aY2aLruZH_HAJgIzyl5uFWqQ,5347
+pywatchdog/__main__.py,sha256=0tZ3al76RF0L1Yai08iSsT4ojlEOn5Lqw-H9l2SN9zw,3659
+pywatchdog/ioctl.py,sha256=31ySIJP5epZkeLmH9GkZ9STUvBRtTpvF7omcOFX4sto,838
+pywatchdog/watchdog.py,sha256=VKq0n5uQaq4Qe5cuHV27E2y0pZh5916Ve54_uj9TbYI,2983
+pywatchdog-1.0.0.dist-info/LICENSE,sha256=2UoK1KaI99nj0VCL5NSQ4iK9PwJD2jazzOUBBcCXVRk,18050
+pywatchdog-1.0.0.dist-info/METADATA,sha256=bP2CkX9Hd2bS9m4bnBUUiaAyLdJ86F1sNgedAmCmTuE,10659
+pywatchdog-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pywatchdog-1.0.0.dist-info/entry_points.txt,sha256=SsYsa8-D2mtLog_hSB2rJ2EsmFEMtEXtWactSjvUgJs,56
+pywatchdog-1.0.0.dist-info/top_level.txt,sha256=_uCxGBRXWEEY8hYR_Wxhmy1zce7hUMt0fmh0rngMwis,11
+pywatchdog-1.0.0.dist-info/RECORD,,
