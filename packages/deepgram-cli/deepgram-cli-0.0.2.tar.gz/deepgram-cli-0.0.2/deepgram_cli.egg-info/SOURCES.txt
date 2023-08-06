@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+deepgram_cli/__init__.py
+deepgram_cli/app.py
+deepgram_cli/cli.py
+deepgram_cli/constants.py
+deepgram_cli/deepgram_cli.py
+deepgram_cli/utils.py
+deepgram_cli/version.py
+deepgram_cli.egg-info/PKG-INFO
+deepgram_cli.egg-info/SOURCES.txt
+deepgram_cli.egg-info/dependency_links.txt
+deepgram_cli.egg-info/entry_points.txt
+deepgram_cli.egg-info/not-zip-safe
+deepgram_cli.egg-info/requires.txt
+deepgram_cli.egg-info/top_level.txt
