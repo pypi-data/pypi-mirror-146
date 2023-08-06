@@ -1,0 +1,11 @@
+README.md
+setup.py
+easy_docs/__init__.py
+easy_docs/docsify.py
+easy_docs/util.py
+easy_docs.egg-info/PKG-INFO
+easy_docs.egg-info/SOURCES.txt
+easy_docs.egg-info/dependency_links.txt
+easy_docs.egg-info/entry_points.txt
+easy_docs.egg-info/requires.txt
+easy_docs.egg-info/top_level.txt
