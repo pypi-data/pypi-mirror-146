@@ -1,0 +1,4 @@
+firebase-admin
+lark
+matplotlib
+numpy

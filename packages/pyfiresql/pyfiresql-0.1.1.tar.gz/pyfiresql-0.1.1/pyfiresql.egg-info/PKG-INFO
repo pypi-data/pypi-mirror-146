@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyfiresql
+Version: 0.1.1
+Summary: Firestore SQL-like query tools.
+Home-page: https://github.com/bennycheung/PyFireSQL
+Download-URL: 
+Author: Benny Cheung
+Author-email: btscheung@gmail.com
+License: MIT
+Keywords: Firebase,Firestore,SQL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
