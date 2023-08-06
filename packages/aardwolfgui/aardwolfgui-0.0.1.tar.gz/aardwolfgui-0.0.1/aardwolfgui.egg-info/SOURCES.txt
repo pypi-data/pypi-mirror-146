@@ -1,0 +1,13 @@
+README.md
+setup.py
+aardwolfgui/__init__.py
+aardwolfgui/_version.py
+aardwolfgui/aardpclient.py
+aardwolfgui/aardpclient_simple.py
+aardwolfgui.egg-info/PKG-INFO
+aardwolfgui.egg-info/SOURCES.txt
+aardwolfgui.egg-info/dependency_links.txt
+aardwolfgui.egg-info/entry_points.txt
+aardwolfgui.egg-info/not-zip-safe
+aardwolfgui.egg-info/requires.txt
+aardwolfgui.egg-info/top_level.txt

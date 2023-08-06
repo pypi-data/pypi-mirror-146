@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: aardwolfgui
+Version: 0.0.1
+Summary: GUI for aardwolf RD/VNC client
+Home-page: https://github.com/skelsec/aardwolfgui
+Author: Tamas Jos
+Author-email: info@skelsecprojects.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
