@@ -1,0 +1,12 @@
+sqlschm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlschm/generator.py,sha256=mABQ0kW9usDVz9gMwUgyQ9tlA5apQZwrPA4YkJoGolE,4794
+sqlschm/lexer.py,sha256=9RfxKL-HGYYR3grNtTTQUSHgRCZo69v0KwMPHiNK7Hc,6683
+sqlschm/parser.py,sha256=0-Qb6DMFzkXDtLaN7sCqbr1e806jR-KqsmxnSfiWXdQ,14680
+sqlschm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlschm/sql.py,sha256=zL-8dPwC_CVJw7pYBoYHt9oDXk0UZml969-8E1Ig-z0,3063
+sqlschm/tok.py,sha256=phfntslJq-VD7nQkESLCN0DswHDdqp2mBa_Cq-0-eJs,15551
+sqlschm-0.4.0.dist-info/entry_points.txt,sha256=jhT5aANb039Zq8p485Xp7iACDVic6pKMrPKKllkW_C8,39
+sqlschm-0.4.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+sqlschm-0.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+sqlschm-0.4.0.dist-info/METADATA,sha256=L_Xga_aehc7Vvw_iS91LUnXbq7XJp6zk9v2HIYgd6LY,475
+sqlschm-0.4.0.dist-info/RECORD,,
