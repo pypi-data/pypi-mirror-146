@@ -1,0 +1,13 @@
+3.0.12 - AreTomo 1.1.1 added, now can use previous alignment as input
+3.0.11 - AreTomo 1.1.0 added
+3.0.10 - parse and save tilt angles correctly
+3.0.9 - remove tilt axis angle from GUI, fix validation, fix accum.dose and dose weighting
+3.0.8 - fix output TS file loc index
+3.0.7 - fix bug: writing output alignment info to an already aligned TS
+3.0.6 - fix dose-weighting error, update citation
+3.0.5 - added refine tilt angles param for 1.0.12+
+3.0.4 - added refine tilt axis param, switch off volume flip for v1.0.12+
+3.0.3 - bug fixes (reported by Bram Koster)
+3.0.2 - add version 1.0.12
+3.0.1 - add version 1.0.10
+3.0.0 - first version of the plugin
