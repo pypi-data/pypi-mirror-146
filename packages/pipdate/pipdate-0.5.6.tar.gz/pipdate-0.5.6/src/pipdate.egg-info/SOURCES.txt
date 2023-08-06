@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/pipdate/__about__.py
+src/pipdate/__init__.py
+src/pipdate/__main__.py
+src/pipdate/main.py
+src/pipdate/update.py
+src/pipdate.egg-info/PKG-INFO
+src/pipdate.egg-info/SOURCES.txt
+src/pipdate.egg-info/dependency_links.txt
+src/pipdate.egg-info/entry_points.txt
+src/pipdate.egg-info/requires.txt
+src/pipdate.egg-info/top_level.txt
