@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+finx_ib_reports/__init__.py
+finx_ib_reports/adapters.py
+finx_ib_reports/config_helpers.py
+finx_ib_reports/custom_flex_report.py
+finx_ib_reports/date_helpers.py
+finx_ib_reports/download_trades.py
+finx_ib_reports.egg-info/PKG-INFO
+finx_ib_reports.egg-info/SOURCES.txt
+finx_ib_reports.egg-info/dependency_links.txt
+finx_ib_reports.egg-info/requires.txt
+finx_ib_reports.egg-info/top_level.txt
