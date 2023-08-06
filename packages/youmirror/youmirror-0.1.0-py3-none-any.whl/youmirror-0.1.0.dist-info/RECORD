@@ -1,0 +1,13 @@
+youmirror/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+youmirror/cli.py,sha256=9swRyJAzjf91rg_bLxJJ78Y6PoP4TmojA0_7mHFqvfU,1328
+youmirror/configurer.py,sha256=z9vMmpHPYCPSTiMRo7u9se35CwoHIpgnHR5tNkBnK-w,1415
+youmirror/core.py,sha256=CXj_pp3EPirF8HUsuRR8RPcPFHRLv1-NUWWPgEWTxiQ,11615
+youmirror/databaser.py,sha256=64ofGesIE-1UCu3nGT5qvuSnhguXBJqtUGaFSZp1oJQ,2346
+youmirror/downloader.py,sha256=STZ3ZJrqaeaONmA_fFr5QwQuiqYWNPfZVJhq1hDcW8s,1608
+youmirror/helper.py,sha256=VPj3L5NAGK_wNp5Tug4peJYuc-0pCGsl6Ixq2XcYWqQ,3517
+youmirror/parser.py,sha256=t1h3qq-Yq5gsA6qOj9N526jxLi4IYtfji4yWB3d0VO4,5781
+youmirror/template.py,sha256=fmwxPkwuPOA_7w5_MSZUXMdNibvqaJWplEIzU6TcUVM,202
+youmirror-0.1.0.dist-info/LICENSE,sha256=ZuItLy3JCYPFgP_7PJezloiokuY9ahzmWEJ_4P2ZYos,1065
+youmirror-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+youmirror-0.1.0.dist-info/METADATA,sha256=kGtoOGHr-riE0QTUN3YA44FymuWy9nKHBxdwRPifr_U,614
+youmirror-0.1.0.dist-info/RECORD,,
