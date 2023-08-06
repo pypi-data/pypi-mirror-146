@@ -1,0 +1,13 @@
+ldap_hooks/__init__.py,sha256=RpDeVXeA3bQLf8cfqcgljRndCkN18WcWOAl6KbYGxzA,21
+ldap_hooks/hooks.py,sha256=I2mgRCqhGH0yikL9qFfTjdw6dMOhANJNBk-qEt0sAmw,32152
+ldap_hooks/ldap.py,sha256=z4GacAF49f_bydOqvVsDCooP5GxDuwPiu8dhoJhs-_I,327
+ldap_hooks/utils.py,sha256=nvr6D6f8NOAT48BxqOh1MMtV9aKzdm1bgpmrV-uO_I0,778
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=mAuM-oQWrmp2ZVXoyNUvPal-XYE4-CMT3rpCTkuIlYM,3131
+tests/test_ldap_hooks.py,sha256=6qiq6LdyshpzglibtD1_m7M8QF4OZxHlkNLyrCgrVXM,16947
+tests/util.py,sha256=VG2EHnpNcsotnZJEdo1w-VcnDG9VcsJkT7ZspYiQQIk,2941
+ldap_hooks-0.0.4.dist-info/LICENSE,sha256=e0lhIfaHmcmTL6N0SNE9cEkjKpAJZ-mL7bsvSZH3pnA,1064
+ldap_hooks-0.0.4.dist-info/METADATA,sha256=VUbsHHrtyjlDja-yrZcmyuoif6kXCNkm-jazhj8cMZo,10275
+ldap_hooks-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ldap_hooks-0.0.4.dist-info/top_level.txt,sha256=ws_dvJo-pQQS_2FvHrRTc6HkVBF0WXFrtgByFuGIwRw,17
+ldap_hooks-0.0.4.dist-info/RECORD,,
