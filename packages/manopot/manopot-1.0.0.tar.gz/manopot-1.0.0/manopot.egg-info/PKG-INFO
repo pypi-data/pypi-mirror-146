@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: manopot
+Version: 1.0.0
+Summary: Simple TCP HoneyPot
+Home-page: UNKNOWN
+Author: Apurv Goyal
+Author-email: apurv.goyal01@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+ManoPot
+========
+
+ManoPot is a simple TCP HoneyPot written in Python 3.
+
+Source Code
+------------
+
+https://github.com/Rand0mAccess/ManoPot
+
+PyPI package
+------------
+
+https://pypi.org/project/manopot/
+
+Documentation
+-------------
+
+http://manopot.rtfd.io/
+
+Documentation can also be found in the 'docs/' directory as reStructuredText files. Build the docs by running 'make'
+in the 'docs/' directory, then viewing 'docs/_build/html/index.html'.
+
+

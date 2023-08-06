@@ -1,0 +1,9 @@
+README.rst
+setup.py
+manopot/__init__.py
+manopot/__main__.py
+manopot.egg-info/PKG-INFO
+manopot.egg-info/SOURCES.txt
+manopot.egg-info/dependency_links.txt
+manopot.egg-info/not-zip-safe
+manopot.egg-info/top_level.txt
