@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: tkmt-package
+Version: 0.17
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: ['Mugdha Thanawala', 'Tushar Kolekar']
+Author-email: tkmt.ensemble@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: pandas
+Requires-Dist: seaborn
+
+## tkmt_package
+This package includes python libraries for Data Preprocessing, Ensemble Learning techniques such as Averaging, Weighted Averaging, Rank Weighted Averaging and Voting and Performance Evaluation.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install tkmt_package.
+
+```bash
+pip install tkmt_package
+```
+
+## Main Features
+Ensemble Learning Techniques:
+* Averaging
+* Weighted Averaging
+* Rank Weighted
+* Votting
+ 
+Data Preprocessing:
+* Data Preperation
+* Data Normalizations
+* Train TEST Split
+
+Performance Evaluation:
+* Performance Evaluation
+* Graphical Representation
+
+## Documentation
+The documentation for the latest release is at
+-  https://mugdha-thanawala.gitbook.io/tkmt_package/
+
+The Reference documentation for the latest release is at
+- https://tusharkolekar24.gitbook.io/package-kolekar-1/
+
+## How to get it
+The main branch on GitHub is the most up to date code
+- https://github.com/tkmtpackage/tkmt.ensemble-001
+
+## Contributing
+Contributions in any form are welcome, including:
+- Documentation improvements
+- Additional tests
+- New features to existing models
+- New models
+
