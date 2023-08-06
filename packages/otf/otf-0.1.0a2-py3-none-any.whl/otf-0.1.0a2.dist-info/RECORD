@@ -1,0 +1,14 @@
+otf/__init__.py,sha256=4nwEzQ9ozQSBNLqctUzmvTakSm95X2gNkZni9lxmdA8,911
+otf/analyze.py,sha256=3iK4FPrUoQ966b2uZFDTrAQEbZbgx5X2oZK6gavSMAk,8360
+otf/ast_utils.py,sha256=eCvkUWreupLQaFYddvT7ms6UxlLGke5dIGlkbNRKQts,6223
+otf/compiler.py,sha256=q-bSvCJROl4Ll_emyfGyX2db3iN54qrg4qrbR3eR-XE,33704
+otf/decorators.py,sha256=P-PbkWkeUPIk0KSvzCpQyDQk8MCo0WFSmeTZVtXNhFw,3531
+otf/local_scheduler.py,sha256=NfHTU7ed8ndY0p4JjGpidi604UVOIng5iOdJBmh4y2Y,1655
+otf/pack.py,sha256=pfH0PqxoavonkMrTuYWFCAnOt3JYdVT42MPNkbay0DQ,17085
+otf/parser.py,sha256=YL4wde8mKfx82KKgLwcpBr2hZXrnY_BaKFSlX_VGECo,13033
+otf/runtime.py,sha256=iN3UMk1ICxBYIHEfF07Nz8zps3lDlXP2Z_Ev8ZqSGLk,4421
+otf/utils.py,sha256=VEmykIeyuFfg5iJzDDNwXNHkE2pIOdxdC51uyWEISl8,2056
+otf-0.1.0a2.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+otf-0.1.0a2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+otf-0.1.0a2.dist-info/METADATA,sha256=6ANmj46_3p0HwyYPq-psBoGTIqSHsaO-9-D5PdaOPVc,2304
+otf-0.1.0a2.dist-info/RECORD,,
