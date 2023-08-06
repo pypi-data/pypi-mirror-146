@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "fluidstate"
+version = "1.0.0a0"
+repository = "https://github.com/kuwv/python-fluidstate"
+description = "Compact state machine in Python that can be vendored."
+authors = ["Jesse P. Johnson <jpj6652@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries"
+]
+keywords = ["state machine", "dsl"]
+include = ["CHANGELOG", "LICENSE", "*.rst"]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.25.0"
+black = "^22.3.0"
+mypy = "^0.942"
+isort = "^5.10.1"
+flake8 = "^3.8.3"
+docstr-coverage = "^1.2.0"
+bandit = "^1.6.2"
+pylint = "^2.9.5"
+mkdocstrings = "^0.16.2"
+
+[tool.pydocstyle]
+ignore = [
+    "D203",
+    "D213",
+    "D300"
+]
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+    | \.git
+    | \.mypy_cache
+    | \.pytest_cache
+    | \.vagrant
+    | _build
+    | dist
+  )
+)
+'''
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
