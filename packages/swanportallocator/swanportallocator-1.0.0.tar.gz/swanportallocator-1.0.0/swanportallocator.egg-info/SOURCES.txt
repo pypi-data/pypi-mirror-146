@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+swanportallocator/__init__.py
+swanportallocator/_version.py
+swanportallocator/portallocator.py
+swanportallocator.egg-info/PKG-INFO
+swanportallocator.egg-info/SOURCES.txt
+swanportallocator.egg-info/dependency_links.txt
+swanportallocator.egg-info/not-zip-safe
+swanportallocator.egg-info/requires.txt
+swanportallocator.egg-info/top_level.txt
