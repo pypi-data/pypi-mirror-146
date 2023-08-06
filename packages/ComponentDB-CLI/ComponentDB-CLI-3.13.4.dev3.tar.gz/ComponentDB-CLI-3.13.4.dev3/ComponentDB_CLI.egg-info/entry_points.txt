@@ -1,0 +1,3 @@
+[console_scripts]
+cdb-cli = cdbCli.service.cli.cli:main
+

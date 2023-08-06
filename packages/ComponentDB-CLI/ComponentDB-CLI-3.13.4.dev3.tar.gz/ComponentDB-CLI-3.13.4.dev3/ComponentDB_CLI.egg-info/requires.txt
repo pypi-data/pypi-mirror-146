@@ -1,0 +1,8 @@
+python-dateutil
+urllib3
+six
+paho-mqtt
+click
+pandas
+rich
+ComponentDB-API==3.13.0
