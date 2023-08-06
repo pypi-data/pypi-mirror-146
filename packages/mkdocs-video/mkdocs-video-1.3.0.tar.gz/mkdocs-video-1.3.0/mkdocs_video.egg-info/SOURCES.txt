@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mkdocs_video/__init__.py
+mkdocs_video/plugin.py
+mkdocs_video.egg-info/PKG-INFO
+mkdocs_video.egg-info/SOURCES.txt
+mkdocs_video.egg-info/dependency_links.txt
+mkdocs_video.egg-info/entry_points.txt
+mkdocs_video.egg-info/requires.txt
+mkdocs_video.egg-info/top_level.txt
