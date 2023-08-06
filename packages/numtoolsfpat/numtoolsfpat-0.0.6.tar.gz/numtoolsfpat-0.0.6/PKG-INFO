@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: numtoolsfpat
+Version: 0.0.6
+Summary: Number tools
+Home-page: https://github.com/fptiangco/numtoolsfpat
+License: UNKNOWN
+Download-URL: https://github.com/fptiangco/numtoolsfpat
+Project-URL: Bug Reports, https://github.com/fptiangco/numtoolsfpat/issues
+Project-URL: Source, https://github.com/fptiangco/numtoolsfpat/
+Description: | | |
+        |---|---|
+        | Tests | [![Test and Pypi](https://github.com/fptiangco/numtoolsfpat/actions/workflows/codecov_publish_pypi.yaml/badge.svg)](https://github.com/fptiangco/numtoolsfpat/actions/workflows/codecov_publish_pypi.yaml) |
+        | Pypi | [![PyPI version](https://badge.fury.io/py/numtoolsfpat.svg)](https://badge.fury.io/py/numtoolsfpat) ![PyPI - Downloads](https://img.shields.io/pypi/dm/numtoolsfpat) ![PyPI - Format](https://img.shields.io/pypi/format/numtoolsfpat) |
+        | Code | [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) |
+        | Scan | [![Updates](https://pyup.io/repos/github/fptiangco/numtoolsfpat/shield.svg)](https://pyup.io/repos/github/fptiangco/numtoolsfpat/) |
+        | Docs | [![Read the Docs](https://readthedocs.org/projects/numtoolsfpat/badge/?version=latest)](https://numtoolsfpat.readthedocs.io/en/latest/) |
+        
+Keywords: numtoolsfpat
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
