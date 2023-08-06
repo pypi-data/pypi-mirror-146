@@ -1,0 +1,17 @@
+pyluna-common
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+pytest-runner
+testfixtures
+requests-mock
+mock
+wheel>=0.22
+pyinstaller>=4.0
+poetry
+python-semantic-release
+m2r2
+twine
+Sphinx
