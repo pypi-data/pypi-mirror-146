@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/my_package/__init__.py
+src/my_package/main.py
+src/tamilselvan_13.egg-info/PKG-INFO
+src/tamilselvan_13.egg-info/SOURCES.txt
+src/tamilselvan_13.egg-info/dependency_links.txt
+src/tamilselvan_13.egg-info/top_level.txt
