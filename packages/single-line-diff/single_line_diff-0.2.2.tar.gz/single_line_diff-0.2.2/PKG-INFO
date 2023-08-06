@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: single_line_diff
+Version: 0.2.2
+Summary: A package that can diff single lines
+Home-page: https://gitlab.com/azuredown/single_line_diff
+Author: Andrew Zuo
+Author-email: andrew@andrewzuo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+License-File: LICENSE
+
+This is a package that allows you to easily diff a single line. The following are some examples (note that in this example underscores are used instead of bullets due to not rendering properly on Pypi):
+
+>>> print(diff("This is totally just my opinion.", "This is simply my opinion."))
+This is totally just my opinion.
+This is simp_ly_____ my opinion.
+        ^^^^^  ^^^^^            
+
+>>> print(diff("I called but no one answered.", "I tried calling, but no one answered."))
+I______ called__ but no one answered.
+I tried calling, but no one answered.
+ ^^^^^^     ^^^^                     
+

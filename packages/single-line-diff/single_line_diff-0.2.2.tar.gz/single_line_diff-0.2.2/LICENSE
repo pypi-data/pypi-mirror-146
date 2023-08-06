@@ -1,0 +1,29 @@
+# Usage Agreement
+
+By using the contents in this repository (the "software") you agree to be bound
+by the following condition(s):
+
+- You may use, redistribute, or modify the software however you wish provided
+	that you follow the below points.
+- You acknowledge this software is provided **AS IS** without any warranty
+	express or implied and you waive your right to hold any person or entity
+	associated with the software liable for any action or event arising from
+	the use of said software.
+- All non-compiled copies or substantial portions of the software (each
+	"replication") must include either this license or a license that makes
+	it clear that the software is provided **AS IS** (such as the MIT or
+	Apache 2 licenses) and indicate that the license covers the replication.
+- This license does not cover any trademarks in or relating to the software.
+
+# Contributing Agreement
+
+By providing input that results in a demonstrable change to the software (a
+"contribution") you agree to be bound by the following condition(s):
+
+- You grant the maintainer of the repository the original contribution was made
+	for or directed towards (the "maintainer") a perpetual, sub-licensable,
+	irrevocable, non-exclusive, royalty free, worldwide license to use and
+	modify the contribution without restrictions including, but not limited to,
+	permission to modify, distribute, host, make derivative works of, **make
+	arbitrary license changes to**, make forks of, and any permutation of the
+	aforementioned to the contribution.

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+single_line_diff/__init__.py
+single_line_diff/main.py
+single_line_diff.egg-info/PKG-INFO
+single_line_diff.egg-info/SOURCES.txt
+single_line_diff.egg-info/dependency_links.txt
+single_line_diff.egg-info/top_level.txt
