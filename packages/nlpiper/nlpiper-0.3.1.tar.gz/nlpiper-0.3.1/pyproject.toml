@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "nlpiper"
+version = "0.3.1"
+description = "NLPiper, a lightweight package integrated with a universe of frameworks to pre-process documents."
+authors = ["Tomás Osório"]
+maintainers = ["Carlos Alves, Daniel Ferrari, João Cunha, Tomás Osório"]
+license = "MIT"
+
+readme = "README.md"
+
+packages = [
+    { include = "nlpiper" }
+]
+
+repository = "https://github.com/dlite-tools/NLPiper"
+documentation = "https://github.com/dlite-tools/NLPiper/README.md"
+
+keywords = ["NLP", "CL", "natural language processing", "computational linguistics", "parsing", "tokenizing",
+    "linguistics", "language", "natural language", "text analytics", "deep-learning "]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: Freely Distributable",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+pydantic = "^1"
+
+bs4 = { version = "^0", optional = true }
+cyhunspell = { version = "^2", optional = true }
+nltk = { version = "^3", optional = true }
+sacremoses = { version = "^0", optional = true }
+stanza = { version = "^1", optional = true }
+gensim = { version = "^4", optional = true }
+numpy = { version = "^1", optional = true }
+torchtext = { version = "^0", optional = true }
+spacy = { version = "^3", optional = true }
+
+[tool.poetry.extras]
+bs4 = ["bs4"]
+nltk = ["nltk"]
+sacremoses = ["sacremoses"]
+hunspell = ["cyhunspell"]
+stanza = ["stanza"]
+gensim = ["gensim"]
+numpy = ["numpy"]
+torchtext = ["torchtext"]
+spacy = ["spacy"]
+
+all = [
+    "bs4",
+    "cyhunspell",
+    "nltk",
+    "sacremoses",
+    "stanza",
+    "gensim",
+    "numpy",
+    "torchtext",
+    "spacy"
+]
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4"
+mypy = "^0"
+pydocstyle = "^6"
+pytest = "^7"
+pytest-cov = "^3"
+sphinx = "^4"
+sphinx-rtd-theme = "^1"
+toml = "^0"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.nlpiper]
+copyright = "2021, Carlos Alves, Daniel Ferrari, João Cunha and Tomás Osório."
