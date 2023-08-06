@@ -1,0 +1,14 @@
+TextEdit/Sound.py,sha256=Q5SRJvccI7Y_bKDmo1T7lwsXaYD1l4UObzeMge7jIwI,548
+TextEdit/__init__.py,sha256=pHy35CUHooxuRjuh4LPz0qi8NHyi1oQOZwvSwsefusU,280
+TextEdit/defile.py,sha256=ACB-qZEDZ2dfDInTCqLvxDGKT99MIEdOqblapwbV4no,936
+TextEdit/defileInput.py,sha256=tp-LFedZwDT67f2NH1sLB4DYnCAwCNmXm2zfw6n_i_0,984
+TextEdit/defileInputSound.py,sha256=MJI_ar6EnCP6utzI6X3CPid71oPDn7vNUEd6Lx6S568,724
+TextEdit/defileSound.py,sha256=zejdsEyqIMjkskwcfxLJLAf4MehJnXxGFDkGlcTMi7E,674
+TextEdit/sound/espace.wav,sha256=xaLarm2k_WygSOV3Q_9w4ckwNV2ycFS96nOPZotm29c,8942
+TextEdit/sound/lettre.wav,sha256=dsE4Ncd-MVAmWZqJJjyXM3QQ3oVrmtM88FMLAi0C6-Y,4532
+TextEdit/sound/point.wav,sha256=PMDzcC6h85-ee1g87MZocrcFMS0qnyCEhBhYkBEr69M,4530
+TextEdit-1.3.2.dist-info/LICENSE,sha256=jQkSKnBkr-JoIzINRwnUJc7YgKid9jwy_qzS_jKdENA,1425
+TextEdit-1.3.2.dist-info/METADATA,sha256=BaFVeZIaGyAfcK2asGFFgFNPlZNXIv4oJ4HQJ27KSYQ,2047
+TextEdit-1.3.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+TextEdit-1.3.2.dist-info/top_level.txt,sha256=AI5ST33F-D2uZ42iovi6Ykam6hCmdDfQThpDv306puw,9
+TextEdit-1.3.2.dist-info/RECORD,,
