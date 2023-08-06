@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: inaccel-vitis
+Version: 0.2
+Summary: InAccel Vitis Libraries
+Home-page: https://docs.inaccel.com
+Author: InAccel
+Author-email: info@inaccel.com
+License: Apache-2.0
+Keywords: InAccel Coral,FPGA,inaccel,Vitis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Requires-Dist: coral-api (==2.*)
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
