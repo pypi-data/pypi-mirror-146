@@ -1,0 +1,2 @@
+[console_scripts]
+crow = crow.__main__:start_Crow
