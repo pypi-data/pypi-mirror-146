@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: jkg_evaluators
+Version: 0.0.6
+Summary: Educational package
+Home-page: https://github.com/endremborza/jkg_evaluators
+Author: E - n - d - r - e -   - M - á - r - k -   - B - o - r - z - a
+License: MIT
+Keywords: education
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# *J*elm*K*nowledge*G*raph  evaluators
+
+python package, for evaluating programming challenges
+
+[docs](https://jkg-evaluators.readthedocs.io/en/latest/index.html)
+
+

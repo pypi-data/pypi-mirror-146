@@ -1,0 +1,21 @@
+[project]
+name = "jkg_evaluators"
+version = "0.0.6"
+description = "Educational package"
+authors = [
+    {name = "Endre Márk Borza"}
+]
+license = {file =  "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.7"
+keywords=["education"]
+[build-system]
+requires = [
+    "toml >= 0.10.0",
+    "setuptools >= 38.6.0",
+    "wheel >= 0.31.0",
+    "setuptools_scm >= 2.0.0, <3"
+]
+
+[project.urls]
+repository = "https://github.com/endremborza/jkg_evaluators"
