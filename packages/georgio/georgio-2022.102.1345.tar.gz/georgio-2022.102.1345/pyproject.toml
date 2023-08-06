@@ -1,0 +1,42 @@
+[build-system]
+requires = ["maturin>=0.12,<0.13"]
+build-backend = "maturin"
+
+[project]
+name = "georgio"
+description = "Fast Geo Rust functions for Python"
+authors = [
+    {name = "Spectric Labs", email = "foss@spectric.com"},
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[project.urls]
+repository = "https://github.com/spectriclabs/georgio"
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py39
+isolated_build = true
+recreate = true
+[gh-actions]
+python =
+	3.9: py39
+[testenv]
+deps =
+	geopy
+	mercantile
+	numba
+	pytest
+commands =
+	pytest -s
+"""
