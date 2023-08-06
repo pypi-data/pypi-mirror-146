@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+mkdocs-glossary-plugin = mkdocs_glossary_plugin.plugin:GlossaryPlugin
