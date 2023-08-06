@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: wca_scorecards
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
