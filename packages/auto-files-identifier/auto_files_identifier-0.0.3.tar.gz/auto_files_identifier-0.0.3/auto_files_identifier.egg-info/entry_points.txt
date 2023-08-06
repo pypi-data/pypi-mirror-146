@@ -1,0 +1,3 @@
+[console_scripts]
+afi = afi:main
+

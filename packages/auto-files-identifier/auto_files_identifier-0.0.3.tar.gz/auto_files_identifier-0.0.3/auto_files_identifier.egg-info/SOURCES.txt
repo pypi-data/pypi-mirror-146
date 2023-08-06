@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+./__init__.py
+./download_signatures.py
+./mimetypes.py
+./signatures.py
+auto_files_identifier.egg-info/PKG-INFO
+auto_files_identifier.egg-info/SOURCES.txt
+auto_files_identifier.egg-info/dependency_links.txt
+auto_files_identifier.egg-info/entry_points.txt
+auto_files_identifier.egg-info/requires.txt
+auto_files_identifier.egg-info/top_level.txt
