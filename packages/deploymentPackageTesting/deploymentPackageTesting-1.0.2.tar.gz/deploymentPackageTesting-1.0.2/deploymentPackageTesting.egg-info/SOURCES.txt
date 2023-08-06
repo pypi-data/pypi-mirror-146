@@ -1,0 +1,9 @@
+README.md
+setup.py
+deploymentPackageTesting.egg-info/PKG-INFO
+deploymentPackageTesting.egg-info/SOURCES.txt
+deploymentPackageTesting.egg-info/dependency_links.txt
+deploymentPackageTesting.egg-info/requires.txt
+deploymentPackageTesting.egg-info/top_level.txt
+mymodule/__init__.py
+mymodule/functions.py
