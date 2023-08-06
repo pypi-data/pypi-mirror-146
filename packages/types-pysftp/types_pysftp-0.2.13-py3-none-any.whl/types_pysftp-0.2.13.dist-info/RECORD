@@ -1,0 +1,8 @@
+pysftp-stubs/METADATA.toml,sha256=T-_ZAQnDIwRrRB4tzVC6yYFVY9aOIgbfznKNfGmpj3I,48
+pysftp-stubs/__init__.pyi,sha256=PZFaW01n19djAWGYTYEfXdHSWFAcvcap4B4D0xPqBAY,5464
+pysftp-stubs/exceptions.pyi,sha256=ZGkOM4TiEeJVqLlr8QGsmawB7hedHiYOo5JxFY4R3Xg,272
+pysftp-stubs/helpers.pyi,sha256=lZb1WNXyMvFnfqElbqqGTjdYcEgUiur16VfnWl6gX0w,1231
+types_pysftp-0.2.13.dist-info/METADATA,sha256=xyYHiFpEX6qVmJo5rovzuGHwRSxEek0LYPqkN1hkx_I,1170
+types_pysftp-0.2.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+types_pysftp-0.2.13.dist-info/top_level.txt,sha256=UfdreQsqhz53u7GQdJbLNKFa36r1bXprpwRWn3oZXGc,13
+types_pysftp-0.2.13.dist-info/RECORD,,
