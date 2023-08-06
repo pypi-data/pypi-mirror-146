@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: protobuf2arr
+Version: 0.1.0
+Summary: Translate a protobuf message to Google's RPC array format.
+License: MIT
+Author: Kevin Ramdath
+Author-email: krpent@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: protobuf (>=3.20.0,<4.0.0)
+Requires-Dist: simplejson (>=3.17.6,<4.0.0)
