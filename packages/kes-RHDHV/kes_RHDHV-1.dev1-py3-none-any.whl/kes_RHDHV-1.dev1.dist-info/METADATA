@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: kes-RHDHV
+Version: 1.dev1
+Summary: KES python client
+Home-page: https://github.com/RoyalHaskoningDHV/kes-python-client
+Author: RoyalHaskoningDHV
+Author-email: roel.de.jong@rhdhv.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/RoyalHaskoningDHV/kes-python-client/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mypy (>=0.910)
+Requires-Dist: types-protobuf (>=0.1.14)
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+Requires-Dist: grpc-stubs
+
+# KES Python Client
+
+## Description
+
+This repository contains a python client which can be used to programatically access and modify your activity data through an abstraction called tables.
+
+## Installation
+
+Install using pip: `pip install kes`
+
+## Examples
+
+See the [examples](examples)
+
+## Documentation
+
+See the [online documentation](https://royalhaskoningdhv.github.io/kes-python-client/build/html/index.html)
+
+## License
+
+This library is distributed under the [MIT license](LICENSE)
+
+
