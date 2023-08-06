@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: languagestring
+Version: 0.0.3
+Summary: Get all language characters for some european languages
+Home-page: https://github.com/MattWaller/languagestring
+Author: Matt Waller
+Author-email: mattghwaller@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MattWaller/languagestring/issues
+Description: # languagestring
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
