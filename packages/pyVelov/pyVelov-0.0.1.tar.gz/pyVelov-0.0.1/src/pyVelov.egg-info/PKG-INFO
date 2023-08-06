@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyVelov
+Version: 0.0.1
+Summary: Velo'v API wrapper for python
+Author: Aimé Risson
+Author-email: aime.risson.1@gmail.fr
+License: UNKNOWN
+Keywords: python,Velo'v api,Velo'v API wrapper,python velo'v,velov,lyon,velov lyon
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Velo'v Lyon
+
