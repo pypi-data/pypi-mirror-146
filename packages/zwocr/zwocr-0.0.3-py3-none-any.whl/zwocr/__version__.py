@@ -1,0 +1,8 @@
+__version__ = '0.0.3'
+__title__ = 'zwocr'
+__description__ = 'Personal Python OCR Utilities'
+__url__ = 'https://github.com/njzhaowei/zwocr'
+__author__ = 'Zhao Wei'
+__author_email__ = 'yewberry@163.com'
+__license__ = 'Apache 2.0'
+__copyright__ = 'Copyright 2022 Zhao Wei. All rights reserved.'

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: zwocr
+Version: 0.0.3
+Summary: Personal Python OCR Utilities
+Home-page: https://github.com/njzhaowei/zwocr
+Author: Zhao Wei
+Author-email: yewberry@163.com
+License: Apache 2.0
+Platform: all
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zwutils
+Requires-Dist: loguru
+Requires-Dist: Pillow
+Requires-Dist: pytesseract
+Requires-Dist: baidu-aip
+
+# Personal Python OCR Utilities
+
