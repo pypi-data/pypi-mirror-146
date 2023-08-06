@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: djangorestframework-idempotency-key
+Version: 1.0.0
+Summary: Idempotency key app & middleware for Django Rest Framework
+Home-page: https://github.com/hardcoretech/djangorestframework-idempotency-key
+Author: xeonchen, kilikkuo
+Author-email: pypi@hardcoretech.co
+License: UNKNOWN
+Project-URL: Changelog, https://github.com/hardcoretech/djangorestframework-idempotency-key/blob/main/CHANGELOG.md
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# idempotency-key
+An installable DB backend idempotency key middleware for Django Rest Framework
+
+
