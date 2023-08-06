@@ -1,0 +1,2 @@
+[console_scripts]
+pypyr = pypyr.cli:main
