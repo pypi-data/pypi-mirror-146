@@ -1,0 +1,2 @@
+[console_scripts]
+save_remote_nginx_logs = src.cli:process_remote_nginx_logs
