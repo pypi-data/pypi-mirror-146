@@ -1,0 +1,15 @@
+rigidbodyfit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rigidbodyfit/__main__.py,sha256=tv9_tiDh_WXBXXZrq5ixHhi9v-6FnphrLcb8Wazv_S8,161
+rigidbodyfit/arguments.py,sha256=Ktru-cEiuO11GLRb9It3CC3v1Ritz2ysSEmpf5oMYPY,2086
+rigidbodyfit/fit.py,sha256=kRlYudjDrjsE4KHt9axKAB3hGfEjPuZbDWV5SuNRoqQ,4066
+rigidbodyfit/logger.py,sha256=GoTt01wK4xc-ZzIBm53hftkh5PSyc8m8mE-Liaa_yfY,319
+rigidbodyfit/runner.py,sha256=1RvsaRyDbtHPTsGCSun06lj8HDaJ4FPDiRMgLWqKMgM,1092
+rigidbodyfit/structure.py,sha256=nPX6rpELPKMnMCJX5tjg-SHsYSTuKQTcirbU8sRmGNY,1048
+rigidbodyfit/transformations.py,sha256=XaJTrj0j7W-g4-MqIFvgAyIPptONgKY_6TdxJUy57Bw,3793
+rigidbodyfit-1.0.dist-info/COPYING,sha256=kysRTvqOm97TX9VgIg2C8KysYNlbBPuR4tcCFq1waXY,113
+rigidbodyfit-1.0.dist-info/LICENSE,sha256=ve-m46cPoEm1vX8TIk_pL954D3LS7DNbP-PL5Jhj6xg,35079
+rigidbodyfit-1.0.dist-info/METADATA,sha256=ikoiknDKCZ05Y3LddgL4IW4z7CgdJ2GYguThBAco9ho,1238
+rigidbodyfit-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rigidbodyfit-1.0.dist-info/entry_points.txt,sha256=oJUE91EILh5uTpx4B2ltXZAtw6HMfni7XsBWrTtFwzk,57
+rigidbodyfit-1.0.dist-info/top_level.txt,sha256=7KLekOvLga_3ezNUeS1hmbXQuJmEHOZLp0WQ15y5F84,13
+rigidbodyfit-1.0.dist-info/RECORD,,
