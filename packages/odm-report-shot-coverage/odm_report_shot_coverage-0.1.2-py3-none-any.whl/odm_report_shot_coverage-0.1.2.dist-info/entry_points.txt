@@ -1,0 +1,2 @@
+[console_scripts]
+odm-report-shot-coverage = odm_report_shot_coverage.scripts.report:main
