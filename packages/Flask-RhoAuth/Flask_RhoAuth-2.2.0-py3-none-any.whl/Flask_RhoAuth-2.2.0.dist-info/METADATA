@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: Flask-RhoAuth
+Version: 2.2.0
+Summary: Rho AI Authorization Library
+Home-page: https://bitbucket.org/rhoai/flask-rhoauth
+Maintainer: Rho AI
+License: Commercial
+Platform: UNKNOWN
+Requires-Dist: Flask
+Provides-Extra: apiauth
+Requires-Dist: Flask-SQLAlchemy ; extra == 'apiauth'
+Provides-Extra: openid
+Requires-Dist: requests-oauthlib (==1.2.0) ; extra == 'openid'
+Requires-Dist: pyjwkest (==1.4.0) ; extra == 'openid'
+Requires-Dist: python-keycloak (==0.15.0) ; extra == 'openid'
+Provides-Extra: test
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'test'
+Requires-Dist: tox (==3.14.1) ; extra == 'test'
+Requires-Dist: mock (==3.0.5) ; extra == 'test'
+Requires-Dist: psycopg2 ; extra == 'test'
+
+# Flask-RhoAuth
+
+Authorization Library Based on StormPath and Flask-Security
+
+## Testing
+
+To run the tests we need to install pyenv and tox.
+
+Follow the instructions for [pyenv](https://github.com/pyenv/pyenv#installation)
+and [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv#installation)
+to install pyenv.
+
+After pyenv is intalled, then install tox
+
+    $ pip install tox
+
+Then install the different python versions in pyenv
+
+    $ pyenv install 2.7.8 3.3.6 3.4.4 3.5.1
+
+Now, run the tests:
+
+    $ tox
+
+
