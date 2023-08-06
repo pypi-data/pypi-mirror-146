@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: openfaas-workflow-engine
+Version: 1.0.0
+Summary: A workflow engine based on the ASL and Openfaas.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: A worflow engine that provide a tool for creating Openfaas workflow in ASL
+Platform: UNKNOWN

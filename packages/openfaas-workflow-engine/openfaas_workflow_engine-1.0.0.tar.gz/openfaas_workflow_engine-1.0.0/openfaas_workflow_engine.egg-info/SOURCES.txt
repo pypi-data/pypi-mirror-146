@@ -1,0 +1,6 @@
+setup.py
+openfaas_workflow_engine.egg-info/PKG-INFO
+openfaas_workflow_engine.egg-info/SOURCES.txt
+openfaas_workflow_engine.egg-info/dependency_links.txt
+openfaas_workflow_engine.egg-info/requires.txt
+openfaas_workflow_engine.egg-info/top_level.txt
