@@ -1,0 +1,12 @@
+matplotlib
+mnist
+networkx
+numpy
+pandas
+Pillow
+pygraphviz
+scikit_learn
+seaborn
+setuptools
+torch
+yaml
