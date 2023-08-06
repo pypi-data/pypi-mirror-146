@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: yoshi_simple_temp
+Version: 0.0.1
+Summary: YOUR DESCRIPTION HERE
+Home-page: https://github.com/Yoshibansal/py-package-starter-temp
+Author: Yoshi Bansal
+Author-email: <bansalyoshi@gmail.com>
+License: MIT
+Keywords: python,simple
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PACKAGE NAME
+It's all about this package. In one line
+
+## Installation
+```pip3 install PACKAGE NAME```
+
+## How to use it?
+Open the terminal write PACKAGE NAME and woah
+
+## License
+© 2022 Yoshi Bansal
+
+This repository is licensed under the MIT license.
+See license for details.
+
+

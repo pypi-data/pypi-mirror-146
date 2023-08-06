@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+simple/__init__.py
+simple/__main__.py
+yoshi_simple_temp.egg-info/PKG-INFO
+yoshi_simple_temp.egg-info/SOURCES.txt
+yoshi_simple_temp.egg-info/dependency_links.txt
+yoshi_simple_temp.egg-info/entry_points.txt
+yoshi_simple_temp.egg-info/requires.txt
+yoshi_simple_temp.egg-info/top_level.txt
