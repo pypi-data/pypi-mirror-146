@@ -1,0 +1,3 @@
+enviroment variables:
+
+AWS_SQS_QUEUE_NAME

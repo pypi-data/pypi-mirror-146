@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dj-sqs-usermanager
+Version: 0.0.2
+Summary: Auto Add User to SQS Queue for microservices
+Home-page: https://vert-capital.com/
+Author: Vert Capital
+Author-email: thiago@vert-capital.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+enviroment variables:
+
+AWS_SQS_QUEUE_NAME
+
