@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+MyAiKidsroomEnv.egg-info/PKG-INFO
+MyAiKidsroomEnv.egg-info/SOURCES.txt
+MyAiKidsroomEnv.egg-info/dependency_links.txt
+MyAiKidsroomEnv.egg-info/top_level.txt
+room/__init__.py
+room/download.py
+room/run.py

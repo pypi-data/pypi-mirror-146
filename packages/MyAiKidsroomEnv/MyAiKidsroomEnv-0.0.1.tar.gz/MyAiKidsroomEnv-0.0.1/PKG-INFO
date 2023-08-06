@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: MyAiKidsroomEnv
+Version: 0.0.1
+Summary: Playroom Simulator
+Home-page: UNKNOWN
+Author: Jiafei, Jieyi
+Author-email: duanjiafei@hotmail.sg
+License: MIT
+Description: Please run -- the following command -- to start the simulator
+        from room import download
+        from room import run
+        
+        
+        Libraries to be installed:
+        gdown
+        os
+        ZipFile
+        requests
+        QtCore, QtWidgets, QtGui
+        time
+        json
+        sys
+        subprocess
+        os
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/04/2020)
+        -------------------
+        - First Release
+Keywords: simulator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
