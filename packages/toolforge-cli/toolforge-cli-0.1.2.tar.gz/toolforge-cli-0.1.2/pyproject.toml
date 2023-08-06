@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "toolforge-cli"
+version = "0.1.2"
+description = "Toolforge client"
+authors = ["David Caro <dcaro@wikimedia.org>"]
+license = "GPL-3.0-or-later"
+homepage = "https://gerrit.wikimedia.org/r/admin/repos/cloud/toolforge/toolforge-cli"
+repository = "https://gerrit.wikimedia.org/r/admin/repos/cloud/toolforge/toolforge-cli"
+readme = "README.md"
+classifiers = [
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0.3"
+PyYAML = "^6.0"
+requests = "^2.27.1"
+urllib3 = "^1.26.8"
+cryptography = "^36.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+coverage = "^6.2"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+tox = "^3.24.5"
+mypy = "^0.931"
+types-requests = "^2.27.14"
+types-PyYAML = "^6.0.5"
+types-setuptools = "^57.4.11"
+
+[tool.poetry.plugins."console_scripts"]
+"toolforge" = "toolforge_cli.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+include = ["*/toolforge_cli/*"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 120
+include_trailing_comma = true
+skip_gitignore = true
+
+[tool.black]
+line_length = 120
+
+[tool.mypy]
+exclude = [
+    "^debian/",  # debian packaging files
+    "^.cache",
+    "^build",
+    "^dist",
+    "^.tox",
+]
