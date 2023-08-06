@@ -1,0 +1,12 @@
+.field-real_field_name .vTextField {
+    width: 80px;
+}
+.field-field_type .vTextField {
+    width: 80px;
+}
+.field-verbose_name .vTextField {
+    width: 120px;
+}
+.field-prefered_field_name .vTextField {
+    width: 120px;
+}

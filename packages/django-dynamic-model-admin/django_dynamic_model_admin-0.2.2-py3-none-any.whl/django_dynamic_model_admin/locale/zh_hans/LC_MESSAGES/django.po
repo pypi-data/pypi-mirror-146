@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-24 20:21+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\django_dynamic_model_admin\admin.py:90
+msgid "Basic Info"
+msgstr "基本信息"
+
+#: .\django_dynamic_model_admin\admin.py:91
+#: .\django_dynamic_model_admin\models.py:577
+msgid "Model Fields"
+msgstr "字段"
+
+#: .\django_dynamic_model_admin\admin.py:92
+msgid "Change Form"
+msgstr "表单设置"
+
+#: .\django_dynamic_model_admin\admin.py:93
+msgid "Style"
+msgstr "样式设置"
+
+#: .\django_dynamic_model_admin\apps.py:7
+msgid "Django Dynamic Model Admin"
+msgstr "动态模型管理"
+
+#: .\django_dynamic_model_admin\models.py:13
+msgid "CharField_max16"
+msgstr "字符串【最长16字符】"
+
+#: .\django_dynamic_model_admin\models.py:14
+msgid "CharField_max16_indexed"
+msgstr "字符串【最长16字符，带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:15
+msgid "CharField_max32"
+msgstr "字符串【最长32字符】"
+
+#: .\django_dynamic_model_admin\models.py:16
+msgid "CharField_max32_indexed"
+msgstr "字符串【最长32字符，带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:17
+msgid "CharField_max64"
+msgstr "字符串【最长64字符】"
+
+#: .\django_dynamic_model_admin\models.py:18
+msgid "CharField_max64_indexed"
+msgstr "字符串【最长64字符，带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:19
+msgid "CharField_max256"
+msgstr "字符串【最长256字符】"
+
+#: .\django_dynamic_model_admin\models.py:20
+msgid "CharField_max256_index"
+msgstr "字符串【最长256字符，带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:21
+msgid "CharField_max1024"
+msgstr "字符串【最长1024字符】"
+
+#: .\django_dynamic_model_admin\models.py:22
+msgid "CharField_max1024_indexed"
+msgstr "字符串【最长1024字符，带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:23
+msgid "BooleanField"
+msgstr "布尔"
+
+#: .\django_dynamic_model_admin\models.py:24
+msgid "BooleanField_indexed"
+msgstr "布尔【带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:25
+msgid "NullBooleanField"
+msgstr "布尔【允许为空】"
+
+#: .\django_dynamic_model_admin\models.py:26
+msgid "NullBooleanField_indexed"
+msgstr "布尔【允许为空，带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:27
+msgid "IntegerField"
+msgstr "整数"
+
+#: .\django_dynamic_model_admin\models.py:28
+msgid "IntegerField_indexed"
+msgstr "整数【带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:29
+msgid "BigIntegerField"
+msgstr "大整数"
+
+#: .\django_dynamic_model_admin\models.py:30
+msgid "BigIntegerField_indexed"
+msgstr "大整数【带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:31
+msgid "TextField"
+msgstr "文本"
+
+#: .\django_dynamic_model_admin\models.py:32
+msgid "ImageField"
+msgstr "图片"
+
+#: .\django_dynamic_model_admin\models.py:33
+msgid "FileField"
+msgstr "文件"
+
+#: .\django_dynamic_model_admin\models.py:34
+msgid "DateField"
+msgstr "日期"
+
+#: .\django_dynamic_model_admin\models.py:35
+msgid "DateField_indexed"
+msgstr "日期【带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:36
+msgid "DateTimeField"
+msgstr "日期时间"
+
+#: .\django_dynamic_model_admin\models.py:37
+msgid "DateTimeField_indexed"
+msgstr "日期时间【带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:38
+msgid "FloatField"
+msgstr "浮点数"
+
+#: .\django_dynamic_model_admin\models.py:39
+msgid "FloatField_indexed"
+msgstr "浮点数【带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:40
+msgid "DecimalField"
+msgstr "货币"
+
+#: .\django_dynamic_model_admin\models.py:41
+msgid "DecimalField_indexed"
+msgstr "货币【带数据库索引】"
+
+#: .\django_dynamic_model_admin\models.py:42
+msgid "ForeignKey"
+msgstr "外键"
+
+#: .\django_dynamic_model_admin\models.py:443
+msgid "Model Definition Category"
+msgstr "数据模型分类"
+
+#: .\django_dynamic_model_admin\models.py:444
+#: .\django_dynamic_model_admin\models.py:569
+msgid "Verbose Name"
+msgstr "名称"
+
+#: .\django_dynamic_model_admin\models.py:445
+msgid "Verbose Name Plural"
+msgstr "数据集名称"
+
+#: .\django_dynamic_model_admin\models.py:446
+msgid "Title Template"
+msgstr "标题模板"
+
+#: .\django_dynamic_model_admin\models.py:447
+msgid "Label Width"
+msgstr "字段标签宽度"
+
+#: .\django_dynamic_model_admin\models.py:447
+msgid "Add unit, e.g. 120px"
+msgstr "宽度要加单位，如：50%，120px，20em等。"
+
+#: .\django_dynamic_model_admin\models.py:450
+#: .\django_dynamic_model_admin\models.py:660
+#: .\django_dynamic_model_admin\models.py:698
+msgid "Model Definition"
+msgstr "数据模型"
+
+#: .\django_dynamic_model_admin\models.py:451
+msgid "Model Definitions"
+msgstr "数据模型"
+
+#: .\django_dynamic_model_admin\models.py:490
+msgid "Name"
+msgstr "名称"
+
+#: .\django_dynamic_model_admin\models.py:491
+msgid "Fields"
+msgstr "字段集"
+
+#: .\django_dynamic_model_admin\models.py:492
+msgid "Classes"
+msgstr "样式类"
+
+#: .\django_dynamic_model_admin\models.py:493
+#: .\django_dynamic_model_admin\models.py:541
+#: .\django_dynamic_model_admin\models.py:555
+msgid "Order"
+msgstr "排序"
+
+#: .\django_dynamic_model_admin\models.py:496
+msgid "Model Fieldset"
+msgstr "字段集"
+
+#: .\django_dynamic_model_admin\models.py:497
+msgid "Model Fieldsets"
+msgstr "字段集"
+
+#: .\django_dynamic_model_admin\models.py:534
+msgid "TabularInline"
+msgstr "行内嵌样式"
+
+#: .\django_dynamic_model_admin\models.py:535
+msgid "StackedInline"
+msgstr "堆内嵌样式"
+
+#: .\django_dynamic_model_admin\models.py:538
+msgid "FK Name"
+msgstr "外键字段名称"
+
+#: .\django_dynamic_model_admin\models.py:539
+msgid "Extra Data Number"
+msgstr "空白内嵌对象数"
+
+#: .\django_dynamic_model_admin\models.py:540
+msgid "Inline Type"
+msgstr "内嵌样式"
+
+#: .\django_dynamic_model_admin\models.py:544
+msgid "Model Inline"
+msgstr "内嵌对象"
+
+#: .\django_dynamic_model_admin\models.py:545
+msgid "Model Inlines"
+msgstr "内嵌对象"
+
+#: .\django_dynamic_model_admin\models.py:553
+msgid "Tab Title"
+msgstr "标题"
+
+#: .\django_dynamic_model_admin\models.py:554
+msgid "Tab Classes"
+msgstr "样式类"
+
+#: .\django_dynamic_model_admin\models.py:554
+msgid "Seperate with comma sign."
+msgstr "使用逗号（,）分割多个类名称。"
+
+#: .\django_dynamic_model_admin\models.py:558
+msgid "Model Changeform Tab"
+msgstr "标签"
+
+#: .\django_dynamic_model_admin\models.py:559
+msgid "Model Changeform Tabs"
+msgstr "标签"
+
+#: .\django_dynamic_model_admin\models.py:567
+msgid "Real Field Name"
+msgstr "数据库字段名"
+
+#: .\django_dynamic_model_admin\models.py:568
+msgid "Field Widget"
+msgstr "字段控件"
+
+#: .\django_dynamic_model_admin\models.py:570
+msgid "Help Text"
+msgstr "提示信息"
+
+#: .\django_dynamic_model_admin\models.py:571
+msgid "Requried"
+msgstr "必填"
+
+#: .\django_dynamic_model_admin\models.py:572
+msgid "Parameters"
+msgstr "控件参数"
+
+#: .\django_dynamic_model_admin\models.py:576
+msgid "Model Field"
+msgstr "字段"
+
+#: .\django_dynamic_model_admin\models.py:596
+msgid "Title"
+msgstr "标题"
+
+#: .\django_dynamic_model_admin\models.py:599
+msgid "Data"
+msgstr "数据"
+
+#: .\django_dynamic_model_admin\models.py:600
+msgid "Datas"
+msgstr "数据"
+
+#: .\django_dynamic_model_admin\models.py:619
+msgid "Unkown Type"
+msgstr "未知类型数据"
+
+#: .\django_dynamic_model_admin\models.py:621
+#, python-brace-format
+msgid "{0} (ID={1})"
+msgstr "{0}（编号={1}）"
+
+#: .\django_dynamic_model_admin\models.py:623
+#, python-brace-format
+msgid "{0} (Draft)"
+msgstr "{0}（草稿）"
+
+#: .\django_dynamic_model_admin\models.py:692
+#: .\django_dynamic_model_admin\models.py:705
+#: .\django_dynamic_model_admin\models.py:711
+msgid "Definition"
+msgstr "模型定义"
+
+#: .\django_dynamic_model_admin\models.py:699
+msgid "Target Model Definition"
+msgstr "数据模型"
+
+#~ msgid "Prefered Field Name"
+#~ msgstr "字段名"
+
+#~ msgid "Field Type"
+#~ msgstr "字段类型"
+
+#~ msgid "Field Widgets"
+#~ msgstr "字段控件"
+
+#~ msgid "Model Definition Category Parent"
+#~ msgstr "上级分类"
+
+#~ msgid "Model Definition Categories"
+#~ msgstr "数据模型分类"
+
+#~ msgid "Object"
+#~ msgstr "业务数据记录"
+
+#, python-format
+#~ msgid "%s Draft"
+#~ msgstr "%s【草稿】"
+
+#~ msgid "Fieldsets Setting"
+#~ msgstr "字段集设置"

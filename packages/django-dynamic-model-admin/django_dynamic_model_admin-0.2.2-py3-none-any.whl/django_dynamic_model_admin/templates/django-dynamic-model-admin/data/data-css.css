@@ -1,0 +1,21 @@
+{% if lable_width %}
+
+fieldset.aligned label{
+    width: {{lable_width}};
+}
+
+form fieldset.aligned label + p,
+form fieldset.aligned label + div,
+form fieldset.aligned input + p.help,
+form fieldset.aligned textarea + p.help,
+form fieldset.aligned select + p.help,
+form fieldset.aligned p + p.help,
+form fieldset.aligned input + div.help,
+form fieldset.aligned textarea + div.help,
+form fieldset.aligned select + div.help,
+form fieldset.aligned p + div.help {
+    margin-left: {{lable_width}};
+    padding-left: 10px;
+}
+
+{% endif %}

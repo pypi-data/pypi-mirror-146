@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: django-dynamic-model-admin
+Version: 0.2.2
+Summary: Define new type model in Django's admin site. New type model can be managed in admin site, and also provide the auto generated ModelForm.
+Home-page: UNKNOWN
+Author: zencore
+Author-email: dobetter@zencore.cn
+License: MIT
+Keywords: django admin extentions,django dynamic model admin
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django
+Requires-Dist: django-mptt
+Requires-Dist: django-cascading-dropdown-widget (>=0.2.0)
+Requires-Dist: django-dynamic-resource-admin (>=0.1.0)
+Requires-Dist: django-tabbed-changeform-admin (>=0.1.1)
+Requires-Dist: django-gazing-select-widget (>=0.1.2)
+Requires-Dist: django-yearmonth-widget
+
+# django-dynamic-model-admin
+
+Define new type model in Django's admin site. New type model can be managed in admin site, and also provide the auto generated ModelForm.
+
+## Install
+
+```shell
+pip install django-dynamic-model-admin
+```
+
+## Releases
+
+### v0.2.2
+
+1. Clean not used imports.
+
+### v0.2.1
+
+1. Add changeform-tab manager.
+1. Use cascading-dropdown widget for real_field_name in ModelDefinitionAdmin.
+1. Add custom model names in create_model_definition function.
+
+
+### v0.2.0
+
+1. Turn all models and admin sites to abstract class, so that it can be used multiple times.
+1. Simplify the management, only keep model-definition-management and data management.
+
+### v0.1.0
+
+1. First release.
+
