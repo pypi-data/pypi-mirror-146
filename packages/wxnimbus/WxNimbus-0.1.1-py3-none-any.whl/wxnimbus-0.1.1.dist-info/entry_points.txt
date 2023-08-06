@@ -1,0 +1,3 @@
+[console_scripts]
+nimbus=nimbus.__main__:main
+
