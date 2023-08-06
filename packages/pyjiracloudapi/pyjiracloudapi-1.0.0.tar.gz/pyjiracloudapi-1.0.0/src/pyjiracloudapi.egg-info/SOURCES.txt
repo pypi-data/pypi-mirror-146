@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/dashboard.json
+src/pyjiracloudapi/__init__.py
+src/pyjiracloudapi/pyjiracloudapi.py
+src/pyjiracloudapi.egg-info/PKG-INFO
+src/pyjiracloudapi.egg-info/SOURCES.txt
+src/pyjiracloudapi.egg-info/dependency_links.txt
+src/pyjiracloudapi.egg-info/requires.txt
+src/pyjiracloudapi.egg-info/top_level.txt

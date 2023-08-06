@@ -1,0 +1,10 @@
+{
+  "editPermissions": [],
+  "name": "Auditors Updated dashboard",
+  "description": "A new dashboard to help auditors identify sample of issues to check.",
+  "sharePermissions": [
+    {
+      "type": "private"
+    }
+  ]
+}
