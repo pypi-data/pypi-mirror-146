@@ -1,0 +1,9 @@
+geonames_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geonames_client/__main__.py,sha256=b96gwbaFIAyud6Pc3fXGHFIJ7AVngwgF8mmG4sPaXag,95
+geonames_client/client.py,sha256=Nngm-Oeyu5CL0iUWdSatU_NNSCOQYPP_7lvaL6iozE8,1034
+geonames_client/util.py,sha256=WbGlpocz21dKc7HJzi6oiLZiiznr_fVlvAdCRP6tKuI,62
+geonames_client-0.0.2.dist-info/METADATA,sha256=L8Jc55yiKjnxfhIW-C0nAOBLOjChkbZM3LGksbL0M-Q,412
+geonames_client-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+geonames_client-0.0.2.dist-info/entry_points.txt,sha256=sNFIF2GrtmKgUNxrapSRgX368gtOkeIPxTswZ9EvCO0,61
+geonames_client-0.0.2.dist-info/top_level.txt,sha256=XXiR4xkW3yO00GbDEX7pqq2f2b3r417BbqFdg9zt9Yg,16
+geonames_client-0.0.2.dist-info/RECORD,,

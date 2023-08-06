@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: geonames-client
+Version: 0.0.2
+Summary: A module for interfacing with the geonames.org API.
+Author: Yora Technologies
+Author-email: info@yora.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Geonames Client
+
+Still currently in development, check back later for more developments.
+
+# Author
+
+[Yora Technologies](https://yora.tech/technologies.html)
+
+
