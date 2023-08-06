@@ -1,0 +1,1 @@
+generate_merge_report_camera
