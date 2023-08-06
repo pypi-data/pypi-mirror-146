@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: contourheightmap
+Version: 1.1.0
+Summary: A fast python library for generating topographic contour maps from heightmaps and images.
+Home-page: https://gitlab.com/dodgyville/contourheightmap
+License: LGPLv3
+Author: Luke Miller
+Author-email: dodgyville@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=9.1.0,<10.0.0)
+Requires-Dist: importlib (>=1.0.4,<2.0.0)
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: typer (>=0.4.1,<0.5.0)
+Project-URL: Repository, https://gitlab.com/dodgyville/contourheightmap
+Description-Content-Type: text/markdown
+
+# Contour Heightmap
+
+A fast python library and command line tool for generating contour maps from heightmaps and images.
+
+Given an image file (preferably RGB PNG), it will output a PNG with topographic contour lines 
+and an SVG file of the contour lines.
+
+If viewing this document on the gitlab page, you should see some example images below:
+
+![Heightmap with contour lines](examples/heightmap_500x800.png "Contoured")
+![Heightmap with contour lines](examples/heightmap_500x800_contour.png "Contoured")
+
+
+
+![Heightmap with contour lines](examples/snowdon.png "Contoured")
+![Heightmap with contour lines](examples/snowdon_contour.png "Contoured")
+
+
+Questions? Contributions? Bug reports? Open an issue on the [gitlab page for the project](https://gitlab.com/dodgyville/contourheightmap).
+We are very interested in hearing your use cases for `contourheightmap` to help drive the roadmap.
+
+### Roadmap
+* More control on the output image
+* More control on the output svg
+
+### Contributors
+* Luke Miller
+
+## Installing
+```
+pip install contourheightmap
+```
+or
+```
+py -m pip install contourheightmap
+```
+
+## Source
+
+```
+git clone https://gitlab.com/dodgyville/contourheightmap
+```
+
+# Quick Start
+
+## How do I...
+
+### contour an image from the shell command line?
+
+`./contourheightmap path/to/heightmap.png`
+
+Result will be in output.png and output.svg
+
+### contour an image from within python?
+
+```python
+from contourheightmap import ContourHeightmap
+
+c = ContourHeightmap()
+c.contour("path/to/heightmap.png")
+```
+
+Result will be in output.png and output.svg
+
+
+### provide an output filename within python?
+```python
+from contourheightmap import ContourHeightmap
+
+c = ContourHeightmap()
+c.contour("path/to/heightmap.png", "path/to/output.png")
+```
+
+Output will also be in path/to/output.svg
+
+
+# Changelog
+
+* 1.1.0
+    - begin switch from setup.py to `pyproject` and `poetry`
+    - added cli tool to make library available from command line
