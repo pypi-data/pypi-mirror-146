@@ -1,0 +1,11 @@
+dlg_casacore_components/__init__.py,sha256=WVTMkqCvir7y51r039j5L0AYcC8X3BpFUzjAFAdrmmA,336
+dlg_casacore_components/ms.py,sha256=nyL07C0InSd-VMOolDylfGASPwEm3vV93_ChW831P3s,25386
+dlg_casacore_components/plasma.py,sha256=oHwhA5OUDtaQBdKwlroSzb9V8JK9SKCU3zNxQb82h1I,6542
+dlg_casacore_components/sdp.py,sha256=y0bGAhpFFL5eCcxrfkOYtlgIlzkPl9obT26saM85p0g,11466
+dlg_casacore_components/taql.py,sha256=kdqZwbtvh9Gowwvv-l2jKx-qgpThwje9geoaGsqNfQ0,6154
+dlg_casacore_components-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dlg_casacore_components-0.3.0.dist-info/METADATA,sha256=9Y8oT9rNmGG_lccxckCi4GOME87jAGtzSKeiARfcVew,2891
+dlg_casacore_components-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dlg_casacore_components-0.3.0.dist-info/entry_points.txt,sha256=dyLgr4svnNsXlqV_MOiZi7H3PLxk4CHXlAyFmLbHO6s,83
+dlg_casacore_components-0.3.0.dist-info/top_level.txt,sha256=W0_jWNVMHaMY_3TnOMcfnnqkX-lhYFohJ-a8KYFLe5U,24
+dlg_casacore_components-0.3.0.dist-info/RECORD,,
