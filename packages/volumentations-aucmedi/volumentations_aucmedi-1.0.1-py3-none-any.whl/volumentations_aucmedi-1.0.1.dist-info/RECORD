@@ -1,0 +1,13 @@
+volumentations/__init__.py,sha256=dOtru1d52h7H9lAqHX__rUFIF4AlFhpxyP1FuAX7_Fg,3181
+volumentations/random_utils.py,sha256=hNjYtKo1yDzvCFnFG9lZVZGMeDnpO8ZTWYBevOt7Nvo,4256
+volumentations/augmentations/__init__.py,sha256=IwtMviduTiahIfl8UNn83L_jLE1CW7Noo5RUp0shGeE,3134
+volumentations/augmentations/functional.py,sha256=pyW3RBhUOdild1jSXKMWq6WQsPDG2GZ0vrpWiAxZjBY,27982
+volumentations/augmentations/transforms.py,sha256=ZdJr0r4ljV-XvH8twLOLt_yTXc8mBB8gLIvYbKs932o,47760
+volumentations/core/__init__.py,sha256=jzupzpK9kHuDqgIGtVojpuCbTDGnO6PKA-HYjjblpdk,3026
+volumentations/core/composition.py,sha256=m_THTxXhjGOmB6_frIU0xOuULRKD8HzQYztKd4xz9RM,3861
+volumentations/core/transforms_interface.py,sha256=8sMZqxH6ewwYu0UxXobyo1HcgmOcTkxFJ8Yt2j1t__Y,6745
+volumentations_aucmedi-1.0.1.dist-info/LICENSE,sha256=ZHHzIm869naTYpAwJ94ajw9hzxhHW_iYM-ddjL5w25k,1064
+volumentations_aucmedi-1.0.1.dist-info/METADATA,sha256=6x6teqS-V9jp9KkeofFPUvGFmX4936g5QcrW7LZccMk,7007
+volumentations_aucmedi-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+volumentations_aucmedi-1.0.1.dist-info/top_level.txt,sha256=hfyt_CUl44ME-FQr6PXkQHf2ni2Ghy1XRI8tUa9funI,15
+volumentations_aucmedi-1.0.1.dist-info/RECORD,,
