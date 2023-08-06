@@ -1,0 +1,7 @@
+comun_pgsql.py
+setup.py
+comun_pgsql.egg-info/PKG-INFO
+comun_pgsql.egg-info/SOURCES.txt
+comun_pgsql.egg-info/dependency_links.txt
+comun_pgsql.egg-info/requires.txt
+comun_pgsql.egg-info/top_level.txt
