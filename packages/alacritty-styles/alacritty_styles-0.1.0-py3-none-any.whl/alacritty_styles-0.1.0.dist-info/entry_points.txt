@@ -1,0 +1,3 @@
+[console_scripts]
+alacritty-styles=alacritty_styles.main:cli
+
