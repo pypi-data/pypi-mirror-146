@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: open-crypto
+Version: 3.9.9.1
+Summary: UNKNOWN
+Home-page: https://github.com/SteffenGue/open_crypto
+Author: Steffen Guenther
+Author-email: crypto@uni-bremen.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Introduction to the Data Collector _open-crypto_
+
+This is a short introduction to the package called __open-crypto__. The program offers generalized _REST-API requests_ to over __100__ of the largest and most liquid __cryptocurrency exchanges__ and several well-known __platforms__. To this point, the program can request (see examples below):
+- __Ticker__ data
+- __Transaction__ data
+- __Historical-Rate__ data
+- __Order-Book__ data
+- __Aggreg. Platform__ data
+
+We offer an open-source tool which fits the needs for unprocessed and aggregated data in a new, fast, flexible and in many cases unexplored industry.
+Along with this short introduction we provide several examples to execute listed at the end.
+
+## Prerequisites
+- [Python >= 3.8](<https://www.python.org/downloads/>)
+
+## Getting started
+For installation, execute:
+```shell
+pip install open-crypto
+```
+in your command prompt. Ensure to set the Python executable as path variable. This can be selected during the installation process.
+
+## Run the program
+
+The program is initialized using a configuration file. In order to keep things simple, we offer several exemplary configurations, one for each request method.
+
+In order to make adjustments, all files and collected data will be copied to your current working directory, including the configuration, exchange mappings, log files and database(s). Therefore run the module in the desired directory.
+
+The module ```runner``` offers several functionalities to control the program:
+```python
+>>>runner.check_path() # check if resources are in your working directory.
+>>>runner.update_maps() # download the lastest exchanges mappings from the GitHub repository
+>>>runner.copy_resources() # copy the resources into the currency working directory
+>>>runner.get_session() # return an open database connection.
+>>>runner.exchanges_and_methods() # return all implemented exchanges and their supported API endpoints.
+>>>runner.get_config() # print a specified or the actual configuration file
+>>>runner.get_config_template() # return an empty configuration file to the resource directory.
+>>>runner.export() # allow exporting data from the database into csv/hdf-files.
+>>>runner.run() # start the program.
+```
+
+To start the data collector, open ```Python``` within your working directory of choice and import the program:
+```python
+>>>from open_crypto import runner
+>>>runner.update_maps()
+Updating exchange mappings from GitHub.. 100%
+```
+The first command will import the module ```runner```. Within ```runner``` the function ```update_maps``` will download the latest exchange mappings from GitHub and (if the folder already exists overwrite) all ```resources``` into your working directory.
+
+Personalized requests can be made by first creating a new configuration file template:
+```python
+>>>runner.get_config_template()
+Created new config template.
+```
+The file can be found under: ```[your/cwd]/resources/configs/user_configs/request_template.yaml```. Open and manipulate the file with a text editor of choice. Consider renaming the file accordingly.
+
+Finally, read in the file and execute the program:
+```python
+>>>from open_crypto import runner
+>>>runner.run()
+Enter config file name: <your_file_name>
+```
+For a first impression, consider executing the following examples before creating personalized tasks.
+
+## Examples
+By default, several example scripts are offered and can easily be executed:
+- __exchange_listings()__  
+- __static()__             
+- __trades()__             
+- __order_books()__        
+- __platform()__           
+- __minute_candles()__     
+
+To run __open_crypto__ with one of the mentioned configuration files:
+```python
+>>>from open_crypto import runner
+>>>runner.Examples.minute_candles()
+```
+Note that all examples will result in a plot of the received data. Furthermore, especially _static_, _exchange_listings_ may take several minutes.
+
+
+

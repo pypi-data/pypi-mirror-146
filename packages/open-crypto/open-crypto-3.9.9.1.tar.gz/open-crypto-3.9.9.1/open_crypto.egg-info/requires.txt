@@ -1,0 +1,17 @@
+aiohttp
+aioschedule
+certifi
+datetime_periods
+matplotlib
+numpy!=1.19.4
+oyaml
+pandas
+pytest
+python-dateutil
+sqlalchemy>=1.4.22
+sqlalchemy_utils>=0.37.8
+tqdm
+validators
+nest_asyncio
+typeguard>=2.12.1
+colorama
