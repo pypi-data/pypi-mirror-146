@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pysigma-backend-insightidr
+Version: 0.1.4
+Summary: pySigma Rapid7 InsightIDR backend
+License: LGPL-2.1-only
+Author: Micah Babinski
+Author-email: micah.babinski@aaaoregon.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pysigma (>=0.5.0,<0.6.0)
