@@ -1,0 +1,11 @@
+finx_ib_reports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finx_ib_reports/adapters.py,sha256=E5GKeznGJqVndW3SNxO5apjpnGGionY4peeXWC5GXmI,4945
+finx_ib_reports/config_helpers.py,sha256=gQ3HDdGWxrSiYuqprSuloDkRj1I7G9oWZgw5c4txj6U,794
+finx_ib_reports/custom_flex_report.py,sha256=jgCw8wD9VtvZpcbDasltwVCOiU7P83Co2N6sSZHfqCk,2403
+finx_ib_reports/date_helpers.py,sha256=o43udSrV_VbhTE7DckhlsVU9hnVjQi1caZ3ZcXT0zgc,342
+finx_ib_reports/download_trades.py,sha256=q9y8itVJ3dO2q1F3DnUiL_VyqAcgAsBxEm9kRIUR-Zk,3860
+finx_ib_reports-0.0.6.dist-info/LICENSE,sha256=i23UFFItzH_qZxOX3Z678ht3eU-ki-8NgkQItDyoGds,1484
+finx_ib_reports-0.0.6.dist-info/METADATA,sha256=L5kvJLAWNv6p_PGBr8tmp8ndD7ZPZ5uBdZDd4beKDSA,1196
+finx_ib_reports-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+finx_ib_reports-0.0.6.dist-info/top_level.txt,sha256=sxkywyDPD8Pk9PuyYqFYAVNVIldmEJ3X90b1UDttG9U,16
+finx_ib_reports-0.0.6.dist-info/RECORD,,
