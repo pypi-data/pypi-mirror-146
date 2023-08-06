@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: asphalt-templating
+Version: 3.0.1
+Summary: Templating component for the Asphalt framework
+Home-page: https://github.com/asphalt-framework/asphalt-templating
+Author-email: Alex Grönholm <alex.gronholm@nextday.fi>
+License: Apache License 2.0
+Project-URL: Homepage, https://github.com/asphalt-framework/asphalt-templating
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Text Processing :: General
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: asphalt (~=4.6)
+Requires-Dist: typeguard (~=2.0)
+Requires-Dist: Django (>=1.9.0) ; extra == "django" or extra == "doc" or extra == "test"
+Requires-Dist: Jinja2 (>=2.7.3) ; extra == "jinja2" or extra == "doc" or extra == "test"
+Requires-Dist: Mako (>=1.0.1) ; extra == "mako" or extra == "doc" or extra == "test"
+Requires-Dist: tornado (>=4.3.0) ; extra == "tornado" or extra == "doc" or extra == "test"
+Provides-Extra: django
+Provides-Extra: doc
+Requires-Dist: Sphinx (>=1.5) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints (>=1.0.5) ; extra == 'doc'
+Requires-Dist: sphinxcontrib-asyncio (>=0.2.0) ; extra == 'doc'
+Provides-Extra: jinja2
+Provides-Extra: mako
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Provides-Extra: tornado
+
+.. image:: https://github.com/asphalt-framework/asphalt-templating/actions/workflows/codeqa-test.yml/badge.svg
+  :target: https://github.com/asphalt-framework/asphalt-templating/actions/workflows/codeqa-test.yml
+  :alt: Build Status
+.. image:: https://coveralls.io/repos/github/asphalt-framework/asphalt-templating/badge.svg?branch=master
+  :target: https://coveralls.io/github/asphalt-framework/asphalt-templating?branch=master
+  :alt: Code Coverage
+
+This Asphalt framework component provides a standardized interface for a number of different
+templating renderers:
+
+* Django_
+* Jinja2_
+* Mako_
+* Tornado_
+
+Additional backends may be provided through third party plugins.
+
+.. _Django: https://docs.djangoproject.com/en/stable/topics/templates/
+.. _Jinja2: http://jinja.pocoo.org/
+.. _Mako: http://www.makotemplates.org/
+.. _Tornado: http://www.tornadoweb.org/en/stable/template.html
+
+Project links
+-------------
+
+* `Documentation <http://asphalt-templating.readthedocs.org/>`_
+* `Help and support <https://github.com/asphalt-framework/asphalt/wiki/Help-and-support>`_
+* `Source code <https://github.com/asphalt-framework/asphalt-templating>`_
+* `Issue tracker <https://github.com/asphalt-framework/asphalt-templating/issues>`_
+
+
