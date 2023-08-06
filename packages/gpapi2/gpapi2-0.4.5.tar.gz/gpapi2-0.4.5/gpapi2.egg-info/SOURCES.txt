@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gpapi2/__init__.py
+gpapi2/config.py
+gpapi2/device.properties
+gpapi2/googleplay.py
+gpapi2/googleplay_pb2.py
+gpapi2/utils.py
+gpapi2.egg-info/PKG-INFO
+gpapi2.egg-info/SOURCES.txt
+gpapi2.egg-info/dependency_links.txt
+gpapi2.egg-info/requires.txt
+gpapi2.egg-info/top_level.txt
+test/test.py
