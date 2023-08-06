@@ -1,0 +1,11 @@
+[console_scripts]
+annotate-enums = schema_automator.annotators.enum_annotator:clickmain
+annotate-schema = schema_automator.annotators.schema_annotator:annotate_schema
+dosdp2linkml = schema_automator.importers.owl_import_engine:dosdp2model
+jsondata2linkml = schema_automator.importers.json_instance_import_engine:json2model
+jsonschema2linkml = schema_automator.importers.jsonschema_import_engine:jsonschema2model
+owl2linkml = schema_automator.importers.owl_import_engine:owl2model
+rdf2linkml = schema_automator.importers.rdf_instance_import_engine:rdf2model
+tsv2linkml = schema_automator.importers.csv_import_engine:tsv2model
+tsvs2linkml = schema_automator.importers.csv_import_engine:tsvs2model
+

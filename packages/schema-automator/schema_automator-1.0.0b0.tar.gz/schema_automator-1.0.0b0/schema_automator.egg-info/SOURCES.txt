@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+schema_automator.egg-info/PKG-INFO
+schema_automator.egg-info/SOURCES.txt
+schema_automator.egg-info/dependency_links.txt
+schema_automator.egg-info/entry_points.txt
+schema_automator.egg-info/requires.txt
+schema_automator.egg-info/top_level.txt
