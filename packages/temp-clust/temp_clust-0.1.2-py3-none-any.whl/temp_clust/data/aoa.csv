@@ -1,0 +1,289 @@
+list_number,word_location_in_list,words,category,list_type,AoA,AoA_source,AoA_in_years
+1,1,hockey,sports,scrambled,5.44,Kuperman et al,5.44
+1,2,cola,beverage,scrambled,307,Bristol & Gilhooly,5.5
+1,3,duck,bird,scrambled,164,MRC,1
+1,4,brain,bodypart,scrambled,347,MRC,5.5
+1,5,judge,occupation,scrambled,448,Bird et al,7.5
+1,6,wave,earthformation,scrambled,260,Bristol & Gilhooly,3.5
+1,7,dragon,fictional,scrambled,5.58,Kuperman et al,5.58
+1,8,kiwi,fruit,scrambled,544,Bird et al,9.5
+1,9,bench,furniture,scrambled,311,MRC,5.5
+1,10,termite,insect,scrambled,7.94,Kuperman et al,7.94
+1,11,stove,kitchenware,scrambled,297,MRC,3.5
+1,12,keyboard,instrument,scrambled,9.32,Kuperman et al,9.32
+2,1,dentist,occuption,scrambled,5.22,Kuperman et al,5.22
+2,2,fan,building,scrambled,5.63,Kuperman et al,5.63
+2,3,novel,reading,scrambled,475,Bristol & Gilhooly,7.5
+2,4,squid,seacreature,scrambled,7.32,Kuperman et al,7.32
+2,5,broom,tool,scrambled,86.5,Morrison et al,7
+2,6,block,toy,scrambled,244,Bristol & Gilhooly,3.5
+2,7,jet,transportation,scrambled,5.39,Kuperman et al,5.39
+2,8,mushroom,vegetable,scrambled,6.44,Kuperman et al,6.44
+2,9,squirrel,animal,scrambled,25.1,Morrison et al,2
+2,10,lacrosse,sports,scrambled,12.94,Kuperman et al,12.94
+2,11,cocktail,beverage,scrambled,9.53,Kuperman et al,9.53
+2,12,parrot ,bird,scrambled,337,Bird et al,5.5
+3,1,hand,bodypart,scrambled,23.4,Morrison et al,1
+3,2,suit,clothing,scrambled,368,Bird et al,5.5
+3,3,sink,kitchenware,scrambled,236,Bird et al,3.5
+3,4,genie,fictional,scrambled,6.67,Kuperman et al,6.67
+3,5,peach,fruit,scrambled,292,MRC,3.5
+3,6,bookcase,furniture,scrambled,5.63,Kuperman et al,5.63
+3,7,cricket,insect,scrambled,337,Bristol & Gilhooly,5.5
+3,8,glacier,earthformation,scrambled,8.05,Schock et al,8.05
+3,9,trombone,instrument,scrambled,7.83,Kuperman et al,7.83
+3,10,driver,occupation,scrambled,283,MRC,3.5
+3,11,deck,building,scrambled,347,Bristol & Gilhooly,5.5
+3,12,axe,tool,scrambled,311,MRC,5.5
+4,1,seahorse,seacreature,scrambled,5.83,Kuperman et al,5.83
+4,2,tape,tool,scrambled,406,MRC,7.5
+4,3,ball,toy,scrambled,2.9,Kuperman et al,2.9
+4,4,bike,transportation,scrambled,199,Bristol & Gilhooly,1
+4,5,carrot,vegetable,scrambled,25.1,Morrison et al,2
+4,6,mouse,animal,scrambled,242,MRC,3.5
+4,7,badminton,sports,scrambled,10.94,Kuperman et al,10.94
+4,8,coffee,beverage,scrambled,292,MRC,3.5
+4,9,hawk,bird,scrambled,400,Bristol & Gilhooly,7.5
+4,10,tongue,bodypart,scrambled,199,Bristol & Gilhooly,1
+4,11,jeans,clothing,scrambled,5.26,Kuperman et al,5.26
+4,12,dirt,earthformation,scrambled,220,Bristol & Gilhooly,3.5
+5,1,troll,fictional,scrambled,5.72,Kuperman et al,5.72
+5,2,blueberry,fruit,scrambled,289,MRC,3.5
+5,3,cot,furniture,scrambled,7.53,Kuperman et al,7.53
+5,4,spider,insect,scrambled,3.43,Kuperman et al,3.43
+5,5,dishwasher,kitchenware,scrambled,7.16,Kuperman et al,7.16
+5,6,harp,instrument,scrambled,7.55,Kuperman et al,7.55
+5,7,scientist,occupation,scrambled,6.89,Kuperman et al,6.89
+5,8,door,building,scrambled,214,Bristol & Gilhooly,3.5
+5,9,brochure,reading,scrambled,9.58,Kuperman et al,9.58
+5,10,urchin,seacreature,scrambled,469,Bristol & Gilhooly,7.5
+5,11,rake,tool,scrambled,336,MRC,5.5
+5,12,puzzle,toy,scrambled,5.11,Kuperman et al,5.11
+6,1,subway,transportation,scrambled,7.68,Kuperman et al,7.68
+6,2,corn,vegetable,scrambled,299,Bristol & Gilhooly,3.5
+6,3,beaver,animal,scrambled,389,Bird et al,5.5
+6,4,boxing,sports,scrambled,7.16,Kuperman et al,7.16
+6,5,sprite,beverage,scrambled,9.17,Kuperman et al,9.17
+6,6,stork,bird,scrambled,5.47,Kuperman et al,5.5
+6,7,heart,bodypart,scrambled,281,MRC,3.5
+6,8,skirt,clothing,scrambled,258,MRC,3.5
+6,9,tree,earthformation,scrambled,171,Bristol & Gilhooly,1
+6,10,yeti,fictional,scrambled,10.94,Kuperman et al,10.94
+6,11,lime,fruit,scrambled,378,MRC,5.5
+6,12,recorder,instrument,scrambled,8.37,Kuperman et al,8.37
+7,1,milk,beverage,scrambled,192,Bristol & Gilhooly,1
+7,2,boot,clothing,scrambled,251,MRC,3.5
+7,3,goblin,fictional,scrambled,7.67,Kuperman et al,7.67
+7,4,mango,fruit,scrambled,8.22,Kuperman et al,8.22
+7,5,drawers,furniture,scrambled,56.5,Morrison et al,4
+7,6,moth,insect,scrambled,5.74,Kuperman et al,5.74
+7,7,blender,kitchenware,scrambled,6.84,Kuperman et al,6.84
+7,8,artist,occupation,scrambled,345,Bird et al,5.5
+7,9,comic,reading,scrambled,7,Kuperman et al,7
+7,10,gong,instrument,scrambled,9.62,Kuperman et al,9.62
+7,11,manatee,seacreature,scrambled,10.56,Kuperman et al,10.56
+7,12,yo-yo,toy,scrambled,5.62,Kuperman et al,5.62
+8,1,ferry,transportation,scrambled,378,MRC,5.5
+8,2,turnip,vegetable,scrambled,9.09,Schock et al,9.09
+8,3,monkey,animal,scrambled,25.1,Morrison et al,2
+8,4,champagne,beverage,scrambled,10.26,Kuperman et al,10.26
+8,5,hornet,insect,scrambled,7.28,Kuperman et al,7.28
+8,6,toaster,kitchenware,scrambled,50.5,Morrison et al,4
+8,7,soccer,sports,scrambled,5.89,Kuperman et al,5.89
+8,8,bagpipes,instrument,scrambled,9.33,Kuperman et al,9.33
+8,9,script,reading,scrambled,9.79,Kuperman et al,9.79
+8,10,pillar,building,scrambled,8.26,Kuperman et al,8.26
+8,11,turtle,seacreature,scrambled,4.17,Kuperman et al,4.17
+8,12,bolt,tool,scrambled,7.28,Kuperman et al,7.28
+9,1,mirror,furniture,serial,4.89,Kuperman et al,4.89
+9,2,beetle,insect,serial,5.32,Kuperman et al,5.32
+9,3,knuckle,bodypart,serial,356,MRC,5.5
+9,4,stool,furniture,serial,203,MRC,3.5
+9,5,maggot,insect,serial,9.5,Kuperman et al,9.5
+9,6,hair,bodypart,serial,180,Bird et al,1
+9,7,mattress,furniture,serial,5.1,Kuperman et al,5.1
+9,8,bee,insect,serial,5,Kuperman et al,5
+9,9,neck,bodypart,serial,223,Bristol & Gilhooly,3.5
+9,10,rug,furniture,serial,233,MRC,3.5
+9,11,cockroach,insect,serial,6.25,Kuperman et al,6.25
+9,12,elbow,bodypart,serial,237,MRC,3.5
+10,1,banjo,instrument,serial,8.44,Kuperman et al,8.44
+10,2,farmer,occupation,serial,4.74,Kuperman et al,4.74
+10,3,ceiling,building,serial,4.75,Kuperman et al,4.75
+10,4,clarinet,instrument,serial,9.22,Kuperman et al,9.22
+10,5,soldier,occupation,serial,275,MRC,3.5
+10,6,fireplace,building,serial,7.37,Kuperman et al,7.37
+10,7,tuba,instrument,serial,7,Kuperman et al,7
+10,8,banker,occupation,serial,392,MRC,5.5
+10,9,drain,building,serial,6.26,Kuperman et al,6.26
+10,10,cello,instrument,serial,392,Bristol & Gilhooly,5.5
+10,11,nurse,occupation,serial,256,MRC,3.5
+10,12,stairs,building,serial,245,Bird et al,3.5
+11,1,newspaper,reading,serial,5.78,Kuperman et al,5.78
+11,2,jellyfish,seacreature,serial,6.61,Kuperman et al,6.61
+11,3,ruler,tool,serial,311,MRC,5.5
+11,4,flyer,reading,serial,7.44,Kuperman et al,7.44
+11,5,walrus,seacreature,serial,5.06,Kuperman et al,5.06
+11,6,nail,tool,serial,5.42,Kuperman et al,5.42
+11,7,article,reading,serial,8.61,Kuperman et al,8.61
+11,8,oyster,seacreature,serial,8,Kuperman et al,8
+11,9,chain,tool,serial,311,MRC,5.5
+11,10,journal,reading,serial,447,Bristol & Gilhooly,7.5
+11,11,trout,seacreature,serial,8.56,Kuperman et al,8.56
+11,12,eraser,tool,serial,4.95,Kuperman et al,4.95
+12,1,sword,toy,serial,5.45,Kuperman et al,5.45
+12,2,knee,bodypart,serial,231,Bristol & Gilhooly,3.5
+12,3,peas,vegetable,serial,3.95,Kuperman et al,3.95
+12,4,frisbee,toy,serial,5.5,Kuperman et al,5.5
+12,5,shoulder,bodypart,serial,264,MRC,3.5
+12,6,cabbage,vegetable,serial,5.78,Schock et al,5.78
+12,7,cards,toy,serial,245,Bristol & Gilhooly,3.5
+12,8,stomach,bodypart,serial,260,Bristol & Gilhooly,3.5
+12,9,squash,vegetable,serial,6.94,Kuperman et al,6.94
+12,10,trampoline,toy,serial,6.79,Kuperman et al,6.79
+12,11,cheek,bodypart,serial,267,MRC,3.5
+12,12,leek,vegetable,serial,389,MRC,5.5
+13,1,camel,animal,serial,315,Bristol & Gilhooly,5.5
+13,2,fencing,sports,serial,10.94,Kuperman et al,10.94
+13,3,tea,beverage,serial,11.72,Kuperman et al,5.47
+13,4,cow,animal,serial,174,Bird et al,1
+13,5,golf,sports,serial,463,Bird et al,7.5
+13,6,punch,beverage,serial,306,MRC,5.5
+13,7,rabbit,animal,serial,206,MRC,3.5
+13,8,gymnastics,sports,serial,7.74,Kuperman et al,7.74
+13,9,beer,beverage,serial,361,Bristol & Gilhooly,5.5
+13,10,tiger,animal,serial,331,Bird et al,5.5
+13,11,archery,sports,serial,433,Bristol & Gilhooly,7.5
+13,12,cocoa,beverage,serial,6.84,Kuperman et al,6.84
+14,1,chicken,bird,serial,250,MRC,3.5
+14,2,taxi,transportation,serial,7.58,Kuperman et al,7.58
+14,3,cap,clothing,serial,68.5,Morrison et al,5
+14,4,swan,bird,serial,295,Bird et al,3.5
+14,5,boat,transportation,serial,442,Bird et al,7.5
+14,6,blouse,clothing,serial,313,Bristol & Gilhooly,5.5
+14,7,penguin,bird,serial,392,Bird et al,4.5
+14,8,rocket,transportation,serial,56.5,Morrison et al,4
+14,9,coat,clothing,serial,197,MRC,1
+14,10,owl,bird,serial,269,MRC,3.5
+14,11,scooter,transportation,serial,6.68,Kuperman et al,6.68
+14,12,shoe,clothing,serial,152,MRC,1
+15,1,prune,fruit,serial,347,MRC,5.5
+15,2,clown,fictional,serial,3.72,Kuperman et al,3.72
+15,3,crab,seacreature,serial,292,Bristol & Gilhooly,3.5
+15,4,date,fruit,serial,314,MRC,5.5
+15,5,vampire,fictional,serial,7.16,Kuperman et al,7.16
+15,6,piranha,seacreature,serial,8.74,Kuperman et al,8.74
+15,7,plum,fruit,serial,5.5,Kuperman et al,5.5
+15,8,werewolf,fictional,serial,7.2,Kuperman et al,7.2
+15,9,plankton,seacreature,serial,11.21,Kuperman et al,11.21
+15,10,lemon,fruit,serial,280,MRC,3.5
+15,11,centaur,fictional,serial,9.39,Kuperman et al,9.39
+15,12,octopus,seacreature,serial,6.26,Kuperman et al,6.26
+16,1,chopsticks,kitchenware,serial,7.85,Kuperman et al,7.85
+16,2,cheerleading,sports,serial,6,Kuperman et al,6
+16,3,scarf,clothing,serial,269,Bristol & Gilhooly,3.5
+16,4,grill,kitchenware,serial,454,Bird et al,7.5
+16,5,tennis,sports,serial,7.53,Kuperman et al,7.53
+16,6,jacket,clothing,serial,246,Bristol & Gilhooly,3.5
+16,7,kettle,kitchenware,serial,274,MRC,3.5
+16,8,swimming,sports,serial,4.58,Kuperman et al,4.58
+16,9,gloves,clothing,serial,228,Bristol & Gilhooly,3.5
+16,10,ladle ,kitchenware,serial,9.83,Kuperman et al,9.83
+16,11,bowling,sports,serial,7,Kuperman et al,7
+16,12,belt,clothing,serial,268,Bristol & Gilhooly,3.5
+17,1,nightstand,furniture,structured,6.67,Kuperman et al,6.67
+17,2,wardrobe,furniture,structured,7.84,Kuperman et al,7.84
+17,3,lamp,furniture,structured,283,MRC,3.5
+17,4,sofa,furniture,structured,252,Bristol & Gilhooly,3.5
+17,5,flea,insect,structured,7.79,Kuperman et al,7.79
+17,6,mantis,insect,structured,9.28,Kuperman et al,9.28
+17,7,ladybug,insect,structured,4.84,Kuperman et al,4.84
+17,8,gnat,insect,structured,10.1,Kuperman et al,10.1
+17,9,toe,bodypart,structured,194,MRC,1
+17,10,foot,bodypart,structured,3.44,Kuperman et al,3.44
+17,11,mouth,bodypart,structured,3.58,Kuperman et al,3.58
+17,12,chin,bodypart,structured,237,Bristol & Gilhooly,3.5
+18,1,cymbals,instrument,structured,140,Morrison et al,11
+18,2,xylophone,instrument,structured,7.11,Kuperman et al,7.11
+18,3,oboe,instrument,structured,10.78,Kuperman et al,10.78
+18,4,horn,instrument,structured,308,Bristol & Gilhooly,5.5
+18,5,officer,occupation,structured,6.5,Kuperman et al,6.5
+18,6,chef,occupation,structured,469,Bird et al,7.5
+18,7,mechanic,occupation,structured,7.83,Kuperman et al,7.83
+18,8,pilot,occupation,structured,417,Bird et al,7.5
+18,9,brick,building,structured,6.43,Kuperman et al,6.43
+18,10,vent,building,structured,10.11,Kuperman et al,10.11
+18,11,chimney,building,structured,6.58,Kuperman et al,6.58
+18,12,roof ,building,structured,519,Bird et al,9.5
+19,1,letter,reading,structured,256,Bristol & Gilhooly,3.5
+19,2,poster,reading,structured,8.12,Kuperman et al,8.12
+19,3,recipe,reading,structured,6.95,Kuperman et al,6.95
+19,4,magazine,reading,structured,5.89,Kuperman et al,5.89
+19,5,salmon,seacreature,structured,398,Bird et al,5.5
+19,6,eel,seacreature,structured,6.47,Kuperman et al,6.47
+19,7,lobster,seacreature,structured,7.44,Kuperman et al,7.44
+19,8,coral,seacreature,structured,9.06,Kuperman et al,9.06
+19,9,pliers,tool,structured,126.5,Morrison et al,10
+19,10,brush,tool,structured,214,MRC,3.5
+19,11,shovel,tool,structured,6.28,Kuperman et al,6.28
+19,12,rope,tool,structured,281,MRC,3.5
+20,1,scissors,tool,structured,4.5,Kuperman et al,4.5
+20,2,drill,tool,structured,407,Bird et al,7.5
+20,3,hook,tool,structured,313,Bristol & Gilhooly,5.5
+20,4,screw,tool,structured,310,Bristol & Gilhooly,5.5
+20,5,truck,transportation,structured,261,Bristol & Gilhooly,3.5
+20,6,carriage,transportation,structured,367,MRC,5.5
+20,7,yacht,transportation,structured,363,MRC,5.5
+20,8,moped,transportation,structured,9.39,Kuperman et al,9.39
+20,9,pepper,vegetable,structured,269,MRC,3.5
+20,10,beet,vegetable,structured,6.56,Kuperman et al,6.56
+20,11,onion,vegetable,structured,286,MRC,3.5
+20,12,garlic,vegetable,structured,6.89,Kuperman et al,6.89
+21,1,cheetah,animal,structured,456,Bird et al,7.5
+21,2,raccoon,animal,structured,6.79,Kuperman et al,6.79
+21,3,moose,animal,structured,497,Bird et al,7.5
+21,4,fox,animal,structured,283,MRC,3.5
+21,5,skating,sports,structured,7.97,Kuperman et al,7.97
+21,6,track,sports,structured,383,Bristol & Gilhooly,5.5
+21,7,skiing,sports,structured,7.89,Kuperman et al,7.89
+21,8,surfing,sports,structured,368,Bristol & Gilhooly,5.5
+21,9,lemonade,beverage,structured,5.06,Kuperman et al,5.06
+21,10,wine,beverage,structured,403,MRC,7.5
+21,11,cider,beverage,structured,431,MRC,7.5
+21,12,smoothie,beverage,structured,8.73,Kuperman et al,8.73
+22,1,crow,bird,structured,308,MRC,4.5
+22,2,vulture,bird,structured,8.89,Kuperman et al,8.89
+22,3,robin,bird,structured,233,Bristol & Gilhooly,3.5
+22,4,ostrich,bird,structured,427,Bird et al,7.5
+22,5,fridge,kitchenware,structured,4.67,Kuperman et al,4.67
+22,6,strainer,kitchenware,structured,9.63,Kuperman et al,9.63
+22,7,whisk,kitchenware,structured,404,Bird et al,7.5
+22,8,oven ,kitchenware,structured,236,MRC,3.5
+22,9,jersey,clothing,structured,306,MRC,5.5
+22,10,vest,clothing,structured,5.83,Kuperman et al,5.83
+22,11,dress,clothing,structured,222,MRC,3.5
+22,12,tie,clothing,structured,4.74,Kuperman et al,4.74
+23,1,sand,earthformation,structured,217,Bristol & Gilhooly,3.5
+23,2,grass,earthformation,structured,190,Bristol & Gilhooly,1
+23,3,flower,earthformation,structured,183,Bird et al,1
+23,4,rock,earthformation,structured,223,Bristol & Gilhooly,3.5
+23,5,elf,fictional,structured,272,MRC,3.5
+23,6,giant,fictional,structured,256,MRC,3.5
+23,7,mermaid,fictional,structured,322,Bristol & Gilhooly,4.5
+23,8,fairy,fictional,structured,5.17,Kuperman et al,5.17
+23,9,pear,fruit,structured,4,Kuperman et al,4
+23,10,melon,fruit,structured,4.21,Kuperman et al,4.21
+23,11,grape,fruit,structured,297,MRC,3.5
+23,12,cherry,fruit,structured,317,MRC,5.5
+24,1,eggplant,vegetable,structured,8.3,Kuperman et al,8.3
+24,2,potato,vegetable,structured,4.84,Kuperman et al,4.84
+24,3,radish,vegetable,structured,5.25,Schock et al,5.25
+24,4,kale,vegetable,structured,575,MRC,9.5
+24,5,deer,animal,structured,5.17,Kuperman et al,5.17
+24,6,horse,animal,structured,208,Bird et al,3.5
+24,7,panda,animal,structured,452,Bird et al,7.5
+24,8,lion,animal,structured,244,MRC,3.5
+24,9,canoe,transportation,structured,394,MRC,5.5
+24,10,tractor,transportation,structured,240,Bristol & Gilhooly,3.5
+24,11,skateboard,transportation,structured,6.94,Kuperman et al,6.94
+24,12,van,transportation,structured,267,MRC,3.5
