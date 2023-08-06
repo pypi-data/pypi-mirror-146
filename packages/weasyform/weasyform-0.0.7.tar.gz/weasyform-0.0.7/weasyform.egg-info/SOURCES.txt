@@ -1,0 +1,14 @@
+README.md
+setup.py
+test.py
+weasyform/FormFinisher.py
+weasyform/WeasyForm.py
+weasyform/__init__.py
+weasyform/exceptions.py
+weasyform.egg-info/PKG-INFO
+weasyform.egg-info/SOURCES.txt
+weasyform.egg-info/dependency_links.txt
+weasyform.egg-info/requires.txt
+weasyform.egg-info/top_level.txt
+weasyform/fields/__init__.py
+weasyform/fields/signature.py
