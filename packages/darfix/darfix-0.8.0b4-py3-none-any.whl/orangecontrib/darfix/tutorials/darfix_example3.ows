@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="roi selection" position="(496.0, 312.0)" project_name="darfix" qualified_name="orangecontrib.darfix.widgets.roiselection.RoiSelectionWidgetOW" title="roi selection (1)" version="" />
+		<node id="1" name="dimension definition" position="(394.0, 312.0)" project_name="darfix" qualified_name="orangecontrib.darfix.widgets.dimensions.DimensionWidgetOW" title="dimension definition (1)" version="" />
+		<node id="2" name="noise removal" position="(612.0, 251.0)" project_name="darfix" qualified_name="orangecontrib.darfix.widgets.noiseremoval.NoiseRemovalWidgetOW" title="noise removal" version="" />
+		<node id="3" name="shift correction" position="(718.0, 225.0)" project_name="darfix" qualified_name="orangecontrib.darfix.widgets.shiftcorrection.ShiftCorrectionWidgetOW" title="shift correction" version="" />
+		<node id="4" name="data selection" position="(262.0, 270.0)" project_name="darfix" qualified_name="orangecontrib.darfix.widgets.dataselection.DataSelectionWidgetOW" title="data selection" version="" />
+		<node id="5" name="flash" position="(724.0, 403.0)" project_name="darfix" qualified_name="orangecontrib.darfix.widgets.flash.FlashWidgetOW" title="flash" version="" />
+		<node id="6" name="rocking curves" position="(928.0, 191.0)" project_name="darfix" qualified_name="orangecontrib.darfix.widgets.rockingcurves.RockingCurvesWidgetOW" title="rocking curves" version="" />
+		<node id="7" name="z sum" position="(823.0, 320.0)" project_name="darfix" qualified_name="orangecontrib.darfix.widgets.zsum.ZSumWidgetOW" title="z sum" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="dataset" sink_node_id="0" source_channel="dataset" source_node_id="1" />
+		<link enabled="true" id="1" sink_channel="dataset" sink_node_id="2" source_channel="dataset" source_node_id="0" />
+		<link enabled="true" id="2" sink_channel="dataset" sink_node_id="3" source_channel="dataset" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="dataset" sink_node_id="1" source_channel="dataset" source_node_id="4" />
+		<link enabled="true" id="4" sink_channel="dataset" sink_node_id="5" source_channel="dataset" source_node_id="2" />
+		<link enabled="true" id="5" sink_channel="dataset" sink_node_id="6" source_channel="dataset" source_node_id="3" />
+		<link enabled="true" id="6" sink_channel="dataset" sink_node_id="7" source_channel="dataset" source_node_id="3" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'controlAreaVisible': True, 'roi_origin': [751.1389558232929, 698.2457474907555], 'roi_size': [462.65060240963885, 796.2641310089803], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1f\x00\x00\x02\x86\x00\x00\x02\x1e\x00\x00\x00\x03\x00\x00\x00&lt;\x00\x00\x02\x83\x00\x00\x02\x1b\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x00\x03\x00\x00\x00&lt;\x00\x00\x02\x83\x00\x00\x02\x1b', '__version__': 1}</properties>
+		<properties format="literal" node_id="1">{'_dims': {0: {'name': 'diffry', 'kind': 2, 'size': 31, 'range': [-23.176, -23.146, 0.001], 'tolerance': 1e-09}, 1: {'name': 'obpitch', 'kind': 2, 'size': 2, 'range': [25.1023, 25.1043, 0.002], 'tolerance': 1e-09}}, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1f\x00\x00\x02\xda\x00\x00\x02\x1e\x00\x00\x00\x03\x00\x00\x00&lt;\x00\x00\x02\xd7\x00\x00\x02\x1b\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x00\x03\x00\x00\x00&lt;\x00\x00\x02\xd7\x00\x00\x02\x1b', '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'background_type': 'Data', 'bottom_threshold': '5', 'chunks': [100, 100], 'controlAreaVisible': True, 'kernel_size': '3', 'method': 'median', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1f\x00\x00\x02\x86\x00\x00\x02^\x00\x00\x00\x03\x00\x00\x00&lt;\x00\x00\x02\x83\x00\x00\x02[\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x00\x03\x00\x00\x00&lt;\x00\x00\x02\x83\x00\x00\x02[', 'step': '1', '__version__': 1}</properties>
+		<properties format="literal" node_id="3">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1f\x00\x00\x03\xb0\x00\x00\x02\x1e\x00\x00\x00\x03\x00\x00\x00&lt;\x00\x00\x03\xad\x00\x00\x02\x1b\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x00\x03\x00\x00\x00&lt;\x00\x00\x03\xad\x00\x00\x02\x1b', 'shift': [0.16165, -0.00904], '__version__': 1}</properties>
+		<properties format="literal" node_id="4">{'controlAreaVisible': True, 'dark_filename': '', 'filenames': [], 'in_disk': False, 'raw_filename': '/users/garrigaf/Documents/datasets/reduced_strain/strain_0000.edf', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02}\x00\x00\x01K\x00\x00\x05\x02\x00\x00\x03J\x00\x00\x02\x80\x00\x00\x01h\x00\x00\x04\xff\x00\x00\x03G\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\x80\x00\x00\x01h\x00\x00\x04\xff\x00\x00\x03G', '__version__': 1}</properties>
+		<properties format="literal" node_id="5">{'controlAreaVisible': True, 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties format="literal" node_id="6">{'controlAreaVisible': True, 'dimension': None, 'int_thresh': '15', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01E\x00\x00\x00\xb0\x00\x00\x05\xb5\x00\x00\x02\xaf\x00\x00\x01H\x00\x00\x00\xcd\x00\x00\x05\xb2\x00\x00\x02\xac\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x01H\x00\x00\x00\xcd\x00\x00\x05\xb2\x00\x00\x02\xac', '__version__': 1}</properties>
+		<properties format="literal" node_id="7">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02}\x00\x00\x01K\x00\x00\x05\x02\x00\x00\x03J\x00\x00\x02\x80\x00\x00\x01h\x00\x00\x04\xff\x00\x00\x03G\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\x80\x00\x00\x01h\x00\x00\x04\xff\x00\x00\x03G', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
