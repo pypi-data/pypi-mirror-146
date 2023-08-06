@@ -1,0 +1,16 @@
+paxLibUL/__init__.py,sha256=w_33n0jYKy66z11vmNlN8Fn-ANtXOMgcDsAASJyBGZ4,80
+paxLibUL/version.py,sha256=mFY0GwwuN-a3M8w93_mskS6GZIvv9SNdjLfJaWNsm-I,22
+paxLibUL/convolution/__init__.py,sha256=WG5hjS6Yh7b4S4DoDlUjyVgwd64N9c4dfYqvdakaB6Y,169
+paxLibUL/convolution/architectures.py,sha256=ddkfxIoav9Ks9GrdNuFgj6ioeK6NvU-KAjolRT2Km4A,2290
+paxLibUL/convolution/callbacks.py,sha256=AANIzBiU1bsUXaGr8hhvuJ6ZliqV0a46Niw0JG9PEus,358
+paxLibUL/convolution/datasets.py,sha256=BasYiO0jDSfXWjzENhBiODIR7SqLy-P9sfdgwMfzTGg,2737
+paxLibUL/convolution/visualisation.py,sha256=cljEXW3YLq5La5F5ShmZF3Qh2gpgSwo2-l40ZAPop9I,8800
+paxLibUL/convolution/weights_init.py,sha256=lcZJ9_kb-CF4oN62bDb0m_jW5qU5KyET8_2sC1MAWxs,295
+paxLibUL/nlp/__init__.py,sha256=G42nF0zoTcKsv2tOnTghQujkJJFzPAeIPChEzWmc-90,90
+paxLibUL/nlp/data_transformer.py,sha256=YkUm2Kw-NlALdmF1ZF4ZRvCLj13jG8qOTkc7HhOh__M,2186
+paxLibUL/nlp/evaluate.py,sha256=IKzUnI7iuzSlifiIoyWD26aSb3LvHP1of5xP8d0ApGM,1168
+paxLibUL-0.1.7.dist-info/LICENSE,sha256=m0Ej54eG_LZbixr0A-xPunQSyCzhnbxw29eeTZaRNEY,1060
+paxLibUL-0.1.7.dist-info/METADATA,sha256=Acs7nejxtGILe3d9j9MquOtzPllHa3su-DYnMj4Oqd8,1330
+paxLibUL-0.1.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+paxLibUL-0.1.7.dist-info/top_level.txt,sha256=SJ3FPsiyZjDxzobpO2coqyndTwuQ_ml7izeifWQskA0,9
+paxLibUL-0.1.7.dist-info/RECORD,,

@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: paxLibUL
+Version: 0.1.7
+Summary: A library for internal formation tools use in PaX ULaval formations.
+Home-page: https://pax.ulaval.ca/
+Author: PaX-UL
+License: LGPLv3
+Download-URL: https://github.com/PAX-ULaval/pax-libraries/archive/v0.1.7.zip
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: poutyne
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: seaborn
+
+# A library for internal formation tools used in PaX ULaval formations
+Most of the content is to reduce code duplication into our formation and to ease the release of those tools among 
+the formations in the platform.
+
+
