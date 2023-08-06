@@ -1,0 +1,10 @@
+README.md
+setup.py
+cleanplots/__init__.py
+cleanplots/_version.py
+cleanplots/cleanplots.py
+cleanplots.egg-info/PKG-INFO
+cleanplots.egg-info/SOURCES.txt
+cleanplots.egg-info/dependency_links.txt
+cleanplots.egg-info/requires.txt
+cleanplots.egg-info/top_level.txt
