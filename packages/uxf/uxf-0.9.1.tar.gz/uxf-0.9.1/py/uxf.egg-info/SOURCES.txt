@@ -1,0 +1,8 @@
+README.md
+setup.py
+py/uxf.py
+py/uxfconvert.py
+py/uxf.egg-info/PKG-INFO
+py/uxf.egg-info/SOURCES.txt
+py/uxf.egg-info/dependency_links.txt
+py/uxf.egg-info/top_level.txt
