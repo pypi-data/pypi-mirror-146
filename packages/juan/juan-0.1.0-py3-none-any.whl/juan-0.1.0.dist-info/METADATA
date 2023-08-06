@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: juan
+Version: 0.1.0
+Summary: Generate .gitignore files from the command line
+Author: Juan Olvera
+Author-email: juan@jolvera.dev
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+# juan
+
+`juan` generates .gitignore files from the command line.
+
+## Installation
+
+```shell
+pip install juan
+```
