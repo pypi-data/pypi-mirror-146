@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/python_pptx_templating.egg-info/PKG-INFO
+src/python_pptx_templating.egg-info/SOURCES.txt
+src/python_pptx_templating.egg-info/dependency_links.txt
+src/python_pptx_templating.egg-info/requires.txt
+src/python_pptx_templating.egg-info/top_level.txt
+src/templating/__init__.py
+src/templating/templating.py

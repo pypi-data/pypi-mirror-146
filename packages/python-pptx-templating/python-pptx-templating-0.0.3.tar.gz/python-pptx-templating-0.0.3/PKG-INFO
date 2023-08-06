@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: python-pptx-templating
+Version: 0.0.3
+Summary: A small library that provides PowerPoint content templating on top of python-pptx
+Home-page: https://pypi.org/project/python-pptx-templating/
+Author: Serhiy Masyutin
+Author-email: serg.masyutin@gmail.com
+License: UNKNOWN
+Project-URL: GitLab, https://gitlab.com/serg.masyutin/python-pptx-templating
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Name
+python-pptx-templating
+
+## Description
+The goal of this library is to add templating feature to python-pptx.
+By templating I mean a possibility to create new slides & slide decks based on pre-populated master slides.
+It requires a certain way to name placeholders and placeholder content using mustache templating.
+
+## Installation
+```bash
+pip install python-pptx-templating
+```
+
+## Usage
+TODO Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+
+## Authors and acknowledgment
+Serhiy Masyutin
+
+## License
+MIT License
+
+
