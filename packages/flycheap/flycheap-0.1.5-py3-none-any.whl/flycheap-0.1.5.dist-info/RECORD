@@ -1,0 +1,10 @@
+flycheap/__init__.py,sha256=-GAV3-1QJDcl3IlV4GakBeCLjvISf6MtYVSa8z7T1nQ,251
+flycheap/_database.py,sha256=BzV7yzKfyWMItw1xDZz_IF0gvx3qSp3MEafkn7ubdm0,65704
+flycheap/civilaviation.py,sha256=80zAoMi1lSBOzL47Ylpp9TfglB8U3rqoUihsXN48lWc,8773
+flycheap/ctripcrawler.py,sha256=1PjJyovW7lc3mT0yxRSiFioSFcCEZynpOX2QEcscXi4,46144
+flycheap/rebuilder.py,sha256=-ePD7A4l8Hoj2gFw1NvZ8RB4sr0L9oPa-T4U51bdZXY,81446
+flycheap-0.1.5.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+flycheap-0.1.5.dist-info/METADATA,sha256=yPpx29b2_Tvb66mbY5RSkRpBSU-Q39giTRbHkYRYfCU,6185
+flycheap-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flycheap-0.1.5.dist-info/top_level.txt,sha256=pADrmTCqwIF_rrk9du3eMbeUve0pcDD1NVFAzrZ7dkU,9
+flycheap-0.1.5.dist-info/RECORD,,
