@@ -1,0 +1,9 @@
+frappyapibilling/__init__.py,sha256=LTKXV7WlYyQd9NTQNYWVjj_HvkkxoSvPmSi7TmeZcsc,230
+frappyapibilling/api_billing.py,sha256=8JFI8upCWF4f30Sz-YTr_khhkT9VzznHSZtPLrymnQI,5709
+frappyapibilling/quota_definitions.py,sha256=6PzfDItXDUAealrOMOWfjiaugY1uWqXTGTHnz0UvfGg,7051
+frappyapibilling/usage_store.py,sha256=VRNuoelqRZ3Yew6Nk-91WR_ZFIovt7oZ2JxsqVBJ4b4,1657
+frappyapibilling-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+frappyapibilling-0.1.0.dist-info/METADATA,sha256=UlHlNfOkNVVNKtWRYPavjk_hIE_x39Z-b5V1dV4bpwU,4223
+frappyapibilling-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+frappyapibilling-0.1.0.dist-info/top_level.txt,sha256=kTXUyJC09NrPZhR2NoVEw2S-paXK8RnBrFmQvQ8UeEQ,17
+frappyapibilling-0.1.0.dist-info/RECORD,,
