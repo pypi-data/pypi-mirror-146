@@ -1,0 +1,10 @@
+bitarray
+attrs
+
+[dev]
+nose
+mypy
+flake8
+coverage
+twine
+sphinx
