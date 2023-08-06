@@ -1,0 +1,2 @@
+[console_scripts]
+my_example = aics_pipeline_uploaders.bin.my_example:main
