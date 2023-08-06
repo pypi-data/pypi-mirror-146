@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: soda-core-redshift
+Version: 3.0.0b7
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: soda-core (==3.0.0b7)
+Requires-Dist: boto3
+
+UNKNOWN
+
