@@ -1,0 +1,3 @@
+[console_scripts]
+flowify=flowify:main
+
