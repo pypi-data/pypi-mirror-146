@@ -1,0 +1,17 @@
+lektor_groupby/__init__.py,sha256=d9EFJ5vPxRmAuIkRn3PuaGAuSLhy7cKWSzJoJLfgb8I,187
+lektor_groupby/backref.py,sha256=GQ7dwUSHq5SlN8F52_MdGPlYROHpr2izhOFG-B9BuB4,2144
+lektor_groupby/config.py,sha256=WeJzpTmVlFaOh2GTm63J29G2OqX0D5QvnKrnzGPBh3A,3245
+lektor_groupby/groupby.py,sha256=juoh7h7Zoz8nz6zHOnJefhBshpTZX713LZkw-AMdV44,3122
+lektor_groupby/model.py,sha256=exkxfzyVNAebhgDETbLHA-P4SPfHyHH9UdBccIgYvg4,3063
+lektor_groupby/plugin.py,sha256=aqwrU8NwSsIAIo_sjpvThVPEVEnnTORCPkQuQEMF-iM,3175
+lektor_groupby/pruner.py,sha256=-XgIxpaLzbcbbTCDO8h2NaIQxPCSp-9ERYU8OWQRoE4,1803
+lektor_groupby/resolver.py,sha256=cRmX93YDdyf5ht7_ngdvCzo9x665d8kVBqDFgdyNBdY,2235
+lektor_groupby/util.py,sha256=SUgMnIBPK5nBdAzq5pElyhRYQDULofMOmuwDR9jxrik,918
+lektor_groupby/vobj.py,sha256=lWsHAy-hYI2IE8GoQ4JIhmMWlrXmvxky9bzI3YJ_SrE,5456
+lektor_groupby/watcher.py,sha256=CS8WL_2Z-7ktvnyYgYa6YOzfXSsbaWAyZmo31hJLkIw,4378
+lektor_groupby-0.9.6.dist-info/LICENSE,sha256=DBmliCWWIRbce_PCIu0LZJ4Bc0tFnd0-vlqt9Yu-kPk,1046
+lektor_groupby-0.9.6.dist-info/METADATA,sha256=l5cA8nw6Tt6vuVR11ibBdh3i4pLTmUEd9rBISsqFL40,1442
+lektor_groupby-0.9.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+lektor_groupby-0.9.6.dist-info/entry_points.txt,sha256=v-ENf4bZxuWBWugYP61Fr6WZTaloe4wRZYsnBidvZH4,57
+lektor_groupby-0.9.6.dist-info/top_level.txt,sha256=F6nqRMIR5SRYBet_gNcKO5am83etSgotM25Ie5BHXt8,15
+lektor_groupby-0.9.6.dist-info/RECORD,,
