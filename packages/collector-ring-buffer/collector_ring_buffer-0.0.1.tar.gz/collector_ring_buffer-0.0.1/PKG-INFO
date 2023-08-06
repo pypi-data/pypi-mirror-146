@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: collector_ring_buffer
+Version: 0.0.1
+Summary: Ring Buffer para controlar latencia
+Home-page: http://gitlab.csn.uchile.cl/dpineda/collector
+Author: David Pineda Osorio
+Author-email: dpineda@csn.uchile.cl
+License: MIT
+Keywords: collector,buffer,control
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Este módulo entrega un objeto de tipo ringbuffer para
+controlar una ventana de tiempo de un stream de datos en el parámetro de la latencia, es decir la diferencia de tiempo en que se genera el dato y se recibe.
+
+
+Se instala en modo de desarrollo
+
+
+```shell
+pip install -e .
+```
+
+En modo producción
+
+```shell
+pip install .
+```
+
+Para correr los test.
+
+```
+python3 -m unittest discover tests
+```
+
+

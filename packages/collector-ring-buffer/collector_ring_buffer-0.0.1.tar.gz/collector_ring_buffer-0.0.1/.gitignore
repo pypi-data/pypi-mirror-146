@@ -1,0 +1,4 @@
+*.out
+*.pyc
+*.egg-info
+*.egg-info/*

@@ -1,0 +1,258 @@
+#+TITLE: Collector Window
+
+La idea de este módulo es crear un gestor de datos estadísticos para cada
+estación, de manera tal que facilite la gestión del control de a recepción de
+datos GNSS.
+
+Nos enfrentamos al problema de encolamientos aleatorios que crecen con el tiempo
+debido a que la recepción de un nuevo dato llega a tardar más de lo que se
+genera un nuevo dato.
+
+Con la facultad que se tiene de que cada tarea puede observarse y controlarse,
+tanto para su pausa o reconstrucción.
+
+Se definen, como diseño, las siguientes etapas considerando que, una vez
+conectada, la recepción de datos debe establecer: 
+
+- Darle prioridad a aquellas recepciones que superan un cierto valor de tiempo. Será
+necesario definir un criterio como /parámetro/.
+
+- Reiniciar la tarea en caso de detención o fallas de operación no controlables.
+
+- El parámetro a medir es la latencia entre el momento de generación del dato y
+la recepción. Puede tomar nombres como DELTA_TIME, LATENCY o el que sea definido
+por la implementación particular.
+
+- Se define como parámetro N muestras en base a un valor de suficiencia para
+generar los estadísticos. Se debe estudiar este valor con registros anteriores.
+
+** Estudio de suficiencia muestral.
+
+Se toman muestras para las siguientes cantidades. Conociendo que cada estación
+entrega valores de tipo representativo para el mismo modelo de equipo.
+
+Se completa la siguiente tabla.
+
+| dt minutos | N datos | media | desv estándar |
+|------------+---------+-------+---------------|
+|         10 |         |       |               |
+|         20 |         |       |               |
+|         30 |         |       |               |
+|         60 |         |       |               |
+|        120 |         |       |               |
+|        180 |         |       |               |
+
+Tomar la muestra.
+
+** Crear un Ring Buffer para N
+
+Debe consistir en un arreglo de N valores en que el objeto evalue para agregar
+valores si es necesario quitar los primeros. Al menos debería considerar la
+estampa de tiempo y la latencia.
+
+#+begin_src python :session ringbuffer :tangle ./crb/data.py
+from typing import NamedTuple
+from datetime import datetime
+
+class Data(NamedTuple):
+    dt_gen: datetime
+    latency: float
+  
+    def dict(self):
+        return self._asdict()
+
+    @property
+    def delta_time(self):
+        return self.latency
+#+end_src
+
+#+RESULTS:
+
+Probando la creación de objetos *Data*
+
+#+begin_src python :session ringbuffer :results output
+data = Data(datetime.now(), .3)
+print(data)
+#+end_src
+
+#+RESULTS:
+: Data(dt_gen=datetime.datetime(2022, 3, 25, 16, 25, 32, 809848), delta_time=0.3)
+: OrderedDict([('dt_gen', datetime.datetime(2022, 3, 25, 16, 25, 32, 809848)), ('delta_time', 0.3)])
+
+#+begin_src elisp
+(setq org-src-tab-acts-natively t)
+#+end_src
+
+#+RESULTS:
+: t
+
+Luego, necesitamos crear un registro por cada estación.
+
+#+begin_src python :session ringbuffer :tangle ./crb/ring_buffer.py
+from typing import List, Text
+from dataclasses import dataclass, field
+from .data import Data
+import math
+
+@dataclass
+class RingBuffer:
+    name: Text = ""
+    ringbuffer: List[Data] = field(default_factory=list)
+    size: int = 120
+    last_value:Data = None
+    total: float = 0
+
+    def add(self,data:Data):
+        if len(self.ringbuffer) == self.size:
+            first = self.ringbuffer[0]
+            self.remove(first)
+            self.total -= first.latency
+        self.ringbuffer.append(data)
+        self.total += data.latency
+
+    def remove(self, position:Data):
+        self.ringbuffer.remove(position)
+
+    @property
+    def length(self):
+        return len(self.ringbuffer)
+
+    def get(self):
+        return self.ringbuffer
+
+    @property
+    def media(self):
+        return self.total/self.length
+
+    @property
+    def desviacion_estandar(self):
+        return math.sqrt(sum([(data.latency-self.media)**2 for data in
+                    self.ringbuffer])/self.length)
+    @property
+    def mu(self):
+        return self.media
+
+    @property
+    def sigma(self):
+        return self.desviacion_estandar
+
+    def __iter__(self):
+        return iter(self.ringbuffer)
+#+end_src
+
+Se crean los tests para verificar el correcto funcionamiento.
+
+#+begin_src python :tangle ./tests/test_ringbuffer.py
+from unittest import TestCase
+from datetime import datetime
+from crb.ring_buffer import RingBuffer
+from crb.data import Data
+import math
+
+class TestRingBuffer(TestCase):
+        
+    def test_add(self):
+        data = [3.0, 4, 4, 5.4, 1, 4.3, 5, 6.2]
+        dataset = [Data(dt_gen=datetime.now(), latency=d) 
+                        for d in data]
+        ring_buffer = RingBuffer()
+        for item in dataset:
+            ring_buffer.add(item)
+        latencies = [d.latency for d in ring_buffer]
+        self.assertEqual(data, latencies)
+
+    def test_media(self):
+        data = [3.0, 4, 4, 5.4, 1, 4.3, 5, 6.2]
+
+        dataset = [Data(dt_gen=datetime.now(), latency=d) 
+                        for d in data]
+
+        ring_buffer = RingBuffer()
+        for item in dataset:
+            ring_buffer.add(item)
+        media = sum(data)/len(data)
+        self.assertEqual(media, ring_buffer.media)
+
+    def test_desv_std(self):
+        data = [3.0, 4, 4, 5.4, 1, 4.3, 5, 6.2]
+
+        dataset = [Data(dt_gen=datetime.now(), latency=d) 
+                        for d in data]
+
+        ring_buffer = RingBuffer()
+        for item in dataset:
+            ring_buffer.add(item)
+        media = sum(data)/len(data)
+        dev_std = math.sqrt(sum([(e-media)**2 for e in data])/len(data))
+        self.assertEqual(dev_std, ring_buffer.desviacion_estandar)
+
+
+    def test_limit_datalength(self):
+        data = [3.0, 4, 4, 5.4, 1, 4.3, 5, 6.2]
+
+        dataset = [Data(dt_gen=datetime.now(), latency=d) 
+                        for d in data]
+
+        size = 2
+        ring_buffer = RingBuffer(size=size)
+        for item in dataset:
+            ring_buffer.add(item)
+        media = sum(data[-size::])/size
+        dev_std = math.sqrt(sum([(e-media)**2 for e in data[-size::]])/size)
+        self.assertEqual(dev_std, ring_buffer.desviacion_estandar)
+
+
+
+if __name__ == "__main__":
+    unittest.main()
+#+end_src
+
+
+#+begin_src shell
+ls *.py
+#+end_src
+
+#+RESULTS:
+| data.py            |
+| __init__.py        |
+| ring_buffer.py     |
+| test_ringbuffer.py |
+
+#+begin_src shell
+touch __init__.py
+#+end_src
+
+#+RESULTS:
+
+Ejecutando los tests
+
+#+begin_src shell :results value
+python3 -m unittest discover
+#+end_src
+
+#+RESULTS:
+: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+.gitignore
+.gitignore~
+MANIFEST.in
+README.md
+VERSION
+__init__.py
+notas.org
+setup.py
+crb/__init__.py
+crb/data.py
+crb/ring_buffer.py
+tests/test_ringbuffer.py
+tests/__pycache__/test_ringbuffer.cpython-38.pyc
