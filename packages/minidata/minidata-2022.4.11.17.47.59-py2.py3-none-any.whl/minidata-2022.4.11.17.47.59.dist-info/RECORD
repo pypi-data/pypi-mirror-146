@@ -1,0 +1,17 @@
+minidata/__init__.py,sha256=zdMgrDnvLhevHMGUs0kjPyY9JerGEQUPsQlw2c0Ck8o,179
+minidata/minidata.py,sha256=cKVWVerqlnMMKZe3yXamxhidM-2KZKg1ty9gn7Fu09w,454
+minidata/clis/README.md,sha256=SIDx7CH3kxJhdekoZdNhLQlaIBz8cxwaWWr8MX2d4PM,413
+minidata/clis/__init__.py,sha256=O96-AN5LgAGFr0fDbnbx6KTSluihF2ZfDNaVkoQKTpc,283
+minidata/clis/cli.py,sha256=mQ4CzzFBQ4dNV2FDAD03fsFlmvt1idtALZR9lT2s5eI,574
+minidata/data/vocab.txt,sha256=RbusazQcMZrcmKUyUyiC6Rqc78AymqV7rJrnYcJ7KRw,109540
+minidata/model/ckiplab/albert-tiny-chinese/config.json,sha256=ih_gCXMdQUEEQOGwC0_f-q5Fgyqs0NZN-rm9qWvdpXw,729
+minidata/model/ckiplab/albert-tiny-chinese/pytorch_model.bin,sha256=RpScTUDtJj0OxE7AJHZ3_Idsf9SCgZqNJpn7tzS_Y7s,16193780
+minidata/model/ckiplab/albert-tiny-chinese/special_tokens_map.json,sha256=MD30WgNgnk6tBLw9wVNtCrGbU1jbaFtvPaEj0F7CAOM,112
+minidata/model/ckiplab/albert-tiny-chinese/tokenizer_config.json,sha256=-qvkkGWQuVRB7H80O-o2sYp3tHl_NlbT4FZWfhAB5i4,174
+minidata-2022.4.11.17.47.59.dist-info/AUTHORS.rst,sha256=U5xywR23X9cb_Ok9dTC5kfa7zr9VPUuQnUTb5usSJ50,152
+minidata-2022.4.11.17.47.59.dist-info/LICENSE,sha256=7Sxcyhq7LZu4wWILmgXHGMBYMmc4XsHycnEwgbHaC2Q,1067
+minidata-2022.4.11.17.47.59.dist-info/METADATA,sha256=CF1PxpMmkOpCprN_CEo6nLNXVok3F_xJ1pBcb3JyUt4,1242
+minidata-2022.4.11.17.47.59.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+minidata-2022.4.11.17.47.59.dist-info/entry_points.txt,sha256=f2p-yrTESVxjata-nvjwyt01s8PJBMZpTKiq4k_Uk40,52
+minidata-2022.4.11.17.47.59.dist-info/top_level.txt,sha256=AVh8Xe1MdwhQ-TsX8ycaHLK7s-u4DKsvGUd1nm9mjoA,9
+minidata-2022.4.11.17.47.59.dist-info/RECORD,,
