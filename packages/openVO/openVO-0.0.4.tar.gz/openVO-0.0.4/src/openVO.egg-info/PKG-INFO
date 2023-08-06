@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: openVO
+Version: 0.0.4
+Summary: Visual Odometry in python with openCV
+Home-page: https://github.com/KevinSpevak/openVO
+Author: Kevin Spevak
+Author-email: kevinspevak@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/KevinSpevak/openVO/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# openVO
+Visual Odometry in python with openCV
+
+## Installing
+```
+$ pip install openVO
+```
+
+## PyPI
+This project is available through PyPI. Project page:
+https://pypi.org/project/openVO/
+
+
