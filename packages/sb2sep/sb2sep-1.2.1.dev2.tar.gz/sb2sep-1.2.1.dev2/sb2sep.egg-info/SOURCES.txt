@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+sb2sep.egg-info/PKG-INFO
+sb2sep.egg-info/SOURCES.txt
+sb2sep.egg-info/dependency_links.txt
+sb2sep.egg-info/top_level.txt
