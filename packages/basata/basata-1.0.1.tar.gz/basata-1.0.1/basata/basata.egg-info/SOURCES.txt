@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+basata/basata.egg-info/PKG-INFO
+basata/basata.egg-info/SOURCES.txt
+basata/basata.egg-info/dependency_links.txt
+basata/basata.egg-info/requires.txt
+basata/basata.egg-info/top_level.txt
