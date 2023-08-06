@@ -1,0 +1,17 @@
+binapy/__init__.py,sha256=kSTPobj0cvhOWRuFPNKuuncBJZN0G4i4dtlxyQHu5ds,368
+binapy/binapy.py,sha256=hmUU4AOlcZoLlkOIdYWCWAy9fi--lAlEm7zUsOo21rs,19910
+binapy/compression/__init__.py,sha256=ZqWKnTVJdMtZvO4oLeUcbrx2dld0sRkueBmw6Y6XVbg,20
+binapy/compression/gzip.py,sha256=IhDRDZmOylq-Rt59sTp1_gSUX2xgwz9Wm3JZoqEePCE,285
+binapy/encoding/__init__.py,sha256=2UAsptYN8KpWibWeqLFOgl31hGmFHj3WGddYVM5gRkU,60
+binapy/encoding/base64.py,sha256=LlpKFKXdnv6oGpneb33NFAUCglQyaJxo9AQD6QT1FlE,1628
+binapy/encoding/hex.py,sha256=j0ZfnkyoeMWW1-OyZqDWcIOPOVVO1Ka_bA5FmWZYnWg,438
+binapy/encoding/url.py,sha256=3_V5mRRka-_i28z8EoMgfI3nza0IYz0GW-iGXSb7G28,591
+binapy/hashing/__init__.py,sha256=jk6PpUplRnDUJ4k3zyCYuNWjQhBIq4zFYNjMYFN8SMI,19
+binapy/hashing/sha.py,sha256=iUGONRQKfYXI0LfP4km7qNnNQHiR8vO8ODp-RC6xljQ,2090
+binapy/parsing/__init__.py,sha256=JtIrknzhpwedMyOWnCVmvQcFn6MDwLZ2arD_JRTwJvU,20
+binapy/parsing/json.py,sha256=anV9I1vcig8zPYj2rdx5WxYkNHvryCLqzyIbVYdyTXA,759
+binapy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+binapy-0.5.0.dist-info/LICENSE,sha256=CA1MBcvJlvGHrIKg39uliFGQ6Un2ULUtOgPLzIKWDw0,1073
+binapy-0.5.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+binapy-0.5.0.dist-info/METADATA,sha256=BjivxA33zCnLHHAA0ZPJ6ffPGGu1IdPprS8b12Lgixs,2727
+binapy-0.5.0.dist-info/RECORD,,
