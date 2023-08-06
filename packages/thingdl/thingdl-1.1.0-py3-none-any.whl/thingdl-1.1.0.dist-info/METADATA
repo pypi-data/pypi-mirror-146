@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: thingdl
+Version: 1.1.0
+Summary: This provides a utility to bulk download files from a thing in Thingiverse
+Home-page: https://github.com/sean-bailey
+Author: Sean Bailey
+Author-email: seanbailey518@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: fake-useragent (>=0.1.11)
+Requires-Dist: webdriver-selector (>=1.0.2)
+Requires-Dist: beautifulsoup4 (>=4.10.0)
+
+# thingdl
+
+Thingiverse is a wonderful place for makers to share their works with the world. 
+
+However, when makers upload their parts, often they are uploaded in many different pieces, each of which requires a separate download.
+
+thingdl is a command line tool that is aimed to simplify that. With a single command, you can download all files related to a given thing 
+
+## Installation
+
+`pip3 install thingdl`
+
+Next, find the thing you wish to download. ~~Click on the "download all files" link, and copy the url
+(it will end in /files)~~ Now the base url and the `/files` url are compatible! 
+
+From a terminal or command prompt:
+
+```
+thingdl -u <yourthingurl> -d <your destination directory>
+
+```
+
+in a few moments, it will download all the files from that thing into your specified directory.
+
