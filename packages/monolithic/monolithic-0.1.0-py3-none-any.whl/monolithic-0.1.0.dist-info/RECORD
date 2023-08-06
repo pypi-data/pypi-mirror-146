@@ -1,0 +1,8 @@
+monolithic/__init__.py,sha256=7w1PEqb2EuZMzUGCxZp72uRU07xkDuhGOkmVAM9aDFQ,132
+monolithic/cli.py,sha256=NCFSMKPIiBBWBmLZZ_3N8n1BRfehZ8txFb2HVRFwNYA,328
+monolithic/monolithic.py,sha256=6970eTUE7HmuxkFVt5IV5bv9ey96_dwBI5hf7-0GWk0,79
+monolithic-0.1.0.dist-info/entry_points.txt,sha256=Xx7m8ezU3nSWtFrEt-bqkKv9piPfJaMx19_HQmVhoOs,50
+monolithic-0.1.0.dist-info/LICENSE,sha256=JPjE_VoUp6rsSrucHPOz6DTEXq7WNLVThoSLkjc9wEU,1069
+monolithic-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+monolithic-0.1.0.dist-info/METADATA,sha256=DdZs_CdDjsbh3wXOgUpm-HKLSfosO8x9pqJVwWSdXzM,3027
+monolithic-0.1.0.dist-info/RECORD,,

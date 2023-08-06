@@ -1,0 +1,3 @@
+[console_scripts]
+monolithic=monolithic.cli:main
+
