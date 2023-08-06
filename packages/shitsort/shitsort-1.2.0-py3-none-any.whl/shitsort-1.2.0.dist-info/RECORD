@@ -1,0 +1,14 @@
+shitsort/__init__.py,sha256=mrr3hOlZyL6wrPro5As4qwlIDCYZOCsgthPOQtb6Kjg,258
+shitsort/bogo.py,sha256=wEcqqhybjpsrrjw2iDLqjQ9X4N6KayMyr0C26-l1y9E,627
+shitsort/bozo.py,sha256=56MriiCeR1RW4vlaLSINOkldsjTBgs5MtE5bBqd4q5Y,716
+shitsort/multibogo.py,sha256=PKI8svh4KLrCae-0GCEBLmOIvWq349oU0TGjYAhyf84,1029
+shitsort/multipermutation.py,sha256=x2PpsZ-PoWiVta1qLVg2EMOTCqDLS6-3NmfZfCckuds,1252
+shitsort/peripherals.py,sha256=A8qM4_yE8QSVVcy_oSELGZ__x6qrbvOIYH1O5eMDfVI,498
+shitsort/permutation.py,sha256=ZK4oqP9QrU0wBKwNo29J_BmXGLIwxDaVsjLVn7gd_JI,614
+shitsort/slow.py,sha256=1yx4kljJ_x1JNDQryxClFjlCFwu8Ads3JIL9sqFzDFc,601
+shitsort/slowsort.py,sha256=1yx4kljJ_x1JNDQryxClFjlCFwu8Ads3JIL9sqFzDFc,601
+shitsort-1.2.0.dist-info/LICENSE.txt,sha256=auDbMKHG9Z_7jJSaSvTz_BHTZc0ygs-rpv1jo-qr188,31912
+shitsort-1.2.0.dist-info/METADATA,sha256=Mn9E3SjYzOX9G8qF3LTV_eoOSAOIFtW46DYCjGcNtcY,2325
+shitsort-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shitsort-1.2.0.dist-info/top_level.txt,sha256=wn4NLmGCpbBMb9UhMG5ECplGtW6uLbKSzZd3bsClZ3A,9
+shitsort-1.2.0.dist-info/RECORD,,
