@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cocolight
+Version: 0.0.1
+Summary: "Lightweight cocotb testbench library
+Keywords: cocotb,HDL,Hardware,verification,VHDL,Verilog,simulation,EDA,FPGA
+Author: Kamyar Mohajerani
+Author-email: kammoh@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Dist: cocotb~=1.6
+Requires-Dist: attrs>=21
+Requires-Dist: python-box>=6
+Requires-Dist: cffi>=1.14
+Requires-Dist: pytest > 7 ; extra == "test"
+Requires-Dist: pytest-cov[all] ; extra == "test"
+Provides-Extra: test
+
+cocoLight
+=========
+
+Lightweight cocotb_ hardware verification library.
+
+
+.. _cocotb: https://www.cocotb.org
