@@ -1,0 +1,5 @@
+amara3.xml
+Markdown
+python-slugify
+click
+pyparsing==3.0.4
