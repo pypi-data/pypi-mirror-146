@@ -1,0 +1,9 @@
+eipython/__init__.py,sha256=cSYb8-v0Csw7sfg7MQvA7sJ1zih55S2d10SVA-QRCG4,43
+eipython/__main__.py,sha256=v9KuKoIW6WArJUbi0qgbSS42SBAkWJoD5Vy3P51DWrU,78
+eipython/core.py,sha256=Ki0SEMXUas_y4HXE9L6pZX-dRwwWHJ0GHdzU-W-9jso,3908
+enhanced_ipython-0.0.1.dist-info/LICENSE,sha256=VhdzPiHKUg9ROUMuGQempEoAtjMM3XvLVVsIJ4pboj4,1285
+enhanced_ipython-0.0.1.dist-info/METADATA,sha256=qC9DKLZAqjShJS2iV4XX26zOukVras1lT7UR19ikUAk,2102
+enhanced_ipython-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+enhanced_ipython-0.0.1.dist-info/entry_points.txt,sha256=ApL8XxOsE_YuJfCHyxTlhBNdaqC_qhsnX8dL2UyOrdM,51
+enhanced_ipython-0.0.1.dist-info/top_level.txt,sha256=HBCAte3RnEvDIwsB-a_AhnkaKQt_WX7f3LonA3O_BWc,9
+enhanced_ipython-0.0.1.dist-info/RECORD,,

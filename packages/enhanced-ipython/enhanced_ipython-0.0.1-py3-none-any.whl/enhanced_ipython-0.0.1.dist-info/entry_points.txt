@@ -1,0 +1,2 @@
+[console_scripts]
+eipython = eipython.__main__:run
