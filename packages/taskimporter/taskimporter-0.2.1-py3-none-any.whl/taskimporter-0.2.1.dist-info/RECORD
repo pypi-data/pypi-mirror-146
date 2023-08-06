@@ -1,0 +1,15 @@
+taskimporter/__init__.py,sha256=DDFH2zrO6QJgSwwtv2FpiZ9NY3V2ABVDPS1TI5EW6GQ,4553
+taskimporter/const.py,sha256=pVCEFZHHsXfhztO13JE3AjKHEcXsbCZAIrk8Cw6LKYM,3181
+taskimporter/services/__init__.py,sha256=rW6J-tdaryAyF7UIGL8tEOQqmnyGMy0QrQlSh1Y2buw,1176
+taskimporter/services/github_service.py,sha256=UkIcf7tVMoNVfJ2lBDIgrWKLOY0m-MtIZQWrvA4LKIw,2411
+taskimporter/services/gitlab_service.py,sha256=vHEHAeTguTWpkvQUh2Hd7H8ST9D-asZ4HzDUVaUo4zM,3132
+taskimporter/services/jira_service.py,sha256=cwnQSBIO5DpNK3g1OQBv9C81_tRjLZyJRz7c7s6mCEc,2249
+taskimporter/task.py,sha256=XCuweYeuu5Ljn3FBL6QKcNYfZZmbmKztPxQGz7cR5zA,246
+taskimporter/task_managers/__init__.py,sha256=0hk4k11LVfd3DtCPT8kdtfK4-vtjyIoxfSn1cEmQ2Do,887
+taskimporter/task_managers/omnifocus3.py,sha256=wn_GgURoPy8SAdeJ8_HkYQp6faUxptQwbCbjb8ZZKrM,1286
+taskimporter/task_managers/things3.py,sha256=RV0HJowp3UKZAHBsOpO-uQoaDVbV89WWXXWlYlxNKOg,1415
+taskimporter-0.2.1.dist-info/entry_points.txt,sha256=zF3RyuuBTGCGX3W_n3c_vovEVtWTVfN86y-7K8-8IXI,50
+taskimporter-0.2.1.dist-info/LICENSES/GPL-3.0-or-later.txt,sha256=tqi_Y64slbCqJW7ndGgNe9GPIfRX2nVGb3YQs7FqzE4,34670
+taskimporter-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+taskimporter-0.2.1.dist-info/METADATA,sha256=oq76AGdCQ0dRi6pUG4RQGNUr1cpr9P6oXWAtSHRcC5I,567
+taskimporter-0.2.1.dist-info/RECORD,,
