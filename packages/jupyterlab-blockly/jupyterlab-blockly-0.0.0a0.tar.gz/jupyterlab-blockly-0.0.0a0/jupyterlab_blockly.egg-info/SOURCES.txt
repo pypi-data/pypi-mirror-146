@@ -1,0 +1,5 @@
+setup.py
+jupyterlab_blockly.egg-info/PKG-INFO
+jupyterlab_blockly.egg-info/SOURCES.txt
+jupyterlab_blockly.egg-info/dependency_links.txt
+jupyterlab_blockly.egg-info/top_level.txt
