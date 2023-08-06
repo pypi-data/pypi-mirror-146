@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+BotAmino/Bot.py
+BotAmino/BotAmino.py
+BotAmino/__init__.py
+BotAmino/commands.py
+BotAmino/extensions.py
+Dickbot.py.egg-info/PKG-INFO
+Dickbot.py.egg-info/SOURCES.txt
+Dickbot.py.egg-info/dependency_links.txt
+Dickbot.py.egg-info/requires.txt
+Dickbot.py.egg-info/top_level.txt
