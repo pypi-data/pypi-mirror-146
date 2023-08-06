@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: LoadAndSplit
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author-email: fcwyzzr@163.com
+License: GPL Licence
+Keywords: test,xxx
+Platform: UNKNOWN
+Requires: numpy
+Requires: collections
+Requires-Dist: numpy
+
+UNKNOWN
+
