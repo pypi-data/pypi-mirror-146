@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: simple-storage-service
+Version: 0.0.4
+Summary: Assist in the handling of files on storages from different providers.
+Home-page: https://gitlab.com/r13/educat-community/simple-storage-service
+Author: Lucas Nascimento Huati Corrêa
+Author-email: lucas@educat.net.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3 (==1.20.10)
+Requires-Dist: azure-storage-blob (==2.0.1)
+Requires-Dist: google-cloud-storage (==1.36.0)
+
+# simple-storage-service
+
+This package is intended to assist in the handling of files on storages from different providers.
+
+Currently, this project supports 3 providers: AWS, Azure and GCP.
+
+## Getting started
+
+### Install
+
+```sh
+pip install storage-service
+```
+
+### Initialize a storage provider
+
+```python
+from simple_storage_service import SimpleStorage
+
+simple_storage = SimpleStorage.initialize('GCP', {'bucket_name': 'some-bucket'})
+simple_storage.get_object('some-key')
+simple_storage.upload_object('some-key', 'path/to/file.txt')
+```
+
+## Colaborating
+
+### Run tests
+
+python -m unittest discover tests
+
+## Deploy
+
+### Change version on setup.py
+
+### Remove previous version
+
+```sh
+rm -rf dist
+```
+
+### Build project
+
+```sh
+python -m build
+```
+
+### Upload project
+
+```sh
+python -m twine upload dist/*
+```
+
+
