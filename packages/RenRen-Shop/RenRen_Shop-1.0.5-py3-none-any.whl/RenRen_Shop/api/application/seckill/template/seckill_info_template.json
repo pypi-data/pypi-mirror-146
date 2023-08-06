@@ -1,0 +1,88 @@
+{
+     "error": 0,
+     "data": {
+          "id": "469",
+          "shop_id": "480",
+          "type": "seckill",
+          "title": "8点整点秒杀",
+          "status": "0",
+          "start_time": "2022-04-13 09:00:00",
+          "end_time": "2022-04-13 11:00:00",
+          "goods_ids": "9612,9620",
+          "option_ids": "24255,24256,24266",
+          "client_type": "21",
+          "rules": {
+               "is_commission": "1",
+               "limit_type": "1",
+               "limit_num": "1"
+          },
+          "is_deleted": "0",
+          "stop_time": "0000-00-00 00:00:00",
+          "create_time": "2022-04-12 21:50:31",
+          "update_time": "2022-04-12 21:50:31",
+          "is_preheat": "1",
+          "preheat_time": "2022-04-12 09:00:00",
+          "inner_type": "0",
+          "sub_shop_id": "0",
+          "goods_join_type": "0",
+          "description": null,
+          "goods_info": [
+               {
+                    "id": "9612",
+                    "stock": "69",
+                    "title": "【临期食品】达利园青梅绿茶整箱330ml*12",
+                    "min_price": "1.39",
+                    "max_price": "22.00",
+                    "has_option": 1,
+                    "thumb": "image/480/2022/04/9a02c6399ebe34d9ef25ecfafb2b6aff.jpeg",
+                    "type": "0",
+                    "sales": "50",
+                    "rules": [
+                         {
+                              "id": "24255",
+                              "activity_stock": "9",
+                              "activity_price": "19.80",
+                              "is_join": "1",
+                              "stock": "9",
+                              "price": "22.00",
+                              "title": "临期产品注意购买（保质期12个月）+2021-07+整箱",
+                              "weight": "0.00"
+                         },
+                         {
+                              "id": "24256",
+                              "activity_stock": "60",
+                              "activity_price": "1.30",
+                              "is_join": "1",
+                              "stock": "60",
+                              "price": "1.39",
+                              "title": "临期产品注意购买（保质期12个月）+2021-07+单瓶",
+                              "weight": "0.00"
+                         }
+                    ]
+               },
+               {
+                    "id": "9620",
+                    "stock": "150",
+                    "title": "【名仁夏季苏打水】名仁苏打水375ml 整箱 24瓶装",
+                    "min_price": "44.00",
+                    "max_price": "44.00",
+                    "has_option": 1,
+                    "thumb": "image/480/2022/04/ba569199451d3f79f78d9ca4fe5a4bb7.jpeg",
+                    "type": "0",
+                    "sales": "50",
+                    "rules": [
+                         {
+                              "id": "24266",
+                              "activity_stock": "150",
+                              "activity_price": "39.60",
+                              "is_join": "1",
+                              "stock": "150",
+                              "price": "44.00",
+                              "title": "24瓶装375ml",
+                              "weight": "0.00"
+                         }
+                    ]
+               }
+          ]
+     }
+}

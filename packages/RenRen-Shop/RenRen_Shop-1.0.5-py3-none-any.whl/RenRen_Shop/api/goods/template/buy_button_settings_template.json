@@ -1,0 +1,14 @@
+{
+          "name": "立即购买",
+          "click_type": "1",
+          "click_style": "1",
+          "click_pop_content": "",
+          "click_pop_image": "",
+          "click_pop_button_text": "确认",
+          "price_text": "价格面议",
+          "click_jump_url": "",
+          "btn_jump_link_name": "",
+          "btn_jump_link_wxappid": "",
+          "click_telephone_type": "1",
+          "click_telephone": ""
+     }
