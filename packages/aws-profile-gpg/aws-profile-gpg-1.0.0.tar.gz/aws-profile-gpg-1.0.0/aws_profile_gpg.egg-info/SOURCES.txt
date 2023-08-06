@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aws_profile_gpg.egg-info/PKG-INFO
+aws_profile_gpg.egg-info/SOURCES.txt
+aws_profile_gpg.egg-info/dependency_links.txt
+aws_profile_gpg.egg-info/requires.txt
+aws_profile_gpg.egg-info/top_level.txt
+bin/aws-profile-gpg

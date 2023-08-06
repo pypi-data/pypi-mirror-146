@@ -1,0 +1,2 @@
+botocore<2,>=1.12
+PyGPGME<1,>=0.3
