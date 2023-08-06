@@ -1,0 +1,2 @@
+[console_scripts]
+gpulink = gpulink.__main__:main
