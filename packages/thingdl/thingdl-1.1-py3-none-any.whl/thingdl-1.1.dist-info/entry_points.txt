@@ -1,0 +1,3 @@
+[console_scripts]
+thingdl = thingdl.thingiverse_downloader:main
+
