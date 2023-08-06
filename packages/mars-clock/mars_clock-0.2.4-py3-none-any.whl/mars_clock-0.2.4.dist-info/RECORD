@@ -1,0 +1,11 @@
+mars_clock/Ls_utils.py,sha256=vrAxTjyer3lRDQwal0Epwd2yUFmG6nZLhjZShHPn2bQ,9083
+mars_clock/__init__.py,sha256=MflQ4ps6r4lxwQ62ox2PcDIoZnMd-4Va5to7EymO5WU,332
+mars_clock/mission_sols.py,sha256=sBjavUbeFc4YjFqHUP1FAX-OFaH-03xLmEVU8KdMqK8,4574
+mars_clock/data/Piqueux2015_Table1.csv,sha256=lgrA-Sg80MOA7p5dysIhDl1IP5HjbL8ekcxL3wSmB48,7222
+tests/__init__.py,sha256=38pdDhEZk2RiT5kga2DPbhTYeDHdsCXNaEr7HH1-k20,208
+tests/test_mars_clock.py,sha256=-j6u6XPBqhXMPT9P6muPO2rOkV3Dryi9NI01qVzoEq4,1419
+mars_clock-0.2.4.dist-info/LICENSE,sha256=mOWZpkH4qDq_J7ordd43WPHYwKJJpQtWYnT90pceBJs,1086
+mars_clock-0.2.4.dist-info/METADATA,sha256=_ZUZzKco6spppsGPEV8l2ZN3xTSK_W8NCOqG0CY44zA,1165
+mars_clock-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mars_clock-0.2.4.dist-info/top_level.txt,sha256=LuXuWANH04CDw_WncymdeXWYOJz7W2DvaTxSgV938Yg,17
+mars_clock-0.2.4.dist-info/RECORD,,
