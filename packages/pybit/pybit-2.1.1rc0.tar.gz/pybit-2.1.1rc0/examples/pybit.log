@@ -1,0 +1,775 @@
+2022-03-08 16:47:20,641 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-08 16:47:20,642 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-08 16:47:21,648 DEBUG WebSocket Spot closed.
+2022-03-08 16:47:21,648 DEBUG WebSocket Spot opened.
+2022-03-08 16:47:21,854 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-08 16:47:21,857 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-08 16:47:21,857 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-08 16:50:07,858 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-08 16:50:07,858 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-08 16:50:08,883 DEBUG WebSocket Spot closed.
+2022-03-08 16:50:08,883 DEBUG WebSocket Spot opened.
+2022-03-08 16:50:09,072 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-08 16:50:09,080 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-08 16:50:09,080 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 11:24:38,986 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-09 11:24:38,987 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-09 11:24:39,993 DEBUG WebSocket Spot closed.
+2022-03-09 11:24:39,993 DEBUG WebSocket Spot opened.
+2022-03-09 11:24:40,178 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 11:24:40,183 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-09 11:24:40,183 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 11:47:55,497 DEBUG WebSocket USDT Perp closed.
+2022-03-09 11:47:55,498 DEBUG WebSocket USDT Perp opened.
+2022-03-09 11:47:56,504 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 11:47:56,504 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 11:47:56,699 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103842c10>: string indices must be integers
+2022-03-09 11:47:56,707 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 11:47:56,741 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103842c10>: string indices must be integers
+2022-03-09 11:47:56,900 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103842c10>: string indices must be integers
+2022-03-09 11:47:57,121 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103842c10>: string indices must be integers
+2022-03-09 11:47:57,141 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103842c10>: string indices must be integers
+2022-03-09 11:47:57,511 DEBUG WebSocket Spot closed.
+2022-03-09 11:47:57,511 DEBUG WebSocket Spot opened.
+2022-03-09 11:47:57,730 DEBUG Authorization for USDT Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 11:47:57,730 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 11:47:57,918 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103842c10>: string indices must be integers
+2022-03-09 11:47:57,940 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103842c10>: string indices must be integers
+2022-03-09 11:49:45,539 DEBUG WebSocket USDT Perp closed.
+2022-03-09 11:49:45,539 DEBUG WebSocket USDT Perp opened.
+2022-03-09 11:49:46,543 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 11:49:46,544 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 11:49:46,735 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c017c10>: string indices must be integers
+2022-03-09 11:49:46,743 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c017c10>: string indices must be integers
+2022-03-09 11:49:46,743 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 11:49:47,212 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c017c10>: string indices must be integers
+2022-03-09 11:50:10,928 DEBUG WebSocket USDT Perp closed.
+2022-03-09 11:50:10,928 DEBUG WebSocket USDT Perp opened.
+2022-03-09 11:50:11,933 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 11:50:11,933 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 11:50:12,117 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,121 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,122 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,123 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,124 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,125 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,126 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,127 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,127 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,127 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 11:50:12,188 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,216 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,340 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,544 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,701 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,725 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,744 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,908 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:50:12,940 DEBUG WebSocket Spot closed.
+2022-03-09 11:50:12,940 DEBUG WebSocket Spot opened.
+2022-03-09 11:50:13,089 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x109d01c10>: string indices must be integers
+2022-03-09 11:53:27,657 DEBUG WebSocket USDT Perp closed.
+2022-03-09 11:53:27,657 DEBUG WebSocket USDT Perp opened.
+2022-03-09 11:53:28,664 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 11:53:28,665 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 11:53:28,859 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1026a7c10>: string indices must be integers
+2022-03-09 11:53:28,867 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1026a7c10>: string indices must be integers
+2022-03-09 11:53:28,867 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 11:53:29,671 DEBUG WebSocket Spot closed.
+2022-03-09 11:53:29,671 DEBUG WebSocket Spot opened.
+2022-03-09 11:53:29,860 DEBUG Authorization for USDT Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 11:53:29,860 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 11:53:30,163 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1026a7c10>: string indices must be integers
+2022-03-09 11:53:30,269 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1026a7c10>: string indices must be integers
+2022-03-09 11:53:30,696 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1026a7c10>: string indices must be integers
+2022-03-09 11:53:30,698 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1026a7c10>: string indices must be integers
+2022-03-09 11:53:30,714 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1026a7c10>: string indices must be integers
+2022-03-09 11:53:31,004 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1026a7c10>: string indices must be integers
+2022-03-09 11:54:39,924 DEBUG WebSocket USDT Perp closed.
+2022-03-09 11:54:39,924 DEBUG WebSocket USDT Perp opened.
+2022-03-09 11:54:40,930 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 11:54:40,930 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 11:54:41,121 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104ec0c10>: string indices must be integers
+2022-03-09 11:54:41,125 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104ec0c10>: string indices must be integers
+2022-03-09 11:54:41,125 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104ec0c10>: string indices must be integers
+2022-03-09 11:54:41,126 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104ec0c10>: string indices must be integers
+2022-03-09 11:54:41,126 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 11:54:41,438 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104ec0c10>: string indices must be integers
+2022-03-09 11:54:41,496 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104ec0c10>: string indices must be integers
+2022-03-09 11:55:13,951 DEBUG WebSocket USDT Perp closed.
+2022-03-09 11:55:13,951 DEBUG WebSocket USDT Perp opened.
+2022-03-09 11:55:14,955 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 11:55:14,956 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 11:55:15,151 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 11:55:15,157 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 11:55:15,656 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 11:55:15,855 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 11:55:15,961 DEBUG WebSocket Spot closed.
+2022-03-09 11:55:15,962 DEBUG WebSocket Spot opened.
+2022-03-09 11:55:16,147 DEBUG Authorization for USDT Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 11:55:16,147 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 11:55:16,318 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 11:55:16,338 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 11:55:16,382 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 11:55:16,514 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 11:55:16,657 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 11:55:16,833 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 11:55:17,014 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10588cc10>: string indices must be integers
+2022-03-09 12:03:06,068 DEBUG WebSocket USDT Perp closed.
+2022-03-09 12:03:06,069 DEBUG WebSocket USDT Perp opened.
+2022-03-09 12:03:07,075 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 12:03:07,075 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 12:03:07,263 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,271 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,272 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,273 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,274 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,275 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,277 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,279 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,280 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,281 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,282 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,283 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,285 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,286 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,288 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:07,288 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 12:03:08,083 DEBUG WebSocket Spot closed.
+2022-03-09 12:03:08,084 DEBUG WebSocket Spot opened.
+2022-03-09 12:03:08,162 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c125c10>: string indices must be integers
+2022-03-09 12:03:08,273 DEBUG Authorization for USDT Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:03:08,273 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:05:15,722 DEBUG WebSocket USDT Perp closed.
+2022-03-09 12:05:15,723 DEBUG WebSocket USDT Perp opened.
+2022-03-09 12:05:16,729 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 12:05:16,729 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 12:05:16,917 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,922 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,923 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,924 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,925 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,927 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,928 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,929 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,930 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,932 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,933 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10bff5c10>: string indices must be integers
+2022-03-09 12:05:16,934 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 12:05:17,737 DEBUG WebSocket Spot closed.
+2022-03-09 12:05:17,737 DEBUG WebSocket Spot opened.
+2022-03-09 12:05:17,931 DEBUG Authorization for USDT Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:05:17,931 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:06:09,066 DEBUG WebSocket USDT Perp closed.
+2022-03-09 12:06:09,066 DEBUG WebSocket USDT Perp opened.
+2022-03-09 12:06:10,072 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 12:06:10,072 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 12:06:10,269 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:10,276 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 12:06:10,461 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:11,000 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:11,078 DEBUG WebSocket Spot closed.
+2022-03-09 12:06:11,079 DEBUG WebSocket Spot opened.
+2022-03-09 12:06:11,124 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:11,158 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:11,167 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:11,268 DEBUG Authorization for USDT Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:06:11,268 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:06:11,840 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:12,015 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:12,173 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:12,177 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:06:12,200 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1109aac10>: string indices must be integers
+2022-03-09 12:07:05,283 DEBUG WebSocket USDT Perp closed.
+2022-03-09 12:07:05,283 DEBUG WebSocket USDT Perp opened.
+2022-03-09 12:07:06,286 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 12:07:06,287 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 12:07:06,493 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 12:07:07,292 DEBUG WebSocket Spot closed.
+2022-03-09 12:07:07,293 DEBUG WebSocket Spot opened.
+2022-03-09 12:07:07,476 DEBUG Authorization for USDT Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:07:07,476 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:07:19,831 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-09 12:07:19,831 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-09 12:07:20,838 DEBUG WebSocket Spot closed.
+2022-03-09 12:07:20,838 DEBUG WebSocket Spot opened.
+2022-03-09 12:07:21,020 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:07:21,026 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: list indices must be integers or slices, not str
+2022-03-09 12:07:21,036 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: 
+2022-03-09 12:07:21,037 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: 
+2022-03-09 12:07:21,038 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: 
+2022-03-09 12:07:21,039 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-09 12:07:21,040 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:07:21,391 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: 
+2022-03-09 12:07:21,416 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: 
+2022-03-09 12:07:21,533 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: 
+2022-03-09 12:07:21,572 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: 
+2022-03-09 12:07:21,691 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: 
+2022-03-09 12:07:21,852 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1083d64c0>: 
+2022-03-09 12:07:44,666 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-09 12:07:44,666 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-09 12:07:45,672 DEBUG WebSocket Spot closed.
+2022-03-09 12:07:45,673 DEBUG WebSocket Spot opened.
+2022-03-09 12:07:45,868 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:07:45,873 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-09 12:07:45,873 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:07:58,563 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-09 12:07:58,564 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-09 12:07:59,569 DEBUG WebSocket Spot closed.
+2022-03-09 12:07:59,569 DEBUG WebSocket Spot opened.
+2022-03-09 12:07:59,757 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:07:59,761 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1041b04c0>: list indices must be integers or slices, not str
+2022-03-09 12:07:59,766 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1041b04c0>: 
+2022-03-09 12:07:59,767 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-09 12:07:59,767 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:08:01,159 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1041b04c0>: 
+2022-03-09 12:08:12,470 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-09 12:08:12,470 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-09 12:08:13,475 DEBUG WebSocket Spot closed.
+2022-03-09 12:08:13,475 DEBUG WebSocket Spot opened.
+2022-03-09 12:08:13,660 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:08:13,663 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1022b64c0>: list indices must be integers or slices, not str
+2022-03-09 12:08:13,671 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1022b64c0>: 
+2022-03-09 12:08:13,671 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-09 12:08:13,672 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:08:15,214 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1022b64c0>: 
+2022-03-09 12:08:33,899 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-09 12:08:33,899 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-09 12:08:34,905 DEBUG WebSocket Spot closed.
+2022-03-09 12:08:34,905 DEBUG WebSocket Spot opened.
+2022-03-09 12:08:35,092 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:08:35,094 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: list indices must be integers or slices, not str
+2022-03-09 12:08:35,099 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,100 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,100 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,101 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,101 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,102 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,103 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-09 12:08:35,103 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:08:35,103 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,117 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,265 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,847 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,861 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,926 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,945 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,963 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:35,998 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:36,072 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:08:37,160 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a1674c0>: 
+2022-03-09 12:10:24,340 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-09 12:10:24,340 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-09 12:10:25,344 DEBUG WebSocket Spot closed.
+2022-03-09 12:10:25,344 DEBUG WebSocket Spot opened.
+2022-03-09 12:10:25,533 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:10:25,538 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-09 12:10:25,539 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:10:50,824 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-09 12:10:50,824 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-09 12:10:51,829 DEBUG WebSocket Spot closed.
+2022-03-09 12:10:51,829 DEBUG WebSocket Spot opened.
+2022-03-09 12:10:52,029 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:10:52,034 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-09 12:10:52,034 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:10:58,366 DEBUG WebSocket USDT Perp closed.
+2022-03-09 12:10:58,366 DEBUG WebSocket USDT Perp opened.
+2022-03-09 12:10:59,372 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 12:10:59,372 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 12:10:59,560 ERROR Couldn't subscribe to topic.Error: error:handler not found.
+2022-03-09 12:11:00,377 DEBUG WebSocket Spot closed.
+2022-03-09 12:11:00,377 DEBUG WebSocket Spot opened.
+2022-03-09 12:11:00,605 DEBUG Authorization for USDT Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:11:00,606 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-09 12:11:04,035 DEBUG WebSocket USDT Perp closed.
+2022-03-09 12:11:04,035 DEBUG WebSocket USDT Perp opened.
+2022-03-09 12:11:05,038 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-03-09 12:11:05,039 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-03-09 12:11:05,234 DEBUG Subscription to ['orderBookL2_25.BTCUSDT'] successful.
+2022-03-09 12:11:06,045 DEBUG WebSocket Spot closed.
+2022-03-09 12:11:06,045 DEBUG WebSocket Spot opened.
+2022-03-09 12:11:06,234 DEBUG Authorization for USDT Perp (Auth) failed. Please check your API keys and restart.
+2022-03-09 12:11:06,235 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-17 09:19:41,082 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-17 09:19:41,083 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-17 09:19:42,088 DEBUG WebSocket Spot closed.
+2022-03-17 09:19:42,088 DEBUG WebSocket Spot opened.
+2022-03-17 09:19:42,353 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-17 09:19:42,357 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-17 09:19:42,358 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-17 09:20:23,032 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-17 09:20:23,032 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-17 09:20:24,040 DEBUG WebSocket Spot closed.
+2022-03-17 09:20:24,040 DEBUG WebSocket Spot opened.
+2022-03-17 09:20:24,222 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-17 09:20:24,229 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-17 09:20:24,229 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-17 09:26:23,345 DEBUG WebSocket Spot (Auth) closed.
+2022-03-17 09:26:23,345 DEBUG WebSocket Spot (Auth) opened.
+2022-03-17 09:28:51,246 DEBUG WebSocket Spot (Auth) closed.
+2022-03-17 09:28:51,246 DEBUG WebSocket Spot (Auth) opened.
+2022-03-17 09:28:52,520 DEBUG Authorization for Spot (Auth) failed. Please check your API keys and restart.
+2022-03-17 09:30:10,683 DEBUG WebSocket Spot (Auth) closed.
+2022-03-17 09:30:10,684 DEBUG WebSocket Spot (Auth) opened.
+2022-03-17 09:30:11,872 DEBUG Authorization for Spot (Auth) successful.
+2022-03-17 09:33:45,497 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-17 09:33:45,497 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-17 09:33:46,501 DEBUG WebSocket Spot closed.
+2022-03-17 09:33:46,501 DEBUG WebSocket Spot opened.
+2022-03-17 09:33:46,699 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-17 09:33:46,705 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-17 09:33:46,706 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-17 09:33:55,251 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-17 09:33:55,251 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-17 09:33:56,255 DEBUG WebSocket Spot closed.
+2022-03-17 09:33:56,256 DEBUG WebSocket Spot opened.
+2022-03-17 09:33:56,455 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-17 09:33:56,458 DEBUG Subscription to ['orderBookL2_25.BTCUSD'] successful.
+2022-03-17 09:33:56,458 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-17 09:34:11,174 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-17 09:34:11,174 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-17 09:34:12,383 DEBUG Authorization for Inverse Perp (Auth) failed. Please check your API keys and restart.
+2022-03-17 09:34:12,384 ERROR Couldn't subscribe to topic.Error: error:topic:position needs auth first.
+2022-03-17 09:34:29,761 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-17 09:34:29,761 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-17 09:34:31,013 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-03-17 09:34:31,013 DEBUG Subscription to ['position'] successful.
+2022-03-17 09:34:54,316 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-03-17 09:34:54,316 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-03-17 09:34:55,324 DEBUG WebSocket Spot (Auth) closed.
+2022-03-17 09:34:55,324 DEBUG WebSocket Spot (Auth) opened.
+2022-03-17 09:34:55,516 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-03-17 09:34:55,517 DEBUG Subscription to ['position'] successful.
+2022-03-17 09:34:56,539 DEBUG Authorization for Spot (Auth) successful.
+2022-03-29 15:20:21,125 DEBUG WebSocket USDC Perp closed.
+2022-03-29 15:20:21,126 DEBUG WebSocket USDC Perp opened.
+2022-03-29 15:20:22,313 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 'order_book'
+2022-03-29 15:20:22,318 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:22,319 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:22,320 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:22,320 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:22,321 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:22,322 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:22,323 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:22,323 DEBUG Subscription to ['orderBookL2_25.BTCPERP'] successful.
+2022-03-29 15:20:22,744 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:23,204 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:24,510 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10671e820>: 
+2022-03-29 15:20:52,178 DEBUG WebSocket USDC Perp closed.
+2022-03-29 15:20:52,178 DEBUG WebSocket USDC Perp opened.
+2022-03-29 15:20:53,351 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10fd71700>: 'order_book'
+2022-03-29 15:20:53,355 DEBUG Subscription to ['orderBookL2_25.BTCPERP'] successful.
+2022-03-29 15:20:53,957 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10fd71700>: 
+2022-03-29 15:20:54,166 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10fd71700>: 
+2022-03-29 15:20:54,327 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10fd71700>: 
+2022-03-29 15:23:22,273 DEBUG WebSocket USDC Perp closed.
+2022-03-29 15:23:22,273 DEBUG WebSocket USDC Perp opened.
+2022-03-29 15:23:23,447 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103d15700>: 'order_book'
+2022-03-29 15:23:23,452 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103d15700>: 
+2022-03-29 15:23:23,453 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x103d15700>: 
+2022-03-29 15:23:23,453 DEBUG Subscription to ['orderBookL2_25.BTCPERP'] successful.
+2022-03-29 15:38:10,917 DEBUG WebSocket USDC Perp closed.
+2022-03-29 15:38:10,918 DEBUG WebSocket USDC Perp opened.
+2022-03-29 15:38:12,103 DEBUG Subscription to ['orderBookL2_25.BTCPERP'] successful.
+2022-03-29 15:50:49,912 DEBUG WebSocket USDC Perp closed.
+2022-03-29 15:50:49,913 DEBUG WebSocket USDC Perp opened.
+2022-03-29 15:50:51,092 DEBUG Subscription to ['orderBookL2_25.BTCPERP'] successful.
+2022-04-01 16:02:54,130 DEBUG WebSocket USDT Perp closed.
+2022-04-01 16:02:54,130 DEBUG WebSocket USDT Perp opened.
+2022-04-01 16:02:54,382 DEBUG --- request header ---
+2022-04-01 16:02:54,382 DEBUG GET /realtime_public HTTP/1.1
+Upgrade: websocket
+Host: stream.bytick.com
+Origin: http://stream.bytick.com
+Sec-WebSocket-Key: TpdOvqg8zUNfpcPhEHPFjg==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+2022-04-01 16:02:54,382 DEBUG -----------------------
+2022-04-01 16:02:54,382 DEBUG --- response header ---
+2022-04-01 16:02:54,738 DEBUG HTTP/1.1 101 Switching Protocols
+2022-04-01 16:02:54,738 DEBUG Date: Fri, 01 Apr 2022 15:02:54 GMT
+2022-04-01 16:02:54,738 DEBUG Connection: upgrade
+2022-04-01 16:02:54,738 DEBUG Server: waf/4.28.6-0.el6
+2022-04-01 16:02:54,738 DEBUG Sec-WebSocket-Accept: uf6Iq0pswzLXUPpyyfKKv3/tL5M=
+2022-04-01 16:02:54,739 DEBUG X-Via: 1.1 PS-SIN-01ozs98:1 (Cdn Cache Server V2.0), 1.1 PSygldLON4ro99:0 (Cdn Cache Server V2.0)
+2022-04-01 16:02:54,739 DEBUG Upgrade: websocket
+2022-04-01 16:02:54,739 DEBUG X-Ws-Request-Id: 6247141e_PSygldLON4ro99_36127-41993
+2022-04-01 16:02:54,739 DEBUG Ws-S2h-Acc-Level: 13
+2022-04-01 16:02:54,739 DEBUG -----------------------
+2022-04-01 16:02:55,135 DEBUG ++Sent raw: b"\x81\xb7TV+*/tDZvl\x0b\x08'#IY7$BH1t\x07\nv7YM't\x11\n\x0ftDX03Yh;9@ff\t\x19\x1fz\x14\x7fi\x04\x13yzv\x0bV"
+2022-04-01 16:02:55,135 DEBUG ++Sent decoded: fin=1 opcode=1 data=b'{"op": "subscribe", "args": ["orderBookL2_25.BTCPERP"]}'
+2022-04-01 16:02:55,311 DEBUG ++Rcv raw: b'\x81~\x00\xa5{"success":false,"ret_msg":"error:handler not found","conn_id":"5cdb2bb3-7e63-45df-a4d6-69dbc5d92072","request":{"op":"subscribe","args":["orderBookL2_25.BTCPERP"]}}'
+2022-04-01 16:02:55,312 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"success":false,"ret_msg":"error:handler not found","conn_id":"5cdb2bb3-7e63-45df-a4d6-69dbc5d92072","request":{"op":"subscribe","args":["orderBookL2_25.BTCPERP"]}}'
+2022-04-01 16:02:55,312 ERROR Couldn't subscribe to topic.Error: error:handler not found.
+2022-04-01 16:03:24,744 DEBUG ++Sent raw: b'\x89\x80\xbeSID'
+2022-04-01 16:03:24,744 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-04-01 16:03:24,922 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-04-01 16:03:24,922 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-04-01 16:03:54,749 DEBUG ++Sent raw: b'\x89\x80\xc7Z\xect'
+2022-04-01 16:03:54,749 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-04-01 16:03:54,940 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-04-01 16:03:54,941 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-04-01 16:04:24,755 DEBUG ++Sent raw: b'\x89\x80\xf0]/k'
+2022-04-01 16:04:24,755 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-04-01 16:04:24,942 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-04-01 16:04:24,942 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-04-01 16:04:54,756 DEBUG ++Sent raw: b'\x89\x80{\x96\x01\x1f'
+2022-04-01 16:04:54,757 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-04-01 16:04:54,950 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-04-01 16:04:54,951 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-04-01 16:05:24,761 DEBUG ++Sent raw: b'\x89\x80\xa4\xaaF\x87'
+2022-04-01 16:05:24,761 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-04-01 16:05:24,940 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-04-01 16:05:24,940 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-04-01 16:05:54,765 DEBUG ++Sent raw: b'\x89\x80\xe5=\x83w'
+2022-04-01 16:05:54,765 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-04-01 16:05:55,011 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-04-01 16:05:55,011 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-04-01 16:06:24,769 DEBUG ++Sent raw: b'\x89\x80\x044<\x1b'
+2022-04-01 16:06:24,771 DEBUG ++Sent decoded: fin=1 opcode=9 data=b''
+2022-04-01 16:06:24,950 DEBUG ++Rcv raw: b'\x8a\x00'
+2022-04-01 16:06:24,950 DEBUG ++Rcv decoded: fin=1 opcode=10 data=b''
+2022-04-05 14:25:16,782 DEBUG WebSocket USDC Perp closed.
+2022-04-05 14:25:16,783 DEBUG WebSocket USDC Perp opened.
+2022-04-05 14:25:17,976 DEBUG Subscription to ['orderBookL2_25.BTCPERP'] successful.
+2022-04-05 14:25:28,621 DEBUG WebSocket USDC Perp closed.
+2022-04-05 14:25:28,622 DEBUG WebSocket USDC Perp opened.
+2022-04-05 14:25:29,803 ERROR Couldn't subscribe to topic.Error: error:handler not found.
+2022-04-05 14:26:09,276 DEBUG WebSocket USDC Perp closed.
+2022-04-05 14:26:09,276 DEBUG WebSocket USDC Perp opened.
+2022-04-05 14:26:10,619 DEBUG Subscription to ['orderBook_200.100ms.BTCPERP'] successful.
+2022-04-05 14:26:54,744 DEBUG WebSocket USDC Perp closed.
+2022-04-05 14:26:54,745 DEBUG WebSocket USDC Perp opened.
+2022-04-05 14:26:55,923 DEBUG Subscription to ['orderBookL2_25.BTCPERP'] successful.
+2022-04-05 14:27:13,915 DEBUG WebSocket USDC Perp closed.
+2022-04-05 14:27:13,915 DEBUG WebSocket USDC Perp opened.
+2022-04-05 14:27:15,302 DEBUG Subscription to ['orderBook_200.100ms.BTCPERP'] successful.
+2022-04-05 14:28:36,343 DEBUG WebSocket USDC Perp closed.
+2022-04-05 14:28:36,343 DEBUG WebSocket USDC Perp opened.
+2022-04-05 14:28:37,696 DEBUG Subscription to ['orderBook_200.100ms.BTCPERP'] successful.
+2022-04-05 14:28:45,271 DEBUG WebSocket USDC Perp closed.
+2022-04-05 14:28:45,271 DEBUG WebSocket USDC Perp opened.
+2022-04-05 14:28:46,635 DEBUG Subscription to ['orderBook_200.100ms.BTCPERP'] successful.
+2022-04-05 14:40:15,057 DEBUG WebSocket USDC Perp closed.
+2022-04-05 14:40:15,058 DEBUG WebSocket USDC Perp opened.
+2022-04-05 14:40:16,230 DEBUG Subscription to ['trade.BTCPERP'] successful.
+2022-04-05 14:40:39,422 DEBUG WebSocket USDC Perp closed.
+2022-04-05 14:40:39,423 DEBUG WebSocket USDC Perp opened.
+2022-04-05 14:40:40,594 DEBUG Subscription to ['instrument_info.100ms.BTCPERP'] successful.
+2022-04-05 14:42:45,257 DEBUG WebSocket USDT Perp closed.
+2022-04-05 14:42:45,258 DEBUG WebSocket USDT Perp opened.
+2022-04-05 14:42:46,463 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-05 15:53:15,853 DEBUG WebSocket USDT Perp closed.
+2022-04-05 15:53:15,854 DEBUG WebSocket USDT Perp opened.
+2022-04-05 15:53:17,041 DEBUG Subscription to ['candle.1.BTCUSDT'] successful.
+2022-04-05 15:53:38,290 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-04-05 15:53:38,291 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-04-05 15:53:39,478 DEBUG Authorization for USDT Perp (Auth) successful.
+2022-04-05 15:53:39,479 DEBUG Subscription to ['position'] successful.
+2022-04-05 15:59:04,460 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-04-05 15:59:04,460 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-04-05 15:59:05,637 DEBUG Authorization for USDT Perp (Auth) successful.
+2022-04-05 15:59:05,637 DEBUG Subscription to ['position'] successful.
+2022-04-05 16:06:56,842 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-04-05 16:06:56,842 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-04-05 16:06:58,029 DEBUG Authorization for USDT Perp (Auth) successful.
+2022-04-05 16:06:58,029 DEBUG Subscription to ['position'] successful.
+2022-04-05 16:07:28,247 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-04-05 16:07:28,247 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-04-05 16:07:29,456 DEBUG Authorization for USDT Perp (Auth) successful.
+2022-04-05 16:07:29,456 DEBUG Subscription to ['position'] successful.
+2022-04-05 16:07:29,457 DEBUG Subscription to ['order'] successful.
+2022-04-05 16:07:29,457 DEBUG Subscription to ['stop_order'] successful.
+2022-04-05 16:09:30,065 DEBUG WebSocket USDC Perp (Auth) closed.
+2022-04-05 16:09:30,066 DEBUG WebSocket USDC Perp (Auth) opened.
+2022-04-05 16:09:37,387 DEBUG WebSocket USDC Perp (Auth) closed.
+2022-04-05 16:09:37,388 DEBUG WebSocket USDC Perp (Auth) opened.
+2022-04-05 16:09:38,585 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a5600d0>: 'topic'
+2022-04-05 16:09:38,590 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a5600d0>: 'topic'
+2022-04-05 16:09:38,591 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10a5600d0>: 'topic'
+2022-04-05 16:09:58,321 DEBUG WebSocket USDC Perp (Auth) closed.
+2022-04-05 16:09:58,321 DEBUG WebSocket USDC Perp (Auth) opened.
+2022-04-05 16:09:59,521 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1043889d0>: 'topic'
+2022-04-05 16:09:59,525 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1043889d0>: 'topic'
+2022-04-05 16:09:59,526 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x1043889d0>: 'topic'
+2022-04-07 17:59:23,634 DEBUG WebSocket USDT Perp (Auth) closed.
+2022-04-07 17:59:23,637 DEBUG WebSocket USDT Perp (Auth) opened.
+2022-04-07 17:59:24,835 DEBUG Authorization for USDT Perp (Auth) successful.
+2022-04-07 17:59:24,837 DEBUG Subscription to ['position'] successful.
+2022-04-07 17:59:24,838 DEBUG Subscription to ['order'] successful.
+2022-04-08 16:59:09,891 DEBUG WebSocket USDT Perp closed.
+2022-04-08 16:59:09,893 DEBUG WebSocket USDT Perp opened.
+2022-04-08 16:59:11,083 ERROR Couldn't subscribe to topic.Error: error:handler not found.
+2022-04-08 16:59:18,532 DEBUG WebSocket USDT Perp closed.
+2022-04-08 16:59:18,532 DEBUG WebSocket USDT Perp opened.
+2022-04-08 16:59:19,717 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:19,722 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:19,722 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:19,723 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:19,723 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:19,724 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-08 16:59:19,920 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:20,233 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:20,545 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:20,623 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:20,827 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:21,731 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:21,937 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 16:59:22,321 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10c6d30d0>: string indices must be integers
+2022-04-08 17:00:21,513 DEBUG WebSocket USDT Perp closed.
+2022-04-08 17:00:21,514 DEBUG WebSocket USDT Perp opened.
+2022-04-08 17:00:22,708 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:22,712 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:22,713 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:22,713 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:22,714 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:22,714 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-08 17:00:22,835 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:22,970 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:23,225 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:23,426 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:23,526 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:23,730 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:23,825 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:24,139 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:24,232 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:24,327 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:24,442 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:00:24,624 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104b940d0>: string indices must be integers
+2022-04-08 17:03:23,654 DEBUG WebSocket USDT Perp closed.
+2022-04-08 17:03:23,654 DEBUG WebSocket USDT Perp opened.
+2022-04-08 17:03:24,841 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:24,844 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:24,844 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:24,845 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:24,845 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-08 17:03:25,029 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:25,329 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:25,556 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:25,760 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:25,863 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:25,945 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:26,040 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:26,139 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:26,427 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:26,829 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:27,029 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10ba010d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:41,234 DEBUG WebSocket USDT Perp closed.
+2022-04-08 17:03:41,234 DEBUG WebSocket USDT Perp opened.
+2022-04-08 17:03:42,433 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x105d170d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:42,436 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x105d170d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:42,437 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-08 17:03:50,961 DEBUG WebSocket USDT Perp closed.
+2022-04-08 17:03:50,961 DEBUG WebSocket USDT Perp opened.
+2022-04-08 17:03:52,153 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:52,156 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-08 17:03:52,231 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:52,531 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:52,942 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:53,229 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:53,833 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:54,130 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:54,231 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:54,435 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:54,742 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:03:55,030 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x106b490d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:09,830 DEBUG WebSocket USDT Perp closed.
+2022-04-08 17:04:09,830 DEBUG WebSocket USDT Perp opened.
+2022-04-08 17:04:11,020 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:11,024 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:11,024 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-08 17:04:11,242 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:11,831 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:12,149 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:12,241 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:12,433 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:12,663 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:12,746 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:04:13,032 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x10b3ac0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:05:33,625 DEBUG WebSocket USDT Perp closed.
+2022-04-08 17:05:33,626 DEBUG WebSocket USDT Perp opened.
+2022-04-08 17:05:34,810 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104c9e0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:05:34,813 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104c9e0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:05:34,814 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104c9e0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:05:34,814 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-08 17:05:34,932 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104c9e0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:05:35,242 ERROR error from callback <function _WebSocketManager._connect.<locals>.<lambda> at 0x104c9e0d0>: 'list' object has no attribute 'items'
+2022-04-08 17:07:14,507 DEBUG WebSocket USDT Perp closed.
+2022-04-08 17:07:14,507 DEBUG WebSocket USDT Perp opened.
+2022-04-08 17:07:15,700 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-08 17:07:25,145 DEBUG WebSocket USDT Perp closed.
+2022-04-08 17:07:25,146 DEBUG WebSocket USDT Perp opened.
+2022-04-08 17:07:26,348 DEBUG Subscription to ['instrument_info.100ms.BTCUSDT'] successful.
+2022-04-08 17:09:32,860 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:09:32,860 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:09:34,047 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:09:34,049 DEBUG Subscription to ['instrument_info.100ms.BTCUSD'] successful.
+2022-04-08 17:36:31,190 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:36:31,192 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:36:32,378 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:36:32,380 DEBUG Subscription to ['instrument_info.100ms.BTCUSD'] successful.
+2022-04-08 17:36:36,918 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:36:36,918 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:36:38,115 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:36:38,117 DEBUG Subscription to ['instrument_info.100ms.BTCUSD'] successful.
+2022-04-08 17:37:18,508 ERROR WebSocket Inverse Perp (Auth) encountered error: ping/pong timed out.
+2022-04-08 17:37:21,508 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:37:21,509 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:37:22,706 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:37:23,262 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:37:23,262 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:37:24,471 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:37:24,472 DEBUG Subscription to ['instrument_info.100ms.BTCUSD'] successful.
+2022-04-08 17:38:38,366 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:38:38,366 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:38:39,560 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:38:39,561 DEBUG Subscription to ['instrument_info.100ms.BTCUSD'] successful.
+2022-04-08 17:38:40,375 ERROR WebSocket Inverse Perp (Auth) encountered error: my error.
+2022-04-08 17:38:40,554 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:38:40,554 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:38:48,749 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:38:48,749 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:38:49,936 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:38:49,937 DEBUG Subscription to ['instrument_info.100ms.BTCUSD'] successful.
+2022-04-08 17:38:50,757 ERROR WebSocket Inverse Perp (Auth) encountered error: my error.
+2022-04-08 17:38:50,936 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:38:50,938 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:38:52,132 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:38:52,946 ERROR WebSocket Inverse Perp (Auth) encountered error: my error.
+2022-04-08 17:38:53,139 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:38:53,139 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:38:54,330 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:38:55,149 ERROR WebSocket Inverse Perp (Auth) encountered error: my error.
+2022-04-08 17:38:55,331 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:38:55,331 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:39:16,899 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-08 17:39:16,900 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-08 17:39:18,087 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-08 17:39:18,088 DEBUG Subscription to ['instrument_info.100ms.BTCUSD'] successful.
+2022-04-08 17:39:18,907 ERROR WebSocket Inverse Perp (Auth) encountered error: my error.
+2022-04-14 10:41:48,849 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-14 10:41:48,851 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-14 10:41:50,043 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-14 10:41:50,044 DEBUG Subscription to ['instrument_info.100ms.BTCUSD'] successful.
+2022-04-14 10:41:50,867 ERROR WebSocket Inverse Perp (Auth) encountered error: my error.
+2022-04-14 10:41:51,051 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-14 10:41:51,051 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-14 10:41:52,246 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-14 10:41:53,058 ERROR WebSocket Inverse Perp (Auth) encountered error: my error.
+2022-04-14 10:41:53,246 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-14 10:41:53,246 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-14 10:46:38,416 DEBUG WebSocket Inverse Perp (Auth) closed.
+2022-04-14 10:46:38,417 DEBUG WebSocket Inverse Perp (Auth) opened.
+2022-04-14 10:46:38,517 DEBUG --- request header ---
+2022-04-14 10:46:38,517 DEBUG GET /realtime HTTP/1.1
+Upgrade: websocket
+Host: stream.bybit.com
+Origin: http://stream.bybit.com
+Sec-WebSocket-Key: vALuLI+9PTs2zt1thkxr5w==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+2022-04-14 10:46:38,517 DEBUG -----------------------
+2022-04-14 10:46:38,517 DEBUG --- response header ---
+2022-04-14 10:46:39,208 DEBUG HTTP/1.1 101 Switching Protocols
+2022-04-14 10:46:39,208 DEBUG Connection: upgrade
+2022-04-14 10:46:39,208 DEBUG Date: Thu, 14 Apr 2022 09:46:39 GMT
+2022-04-14 10:46:39,208 DEBUG Upgrade: websocket
+2022-04-14 10:46:39,209 DEBUG Sec-WebSocket-Accept: 2jvs93WafRY0/Dt+7cCFdxSnniQ=
+2022-04-14 10:46:39,209 DEBUG X-Cache: Miss from cloudfront
+2022-04-14 10:46:39,209 DEBUG Via: 1.1 c9b46719df8bb6f51f063cdb912ab0b4.cloudfront.net (CloudFront)
+2022-04-14 10:46:39,209 DEBUG X-Amz-Cf-Pop: LHR61-P2
+2022-04-14 10:46:39,209 DEBUG X-Amz-Cf-Id: omrT_wFUCFX0aWQtDAzzpAvDAQX2KsfaN0lSugslJ2LZOjpmoJdOcw==
+2022-04-14 10:46:39,210 DEBUG -----------------------
+2022-04-14 10:46:39,421 DEBUG ++Sent raw: b'\x81\xfe\x00\x81\x01\xa5\x8dZz\x87\xe2*#\x9f\xadx`\xd0\xf92#\x89\xadx`\xd7\xea)#\x9f\xad\x01#\xdc\xff/r\xf6\xf4/i\xd1\xfa99\xdf\xc5\x1bp\xc3\xccx-\x85\xbcl5\x9c\xb4h8\x93\xbdj5\x97\xbdv!\x87\xbem6\x91\xe998\xc7\xb5>1\x93\xb5cd\x92\xb99`\xc4\xbe8b\x9d\xbd<1\x91\xefb1\xc4\xb8j6\x93\xee85\x93\xef9`\xc0\xee<9\x93\xb8?9\xc1\xb4>4\x95\xb5;d\x96\xb5j`\xc4\xaf\x07|'
+2022-04-14 10:46:39,421 DEBUG ++Sent decoded: fin=1 opcode=1 data=b'{"op": "auth", "args": ["yrusSyuhtwc8zHAqfA", 1649929600420, "3774dc9b8d0689e74caa3bc80f04b80a5076cb46bcaecf865e8d9d508ae380aa"]}'
+2022-04-14 10:46:39,422 DEBUG ++Sent raw: b"\x81\xbd[B\xbdv `\xd2\x06yx\x9dT(7\xdf\x0580\xd4\x14>`\x91Vy#\xcf\x11(`\x87V\x00`\xd4\x18(6\xcf\x036'\xd3\x02\x04+\xd3\x104l\x8cFk/\xceX\x19\x16\xfe#\x08\x06\x9f+&"
+2022-04-14 10:46:39,423 DEBUG ++Sent decoded: fin=1 opcode=1 data=b'{"op": "subscribe", "args": ["instrument_info.100ms.BTCUSD"]}'
+2022-04-14 10:46:39,611 DEBUG ++Rcv raw: b'\x81~\x00\xd7{"success":true,"ret_msg":"","conn_id":"f4ea9900-b98f-40b8-a6f0-7570b6446d3e","request":{"op":"auth","args":["yrusSyuhtwc8zHAqfA","1649929600420","3774dc9b8d0689e74caa3bc80f04b80a5076cb46bcaecf865e8d9d508ae380aa"]}}'
+2022-04-14 10:46:39,611 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"success":true,"ret_msg":"","conn_id":"f4ea9900-b98f-40b8-a6f0-7570b6446d3e","request":{"op":"auth","args":["yrusSyuhtwc8zHAqfA","1649929600420","3774dc9b8d0689e74caa3bc80f04b80a5076cb46bcaecf865e8d9d508ae380aa"]}}'
+2022-04-14 10:46:39,611 DEBUG Authorization for Inverse Perp (Auth) successful.
+2022-04-14 10:46:39,611 DEBUG ++Rcv raw: b'\x81~\x04\x92{"topic":"instrument_info.100ms.BTCUSD","type":"snapshot","data":{"id":1,"symbol":"BTCUSD","last_price_e4":411145000,"last_price":"41114.50","bid1_price_e4":411140000,"bid1_price":"41114.00","ask1_price_e4":411145000,"ask1_price":"41114.50","last_tick_direction":"PlusTick","prev_price_24h_e4":400535000,"prev_price_24h":"40053.50","price_24h_pcnt_e6":26489,"high_price_24h_e4":415300000,"high_price_24h":"41530.00","low_price_24h_e4":396150000,"low_price_24h":"39615.00","prev_price_1h_e4":411920000,"prev_price_1h":"41192.00","price_1h_pcnt_e6":-1881,"mark_price_e4":411348800,"mark_price":"41134.88","index_price_e4":411365900,"index_price":"41136.59","open_interest":714425486,"open_value_e8":1461680310351,"total_turnover_e8":10359691973634221,"turnover_24h_e8":3097841317247,"total_volume":2671879588509,"volume_24h":1264199217,"funding_rate_e6":-53,"predicted_funding_rate_e6":51,"cross_seq":12552414939,"created_at":"2018-11-14T16:33:26Z","updated_at":"2022-04-14T09:46:39Z","next_funding_time":"2022-04-14T16:00:00Z","countdown_hour":7,"funding_rate_interval":8,"settle_time_e9":0,"delisting_status":"0"},"cross_seq":12552414964,"timestamp_e6":1649929599457043}'
+2022-04-14 10:46:39,612 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"instrument_info.100ms.BTCUSD","type":"snapshot","data":{"id":1,"symbol":"BTCUSD","last_price_e4":411145000,"last_price":"41114.50","bid1_price_e4":411140000,"bid1_price":"41114.00","ask1_price_e4":411145000,"ask1_price":"41114.50","last_tick_direction":"PlusTick","prev_price_24h_e4":400535000,"prev_price_24h":"40053.50","price_24h_pcnt_e6":26489,"high_price_24h_e4":415300000,"high_price_24h":"41530.00","low_price_24h_e4":396150000,"low_price_24h":"39615.00","prev_price_1h_e4":411920000,"prev_price_1h":"41192.00","price_1h_pcnt_e6":-1881,"mark_price_e4":411348800,"mark_price":"41134.88","index_price_e4":411365900,"index_price":"41136.59","open_interest":714425486,"open_value_e8":1461680310351,"total_turnover_e8":10359691973634221,"turnover_24h_e8":3097841317247,"total_volume":2671879588509,"volume_24h":1264199217,"funding_rate_e6":-53,"predicted_funding_rate_e6":51,"cross_seq":12552414939,"created_at":"2018-11-14T16:33:26Z","updated_at":"2022-04-14T09:46:39Z","next_funding_time":"2022-04-14T16:00:00Z","countdown_hour":7,"funding_rate_interval":8,"settle_time_e9":0,"delisting_status":"0"},"cross_seq":12552414964,"timestamp_e6":1649929599457043}'
+2022-04-14 10:46:39,612 DEBUG ++Rcv raw: b'\x81~\x00\x93{"success":true,"ret_msg":"","conn_id":"f4ea9900-b98f-40b8-a6f0-7570b6446d3e","request":{"op":"subscribe","args":["instrument_info.100ms.BTCUSD"]}}'
+2022-04-14 10:46:39,613 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"success":true,"ret_msg":"","conn_id":"f4ea9900-b98f-40b8-a6f0-7570b6446d3e","request":{"op":"subscribe","args":["instrument_info.100ms.BTCUSD"]}}'
+2022-04-14 10:46:39,613 DEBUG Subscription to ['instrument_info.100ms.BTCUSD'] successful.
+2022-04-14 10:46:39,802 DEBUG ++Rcv raw: b'\x81~\x01{{"topic":"instrument_info.100ms.BTCUSD","type":"delta","data":{"delete":[],"update":[{"id":1,"symbol":"BTCUSD","price_24h_pcnt_e6":26489,"price_1h_pcnt_e6":-1881,"mark_price_e4":411348600,"mark_price":"41134.86","cross_seq":12552414939,"created_at":"2018-11-14T16:33:26Z","updated_at":"2022-04-14T09:46:39Z"}],"insert":[]},"cross_seq":12552414970,"timestamp_e6":1649929599750331}'
+2022-04-14 10:46:39,802 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"instrument_info.100ms.BTCUSD","type":"delta","data":{"delete":[],"update":[{"id":1,"symbol":"BTCUSD","price_24h_pcnt_e6":26489,"price_1h_pcnt_e6":-1881,"mark_price_e4":411348600,"mark_price":"41134.86","cross_seq":12552414939,"created_at":"2018-11-14T16:33:26Z","updated_at":"2022-04-14T09:46:39Z"}],"insert":[]},"cross_seq":12552414970,"timestamp_e6":1649929599750331}'
+2022-04-14 10:51:22,577 DEBUG WebSocket Spot closed.
+2022-04-14 10:51:22,578 DEBUG WebSocket Spot opened.
+2022-04-14 10:51:34,224 DEBUG WebSocket Spot closed.
+2022-04-14 10:51:34,224 DEBUG WebSocket Spot opened.
+2022-04-14 10:52:14,311 DEBUG WebSocket Spot closed.
+2022-04-14 10:52:14,312 DEBUG WebSocket Spot opened.
+2022-04-14 10:53:17,520 DEBUG WebSocket Spot closed.
+2022-04-14 10:53:17,520 DEBUG WebSocket Spot opened.
+2022-04-14 10:53:17,621 DEBUG --- request header ---
+2022-04-14 10:53:17,621 DEBUG GET /spot/quote/ws/v2 HTTP/1.1
+Upgrade: websocket
+Host: stream.bybit.com
+Origin: http://stream.bybit.com
+Sec-WebSocket-Key: XIcIFipHGQkH7IePubxttw==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+2022-04-14 10:53:17,621 DEBUG -----------------------
+2022-04-14 10:53:17,621 DEBUG --- response header ---
+2022-04-14 10:53:18,392 DEBUG HTTP/1.1 101 Switching Protocols
+2022-04-14 10:53:18,392 DEBUG Connection: upgrade
+2022-04-14 10:53:18,392 DEBUG Date: Thu, 14 Apr 2022 09:53:18 GMT
+2022-04-14 10:53:18,392 DEBUG upgrade: websocket
+2022-04-14 10:53:18,392 DEBUG sec-websocket-accept: 1SdJZQeUzz40YvptshGeTljKfRg=
+2022-04-14 10:53:18,392 DEBUG X-Cache: Miss from cloudfront
+2022-04-14 10:53:18,392 DEBUG Via: 1.1 dc934eeca08c60e0878cc8271c2e7428.cloudfront.net (CloudFront)
+2022-04-14 10:53:18,393 DEBUG X-Amz-Cf-Pop: LHR61-P2
+2022-04-14 10:53:18,393 DEBUG X-Amz-Cf-Id: HrM-n8w7-PMrqI6HSC2cg69s1fxNMB8nz-bhhhDFN7yIo2Qv3SV4ug==
+2022-04-14 10:53:18,393 DEBUG -----------------------
+2022-04-14 10:53:18,525 DEBUG ++Sent raw: b'\x81\xd46\xc2\x8a?M\xe0\xfePF\xab\xe9\x1d\x0c\xe2\xa8KD\xa3\xeeZ\x14\xee\xaa\x1dS\xb4\xefQB\xe0\xb0\x1f\x14\xb1\xff]\x14\xee\xaa\x1dF\xa3\xf8^[\xb1\xa8\x05\x16\xb9\xa8LO\xaf\xe8PZ\xe0\xb0\x1f\x14\x80\xde|c\x91\xcek\x14\xee\xaa\x1dT\xab\xe4^D\xbb\xa8\x05\x16\xa4\xebSE\xa7\xf7B'
+2022-04-14 10:53:18,525 DEBUG ++Sent decoded: fin=1 opcode=1 data=b'{"topic": "trade", "event": "sub", "params": {"symbol": "BTCUSDT", "binary": false}}'
+2022-04-14 10:53:18,709 DEBUG ++Rcv raw: b'\x81~\x00\x80{"topic":"trade","event":"sub","params":{"symbol":"BTCUSDT","binary":"false","symbolName":"BTCUSDT"},"code":"0","msg":"Success"}'
+2022-04-14 10:53:18,709 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade","event":"sub","params":{"symbol":"BTCUSDT","binary":"false","symbolName":"BTCUSDT"},"code":"0","msg":"Success"}'
+2022-04-14 10:56:02,970 DEBUG WebSocket USDT Perp closed.
+2022-04-14 10:56:02,970 DEBUG WebSocket USDT Perp opened.
+2022-04-14 10:56:03,074 DEBUG --- request header ---
+2022-04-14 10:56:03,074 DEBUG GET /realtime_public HTTP/1.1
+Upgrade: websocket
+Host: stream.bybit.com
+Origin: http://stream.bybit.com
+Sec-WebSocket-Key: IqcGoUDlRAJ5ZEqpqAwbGw==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+2022-04-14 10:56:03,074 DEBUG -----------------------
+2022-04-14 10:56:03,074 DEBUG --- response header ---
+2022-04-14 10:56:03,764 DEBUG HTTP/1.1 101 Switching Protocols
+2022-04-14 10:56:03,766 DEBUG Connection: upgrade
+2022-04-14 10:56:03,766 DEBUG Date: Thu, 14 Apr 2022 09:56:03 GMT
+2022-04-14 10:56:03,766 DEBUG Upgrade: websocket
+2022-04-14 10:56:03,766 DEBUG Sec-WebSocket-Accept: Tep9/PUk2tnWGI0fU65OwtMjIh0=
+2022-04-14 10:56:03,766 DEBUG X-Cache: Miss from cloudfront
+2022-04-14 10:56:03,767 DEBUG Via: 1.1 11ba255aec37329a75fe3eaa27ab008e.cloudfront.net (CloudFront)
+2022-04-14 10:56:03,767 DEBUG X-Amz-Cf-Pop: LHR61-P2
+2022-04-14 10:56:03,767 DEBUG X-Amz-Cf-Id: g1fvRQXII0AeenX6OUdhnUlxvOy2xVNWWNDi8x4lT02z9FqqvfwDag==
+2022-04-14 10:56:03,767 DEBUG -----------------------
+2022-04-14 10:56:03,972 DEBUG ++Sent raw: b'\x81\xae\xc6v\x03|\xbdTl\x0c\xe4L#^\xb5\x03a\x0f\xa5\x04j\x1e\xa3T/\\\xe4\x17q\x1b\xb5T9\\\x9dTw\x0e\xa7\x12fR\x84"@)\x952W^\x9b\x0b'
+2022-04-14 10:56:03,973 DEBUG ++Sent decoded: fin=1 opcode=1 data=b'{"op": "subscribe", "args": ["trade.BTCUSDT"]}'
+2022-04-14 10:56:04,154 DEBUG ++Rcv raw: b'\x81~\x00\xfb{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"MinusTick","price":"41192.00","size":0.018,"timestamp":"2022-04-14T09:56:03.000Z","trade_time_ms":"1649930163086","side":"Sell","trade_id":"08347fff-b6a9-5e0a-808e-12e38b1069d4"}]}'
+2022-04-14 10:56:04,154 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"MinusTick","price":"41192.00","size":0.018,"timestamp":"2022-04-14T09:56:03.000Z","trade_time_ms":"1649930163086","side":"Sell","trade_id":"08347fff-b6a9-5e0a-808e-12e38b1069d4"}]}'
+2022-04-14 10:56:04,155 DEBUG ++Rcv raw: b'\x81~\x00\xf9{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"PlusTick","price":"41192.50","size":0.022,"timestamp":"2022-04-14T09:56:03.000Z","trade_time_ms":"1649930163930","side":"Buy","trade_id":"02e3bf7a-a392-5911-aa6d-4eff4952bea3"}]}'
+2022-04-14 10:56:04,155 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"PlusTick","price":"41192.50","size":0.022,"timestamp":"2022-04-14T09:56:03.000Z","trade_time_ms":"1649930163930","side":"Buy","trade_id":"02e3bf7a-a392-5911-aa6d-4eff4952bea3"}]}'
+2022-04-14 10:56:04,155 DEBUG ++Rcv raw: b'\x81~\x00\x84{"success":true,"ret_msg":"","conn_id":"a3f5e39b-604b-45b4-98da-7e162871a949","request":{"op":"subscribe","args":["trade.BTCUSDT"]}}'
+2022-04-14 10:56:04,155 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"success":true,"ret_msg":"","conn_id":"a3f5e39b-604b-45b4-98da-7e162871a949","request":{"op":"subscribe","args":["trade.BTCUSDT"]}}'
+2022-04-14 10:56:04,155 DEBUG Subscription to ['trade.BTCUSDT'] successful.
+2022-04-14 10:56:05,308 DEBUG ++Rcv raw: b'\x81~\x00\xfd{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"ZeroPlusTick","price":"41192.50","size":1.387,"timestamp":"2022-04-14T09:56:05.000Z","trade_time_ms":"1649930165103","side":"Buy","trade_id":"29327428-b991-560f-a6d0-ffd2b2accde4"}]}'
+2022-04-14 10:56:05,309 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"ZeroPlusTick","price":"41192.50","size":1.387,"timestamp":"2022-04-14T09:56:05.000Z","trade_time_ms":"1649930165103","side":"Buy","trade_id":"29327428-b991-560f-a6d0-ffd2b2accde4"}]}'
+2022-04-14 10:56:06,230 DEBUG ++Rcv raw: b'\x81~\x00\xfd{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"ZeroPlusTick","price":"41192.50","size":0.203,"timestamp":"2022-04-14T09:56:06.000Z","trade_time_ms":"1649930166017","side":"Buy","trade_id":"7bd1f07d-6e53-51ac-9bd0-083d37243bda"}]}'
+2022-04-14 10:56:06,230 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"ZeroPlusTick","price":"41192.50","size":0.203,"timestamp":"2022-04-14T09:56:06.000Z","trade_time_ms":"1649930166017","side":"Buy","trade_id":"7bd1f07d-6e53-51ac-9bd0-083d37243bda"}]}'
+2022-04-14 10:56:06,385 DEBUG ++Rcv raw: b'\x81~\x00\xfd{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"ZeroPlusTick","price":"41192.50","size":0.001,"timestamp":"2022-04-14T09:56:06.000Z","trade_time_ms":"1649930166293","side":"Buy","trade_id":"bbfb45a8-9e81-5b0b-89bb-babbc5898d59"}]}'
+2022-04-14 10:56:06,385 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"ZeroPlusTick","price":"41192.50","size":0.001,"timestamp":"2022-04-14T09:56:06.000Z","trade_time_ms":"1649930166293","side":"Buy","trade_id":"bbfb45a8-9e81-5b0b-89bb-babbc5898d59"}]}'
+2022-04-14 10:56:06,585 DEBUG ++Rcv raw: b'\x81~\x00\xfb{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"MinusTick","price":"41192.00","size":0.009,"timestamp":"2022-04-14T09:56:06.000Z","trade_time_ms":"1649930166401","side":"Sell","trade_id":"e83c63a3-b6c9-51bf-bcc0-3c79fc074574"}]}'
+2022-04-14 10:56:06,585 DEBUG ++Rcv decoded: fin=1 opcode=1 data=b'{"topic":"trade.BTCUSDT","data":[{"symbol":"BTCUSDT","tick_direction":"MinusTick","price":"41192.00","size":0.009,"timestamp":"2022-04-14T09:56:06.000Z","trade_time_ms":"1649930166401","side":"Sell","trade_id":"e83c63a3-b6c9-51bf-bcc0-3c79fc074574"}]}'
