@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+primercoingame/primer_coin_game.egg-info/PKG-INFO
+primercoingame/primer_coin_game.egg-info/SOURCES.txt
+primercoingame/primer_coin_game.egg-info/dependency_links.txt
+primercoingame/primer_coin_game.egg-info/top_level.txt
