@@ -1,0 +1,58 @@
+{% extends 'generic/object_detail.html' %}
+{% load buttons %}
+{% load helpers %}
+
+{% block buttons %}
+        {% if perms.dcim.add_sfptype %}
+            {% clone_button object %}
+        {% endif %}
+        {% if perms.dcim.change_sfptype %}
+            {% edit_button object key="pk" %}
+        {% endif %}
+        {% if perms.dcim.delete_sfptype %}
+            {% delete_button object key="pk" %}
+        {% endif %}
+{% endblock buttons %}
+
+{% block content_left_page %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <strong>SFP Type</strong>
+            </div>
+            <table class="table table-hover panel-body attr-table">
+                <tr>
+                    <td>Manufacturer</td>
+                    <td>{{ object.manufacturer|placeholder }}</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>{{ object.name|placeholder }}</td>
+                </tr>
+                <tr>
+                    <td>Supplier</td>
+                    <td>{{ object.supplier|placeholder }}</td>
+                </tr>
+                <tr>
+                    <td>End of Manufacturer Support</td>
+                    <td>{{ object.end_of_manufacturer_support|placeholder }}</td>
+                </tr>
+                 <tr>
+                    <td>Used SFPs</td>
+                    <td>{{ count_used_sfps }}</td>
+                </tr>
+                 <tr>
+                    <td>Available SFPs</td>
+                    <td>{{ count_unused_sfps }}</td>
+                </tr>
+            </table>
+        </div>
+{% endblock content_left_page %}
+
+{% block content_right_page %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <strong>Unused SFPs</strong>
+            </div>
+            {% include 'responsive_table.html' with table=unused_sfp_table %}
+        </div>
+{% endblock content_right_page %}
