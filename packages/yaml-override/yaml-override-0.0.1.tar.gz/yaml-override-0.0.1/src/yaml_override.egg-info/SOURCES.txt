@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/yaml_override.egg-info/PKG-INFO
+src/yaml_override.egg-info/SOURCES.txt
+src/yaml_override.egg-info/dependency_links.txt
+src/yaml_override.egg-info/requires.txt
+src/yaml_override.egg-info/top_level.txt
