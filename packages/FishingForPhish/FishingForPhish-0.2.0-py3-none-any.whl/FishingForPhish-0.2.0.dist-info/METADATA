@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: FishingForPhish
+Version: 0.2.0
+Summary: FishingForPhish is a phishing detection framework focused on the analysis of image and page based features.
+Home-page: https://github.com/xanmankey/FishingForPhish.git
+Author: Xander Kutulas
+Author-email: Xander.Kutulas@gmail.com
+License: BSD 3-Clause License
+Keywords: phishing-detection,machine learning,data analysis
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: beautifulsoup4
+Requires-Dist: cssutils
+Requires-Dist: filetype
+Requires-Dist: ImageHash
+Requires-Dist: IPy
+Requires-Dist: Pillow
+Requires-Dist: pyshorteners
+Requires-Dist: python-weka-wrapper3
+Requires-Dist: requests
+Requires-Dist: selenium
+Requires-Dist: tldextract
+Requires-Dist: urllib3
+Requires-Dist: validators
+Requires-Dist: weka
+Provides-Extra: dev
+Requires-Dist: flake8 (==4.0.1) ; extra == 'dev'
+
+# FishingForPhish (WORKING PROJECT)
+
+A phishing detection framework that focuses on the detection of image and page based features. Classes and methods are provided for collecting data regarding proposed image-based features and page-based features from existing research, as well as for new features in order to attempt to determine new patterns or relationships. Selenium Webdriver, Python Weka Wrapper 3, Beautiful Soup, and ImageMagick are primarily used for feature detection. The classes and methods provided by this package are documented in the API section. An analysis of the detected features and resulting data thereof can be found here: https://github.com/xanmankey/FishingForPhish/blob/main/research/FishingForPhish.md.
+
+## Development Status
+
+This project is currently under active development. Contributions and adaptations of the methodology outlined in the research are encouraged.
+
+## Resources
+- Documentation: https://fishingforphish.readthedocs.io/en/latest/
+- Website: TODO (the server-side code still has to be finalized, and a plan needs to be figured out 
+regarding production deployment and hosting)
+- PyPi: TODO
+
+
