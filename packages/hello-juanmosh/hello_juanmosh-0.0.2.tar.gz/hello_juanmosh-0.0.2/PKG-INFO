@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hello_juanmosh
+Version: 0.0.2
+Summary: Simple Hello World
+Home-page: https://github.com/juanapolinario/calc_package.git
+Author: juan
+Author-email: apolinario.psi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# hello
+
+Description. 
+The package package_name is used to:
+	- Hello world!
+	-
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install hello_juanmosh
+```
+
+## Usage
+
+```python
+import hello_juanmosh
+hello_juanmosh("your name")
+```
+
+## Author
+Juan
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
