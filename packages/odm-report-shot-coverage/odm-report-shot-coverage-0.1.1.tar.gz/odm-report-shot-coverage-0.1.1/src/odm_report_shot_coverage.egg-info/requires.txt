@@ -1,0 +1,5 @@
+geojson>=2.5.0
+numpy
+Pillow>=9.1.0
+scipy
+argparse
