@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "mtgbinderspine"
+version = "0.1.3"
+description = "A tool to generate printable labels for binders of Magic: The Gathering cards"
+readme = "README.md"
+authors = ["Dan Winkler <dan@danwink.com>"]
+repository = "https://github.com/danwinkler/mtgbinderspine"
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+]
+include = ["fonts/Beleren2016-Bold.ttf"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.4"
+svglib = "^1.2.1"
+Pillow = "^9.0.1"
+reportlab = "^3.6.8"
+requests = "^2.27.1"
+diskcache = "^5.4.0"
+CairoSVG = "^2.5.2"
+rich = "^12.0.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+pylint = "^2.12.2"
+mypy = "^0.941"
+types-requests = "^2.27.12"
+
+[tool.poetry.scripts]
+mtgbinderspine = "mtgbinderspine.main:render_spine_command"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
