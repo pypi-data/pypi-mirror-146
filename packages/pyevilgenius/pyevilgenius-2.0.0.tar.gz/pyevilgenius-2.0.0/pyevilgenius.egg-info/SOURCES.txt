@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+pyevilgenius/__init__.py
+pyevilgenius.egg-info/PKG-INFO
+pyevilgenius.egg-info/SOURCES.txt
+pyevilgenius.egg-info/dependency_links.txt
+pyevilgenius.egg-info/requires.txt
+pyevilgenius.egg-info/top_level.txt
+pyevilgenius.egg-info/zip-safe
