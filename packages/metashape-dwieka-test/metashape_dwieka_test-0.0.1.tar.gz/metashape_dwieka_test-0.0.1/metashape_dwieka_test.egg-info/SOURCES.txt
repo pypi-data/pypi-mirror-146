@@ -1,0 +1,8 @@
+README.md
+setup.py
+get_location/__init__.py
+get_location/get_location.py
+metashape_dwieka_test.egg-info/PKG-INFO
+metashape_dwieka_test.egg-info/SOURCES.txt
+metashape_dwieka_test.egg-info/dependency_links.txt
+metashape_dwieka_test.egg-info/top_level.txt

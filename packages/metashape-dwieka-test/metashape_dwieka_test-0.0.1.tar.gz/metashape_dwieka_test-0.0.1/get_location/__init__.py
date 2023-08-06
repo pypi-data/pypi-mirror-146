@@ -1,0 +1,1 @@
+from get_location.get_location import get_location_data_from_metashape
