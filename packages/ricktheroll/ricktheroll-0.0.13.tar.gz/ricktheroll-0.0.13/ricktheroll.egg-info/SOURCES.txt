@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+ricktheroll/__init__.py
+ricktheroll/main.py
+ricktheroll.egg-info/PKG-INFO
+ricktheroll.egg-info/SOURCES.txt
+ricktheroll.egg-info/dependency_links.txt
+ricktheroll.egg-info/requires.txt
+ricktheroll.egg-info/top_level.txt
