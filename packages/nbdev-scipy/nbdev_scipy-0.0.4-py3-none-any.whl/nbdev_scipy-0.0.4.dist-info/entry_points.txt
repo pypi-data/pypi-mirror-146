@@ -1,0 +1,3 @@
+[nbdev]
+index = nbdev_scipy._nbdev
+
