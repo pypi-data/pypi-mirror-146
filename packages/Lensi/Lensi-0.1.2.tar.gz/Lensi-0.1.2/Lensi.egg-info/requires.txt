@@ -1,0 +1,8 @@
+bs4
+fuzzywuzzy[speedup]
+fire
+requests
+configparser
+tqdm
+winshell
+xpinyin
