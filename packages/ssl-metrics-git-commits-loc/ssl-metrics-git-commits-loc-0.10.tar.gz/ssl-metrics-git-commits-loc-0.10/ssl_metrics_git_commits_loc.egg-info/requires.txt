@@ -1,0 +1,6 @@
+matplotlib
+numpy
+pandas
+progress
+python-dateutil
+scikit-learn
