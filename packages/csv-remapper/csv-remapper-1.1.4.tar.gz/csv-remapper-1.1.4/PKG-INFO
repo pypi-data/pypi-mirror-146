@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: csv-remapper
+Version: 1.1.4
+Summary: A GUI/CLI tool for manipulating CSV file data 
+Author-email: Andrej Perfilov <andrej.perfilov@ymail.com>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PySide2
+Requires-Dist: python-dateutil
+Project-URL: Home, https://github.com/p3rfilov/csv-remapper
