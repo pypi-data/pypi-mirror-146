@@ -1,0 +1,9 @@
+sweepy/__init__.py,sha256=ebylHVT8VU0ShXq8x18bqNHpAL9VAP0JreJCqk6D48o,74
+sweepy/game.py,sha256=x-hYioOxEGsv-DgCu1jJU1I8hOU-ReLO-c-GeGs5eGY,8426
+sweepy/logic.py,sha256=y-4nAd5djZaFYXfBqkKDAPWSkKga9KAPuhX7YqlVv_M,12071
+sweepy/ouija.py,sha256=7E7iNxiw-ePMYnWE-i00IjXgE4qutV0aGIZVYTYox2c,11863
+sweepy_tui-0.1.4.dist-info/METADATA,sha256=yeBQuflM8esMPCoW4-0lo5bw84vlIT_NvfW1mhU_-C8,1445
+sweepy_tui-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sweepy_tui-0.1.4.dist-info/entry_points.txt,sha256=2rNPglxusHdll4p22_U27hV-Rr4ABmJQuDNohrySZ44,42
+sweepy_tui-0.1.4.dist-info/top_level.txt,sha256=S9lFo1hrbeIARvK8TFQ3J-et9K9jJgCRQBDthqfx_Js,7
+sweepy_tui-0.1.4.dist-info/RECORD,,
