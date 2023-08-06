@@ -1,0 +1,9 @@
+requests>=2.10
+black
+pytest
+pytest-cov
+codecov
+isort
+mypy
+mkdocs
+mkdocs-material
