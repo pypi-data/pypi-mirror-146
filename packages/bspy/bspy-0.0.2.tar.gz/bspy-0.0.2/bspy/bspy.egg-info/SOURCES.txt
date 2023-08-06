@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bspy/bspy.egg-info/PKG-INFO
+bspy/bspy.egg-info/SOURCES.txt
+bspy/bspy.egg-info/dependency_links.txt
+bspy/bspy.egg-info/top_level.txt
