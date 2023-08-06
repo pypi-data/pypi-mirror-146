@@ -1,0 +1,4 @@
+include src/banned.h
+include src/core/*.c src/core/*.h
+include src/parser/*.c src/parser/*.h
+include bindings/python/ctptaliro.pxd bindings/python/tptaliro.pyx
