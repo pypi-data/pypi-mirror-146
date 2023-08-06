@@ -1,0 +1,13 @@
+deepgram_cli/__init__.py,sha256=jeiZStR4LiaxyDy0Ru3o4hk-r2ULMhGOq4DffU-U0wc,194
+deepgram_cli/app.py,sha256=m3AZrCYwdgdvIz9IxcwJTOu-eC-R4lfy9bCj0oMaZ1M,779
+deepgram_cli/cli.py,sha256=qPpevxhYSI3pyR00kPxaQRWN7-MtvK3NNXgAzL_KM2U,1335
+deepgram_cli/constants.py,sha256=m4Y8PkMZ0PGTxAFgqGvQLchFFAJpyAAGboNogsnZVB0,1502
+deepgram_cli/deepgram_cli.py,sha256=cINIk5haEYPxUfG_-l3AQ0JBoN7JFvZDnaElCCBKEO4,2275
+deepgram_cli/utils.py,sha256=5-ojyMhKSTLKIOUIZ5ay7buZmtpMCLeAJa7cIgt9BmE,178
+deepgram_cli/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+deepgram_cli-0.0.1.dist-info/LICENSE,sha256=EQCd_pWPyHNdYFXsc52u79xjqhPADLw1i1hkZ6LlVmY,1071
+deepgram_cli-0.0.1.dist-info/METADATA,sha256=tXz2VtfTLuTXBQtU9IBxMXsVtbsTwikobOgY43B2gXs,2983
+deepgram_cli-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deepgram_cli-0.0.1.dist-info/entry_points.txt,sha256=cl9wC4TrwEOyzN-8_JPkFsLDIOLOqtZ8MTx_sGwZgCQ,55
+deepgram_cli-0.0.1.dist-info/top_level.txt,sha256=XlmHWIZ5hI7oK2faSS4R5YMW7Pf-UqPS9YG_B-M81MQ,13
+deepgram_cli-0.0.1.dist-info/RECORD,,
