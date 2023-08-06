@@ -1,0 +1,1 @@
+A python library to classify school shootings using active learning support vector machine
