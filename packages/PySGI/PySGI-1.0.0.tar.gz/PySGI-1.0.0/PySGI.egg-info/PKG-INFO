@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PySGI
+Version: 1.0.0
+Summary: The easy server library for everyone.
+Author: Jaedson Silva
+Author-email: imunknowuser@protonmail.com
+License: MIT License
+Project-URL: Source code, https://github.com/jaedsonpys/pysgi
+Project-URL: License, https://github.com/jaedsonpys/pysgi/blob/master/LICENSE
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >= 3.9
+License-File: LICENSE
+
+UNKNOWN
+
