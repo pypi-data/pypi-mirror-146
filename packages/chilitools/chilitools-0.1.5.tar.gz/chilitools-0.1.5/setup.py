@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['chilitools', 'chilitools.API', 'chilitools.Settings', 'chilitools.Utilities']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['Pillow>=9.1.0,<10.0.0',
+ 'img2pdf>=0.4.4,<0.5.0',
+ 'requests>=2.27.1,<3.0.0',
+ 'xmltodict>=0.12.0,<0.13.0']
+
+setup_kwargs = {
+    'name': 'chilitools',
+    'version': '0.1.5',
+    'description': 'Tools for CHILI Publish',
+    'long_description': None,
+    'author': 'Austin Meier',
+    'author_email': 'austin.meier@hotmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.10,<4.0',
+}
+
+
+setup(**setup_kwargs)
