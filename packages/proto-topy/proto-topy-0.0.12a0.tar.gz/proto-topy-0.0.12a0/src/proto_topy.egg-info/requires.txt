@@ -1,0 +1,6 @@
+click
+protobuf
+
+[dev]
+pytest
+protobuf
