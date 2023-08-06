@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: zzha529-test
+Version: 1.16
+Summary: personal redis queue consumer
+Author: zzha529
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3
+
+personal redis queue consumer
+
