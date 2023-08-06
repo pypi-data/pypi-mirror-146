@@ -1,0 +1,6 @@
+README.md
+nimblr_api.egg-info/PKG-INFO
+nimblr_api.egg-info/SOURCES.txt
+nimblr_api.egg-info/dependency_links.txt
+nimblr_api.egg-info/top_level.txt
+nimblr_api.egg-info/zip-safe
