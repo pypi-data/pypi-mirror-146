@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pix2tex
+Version: 0.0.3
+Summary: pix2tex: Using a ViT to convert images of equations into LaTeX code.
+Home-page: https://lukas-blecher.github.io/LaTeX-OCR/
+Author: Lukas Blecher
+Author-email: luk.blecher@gmail.com
+License: MIT
+Keywords: artificial intelligence,deep learning,image to text
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: gui
+License-File: LICENSE
+
+UNKNOWN
+
