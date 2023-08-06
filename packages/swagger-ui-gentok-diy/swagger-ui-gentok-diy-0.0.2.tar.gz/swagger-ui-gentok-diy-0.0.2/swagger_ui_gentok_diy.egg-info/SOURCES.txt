@@ -1,0 +1,10 @@
+README.txt
+licence.txt
+setup.py
+swagger_ui_gentok/__init__.py
+swagger_ui_gentok/core.py
+swagger_ui_gentok/utils.py
+swagger_ui_gentok_diy.egg-info/PKG-INFO
+swagger_ui_gentok_diy.egg-info/SOURCES.txt
+swagger_ui_gentok_diy.egg-info/dependency_links.txt
+swagger_ui_gentok_diy.egg-info/top_level.txt
