@@ -1,0 +1,3 @@
+[console_scripts]
+amk_pytb = amk.pytb:main
+pytb = pytb:main
