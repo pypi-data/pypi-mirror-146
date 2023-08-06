@@ -1,0 +1,12 @@
+img_dice/__init__.py,sha256=cSqNbwGrSvyowjuBCKL75x43_9UUqlWcavRkOb_Xb0k,41
+img_dice/cli.py,sha256=KLXSrIRHbuAPvCg9TcIbrgu6rVCUUf3g9gwJjWZIRUo,117
+img_dice/gui.py,sha256=FGUNO-XtQ-cCjqkw7sy77yNGAtR-SbO4EYliMCIZ7r4,4619
+img_dice/lib.py,sha256=IEo_kOxk3q3IflNsEX4qmPTifmmj3CAhqcWkjNwhVeE,3630
+img_dice/resources/form.ui,sha256=kLeKlcouCwT6Q3yB2R6NDKB7i8xyIxSlO6A54dKtXVA,4627
+img_dice/resources/img-dice-social.png,sha256=N-KafoovkNhWdYce6ct0pkG9FbtpgoSIiwmDlyg18Yo,78863
+img_dice/resources/img-dice.ico,sha256=38quCbWZ9w8eIPOfx0rKZHY9RDYH3YXblqgQyDpg5qg,19518
+img_dice/resources/img-dice.png,sha256=ow5ho0wMHywZ9iuRQ5n4pT8tQDlnoXK1Cz8AFpWB4x8,2085
+img_dice-0.3.0.dist-info/entry_points.txt,sha256=0X5V_pnkSsCa1DE0Uxojgq758bAjvmzb6dRsIlrnEcU,46
+img_dice-0.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+img_dice-0.3.0.dist-info/METADATA,sha256=18CVOG8s4T6KuAL-M9YsRJRX1FEIEndf8wWyxPsMwLU,705
+img_dice-0.3.0.dist-info/RECORD,,
