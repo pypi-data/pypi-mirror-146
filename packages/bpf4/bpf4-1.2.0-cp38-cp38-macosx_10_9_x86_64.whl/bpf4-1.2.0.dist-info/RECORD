@@ -1,0 +1,17 @@
+bpf4/__init__.py,sha256=2F7l-6kPRLd0DTskmYZNNCkU-JMtYTAjR4U8SnNoQ2o,122
+bpf4/api.py,sha256=--SnJAdyknPQLjSgBPeBQZ7sXZUrnQK5oI6QlP7XRs0,6860
+bpf4/arraytools.py,sha256=wJoHFcaZMBpXRI3459FQdoq-5vmltqtLLkDYdsQ5_RU,1859
+bpf4/bench.py,sha256=6JTDn3uElXDxVSDj-ddtpGTyjQMSZIvcjxtWif3aWT0,392
+bpf4/config.py,sha256=eOit41C9cEvJ3Uu4SZN02hUBSuhLZ1RcqAlF6chNlOg,341
+bpf4/core.cpython-38-darwin.so,sha256=TRmMShN4lc2-gwT9SjCnkaV3cN3fy9xYH81Pg4G9igQ,1198152
+bpf4/csvtools.py,sha256=yr21YjGWLRshUUFlorjJsn4ozv8JUZcAVl0tr48GBFY,8159
+bpf4/plot.py,sha256=OMLQVnnEN8cD3u5gjtJ42t0UDNhBOwTEEx-XTw4QkaI,3161
+bpf4/pyinterp.py,sha256=6ds7-eZ9SlDRWljltaEjUETq7aoo9VGZDDpOmMTWiD4,1378
+bpf4/tests.py,sha256=CPY6xsTQhiA77PGo4OL-h6j3dtpKZSwG5Tel6-Dn5bc,1420
+bpf4/util.py,sha256=A9kjfi9vwFnjqs-aiNnjlQSAQ7OQLVb-3ZFdvMzOviY,21957
+bpf4/version.py,sha256=i5sTPI6eNp3SenTsdi0bZu-WDBOcbzyQQeURsnngv2s,85
+bpf4/wafointerpol.py,sha256=rBY0Gg0z42deQ-YWtoy2aBrMhEGe8QXp-rdo3WSPsbY,85526
+bpf4-1.2.0.dist-info/METADATA,sha256=ok0itsNQe6u1udgoK9UgnHA1hWWJnv_QdIwoHYmI4Z0,2485
+bpf4-1.2.0.dist-info/WHEEL,sha256=pXLpj1wTvqlD6RVUEKOuGQGeFX0NOPyDrsC-9xVDmYU,109
+bpf4-1.2.0.dist-info/top_level.txt,sha256=B59MQCcNA0f7BzFnz2Dk2257JgvWLzNNkl7NHrG0lHk,5
+bpf4-1.2.0.dist-info/RECORD,,
