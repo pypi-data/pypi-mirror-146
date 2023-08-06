@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: IMD
+Version: 1.0
+Summary: Gets difference between images
+Home-page: UNKNOWN
+Author: Niek D.
+Author-email: guest12085@gmail.com
+License: MIT
+Keywords: difference
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+returns an image with pixels on the places the 2 images dont match using the pillow library
+
+Change Log
+==========
+
+1.0 (13/4/2022)
+-------------------
+- First Release
+

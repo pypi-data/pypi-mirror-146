@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+IMD/__init__.py
+IMD.egg-info/PKG-INFO
+IMD.egg-info/SOURCES.txt
+IMD.egg-info/dependency_links.txt
+IMD.egg-info/requires.txt
+IMD.egg-info/top_level.txt
