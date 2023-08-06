@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: G-Sketch
+Version: 0.1.4
+Summary: Converts image files to coordinates
+Home-page: UNKNOWN
+Author: Gerald Negvesky
+License: Free use
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+
+
+# Thank you for using this library! Here are the basic ways to use it:
+
+### Please report any bugs to __gerald.j.negvesky@gmail.com__
+
+## To import, do: 
+
+> from G_Sketch import *
+
+## To create an object do:
+
+> my_sketch = Sketch("path/to/file.png")
+
+There are 3 functions for a sketch:
+
+> - get_coords()
+> - get_raw_coords()
+> - set_min_distance()
+
+## get_coords()
+
+This function returns a list of coordinates (stored as tuples). This version is formatted, meaning between separate bodies, there appears the keyword "BREAK", which can help prevent crossing over.
+
+## get_raw_coords()
+
+This function is exactly the same, except it does not include the keyword "BREAK".
+
+## set_min_distance()
+
+get_coords() and get_min_coords() return every single pixel found on the outline of an image. If you want to limit these, use this function. It takes in an int as a parameter which sets the minimum distance 2 pixels must be from each other. Note: this changes the pixels value stored in it. Calling set_min_distance(1) will change it back to normal.
+
+## Example code:
+
+> from G_Sketch import *
+>
+> sketch = Sketch("G_Sketch/flower.png")
+>
+> print(sketch.get_coords())
+> 
+> print(sketch.get_raw_coords())
+> 
+> print(len(sketch.get_coords()))
+> 
+> sketch.set_min_distance(5)
+> 
+> print(len(sketch.get_coords()))
+
+
+# Happy coding!
+
+
+
+
