@@ -1,0 +1,11 @@
+crma_api_client/__init__.py,sha256=MoSE3-bBvSaEznpXYMz2sU-Qb2qlBqiEGJNnyr2Txxs,94
+crma_api_client/client.py,sha256=2WXG7ACXRvBhA7oaXPgRqRPcOmcPzOxyY80EtuAMbKw,6117
+crma_api_client/encoder.py,sha256=YEH_ggabb4ka1QUkk1JHc-KAtjgEssdcLvWHasSV2M8,1957
+crma_api_client/resources/dataset.py,sha256=7kCI3oz7q2jGW8DzJOCnh_t3nyQnF4ApnH9ce6XZ60U,767
+crma_api_client/resources/query.py,sha256=QMpDAQsl4c8n3YTbfAt-YTmcpVnrCq5PAs2Iy4E2FJ4,634
+crma_api_client/resources/user.py,sha256=FfSdkg5M1digMiKXMDZ-eCFtg28XmyTZOOToFi_kIhI,298
+crma_api_client/resources/util.py,sha256=-WG-MZCziJ5o1rzV1sHfFRwbTQekL9KnvJtr1EVJORA,356
+crma_api_client-0.2.0.dist-info/LICENSE.md,sha256=GV5ehmHZMxTN5oKXdqo6AZh2hbCnjXz8SM7JZIORrTo,1463
+crma_api_client-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+crma_api_client-0.2.0.dist-info/METADATA,sha256=NXEKQraQge9D0l1S4KUnSWCy9g5LnG8CQzUyDO3NAbI,2942
+crma_api_client-0.2.0.dist-info/RECORD,,
