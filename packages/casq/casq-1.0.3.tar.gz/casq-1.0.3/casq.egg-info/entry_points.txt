@@ -1,0 +1,2 @@
+[console_scripts]
+executable_name = casq.celldesigner2qual:main
