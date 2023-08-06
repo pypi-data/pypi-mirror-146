@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: better-cryptography
+Version: 1.0.0
+Summary: A module for encryption and information security operations.
+Home-page: UNKNOWN
+Author: Wyatt Garrioch
+Author-email: w.garrioch456@gmail.com
+License: UNKNOWN
+Keywords: python,encryption,AES,ciphers,encryption alogorithms,information security
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+Requires-Dist: pycryptodome
+Requires-Dist: rsa
+
+# Contents
+- `better-cryptography` provides a simplified interface for encrypting files, folders, and strings, and a simplified interface for generating ciphering objects across multiple cryptography libraries. The library also provides various functions and methods used in cryptography and information security.
+
+
+# FAQ
+
+ ## How do I install and import the package?
+ Install through the `pip3 install better-cryptography` command. Import via `import better_cryptography` or `from better_cryptography import ...`.
+
+
+ ## How do I report a bug?
+ Email me at w.garrioch456@gmail.com.
+
+
