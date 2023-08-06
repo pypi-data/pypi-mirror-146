@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tianqiai
+Version: 0.0.1
+Summary: Python client library for the tianqiai API
+Home-page: https://github.com/shanjiecai/tianqiai-python
+Author: tianqiai
+Author-email: jiecai.shan@aminer.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.1
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
