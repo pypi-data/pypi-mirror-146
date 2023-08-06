@@ -1,0 +1,15 @@
+fvisionNetwork14/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fvisionNetwork14/__main__.py,sha256=RWzTmiwTKNHe8cVa0u3HBGoLl3KgjmaecK989qVpvLQ,870
+fvisionNetwork14/add_two_number.py,sha256=k1RChSyqT58-tM8UyfvUGctSwex2JWd4qotuVE7QEUg,89
+fvisionNetwork14/fvNet14.py,sha256=ZuY2rDDdBPTKZyq9YC04GUu3w1_ln9MzVWh3DSP_T0s,2374
+fvisionNetwork14/image_pre_processing.py,sha256=zcGavnm7u5VlAQtInBJCPMTG6ZhaNtE04GF9ODnytAU,1738
+fvisionNetwork14/image_preprocessing.py,sha256=58v0Tf2RNOdHVc7_LdgNtS7Kb2oRSBF1pZIjQWknFYs,1650
+fvisionNetwork14/plot_acuracy.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fvisionNetwork14/plot_loss.py,sha256=24liWJKcjxA6fxh7P7-0EwzNFEZaEIegy5BPCEeTT2k,743
+fvisionNetwork14/plot_model_acuracy.py,sha256=1jsfvBcTLYENk-aMDNh16NBKXCYgJy0LmmZ6Bc-63iQ,869
+fvisionNetwork14/plot_model_loss.py,sha256=ND1iaYVbhob3RoLPRi3V5kZ8HgmXUqaHTBovx_IzvtM,761
+fvisionNetwork14-0.0.8.dist-info/LICENSE,sha256=kHPb6BcgsZRikdS9q65wGDpoiIXZkg1BtZHVLpB0S74,1090
+fvisionNetwork14-0.0.8.dist-info/METADATA,sha256=LSnUY-VBaZOqBLS_rl4zkFlr1tSOm9PxVSzae8bU4No,2727
+fvisionNetwork14-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fvisionNetwork14-0.0.8.dist-info/top_level.txt,sha256=6ccuVOKYlkbDKpOGXQtectdoVb4DOEiLzdX4tjCGiSE,17
+fvisionNetwork14-0.0.8.dist-info/RECORD,,
