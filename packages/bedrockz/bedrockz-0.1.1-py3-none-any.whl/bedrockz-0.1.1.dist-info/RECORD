@@ -1,0 +1,14 @@
+bedrockz/__init__.py,sha256=aVUM3HJzP1uXjt6MdsmEFJQip7a0tWpgHoV58Edle4M,143
+bedrockz/__main__.py,sha256=KnBB5b22YC686WLTWYmEU0NMrSJvUd_csVpukb2zzBo,58
+bedrockz/_imports.py,sha256=_wGy917GqtTgJPtvSafvTO3__UEw8mXTdbB-fkn7Ino,970
+bedrockz/cli.py,sha256=AFNG1Krt6FOepeZJ6KYYYNLEf19dWGEDu63_62Ysu68,1355
+bedrockz/config.py,sha256=zfZMWjoJ_z4R5jySDWgA0MnloAHUz6iIP-cO3s2jLQg,1685
+bedrockz/core.py,sha256=ZJJl4gdZxa3fM-wbEMjANRFqTtO7jBQjfpcEsThKXD8,7083
+bedrockz/files.py,sha256=49SW6Ix1T5P_57e39viy8CZjaZfOin38ZByrIVcYWk0,4588
+bedrockz/format.py,sha256=NA3sClmPZb8NDvoZX8YANpUqpgeFditfdc5iVlzm20E,389
+bedrockz/generator/example.py,sha256=ogs6K7qDGhjaaM8hUB1Y8v5fjVgES2rHWTvPJK6pTZQ,2366
+bedrockz/generator/templates/brownie/token.py.jinja2,sha256=rpZ05I8Zi3PAvNz6m4RZiSTGFlxf6I_vqjrExa9-dxU,359
+bedrockz-0.1.1.dist-info/entry_points.txt,sha256=ZxTL3gFRdy9-0ID_OT8zSAoHL2ljih2uheX4dob1Wpw,43
+bedrockz-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bedrockz-0.1.1.dist-info/METADATA,sha256=fGjkRFydPY00PzrzcnOg7AZ4Vy4GSv9vfk0SOedwS3E,1211
+bedrockz-0.1.1.dist-info/RECORD,,
