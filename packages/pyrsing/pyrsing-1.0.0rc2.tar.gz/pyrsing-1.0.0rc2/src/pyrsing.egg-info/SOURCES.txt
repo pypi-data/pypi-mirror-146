@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyrsing/__init__.py
+src/pyrsing/sql.py
+src/pyrsing.egg-info/PKG-INFO
+src/pyrsing.egg-info/SOURCES.txt
+src/pyrsing.egg-info/dependency_links.txt
+src/pyrsing.egg-info/top_level.txt
