@@ -1,0 +1,94 @@
+
+[tool.poetry]
+name = "pytest-prefer-nested-dup-tests"
+version = "0.1.0rc"
+description = "A Pytest plugin to drop duplicated tests during collection, but will prefer keeping nested packages."
+authors = ["Marximus Maximus <marximus@marximus.com>"]
+license = "MIT"
+maintainers = ["Marximus Maximus <marximus@marximus.com>"]
+readme = "README.rst"
+homepage = "https://github.com/MarximusMaximus/pytest-prefer-nested-dup-tests"
+repository = "https://github.com/MarximusMaximus/pytest-prefer-nested-dup-tests"
+documentation = "https://github.com/MarximusMaximus/pytest-prefer-nested-dup-test"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Testing",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+include = [
+  "CHANGELOG.rst",
+  "tests"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/MarximusMaximus/pytest-prefer-nested-dup-tests/issues"
+"Source" = "https://github.com/MarximusMaximus/pytest-prefer-nested-dup-test"
+"Documentation" = "https://github.com/MarximusMaximus/pytest-prefer-nested-dup-test"
+
+[tool.poetry.plugins]
+[tool.poetry.plugins."pytest11"]
+"prefer-nested-dup-tests" = "pytest_prefer_nested_dup_tests"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pytest = "^7.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^3.0.0"
+pipdeptree = "^2.2.1"
+tox = "^3.25.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+# these options are used when running pytest directly on the command line,
+#   via vscode, and during the 'coverage' env of tox
+[tool.pytest.ini_options]
+minversion = 7.1
+# make XPASS ("unexpectedly passing") result to fail the test suite
+xfail_strict = true
+addopts = [
+  # report details (verbose)
+  "-v",
+  # report the local variables for every failure with the stacktrace
+  "-l",
+  # report the reasons for all tests that skipped, xfailed, xpassed, etc EXCEPT passed/Passed w/ Output
+  "-ra",
+  # execute doctests directly from docstrings of your classes and functions
+  "--doctest-modules",
+  "--doctest-continue-on-failure",
+  # coverage (configured via .coveragerc)
+  "--cov",
+  # track contexts in which lines are called
+  "--cov-context=test",
+  # output coverage to terminal
+  "--cov-report=term",
+  # output coverage as html report (for human browsing from CI)
+  "--cov-report=html",
+  # output coverage as xml report (for CI reporting and VSCode reporting)
+  "--cov-report=xml",
+  # show local variable values in traceback
+  "--showlocals",
+  # raise errors if using an unregistered marker
+  "--strict-markers",
+  # raise errors if the config is bad
+  "--strict-config",
+  # let's adopt the future mode already
+  "--import-mode=importlib",
+]
+filterwarnings = [
+  "error",
+]
+log_cli_level = "debug"
+testpaths = ["."]
+pythonpath = ["."]
