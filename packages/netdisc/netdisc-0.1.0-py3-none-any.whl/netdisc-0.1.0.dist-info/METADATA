@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: netdisc
+Version: 0.1.0
+Summary: Discovers VLAN interfaces on specific network devices
+Author: Codie Jones
+Author-email: codiejones1@gmail.com
+Requires-Python: >=3.6.1,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: netmiko (>=4.0.0,<5.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
