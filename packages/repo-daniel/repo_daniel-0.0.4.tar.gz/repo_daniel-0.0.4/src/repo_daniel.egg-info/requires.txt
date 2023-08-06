@@ -1,0 +1,4 @@
+textfsm>=1.1.2
+
+[dev]
+pytest>=3.7

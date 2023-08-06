@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: repo_daniel
+Version: 0.0.4
+Summary: junk
+Home-page: https://github.com/GoreNetwork/test_package
+Author: Daniel Himes
+Author-email: dhimes@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+This is a learning project.
+
+**to build the wheel**
+
+python setup.py bdist_wheel 
+
+**to pip install this from the repo_daniel folder run**
+
+pip install -e .
+
+**with dev requirements**
+pip install -e .[dev]
+
+**to actally install run**
+
+**Sample Code**
+```
+from hello_world import say_hello
+say_hello()
+```
+
+**Build this repo**
+
+https://www.youtube.com/watch?v=GIF3LaRqgXo
+

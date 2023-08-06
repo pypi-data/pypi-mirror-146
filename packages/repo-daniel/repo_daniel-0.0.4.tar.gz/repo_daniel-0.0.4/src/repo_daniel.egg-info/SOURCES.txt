@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/repo_daniel.egg-info/PKG-INFO
+src/repo_daniel.egg-info/SOURCES.txt
+src/repo_daniel.egg-info/dependency_links.txt
+src/repo_daniel.egg-info/requires.txt
+src/repo_daniel.egg-info/top_level.txt
