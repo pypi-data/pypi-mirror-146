@@ -1,0 +1,6 @@
+my_awsome_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_awsome_module/hello.py,sha256=Bn76-hsJZMdEGOSH3y4lRV3Z4FfQ4mddz5bDD7rOotI,49
+my_own_custom_package-0.0.1.dist-info/METADATA,sha256=ojKTkQA9wuwrPneKs4dyRHyJ5Xhx-ymHa_EzBDNDwMU,406
+my_own_custom_package-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+my_own_custom_package-0.0.1.dist-info/top_level.txt,sha256=OKK-BtMTSML_IIZWPSX4VjPnJN0SZV1nPTdj7ZC7rrQ,17
+my_own_custom_package-0.0.1.dist-info/RECORD,,
