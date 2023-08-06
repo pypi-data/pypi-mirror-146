@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+prusa2mqtt/__init__.py
+prusa2mqtt/main.py
+prusa2mqtt.egg-info/PKG-INFO
+prusa2mqtt.egg-info/SOURCES.txt
+prusa2mqtt.egg-info/dependency_links.txt
+prusa2mqtt.egg-info/entry_points.txt
+prusa2mqtt.egg-info/requires.txt
+prusa2mqtt.egg-info/top_level.txt

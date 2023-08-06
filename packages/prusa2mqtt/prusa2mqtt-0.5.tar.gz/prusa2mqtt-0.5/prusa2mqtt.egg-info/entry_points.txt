@@ -1,0 +1,2 @@
+[console_scripts]
+prusa2mqtt = prusa2mqtt.main:main
