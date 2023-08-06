@@ -1,0 +1,14 @@
+pyusermanager_api/__init__.py,sha256=wgnW3t-LKgyWoXI-19h_2-x6p7PhemBEBG8AJCVWdRE,110
+pyusermanager_api/_version.py,sha256=k5tJXhBQJ4l9fKHJ76K5w98zBHoYvNk9r-UNH6eQ2-k,21
+pyusermanager_api/api_configure.py,sha256=EvfuQrJbe5JpPELQ81ChegLrsU-q-MUJDX3ysRpHOrQ,1733
+pyusermanager_api/api_misc.py,sha256=6Lzs4SVD6Q1nVHPDimf7H6-52--MuCzhKRdbe6hWEnA,750
+pyusermanager_api/api_permissions.py,sha256=-Hfg34OSobgTuVB0DGen4QIDIJNvIty2d1Cur8s23EI,2108
+pyusermanager_api/api_register.py,sha256=CupNkUxVc887pak3eJRSlZK3Vh_qs_t0LVUNUFjqshw,2554
+pyusermanager_api/api_routes.py,sha256=JhNDsCyDwQvQ2QBWIPOuVSxkxQvzZ4vlrsfwnISRnG4,1985
+pyusermanager_api/api_sessions.py,sha256=FHLXyqTDHNYJYBMdJKWg1lvpIx5L5S8CeGsvkuCHils,2529
+pyusermanager_api/api_user.py,sha256=W2q9afpsrJDouBndGoOnACJhfD-z2ZEncoVybk88IpA,8003
+pyusermanager_api-0.0.3.dist-info/LICENSE,sha256=l1VJnYiVtcmDRpXdP5jsjDXh5Kejm8vJRyHS19sN3q4,1089
+pyusermanager_api-0.0.3.dist-info/METADATA,sha256=S1R_4gUvr6w7VVFxLWTy3C4ocNUDEzvLCyuNeDxIWbA,989
+pyusermanager_api-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyusermanager_api-0.0.3.dist-info/top_level.txt,sha256=SxvHx0sjMGTo22T9786G_hwKML67A5A6JZRSIIy_RaM,18
+pyusermanager_api-0.0.3.dist-info/RECORD,,
