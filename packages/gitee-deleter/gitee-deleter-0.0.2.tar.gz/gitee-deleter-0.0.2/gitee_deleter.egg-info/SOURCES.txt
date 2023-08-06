@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gitee_deleter/__init__.py
+gitee_deleter/remove_all.py
+gitee_deleter/utils.py
+gitee_deleter.egg-info/PKG-INFO
+gitee_deleter.egg-info/SOURCES.txt
+gitee_deleter.egg-info/dependency_links.txt
+gitee_deleter.egg-info/requires.txt
+gitee_deleter.egg-info/top_level.txt
