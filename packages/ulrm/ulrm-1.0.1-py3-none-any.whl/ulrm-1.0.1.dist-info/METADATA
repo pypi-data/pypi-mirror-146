@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ulrm
+Version: 1.0.1
+Summary: A module that can make Univariate Linear Regression Model
+Home-page: http://billma.top/
+Author: billma007
+Author-email: maboning237103015g@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: statsmodels
+Requires-Dist: sklearn
+
+UNKNOWN
+
