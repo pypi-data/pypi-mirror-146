@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: phil0-sqlitehander
+Version: 0.2.0
+Summary: A handler for the sqlite3 library for ease of use and setting up a database.
+Home-page: https://github.com/Phil-0/sqlitehandler
+Author: Philip Fritz
+Author-email: philipjfritz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SQLiteHandler
+
+This package includes a handler for Python's sqlite3 library, so that it
+is easier to use and setup.
+
+

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+phil0_sqlitehander.egg-info/PKG-INFO
+phil0_sqlitehander.egg-info/SOURCES.txt
+phil0_sqlitehander.egg-info/dependency_links.txt
+phil0_sqlitehander.egg-info/top_level.txt
+sqlitehandler/__init__.py
