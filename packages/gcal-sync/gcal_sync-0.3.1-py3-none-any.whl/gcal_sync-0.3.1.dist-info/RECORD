@@ -1,0 +1,15 @@
+gcal_sync/__init__.py,sha256=QLujKeLcgRwx9x1wstTbXa5DyIHjF9tTAHL8GPfyaa0,49
+gcal_sync/api.py,sha256=RfiS9F1BBNzmrvOtXHGH4ZM84__1COC4jJ9FlYPhSKc,4817
+gcal_sync/auth.py,sha256=frdYPJGubYVODJhOMmXJYhXXq3wHAkPJGTJOKXTHudI,418
+gcal_sync/model.py,sha256=SORaTPlU9VMB977lsORYNEh0LC53DLF2RhDt1oMFRUo,2519
+gcal_sync/store.py,sha256=uB72Dz1M2IJGzXYy10Hm26GvdMDaI261uDtj7LndfXM,787
+tests/__init__.py,sha256=UMByDbhviPHWvb8vREd5idrexLDf2K2LyCM91oeuFt8,27
+tests/conftest.py,sha256=mW_V-P6tW2bUDDthTdiR4JWKeVB1Ul5LMdRkvA0L4J4,3561
+tests/test_api.py,sha256=1Y8inh31oH9Vw04ECHJxsh4494nG0i0B2rqGF4rJOtk,9446
+tests/test_model.py,sha256=1VwmCgin7QFcde25CKqRY8T7_iBQBE-uz1faAOfqfEc,7311
+tests/test_store.py,sha256=hM8OrfU-eY8U6X8unPnjgClESLQ1Mb5ALdUgwHcWVKE,594
+gcal_sync-0.3.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gcal_sync-0.3.1.dist-info/METADATA,sha256=XMlRzppEgOYpCLaidy3hMJCtC9nh6JlRp3nvXCh9nEs,707
+gcal_sync-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gcal_sync-0.3.1.dist-info/top_level.txt,sha256=FcPO9p4AHhEch1UJLDK1A2izKs8R8vl0Vjcy-9_kDDA,16
+gcal_sync-0.3.1.dist-info/RECORD,,
