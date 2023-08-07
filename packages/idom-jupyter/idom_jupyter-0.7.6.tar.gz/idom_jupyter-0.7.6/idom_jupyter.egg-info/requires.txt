@@ -1,0 +1,4 @@
+ipywidgets>=7.6.0
+idom<0.39,>=0.38.1
+appdirs
+requests
